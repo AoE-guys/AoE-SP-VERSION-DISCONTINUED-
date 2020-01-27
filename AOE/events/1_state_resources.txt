@@ -9,7 +9,10 @@ country_event = {
 	}
 	
 	option = {
-		name = "Resources SetUp"  
+		name = "Resources SetUp"
+        money = 10000
+		any_country = { money = 10000 }
+		
 		any_owned = { 
 		             limit = {
 					          trade_goods = grain
