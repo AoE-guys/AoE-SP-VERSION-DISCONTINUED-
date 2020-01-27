@@ -1,0 +1,23 @@
+owner = SPA
+
+controller = SPA
+add_core = NET
+add_core = BEL
+trade_goods = coal  state_building = {  level = 5  building = coal_factory  upgrade = yes  }
+life_rating = 35
+#state_building = {
+#	level = 5
+#	building = canned_food_factory
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 5
+#	building = liquor_distillery
+#	upgrade = yes
+#}
+1861.1.1 = {
+	owner = NET
+	controller = NET
+	remove_core = BEL
+	railroad = 3
+}

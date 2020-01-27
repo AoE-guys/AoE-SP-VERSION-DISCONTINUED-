@@ -1,0 +1,26 @@
+political_decisions = {
+	summon_the_estates_general = {
+		picture = estates_general
+		potential = {
+			tag = BOR
+			NOT = {
+				BOR = { government = democracy }
+			}
+		}
+		allow = {
+			political_thought_7 = 1
+			war = no
+		}
+		effect = {
+			set_country_flag = { estates_general_summoned }
+			country_event = {
+				id = 19000
+				days = 0
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

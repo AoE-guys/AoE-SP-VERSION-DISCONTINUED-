@@ -1,0 +1,8 @@
+owner = NAS
+controller = NAS
+add_core = NAS
+add_core = GER
+trade_goods = fruit  state_building = {  level = 5  building = fruit_factory  upgrade = yes  }
+life_rating = 40
+terrain = farmlands
+1861.1.1 = { railroad = 3 }

@@ -1,0 +1,604 @@
+#tech_power
+
+tech_power_1 = {
+	area = tech_power
+	year = 1700
+	cost = 2000
+
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_2 = {
+	area = tech_power
+	year = 1705
+	cost = 4000
+	activate_building =  fabric_factory
+
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_3 = {
+	area = tech_power
+	year = 1720
+	cost = 6000	
+	
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_4 = {
+	area = tech_power
+	year = 1735
+	cost = 8000
+
+	
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_5 = {
+	area = tech_power
+	year = 1750
+	cost = 10000
+
+	
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_6 = {
+	area = tech_power
+	year = 1775
+	cost = 12000
+
+	
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_7 = {
+	area = tech_power
+	year = 1790
+	cost = 14000
+
+	
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_power_8 = {
+	area = tech_power
+	year = 1805
+	cost = 16000
+
+	activate_building = automobile_factory 
+	
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+#mechanization
+
+mechanization_1 = {
+	area = mechanization
+	year = 1700
+	cost = 2000
+	activate_building = machine_parts_factory 
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_2 = {
+	area = mechanization
+	year = 1705
+	cost = 4000
+	
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_3 = {
+	area = mechanization
+	year = 1720
+	cost = 6000
+	
+	activate_building = regular_clothes_factory 
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_4 = {
+	area = mechanization
+	year = 1735
+	cost = 8000
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_5 = {
+	area = mechanization
+	year = 1750
+	cost = 10000
+	
+	
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_6 = {
+	area = mechanization
+	year = 1775
+	cost = 12000
+
+	activate_building = paper_mill 
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_7 = {
+	area = mechanization
+	year = 1790
+	cost = 14000
+
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+mechanization_8 = {
+	area = mechanization
+	year = 1805
+	cost = 16000
+
+	factory_output = 0.01
+	factory_throughput = 0.05
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+#metallurgy
+
+metallurgy_1 = {
+	area = metallurgy
+	year = 1700
+	cost = 2000
+	
+
+	rgo_size = {
+		coal = 0.05
+	}
+	rgo_size = {
+		sulphur = 0.05
+	}
+	rgo_size = {
+		iron = 0.05
+	}
+	rgo_size = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+		factor = 5
+	}
+}
+
+
+metallurgy_2 = {
+	area = metallurgy
+	year = 1705
+	cost = 4000
+	
+	activate_building = ammunition_factory 
+	activate_building = small_arms_factory
+	activate_building = artillery_factory 
+	
+
+	rgo_goods_output = {
+		iron = 0.3
+	}
+	rgo_goods_output = {
+		coal = 0.3
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_goods_output = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+metallurgy_3 = {
+	area = metallurgy
+	year = 1720
+	cost = 6000
+	
+	activate_building = explosives_factory
+	
+
+	rgo_goods_output = {
+		iron = 0.3
+	}
+	rgo_goods_output = {
+		coal = 0.3
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_goods_output = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+metallurgy_4 = {
+	area = metallurgy
+	year = 1735
+	cost = 8000
+	
+	activate_building = steel_factory 
+
+	rgo_size = {
+		coal = 0.05
+	}
+	rgo_size = {
+		sulphur = 0.05
+	}
+	rgo_size = {
+		iron = 0.05
+	}
+	rgo_size = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+metallurgy_5 = {
+	area = metallurgy
+	year = 1750
+	cost = 10000
+	
+
+	rgo_goods_output = {
+		iron = 0.3
+	}
+	rgo_goods_output = {
+		coal = 0.3
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_goods_output = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+metallurgy_6 = {
+	area = metallurgy
+	year = 1775
+	cost = 12000
+	
+
+	rgo_size = {
+		coal = 0.05
+	}
+	rgo_size = {
+		sulphur = 0.05
+	}
+	rgo_size = {
+		iron = 0.05
+	}
+	rgo_size = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+metallurgy_7 = {
+	area = metallurgy
+	year = 1790
+	cost = 14000
+	
+
+	rgo_goods_output = {
+		iron = 0.3
+	}
+	rgo_goods_output = {
+		coal = 0.3
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_goods_output = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+metallurgy_8 = {
+	area = metallurgy
+	year = 1805
+	cost = 16000
+	
+
+	rgo_size = {
+		coal = 0.05
+	}
+	rgo_size = {
+		sulphur = 0.05
+	}
+	rgo_size = {
+		iron = 0.05
+	}
+	rgo_size = {
+		precious_metal = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+#tech_infrastructure
+
+tech_infrastructure_1 = {
+	area = tech_infrastructure
+	year = 1700
+	cost = 2000
+	
+	mine_RGO_eff = 0.05
+	
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_infrastructure_2 = {
+	area = tech_infrastructure
+	year = 1700
+	cost = 4000
+
+	mine_RGO_eff = 0.05
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_infrastructure_3 = {
+	area = tech_infrastructure
+	year = 1720
+	cost = 6000
+
+	activate_building = railroad
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+tech_infrastructure_4 = {
+	area = tech_infrastructure
+	year = 1740
+	cost = 8000
+
+	max_railroad = 1
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_infrastructure_5 = {
+	area = tech_infrastructure
+	year = 1755
+	cost = 10000
+
+	mine_RGO_eff = 0.05
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_infrastructure_6 = {
+	area = tech_infrastructure
+	year = 1770
+	cost = 12000
+
+	max_railroad = 1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+tech_infrastructure_7 = {
+	area = tech_infrastructure
+	year = 1790
+	cost = 14000
+
+	mobilisation_size = 0.01
+	ai_chance = {
+	factor = 5
+	}
+}
+
+tech_infrastructure_8 = {
+	area = tech_infrastructure
+	year = 1805
+	cost = 14000
+
+	mobilisation_size = 0.01
+	ai_chance = {
+	factor = 5
+	}
+}
+
+#chemistry_and_electricity
+
+chemistry_and_electricity_1 = {
+	area = chemistry_and_electricity
+	year = 1700
+	cost = 2000
+
+	activate_building = fertilizer_factory 
+	supply_limit = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+
+chemistry_and_electricity_2 = {
+	area = chemistry_and_electricity
+	year = 1705
+	cost = 4000
+	
+	activate_building = glass_factory 
+	activate_building = cement_factory
+	supply_limit = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}
+
+
+chemistry_and_electricity_3 = {
+	area = chemistry_and_electricity
+	year = 1720
+	cost = 6000
+
+	supply_limit = 0.15
+	pop_growth = 0.0002
+	ai_chance = {
+	factor = 5
+	}
+}
+
+chemistry_and_electricity_4 = {
+	area = chemistry_and_electricity
+	year = 1735
+	cost = 8000
+
+	supply_limit = 0.15
+	land_attrition = -0.15 
+	ai_chance = {
+	factor = 5
+	}
+}
+
+
+chemistry_and_electricity_5 = {
+	area = chemistry_and_electricity
+	year = 1750
+	cost = 10000
+
+	supply_limit = 0.15
+	pop_growth = 0.0002
+	colonial_life_rating = -5
+	ai_chance = {
+	factor = 5
+	}
+}
+
+chemistry_and_electricity_6 = {
+	area = chemistry_and_electricity
+	year = 1775
+	cost = 12000
+
+	supply_limit = 0.15
+	factory_output = 0.01
+	ai_chance = {
+	factor = 5
+	}
+}
+
+chemistry_and_electricity_7 = {
+	area = chemistry_and_electricity
+	year = 1790
+	cost = 14000
+
+	supply_limit = 0.15
+	pop_growth = 0.0002
+	ai_chance = {
+	factor = 5
+	}
+}
+
+
+chemistry_and_electricity_8 = {
+	area = chemistry_and_electricity
+	year = 1805
+	cost = 16000
+
+	activate_building = dye_factory 
+	supply_limit = 0.15
+	ai_chance = {
+	factor = 5
+	}
+}

@@ -1,0 +1,50 @@
+country_event = {
+	title = "The Constitution of The United States of America"
+	desc = "usa_gov"
+	id = 177601
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = USA
+			tag = THC
+		}
+		is_independant = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "A Republic with a strong central authority"	
+		government = democracy
+		any_pop = { limit = { type = aristocrats }
+				militancy = 2 consciousness = 4
+		}
+		political_reform = universal_weighted_voting
+		political_reform = free_press
+		political_reform = state_equal_weight
+		political_reform = all_trade_unions
+		political_reform = first_past_the_post
+		political_reform = gerrymandering
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "A Constitutional Monarchy with a king as head of the state"
+		government = hms_government
+		any_pop = { limit = { type = intellectuals }
+				militancy = 2 consciousness = 4
+		}
+		political_reform = universal_weighted_voting
+		political_reform = free_press
+		political_reform = appointed
+		political_reform = all_trade_unions
+		political_reform = first_past_the_post
+		political_reform = gerrymandering
+	}
+}

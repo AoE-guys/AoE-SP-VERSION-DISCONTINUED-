@@ -1,0 +1,134 @@
+political_decisions = {	
+	claim_swedish_pomerania = {
+		picture = pomerania_prussia
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = claimed_pomerania }
+		}
+		
+		allow = {
+			war = no
+			NOT = {owns = 546}
+			ideological_thought = 1
+		}
+		
+		effect = {
+			set_country_flag = claimed_pomerania
+			PRU_546 = {
+				add_core = THIS 
+			}
+			badboy = 5
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	claim_silesia = {
+		picture = silesia_prussia
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = claimed_silesia }
+		}
+		
+		allow = {
+			war = no
+			NOT = {owns = 682}
+			state_n_government = 1
+			
+		}
+		
+		effect = {
+			set_country_flag = claimed_silesia
+			682 = {
+				add_core = THIS 
+			}
+			683 = {
+				add_core = THIS 
+			}
+			684 = {
+				add_core = THIS 
+			}
+			685 = {
+				add_core = THIS 
+			}
+			687 = {
+				add_core = THIS 
+			}
+			badboy = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	encourage_protestant_migration = {
+		picture = migration
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = encouraged_protestant_migration }
+		}
+	
+		allow = {
+			war = no
+			idealism = 1
+			inorganic_chemistry = 1
+			ad_hoc_money_bill_printing = 1
+			high_pressure_steam_engine = 1
+		}
+		effect = {
+			set_country_flag = encouraged_protestant_migration
+			any_pop = { militancy = 2 }
+			add_province_modifier = {
+				name = encouraging_protestant_migration
+				duration = 5475
+			}
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	prussia_united = {
+		picture = west_prussia
+		potential = {
+			tag = PRU
+			NOT = {
+				owns = 696
+				owns = 693
+				owns = 690
+				owns = 691
+				owns = 694
+				owns = 692			
+			}
+		}
+		allow = {
+			war = no
+			owns = 696
+			owns = 693
+			owns = 690
+			owns = 691
+			owns = 694
+			owns = 692		
+		}
+		effect = {
+			prestige = 20
+			696 = {
+				add_core = THIS
+			}
+			693 = {
+				add_core = THIS
+			}
+			690 = {
+				add_core = THIS
+			}
+			691 = {
+				add_core = THIS
+			}
+			694 = {
+				add_core = THIS
+			}
+			692 = {
+				add_core = THIS
+			}
+		}
+	}
+}

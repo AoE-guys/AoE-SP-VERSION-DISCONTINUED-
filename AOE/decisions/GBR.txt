@@ -1,0 +1,81 @@
+political_decisions = {
+
+	unite_great_britain = {
+			picture = union_act
+			potential = {
+			tag = ENG
+			NOT = { exists = GBR }
+		}
+		
+		allow = {
+			war = no
+			owns = 300
+			state_n_government = 1
+			269 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+			273 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+			254 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			all_core = {
+				remove_core = ENG
+				add_core = GBR
+			}
+			change_tag = GBR
+			random_country = {
+				limit = {
+					tag = SCO
+					exists = yes
+					ai = yes
+				}
+				SCO = { all_core = { add_core = ENG } }
+				THIS = { inherit = SCO }
+			}
+			random_country = {
+				limit = {
+					tag = SCO
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+						tag = SCO
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = SCO
+							is_core = WHA
+							region = GBR_254
+						}
+					}
+					secede_province = THIS
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

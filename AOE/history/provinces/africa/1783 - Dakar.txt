@@ -1,0 +1,13 @@
+owner = BOR
+controller = BOR
+add_core = WOL
+trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
+terrain = semidesert
+life_rating = 35
+#colonial = 2
+1861.1.1 = {
+	owner = BOR
+	controller = BOR
+	#colonial = 2
+	naval_base = 1
+}

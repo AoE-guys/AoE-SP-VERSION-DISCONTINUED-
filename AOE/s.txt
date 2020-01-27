@@ -1,0 +1,75 @@
+	alsace_lorraine_mines = {
+		picture = alsace_lorraine_mines
+		potential = {
+			owns = 409
+			NOT = { 409 = { trade_goods = precious_metal } }
+			bessemer_process = 1
+		}
+		
+		allow = {
+			war = no
+			advanced_metallurgy = 1
+			money = 30100
+		}
+		
+		effect = {
+			money = -30000
+			412 = { trade_goods = iron }
+			409 = { trade_goods = precious_metal }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	establish_ecole_militire = {
+		picture = fra_soldier
+		potential = {
+			OR = {
+				tag = FRA
+				tag = BOR
+			}
+			is_great_power = yes
+			NOT = { has_country_flag = established_ecole_militire }
+		}
+		allow = {
+			bolt_action_rifles = 1
+			military_spending = 100
+			money = 100000
+		}
+		effect = {
+			money = -100000
+			add_country_modifier = {
+				name = ecole_militire
+				duration = -1
+			}
+			set_country_flag = { established_ecole_militire }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	establish_an_engineer_school = {
+		picture = technical_fine_arts_school
+		potential = {
+			OR = {
+				tag = FRA
+				tag = BOR
+			}
+			is_great_power = yes
+			NOT = { has_country_flag = { established_an_engineer_school }}
+		}
+		allow = {
+			steel_railroad = 1
+			money = 100000
+		}
+		effect = {
+			FRA_425 = { infrastructure = 2 }
+			FRA_428 = { infrastructure = 2 }
+			money = -100000
+			set_country_flag = { established_an_engineer_school }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

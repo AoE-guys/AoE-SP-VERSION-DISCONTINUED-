@@ -1,0 +1,32 @@
+political_decisions = {
+	finalize_the_italian_border = {
+		picture = italian_trentino
+
+		potential = {
+			tag = GER
+			exists = ITA
+			NOT = { exists = AUS }
+			NOT = { exists = KUK }
+			owns = 734
+			owns = 735
+			has_global_flag = italian_claimed_south_tirol
+		}
+
+		allow = {			
+			GER = {
+				war = no
+				is_greater_power = yes
+			}
+		}
+
+		effect = {
+			relation = { who = ITA value = 100 }
+			734 = { remove_core = THIS }
+			734 = { secede_province = ITA }
+			734 = { change_province_name = "Trento" }
+			735 = { remove_core = ITA }
+			3288 = { remove_core = ITA }
+			badboy = -1
+		}
+	}
+}

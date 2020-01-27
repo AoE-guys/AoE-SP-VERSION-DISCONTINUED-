@@ -1,0 +1,8 @@
+owner = BAN
+controller = BAN
+add_core = SER
+add_core = BAN
+add_core = HUN
+add_core = SIE
+trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
+life_rating = 35

@@ -1,0 +1,33 @@
+#Napoleon General#
+#country_event = {
+#
+#	id = 18999
+#	title = "A promising general"
+#	desc = "Napoleon Bonaparte has been rising through the ranks of our military for quite some time, gaining fame and admiration from many French people. Perhaps we should promote hime to a more important rank, so he can truly show how good military leader he actually is?"
+#	picture = "napleon"
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		primary_culture = french
+#		is_greater_power = yes
+#		year = 1790
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	
+#	option = {
+#		name = "Promote him"
+#		set_country_flag = napoleon_general
+#		define_general = {
+#			name = "Napoleon Bonaparte"
+#			personality = relentless
+#			background = genius
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#}

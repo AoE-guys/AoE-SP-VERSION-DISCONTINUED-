@@ -1,0 +1,11 @@
+owner = BOR
+controller = BOR
+add_core = BOR
+trade_goods = silk  state_building = {  level = 5  building = silk_factory  upgrade = yes  }
+life_rating = 30
+naval_base = 2
+terrain = toulon
+1861.1.1 = { 
+	railroad = 3
+	naval_base = 3
+}

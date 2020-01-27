@@ -1,0 +1,34 @@
+political_decisions = {
+	declare_independence = {
+	
+		picture = declare_independence
+		
+		potential = {
+		is_vassal = yes
+		civilized = yes
+		}
+		allow = {
+			war = no
+			overlord = {
+				NOT = { relation = {
+					who = THIS
+					value = 0
+					}
+				truce_with = THIS
+				}
+			}
+		}
+		effect = {
+			overlord = {
+				diplomatic_influence = {
+				who = THIS
+				value = -200
+				}
+			country_event = { id=98610 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

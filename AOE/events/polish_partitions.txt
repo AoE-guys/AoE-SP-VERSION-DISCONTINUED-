@@ -1,0 +1,185 @@
+country_event = {
+	id = 1772
+	title = "Partions of Poland-Lithuania"
+	desc = "The commonwealth is to weak to govern it's people and it is our duty as great powers of europe to do it for them!"
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send a delegation to Prussia and Austria"
+		set_country_flag = polish_partition_one
+		country_event = 1773
+		PRU = { country_event = 1774 }
+		AUS = { country_event = 1775 }
+		
+		ai_will_do = { factor = 1 }
+	}
+}
+#RUS+PRU+AUS send demends for land
+country_event = {
+	id = 1773
+	title = "Partions of Poland-Lithuania"
+	desc = "We should send a delegation to the polish king so he can give up his land peacfully"
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send the delegation"
+		PLC = {	country_event = 1776 }
+		ai_will_do = { factor = 10 }
+	}
+}	
+country_event = {
+	id = 1774
+	title = "Partions of Poland-Lithuania"
+	desc = "We should send a delegation to the polish king so he can give up his land peacfully"
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send the delegation"
+		PLC = {	country_event = 1777 }
+		ai_will_do = { factor = 100 }
+	}
+	
+	option = {
+		name = "This isn't right"
+		PLC = {
+			relation = { who = PRU value = 100 }
+		}
+		prestige = -5
+	}
+}	
+country_event = {
+	id = 1775
+	title = "Partions of Poland-Lithuania"
+	desc = "We should send a delegation to the polish king so he can give up his land peacfully"
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send the delegation"
+		PLC = {	country_event = 1778 }
+		ai_will_do = { factor = 100 }
+	}
+	
+	option = {
+		name = "This isn't right"
+		PLC = {
+			relation = { who = AUS value = 100 }
+		}
+		prestige = -5
+	}
+}	
+#####TERITORY TRANSFER####
+country_event = {
+	id = 1776
+	title = "the Russians demand land!"
+	desc = "A Russian deligation has arrived today, seing that our country is a place of total anarchy and that they send in their armies to stabalize the region. They gave us a choice either give up our land peacfully or face war."
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can't do anything, give them what they want."
+		356	= { secede_province = RUS }
+		945	= { secede_province = RUS }
+		944	= { secede_province = RUS }
+		949 = { secede_province = RUS }
+		prestige = -10
+		ai_will_do = { factor = 100 }
+	}
+	option = {
+		name = "We will not give up!"
+		356	= { add_core = RUS }
+		945	= { add_core = RUS }
+		944	= { add_core = RUS }
+		949 = { add_core = RUS }
+		RUS = {
+			war = {
+				target = PLC
+				attacker_goal = { casus_belli = acquire_all_cores }
+				defender_goal = { casus_belli = take_from_sphere }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 1777
+	title = "the Prussians demand land!"
+	desc = "A Prussian deligation has arrived today, seing that our country is a place of total anarchy and that they send in their armies to stabalize the region. They gave us a choice either give up our land peacfully or face war."
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can't do anything, give them what they want."
+		691 = { secede_province = PRU }
+		692 = { secede_province = PRU }
+		700 = { secede_province = PRU }
+		694 = { secede_province = PRU }
+		693 = { secede_province = PRU }
+		696	= { secede_province = PRU }
+		prestige = -10
+		ai_will_do = { factor = 100 }
+	}
+	
+	option = {
+		name = "We will not give up!"
+		691 = { add_core = PRU }
+		692 = { add_core = PRU }
+		700 = { add_core = PRU }
+		694 = { add_core = PRU }
+		693 = { add_core = PRU }
+		696	= { add_core = PRU }
+		PRU = {
+			war = {
+				target = PLC
+				attacker_goal = { casus_belli = acquire_all_cores }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = no
+			}
+		}
+	}
+}
+country_event = {
+	id = 1778
+	title = "the Austrians demand land!"
+	desc = "An Austrian deligation has arrived today, seing that our country is a place of total anarchy and that they send in their armies to stabalize the region. They gave us a choice either give up our land peacfully or face war."
+	picture = polish_partition
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can't do anything, give them what they want."
+		3285 = { secede_province = AUS }
+		714 = { secede_province = AUS }
+		704 = { secede_province = AUS }
+		705 = { secede_province = AUS }
+		702 = { secede_province = AUS }
+		951 = { secede_province = AUS }
+		952 = { secede_province = AUS }
+		953 = { secede_province = AUS }
+		prestige = -10
+		ai_will_do = { factor = 100 }
+	}
+	
+	option = {
+		name = "We will not give up!"
+		3285 = { add_core = AUS }
+		714 = { add_core = AUS }
+		704 = { add_core = AUS }
+		705 = { add_core = AUS }
+		702 = { add_core = AUS }
+		951 = { add_core = AUS }
+		952 = { add_core = AUS }
+		953 = { add_core = AUS }
+		AUS = {
+			war = {
+				target = PLC
+				attacker_goal = { casus_belli = acquire_all_cores }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = no
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+battleship = {
+	icon = 21
+	naval_icon = 10
+	
+	type = naval
+	sprite = Manowar
+	unit_type = big_ship
+	capital = yes
+	active = no
+	floating_flag = yes
+	colonial_points = 30
+	
+	#Core Abilities
+	priority = 40
+	max_strength = 100
+	default_organisation = 40
+	maximum_speed = 12
+	weighted_value = 50.0
+	can_build_overseas = no
+
+
+	#Building Costs
+	build_time = 360
+	build_cost = {
+		clipper_convoy = 80
+		artillery = 20
+		canned_food = 10
+		regular_clothes = 15
+		coal = 25
+	}
+	min_port_level = 3
+	limit_per_port = 2
+	supply_consumption_score = 50
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		clipper_convoy = 1.8
+		artillery = 0.6
+		canned_food = 0.8
+		coal = 2.5
+		ammunition = 0.6
+		tobacco = 1.6
+	}
+	
+	#Naval Abilties
+	hull = 20
+	gun_power = 15
+	fire_range = 0.58
+	evasion = 0
+}

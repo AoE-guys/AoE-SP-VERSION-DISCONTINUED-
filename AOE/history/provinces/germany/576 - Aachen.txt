@@ -1,0 +1,8 @@
+owner = ACH
+controller = ACH
+add_core = ACH
+add_core = RHI
+add_core = GER
+trade_goods = coal  state_building = {  level = 5  building = coal_factory  upgrade = yes  }
+life_rating = 40
+1861.1.1 = { railroad = 3 }

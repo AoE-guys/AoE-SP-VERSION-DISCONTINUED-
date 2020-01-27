@@ -1,0 +1,25 @@
+army = { 
+
+name = "1. Armia Polska" location = 706 
+
+leader = {
+	name = "August II Mocny"
+	date = "1700.1.1"
+        prestige = 0.500
+        picture ="european_general_28"
+	type = land
+	personality = daring
+	background = brownnoser
+  }
+
+regiment = { name = "1. brygada" type = infantry home = 360 } 
+regiment = { name = "2. brygada" type = infantry home = 685 } 
+regiment = { name = "3. brygada" type = infantry home = 685 } 
+regiment = { name = "4. brygada" type = dragoon home = 699 } 
+regiment = { name = "5. brygada" type = cuirassier home = 699 } 
+regiment = { name = "6. brygada" type = hussar home = 700 } 
+regiment = { name = "7. brygada" type = artillery home = 701 } 
+regiment = { name = "8. brygada" type = artillery home = 702 } 
+regiment = { name = "9. brygada" type = artillery home = 703 } 
+regiment = { name = "10. brygada" type = artillery home = 705 }
+}

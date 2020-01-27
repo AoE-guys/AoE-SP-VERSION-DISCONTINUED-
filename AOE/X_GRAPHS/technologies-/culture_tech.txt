@@ -1,0 +1,584 @@
+#aesthetics
+aesthetics_1 = {
+	area = aesthetics
+	year = 1700
+	cost = 2000
+
+	prestige = 0.05
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetics_2 = {
+	area = aesthetics
+	year = 1705
+	cost = 4000
+
+	prestige = 0.05
+	permanent_prestige = 10 
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetics_3 = {
+	area = aesthetics
+	year = 1720
+	cost = 6000
+
+	prestige = 0.05
+	permanent_prestige = 10 
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetics_4 = {
+	area = aesthetics
+	year = 1735
+	cost = 8000
+
+	prestige = 0.05
+	permanent_prestige = 10
+	
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetic_5 = {
+	area = aesthetics
+	year = 1750
+	cost = 10000
+
+	prestige = 0.05
+	permanent_prestige = 10 
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetic_6 = {
+	area = aesthetics
+	year = 1775
+	cost = 12000
+
+	prestige = 0.05
+	permanent_prestige = 10 
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetic_7 = {
+	area = aesthetics
+	year = 1790
+	cost = 14000
+
+	prestige = 0.05
+	permanent_prestige = 20
+	ai_chance = {
+	factor = 5
+	}
+}
+
+aesthetic_8 = {
+	area = aesthetics
+	year = 1805
+	cost = 16000
+
+	prestige = 0.05
+	permanent_prestige = 20
+	ai_chance = {
+	factor = 5
+	}
+}
+
+#philosophy
+
+philosophy_1 = {
+	area = philosophy
+	year = 1700
+	cost = 2000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_2 = {
+	area = philosophy
+	year = 1700
+	cost = 4000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_3 = {
+	area = philosophy
+	year = 1720
+	cost = 6000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_4 = {
+	area = philosophy
+	year = 1740
+	cost = 14000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_5 = {
+	area = philosophy
+	year = 1755
+	cost = 8000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_6 = {
+	area = philosophy
+	year = 1770
+	cost = 10000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_7 = {
+	area = philosophy
+	year = 1790
+	cost = 12000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+philosophy_8 = {
+	area = philosophy
+	year = 1805
+	cost = 14000
+
+	permanent_prestige = 10
+	increase_research = 0.50
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+#social_thought
+
+social_thought_1 = {
+	area = social_thought
+	year = 1700
+	cost = 2000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_2 = {
+	area = social_thought
+	year = 1700
+	cost = 4000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_3 = {
+	area = social_thought
+	year = 1720
+	cost = 6000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_4 = {
+	area = social_thought
+	year = 1735
+	cost = 8000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_5 = {
+	area = social_thought
+	year = 1750
+	cost = 10000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_6 = {
+	area = social_thought
+	year = 1775
+	cost = 12000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_7 = {
+	area = social_thought
+	year = 1790
+	cost = 14000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+social_thought_8 = {
+	area = social_thought
+	year = 1805
+	cost = 16000
+
+	colonial_migration = 0.03
+	education_efficiency = 0.1
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+#political_thought
+
+political_thought_1 = {
+	area = political_thought
+	year = 1700
+	cost = 2000
+
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+
+political_thought_2 = {
+	area = political_thought
+	year = 1705
+	cost = 4000
+
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+political_thought_3 = {
+	area = political_thought
+	year = 1720
+	cost = 6000
+
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+political_thought_4 = {
+	area = political_thought
+	year = 1735
+	cost = 8000
+
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+
+political_thought_5 = {
+	area = political_thought
+	year = 1750
+	cost = 10000
+
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+political_thought_6 = {
+	area = political_thought
+	year = 1775
+	cost = 12000
+
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}	
+	ai_chance = {
+	factor = 5
+	}
+}
+
+political_thought_7 = {
+	area = political_thought
+	year = 1805
+	cost = 14000
+
+	
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+political_thought_8 = {
+	area = political_thought
+	year = 1805
+	cost = 14000
+
+	
+	max_national_focus = 1
+	diplomatic_points = 0.05
+	plurality = 0.05
+	suppression_points_modifier = 0.05
+	rebel_org_gain = {
+			faction = all
+			value = 0.05
+	}
+	ai_chance = {
+	factor = 5
+	}
+}
+
+#psychology
+
+psychology_1 = {
+	area = psychology
+	year = 1700
+	cost = 2000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+psychology_2 = {
+	area = psychology
+	year = 1705
+	cost = 4000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+
+psychology_3 = {
+	area = psychology
+	year = 1720
+	cost = 6000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+psychology_4 = {
+	area = psychology
+	year = 1735
+	cost = 8000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+psychology_5 = {
+	area = psychology
+	year = 1750
+	cost = 10000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+
+psychology_6 = {
+	area = psychology
+	year = 1775
+	cost = 12000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+psychology_7 = {
+	area = psychology
+	year = 1790
+	cost = 14000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}
+
+psychology_8 = {
+	area = psychology
+	year = 1805
+	cost = 16000
+
+
+	regular_experience_level = 4
+	reinforce_rate = 0.04
+	permanent_prestige = 5 
+	ai_chance = {
+	factor = 5
+	}
+
+}

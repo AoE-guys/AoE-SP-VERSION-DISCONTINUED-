@@ -1,0 +1,58 @@
+country_event = {
+	id = 17077
+	title = "Death of Aurangzeb"
+	desc = "mug_desc"
+	
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = MUG
+		year = 1707
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "A great loss"
+		MYS = { all_core = { secede_province = MYS } }
+		TRA = { all_core = { secede_province = TRA } }
+		MAH = { all_core = { secede_province = MAH } }
+		KRN = { all_core = { secede_province = KRN } }
+		NAG = { all_core = { secede_province = NAG } }
+		release = KCH
+		release = AFG
+		release = IND
+		release = BLC
+		release = BNG
+		release = KRN
+		release = BIH
+		release = BIJ
+		release = GUJ
+		release = MAW
+		release = MDR
+		release = MNP
+		release = MRU
+		release = MYS
+		release = AWA
+		release = MEW
+		release = ORI
+		release = KAL
+		release = KUT
+		release = HYD
+		release = SIN
+		release = BAS
+		release = BER
+		release = BIK
+		release = BUN
+		release = JAS
+		release = BHO
+		release = JOD
+		release = KAS
+		release = LAD
+		release = MAK
+		release = SIK
+		release = TRA
+	}
+}

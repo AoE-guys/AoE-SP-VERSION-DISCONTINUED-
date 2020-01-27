@@ -1,0 +1,19 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = SWH
+add_core = HOL
+add_core = GER
+trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
+life_rating = 40
+terrain = kiel
+naval_base = 1
+
+1861.1.1 = { railroad = 3 }
+1861.1.1 = {
+	state_building = {
+		level = 5
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}

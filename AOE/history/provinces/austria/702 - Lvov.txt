@@ -1,0 +1,10 @@
+owner = PLC
+controller = PLC
+add_core = PLC
+add_core = GLM
+add_core = RUT
+add_core = POL
+add_core = UKR
+trade_goods = coal  state_building = {  level = 5  building = coal_factory  upgrade = yes  }
+life_rating = 35
+terrain = lvov

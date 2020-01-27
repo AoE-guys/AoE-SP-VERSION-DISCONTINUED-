@@ -1,0 +1,11 @@
+owner = SPA
+controller = SPA
+add_core = MLT
+trade_goods = fish  state_building = {  level = 5  building = fish_factory  upgrade = yes  }
+life_rating = 32
+naval_base = 1
+#colonial = 2
+terrain = malta
+1861.1.1 = { 
+	naval_base = 2 #Valetta
+}

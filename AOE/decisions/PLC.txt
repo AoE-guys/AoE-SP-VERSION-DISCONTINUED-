@@ -1,0 +1,85 @@
+political_decisions = {
+	
+	may_constitution = {
+		picture = 3rd_may_constitution
+		potential = {
+			tag = PLC
+			civilized = yes
+			government = elective_monarchy_oligarchy
+			NOT = { has_country_flag = enacted_3rd_may_constitution }
+		}
+		
+		allow = {
+			war = no
+			mass_politics = 1
+			plurality = 20
+			NOT = {
+			part_of_sphere = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = enacted_3rd_may_constitution
+			remove_country_modifier = the_elective_monarchy
+			prestige = 50
+			political_reform = wealth_weighted_voting
+			random_owned = {
+				limit = {
+					owner = { political_parties = underground_parties }
+				}
+				owner = {
+					political_reform = harassment
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = { debt_law = peonage }
+				}
+				owner = {
+					political_reform = debtors_prisons
+				}
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = polish } }
+				owner = {
+					add_accepted_culture = byelorussian
+				}
+				LIT = {
+					all_core = { add_core = PLC }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { debt_law = serfdom }
+				}
+				owner = {
+					political_reform = debtors_prisons
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+				}
+				owner = {
+					treasury = 150000
+					machine_parts = 400
+					steel = 600 #was iron
+					cement = 600
+					build_factory_in_capital_state = fabric_factory
+					build_factory_in_capital_state = canned_food_factory
+					build_factory_in_capital_state = liquor_distillery
+					activate_technology = high_pressure_steam_engine
+					activate_technology = freedom_of_trade
+					activate_technology = puddling
+				}
+			}
+			
+			government = hms_government
+			any_pop = { militancy = -2 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

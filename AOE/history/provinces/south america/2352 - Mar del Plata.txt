@@ -1,0 +1,15 @@
+owner = VLP
+controller = VLP
+add_core = VLP
+add_core = SBA
+add_core = ARC
+trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
+terrain = farmlands
+life_rating = 35
+1861.1.1 = { 
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	remove_core = ARC
+	remove_core = SBA
+	}

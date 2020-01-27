@@ -1,0 +1,23 @@
+political_decisions = {
+	partition_poland = {
+		picture = polish_partitions
+		potential = {
+			tag = RUS
+			PLC = {
+				exists = yes
+			}		
+			NOT = { has_country_flag = polish_partition_one }
+		}
+		allow = {
+			PLC = {
+				part_of_sphere = THIS
+			}
+			war = no
+			mass_politics = 1
+		}
+		effect = {
+			country_event = 1772
+			set_country_flag = polish_partition_one
+		}
+	}
+}

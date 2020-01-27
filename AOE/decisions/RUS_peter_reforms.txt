@@ -1,0 +1,47 @@
+political_decisions = {
+	new_administration_rus = {
+		picture = admin_rus
+		potential = {
+			tag = RUS
+			NOT = {
+			has_country_flag = new_administration_rus
+			}
+		}
+		allow = {
+			central_bank_money_bill_printing = 1
+			war = no
+		}
+		effect = {
+		add_country_modifier = {
+			name = improved_administration
+			duration = -1
+		}
+		set_country_flag = new_administration_rus
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	declere_russian_empire = {
+		picture = rus_empire
+		potential = {
+			tag = RUS
+			government = tsardom
+		}
+		allow = {
+			idealism = 1
+			war = no
+			owns = 994
+			owns = 354
+			owns = 1047
+			owns = 350
+		}
+		effect = {
+		government = absolute_monarchy
+		prestige = 60
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+}

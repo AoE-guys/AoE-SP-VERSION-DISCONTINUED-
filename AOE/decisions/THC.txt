@@ -1,0 +1,23 @@
+political_decisions = {
+	become_USA = {
+		picture = become_usa
+		potential = {
+			tag = THC
+			NOT = { exists = USA }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = USA	
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

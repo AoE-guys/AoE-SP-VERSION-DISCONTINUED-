@@ -1,0 +1,16 @@
+owner = MUG
+controller = MUG
+add_core = MUG
+add_core = HYD
+add_core = MYS
+add_core = KRN
+add_core = HND
+trade_goods = cotton  state_building = {  level = 5  building = cotton_factory  upgrade = yes  }
+life_rating = 35
+terrain = madras
+#colonial = 2
+fort = 1
+naval_base = 2
+1861.1.1 = { 
+	naval_base = 2 
+}

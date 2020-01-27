@@ -1,0 +1,12 @@
+owner = VLP
+controller = VLP
+add_core = VLP
+add_core = BOL
+trade_goods = wool  state_building = {  level = 5  building = wool_factory  upgrade = yes  }
+terrain = new_world_desert
+life_rating = 15
+naval_base = 1
+1860.1.1 = {
+	owner = CHL
+	controller = CHL
+}

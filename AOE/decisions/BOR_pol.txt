@@ -1,0 +1,29 @@
+political_decisions = {	
+	establish_ecole_militire = {
+		picture = fra_soldier
+		potential = {
+			OR = {
+				tag = FRA
+				tag = BOR
+			}
+			is_great_power = yes
+			NOT = { has_country_flag = established_ecole_militire }
+		}
+		allow = {
+			bolt_action_rifles = 1
+			military_spending = 100
+			money = 100000
+		}
+		effect = {
+			money = -100000
+			add_country_modifier = {
+				name = ecole_militire
+				duration = -1
+			}
+			set_country_flag = { established_ecole_militire }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

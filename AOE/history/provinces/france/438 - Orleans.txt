@@ -1,0 +1,23 @@
+owner = BOR
+controller = BOR
+add_core = BOR
+trade_goods = timber  state_building = {  level = 5  building = timber_factory  upgrade = yes  }
+life_rating = 30
+#state_building = {
+#	level = 5
+#	building = canned_food_factory
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 5
+#	building = glass_factory
+#	upgrade = yes
+#}
+1861.1.1 = {
+	state_building = {
+		level = 5
+		building = artillery_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }
