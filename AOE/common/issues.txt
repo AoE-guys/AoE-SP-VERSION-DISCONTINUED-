@@ -719,34 +719,34 @@ social_reforms = {
 		no_minimum_wage = { #very influential
 			tax_efficiency = -0.05
 			RGO_throughput = 0.20
-			factory_throughput = -0.20
+			factory_throughput = 0.00
 			education_efficiency_modifier = 0.10
 			minimum_wage = 0.00
 		}
 		trinket_wage = { #influential
 			tax_efficiency = -0.025
-			RGO_throughput = 0.10
-			factory_throughput = -0.10
+			RGO_throughput = 0.15
+			factory_throughput = 0.05
 			education_efficiency_modifier = 0.05
 			minimum_wage = 0.03
 		}
 		low_minimum_wage = { #silghtly influential
 			tax_efficiency = 0.00
-			RGO_throughput = 0.0
-			factory_throughput = 0.0
+			RGO_throughput = 0.10
+			factory_throughput = 0.10
 			education_efficiency_modifier = 0.00
 			minimum_wage = 0.06
 		}
 		acceptable_minimum_wage = { #marginally relevant
 			tax_efficiency = 0.025
-			RGO_throughput = -0.10
-			factory_throughput = 0.10
+			RGO_throughput = 0.05
+			factory_throughput = 0.15
 			education_efficiency_modifier = -0.05
 			minimum_wage = 0.09
 		}
 		good_minimum_wage = { #irrelevant
 			tax_efficiency = 0.05
-			RGO_throughput = -0.20
+			RGO_throughput = 0.00
 			factory_throughput = 0.20
 			education_efficiency_modifier = -0.10
 			minimum_wage = 0.12
@@ -792,34 +792,34 @@ social_reforms = {
 		no_safety = { #very influential
 			tax_efficiency = -0.05
 			RGO_throughput = 0.20
-			factory_throughput = -0.20
+			factory_throughput = 0.00
 			goods_demand = -0.20
 			minimum_wage = 0.00
 		}
 		trinket_safety = { #influential
 			tax_efficiency = -0.025
-			RGO_throughput = 0.10
-			factory_throughput = -0.10
+			RGO_throughput = 0.15
+			factory_throughput = 0.05
 			goods_demand = -0.15
 			minimum_wage = 0.03
 		}
 		low_safety = { #slightly influential
 			tax_efficiency = 0.00
-			RGO_throughput = 0.0
-			factory_throughput = 0.0
+			RGO_throughput = 0.10
+			factory_throughput = 0.10
 			goods_demand = -0.10
 			minimum_wage = 0.06
 		}
 		acceptable_safety = { #marginally relevant
 			tax_efficiency = 0.025
-			RGO_throughput = -0.10
-			factory_throughput = 0.10
+			RGO_throughput = 0.05
+			factory_throughput = 0.15
 			goods_demand = -0.05
 			minimum_wage = 0.09
 		}
 		good_safety = { #irrelevant
 			tax_efficiency = 0.05
-			RGO_throughput = -0.20
+			RGO_throughput = 0.00
 			factory_throughput = 0.20
 			goods_demand = 0.00
 			minimum_wage = 0.12
@@ -831,35 +831,35 @@ social_reforms = {
 		no_subsidies = { #irrelevant
 			tax_efficiency = 0.05
 			RGO_throughput = 0.10
-			factory_throughput = -0.10
+			factory_throughput = 0.00
 			factory_output = 0.00
 			minimum_wage = 0.00
 		}
 		trinket_subsidies = { #marginally relevant
 			tax_efficiency = 0.025
-			RGO_throughput = 0.05
-			factory_throughput = -0.05
+			RGO_throughput = 0.075
+			factory_throughput = 0.05
 			factory_output = 0.05
 			minimum_wage = 0.03
 		}
 		low_subsidies = { #slightly influential
 			tax_efficiency = 0.00
-			RGO_throughput = 0.00
-			factory_throughput = 0.00
+			RGO_throughput = 0.05
+			factory_throughput = 0.10
 			factory_output = 0.10
 			minimum_wage = 0.06
 		}
 		acceptable_subsidies = { #influential
 			tax_efficiency = -0.025
-			RGO_throughput = -0.05
-			factory_throughput = 0.05
+			RGO_throughput = 0.025
+			factory_throughput = 0.15
 			factory_output = 0.15
 			minimum_wage = 0.09
 		}
 		good_subsidies = { #very influential
 			tax_efficiency = -0.05
-			RGO_throughput = -0.10
-			factory_throughput = 0.10
+			RGO_throughput = 0.00
+			factory_throughput = 0.20
 			factory_output = 0.20
 			minimum_wage = 0.12
 		}
