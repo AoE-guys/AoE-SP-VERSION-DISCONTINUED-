@@ -1531,20 +1531,20 @@ ideologies = {
 			factor = 1.2
 			ruling_party_ideology = reactionary
 		}
-		modifier = {
-			factor = 1.2
-			NOT = { literacy = 0.30 }
-		}
+		#modifier = {
+		#	factor = 1.2
+		#	NOT = { literacy = 0.30 }
+		#}
 		modifier = {
 			factor = 1.2
 			country = {
 				NOT = { plurality = 20 }
 			}
 		}
-		modifier = {
-			factor = 0.5
-			consciousness = 6
-		}		
+		#modifier = {
+		#	factor = 0.5
+		#	consciousness = 6
+		#}		
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.15}
@@ -1954,10 +1954,10 @@ ideologies = {
 			country = { has_country_flag = international_zone }
 		}
 		
-		modifier = {
-			factor = 0.1
-			NOT = { militancy = 6 }
-		}
+		#modifier = {
+		#	factor = 0.1
+		#	NOT = { militancy = 6 }
+		#}
 		
 		modifier = {
 			factor = 1.5

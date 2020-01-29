@@ -1701,10 +1701,10 @@ ideologies = {
 	
 	reactionary = {
 		factor = 5
-		modifier = {
-			factor = 0.5
-			not = { militancy = 6 }
-		}
+		#modifier = {
+		#	factor = 0.5
+		#	not = { militancy = 6 }
+		#}
 		modifier = {
 			factor = 1.2
 			ruling_party_ideology = reactionary
@@ -1746,10 +1746,10 @@ ideologies = {
 			}
 		}
 		
-		modifier = {
-			factor = 0.5
-			consciousness = 6
-		}		
+		#modifier = {
+		#	factor = 0.5
+		#	consciousness = 6
+		#}		
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.15}
@@ -2154,10 +2154,10 @@ ideologies = {
 			}
 		}
 		
-		modifier = {
-			factor = 0.1
-			NOT = { militancy = 6 }
-		}
+		#modifier = {
+		#	factor = 0.1
+		#	NOT = { militancy = 6 }
+		#}
 		modifier = {
 			factor = 2
 			ruling_party_ideology = communist 
