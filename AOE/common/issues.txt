@@ -722,6 +722,7 @@ social_reforms = {
 			factory_throughput = 0.00
 			education_efficiency_modifier = 0.10
 			minimum_wage = 0.00
+			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_wage = { #influential
 			tax_efficiency = -0.025
@@ -729,6 +730,7 @@ social_reforms = {
 			factory_throughput = 0.05
 			education_efficiency_modifier = 0.05
 			minimum_wage = 0.03
+			allow = { has_global_flag = factions_setup_done }
 		}
 		low_minimum_wage = { #silghtly influential
 			tax_efficiency = 0.00
@@ -736,6 +738,7 @@ social_reforms = {
 			factory_throughput = 0.10
 			education_efficiency_modifier = 0.00
 			minimum_wage = 0.06
+			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_minimum_wage = { #marginally relevant
 			tax_efficiency = 0.025
@@ -743,6 +746,7 @@ social_reforms = {
 			factory_throughput = 0.15
 			education_efficiency_modifier = -0.05
 			minimum_wage = 0.09
+			allow = { has_global_flag = factions_setup_done }
 		}
 		good_minimum_wage = { #irrelevant
 			tax_efficiency = 0.05
@@ -750,6 +754,7 @@ social_reforms = {
 			factory_throughput = 0.20
 			education_efficiency_modifier = -0.10
 			minimum_wage = 0.12
+			allow = { has_global_flag = factions_setup_done }
 		}
 	}
 	work_hours = { #gentry
@@ -760,30 +765,35 @@ social_reforms = {
 			RGO_throughput = 0.00
 			factory_throughput = 0.00
 			minimum_wage = 0.00
+			allow = { has_global_flag = factions_setup_done }
 		}
 		fourteen_hours = { #marginally relevant
 			tax_efficiency = 0.025
 			RGO_throughput = 0.025
 			factory_throughput = 0.025
 			minimum_wage = 0.03
+			allow = { has_global_flag = factions_setup_done }
 		}
 		twelve_hours = { #slightly influential
 			tax_efficiency = 0.00
 			RGO_throughput = 0.05
 			factory_throughput = 0.05
 			minimum_wage = 0.06
+			allow = { has_global_flag = factions_setup_done }
 		}
 		ten_hours = { #influential
 			tax_efficiency = -0.025
 			RGO_throughput = 0.075
 			factory_throughput = 0.075
 			minimum_wage = 0.09
+			allow = { has_global_flag = factions_setup_done }
 		}
 		eight_hours = { #very influential
 			tax_efficiency = -0.05
 			RGO_throughput = 0.10
 			factory_throughput = 0.10
 			minimum_wage = 0.12
+			allow = { has_global_flag = factions_setup_done }
 		}
 	}
 	safety_regulations = { #noblity
@@ -795,6 +805,7 @@ social_reforms = {
 			factory_throughput = 0.00
 			goods_demand = -0.20
 			minimum_wage = 0.00
+			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_safety = { #influential
 			tax_efficiency = -0.025
@@ -802,6 +813,7 @@ social_reforms = {
 			factory_throughput = 0.05
 			goods_demand = -0.15
 			minimum_wage = 0.03
+			allow = { has_global_flag = factions_setup_done }
 		}
 		low_safety = { #slightly influential
 			tax_efficiency = 0.00
@@ -809,6 +821,7 @@ social_reforms = {
 			factory_throughput = 0.10
 			goods_demand = -0.10
 			minimum_wage = 0.06
+			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_safety = { #marginally relevant
 			tax_efficiency = 0.025
@@ -816,6 +829,7 @@ social_reforms = {
 			factory_throughput = 0.15
 			goods_demand = -0.05
 			minimum_wage = 0.09
+			allow = { has_global_flag = factions_setup_done }
 		}
 		good_safety = { #irrelevant
 			tax_efficiency = 0.05
@@ -823,6 +837,7 @@ social_reforms = {
 			factory_throughput = 0.20
 			goods_demand = 0.00
 			minimum_wage = 0.12
+			allow = { has_global_flag = factions_setup_done }
 		}
 	}
 	
@@ -834,6 +849,7 @@ social_reforms = {
 			factory_throughput = 0.00
 			factory_output = 0.00
 			minimum_wage = 0.00
+			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_subsidies = { #marginally relevant
 			tax_efficiency = 0.025
@@ -841,6 +857,7 @@ social_reforms = {
 			factory_throughput = 0.05
 			factory_output = 0.05
 			minimum_wage = 0.03
+			allow = { has_global_flag = factions_setup_done }
 		}
 		low_subsidies = { #slightly influential
 			tax_efficiency = 0.00
@@ -848,6 +865,7 @@ social_reforms = {
 			factory_throughput = 0.10
 			factory_output = 0.10
 			minimum_wage = 0.06
+			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_subsidies = { #influential
 			tax_efficiency = -0.025
@@ -855,6 +873,7 @@ social_reforms = {
 			factory_throughput = 0.15
 			factory_output = 0.15
 			minimum_wage = 0.09
+			allow = { has_global_flag = factions_setup_done }
 		}
 		good_subsidies = { #very influential
 			tax_efficiency = -0.05
@@ -862,6 +881,7 @@ social_reforms = {
 			factory_throughput = 0.20
 			factory_output = 0.20
 			minimum_wage = 0.12
+			allow = { has_global_flag = factions_setup_done }
 		}
 	}
 	pensions = { #army
@@ -873,6 +893,7 @@ social_reforms = {
 			min_military_spending = 0.00
 			max_military_spending = 0.00
 			mobilisation_size = 0.00
+			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_pensions = { #marginally relevant
 			land_organisation = 0.15
@@ -881,6 +902,7 @@ social_reforms = {
 			min_military_spending = 0.10
 			max_military_spending = 0.10
 			mobilisation_size = 0.01
+			allow = { has_global_flag = factions_setup_done }
 		}
 		low_pensions = { #slightly influential
 			land_organisation = 0.30
@@ -889,6 +911,7 @@ social_reforms = {
 			min_military_spending = 0.20
 			max_military_spending = 0.20
 			mobilisation_size = 0.02
+			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_pensions = { #influential
 			land_organisation = 0.45
@@ -897,6 +920,7 @@ social_reforms = {
 			min_military_spending = 0.30
 			max_military_spending = 0.30
 			mobilisation_size = 0.03
+			allow = { has_global_flag = factions_setup_done }
 		}
 		good_pensions = { #very influential
 			land_organisation = 0.60
@@ -905,6 +929,7 @@ social_reforms = {
 			min_military_spending = 0.40
 			max_military_spending = 0.40
 			mobilisation_size = 0.04
+			allow = { has_global_flag = factions_setup_done }
 		}
 	}
 	health_care = { #bureaucracy 
@@ -916,6 +941,7 @@ social_reforms = {
 			education = 0.00
 			min_social_spending = 0.05
 			pension_level = 0.25
+			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_health_care = { #marginally relevant
 	        tax_efficiency = 0.025
@@ -923,6 +949,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.05
 			min_social_spending = 0.10
 			pension_level = 0.50
+			allow = { has_global_flag = factions_setup_done }
 		}
 		low_health_care = { #slightly influential
 	        tax_efficiency = 0.05
@@ -930,6 +957,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.10
 			min_social_spending = 0.15
 			pension_level = 0.75
+			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_health_care = { #influential
 	        tax_efficiency = 0.075
@@ -937,6 +965,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.15
 			min_social_spending = 0.20
 			pension_level = 1.00
+			allow = { has_global_flag = factions_setup_done }
 		}
 		good_health_care = { #very influential
 	        tax_efficiency = 0.10
@@ -944,6 +973,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.20
 			min_social_spending = 0.25
 			pension_level = 1.25
+			allow = { has_global_flag = factions_setup_done }
 		}
 	}
 
