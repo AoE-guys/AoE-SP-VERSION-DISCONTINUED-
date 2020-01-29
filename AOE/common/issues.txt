@@ -764,6 +764,7 @@ social_reforms = {
 			tax_efficiency = 0.05
 			RGO_throughput = 0.00
 			factory_throughput = 0.00
+			factory_input = 0.00
 			minimum_wage = 0.00
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -771,6 +772,7 @@ social_reforms = {
 			tax_efficiency = 0.025
 			RGO_throughput = 0.025
 			factory_throughput = 0.025
+			factory_input = -0.05
 			minimum_wage = 0.03
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -778,6 +780,7 @@ social_reforms = {
 			tax_efficiency = 0.00
 			RGO_throughput = 0.05
 			factory_throughput = 0.05
+			factory_input = -0.10
 			minimum_wage = 0.06
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -785,6 +788,7 @@ social_reforms = {
 			tax_efficiency = -0.025
 			RGO_throughput = 0.075
 			factory_throughput = 0.075
+			factory_input = -0.15
 			minimum_wage = 0.09
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -792,6 +796,7 @@ social_reforms = {
 			tax_efficiency = -0.05
 			RGO_throughput = 0.10
 			factory_throughput = 0.10
+			factory_input = -0.20
 			minimum_wage = 0.12
 			allow = { has_global_flag = factions_setup_done }
 		}

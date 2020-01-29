@@ -381,6 +381,7 @@ country_event = {
 	id = 9999882
 	title = "Change in the Balance of Power"
 	desc = "Our recent actions caused change in the balance of powers, which caused mixed reactions among our subjects."	
+	picture = "estates_general"
     #is_triggered_only = yes
     trigger = {
 	           has_global_flag = factions_setup_done
