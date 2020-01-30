@@ -28,7 +28,7 @@ factory_template = {
 	
 	}
 	type = factory
-	workforce = 5000 
+	workforce = 2500 
 }
 
 cheap_factory_template = {
@@ -57,7 +57,7 @@ cheap_factory_template = {
 	
 	}
 	type = factory
-	workforce = 5000 
+	workforce = 2500 
 }
 
 machine_part_user_template = {
@@ -86,7 +86,7 @@ machine_part_user_template = {
 	
 	}
 	type = factory
-	workforce = 5000 
+	workforce = 2500 
 }
 
 cement_template = {
@@ -116,7 +116,7 @@ cement_template = {
 	
 	}
 	type = factory
-	workforce = 5000 
+	workforce = 2500 
 }
 
 farming_factory_template = {
@@ -126,7 +126,7 @@ farming_factory_template = {
 	}
 	
 	owner = {
-		poptype = labourers 
+		poptype = aristocrats 
 		effect = input
 		effect_multiplier = -2.5
 	}
@@ -146,7 +146,7 @@ farming_factory_template = {
 	
 	}
 	type = factory
-	workforce = 20000 
+	workforce = 10000 
 }
 
 #mining_factory_template = {
@@ -1163,14 +1163,14 @@ orchard = {
 precious_metal_mine = {
 	template = RGO_template_labourers
 	output_goods = precious_metal 
-	value = 10
+	value = 15
 	farm = yes
 }
 
 precious_goods_market = {
 	template = RGO_template_labourers
 	output_goods = precious_goods
-	value = 2.0
+	value = 3.0
 	farm = yes
 	#mine = yes
 }

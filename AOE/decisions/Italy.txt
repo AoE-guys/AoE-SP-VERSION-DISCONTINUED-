@@ -1,23 +1,23 @@
 political_decisions = {
-	#accademia_della_crusca = {
-    #    potential = {
-    #       	tag = TUS
-    #        NOT = { has_country_flag = accademia_della_crusca }
-	#	}
-    #
-	#	allow = {
-	#		romanticism = 1
-	#		idealism = 1
-	#		money = 40000
-	#	}
-    #
-	#	effect = { 
-    #       	treasury = -80000
-    #        prestige = 15                   
-    #        political_reform = free_press
-    #        set_country_flag = accademia_della_crusca
-    #    }
-	#}
+	accademia_della_crusca = {
+        potential = {
+           	tag = TUS
+            NOT = { has_country_flag = accademia_della_crusca }
+		}
+
+		allow = {
+			romanticism = 1
+			idealism = 1
+			money = 40000
+		}
+
+		effect = { 
+           	treasury = -80000
+            prestige = 15                   
+            political_reform = free_press
+            set_country_flag = accademia_della_crusca
+        }
+	}
 
 	#plombieres = {
 	#	picture = cavours_diplomacy

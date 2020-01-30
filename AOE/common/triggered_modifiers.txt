@@ -3,91 +3,91 @@
 #
 # Effects are fully scriptable here.
 
-#trinket_health_care_fully_funded = {
-#	trigger = {
-#		exists = yes
-#		health_care = trinket_health_care
-#		administration_spending = 0.2
-#	}
-#	global_population_growth = 0.001
-#	icon = 19
-#}
-#
-#low_health_care_fully_funded = {
-#	trigger = {
-#		exists = yes
-#		health_care = low_health_care
-#		OR = {
-#			AND = {
-#				ai = yes
-#				administration_spending = 0.25
-#			}
-#			AND = {
-#				ai = no
-#				administration_spending = 0.3
-#			}
-#		}
-#	}
-#	global_population_growth = 0.001
-#	icon = 19
-#}
-#
-#acceptable_health_care_fully_funded = {
-#	trigger = {
-#		exists = yes
-#		health_care = acceptable_health_care
-#		OR = {
-#			AND = {
-#				ai = yes
-#				administration_spending = 0.3
-#			}
-#			AND = {
-#				ai = no
-#				administration_spending = 0.4
-#			}
-#		}
-#	}
-#	global_population_growth = 0.001
-#	icon = 19
-#}
-#
-#good_health_care_fully_funded = {
-#	trigger = {
-#		exists = yes
-#		health_care = good_health_care
-#		OR = {
-#			AND = {
-#				ai = yes
-#				administration_spending = 0.3
-#			}
-#			AND = {
-#				ai = no
-#				administration_spending = 0.5
-#			}
-#		}
-#	}
-#	global_population_growth = 0.001
-#	icon = 19
-#}
-#
-#health_care_fully_funded = {
-#	trigger = {
-#		exists = yes
-#		health_care = good_health_care
-#		OR = {
-#			AND = {
-#				ai = yes
-#				administration_spending = 0.74
-#			}
-#			AND = {
-#				ai = no
-#				administration_spending = 0.99
-#			}
-#		}
-#	}
-#	global_population_growth = 0.002
-#	icon = 19
-#}
+trinket_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = trinket_health_care
+		administration_spending = 0.2
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+low_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = low_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.25
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.3
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+acceptable_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = acceptable_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.3
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.4
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+good_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.3
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.5
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.74
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.99
+			}
+		}
+	}
+	global_population_growth = 0.002
+	icon = 19
+}
 
 low_schools_fully_funded = {
 	trigger = {
@@ -525,22 +525,22 @@ landlocked_nation_import = {
 	icon = 8
 }
 
-#social_reformed_nation = {
-#		trigger = {
-#			exists = yes
-#			wage_reform = good_minimum_wage
-#			work_hours = eight_hours
-#			safety_regulations = good_safety
-#			unemployment_subsidies = good_subsidies
-#			pensions = good_pensions
-#			health_care = good_health_care
-#			school_reforms = good_schools
-#			penal_system = rehabilitation
-#		}
-#		
-#	social_reform_desire = -0.3
-#	icon = 13
-#}
+social_reformed_nation = {
+		trigger = {
+			exists = yes
+			wage_reform = good_minimum_wage
+			work_hours = eight_hours
+			safety_regulations = good_safety
+			unemployment_subsidies = good_subsidies
+			pensions = good_pensions
+			health_care = good_health_care
+			school_reforms = good_schools
+			penal_system = rehabilitation
+		}
+		
+	social_reform_desire = -0.3
+	icon = 13
+}
 
 educational_spen = {
 		trigger = {

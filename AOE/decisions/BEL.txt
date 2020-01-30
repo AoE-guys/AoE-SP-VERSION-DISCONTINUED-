@@ -1,211 +1,211 @@
 political_decisions = {
-	#international_african_association = {
-	#	picture = the_congo_conference
-	#	potential = {
-	#		year = 1870
-	#		capital_scope = { continent = europe }
-	#		NOT = { tag = TUR }
-	#		NOT = { tag = RUS }
-	#		NOT = { tag = SAR }
-	#		NOT = { tag = SIC }
-	#		NOT = { has_global_flag = called_congo_conference }
-	#		1984 = { empty = yes }
-	#		any_owned_province = { has_building = naval_base }
-	#		NOT = { is_vassal = yes }
-	#		num_of_cities = 6
-	#		number_of_states = 2
-	#	}
-    #
-	#	allow = {
-	#		has_global_flag = berlin_conference
-	#		slavery = no_slavery
-	#		war = no
-	#		total_pops = 1000000
-	#		OR = {
-	#			AND = {
-	#				is_secondary_power = yes
-	#				is_greater_power = no
-	#			}
-	#			tag = BEL
-	#		}
-	#		OR = {
-	#			government = hms_government
-	#			government = prussian_constitutionalism
-	#			government = absolute_monarchy
-	#		}
-	#		OR = {
-	#			AND = {	
-	#				NOT = { badboy = 0.4 }
-	#				NOT = { num_of_vassals = 1 }
-	#				NOT = { any_owned_province = { is_colonial = yes } }
-	#				blue_and_brown_water_schools = 1
-	#			}
-	#			AND = {
-	#				NOT = { badboy = 0.2 }
-	#				NOT = { num_of_vassals = 1 }
-	#				NOT = { any_owned_province = { is_colonial = yes } }
-	#				blue_and_brown_water_schools = 1
-	#			}
-	#			AND = {
-	#				NOT = { badboy = 0.1 }
-	#				NOT = { 
-	#					any_owned_province = { continent = africa } 
-	#					any_owned_province = { continent = south_west_africa } 
-	#					any_owned_province = { continent = east_africa } 
-	#					any_owned_province = { continent = west_africa }
-	#					any_owned_province = { continent = central_africa }
-	#				}
-	#				naval_logistics = 1
-	#				year = 1885
-	#			}
-	#			AND = {
-	#				NOT = { badboy = 0.01 }
-	#				NOT = { 
-	#					any_owned_province = { continent = africa } 
-	#					any_owned_province = { continent = south_west_africa } 
-	#					any_owned_province = { continent = east_africa } 
-	#					any_owned_province = { continent = west_africa }
-	#					any_owned_province = { continent = central_africa }
-	#				}
-	#				NOT = { any_owned_province = { is_colonial = yes } }
-	#				raider_group_doctrine = 1
-	#				year = 1886
-	#			}
-	#			AND = {
-	#				tag = BEL
-	#				NOT = { badboy = 0.5 }
-	#				NOT = { 
-	#					any_owned_province = { continent = africa } 
-	#					any_owned_province = { continent = south_west_africa } 
-	#					any_owned_province = { continent = east_africa } 
-	#					any_owned_province = { continent = west_africa }
-	#					any_owned_province = { continent = central_africa }
-	#				}
-	#				NOT = { any_owned_province = { is_colonial = yes } }
-	#				raider_group_doctrine = 1
-	#				year = 1884
-	#			}
-	#		}
-	#	}
-    #
-	#	effect = {
-	#		set_global_flag = called_congo_conference
-	#		any_country = { 
-	#			limit = { is_greater_power = yes capital_scope = {continent = europe } NOT = { tag = TUR tag = RUS tag = THIS } }
-	#			country_event = { id = 955182 days = 0 }
-	#		}
-	#		set_variable = { which = no_to_congo value = 0 }
-	#		set_variable = { which = yes_to_congo value = 0 }
-	#		set_variable = { which = abstained_to_congo value = 0 }
-	#	}
-	#	ai_will_do = { factor = 1 }
-	#}
+	international_african_association = {
+		picture = the_congo_conference
+		potential = {
+			year = 1870
+			capital_scope = { continent = europe }
+			NOT = { tag = TUR }
+			NOT = { tag = RUS }
+			NOT = { tag = SAR }
+			NOT = { tag = SIC }
+			NOT = { has_global_flag = called_congo_conference }
+			1984 = { empty = yes }
+			any_owned_province = { has_building = naval_base }
+			NOT = { is_vassal = yes }
+			num_of_cities = 6
+			number_of_states = 2
+		}
+
+		allow = {
+			has_global_flag = berlin_conference
+			slavery = no_slavery
+			war = no
+			total_pops = 1000000
+			OR = {
+				AND = {
+					is_secondary_power = yes
+					is_greater_power = no
+				}
+				tag = BEL
+			}
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
+			OR = {
+				AND = {	
+					NOT = { badboy = 0.4 }
+					NOT = { num_of_vassals = 1 }
+					NOT = { any_owned_province = { is_colonial = yes } }
+					blue_and_brown_water_schools = 1
+				}
+				AND = {
+					NOT = { badboy = 0.2 }
+					NOT = { num_of_vassals = 1 }
+					NOT = { any_owned_province = { is_colonial = yes } }
+					blue_and_brown_water_schools = 1
+				}
+				AND = {
+					NOT = { badboy = 0.1 }
+					NOT = { 
+						any_owned_province = { continent = africa } 
+						any_owned_province = { continent = south_west_africa } 
+						any_owned_province = { continent = east_africa } 
+						any_owned_province = { continent = west_africa }
+						any_owned_province = { continent = central_africa }
+					}
+					naval_logistics = 1
+					year = 1885
+				}
+				AND = {
+					NOT = { badboy = 0.01 }
+					NOT = { 
+						any_owned_province = { continent = africa } 
+						any_owned_province = { continent = south_west_africa } 
+						any_owned_province = { continent = east_africa } 
+						any_owned_province = { continent = west_africa }
+						any_owned_province = { continent = central_africa }
+					}
+					NOT = { any_owned_province = { is_colonial = yes } }
+					raider_group_doctrine = 1
+					year = 1886
+				}
+				AND = {
+					tag = BEL
+					NOT = { badboy = 0.5 }
+					NOT = { 
+						any_owned_province = { continent = africa } 
+						any_owned_province = { continent = south_west_africa } 
+						any_owned_province = { continent = east_africa } 
+						any_owned_province = { continent = west_africa }
+						any_owned_province = { continent = central_africa }
+					}
+					NOT = { any_owned_province = { is_colonial = yes } }
+					raider_group_doctrine = 1
+					year = 1884
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = called_congo_conference
+			any_country = { 
+				limit = { is_greater_power = yes capital_scope = {continent = europe } NOT = { tag = TUR tag = RUS tag = THIS } }
+				country_event = { id = 955182 days = 0 }
+			}
+			set_variable = { which = no_to_congo value = 0 }
+			set_variable = { which = yes_to_congo value = 0 }
+			set_variable = { which = abstained_to_congo value = 0 }
+		}
+		ai_will_do = { factor = 1 }
+	}
 	
-	#force_publique = {
-	#picture = force_publique
-	#	potential = {
-	#		tag = BEL
-	#		OR = {
-	#			government = hms_government
-	#			government = prussian_constitutionalism
-	#			government = absolute_monarchy
-	#		}
-	#		has_country_flag = colonial_beginnings
-	#		NOT = { has_country_flag = force_publique_formed }
-	#	}
-	#	allow = {
-	#		OR = {
-	#			any_owned_province = { continent = africa } 
-	#			any_owned_province = { continent = south_west_africa } 
-	#			any_owned_province = { continent = east_africa } 
-	#			any_owned_province = { continent = west_africa }
-	#			any_owned_province = { continent = central_africa }
-	#		}
-	#		military_logistics = 1
-	#	}
-	#	effect = {
-	#		set_country_flag = force_publique_formed
-	#		any_pop = {
-	#			limit = {
-	#				location = { 
-	#					OR = {
-	#						continent = africa 
-	#						continent = south_west_africa 
-	#						continent = east_africa
-	#						continent = west_africa
-	#						continent = central_africa
-	#					}
-	#				}
-	#				NOT = {
-	#					has_pop_culture = wallonian
-	#					has_pop_culture = flemish
-	#				}
-	#			}
-	#			consciousness = 4
-	#			militancy = 3
-	#		}
-	#		any_owned = {
-	#			limit = {
-	#				OR = {
-	#					continent = africa 
-	#					continent = south_west_africa 
-	#					continent = east_africa
-	#					continent = west_africa
-	#					continent = central_africa
-	#				}
-	#			}
-	#			add_province_modifier = {
-	#				name = force_publique
-	#				duration = -1
-	#			}
-	#		}
-	#		any_greater_power = {
-	#			relation = {
-	#				who = THIS
-	#				value = -40
-	#			}
-	#		}
-	#	}
-	#}
-	#
-	#rename_the_congo = {
-	#	potential = {
-	#		tag = BEL
-	#		exists = yes
-	#		OR = {
-	#			AND = {
-	#				exists = CNG
-	#				CNG = { vassal_of = THIS }
-	#			}
-	#			AND = {
-	#				owns = 1987
-	#				owns = 1982
-	#				owns = 1996
-	#			}
-	#		}
-	#		NOT = { has_global_flag = congo_renamed }
-	#		NOT = { has_global_flag = congo_liferating_done }
-	#	}
-	#	
-	#	allow = {
-	#		invention = mission_to_civilize
-	#	}
-	#	
-	#	effect = {
-	#		1987 = { change_province_name = "Elisabethville" life_rating = 25 }		
-	#		1982 = { fort = 1 change_province_name = "Leopoldville" }
-	#		1996 = { change_province_name = "Stanleyville" life_rating = 25 }
-	#		1991 = { change_province_name = "Costermansville" life_rating = 25 }
-	#		1989 = { change_province_name = "Albertville" life_rating = 25 }
-	#		1984 = { change_province_name = "Luluabourg" life_rating = 25 }
-	#		1994 = { change_province_name = "Port-Francqui" life_rating = 25 }
-	#		1985 = { change_province_name = "Banningville" life_rating = 25 }
-	#		1993 = { change_province_name = "Coquilhatville" life_rating = 25 }
-	#		CNG = { capital = 1982 }
-	#		prestige = 10
-	#		set_global_flag = congo_renamed
-	#	}
-	#}
+	force_publique = {
+	picture = force_publique
+		potential = {
+			tag = BEL
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
+			has_country_flag = colonial_beginnings
+			NOT = { has_country_flag = force_publique_formed }
+		}
+		allow = {
+			OR = {
+				any_owned_province = { continent = africa } 
+				any_owned_province = { continent = south_west_africa } 
+				any_owned_province = { continent = east_africa } 
+				any_owned_province = { continent = west_africa }
+				any_owned_province = { continent = central_africa }
+			}
+			military_logistics = 1
+		}
+		effect = {
+			set_country_flag = force_publique_formed
+			any_pop = {
+				limit = {
+					location = { 
+						OR = {
+							continent = africa 
+							continent = south_west_africa 
+							continent = east_africa
+							continent = west_africa
+							continent = central_africa
+						}
+					}
+					NOT = {
+						has_pop_culture = wallonian
+						has_pop_culture = flemish
+					}
+				}
+				consciousness = 4
+				militancy = 3
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						continent = africa 
+						continent = south_west_africa 
+						continent = east_africa
+						continent = west_africa
+						continent = central_africa
+					}
+				}
+				add_province_modifier = {
+					name = force_publique
+					duration = -1
+				}
+			}
+			any_greater_power = {
+				relation = {
+					who = THIS
+					value = -40
+				}
+			}
+		}
+	}
+	
+	rename_the_congo = {
+		potential = {
+			tag = BEL
+			exists = yes
+			OR = {
+				AND = {
+					exists = CNG
+					CNG = { vassal_of = THIS }
+				}
+				AND = {
+					owns = 1987
+					owns = 1982
+					owns = 1996
+				}
+			}
+			NOT = { has_global_flag = congo_renamed }
+			NOT = { has_global_flag = congo_liferating_done }
+		}
+		
+		allow = {
+			invention = mission_to_civilize
+		}
+		
+		effect = {
+			1987 = { change_province_name = "Elisabethville" life_rating = 25 }		
+			1982 = { fort = 1 change_province_name = "Leopoldville" }
+			1996 = { change_province_name = "Stanleyville" life_rating = 25 }
+			1991 = { change_province_name = "Costermansville" life_rating = 25 }
+			1989 = { change_province_name = "Albertville" life_rating = 25 }
+			1984 = { change_province_name = "Luluabourg" life_rating = 25 }
+			1994 = { change_province_name = "Port-Francqui" life_rating = 25 }
+			1985 = { change_province_name = "Banningville" life_rating = 25 }
+			1993 = { change_province_name = "Coquilhatville" life_rating = 25 }
+			CNG = { capital = 1982 }
+			prestige = 10
+			set_global_flag = congo_renamed
+		}
+	}
 
 	become_flanders = {
 		picture = become_belgium

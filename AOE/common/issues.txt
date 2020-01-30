@@ -256,7 +256,7 @@ political_reforms = {
 		}
 		landed_voting = {
 			rich_vote = 1
-			middle_vote = 0.05
+			middle_vote = 0
 			poor_vote = 0
 			global_immigrant_attract = 0.01
 			allow = { 
@@ -426,7 +426,7 @@ political_reforms = {
 			mobilisation_economy_impact = 1
 			land_unit_start_experience = 10
 			global_immigrant_attract = -0.1
-			#education_efficiency_modifier = -0.01
+			education_efficiency_modifier = -0.01
 		}
 		four_year_draft = {
 			mobilisation_size = 0.04
@@ -713,277 +713,181 @@ political_reforms = {
 # Social reforms.
 ##########################################
 social_reforms = {
-	wage_reform = { #Church
-		#administrative = yes
+	wage_reform = {
+		administrative = yes
 		next_step_only = yes
-		no_minimum_wage = { #very influential
-			tax_efficiency = -0.05
-			RGO_throughput = 0.20
-			factory_throughput = 0.00
-			education_efficiency_modifier = 0.10
-			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+		no_minimum_wage = {
 		}
-		trinket_wage = { #influential
-			tax_efficiency = -0.025
-			RGO_throughput = 0.15
-			factory_throughput = 0.05
-			education_efficiency_modifier = 0.05
-			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+		trinket_wage = {
+			minimum_wage = 0.15
+			administrative_multiplier = 1
+			global_immigrant_attract = 0.01
 		}
-		low_minimum_wage = { #silghtly influential
-			tax_efficiency = 0.00
-			RGO_throughput = 0.10
-			factory_throughput = 0.10
-			education_efficiency_modifier = 0.00
-			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+		low_minimum_wage = {
+			minimum_wage = 0.25
+			administrative_multiplier = 2
+			global_immigrant_attract = 0.02
 		}
-		acceptable_minimum_wage = { #marginally relevant
-			tax_efficiency = 0.025
-			RGO_throughput = 0.05
-			factory_throughput = 0.15
-			education_efficiency_modifier = -0.05
-			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+		acceptable_minimum_wage = {
+			minimum_wage = 0.5
+			administrative_multiplier = 3
+			global_immigrant_attract = 0.03
 		}
-		good_minimum_wage = { #irrelevant
-			tax_efficiency = 0.05
-			RGO_throughput = 0.00
-			factory_throughput = 0.20
-			education_efficiency_modifier = -0.10
-			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+		good_minimum_wage = {
+			minimum_wage = 0.75
+			administrative_multiplier = 4
+			global_immigrant_attract = 0.04
 		}
 	}
-	work_hours = { #gentry
-		#administrative = yes
+	work_hours = {
+		administrative = yes
 		next_step_only = yes
-		no_work_hour_limit = { #irrelevant
-			tax_efficiency = 0.05
-			RGO_throughput = 0.00
-			factory_throughput = 0.00
-			factory_input = 0.00
-			goods_demand = 0.00
-			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+		no_work_hour_limit = {
 		}
-		fourteen_hours = { #marginally relevant
-			tax_efficiency = 0.025
-			RGO_throughput = 0.025
-			factory_throughput = 0.025
-			factory_input = -0.05
-			goods_demand = 0.05
-			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
-		}
-		twelve_hours = { #slightly influential
-			tax_efficiency = 0.00
-			RGO_throughput = 0.05
-			factory_throughput = 0.05
-			factory_input = -0.10
-			goods_demand = 0.10
-			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
-		}
-		ten_hours = { #influential
-			tax_efficiency = -0.025
-			RGO_throughput = 0.075
-			factory_throughput = 0.075
-			factory_input = -0.15
-			goods_demand = 0.15
-			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
-		}
-		eight_hours = { #very influential
-			tax_efficiency = -0.05
-			RGO_throughput = 0.10
-			factory_throughput = 0.10
-			factory_input = -0.20
-			goods_demand = 0.20
+		fourteen_hours = {
+			factory_throughput = -0.02
+			RGO_throughput = -0.02
+			artisan_throughput = -0.02
 			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+			administrative_multiplier = 1
+			global_immigrant_attract = 0.01
+		}
+		twelve_hours = {
+			factory_throughput = -0.05
+			RGO_throughput = -0.05
+			artisan_throughput = -0.03
+			minimum_wage = 0.25
+			administrative_multiplier = 2
+			global_immigrant_attract = 0.02
+		}
+		ten_hours = {
+			factory_throughput = -0.075
+			RGO_throughput = -0.075
+			artisan_throughput = -0.04
+			minimum_wage = 0.37
+			administrative_multiplier = 3
+			global_immigrant_attract = 0.03
+		}
+		eight_hours = {
+			factory_throughput = -0.1
+			RGO_throughput = -0.1
+			artisan_throughput = -0.05
+			minimum_wage = 0.5
+			administrative_multiplier = 4
+			global_immigrant_attract = 0.04
 		}
 	}
-	safety_regulations = { #nobility
-		#administrative = yes
+	safety_regulations = {
+		administrative = yes
 		next_step_only = yes
-		no_safety = { #very influential
-			tax_efficiency = -0.05
-			RGO_throughput = 0.20
-			factory_throughput = 0.00
-			goods_demand = -0.20
-			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+		no_safety = {
 		}
-		trinket_safety = { #influential
-			tax_efficiency = -0.025
-			RGO_throughput = 0.15
-			factory_throughput = 0.05
-			goods_demand = -0.15
-			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+		trinket_safety = {
+			factory_cost = 0.20
+			factory_maintenance = 0.1
+			administrative_multiplier = 1
+			global_immigrant_attract = 0.01
 		}
-		low_safety = { #slightly influential
-			tax_efficiency = 0.00
-			RGO_throughput = 0.10
-			factory_throughput = 0.10
-			goods_demand = -0.10
-			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+		low_safety = {
+			pension_level = 0.1
+			factory_cost = 0.40
+			factory_maintenance = 0.15
+			RGO_output = -0.02
+			artisan_output = -0.02
+			administrative_multiplier = 2
+			global_immigrant_attract = 0.02
 		}
-		acceptable_safety = { #marginally relevant
-			tax_efficiency = 0.025
-			RGO_throughput = 0.05
-			factory_throughput = 0.15
-			goods_demand = -0.05
-			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+		acceptable_safety = {
+			pension_level = 0.25
+			factory_cost = 0.60
+			factory_maintenance = 0.20
+			RGO_output = -0.03
+			artisan_output = -0.03
+			administrative_multiplier = 3
+			global_immigrant_attract = 0.03
 		}
-		good_safety = { #irrelevant
-			tax_efficiency = 0.05
-			RGO_throughput = 0.00
-			factory_throughput = 0.20
-			goods_demand = 0.00
-			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+		good_safety = {
+			pension_level = 0.5
+			factory_cost = 0.80
+			factory_maintenance = 0.25
+			RGO_output = -0.04
+			artisan_throughput = -0.04
+			administrative_multiplier = 4
+			global_immigrant_attract = 0.04
 		}
 	}
 	
-	unemployment_subsidies = { #burghers
+	unemployment_subsidies = {
 		next_step_only = yes
-		no_subsidies = { #irrelevant
-			tax_efficiency = 0.05
-			RGO_throughput = 0.10
-			factory_throughput = 0.00
-			factory_output = 0.00
-			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+		no_subsidies = {
 		}
-		trinket_subsidies = { #marginally relevant
-			tax_efficiency = 0.025
-			RGO_throughput = 0.075
-			factory_throughput = 0.05
-			factory_output = 0.05
-			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+		trinket_subsidies = {
+			unemployment_benefit = 0.25
+			global_immigrant_attract = 0.01
 		}
-		low_subsidies = { #slightly influential
-			tax_efficiency = 0.00
-			RGO_throughput = 0.05
-			factory_throughput = 0.10
-			factory_output = 0.10
-			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+		low_subsidies = {
+			unemployment_benefit = 0.50
+			global_immigrant_attract = 0.02
 		}
-		acceptable_subsidies = { #influential
-			tax_efficiency = -0.025
-			RGO_throughput = 0.025
-			factory_throughput = 0.15
-			factory_output = 0.15
-			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+		acceptable_subsidies = {
+			unemployment_benefit = 0.75
+			global_immigrant_attract = 0.03
 		}
-		good_subsidies = { #very influential
-			tax_efficiency = -0.05
-			RGO_throughput = 0.00
-			factory_throughput = 0.20
-			factory_output = 0.20
-			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+		good_subsidies = {
+			unemployment_benefit = 1.0
+			global_immigrant_attract = 0.04
 		}
 	}
-	pensions = { #army
+	pensions = {
 		next_step_only = yes
-		no_pensions = { #irrelevant
-			land_organisation = 0.00
-			leadership_modifier = 0.00
-			supply_consumption = 0.00
-			min_military_spending = 0.00
-			max_military_spending = 0.00
-			mobilisation_size = 0.00
-			allow = { has_global_flag = factions_setup_done }
+		no_pensions = {
 		}
-		trinket_pensions = { #marginally relevant
-			land_organisation = 0.15
-			leadership_modifier = 0.15
-			supply_consumption = 0.15
-			min_military_spending = 0.10
-			max_military_spending = 0.10
-			mobilisation_size = 0.01
-			allow = { has_global_flag = factions_setup_done }
+		trinket_pensions = {
+			pension_level	= 0.25
+			global_immigrant_attract = 0.01
 		}
-		low_pensions = { #slightly influential
-			land_organisation = 0.30
-			leadership_modifier = 0.30
-			supply_consumption = 0.30
-			min_military_spending = 0.20
-			max_military_spending = 0.20
-			mobilisation_size = 0.02
-			allow = { has_global_flag = factions_setup_done }
+		low_pensions = {
+			pension_level	= 0.50
+			global_immigrant_attract = 0.02
 		}
-		acceptable_pensions = { #influential
-			land_organisation = 0.45
-			leadership_modifier = 0.45
-			supply_consumption = 0.45
-			min_military_spending = 0.30
-			max_military_spending = 0.30
-			mobilisation_size = 0.03
-			allow = { has_global_flag = factions_setup_done }
+		acceptable_pensions = {
+			pension_level	= 0.75
+			global_immigrant_attract = 0.03
 		}
-		good_pensions = { #very influential
-			land_organisation = 0.60
-			leadership_modifier = 0.60
-			supply_consumption = 0.60
-			min_military_spending = 0.40
-			max_military_spending = 0.40
-			mobilisation_size = 0.04
-			allow = { has_global_flag = factions_setup_done }
+		good_pensions = {
+			pension_level	= 1
+			global_population_growth = 0.001
+			global_immigrant_attract = 0.04
 		}
 	}
-	health_care = { #bureaucracy 
-		#administrative = yes
+	health_care = {
+		administrative = yes
 		next_step_only = yes
-		no_health_care = { #irrelevant
-			tax_efficiency = 0.00
-	        administrative_efficiency_modifier = 0.00
-			education = 0.00
-			min_social_spending = 0.05
-			pension_level = 0.25
-			allow = { has_global_flag = factions_setup_done }
+		no_health_care = {
 		}
-		trinket_health_care = { #marginally relevant
-	        tax_efficiency = 0.025
-	        administrative_efficiency_modifier = 0.10
-			education_efficiency_modifier = 0.05
-			min_social_spending = 0.10
-			pension_level = 0.50
-			allow = { has_global_flag = factions_setup_done }
+		trinket_health_care = {
+			global_population_growth = 0.001
+			administrative_multiplier = 1
+			global_immigrant_attract = 0.01
+			allow = { has_country_flag = medicine_invented }
 		}
-		low_health_care = { #slightly influential
-	        tax_efficiency = 0.05
-	        administrative_efficiency_modifier = 0.20
-			education_efficiency_modifier = 0.10
-			min_social_spending = 0.15
-			pension_level = 0.75
-			allow = { has_global_flag = factions_setup_done }
+		low_health_care = {
+			global_population_growth = 0.002
+			administrative_multiplier = 2
+			global_immigrant_attract = 0.02
+			allow = { has_country_flag = germs_invented }
 		}
-		acceptable_health_care = { #influential
-	        tax_efficiency = 0.075
-	        administrative_efficiency_modifier = 0.30
-			education_efficiency_modifier = 0.15
-			min_social_spending = 0.20
-			pension_level = 1.00
-			allow = { has_global_flag = factions_setup_done }
+		acceptable_health_care = {
+			global_population_growth = 0.003
+			administrative_multiplier = 3
+			global_immigrant_attract = 0.03
+			allow = { has_country_flag = gaslights_invented }
 		}
-		good_health_care = { #very influential
-	        tax_efficiency = 0.10
-	        administrative_efficiency_modifier = 0.40
-			education_efficiency_modifier = 0.20
-			min_social_spending = 0.25
-			pension_level = 1.25
-			allow = { has_global_flag = factions_setup_done }
+		good_health_care = {
+			global_population_growth = 0.004
+			administrative_multiplier = 4
+			global_immigrant_attract = 0.04
+			allow = { has_country_flag = electricity_invented }
 		}
 	}
 

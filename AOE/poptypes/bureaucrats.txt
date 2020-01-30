@@ -240,10 +240,10 @@ country_migration_target = {
 			any_owned_province = {
 				life_rating = 30
 				OR = {
-					#AND = {
-					#	has_pop_type = labourers
-					#	NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
-					#}
+					AND = {
+						has_pop_type = labourers
+						NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
+					}
 					AND = {
 						has_pop_type = farmers
 						NOT = { unemployment_by_type = { value = 0.1 type = farmers } }
@@ -1264,14 +1264,14 @@ promote_to =
 			}
 		}
 	}
-	labourers =  {
+	aristocrats =  {
 		factor = 0.01
 		
 		modifier = {
 			factor = -100
 			OR = {
-				state_scope = { labourers = 0.05 }
-				#country = { government = proletarian_dictatorship }
+				state_scope = { aristocrats = 0.02 }
+				country = { government = proletarian_dictatorship }
 			}
 		}
 
@@ -1384,7 +1384,7 @@ promote_to =
 ideologies = {
 	
 	fascist = {
-		factor = 0
+		factor = 1
 		
 		modifier = {
 			factor = 0.25
@@ -1522,7 +1522,7 @@ ideologies = {
 	}
 	
 	reactionary = {
-		factor = 10
+		factor = 1
 		modifier = {
 			factor = 0.5
 			not = { militancy = 6 }
@@ -1531,20 +1531,20 @@ ideologies = {
 			factor = 1.2
 			ruling_party_ideology = reactionary
 		}
-		#modifier = {
-		#	factor = 1.2
-		#	NOT = { literacy = 0.30 }
-		#}
+		modifier = {
+			factor = 1.2
+			NOT = { literacy = 0.30 }
+		}
 		modifier = {
 			factor = 1.2
 			country = {
 				NOT = { plurality = 20 }
 			}
 		}
-		#modifier = {
-		#	factor = 0.5
-		#	consciousness = 6
-		#}		
+		modifier = {
+			factor = 0.5
+			consciousness = 6
+		}		
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.15}
@@ -1788,7 +1788,7 @@ ideologies = {
 	}
 
 	socialist = {
-		factor = 0
+		factor = 1
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_equality
@@ -1947,17 +1947,17 @@ ideologies = {
 	}
 
 	communist = {
-		factor = 2.5
+		factor = 1
 		
 		modifier = {
 			factor = 0.25
 			country = { has_country_flag = international_zone }
 		}
 		
-		#modifier = {
-		#	factor = 0.1
-		#	NOT = { militancy = 6 }
-		#}
+		modifier = {
+			factor = 0.1
+			NOT = { militancy = 6 }
+		}
 		
 		modifier = {
 			factor = 1.5
@@ -2015,7 +2015,7 @@ ideologies = {
 		}
 	}
 	liberal = {
-		factor = 5
+		factor = 1.1
 		modifier = {
 			factor = 1.2
 			consciousness = 9 
@@ -2127,7 +2127,7 @@ ideologies = {
 		}
 	}
 	anarcho_liberal = {
-		factor = 0
+		factor = 1
 		
 		modifier = {
 			factor = 0.25
@@ -6763,403 +6763,6 @@ rehabilitation = {
 			factor = 1.25
 			unemployment = 0.25
 		}
-	}
-	
-	no_minimum_wage = {
-        factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      wage_reform = no_minimum_wage
-				  wage_reform = trinket_wage
-				  wage_reform = low_minimum_wage
-				  wage_reform = acceptable_minimum_wage
-				  wage_reform = good_minimum_wage
-            }			
-        }		
-	}	
-	
-	trinket_wage = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      #wage_reform = no_minimum_wage
-				  wage_reform = trinket_wage
-				  wage_reform = low_minimum_wage
-				  wage_reform = acceptable_minimum_wage
-				  wage_reform = good_minimum_wage
-            }			
-        }		
-	}
-	low_minimum_wage = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      wage_reform = no_minimum_wage
-				  #wage_reform = trinket_wage
-				  wage_reform = low_minimum_wage
-				  wage_reform = acceptable_minimum_wage
-				  wage_reform = good_minimum_wage
-            }			
-        }					
-	}
-	acceptable_minimum_wage = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      wage_reform = no_minimum_wage
-				  wage_reform = trinket_wage
-				  #wage_reform = low_minimum_wage
-				  wage_reform = acceptable_minimum_wage
-				  wage_reform = good_minimum_wage
-            }			
-        }		
-	}
-	good_minimum_wage = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      wage_reform = no_minimum_wage
-				  wage_reform = trinket_wage
-				  wage_reform = low_minimum_wage
-				  #wage_reform = acceptable_minimum_wage
-				  wage_reform = good_minimum_wage
-            }			
-        }		
-	}
-	
-    no_safety = {
-        factor = 5
-		modifier = {
-			factor = 0 
-			OR = {
-			      safety_regulations = no_safety
-				  safety_regulations = trinket_safety
-				  safety_regulations = low_safety
-				  safety_regulations = acceptable_safety
-				  safety_regulations = good_safety
-            }			
-        }
-    }	
-	trinket_safety = { 
-		factor = 5
-		modifier = {
-			factor = 0 
-			OR = {
-			      #safety_regulations = no_safety
-				  safety_regulations = trinket_safety
-				  safety_regulations = low_safety
-				  safety_regulations = acceptable_safety
-				  safety_regulations = good_safety
-            }			
-        }
-	}
-	low_safety = { 
-		factor = 5
-		modifier = {
-			factor = 0 
-			OR = {
-			      safety_regulations = no_safety
-				  #safety_regulations = trinket_safety
-				  safety_regulations = low_safety
-				  safety_regulations = acceptable_safety
-				  safety_regulations = good_safety
-            }			
-        }
-	}
-	acceptable_safety = { 
-		factor = 5
-		modifier = {
-			factor = 0 
-			OR = {
-			      safety_regulations = no_safety
-				  safety_regulations = trinket_safety
-				  #safety_regulations = low_safety
-				  safety_regulations = acceptable_safety
-				  safety_regulations = good_safety
-            }			
-        }
-	}
-	good_safety  = { 
-		factor = 5
-		modifier = {
-			factor = 0 
-			OR = {
-			      safety_regulations = no_safety
-				  safety_regulations = trinket_safety
-				  safety_regulations = low_safety
-				  #safety_regulations = acceptable_safety
-				  safety_regulations = good_safety
-            }			
-        }
-	}
-	
-	no_subsidies = {
-		factor = 3
-		modifier = {
-			factor = 0 
-			OR = {
-			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
-            }			
-        }
-	}	
-	trinket_subsidies = { 
-		factor = 3
-		modifier = {
-			factor = 0 
-			OR = {
-			      #unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
-            }			
-        }
-	}
-	low_subsidies = { 
-		factor = 3
-		modifier = {
-			factor = 0 
-			OR = {
-			      unemployment_subsidies = no_subsidies
-				  #unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
-            }			
-        }
-	}
-	acceptable_subsidies = { 
-		factor = 3
-		modifier = {
-			factor = 0 
-			OR = {
-			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  #unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
-            }			
-        }
-	}
-	good_subsidies = { 
-		factor = 3
-		modifier = {
-			factor = 0 
-			OR = {
-			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  #unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
-            }			
-        }
-	}
-	
-	no_pensions = { #irrelevant
-		factor = 3.0
-		modifier = {
-			factor = 0 
-			OR = {
-			      pensions = no_pensions
-				  pensions = trinket_pensions
-				  pensions = low_pensions
-				  pensions = acceptable_pensions
-				  pensions = good_pensions
-            }			
-        }		
-	}	
-	trinket_pensions = { 
-		factor = 3.0
-		modifier = {
-			factor = 0 
-			OR = {
-			      #pensions = no_pensions
-				  pensions = trinket_pensions
-				  pensions = low_pensions
-				  pensions = acceptable_pensions
-				  pensions = good_pensions
-            }			
-        }
-	}
-	low_pensions = { 
-		factor = 3.0
-		modifier = {
-			factor = 0 
-			OR = {
-			      pensions = no_pensions
-				  #pensions = trinket_pensions
-				  pensions = low_pensions
-				  pensions = acceptable_pensions
-				  pensions = good_pensions
-            }			
-        }
-	}
-	acceptable_pensions = { 
-		factor = 3.0
-		modifier = {
-			factor = 0 
-			OR = {
-			      pensions = no_pensions
-				  pensions = trinket_pensions
-				  #pensions = low_pensions
-				  pensions = acceptable_pensions
-				  pensions = good_pensions
-            }			
-        }
-	}
-	good_pensions = { 
-		factor = 3.0
-		modifier = {
-			factor = 0 
-			OR = {
-			      pensions = no_pensions
-				  pensions = trinket_pensions
-				  pensions = low_pensions
-				  #pensions = acceptable_pensions
-				  pensions = good_pensions
-            }			
-        }
-	}
-
-	no_health_care = { 
-		factor = 10
-		modifier = {
-			factor = 0 
-			OR = {
-			      health_care = no_health_care
-				  health_care = trinket_health_care
-				  health_care = low_health_care
-				  health_care = acceptable_health_care
-				  health_care = good_health_care
-            }			
-        }
-	}		
-	trinket_health_care = { 
-		factor = 10
-		modifier = {
-			factor = 0 
-			OR = {
-			      #health_care = no_health_care
-				  health_care = trinket_health_care
-				  health_care = low_health_care
-				  health_care = acceptable_health_care
-				  health_care = good_health_care
-            }			
-        }
-	}
-	low_health_care = { 
-		factor = 10
-		modifier = {
-			factor = 0 
-			OR = {
-			      health_care = no_health_care
-				  #health_care = trinket_health_care
-				  health_care = low_health_care
-				  health_care = acceptable_health_care
-				  health_care = good_health_care
-            }			
-        }
-	}
-	acceptable_health_care = { 
-		factor = 10
-		modifier = {
-			factor = 0 
-			OR = {
-			      health_care = no_health_care
-				  health_care = trinket_health_care
-				  #health_care = low_health_care
-				  health_care = acceptable_health_care
-				  health_care = good_health_care
-            }			
-        }
-	}
-	good_health_care = { 
-		factor = 10
-		modifier = {
-			factor = 0 
-			OR = {
-			      health_care = no_health_care
-				  health_care = trinket_health_care
-				  health_care = low_health_care
-				  #health_care = acceptable_health_care
-				  health_care = good_health_care
-            }			
-        }
-	}
-	
-	no_work_hour_limit = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
-            }			
-        }
-	}	
-	fourteen_hours = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      #work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
-            }			
-        }
-	}
-	twelve_hours = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      work_hours = no_work_hour_limit
-				  #health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
-            }			
-        }
-	}
-	ten_hours = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  #health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
-            }			
-        }
-	}
-	eight_hours = { 
-		factor = 4
-		modifier = {
-			factor = 0 
-			OR = {
-			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  #health_care = ten_hours
-				  health_care = eight_hours
-            }			
-        }
 	}
 }
 
