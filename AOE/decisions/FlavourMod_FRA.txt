@@ -1,28 +1,28 @@
 political_decisions = {
-	#notre_dame_afrique = {
-	#	picture = notre_dame_afrique
-	#	potential = {
-	#		primary_culture = french
-	#		is_greater_power = yes
-	#		capital = 425
-	#		year = 1865
-	#		owns = 1700 #Algiers
-	#		NOT = { has_country_flag = bulit_notre_dame_afrique }
-	#	}
-	#	allow = {
-	#		impressionism = 1
-	#		war = no
-	#	}
-	#	
-	#	effect = {
-	#		badboy = -1
-	#		prestige = 5
-	#		1700 = { add_province_modifier = { name = notre_dame_afrique duration = -1 } }
-	#		FRA = { set_country_flag = bulit_notre_dame_afrique }
-	#		BOR = { set_country_flag = bulit_notre_dame_afrique }
-	#	}
-	#	ai_will_do = { factor = 1 }
-	#}
+	notre_dame_afrique = {
+		picture = notre_dame_afrique
+		potential = {
+			primary_culture = french
+			is_greater_power = yes
+			capital = 425
+			year = 1865
+			owns = 1700 #Algiers
+			NOT = { has_country_flag = bulit_notre_dame_afrique }
+		}
+		allow = {
+			impressionism = 1
+			war = no
+		}
+		
+		effect = {
+			badboy = -1
+			prestige = 5
+			1700 = { add_province_modifier = { name = notre_dame_afrique duration = -1 } }
+			FRA = { set_country_flag = bulit_notre_dame_afrique }
+			BOR = { set_country_flag = bulit_notre_dame_afrique }
+		}
+		ai_will_do = { factor = 1 }
+	}
 	
 	claim_monaco = {
 	picture = establish_panfrenchism
@@ -65,38 +65,38 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-	#tonkin_campaign = {
-	#picture = tonkin_campaign
-	#	potential = {
-	#		primary_culture = french
-	#		is_greater_power = yes
-	#		capital = 425
-	#		nationalism_n_imperialism = 1
-	#		has_global_flag = berlin_conference
-	#		NOT = { has_country_flag = tonkin_campaign }
-	#		exists = DAI
-	#		exists = QNG
-	#	}
-	#	
-	#	allow = {
-	#		DAI = {
-	#			civilized = no
-	#			exists = yes
-	#		}
-	#		owns = 1380
-	#	}
-	#	
-	#	effect = {
-	#		FRA = { set_country_flag = tonkin_campaign }
-	#		BOR = { set_country_flag = tonkin_campaign }
-	#		country_event = {
-	#			id = 99949
-	#			days = 150
-	#		}			
-	#	}
-	#	
-	#	ai_will_do = { factor = 1 }
-	#}
+	tonkin_campaign = {
+	picture = tonkin_campaign
+		potential = {
+			primary_culture = french
+			is_greater_power = yes
+			capital = 425
+			nationalism_n_imperialism = 1
+			has_global_flag = berlin_conference
+			NOT = { has_country_flag = tonkin_campaign }
+			exists = DAI
+			exists = QNG
+		}
+		
+		allow = {
+			DAI = {
+				civilized = no
+				exists = yes
+			}
+			owns = 1380
+		}
+		
+		effect = {
+			FRA = { set_country_flag = tonkin_campaign }
+			BOR = { set_country_flag = tonkin_campaign }
+			country_event = {
+				id = 99949
+				days = 150
+			}			
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 	
 	claim_luxembourg = {
 	picture = luxembourg_crisis
@@ -238,31 +238,31 @@ political_decisions = {
 		}
 	}	
 	
-	#establish_panfrenchism = {
-	#picture = establish_panfrenchism
-	#	potential = {
-	#		primary_culture = french
-	#		is_greater_power = yes
-	#		capital = 425
-	#		has_country_modifier = louis_napoleon_iii
-	#		owns = 412
-	#		NOT = { exists = GCF }
-	#		NOT = { exists = GER }
-	#		NOT = { has_global_flag = pan_french_nationalism }
-	#	}
-	#	
-	#	allow = {
-	#		war_policy = jingoism
-	#		state_n_government = 1
-	#	}
-	#	
-	#	effect = {
-	#		set_global_flag = pan_french_nationalism
-	#		prestige = 20
-	#	}
-	#	
-	#	ai_will_do = { factor = 1 }
-	#}
+	establish_panfrenchism = {
+	picture = establish_panfrenchism
+		potential = {
+			primary_culture = french
+			is_greater_power = yes
+			capital = 425
+			has_country_modifier = louis_napoleon_iii
+			owns = 412
+			NOT = { exists = GCF }
+			NOT = { exists = GER }
+			NOT = { has_global_flag = pan_french_nationalism }
+		}
+		
+		allow = {
+			war_policy = jingoism
+			state_n_government = 1
+		}
+		
+		effect = {
+			set_global_flag = pan_french_nationalism
+			prestige = 20
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 	
 	integrate_guyana = {
 		picture = french_guyane

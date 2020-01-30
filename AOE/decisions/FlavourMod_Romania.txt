@@ -121,48 +121,48 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-	#ioan_cuzas_reforms = {
-	#	picture = ioan_cuza
-	#	potential = {
-	#		OR = {
-	#			tag = WAL
-	#			tag = MOL 
-	#			tag = URP
-	#			tag = ROM
-	#		}
-	#		OR = {
-	#			government = absolute_monarchy
-	#			government = prussian_constitutionalism
-	#			government = hms_government
-	#		}
-	#		NOT = { has_global_flag = ioan_cuzas_reforms }
-	#		year = 1860
-	#	}
-	#		
-	#	allow = {
-	#		state_n_government = 1
-	#	}
-	#		
-	#	effect = {
-	#		treasury = 25000
-	#		random_owned = { limit = { owner = { school_reforms = no_schools } } owner = { social_reform = low_schools } }
-	#		random_owned = { limit = { owner = { vote_franschise = wealth_weighted_voting } } owner = { political_reform = wealth_voting } }
-	#		random_owned = { limit = { owner = { vote_franschise = landed_voting } } owner = { political_reform = wealth_weighted_voting } }
-	#		add_country_modifier = {
-	#			name = cuza_reforms
-	#			duration = 3650
-	#		}
-	#		scaled_consciousness = {
-	#			factor = 2
-	#			issue = moralism
-	#		}
-	#		scaled_consciousness = {
-	#			factor = 1
-	#			issue = wealth_weighted_voting
-	#		}
-	#		set_global_flag = ioan_cuzas_reforms
-	#	}
-	#	
-	#	ai_will_do = { factor = 1 }
-	#}
+	ioan_cuzas_reforms = {
+		picture = ioan_cuza
+		potential = {
+			OR = {
+				tag = WAL
+				tag = MOL 
+				tag = URP
+				tag = ROM
+			}
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = { has_global_flag = ioan_cuzas_reforms }
+			year = 1860
+		}
+			
+		allow = {
+			state_n_government = 1
+		}
+			
+		effect = {
+			treasury = 25000
+			random_owned = { limit = { owner = { school_reforms = no_schools } } owner = { social_reform = low_schools } }
+			random_owned = { limit = { owner = { vote_franschise = wealth_weighted_voting } } owner = { political_reform = wealth_voting } }
+			random_owned = { limit = { owner = { vote_franschise = landed_voting } } owner = { political_reform = wealth_weighted_voting } }
+			add_country_modifier = {
+				name = cuza_reforms
+				duration = 3650
+			}
+			scaled_consciousness = {
+				factor = 2
+				issue = moralism
+			}
+			scaled_consciousness = {
+				factor = 1
+				issue = wealth_weighted_voting
+			}
+			set_global_flag = ioan_cuzas_reforms
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }
