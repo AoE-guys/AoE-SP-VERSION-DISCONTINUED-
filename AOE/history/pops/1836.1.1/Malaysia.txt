@@ -6,13 +6,25 @@
 	farmers = {
 		culture = min
 		religion = protestant
-		size = 720
+		size = 684
+	}
+
+	labourers = {
+		culture = min
+		religion = protestant
+		size = 36
 	}
 
 	farmers = {
 		culture = min
 		religion = mahayana
-		size = 1920
+		size = 1824
+	}
+
+	labourers = {
+		culture = min
+		religion = mahayana
+		size = 96
 	}
 	
 	clergymen = {
@@ -36,7 +48,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 2400
+		size = 2280
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 120
 	}
 
 
@@ -67,7 +85,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 2800
+		size = 2660
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 140
 	}
 
 	artisans = {
@@ -99,13 +123,25 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 2000
+		size = 1900
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 100
 	}
 	
 	farmers = {
 		culture = hakka
 		religion = mahayana
-		size = 960
+		size = 912
+	}
+
+	labourers = {
+		culture = hakka
+		religion = mahayana
+		size = 48
 	}
 
 	aristocrats = {
@@ -141,7 +177,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 9040
+		size = 8588
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 452
 	}
 }
 #Penang (84000/21000 POPS)
@@ -185,7 +227,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 11920
+		size = 11324
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 596
 	}
 }
 #Under Malay Rule 1836 (324000)
@@ -230,7 +278,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 24040
+		size = 22838
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 1202
 	}
 
 	clergymen = {
@@ -248,7 +302,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 4400
+		size = 4180
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 220
 	}
 }
 #Kuala Lumpur (68000/17000 POPS)
@@ -280,7 +340,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 24760
+		size = 23522
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 1238
 	}
 
 	clergymen = {
@@ -298,7 +364,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 6480
+		size = 6156
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 324
 	}
 }
 #Kuantan (32000/8000 POPS)
@@ -330,7 +402,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 5100
+		size = 4845
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 255
 	}
 	
 	slaves = {
@@ -342,7 +420,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 800
+		size = 760
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 40
 	}
 }
 #Ipoh (116000/29000 POPS)
@@ -374,7 +458,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 24720
+		size = 23484
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 1236
 	}
 
 	clergymen = {
@@ -392,7 +482,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 4000
+		size = 3800
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 200
 	}
 	
 	slaves = {
@@ -431,7 +527,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 19840
+		size = 18848
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 992
 	}
 
 	clergymen = {
@@ -449,7 +551,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 880
+		size = 836
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 44
 	}
 }
 #Kota Bharu (168000/42000 POPS)
@@ -481,7 +589,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 24660
+		size = 23427
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 1233
 	}
 
 	clergymen = {
@@ -499,7 +613,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 880
+		size = 836
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 44
 	}
 
 	slaves = {
@@ -537,7 +657,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 12660
+		size = 12027
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 633
 	}
 
 	clergymen = {
@@ -555,7 +681,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 880
+		size = 836
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 44
 	}
 
 	slaves = {
@@ -607,7 +739,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 4000
+		size = 3800
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 200
 	}
 	
 	slaves = {
@@ -645,7 +783,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 9840
+		size = 9348
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 492
 	}
 
 	aristocrats = {
@@ -675,13 +819,25 @@
 	farmers = {
 		culture = asian_minor
 		religion = animist
-		size = 2400
+		size = 2280
+	}
+
+	labourers = {
+		culture = asian_minor
+		religion = animist
+		size = 120
 	}
 	
 	farmers = {
 		culture = asian_minor
 		religion = protestant
-		size = 100
+		size = 95
+	}
+
+	labourers = {
+		culture = asian_minor
+		religion = protestant
+		size = 5
 	}
 	
 	artisans = {
@@ -717,7 +873,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 400
+		size = 380
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 20
 	}
 }
 #Bintulu (44000/11000 POPS)
@@ -749,7 +911,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 3780
+		size = 3591
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 189
 	}
 
 	aristocrats = {
@@ -779,7 +947,13 @@
 	farmers = {
 		culture = asian_minor
 		religion = animist
-		size = 2400
+		size = 2280
+	}
+
+	labourers = {
+		culture = asian_minor
+		religion = animist
+		size = 120
 	}
 	
 	slaves = {
@@ -791,7 +965,13 @@
 	farmers = {
 		culture = asian_minor
 		religion = protestant
-		size = 300
+		size = 285
+	}
+
+	labourers = {
+		culture = asian_minor
+		religion = protestant
+		size = 15
 	}
 	
 	artisans = {
@@ -841,7 +1021,13 @@
 	farmers = {
 		culture = hakka
 		religion = mahayana
-		size = 2060
+		size = 1957
+	}
+
+	labourers = {
+		culture = hakka
+		religion = mahayana
+		size = 103
 	}
 	
 	clergymen = {
@@ -889,7 +1075,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 13140
+		size = 12483
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 657
 	}
 
 	clergymen = {
@@ -907,7 +1099,13 @@
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 380
+		size = 361
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 19
 	}
 }
 #Under the Rule of Sulu in 1836 (40000)
@@ -940,7 +1138,13 @@
 	farmers = {
 		culture = asian_minor
 		religion = animist
-		size = 2780
+		size = 2641
+	}
+
+	labourers = {
+		culture = asian_minor
+		religion = animist
+		size = 139
 	}
 	
 	slaves = {
@@ -976,7 +1180,13 @@
 	farmers = {
 		culture = malay
 		religion = sunni
-		size = 3000
+		size = 2850
+	}
+
+	labourers = {
+		culture = malay
+		religion = sunni
+		size = 150
 	}
 
 }

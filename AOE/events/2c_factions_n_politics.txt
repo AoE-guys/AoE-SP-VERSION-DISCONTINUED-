@@ -1,0 +1,861 @@
+country_event = {
+	id = 9999881
+	title = "Unrest Among the High spheres"
+	desc = "Our recent actions provoked high echelons of our society to rally against us!"	
+	picture = "riots_1700s"
+	
+    trigger = {
+	           rich_strata_militancy = 7
+			   OR = {
+			         has_country_flag = noble_influence_5
+			         has_country_flag = church_influence_5
+			   }
+			   NOT = { has_country_modifier = rich_unrest_5 }
+			   NOT = { has_country_modifier = rich_unrest_4 }
+			   NOT = { has_country_modifier = rich_unrest_3 }
+			   NOT = { has_country_modifier = rich_unrest_2 }
+			   NOT = { has_country_modifier = rich_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = rich_unrest_5 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 15
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999880
+	title = "Unrest Among the High spheres"
+	desc = "Our recent actions provoked high echelons of our society to rally against us!"	
+	picture = "riots_1700s"
+	
+    trigger = {
+	           rich_strata_militancy = 7
+			   NOT = {
+			   OR = {
+			         has_country_flag = noble_influence_5
+			         has_country_flag = church_influence_5
+			   }
+			   }
+			   OR = {
+			         has_country_flag = noble_influence_4
+			         has_country_flag = church_influence_4
+			   }
+			   NOT = { has_country_modifier = rich_unrest_5 }
+			   NOT = { has_country_modifier = rich_unrest_4 }
+			   NOT = { has_country_modifier = rich_unrest_3 }
+			   NOT = { has_country_modifier = rich_unrest_2 }
+			   NOT = { has_country_modifier = rich_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = rich_unrest_4 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 10
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999879
+	title = "Unrest Among the High spheres"
+	desc = "Our recent actions provoked high echelons of our society to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           rich_strata_militancy = 7
+			   NOT = {
+			   OR = {
+			         has_country_flag = noble_influence_5
+			         has_country_flag = church_influence_5
+			         has_country_flag = noble_influence_4
+			         has_country_flag = church_influence_4
+			   }
+			   }
+			   OR = {
+			         has_country_flag = noble_influence_3
+			         has_country_flag = church_influence_3
+			   }
+			   NOT = { has_country_modifier = rich_unrest_5 }
+			   NOT = { has_country_modifier = rich_unrest_4 }
+			   NOT = { has_country_modifier = rich_unrest_3 }
+			   NOT = { has_country_modifier = rich_unrest_2 }
+			   NOT = { has_country_modifier = rich_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = rich_unrest_3 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999878
+	title = "Unrest Among the High spheres"
+	desc = "Our recent actions provoked high echelons of our society to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           rich_strata_militancy = 7
+			   NOT = {
+			   OR = {
+			         has_country_flag = noble_influence_5
+			         has_country_flag = church_influence_5
+			         has_country_flag = noble_influence_4
+			         has_country_flag = church_influence_4
+					 has_country_flag = noble_influence_3
+			         has_country_flag = church_influence_3
+			   }
+			   }
+			   OR = {
+			         has_country_flag = noble_influence_2
+			         has_country_flag = church_influence_2
+			   }
+			   NOT = { has_country_modifier = rich_unrest_5 }
+			   NOT = { has_country_modifier = rich_unrest_4 }
+			   NOT = { has_country_modifier = rich_unrest_3 }
+			   NOT = { has_country_modifier = rich_unrest_2 }
+			   NOT = { has_country_modifier = rich_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = rich_unrest_2 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999877
+	title = "Unrest Among the High spheres"
+	desc = "Our recent actions provoked high echelons of our society to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           rich_strata_militancy = 7
+			   NOT = {
+			   OR = {
+			         has_country_flag = noble_influence_5
+			         has_country_flag = church_influence_5
+			         has_country_flag = noble_influence_4
+			         has_country_flag = church_influence_4
+					 has_country_flag = noble_influence_3
+			         has_country_flag = church_influence_3
+                     has_country_flag = noble_influence_2
+			         has_country_flag = church_influence_2
+			   }
+			   }
+			   OR = {
+			         has_country_flag = noble_influence_1
+			         has_country_flag = church_influence_1
+			   }
+			   NOT = { has_country_modifier = rich_unrest_5 }
+			   NOT = { has_country_modifier = rich_unrest_4 }
+			   NOT = { has_country_modifier = rich_unrest_3 }
+			   NOT = { has_country_modifier = rich_unrest_2 }
+			   NOT = { has_country_modifier = rich_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = rich_unrest_1 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 1
+			}	             	
+		}		
+	}
+}
+
+
+country_event = {
+	id = 9999876
+	title = "Unrest Among Middle Classes"
+	desc = "Our recent actions provoked gentry to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           middle_strata_militancy = 7
+			   has_country_flag = gentry_influence_5
+			   NOT = { has_country_modifier = middle_class_unrest_5 }
+			   NOT = { has_country_modifier = middle_class_unrest_4 }
+			   NOT = { has_country_modifier = middle_class_unrest_3 }
+			   NOT = { has_country_modifier = middle_class_unrest_2 }
+			   NOT = { has_country_modifier = middle_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = middle_class_unrest_5 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 15
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999875
+	title = "Unrest Among Middle Classes"
+	desc = "Our recent actions provoked gentry to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           middle_strata_militancy = 7
+			   has_country_flag = gentry_influence_4
+			   NOT = { has_country_modifier = middle_class_unrest_5 }
+			   NOT = { has_country_modifier = middle_class_unrest_4 }
+			   NOT = { has_country_modifier = middle_class_unrest_3 }
+			   NOT = { has_country_modifier = middle_class_unrest_2 }
+			   NOT = { has_country_modifier = middle_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = middle_class_unrest_4 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 10
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999874
+	title = "Unrest Among Middle Classes"
+	desc = "Our recent actions provoked gentry to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           middle_strata_militancy = 7
+			   has_country_flag = gentry_influence_3
+			   NOT = { has_country_modifier = middle_class_unrest_5 }
+			   NOT = { has_country_modifier = middle_class_unrest_4 }
+			   NOT = { has_country_modifier = middle_class_unrest_3 }
+			   NOT = { has_country_modifier = middle_class_unrest_2 }
+			   NOT = { has_country_modifier = middle_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = middle_class_unrest_3 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999873
+	title = "Unrest Among Middle Classes"
+	desc = "Our recent actions provoked gentry to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           middle_strata_militancy = 7
+			   has_country_flag = gentry_influence_2
+			   NOT = { has_country_modifier = middle_class_unrest_5 }
+			   NOT = { has_country_modifier = middle_class_unrest_4 }
+			   NOT = { has_country_modifier = middle_class_unrest_3 }
+			   NOT = { has_country_modifier = middle_class_unrest_2 }
+			   NOT = { has_country_modifier = middle_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = middle_class_unrest_2 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 3
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999872
+	title = "Unrest Among Middle Classes"
+	desc = "Our recent actions provoked gentry to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           middle_strata_militancy = 7
+			   has_country_flag = gentry_influence_1
+			   NOT = { has_country_modifier = middle_class_unrest_5 }
+			   NOT = { has_country_modifier = middle_class_unrest_4 }
+			   NOT = { has_country_modifier = middle_class_unrest_3 }
+			   NOT = { has_country_modifier = middle_class_unrest_2 }
+			   NOT = { has_country_modifier = middle_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = middle_class_unrest_1 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 1
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999871
+	title = "Unrest Among the Poor"
+	desc = "Our recent actions provoked workers to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           poor_strata_militancy = 7
+			   has_country_flag = burghers_influence_5
+			   NOT = { has_country_modifier = lower_class_unrest_5 }
+			   NOT = { has_country_modifier = lower_class_unrest_4 }
+			   NOT = { has_country_modifier = lower_class_unrest_3 }
+			   NOT = { has_country_modifier = lower_class_unrest_2 }
+			   NOT = { has_country_modifier = lower_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = lower_class_unrest_5 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = communist
+				factor = 15
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999870
+	title = "Unrest Among the Poor"
+	desc = "Our recent actions provoked workers to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           poor_strata_militancy = 7
+			   has_country_flag = burghers_influence_4
+			   NOT = { has_country_modifier = lower_class_unrest_5 }
+			   NOT = { has_country_modifier = lower_class_unrest_4 }
+			   NOT = { has_country_modifier = lower_class_unrest_3 }
+			   NOT = { has_country_modifier = lower_class_unrest_2 }
+			   NOT = { has_country_modifier = lower_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = lower_class_unrest_4 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = communist
+				factor = 10
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999869
+	title = "Unrest Among the Poor"
+	desc = "Our recent actions provoked workers to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           poor_strata_militancy = 7
+			   has_country_flag = burghers_influence_3
+			   NOT = { has_country_modifier = lower_class_unrest_5 }
+			   NOT = { has_country_modifier = lower_class_unrest_4 }
+			   NOT = { has_country_modifier = lower_class_unrest_3 }
+			   NOT = { has_country_modifier = lower_class_unrest_2 }
+			   NOT = { has_country_modifier = lower_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = lower_class_unrest_3 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = communist
+				factor = 5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999868
+	title = "Unrest Among the Poor"
+	desc = "Our recent actions provoked workers to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           poor_strata_militancy = 7
+			   has_country_flag = burghers_influence_2
+			   NOT = { has_country_modifier = lower_class_unrest_5 }
+			   NOT = { has_country_modifier = lower_class_unrest_4 }
+			   NOT = { has_country_modifier = lower_class_unrest_3 }
+			   NOT = { has_country_modifier = lower_class_unrest_2 }
+			   NOT = { has_country_modifier = lower_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = lower_class_unrest_2 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = communist
+				factor = 3
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999867
+	title = "Unrest Among the Poor"
+	desc = "Our recent actions provoked workers to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           poor_strata_militancy = 7
+			   has_country_flag = burghers_influence_1
+			   NOT = { has_country_modifier = lower_class_unrest_5 }
+			   NOT = { has_country_modifier = lower_class_unrest_4 }
+			   NOT = { has_country_modifier = lower_class_unrest_3 }
+			   NOT = { has_country_modifier = lower_class_unrest_2 }
+			   NOT = { has_country_modifier = lower_class_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = lower_class_unrest_1 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = communist
+				factor = 1
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999866
+	title = "Unrest Among the Army"
+	desc = "Our recent actions provoked the High Command to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           rich_strata_militancy = 5
+			   has_country_flag = army_influence_5
+			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   NOT = { has_country_modifier = army_unrest_5 }
+			   NOT = { has_country_modifier = army_unrest_4 }
+			   NOT = { has_country_modifier = army_unrest_3 }
+			   NOT = { has_country_modifier = army_unrest_2 }
+			   NOT = { has_country_modifier = army_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = army_unrest_5 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 10
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999865
+	title = "Unrest Among the Army"
+	desc = "Our recent actions provoked the High Command to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           rich_strata_militancy = 5
+			   has_country_flag = army_influence_4
+			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   NOT = { has_country_modifier = army_unrest_5 }
+			   NOT = { has_country_modifier = army_unrest_4 }
+			   NOT = { has_country_modifier = army_unrest_3 }
+			   NOT = { has_country_modifier = army_unrest_2 }
+			   NOT = { has_country_modifier = army_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = army_unrest_4 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 7.5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999864
+	title = "Unrest Among the Army"
+	desc = "Our recent actions provoked the High Command to rally against us!"	
+	picture = "riots_1700s"
+	
+    trigger = {
+	           rich_strata_militancy = 5
+			   has_country_flag = army_influence_3
+			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   NOT = { has_country_modifier = army_unrest_5 }
+			   NOT = { has_country_modifier = army_unrest_4 }
+			   NOT = { has_country_modifier = army_unrest_3 }
+			   NOT = { has_country_modifier = army_unrest_2 }
+			   NOT = { has_country_modifier = army_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = army_unrest_3 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999863
+	title = "Unrest Among the Army"
+	desc = "Our recent actions provoked the High Command to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           rich_strata_militancy = 5
+			   has_country_flag = army_influence_2
+			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   NOT = { has_country_modifier = army_unrest_5 }
+			   NOT = { has_country_modifier = army_unrest_4 }
+			   NOT = { has_country_modifier = army_unrest_3 }
+			   NOT = { has_country_modifier = army_unrest_2 }
+			   NOT = { has_country_modifier = army_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = army_unrest_2 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 2.5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999862
+	title = "Unrest Among the Army"
+	desc = "Our recent actions provoked the High Command to rally against us!"
+    picture = "riots_1700s"
+	
+    trigger = {
+	           rich_strata_militancy = 5
+			   has_country_flag = army_influence_1
+			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   NOT = { has_country_modifier = army_unrest_5 }
+			   NOT = { has_country_modifier = army_unrest_4 }
+			   NOT = { has_country_modifier = army_unrest_3 }
+			   NOT = { has_country_modifier = army_unrest_2 }
+			   NOT = { has_country_modifier = army_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = army_unrest_1 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 1
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999861
+	title = "Unrest Among Bureaucrats"
+	desc = "Our recent actions provoked the State Apparatus to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           middle_strata_militancy = 5
+			   has_country_flag = bureaucracy_influence_5
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_2 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = bureaucratic_unrest_5 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 10
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999860
+	title = "Unrest Among Bureaucrats"
+	desc = "Our recent actions provoked the State Apparatus to rally against us!"	
+    picture = "riots_1700s"
+	
+    trigger = {
+	           middle_strata_militancy = 5
+			   has_country_flag = bureaucracy_influence_4
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_2 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = bureaucratic_unrest_4 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 7.5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999859
+	title = "Unrest Among Bureaucrats"
+	desc = "Our recent actions provoked the State Apparatus to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           middle_strata_militancy = 5
+			   has_country_flag = bureaucracy_influence_3
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_2 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = bureaucratic_unrest_3 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999858
+	title = "Unrest Among Bureaucrats"
+	desc = "Our recent actions provoked the State Apparatus to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           middle_strata_militancy = 5
+			   has_country_flag = bureaucracy_influence_2
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_2 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = bureaucratic_unrest_1 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 2.5
+			}	             	
+		}		
+	}
+}
+
+country_event = {
+	id = 9999857
+	title = "Unrest Among Bureaucrats"
+	desc = "Our recent actions provoked the State Apparatus to rally against us!"
+    picture = "riots_1700s"	
+	
+    trigger = {
+	           middle_strata_militancy = 5
+			   has_country_flag = bureaucracy_influence_1
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_2 }
+			   NOT = { has_country_modifier = bureaucratic_unrest_1 }
+	}	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They shall bend their knees... Eventually..."
+		add_country_modifier = { name = bureaucratic_unrest_1 duration = 1825 }
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 1
+			}	             	
+		}		
+	}
+}

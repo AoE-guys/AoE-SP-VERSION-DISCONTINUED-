@@ -102,98 +102,98 @@ political_decisions = {
 		}
 	}
 	
-	french_language_schooling = {
-		picture = embrace_minority
-		potential = {
-			primary_culture = french
-			is_greater_power = yes
-			capital = 425
-			any_owned_province = { is_core = BRT }
-			BRT = { exists = no }
-			NOT = { has_country_flag = enacted_french_schooling	 }
-		}
-		
-		allow = {
-			war = no
-			NOT = { school_reforms = no_schools }
-			invention = biased_multiculturalism
-			invention = social_darwinism
-		}
-		
-		effect = {
-			FRA = { set_country_flag = enacted_french_schooling }
-			BOR = { set_country_flag = enacted_french_schooling }
-			remove_accepted_culture = picard
-			remove_accepted_culture = arpitan
-			remove_accepted_culture = breton
-			remove_accepted_culture = wallonian
-			remove_accepted_culture = occitan
-			remove_accepted_culture = swiss_french
-			remove_accepted_culture = rhinelander
-			any_owned = {
-				limit = {
-					is_core = THIS
-					OR = {
-						is_core = BRT
-						is_core = WLL
-						is_core = CAT
-						is_core = CRS
-						is_core = ITA
-						is_core = THIS
-						is_core = SWI
-						AND = {
-							is_core = LUX
-							THIS = { has_country_flag = chose_door_one }
-						}
-						AND = {
-							is_core = RHI
-							THIS = { has_country_flag = chose_door_one }
-						}
-						culture = picard
-						culture = occitan
-					}
-				}
-				add_province_modifier = {
-					name = french_cultural_unity
-					duration = -1
-				}
-			}
-			random_owned = {
-				limit = {
-					BRT = { exists = no }
-				}
-				BRT = { all_core = { remove_core = BRT } }
-			}
-			random_owned = {
-				limit = {
-					WLL = { exists = no }
-				}
-				WLL = { all_core = { remove_core = WLL } }
-			}
-			random_owned = {
-				limit = {
-					SWI = { exists = no }
-				}
-				SWI = { all_core = { remove_core = SWI } }
-			}
-			any_country = {
-				limit = {
-					tag = LUX
-					exists = yes
-					vassal_of = THIS
-				}
-				primary_culture = french
-			}
-			any_country = {
-				limit = {
-					tag = RHI
-					exists = yes
-					vassal_of = THIS
-				}
-				primary_culture = french
-			}	
-		}
-	}
+	#french_language_schooling = {
+	#	picture = embrace_minority
+	#	potential = {
+	#		primary_culture = french
+	#		is_greater_power = yes
+	#		capital = 425
+	#		any_owned_province = { is_core = BRT }
+	#		BRT = { exists = no }
+	#		NOT = { has_country_flag = enacted_french_schooling	 }
+	#	}
+	#	
+	#	allow = {
+	#		war = no
+	#		NOT = { school_reforms = no_schools }
+	#		invention = biased_multiculturalism
+	#		invention = social_darwinism
+	#	}
+	#	
+	#	effect = {
+	#		FRA = { set_country_flag = enacted_french_schooling }
+	#		BOR = { set_country_flag = enacted_french_schooling }
+	#		remove_accepted_culture = picard
+	#		remove_accepted_culture = arpitan
+	#		remove_accepted_culture = breton
+	#		remove_accepted_culture = wallonian
+	#		remove_accepted_culture = occitan
+	#		remove_accepted_culture = swiss_french
+	#		remove_accepted_culture = rhinelander
+	#		any_owned = {
+	#			limit = {
+	#				is_core = THIS
+	#				OR = {
+	#					is_core = BRT
+	#					is_core = WLL
+	#					is_core = CAT
+	#					is_core = CRS
+	#					is_core = ITA
+	#					is_core = THIS
+	#					is_core = SWI
+	#					AND = {
+	#						is_core = LUX
+	#						THIS = { has_country_flag = chose_door_one }
+	#					}
+	#					AND = {
+	#						is_core = RHI
+	#						THIS = { has_country_flag = chose_door_one }
+	#					}
+	#					culture = picard
+	#					culture = occitan
+	#				}
+	#			}
+	#			add_province_modifier = {
+	#				name = french_cultural_unity
+	#				duration = -1
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				BRT = { exists = no }
+	#			}
+	#			BRT = { all_core = { remove_core = BRT } }
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				WLL = { exists = no }
+	#			}
+	#			WLL = { all_core = { remove_core = WLL } }
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				SWI = { exists = no }
+	#			}
+	#			SWI = { all_core = { remove_core = SWI } }
+	#		}
+	#		any_country = {
+	#			limit = {
+	#				tag = LUX
+	#				exists = yes
+	#				vassal_of = THIS
+	#			}
+	#			primary_culture = french
+	#		}
+	#		any_country = {
+	#			limit = {
+	#				tag = RHI
+	#				exists = yes
+	#				vassal_of = THIS
+	#			}
+	#			primary_culture = french
+	#		}	
+	#	}
+	#}
 
 	alsace_lorraine_mines = {
 		picture = alsace_lorraine_mines
@@ -243,9 +243,9 @@ political_decisions = {
 		}
 		
 		ai_will_do = { factor = 1 }
-	}
+	#}
 	
-#The Devil's Island
+The Devil's Island
 devil_island = {
 	picture = FRA_devils_island
 	potential = {

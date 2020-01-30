@@ -47,7 +47,13 @@
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 198400
+		size = 188480
+	}
+
+	labourers = {
+		culture = czech
+		religion = catholic
+		size = 9920
 	}
 	
 	serfs = {
@@ -347,7 +353,13 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 40848
+		size = 38806
+	}
+
+	labourers = {
+		culture = south_german
+		religion = catholic
+		size = 2042
 	}
 	
 	farmers = {
@@ -717,7 +729,7 @@
 	serfs = {
 		culture = south_german
 		religion = catholic
-		0.64* 26850
+		size = 17184
 	}
 	
 	farmers = {
@@ -923,19 +935,19 @@
 	aristocrats = {
 		culture = north_german
 		religion = catholic
-		0.64*  400
+		size = 256
 	}
 
 	officers = {
 		culture = north_german
 		religion = catholic
-		0.64* 20
+		size = 13
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = catholic
-		0.64* 75
+		size = 48
 	}
 
 	artisans = {
@@ -953,13 +965,19 @@
 	farmers = {
 		culture = north_german
 		religion = catholic
-		size = 3520
+		size = 3344
+	}
+
+	labourers = {
+		culture = north_german
+		religion = catholic
+		size = 176
 	}
 
 	clergymen = {
 		culture = czech
 		religion = catholic
-		0.64* 25
+		size = 16
 	}
 
 	artisans = {
@@ -971,12 +989,18 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		0.64*  50
+		size = 32
 	}
 
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 2880
+		size = 2736
+	}
+
+	labourers = {
+		culture = czech
+		religion = catholic
+		size = 144
 	}
 }

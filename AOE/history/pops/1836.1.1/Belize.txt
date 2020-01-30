@@ -42,25 +42,49 @@
 	farmers = {
 		culture = kreol
 		religion = protestant
-		size = 208
+		size = 198
+	}
+
+	labourers = {
+		culture = kreol
+		religion = protestant
+		size = 10
 	}
 
 	farmers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 130
+		size = 124
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 6
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 550
+		size = 522
+	}
+
+	labourers = {
+		culture = central_american
+		religion = catholic
+		size = 28
 	}
 
 	farmers = {
 		culture = mayan
 		religion = catholic
-		size = 130
+		size = 124
+	}
+
+	labourers = {
+		culture = mayan
+		religion = catholic
+		size = 6
 	}
 
 }
