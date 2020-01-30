@@ -41,7 +41,7 @@ economic_nationalism = {
 
 polish_uprising_mobilization = {
 	pop_militancy_modifier = -0.05
-	mobilisation_size = 0.5
+	mobilisation_size = 0.1
 	prestige = -0.02
 	war_exhaustion = -0.1
 	tax_efficiency = 0.25
@@ -374,7 +374,7 @@ fanatic_army = {
 	war_exhaustion = -5
 	org_regain = 0.2
 	land_unit_start_experience = 5
-	mobilisation_size = 0.15
+	mobilisation_size = 0.03
 	supply_consumption = -0.1
 	prestige = -0.02
 	icon = 15
@@ -569,7 +569,7 @@ catholic_growth = {
 }
 
 assegai = {
-	mobilisation_size = 0.35
+	mobilisation_size = 0.07
 	mobilisation_economy_impact = -0.7
 	war_exhaustion = -0.05
 	supply_consumption = -0.1
@@ -605,7 +605,7 @@ francia_utopia = {
 	global_pop_militancy_modifier = -0.5
 	global_pop_consciousness_modifier = -0.5
 	min_military_spending = 0.25
-	mobilisation_size = 0.1
+	mobilisation_size = 0.05
 	mobilisation_economy_impact = -0.4
 	tax_efficiency = 0.25
 	min_tariff = 0.1
@@ -614,7 +614,7 @@ francia_utopia = {
 
 solano_lopez_industrialization = {
 	mobilisation_economy_impact = -0.4
-	mobilisation_size = 0.1
+	mobilisation_size = 0.02
 	min_military_spending = 0.25
 	factory_owner_cost = -0.25
 	land_unit_start_experience = 5
@@ -644,13 +644,13 @@ blanco_sympathies = {
 }
 
 north_coalition = {
-	mobilisation_size = -0.03
+	mobilisation_size = -0.02
 	org_regain = -0.1
 	icon = 16
 }
 
 the_big_army = {
-	mobilisation_size = 0.2
+	mobilisation_size = 0.04
 	land_organisation = 0.2
 	supply_consumption = -0.2
 	org_regain = 0.2
@@ -1044,7 +1044,7 @@ loyal_askaris = {
 muhammad_alis_reforms = {
 	org_regain = 0.2
 	land_organisation = 0.2
-	mobilisation_size = 0.24
+	mobilisation_size = 0.06
 	war_exhaustion = -0.2
 	tax_efficiency = 0.05
 	mobilisation_economy_impact = -0.25
@@ -1852,7 +1852,7 @@ begin_revolution = {
 
 small_country_draft = {
 	pop_militancy_modifier = 0.01
-	mobilisation_size = 0.25
+	mobilisation_size = 0.05
 	prestige = -0.02
 	war_exhaustion = -0.03
 	icon = 18
@@ -1966,7 +1966,7 @@ irish_integration  = {
 ### Arabia ###
 
 rally_tribesmen = {
-	mobilisation_size = 0.76
+	mobilisation_size = 0.15
 	mobilisation_economy_impact = -0.7
 	core_pop_militancy_modifier = -0.1
 	war_exhaustion = -0.03
@@ -1974,7 +1974,7 @@ rally_tribesmen = {
 }
 
 the_ikhwan = {
-	mobilisation_size = 0.35
+	mobilisation_size = 0.07
 	mobilisation_economy_impact = -0.25
 	core_pop_militancy_modifier = -0.1
 	war_exhaustion = -0.03
@@ -2077,7 +2077,7 @@ chinese_floods = {
 taiping_draft = {
 	land_organisation = -0.1
 	org_regain = -0.1
-	mobilisation_size = 0.15
+	mobilisation_size = 0.05
 	prestige = -0.02
 	icon = 18
 }
@@ -2087,7 +2087,7 @@ shastar_vidya = {
 	org_regain = 0.1
 	land_organisation = 0.1
 	land_unit_start_experience = 5
-	mobilisation_size = 0.17
+	mobilisation_size = 0.03
 	icon = 11
 }
 
@@ -2150,7 +2150,7 @@ no_line_of_advantage = {
 }
 
 daimyo_draft = {
-	mobilisation_size = 0.15
+	mobilisation_size = 0.05
 	war_exhaustion = -0.03
 	icon = 18
 }
@@ -2182,7 +2182,7 @@ new_country = {
 
 ### Ethiopia ###
 zemene_mesafint = {
-	mobilisation_size = 0.12
+	mobilisation_size = 0.06
 	mobilisation_economy_impact = -0.3
 	supply_consumption = -0.3
 	war_exhaustion = -1
@@ -2197,7 +2197,7 @@ exploiting_the_land = {
 }
 
 tewodros_reforms = {
-	mobilisation_size = 0.1
+	mobilisation_size = 0.02
 	land_organisation = 0.15
 	supply_consumption = -0.25
 	land_unit_start_experience = 10
@@ -2218,7 +2218,7 @@ disunited_country = {
 }
 
 tewodros_ii = {
-	mobilisation_size = 0.1
+	mobilisation_size = 0.02
 	land_unit_start_experience = 10
 	org_regain = 0.05
 	global_pop_militancy_modifier = 0.01
@@ -3105,7 +3105,7 @@ the_eight_banners = {
 taiping_draft = {
 	land_organisation = -0.1
 	org_regain = -0.1
-	mobilisation_size = 0.15
+	mobilisation_size = 0.05
 	prestige = -0.02
 	icon = 18
 }
