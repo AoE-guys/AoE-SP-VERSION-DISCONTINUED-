@@ -765,6 +765,7 @@ social_reforms = {
 			RGO_throughput = 0.00
 			factory_throughput = 0.00
 			factory_input = 0.00
+			goods_demand = 0.00
 			minimum_wage = 0.00
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -773,6 +774,7 @@ social_reforms = {
 			RGO_throughput = 0.025
 			factory_throughput = 0.025
 			factory_input = -0.05
+			goods_demand = 0.05
 			minimum_wage = 0.03
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -781,6 +783,7 @@ social_reforms = {
 			RGO_throughput = 0.05
 			factory_throughput = 0.05
 			factory_input = -0.10
+			goods_demand = 0.10
 			minimum_wage = 0.06
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -789,6 +792,7 @@ social_reforms = {
 			RGO_throughput = 0.075
 			factory_throughput = 0.075
 			factory_input = -0.15
+			goods_demand = 0.15
 			minimum_wage = 0.09
 			allow = { has_global_flag = factions_setup_done }
 		}
@@ -797,11 +801,12 @@ social_reforms = {
 			RGO_throughput = 0.10
 			factory_throughput = 0.10
 			factory_input = -0.20
+			goods_demand = 0.20
 			minimum_wage = 0.12
 			allow = { has_global_flag = factions_setup_done }
 		}
 	}
-	safety_regulations = { #noblity
+	safety_regulations = { #nobility
 		#administrative = yes
 		next_step_only = yes
 		no_safety = { #very influential
