@@ -169,7 +169,7 @@ country_event = {
 		}
 		#set_global_flag = factions_setup_done
 		random_country = { 
-		                  limit = { exists = yes ai = yes }
+		                  limit = { NOT = { tag = THIS } exists = yes ai = yes }
 		                  country_event = 9999883 
 		}
 	}
@@ -431,7 +431,7 @@ country_event = {
 	option = {
 		name = "Hard is the life of a Ruler"	    
 		random_country = { 
-		                  limit = { exists = yes ai = yes }
+		                  limit = { NOT = { tag = THIS } exists = yes ai = yes }
 		                  country_event = 9999884 
 		}
 	}
