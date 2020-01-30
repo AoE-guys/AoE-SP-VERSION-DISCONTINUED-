@@ -17,7 +17,7 @@ country_event = {
 		average_militancy = 3
 		OR = {
 			num_of_revolts = 1
-			national_provinces_occupied = .10
+			national_provinces_occupied = 0.10
 			is_disarmed = yes
 			communist = 20
 			socialist = 40
@@ -2737,30 +2737,30 @@ country_event = {
 	}
 }
 
-#Enable/Disable Splendid Isolation
-country_event = {
-	id = 6016815
-	title = "EVTNAME6016815"
-	desc = "EVTDESC6016815"
-	picture = "abraham_speech"
-	major = yes
-		
-	trigger = {
-		ai = no
-		NOT = { has_global_flag = isolation_setup }
-	}
-	
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	
-	option = {
-		name = "EVT6016814OPTA"
-		set_global_flag = yes_isolation
-		set_global_flag = isolation_setup
-	}
-	
-	option = {
-		name = "EVT6016815OPTB"
-		set_global_flag = isolation_setup
-	}
-}
+##Enable/Disable Splendid Isolation
+#country_event = {
+#	id = 6016815
+#	title = "EVTNAME6016815"
+#	desc = "EVTDESC6016815"
+#	picture = "abraham_speech"
+#	major = yes
+#		
+#	trigger = {
+#		ai = no
+#		NOT = { has_global_flag = isolation_setup }
+#	}
+#	
+#	fire_only_once = yes
+#	mean_time_to_happen = { days = 1 }
+#	
+#	option = {
+#		name = "EVT6016814OPTA"
+#		set_global_flag = yes_isolation
+#		set_global_flag = isolation_setup
+#	}
+#	
+#	option = {
+#		name = "EVT6016815OPTB"
+#		set_global_flag = isolation_setup
+#	}
+#}
