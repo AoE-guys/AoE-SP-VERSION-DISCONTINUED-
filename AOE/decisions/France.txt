@@ -195,83 +195,83 @@ political_decisions = {
 	#	}
 	#}
 
-	#alsace_lorraine_mines = {
-	#	picture = alsace_lorraine_mines
-	#	potential = {
-	#		owns = 409
-	#		NOT = { 409 = { trade_goods = precious_metal } }
-	#		bessemer_process = 1
-	#	}
-	#	
-	#	allow = {
-	#		war = no
-	#		advanced_metallurgy = 1
-	#		money = 30100
-	#	}
-	#	
-	#	effect = {
-	#		money = -30000
-	#		412 = { trade_goods = iron }
-	#		409 = { trade_goods = precious_metal }
-	#	}
-	#	
-	#	ai_will_do = { factor = 1 }
+	alsace_lorraine_mines = {
+		picture = alsace_lorraine_mines
+		potential = {
+			owns = 409
+			NOT = { 409 = { trade_goods = precious_metal } }
+			bessemer_process = 1
+		}
+		
+		allow = {
+			war = no
+			advanced_metallurgy = 1
+			money = 30100
+		}
+		
+		effect = {
+			money = -30000
+			412 = { trade_goods = iron }
+			409 = { trade_goods = precious_metal }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	french_iron_mines = {
+		picture = normandie_mine
+		potential = {
+			owns = 434
+			bessemer_process = 1
+			NOT = { has_country_flag = french_mines_placed }
+		}
+		
+		allow = {
+			war = no
+			advanced_metallurgy = 1
+			money = 30100
+		}
+		
+		effect = {
+			FRA = { set_country_flag = french_mines_placed }
+			BOR = { set_country_flag = french_mines_placed }
+			money = -30000
+			434 = { trade_goods = iron }
+			418 = { trade_goods = iron }
+			428 = { trade_goods = iron }
+			411 = { trade_goods = iron }
+		}
+		
+		ai_will_do = { factor = 1 }
 	#}
 	
-	#french_iron_mines = {
-	#	picture = normandie_mine
-	#	potential = {
-	#		owns = 434
-	#		bessemer_process = 1
-	#		NOT = { has_country_flag = french_mines_placed }
-	#	}
-	#	
-	#	allow = {
-	#		war = no
-	#		advanced_metallurgy = 1
-	#		money = 30100
-	#	}
-	#	
-	#	effect = {
-	#		FRA = { set_country_flag = french_mines_placed }
-	#		BOR = { set_country_flag = french_mines_placed }
-	#		money = -30000
-	#		434 = { trade_goods = iron }
-	#		418 = { trade_goods = iron }
-	#		428 = { trade_goods = iron }
-	#		411 = { trade_goods = iron }
-	#	}
-	#	
-	#	ai_will_do = { factor = 1 }
-	#}
-	
-#The Devil's Island
-#devil_island = {
-#	picture = FRA_devils_island
-#	potential = {
-#		primary_culture = french
-#		is_greater_power = yes
-#		capital = 425
-#		GUY = { exists = no }
-#		owns = 2241 #Cayenne
-#		year = 1852
-#		penal_system = colonial_transportation
-#		NOT = { has_country_flag = devil_island }
-#		NOT = { has_country_modifier = penal_colonies }
-#	}
-#	allow = {
-#		money = 5000
-#	}
-#		
-#	effect = {
-#		FRA = { set_country_flag = devil_island }
-#		BOR = { set_country_flag = devil_island }
-#		treasury = -5000
-#		prestige = 5
-#		2241 = { life_rating = 1 }
-#		add_country_modifier = { name = penal_colonies duration = -1 }
-#	}
-#}
+The Devil's Island
+devil_island = {
+	picture = FRA_devils_island
+	potential = {
+		primary_culture = french
+		is_greater_power = yes
+		capital = 425
+		GUY = { exists = no }
+		owns = 2241 #Cayenne
+		year = 1852
+		penal_system = colonial_transportation
+		NOT = { has_country_flag = devil_island }
+		NOT = { has_country_modifier = penal_colonies }
+	}
+	allow = {
+		money = 5000
+	}
+		
+	effect = {
+		FRA = { set_country_flag = devil_island }
+		BOR = { set_country_flag = devil_island }
+		treasury = -5000
+		prestige = 5
+		2241 = { life_rating = 1 }
+		add_country_modifier = { name = penal_colonies duration = -1 }
+	}
+}
 
 annex_lor = {
 		picture = lorraine
