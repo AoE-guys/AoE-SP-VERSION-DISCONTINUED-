@@ -41,13 +41,25 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 770
+		size = 732
+	}
+
+	labourers = {
+		culture = spanish
+		religion = catholic
+		size = 38
 	}
 	
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 122
+		size = 116
+	}
+
+	labourers = {
+		culture = portuguese
+		religion = catholic
+		size = 6
 	}
 
 	clergymen = {
@@ -59,12 +71,24 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 937
+		size = 890
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 47
 	}
 	
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 25
+		size = 24
+	}
+
+	labourers = {
+		culture = south_italian
+		religion = catholic
+		size = 1
 	}
 }

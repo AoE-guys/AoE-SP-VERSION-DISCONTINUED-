@@ -3570,4 +3570,212 @@ RGO_education_10 = {
 	#immigrant_push = 1.0
 	icon = 3
 }
+
+###
+
+rich_unrest_5 = {
+    tax_efficiency = -0.05
+	RGO_throughput = -0.50
+	education_efficiency_modifier = -0.25
+	global_pop_militancy_modifier = 0.05
+	icon = 20
+}
+
+rich_unrest_4 = {
+    tax_efficiency = -0.04
+	RGO_throughput = -0.40
+	education_efficiency_modifier = -0.20
+	global_pop_militancy_modifier = 0.04
+	icon = 20
+}
+
+rich_unrest_3 = {
+    tax_efficiency = -0.03
+	RGO_throughput = -0.30
+	education_efficiency_modifier = -0.15
+	global_pop_militancy_modifier = 0.03
+	icon = 20
+}
+
+rich_unrest_2 = {
+    tax_efficiency = -0.02
+	RGO_throughput = -0.20
+	education_efficiency_modifier = -0.10
+	global_pop_militancy_modifier = 0.02
+	icon = 20
+}
+
+rich_unrest_1 = {
+    tax_efficiency = -0.01
+	RGO_throughput = -0.10
+	education_efficiency_modifier = -0.05
+	global_pop_militancy_modifier = 0.01
+	icon = 20
+}
+
+middle_class_unrest_5 = {
+    tax_efficiency = -0.05
+	RGO_throughput = -0.25
+	factory_throughput = -0.25
+    factory_input = 0.50	
+	icon = 20
+}
+
+middle_class_unrest_4 = {
+    tax_efficiency = -0.04
+	RGO_throughput = -0.20
+	factory_throughput = -0.20 
+    factory_input = 0.40	
+	icon = 20
+}
+
+middle_class_unrest_3 = {
+    tax_efficiency = -0.03
+	RGO_throughput = -0.15
+	factory_throughput = -0.15
+    factory_input = 0.30	
+	icon = 20
+}
+
+middle_class_unrest_2 = {
+    tax_efficiency = -0.02
+	RGO_throughput = -0.10
+	factory_throughput = -0.10
+    factory_input = 0.20	
+	icon = 20
+}
+
+middle_class_unrest_1 = {
+    tax_efficiency = -0.01
+	RGO_throughput = -0.05
+	factory_throughput = -0.05
+    factory_input = 0.10	
+	icon = 20
+}
+
+lower_class_unrest_5 = {
+    tax_efficiency = -0.05
+	factory_throughput = -0.50
+	factory_output = -0.50
+	icon = 20
+}
+
+lower_class_unrest_4 = {
+    tax_efficiency = -0.04
+	factory_throughput = -0.40
+	factory_output = -0.40
+	icon = 20
+}
+
+lower_class_unrest_3 = {
+    tax_efficiency = -0.03
+	factory_throughput = -0.30
+	factory_output = -0.30
+	icon = 20
+}
+
+lower_class_unrest_2 = {
+    tax_efficiency = -0.02
+	factory_throughput = -0.20
+	factory_output = -0.20
+	icon = 20
+}
+
+lower_class_unrest_1 = {
+    tax_efficiency = -0.01
+	factory_throughput = -0.10
+	factory_output = -0.10
+	icon = 20
+}
+
+army_unrest_5 = {
+    tax_efficiency = -0.025
+	land_organisation = -1.00
+	leadership_modifier = -1.00
+	supply_consumption = 1.00
+	mobilisation_size = -0.05
+	icon = 20
+}
+
+army_unrest_4 = {
+    tax_efficiency = -0.020
+	land_organisation = -0.80
+	leadership_modifier = -0.80
+	supply_consumption = 0.80
+	mobilisation_size = -0.04
+	icon = 20
+}
+
+army_unrest_3 = {
+    tax_efficiency = -0.015
+	land_organisation = -0.60
+	leadership_modifier = -0.60
+	supply_consumption = 0.60
+	mobilisation_size = -0.03
+	icon = 20
+}
+
+army_unrest_2 = {
+    tax_efficiency = -0.010
+	land_organisation = -0.40
+	leadership_modifier = -0.40
+	supply_consumption = 0.40
+	mobilisation_size = -0.02
+	icon = 20
+}
+
+army_unrest_1 = {
+    tax_efficiency = -0.005
+	land_organisation = -0.20
+	leadership_modifier = -0.20
+	supply_consumption = 0.20
+	mobilisation_size = -0.01
+	icon = 20
+}
+
+bureaucratic_unrest_5 = {
+	tax_efficiency = -0.125
+	administrative_efficiency_modifier = -1.00
+	education = -0.10
+	min_social_spending = 0.25
+	pension_level = 1.25
+	icon = 20
+}
+
+bureaucratic_unrest_4 = {
+	tax_efficiency = -0.10
+	administrative_efficiency_modifier = -0.80
+	education = -0.08
+	min_social_spending = 0.20
+	pension_level = 1.00
+	icon = 20
+}
+
+bureaucratic_unrest_3 = {
+	tax_efficiency = -0.075
+	administrative_efficiency_modifier = -0.60
+	education = -0.06
+	min_social_spending = 0.15
+	pension_level = 0.75
+	icon = 20
+}
+
+bureaucratic_unrest_2 = {
+	tax_efficiency = -0.05
+	administrative_efficiency_modifier = -0.40
+	education = -0.04
+	min_social_spending = 0.10
+	pension_level = 0.50
+	icon = 20
+}
+
+bureaucratic_unrest_1 = {
+	tax_efficiency = -0.025
+	administrative_efficiency_modifier = -0.20
+	education = -0.02
+	min_social_spending = 0.05
+	pension_level = 0.25
+	icon = 20
+}
+
 	

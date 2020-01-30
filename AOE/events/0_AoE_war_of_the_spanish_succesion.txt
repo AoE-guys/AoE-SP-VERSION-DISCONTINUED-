@@ -1,0 +1,292 @@
+###death of charles II
+#country_event = {
+#	id = 13000
+#	title = "EVTNAME13000" 
+#	desc = "EVTDESC13000"
+#	major = yes
+#	news = yes
+#	news_desc_long = "EVTDESC13000_NEWS_LONG"
+#	news_desc_medium = "EVTDESC13000_NEWS_MEDIUM"
+#	news_desc_short = "EVTDESC13000_NEWS_SHORT"
+#	picture = "spanish_king"
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = SPA
+#		year = 1700
+#		is_culture_group = spanish
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	immediate = {
+#		set_global_flag = spanish_succesion_crisis
+#	}
+#	
+#	option = {
+#		name = "EVTNAME13000OPTA"
+#		set_global_flag = support_bourbon_heir_spa
+#		create_alliance = BOR
+#		AUS = { country_event = { id = 13003 days = 2 } }
+#		ENG = { country_event = { id = 13003 days = 2 } }
+#		PRU = { country_event = { id = 13003 days = 2 } }
+#		POR = { country_event = { id = 13003 days = 2 } }
+#		SVY = { country_event = { id = 13003 days = 2 } }
+#	
+#		ai_chance = {
+#			factor = 95
+#		}
+#	}
+#	
+#	option = {
+#		name = "EVTNAME13000OPTB"
+#		set_global_flag = support_habsburg_heir_spa
+#		create_alliance = AUS
+#	
+#	ai_chance = {
+#			factor = 5
+#		}
+#	}
+#}
+#Bourbon Allience
+#country_event = {
+#	id = 13001
+#	title = "EVTNAME13001" 
+#	desc = "EVTDESC13001"
+#	news = no
+#	picture = "spanish_king"
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	fire_only_once = yes
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	
+#	option = {
+#		name = "EVTNAME13001OPTA"
+#		create_alliance = SPA
+#	
+#	ai_chance = {
+#			factor = 95
+#		}
+#	}
+#	
+#	option = {
+#		name = "EVTNAME13001OPTB"
+#		remove_country_flag = support_bourbon_heir
+#	}
+#}
+#country_event = {
+#	id = 13003
+#	title = "EVTNAME13003" 
+#	desc = "EVTDESC13003"
+#	news = no
+#	picture = "spanish_king"
+#	
+#	allow_multiple_instances = yes
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "EVTNAME13003OPTA"
+#		create_alliance = AUS
+#		create_alliance = PRU
+#		create_alliance = SVY
+#		create_alliance = POR
+#		war = {
+#			target = SPA
+#			attacker_goal = { casus_belli = change_heir_habsburg_cb }
+#			defender_goal = { casus_belli = status_quo }
+#			call_ally = yes
+#		}
+#		ai_chance = {
+#			factor = 95
+#		}
+#	
+#	}	
+#	
+#	option = {
+#		name = "EVTNAME13003OPTB"
+#		remove_country_flag = support_habsburg_heir
+#	
+#	}
+#}
+#habsburg allience
+#country_event = {
+#	id = 13002
+#	title = "EVTNAME13002" 
+#	desc = "EVTDESC13002"
+#	news = no
+#	picture = "spanish_king"
+#	fire_only_once = yes
+#	trigger = {
+#		NOT= {
+#		tag = SPA
+#		}
+#		has_global_flag =  spanish_succesion_crisis
+#		has_global_flag = support_habsburg_heir_spa
+#		has_country_flag = support_habsburg_heir
+#		
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	
+#	option = {
+#		name = "EVTNAME13002OPTA"
+#		create_alliance = SPA
+#	
+#	ai_chance = {
+#			factor = 95
+#		}
+#	}
+#	
+#	option = {
+#		name = "EVTNAME13002OPTB"
+#		remove_country_flag = support_habsburg_heir
+#	}
+#}
+#country_event = {
+#	id = 13004
+#	title = "EVTNAME13004" 
+#	desc = "EVTDESC13004"
+#	news = no
+#	picture = "spanish_king"
+#	fire_only_once = yes
+#	trigger = {
+#		NOT= {
+#		tag = SPA
+#		}
+#		has_global_flag =  spanish_succesion_crisis
+#		has_global_flag = support_habsburg_heir_spa
+#		has_country_flag = support_bourbon_heir
+#		
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 2
+#	}
+#	
+#	
+#	option = {
+#		name = "EVTNAME13001OPTA"
+#		war = {
+#		target = SPA
+#		attacker_goal = { casus_belli = change_heir_bourbon_cb }
+#		defender_goal = { casus_belli = status_quo }
+#		call_ally = yes
+#		}
+#	
+#		ai_chance = {
+#			factor = 95
+#		}
+#	}
+#	
+#	option = {
+#		name = "EVTNAME13001OPTB"
+#		remove_country_flag = support_bourbon_heir
+#	
+#	ai_chance = {
+#			factor = 5
+#		}
+#	}
+#}
+#country_event = {
+#	id = 13005
+#	title = "EVTNAME13005" 
+#	picture = "spanish_king"
+#	is_triggered_only = yes
+#	
+#	option = {
+#		money = 1000000
+#		prestige = 80
+#		SPA = {
+#		any_owned = {
+#				limit = {
+#					OR = {
+#						region = BEL_387
+#						region = BEL_394
+#						region = SIC_753
+#						region = SIC_754
+#						region = AUS_726
+#						region = SIC_754
+#						region = NET_379
+#						region = PRU_575
+#						region = SAR_765
+#					}
+#				}
+#				secede_province = AUS
+#			}
+#		any_owned = {
+#			limit = {
+#				region = SIC_763
+#			}
+#			secede_province = SVY
+#		}
+#		any_owned = {
+#			limit = {
+#				province_id = 517
+#			}
+#			secede_province = ENG
+#		}
+#		end_war = AUS
+#		end_war = SVY
+#		end_war = ENG
+#		end_war = BOR
+#		end_war = BAV
+#		end_war = PRU
+#		end_war = POR
+#		}
+#		remove_global_flag =  spanish_succesion_crisis
+#	}
+#}
+#country_event = {
+#	id = 13006
+#	title = "EVTNAME13006" 
+#	picture = "spanish_king"
+#	is_triggered_only = yes
+#	
+#	option = {
+#		money = 1000000
+#		prestige = 80
+#		SPA = {
+#		any_owned = {
+#			limit = {
+#				OR = {
+#					region = BEL_387
+#					region = BEL_394
+#					region = SIC_753
+#					region = SIC_754
+#					region = AUS_726
+#					region = SIC_754
+#					region = SPA_498
+#					region = NET_379
+#					region = PRU_575
+#					region = SAR_765
+#					region = SIC_763
+#					}
+#				}
+#			secede_province = BOR
+#		}
+#		end_war = AUS
+#		end_war = SVY
+#		end_war = ENG
+#		end_war = BOR
+#		end_war = BAV
+#		end_war = PRU
+#		end_war = POR
+#		}
+#		remove_global_flag =  spanish_succesion_crisis
+#	}
+#}
+	
+	

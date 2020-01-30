@@ -12,15 +12,6 @@ precious_metal;Precious Metals;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 precious_metal_RGO_SIZE;Precious Metals Mine Size;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 cattle;Livestock;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 cattle_RGO_SIZE;Livestock Ranch Size;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_health_care_desc;The government doesn't care about healthcare and no funding for it exists. The few health institutions that exist are inherited from medieval times and are equipped accordingly. The medical career is an informal profession, mainly linked to the church. Hospitals use rudimentary lighting, facilities are overcrowded and infectious diseases round the halls and corners of the buildings. Prayers are commonly recommended to treat ailments.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-trinket_health_care;Trinket Healthcare;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-trinket_health_care_desc;Doctors and nurses have a rudimentary understanding of wounds and diseases, partially relying on old beliefs when treating patients, but they do have formal training. Hospitals have rules to reduce overcrowding (beds are spaced a meter apart), provisions for ventilation, and the sewers leading from the hospital are flushed several times a day while the latrines/drains are disinfected with peat charcoal. There is meager collection of patient data but there aren't any proper sanitation standards for hospitals nor government agencies to check them. Healthcare facilities are hard to find.\n即For the full effects of this reform, your administration spending should be at least 20%.劬;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-low_health_care;Low Healthcare;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-low_health_care_desc;Doctors and nurses are starting to understand wounds and diseases better during their studies and apply the principles of the so-called "germ theory" when treating patients. A Sanitary Commission was founded and its agents can be seen patrolling the hospitals, albeit infrequently, to guarantee a rudimentary sanitation standard. Healthcare facilities are starting to become common.\n即For the full effects of this reform, your administration spending should be at least 30%.劬;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-acceptable_health_care;Acceptable Healthcare;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-acceptable_health_care_desc;Medicine is a fully-fledged profession, with doctors and nurses graduating with complete understanding of the human body and a vast knowledge of diseases and how to treat them. Sterilization of the facilities and equipment is common, with Chamberland Filters used to filter water and the Chamberland Autoclave used for heating solutions above their boiling point to destroy dangerous microorganisms. Government agencies exist to enforce sanitation controls and ensure there's no overcrowding. Finding a clinic in an urban center is a relatively easy job and hospitals abandoned oil lamps in favor of gaslights that increase the efficiency of staff.\n即For the full effects of this reform, your administration spending should be at least 40%.劬;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-good_health_care;Good Healthcare;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-good_health_care_desc;The discovery of several vaccines revolutionized medicine, with vaccination being mandatory or strongly encouraged by the government. Doctors now use pharmaceuticals to treat patients and full sterilization of all medical equipment and facilities, quarantine procedures for infectious diseases and proper disposal of medical waste are mandatory practices enforced by the sanitation standards of the government agencies. Finding clinics or hospitals in smaller population centers is common, overcrowding is rare and some smaller health centers are starting to appear even in rural areas. Hospitals are equipped with modern electric lights and informational posters for staff.\n即For the full effects of this reform, your administration spending should be at least 50%.\nA fully funded administration provides a bonus to this reform.劬;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 school_reforms;School System;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_schools_l;No School System;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_schools;No School System;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -66,26 +57,6 @@ native_enslavement;Native Enslavement;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 NO_RAIL_YET;We can not encourage railroad building when we do not know how to build them yet.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 CAN_NOT_BUILD_FACTORY;Can not build factory.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 CAN_BUILD_FACTORY;Can build factory.\n;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_safety;No Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_safety_desc;Death or grievous injuries in the workplace isn't a rare occurrence as employers don't need to think about safety, only profit. The government has no governing legislation covering safety in the workplace and workers rarely manage to sue their employers over accidents.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-trinket_safety;Minimal Safety Regulations;;;;;;;;;;;;;;;;;;;;x;;;;
-trinket_safety_desc;Factories are required to provide proper ventilation and a regularly cleaned workspace. Workers can sue their employers in case of an accident but they rarely win any compensation. When they do the amount is usually negligible. Safety regulations only applies to factories.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-low_safety;Limited Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-low_safety_desc;Safety regulations extend to the agricultural, civil construction and mining sectors. In mines, the use of safety lamps is mandatory. Employees suing their employers still have a hard time winning any significant compensation, but the government offers help to the affected families, albeit the amount given is barely enough to scrap an existence.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-acceptable_safety;Regular Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-acceptable_safety_desc;Safety regulations extend to all workplaces in our country. Government agencies label agricultural chemicals for toxicity and potential health impacts, mining and construction workers are required to use protection gear and hand brakes operated by workers riding on top of train cars were abolished. Employees have their rights guaranteed and getting compensation for accidents that happen due to employer negligence is a common occurrence. Government help to the victims is reasonable.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-good_safety;Good Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-good_safety_desc;Safety regulations extend to all workplaces in our country and cover potential psychological problems due to extended isolation and even minor injuries. Employers are obliged to supply workers with protection equipment and safety training. Warnings and reminders are spread through the workplace to guarantee workers remember their safety instructions. Getting compensation for employer negligence in the workplace is easy and the government supports victims with a good amount of money.;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_work_hour_limit_desc;No limit on working hours per day. Workers have virtually no rights and employers do as they please with their workers. Conditions in some workplaces are analogue to slavery.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-fourteen_hours_desc;Working hours legislation aims to not only reduce the workload, but it also gives the right to a minimum number of holidays each year, restricts excessive night work and establishes the right to vacations, all this without a reduction of the workers' salaries. While wages grow and working hours decline, the people have more time for leisure and for consuming, driving demand up. At fourteen hours per day, most workers have barely any time for their families.;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-twelve_hours_desc;Working hours legislation aims to not only reduce the workload, but it also gives the right to a minimum number of holidays each year, restricts excessive night work and establishes the right to vacations, all this without a reduction of the workers' salaries. While wages grow and working hours decline, the people have more time for leisure and for consuming, driving demand up. At twelve hours per day, workers are starting to have time to spend with their families and are quickly becoming common visitors of taverns and cabarets after work.;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-ten_hours_desc;Working hours legislation aims to not only reduce the workload, but it also gives the right to a minimum number of holidays each year, restricts excessive night work and establishes the right to vacations, all this without a reduction of the workers' salaries. While wages grow and working hours decline, the people have more time for leisure and for consuming, driving demand up. Weekends without work are a common occurrence and white-collar workers have a system of annual vacations.;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;x;;;;
-eight_hours_desc;Working hours legislation aims to not only reduce the workload, but it also gives the right to a minimum number of holidays each year, restricts excessive night work and establishes the right to vacations, all this without a reduction of the workers' salaries. While wages grow and working hours decline, the people have more time for leisure and for consuming, driving demand up. At eight hours per day, almost all workers have the right to weekends off and annual vacations. Free time for leisure is at an all time high and the entertainment industry is in the middle of a boom. All over our country resorts emerge thanks to cheap hotels and inexpensive railway fares, widespread banking holidays and we watch the fading of many religious prohibitions against secular activities on Sundays.;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-work_hours;Work Hours;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-movement_fourteen_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
-movement_twelve_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
-movement_ten_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
-movement_eight_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
 POLITICS_SUPPORT_REFORM;$IDEOLOGY$: $POSITIVE$% votes yes, $NEGATIVE$% votes no.($PERCENT$% of Upper House)\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 POLITICS_IN_FAVOR_TOOLTIP;($PERCENT$% of the Upper House in favor of reforms);;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 POLITICS_UPPERHOUSE_CHART_TOOLTIP;$PERCENT$% of the Upper House are $IDEOLOGY$\n;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -270,10 +241,11 @@ NORMAL_WAR_NAME_COMMUNISM;The $ORDER$$FIRST$-$SECOND$ Revolutionary War;;;;;;;;;
 AGRESSION_WAR_NAME_COMMUNISM;The $ORDER$$FIRST$-$SECOND$ Revolutionary War;;;;;;;;;;;;;;;;;;x,,,
 NORMAL_WAR_NAME_DEMOCRACY;$ORDER$$FIRST$-$SECOND$ Counterrevolution;;;;;;;;;;;;;;;;;;x,,,
 AGRESSION_WAR_NAME_DEMOCRACY;$ORDER$$FIRST$-$SECOND$ Counterrevolution;;;;;;;;;;;;;;;;;;x,,,
-aristocrats;Landowners;;;;;;;;;;;;;;;;;;;;x;;;;
+aristocrats;Aristocrats;;;;;;;;;;;;;;;;;;;;x;;;;
 appointed_desc;Landowners or capitalists have been assigned seats in the Upper House by the leader of the country.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 landed_voting_desc;Only Landowners and Capitalists may vote.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-promote_aristocrats;Encourage Landowners ;;;;;;;;;;;;;;;;;;;;;;x;;;;
+promote_aristocrats;Encourage Aristocrats ;;;;;;;;;;;;;;;;;;;;;;x;;;;
+promote_labourers;Encourage Gentry ;;;;;;;;;;;;;;;;;;;;;;x;;;;
 ELECTIONSTART_1;The Elections of $COUNTRY$ are starting;;;;;;;;;;;;;;;;;;;;;;x;;;;
 sepoy_rebellion;Sepoy Rebellion;;;;;;;;;;;;;;;;;;;;;x
 IS_SUBSTATE_OF;Is a substate;;;;;;;;;;;;;;;;;;;;;x
@@ -640,8 +612,6 @@ open_borders;Open Borders;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,,,
 open_borders_l;Open Borders;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,,,
 open_borders_desc;Our country is completly open for immigration and emigration, either by deliberate choice or because of the lack of appropriate border controls.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 movement_open_borders;Pro Immigration Movement;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-unemployment_subsidies;Unemployment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-safety_regulations;Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 child_labor_illegal;Child Labor Illegal;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 child_labor_illegal_l;Child Labor Illegal;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 child_labor_illegal_desc;Child Labor is viewed as immoral and is illegal.;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;

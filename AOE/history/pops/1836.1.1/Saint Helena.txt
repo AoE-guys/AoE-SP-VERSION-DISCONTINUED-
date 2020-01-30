@@ -29,19 +29,37 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 196
+		size = 186
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 10
 	}
 	
 	farmers = {
 		culture = nanfaren
 		religion = mahayana
-		size = 124
+		size = 118
+	}
+
+	labourers = {
+		culture = nanfaren
+		religion = mahayana
+		size = 6
 	}
 	
 	farmers = {
 		culture = afro_caribeno
 		religion = protestant
-		size = 400
+		size = 380
+	}
+
+	labourers = {
+		culture = afro_caribeno
+		religion = protestant
+		size = 20
 	}
 }
 #Ascension (140/35 POPS)
@@ -55,7 +73,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 48
+		size = 46
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2
 	}
 }
 #Tristan da Cunha (100/25 POPS)
@@ -70,7 +94,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 48
+		size = 46
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2
 	}
 
 }
