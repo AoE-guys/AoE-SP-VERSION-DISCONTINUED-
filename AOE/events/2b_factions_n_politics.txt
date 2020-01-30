@@ -1,0 +1,5110 @@
+country_event = {
+	id = 9999884
+	title = "Chang of Power Balance in $FROMCOUNTRY$"
+	desc = "$Chang of Power Balance in $FROMCOUNTRY$."	
+    is_triggered_only = yes	
+    #trigger = {
+	#           has_global_flag = factions_setup_done
+    #           OR = {
+	#		         NOT = { AND = { has_country_flag = church_influence_5  wage_reform = no_minimum_wage } }
+	#				 NOT = { AND = { has_country_flag = church_influence_4  wage_reform = trinket_wage } }
+	#				 NOT = { AND = { has_country_flag = church_influence_3  wage_reform = low_minimum_wage } }
+	#				 NOT = { AND = { has_country_flag = church_influence_2  wage_reform = acceptable_minimum_wage } }
+	#				 NOT = { AND = { has_country_flag = church_influence_1  wage_reform = good_minimum_wage } }
+	#				 
+	#		         NOT = { AND = { has_country_flag = gentry_influence_1  work_hours = no_work_hour_limit } }
+	#				 NOT = { AND = { has_country_flag = gentry_influence_2  work_hours = fourteen_hours } }
+	#				 NOT = { AND = { has_country_flag = gentry_influence_3  work_hours = twelve_hours } }
+	#				 NOT = { AND = { has_country_flag = gentry_influence_4  work_hours = ten_hours } }
+	#				 NOT = { AND = { has_country_flag = gentry_influence_5  work_hours = eight_hours } }
+	#				 		         
+	#		         NOT = { AND = { has_country_flag = nobility_influence_5  safety_regulations = no_safety } }
+	#				 NOT = { AND = { has_country_flag = nobility_influence_4  safety_regulations = trinket_wage } }
+	#				 NOT = { AND = { has_country_flag = nobility_influence_3  safety_regulations = low_safety } }
+	#				 NOT = { AND = { has_country_flag = nobility_influence_2  safety_regulations = acceptable_safety } }
+	#				 NOT = { AND = { has_country_flag = nobility_influence_1  safety_regulations = good_safety } }
+    #
+	#				 NOT = { AND = { has_country_flag = burghers_influence_1  unemployment_subsidies = no_subsidies } }
+	#				 NOT = { AND = { has_country_flag = burghers_influence_2  unemployment_subsidies = trinket_wage } }
+	#				 NOT = { AND = { has_country_flag = burghers_influence_3  unemployment_subsidies = low_subsidies } }
+	#				 NOT = { AND = { has_country_flag = burghers_influence_4  unemployment_subsidies = acceptable_subsidies } }
+	#				 NOT = { AND = { has_country_flag = burghers_influence_5  unemployment_subsidies = good_subsidies } }
+    #
+	#				 NOT = { AND = { has_country_flag = army_influence_1  pensions = no_pensions } }
+	#				 NOT = { AND = { has_country_flag = army_influence_2 pensions = trinket_wage } }
+	#				 NOT = { AND = { has_country_flag = army_influence_3  pensions = low_pensions } }
+	#				 NOT = { AND = { has_country_flag = army_influence_4  pensions = acceptable_pensions } }
+	#				 NOT = { AND = { has_country_flag = army_influence_5  pensions = good_pensions } }	
+	#				 
+	#				 NOT = { AND = { has_country_flag = bureaucracy_influence_1  health_care = no_health_care } }
+	#				 NOT = { AND = { has_country_flag = bureaucracy_influence_2  health_care = trinket_wage } }
+	#				 NOT = { AND = { has_country_flag = bureaucracy_influence_3  health_care = low_health_care } }
+	#				 NOT = { AND = { has_country_flag = bureaucracy_influence_4  health_care = acceptable_health_care } }
+	#				 NOT = { AND = { has_country_flag = bureaucracy_influence_5  health_care = good_health_care } }					 
+	#		   }	
+	#}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Wind of Change"
+		#Church
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_5
+						                   wage_reform = no_minimum_wage 
+								 
+						}			           
+					             
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_5
+						                   wage_reform = trinket_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}	             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_5
+						                   wage_reform = low_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_5
+						                   wage_reform = acceptable_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_5
+						                   wage_reform = good_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_4
+						                   wage_reform = no_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_4
+						                   wage_reform = trinket_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_4
+						                   wage_reform = low_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_4
+						                   wage_reform = acceptable_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_4
+						                   wage_reform = good_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_3
+						                   wage_reform = no_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_3
+						                   wage_reform = trinket_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_3
+						                   wage_reform = low_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_3
+						                   wage_reform = acceptable_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_3
+						                   wage_reform = good_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_2
+						                   wage_reform = no_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_2
+						                   wage_reform = trinket_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_2
+						                   wage_reform = low_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_2
+						                   wage_reform = acceptable_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_2
+						                   wage_reform = good_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_1
+						                   wage_reform = no_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_1
+						                   wage_reform = trinket_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_1
+						                   wage_reform = low_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_1
+						                   wage_reform = acceptable_minimum_wage 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = church_influence_1
+						                   wage_reform = good_minimum_wage 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = -2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = 6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = -6
+					             #	}
+					             
+								 clr_country_flag = church_influence_5
+								 clr_country_flag = church_influence_4
+								 clr_country_flag = church_influence_3
+								 clr_country_flag = church_influence_2
+								 clr_country_flag = church_influence_1
+								 set_country_flag = church_influence_1
+			             
+		}
+		#Gentry
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_1
+						                   work_hours = no_work_hour_limit 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = 2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = -6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = 6
+					             #	}
+					             
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_1
+						                   work_hours = fourteen_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_1
+						                   work_hours = twelve_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_1
+						                   work_hours = ten_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_1
+						                   work_hours = eight_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_2
+						                   work_hours = no_work_hour_limit 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_2
+						                   work_hours = fourteen_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_2
+						                   work_hours = twelve_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_2
+						                   work_hours = ten_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_2
+						                   work_hours = eight_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_3
+						                   work_hours = no_work_hour_limit 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_3
+						                   work_hours = fourteen_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_3
+						                   work_hours = twelve_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_3
+						                   work_hours = ten_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_3
+						                   work_hours = eight_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_4
+						                   work_hours = no_work_hour_limit 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_4
+						                   work_hours = fourteen_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_4
+						                   work_hours = twelve_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_4
+						                   work_hours = ten_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_4
+						                   work_hours = eight_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_5
+						                   work_hours = no_work_hour_limit 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_5
+						                   work_hours = fourteen_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_5
+						                   work_hours = twelve_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_5
+						                   work_hours = ten_hours 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = gentry_influence_5
+						                   work_hours = eight_hours 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = 2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = -6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = 6
+					             #	}
+					             
+								 clr_country_flag = gentry_influence_1
+								 clr_country_flag = gentry_influence_2
+								 clr_country_flag = gentry_influence_3
+								 clr_country_flag = gentry_influence_4
+								 clr_country_flag = gentry_influence_5
+								 set_country_flag = gentry_influence_5
+			             
+		}
+		#Nobility
+				any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_5
+						                   safety_regulations = no_safety 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = 2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = -6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = 6
+					             #	}
+					             
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_5
+						                   safety_regulations = trinket_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_5
+						                   safety_regulations = low_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_5
+						                   safety_regulations = acceptable_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_5
+						                   safety_regulations = good_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_4
+						                   safety_regulations = no_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_4
+						                   safety_regulations = trinket_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_4
+						                   safety_regulations = low_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_4
+						                   safety_regulations = acceptable_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_4
+						                   safety_regulations = good_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_3
+						                   safety_regulations = no_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_3
+						                   safety_regulations = trinket_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_3
+						                   safety_regulations = low_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_3
+						                   safety_regulations = acceptable_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_3
+						                   safety_regulations = good_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_2
+						                   safety_regulations = no_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_2
+						                   safety_regulations = trinket_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_2
+						                   safety_regulations = low_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_2
+						                   safety_regulations = acceptable_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_2
+						                   safety_regulations = good_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_1
+						                   safety_regulations = no_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_1
+						                   safety_regulations = trinket_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_1
+						                   safety_regulations = low_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_1
+						                   safety_regulations = acceptable_safety 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             }
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = nobility_influence_1
+						                   safety_regulations = good_safety 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = -2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = 6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = -6
+					             #	}
+					             
+								 clr_country_flag = nobility_influence_5
+								 clr_country_flag = nobility_influence_4
+								 clr_country_flag = nobility_influence_3
+								 clr_country_flag = nobility_influence_2
+								 clr_country_flag = nobility_influence_1
+								 set_country_flag = nobility_influence_1
+			             
+		}
+		#Burghers
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_1
+						                   unemployment_subsidies = no_subsidies 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = 2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = -6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = 6
+					             #	}
+					             
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_1
+						                   unemployment_subsidies = trinket_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_1
+						                   unemployment_subsidies = low_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_1
+						                   unemployment_subsidies = acceptable_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_1
+						                   unemployment_subsidies = good_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = no_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = trinket_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = low_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = acceptable_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = good_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = no_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = trinket_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = low_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = acceptable_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_3
+						                   unemployment_subsidies = good_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_4
+						                   unemployment_subsidies = no_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = 6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = -2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = 2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_4
+						                   unemployment_subsidies = trinket_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_4
+						                   unemployment_subsidies = low_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_4
+						                   unemployment_subsidies = acceptable_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_4
+						                   unemployment_subsidies = good_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_5
+						                   unemployment_subsidies = no_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_5
+						                   unemployment_subsidies = trinket_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_5
+						                   unemployment_subsidies = low_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_5
+						                   unemployment_subsidies = acceptable_subsidies 
+								 
+						}
+			             
+					             any_pop = {
+					             	scaled_militancy = {
+					             		ideology = communist
+					             		factor = -6
+					             	}
+					             	scaled_militancy = {
+					             		ideology = conservative
+					             		factor = 2
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = liberal
+					             		factor = -2
+					             	}
+					             }
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = burghers_influence_5
+						                   unemployment_subsidies = good_subsidies 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = -2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = 6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = -6
+					             #	}
+					             
+								 clr_country_flag = burghers_influence_1
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_3
+								 clr_country_flag = burghers_influence_4
+								 clr_country_flag = burghers_influence_5
+								 set_country_flag = burghers_influence_5
+			             
+		}
+		#Army
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_1
+						                   pensions = no_pensions 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = 2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = -6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = 6
+					             #	}
+					             
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_1
+						                   pensions = trinket_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_1
+						                   pensions = low_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_1
+						                   pensions = acceptable_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_1
+						                   pensions = good_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = no_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = trinket_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = low_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = acceptable_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = good_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = no_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = trinket_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = low_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = acceptable_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_3
+						                   pensions = good_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_4
+						                   pensions = no_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_4
+						                   pensions = trinket_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_4
+						                   pensions = low_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_4
+						                   pensions = acceptable_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_4
+						                   pensions = good_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_5
+						                   pensions = no_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_5
+						                   pensions = trinket_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_5
+						                   pensions = low_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_5
+						                   pensions = acceptable_pensions 
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = army_influence_5
+						                   pensions = good_pensions 
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = -2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = 6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = -6
+					             #	}
+					             
+								 clr_country_flag = army_influence_1
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_3
+								 clr_country_flag = army_influence_4
+								 clr_country_flag = army_influence_5
+								 set_country_flag = army_influence_5
+			             
+		}
+        #Bureaucracy
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_1
+						                   health_care = no_health_care
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = 2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = -6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = 6
+					             #	}
+					             
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_1
+						                   health_care = trinket_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_1
+						                   health_care = low_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_1
+						                   health_care = acceptable_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_1
+						                   health_care = good_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_2
+						                   health_care = no_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_2
+						                   health_care = trinket_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_2
+						                   health_care = low_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_2
+						                   health_care = acceptable_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_2
+						                   health_care = good_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_3
+						                   health_care = no_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_3
+						                   health_care = trinket_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_3
+						                   health_care = low_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_3
+						                   health_care = acceptable_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_3
+						                   health_care = good_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_4
+						                   health_care = no_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = 6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_4
+						                   health_care = trinket_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_4
+						                   health_care = low_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_4
+						                   health_care = acceptable_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_4
+						                   health_care = good_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_5
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_5
+						                   health_care = no_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_1
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_5
+						                   health_care = trinket_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_2
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_5
+						                   health_care = low_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_3
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_5
+						                   health_care = acceptable_health_care
+								 
+						}
+			             
+					             any_pop = {
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	
+					             	scaled_militancy = {
+					             		ideology = reactionary
+					             		factor = -6
+					             	}
+					             	
+					             	
+					             	
+					             	
+					             }
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_4
+			             
+		}
+		any_country = {
+			            limit = {  tag = FROM 
+						          
+								           has_country_flag = bureaucracy_influence_5
+						                   health_care = good_health_care
+								 
+						}
+			             
+					             
+					             #	scaled_militancy = {
+					             #		ideology = communist
+					             #		factor = -2
+					             #	}
+					             #	scaled_militancy = {
+					             #		ideology = conservative
+					             #		factor = 6
+					             #	}
+					             #	
+					             #	
+					             #	
+					             #	
+					             #	scaled_militancy = {
+					             #		ideology = liberal
+					             #		factor = -6
+					             #	}
+					             
+								 clr_country_flag = bureaucracy_influence_1
+								 clr_country_flag = bureaucracy_influence_2
+								 clr_country_flag = bureaucracy_influence_3
+								 clr_country_flag = bureaucracy_influence_4
+								 clr_country_flag = bureaucracy_influence_5
+								 set_country_flag = bureaucracy_influence_5
+			             
+		}		
+	}
+}

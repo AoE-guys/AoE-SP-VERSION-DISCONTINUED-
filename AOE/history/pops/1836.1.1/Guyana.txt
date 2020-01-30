@@ -35,7 +35,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 52
+		size = 49
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 3
 	}
 
 	clergymen = {
@@ -59,13 +65,25 @@
 	farmers = {
 		culture = kreol
 		religion = protestant
-		size = 1599
+		size = 1519
+	}
+
+	labourers = {
+		culture = kreol
+		religion = protestant
+		size = 80
 	}
 
 	farmers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 5200
+		size = 4940
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 260
 	}
 	
 	artisans = {
@@ -103,7 +121,13 @@
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 468
+		size = 445
+	}
+
+	labourers = {
+		culture = amazonian
+		religion = animist
+		size = 23
 	}
 }
 #Essequibo (33000/8250 POPS)
@@ -135,7 +159,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 26
+		size = 25
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1
 	}
 
 	clergymen = {
@@ -159,13 +189,25 @@
 	farmers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 4160
+		size = 3952
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 208
 	}
 	
 	farmers = {
 		culture = kreol
 		religion = protestant
-		size = 286
+		size = 272
+	}
+
+	labourers = {
+		culture = kreol
+		religion = protestant
+		size = 14
 	}
 }
 #Biloka (4000/1000 POPS)
@@ -197,7 +239,13 @@
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 468
+		size = 445
+	}
+
+	labourers = {
+		culture = amazonian
+		religion = animist
+		size = 23
 	}
 
 }
