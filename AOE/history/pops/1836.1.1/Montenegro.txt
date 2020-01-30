@@ -24,7 +24,13 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 3675
+		size = 3491
+	}
+
+	labourers = {
+		culture = serb
+		religion = orthodox
+		size = 184
 	}
 
 	clergymen = {
@@ -87,7 +93,13 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 2000
+		size = 1900
+	}
+
+	labourers = {
+		culture = serb
+		religion = orthodox
+		size = 100
 	}
 
 	serfs = {
@@ -129,7 +141,13 @@
 	farmers = {
 		culture = bosniak
 		religion = sunni
-		size = 2862
+		size = 2719
+	}
+
+	labourers = {
+		culture = bosniak
+		religion = sunni
+		size = 143
 	}
 }
 #under the rule of Montenegro in 1836  
@@ -174,13 +192,25 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 10688
+		size = 10154
+	}
+
+	labourers = {
+		culture = serb
+		religion = orthodox
+		size = 534
 	}
 	
 	farmers = {
 		culture = gypsy
 		religion = orthodox
-		size = 500
+		size = 475
+	}
+
+	labourers = {
+		culture = gypsy
+		religion = orthodox
+		size = 25
 	}
 }
 #Kosovo-Sanjak Region (52000)  #see Serbia.txt for balance of region 
@@ -209,7 +239,13 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 1585
+		size = 1506
+	}
+
+	labourers = {
+		culture = serb
+		religion = orthodox
+		size = 79
 	}
 
 	serfs = {
@@ -245,13 +281,25 @@
 	farmers = {
 		culture = bosniak
 		religion = sunni
-		size = 1500
+		size = 1425
+	}
+
+	labourers = {
+		culture = bosniak
+		religion = sunni
+		size = 75
 	}
 
 	farmers = {
 		culture = gypsy
 		religion = sunni
-		size = 100
+		size = 95
+	}
+
+	labourers = {
+		culture = gypsy
+		religion = sunni
+		size = 5
 	}
 }
 #Dalmatia Region (64000) #see Croatia.txt for balance of region 
@@ -291,13 +339,25 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 2000
+		size = 1900
+	}
+
+	labourers = {
+		culture = croat
+		religion = catholic
+		size = 100
 	}
 	
 	farmers = {
 		culture = albanian
 		religion = catholic
-		size = 175
+		size = 166
+	}
+
+	labourers = {
+		culture = albanian
+		religion = catholic
+		size = 9
 	}
 	
 	aristocrats = {
@@ -333,13 +393,25 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 5112
+		size = 4856
+	}
+
+	labourers = {
+		culture = serb
+		religion = orthodox
+		size = 256
 	}
 	
 	farmers = {
 		culture = serb
 		religion = catholic
-		size = 175
+		size = 166
+	}
+
+	labourers = {
+		culture = serb
+		religion = catholic
+		size = 9
 	}
 	
 	aristocrats = {
@@ -375,7 +447,13 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 50
+		size = 48
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 2
 	}
 
 }

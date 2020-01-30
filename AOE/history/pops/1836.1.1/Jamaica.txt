@@ -41,7 +41,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 1139
+		size = 1082
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 57
 	}
 
 	clergymen = {
@@ -71,13 +77,25 @@
 	farmers = {
 		culture = kreol
 		religion = protestant
-		size = 5200
+		size = 4940
+	}
+
+	labourers = {
+		culture = kreol
+		religion = protestant
+		size = 260
 	}
 
 	farmers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 38675
+		size = 36741
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 1934
 	}
 }
 #Cayman Islands : (1200/300 POPS) #still a British Colony
@@ -97,7 +115,13 @@
 	farmers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 120
+		size = 114
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 6
 	}
 	
 	clergymen = {
@@ -115,6 +139,12 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 26
+		size = 25
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1
 	}
 }

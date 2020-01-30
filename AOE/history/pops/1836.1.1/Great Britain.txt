@@ -28,13 +28,25 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 16000
+		size = 15200
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 800
 	}
 	
 	farmers = {
 		culture = scottish
 		religion = catholic
-		size = 800
+		size = 760
+	}
+
+	labourers = {
+		culture = scottish
+		religion = catholic
+		size = 40
 	}
 }
 #Inverness (328000/82000 POPS)
@@ -66,7 +78,13 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 27236
+		size = 25874
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 1362
 	}
 }
 
@@ -100,7 +118,13 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 2344
+		size = 2227
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 117
 	}
 
 }
@@ -134,7 +158,13 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 31280
+		size = 29716
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 1564
 	}
 
 }
@@ -198,7 +228,13 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 20470
+		size = 19446
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 1024
 	}
 
 	clergymen = {
@@ -222,7 +258,13 @@
 	farmers = {
 		culture = scottish
 		religion = catholic
-		size = 10560
+		size = 10032
+	}
+
+	labourers = {
+		culture = scottish
+		religion = catholic
+		size = 528
 	}
 
 	artisans = {
@@ -260,13 +302,25 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 31640
+		size = 30058
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 1582
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 1600
+		size = 1520
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 80
 	}
 }
 #Glasgow (620000/155000 POPS)
@@ -322,7 +376,13 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 21260
+		size = 20197
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 1063
 	}
 
 	clergymen = {
@@ -334,7 +394,13 @@
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 1960
+		size = 1862
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 98
 	}
 
 	craftsmen = {
@@ -366,13 +432,25 @@
 	farmers = {
 		culture = scottish
 		religion = protestant
-		size = 13520
+		size = 12844
+	}
+
+	labourers = {
+		culture = scottish
+		religion = protestant
+		size = 676
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 2000
+		size = 1900
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 100
 	}
 
 }
@@ -394,7 +472,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 26400
+		size = 25080
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1320
 	}
 
 	bureaucrats = {
@@ -442,7 +526,13 @@
 	farmers = {
 		culture = welsh
 		religion = protestant
-		size = 12000
+		size = 11400
+	}
+
+	labourers = {
+		culture = welsh
+		religion = protestant
+		size = 600
 	}
 }
 #Cardigan (168000/42000 POPS)
@@ -474,7 +564,13 @@
 	farmers = {
 		culture = welsh
 		religion = protestant
-		size = 15450
+		size = 14678
+	}
+
+	labourers = {
+		culture = welsh
+		religion = protestant
+		size = 772
 	}
 }
 #Llandrindod (182000/45500 POPS)
@@ -518,7 +614,13 @@
 	farmers = {
 		culture = welsh
 		religion = protestant
-		size = 16100
+		size = 15295
+	}
+
+	labourers = {
+		culture = welsh
+		religion = protestant
+		size = 805
 	}
 }
 #Holyhead (240000/60000 POPS)
@@ -562,7 +664,13 @@
 	farmers = {
 		culture = welsh
 		religion = protestant
-		size = 21000
+		size = 19950
+	}
+
+	labourers = {
+		culture = welsh
+		religion = protestant
+		size = 1050
 	}
 
 }
@@ -633,7 +741,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 55540
+		size = 52763
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2777
 	}
 
 	clergymen = {
@@ -657,7 +771,13 @@
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 2580
+		size = 2451
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 129
 	}
 
 	clergymen = {
@@ -681,7 +801,13 @@
 	farmers = {
 		culture = irish
 		religion = catholic
-		size = 3150
+		size = 2992
+	}
+
+	labourers = {
+		culture = irish
+		religion = catholic
+		size = 158
 	}
 }
 #Manchester (744000/186000 POPS)
@@ -731,7 +857,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 26140
+		size = 24833
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1307
 	}
 
 	clergymen = {
@@ -743,7 +875,13 @@
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 3540
+		size = 3363
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 177
 	}
 
 	artisans = {
@@ -755,7 +893,13 @@
 	farmers = {
 		culture = irish
 		religion = catholic
-		size = 830
+		size = 788
+	}
+
+	labourers = {
+		culture = irish
+		religion = catholic
+		size = 42
 	}
 }
 #Carlisle (216000/54000 POPS)
@@ -787,19 +931,37 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 18400
+		size = 17480
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 920
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 800
+		size = 760
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 40
 	}
 
 	farmers = {
 		culture = irish
 		religion = catholic
-		size = 500
+		size = 475
+	}
+
+	labourers = {
+		culture = irish
+		religion = catholic
+		size = 25
 	}
 
 }
@@ -844,13 +1006,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 37940
+		size = 36043
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1897
 	}
 
 	farmers = {
 		culture = irish
 		religion = catholic
-		size = 1600
+		size = 1520
+	}
+
+	labourers = {
+		culture = irish
+		religion = catholic
+		size = 80
 	}
 }
 #Hull (512000/128000 POPS)
@@ -889,13 +1063,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 41980
+		size = 39881
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2099
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 2000
+		size = 1900
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 100
 	}
 }
 #Leeds (468000/117000 POPS)
@@ -934,13 +1120,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 37050
+		size = 35198
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1852
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 1200
+		size = 1140
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 60
 	}
 }
 #Sheffield (658000/164500 POPS)
@@ -1000,13 +1198,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 41130
+		size = 39074
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2056
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 1600
+		size = 1520
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 80
 	}
 
 }
@@ -1076,19 +1286,37 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 47560
+		size = 45182
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2378
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 440
+		size = 418
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 22
 	}
 
 	farmers = {
 		culture = irish
 		religion = catholic
-		size = 1200
+		size = 1140
+	}
+
+	labourers = {
+		culture = irish
+		religion = catholic
+		size = 60
 	}
 }
 #Chester (368000/92000 POPS)
@@ -1120,13 +1348,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 33050
+		size = 31398
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1652
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 440
+		size = 418
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 22
 	}
 
 	artisans = {
@@ -1164,7 +1404,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 27550
+		size = 26172
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1378
 	}
 }
 #Coventry (432000/108000 POPS)
@@ -1208,7 +1454,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 38000
+		size = 36100
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1900
 	}
 
 }
@@ -1272,13 +1524,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 39880
+		size = 37886
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1994
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 2000
+		size = 1900
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 100
 	}
 }
 #Leicester (404000/101000 POPS)
@@ -1310,7 +1574,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 36150
+		size = 34342
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1808
 	}
 }
 #Lincoln (336000/84000 POPS)
@@ -1342,7 +1612,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 30200
+		size = 28690
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1510
 	}
 
 }
@@ -1388,7 +1664,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 27400
+		size = 26030
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1370
 	}
 }
 #Ipswich (676000/169000 POPS)
@@ -1420,7 +1702,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 62600
+		size = 59470
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 3130
 	}
 }
 #Chelmsford (276000/69000 POPS)
@@ -1452,13 +1740,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 22850
+		size = 21708
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1142
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 800
+		size = 760
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 40
 	}
 
 }
@@ -1504,7 +1804,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 26650
+		size = 25318
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1332
 	}
 }
 #St. Albans (312000/78000 POPS)
@@ -1536,7 +1842,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 28700
+		size = 27265
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1435
 	}
 
 }
@@ -1600,13 +1912,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 25310
+		size = 24044
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1266
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 800
+		size = 760
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 40
 	}
 }
 #Salisbury (408000/102000 POPS)
@@ -1644,7 +1968,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 32950
+		size = 31302
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1648
 	}
 }
 #Bath (408000/102000 POPS)
@@ -1681,7 +2011,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 28250
+		size = 26838
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1412
 	}
 }
 #Plymouth (812000/203000 POPS)
@@ -1713,13 +2049,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 58500
+		size = 55575
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2925
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 440
+		size = 418
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 22
 	}
 
 
@@ -1747,19 +2095,37 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 16000
+		size = 15200
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 800
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 200
+		size = 190
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 10
 	}
 	
 	farmers = {
 		culture = irish
 		religion = catholic
-		size = 440
+		size = 418
+	}
+
+	labourers = {
+		culture = irish
+		religion = catholic
+		size = 22
 	}
 }
 
@@ -1853,7 +2219,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 50800
+		size = 48260
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 2540
 	}
 
 	artisans = {
@@ -1865,7 +2237,13 @@
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 6800
+		size = 6460
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 340
 	}
 
 	clerks = {
@@ -1907,43 +2285,85 @@
 	farmers = {
 		culture = north_german
 		religion = protestant
-		size = 420
+		size = 399
+	}
+
+	labourers = {
+		culture = north_german
+		religion = protestant
+		size = 21
 	}
 	
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 360
+		size = 342
+	}
+
+	labourers = {
+		culture = french
+		religion = catholic
+		size = 18
 	}
 	
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 120
+		size = 114
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 6
 	}
 	
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 160
+		size = 152
+	}
+
+	labourers = {
+		culture = spanish
+		religion = catholic
+		size = 8
 	}
 	
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 160
+		size = 152
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 8
 	}
 	
 	farmers = {
 		culture = bengali
 		religion = hindu
-		size = 40
+		size = 38
+	}
+
+	labourers = {
+		culture = bengali
+		religion = hindu
+		size = 2
 	}
 	
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 40
+		size = 38
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 2
 	}
 
 }
@@ -1977,7 +2397,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 36250
+		size = 34438
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1812
 	}
 
 	artisans = {
@@ -2021,7 +2447,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 31000
+		size = 29450
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1550
 	}
 }
 #Portsmouth
@@ -2047,7 +2479,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 14000
+		size = 13300
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 700
 	}
 }
 
@@ -2092,7 +2530,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 29200
+		size = 27740
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 1460
 	}
 
 }
@@ -2132,13 +2576,25 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 3040
+		size = 2888
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 152
 	}
 
 	farmers = {
 		culture = british
 		religion = catholic
-		size = 120
+		size = 114
+	}
+
+	labourers = {
+		culture = british
+		religion = catholic
+		size = 6
 	}
 
 }
@@ -2172,7 +2628,13 @@
 	farmers = {
 		culture = british
 		religion = protestant
-		size = 830
+		size = 788
+	}
+
+	labourers = {
+		culture = british
+		religion = protestant
+		size = 42
 	}
 	
 	artisans = {
@@ -2190,6 +2652,12 @@
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 4800
+		size = 4560
+	}
+
+	labourers = {
+		culture = french
+		religion = catholic
+		size = 240
 	}
 }

@@ -170,7 +170,13 @@
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 62
+		size = 59
+	}
+
+	labourers = {
+		culture = central_american
+		religion = catholic
+		size = 3
 	}
 
 	soldiers = {
@@ -182,13 +188,25 @@
 	farmers = {
 		culture = afro_caribbean
 		religion = catholic
-		size = 140
+		size = 133
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 7
 	}
 	
 	farmers = {
 		culture = afro_caribbean
 		religion = animist
-		size = 99
+		size = 94
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = animist
+		size = 5
 	}
 	
 	farmers = {

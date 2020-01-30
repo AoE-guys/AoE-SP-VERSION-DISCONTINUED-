@@ -242,10 +242,10 @@ country_migration_target = {
 			any_owned_province = {
 				life_rating = 30
 				OR = {
-					AND = {
-						has_pop_type = labourers
-						NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
-					}
+					#AND = {
+					#	has_pop_type = labourers
+					#	NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
+					#}
 					AND = {
 						has_pop_type = farmers
 						NOT = { unemployment_by_type = { value = 0.1 type = farmers } }
@@ -703,15 +703,15 @@ migration_target =
 promote_to =
 {
 
-	aristocrats = 
+	labourers = 
 	{
 		factor = 0.01
 		
 		modifier = {
 			factor = -100
 			OR = {
-				state_scope = { aristocrats = 0.02 }
-				country = { government = proletarian_dictatorship }
+				state_scope = { labourers = 0.05 }
+				#country = { government = proletarian_dictatorship }
 			}
 		}
 

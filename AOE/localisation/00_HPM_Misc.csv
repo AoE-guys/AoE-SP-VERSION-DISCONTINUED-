@@ -241,10 +241,11 @@ NORMAL_WAR_NAME_COMMUNISM;The $ORDER$$FIRST$-$SECOND$ Revolutionary War;;;;;;;;;
 AGRESSION_WAR_NAME_COMMUNISM;The $ORDER$$FIRST$-$SECOND$ Revolutionary War;;;;;;;;;;;;;;;;;;x,,,
 NORMAL_WAR_NAME_DEMOCRACY;$ORDER$$FIRST$-$SECOND$ Counterrevolution;;;;;;;;;;;;;;;;;;x,,,
 AGRESSION_WAR_NAME_DEMOCRACY;$ORDER$$FIRST$-$SECOND$ Counterrevolution;;;;;;;;;;;;;;;;;;x,,,
-aristocrats;Landowners;;;;;;;;;;;;;;;;;;;;x;;;;
+aristocrats;Aristocrats;;;;;;;;;;;;;;;;;;;;x;;;;
 appointed_desc;Landowners or capitalists have been assigned seats in the Upper House by the leader of the country.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 landed_voting_desc;Only Landowners and Capitalists may vote.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-promote_aristocrats;Encourage Landowners ;;;;;;;;;;;;;;;;;;;;;;x;;;;
+promote_aristocrats;Encourage Aristocrats ;;;;;;;;;;;;;;;;;;;;;;x;;;;
+promote_labourers;Encourage Gentry ;;;;;;;;;;;;;;;;;;;;;;x;;;;
 ELECTIONSTART_1;The Elections of $COUNTRY$ are starting;;;;;;;;;;;;;;;;;;;;;;x;;;;
 sepoy_rebellion;Sepoy Rebellion;;;;;;;;;;;;;;;;;;;;;x
 IS_SUBSTATE_OF;Is a substate;;;;;;;;;;;;;;;;;;;;;x
