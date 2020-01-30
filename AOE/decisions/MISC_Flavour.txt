@@ -199,43 +199,43 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-	build_neuschwanstein = {
-		picture = neuschwanstein
-		potential = {
-			year = 1886
-			OR = { 
-				AND = { 
-					tag = BAV
-					has_country_flag = swan_king
-				}
-				AND = {
-					NOT = { tag = BAV }
-					owns = 592 #Augsbourg
-					is_culture_group = germanic
-				}
-			}
-			OR = {
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-				government = hms_government
-			}
-			NOT = { has_global_flag = neuschwanstein_built }
-		}
-		
-		allow = {
-			OR = { 
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
-			romanticism = 1
-		}
-		
-		effect = {
-			treasury = -30000 #It costed 6.2 million marks but I have no idea how that translates into game money.
-			prestige = 15
-			set_global_flag = neuschwanstein_built
-		}
-			
-		ai_will_do = { factor = 1 }
-	}
+	#build_neuschwanstein = {
+	#	picture = neuschwanstein
+	#	potential = {
+	#		year = 1886
+	#		OR = { 
+	#			AND = { 
+	#				tag = BAV
+	#				has_country_flag = swan_king
+	#			}
+	#			AND = {
+	#				NOT = { tag = BAV }
+	#				owns = 592 #Augsbourg
+	#				is_culture_group = germanic
+	#			}
+	#		}
+	#		OR = {
+	#			government = absolute_monarchy
+	#			government = prussian_constitutionalism
+	#			government = hms_government
+	#		}
+	#		NOT = { has_global_flag = neuschwanstein_built }
+	#	}
+	#	
+	#	allow = {
+	#		OR = { 
+	#			is_greater_power = yes
+	#			is_secondary_power = yes
+	#		}
+	#		romanticism = 1
+	#	}
+	#	
+	#	effect = {
+	#		treasury = -30000 #It costed 6.2 million marks but I have no idea how that translates into game money.
+	#		prestige = 15
+	#		set_global_flag = neuschwanstein_built
+	#	}
+	#		
+	#	ai_will_do = { factor = 1 }
+	#}
 }
