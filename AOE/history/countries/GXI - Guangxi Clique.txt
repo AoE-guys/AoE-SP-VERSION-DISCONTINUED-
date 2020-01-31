@@ -6,8 +6,8 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.01
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.01
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -67,8 +67,8 @@ nonstate_consciousness = 0
 
 1861.1.1 = {
 	
-	literacy = 0.07
-	non_state_culture_literacy = 0.04
+	literacy = 0.01  #literacy = 0.07
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.04
 
 	foreign_weapons = yes_foreign_weapons
 	foreign_officers = yes_foreign_officers

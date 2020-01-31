@@ -4,8 +4,8 @@ religion = protestant
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty
-literacy = 0.8
-non_state_culture_literacy = 0.8
+literacy = 0.01  #literacy = 0.8
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.8
 civilized = yes
 prestige = 5
 
@@ -89,8 +89,8 @@ oob = "HAM_oob.txt"
 1861.1.1 = {
 	oob = "/1861/HAM_oob.txt"
 	plurality = 60
-	literacy = 0.90
-	non_state_culture_literacy = 0.45
+	literacy = 0.01  #literacy = 0.90
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.45
 }
 1861.1.1 = {
 # Political reforms

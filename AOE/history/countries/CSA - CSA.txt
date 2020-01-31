@@ -6,7 +6,7 @@ religion = protestant
 government = democracy
 plurality = 25.1
 nationalvalue = nv_liberty
-literacy = 0.50
+literacy = 0.01  #literacy = 0.50
 civilized = yes
 is_releasable_vassal = no
 
@@ -173,8 +173,8 @@ upper_house = {
 1861.1.1 = {
 
 plurality = 60
-literacy = 0.55
-non_state_culture_literacy = 0.10
+literacy = 0.01  #literacy = 0.55
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.10
 
 # Technologies
 	post_napoleonic_thought = 1

@@ -4,8 +4,8 @@ religion = hindu
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.01
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.01
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 
 # Political reforms
 slavery = no_slavery
@@ -66,8 +66,8 @@ nonstate_consciousness = 0
 oob = "BIK_oob.txt"
 1861.1.1 = {
 	oob = "/1861/BIK_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
+	literacy = 0.01  #literacy = 0.10
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.05
 
 	#Military Reforms
 	foreign_training = yes_foreign_training

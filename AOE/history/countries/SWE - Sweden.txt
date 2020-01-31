@@ -6,7 +6,7 @@ religion = protestant
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.01  #literacy = 0.8
 civilized = yes
 prestige = 10
 
@@ -105,7 +105,7 @@ decision = pass_folkskolereformen
 1861.1.1 = {
 	oob = "/1861/SWE_oob.txt"
 	plurality = 60
-	literacy = 0.95
+	literacy = 0.01  #literacy = 0.95
 
 # Political reforms
 slavery = no_slavery

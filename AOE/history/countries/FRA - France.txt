@@ -10,8 +10,8 @@ religion = catholic
 government = french_bourbon
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.50
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.50
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 civilized = yes
 
 #GreaterPowers = prestige
@@ -121,8 +121,8 @@ foreign_investment = {
 	oob = "/1861/FRA_oob.txt"
 	prestige = 140
 	plurality = 65
-	literacy = 0.65
-	non_state_culture_literacy = 0.15
+	literacy = 0.01  #literacy = 0.65
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.15
 
 	
 	decision = support_french_foreign_legion

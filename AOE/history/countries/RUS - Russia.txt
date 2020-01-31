@@ -8,8 +8,8 @@ religion = orthodox
 government = tsardom
 plurality = 5.0
 nationalvalue = nv_autocracy
-literacy = 0.04
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.04
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 civilized = yes
 
 set_country_flag = serfdom_not_abolished
@@ -115,8 +115,8 @@ oob = "RUS_oob.txt"
 	#decision = russian_vladivostok
 	ruling_party = "Nobility Faction"
 	plurality = 60
-	literacy = 0.15
-	non_state_culture_literacy = 0.1
+	literacy = 0.01  #literacy = 0.15
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.1
 
 # Technologies
 	post_napoleonic_thought = 1

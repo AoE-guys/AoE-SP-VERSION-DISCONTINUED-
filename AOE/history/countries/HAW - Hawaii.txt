@@ -4,8 +4,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.03
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.03
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -59,7 +59,7 @@ modern_winemaking = yes
 oob = "HAW_oob.txt"
 1861.1.1 = {
 	
-	literacy = 0.83
+	literacy = 0.01  #literacy = 0.83
 
 	#Economic Reforms
 	land_reform = yes_land_reform

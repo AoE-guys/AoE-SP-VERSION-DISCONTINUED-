@@ -5,8 +5,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.80
-non_state_culture_literacy = 0.25
+literacy = 0.01  #literacy = 0.80
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.25
 civilized = yes
 is_releasable_vassal = no
 
@@ -113,8 +113,8 @@ oob = "PRU_oob.txt"
 	oob = "/1861/PRU_oob.txt"
 	prestige = 120
 	plurality = 60
-	literacy = 0.90
-	non_state_culture_literacy = 0.45
+	literacy = 0.01  #literacy = 0.90
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.45
 	
 # Political reforms
 slavery = no_slavery

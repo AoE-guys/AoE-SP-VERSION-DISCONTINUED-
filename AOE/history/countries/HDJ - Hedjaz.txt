@@ -5,8 +5,8 @@ religion = sunni
 government = colonial_company
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.01
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.01
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 
 # Political reforms
 slavery = yes_slavery
@@ -65,8 +65,8 @@ nonstate_consciousness = 0
 oob = "HDJ_oob.txt"
 1861.1.1 = {
 	oob = "/1861/HDJ_oob.txt"
-	literacy = 0.13
-	non_state_culture_literacy = 0.04
+	literacy = 0.01  #literacy = 0.13
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.04
 
 	#Military Reforms
 	foreign_weapons = yes_foreign_weapons

@@ -4,8 +4,8 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5.0
 nationalvalue = nv_autocracy
-literacy = 0.03
-non_state_culture_literacy = 0.01
+literacy = 0.01  #literacy = 0.03
+non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
 civilized = yes
 
 #GreaterPowers = prestige
@@ -93,8 +93,8 @@ oob = "TUR_oob.txt"
 	oob = "/1861/TUR_oob.txt"
 	prestige = 85
 	plurality = 50
-	literacy = 0.25
-	non_state_culture_literacy = 0.15
+	literacy = 0.01  #literacy = 0.25
+	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.15
 }
 1861.1.1 = {
 ruling_party = "Nobility Faction"
