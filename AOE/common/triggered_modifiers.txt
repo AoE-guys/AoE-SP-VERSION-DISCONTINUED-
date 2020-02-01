@@ -138,29 +138,93 @@ education_fully_funded = {
 	icon = 19
 }
 
-neglected_education = {
+#neglected_education = {
+#	trigger = {
+#		exists = yes
+#		civilized = yes
+#		ai = no
+#		number_of_states = 2
+#		total_pops = 1000000
+#		OR = {
+#			AND = {
+#				literacy = 0.75
+#				NOT = { education_spending = 0.3 }
+#			}
+#			AND = {
+#				literacy = 0.5
+#				NOT = { education_spending = 0.2 }
+#			}
+#			AND = {
+#				literacy = 0.25
+#				NOT = { education_spending = 0.1 }
+#			}
+#		}
+#	}
+#	education_efficiency_modifier = -1
+#	icon = 19
+#}
+
+neglected_education_1 = {
 	trigger = {
 		exists = yes
 		civilized = yes
 		ai = no
 		number_of_states = 2
 		total_pops = 1000000
-		OR = {
-			AND = {
-				literacy = 0.75
-				NOT = { education_spending = 0.3 }
-			}
-			AND = {
-				literacy = 0.5
-				NOT = { education_spending = 0.2 }
-			}
-			AND = {
-				literacy = 0.25
-				NOT = { education_spending = 0.1 }
-			}
+		AND = {
+			literacy = 0.25
+			NOT = { education_spending = 0.25 }
 		}
 	}
-	education_efficiency_modifier = -1
+	education_efficiency_modifier = -0.25
+	icon = 19
+}
+
+neglected_education_2 = {
+	trigger = {
+		exists = yes
+		civilized = yes
+		ai = no
+		number_of_states = 2
+		total_pops = 1000000
+		AND = {
+			literacy = 0.50
+			NOT = { education_spending = 0.50 }
+		}
+	}
+	education_efficiency_modifier = -0.25
+	icon = 19
+}
+
+neglected_education_3 = {
+	trigger = {
+		exists = yes
+		civilized = yes
+		ai = no
+		number_of_states = 2
+		total_pops = 1000000
+		AND = {
+			literacy = 0.75
+			NOT = { education_spending = 0.75 }
+		}
+	}
+	education_efficiency_modifier = -0.25
+	icon = 19
+}
+
+neglected_education_4 = {
+	trigger = {
+		exists = yes
+		civilized = yes
+		ai = no
+		number_of_states = 2
+		total_pops = 1000000
+		AND = {
+			literacy = 0.99
+			NOT = { education_spending = 0.99 }
+		}
+	}
+	education_efficiency_modifier = -0.25
 	icon = 19
 }
 
