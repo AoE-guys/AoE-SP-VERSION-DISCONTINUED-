@@ -17,7 +17,7 @@ multitude_of_financial_instruments = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 insurance_companies = {
@@ -38,7 +38,7 @@ insurance_companies = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 regulated_buying_and_selling_of_stocks = {
@@ -59,7 +59,7 @@ regulated_buying_and_selling_of_stocks = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 #business_banks
@@ -192,7 +192,7 @@ private_bank_monitoring = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 market_behaviour_monitoring = {
@@ -213,7 +213,7 @@ market_behaviour_monitoring = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 #mutual_funds
@@ -251,7 +251,7 @@ silver_standard = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 1.5 
 	}
 }
 decimal_monetary_system = {
@@ -269,7 +269,7 @@ decimal_monetary_system = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 1.5 
 	}
 }
 #private_bank_money_bill_printing
@@ -288,7 +288,7 @@ double_standard = {
 		}
 	}
 	effect = {
-		tax_eff = 2 
+		tax_eff = 1 
 	}
 }
 fixed_intramonetary_exchange_rates = {
@@ -306,7 +306,7 @@ fixed_intramonetary_exchange_rates = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 #central_bank_money_bill_printing
@@ -329,7 +329,7 @@ gold_standard = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 1.5 
 	}
 }
 international_monetary_exchange_rates = {
@@ -351,7 +351,7 @@ international_monetary_exchange_rates = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 #modern_central_bank_system
@@ -370,7 +370,7 @@ state_bond_monetary_mechanism = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 interest_inflation_weapon = {
@@ -392,7 +392,7 @@ interest_inflation_weapon = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 #market_determined_exchange_rates
@@ -1419,7 +1419,7 @@ limited_partnership_company = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 joint_stock_company = {
@@ -1437,7 +1437,7 @@ joint_stock_company = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 patent = {
@@ -1504,7 +1504,7 @@ anti_trust_laws = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 financial_regulations = {
@@ -1522,7 +1522,7 @@ financial_regulations = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 banking_regulations = {
@@ -1540,7 +1540,7 @@ banking_regulations = {
 		}
 	}
 	effect = {
-		tax_eff = 1 
+		tax_eff = 0.5 
 	}
 }
 #economic_responsibility
