@@ -3790,4 +3790,25 @@ ghost_country_haunting = {
 gm_timer = {
     icon = 3
 }
+
+settlement_colony = {
+	#local_RGO_output = -0.0
+	#local_factory_output = -0.00
+	immigrant_attract = 10
+	#goods_demand = -0.10
+	#immigrant_push = -0.10
+	icon = 3
+}
+
+exploitation_colony = {
+	farm_rgo_size = 10
+	mine_rgo_size = 10
+
+	local_RGO_output = 0.10
+	#local_factory_output = -0.00
+	immigrant_attract = -10
+	#goods_demand = 0.10
+	#immigrant_push = -0.10
+	icon = 3
+}
 	
