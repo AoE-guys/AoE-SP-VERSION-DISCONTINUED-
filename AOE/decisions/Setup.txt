@@ -2669,8 +2669,8 @@ political_decisions = { #?
 			#	limit = { exists = yes has_pop_type = slaves }
 			#	slaves = { literacy = -0.99 }
 			#}
-			any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 }
-			any_country = { limit = { exists = yes } any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 } }
+			#any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 }
+			#any_country = { limit = { exists = yes } any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 } }
 			#################Slaves and Serfs  Pops Setup######################
 			
 			#################Romanian Pops Setup######################

@@ -601,7 +601,7 @@ political_decisions = {
 						33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
 						33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
 					}
-					any_pop = { limit = { type = slaves } literacy = -0.1 }
+					#any_pop = { limit = { type = slaves } literacy = -0.1 }
 				}
 			}
 			
@@ -639,7 +639,7 @@ political_decisions = {
 					33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
 					33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
 				}
-				any_pop = { limit = { type = slaves } literacy = -0.1 }
+				#any_pop = { limit = { type = slaves } literacy = -0.1 }
 			}
 		}
 		ai_will_do = { factor = 1 }
