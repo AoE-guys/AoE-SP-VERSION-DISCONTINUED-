@@ -1048,7 +1048,7 @@ RGO_template_farmers = {
 	}
 	
 	type = rgo
-	workforce = 10000
+	workforce = 40000
 }
 
 RGO_template_labourers = {
@@ -1079,7 +1079,7 @@ RGO_template_labourers = {
 	}
 	
 	type = rgo
-	workforce = 10000
+	workforce = 40000
 }
 
 
@@ -1163,14 +1163,14 @@ orchard = {
 precious_metal_mine = {
 	template = RGO_template_labourers
 	output_goods = precious_metal 
-	value = 10
+	value = 30
 	farm = yes
 }
 
 precious_goods_market = {
 	template = RGO_template_labourers
 	output_goods = precious_goods
-	value = 2.5
+	value = 10
 	farm = yes
 	#mine = yes
 }
