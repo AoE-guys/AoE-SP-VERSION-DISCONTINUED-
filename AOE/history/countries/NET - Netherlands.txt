@@ -5,7 +5,7 @@ religion = protestant
 government = absolute_monarchy
 plurality = 30
 nationalvalue = nv_productivity
-literacy = 0.01  #literacy = 0.70
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.70
 civilized = yes
 
 #GreaterPowers = prestige
@@ -98,7 +98,7 @@ oob = "NET_oob.txt"
 government = prussian_constitutionalism
 ruling_party = "Nobility Faction"
 plurality = 60
-literacy = 0.01  #literacy = 0.82
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.82
 
 # Political reforms
 slavery = yes_slavery

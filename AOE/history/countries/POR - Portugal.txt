@@ -5,8 +5,8 @@ religion = catholic
 government = hms_government
 plurality = 25.0
 nationalvalue = nv_productivity
-literacy = 0.01  #literacy = 0.1
-non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.02
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.1
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.02
 civilized = yes
 prestige = 5
 
@@ -108,8 +108,8 @@ political_parties = gerrymandering
 ruling_party = "Nobility Faction"
 plurality = 60
 prestige = 20
-literacy = 0.01  #literacy = 0.17
-non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.08
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.17
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.08
 
 # Social Reforms
 wage_reform = no_minimum_wage

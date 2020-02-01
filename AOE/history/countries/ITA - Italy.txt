@@ -5,8 +5,8 @@ religion = catholic
 government = hms_government
 plurality = 0.12
 nationalvalue = nv_order
-literacy = 0.01  #literacy = 0.28
-non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.15
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.28
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.15
 civilized = yes
 
 
@@ -61,8 +61,8 @@ upper_house = {
 1861.1.1 = {
 	prestige = 75
 	plurality = 60
-	literacy = 0.01  #literacy = 0.32
-	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.20
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.32
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.20
 
 	
 # Technologies

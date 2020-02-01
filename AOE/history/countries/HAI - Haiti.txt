@@ -5,8 +5,8 @@ religion = catholic
 government = presidential_dictatorship
 plurality = 10
 nationalvalue = nv_autocracy
-literacy = 0.01  #literacy = 0.02
-non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.05
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.02
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.05
 civilized = yes
 prestige = 0
 
@@ -70,7 +70,7 @@ oob = "HAI_oob.txt"
 1861.1.1 = {
 	oob = "/1861/HAI_oob.txt"
 	plurality = 50
-	literacy = 0.01  #literacy = 0.08
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.08
 }
 1861.1.1 = {
 	slavery = no_slavery

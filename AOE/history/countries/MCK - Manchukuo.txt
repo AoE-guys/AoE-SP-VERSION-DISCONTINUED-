@@ -4,8 +4,8 @@ religion = mahayana
 government = colonial_company
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.01  #literacy = 0.01
-non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.01
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
 prestige = 1
 
 # Political reforms
@@ -59,8 +59,8 @@ nonstate_consciousness = 0
 
 oob = "MCK_oob.txt"
 1861.1.1 = {
-	literacy = 0.01  #literacy = 0.07
-	non_state_culture_literacy = 0.01  #non_state_culture_literacy = 0.01  #literacy = 0.04
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.07
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.04
 
 	foreign_weapons = yes_foreign_weapons
 	army_schools = yes_army_schools
