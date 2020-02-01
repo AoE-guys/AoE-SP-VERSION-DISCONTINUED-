@@ -166,65 +166,241 @@ education_fully_funded = {
 
 neglected_education_1 = { #Changed to bonus
 	trigger = {
-		exists = yes
-		civilized = yes
-		ai = no
-		number_of_states = 2
-		total_pops = 1000000
-		AND = {
-			literacy = 0.25
-			education_spending = 0.25
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.10
+		    	education_spending = 0.10
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.10
+		    	education_spending = 0.05
+		    }
 		}
 	}
-	education_efficiency_modifier = 0.25
+	education_efficiency_modifier = 0.05
 	icon = 19
 }
 
 neglected_education_2 = { #Changed to bonus
 	trigger = {
-		exists = yes
-		civilized = yes
-		ai = no
-		number_of_states = 2
-		total_pops = 1000000
-		AND = {
-			literacy = 0.50
-			education_spending = 0.50
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.20
+		    	education_spending = 0.20
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.20
+		    	education_spending = 0.10
+		    }
 		}
 	}
-	education_efficiency_modifier = 0.25
+	education_efficiency_modifier = 0.05
 	icon = 19
 }
 
 neglected_education_3 = { #Changed to bonus
 	trigger = {
-		exists = yes
-		civilized = yes
-		ai = no
-		number_of_states = 2
-		total_pops = 1000000
-		AND = {
-			literacy = 0.75
-			education_spending = 0.75
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.30
+		    	education_spending = 0.30
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.30
+		    	education_spending = 0.15
+		    }
 		}
 	}
-	education_efficiency_modifier = 0.25
+	education_efficiency_modifier = 0.05
 	icon = 19
 }
 
 neglected_education_4 = { #Changed to bonus
 	trigger = {
-		exists = yes
-		civilized = yes
-		ai = no
-		number_of_states = 2
-		total_pops = 1000000
-		AND = {
-			literacy = 0.99
-			education_spending = 0.99
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.40
+		    	education_spending = 0.40
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.40
+		    	education_spending = 0.10
+		    }
 		}
 	}
-	education_efficiency_modifier = 0.25
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_5 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.50
+		    	education_spending = 0.50
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.50
+		    	education_spending = 0.25
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_6 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.60
+		    	education_spending = 0.60
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.60
+		    	education_spending = 0.30
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_7 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.70
+		    	education_spending = 0.70
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.70
+		    	education_spending = 0.35
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_8 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.80
+		    	education_spending = 0.80
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.80
+		    	education_spending = 0.40
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_9 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.90
+		    	education_spending = 0.90
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.90
+		    	education_spending = 0.45
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_10 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.99
+		    	education_spending = 0.99
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.99
+		    	education_spending = 0.50
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.10
 	icon = 19
 }
 
@@ -1106,6 +1282,7 @@ rich_development_1 = {
 	trigger = {
 		exists = yes
 		NOT = { rich_strata_life_needs = 0.5 }
+		NOT = { rich_strata_everyday_needs = 0.1 }
 		NOT = { rich_strata_luxury_needs = 0.1 }
 	}	
 	education_efficiency_modifier = -0.25
@@ -1116,6 +1293,7 @@ rich_development_2 = {
 	trigger = {
 		exists = yes
 		NOT = { rich_strata_life_needs = 0.9 }
+		NOT = { rich_strata_everyday_needs = 0.1 }
 		NOT = { rich_strata_luxury_needs = 0.1 }
 	}	
 	education_efficiency_modifier = -0.25
@@ -1219,6 +1397,7 @@ middle_development_1 = {
 	trigger = {
 		exists = yes
 		NOT = { middle_strata_life_needs = 0.5 }
+		NOT = { middle_strata_everyday_needs = 0.1 }
 		NOT = { middle_strata_luxury_needs = 0.1 }
 	}	
 	education_efficiency_modifier = -0.25
@@ -1229,6 +1408,7 @@ middle_development_2 = {
 	trigger = {
 		exists = yes
 		NOT = { middle_strata_life_needs = 0.9 }
+		NOT = { middle_strata_everyday_needs = 0.1 }
 		NOT = { middle_strata_luxury_needs = 0.1 }
 	}	
 	education_efficiency_modifier = -0.25
@@ -1332,6 +1512,7 @@ poor_development_1 = {
 	trigger = {
 		exists = yes
 		NOT = { poor_strata_life_needs = 0.5 }
+		NOT = { poor_strata_everyday_needs = 0.1 }
 		NOT = { poor_strata_luxury_needs = 0.1 }
 	}	
 	education_efficiency_modifier = -0.25
@@ -1342,6 +1523,7 @@ poor_development_2 = {
 	trigger = {
 		exists = yes
 		NOT = { poor_strata_life_needs = 0.9 }
+		NOT = { poor_strata_everyday_needs = 0.1 }
 		NOT = { poor_strata_luxury_needs = 0.1 }
 	}	
 	education_efficiency_modifier = -0.25
