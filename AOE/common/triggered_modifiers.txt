@@ -164,7 +164,7 @@ education_fully_funded = {
 #	icon = 19
 #}
 
-neglected_education_1 = {
+neglected_education_1 = { #Changed to bonus
 	trigger = {
 		exists = yes
 		civilized = yes
@@ -173,14 +173,14 @@ neglected_education_1 = {
 		total_pops = 1000000
 		AND = {
 			literacy = 0.25
-			NOT = { education_spending = 0.25 }
+			education_spending = 0.25
 		}
 	}
-	education_efficiency_modifier = -0.25
+	education_efficiency_modifier = 0.25
 	icon = 19
 }
 
-neglected_education_2 = {
+neglected_education_2 = { #Changed to bonus
 	trigger = {
 		exists = yes
 		civilized = yes
@@ -189,14 +189,14 @@ neglected_education_2 = {
 		total_pops = 1000000
 		AND = {
 			literacy = 0.50
-			NOT = { education_spending = 0.50 }
+			education_spending = 0.50
 		}
 	}
-	education_efficiency_modifier = -0.25
+	education_efficiency_modifier = 0.25
 	icon = 19
 }
 
-neglected_education_3 = {
+neglected_education_3 = { #Changed to bonus
 	trigger = {
 		exists = yes
 		civilized = yes
@@ -205,14 +205,14 @@ neglected_education_3 = {
 		total_pops = 1000000
 		AND = {
 			literacy = 0.75
-			NOT = { education_spending = 0.75 }
+			education_spending = 0.75
 		}
 	}
-	education_efficiency_modifier = -0.25
+	education_efficiency_modifier = 0.25
 	icon = 19
 }
 
-neglected_education_4 = {
+neglected_education_4 = { #Changed to bonus
 	trigger = {
 		exists = yes
 		civilized = yes
@@ -221,10 +221,10 @@ neglected_education_4 = {
 		total_pops = 1000000
 		AND = {
 			literacy = 0.99
-			NOT = { education_spending = 0.99 }
+			education_spending = 0.99
 		}
 	}
-	education_efficiency_modifier = -0.25
+	education_efficiency_modifier = 0.25
 	icon = 19
 }
 
@@ -1108,7 +1108,7 @@ rich_development_1 = {
 		NOT = { rich_strata_life_needs = 0.5 }
 		NOT = { rich_strata_luxury_needs = 0.1 }
 	}	
-	education_efficiency_modifier = -0.20
+	education_efficiency_modifier = -0.25
 	icon = 8
 }
 
@@ -1118,7 +1118,7 @@ rich_development_2 = {
 		NOT = { rich_strata_life_needs = 0.9 }
 		NOT = { rich_strata_luxury_needs = 0.1 }
 	}	
-	education_efficiency_modifier = -0.20
+	education_efficiency_modifier = -0.25
 	icon = 8
 }
 
@@ -1130,7 +1130,7 @@ rich_development_3 = {
 		      rich_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1142,7 +1142,7 @@ rich_development_4 = {
 		      rich_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1154,7 +1154,7 @@ rich_development_5 = {
 		      rich_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1166,7 +1166,7 @@ rich_development_6 = {
 		      rich_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1177,7 +1177,7 @@ rich_development_7 = {
 		      rich_strata_luxury_needs = 0.25 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1188,7 +1188,7 @@ rich_development_8 = {
 		      rich_strata_luxury_needs = 0.5 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1199,7 +1199,7 @@ rich_development_9 = {
 		      rich_strata_luxury_needs = 0.75 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1210,7 +1210,7 @@ rich_development_10 = {
 		      rich_strata_luxury_needs = 0.9 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1221,7 +1221,7 @@ middle_development_1 = {
 		NOT = { middle_strata_life_needs = 0.5 }
 		NOT = { middle_strata_luxury_needs = 0.1 }
 	}	
-	education_efficiency_modifier = -0.20
+	education_efficiency_modifier = -0.25
 	icon = 8
 }
 
@@ -1231,7 +1231,7 @@ middle_development_2 = {
 		NOT = { middle_strata_life_needs = 0.9 }
 		NOT = { middle_strata_luxury_needs = 0.1 }
 	}	
-	education_efficiency_modifier = -0.20
+	education_efficiency_modifier = -0.25
 	icon = 8
 }
 
@@ -1243,7 +1243,7 @@ middle_development_3 = {
 		      middle_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1255,7 +1255,7 @@ middle_development_4 = {
 		      middle_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1267,7 +1267,7 @@ middle_development_5 = {
 		      middle_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1279,7 +1279,7 @@ middle_development_6 = {
 		      middle_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1301,7 +1301,7 @@ middle_development_8 = {
 		      middle_strata_luxury_needs = 0.5 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1312,7 +1312,7 @@ middle_development_9 = {
 		      middle_strata_luxury_needs = 0.75 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1323,7 +1323,7 @@ middle_development_10 = {
 		      middle_strata_luxury_needs = 0.9 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1334,7 +1334,7 @@ poor_development_1 = {
 		NOT = { poor_strata_life_needs = 0.5 }
 		NOT = { poor_strata_luxury_needs = 0.1 }
 	}	
-	education_efficiency_modifier = -0.20
+	education_efficiency_modifier = -0.25
 	icon = 8
 }
 
@@ -1344,7 +1344,7 @@ poor_development_2 = {
 		NOT = { poor_strata_life_needs = 0.9 }
 		NOT = { poor_strata_luxury_needs = 0.1 }
 	}	
-	education_efficiency_modifier = -0.20
+	education_efficiency_modifier = -0.25
 	icon = 8
 }
 
@@ -1356,7 +1356,7 @@ poor_development_3 = {
 		      poor_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1368,7 +1368,7 @@ poor_development_4 = {
 		      poor_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1380,7 +1380,7 @@ poor_development_5 = {
 		      poor_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1392,7 +1392,7 @@ poor_development_6 = {
 		      poor_strata_luxury_needs = 0.1 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1403,7 +1403,7 @@ poor_development_7 = {
 		      poor_strata_luxury_needs = 0.25 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1414,7 +1414,7 @@ poor_development_8 = {
 		      poor_strata_luxury_needs = 0.5 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1425,7 +1425,7 @@ poor_development_9 = {
 		      poor_strata_luxury_needs = 0.75 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
 
@@ -1436,6 +1436,6 @@ poor_development_10 = {
 		      poor_strata_luxury_needs = 0.9 
 		}
 	}	
-	education_efficiency_modifier = 0.20
+	education_efficiency_modifier = 0.25
 	icon = 8
 }
