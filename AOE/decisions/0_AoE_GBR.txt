@@ -54,6 +54,7 @@ political_decisions = {
 					ai = no
 				}
 				country_event = 11101
+				add_core = GBR
 			}
 			any_country = {
 				limit = {
@@ -77,5 +78,78 @@ political_decisions = {
 		}
 		
 		ai_will_do = { factor = 1 }
+	}
+	
+	annex_bengal = {
+		picture = bengal
+		potential = {
+			tag = GBR
+			BNG = {
+				is_vassal = yes
+			}
+			is_great_power = yes
+		}
+		allow = {
+			bolt_action_rifles = 1
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			prestige = 10
+			bandboy = 10
+			inherit = BNG
+		}
+	}
+	
+	claim_the_raj_title = {
+		picture = raj
+		potential = {
+			tag = GBR
+			is_great_power = yes
+		}
+		allow = {
+			ENG_1305 = {
+				owned_by = GBR
+			}
+			ENG_1261 = {
+				owned_by = GBR
+			}
+			ENG_1251 = {
+				owned_by = GBR
+			}
+			ENG_1252 = {
+				owned_by = GBR
+			}
+			political_thought_7 = 1
+		}
+		effect = {
+			prestige = 20
+			badboy = 15
+			add_country_modifier = {
+				name = indian_raj
+				duration = -1
+			}
+		}
+	}
+	
+	british_south_africa = {
+		picture	= cape_map
+		potential = {
+			tag = GBR
+			is_great_power = yes
+		}
+		allow = {
+			ENG_2087 = {
+				owned_by = GBR
+			}
+		}
+		effect = {
+			prestige = 20
+			ENG_2087 = {
+				add_country_modifier = {
+					name = colonial_exploitation
+					duration = 7300
+				}
+			}
+		}
 	}
 }

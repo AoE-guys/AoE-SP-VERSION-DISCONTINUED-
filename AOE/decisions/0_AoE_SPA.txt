@@ -1,0 +1,109 @@
+political_decisions = {
+	renovate_the_armada = {
+		picture = armada
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = renovated_the_armada }
+		}
+		allow = {
+			money = 20000000
+			steam_turbine_ships = 1
+			advanced_naval_design = 1
+		}
+		effect = {
+			set_country_flag = renovated_the_armada
+			add_country_modifier = {
+				name = renovated_armada
+				duration = -1
+			}
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	introduce_the_cadastre_tax_and_banks = {
+		picture = cadastre
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = introduced_the_cadastre_tax }
+		}
+		allow = {
+			central_bank_money_bill_printing = 1
+			money = 3000000
+		}
+		effect = {
+			set_country_flag = introduced_the_cadastre_tax
+			add_country_modifier = {
+				name = the_cadastre_tax_and_the_spanish_bank
+				duration = -1
+			}
+			money = -3000000
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	royal_academy_of_the_fine_arts = {
+		picture = royal_academy
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = made_royal_academy }
+		}
+		allow = {
+			expressionism = 1
+			prestige = 300
+		}
+		effect = {
+			set_country_flag = made_royal_academy
+			add_country_modifier = {
+				name = royal_academy_of_the_fine_arts
+				duration = -1
+			}
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	expel_the_jesuits = {
+		picture = jesuits
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = expeled_the_jesuits }
+		}
+		allow = {
+			trade_policy = protectionism
+			analytic_philosophy = 1
+		}
+		effect = {
+			set_country_flag = expeled_the_jesuits
+			money = 1000000
+			any_pop = { militancy = 2 }
+			badboy = 2
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	royal_spanish_academy = {
+		picture = spanish_academy
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = made_royal_spanish_academy }
+		}
+		allow = {
+			army_nco_training = 1
+			military_directionism = 1
+		}
+		effect = {
+			set_country_flag = made_royal_spanish_academy
+			add_country_modifier = {
+				name = new_royal_spanish_academy
+				duration = -1
+			}
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+}

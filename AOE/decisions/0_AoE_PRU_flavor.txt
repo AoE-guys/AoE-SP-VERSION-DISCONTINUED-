@@ -87,18 +87,97 @@ political_decisions = {
 		}
 	}
 	
+	hold_prussian_herbstubung = {
+		picture = army_training
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = held_herbstubung }
+		}
+		
+		allow = {
+			deep_defense_system = 1
+			money = 10000
+			military_spending = 1
+		}
+		
+		effect = {
+			add_country_modifier = { name = prussian_herbstubung duration = -1}
+			money = -10000
+			set_country_flag = held_herbstubung
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	introduce_the_goose_step = {
+		picture = goose_step
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = introduced_the_goose_step }
+		}
+		
+		allow = {
+			point_defense_system = 1
+			breech_loaded_rifles = 1
+			military_spending = 1
+		}
+		
+		effect = {
+			add_country_modifier = { name = prussian_goose_step duration = 29200 }
+			set_country_flag = introduced_the_goose_step
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	regimental_cantons = {
+		picture = cantons
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = funded_regimental_cantons }
+		}
+		
+		allow = {
+			military_statistics = 1
+			army_decision_making = 1
+			military_spending = 1
+		}
+		
+		effect = {
+			add_country_modifier = { name = prussian_mobilization duration = -1}
+			set_country_flag = funded_regimental_cantons
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	prussian_academy_of_sciences = {
+		picture = academy
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = funded_prussian_academy }
+		}
+		
+		allow = {
+			realism = 1
+		}
+		effect = {
+			add_country_modifier = { name = berlin_academy_of_sciences duration = -1}
+			set_country_flag = funded_prussian_academy
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
 	prussia_united = {
 		picture = west_prussia
 		potential = {
 			tag = PRU
-			NOT = {
-				owns = 696
-				owns = 693
-				owns = 690
-				owns = 691
-				owns = 694
-				owns = 692			
-			}
+			NOT = { has_country_flag = prussia_is_united }
 		}
 		allow = {
 			war = no
@@ -129,6 +208,7 @@ political_decisions = {
 			692 = {
 				add_core = THIS
 			}
+			set_country_flag = prussia_is_united
 		}
 	}
 }

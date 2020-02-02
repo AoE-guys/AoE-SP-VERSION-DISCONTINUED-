@@ -1,0 +1,943 @@
+###Death of Queen Annie###
+country_event = {
+	id = 171400
+	title = "Death of Queen Annie"
+	desc = "EVTDESC171400"
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		year = 1714
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+		NOT = { year = 1760 }
+	}
+	
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.1
+			month = 5
+			NOT = { month = 7 }
+		}
+	}
+	
+	option = {
+		name = "May she rest in peace..."
+		random_owned = { limit = { owner = { is_our_vassal = NET } } owner = { leave_alliance = NET release_vassal = NET diplomatic_influence = { who = NET value = -200 } } }
+		prestige = -2
+		election = yes
+		set_country_flag = annie_is_ded
+	}
+}
+
+country_event = {
+	id = 171401
+	title = "Coronation of King George I"
+	desc = "EVTDESC171401"
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		year = 1714
+		has_country_flag = annie_is_ded
+		NOT = { year = 1760 }
+	}
+	
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			month = 5
+			NOT = { month = 7 }
+		}
+	}
+	
+	option = {
+		name = "God save the King!"
+		diplomatic_influence = { who = HAN value = 400 }
+		create_vassal = HAN
+		prestige = 10
+		set_country_flag = house_of_hannover
+	}
+}
+
+country_event = {
+	id = 171402
+	title = "Jacobites Prevail!" #Jacobism Prevails
+	desc = "EVTDESC171402"
+	picture = "jacobites"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Long live the king"
+		prestige = -25
+		set_country_flag = jacobism_prevails
+		
+
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		set_variable = {
+			which = jacobite_provinces
+			value = 0
+		}
+		capital_scope = {
+			any_pop = {
+				ideology = { factor = 0.1 value = reactionary }
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+				OR = {
+					pop_majority_ideology = conservative
+					pop_majority_ideology = reactionary
+				}
+			}
+			ideology = { factor = 0.1 value = reactionary }
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -8
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -3
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 8
+			}
+			scaled_militancy = {
+				ideology = anarcho_liberal
+				factor = 3
+			}
+		}
+		any_owned = {
+			remove_province_modifier = jacobite_sympathies
+			remove_province_modifier = labor_union
+			remove_province_modifier = militant_trade_union
+			remove_province_modifier = worker_union
+			remove_province_modifier = strike_solution
+			remove_province_modifier = province_strike
+			remove_province_modifier = may_day
+		}
+		random_country = {
+			limit = { 
+				is_sphere_leader_of = THIS
+				NOT = { is_our_vassal = THIS }
+			}
+			leave_alliance = THIS
+			country_event = 800056
+		}
+		random_country = {
+			limit = { is_our_vassal = THIS }
+			leave_alliance = THIS
+			country_event = 800055
+		}
+		any_country = {
+			limit = {
+				neighbour = THIS
+				NOT = { government = absolute_monarchy }
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 6
+				}
+			}
+		}		
+	}
+}
+country_event = {
+	id = 171403
+	title = "The Jacobites" #The Jacobites
+	desc = "EVTDESC37711"
+	picture = "jacobites"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GBR
+		has_country_flag = house_of_hannover
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVT37711OPTA"
+		set_country_flag = jacobite_rebellion
+		ENG_271 = {
+			add_core = GBJ
+		}
+		ENG_266 = {
+			add_core = GBJ
+		}
+		
+		release = GBJ
+		
+		war = {
+			target = GBJ
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		
+		any_owned = {
+			limit = {
+				OR = {
+					controlled_by = REB
+					region = ENG_266
+					region = ENG_271
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = conservative
+					factor = 0.6
+				}
+				ideology = {
+					value = reactionary
+					factor = 0.3
+				}
+			}
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					region = ENG_266
+					region = ENG_271
+				}
+			}
+			add_province_modifier = {
+				name = jacobite_sympathies
+				duration = -1
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = scottish
+					}
+				}
+				militancy = 5
+				consciousness = 5
+				ideology = {
+					value = reactionary
+					factor = 0.3
+				}
+			}
+		}
+		set_variable = {
+			which = jacobite_sympathies
+			value = 6
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 171403
+	title = "The Jacobites Defeated!" #The Jacobites Defeated!
+	desc = "EVTDESC37712"
+	picture = "jacobite_defeat"
+	
+	trigger = {
+		tag = GBR
+		has_country_flag = jacobite_rebellion
+		NOT = { exists = GBJ }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVT37712OPTA"
+		clr_country_flag = jacobite_rebellion
+		random_owned = {
+			limit = { owner = { has_country_flag = 2nd_jacobite_rebellion NOT = { has_country_flag = 3rd_jacobite_rebellion } } }
+			owner = { set_country_flag = 3rd_jacobite_rebellion } 
+		}
+		random_owned = {
+			limit = { owner = { has_country_flag = 1st_jacobite_rebellion NOT = { has_country_flag = 2nd_jacobite_rebellion } } }
+			owner = { set_country_flag = 2nd_jacobite_rebellion } 
+		}
+		random_owned = { limit = { owner = { NOT = { has_country_flag = 1st_jacobite_rebellion } } } owner = { set_country_flag = 1st_jacobite_rebellion } }
+		any_owned = {
+			remove_province_modifier = jacobite_sympathies
+		}
+		set_variable = {
+			which = jacobite_sympathies
+			value = 0
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+		ENG_271 = {
+			remove_core = GBJ
+		}
+		ENG_266 = {
+			remove_core = GBJ
+		}
+	}
+}
+
+country_event = {
+	id = 171404
+	title = "Return of the Jacobites" #Return of the Jacobites
+	desc = "EVTDESC171404"
+	picture = "jacobites"
+	
+	trigger = {
+		tag = GBR
+		NOT = { has_global_flag = jacobites_pacified }
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			government = democracy
+		}
+		NOT = {
+			any_owned_province = { has_province_modifier = jacobite_sympathies }
+		}
+		any_owned_province = {
+			is_colonial = no
+			is_core = THIS
+			OR = {
+				culture = scottish
+				AND = {
+					reactionary = 25
+					NOT = { region = ENG_300 }
+				}
+			}
+		}
+		year = 1745
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_colonial = no
+				is_core = THIS
+				OR = {
+					culture = scottish
+					reactionary = 25
+				}
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_colonial = no
+				is_core = THIS
+				OR = {
+					culture = scottish
+					reactionary = 25
+				}
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_colonial = no
+				is_core = THIS
+				OR = {
+					culture = scottish
+					reactionary = 25
+				}
+				average_militancy = 5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_owned_province = {
+				is_colonial = no
+				is_core = THIS
+				OR = {
+					culture = scottish
+					reactionary = 25
+				}
+				average_militancy = 6
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = 1st_jacobite_rebellion
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = 2nd_jacobite_rebellion
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = 3rd_jacobite_rebellion
+		}
+	}
+	
+	immediate = {
+		change_variable = {
+			which = jacobite_sympathies
+			value = 1
+		}
+	}
+
+	option = {
+		name = "EVT37713OPTA"
+		prestige = -2
+		ENG_271 = {
+			add_core = GBJ
+		}
+		ENG_266 = {
+			add_core = GBJ
+		}
+		
+		release = GBJ
+		
+		war = {
+			target = GBJ
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		
+		random_owned = {
+			limit = {
+				is_colonial = no
+				is_core = THIS
+				OR = {
+					culture = scottish
+					region = ENG_266
+					AND = {
+						reactionary = 25
+						NOT = { region = ENG_300 }
+					}
+				}
+			}
+			add_province_modifier = {
+				name = jacobite_sympathies
+				duration = -1
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 6
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT37713OPTB"
+		random_owned = {
+			limit = {
+				is_colonial = no
+				is_core = THIS
+				OR = {
+					culture = scottish
+					region = ENG_266
+					AND = {
+						reactionary = 25
+						NOT = { region = ENG_300 }
+					}
+				}
+			}
+			add_province_modifier = {
+				name = jacobite_sympathies
+				duration = -1
+			}
+			any_pop = {
+				ideology = {
+					value = reactionary
+					factor = 0.3
+				}
+			}
+			state_scope = {
+				any_pop = {
+					ideology = {
+						value = reactionary
+						factor = 0.1
+					}
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 171405
+	title = "Jacobite Propaganda" #Jacobite Propaganda
+	desc = "EVTDESC37743"
+	
+	trigger = {
+		owner = {
+			tag = GBR
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+		}
+		NOT = { has_global_flag = jacobites_pacified }
+		any_neighbor_province = { has_province_modifier = jacobite_sympathies }
+		NOT = { has_province_modifier = jacobite_sympathies }
+		NOT = { region = ENG_300 }
+		is_core = GBR
+		is_colonial = no
+		controlled_by = GBR
+		NOT = { reactionary = 30 }
+		any_pop = {
+			OR = {
+				has_pop_culture = scottish
+				AND = {
+					is_culture_group = british
+					has_pop_religion = catholic
+					militancy = 3
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.8
+			OR = {
+				culture = scottish
+			}
+		}
+		modifier = {
+			factor = 2.5
+			owner = {
+				check_variable = {
+					which = jacobite_sympathies
+					value = 9
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			reactionary = 30
+		}
+		modifier = {
+			factor = 0.8
+			reactionary = 40
+		}
+		modifier = {
+			factor = 0.8
+			reactionary = 50
+		}
+		modifier = {
+			factor = 1.2
+			liberal = 20
+		}
+		modifier = {
+			factor = 1.2
+			liberal = 30
+		}
+		modifier = {
+			factor = 1.2
+			liberal = 40
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.7
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.7
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.2
+			owner = { has_country_flag = jacobite_rebellion }
+		}
+	}
+
+	option = {
+		name = "EVT171405PTA"
+		owner = { prestige = -2 }
+		random_pop = {
+			limit = {
+				OR = {
+					culture = scottish
+					militancy = 3
+				}
+			}
+			reduce_pop = 0.99
+			militancy = 6
+		}
+		poor_strata = {
+			limit = { is_culture_group = british }
+			militancy = 4
+			consciousness = 2
+			ideology = {
+				value = reactionary
+				factor = 0.05
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT37743OPTB"
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = scottish
+					AND = {
+						is_culture_group = british
+						has_pop_religion = catholic
+						militancy = 3
+					}
+				}
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.2
+			}
+		}
+		state_scope = {
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = scottish
+						AND = {
+							is_culture_group = british
+							has_pop_religion = catholic
+							militancy = 3
+						}
+					}
+				}
+				consciousness = 2
+				ideology = {
+					value = reactionary
+					factor = 0.1
+				}
+			}
+		}
+	}
+}
+	
+
+province_event = {
+	id = 171406
+	title = "Jacobite Sympathies" #Jacobite Sympathies
+	desc = "EVTDESC37714"
+	
+	trigger = {
+		NOT = { has_global_flag = jacobites_pacified }
+		owner = {
+			tag = GBR
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+			NOT = {
+				check_variable = {
+					which = jacobite_sympathies
+					value = 10
+				}
+			}
+		}
+		any_neighbor_province = { has_province_modifier = jacobite_sympathies }
+		NOT = { has_province_modifier = jacobite_sympathies }
+		is_core = GBR
+		is_colonial = no
+		controlled_by = GBR
+		OR = {
+			reactionary = 30
+			AND = {
+				reactionary = 20
+				average_militancy = 4
+			}
+			AND = {
+				culture = scottish
+				average_militancy = 4
+			}
+			AND = {
+				culture = catalan
+				average_militancy = 4
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 2
+			owner = { has_country_modifier = rebel_cell_discovered }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				check_variable = {
+					which = jacobite_sympathies
+					value = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = {
+					which = jacobite_sympathies
+					value = 8
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				NOT = {
+					check_variable = {
+						which = jacobite_sympathies
+						value = 3
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				culture = scottish
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			reactionary = 30
+		}
+		modifier = {
+			factor = 0.8
+			reactionary = 40
+		}
+		modifier = {
+			factor = 0.8
+			reactionary = 50
+		}
+		modifier = {
+			factor = 1.2
+			liberal = 20
+		}
+		modifier = {
+			factor = 1.2
+			liberal = 30
+		}
+		modifier = {
+			factor = 1.2
+			liberal = 40
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.7
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.7
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.2
+			owner = { has_country_flag = jacobite_rebellion }
+		}
+	}
+	
+	option = {
+		name = "EVT171406OPTA"
+		add_province_modifier = {
+			name = jacobite_sympathies
+			duration = -1
+		}
+		owner = {
+			change_variable = {
+				which = jacobite_sympathies
+				value = 1
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 171407
+	title = "Jacobite Cell Discovered!" #Jacobite Cell Discovered!
+	desc = "EVTDESC171407"
+	
+	trigger = {
+		owner = { tag = GBR }
+		has_province_modifier = jacobite_sympathies
+		controlled_by = GBR
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			owner = { has_country_modifier = rebel_cell_discovered }
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				check_variable = {
+					which = jacobite_sympathies
+					value = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				check_variable = {
+					which = jacobite_sympathies
+					value = 8
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = scottish
+		}
+		modifier = {
+			factor = 3
+			NOT = {
+				any_neighbor_province = {
+					is_core = GBR
+					NOT = { has_province_modifier = jacobite_sympathies }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			liberal = 20
+		}
+		modifier = {
+			factor = 0.8
+			liberal = 30
+		}
+		modifier = {
+			factor = 0.8
+			liberal = 40
+		}
+		modifier = {
+			factor = 1.2
+			reactionary = 20
+		}
+		modifier = {
+			factor = 1.2
+			reactionary = 30
+		}
+		modifier = {
+			factor = 1.2
+			reactionary = 40
+		}
+		modifier = {
+			factor = 1.2
+			reactionary = 50
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			country_units_in_province = GBR
+		}
+		modifier = {
+			factor = 0.4
+			owner = { has_country_flag = jacobite_rebellion }
+		}
+	}
+	
+	option = {
+		name = "EVT171407OPTA"
+		remove_province_modifier = jacobite_sympathies
+		any_pop = {
+			militancy = -5
+		}
+		owner = {
+			add_country_modifier = {
+				name = rebel_cell_discovered
+				duration = 180
+			}
+			change_variable = {
+				which = jacobite_sympathies
+				value = -1
+			}
+		}
+		ENG_271 = {
+			remove_core = GBJ
+		}
+		ENG_266 = {
+			remove_core = GBJ
+		}
+	}
+}	
