@@ -6,11 +6,13 @@ country_event = {
 	picture = "Education"
 
 	id = 9999856
+	
+	is_triggered_only = yes
 
-	trigger = {
-		NOT = { has_global_flag = education_setup_b }
-		ai = no
-	}
+	#trigger = {
+	#	NOT = { has_global_flag = education_setup_b }
+	#	ai = no
+	#}
 	mean_time_to_happen = {
 		days = 1
 	}
