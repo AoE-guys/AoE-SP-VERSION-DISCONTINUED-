@@ -1351,8 +1351,9 @@ rich_development_6 = {
 rich_development_7 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      rich_strata_luxury_needs = 0.25 
+		AND = {
+		      rich_strata_luxury_needs = 0.25
+              rich_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1362,8 +1363,9 @@ rich_development_7 = {
 rich_development_8 = {
 	trigger = {
 		exists = yes
-		OR = {
+		AND = {
 		      rich_strata_luxury_needs = 0.5 
+			  rich_strata_everyday_needs = 0.50
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1373,8 +1375,9 @@ rich_development_8 = {
 rich_development_9 = {
 	trigger = {
 		exists = yes
-		OR = {
+		AND = {
 		      rich_strata_luxury_needs = 0.75 
+			  rich_strata_everyday_needs = 0.50
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1384,8 +1387,9 @@ rich_development_9 = {
 rich_development_10 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      rich_strata_luxury_needs = 0.9 
+		AND = {
+		      rich_strata_luxury_needs = 0.9
+	          rich_strata_everyday_needs = 0.50		  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1466,8 +1470,9 @@ middle_development_6 = {
 middle_development_7 = {
 	trigger = {
 		exists = yes
-		OR = {
+		AND = {
 		      middle_strata_luxury_needs = 0.25 
+			  middle_strata_everyday_needs = 0.50
 		}
 	}	
 	education_efficiency_modifier = 0.20
@@ -1477,8 +1482,9 @@ middle_development_7 = {
 middle_development_8 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      middle_strata_luxury_needs = 0.5 
+		AND = {
+		      middle_strata_luxury_needs = 0.5
+              middle_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1488,8 +1494,9 @@ middle_development_8 = {
 middle_development_9 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      middle_strata_luxury_needs = 0.75 
+		AND = {
+		      middle_strata_luxury_needs = 0.75
+              middle_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1499,8 +1506,9 @@ middle_development_9 = {
 middle_development_10 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      middle_strata_luxury_needs = 0.9 
+		AND = {
+		      middle_strata_luxury_needs = 0.9
+              middle_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1581,8 +1589,9 @@ poor_development_6 = {
 poor_development_7 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      poor_strata_luxury_needs = 0.25 
+		AND = {
+		      poor_strata_luxury_needs = 0.25
+              poor_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1592,8 +1601,9 @@ poor_development_7 = {
 poor_development_8 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      poor_strata_luxury_needs = 0.5 
+		AND = {
+		      poor_strata_luxury_needs = 0.5
+              poor_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1603,8 +1613,9 @@ poor_development_8 = {
 poor_development_9 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      poor_strata_luxury_needs = 0.75 
+		AND = {
+		      poor_strata_luxury_needs = 0.75
+              poor_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
@@ -1614,8 +1625,9 @@ poor_development_9 = {
 poor_development_10 = {
 	trigger = {
 		exists = yes
-		OR = {
-		      poor_strata_luxury_needs = 0.9 
+		AND = {
+		      poor_strata_luxury_needs = 0.9
+              poor_strata_everyday_needs = 0.50			  
 		}
 	}	
 	education_efficiency_modifier = 0.25
