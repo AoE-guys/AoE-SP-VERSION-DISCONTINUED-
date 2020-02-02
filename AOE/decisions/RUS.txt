@@ -533,35 +533,6 @@
 #		ai_will_do = { factor = 1 }
 #	}
 #	
-#	construct_st_petersburg = {
-#		picture = petersburg
-#		potential = {
-#			tag = RUS
-#			NOT = { capital = 994 }
-#		}
-#
-#		allow = {
-#			owns = 994 # St.Petersburg	
-#		}
-#		
-#		effect = {
-#			capital = 994
-#			994 = {
-#				life_rating = 5
-#				change_province_name = "St.Petersburg"
-#				naval_base = 3
-#				fort = 2
-#				add_province_modifier = {
-#					name = baby_boom
-#					duration = 5475
-#				}
-#			}
-#			prestige = 5
-#		}
-#		ai_will_do = {
-#			factor = 1
-#		}
-#	}
 #	
 #	treaty_of_tartu = {
 #		picture = treaty_signing
@@ -1723,42 +1694,6 @@
 #			random_owned = { limit = { owner = { NOT = { owns = 1210 } } } 1210 = { owner = { country_event = 325461 } } }
 #		}
 #
-#		ai_will_do = { factor = 1 }
-#	}
-#	
-#	
-#	claim_the_baltics = {
-#		picture = baltic_russia
-#		potential = {
-#			tag = RUS
-#			NOT = { has_country_flag = claimed_baltics }
-#		}
-#		
-#		allow = {
-#			war = no
-#			NOT = {owns = 994}
-#		}
-#		
-#		effect = {
-#			set_country_flag = claimed_baltics
-#			RUS_349 = {
-#				add_core = THIS 
-#			}
-#			994 = {
-#				add_core = THIS
-#			}
-#			354 = {
-#				add_core = THIS
-#			}
-#			355 = {
-#				add_core = THIS
-#			}
-#			996 = {
-#				add_core = THIS
-#			}
-#			badboy = 15
-#		}
-#		
 #		ai_will_do = { factor = 1 }
 #	}
 #}
