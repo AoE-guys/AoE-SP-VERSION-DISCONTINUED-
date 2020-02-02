@@ -138,29 +138,269 @@ education_fully_funded = {
 	icon = 19
 }
 
-neglected_education = {
+#neglected_education = {
+#	trigger = {
+#		exists = yes
+#		civilized = yes
+#		ai = no
+#		number_of_states = 2
+#		total_pops = 1000000
+#		OR = {
+#			AND = {
+#				literacy = 0.75
+#				NOT = { education_spending = 0.3 }
+#			}
+#			AND = {
+#				literacy = 0.5
+#				NOT = { education_spending = 0.2 }
+#			}
+#			AND = {
+#				literacy = 0.25
+#				NOT = { education_spending = 0.1 }
+#			}
+#		}
+#	}
+#	education_efficiency_modifier = -1
+#	icon = 19
+#}
+
+neglected_education_1 = { #Changed to bonus
 	trigger = {
-		exists = yes
-		civilized = yes
-		ai = no
-		number_of_states = 2
-		total_pops = 1000000
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
 		OR = {
-			AND = {
-				literacy = 0.75
-				NOT = { education_spending = 0.3 }
-			}
-			AND = {
-				literacy = 0.5
-				NOT = { education_spending = 0.2 }
-			}
-			AND = {
-				literacy = 0.25
-				NOT = { education_spending = 0.1 }
-			}
+		    AND = { 
+			    ai = no
+		    	literacy = 0.10
+		    	education_spending = 0.10
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.10
+		    	education_spending = 0.05
+		    }
 		}
 	}
-	education_efficiency_modifier = -1
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_2 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.20
+		    	education_spending = 0.20
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.20
+		    	education_spending = 0.10
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_3 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.30
+		    	education_spending = 0.30
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.30
+		    	education_spending = 0.15
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_4 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.40
+		    	education_spending = 0.40
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.40
+		    	education_spending = 0.10
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_5 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.50
+		    	education_spending = 0.50
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.50
+		    	education_spending = 0.25
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_6 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.60
+		    	education_spending = 0.60
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.60
+		    	education_spending = 0.30
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_7 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.70
+		    	education_spending = 0.70
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.70
+		    	education_spending = 0.35
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_8 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.80
+		    	education_spending = 0.80
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.80
+		    	education_spending = 0.40
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_9 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.90
+		    	education_spending = 0.90
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.90
+		    	education_spending = 0.45
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+neglected_education_10 = { #Changed to bonus
+	trigger = {
+		#exists = yes
+		#civilized = yes
+		#ai = no
+		#number_of_states = 2
+		#total_pops = 1000000
+		OR = {
+		    AND = { 
+			    ai = no
+		    	literacy = 0.99
+		    	education_spending = 0.99
+		    }
+		    AND = { 
+			    ai = yes
+		    	literacy = 0.99
+		    	education_spending = 0.50
+		    }
+		}
+	}
+	education_efficiency_modifier = 0.10
 	icon = 19
 }
 
@@ -179,7 +419,7 @@ islamic_law_triggered = {
 		NOT = { religious_policy = pro_atheism }
 	}
 	research_points_modifier = -0.05
-	education_efficiency_modifier = -0.15
+	education_efficiency_modifier = -0.10
 	literacy_con_impact = -0.5
 	issue_change_speed = -0.5
 	suppression_points_modifier = 0.5
@@ -187,158 +427,158 @@ islamic_law_triggered = {
 	icon = 5
 }
 
-the_british_raj = {
-	trigger = {
-		exists = yes
-		ai = no
-		OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			government = hms_government
-			government = fascist_dictatorship
-			government = democracy
-		}
-		NOT = { is_culture_group = indo_iranian }
-		NOT = { is_culture_group = south_asian }
-		1227 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1236 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1251 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1297 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-	}
-	research_points = 0.5
-	core_pop_militancy_modifier = -0.05
-	supply_consumption = 0.35
-	tax_efficiency = -0.1
-	influence_modifier = 0.05
-	administrative_efficiency_modifier = -0.2
-	prestige = 0.03
-	icon = 19
-}
+#the_british_raj = {
+#	trigger = {
+#		exists = yes
+#		ai = no
+#		OR = {
+#			government = absolute_monarchy
+#			government = prussian_constitutionalism
+#			government = hms_government
+#			government = fascist_dictatorship
+#			government = democracy
+#		}
+#		NOT = { is_culture_group = indo_iranian }
+#		NOT = { is_culture_group = south_asian }
+#		1227 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1236 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1251 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1297 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#	}
+#	research_points = 0.5
+#	core_pop_militancy_modifier = -0.05
+#	supply_consumption = 0.35
+#	tax_efficiency = -0.1
+#	influence_modifier = 0.05
+#	administrative_efficiency_modifier = -0.2
+#	prestige = 0.03
+#	icon = 19
+#}
+#
+#the_british_raj_ai = {
+#	trigger = {
+#		exists = yes
+#		ai = yes
+#		OR = {
+#			government = absolute_monarchy
+#			government = prussian_constitutionalism
+#			government = hms_government
+#			government = fascist_dictatorship
+#			government = democracy
+#		}
+#		NOT = { is_culture_group = indo_iranian }
+#		NOT = { is_culture_group = south_asian }
+#		1227 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1236 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1251 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1297 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#	}
+#	research_points = 0.5
+#	core_pop_militancy_modifier = -0.05
+#	supply_consumption = 0.1
+#	tax_efficiency = -0.1
+#	administrative_efficiency_modifier = -0.1
+#	influence_modifier = 0.05
+#	prestige = 0.03
+#	icon = 19
+#}
 
-the_british_raj_ai = {
-	trigger = {
-		exists = yes
-		ai = yes
-		OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			government = hms_government
-			government = fascist_dictatorship
-			government = democracy
-		}
-		NOT = { is_culture_group = indo_iranian }
-		NOT = { is_culture_group = south_asian }
-		1227 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1236 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1251 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1297 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-	}
-	research_points = 0.5
-	core_pop_militancy_modifier = -0.05
-	supply_consumption = 0.1
-	tax_efficiency = -0.1
-	administrative_efficiency_modifier = -0.1
-	influence_modifier = 0.05
-	prestige = 0.03
-	icon = 19
-}
+#greater_germany = {
+#	trigger = {
+#		exists = yes
+#		ai = no
+#		549 = {
+#			owned_by = THIS
+#		}
+#		619 = {
+#			owned_by = THIS
+#		}
+#		369 = {
+#			owned_by = THIS
+#		}
+#		599 = {
+#			owned_by = THIS
+#		}
+#	}
+#	core_pop_militancy_modifier = -0.05
+#	supply_consumption = 0.35
+#	tax_efficiency = -0.05
+#	administrative_efficiency_modifier = -0.2
+#	prestige = 0.03
+#	icon = 19
+#}
+#
+#colonial_nation = {
+#	trigger = {
+#		exists = yes
+#		civilized = yes
+#		any_owned_province = {
+#			is_colonial = yes
+#			OR = {
+#				continent = east_africa
+#				continent = west_africa
+#				continent = central_africa
+#				continent = africa
+#				continent = indochina
+#				continent = east_indies
+#				continent = south_west_africa
+#				continent = polynesia
+#				continent = australia_new_zealand
+#			}
+#		}
+#		NOT = {
+#			capital_scope = {
+#				OR = { 
+#					continent = australia_new_zealand
+#					continent = africa
+#				}
+#			}
+#		}
+#	}
+#	supply_consumption = 0.1
+#	icon = 19
+#}
 
-greater_germany = {
-	trigger = {
-		exists = yes
-		ai = no
-		549 = {
-			owned_by = THIS
-		}
-		619 = {
-			owned_by = THIS
-		}
-		369 = {
-			owned_by = THIS
-		}
-		599 = {
-			owned_by = THIS
-		}
-	}
-	core_pop_militancy_modifier = -0.05
-	supply_consumption = 0.35
-	tax_efficiency = -0.05
-	administrative_efficiency_modifier = -0.2
-	prestige = 0.03
-	icon = 19
-}
-
-colonial_nation = {
-	trigger = {
-		exists = yes
-		civilized = yes
-		any_owned_province = {
-			is_colonial = yes
-			OR = {
-				continent = east_africa
-				continent = west_africa
-				continent = central_africa
-				continent = africa
-				continent = indochina
-				continent = east_indies
-				continent = south_west_africa
-				continent = polynesia
-				continent = australia_new_zealand
-			}
-		}
-		NOT = {
-			capital_scope = {
-				OR = { 
-					continent = australia_new_zealand
-					continent = africa
-				}
-			}
-		}
-	}
-	supply_consumption = 0.1
-	icon = 19
-}
-
-dutch_east_india = {
-	trigger = {
-		exists = yes
-		capital_scope = { continent = europe }
-		1413 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-		1418 = {
-			is_colonial = yes
-			owned_by = THIS
-		}
-	}
-	prestige = 0.01
-	icon = 19
-}
+#dutch_east_india = {
+#	trigger = {
+#		exists = yes
+#		capital_scope = { continent = europe }
+#		1413 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#		1418 = {
+#			is_colonial = yes
+#			owned_by = THIS
+#		}
+#	}
+#	prestige = 0.01
+#	icon = 19
+#}
 
 vassal_nation = {
 	trigger = {
@@ -607,23 +847,23 @@ new_world_war = {
 	icon = 16
 }
 
-help_ai_spain = { #Uncivs
-	trigger = {
-		civilized = no
-		ai = yes
-		NOT = { literacy = 0.1 }
-		OR = {
-			is_culture_group = south_asian
-			is_culture_group = southeast_asian
-			is_culture_group = iranian_turanian
-			is_culture_group = arab
-		}
-	}
-	icon = 10
-	tax_efficiency = 0.05
-	education_efficiency_modifier = 0.2
-	supply_consumption = -0.1
-}
+#help_ai_spain = { #Uncivs
+#	trigger = {
+#		civilized = no
+#		ai = yes
+#		NOT = { literacy = 0.1 }
+#		OR = {
+#			is_culture_group = south_asian
+#			is_culture_group = southeast_asian
+#			is_culture_group = iranian_turanian
+#			is_culture_group = arab
+#		}
+#	}
+#	icon = 10
+#	tax_efficiency = 0.05
+#	education_efficiency_modifier = 0.2
+#	supply_consumption = -0.1
+#}
 
 help_ai_russia = {
 	trigger = {
@@ -906,7 +1146,7 @@ pashtunwali = {
 	trigger = {
 		owns = 1209
 		primary_culture = pashtun
-		civilized = no
+		#civilized = no
 		war = yes
 		any_greater_power = { war_with = THIS }
 	}
@@ -983,7 +1223,7 @@ south_american_ai = {
 		}
 	}
 	supply_consumption = -0.2
-	mobilisation_size = 0.05
+	mobilisation_size = 0.02
 	icon = 19
 }
 
@@ -1006,7 +1246,7 @@ south_american_ai_ii = {
 		}
 	}
 	supply_consumption = -0.2
-	mobilisation_size = 0.03
+	mobilisation_size = 0.01
 	icon = 19
 }
 east_india_company = {
@@ -1024,6 +1264,7 @@ east_india_company = {
 	prestige = 0.01
 }
 
+
 the_elective_monarchy = {
 	trigger = {
 		exists = yes
@@ -1031,5 +1272,364 @@ the_elective_monarchy = {
 	}	
 	global_pop_consciousness_modifier = 0.06
 	global_pop_militancy_modifier = 0.03
+	icon = 8
+}
+
+#### Pops livelihood impact on development
+
+#Rich
+rich_development_1 = {
+	trigger = {
+		exists = yes
+		NOT = { rich_strata_life_needs = 0.5 }
+		NOT = { rich_strata_everyday_needs = 0.1 }
+		NOT = { rich_strata_luxury_needs = 0.1 }
+	}	
+	education_efficiency_modifier = -0.25
+	icon = 8
+}
+
+rich_development_2 = {
+	trigger = {
+		exists = yes
+		NOT = { rich_strata_life_needs = 0.9 }
+		NOT = { rich_strata_everyday_needs = 0.1 }
+		NOT = { rich_strata_luxury_needs = 0.1 }
+	}	
+	education_efficiency_modifier = -0.25
+	icon = 8
+}
+
+rich_development_3 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      rich_strata_everyday_needs = 0.4
+		      rich_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_4 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      rich_strata_everyday_needs = 0.6
+		      rich_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_5 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      rich_strata_everyday_needs = 0.8
+		      rich_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_6 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      rich_strata_everyday_needs = 0.95
+		      rich_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_7 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      rich_strata_luxury_needs = 0.25
+              rich_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_8 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      rich_strata_luxury_needs = 0.5 
+			  rich_strata_everyday_needs = 0.50
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_9 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      rich_strata_luxury_needs = 0.75 
+			  rich_strata_everyday_needs = 0.50
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+rich_development_10 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      rich_strata_luxury_needs = 0.9
+	          rich_strata_everyday_needs = 0.50		  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+#Middle
+middle_development_1 = {
+	trigger = {
+		exists = yes
+		NOT = { middle_strata_life_needs = 0.5 }
+		NOT = { middle_strata_everyday_needs = 0.1 }
+		NOT = { middle_strata_luxury_needs = 0.1 }
+	}	
+	education_efficiency_modifier = -0.25
+	icon = 8
+}
+
+middle_development_2 = {
+	trigger = {
+		exists = yes
+		NOT = { middle_strata_life_needs = 0.9 }
+		NOT = { middle_strata_everyday_needs = 0.1 }
+		NOT = { middle_strata_luxury_needs = 0.1 }
+	}	
+	education_efficiency_modifier = -0.25
+	icon = 8
+}
+
+middle_development_3 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      middle_strata_everyday_needs = 0.4
+		      middle_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+middle_development_4 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      middle_strata_everyday_needs = 0.6
+		      middle_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+middle_development_5 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      middle_strata_everyday_needs = 0.8
+		      middle_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+middle_development_6 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      middle_strata_everyday_needs = 0.95
+		      middle_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+middle_development_7 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      middle_strata_luxury_needs = 0.25 
+			  middle_strata_everyday_needs = 0.50
+		}
+	}	
+	education_efficiency_modifier = 0.20
+	icon = 8
+}
+
+middle_development_8 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      middle_strata_luxury_needs = 0.5
+              middle_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+middle_development_9 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      middle_strata_luxury_needs = 0.75
+              middle_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+middle_development_10 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      middle_strata_luxury_needs = 0.9
+              middle_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+#Poor
+poor_development_1 = {
+	trigger = {
+		exists = yes
+		NOT = { poor_strata_life_needs = 0.5 }
+		NOT = { poor_strata_everyday_needs = 0.1 }
+		NOT = { poor_strata_luxury_needs = 0.1 }
+	}	
+	education_efficiency_modifier = -0.25
+	icon = 8
+}
+
+poor_development_2 = {
+	trigger = {
+		exists = yes
+		NOT = { poor_strata_life_needs = 0.9 }
+		NOT = { poor_strata_everyday_needs = 0.1 }
+		NOT = { poor_strata_luxury_needs = 0.1 }
+	}	
+	education_efficiency_modifier = -0.25
+	icon = 8
+}
+
+poor_development_3 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      poor_strata_everyday_needs = 0.4
+		      poor_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_4 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      poor_strata_everyday_needs = 0.6
+		      poor_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_5 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      poor_strata_everyday_needs = 0.8
+		      poor_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_6 = {
+	trigger = {
+		exists = yes
+		OR = {
+		      poor_strata_everyday_needs = 0.95
+		      poor_strata_luxury_needs = 0.1 
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_7 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      poor_strata_luxury_needs = 0.25
+              poor_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_8 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      poor_strata_luxury_needs = 0.5
+              poor_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_9 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      poor_strata_luxury_needs = 0.75
+              poor_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
+	icon = 8
+}
+
+poor_development_10 = {
+	trigger = {
+		exists = yes
+		AND = {
+		      poor_strata_luxury_needs = 0.9
+              poor_strata_everyday_needs = 0.50			  
+		}
+	}	
+	education_efficiency_modifier = 0.25
 	icon = 8
 }

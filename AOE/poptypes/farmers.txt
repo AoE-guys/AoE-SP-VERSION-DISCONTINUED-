@@ -1341,43 +1341,44 @@ promote_to = {
 				not = { literacy = 0.3 }
 			}
 		}
-		group = {
-			modifier = {
-				factor = 1
-				literacy = 0.3
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.4
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.5
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.7
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.8
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.9
-			}
-			modifier = {
-				factor = 1
-				literacy = 1
-			}
-		}
+		#group = {
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.3
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.4
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.5
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.6
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.7
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.8
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.9
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 1
+		#	}
+		#}
 		modifier = {
-			factor = 10
+			factor = 30
 			state_scope = { has_factories = yes }
+			#work_available = { worker = craftsmen }
 			NOT = { state_scope = { unemployment_by_type = { type = craftsmen value = 0.5 } } }
 		}
 		modifier = {
@@ -4644,10 +4645,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}	
@@ -4657,10 +4658,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      #unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4670,10 +4671,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  #unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  #unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4683,10 +4684,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  #unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  #unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4696,10 +4697,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  #unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  #unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4842,10 +4843,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}	
@@ -4855,10 +4856,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      #work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}
@@ -4869,9 +4870,9 @@ issues = {
 			OR = {
 			      work_hours = no_work_hour_limit
 				  #health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}
@@ -4881,10 +4882,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  #health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  #work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}
@@ -4894,10 +4895,10 @@ issues = {
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  #health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  #work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}

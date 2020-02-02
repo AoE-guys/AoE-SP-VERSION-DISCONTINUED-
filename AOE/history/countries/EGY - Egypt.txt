@@ -6,8 +6,8 @@ religion = sunni
 government = colonial_company
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.01
-non_state_culture_literacy = 0.01
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
 is_releasable_vassal = no
 
 # Political reforms
@@ -79,8 +79,8 @@ oob = "EGY_oob.txt"
 1861.1.1 = {
 	oob = "/1861/EGY_oob.txt"
 	prestige = 5
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.10
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.05
 }
 1861.1.1 = {
 

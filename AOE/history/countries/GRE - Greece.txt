@@ -4,7 +4,7 @@ religion = orthodox
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.08
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.08
 civilized = yes
 prestige = 4
 
@@ -85,7 +85,7 @@ oob = "GRE_oob.txt"
 
 	government = prussian_constitutionalism
 	plurality = 50
-	literacy = 0.27
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.27
 
 # Political reforms
 slavery = no_slavery

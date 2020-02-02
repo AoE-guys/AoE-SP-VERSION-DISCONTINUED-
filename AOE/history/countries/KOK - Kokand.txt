@@ -4,8 +4,8 @@ religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.01
-non_state_culture_literacy = 0.01
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = yes_slavery
@@ -64,8 +64,8 @@ nonstate_consciousness = 0
 oob = "KOK_oob.txt"
 1861.1.1 = {
 	oob = "/1861/KOK_oob.txt"
-	literacy = 0.06
-	non_state_culture_literacy = 0.03
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.06
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.03
 
 	#Military Reforms
 	foreign_weapons = yes_foreign_weapons

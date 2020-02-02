@@ -7,8 +7,8 @@ religion = protestant
 government = democracy
 plurality = 30.0
 nationalvalue = nv_liberty
-literacy = 0.65
-non_state_culture_literacy = 0.1
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.65
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.1
 civilized = yes
 
 #GreaterPowers = prestige
@@ -145,8 +145,8 @@ decision = corwin_amendment
 	ruling_party = "Nobility Faction"
 	plurality = 60
 	prestige = 40
-	literacy = 0.75
-	non_state_culture_literacy = 0.15
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.75
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.15
 
 # Political reforms
 slavery = yes_slavery

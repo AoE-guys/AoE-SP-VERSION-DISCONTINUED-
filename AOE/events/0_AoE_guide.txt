@@ -1,0 +1,109 @@
+country_event = {
+	title = "Welcome to AoE"
+	desc = "WELCOME_AOE_DESC1"
+	#picture = "Education"
+	major = yes
+
+	id = 9999853
+
+	trigger = {
+		NOT = { has_global_flag = welcome_to_AoE }
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Development!"
+	          country_event = 9999852
+	}
+	option = {
+	          name = "Economy!"
+	          country_event = 9999851
+	}
+	option = {
+	          name = "Internal Factions!"
+	          country_event = 9999850
+	}
+	option = {
+	          name = "Let's Play, Time for some SetUp Events!"
+	          set_global_flag = welcome_to_AoE
+	          country_event = 9999856
+	}
+}
+
+country_event = {
+	title = "Development"
+	desc = "WELCOME_AOE_DESC2"
+	#picture = "Education"
+	major = yes
+
+	id = 9999852
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+	          country_event = 9999853
+	}
+}
+
+country_event = {
+	title = "Economy I"
+	desc = "WELCOME_AOE_DESC3"
+	#picture = "Education"
+	major = yes
+
+	id = 9999851
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Next"
+	          country_event = 9999849
+	}
+}
+
+country_event = {
+	title = "Economy II"
+	desc = "WELCOME_AOE_DESC5"
+	#picture = "Education"
+	major = yes
+
+	id = 9999849
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+	          country_event = 9999853
+	}
+}
+
+country_event = {
+	title = "Internal Factions"
+	desc = "WELCOME_AOE_DESC4"
+	#picture = "Education"
+	major = yes
+
+	id = 9999850
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+	          country_event = 9999853
+	}
+}

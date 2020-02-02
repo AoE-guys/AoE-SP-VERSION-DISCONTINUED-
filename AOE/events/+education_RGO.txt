@@ -1,14 +1,16 @@
 country_event = {
-	title = "Education Setup"
-	desc = "Education Setup"
+	title = "Education Setup II"
+	desc = "Education Setup II"
 	picture = "Education"
 
 	id = 999958
 
-	trigger = {
-		NOT = { has_global_flag = education_setup }
-		ai = no
-	}
+	is_triggered_only = yes
+	
+	#trigger = {
+	#	NOT = { has_global_flag = education_setup }
+	#	ai = no
+	#}
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -142,7 +144,139 @@ country_event = {
 		any_owned = { limit = { life_rating = 60 NOT = { life_rating = 61 } } life_rating = -30 }
 		
         }		
-        any_country = {
+    #    any_country = {
+    #    any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0
+    #          NOT = { literacy = 0.1 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_0
+	#	duration = -1
+	#	}
+	#	}
+    #    any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.1
+    #          NOT = { literacy = 0.2 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_1
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.2
+    #          NOT = { literacy = 0.3 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_2
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.3
+    #          NOT = { literacy = 0.4 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_3
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.4
+    #          NOT = { literacy = 0.5 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_4
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.5
+    #          NOT = { literacy = 0.6 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_5
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.6
+    #          NOT = { literacy = 0.7 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_6
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.7
+    #          NOT = { literacy = 0.8 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_7
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.8
+    #          NOT = { literacy = 0.9 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_8
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.9
+    #          NOT = { literacy = 0.99 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_9
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.99
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_10
+	#	duration = -1
+	#	}
+	#	}
+	#}
         any_owned = {
         limit = {
 		      state_scope = {
@@ -255,7 +389,7 @@ country_event = {
         limit = {
 		      state_scope = {
 	          literacy = 0.9
-              NOT = { literacy = 1 }
+              NOT = { literacy = 0.99 }
 	          }
 		}
 		add_province_modifier = {
@@ -266,139 +400,7 @@ country_event = {
 		any_owned = {
         limit = {
 		      state_scope = {
-	          literacy = 1
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_10
-		duration = -1
-		}
-		}
-	}
-        any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0
-              NOT = { literacy = 0.1 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_0
-		duration = -1
-		}
-		}
-        any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.1
-              NOT = { literacy = 0.2 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_1
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.2
-              NOT = { literacy = 0.3 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_2
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.3
-              NOT = { literacy = 0.4 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_3
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.4
-              NOT = { literacy = 0.5 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_4
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.5
-              NOT = { literacy = 0.6 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_5
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.6
-              NOT = { literacy = 0.7 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_6
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.7
-              NOT = { literacy = 0.8 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_7
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.8
-              NOT = { literacy = 0.9 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_8
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 0.9
-              NOT = { literacy = 1 }
-	          }
-		}
-		add_province_modifier = {
-		name = RGO_education_9
-		duration = -1
-		}
-		}
-		any_owned = {
-        limit = {
-		      state_scope = {
-	          literacy = 1
+	          literacy = 0.99
 	          }
 		}
 		add_province_modifier = {
@@ -408,6 +410,7 @@ country_event = {
 		}
 set_global_flag = education_setup
 country_event = 999904
+#any_country = { limit = { NOT = { tag = THIS } } country_event = 9999855 }
 }
 }
 
@@ -1029,7 +1032,7 @@ province_event = {
 	has_global_flag = education_setup
       state_scope = {
 	  literacy = 0.9
-	  NOT = { literacy = 1 }
+	  NOT = { literacy = 0.99 }
 	  }
 	  NOT = { has_province_modifier = RGO_education_9 }
 	}
@@ -1104,7 +1107,7 @@ province_event = {
 	trigger = {
 	has_global_flag = education_setup
       state_scope = {
-	  literacy = 1
+	  literacy = 0.99
 	  }
 	  NOT = { has_province_modifier = RGO_education_10 }
 	}

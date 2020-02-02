@@ -4,8 +4,8 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.03
-non_state_culture_literacy = 0.01
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.03
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
 prestige = 1
 
 slavery = yes_slavery
@@ -73,8 +73,8 @@ modern_winemaking = yes
 oob = "KOR_oob.txt"
 1861.1.1 = {
 	oob = "/1861/KOR_oob.txt"
-	literacy = 0.09
-	non_state_culture_literacy = 0.05
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.09
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.05
 
 	foreign_weapons = yes_foreign_weapons
 	foreign_officers = yes_foreign_officers

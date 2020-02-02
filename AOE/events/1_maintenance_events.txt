@@ -46,7 +46,7 @@ country_event = {
 
 	option = {
 		name = "Ghost Unit CleanUp 1/2"
-		random_country { limit = { owns = 2132 NOT = { has_country_flag = ghost_country } } set_country_flag = ghost_country_host }
+		random_country = { limit = { owns = 2127 NOT = { has_country_flag = ghost_country } } set_country_flag = ghost_country_host }
 		set_country_flag = ghost_country
 		2127 = { secede_province = THIS }
 		#political_reform = closed_borders

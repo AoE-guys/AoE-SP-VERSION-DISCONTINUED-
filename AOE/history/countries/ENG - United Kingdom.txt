@@ -8,7 +8,7 @@ religion = protestant
 government = hms_government
 plurality = 30
 nationalvalue = nv_order
-literacy = 0.6
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.6
 civilized = yes
 
 #GreaterPowers = prestige
@@ -127,8 +127,8 @@ oob = "ENG_oob.txt"
 	ruling_party = "Nobility Faction"
 	prestige = 165
 	plurality = 65
-	literacy = 0.70
-	non_state_culture_literacy = 0.15
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.70
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.15
 	decision = crown_empress_of_india
 	decision = repeal_the_corn_laws
 	decision = webster_ashburton_treaty

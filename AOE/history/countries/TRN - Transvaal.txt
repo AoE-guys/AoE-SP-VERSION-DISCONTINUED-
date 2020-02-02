@@ -4,8 +4,8 @@ religion = protestant
 government = democracy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.35
-non_state_culture_literacy = 0.05
+literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.35
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.05
 civilized = yes
 is_releasable_vassal = no
 
@@ -87,8 +87,8 @@ oob = "TRN_oob.txt"
 1861.1.1 = {
 	oob = "/1861/TRN_oob.txt"
 	plurality = 60
-	literacy = 0.40
-	non_state_culture_literacy = 0.05
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.40
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.05
 	set_country_flag = had_sand_river_convention
 }
 1861.1.1 = {
