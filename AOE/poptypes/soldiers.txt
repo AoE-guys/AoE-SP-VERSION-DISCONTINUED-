@@ -3803,10 +3803,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}	
@@ -3816,10 +3816,10 @@ issues =
 			factor = 0 
 			OR = {
 			      #unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -3829,10 +3829,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  #unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  #unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -3842,10 +3842,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  #unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  #unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -3855,10 +3855,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  #unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  #unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4001,10 +4001,10 @@ issues =
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}	
@@ -4014,10 +4014,10 @@ issues =
 			factor = 0 
 			OR = {
 			      #work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}
@@ -4027,10 +4027,10 @@ issues =
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  #health_care = fourteen_hours
-				  health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  #work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}
@@ -4040,10 +4040,10 @@ issues =
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  #health_care = twelve_hours
-				  health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  #work_hours = twelve_hours
+				  work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}
@@ -4053,10 +4053,10 @@ issues =
 			factor = 0 
 			OR = {
 			      work_hours = no_work_hour_limit
-				  health_care = fourteen_hours
-				  health_care = twelve_hours
-				  #health_care = ten_hours
-				  health_care = eight_hours
+				  work_hours = fourteen_hours
+				  work_hours = twelve_hours
+				  #work_hours = ten_hours
+				  work_hours = eight_hours
             }			
         }
 	}

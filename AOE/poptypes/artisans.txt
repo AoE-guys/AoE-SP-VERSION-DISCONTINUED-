@@ -4360,10 +4360,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}	
@@ -4373,10 +4373,10 @@ issues =
 			factor = 0 
 			OR = {
 			      #unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4386,10 +4386,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  #unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  #unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4399,10 +4399,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  #unemployment_subsidies = low_safety
-				  unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  #unemployment_subsidies = low_subsidies
+				  unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
@@ -4412,10 +4412,10 @@ issues =
 			factor = 0 
 			OR = {
 			      unemployment_subsidies = no_subsidies
-				  unemployment_subsidies = trinket_safety
-				  unemployment_subsidies = low_safety
-				  #unemployment_subsidies = acceptable_safety
-				  unemployment_subsidies = good_safety
+				  unemployment_subsidies = trinket_subsidies
+				  unemployment_subsidies = low_subsidies
+				  #unemployment_subsidies = acceptable_subsidies
+				  unemployment_subsidies = good_subsidies
             }			
         }
 	}
