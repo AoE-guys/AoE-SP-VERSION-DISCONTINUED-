@@ -6,6 +6,17 @@
 # **^Remember to convert US dolars value from when comparing data, and divide it by 4000 to get literacy (development)***
 # ***^"1-2008 (Madison)" uses 1990 value and "1–1800 (Maddison Project)" uses 2008 value.
 
+metropolitan_group = {
+	leader = european
+	unit = EuropeanGC
+	Metropolitan = { 
+		color = { 10 10 10 }
+		first_names = { }
+		
+		last_names = { }
+	}
+}
+
 germanic = {
 	leader = european
 	unit = EuropeanGC
