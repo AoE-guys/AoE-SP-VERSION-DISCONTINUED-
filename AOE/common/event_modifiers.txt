@@ -1513,7 +1513,7 @@ ruhr_boom = {
 }
 
 encouraging_protestant_migration = {
-	population_growth = 0.01
+	population_growth = 0.001
 	immigrant_attract = 1.5
 	icon = 13
 }
@@ -3824,7 +3824,7 @@ prussian_goose_step = {
 prussian_mobilization = {
 	mobilisation_economy_impact = -0.25
 	supply_consumption = -0.15
-	mobilisation_size = 0.1
+	mobilisation_size = 0.05
 	min_military_spending = 0.1
 	max_military_spending = 0.10
 	icon = 15
