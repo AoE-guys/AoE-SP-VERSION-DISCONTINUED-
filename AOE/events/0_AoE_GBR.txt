@@ -187,21 +187,6 @@ country_event = {
 	option = {
 		name = "EVT37711OPTA"
 		set_country_flag = jacobite_rebellion
-		ENG_271 = {
-			add_core = GBJ
-		}
-		ENG_266 = {
-			add_core = GBJ
-		}
-		
-		release = GBJ
-		
-		war = {
-			target = GBJ
-			attacker_goal = { casus_belli = annex_core_country }
-			defender_goal = { casus_belli = status_quo }
-		}
-		
 		any_owned = {
 			limit = {
 				OR = {
@@ -252,56 +237,6 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 100
-		}
-	}
-}
-
-country_event = {
-	id = 171403
-	title = "The Jacobites Defeated!" #The Jacobites Defeated!
-	desc = "EVTDESC37712"
-	picture = "jacobite_defeat"
-	
-	trigger = {
-		tag = GBR
-		has_country_flag = jacobite_rebellion
-		NOT = { exists = GBJ }
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "EVT37712OPTA"
-		clr_country_flag = jacobite_rebellion
-		random_owned = {
-			limit = { owner = { has_country_flag = 2nd_jacobite_rebellion NOT = { has_country_flag = 3rd_jacobite_rebellion } } }
-			owner = { set_country_flag = 3rd_jacobite_rebellion } 
-		}
-		random_owned = {
-			limit = { owner = { has_country_flag = 1st_jacobite_rebellion NOT = { has_country_flag = 2nd_jacobite_rebellion } } }
-			owner = { set_country_flag = 2nd_jacobite_rebellion } 
-		}
-		random_owned = { limit = { owner = { NOT = { has_country_flag = 1st_jacobite_rebellion } } } owner = { set_country_flag = 1st_jacobite_rebellion } }
-		any_owned = {
-			remove_province_modifier = jacobite_sympathies
-		}
-		set_variable = {
-			which = jacobite_sympathies
-			value = 0
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 4
-			}
-		}
-		ENG_271 = {
-			remove_core = GBJ
-		}
-		ENG_266 = {
-			remove_core = GBJ
 		}
 	}
 }
