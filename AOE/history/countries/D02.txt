@@ -1,5 +1,5 @@
 #capital = 
-civilized = yes   primary_culture = Metropolitan
+civilized = yes   primary_culture = british
 religion = protestant
 government = absolute_monarchy
 plurality = 25.1
@@ -30,7 +30,7 @@ border_policy = open_borders
 
 set_country_flag = protestant_country
 
-set_country_flag = dynamic_tag
+#set_country_flag = dynamic_tag
 
 ruling_party = "Nobility Faction"
 upper_house = { # inherit
