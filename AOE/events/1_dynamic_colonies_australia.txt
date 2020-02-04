@@ -14,8 +14,7 @@ country_event = {
                                      OR = { continent = australia_new_zealand  continent = polynesia }  									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -49,7 +48,7 @@ country_event = {
 		         	            }								
 		         	            country_event = 9999813
 		         }
-				 any_owned = { limit = { is_overseas = yes NOT = { is_core = THIS }  OR = { continent australia_new_zealand continent = polynesia }  add_core = UTI }
+				 any_owned = { limit = { is_overseas = yes NOT = { is_core = THIS }  OR = { continent australia_new_zealand continent = polynesia } }  add_core = UTI }
 			     any_country = {
 			                    limit = {
 			                             has_country_flag = dynamic_tag
@@ -59,7 +58,7 @@ country_event = {
 				   			             #any_core = { owned_by = FROM }
 				   			    }
 				   			    country_event = 9999819
-				   			    set_global_flag = colony_already_established  clr_global_flag = making_colonies
+				   			    set_global_flag = colony_already_established
 			     }
 			  any_country = {
 			                 limit = {

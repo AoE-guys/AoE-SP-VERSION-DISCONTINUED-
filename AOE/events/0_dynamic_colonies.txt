@@ -189,87 +189,106 @@ country_event = {
 	}
 }
 
-##Return Cores
-
 country_event = {
-	title = "New Colony"
-	desc = "We happened to be in possession of new overseas land, it's time to establish formal administration."
+	title = "End of Colonial Provisional Government"
+	desc = "End of Colonial Provisional Government."
 	#picture = "Education"
 	#major = yes
 
-	id = 9999819
+	id = 9999810
 
 	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-	          name = "Ok"
-			  any_country = {
-			                 limit = {
-			                          AND = { 
-				               	             tag = FROM
-                                             #exists = no							  
-				               	      }
-			                 }
-	                         any_owned = {
-				               		       limit = {
-				               		                AND = {
-				               		                       is_core = UTI
-				               		                       is_overseas = yes
-														   NOT = { is_core = FROM }
-				               			    		}
-				               		       }
-				               		       secede_province = THIS						
-			                 }
-			  }			  
-	}
-	option = {
-	          name = "Ok"
-	          UTI = { country_event = 9999817 }
-			  clr_global_flag = making_colonies
-			  clr_global_flag = colony_already_established
+    option = { 
+	          name = "Ok" 
+			any_country = {
+			limit = { any_owned_province = { is_core = THIS } has_country_flag = dynamic_tag }
+			country_event = 9999809
+		    }
 	}
 }
 
 country_event = {
-	title = "New Colony"
-	desc = "We happened to be in possession of new overseas land, it's time to establish formal administration."
+	title = "End of Colonial Provisional Government"
+	desc = "End of Colonial Provisional Government."
 	#picture = "Education"
 	#major = yes
 
-	id = 9999811
+	id = 9999809
 
 	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
 	}
-	immediate = {
-	          name = "Ok"
-			  any_country = {
-			                 limit = {
-			                          AND = { 
-				               	             tag = FROM
-                                             #exists = no							  
-				               	      }
-			                 }
-	                         any_owned = {
-				               		       limit = {
-				               		                AND = {
-				               		                       is_core = THIS
-				               		                       is_overseas = yes
-														   NOT = { is_core = FROM }
-				               			    		}
-				               		       }
-				               		       secede_province = THIS						
-			                 }
-			  }			  
+    option = { 
+	          name = "Ok" 
+			  overlord = { country_event = 9999808 }
 	}
-	option = {
-	          name = "Ok"
-			  clr_global_flag = making_colonies
-			  clr_global_flag = colony_already_established
+}
+
+country_event = {
+	title = "End of Colonial Provisional Government"
+	desc = "End of Colonial Provisional Government."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999808
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			  inherit = FROM
+	}
+}
+
+country_event = {
+	title = "Return Cores to Proper Colony"
+	desc = "Return Cores to Proper Colony."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999807
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+		      any_country = {
+		      	  limit = { exists = yes any_core = { owned_by = THIS } overlord = { is_our_vassal = THIS } }
+		      	  THIS = { country_event = 9999806 }
+		      }
+	}
+}
+
+country_event = {
+	title = "Return Cores to Proper Colony"
+	desc = "Return Cores to Proper Colony."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999806
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+		      any_owned = {
+		      	  limit = { is_core = FROM }
+		      	  secede_province = FROM
+		      }
 	}
 }

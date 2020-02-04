@@ -37,6 +37,14 @@ country_event = {
 			limit = { exists = no has_country_flag = dynamic_tag }
 			country_event = 9999817
 		}
+		any_country = {
+			limit = { exists = no any_core = { owner = { has_country_flag = dynamic_tag } } }
+			country_event = 9999810
+		}
+		any_country = {
+			limit = { exists = yes has_country_flag = dynamic_tag }
+			country_event = 9999807
+		}
 	}
 }
 

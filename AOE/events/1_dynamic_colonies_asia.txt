@@ -13,8 +13,7 @@ country_event = {
                                      continent = asia									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -171,8 +170,7 @@ country_event = {
                                      continent = indochina									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -329,8 +327,7 @@ country_event = {
                                      continent = east_indies									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -487,8 +484,7 @@ country_event = {
                                      continent = oceania 									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	

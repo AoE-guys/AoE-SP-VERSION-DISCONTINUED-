@@ -14,8 +14,7 @@ country_event = {
                                      continent = africa									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -172,8 +171,7 @@ country_event = {
                                      continent = central_africa									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -330,8 +328,7 @@ country_event = {
                                      continent = west_africa									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -488,8 +485,7 @@ country_event = {
                                      continent = east_africa									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -646,8 +642,7 @@ country_event = {
                                      continent = south_west_africa									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -691,7 +686,7 @@ country_event = {
 				   			             #any_core = { owned_by = FROM }
 				   			    }
 				   			    country_event = 9999819
-				   			    set_global_flag = colony_already_established  clr_global_flag = making_colonies
+				   			    set_global_flag = colony_already_established
 			     }
 			  any_country = {
 			                 limit = {

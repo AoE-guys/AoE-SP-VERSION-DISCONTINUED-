@@ -14,8 +14,7 @@ country_event = {
                                      continent = north_america									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
@@ -172,8 +171,7 @@ country_event = {
                                      continent = south_america									 
 									 NOT = { is_core = THIS }
 			   }
-			   year = 1700 
-			   month = 1           									 
+			  has_global_flag = factions_setup_done           									 
 			   NOT = { has_global_flag = making_colonies }			   
 	}
 	
