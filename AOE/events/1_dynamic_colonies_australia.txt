@@ -48,7 +48,7 @@ country_event = {
 		         	            }								
 		         	            country_event = 9999813
 		         }
-				 any_owned = { limit = { is_overseas = yes NOT = { is_core = THIS }  OR = { continent australia_new_zealand continent = polynesia } }  add_core = UTI }
+				 any_owned = { limit = { is_overseas = yes NOT = { is_core = THIS }  OR = { continent = australia_new_zealand continent = polynesia } }  add_core = UTI }
 			     any_country = {
 			                    limit = {
 			                             has_country_flag = dynamic_tag
