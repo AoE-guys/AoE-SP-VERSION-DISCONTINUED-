@@ -33,10 +33,10 @@ country_event = {
 			limit = { exists = no OR = { is_mobilised = yes total_amount_of_ships = 1 } }
 			country_event = 6016821
 		}
-		#any_country = {
-		#	limit = { exists = no has_country_flag = dynamic_tag }
-		#	country_event = 9999817
-		#}
+		any_country = {
+			limit = { exists = no has_country_flag = dynamic_tag }
+			country_event = 9999817
+		}
 	}
 }
 
