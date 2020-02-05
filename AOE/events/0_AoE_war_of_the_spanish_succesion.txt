@@ -99,7 +99,7 @@ country_event = {
 	option = { #War
 		name = "EVTNAME13007OPTA"
 	    set_country_flag = support_habsburg_heir
-		any_country = { limit = { continent = europe  rank = 16 } country_event = 13001 }
+		any_country = { limit = { continent = europe } country_event = 13001 }
 	    ai_chance = {
 			factor = 0.99
 		}
@@ -139,6 +139,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				rank = 8
+				NOT = { tag = RUS }
 			}
 		}
 	}'
@@ -180,8 +181,13 @@ country_event = {
 			   NOT = { has_gloabal_flag = spanish_war_realy_begun }
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = "EVTNAME13003OPTA"
+		BOR = { create_alliance = SPA }
 		war = {
 			target = SPA
 			attacker_goal = { casus_belli = change_heir_habsburg_cb }
@@ -255,6 +261,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				rank = 8
+				NOT = { tag = RUS }
 			}
 		}
 	}'
@@ -296,8 +303,13 @@ country_event = {
 			   NOT = { has_gloabal_flag = spanish_war_realy_begun }
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = "EVTNAME13009OPTA"
+		AUS = { create_alliance = SPA }
 		war = {
 			target = SPA
 			attacker_goal = { casus_belli = change_heir_bourbon_cb }
@@ -388,5 +400,3 @@ country_event = {
 		remove_global_flag =  spanish_succesion_crisis
 	}
 }
-	
-	
