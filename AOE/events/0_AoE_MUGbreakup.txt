@@ -16,11 +16,11 @@ country_event = {
 	
 	option = {
 		name = "A great loss"
-		MYS = { all_core = { secede_province = MYS } }
-		TRA = { all_core = { secede_province = TRA } }
-		MAH = { all_core = { secede_province = MAH } }
-		KRN = { all_core = { secede_province = KRN } }
-		NAG = { all_core = { secede_province = NAG } }
+		MYS = { all_core = { limit = { owned_by = THIS } secede_province = MYS } }
+		TRA = { all_core = { limit = { owned_by = THIS } secede_province = TRA } }
+		MAH = { all_core = { limit = { owned_by = THIS } secede_province = MAH } }
+		KRN = { all_core = { limit = { owned_by = THIS } secede_province = KRN } }
+		NAG = { all_core = { limit = { owned_by = THIS } secede_province = NAG } }
 		release = KCH
 		release = AFG
 		release = IND
