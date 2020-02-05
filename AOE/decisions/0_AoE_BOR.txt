@@ -23,4 +23,64 @@ political_decisions = {
 			factor = 1
 		}
 	}
+
+	rights_of_man = {
+		picture = rights_of_man
+		potential = {
+			primary_culture = french
+			NOT = { has_country_flag = rights_of_man }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+				year = 1789
+				pop_militancy = 4
+				}
+				political_thought_8 = 1
+			}
+			has_country_flag = edict_of_tolerance
+		}
+		
+		effect = {
+			random_pop = {
+				militancy = -2
+			}
+			
+			add_country_modifier = {
+				name = rights_of_man
+				duration = -1
+			}
+		}
+	}
+	
+	edict_of_tolerance = {
+	 picture = tolerance_edict
+		potential = {
+			primary_culture = french
+			NOT = { has_country_flag = edict_of_tolerance }
+		}
+		allow = {
+			pop_militancy = 4
+			political_thought_7 = 1
+		}
+		effect = {
+			set_country_flag = { edict_of_tolerance }
+			add_country_modifier = {
+				name = freedom_of_religion
+				duration = -1
+			}
+			random_pop = {
+				religion = protestant 
+				militancy = -2
+			}
+			random_pop = {
+				religion = catholic 
+				militancy = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

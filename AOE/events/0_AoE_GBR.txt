@@ -347,21 +347,6 @@ country_event = {
 	option = {
 		name = "EVT37713OPTA"
 		prestige = -2
-		ENG_271 = {
-			add_core = GBJ
-		}
-		ENG_266 = {
-			add_core = GBJ
-		}
-		
-		release = GBJ
-		
-		war = {
-			target = GBJ
-			attacker_goal = { casus_belli = annex_core_country }
-			defender_goal = { casus_belli = status_quo }
-		}
-		
 		random_owned = {
 			limit = {
 				is_colonial = no
