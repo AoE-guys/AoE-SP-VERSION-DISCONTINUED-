@@ -106,6 +106,9 @@ demand_concession_casus_belli
 rude_boy
 conquest
 conquest_any
+annex_foreign_colony_big_cb
+annex_foreign_colony_cb
+annex_foreign_colony_small_cb
 annex_africa
 annex_africa_full
 establish_protectorate_BC_casus_belli
@@ -2945,6 +2948,14 @@ release_puppet = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
+	    FROM = { 
+	    	    NOT = {
+	               OR = {
+	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    	       }
+	    	}
+	    }
 		is_our_vassal = FROM
 		FROM = { is_substate = no }
 		FROM = { NOT = { has_country_flag = unreleasable_country } }
@@ -3018,6 +3029,14 @@ release_puppet_AI = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
+	    FROM = { 
+	    	    NOT = {
+	               OR = {
+	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    	       }
+	    	}
+	    }
 		is_our_vassal = FROM
 		FROM = {
 			is_substate = no
@@ -3039,6 +3058,252 @@ release_puppet_AI = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+}
+
+#Annex Foreign Colony
+annex_foreign_colony_big_cb = {
+	sprite_index = 31
+	is_triggered_only = yes
+	months = 12
+	
+	badboy_factor = 8
+	prestige_factor = 8
+	peace_cost_factor = 20
+	penalty_factor = 4
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		OR = {
+			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { OR = { vassal_of = THIS substate_of = THIS in_sphere = THIS } }
+		}
+		NOT = { is_our_vassal = THIS }
+		num_of_vassals_no_substates = 1
+		NOT = { has_country_modifier = neutrality }
+		THIS = { NOT = { has_country_modifier = neutrality } }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+	    FROM = { 
+	    	    AND = {
+	               OR = {
+	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    	       }
+	    	    }
+	    }
+		FROM = { total_pops = 500000 }
+		is_our_vassal = FROM
+		FROM = { is_substate = no }
+		#FROM = { NOT = { has_country_flag = unreleasable_country } }
+	}
+	
+	po_release_puppet = yes
+	po_add_to_sphere = yes
+
+	war_name = WAR_NAME
+	
+	on_add = {
+		any_country = { 
+		               limit { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+					   set_country_flag = contested_colony 
+		}
+		#set_country_flag = colony_contestor
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	on_po_accepted = {
+		THIS = { country_event = 9999805 }
+	}
+}
+
+annex_foreign_colony_cb = {
+	sprite_index = 31
+	is_triggered_only = yes
+	months = 12
+	
+	badboy_factor = 4
+	prestige_factor = 4
+	peace_cost_factor = 10
+	penalty_factor = 2
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		OR = {
+			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { OR = { vassal_of = THIS substate_of = THIS in_sphere = THIS } }
+		}
+		NOT = { is_our_vassal = THIS }
+		num_of_vassals_no_substates = 1
+		NOT = { has_country_modifier = neutrality }
+		THIS = { NOT = { has_country_modifier = neutrality } }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+	    FROM = { 
+	    	    AND = {
+	               OR = {
+	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    	       }
+	    	    }
+	    }
+		FROM = { total_pops = 50000 }
+		FROM = { NOT = { total_pops = 500000 } }
+		is_our_vassal = FROM
+		FROM = { is_substate = no }
+		#FROM = { NOT = { has_country_flag = unreleasable_country } }
+	}
+	
+	po_release_puppet = yes
+	po_add_to_sphere = yes
+
+	war_name = WAR_NAME
+	
+	on_add = {
+		any_country = { 
+		               limit { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+					   set_country_flag = contested_colony 
+		}
+		#set_country_flag = colony_contestor
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	on_po_accepted = {
+		THIS = { country_event = 9999805 }
+	}
+}
+
+#Annex Foreign Outpost
+annex_foreign_colony_small_cb = {
+	sprite_index = 31
+	is_triggered_only = yes
+	months = 12
+	
+	badboy_factor = 2
+	prestige_factor = 2
+	peace_cost_factor = 5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		OR = {
+			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { OR = { vassal_of = THIS substate_of = THIS in_sphere = THIS } }
+		}
+		NOT = { is_our_vassal = THIS }
+		num_of_vassals_no_substates = 1
+		NOT = { has_country_modifier = neutrality }
+		THIS = { NOT = { has_country_modifier = neutrality } }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+	    FROM = { 
+	    	    AND = {
+	               OR = {
+	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    	       }
+	    	    }
+	    }
+		FROM = { NOT = { total_pops = 50000 } }
+		is_our_vassal = FROM
+		FROM = { is_substate = no }
+		#FROM = { NOT = { has_country_flag = unreleasable_country } }
+	}
+	
+	po_release_puppet = yes
+	po_add_to_sphere = yes
+
+	war_name = WAR_NAME
+	
+	on_add = {
+		any_country = { 
+		               limit { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+					   set_country_flag = contested_colony 
+		}
+		#set_country_flag = colony_contestor
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	on_po_accepted = {
+		THIS = { country_event = 9999805 }
 	}
 }
 

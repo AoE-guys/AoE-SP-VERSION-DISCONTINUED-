@@ -1,13 +1,13 @@
 ##death of charles II
 country_event = {
-	id = 13000
-	title = "EVTNAME13000" 
-	desc = "EVTDESC13000"
+	id = 93000
+	title = "EVTNAME93000" 
+	desc = "EVTDESC93000"
 	major = yes
 	news = yes
-	news_desc_long = "EVTDESC13000_NEWS_LONG"
-	news_desc_medium = "EVTDESC13000_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC13000_NEWS_SHORT"
+	news_desc_long = "EVTDESC93000_NEWS_LONG"
+	news_desc_medium = "EVTDESC93000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC93000_NEWS_SHORT"
 	picture = "spanish_king"
 	
 	fire_only_once = yes
@@ -27,12 +27,12 @@ country_event = {
 	}
 	
 	option = { #Choose Bourbon Heir
-		name = "EVTNAME13000OPTA"
+		name = "EVTNAME93000OPTA"
 		set_global_flag = support_bourbon_heir_spa
 		create_alliance = BOR
 		
-		AUS = { country_event = 13007 }
-		BOR = { country_event = 13002 }
+		AUS = { country_event = 93007 }
+		BOR = { country_event = 93002 }
 		BOR = { set_country_flag = support_bourbon_heir }
 	
 		ai_chance = {
@@ -41,12 +41,12 @@ country_event = {
 	}
 	
 	option = { #Choose Habsburg Heir
-		name = "EVTNAME13000OPTB"
+		name = "EVTNAME93000OPTB"
 		set_global_flag = support_habsburg_heir_spa
 		create_alliance = AUS
 	
-	    BOR = { country_event = 13008 }
-		AUS = { country_event = 13002 }
+	    BOR = { country_event = 93008 }
+		AUS = { country_event = 93002 }
 		BOR = { set_country_flag = support_habsburg_heir }
 	
 	    ai_chance = {
@@ -57,9 +57,9 @@ country_event = {
 
 #Bourbon Heir - Austria Calls for Allies
 country_event = {
-	id = 13002
-	title = "EVTNAME13002" 
-	desc = "EVTDESC13002"
+	id = 93002
+	title = "EVTNAME93002" 
+	desc = "EVTDESC93002"
 	news = no
 	picture = "spanish_king"
 	
@@ -72,7 +72,7 @@ country_event = {
 	
 	
 	option = { #War
-		name = "EVTNAME13002OPTA"
+		name = "EVTNAME93002OPTA"
         prestige = 10
 	    ai_chance = {
 			factor = 1.00
@@ -82,9 +82,9 @@ country_event = {
 
 #Bourbon Heir - Austria Calls for Allies
 country_event = {
-	id = 13007
-	title = "EVTNAME13007" 
-	desc = "EVTDESC13007"
+	id = 93007
+	title = "EVTNAME93007" 
+	desc = "EVTDESC93007"
 	news = no
 	picture = "spanish_king"
 	
@@ -97,15 +97,15 @@ country_event = {
 	
 	
 	option = { #War
-		name = "EVTNAME13007OPTA"
+		name = "EVTNAME93007OPTA"
 	    set_country_flag = support_habsburg_heir
-		any_country = { limit = { continent = europe } country_event = 13001 }
+		any_country = { limit = { continent = europe } country_event = 93001 }
 	    ai_chance = {
 			factor = 0.99
 		}
 	}
 	option = { #Chicken Out
-		name = "EVTNAME13007OPTB"
+		name = "EVTNAME93007OPTB"
 		clr_global_flag = spanish_succesion_crisis
 		ai_chance = {
 			factor = 0.01
@@ -115,9 +115,9 @@ country_event = {
 
 #Bourbon Heir - Choose Alliance
 country_event = {
-	id = 13001
-	title = "EVTNAME13001" 
-	desc = "EVTDESC13001"
+	id = 93001
+	title = "EVTNAME93001" 
+	desc = "EVTDESC93001"
 	news = no
 	picture = "spanish_king"
 	
@@ -130,7 +130,7 @@ country_event = {
 	
 
 	option = { #Support Habsburg
-		name = "EVTNAME13001OPTA"
+		name = "EVTNAME93001OPTA"
 		create_alliance = AUS
 		set_country_flag = support_habsburg_heir_heir
 		set_gloabal_flag = spanish_war_begun
@@ -145,7 +145,7 @@ country_event = {
 	}'
 	
 	option = { #Support Bourbon
-		name = "EVTNAME13001OPTB"
+		name = "EVTNAME93001OPTB"
 		create_alliance = SPA
 		create_alliance = BOR
 	    set_country_flag = support_bourbon_heir
@@ -156,7 +156,7 @@ country_event = {
 	}
 
 	option = { #Support None
-		name = "EVTNAME13001OPTC"
+		name = "EVTNAME93001OPTC"
 		set_gloabal_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.50
@@ -166,9 +166,9 @@ country_event = {
 
 #Bourbon Heir - Austria Declare War
 country_event = {
-	id = 13003
-	title = "EVTNAME13003" 
-	desc = "EVTDESC13003"
+	id = 93003
+	title = "EVTNAME93003" 
+	desc = "EVTDESC93003"
 	news = no
 	picture = "spanish_king"
 	
@@ -186,7 +186,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTNAME13003OPTA"
+		name = "EVTNAME93003OPTA"
 		BOR = { create_alliance = SPA }
 		war = {
 			target = SPA
@@ -204,9 +204,9 @@ country_event = {
 
 #Habsburg Heir - France Calls for Allies
 country_event = {
-	id = 13008
-	title = "EVTNAME13008" 
-	desc = "EVTDESC13008"
+	id = 93008
+	title = "EVTNAME93008" 
+	desc = "EVTDESC93008"
 	news = no
 	picture = "spanish_king"
 	
@@ -219,15 +219,15 @@ country_event = {
 	
 	
 	option = { #War
-		name = "EVTNAME13008OPTA"
+		name = "EVTNAME93008OPTA"
 	    set_country_flag = support_bourbon_heir
-		any_country = { limit = { continent = europe  rank = 16 } country_event = 13004 }
+		any_country = { limit = { continent = europe  rank = 16 } country_event = 93004 }
 	    ai_chance = {
 			factor = 0.99
 		}
 	}
 	option = { #Chicken Out
-		name = "EVTNAME13008OPTB"
+		name = "EVTNAME93008OPTB"
 		clr_global_flag = spanish_succesion_crisis
 		ai_chance = {
 			factor = 0.01
@@ -237,9 +237,9 @@ country_event = {
 
 #Habsburg Heir - Choose Alliance
 country_event = {
-	id = 13004
-	title = "EVTNAME13004" 
-	desc = "EVTDESC13004"
+	id = 93004
+	title = "EVTNAME93004" 
+	desc = "EVTDESC93004"
 	news = no
 	picture = "spanish_king"
 	
@@ -252,7 +252,7 @@ country_event = {
 	
 
 	option = { #Support Habsburg
-		name = "EVTNAME13004OPTA"
+		name = "EVTNAME93004OPTA"
 		create_alliance = BOR
 		set_country_flag = support_bourbon_heir
 		set_gloabal_flag = spanish_war_begun
@@ -267,7 +267,7 @@ country_event = {
 	}'
 	
 	option = { #Support Bourbon
-		name = "EVTNAME13004OPTB"
+		name = "EVTNAME93004OPTB"
 		create_alliance = SPA
 		create_alliance = AUS
 	    set_country_flag = support_habsburg_heir
@@ -278,7 +278,7 @@ country_event = {
 	}
 
 	option = { #Support None
-		name = "EVTNAME13004OPTB"
+		name = "EVTNAME93004OPTB"
 		set_gloabal_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.50
@@ -288,9 +288,9 @@ country_event = {
 
 #Habsburg Heir - France Declare War
 country_event = {
-	id = 13009
-	title = "EVTNAME13009" 
-	desc = "EVTDESC13009"
+	id = 93009
+	title = "EVTNAME93009" 
+	desc = "EVTDESC93009"
 	news = no
 	picture = "spanish_king"
 	
@@ -308,7 +308,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTNAME13009OPTA"
+		name = "EVTNAME93009OPTA"
 		AUS = { create_alliance = SPA }
 		war = {
 			target = SPA
@@ -325,8 +325,8 @@ country_event = {
 
 #War Outcome
 country_event = {
-	id = 13005
-	title = "EVTNAME13005" 
+	id = 93005
+	title = "EVTNAME93005" 
 	picture = "spanish_king"
 	is_triggered_only = yes
 	
@@ -368,8 +368,8 @@ country_event = {
 	}
 }
 country_event = {
-	id = 13006
-	title = "EVTNAME13006" 
+	id = 93006
+	title = "EVTNAME93006" 
 	picture = "spanish_king"
 	is_triggered_only = yes
 	
@@ -400,3 +400,5 @@ country_event = {
 		remove_global_flag =  spanish_succesion_crisis
 	}
 }
+	
+	
