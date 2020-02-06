@@ -15,7 +15,9 @@ country_event = {
 	trigger = {
 		tag = SPA
 		year = 1700
-		is_culture_group = spanish
+		exists = yes
+		BOR = { exists = yes }
+		AUS = { exists = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -99,7 +101,15 @@ country_event = {
 	option = { #War
 		name = "EVTNAME93007OPTA"
 	    set_country_flag = support_habsburg_heir
-		any_country = { limit = { continent = europe } country_event = 93001 }
+		any_country = { 
+		               limit = { 
+					            continent = europe 
+								NOT = { tag = SPA } 
+								NOT = { tag = BOR } 
+								NOT = { is_vassal = yes } 
+						} 
+						country_event = 93001 
+		}
 	    ai_chance = {
 			factor = 0.99
 		}
@@ -221,7 +231,15 @@ country_event = {
 	option = { #War
 		name = "EVTNAME93008OPTA"
 	    set_country_flag = support_bourbon_heir
-		any_country = { limit = { continent = europe  rank = 16 } country_event = 93004 }
+		any_country = { 
+		               limit = { 
+					            continent = europe 
+								NOT = { tag = SPA } 
+								NOT = { tag = AUS } 
+								NOT = { is_vassal = yes } 
+						} 
+						country_event = 93004 
+		}
 	    ai_chance = {
 			factor = 0.99
 		}
