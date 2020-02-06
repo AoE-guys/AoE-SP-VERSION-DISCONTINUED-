@@ -8,6 +8,8 @@ country_event = {
 	id = 9999840
 
 	trigger = {
+			   has_global_flag = factions_setup_done           									 
+			   NOT = { has_global_flag = making_colonies }
 	           any_owned_province = {  
 			                         is_overseas = yes								 
 									 NOT = { is_core = THIS }
@@ -604,9 +606,7 @@ ICL = { exists = no  capital_scope = { owned_by = THIS is_overseas = yes } }
 BYZ = { exists = no  capital_scope = { owned_by = THIS is_overseas = yes } }
 BAB = { exists = no  capital_scope = { owned_by = THIS is_overseas = yes } }
 TPG = { exists = no  capital_scope = { owned_by = THIS is_overseas = yes } }									 
-			   }
-			   has_global_flag = factions_setup_done           									 
-			   NOT = { has_global_flag = making_colonies }			   
+			   }			   
 	}
 	
 	mean_time_to_happen = {
@@ -634,7 +634,7 @@ TPG = { exists = no  capital_scope = { owned_by = THIS is_overseas = yes } }
 		         	            	     is_cultural_union = no
 										 capital_scope = { is_overseas = yes }
 										 NOT = { tag = UTI }
-										 NOT = { tag UT2 }
+										 NOT = { tag = UT2 }
 		         	            }								
 		         	            country_event = 9999813
 		         }
