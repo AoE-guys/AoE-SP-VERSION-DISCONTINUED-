@@ -20,10 +20,9 @@ country_event = {
 	             #any_country = { 
 				 #               limit = { exists = no }  
 				 #				 any_core = { 
-				 #				             limit = { is_capital = yes is_overseas = yes } 
-				 #				             country_event = 9999841
+				 #				             limit = { is_capital = yes is_overseas = yes }
 				 #				 } 
-				 #				 country_event = 9999841
+				 #				 country_event = 9999842
 				 #} 
 	}
 	
@@ -57,11 +56,6 @@ country_event = {
                        	               which = colonial_contribution_vassal
                        	               value = 0
                        }
-		}
-		
-		any_country = {
-                       limit = { has_country_flag = dynamic_colony is_vassal = yes } 
-					   country_event = 9999803
 		}
 		#any_country = {
 		#	limit = { exists = no has_country_flag = dynamic_tag }

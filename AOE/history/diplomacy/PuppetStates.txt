@@ -1,5 +1,5 @@
 #PLC- Courland
-substate = {
+vassal = {  #substate
 	first = PLC
 	second = KUR
 	start_date = 1700.1.1
@@ -8,7 +8,7 @@ substate = {
 
 #English North America
 
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = THC 
 	start_date = 1700.1.1
@@ -16,7 +16,7 @@ substate = {
 }
 
 #Portugese Brazil
-substate = {
+vassal = {  #substate
 	first = POR
 	second = PBZ  
 	start_date = 1700.1.1
@@ -24,7 +24,7 @@ substate = {
 }
 
 #French Louisiana
-substate = {
+vassal = {  #substate
 	first = BOR
 	second = ULA
 	start_date = 1700.1.1
@@ -32,7 +32,7 @@ substate = {
 }
 
 #AOG
-substate = {
+vassal = {  #substate
 	first = GER
 	second = AOG
 	start_date = 1815.1.1
@@ -40,7 +40,7 @@ substate = {
 }
 
 #Mittelafrika
-substate = {
+vassal = {  #substate
 	first = GER
 	second = MIT
 	start_date = 1815.1.1
@@ -48,7 +48,7 @@ substate = {
 }
 
 #Spain - Milan
-substate = {
+vassal = {  #substate
 	first = SPA
 	second = LOM
 	start_date = 1600.1.1
@@ -56,7 +56,7 @@ substate = {
 }
 
 #Rajputana Agency
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = RAJ
 	start_date = 1815.1.1
@@ -64,7 +64,7 @@ substate = {
 }
 
 #Central India Agency
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = BUN
 	start_date = 1600.1.1
@@ -72,7 +72,7 @@ substate = {
 }
 
 #Balochistan Agency
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = BLC
 	start_date = 1815.1.1
@@ -80,7 +80,7 @@ substate = {
 }
 
 #Saxo-polish union
-substate = {
+vassal = {  #substate
 	first = PLC
 	second = SAX
 	start_date = 1699.1.1
@@ -88,42 +88,42 @@ substate = {
 }
 
 #FCA / NZL / AST / MRU / NEW / RHO / JAM
-substate = {
+vassal = {  #substate
 	first = BOR
 	second = FCA
 	start_date = 1600.1.1
 	end_date = 1936.1.1
 }
 
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = AST
 	start_date = 1815.1.1
 	end_date = 1936.1.1
 }
 
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = NZL
 	start_date = 1815.1.1
 	end_date = 1936.1.1
 }
 
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = MRU
 	start_date = 1600.1.1
 	end_date = 1936.1.1
 }
 
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = NEW
 	start_date = 1815.1.1
 	end_date = 1936.1.1
 }
 
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = RHO
 	start_date = 1815.1.1
@@ -361,7 +361,7 @@ vassal = {
 }
 
 #East India Company
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = EIC
 	start_date = 1605.1.1
@@ -369,7 +369,7 @@ substate = {
 }
 
 #Hudson Bay Company
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = RPL
 	start_date = 1605.1.1
@@ -377,7 +377,7 @@ substate = {
 }
 
 #Jamaica Colony
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = JAM
 	start_date = 1805.1.1
@@ -393,7 +393,7 @@ vassal = {
 }
 
 # England-Scotland
-substate = {
+vassal = {  #substate
 	first = ENG
 	second = SCO
 	start_date = 1699.1.12
@@ -401,7 +401,7 @@ substate = {
 }
 
 # England-Netherlands
-substate= {
+vassal = {  #substate
 	first = ENG
 	second = NET
 	start_date = 1672.6.4
@@ -425,7 +425,7 @@ vassal = {
 }
 
 #Russia - Transcaucasia Namestnik
-substate = {
+vassal = {  #substate
 	first = RUS
 	second = TCA
 	start_date = 1801.1.1
@@ -433,7 +433,7 @@ substate = {
 }
 
 #Russia - Baltic Governorate
-substate = {
+vassal = {  #substate
 	first = RUS
 	second = UBD
 	start_date = 1801.1.1
@@ -465,7 +465,7 @@ vassal = {
 }
 
 #Ottoman Empire-Eastern Rumelia
-substate = {
+vassal = {  #substate
 	first = TUR
 	second = CRI
 	start_date = 1700.1.1
@@ -519,7 +519,7 @@ vassal = {
 
 ##########################China
 #China - Qinghai
-substate = {
+vassal = {  #substate
 	first = QNG
 	second = XBI
 	start_date = 1636.1.1
@@ -527,7 +527,7 @@ substate = {
 }
 
 #China - Xinjiang
-substate = {
+vassal = {  #substate
 	first = QNG
 	second = XIN
 	start_date = 1636.1.1
@@ -551,7 +551,7 @@ vassal = {
 }
 
 #China - Yunnan
-substate = {
+vassal = {  #substate
 	first = QNG
 	second = YNN
 	start_date = 1636.1.1
@@ -559,7 +559,7 @@ substate = {
 }
 
 #China - Manchuria
-substate = {
+vassal = {  #substate
 	first = QNG
 	second = MCK
 	start_date = 1636.1.1
@@ -567,7 +567,7 @@ substate = {
 }
 
 #China - Guizhou
-substate = {
+vassal = {  #substate
 	first = QNG
 	second = GUI
 	start_date = 1636.1.1
@@ -575,7 +575,7 @@ substate = {
 }
 
 #China - Inner Mongolia
-substate = {
+vassal = {  #substate
 	first = QNG
 	second = IMG
 	start_date = 1691.1.1

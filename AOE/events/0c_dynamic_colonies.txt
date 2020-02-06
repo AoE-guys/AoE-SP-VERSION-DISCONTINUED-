@@ -12,10 +12,9 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	option = {
-	          name = "Damn those Metropoles!"
-              overlord = {
-			              limit = {
+	immediate = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -34,8 +33,8 @@ country_event = {
                        	                  value = 1
                        }						
 			  }
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -51,11 +50,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 2
                        }						
 			  }
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -71,11 +70,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 3
                        }						
 			  }
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -91,11 +90,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 4
                        }						
 			  }
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -111,11 +110,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 5
                        }						
 			  } 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -131,11 +130,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 6
                        }						
 			  }
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -151,11 +150,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 7
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -171,11 +170,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 8
                        }						
 			  }
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -191,11 +190,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 9
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -211,11 +210,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 10
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -231,11 +230,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 11
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -251,11 +250,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 12
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -271,11 +270,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 13
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -291,11 +290,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 14
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -311,11 +310,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 15
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -331,11 +330,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 16
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -351,11 +350,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 17
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -371,11 +370,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 18
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -391,11 +390,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 19
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -411,11 +410,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 20
                        }						
 			  }	
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -431,11 +430,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 21
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -451,11 +450,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 22
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -471,11 +470,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 23
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -491,11 +490,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 24
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -511,11 +510,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 25
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -531,11 +530,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 26
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -551,11 +550,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 27
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -571,11 +570,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 28
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -591,11 +590,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 29
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -611,11 +610,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 30
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -631,11 +630,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 31
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -651,11 +650,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 32
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -671,11 +670,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 33
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -691,11 +690,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 34
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -711,11 +710,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 35
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -731,11 +730,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 36
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -751,11 +750,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 37
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -771,11 +770,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 38
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -791,11 +790,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 39
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -811,11 +810,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 40
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -831,11 +830,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 41
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -851,11 +850,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 42
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -871,11 +870,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 43
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -891,11 +890,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 44
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -911,11 +910,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 45
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -931,11 +930,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 46
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -951,11 +950,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 47
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -971,11 +970,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 48
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -991,11 +990,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 49
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1011,11 +1010,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 50
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1031,11 +1030,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 51
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1051,11 +1050,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 52
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1071,11 +1070,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 53
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1091,11 +1090,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 54
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1111,11 +1110,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 55
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1131,11 +1130,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 56
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1151,11 +1150,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 57
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1171,11 +1170,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 58
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1191,11 +1190,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 59
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1211,11 +1210,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 60
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1231,11 +1230,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 61
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1251,11 +1250,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 62
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1271,11 +1270,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 63
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1291,11 +1290,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 64
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1311,11 +1310,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 65
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1331,11 +1330,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 66
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1351,11 +1350,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 67
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1371,11 +1370,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 68
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1391,11 +1390,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 69
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1411,11 +1410,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 70
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1431,11 +1430,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 71
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1451,11 +1450,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 72
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1471,11 +1470,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 73
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1491,11 +1490,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 74
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1511,11 +1510,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 75
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1531,11 +1530,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 76
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1551,11 +1550,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 77
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1571,11 +1570,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 78
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1591,11 +1590,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 79
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1611,11 +1610,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 80
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1631,11 +1630,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 81
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1651,11 +1650,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 82
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1671,11 +1670,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 83
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1691,11 +1690,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 84
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1711,11 +1710,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 85
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1731,11 +1730,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 86
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1751,11 +1750,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 87
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1771,11 +1770,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 88
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1791,11 +1790,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 89
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1811,11 +1810,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 90
                        }						
 			  }
-             overlord = {
-			              limit = {
+             any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1831,11 +1830,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 91
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1851,11 +1850,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 92
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1871,11 +1870,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 93
                        }						
 			  }	
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1891,11 +1890,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 94
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1911,11 +1910,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 95
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1931,11 +1930,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 96
                        }						
 			  }			 
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1951,11 +1950,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 97
                        }						
 			  }		
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1971,11 +1970,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 98
                        }						
 			  }			
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -1991,11 +1990,11 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 99
                        }						
 			  }			  
-              overlord = {
-			              limit = {
+              any_country = {
+			              limit = {  tag = FROM
 			                       THIS = {  
                                            check_variable = {
                                            	                 which = colonial_contribution_vassal
@@ -2011,8 +2010,12 @@ country_event = {
 						}
                        change_variable = {
                        	                  which = colonial_contribution_overlord
-                       	                  value = 1
+                       	                  value = 100
                        }						
 			  }			  
+	}
+	option = { 
+	          name = "Damn those Metropoles!"
+              			  
 	}
 }
