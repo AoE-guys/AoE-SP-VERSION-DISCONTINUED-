@@ -16,6 +16,17 @@ country_event = {
 		days = 1
 	}		
 	
+	immediate = { 
+	             #any_country = { 
+				 #               limit = { exists = no }  
+				 #				 any_core = { 
+				 #				             limit = { is_capital = yes is_overseas = yes } 
+				 #				             country_event = 9999841
+				 #				 } 
+				 #				 country_event = 9999841
+				 #} 
+	}
+	
 	option = {
 		name = "Game Master"
 		any_country = { limit = { has_country_flag = game_master } clr_country_flag = game_master }
