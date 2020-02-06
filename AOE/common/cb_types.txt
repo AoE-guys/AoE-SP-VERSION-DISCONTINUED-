@@ -3128,7 +3128,7 @@ annex_foreign_colony_big_cb = {
 	
 	on_add = {
 		any_country = { 
-		               limit { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+		               limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
 					   set_country_flag = contested_colony 
 		}
 		#set_country_flag = colony_contestor
@@ -3210,7 +3210,7 @@ annex_foreign_colony_cb = {
 	
 	on_add = {
 		any_country = { 
-		               limit { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+		               limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
 					   set_country_flag = contested_colony 
 		}
 		#set_country_flag = colony_contestor
@@ -3292,7 +3292,7 @@ annex_foreign_colony_small_cb = {
 	
 	on_add = {
 		any_country = { 
-		               limit { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+		               limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
 					   set_country_flag = contested_colony 
 		}
 		#set_country_flag = colony_contestor
