@@ -18,6 +18,12 @@ country_event = {
 		exists = yes
 		BOR = { exists = yes }
 		AUS = { exists = yes }
+		NOT = { 		
+		       OR = {
+                     has_global_flag = support_bourbon_heir_spa
+                     has_global_flag = support_habsburg_heir_spa						 
+			   }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -57,7 +63,6 @@ country_event = {
 	}
 }
 
-#Bourbon Heir - Austria Calls for Allies
 country_event = {
 	id = 93002
 	title = "EVTNAME93002" 
@@ -204,6 +209,14 @@ country_event = {
 			defender_goal = { casus_belli = change_heir_bourbon_cb }
 			call_ally = yes
 		}
+		BOR = {
+		       war = {
+		       	      target = AUS
+		       	      attacker_goal = { casus_belli = change_heir_bourbon_cb }
+		       	      defender_goal = { casus_belli = change_heir_habsburg_cb }
+		       	      call_ally = yes
+		       }
+		}
 		set_gloabal_flag = spanish_war_realy_begun
 		ai_chance = {
 			factor = 1.0
@@ -334,6 +347,14 @@ country_event = {
 			defender_goal = { casus_belli = change_heir_habsburg_cb }
 			call_ally = yes
 		}
+		AUS = {
+		       war = {
+		       	      target = BOR
+		       	      attacker_goal = { casus_belli = change_heir_habsburg_cb }
+		       	      defender_goal = { casus_belli = change_heir_bourbon_cb }
+		       	      call_ally = yes
+		       }
+		}
 		set_gloabal_flag = spanish_war_realy_begun
 		ai_chance = {
 			factor = 1.0
@@ -381,7 +402,8 @@ country_event = {
 			secede_province = ENG
 		}
 		}
-		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA }
+		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA  end_war = BOR }
+		end_war = SPA  end_war = BOR
 		remove_global_flag =  spanish_succesion_crisis
 	}
 }
@@ -414,7 +436,8 @@ country_event = {
 			secede_province = BOR
 		}
 		}
-		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA }
+		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA  end_war = AUS }
+		end_war = SPA  end_war = AUS
 		remove_global_flag =  spanish_succesion_crisis
 	}
 }
