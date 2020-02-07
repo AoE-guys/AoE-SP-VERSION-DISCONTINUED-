@@ -154,7 +154,12 @@ country_event = {
 			modifier = {
 				factor = 2
 				rank = 8
-				NOT = { tag = RUS }
+				NOT = {
+                       OR = {				
+				             tag = RUS 
+							 tag = TUR
+				       }
+				}
 			}
 		}
 	}
