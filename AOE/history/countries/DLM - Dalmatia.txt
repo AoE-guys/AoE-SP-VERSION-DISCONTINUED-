@@ -2,21 +2,21 @@ capital = 781
 civilized = yes   primary_culture = croat
 culture = north_italian
 religion = catholic
-government = absolute_monarchy
+government = democracy
 plurality = 0.05
-nationalvalue = nv_order
+nationalvalue = nv_productivity
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.2
 civilized = yes
 
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
+vote_franschise = landed_voting
 public_meetings = yes_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -28,12 +28,13 @@ pensions = no_pensions
 school_reforms = no_schools
 
 
+
 #New Reforms
 conscription = two_year_draft
-debt_law = serfdom
+debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = primary_culture_only
+citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies 
