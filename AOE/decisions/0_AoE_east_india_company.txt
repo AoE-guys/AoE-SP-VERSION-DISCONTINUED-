@@ -1,23 +1,23 @@
-political_decisions = {
-	fund_east_india_company = {
-		picture = map_india
-		potential = {
-			any_owned_province = {
-				continent = asia	
-			}
-			is_great_power = yes
-			civilized = yes
-		}
-		allow = {
-			any_owned_province = {
-				continent = asia	
-			}
-			mass_politics = 1
-			money = 1000000
-		}
-		effect = {
-			money = -1000000
-			set_country_flag = east_india_company_funded
-		}
-	}
-}
+#political_decisions = {
+#	fund_east_india_company = {
+#		picture = map_india
+#		potential = {
+#			any_owned_province = {
+#				continent = asia	
+#			}
+#			is_great_power = yes
+#			civilized = yes
+#		}
+#		allow = {
+#			any_owned_province = {
+#				continent = asia	
+#			}
+#			mass_politics = 1
+#			money = 1000000
+#		}
+#		effect = {
+#			money = -1000000
+#			set_country_flag = east_india_company_funded
+#		}
+#	}
+#}

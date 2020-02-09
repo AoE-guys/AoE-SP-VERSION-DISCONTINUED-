@@ -517,7 +517,7 @@ province_event = {
 	}
 
 	option = {
-		name = "EVT171405PTA"
+		name = "EVT377435PTA"
 		owner = { prestige = -2 }
 		random_pop = {
 			limit = {
@@ -721,7 +721,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "EVT171406OPTA"
+		name = "This isn't good"
 		add_province_modifier = {
 			name = jacobite_sympathies
 			duration = -1
@@ -838,7 +838,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "EVT171407OPTA"
+		name = "Kill them all!"
 		remove_province_modifier = jacobite_sympathies
 		any_pop = {
 			militancy = -5
