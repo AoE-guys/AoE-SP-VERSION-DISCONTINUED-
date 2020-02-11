@@ -253,6 +253,9 @@ political_reforms = {
 			poor_vote = 0
 			allow = { NOT = { election = yes } }
 			cb_generation_speed_modifier = 0.15
+			allow = {
+				NOT = { government = elective_monarchy_oligarchy }
+			}
 		}
 		landed_voting = {
 			rich_vote = 1
@@ -276,6 +279,9 @@ political_reforms = {
 			poor_vote = 0
 			cb_generation_speed_modifier = 0.05
 			global_immigrant_attract = 0.02
+			allow = {
+				NOT = { government = elective_monarchy_oligarchy }
+			}
 		}
 		wealth_voting = {
 			rich_vote = 1

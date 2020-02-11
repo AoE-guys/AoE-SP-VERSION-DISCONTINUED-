@@ -1274,6 +1274,18 @@ the_elective_monarchy = {
 	global_pop_militancy_modifier = 0.03
 	icon = 8
 }
+janisseries_influence = {
+	trigger = {
+		exists = yes
+		has_country_flag = janisseries
+	}	
+	min_military_spending = 0.3
+	max_military_spending = 0.10
+	army_tech_research_bonus = -0.1
+	global_assimilation_rate = -0.1
+	land_organisation = 0.05
+	icon = 16
+}
 
 #### Pops livelihood impact on development
 

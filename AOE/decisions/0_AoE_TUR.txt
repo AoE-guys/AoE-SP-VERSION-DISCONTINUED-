@@ -1,0 +1,139 @@
+political_decisions = {
+	
+	recruit_prussian_military_advisors = {
+		picture = prussian_advisor
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = recruited_prussian_military_advisors }
+		}
+		allow = {
+			relation = { who = PRU value = 100 }
+			money = 5000
+		}
+		effect = {
+			set_country_flag = recruited_prussian_military_advisors
+			add_country_modifier = {
+				name = prussian_military_advisors
+				duration = 7300
+			}
+			money = -5000
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	recover_hungary = {
+		picture = tur_hungary
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = recovered_hungary }
+		}
+		allow = {
+			is_greater_power = yes
+			AUS_623 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+			AUS_641 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+			AUS_654 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+			AUS_657 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+			AUS_771 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+			AUS_777 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+		}
+		effect = {
+			set_country_flag = recovered_hungary
+			prestige = 40
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+			release_vassal = SIE
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	create_imperial_navy_engieering_school = {
+		picture = tur_navy
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = imperial_navy_engieering_school }
+		}
+		allow = {
+			high_sea_battle_fleet = 1
+		}
+		effect = {
+			set_country_flag = imperial_navy_engieering_school
+			add_country_modifier = {
+				name = imperial_navy_engieering_school
+				duration = -1
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	abolish_janisseries = {
+		picture = janisseries
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = abolished_janisseries }
+			has_country_modifier = janisseries_influence
+		}
+		allow = {
+			money = 10000000
+			mass_politics = 1
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = abolished_janisseries
+			clr_country_flag = janisseries
+			remove_country_modifier = janisseries_influence
+			any_pop = { militancy = 3 }
+			money = -10000000
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	nizam-i_djedid_reforms = {
+		picture = nizam-i_djedid
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = nizam-i_djedid_reforms }
+		}
+		allow = {
+			modern_army_doctrine = 1
+			NOT = { has_country_modifier = janisseries_influence }
+		}
+		effect = {
+			set_country_flag = nizam-i_djedid_reforms
+			add_country_modifier = {
+				name = nizam-i_djedid
+				duration = -1
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	avenge_1683 = {
+		picture = vienna_fire
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = avenged_1683 }
+		}
+		allow = {
+			controls = 619
+		}
+		effect = {
+			set_country_flag = avenged_1683
+			country_event = 173603
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+}
