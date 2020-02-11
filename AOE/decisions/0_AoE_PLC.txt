@@ -1,5 +1,4 @@
-political_decisions = {
-	
+political_decisions = {	
 	may_constitution = {
 		picture = 3rd_may_constitution
 		potential = {
@@ -57,6 +56,7 @@ political_decisions = {
 					political_reform = debtors_prisons
 				}
 			}
+			inherit = KUR
 			
 			random_owned = {
 				limit = {
@@ -64,15 +64,6 @@ political_decisions = {
 				}
 				owner = {
 					treasury = 150000
-					machine_parts = 400
-					steel = 600 #was iron
-					cement = 600
-					build_factory_in_capital_state = fabric_factory
-					build_factory_in_capital_state = canned_food_factory
-					build_factory_in_capital_state = liquor_distillery
-					activate_technology = high_pressure_steam_engine
-					activate_technology = freedom_of_trade
-					activate_technology = puddling
 				}
 			}
 			
@@ -81,5 +72,129 @@ political_decisions = {
 		}
 		
 		ai_will_do = { factor = 1 }
+	}
+
+	revise_the_treaty_of_andrusovo = {
+		picture = revise_andrusovo
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = revise_the_treaty_of_andrusovo }
+		}
+		allow = {
+			is_greater_power = yes
+			military_score = 100
+			military_plicy = jingoism
+		}
+		effect = {
+			set_country_flag = revise_the_treaty_of_andrusovo
+			963 = { add_core = PLC }
+			962 = { add_core = PLC }
+			1016 = { add_core = PLC }
+			943 = { add_core = PLC }
+			1017 = { add_core = PLC }
+			badboy = 15
+		
+			relation = {
+				who = RUS
+				value = -250
+			}
+		}
+		ai_will_do = { factor = 1 }	
+	}
+
+	vassalize_ducal_prussia = {
+		picture = ducal_prussia
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = vassalize_ducal_prussia }
+		}
+		allow = {
+			owns = 695
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = vassalize_ducal_prussia
+			695 = { add_core = DPR }
+			696 = { add_core = DPR }
+			697 = { add_core = DPR }
+			698 = { add_core = DPR }
+			release_vassal = DPR
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	move_capital_to_warsaw = {
+		picture = warsaw
+		potential = {
+			tag = PLC
+			NOT = { capital = 706 }
+		}
+		allow = {
+			706 = {
+				has_building = railroad
+				has_building = fort
+			}
+			expressionism = 1
+		}
+		effect = {
+			set_country_flag = vassalize_ducal_prussia
+			capital = 706
+			prestige = 15
+			706 = {
+				life_rating = 5
+			}
+		}
+		ai_will_do = { factor = 1 }
+	
+	}
+	
+	second_union_of_hadiach = {
+		picture = plr
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = second_union_of_hadiach }
+		}
+		allow = {
+			NOT = { government = elective_monarchy_oligarchy }
+			owns = 963
+			political_thought_7 = 1
+			militancy = 4
+			PLC = {
+				any_core = { owned_by = THIS }
+			}
+		}
+		effect = {
+			set_country_flag = second_union_of_hadiach
+			all_core = {
+				remove_core = PLC
+				remove_core = RUS
+				add_core = PLR
+			}
+			change_tag = PLR
+			prestige = 15
+		}
+		ai_will_do = { factor = 1 }	
+	}
+	
+	recover_inflanty = {
+		picture = livonia_plc
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = recover_inflanty }
+		}
+		allow = {
+			strategic_mobility = 1
+			is_greater_power = yes
+			military_plicy = jingoism
+		}
+		effect = {
+			set_country_flag = recover_inflanty
+			354 = { add_core = PLC }
+			355 = { add_core = PLC }
+			352 = { add_core = PLC }
+			351 = { add_core = PLC }
+			badboy = 5
+		}
+		ai_will_do = { factor = 1 }	
 	}
 }

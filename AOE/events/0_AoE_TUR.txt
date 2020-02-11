@@ -1,0 +1,143 @@
+country_event = {
+	id = 173600
+	title = "Janissaries furious"
+	desc = "EVTDESC173600"
+	picture = janisseries_tur
+	
+	trigger = {
+		tag = TUR
+		NOT = { military_spending = 0.5 }
+		NOT = { has_country_modifier = janisseries_angry }
+		NOT = { has_country_modifier = janisseries_furious }
+		NOT = { has_country_flag = abolished_janisseries }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Recompensate their losses"
+		treasury = -1500
+		militancy = 1.5
+		add_country_modifier = {
+			name = janisseries_angry
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "Don't bother me with those fools"
+		militancy = 3
+		add_country_modifier = {
+			name = janisseries_furious
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 173601
+	title = "Janissaries oppose new reforms"
+	desc = "EVTDESC173601"
+	picture = janisseries_tur
+	
+	trigger = {
+		tag = TUR
+		has_country_modifier = prussian_military_advisors
+		NOT = { has_country_modifier = janisseries_angry }
+		NOT = { has_country_modifier = janisseries_furious }
+		NOT = { has_country_flag = abolished_janisseries }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Pay them off"
+		treasury = -1000
+		militancy = 1.5
+		add_country_modifier = {
+			name = janisseries_angry
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "Force them to obey reforms"
+		militancy = 3
+		add_country_modifier = {
+			name = janisseries_furious
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 173602
+	title = "Janissaries demand higher pay for war"
+	desc = "EVTDESC173602"
+	picture = janisseries_tur
+	
+	trigger = {
+		tag = TUR
+		war = yes
+		NOT = { has_country_modifier = janisseries_angry }
+		NOT = { has_country_modifier = janisseries_furious }
+		NOT = { has_country_flag = abolished_janisseries }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Pay them off"
+		treasury = -1000
+	}
+	
+	option = {
+		name = "Ignore them"
+		militancy = 1
+		add_country_modifier = {
+			name = janisseries_angry
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 173603
+	title = "The Great Pillage of Vienna"
+	desc = "EVTDESC173603"
+	picture = vienna_boom
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "HA! Take that Habsburgs!"
+		treasury = 5000
+		619 = {
+			life_rating = -5
+			RGO_size = -1
+			fort = -2
+			infrastructure = -2
+		}
+		AUS = { country_event = 173604 }
+		prestige = 30
+		badboy = 10
+	}
+}
+
+country_event = {
+	id = 173604
+	title = "The Great Pillage of Vienna"
+	desc = "EVTDESC173604"
+	picture = vienna_boom
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "Those saveges..."
+		treasury = -5000
+		prestige = -30
+	}
+}

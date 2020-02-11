@@ -3,12 +3,12 @@
 song = {
 	name = "world_turned_upsidedown.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 	}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -17,12 +17,12 @@ chance = {
 song = {
 	name = "Yorckscher_Marsch_General_Yorck_March.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -31,12 +31,12 @@ chance = {
 song = {
 	name = "Winter_four_seasons.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -45,12 +45,12 @@ chance = {
 song = {
 	name = "Üsküdara_Giderken.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -59,12 +59,13 @@ chance = {
 song = {
 	name = "Rule_Britannia.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
+		tag = USA
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -73,12 +74,12 @@ chance = {
 song = {
 	name = "Military_March_March_of_the_Preobrazhensky_Regiment.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -87,12 +88,12 @@ chance = {
 song = {
 	name = "Let_the_Thunder_of_Victory_Rumble.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -101,12 +102,12 @@ chance = {
 song = {
 	name = "La_Victoire_est_a_Nous.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
 		}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -115,12 +116,12 @@ chance = {
 song = {
 	name = "La_Victoire_est_a_Nous.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
-		}
+	}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -129,12 +130,12 @@ chance = {
 song = {
 	name = "fife_and_drum.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
-		}
+	}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -143,12 +144,12 @@ chance = {
 song = {
 	name = "Chant_du_départ.mp3"
 
-	chance = {
+	modifier = {
 		factor = 0
 		war = yes
-		}
+	}
 
-chance = {
+modifier = {
 		factor = 1
 		war = no
 	}
@@ -156,7 +157,60 @@ chance = {
 
 song = {
 	name = "thecoronation_titletheme.mp3"
-	chance = {
+	
+	modifier = {
+		factor = 1
+	}
+}
+song = {
+	name = "Battle of Lepanto.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+	}
+
+modifier = {
 		factor = 0
+		war = no
+	}
+}
+song = {
+	name = "Kings Court Remix.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+		}
+
+modifier = {
+		factor = 0
+		war = no
+	}
+}
+song = {
+	name = "My Kingdom.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+		}
+
+modifier = {
+		factor = 0
+		war = no
+	}
+}
+song = {
+	name = "The Stage is Set.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+		}
+
+modifier = {
+		factor = 0
+		war = no
 	}
 }

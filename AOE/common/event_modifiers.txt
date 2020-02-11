@@ -3841,15 +3841,17 @@ renovated_armada = {
 	navy_tech_research_bonus = 0.05
 	naval_unit_start_experience = 10
 	naval_organisation = 0.15
+	icon = 15
 }
 the_cadastre_tax_and_the_spanish_bank = {
 	tax_efficiency = 0.15
+	icon = 9
 }
 royal_academy_of_the_fine_arts = {
 	prestige = 0.05
 	culture_tech_research_bonus = 0.05
 	influence_modifier = 0.1
-	icon = 9
+	icon = 13
 }
 new_royal_spanish_academy = {
 	army_tech_research_bonus = 0.05
@@ -3858,7 +3860,44 @@ new_royal_spanish_academy = {
 	org_regain = 0.2
 	land_unit_start_experience = 5
 	max_military_spending = 0.10
-	icon = 1
+	icon = 15
+}
+###Ottoman reforms and debuffs###
+janisseries_angry = {
+	min_military_spending = 0.45
+	max_military_spending = 0.10
+	army_tech_research_bonus = -0.05
+	global_assimilation_rate = -0.05
+	ruling_party_support = -0.05 
+	land_organisation = -0.05
+	icon = 18
+}
+janisseries_furious = {
+	min_military_spending = 0.45
+	max_military_spending = 0.10
+	army_tech_research_bonus = -0.15
+	global_assimilation_rate = -0.15
+	ruling_party_support = -0.05 
+	land_organisation = -0.15
+	icon = 18
+}
+imperial_navy_engieering_school = {
+	navy_tech_research_bonus = 0.1
+	naval_unit_start_experience = 15
+	icon = 15
+}
+prussian_military_advisors = {
+	and_organisation = 0.05
+	army_tech_research_bonus = 0.05
+	land_unit_start_experience = 5
+	icon = 17
+}
+nizam-i_djedid = {
+	land_organisation = 0.1
+	supply_consumption = -0.1
+	org_regain = 0.2
+	land_unit_start_experience = 5
+	icon = 15
 }
 #####
 rights_of_man = {
@@ -3868,7 +3907,7 @@ rights_of_man = {
 	global_assimilation_rate = 0.1
 	non_accepted_pop_consciousness_modifier = 0.2
 	ruling_party_support = 0.05
-	icon = 5
+	icon = 3
 }
 #colonization##
 settlement_colony = {
