@@ -17,6 +17,9 @@ political_decisions = {
 				duration = 7300
 			}
 			money = -5000
+			PRU = {
+				country_event = 173605
+			}
 		}
 		ai_will_do = {					
 			factor = 1
@@ -82,8 +85,8 @@ political_decisions = {
 		}
 		allow = {
 			money = 10000000
-			mass_politics = 1
 			is_greater_power = yes
+			social_reform = low_pensions
 		}
 		effect = {
 			set_country_flag = abolished_janisseries
@@ -131,6 +134,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = avenged_1683
 			country_event = 173603
+			badboy = 7
 		}
 		ai_will_do = {					
 			factor = 1
