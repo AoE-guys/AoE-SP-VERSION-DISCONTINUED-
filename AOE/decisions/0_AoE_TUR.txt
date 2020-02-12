@@ -84,16 +84,16 @@ political_decisions = {
 			has_country_modifier = janisseries_influence
 		}
 		allow = {
-			money = 10000000
+			money = 1000000
 			is_greater_power = yes
-			social_reform = low_pensions
+			pensions = low_pensions
 		}
 		effect = {
 			set_country_flag = abolished_janisseries
 			clr_country_flag = janisseries
 			remove_country_modifier = janisseries_influence
 			any_pop = { militancy = 3 }
-			money = -10000000
+			money = -1000000
 		}
 		ai_will_do = {					
 			factor = 1

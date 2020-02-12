@@ -83,7 +83,7 @@ political_decisions = {
 		allow = {
 			is_greater_power = yes
 			military_score = 100
-			military_plicy = jingoism
+			war_policy  = jingoism
 		}
 		effect = {
 			set_country_flag = revise_the_treaty_of_andrusovo
@@ -158,7 +158,7 @@ political_decisions = {
 			NOT = { government = elective_monarchy_oligarchy }
 			owns = 963
 			political_thought_7 = 1
-			militancy = 4
+			average_militancy = = 4
 			PLC = {
 				any_core = { owned_by = THIS }
 			}
