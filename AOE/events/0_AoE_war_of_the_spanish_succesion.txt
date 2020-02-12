@@ -397,12 +397,14 @@ country_event = {
 		any_owned = {
 			limit = {
 				region = SIC_763
+				SVY = { war_with = THIS }
 			}
 			secede_province = SVY
 		}
 		any_owned = {
 			limit = {
 				province_id = 517
+				ENG = { war_with = THIS }
 			}
 			secede_province = ENG
 		}
