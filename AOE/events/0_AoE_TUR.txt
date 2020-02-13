@@ -92,7 +92,7 @@ country_event = {
 	
 	option = {
 		name = "Pay them off"
-		treasury = -1000
+		treasury = -10000
 	}
 	
 	option = {
@@ -106,7 +106,7 @@ country_event = {
 }
 country_event = {
 	id = 173603
-	title = "The Great Pillage of Vienna"
+	title = "The Great Sack of Vienna"
 	desc = "EVTDESC173603"
 	picture = vienna_boom
 	is_triggered_only = yes
@@ -129,7 +129,7 @@ country_event = {
 
 country_event = {
 	id = 173604
-	title = "The Great Pillage of Vienna"
+	title = "The Great Sack of Vienna"
 	desc = "EVTDESC173604"
 	picture = vienna_boom
 	is_triggered_only = yes
@@ -139,5 +139,20 @@ country_event = {
 		name = "Those saveges..."
 		treasury = -5000
 		prestige = -30
+	}
+}
+
+country_event = {
+	id = 173605
+	title = "The Turks offer payment"
+	desc = "EVTDESC173605"
+	picture = conscription_marching
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "A wise decision"
+		money = 5000
+		prestige = 30
 	}
 }
