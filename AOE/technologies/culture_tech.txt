@@ -301,10 +301,6 @@ state_n_government = {
 	max_national_focus = 1 
 	ai_chance = {
 		factor = 25
-		modifier = {
-			factor = 1000
-			tag = ENG
-		}
 	}
 }
 nationalism_n_imperialism = {
