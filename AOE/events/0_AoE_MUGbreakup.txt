@@ -4,10 +4,13 @@ country_event = {
 	desc = "mug_desc"
 	
 	major = yes
+	
 	fire_only_once = yes
+	
 	trigger = {
 		tag = MUG
 		year = 1707
+		NOT = { has_global_flag = mughals_ded }
 	}
 	
 	mean_time_to_happen = {
@@ -55,6 +58,7 @@ country_event = {
 		release = MAK
 		release = SIK
 		release = TRA
+		set_global_flag = mughals_ded
 	}
 }
 country_event = {

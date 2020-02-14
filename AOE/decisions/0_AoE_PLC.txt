@@ -134,7 +134,7 @@ political_decisions = {
 				has_building = railroad
 				has_building = fort
 			}
-			expressionism = 1
+			realism = 1
 		}
 		effect = {
 			set_country_flag = vassalize_ducal_prussia
@@ -159,9 +159,6 @@ political_decisions = {
 			owns = 963
 			political_thought_7 = 1
 			average_militancy = = 4
-			PLC = {
-				any_core = { owned_by = THIS }
-			}
 		}
 		effect = {
 			set_country_flag = second_union_of_hadiach
