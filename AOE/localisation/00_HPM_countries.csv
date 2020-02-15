@@ -3185,6 +3185,7 @@ ENG_prussian_constitutionalism;England;England;England;England;;;;;;;;;;;x;;;;;;
 ENG_absolute_monarchy;England;England;England;England;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SWE_absolute_monarchy;Kingdom of Sweden;Kingdom of Sweden;Kingdom of Sweden;Kingdom of Sweden;Kingdom of Sweden;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LIG;Liege;Liege;Liege;Liege;Liege;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LIG_ADJ;Liegian;x
 LIG_absolute_monarchy;Liege;Liege;Liege;Liege;Liege;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LIG_prussian_constitutionalism;Liege;Liege;Liege;Liege;Liege;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LIG_hms_government;Liege;Liege;Liege;Liege;Liege;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3194,73 +3195,85 @@ ENG_ADJ;English;English;English;English;English;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;
 RUS_absolute_monarchy;Russian Empire;Russian Empire;Russian Empire;Russian Empire;Russian Empire;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RUS_hms_government;Russian Empire;Russian Empire;Russian Empire;Russian Empire;Russian Empire;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RUS_prussian_constitutionalism;Russian Empire;Russian Empire;Russian Empire;Russian Empire;Russian Empire;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-LNE;Lunebrug;Lunebrug;Lunebrug;Lunebrug;Lunebrug;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-LNE_absolute_monarchy;Lunebrug;Lunebrug;Lunebrug;Lunebrug;Lunebrug;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-LNE_prussian_constitutionalism;Lunebrug;Lunebrug;Lunebrug;Lunebrug;Lunebrug;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-LNE_hms_government;Lunebrug;Lunebrug;Lunebrug;Lunebrug;Lunebrug;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-LNE_presidential_dictatorship;Lunebrug;Lunebrug;Lunebrug;Lunebrug;Lunebrug;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-LNE_democracy;Lunebrug;Lunebrug;Lunebrug;Lunebrug;Lunebrug;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LNE;Luneburg;Luneburg;Luneburg;Luneburg;Luneburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LNE_ADJ;Luneburgian;x
+LNE_absolute_monarchy;Luneburg;Luneburg;Luneburg;Luneburg;Luneburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LNE_prussian_constitutionalism;Luneburg;Luneburg;Luneburg;Luneburg;Luneburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LNE_hms_government;Luneburg;Luneburg;Luneburg;Luneburg;Luneburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LNE_presidential_dictatorship;Luneburg;Luneburg;Luneburg;Luneburg;Luneburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LNE_democracy;Luneburg;Luneburg;Luneburg;Luneburg;Luneburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 WUL;Wurzburg;Wurzburg;Wurzburg;Wurzburg;Wurzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+WUL_ADJ;Wurzburgian;x
 WUL_absolute_monarchy;Wurzburg;Wurzburg;Wurzburg;Wurzburg;Wurzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 WUL_prussian_constitutionalism;Wurzburg;Wurzburg;Wurzburg;Wurzburg;Wurzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 WUL_hms_government;Wurzburg;Wurzburg;Wurzburg;Wurzburg;Wurzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 WUL_presidential_dictatorship;Wurzburg;Wurzburg;Wurzburg;Wurzburg;Wurzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 WUL_democracy;Wurzburg;Wurzburg;Wurzburg;Wurzburg;Wurzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AUG;Augsburg;Augsburg;Augsburg;Augsburg;Augsburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+AUG_ADJ;Augsburgian;x
 AUG_absolute_monarchy;Augsburg;Augsburg;Augsburg;Augsburg;Augsburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AUG_prussian_constitutionalism;Augsburg;Augsburg;Augsburg;Augsburg;Augsburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AUG_hms_government;Augsburg;Augsburg;Augsburg;Augsburg;Augsburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AUG_presidential_dictatorship;Augsburg;Augsburg;Augsburg;Augsburg;Augsburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AUG_democracy;Augsburg;Augsburg;Augsburg;Augsburg;Augsburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RAV;Ravensburg;Ravensburg;Ravensburg;Ravensburg;Ravensburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+RAV_ADJ;Ravensburgian;x
 RAV_absolute_monarchy;Ravensburg;Ravensburg;Ravensburg;Ravensburg;Ravensburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RAV_prussian_constitutionalism;Ravensburg;Ravensburg;Ravensburg;Ravensburg;Ravensburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RAV_hms_government;Ravensburg;Ravensburg;Ravensburg;Ravensburg;Ravensburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RAV_presidential_dictatorship;Ravensburg;Ravensburg;Ravensburg;Ravensburg;Ravensburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RAV_democracy;Ravensburg;Ravensburg;Ravensburg;Ravensburg;Ravensburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ANS;Ansbach;Ansbach;Ansbach;Ansbach;Ansbach;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ANS_ADJ;Ansbachian;x
 ANS_absolute_monarchy;Ansbach;Ansbach;Ansbach;Ansbach;Ansbach;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ANS_prussian_constitutionalism;Ansbach;Ansbach;Ansbach;Ansbach;Ansbach;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ANS_hms_government;Ansbach;Ansbach;Ansbach;Ansbach;Ansbach;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ANS_presidential_dictatorship;Ansbach;Ansbach;Ansbach;Ansbach;Ansbach;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ANS_democracy;Ansbach;Ansbach;Ansbach;Ansbach;Ansbach;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 THU;Thuringia;Thuringia;Thuringia;Thuringia;Thuringia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+THU_ADJ;Thuringian;x
 THU_absolute_monarchy;Thuringia;Thuringia;Thuringia;Thuringia;Thuringia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 THU_prussian_constitutionalism;Thuringia;Thuringia;Thuringia;Thuringia;Thuringia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 THU_hms_government;Thuringia;Thuringia;Thuringia;Thuringia;Thuringia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 THU_presidential_dictatorship;Thuringia;Thuringia;Thuringia;Thuringia;Thuringia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 THU_democracy;Thuringia;Thuringia;Thuringia;Thuringia;Thuringia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EFR;East Frisia;East Frisia;East Frisia;East Frisia;East Frisia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EFR_ADJ;East Frisian;x
 EFR_absolute_monarchy;East Frisia;East Frisia;East Frisia;East Frisia;East Frisia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EFR_prussian_constitutionalism;East Frisia;East Frisia;East Frisia;East Frisia;East Frisia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EFR_hms_government;East Frisia;East Frisia;East Frisia;East Frisia;East Frisia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EFR_presidential_dictatorship;East Frisia;East Frisia;East Frisia;East Frisia;East Frisia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EFR_democracy;East Frisia;East Frisia;East Frisia;East Frisia;East Frisia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SAL;Salzburg;Salzburg;Salzburg;Salzburg;Salzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+SAL_ADJ;Salzburgian;x
 SAL_absolute_monarchy;Salzburg;Salzburg;Salzburg;Salzburg;Salzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SAL_prussian_constitutionalism;Salzburg;Salzburg;Salzburg;Salzburg;Salzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SAL_hms_government;Salzburg;Salzburg;Salzburg;Salzburg;Salzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SAL_presidential_dictatorship;Salzburg;Salzburg;Salzburg;Salzburg;Salzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SAL_democracy;Salzburg;Salzburg;Salzburg;Salzburg;Salzburg;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KOL;Cologne;Cologne;Cologne;Cologne;Cologne;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+KOL_ADJ;Colognian;x
 KOL_absolute_monarchy;Cologne;Cologne;Cologne;Cologne;Cologne;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 RAV_prussian_constitutionalism;Cologne;Cologne;Cologne;Cologne;Cologne;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KOL_hms_government;Cologne;Cologne;Cologne;Cologne;Cologne;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KOL_presidential_dictatorship;Cologne;Cologne;Cologne;Cologne;Cologne;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KOL_democracy;Cologne;Cologne;Cologne;Cologne;Cologne;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ULM;Ulm;Ulm;Ulm;Ulm;Ulm;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ULM_ADJ;Ulmer;x
 ULM_absolute_monarchy;Ulm;Ulm;Ulm;Ulm;Ulm;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ULM_prussian_constitutionalism;Ulm;Ulm;Ulm;Ulm;Ulm;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ULM_hms_government;Ulm;Ulm;Ulm;Ulm;Ulm;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ULM_presidential_dictatorship;Ulm;Ulm;Ulm;Ulm;Ulm;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ULM_democracy;Ulm;Ulm;Ulm;Ulm;Ulm;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 TRR;Trier;Trier;Trier;Trier;Trier;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+TRR_ADJ;Trieran;x
 TRR_absolute_monarchy;Trier;Trier;Trier;Trier;Trier;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 TRR_prussian_constitutionalism;Trier;Trier;Trier;Trier;Trier;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 TRR_hms_government;Trier;Trier;Trier;Trier;Trier;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 TRR_presidential_dictatorship;Trier;Trier;Trier;Trier;Trier;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 TRR_democracy;Trier;Trier;Trier;Trier;Trier;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 MUN;Munster;Munster;Munster;Munster;Munster;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+MUN_ADJ;Munsterian;x
 MUN_absolute_monarchy;Munster;Munster;Munster;Munster;Munster;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 MUN_prussian_constitutionalism;Munster;Munster;Munster;Munster;Munster;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 MUN_hms_government;Munster;Munster;Munster;Munster;Munster;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3270,12 +3283,14 @@ ANS_conservative;Conservative Faction;Conservative Faction;Conservative Faction;
 ANS_reactionary;Ractionary Faction;Ractionary Faction;Ractionary Faction;Ractionary Faction;Ractionary Faction;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ANS_liberal;Liberal Faction;Liberal Faction;Liberal Faction;Liberal Faction;Liberal Faction;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PAL;The Palatinate;The Palatinate;The Palatinate;The Palatinate;The Palatinate;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+PAL_ADJ;Palatinate;x
 PAL_absolute_monarchy;The Palatinate;The Palatinate;The Palatinate;The Palatinate;The Palatinate;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PAL_prussian_constitutionalism;The Palatinate;The Palatinate;The Palatinate;The Palatinate;The Palatinate;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PAL_hms_government;The Palatinate;The Palatinate;The Palatinate;The Palatinate;The Palatinate;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PAL_presidential_dictatorship;The Palatinate;The Palatinate;The Palatinate;The Palatinate;The Palatinate;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PAL_democracy;The Palatinate;The Palatinate;The Palatinate;The Palatinate;The Palatinate;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ACH;Achen;Achen;Achen;Achen;Achen;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ACH_ADJ;Achean;x
 ACH_absolute_monarchy;Achen;Achen;Achen;Achen;Achen;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ACH_prussian_constitutionalism;Achen;Achen;Achen;Achen;Achen;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ACH_hms_government;Achen;Achen;Achen;Achen;Achen;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3291,14 +3306,23 @@ RUS_tsardom;Tsardom Of Russia;Tsardom Of Russia;Tsardom Of Russia;Tsardom Of Rus
 MLT_absolute_monarchy;Kinghts Joanits;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 MLT_prussian_constitutionalism;Kinghts Joanits;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KUR;Courland;Courland;Courland;Courland;Courland;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+KUR_ADJ;Kourlandish;x
 KUR_absolute_monarchy;Courland;Courland;Courland;Courland;Courland;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KUR_prussian_constitutionalism;Courland;Courland;Courland;Courland;Courland;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KUR_hms_government;Courland;Courland;Courland;Courland;Courland;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KUR_presidential_dictatorship;Courland;Courland;Courland;Courland;Courland;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KUR_democracy;Courland;Courland;Courland;Courland;Courland;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DPR;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DPR_ADJ;East Prussian;x
 DPR_absolute_monarchy;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DPR_prussian_constitutionalism;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DPR_hms_government;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DPR_presidential_dictatorship;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;Ducal Prussia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DPR_democracy;East Prussia;East Prussia;East Prussia;East Prussia;East Prussia;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN_ADJ;Denish-Norwegian;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN_absolute_monarchy;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN_prussian_constitutionalism;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN_hms_government;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN_presidential_dictatorship;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DNN_democracy;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;Denmark-Norway;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,23 +1,25 @@
-capital = 322
-civilized = yes   primary_culture = swedish
-culture = finnish
+capital = 372
+civilized = yes   primary_culture = danish
+culture = icelandic
+culture = norwegian
 religion = protestant
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.8
+#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.02
 civilized = yes
-prestige = 10
+prestige = 15
 
 # Political reforms
 slavery = yes_slavery
-upper_house_composition = state_equal_weight
+upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = yes_meeting
-press_rights = state_press
+press_rights = censored_press
 trade_unions = no_trade_unions
-voting_system = proportional_representation
-political_parties = non_secret_ballots
+voting_system = first_past_the_post
+political_parties = underground_parties
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -25,40 +27,35 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = acceptable_pensions 
+pensions = no_pensions 
 school_reforms = no_schools
 
-# New Reforms
-conscription = four_year_draft
+#New Reforms
+conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = culture_voting_only
+citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
-colonial_policy = no_colonies 
+colonial_policy = civilizing
 
 set_country_flag = protestant_country
 
-#govt_flag = {
-	#government = hms_government
-	#flag = theocracy
-#}
-
 ruling_party = "Nobility Faction"
-last_election = 1833.1.1
 upper_house = {
 	fascist = 0
-	liberal = 35
-	conservative = 60
-	reactionary = 5
+	liberal = 17
+	conservative = 70
+	reactionary = 13
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
+decision = 1836_denmark_setup
 
-#Technologies
+# Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
@@ -86,44 +83,47 @@ basic_chemistry = 1
 
 #Inventions
 #corvettes = yes
+commerce_raiders = yes
+steamer_transports = yes
 
 # Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
 
-schools = industrial_tech_school
-
-oob = "SWE_oob.txt"
-
-decision = findland_rename
+oob = "DEN_oob.txt"
 
 1850.1.1 = {
-decision = pass_folkskolereformen
+decision = danmarks_riges_grundlov
 }
 
 1861.1.1 = {
-	oob = "/1861/SWE_oob.txt"
+	oob = "/1861/DEN_oob.txt"
 	plurality = 60
-	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.95
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.90
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.7 #Germans
+	
+	set_country_flag = annex_schleswig_holstein
+	set_country_flag = schleswig_holstein_restored
+	ruling_party = "Nobility Faction"
 
-# Political reforms
-slavery = no_slavery
-upper_house_composition = state_equal_weight
-vote_franschise = landed_voting
-public_meetings = yes_meeting
-press_rights = free_press
-trade_unions = no_trade_unions
-voting_system = first_past_the_post
-political_parties = non_secret_ballots
+	# Political reforms
+	slavery = no_slavery
+	upper_house_composition = appointed
+	vote_franschise = landed_voting
+	public_meetings = yes_meeting
+	press_rights = free_press
+	trade_unions = no_trade_unions
+	voting_system = first_past_the_post
+	political_parties = underground_parties
 
-# Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions 
-school_reforms = low_schools	
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = low_health_care
+	unemployment_subsidies = low_subsidies
+	pensions = no_pensions 
+	school_reforms = low_schools	
 	
 	
 # Technologies
@@ -142,6 +142,7 @@ school_reforms = low_schools
 	
 	post_nelsonian_thought = 1
 	battleship_column_doctrine = 1
+	raider_group_doctrine = 1
 	clipper_design = 1
 	steamers = 1
 	iron_steamers = 1
@@ -186,10 +187,8 @@ school_reforms = low_schools
 	interchangeable_parts = 1
 	mechanized_mining = 1
 	hot_blast = 1
-	puddling = 1
 	experimental_railroad = 1
 	early_railroad = 1
-	iron_railroad = 1
 	basic_chemistry = 1
 	medicine = 1
 	inorganic_chemistry = 1
