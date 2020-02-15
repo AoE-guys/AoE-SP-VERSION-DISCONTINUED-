@@ -20912,7 +20912,7 @@
     }
 
     text_rotation = 0.000001
-    text_scale = 2.300000
+    text_scale = 1.000000
     unit = {
         x = 2885.900000
         y = 1513.500000
@@ -26846,41 +26846,41 @@
 # Geneva
 607 = {
     text_position = {
-        x = 2907.443333
-        y = 1561.320000
+        x = 2900.443333
+        y = 1553.320000
     }
 
     text_rotation = 0.479341
-    text_scale = 2.000000
+    text_scale = 1.000000
     unit = {
-        x = 2906.765000
-        y = 1560.826667
+        x = 2900.765000
+        y = 1553.826667
     }
 
     factory = {
-        x = 2916.261667
-        y = 1556.386667
+        x = 2900.261667
+        y = 1553.386667
     }
 
     building_construction = {
-        x = 2917.248333
-        y = 1573.653333
+        x = 2900.248333
+        y = 1553.653333
     }
 
     military_construction = {
-        x = 2919.591667
-        y = 1558.051667
+        x = 2900.591667
+        y = 1553.051667
     }
 
     building_position = {
         fort = {
-            x = 2902.016667
+            x = 2900.016667
             y = 1553.920000
         }
 
         railroad = {
-            x = 2907.073333
-            y = 1563.601667
+            x = 2900.073333
+            y = 1553.601667
         }
 
     }
@@ -30205,25 +30205,25 @@
 # Elbing
 693 = {
     text_position = {
-        x = 3105.200000
-        y = 1706.550000
+        x = 3107.200000
+        y = 1713.550000
     }
 
     text_rotation = 5.810589
     text_scale = 2.000000
     unit = {
-        x = 3103.973333
-        y = 1709.253333
+        x = 3107.973333
+        y = 1713.253333
     }
 
     city = {
-        x = 3106.200000
-        y = 1709.800000
+        x = 3107.200000
+        y = 1713.800000
     }
 
     factory = {
         x = 3107.450000
-        y = 1704.300000
+        y = 1713.300000
     }
 
     building_construction = {
@@ -33699,15 +33699,15 @@
 # Pola
 770 = {
     text_position = {
-        x = 3023.400000
-        y = 1532.750000
+        x = 3019.400000
+        y = 1534.750000
     }
 
     text_rotation = 5.934119
     text_scale = 1.900000
     unit = {
-        x = 3023.900000
-        y = 1538.100000
+        x = 3019.900000
+        y = 1534.100000
     }
 
     factory = {
@@ -127573,6 +127573,230 @@
 
     building_rotation = {
         naval_base = 3.131593
+    }
+
+}
+# Port Au Prince
+3327 = {
+    text_position = {
+        x = 1650.103333
+        y = 1256.731667
+    }
+
+    text_scale = 1.000000
+    unit = {
+        x = 1650.000000
+        y = 1256.000000
+    }
+
+    city = {
+        x = 1650.199951
+        y = 1256.599976
+    }
+
+    factory = {
+        x = 1650.900024
+        y = 1256.599976
+    }
+
+    building_construction = {
+        x = 1650.000000
+        y = 1253.000000
+    }
+
+    military_construction = {
+        x = 1650.000000
+        y = 1253.000000
+    }
+
+    building_position = {
+        fort = {
+            x = 1650.000000
+            y = 1253.000000
+        }
+
+        railroad = {
+            x = 1650.000000
+            y = 1253.000000
+        }
+
+        naval_base = {
+            x = 1650.691667
+            y = 1253.096667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.235987
+    }
+
+}
+# Port Au Prince
+3328 = {
+    text_position = {
+        x = 1669.103333
+        y = 1278.731667
+    }
+
+    text_scale = 2.400000
+    unit = {
+        x = 1669.000000
+        y = 1278.000000
+    }
+
+    city = {
+        x = 1669.199951
+        y = 1278.599976
+    }
+
+    factory = {
+        x = 1669.199951
+        y = 1278.599976
+    }
+
+    building_construction = {
+        x = 1669.199951
+        y = 1278.599976
+    }
+
+    military_construction = {
+        x = 1669.199951
+        y = 1278.599976
+    }
+
+    building_position = {
+        fort = {
+        x = 1669.199951
+        y = 1278.599976
+        }
+
+        railroad = {
+        x = 1669.199951
+        y = 1278.599976
+        }
+
+        naval_base = {
+        x = 1669.199951
+        y = 1278.599976
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.235987
+    }
+
+}
+# Port Au Prince
+3300 = {
+    text_position = {
+        x = 1669.103333
+        y = 1250.731667
+    }
+
+    text_scale = 2.400000
+    unit = {
+        x = 1679.000000
+        y = 1255.000000
+    }
+
+    city = {
+        x = 1657.199951
+        y = 1251.599976
+    }
+
+    factory = {
+        x = 1665.900024
+        y = 1259.599976
+    }
+
+    building_construction = {
+        x = 1652.000000
+        y = 1253.000000
+    }
+
+    military_construction = {
+        x = 1680.000000
+        y = 1253.000000
+    }
+
+    building_position = {
+        fort = {
+            x = 1646.000000
+            y = 1253.000000
+        }
+
+        railroad = {
+            x = 1657.000000
+            y = 1252.000000
+        }
+
+        naval_base = {
+            x = 1682.691667
+            y = 1248.096667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.235987
+    }
+
+}
+# Port Au Prince
+3329 = {
+    text_position = {
+        x = 1683.103333
+        y = 1274.731667
+    }
+
+    text_scale = 2.400000
+    unit = {
+        x = 1683.103333
+        y = 1274.731667
+    }
+
+    city = {
+        x = 1683.103333
+        y = 1274.731667
+    }
+
+    factory = {
+        x = 1683.103333
+        y = 1274.731667
+    }
+
+    building_construction = {
+        x = 1683.103333
+        y = 1274.731667
+    }
+
+    military_construction = {
+        x = 1683.103333
+        y = 1274.731667
+    }
+
+    building_position = {
+        fort = {
+        x = 1683.103333
+        y = 1274.731667
+        }
+
+        railroad = {
+        x = 1683.103333
+        y = 1274.731667
+        }
+
+        naval_base = {
+        x = 1683.103333
+        y = 1274.731667
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.235987
     }
 
 }
