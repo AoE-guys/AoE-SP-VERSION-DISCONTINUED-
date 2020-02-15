@@ -30,9 +30,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 156900
-	title = "Polish-Lithuanian sejm dissolved"
-	desc = "EVTDESC156900"
+	id = 156901
+	title = "Polish-Lithuanian policies vetoed"
+	desc = "EVTDESC156901"
 	picture = sejm
 
 	trigger = {
@@ -41,12 +41,102 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 	
 	option = {
 		name = "They're all idiots"	
 		election = yes
+		add_country_modifier = {
+			name = szlachta_taxes
+			duration = 1825
+		}
 		prestige = -5
 	}	
+}
+country_event = {
+	id = 156902
+	title = "Polish-Lithuanian policies vetoed"
+	desc = "EVTDESC156902"
+	picture = sejm
+
+	trigger = {
+		government = elective_monarchy_oligarchy
+		rich_tax = 100
+		NOT = { has_country_modifier = szlachta_taxes }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They're all idiots"	
+		election = yes
+		add_country_modifier = {
+			name = szlachta_taxes
+			duration = 1825
+		}
+		prestige = -5
+	}	
+}
+country_event = {
+	id = 156903
+	title = "Polish-Lithuanian policies vetoed"
+	desc = "EVTDESC156903"
+	picture = sejm
+
+	trigger = {
+		government = elective_monarchy_oligarchy
+		war = yes
+		NOT = { has_country_modifier = szlachta_war_taxes }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "They're taking cash out of MY treasury?!"	
+		election = yes
+		add_country_modifier = {
+			name = szlachta_war_taxes
+			duration = 1825
+		}
+		prestige = -5
+	}	
+}
+country_event = {
+	id = 156903
+	title = "Should we abolish the sejm?"
+	desc = "EVTDESC156903"
+	picture = sejm
+
+	trigger = {
+		government = elective_monarchy_oligarchy
+		average_militancy = 8
+		war = yes
+		war_exhaustion = 2
+		has_country_modifier = szlachta_war_taxes
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "It's time to end this pethetic government."	
+		election = yes
+		add_country_modifier = {
+			name = szlachta_opposition
+			duration = 1825
+		}
+		government = absolute_monarchy
+		prestige = -50
+	}
+	
+	option = {
+		name = "This is too drastic for my liking"
+		ai_will_do = { factor = 1 }
+	}
 }

@@ -55,6 +55,7 @@ country_event = {
 		release = MAK
 		release = SIK
 		release = TRA
+		all_core = { NOT = { owned_by = THIS } remove_core = THIS }
 	}
 }
 country_event = {
@@ -80,6 +81,7 @@ country_event = {
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}	
+		ai_will_do = { factor = 1 }	
 	}
 
 	option = {

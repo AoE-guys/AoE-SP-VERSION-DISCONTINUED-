@@ -3299,7 +3299,7 @@ swedish_caroleans = {
 	mobilisation_economy_impact = -0.25
 	land_unit_start_experience = 10
 	supply_consumption = -0.05
-	mobilisation_size = 0.05
+	mobilisation_size = 0.1
 	icon = 15
 }
 improved_administration = {
@@ -3901,11 +3901,28 @@ nizam-i_djedid = {
 }
 #####Szlachta is a bitch#####
 szlachta_taxes = {
-	factory_throughput = -0.25
-	rgo_output = -0.25
-	tax_efficiency = -0.35
+	factory_throughput = -0.15
+	rgo_output = -0.15
+	tax_efficiency = -0.15
 	loan_interest = 0.5
-	pop_militancy_modifier = 0.05
+	pop_militancy_modifier = 0.02
+}
+szlachta_war_taxes = {
+	factory_throughput = -0.15
+	rgo_output = -0.15
+	tax_efficiency = -0.15
+	loan_interest = 0.5
+	land_organisation = 0.05
+}
+szlachta_opposition = {
+	factory_throughput = -0.15
+	rgo_output = -0.15
+	tax_efficiency = -0.15
+	loan_interest = 0.5
+	land_organisation = -0.05
+	pop_militancy_modifier = 0.09
+	non_accepted_pop_consciousness_modifier = 0.2
+	ruling_party_support = -0.05
 }
 #####
 rights_of_man = {
