@@ -62,8 +62,9 @@ country_event = {
 
 	trigger = {
 		government = elective_monarchy_oligarchy
-		rich_tax = 100
-		NOT = { has_country_modifier = szlachta_taxes }
+		OR = { safety_regulations = low_safety safety_regulations = acceptable_safety }
+		NOT = { has_country_modifier = szlachta_pissed }
+		average_militancy = 3
 	}
 	
 	mean_time_to_happen = {
@@ -73,8 +74,9 @@ country_event = {
 	option = {
 		name = "They're all idiots"	
 		election = yes
+		safety_regulations = no_safety
 		add_country_modifier = {
-			name = szlachta_taxes
+			name = szlachta_pissed
 			duration = 1825
 		}
 		prestige = -5
@@ -88,6 +90,7 @@ country_event = {
 
 	trigger = {
 		government = elective_monarchy_oligarchy
+		war_exhaustion = 5
 		war = yes
 		NOT = { has_country_modifier = szlachta_war_taxes }
 	}
@@ -99,6 +102,7 @@ country_event = {
 	option = {
 		name = "They're taking cash out of MY treasury?!"	
 		election = yes
+		money = -7500
 		add_country_modifier = {
 			name = szlachta_war_taxes
 			duration = 1825
@@ -108,15 +112,15 @@ country_event = {
 }
 country_event = {
 	id = 156903
-	title = "Should we abolish the sejm?"
-	desc = "EVTDESC156903"
-	picture = sejm
+	title = "Should we abolish sejm?"
+	desc = "EVTDESC156904"
+	major = yes
 
 	trigger = {
 		government = elective_monarchy_oligarchy
-		average_militancy = 8
+		average_militancy = 6
 		war = yes
-		war_exhaustion = 2
+		war_exhaustion = 15
 		has_country_modifier = szlachta_war_taxes
 	}
 	
@@ -125,14 +129,22 @@ country_event = {
 	}
 	
 	option = {
-		name = "It's time to end this pethetic government."	
-		election = yes
+		name = "It's time to end this pethetic institution."	
 		add_country_modifier = {
 			name = szlachta_opposition
 			duration = 1825
 		}
 		government = absolute_monarchy
+		vote_franschise = none_voting
+		upper_house_composition = appointed
 		prestige = -50
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			country_event = id=13201
+		}
 	}
 	
 	option = {
