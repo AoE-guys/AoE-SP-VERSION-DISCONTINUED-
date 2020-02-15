@@ -252,12 +252,8 @@ political_reforms = {
 			middle_vote = 0
 			poor_vote = 0
 			allow = { 
-				NOT = { 
-					OR { 
-						election = yes 
-						government = elective_monarchy_oligarchy
-					} 
-				} 
+				NOT = { election = yes }
+				NOT = { government = elective_monarchy_oligarchy } 
 			}
 			cb_generation_speed_modifier = 0.15
 			allow = {
@@ -318,6 +314,7 @@ political_reforms = {
 		party_appointed = {
 			rules = { same_as_ruling_party = yes }
 			ruling_party_support = 0.05
+			allow = { NOT = { government = elective_monarchy_oligarchy } }
 		}
 		appointed = {
 			rules = { rich_only = yes }
@@ -866,7 +863,7 @@ social_reforms = {
 			factory_throughput = 0.20
 			goods_demand = 0.00
 			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } NOT = { government = elective_monarchy_oligarchy } }
 		}
 	}
 	

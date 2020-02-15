@@ -3906,13 +3906,25 @@ szlachta_taxes = {
 	tax_efficiency = -0.15
 	loan_interest = 0.5
 	pop_militancy_modifier = 0.02
+	icon = 18
 }
 szlachta_war_taxes = {
 	factory_throughput = -0.15
 	rgo_output = -0.15
 	tax_efficiency = -0.15
 	loan_interest = 0.5
-	land_organisation = 0.05
+	land_organisation = 0.1
+	icon = 18
+}
+szlachta_pissed = {
+	factory_throughput = -0.05
+	rgo_output = -0.05
+	tax_efficiency = -0.05
+	loan_interest = 0.25
+	pop_militancy_modifier = 0.02
+	non_accepted_pop_consciousness_modifier = 0.2
+	ruling_party_support = -0.05
+	icon = 18
 }
 szlachta_opposition = {
 	factory_throughput = -0.15
@@ -3920,9 +3932,10 @@ szlachta_opposition = {
 	tax_efficiency = -0.15
 	loan_interest = 0.5
 	land_organisation = -0.05
-	pop_militancy_modifier = 0.09
+	pop_militancy_modifier = 0.04
 	non_accepted_pop_consciousness_modifier = 0.2
 	ruling_party_support = -0.05
+	icon = 18
 }
 #####
 rights_of_man = {
