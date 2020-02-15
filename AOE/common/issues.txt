@@ -260,6 +260,9 @@ political_reforms = {
 				} 
 			}
 			cb_generation_speed_modifier = 0.15
+			allow = {
+				NOT = { government = elective_monarchy_oligarchy }
+			}
 		}
 		landed_voting = {
 			rich_vote = 1
