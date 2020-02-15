@@ -737,7 +737,7 @@ social_reforms = {
 			#education_efficiency_modifier = 0.10
 			core_pop_consciousness_modifier = -0.02
 			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done	NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		trinket_wage = { #influential
 			tax_efficiency = -0.025
@@ -746,7 +746,7 @@ social_reforms = {
 			#education_efficiency_modifier = 0.05
 			core_pop_consciousness_modifier = -0.01
 			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		low_minimum_wage = { #silghtly influential
 			tax_efficiency = 0.00
@@ -755,7 +755,7 @@ social_reforms = {
 			#education_efficiency_modifier = 0.00
 			core_pop_consciousness_modifier = 0.00
 			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		acceptable_minimum_wage = { #marginally relevant
 			tax_efficiency = 0.025
@@ -764,7 +764,7 @@ social_reforms = {
 			#education_efficiency_modifier = -0.05
 			core_pop_consciousness_modifier = 0.01
 			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		good_minimum_wage = { #irrelevant
 			tax_efficiency = 0.05
@@ -773,7 +773,7 @@ social_reforms = {
 			#education_efficiency_modifier = -0.10
 			core_pop_consciousness_modifier = 0.02
 			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 	}
 	work_hours = { #gentry
@@ -786,7 +786,7 @@ social_reforms = {
 			factory_input = 0.00
 			goods_demand = 0.00
 			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		fourteen_hours = { #marginally relevant
 			tax_efficiency = 0.025
@@ -795,7 +795,7 @@ social_reforms = {
 			factory_input = -0.05
 			goods_demand = 0.05
 			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		twelve_hours = { #slightly influential
 			tax_efficiency = 0.00
@@ -804,7 +804,7 @@ social_reforms = {
 			factory_input = -0.10
 			goods_demand = 0.10
 			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		ten_hours = { #influential
 			tax_efficiency = -0.025
@@ -813,7 +813,7 @@ social_reforms = {
 			factory_input = -0.15
 			goods_demand = 0.15
 			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		eight_hours = { #very influential
 			tax_efficiency = -0.05
@@ -822,7 +822,7 @@ social_reforms = {
 			factory_input = -0.20
 			goods_demand = 0.20
 			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 	}
 	safety_regulations = { #nobility
@@ -834,7 +834,7 @@ social_reforms = {
 			factory_throughput = 0.00
 			goods_demand = -0.20
 			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		trinket_safety = { #influential
 			tax_efficiency = -0.025
@@ -842,7 +842,7 @@ social_reforms = {
 			factory_throughput = 0.05
 			goods_demand = -0.15
 			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		low_safety = { #slightly influential
 			tax_efficiency = 0.00
@@ -850,7 +850,7 @@ social_reforms = {
 			factory_throughput = 0.10
 			goods_demand = -0.10
 			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		acceptable_safety = { #marginally relevant
 			tax_efficiency = 0.025
@@ -858,7 +858,7 @@ social_reforms = {
 			factory_throughput = 0.15
 			goods_demand = -0.05
 			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		good_safety = { #irrelevant
 			tax_efficiency = 0.05
@@ -866,7 +866,7 @@ social_reforms = {
 			factory_throughput = 0.20
 			goods_demand = 0.00
 			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 	}
 	
@@ -878,7 +878,7 @@ social_reforms = {
 			factory_throughput = 0.00
 			factory_output = 0.00
 			minimum_wage = 0.00
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		trinket_subsidies = { #marginally relevant
 			tax_efficiency = 0.025
@@ -886,7 +886,7 @@ social_reforms = {
 			factory_throughput = 0.05
 			factory_output = 0.05
 			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		low_subsidies = { #slightly influential
 			tax_efficiency = 0.00
@@ -894,7 +894,7 @@ social_reforms = {
 			factory_throughput = 0.10
 			factory_output = 0.10
 			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		acceptable_subsidies = { #influential
 			tax_efficiency = -0.025
@@ -902,7 +902,7 @@ social_reforms = {
 			factory_throughput = 0.15
 			factory_output = 0.15
 			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		good_subsidies = { #very influential
 			tax_efficiency = -0.05
@@ -910,7 +910,7 @@ social_reforms = {
 			factory_throughput = 0.20
 			factory_output = 0.20
 			minimum_wage = 0.12
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 	}
 	pensions = { #army
@@ -923,7 +923,7 @@ social_reforms = {
 			min_military_spending = 0.00
 			max_military_spending = 0.00
 			mobilisation_size = 0.00
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		trinket_pensions = { #marginally relevant
 		    land_unit_start_experience = 5
@@ -934,7 +934,7 @@ social_reforms = {
 			min_military_spending = 0.10
 			max_military_spending = 0.10
 			mobilisation_size = 0.01
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		low_pensions = { #slightly influential
 		    land_unit_start_experience = 10
@@ -945,7 +945,7 @@ social_reforms = {
 			min_military_spending = 0.20
 			max_military_spending = 0.20
 			mobilisation_size = 0.02
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		acceptable_pensions = { #influential
 		    land_unit_start_experience = 15
@@ -956,7 +956,7 @@ social_reforms = {
 			min_military_spending = 0.30
 			max_military_spending = 0.30
 			mobilisation_size = 0.03
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		good_pensions = { #very influential
 		    land_unit_start_experience = 20
@@ -967,7 +967,7 @@ social_reforms = {
 			min_military_spending = 0.40
 			max_military_spending = 0.40
 			mobilisation_size = 0.04
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 	}
 	health_care = { #bureaucracy 
@@ -979,7 +979,7 @@ social_reforms = {
 			education = 0.00
 			min_social_spending = 0.05
 			pension_level = 0.25
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		trinket_health_care = { #marginally relevant
 	        tax_efficiency = 0.025
@@ -987,7 +987,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.05
 			min_social_spending = 0.10
 			pension_level = 0.50
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		low_health_care = { #slightly influential
 	        tax_efficiency = 0.05
@@ -995,7 +995,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.10
 			min_social_spending = 0.15
 			pension_level = 0.75
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		acceptable_health_care = { #influential
 	        tax_efficiency = 0.075
@@ -1003,7 +1003,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.15
 			min_social_spending = 0.20
 			pension_level = 1.00
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 		good_health_care = { #very influential
 	        tax_efficiency = 0.10
@@ -1011,7 +1011,7 @@ social_reforms = {
 			education_efficiency_modifier = 0.20
 			min_social_spending = 0.25
 			pension_level = 1.25
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = {  ai = yes  average_militancy = 3 } }
 		}
 	}
 
