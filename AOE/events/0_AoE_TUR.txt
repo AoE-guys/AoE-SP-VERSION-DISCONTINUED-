@@ -154,10 +154,10 @@ country_event = {
 		name = "Send off the envoy immedietly"
 		money = 5000
 		TUR = {
-			money = - 5000 
+			money = -5000 
 			add_country_modifier = {
-					name = prussian_military_advisors
-					duration = 7300
+				name = prussian_military_advisors
+				duration = 7300
 			}
 		}
 		prestige = 30
