@@ -1,0 +1,52 @@
+country_event = {
+	id = 156900
+	title = "Integration of Ducal Prussia"
+	desc = "EVTDESC156900"
+	picture = szlachta
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		DPR = { is_our_vassal = PLC }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Integrate them"	
+		DPR = {
+			all_core = { add_core = PLC }
+		}
+		inherit = DPR
+		badboy = 7
+		prestige = 20
+	}	
+	option = {
+		name = "Let them be"
+		prestige = 5
+		ai_will_do = 1
+	}
+}
+country_event = {
+	id = 156900
+	title = "Polish-Lithuanian sejm dissolved"
+	desc = "EVTDESC156900"
+	picture = sejm
+
+	trigger = {
+		government = elective_monarchy_oligarchy
+		rich_tax = 100
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "They're all idiots"	
+		election = yes
+		prestige = -5
+	}	
+}

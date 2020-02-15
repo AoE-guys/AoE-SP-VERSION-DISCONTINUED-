@@ -3899,6 +3899,14 @@ nizam-i_djedid = {
 	land_unit_start_experience = 5
 	icon = 15
 }
+#####Szlachta is a bitch#####
+szlachta_taxes = {
+	factory_throughput = -0.25
+	rgo_output = -0.25
+	tax_efficiency = -0.35
+	loan_interest = 0.5
+	pop_militancy_modifier = 0.05
+}
 #####
 rights_of_man = {
 	global_pop_militancy_modifier = -0.01
