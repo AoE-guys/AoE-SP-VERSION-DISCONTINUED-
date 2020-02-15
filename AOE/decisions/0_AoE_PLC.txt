@@ -115,10 +115,10 @@ political_decisions = {
 		effect = {
 			set_country_flag = vassalize_ducal_prussia
 			695 = { add_core = DPR }
-			696 = { add_core = DPR }
 			697 = { add_core = DPR }
 			698 = { add_core = DPR }
 			release_vassal = DPR
+			badboy = -10
 		}
 		ai_will_do = { factor = 1 }
 	}

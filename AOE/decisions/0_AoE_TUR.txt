@@ -12,11 +12,6 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = recruited_prussian_military_advisors
-			add_country_modifier = {
-				name = prussian_military_advisors
-				duration = 7300
-			}
-			money = -5000
 			PRU = {
 				country_event = 173605
 			}
