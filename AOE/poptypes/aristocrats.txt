@@ -251,7 +251,7 @@ country_migration_target = {
 }
 
 migration_target = {
-	factor = 0.01
+	factor = 1
 	#Audax Validator "." Ignore_1001
 	modifier = {
 		factor = 0.1

@@ -643,19 +643,19 @@ demotion_chance = {
 
 #general migration chance mtth, same for all pops
 migration_chance = {
-	factor = 1
+	factor = 0.15
 	
 	group = {
 		modifier = {
-			factor = -0.1
+			factor = 0.1
 			not = { consciousness = 8 }
 		}
 		modifier = {
-			factor = -0.1
+			factor = 0.1
 			not = { consciousness = 7 }
 		}
 		modifier = {
-			factor = -0.1
+			factor = 0.1
 			not = { consciousness = 6 } 
 		}
 	}
@@ -878,7 +878,7 @@ migration_chance = {
 			}
 			total_pops = 200000
 		}
-		year = 1860
+		year = 1750
 	}
 	
 	modifier = {
@@ -900,7 +900,7 @@ migration_chance = {
 			}
 			total_pops = 100000
 		}
-		year = 1860
+		year = 1720
 	}
 	
 	modifier = {
