@@ -292,7 +292,7 @@ annex_lor = {
 			LOR = {
 				add_core = THIS
 			}
-			annex_to = THIS
+			inherit = LOR
 		}
 	}
 
