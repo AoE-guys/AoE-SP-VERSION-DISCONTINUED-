@@ -21,13 +21,14 @@ tank = {
 	build_cost = {
 		artillery = 20
 		canned_food = 15
-		regular_clothes = 10
+		luxury_clothes = 2
 	}
 	
 	supply_consumption = 2.0
 	supply_cost = {
 		artillery = 0.6 #0.008
 		canned_food = 0.1 #0.004
+		luxury_clothes = 0.03
 	}
 	
 
