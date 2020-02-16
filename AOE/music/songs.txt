@@ -1,4 +1,4 @@
-#### General Songs ####
+ General Songs 
 
 song = {
 	name = "world_turned_upsidedown.mp3"
@@ -156,14 +156,14 @@ modifier = {
 }
 
 song = {
-	name = "thecoronation_titletheme.mp3"
+	name = "titletheme.mp3"
 	
 	modifier = {
-		factor = 1
+		factor = 0
 	}
 }
 song = {
-	name = "Battle of Lepanto.mp3"
+	name = "Polish-Lithuanian Commonwealth Song.mp3"
 
 	modifier = {
 		factor = 1
@@ -176,20 +176,7 @@ modifier = {
 	}
 }
 song = {
-	name = "Kings Court Remix.mp3"
-
-	modifier = {
-		factor = 1
-		war = yes
-		}
-
-modifier = {
-		factor = 0
-		war = no
-	}
-}
-song = {
-	name = "My Kingdom.mp3"
+	name = "Royal Anthem of France (Tchaikovsky)London Symphony Orchestra & André Previn.mp3"
 
 	modifier = {
 		factor = 1
@@ -202,7 +189,20 @@ modifier = {
 	}
 }
 song = {
-	name = "The Stage is Set.mp3"
+	name = "Royal Anthem of Denmark Stephen Squires & Millar Brass Ensemble.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+		}
+
+modifier = {
+		factor = 0
+		war = no
+	}
+}
+song = {
+	name = "Requiem K626 Introitus Requiem Aeternam - Wolfgang Amadeus Mozart.mp3"
 
 	modifier = {
 		factor = 1
