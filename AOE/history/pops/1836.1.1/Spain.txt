@@ -37,7 +37,7 @@
 	aristocrats = {
 		culture = spanish
 		religion = catholic
-		size = 1084
+		size = 784
 	}
 
 	officers = {
@@ -67,7 +67,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 1392
+		size = 1092
 	}
         artisans = {
 		culture = galician
@@ -84,18 +84,18 @@
 	farmers = {
 		culture = galician
 		religion = catholic
-		size = 71375
+		size = 70375
 	}
 
 	labourers = {
 		culture = galician
 		religion = catholic
-		size = 3557
+		size = 3057
 	}
         farmers = {
 		culture = spanish
 		religion = catholic
-		size = 9052
+		size = 7052
 	}
 }
 #Oviedo (448000/112000 POPS)
@@ -171,7 +171,7 @@
 	artisans = {
 		culture = galician
 		religion = catholic
-		size = 2780
+		size = 2990
 	}
 
 	soldiers = {
@@ -191,10 +191,17 @@
 		religion = catholic
 		size = 1638
 	}
+	
         farmers = {
 		culture = spanish
 		religion = catholic
-		size = 8960
+		size = 6760
+	}
+	
+	labourers = {
+		culture = portuguese
+		religion = catholic
+		size = 2838
 	}
 
 }
@@ -1084,27 +1091,27 @@
 	}
 
 	artisans = {
-		culture = spanish
+		culture = basque
 		religion = catholic
-		size = 1040
+		size = 2540
 	}
 
 	soldiers = {
 		culture = spanish
 		religion = catholic
-		size = 288
+		size = 388
 	}
 
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 20021
+		size = 15021
 	}
 
 	labourers = {
 		culture = basque
 		religion = catholic
-		size = 1291
+		size = 2591
 	}
 
 }
@@ -1212,7 +1219,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 4248
+		size = 7248
 	}
 
 	labourers = {
@@ -1248,7 +1255,7 @@
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 20961
+		size = 17961
 	}
 
 	labourers = {
@@ -1262,31 +1269,37 @@
 	aristocrats = {
 		culture = spanish
 		religion = catholic
-		size = 86
+		size = 286
 	}
 
 	clergymen = {
 		culture = spanish
 		religion = catholic
-		size = 396
+		size = 596
 	}
 
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 1980
+		size = 3990
 	}
 
 	soldiers = {
 		culture = spanish
 		religion = catholic
-		size = 792
+		size = 1992
 	}
 
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 30080
+		size = 17000
+	}
+	
+	farmers = {
+		culture = spanish
+		religion = catholic
+		size = 9000
 	}
 
 }
@@ -1826,7 +1839,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 14809
+		size = 9809
 	}
 
 	labourers = {
@@ -1856,13 +1869,13 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size = 180
+		size = 1180
 	}
 
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 16972
+		size = 20972
 	}
 
 	labourers = {

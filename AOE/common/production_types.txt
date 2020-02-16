@@ -661,7 +661,8 @@ luxury_clothes_factory = {
 	template = factory_template
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		silk = 3.9		#39	total input+maint = 54
+		#dye = 0.83
+		silk = 3.4		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes
 	value = 1			#65
@@ -807,9 +808,10 @@ regular_clothes_factory = {
 	template = factory_template
 	input_goods = {  
 		fabric = 35		#72	total input+maint = 82
+		silk = 1
 	}
 	output_goods = regular_clothes 
-	value = 15			#87
+	value = 18			#87
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.25
@@ -1415,7 +1417,8 @@ artisan_steamer = {
 artisan_luxury_clothes = {       
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		silk = 3.9		#39	total input+maint = 54
+		#dye = 0.83
+		silk = 3.4		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes 
 	value = 1			#65
@@ -1565,9 +1568,10 @@ artisan_paper = {
 artisan_regular_clothes = {       
 	input_goods = {  
 		fabric = 45		#was 81
+		silk = 1
 	}
 	output_goods = regular_clothes
-	value = 15			#87
+	value = 18			#87
 	
 	owner = {
 		poptype = artisans 
