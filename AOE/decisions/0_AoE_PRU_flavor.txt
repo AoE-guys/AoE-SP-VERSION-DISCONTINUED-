@@ -188,6 +188,7 @@ political_decisions = {
 			owns = 692		
 		}
 		effect = {
+			set_country_flag = prussia_is_united
 			prestige = 20
 			696 = {
 				add_core = THIS
@@ -207,7 +208,9 @@ political_decisions = {
 			692 = {
 				add_core = THIS
 			}
-			set_country_flag = prussia_is_united
+		}
+		ai_will_do = {					
+		factor = 1
 		}
 	}
 }
