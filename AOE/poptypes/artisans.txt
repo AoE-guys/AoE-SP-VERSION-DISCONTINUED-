@@ -4222,7 +4222,7 @@ issues =
 	}
 	
 	no_minimum_wage = {
-        factor = 3 
+        factor = 1.5 
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4236,7 +4236,7 @@ issues =
 	}	
 	
 	trinket_wage = { 
-		factor = 3
+		factor = 1.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4249,7 +4249,7 @@ issues =
         }		
 	}
 	low_minimum_wage = { 
-		factor = 3	
+		factor = 1.5	
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4262,7 +4262,7 @@ issues =
         }					
 	}
 	acceptable_minimum_wage = { 
-		factor = 3
+		factor = 1.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4275,7 +4275,7 @@ issues =
         }		
 	}
 	good_minimum_wage = { 
-		factor = 3
+		factor = 1.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4289,7 +4289,7 @@ issues =
 	}
 	
     no_safety = {
-        factor = 10
+        factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4302,7 +4302,7 @@ issues =
         }
     }	
 	trinket_safety = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4315,7 +4315,7 @@ issues =
         }
 	}
 	low_safety = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4328,7 +4328,7 @@ issues =
         }
 	}
 	acceptable_safety = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4341,7 +4341,7 @@ issues =
         }
 	}
 	good_safety  = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4355,7 +4355,7 @@ issues =
 	}
 	
 	no_subsidies = {
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4368,7 +4368,7 @@ issues =
         }
 	}	
 	trinket_subsidies = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4381,7 +4381,7 @@ issues =
         }
 	}
 	low_subsidies = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4394,7 +4394,7 @@ issues =
         }
 	}
 	acceptable_subsidies = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4407,7 +4407,7 @@ issues =
         }
 	}
 	good_subsidies = { 
-		factor = 10
+		factor = 3
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4421,7 +4421,7 @@ issues =
 	}
 	
 	no_pensions = { #irrelevant
-		factor = 1.0
+		factor = 0.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4434,7 +4434,7 @@ issues =
         }		
 	}	
 	trinket_pensions = { 
-		factor = 1.0
+		factor = 0.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4447,7 +4447,7 @@ issues =
         }
 	}
 	low_pensions = { 
-		factor = 1.0
+		factor = 0.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4460,7 +4460,7 @@ issues =
         }
 	}
 	acceptable_pensions = { 
-		factor = 1.0
+		factor = 0.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4473,7 +4473,7 @@ issues =
         }
 	}
 	good_pensions = { 
-		factor = 1.0
+		factor = 0.5
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4487,7 +4487,7 @@ issues =
 	}
 
 	no_health_care = { 
-		factor = 2.5
+		factor = 1.25
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4500,7 +4500,7 @@ issues =
         }
 	}		
 	trinket_health_care = { 
-		factor = 2.5
+		factor = 1.25
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4513,7 +4513,7 @@ issues =
         }
 	}
 	low_health_care = { 
-		factor = 2.5
+		factor = 1.25
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4526,7 +4526,7 @@ issues =
         }
 	}
 	acceptable_health_care = { 
-		factor = 2.5
+		factor = 1.25
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4539,7 +4539,7 @@ issues =
         }
 	}
 	good_health_care = { 
-		factor = 2.5
+		factor = 1.25
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4553,7 +4553,7 @@ issues =
 	}
 	
 	no_work_hour_limit = { 
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4566,7 +4566,7 @@ issues =
         }
 	}	
 	fourteen_hours = { 
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4579,7 +4579,7 @@ issues =
         }
 	}
 	twelve_hours = { 
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4592,7 +4592,7 @@ issues =
         }
 	}
 	ten_hours = { 
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0 
 			OR = {
@@ -4605,7 +4605,7 @@ issues =
         }
 	}
 	eight_hours = { 
-		factor = 5
+		factor = 2
 		modifier = {
 			factor = 0 
 			OR = {
