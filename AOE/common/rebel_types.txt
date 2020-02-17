@@ -644,10 +644,10 @@ communist_rebels = {
 
 	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
 	will_rise = {
-		factor = 0.5
+		factor = 0.25
 		modifier = {
 			war = yes
-			factor = 0.8
+			factor = 0.5
 		}
 		modifier = {
 			war_exhaustion = 4
@@ -864,12 +864,12 @@ communist_rebels = {
 	}
 	demands_enforced_effect = {
 		clr_country_flag = theocratic_government
-		set_country_flag = communist_gov
+		clr_country_flag = communist_gov
 		clr_country_flag = absolute_monarchy_gov
 		clr_country_flag = semi_constitutional_monarchy_gov
 		clr_country_flag = constitutional_monarchy_gov
 		clr_country_flag = democracy_gov
-		clr_country_flag = presidential_dictatorship_gov
+		set_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
 		ruling_party_ideology = communist
