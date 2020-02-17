@@ -140,7 +140,7 @@ diplomatic_focus = {
 
 promotion_focus = {
 	promote_aristocrats = {
-		aristocrats = 0.20 #20% more likely to become artisans
+		aristocrats = 0.30 #20% more likely to become artisans
 		icon = 11
 		outliner_show_as_percent = yes
 		
@@ -151,7 +151,7 @@ promotion_focus = {
 	}
 
 	promote_artisans = {
-		artisans = 0.20 #20% more likely to become this type
+		artisans = 0.40 #20% more likely to become this type
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = { owner = { ai = no } NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } }
@@ -176,7 +176,7 @@ promotion_focus = {
 	}
 
 	promote_capitalists = {
-		capitalists = 0.20 #20% more likely to become this type
+		capitalists = 0.30 #20% more likely to become this type
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = { 
@@ -189,7 +189,7 @@ promotion_focus = {
 	}
 	
 	promote_clergymen = {
-		clergymen = 0.20 #20% more likely to become this type
+		clergymen = 0.50 #20% more likely to become this type
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
@@ -204,7 +204,7 @@ promotion_focus = {
 	}
 
 	promote_clerks = {
-		clerks = 0.20 #20% more likely to become this type
+		clerks = 0.70 #20% more likely to become this type
 		icon = 16
 		outliner_show_as_percent = yes
 		limit = {
@@ -221,7 +221,7 @@ promotion_focus = {
 	}
 
 	promote_craftsmen = {
-		craftsmen = 0.20 #20% more likely to become this type
+		craftsmen = 0.70 #20% more likely to become this type
 		icon = 17
 		outliner_show_as_percent = yes
 		limit = {
@@ -234,7 +234,7 @@ promotion_focus = {
 	}
 
 	promote_farmers = {
-		farmers =	 0.20 #20% more likely to become this type
+		farmers =	 0.80 #20% more likely to become this type
 		icon = 18
 		outliner_show_as_percent = yes
 		limit = {
@@ -245,7 +245,7 @@ promotion_focus = {
 	}
 	
 	promote_labourers = {
-		labourers = 0.20 #20% more likely to become this type
+		labourers = 0.50 #20% more likely to become this type
 		icon = 19
 		outliner_show_as_percent = yes
 		limit = {
@@ -256,7 +256,7 @@ promotion_focus = {
 	}
 
 	promote_officers = {
-		officers = 0.20 #20% more likely to become this type
+		officers = 0.40 #20% more likely to become this type
 		icon = 20
 		outliner_show_as_percent = yes
 		limit = {
@@ -272,7 +272,7 @@ promotion_focus = {
 	}
 
 	promote_soldiers = {
-		soldiers = 0.20 #20% more likely to become this type
+		soldiers = 0.80 #20% more likely to become this type
 		icon = 21
 		outliner_show_as_percent = yes
 		limit = {
