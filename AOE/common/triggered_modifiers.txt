@@ -678,10 +678,6 @@ small_but_efficient = {
 			}
 			NOT = { num_of_cities = 4 }
 		}
-		OR = { tag = VEN
-
-			}
-		}
 	}
 	
 	icon = 9
@@ -1677,4 +1673,22 @@ ai_exotic_research_fix = {
 	culture_tech_research_bonus = -0.15
 	army_tech_research_bonus = -0.10
 	navy_tech_research_bonus = -0.10
+}
+small_but_efficient_VEN = {
+	trigger = {
+		exists = yes
+		capital_scope = { continent = europe }
+		civilized = yes
+		NOT = { total_pops = 500000 }
+		NOT = { money = 1000000 }
+		NOT = { year = 1789 }
+		tag = VEN
+	}
+	
+	icon = 9
+	tax_efficiency = 0.4
+	administrative_efficiency_modifier = 0.3
+	tariff_efficiency_modifier = 0.3
+	education_efficiency_modifier = 0.05
+	supply_consumption = -0.9
 }
