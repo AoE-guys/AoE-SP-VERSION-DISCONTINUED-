@@ -195,70 +195,6 @@ army = {
 }
 
 army = {
-	name = "2-i Armeiskii Korpus" #Belarus Army
-	location = 979
-	regiment = {
-		name= "2.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
-		type = dragoon
-		home = 962
-	}
-
-	regiment = {
-		name= "2.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
-		type = dragoon
-		home = 962
-	}
-
-	regiment = {
-		name= "2.1-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 940
-	}
-
-	regiment = {
-		name= "2.2-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 937
-	}
-
-	regiment = {
-		name= "2.3-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 936
-	}
-
-	regiment = {
-		name= "2.4-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 944
-	}
-
-	regiment = {
-		name= "2.5-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 944
-	}
-	
-	regiment = {
-		name= "2.6-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 946
-	}
-	
-	regiment = {
-		name = "2.1-ya Artilleriiskii Diviziya"
-		type = artillery
-		home = 946
-	}
-
-	regiment = {
-		name = "2.2-ya Artilleriiskii Diviziya"
-		type = artillery
-		home = 946
-	}
-}
-
-army = {
 	name = "3-i Armeiskii Korpus" #Vilna/Marijampole - Baltic Army
 	location = 1003
 
@@ -340,12 +276,6 @@ army = {
 	}
 
 	regiment = {
-		name = "4.3-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 959
-	}
-
-	regiment = {
 		name = "4.4-ya Pekhotnaya Diviziya"
 		type = infantry
 		home = 984
@@ -367,12 +297,6 @@ army = {
 		name = "4.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = cuirassier
 		home = 984
-	}
-	
-	regiment = {
-		name = "4.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
-		type = cavalry
-		home = 1047
 	}
 	
 	regiment = {
@@ -658,18 +582,6 @@ army = {
 		name= "2.Don Cossacks"
 		type = cavalry
 		home = 980
-	}
-
-	regiment = {
-		name= "3.Don Cossacks"
-		type = cavalry
-		home = 969
-	}
-	
-	regiment = {
-		name= "4. Don Cossacks"
-		type = cavalry
-		home = 969
 	}
 
 	regiment = {
