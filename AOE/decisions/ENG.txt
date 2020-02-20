@@ -3,6 +3,7 @@ political_decisions = {
 		picture = ireland
 		potential = {
 			tag = ENG
+			tag = ENG
 			NOT = {
 				exists = IRE
 				accepted_culture = irish
@@ -54,129 +55,5 @@ political_decisions = {
 		}
 	}
 	
-	#irish_integration = {
-	#	picture = embrace_minority
-	#	potential = {
-	#		tag = ENG
-	#		accepted_culture = irish
-	#		any_owned_province = {
-	#			is_core = IRE
-	#			NOT = { has_province_modifier = irish_integration }
-	#		}
-	#	}
-	#	
-	#	allow = {
-	#		money = 50000
-	#		social_science = 1
-	#		psychoanalysis = 1
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 20
-	#		treasury = -50000
-	#		any_owned = {
-	#			limit = { is_core = IRE }
-	#			add_province_modifier = {
-	#				name = irish_integration
-	#				duration = -1
-	#			}
-	#		}
-	#	}
-	#}
 	
-	#canadian_lands = {
-	#	picture = canadian_dominion
-	#	alert = no
-	#	potential = {
-	#		OR = {
-	#			tag = ENG
-	#			tag = ENL
-	#		}
-	#		CAN = { exists = yes vassal_of = THIS }
-	#		any_owned_province = {
-	#			continent = north_america
-	#			OR = {
-	#				#region = ENG_6
-	#				region = ENG_9
-	#				region = CAN_13
-	#				#region = CAN_18
-	#				region = ENG_22
-	#				region = ENG_30
-	#				region = ENG_36
-	#				region = CAN_46
-	#				region = CAN_50
-	#				region = CAN_58
-	#				region = CAN_60
-	#				region = ENG_68
-	#				is_core = COL
-	#			}
-	#		}
-	#		OR = {
-	#			year = 1900
-	#			has_country_flag = CAN_independence_refused
-	#		}
-	#	}
-	#	
-	#	allow = {
-	#		war = no
-	#	}
-	#	
-	#	effect = {
-	#		any_owned = {
-	#			limit = {
-	#				continent = north_america
-	#				OR = {
-	#					#region = ENG_6
-	#					region = ENG_9
-	#					region = CAN_13
-	#					#region = CAN_18
-	#					region = ENG_22
-	#					region = ENG_30
-	#					region = ENG_36
-	#					region = CAN_46
-	#					region = CAN_50
-	#					region = CAN_58
-	#					region = CAN_60
-	#					region = ENG_68
-	#					is_core = COL
-	#				}
-	#			}
-	#		remove_core = THIS
-	#		secede_province = CAN
-	#		add_core = CAN
-	#		}
-	#	}
-	#	ai_will_do = { factor = 1 }
-	#}
-	
-	#tasmania_penal_colony = {
-	#	picture = drain_the_pinsk_marshes
-	#	
-	#	potential = {
-	#		owns = 2482
-	#		OR = {
-	#			2482 = { has_province_modifier = penal_colony }	
-	#			NOT = { has_global_flag = tasmania_renamed }
-	#		}
-	#	}
-	#	
-	#	allow = {
-	#		war = no
-	#		state_n_government = 1
-	#		OR = {
-	#			NOT = { penal_system = colonial_transportation }
-	#			year = 1853
-	#		}
-	#	}
-	#	
-	#	effect = {
-	#		set_global_flag = tasmania_renamed
-	#		2482 = {
-	#			change_province_name = "Tasmania"
-	#			remove_province_modifier = penal_colony
-	#			add_province_modifier = { name = population_resettlement duration = 60 }
-	#		}
-	#	}
-	#	ai_will_do = { factor = 1 }
-	#}
 }
