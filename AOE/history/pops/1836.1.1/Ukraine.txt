@@ -165,13 +165,7 @@
 	farmers = {
 		culture = gypsy
 		religion = orthodox
-		size = 48
-	}
-
-	labourers = {
-		culture = gypsy
-		religion = orthodox
-		size = 2
+		size = 50
 	}
 	
 	aristocrats = {
@@ -201,19 +195,19 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 16900 
+		size = 6900 
 	}
 	
 	serfs = {
 		culture = romanian
 		religion = orthodox
-		size = 5000 
+		size = 4000 
 	}
 
 	clergymen = {
 		culture = ashkenazi
 		religion = jewish
-		size = 38    
+		size = 38   
 	}
 
 	artisans = {
@@ -231,7 +225,7 @@
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 2725     
+		size = 525    
 	}
 
 	clergymen = {
@@ -249,19 +243,13 @@
 	soldiers = {
 		culture = bulgarian
 		religion = orthodox
-		size = 12
+		size = 24
 	}
 
 	farmers = {
 		culture = bulgarian
 		religion = orthodox
-		size = 1354
-	}
-
-	labourers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 71
+		size = 5425
 	}
 
 	clergymen = {
@@ -285,7 +273,7 @@
 	farmers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 4150 
+		size = 5650 
 	}
 
 	clergymen = {
@@ -297,53 +285,47 @@
 	artisans = {
 		culture = turkish
 		religion = orthodox
-		size = 7 
+		size = 75  
 	}
 
 	soldiers = {
 		culture = turkish
 		religion = orthodox
-		size = 2
+		size = 13
 	}
 
 	farmers = {
 		culture = turkish
 		religion = orthodox
-		size = 188 
+		size = 888
 	}
 	bureaucrats = {
-		culture = siebenburger
-		religion = protestant
-		size = 12
+		culture = south_german
+		religion = catholic
+		size = 25
 	}
 
 	artisans = {
-		culture = volga_german
-		religion = protestant
-		size = 1062
+		culture = south_german
+		religion = catholic
+		size = 1063
 	}
 
 	farmers = {
-		culture = volga_german
-		religion = protestant
-		size = 1503
-	}
-
-	labourers = {
-		culture = volga_german
-		religion = protestant
-		size = 132
+		culture = south_german
+		religion = catholic
+		size = 1135
 	}
 	
 	soldiers = {
-		culture = volga_german
-		religion = protestant
+		culture = south_german
+		religion = catholic
 		size = 125
 	}
 
 	aristocrats = {
-		culture = volga_german
-		religion = protestant
+		culture = south_german
+		religion = catholic
 		size = 238
 	}
 
