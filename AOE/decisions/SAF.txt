@@ -1,101 +1,4 @@
 political_decisions = {
-	#kruger_wildlife_preserve = {
-	#	picture = kruger_national_park
-	#	
-	#	potential = {
-	#		OR = {
-	#			tag = TRN
-	#			tag = SAF
-	#			tag = VLK
-	#		}
-	#		NOT = { has_country_flag = kruger_wildlife_preserve_formed }
-	#	}
-	#	
-	#	allow = {
-	#		steam_turbine = 1
-	#		owns = 2105	#Tky-Gariep state minus the Suazi province
-	#		owns = 2106
-	#		owns = 2107
-	#		owns = 2108
-	#		owns = 2109
-	#		owns = 2110
-	#		OR = {
-	#			is_greater_power = yes
-	#			year = 1926
-	#		}
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 20
-	#		treasury = -20000
-	#		set_country_flag = kruger_wildlife_preserve_formed
-	#		2105 = {
-	#			life_rating = 5
-	#			add_province_modifier = {
-	#				name = kruger_reserve
-	#				duration = 1750
-	#			}
-	#		}
-	#		2106 = {
-	#			life_rating = 5
-	#			add_province_modifier = {
-	#				name = kruger_reserve
-	#				duration = 1750
-	#			}
-	#		}
-	#		2107 = {
-	#			life_rating = 5
-	#			add_province_modifier = {
-	#				name = kruger_reserve
-	#				duration = 1750
-	#			}
-	#		}
-	#		2108 = {
-	#			life_rating = 5
-	#			add_province_modifier = {
-	#				name = kruger_reserve
-	#				duration = 1750
-	#			}
-	#		}
-	#		2109 = {
-	#			life_rating = 5
-	#			add_province_modifier = {
-	#				name = kruger_reserve
-	#				duration = 1750
-	#			}
-	#		}
-	#		2110 = {
-	#			life_rating = 5
-	#			add_province_modifier = {
-	#				name = kruger_reserve
-	#				duration = 1750
-	#			}
-	#		}
-	#		
-	#	}
-	#}
-	#adopt_die_stem = {
-	#	picture = adopt_die_stem
-	#	potential = {
-	#		OR = { 
-	#			tag = SAF
-	#			tag = VLK
-	#		}
-	#		NOT = {
-	#			has_country_flag = has_die_stem
-	#		}
-	#	}
-	#	
-	#	allow = {
-	#		mass_culture_n_the_avant_garde = 1
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 5
-	#		set_country_flag = has_die_stem
-	#	}
-	#}
-	
 	
 	create_south_africa = {
 		picture = form_south_africa
@@ -444,9 +347,9 @@ political_decisions = {
 		
 		effect = { 
 			prestige = 5
-			2084 = { add_core = THIS secede_province = THIS change_province_name = "Lüderitz" any_pop = { literacy = -0.99 } life_rating = 5 }
+			2084 = { add_core = THIS secede_province = THIS change_province_name = "LÃ¼deritz" any_pop = { literacy = -0.99 } life_rating = 5 }
 			2086 = { add_core = THIS secede_province = THIS change_province_name = "Keetmanshoop" any_pop = { literacy = -0.99 } life_rating = 5 }
-			2085 = { add_core = THIS secede_province = THIS change_province_name = "Maltahöe" any_pop = { literacy = -0.99 } life_rating = 5 }
+			2085 = { add_core = THIS secede_province = THIS change_province_name = "MaltahÃ¶e" any_pop = { literacy = -0.99 } life_rating = 5 }
 			set_country_flag = claimed_namibia
 		}
 		
@@ -539,51 +442,7 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	#irrigating_transvaal = {
-	#	picture = vaal_painting
-	#	
-	#	potential = {
-	#		AND = {
-	#			owns = 2105
-	#			owns = 2106
-	#			owns = 2107
-	#			owns = 2108
-	#			owns = 2109
-	#			owns = 2110
-	#		}
-	#		2105 = { NOT = { life_rating = 35 } }
-	#		NOT = { has_country_flag = { transvaal_rating } }
-	#		OR = {
-	#			tag = SAF
-	#			tag = VLK
-	#			AND = { 
-	#				tag = TRN
-	#				is_vassal = no
-	#				is_secondary_power = yes
-	#			}
-	#		}
-	#	}
-	#	
-	#	allow = {
-	#		war = no
-	#		compound_steam_engines = 1
-	#		money = 300000
-	#	}
-	#	
-	#	effect = {
-	#		random_owned = {
-	#			limit = { owner = { NOT = { has_global_flag = transvaal_rating } } }
-	#			2105 = { life_rating = 20 }
-	#			2106 = { life_rating = 20 }
-	#			2107 = { life_rating = 15 }
-	#			2108 = { life_rating = 15 }
-	#			2109 = { life_rating = 15 }
-	#			2110 = { life_rating = 15 }
-	#			owner = { set_global_flag = transvaal_rating  }
-	#		}
-	#		money = -250000
-	#	}
-	#}
+	
 	
 	unite_with_transvaal = {
 		picture = "claim_transvaal"
