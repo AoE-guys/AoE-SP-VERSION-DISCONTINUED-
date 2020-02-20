@@ -1,0 +1,111 @@
+political_decisions = {
+	become_mex = {
+		picture = become_mex
+		potential = {
+			tag = VNS
+			NOT = { exists = MEX }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = MEX	
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_gco = {
+		picture = become_gco
+		potential = {
+			tag = VNG
+			NOT = { exists = GCO }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = GCO	
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_lpl = {
+		picture = become_lpl
+		potential = {
+			tag = VLP
+			NOT = { exists = LPL }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = LPL	
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_pru_bol = {
+		picture = become_pru_bol
+		potential = {
+			tag = VOP
+			NOT = { exists = PBC }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = PBC	
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_brz = {
+		picture = become_pbz
+		potential = {
+			tag = PBZ
+			NOT = { exists = BRZ }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = BRZ	
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

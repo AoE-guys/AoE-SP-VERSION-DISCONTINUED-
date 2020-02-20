@@ -3937,6 +3937,23 @@ szlachta_opposition = {
 	ruling_party_support = -0.05
 	icon = 18
 }
+#####British colonial policies on THC#####
+sugar_act_on_colonies = {
+	tax_efficiency = -0.05
+	loan_interest = 0.2
+}
+stamp_act_on_colonies = {
+	tax_efficiency = -0.05
+	loan_interest = 0.2
+}
+tea_act_on_colonies = {
+	tax_efficiency = -0.05
+	loan_interest = 0.2
+}
+intoreable_act_on_colonies = {
+	tax_efficiency = -0.15
+	loan_interest = 0.2
+}
 #####
 rights_of_man = {
 	global_pop_militancy_modifier = -0.01

@@ -12,7 +12,7 @@ political_decisions = {
 		allow = {
 			war = no
 			all_core = {
-					owned_by = THIS
+				owned_by = THIS
 			}
 		}
 
@@ -21,12 +21,13 @@ political_decisions = {
 			854 = {
 				add_core = THIS
 			}
-			badboy = 1
-
-			ai_will_do = { factor = 1 }
+			badboy = 1	
 		}
+		
+		ai_will_do = { factor = 1 }
 	}
-	claim_albania = {	
+	
+	claim_albania = {
 		picture = venetian_ambitions
 		title = "Reclaim Albania"
 		desc = "With our claims across the Mediterranean islands fulfilled once more, we are once again in a position to restore our lost territory in the Balkans. The first of these shall be the land of Albania, taken from us by the Ottoman Turks over a hundred years ago. Venezia Eterna!"
@@ -39,7 +40,7 @@ political_decisions = {
 		allow = {
 			war = no
 			all_core = {
-					owned_by = THIS
+				owned_by = THIS
 			}
 		}
 	
@@ -60,11 +61,11 @@ political_decisions = {
 			853 = {
 				add_core = THIS
 			}
-			badboy = 7
-
-			ai_will_do = { factor = 1 }
+			badboy = 7		
 		}
+		ai_will_do = { factor = 1 }
 	}
+	
 	claim_istria = {
 		picture = venetian_ambitions
 		title = "Seize Istria"
@@ -78,7 +79,7 @@ political_decisions = {
 		allow = {
 			war = no
 			all_core = {
-					owned_by = THIS
+				owned_by = THIS
 			}
 		}
 		
@@ -106,8 +107,8 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 10
-
-			ai_will_do = { factor = 1 }
+		
 		}
+		ai_will_do = { factor = 1 }
 	}
 }

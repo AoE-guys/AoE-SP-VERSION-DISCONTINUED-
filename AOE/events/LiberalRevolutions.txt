@@ -3564,6 +3564,11 @@ country_event = {
 				value = -200
 			}
 		}
+		war = {
+			target = HUN
+			attacker_goal = { casus_belli = conquest }
+			defender_goal = { casus_belli = status_quo }
+		} 
 		ai_chance = {
 			factor = 95
 		}
@@ -3676,6 +3681,13 @@ country_event = {
 			add_country_modifier = {
 				name = no_more_war
 				duration = 14
+			}
+		}
+		AUS = {
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
 			}
 		}
 		change_tag_no_core_switch = HUN

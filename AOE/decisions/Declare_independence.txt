@@ -1,6 +1,5 @@
 political_decisions = {
 	declare_independence = {
-	
 		picture = declare_independence
 		
 		potential = {
@@ -26,6 +25,10 @@ political_decisions = {
 				}
 			country_event = { id=98610 days=0 }
 			}
+			remove_country_modifier = sugar_act_on_colonies
+			remove_country_modifier = stamp_act_on_colonies
+			remove_country_modifier = tea_act_on_colonies
+			remove_country_modifier = intoreable_act_on_colonies
 		}
 		ai_will_do = {
 			factor = 1

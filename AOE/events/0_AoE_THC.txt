@@ -1,0 +1,185 @@
+country_event = {
+	id = 177503
+	title = "The Boston Mssacre"
+	desc = "EVTDESC177503"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = THC
+		year = 1770
+		OR = {
+			has_country_modifier = sugar_act_on_colonies
+			has_country_modifier = stamp_act_on_colonies
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "A horrible act of barbarity"
+		relation = {
+			who = GBR
+			value = -175
+		}
+		set_country_flag = boston_massacre_happened
+	}
+}
+country_event = {
+	id = 177504
+	title = "The Boston Tea Party"
+	desc = "EVTDESC177504"
+	picture = boston_plan
+	fire_only_once = yes
+	
+	trigger = {
+		tag = THC
+		year = 1773
+		has_country_modifier = tea_act_on_colonies
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "let's show them just how much we love their policys!"
+		set_country_flag = boston_tea_party_prep
+		country_event = 177505
+	}
+	
+	option = {
+		name = "it's wise not to upset our mother country"
+		prestige = -5
+	}
+}
+country_event = {
+	id = 177505
+	title = "The Boston Tea Party"
+	desc = "EVTDESC177505"
+	picture = boston_tea
+	is_triggered_only = yes
+	
+	option = {
+		name = "They deserved it."
+		relation = {
+			who = GBR
+			value = -25
+		}
+		set_country_flag = boston_tea_party_happened
+		GBR = { country_event = 177506 }
+	}
+}
+##George WashingMachine##
+country_event = {
+	id = 1754001
+	title = "A promising lieutenant colonel"
+	desc = "EVTDESC1754001"
+	picture = general
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = THC
+			tag = USA
+		}
+		year = 1754
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "We will watch his career with great intrest"
+		define_general = {
+			name = "George Washington"
+			personality = cautious
+			background = school_of_defense
+		}
+	}
+}
+##Louisiana purchase##
+country_event = {
+	id = 180500001
+	title = "sell louisiana?"
+	desc = "EVTDESC180500001"
+	picture = louisiana
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = BOR
+			tag = FRA
+		}
+		political_thought_8 = 1
+		OR = {
+			has_recently_lost_war = yes
+			has_unclaimed_cores = yes
+		}
+		ULA = { is_our_vassal = THIS }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "We must fund our Wars"
+		USA = { country_event = 180500002 }
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = "Louisiana is too valuable"
+		ai_chance = { factor = 5 }
+	}
+}
+country_event = {
+	id = 180500002
+	title = "Louisiana purchase"
+	desc = "EVTDESC180500002"
+	picture = louisiana
+	is_triggered_only = yes
+	
+	option = {
+		name = "Agree"
+		money = -2000000
+		ai_chance = { factor = 95 }
+		inherit = ULA
+		FROM = { country_event = 180500003 }
+		prestige = 50
+	}
+	
+	option = {
+		name = "This price is too high"
+		ai_chance = { factor = 5 }
+		FROM = { country_event = 180500004 }
+	}
+}
+country_event = {
+	id = 180500003
+	title = "USA agrees"
+	desc = "EVTDESC180500003"
+	picture = louisiana
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		money = 2000000
+	}
+}
+country_event = {
+	id = 180500004
+	title = "USA refuses"
+	desc = "EVTDESC180500004"
+	picture = louisiana
+	is_triggered_only = yes
+	
+	option = {
+		name = "Shame, we could use the money..."
+		prestige = -4
+	}
+}		

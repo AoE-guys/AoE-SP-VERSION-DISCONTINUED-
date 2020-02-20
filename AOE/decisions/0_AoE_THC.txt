@@ -20,4 +20,60 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	claim_florida = {
+		potential = {
+			OR = {
+				tag = USA
+				tag = THC
+			}
+			NOT = {
+				has_country_flag = claim_florida_usa
+			}
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = claim_florida_usa
+			FLO = {
+				add_core = USA
+			}			
+			ai_will_do = {
+				factor = 1
+			}
+			badboy = 6
+		}
+	}
+	
+	claim_louisiana = {
+		potential = {
+			OR = {
+				tag = USA
+			}
+			NOT = {
+				has_country_flag = claim_louisiana_usa
+			}
+		}
+		allow = {
+			war = no
+			political_thought_7 = 1
+			NOT = { 
+				OR = {
+					alliance_with = FRA
+					alliance_with = ULA
+				}
+			}
+			is_greater_power = yes
+			military_score = ULA
+		}
+		effect = {
+			set_country_flag = claim_louisiana_usa
+			ULA = {
+				add_core = USA
+			}
+			badboy = 25
+		}
+	}
 }
