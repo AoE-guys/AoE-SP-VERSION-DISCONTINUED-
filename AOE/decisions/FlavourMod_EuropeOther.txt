@@ -20,6 +20,36 @@ political_decisions = {
 				state_scope = { change_region_name = "Slovenija" }
 			}
 			768 = { change_province_name = "Ljubljana" }
+			3282 = { change_province_name = "Murska Sobota" }
+			3312 = { change_province_name = "Ravne" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	serbian_rename_slo = {
+		picture = gtfo
+		potential = {
+			AND= {
+				primary_culture = serb
+				NOT = { TAG = YUG }
+			}
+			owns = 767
+			owns = 768
+			NOT = { has_global_flag = slovene_renamed_slo }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = slovene_renamed_slo
+			prestige = 2
+			767 = { 
+				change_province_name = "Maribor" 
+				state_scope = { change_region_name = "Slovenija" }
+			}
+			768 = { change_province_name = "Ljubljana" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -44,6 +74,8 @@ political_decisions = {
 				state_scope = { change_region_name = "Krain" }
 			}
 			768 = { change_province_name = "Laibach" }
+			3282 = { change_province_name = "Olsnitz" }
+			3312 = { change_province_name = "Gutenstein" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -75,6 +107,7 @@ political_decisions = {
 			}
 			792 = { change_province_name = "Pancevo" }
 			2538 = { change_province_name = "Novi Sad" }
+			3309 = { change_province_name = "Subotica" }
 			prestige = 2
 		}
 		ai_will_do = { factor = 1 }
@@ -108,6 +141,7 @@ political_decisions = {
 			} 
 			792 = { change_province_name = "Pancsova" }
 			2538 = { change_province_name = "Újvidék" }
+			3309 = { change_province_name = "Szabadka" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -144,6 +178,7 @@ political_decisions = {
 			}
 			792 = { change_province_name = "Pantschowa" }
 			2538 = { change_province_name = "Neusatz" }
+			3309 = { change_province_name = "Maria-Theresiopel" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -170,8 +205,10 @@ political_decisions = {
 			clr_global_flag = banat_rename_hun
 			clr_global_flag = banat_rename_rom
 			prestige = 2
-			652 = { change_province_name = "Temisvar" }
-			653 = { change_province_name = "Resica" }
+			652 = { change_province_name = "Temišvar" 
+				state_scope = { change_region_name = "Banat" }
+			}
+			653 = { change_province_name = "Rešica" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -194,7 +231,9 @@ political_decisions = {
 			clr_global_flag = banat_rename_ser
 			clr_global_flag = banat_rename_rom
 			prestige = 2
-			652 = { change_province_name = "Temesvar" }
+			652 = { change_province_name = "Temesvar" 
+				state_scope = { change_region_name = "Bánság" }
+			}
 			653 = { change_province_name = "Resicabánya" }
 		}
 		ai_will_do = { factor = 1 }
@@ -218,7 +257,9 @@ political_decisions = {
 			clr_global_flag = banat_rename_ser
 			clr_global_flag = banat_rename_hun
 			prestige = 2
-			652 = { change_province_name = "Timisoara" }
+			652 = { change_province_name = "Timisoara" 
+				state_scope = { change_region_name = "Banat" }
+			}
 			653 = { change_province_name = "Resita" }
 		}
 		ai_will_do = { factor = 1 }
@@ -245,7 +286,9 @@ political_decisions = {
 			clr_global_flag = banat_rename_ser
 			clr_global_flag = banat_rename_hun
 			clr_global_flag = banat_rename_rom
-			652 = { change_province_name = "Temeschburg" }
+			652 = { change_province_name = "Temeschburg" 
+				state_scope = { change_region_name = "Banat" }
+			}
 			653 = { change_province_name = "Reschitz" }
 		}
 		ai_will_do = { factor = 1 }
@@ -255,6 +298,38 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			primary_culture = slovene
+			owns = 769
+			owns = 736
+			owns = 737
+			owns = 3288
+			NOT = { has_global_flag = istria_rename_slo }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = istria_rename_slo
+			clr_global_flag = istria_rename_ita_slo
+			prestige = 2
+			769 = { change_province_name = "Postojna" }
+			736 = { change_province_name = "Trst" 
+				state_scope = { change_region_name = "Istra" }
+			}
+			737 = { change_province_name = "Gorica" }
+			3288 = { change_province_name = "Trbiž" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	istria_rename_serbian = {
+		picture = greater_serbia
+		potential = {
+			AND = {
+				primary_culture = serb
+				NOT = { TAG = YUG }
+			}
 			owns = 769
 			owns = 736
 			owns = 737
@@ -270,12 +345,15 @@ political_decisions = {
 			clr_global_flag = istria_rename_ita_slo
 			prestige = 2
 			769 = { change_province_name = "Postojna" }
-			736 = { change_province_name = "Trst" }
+			736 = { change_province_name = "Trst" 
+				state_scope = { change_region_name = "Istra" }
+			}
 			737 = { change_province_name = "Gorica" }
+			3288 = { change_province_name = "Trbiž" }
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+		
 	istria_rename_ita_slo = {
 		picture = italia_irredenta
 		potential = {
@@ -286,6 +364,7 @@ political_decisions = {
 			owns = 769
 			owns = 736
 			owns = 737
+			owns = 3288
 			NOT = { has_global_flag = istria_rename_ita_slo }
 		}
 		
@@ -302,6 +381,7 @@ political_decisions = {
 				state_scope = { change_region_name = "Istria" }
 			}
 			737 = { change_province_name = "Gorizia" }
+			3288 = { change_province_name = "Tarvisio" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -322,9 +402,64 @@ political_decisions = {
 		effect = {
 			set_global_flag = istria_rename_cro
 			clr_global_flag = istria_rename_ita_cro
+			clr_global_flag = istria_rename_ser
+			clr_global_flag = istria_rename_slovene
 			prestige = 2
 			770 = { change_province_name = "Pula" }
 			778 = { change_province_name = "Rijeka" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	istria_rename_ser = {
+		picture = greater_serbia
+		potential = {
+			AND= {
+				primary_culture = serb
+				NOT = { TAG = YUG }
+			}
+			owns = 770
+			owns = 778
+			NOT = { has_global_flag = istria_rename_ser }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = istria_rename_ser
+			clr_global_flag = istria_rename_ita_cro
+			clr_global_flag = istria_rename_cro
+			clr_global_flag = istria_rename_slovene
+			prestige = 2
+			770 = { change_province_name = "Pula" }
+			778 = { change_province_name = "Reka" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	istria_rename_slovene = {
+		picture = gtfo
+		potential = {
+			primary_culture = slovene
+			owns = 770
+			owns = 778
+			NOT = { has_global_flag = istria_rename_slovene }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = istria_rename_slovene
+			clr_global_flag = istria_rename_ita_cro
+			clr_global_flag = istria_rename_cro
+			clr_global_flag = istria_rename_ser
+			prestige = 2
+			770 = { change_province_name = "Pulj" }
+			778 = { change_province_name = "Reka" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -348,6 +483,8 @@ political_decisions = {
 		effect = {
 			set_global_flag = istria_rename_ita_cro
 			clr_global_flag = istria_rename_cro
+			clr_global_flag = istria_rename_ser
+			clr_global_flag = istria_rename_slovene
 			prestige = 2
 			770 = { change_province_name = "Pola" }
 			778 = { change_province_name = "Fiume" }
@@ -363,7 +500,6 @@ political_decisions = {
 			owns = 736
 			owns = 737
 			owns = 770
-			owns = 778
 			NOT = { has_global_flag = istria_rename_yug }
 		}
 		
@@ -374,6 +510,10 @@ political_decisions = {
 		effect = {
 			set_global_flag = istria_rename_yug
 			clr_global_flag = istria_rename_ita_cro
+			clr_global_flag = istria_rename_ser
+			clr_global_flag = istria_rename_cro
+			clr_global_flag = istria_rename_slovene
+			clr_global_flag = istria_rename_slo
 			clr_global_flag = istria_rename_ita_slo
 			prestige = 10
 			769 = { change_province_name = "Postojna" }
@@ -382,7 +522,7 @@ political_decisions = {
 			}
 			737 = { change_province_name = "Gorica" }
 			770 = { change_province_name = "Pula" }
-			778 = { change_province_name = "Rijeka" }
+			3288 = { change_province_name = "Trbiž" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -396,12 +536,20 @@ political_decisions = {
 			owns = 736
 			owns = 737
 			owns = 770
-			owns = 778
+			owns = 3288
 			OR = {
 				has_global_flag = istria_rename_yug
 				AND = {
 					has_global_flag = istria_rename_ita_cro
 					has_global_flag = istria_rename_ita_slo
+				}
+				AND = {
+					has_global_flag = istria_rename_slo
+					has_global_flag = istria_rename_slovene
+				}
+				AND = {
+					has_global_flag = istria_rename_ser
+					has_global_flag = istria_rename_slo
 				}
 			}
 		}
@@ -416,6 +564,8 @@ political_decisions = {
 			clr_global_flag = istria_rename_ita_slo
 			clr_global_flag = istria_rename_cro
 			clr_global_flag = istria_rename_slo
+			clr_global_flag = istria_rename_ser
+			clr_global_flag = istria_rename_slovene
 			769 = { change_province_name = "Adelsberg" }
 			736 = { 
 				change_province_name = "Triest" 
@@ -423,7 +573,7 @@ political_decisions = {
 			}
 			737 = { change_province_name = "Görz" }
 			770 = { change_province_name = "Polei" }
-			778 = { change_province_name = "Fiume" }
+			3288 = { change_province_name = "Tarvis" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -683,7 +833,8 @@ political_decisions = {
 			636 = { change_province_name = "Banská Bystrica" }
 			637 = { change_province_name = "Košice" }
 			638 = { change_province_name = "Prešov" }
-			950 = { change_province_name = "Užhorod" }
+			950 = { change_province_name = "Hust" }
+			3308 = { change_province_name = "Užhorod" }
 			prestige = 2
 		}
 		ai_will_do = { factor = 1 }
@@ -719,7 +870,8 @@ political_decisions = {
 			636 = { change_province_name = "Besztercebánya" }
 			637 = { change_province_name = "Kassa" }
 			638 = { change_province_name = "Eperjes" }
-			950 = { change_province_name = "Ungvár" }
+			950 = { change_province_name = "Huszt" }
+			3308 = { change_province_name = "Ungvár" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -758,7 +910,8 @@ political_decisions = {
 			636 = { change_province_name = "Neusohl" }
 			637 = { change_province_name = "Kaschau" }
 			638 = { change_province_name = "Eperies" }
-			950 = { change_province_name = "Ungwar" }
+			950 = { change_province_name = "Chust" }
+			3308 = { change_province_name = "Ungwar" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1062,6 +1215,7 @@ political_decisions = {
 				}
 				704 = { change_province_name = "Neu Sandez"  }
 				705 = { change_province_name = "Premissel"  }
+				3285 = { change_province_name = "Frauenstadt"  }
 				owner = { 
 					set_global_flag = german_renamed_galicia 
 					clr_global_flag = polish_renamed_galicia 
@@ -1115,6 +1269,7 @@ political_decisions = {
 				}
 				704 = { change_province_name = "Nowy Sacz"  }
 				705 = { change_province_name = "Przemysl"  }
+				3285 = { change_province_name = "Wadowice"  }
 				owner = { 
 					set_global_flag = polish_renamed_galicia 
 					clr_global_flag = german_renamed_galicia 
@@ -1164,6 +1319,7 @@ political_decisions = {
 				}
 				704 = { change_province_name = "Novy-Sonch"  }
 				705 = { change_province_name = "Peremyshl'"  }
+				3285 = { change_province_name = "Vadovitse"  }
 				owner = { 
 					set_global_flag = russian_renamed_galicia
 					clr_global_flag = german_renamed_galicia 
@@ -1220,6 +1376,7 @@ political_decisions = {
 					change_province_name = "Teschen" 
 					state_scope = { change_region_name = "Schlesien" }
 				}
+				3277 = { change_province_name = "Hultschin"  }
 				2584 = { change_province_name = "Bielitz"  }
 				owner = { 
 					set_global_flag = austrian_silesia_rename_german 
@@ -1276,6 +1433,7 @@ political_decisions = {
 				689 = { 
 					change_province_name = "Cieszyn" 
 				}
+				3277 = { change_province_name = "Hulczyn"  }
 				2584 = { change_province_name = "Bielsko"  }
 				owner = { 
 					set_global_flag = austrian_silesia_rename_polish
@@ -1308,6 +1466,7 @@ political_decisions = {
 				689 = { 
 					change_province_name = "Tesin" 
 				}
+				3277 = { change_province_name = "Hlucín"  }
 				2584 = { change_province_name = "Bílsko"  }
 				owner = { 
 					set_global_flag = austrian_silesia_rename_czech
@@ -1685,11 +1844,10 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = transdanubia_rename_hun
-			623 = { 
-				change_province_name = "Sopron"
+			639 = { 
+				change_province_name = "Zalaegerszeg" 
 				state_scope = { change_region_name = "Dunántúl" }
 			}
-			639 = { change_province_name = "Zalaegerszeg" }
 			640 = { change_province_name = "Pécs" }
 			642 = { change_province_name = "Gyor" }
 			643 = { change_province_name = "Székesfehérvár" }
@@ -1713,11 +1871,10 @@ political_decisions = {
 		
 		effect = {
 			clr_global_flag = transdanubia_rename_hun
-			623 = { 
-				change_province_name = "Ödenburg"
+			639 = { 
+				change_province_name = "Egersee" 
 				state_scope = { change_region_name = "Transdanubien" }
 			}
-			639 = { change_province_name = "Egersee" }
 			640 = { change_province_name = "Fünfkirchen" }
 			642 = { change_province_name = "Raab" }
 			643 = { change_province_name = "Stuhlweißenburg" }
@@ -1823,15 +1980,78 @@ political_decisions = {
 		effect = {
 			set_global_flag = croatia_rename_cro
 			clr_global_flag = croatia_rename_hun
+			clr_global_flag = serbia_rename_cro_cores
+			clr_global_flag = serbia_rename_cro
 			771 = { 
 				change_province_name = "Zagreb" 
 				state_scope = { change_region_name = "Hrvatska" }
 			}
 			772 = { change_province_name = "Sisak" }
-			773 = { change_province_name = "Karlovac" }
 			775 = { change_province_name = "Varaždin" }
 			776 = { change_province_name = "Bjelovar" }
+			3289 = { change_province_name = "Cakovec" }
 			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	serbian_rename_cro_cores = {
+		picture = greater_serbia
+		potential = {
+			AND= {
+				primary_culture = serb
+				NOT = { TAG = YUG }
+			}
+			NOT = { owns = 771 }
+			owns = 772
+			NOT = { has_global_flag = serbia_rename_cro_cores }
+			NOT = { has_global_flag = serbia_rename_cro }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = serbia_rename_cro_cores
+			clr_global_flag = croatia_rename_hun
+			clr_global_flag = croatia_rename_cro
+			772 = { 
+				change_province_name = "Sisak" 
+			}
+			776 = { change_province_name = "Belovar" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	serbian_rename_cro = {
+		picture = greater_serbia
+		potential = {
+			AND= {
+				primary_culture = serb
+				NOT = { TAG = YUG }
+			}
+			owns = 771
+			NOT = { has_global_flag = serbia_rename_cro }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = serbia_rename_cro
+			clr_global_flag = croatia_rename_hun
+			clr_global_flag = croatia_rename_cro
+			clr_global_flag = serbia_rename_cro_cores
+			771 = { 
+				change_province_name = "Zagreb" 
+				state_scope = { change_region_name = "Krajina" }
+			}
+			772 = { change_province_name = "Sisak" }
+			773 = { change_province_name = "Karlovac" }
+			775 = { change_province_name = "Varaždin" }
+			776 = { change_province_name = "Belovar" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1856,6 +2076,8 @@ political_decisions = {
 		effect = {
 			set_global_flag = croatia_rename_hun
 			clr_global_flag = croatia_rename_cro
+			clr_global_flag = serbia_rename_cro_cores
+			clr_global_flag = serbia_rename_cro
 			771 = { 
 				change_province_name = "Zabrag" 
 				state_scope = { change_region_name = "Horvát" }
@@ -1864,6 +2086,7 @@ political_decisions = {
 			773 = { change_province_name = "Károlyváros" }
 			775 = { change_province_name = "Varasd" }
 			776 = { change_province_name = "Belovár" }
+			3289 = { change_province_name = "Csáktornya" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1881,6 +2104,8 @@ political_decisions = {
 			OR = {
 				has_global_flag = croatia_rename_hun
 				has_global_flag = croatia_rename_cro
+				has_global_flag = serbia_rename_cro_cores
+				has_global_flag = serbia_rename_cro
 			}
 			owns = 771
 			owns = 772
@@ -1893,14 +2118,16 @@ political_decisions = {
 		effect = {
 			clr_global_flag = croatia_rename_hun
 			clr_global_flag = croatia_rename_cro
+			clr_global_flag = serbia_rename_cro_cores
+			clr_global_flag = serbia_rename_cro
 			771 = { 
 				change_province_name = "Agram " 
 				state_scope = { change_region_name = "Kroatien" }
 			}
 			772 = { change_province_name = "Sissek" }
-			773 = { change_province_name = "Karlstadt" }
 			775 = { change_province_name = "Warasdin" }
 			776 = { change_province_name = "Bellowar" }
+			3289 = { change_province_name = "Csakathurn" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1924,13 +2151,45 @@ political_decisions = {
 		effect = {
 			set_global_flag = slavonia_rename_cro
 			clr_global_flag = slavonia_rename_hun
+			clr_global_flag = slavonia_rename_ser
 			777 = { 
 				change_province_name = "Požega" 
 				state_scope = { change_region_name = "Slavonija" }
 			}
 			779 = { change_province_name = "Osijek" }
 			793 = { change_province_name = "Vukovar" }
-			
+			3283 = { change_province_name = "Baranja" }	
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	slavonia_rename_ser = {
+		picture = greater_serbia
+		potential = {
+			AND= {
+				primary_culture = serb
+				NOT = { TAG = YUG }
+			}
+			owns = 777
+			owns = 779
+			NOT = { has_global_flag = slavonia_rename_ser }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = slavonia_rename_ser
+			clr_global_flag = slavonia_rename_hun
+			clr_global_flag = slavonia_rename_cro
+			777 = { 
+				change_province_name = "Požega" 
+				state_scope = { change_region_name = "Slavonija" }
+			}
+			779 = { change_province_name = "Osek" }
+			793 = { change_province_name = "Vukovar" }
+			3283 = { change_province_name = "Baranja" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1955,12 +2214,14 @@ political_decisions = {
 		effect = {
 			set_global_flag = slavonia_rename_hun
 			clr_global_flag = slavonia_rename_cro
+			clr_global_flag = slavonia_rename_ser
 			777 = { 
 				change_province_name = "Pozsega" 
 				state_scope = { change_region_name = "Szlavón" }
 			}
 			779 = { change_province_name = "Eszék" }
 			793 = { change_province_name = "Vukovár" }
+			3283 = { change_province_name = "Baranya" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -1978,6 +2239,7 @@ political_decisions = {
 			OR = {
 				has_global_flag = slavonia_rename_hun
 				has_global_flag = slavonia_rename_cro
+				has_global_flag = slavonia_rename_ser
 			}
 			owns = 777
 			owns = 779
@@ -1990,12 +2252,14 @@ political_decisions = {
 		effect = {
 			clr_global_flag = slavonia_rename_hun
 			clr_global_flag = slavonia_rename_cro
+			clr_global_flag = slavonia_rename_ser
 			777 = { 
 				change_province_name = "Poschegg" 
 				state_scope = { change_region_name = "Slawonien" }
 			}
 			779 = { change_province_name = "Esseg" }
 			793 = { change_province_name = "Wukowar" }
+			3283 = { change_province_name = "Branau" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -2009,7 +2273,6 @@ political_decisions = {
 			}
 			owns = 780
 			owns = 781
-			owns = 2582
 			NOT = { has_global_flag = dalmatia_rename_cro }
 		}
 		
@@ -2020,6 +2283,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = dalmatia_rename_cro
 			clr_global_flag = dalmatia_rename_ita
+			clr_global_flag = dalmatia_rename_ser
 			780 = { 
 				change_province_name = "Split" 
 				state_scope = { change_region_name = "Dalmacija" }
@@ -2027,7 +2291,43 @@ political_decisions = {
 			781 = { change_province_name = "Zadar" }
 			782 = { change_province_name = "Dubrovnik" }
 			774 = { change_province_name = "Senj" }
+			773 = { change_province_name = "Karlovac" }
+			778 = { change_province_name = "Rijeka" }
 			2582 = { change_province_name = "Kotor" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	dalmatia_rename_ser = {
+		picture = greater_serbia
+		potential = {
+			AND = {
+				primary_culture = serb
+				NOT = { tag = YUG }
+			}
+			owns = 780
+			owns = 781
+			NOT = { has_global_flag = dalmatia_rename_ser }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = dalmatia_rename_ser
+			clr_global_flag = dalmatia_rename_ita
+			clr_global_flag = dalmatia_rename_cro
+			780 = { 
+				change_province_name = "Split" 
+				state_scope = { change_region_name = "Dalmacija" }
+			}
+			781 = { change_province_name = "Zadar" }
+			782 = { change_province_name = "Dubrovnik" }
+			774 = { change_province_name = "Knin" }
+			773 = { change_province_name = "Karlovac" }
+			778 = { change_province_name = "Rijeka" }
+			2582 = { change_province_name = "Budva" }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -2038,7 +2338,6 @@ political_decisions = {
 			is_culture_group = italian
 			owns = 780
 			owns = 781
-			owns = 2582
 			NOT = { has_global_flag = dalmatia_rename_ita }
 		}
 		
@@ -2049,6 +2348,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = dalmatia_rename_ita
 			clr_global_flag = dalmatia_rename_cro
+			clr_global_flag = dalmatia_rename_ser
 			780 = { 
 				change_province_name = "Spalato" 
 				state_scope = { change_region_name = "Dalmazia" }
@@ -2056,6 +2356,8 @@ political_decisions = {
 			781 = { change_province_name = "Zara" }
 			782 = { change_province_name = "Ragusa" }
 			774 = { change_province_name = "Segna" }
+			773 = { change_province_name = "Carlovizza" }
+			778 = { change_province_name = "Fiume" }
 			2582 = { change_province_name = "Càttaro" }
 		}
 		ai_will_do = { factor = 1 }
@@ -2074,10 +2376,10 @@ political_decisions = {
 			OR = {
 				has_global_flag = dalmatia_rename_ita
 				has_global_flag = dalmatia_rename_cro
+				has_global_flag = dalmatia_rename_ser
 			}
 			owns = 780
 			owns = 781
-			owns = 2582
 		}
 		
 		allow = {
@@ -2087,6 +2389,7 @@ political_decisions = {
 		effect = {
 			clr_global_flag = dalmatia_rename_ita
 			clr_global_flag = dalmatia_rename_cro
+			clr_global_flag = dalmatia_rename_ser
 			780 = { 
 				change_province_name = "Spalato" 
 				state_scope = { change_region_name = "Dalmatien" }
@@ -2094,6 +2397,8 @@ political_decisions = {
 			781 = { change_province_name = "Zara" }
 			782 = { change_province_name = "Ragusa" }
 			774 = { change_province_name = "Zengg " }
+			773 = { change_province_name = "Karlstadt" }
+			778 = { change_province_name = "St. Veit" }
 			2582 = { change_province_name = "Cattaro" }
 		}
 		ai_will_do = { factor = 1 }
@@ -2134,14 +2439,14 @@ political_decisions = {
 		
 		effect = {
 			random_owned = {
-				limit = {
-					province_id = 466
-				}
+				limit = { province_id = 466 }
+				465 = { change_province_name = "Ennèsia" }
 				466 = { 
 					change_province_name = "Sciamberì"  
 					state_scope = { change_region_name = "Savoia" }
 				}
 				472 = { change_province_name = "Nizza" }
+				
 				owner = { 
 					set_global_flag = italian_renamed_savoy
 					clr_global_flag = french_renamed_savoy
@@ -2179,9 +2484,8 @@ political_decisions = {
 		
 		effect = {
 			random_owned = {
-				limit = {
-					province_id = 466
-				}
+				limit = { province_id = 466 }
+				465 = { change_province_name = "Annecy" }
 				466 = { 
 					change_province_name = "Chambéry"  
 					state_scope = { change_region_name = "Savoie" }
@@ -2251,22 +2555,13 @@ political_decisions = {
 		effect = {
 			729 = {
 				change_province_name = "Venedig"
-				state_scope = {
-					change_region_name = "Venezien"
-				}
+				state_scope = { change_region_name = "Venezien"	}
 			}
-			730 = {
-				change_province_name = "Dietrichsbern"
-			}
-			731 = {
-				change_province_name = "Esten"
-			}
-			732 = {
-				change_province_name = "Trevixen"
-			}
-			733 = {
-				change_province_name = "Weiden"
-			}
+			730 = { change_province_name = "Dietrichsbern" }
+			731 = { change_province_name = "Esten" }
+			732 = { change_province_name = "Trevixen" }
+			733 = { change_province_name = "Weiden" }
+			3262 = { change_province_name = "Beilun" }
 			set_global_flag = german_veneto
 			clr_global_flag = italian_veneto
 		}
@@ -2296,22 +2591,14 @@ political_decisions = {
 		effect = {
 			729 = {
 				change_province_name = "Venezia"
-				state_scope = {
-					change_region_name = "Veneto"
+				state_scope = { change_region_name = "Veneto"
 				}
 			}
-			730 = {
-				change_province_name = "Verona"
-			}
-			731 = {
-				change_province_name = "Padova"
-			}
-			732 = {
-				change_province_name = "Treviso"
-			}
-			733 = {
-				change_province_name = "Udine"
-			}
+			730 = { change_province_name = "Verona" }
+			731 = { change_province_name = "Padova" }
+			732 = { change_province_name = "Treviso" }
+			733 = { change_province_name = "Udine" }
+			3262 = { change_province_name = "Belluno" }
 			set_global_flag = italian_veneto
 			clr_global_flag = german_veneto
 		}
@@ -2527,10 +2814,11 @@ political_decisions = {
 				}
 				411 = {
 					change_province_name = "Nanzig"
-					state_scope = { change_region_name = "Ober-Lothringen" }
+					state_scope = { change_region_name = "Lothringen" }
 				}
 				414 = { change_province_name = "Spinneln" }
 				413 = { change_province_name = "Wirten" }
+				2622 = { change_province_name = "Herzogenbar" }
 				owner = {
 					set_global_flag = german_renamed_lorraine
 					clr_global_flag = french_renamed_lorraine
@@ -2549,6 +2837,7 @@ political_decisions = {
 				}
 				414 = { change_province_name = "Épinal" }
 				413 = { change_province_name = "Verdun" }
+				2622 = { change_province_name = "Bar-le-Duc" }
 				owner = { 
 					set_global_flag = french_renamed_lorraine
 					clr_global_flag = german_renamed_lorraine
