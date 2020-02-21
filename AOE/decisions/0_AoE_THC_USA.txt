@@ -22,6 +22,7 @@ political_decisions = {
 	}
 	
 	claim_florida = {
+		picture = florida_map
 		potential = {
 			OR = {
 				tag = USA
@@ -48,10 +49,9 @@ political_decisions = {
 	}
 	
 	claim_louisiana = {
+		picture = new_france_louisiana
 		potential = {
-			OR = {
-				tag = USA
-			}
+			tag = USA
 			NOT = {
 				has_country_flag = claim_louisiana_usa
 			}
@@ -65,6 +65,7 @@ political_decisions = {
 					alliance_with = ULA
 				}
 			}
+			war_policy = jingoism
 			is_greater_power = yes
 			military_score = ULA
 		}

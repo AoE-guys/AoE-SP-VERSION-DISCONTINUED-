@@ -891,6 +891,7 @@ country_event = {
 			country_event = 24502
 		}
 		set_country_flag = sugar_act_passed
+		ai_chance = { factor = 100 }
 	}
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
@@ -950,6 +951,7 @@ country_event = {
 			country_event = 24504
 		}
 		set_country_flag = stamp_act_passed
+		ai_chance = { factor = 100 }
 	}
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
@@ -1009,6 +1011,7 @@ country_event = {
 			country_event = 24505
 		}
 		set_country_flag = stamp_act_passed
+		ai_chance = { factor = 100 }
 	}
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
@@ -1078,6 +1081,7 @@ country_event = {
 			country_event = 24506
 		}
 		set_country_flag = intolerable_act_passed
+		ai_chance = { factor = 100 }
 	}
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"

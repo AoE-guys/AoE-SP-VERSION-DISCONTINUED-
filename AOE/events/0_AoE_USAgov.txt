@@ -27,9 +27,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = gerrymandering
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_chance = { factor = 70 }
 	}
 	option = {
 		name = "A Constitutional Monarchy with a king as head of the state"
@@ -43,5 +41,6 @@ country_event = {
 		political_reform = all_trade_unions
 		political_reform = first_past_the_post
 		political_reform = gerrymandering
+		ai_chance = { factor = 30 }
 	}
 }

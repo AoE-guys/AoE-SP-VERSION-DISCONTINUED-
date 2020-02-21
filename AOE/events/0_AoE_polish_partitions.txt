@@ -12,7 +12,7 @@ country_event = {
 		PRU = { country_event = 1774 }
 		AUS = { country_event = 1775 }
 		
-		ai_will_do = { factor = 1 }
+		ai_chance = { factor = 100 }
 	}
 }
 #RUS+PRU+AUS send demends for land
@@ -26,7 +26,7 @@ country_event = {
 	option = {
 		name = "Send the delegation"
 		PLC = {	country_event = 1776 }
-		ai_will_do = { factor = 10 }
+		ai_chance = { factor = 100 }
 	}
 }	
 country_event = {
@@ -39,7 +39,7 @@ country_event = {
 	option = {
 		name = "Send the delegation"
 		PLC = {	country_event = 1777 }
-		ai_will_do = { factor = 100 }
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
@@ -60,7 +60,7 @@ country_event = {
 	option = {
 		name = "Send the delegation"
 		PLC = {	country_event = 1778 }
-		ai_will_do = { factor = 100 }
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
@@ -86,7 +86,7 @@ country_event = {
 		944	= { secede_province = RUS }
 		949 = { secede_province = RUS }
 		prestige = -10
-		ai_will_do = { factor = 100 }
+		ai_chance = { factor = 95 }
 	}
 	option = {
 		name = "We will not give up!"
@@ -102,6 +102,7 @@ country_event = {
 				call_ally = no
 			}
 		}
+		ai_chance = { factor = 5 }
 	}
 }
 
@@ -121,7 +122,7 @@ country_event = {
 		693 = { secede_province = PRU }
 		696	= { secede_province = PRU }
 		prestige = -10
-		ai_will_do = { factor = 100 }
+		ai_chance = { factor = 95 }
 	}
 	
 	option = {
@@ -140,6 +141,7 @@ country_event = {
 				call_ally = no
 			}
 		}
+		ai_chance = { factor = 5 }
 	}
 }
 country_event = {
@@ -160,7 +162,7 @@ country_event = {
 		952 = { secede_province = AUS }
 		953 = { secede_province = AUS }
 		prestige = -10
-		ai_will_do = { factor = 100 }
+		ai_chance = { factor = 95 }
 	}
 	
 	option = {
@@ -181,5 +183,6 @@ country_event = {
 				call_ally = no
 			}
 		}
+		ai_chance = { factor = 5 }
 	}
 }
