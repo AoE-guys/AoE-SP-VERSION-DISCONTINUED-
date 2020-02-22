@@ -373,6 +373,7 @@ country_event = {
 	title = "EVTNAME93005" 
 	picture = "spanish_king"
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		money = 1000000
@@ -412,6 +413,16 @@ country_event = {
 		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA  end_war = BOR }
 		end_war = SPA  end_war = BOR
 		remove_global_flag =  spanish_succesion_crisis
+		add_global_flag = spanish_succesion_resolved
+		any_country = {
+			limit = {
+				OR = {
+					has_country_flag = support_habsburg_heir
+					has_country_flag = support_bourbon_heir
+				}
+			} 
+			country_event = 13007
+		}
 	}
 }
 country_event = {
@@ -419,6 +430,7 @@ country_event = {
 	title = "EVTNAME93006" 
 	picture = "spanish_king"
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		money = 1000000
@@ -446,7 +458,33 @@ country_event = {
 		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA  end_war = AUS }
 		end_war = SPA  end_war = AUS
 		remove_global_flag =  spanish_succesion_crisis
+		add_global_flag = spanish_succesion_resolved
+		any_country = {
+			limit = {
+				OR = {
+					has_country_flag = support_habsburg_heir
+					has_country_flag = support_bourbon_heir
+				}
+			} 
+			country_event = 13007
+		}
 	}
 }
+country_event= {
+	id = 13007
+	title = "The end of the succesion crisis"
+	major = yes
+	is_triggered_only = yes
 	
+	option = {
+		name = "A bloody war... and for what?"
+		add_country_modifier = {
+			name = no_more_war
+			duration = 1825
+		}
+		end_war = SPA
+		end_war = BOR
+		end_war = AUS
+	}
+}
 	
