@@ -1,23 +1,23 @@
 political_decisions = {
-	unciv_balance_qng = {
-		picture = "reichstag"
-		potential = { 
-			ai = yes
-			tag = QNG
-			civilized = no
-			NOT = { has_country_flag = unciv_balance_flag }
-		}
-		
-		allow = { }
-		
-		effect = {
-			add_country_modifier = {
-				name = unciv_balance_qng
-				duration = 3650
-			}
-			set_country_flag = unciv_balance_flag
-		}
-	}	
+	#unciv_balance_qng = {
+	#	picture = "reichstag"
+	#	potential = { 
+	#		ai = yes
+	#		tag = QNG
+	#		civilized = no
+	#		NOT = { has_country_flag = unciv_balance_flag }
+	#	}
+	#	
+	#	allow = { }
+	#	
+	#	effect = {
+	#		add_country_modifier = {
+	#			name = unciv_balance_qng
+	#			duration = 3650
+	#		}
+	#		set_country_flag = unciv_balance_flag
+	#	}
+	#}	
 
 	viet_remove_sphere = {
 		picture = "reichstag"
@@ -152,6 +152,7 @@ political_decisions = {
 						substate_of = ENG
 					}
 					exists = yes
+					war = no
 				}
 				RAJ = {
 					OR = {
@@ -160,6 +161,7 @@ political_decisions = {
 					}
 					alliance_with = ENG
 					exists = yes
+					war = no
 				}
 			}
 		}
@@ -168,17 +170,6 @@ political_decisions = {
 			OR = {
 				AND = { 
 					any_greater_power = { war_with = ENG NOT = { war_with = EIC } }
-					EIC = {
-						OR = {
-							vassal_of = ENG
-							substate_of = ENG
-						}
-						exists = yes
-						war = no
-					}
-				}
-				AND = { 
-					any_neighbor_country = { war_with = ENG NOT = { war_with = EIC } }
 					EIC = {
 						OR = {
 							vassal_of = ENG
@@ -204,9 +195,12 @@ political_decisions = {
 					war = yes
 					EIC = { exists = yes war = no }
 				}
-				MUG = {
-					war_with = ENG
-					NOT = { war_with = EIC }
+				AND = {
+					war_with = MUG
+					EIC = {
+						exists = yes
+						NOT = { war_with = MUG }
+					}
 				}
 			}
 		}
@@ -407,12 +401,12 @@ political_decisions = {
 		}
 	}
 	
-	rebel_tech_1850 = {
+	rebel_tech_1850 = { #!
 		potential = {
 			ai = yes
-			is_greater_power = no
-			is_secondary_power = no
-			year = 1880
+			#is_greater_power = no
+			#is_secondary_power = no
+			year = 1780
 			NOT = { has_global_flag = rebel_tech_1850 }
 		}
 		
@@ -436,9 +430,9 @@ political_decisions = {
 	rebel_tech_1870 = {
 		potential = {
 			ai = yes
-			is_greater_power = no
-			is_secondary_power = no
-			year = 1900
+			#is_greater_power = no
+			#is_secondary_power = no
+			year = 1800
 			NOT = { has_global_flag = rebel_tech_1870 }
 		}
 		
@@ -461,9 +455,9 @@ political_decisions = {
 	rebel_tech_1900 = {
 		potential = {
 			ai = yes
-			is_greater_power = no
-			is_secondary_power = no
-			year = 1910
+			#is_greater_power = no
+			#is_secondary_power = no
+			year = 1810
 			NOT = { has_global_flag = rebel_tech_1900 }
 		}
 		
@@ -484,9 +478,9 @@ political_decisions = {
 	rebel_tech_1920 = {
 		potential = {
 			ai = yes
-			is_greater_power = no
-			is_secondary_power = no
-			year = 1920
+			#is_greater_power = no
+			#is_secondary_power = no
+			year = 1820
 			NOT = { has_global_flag = rebel_tech_1920 }
 		}
 		
@@ -587,7 +581,7 @@ political_decisions = {
 				}
 				AND = {
 					tag = EIC
-					NOT = { total_amount_of_ships = 50 }
+					NOT = { total_amount_of_ships = 75 }
 				}
 				AND = {
 					year = 1905
@@ -936,164 +930,164 @@ political_decisions = {
 		}	
 	}
 	
-	american_catholic_pop_growth = {
-		potential = {
-			ai = yes
-			exists = yes
-			NOT = { year = 1850 }
-			OR = {
-				AND = { 
-					is_culture_group = american_cultures
-					government = democracy
-					NOT = { has_country_modifier = catholic_growth }
-				}
-				any_neighbor_country = {
-					ai = no
-					government = democracy
-					is_culture_group = american_cultures
-					NOT = { has_country_modifier = catholic_growth }
-				}
-			}
-		}
-		
-		allow = {
-		}
-		
-		effect = {
-			random_owned = {
-				limit = { 
-					owner = {
-						NOT = { has_country_modifier = catholic_growth }
-						is_culture_group = american_cultures 
-					} 
-				}
-				
-				owner = {
-					any_pop = {
-						limit = {
-							has_pop_religion = catholic 
-							is_culture_group = american_cultures
-							location = { is_overseas = no }
-							NOT = { 
-								culture = texan
-								type = craftsmen 
-								type = bureaucrats
-								strata = rich
-								strata = middle
-							}
-							
-						}
-						random_list = {
-							15 = { reduce_pop = 1.02 }
-							35 = { reduce_pop = 1.03 }
-							45 = { reduce_pop = 1.04 }
-						}
-					}
-					any_pop = {
-						limit = {
-							has_pop_religion = catholic 
-							is_culture_group = american_cultures
-							location = { is_overseas = no }
-							OR = { 
-								strata = rich
-								strata = middle
-							}
-							
-						}
-						random_list = {
-							20 = { reduce_pop = 1.02 }
-							35 = { reduce_pop = 1.01 }
-							40 = { reduce_pop = 1.03 }
-						}
-					}
-					any_pop = {
-						limit = {
-							has_pop_religion = catholic 
-							has_pop_culture = cajun
-							NOT = { type = craftsmen }
-							location = { is_overseas = no }
-						}
-						random_list = {
-							40 = { reduce_pop = 1.02 }
-							30 = { reduce_pop = 1.03 }
-							25 = { reduce_pop = 1.04 }
-						}
-					}
-					random_list = {
-						30 = { add_country_modifier = { name = catholic_growth duration = 1825 } }
-						50 = { add_country_modifier = { name = catholic_growth duration = 2190 } }
-						25 = { add_country_modifier = { name = catholic_growth duration = 2555 } }
-					}
-				}
-			}
-			
-			any_country = {
-				limit = {
-					NOT = { has_country_modifier = catholic_growth }
-					is_culture_group = american_cultures 
-				}
-				any_pop = {
-					limit = {
-						has_pop_religion = catholic 
-						is_culture_group = american_cultures
-						location = { is_overseas = no }
-						NOT = { 
-							has_pop_culture = texan
-							type = craftsmen 
-							type = bureaucrats
-							strata = rich
-							strata = middle
-						}
-						
-					}
-					random_list = {
-						15 = { reduce_pop = 1.02 }
-						35 = { reduce_pop = 1.03 }
-						45 = { reduce_pop = 1.04 }
-					}
-				}
-				any_pop = {
-					limit = {
-						has_pop_religion = catholic 
-						is_culture_group = american_cultures
-						location = { is_overseas = no }
-						OR = { 
-							strata = rich
-							strata = middle
-						}
-						
-					}
-					random_list = {
-						20 = { reduce_pop = 1.02 }
-						35 = { reduce_pop = 1.01 }
-						40 = { reduce_pop = 1.03 }
-					}
-				}
-				any_pop = {
-					limit = {
-						has_pop_religion = catholic 
-						OR = { 
-							has_pop_culture = cajun
-							has_pop_culture = texan
-						}
-						NOT = { type = craftsmen }
-						location = { is_overseas = no }
-					}
-					random_list = {
-						40 = { reduce_pop = 1.02 }
-						30 = { reduce_pop = 1.03 }
-						25 = { reduce_pop = 1.04 }
-					}
-				}
-				random_list = {
-					33 = { add_country_modifier = { name = catholic_growth duration = 1825 } }
-					33 = { add_country_modifier = { name = catholic_growth duration = 2190 } }
-					33 = { add_country_modifier = { name = catholic_growth duration = 2555 } }
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
+	#american_catholic_pop_growth = {
+	#	potential = {
+	#		ai = yes
+	#		exists = yes
+	#		NOT = { year = 1850 }
+	#		OR = {
+	#			AND = { 
+	#				is_culture_group = american_cultures
+	#				government = democracy
+	#				NOT = { has_country_modifier = catholic_growth }
+	#			}
+	#			any_neighbor_country = {
+	#				ai = no
+	#				government = democracy
+	#				is_culture_group = american_cultures
+	#				NOT = { has_country_modifier = catholic_growth }
+	#			}
+	#		}
+	#	}
+	#	
+	#	allow = {
+	#	}
+	#	
+	#	effect = {
+	#		random_owned = {
+	#			limit = { 
+	#				owner = {
+	#					NOT = { has_country_modifier = catholic_growth }
+	#					is_culture_group = american_cultures 
+	#				} 
+	#			}
+	#			
+	#			owner = {
+	#				any_pop = {
+	#					limit = {
+	#						has_pop_religion = catholic 
+	#						is_culture_group = american_cultures
+	#						location = { is_overseas = no }
+	#						NOT = { 
+	#							culture = texan
+	#							type = craftsmen 
+	#							type = bureaucrats
+	#							strata = rich
+	#							strata = middle
+	#						}
+	#						
+	#					}
+	#					random_list = {
+	#						15 = { reduce_pop = 1.02 }
+	#						35 = { reduce_pop = 1.03 }
+	#						45 = { reduce_pop = 1.04 }
+	#					}
+	#				}
+	#				any_pop = {
+	#					limit = {
+	#						has_pop_religion = catholic 
+	#						is_culture_group = american_cultures
+	#						location = { is_overseas = no }
+	#						OR = { 
+	#							strata = rich
+	#							strata = middle
+	#						}
+	#						
+	#					}
+	#					random_list = {
+	#						20 = { reduce_pop = 1.02 }
+	#						35 = { reduce_pop = 1.01 }
+	#						40 = { reduce_pop = 1.03 }
+	#					}
+	#				}
+	#				any_pop = {
+	#					limit = {
+	#						has_pop_religion = catholic 
+	#						has_pop_culture = cajun
+	#						NOT = { type = craftsmen }
+	#						location = { is_overseas = no }
+	#					}
+	#					random_list = {
+	#						40 = { reduce_pop = 1.02 }
+	#						30 = { reduce_pop = 1.03 }
+	#						25 = { reduce_pop = 1.04 }
+	#					}
+	#				}
+	#				random_list = {
+	#					30 = { add_country_modifier = { name = catholic_growth duration = 1825 } }
+	#					50 = { add_country_modifier = { name = catholic_growth duration = 2190 } }
+	#					25 = { add_country_modifier = { name = catholic_growth duration = 2555 } }
+	#				}
+	#			}
+	#		}
+	#		
+	#		any_country = {
+	#			limit = {
+	#				NOT = { has_country_modifier = catholic_growth }
+	#				is_culture_group = american_cultures 
+	#			}
+	#			any_pop = {
+	#				limit = {
+	#					has_pop_religion = catholic 
+	#					is_culture_group = american_cultures
+	#					location = { is_overseas = no }
+	#					NOT = { 
+	#						has_pop_culture = texan
+	#						type = craftsmen 
+	#						type = bureaucrats
+	#						strata = rich
+	#						strata = middle
+	#					}
+	#					
+	#				}
+	#				random_list = {
+	#					15 = { reduce_pop = 1.02 }
+	#					35 = { reduce_pop = 1.03 }
+	#					45 = { reduce_pop = 1.04 }
+	#				}
+	#			}
+	#			any_pop = {
+	#				limit = {
+	#					has_pop_religion = catholic 
+	#					is_culture_group = american_cultures
+	#					location = { is_overseas = no }
+	#					OR = { 
+	#						strata = rich
+	#						strata = middle
+	#					}
+	#					
+	#				}
+	#				random_list = {
+	#					20 = { reduce_pop = 1.02 }
+	#					35 = { reduce_pop = 1.01 }
+	#					40 = { reduce_pop = 1.03 }
+	#				}
+	#			}
+	#			any_pop = {
+	#				limit = {
+	#					has_pop_religion = catholic 
+	#					OR = { 
+	#						has_pop_culture = cajun
+	#						has_pop_culture = texan
+	#					}
+	#					NOT = { type = craftsmen }
+	#					location = { is_overseas = no }
+	#				}
+	#				random_list = {
+	#					40 = { reduce_pop = 1.02 }
+	#					30 = { reduce_pop = 1.03 }
+	#					25 = { reduce_pop = 1.04 }
+	#				}
+	#			}
+	#			random_list = {
+	#				33 = { add_country_modifier = { name = catholic_growth duration = 1825 } }
+	#				33 = { add_country_modifier = { name = catholic_growth duration = 2190 } }
+	#				33 = { add_country_modifier = { name = catholic_growth duration = 2555 } }
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = { factor = 1 }
+	#}
 	
 	russia_ai_return_land = {
 		potential = { 
@@ -1140,7 +1134,7 @@ political_decisions = {
 		potential = { 
 			ai = yes
 			civilized = no
-			year = 1905
+			year = 1910
 			OR = {
 				tag = ETH
 				NOT = {
