@@ -1,0 +1,25 @@
+country_event = {
+	id = 19180000
+	title = " New Orlean colonization push"
+	desc = "Recently our settlers maneged to colonize an area between New orelan and New Spain"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 139
+		year = 1733
+		NOT = { owns = 141 }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		141 = {
+			add_core = THIS
+			secede_province = THIS
+		}		
+	}
+}

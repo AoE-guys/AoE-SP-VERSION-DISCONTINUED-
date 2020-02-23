@@ -13,7 +13,9 @@ political_decisions = {
 
 		effect = {
 			prestige = 20
-			change_tag = USA	
+			change_tag = USA
+			all_core = { add_core = USA }
+			all_core = { remove_core = THIS }
 		}
 
 		ai_will_do = {
@@ -127,6 +129,70 @@ political_decisions = {
 		}
 	}
 	
+	buy_louisiana = {
+		picture = new_france_louisiana
+		potential = {
+			tag = USA
+			NOT = { has_country_flag = proposed_to_buy_louisana }
+			ULA = { exists = yes }
+			OR = {
+				BOR = {
+					is_our_vassal = ULA
+				}
+				FRA = {
+					is_our_vassal = ULA
+				}
+			}
+		}
+		allow = {
+			money = 2000000
+			OR = {
+				relation = { 
+					who = BOR
+					value = 100
+				}
+				relation = { 
+					who = FRA
+					value = 100
+				}
+			}
+			is_greater_power = yes
+		}
+		effect = {
+			ULA = {
+				overlord = { country_event = 180500001 }
+			}
+			set_country_flag = { proposed_to_buy_louisana }
+		}
+	}
+	
+	usa_navy = {
+		picture = navy
+		potential = {
+			tag = USA
+			NOT = { has_country_flag = usa_navy }
+		}
+		
+		allow = {
+			blue_and_brown_water_schools = 1
+			steel_steamers = 1
+			money = 100000
+		}
+		
+		effect = {
+			set_country_flag = usa_navy
+			add_country_modifier = {
+				name = naval_school
+				duration = -1
+			}
+			add_country_modifier = {
+				name = lord_admiral
+				duration = -1
+			}
+			money = -100000
+		}
+	}
+	
 	the_bastion_of_liberty = {
 		picture = liberty
 		potential = {
@@ -136,8 +202,8 @@ political_decisions = {
 		}
 		allow = {
 			OR = {
-				government = demoracy
-				government = constitutional_monarchy
+				government = democracy
+				government = hms_government
 			}
 			OR = {
 				vote_franschise = universal_weighted_voting
@@ -146,7 +212,7 @@ political_decisions = {
 			empiricism = 1
 			war = no
 			NOT = { war_policy = jingoism }
-			NOT = { badboy = 5 }
+			NOT = { badboy = 0.5 }
 		}
 		effect = {
 			set_global_flag = bastion_of_liberty
