@@ -1349,9 +1349,9 @@ change_heir_habsburg_cb = {
 	months = 12
 	crisis = no
 
-	badboy_factor = 1
-	prestige_factor = 1
-	peace_cost_factor = 0.8
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 50
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1
@@ -1402,9 +1402,9 @@ change_heir_bourbon_cb = {
 	months = 48
 	crisis = no
 
-	badboy_factor = 1
-	prestige_factor = 1
-	peace_cost_factor = 0.8
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 50
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1

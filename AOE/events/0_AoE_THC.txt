@@ -104,7 +104,7 @@ country_event = {
 ##Louisiana purchase##
 country_event = {
 	id = 180500001
-	title = "sell louisiana?"
+	title = "Should we sell louisiana?"
 	desc = "EVTDESC180500001"
 	picture = louisiana
 	fire_only_once = yes
@@ -151,12 +151,14 @@ country_event = {
 		inherit = ULA
 		FROM = { country_event = 180500003 }
 		prestige = 50
+		set_country_flag = proposed_to_buy_louisana
 	}
 	
 	option = {
 		name = "This price is too high"
 		ai_chance = { factor = 5 }
 		FROM = { country_event = 180500004 }
+		set_country_flag = proposed_to_buy_louisana
 	}
 }
 country_event = {
