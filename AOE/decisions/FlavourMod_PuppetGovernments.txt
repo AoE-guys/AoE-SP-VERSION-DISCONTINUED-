@@ -459,93 +459,93 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	clean_up_freed_colonial_govt = {
-		potential = {
-			is_vassal = no
-			OR = {
-				government = colonial_company
-				government = dominion
-			}
-			NOT = { 
-				tag = EIC 
-				tag = MCK
-				tag = IMG
-				tag = SER
-			}
-			OR = {
-				NOT = { tag = EGY }
-				AND = {
-					tag = EGY
-					NOT = { has_global_flag = egypt_submitted_to_ottomans }
-				}
-			}
-		}
-		
-		allow = {
-			war = no
-			is_vassal = no
-		}
-		
-		effect = {
-			set_country_flag = clean_up_unciv_monarchy
-			clr_country_flag = clean_up_colonial_government
-			random_owned = {
-				limit = { owner = { civilized = yes } }
-				owner = { government = democracy }
-			}
-			random_owned = {
-				limit = { owner = { civilized = no } }
-				owner = { government = absolute_monarchy }
-			}
-			random_owned = {
-				limit = {
-					is_core = ALD
-					owner = { primary_culture = french }					
-				}
-				owner = { 
-					primary_culture = maghrebi
-					remove_accepted_culture = maghrebi
-				}
-			}
-			random_owned = {
-				limit = {
-					is_core = HDJ
-					owner = { tag = HDJ }
-				}
-				owner = { government = absolute_monarchy }
-			}
-			random_owned = {
-				limit = {
-					owner = { 
-						OR = {
-							tag = MOL
-							tag = WAL
-						}	
-					}
-				}
-				owner = { government = prussian_constitutionalism }
-			}
-			random_owned = {
-				limit = {
-					owner = {
-						OR = {
-							tag = NOR 
-							tag = NEW
-							tag = RHO
-							tag = SAF
-							tag = CAN
-							tag = NZL
-							tag = AST
-							tag = COL
-							tag = MRU
-							tag = MSK
-						}
-					} 	
-				}
-				owner = { government = hms_government }
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
+#	clean_up_freed_colonial_govt = {
+#		potential = {
+#			is_vassal = no
+#			OR = {
+#				government = colonial_company
+#				government = dominion
+#			}
+#			NOT = { 
+#				tag = EIC 
+#				tag = MCK
+#				tag = IMG
+#				tag = SER
+#			}
+#			OR = {
+#				NOT = { tag = EGY }
+#				AND = {
+#					tag = EGY
+#					NOT = { has_global_flag = egypt_submitted_to_ottomans }
+#				}
+#			}
+#		}
+#		
+#		allow = {
+#			war = no
+#			is_vassal = no
+#		}
+#		
+#		effect = {
+#			set_country_flag = clean_up_unciv_monarchy
+#			clr_country_flag = clean_up_colonial_government
+#			random_owned = {
+#				limit = { owner = { civilized = yes } }
+#				owner = { government = democracy }
+#			}
+#			random_owned = {
+#				limit = { owner = { civilized = no } }
+#				owner = { government = absolute_monarchy }
+#			}
+#			random_owned = {
+#				limit = {
+#					is_core = ALD
+#					owner = { primary_culture = french }					
+#				}
+#				owner = { 
+#					primary_culture = maghrebi
+#					remove_accepted_culture = maghrebi
+#				}
+#			}
+#			random_owned = {
+#				limit = {
+#					is_core = HDJ
+#					owner = { tag = HDJ }
+#				}
+#				owner = { government = absolute_monarchy }
+#			}
+#			random_owned = {
+#				limit = {
+#					owner = { 
+#						OR = {
+#							tag = MOL
+#							tag = WAL
+#						}	
+#					}
+#				}
+#				owner = { government = prussian_constitutionalism }
+#			}
+#			random_owned = {
+#				limit = {
+#					owner = {
+#						OR = {
+#							tag = NOR 
+#							tag = NEW
+#							tag = RHO
+#							tag = SAF
+#							tag = CAN
+#							tag = NZL
+#							tag = AST
+#							tag = COL
+#							tag = MRU
+#							tag = MSK
+#						}
+#					} 	
+#				}
+#				owner = { government = hms_government }
+#			}
+#		}
+#		
+#		ai_will_do = { factor = 1 }
+#	}
 }
