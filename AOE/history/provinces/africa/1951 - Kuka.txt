@@ -1,12 +1,9 @@
-owner = SOK
+owner = KBO
 
-controller = SOK
-
-add_core = SOK
-
+controller = KBO
 
 add_core = KBO
-
+add_core = SOK
 trade_goods = cotton  state_building = {  level = 5  building = cotton_factory  upgrade = yes  }
 
 terrain = semidesert
