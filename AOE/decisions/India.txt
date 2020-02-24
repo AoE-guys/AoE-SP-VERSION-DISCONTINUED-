@@ -510,7 +510,7 @@ political_decisions = {
 	}
 	
 	form_baluchistan_agency = {
-	picture = form_baluchistan
+		picture = form_baluchistan
         potential = {
 			tag = ENG
 			civilized = yes
@@ -524,6 +524,7 @@ political_decisions = {
 				any_owned_province = { region = KAL_1221 }
 				KAL = { in_sphere = THIS }
 				MAK = { in_sphere = THIS }
+				LAS = { in_sphere = THIS }
 			}
 		}
 
@@ -537,7 +538,13 @@ political_decisions = {
 					owner = { vassal_of = THIS }
 				}
 			}
-			1222 = { #Makran
+			1222 = { #Las Bela
+				OR = {
+					owned_by = THIS
+					owner = { vassal_of = THIS }
+				}
+			}
+			3258 = { #Las Bela
 				OR = {
 					owned_by = THIS
 					owner = { vassal_of = THIS }
@@ -581,6 +588,14 @@ political_decisions = {
 			}
 			random_country = {
 				limit = {
+					tag = LAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
 					tag = MAK
 					exists = yes
 					ai = no
@@ -589,6 +604,14 @@ political_decisions = {
 			}
 			1221 = { secede_province = BLC }
 			1222 = { secede_province = BLC }
+			3258 = { secede_province = BLC }
+			random_owned = { 
+				limit = {
+					province_id = 1144
+					NOT = { is_core = PER }
+				}
+				secede_province = BLC
+			}
 			create_vassal = BLC
 			diplomatic_influence = { who = BLC value = 400 }
 			BLC = { 
@@ -691,14 +714,6 @@ political_decisions = {
 			}
 			random_country = {
 				limit = { tag = BHO exists = yes ai = no }
-				country_event = 11101
-			}
-			random_country = {
-				limit = { tag = REW exists = yes ai = yes }
-				THIS = { inherit = REW }
-			}
-			random_country = {
-				limit = { tag = REW exists = yes ai = no }
 				country_event = 11101
 			}
 			random_country = {

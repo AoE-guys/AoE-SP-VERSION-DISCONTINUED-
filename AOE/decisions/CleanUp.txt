@@ -221,17 +221,17 @@ political_decisions = {
 					}
 				}
 				owner = {
+					#any_owned = {
+					#	limit = {
+					#		has_pop_type = serfs
+					#		has_pop_type = labourers
+					#	}
+					#	any_pop = { limit = { type = serfs } pop_type = labourers }
+					#}
 					any_owned = {
 						limit = {
 							has_pop_type = serfs
-							has_pop_type = labourers
-						}
-						any_pop = { limit = { type = serfs } pop_type = labourers }
-					}
-					any_owned = {
-						limit = {
-							has_pop_type = serfs
-							has_pop_type = farmers
+							#has_pop_type = farmers
 						}
 						any_pop = { limit = { type = serfs } pop_type = farmers }
 					}
@@ -242,17 +242,17 @@ political_decisions = {
 					any_owned_province = { has_pop_type = serfs }
 					NOT = { debt_law = serfdom }
 				}
+				#any_owned = {
+				#	limit = {
+				#		has_pop_type = serfs
+				#		has_pop_type = labourers
+				#	}
+				#	any_pop = { limit = { type = serfs } pop_type = labourers }
+				#}
 				any_owned = {
 					limit = {
 						has_pop_type = serfs
-						has_pop_type = labourers
-					}
-					any_pop = { limit = { type = serfs } pop_type = labourers }
-				}
-				any_owned = {
-					limit = {
-						has_pop_type = serfs
-						has_pop_type = farmers
+						#has_pop_type = farmers
 					}
 					any_pop = { limit = { type = serfs } pop_type = farmers }
 				}
@@ -601,7 +601,7 @@ political_decisions = {
 						33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
 						33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
 					}
-					any_pop = { limit = { type = slaves } literacy = -0.1 }
+					#any_pop = { limit = { type = slaves } literacy = -0.1 }
 				}
 			}
 			
@@ -639,7 +639,7 @@ political_decisions = {
 					33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
 					33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
 				}
-				any_pop = { limit = { type = slaves } literacy = -0.1 }
+				#any_pop = { limit = { type = slaves } literacy = -0.1 }
 			}
 		}
 		ai_will_do = { factor = 1 }

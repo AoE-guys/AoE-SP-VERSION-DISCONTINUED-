@@ -646,7 +646,6 @@ political_decisions = {
 					add_accepted_culture = serb
 					add_accepted_culture = croat
 					add_accepted_culture = slovene
-					add_accepted_culture = montenegrin
 				}
 			}
 			change_tag = YUG
@@ -758,9 +757,6 @@ political_decisions = {
 			BOS = { all_core = { add_core = YUG } }
 			SLO = { all_core = { add_core = YUG } }
 			TUR_853 = { add_core = YUG }
-			YUG = {
-				add_accepted_culture = montenegrin
-			}
 			any_country = {
 				limit = {
 					OR = {
@@ -2207,29 +2203,29 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	montenegro_borders = {
-		picture = montenegro_map
-		potential = {
-			NOT = { tag = CRO }
-			NOT = { tag = BOS }
-			any_owned_province = { is_core = MON }
-			NOT = { has_global_flag = montenegro_organized }
-			year = 1870
-		}
-		
-		allow = {
-			war = no
-			MON = { all_core = { owned_by = THIS } }
-			nationalism_n_imperialism = 1
-		}
-		
-		effect = {
-			set_global_flag = montenegro_organized
-			MON = { all_core = { remove_core = BOS } }
-			MON = { all_core = { remove_core = CRO } }
-			MON = { all_core = { remove_core = DLM } }
-			MON = { all_core = { remove_core = KUK } }
-		}
-		ai_will_do = { factor = 1 }
-	}
+#	montenegro_borders = {
+#		picture = montenegro_map
+#		potential = {
+#			NOT = { tag = CRO }
+#			NOT = { tag = BOS }
+#			any_owned_province = { is_core = MON }
+#			NOT = { has_global_flag = montenegro_organized }
+#			year = 1870
+#		}
+#		
+#		allow = {
+#			war = no
+#			MON = { all_core = { owned_by = THIS } }
+#			nationalism_n_imperialism = 1
+#		}
+#		
+#		effect = {
+#			set_global_flag = montenegro_organized
+#			MON = { all_core = { remove_core = BOS } }
+#			MON = { all_core = { remove_core = CRO } }
+#			MON = { all_core = { remove_core = DLM } }
+#			MON = { all_core = { remove_core = KUK } }
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
 }
