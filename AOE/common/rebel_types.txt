@@ -602,7 +602,7 @@ fascist_rebels = {
 # Communist Rebels
 ###################################
 communist_rebels = {
-	icon = 3
+	icon = 7
 	
 	area = nation 					# Stays within the nation
 	break_alliance_on_win = no
@@ -644,7 +644,11 @@ communist_rebels = {
 
 	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
 	will_rise = {
-		factor = 0.25
+		factor = 0.05
+		modifier = {
+			political_thought_7 = 1
+			factor = 0.25
+		}
 		modifier = {
 			war = yes
 			factor = 0.5
@@ -1588,6 +1592,11 @@ pan_nationalist_rebels = {
 	# triggers a general rising, modifier will be multiplied with the country's army strength and compared to the factions strenght
 	will_rise = {
 		factor = 0.5
+		
+		modifier = {
+			NOT = { year = 1800 }
+			factor = 0
+		}
 			
 		modifier = {
 			war = yes

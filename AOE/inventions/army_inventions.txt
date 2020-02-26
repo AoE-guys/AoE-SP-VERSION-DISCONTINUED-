@@ -772,7 +772,7 @@ machine_gun_armament = {
 }
 colonial_negotiations = {
 	limit = { 
-		year = 1880 
+		year = 1740
 		breech_loaded_rifles = 1
 		has_country_flag = existing_country
 	}
@@ -781,7 +781,13 @@ colonial_negotiations = {
 		base = 0
 		modifier = {
 			factor = -75
-			NOT = { year = 1880 }
+			NOT = {
+				OR = {
+					continent = north_amercia
+					continent = europe
+					is_greater_power = yes
+				}
+			}
 		}
 		modifier = {
 			factor = 25

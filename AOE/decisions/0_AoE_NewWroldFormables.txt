@@ -13,9 +13,9 @@ political_decisions = {
 
 		effect = {
 			prestige = 20
-			change_tag = MEX
 			all_core = { add_core = MEX }
-			all_core = { remove_core = THIS }			
+			all_core = { remove_core = THIS }
+			change_tag = MEX
 		}
 
 		ai_will_do = {
@@ -36,10 +36,10 @@ political_decisions = {
 		}
 
 		effect = {
-			prestige = 20
-			change_tag = GCO
+			prestige = 20		
 			all_core = { add_core = GCO }
-			all_core = { remove_core = THIS }			
+			all_core = { remove_core = THIS }
+			change_tag = GCO
 		}
 
 		ai_will_do = {
@@ -60,10 +60,10 @@ political_decisions = {
 		}
 
 		effect = {
-			prestige = 20
-			change_tag = LPL
+			prestige = 20			
 			all_core = { add_core = LPL }
 			all_core = { remove_core = THIS }
+			change_tag = LPL
 		}
 
 		ai_will_do = {
@@ -85,9 +85,9 @@ political_decisions = {
 
 		effect = {
 			prestige = 20
-			change_tag = PBC
 			all_core = { add_core = PBC }
 			all_core = { remove_core = THIS }
+			change_tag = PBC
 		}
 
 		ai_will_do = {
@@ -109,9 +109,9 @@ political_decisions = {
 
 		effect = {
 			prestige = 20
-			change_tag = BRZ
 			all_core = { add_core = BRZ }
 			all_core = { remove_core = THIS }
+			change_tag = BRZ
 		}
 
 		ai_will_do = {

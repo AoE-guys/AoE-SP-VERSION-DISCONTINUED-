@@ -247,7 +247,7 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
-				nationalism_n_imperialism = 1
+				mass_politics = 1
 				GCF = {
 					exists = yes
 					NOT = { capital = 619 }

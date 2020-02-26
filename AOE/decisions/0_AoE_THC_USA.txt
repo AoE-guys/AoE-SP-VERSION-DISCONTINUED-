@@ -13,9 +13,9 @@ political_decisions = {
 
 		effect = {
 			prestige = 20
-			change_tag = USA
 			all_core = { add_core = USA }
 			all_core = { remove_core = THIS }
+			change_tag = USA
 		}
 
 		ai_will_do = {
@@ -126,43 +126,6 @@ political_decisions = {
 				duration = -1
 			}
 			set_country_flag = hamiltons_tresury_reforms
-		}
-	}
-	
-	buy_louisiana = {
-		picture = new_france_louisiana
-		potential = {
-			tag = USA
-			NOT = { has_country_flag = proposed_to_buy_louisana }
-			ULA = { exists = yes }
-			OR = {
-				BOR = {
-					is_our_vassal = ULA
-				}
-				FRA = {
-					is_our_vassal = ULA
-				}
-			}
-		}
-		allow = {
-			money = 2000000
-			OR = {
-				relation = { 
-					who = BOR
-					value = 100
-				}
-				relation = { 
-					who = FRA
-					value = 100
-				}
-			}
-			is_greater_power = yes
-		}
-		effect = {
-			ULA = {
-				overlord = { country_event = 180500001 }
-			}
-			set_country_flag = { proposed_to_buy_louisana }
 		}
 	}
 	

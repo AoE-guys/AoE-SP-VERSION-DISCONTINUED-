@@ -416,6 +416,12 @@ country_event = {
 		add_global_flag = spanish_succesion_resolved
 		any_country = {
 			limit = {
+				exists = yes
+				OR = {
+					truce_with = SPA
+					truce_with = BOR
+					truce_with = AUS
+				}
 				OR = {
 					has_country_flag = support_habsburg_heir
 					has_country_flag = support_bourbon_heir
@@ -461,6 +467,12 @@ country_event = {
 		add_global_flag = spanish_succesion_resolved
 		any_country = {
 			limit = {
+				exists = yes
+				OR = {
+					truce_with = SPA
+					truce_with = BOR
+					truce_with = AUS
+				}
 				OR = {
 					has_country_flag = support_habsburg_heir
 					has_country_flag = support_bourbon_heir

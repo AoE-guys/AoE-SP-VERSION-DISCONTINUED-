@@ -31,6 +31,8 @@
 #po_uninstall_communist_gov_type
 #po_remove_cores
 #po_colony
+#po_change_heir_bourbon
+#po_change_heir_habsburg
 
 # NOTE: The order in which the peace options are listed is the order in which the AI will normally prioritize them in peace treaties
 
@@ -1351,13 +1353,13 @@ change_heir_habsburg_cb = {
 
 	badboy_factor = 0
 	prestige_factor = 2
-	peace_cost_factor = 50
+	peace_cost_factor = 85
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
-	truce_months = 48
+	truce_months = 60
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -1382,6 +1384,8 @@ change_heir_habsburg_cb = {
 	
 	war_name = SUCCESSION_WAR_NAME
 	
+	po_remove_prestige = yes
+	
 	on_add = {
 		move_issue_percentage = { 
 			from = jingoism 
@@ -1404,13 +1408,13 @@ change_heir_bourbon_cb = {
 
 	badboy_factor = 0
 	prestige_factor = 2
-	peace_cost_factor = 50
+	peace_cost_factor = 85
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
-	truce_months = 24
+	truce_months = 60
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -1434,6 +1438,8 @@ change_heir_bourbon_cb = {
 	tws_battle_factor = 2.0 # battle score twice that of oppenent
 	
 	war_name = SUCCESSION_WAR_NAME
+	
+	po_remove_prestige = yes
 	
 	on_add = {
 		move_issue_percentage = { 
