@@ -958,37 +958,37 @@
 	aristocrats = {
 		culture = mongol
 		religion = gelugpa
-		size = 80
+		size = 8
 	}
 
 	clergymen = {
 		culture = mongol
 		religion = gelugpa
-		size = 125
+		size = 12
 	}
 
 	artisans = {
 		culture = mongol
 		religion = gelugpa
-		size = 525
+		size = 25
 	}
 
 	soldiers = {
 		culture = mongol
 		religion = gelugpa
-		size = 225
+		size = 25
 	}
 
 	farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 5001
+		size = 51
 	}
 
 	labourers = {
 		culture = mongol
 		religion = gelugpa
-		size = 214
+		size = 14
 	}
 }
 #Azov (172000/43000 POPS)
@@ -4980,11 +4980,24 @@
 		religion = sunni
 		size = 62
 	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 2062
+	}
+
 
 	farmers = {
 		culture = tatar
 		religion = sunni
 		size = 4375
+	}
+	
+	farmers = {
+		culture = mongol
+		religion = gelugpa
+		size = 4005
 	}
 
 	labourers = {
@@ -5196,44 +5209,44 @@
 	}
 	
 	clergymen = {
-		culture = volga_german
-		religion = catholic
+		culture = mongol
+		religion = gelugpa
 		size = 75
 	}
 	
 	bureaucrats = {
-		culture = volga_german
-		religion = catholic
+		culture = mongol
+		religion = gelugpa
 		size = 12
 	}
 
 	artisans = {
-		culture = volga_german
-		religion = catholic
+		culture = mongol
+		religion = gelugpa
 		size = 2125
 	}
 
 	farmers = {
-		culture = volga_german
-		religion = catholic
-		size = 4056
+		culture = mongol
+		religion = gelugpa
+		size = 3056
 	}
 
 	labourers = {
-		culture = volga_german
-		religion = catholic
+		culture = mongol
+		religion = gelugpa
 		size = 214
 	}
 	
 	soldiers = {
-		culture = volga_german
-		religion = catholic
+		culture = mongol
+		religion = gelugpa
 		size = 250
 	}
 
 	aristocrats = {
-		culture = volga_german
-		religion = catholic
+		culture = mongol
+		religion = gelugpa
 		size = 475
 	}	
 }
@@ -5344,9 +5357,9 @@
 	}
 
 	soldiers = {
-		culture = russian
-		religion = orthodox
-		size = 550
+		culture = mongol
+		religion = gelugpa
+		size = 1550
 	}
 
 	aristocrats = {
@@ -5377,6 +5390,12 @@
 		culture = tatar
 		religion = sunni
 		size = 4161
+	}
+	
+	farmers = {
+		culture = mongol
+		religion = gelugpa
+		size = 3161
 	}
 
 	labourers = {
@@ -5474,13 +5493,13 @@
 	soldiers = {
 		culture = mongol
 		religion = gelugpa
-		size = 550
+		size = 2550
 	}
 
 	farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 12504
+		size = 10004
 	}
 
 	labourers = {
