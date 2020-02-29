@@ -114,20 +114,6 @@ modifier = {
 }
 
 song = {
-	name = "La_Victoire_est_a_Nous.mp3"
-
-	modifier = {
-		factor = 0
-		war = yes
-	}
-
-modifier = {
-		factor = 1
-		war = no
-	}
-}
-
-song = {
 	name = "fife_and_drum.mp3"
 
 	modifier = {
@@ -156,7 +142,7 @@ modifier = {
 }
 
 song = {
-	name = "titletheme.mp3"
+	name = "thecoronation_titletheme.mp3"
 	
 	modifier = {
 		factor = 0

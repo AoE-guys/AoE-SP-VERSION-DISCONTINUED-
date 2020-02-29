@@ -3,21 +3,8 @@ country_event = {
 	desc = "usa_gov"
 	id = 177601
 	major = yes
-	fire_only_once = yes
-	
-	trigger = {
-		is_vassal = no
-		OR = {
-			government = colonial_company
-			government = dominion
-		}
-		NOT = { has_country_flag = constitution_made }
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
+	is_triggered_only = yes	
+
 	option = {
 		name = "A Republic with a strong central authority"	
 		government = democracy
@@ -54,7 +41,7 @@ country_event = {
 		government = hms_government
 		any_pop = { 
 			limit = {
-				type = intellectuals
+				type = clergymen
 			}
 			militancy = 2
 			consciousness = 4

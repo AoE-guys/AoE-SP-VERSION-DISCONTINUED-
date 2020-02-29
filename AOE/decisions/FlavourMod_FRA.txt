@@ -618,7 +618,7 @@ political_decisions = {
 	}
 	
 	annex_rhineland = {
-	picture = rhineland
+		picture = rhineland
 		potential = {
 			primary_culture = french
 			is_greater_power = yes
@@ -719,7 +719,7 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-		
+
 	france_rename_rhine = {
 		picture = gtfo
 		potential = {
@@ -1170,7 +1170,7 @@ political_decisions = {
 	#	
 	#	ai_will_do = { factor = 1 }
 	#}
-		
+	
 	establish_an_engineer_school = {
 		picture = technical_fine_arts_school
 		potential = {

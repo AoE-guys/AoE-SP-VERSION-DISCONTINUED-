@@ -44,7 +44,7 @@ country_event = {
 		BOR = { set_country_flag = support_bourbon_heir }
 	
 		ai_chance = {
-			factor = 0.70
+			factor = 0.85
 		}
 	}
 	
@@ -58,7 +58,7 @@ country_event = {
 		BOR = { set_country_flag = support_habsburg_heir }
 	
 	    ai_chance = {
-			factor = 0.30
+			factor = 0.15
 		}
 	}
 }

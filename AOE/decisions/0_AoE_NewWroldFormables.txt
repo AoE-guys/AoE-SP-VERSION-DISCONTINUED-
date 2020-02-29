@@ -118,4 +118,27 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	draft_a_constitution =	{
+		potential = {
+			is_vassal = no
+			OR = {
+				government = colonial_company
+				government = dominion
+			}
+			NOT = { has_country_flag = constitution_made }
+		}
+		
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = constitution_made
+			country_event = 177601
+			prestige = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
