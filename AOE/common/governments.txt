@@ -156,6 +156,21 @@ federal_democracy = {
 	flagType = republic
 }
 
+tribal_democracy = {
+	liberal = yes
+	#socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+	flagType = republic
+}
+
 theocracy = {
 	#which ideology of parties.
 	#reactionary = yes

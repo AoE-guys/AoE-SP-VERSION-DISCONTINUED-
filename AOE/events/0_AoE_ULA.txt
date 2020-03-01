@@ -1,0 +1,59 @@
+country_event = {
+	id = 1679000
+	title = "Louisiana asks for French investigation"
+	desc = "EVTDESC1679000"
+	picture = conscription_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send off the envoy immedietly"
+		money = 5000
+		ULA = {
+			country_event = 1679001
+			money = -5000 
+			add_country_modifier = {
+				name = french_military_advisors
+				duration = 7300
+			}
+		}
+		prestige = 30
+		ai_chance = { factor = 1 }	
+	}
+	
+	option = {
+		name = "They're on their own"
+		country_event = 1679002
+		prestige = 5
+	}
+}
+country_event = {
+	id = 1679001
+	title = "French advisors arrive"
+	desc = "EVTDESC1679001"
+	picture = conscription_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		money = -5000 
+		add_country_modifier = {
+			name = french_military_advisors
+			duration = 7300
+		}
+	}
+}
+country_event = {
+	id = 1679002
+	title = "France refuses"
+	desc = "EVTDESC1679002"
+	picture = conscription_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh well..."
+		relation = {
+			who = BOR
+			value = -20
+		}
+	}
+}

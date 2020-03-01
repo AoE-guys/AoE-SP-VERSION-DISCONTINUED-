@@ -14,7 +14,7 @@ country_event = {
 	
 	trigger = {
 		tag = SPA
-		year = 1700
+		year = 1701
 		exists = yes
 		BOR = { exists = yes }
 		AUS = { exists = yes }
@@ -161,6 +161,14 @@ country_event = {
 				       }
 				}
 			}
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 0.7
+				in_sphere = AUS
+			}
 		}
 	}
 	
@@ -180,6 +188,10 @@ country_event = {
 		set_gloabal_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.50
+			modifier = {
+				factor = 3
+				war = yes
+			}
 		}
 	}
 }
@@ -299,6 +311,10 @@ country_event = {
 				rank = 8
 				NOT = { tag = RUS }
 			}
+			modifier = {
+				factor = 0.7
+				in_sphere = AUS
+			}
 		}
 	}
 	
@@ -310,6 +326,10 @@ country_event = {
 		set_gloabal_flag = spanish_war_begun
 	    ai_chance = {
 			factor = 0.20
+			modifier = {
+				factor = 3
+				tag = BAV
+			}
 		}
 	}
 
@@ -318,6 +338,10 @@ country_event = {
 		set_gloabal_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.50
+			modifier = {
+				factor = 3
+				war = yes
+			}
 		}
 	}
 }
@@ -459,6 +483,9 @@ country_event = {
 					}
 				}
 			secede_province = BOR
+		}
+		BOR = {
+			release_vassal = NAP
 		}
 		}
 		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA  end_war = AUS }

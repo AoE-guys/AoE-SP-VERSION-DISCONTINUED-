@@ -3981,7 +3981,40 @@ the_safeheaven_for_liberalism = {
 	ruling_party_support = 0.005
 	global_immigrant_attract = 2
 }
+###louisiana###
+army_reform_ula = {
+	and_organisation = 0.05
+	army_tech_research_bonus = 0.05
+	land_unit_start_experience = 5
+	icon = 17
+}
+native_assimilation_act_policy_ula = {
+	assimilation_rate = 0.3
+	icon = 19
+}
+french_military_advisors = {
+	and_organisation = 0.05
+	army_tech_research_bonus = 0.05
+	land_unit_start_experience = 5
+	icon = 17
+}
+for_god_and_people = {
+	prestige = 0.01
+	army_organisation = 0.05
+	diplomatic_points_modifier = 0.5
+	influence_modifier = 0.05
+	min_military_spending = 0.25
+	icon = 7
+}
+reformed_scholarship = {
+global_pop_consciousness_modifier = 0.05
+education_efficiency_modifier = 0.1
+}
 #colonization##
+native_integration  = {
+	global_assimilation_rate = 0.1
+	icon = 19
+}
 settlement_colony = {
 	#local_RGO_output = -0.0
 	#local_factory_output = -0.00

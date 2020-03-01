@@ -80,6 +80,52 @@ political_decisions = {
 		}
 	}
 	
+	claim_canada = {
+		picture = canada_map
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = claim_canada
+			}
+		}
+		allow = {
+			war = no
+			political_thought_7 = 1
+			NOT = { 
+				alliance_with = FCA
+			}
+			war_policy = jingoism
+			is_greater_power = yes
+			military_score = 150
+			OR = {
+				government = absolute_monarchy
+				AND = {
+					ruling_party_ideology = reactionary
+					OR = {
+						government = democracy
+						government = hms_government
+						government = federal_democracy
+					}
+					NOT = {
+						OR = {
+						political_reforms = party_appointed
+						political_reforms = appointed
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = claim_canada
+			FCA = {
+				all_core = {
+					add_core = USA
+				}
+			}
+			badboy = 30
+		}
+	}
+	
 	war_on_natives = {
 		picture = native_lands
 		potential = {
@@ -129,6 +175,27 @@ political_decisions = {
 		}
 	}
 	
+	enact_the_bill_of_rights = {
+		picture = bill_of_rights
+		potential = {
+			tag = USA
+			NOT = { has_country_flag = bill_of_rights }
+		}
+		allow = {
+			war = no
+			militancy = 4
+			citizenship_policy = full_citizenship
+		}
+		effect = {
+			add_country_modifier = { 
+				name = freedom_of_religion
+				duration = -1
+			}
+			set_country_flag = bill_of_rights
+			militancy = 3
+		}
+	}
+	
 	usa_navy = {
 		picture = navy
 		potential = {
@@ -160,11 +227,18 @@ political_decisions = {
 		picture = liberty
 		potential = {
 			has_country_flag = new_world_nation
-			is_independent = yes
+			is_vassal = no
 			NOT = { has_global_flag = bastion_of_liberty }
+			NOT = {
+				OR = {
+					government = colonial_company
+					government = dominion
+				}
+			}
 		}
 		allow = {
 			OR = {
+				government = federal_democracy
 				government = democracy
 				government = hms_government
 			}
