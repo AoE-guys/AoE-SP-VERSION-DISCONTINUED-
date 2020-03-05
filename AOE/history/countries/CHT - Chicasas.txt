@@ -1,7 +1,7 @@
 capital = 143
 civilized = yes   primary_culture = native_american_minor
 religion = protestant
-government = democracy
+government = tribal_democracy
 plurality = 5.0
 nationalvalue = nv_liberty
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.50
@@ -17,7 +17,7 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
-
+schools = unciv_tech_school
 slavery = yes_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = universal_weighted_voting

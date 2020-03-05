@@ -55,14 +55,14 @@ ruling_party = "Nobility Faction"
 upper_house = {
 	fascist = 0
 	liberal = 30
-	conservative = 25
-	reactionary = 40
+	conservative = 60
+	reactionary = 5
 	anarcho_liberal = 5
 	socialist = 0
 	communist = 0
 }
 oob = "PLC_oob.txt"
-
+schools = culture_tech_school
 #tech
 post_napoleonic_thought = 1
 flintlock_rifles = 1

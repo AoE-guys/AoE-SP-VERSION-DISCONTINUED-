@@ -8,7 +8,13 @@ political_decisions = {
 			}
 		}
 		allow = {
-		
+			money = 50000
+			war = no
+			OR = {
+				citizens_rights = primary_culture_only
+				citizens_rights = culture_voting_only
+			}
+			citizenship_policy = limited_citizenship
 		}
 		effect = {
 			set_country_flag = increased_colonization_efforts
@@ -16,6 +22,7 @@ political_decisions = {
 				name = native_integration
 				duration = 5475
 			}
+			money = -50000
 		}
 		ai_will_do = {
 			factor = 1
@@ -34,8 +41,8 @@ political_decisions = {
 			is_vassal = no
 		}
 		allow = {
-			political_reforms = no_slavery
-			political_reforms = all_voting_pops
+			slavery = no_slavery
+			vote_franschise = all_voting_pops
 		}
 		effect = {
 			prestige = 50
@@ -192,8 +199,8 @@ political_decisions = {
 			war = no
 			mass_politics = 1
 			OR = {
-				political_reforms = primary_culture_only
-				political_reforms = culture_voting_only
+				citizens_rights = primary_culture_only
+				citizens_rights = culture_voting_only
 			}
 			citizenship_policy = limited_citizenship
 		}

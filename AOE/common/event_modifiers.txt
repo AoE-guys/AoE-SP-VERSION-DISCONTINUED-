@@ -4007,8 +4007,29 @@ for_god_and_people = {
 	icon = 7
 }
 reformed_scholarship = {
-global_pop_consciousness_modifier = 0.05
-education_efficiency_modifier = 0.1
+	global_pop_consciousness_modifier = 0.05
+	education_efficiency_modifier = 0.1
+}
+####Unciv reform system####
+western_values = {
+	prestige = 0.02
+	diplomatic_points_modifier = 0.1
+	education_efficiency_modifier = 0.1
+}
+reformed_army = {
+	army_organisation = 0.1
+	mobilisation_economy_impact = -0.25
+	supply_consumption = -0.15
+	mobilisation_size = 0.05
+}
+reformed_beurocracy = {
+	education_efficiency_modifier = 0.1
+	administrative_efficiency_modifier = 0.1
+	tax_efficiency = 0.1
+}
+reformed_industry = {
+	factory_input = 0.1
+	global_population_growth = 0.05
 }
 #colonization##
 native_integration  = {

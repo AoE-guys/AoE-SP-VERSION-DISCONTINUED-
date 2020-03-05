@@ -140,12 +140,51 @@ modifier = {
 		war = no
 	}
 }
+song = {
+	name = "Felix Slatkin album 4 Fifes And drums.mp3"
+
+	modifier = {
+		factor = 0
+		war = yes
+	}
+
+modifier = {
+		factor = 1
+		war = no
+	}
+}
+song = {
+	name = "Alceste Marche des Combattants.mp3"
+
+	modifier = {
+		factor = 0
+		war = yes
+	}
+
+modifier = {
+		factor = 1
+		war = no
+	}
+}
 
 song = {
 	name = "thecoronation_titletheme.mp3"
 	
 	modifier = {
 		factor = 0
+	}
+}
+song = {
+	name = "thecoronation_titletheme_2.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+	}
+
+modifier = {
+		factor = 0
+		war = no
 	}
 }
 song = {

@@ -3563,6 +3563,11 @@ country_event = {
 				who = RUS
 				value = -200
 			}
+			define_general = {
+				name = "Francis II Rákóczi"
+				personality = persistant
+				background = cavalry_school
+			}
 		}
 		war = {
 			target = HUN
@@ -3681,6 +3686,11 @@ country_event = {
 			add_country_modifier = {
 				name = no_more_war
 				duration = 14
+			}
+			define_general = {
+				name = "Francis II Rákóczi"
+				personality = persistant
+				background = cavalry_school
 			}
 		}
 		AUS = {
