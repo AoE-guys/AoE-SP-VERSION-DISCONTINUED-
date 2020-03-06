@@ -223,6 +223,70 @@ political_decisions = {
 		}
 	}
 	
+	build_the_white_house = {
+		picture = white_house
+		potential = {
+			tag = USA
+			NOT = { has_country_flag = build_the_white_house }
+			any_province = {
+				has_province_flag = us_capital
+			}
+		}
+		allow = {
+			money = 20000
+			war = no
+		}
+		effect = {
+			set_country_flag = build_the_white_house
+			money = -20000
+			any_province = {
+				limit = {
+					has_province_flag = us_capital
+				}
+				set_province_flag = white_house
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 3650
+				}
+			}
+			prestige = 20
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	burn_down_the_white_house = {
+		picture = white_house_fire
+		potential = {
+			NOT = { tag = USA }
+			USA = {
+				exists = yes
+			}
+			USA = {
+				capital_scope = {
+					controlled_by = THIS
+				}
+			}
+			NOT = { has_global_flag = white_house_burned }
+		}
+		allow = {
+			USA = {
+				capital_scope = {
+					controlled_by = THIS
+				}
+			}
+		}
+		effect = {
+			set_country_flag = white_house_burned
+			country_event = 17860002
+			badboy = 7
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
 	the_bastion_of_liberty = {
 		picture = liberty
 		potential = {

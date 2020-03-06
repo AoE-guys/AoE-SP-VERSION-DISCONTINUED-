@@ -143,6 +143,30 @@ political_decisions = {
 		}
 	}
 	
+	become_can = {
+		picture = become_can
+		potential = {
+			tag = RPL
+			NOT = { exists = CAN }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+		}
+
+		effect = {
+			prestige = 20
+			all_core = { add_core = CAN }
+			all_core = { remove_core = THIS }
+			change_tag = CAN
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	draft_a_constitution =	{
 		potential = {
 			is_vassal = no

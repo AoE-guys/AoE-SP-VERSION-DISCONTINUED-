@@ -101,6 +101,80 @@ country_event = {
 		}
 	}
 }
+##capital stuff##
+country_event = {
+	id = 17860001
+	title = "The capital of United States"
+	desc = "EVTDESC17860001"
+	picture = usa
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		NOT = { government = dominion }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Construct a new capital!!"
+		prestige = 15
+		capital = 220
+		220 = {
+			set_province_flag = us_capital
+		}
+	}
+	option = {
+		name = "Philadelphia is our most beautiful city"
+		prestige = 15
+		capital = 223
+		223 = {
+			set_province_flag = us_capital
+		}
+	}
+	
+	option = {
+		name = "New York obviously, it has the biggest population"
+		prestige = 15
+		capital = 232
+		232 = {
+			set_province_flag = us_capital
+		}
+	}
+	
+	option = {
+		name = "Charleston, since southern states are more important"
+		prestige = 15
+		capital = 205
+		205 = {
+			set_province_flag = us_capital
+		}
+	}
+}
+country_event = {
+	id = 17860002
+	title = "The burning of the wite house"
+	desc = "EVTDESC173604"
+	picture = vienna_boom
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "Those saveges..."
+		capital_scope = {
+			life_rating = -3
+			RGO_size = -1
+			fort = -1
+			infrastructure = -2
+		}
+		treasury = -5000
+		prestige = -30
+	}
+}
+	
 ##Louisiana purchase##
 country_event = {
 	id = 180500001
