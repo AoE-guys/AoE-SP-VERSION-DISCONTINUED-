@@ -3887,7 +3887,7 @@ imperial_navy_engieering_school = {
 	icon = 15
 }
 prussian_military_advisors = {
-	and_organisation = 0.05
+	land_organisation = 0.05
 	army_tech_research_bonus = 0.05
 	land_unit_start_experience = 5
 	icon = 17
@@ -4030,6 +4030,13 @@ reformed_beurocracy = {
 reformed_industry = {
 	factory_input = 0.1
 	global_population_growth = 0.05
+}
+####French canada####
+french_naval_school = {
+	navy_tech_research_bonus = 0.05
+	leadership_modifier = 0.01
+	naval_organisation = 0.10
+	icon = 17
 }
 #colonization##
 native_integration  = {

@@ -1,0 +1,124 @@
+political_decisions = {
+	new_england_claim = {
+	picture = colonization
+		potential = {
+			NOT = { has_country_flag = new_england_claimed }
+			OR = {
+				tag = QUE
+				tag = CAN
+			}
+		}
+		allow = {
+			war_policy = jingoism
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = new_england_claimed
+			USA_247 = {
+				add_core = THIS
+			}
+			badboy = 6
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hundsun_bay_company_claim = {
+		picture = colonization
+		potential = {
+			NOT = { has_country_flag = hundsun_bay_company_claimed }
+			OR = {
+				tag = QUE
+				tag = FCA
+			}
+		}
+		allow = {
+			war_policy = jingoism
+			total_amount_of_ships = 50
+		}
+		effect = {
+			set_country_flag = hundsun_bay_company_claimed
+			RPL = {
+				add_core = THIS
+			}
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#	colonize_north_east = {
+#		picture = colonization
+#		potential = {
+#			OR = {
+#				tag = QUE
+#				tag = FCA
+#			}
+#			NOT = { has_country_flag = colonized_north_east }
+#		}
+#		allow = {
+#			RPL = {
+#				is_owned_by = THIS
+#			}
+#			invention = colonial_negotiations
+#			money = 250000
+#		}
+#		effect = {
+#			set_country_flag = colonized_north_east
+#			money = -250000
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+	fund_merchant_navy = {
+		picture = colonization
+		potential = {
+			OR = {
+				tag = QUE
+				tag = FCA
+			}
+			NOT = { has_country_flag = fund_merchant_navy }
+		}
+		allow = {
+			blue_and_brown_water_schools = 1
+			steel_steamers = 1
+			total_amount_of_ships = 75
+		}
+		effect = {
+			set_country_flag = fund_merchant_navy
+			add_country_modifier = {
+				name = french_naval_school
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	####Rupert's land/Canada####
+	claim_fench_canada = {
+		picture = colonization
+		potential = {
+			NOT = { has_country_flag = claimed_fench_canada }
+			OR = {
+				tag = RPL
+				tag = CAN
+			}
+		}
+		allow = {
+			war_policy = jingoism
+			total_amount_of_ships = 15
+		}
+		effect = {
+			set_country_flag = claimed_fench_canada
+			FCA = {
+				add_core = THIS
+			}
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

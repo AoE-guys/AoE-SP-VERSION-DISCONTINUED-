@@ -166,12 +166,12 @@ political_decisions = {
 		allow = {
 			has_building = fort
 			has_building = port
-			money = 10000
+			money = 100000
 		}
 		effect = {
 			set_country_flag = new_orlean
 			prestige = 15
-			money = -10000
+			money = -100000
 			139 = {
 				change_province_name = "Nouvelle-Orleans"
 				add_province_modifier = {
@@ -242,7 +242,7 @@ political_decisions = {
 						NOT = { continent = north_america }
 					}
 					any_country = {
-						is_vassal_of = BOR
+						vassal_of = BOR
 						NOT = { continent = north_america }
 					}
 				}
@@ -252,7 +252,7 @@ political_decisions = {
 						NOT = { continent = north_america }
 					}
 					any_country = {
-						is_vassal_of = FRA
+						vassal_of = FRA
 						NOT = { continent = north_america }
 					}
 				}
