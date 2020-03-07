@@ -3500,6 +3500,7 @@ country_event = {
 		tag = AUS
 		owns = 641
 		war = yes
+		has_global_flag = spanish_succesion_crisis
 		NOT = {
 			HUN = { involved_in_crisis = yes }
 			exists = HUN

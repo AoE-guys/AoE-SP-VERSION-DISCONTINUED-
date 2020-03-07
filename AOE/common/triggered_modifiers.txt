@@ -875,10 +875,15 @@ help_ai_russia = {
 			capital = 2447 #Brazil
 			owns = 2379 #Argentina
 			owns = 2172 #Mexico
+			owns = 549 #Prussia
 			primary_culture = central_american
 			is_culture_group = south_slavic
 			primary_culture = greek
 			is_culture_group = pan_romanian
+			AND = {
+				owns = 322 #Sweden
+				NOT = { year = 1710 }
+			}
 			AND = { 
 				owns = 1649
 				owns = 1657
@@ -898,6 +903,49 @@ help_ai_russia = {
 	mobilisation_size = 0.01
 	war_exhaustion = -0.5
 }
+help_ai_sweden_and_austria = {
+	trigger = {
+		OR = {
+			AND = {
+				owns = 322 #Sweden
+				NOT = { year = 1710 }
+			}
+			AND = { 
+				owns = 619 #Austria
+				NOT = { year = 1705 }
+			}
+		}
+		ai = yes
+	}
+	icon = 10
+	tax_efficiency = 0.15
+	administrative_efficiency_modifier = 0.05
+	supply_consumption = -0.1
+	education_efficiency_modifier = 0.2
+	mobilisation_size = 0.15
+	war_exhaustion = -0.5
+}
+
+german_minors_ai_help = {
+
+	trigger = {
+		OR = {
+			primary_culture = north_german
+			primary_culture = south_german
+		}
+		NOT = { owns = 619 }
+		NOT = { year = 1740 }
+		ai = yes
+	}
+	icon = 10
+	tax_efficiency = 0.05
+	supply_consumption = -0.15
+	influence_modifier = -0.05
+	war_exhaustion = -0.5
+	mobilisation_size = 0.1
+
+}
+
 
 help_ai_usa = {
 	trigger = {

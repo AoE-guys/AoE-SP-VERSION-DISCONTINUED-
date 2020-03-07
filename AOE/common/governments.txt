@@ -81,6 +81,17 @@ absolute_monarchy = {
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
+archduchy = {
+	#liberal = yes
+	conservative = yes
+	reactionary = yes
+	#socialist = yes
+	
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = republic
+}
  
 prussian_constitutionalism = {
 	liberal = yes
