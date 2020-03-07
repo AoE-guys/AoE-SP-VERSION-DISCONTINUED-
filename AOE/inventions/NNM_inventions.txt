@@ -200,38 +200,6 @@ spirit_of_freedom = {
 	}
 }
 
-carlism = {
-	limit = {
-		classicism_n_early_romanticism = 1
-		OR = {
-			tag = SPA
-			tag = SPC
-		}
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 3
-			ruling_party_ideology = reactionary
-		}
-		modifier = {
-			factor = 2
-			NOT = { government = absolute_monarchy }
-		}
-	}
-	effect = {
-		rebel_org_gain = {
-			faction = carlist_rebels
-			value = 0.75
-		}
-		rebel_org_gain = {
-			faction = christino_rebels
-			value = 0.75
-		}
-	}
-}
-
 the_dark_continent = {
 	limit = {
 		has_country_flag = existing_country
