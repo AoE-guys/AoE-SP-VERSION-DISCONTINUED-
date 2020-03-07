@@ -5,56 +5,43 @@
 	aristocrats = {
 		culture = central_american
 		religion = catholic
-		size = 546
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 56
 	}
 
 	bureaucrats = {
 		culture = central_american
 		religion = catholic
 		size = 52
-		militancy = 9
-		rebel_type = nationalist_rebels
 	}
 
 	officers = {
 		culture = central_american
 		religion = catholic
 		size = 39
-		militancy = 9
-		rebel_type = nationalist_rebels
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 247
-		militancy = 9
-		rebel_type = nationalist_rebels
 	}
 
 	artisans = {
 		culture = central_american
 		religion = catholic
-		size = 1248
+		size = 248
 	}
 
 	soldiers = {
 		culture = central_american
 		religion = catholic
-		size = 767
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 3767
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 22581
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 2581
 	}
 }
 #Rivas (40000/10000 POPS)
@@ -62,40 +49,31 @@
 	aristocrats = {
 		culture = central_american
 		religion = catholic
-		size = 143
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 43
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 52
-		militancy = 9
-		rebel_type = nationalist_rebels
 	}
 
 	artisans = {
 		culture = central_american
 		religion = catholic
-		size = 260
+		size = 60
 	}
 
 	soldiers = {
 		culture = central_american
 		religion = catholic
-		size = 52
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 1052
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 4693
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 463
 	}
 }
 #Esteli (48000/12000 POPS)
@@ -103,42 +81,31 @@
 	aristocrats = {
 		culture = central_american
 		religion = catholic
-		size = 169
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 19
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 65
-		militancy = 9
-		rebel_type = nationalist_rebels
 	}
 
 	artisans = {
 		culture = central_american
 		religion = catholic
-		size = 312
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 32
 	}
 
 	soldiers = {
 		culture = central_american
 		religion = catholic
-		size = 65
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 1065
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 6149
-		militancy = 9
-		rebel_type = nationalist_rebels
+		size = 649
 	}
 }
 #Bluefields (12000/3000 POPS)
@@ -146,7 +113,7 @@
 	aristocrats = {
 		culture = central_american
 		religion = catholic
-		size = 5
+		size = 1
 	}
 
 	clergymen = {
@@ -158,19 +125,19 @@
 	artisans = {
 		culture = central_american
 		religion = catholic
-		size = 8
+		size = 2
 	}
 
 	soldiers = {
 		culture = central_american
 		religion = catholic
-		size = 5
+		size = 105
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 59
+		size = 9
 	}
 
 	labourers = {
@@ -182,13 +149,13 @@
 	soldiers = {
 		culture = afro_caribbean
 		religion = catholic
-		size = 52
+		size = 2
 	}
 
-	farmers = {
+	slaves = {
 		culture = afro_caribbean
 		religion = catholic
-		size = 133
+		size = 233
 	}
 
 	labourers = {
@@ -200,7 +167,7 @@
 	farmers = {
 		culture = afro_caribbean
 		religion = animist
-		size = 94
+		size = 9
 	}
 
 	labourers = {
@@ -212,7 +179,7 @@
 	farmers = {
 		culture = native_american_minor #native_american_minor
 		religion = animist
-		size = 1144
+		size = 1744
 	}
 
 }
