@@ -1,6 +1,6 @@
 political_decisions = {
 	new_england_claim = {
-	picture = colonization
+	picture = new_england_map
 		potential = {
 			NOT = { has_country_flag = new_england_claimed }
 			OR = {
@@ -24,7 +24,7 @@ political_decisions = {
 		}
 	}
 	hundsun_bay_company_claim = {
-		picture = colonization
+		picture = claim_hudson_bay
 		potential = {
 			NOT = { has_country_flag = hundsun_bay_company_claimed }
 			OR = {
@@ -72,7 +72,7 @@ political_decisions = {
 #		}
 #	}
 	fund_merchant_navy = {
-		picture = colonization
+		picture = merchant_navy
 		potential = {
 			OR = {
 				tag = QUE
@@ -97,7 +97,11 @@ political_decisions = {
 		}
 	}
 	####Rupert's land/Canada####
+<<<<<<< HEAD
 	claim_french_canada = {
+=======
+	claim_fench_canada = {
+>>>>>>> parent of c751f39... DMS
 		picture = canada_map
 		potential = {
 			NOT = { has_country_flag = claimed_fench_canada }

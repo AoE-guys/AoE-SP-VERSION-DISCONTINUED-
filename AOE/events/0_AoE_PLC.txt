@@ -118,10 +118,11 @@ country_event = {
 
 	trigger = {
 		government = elective_monarchy_oligarchy
-		average_militancy = 6
+		average_militancy = 8
 		war = yes
 		war_exhaustion = 15
 		has_country_modifier = szlachta_war_taxes
+		part_of_sphere = yes
 	}
 	
 	mean_time_to_happen = {
@@ -133,6 +134,22 @@ country_event = {
 		add_country_modifier = {
 			name = szlachta_opposition
 			duration = 1825
+		}
+		add_country_modifier = {
+			name = great_statesman
+			duration = 1825
+		}
+		any_pop = {
+			ideology = {
+				factor = 0.3
+				value = reactionary
+			}
+		}
+		any_pop = {
+			limit = {
+				NOT = { agree_with_ruling_party = 0.7 }
+			}
+			militancy = 3
 		}
 		government = absolute_monarchy
 		vote_franschise = none_voting
@@ -150,5 +167,18 @@ country_event = {
 	option = {
 		name = "This is too drastic for my liking"
 		ai_will_do = { factor = 1 }
+	}
+}
+country_event = {
+	id = 156904
+	title = "Szlachta reinstitutes the elective monarchy"
+	desc = "EVTDESC156904"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We were on the verge of greatness..."
+		government = elective_monarchy_oligarchy
+		election = yes
 	}
 }
