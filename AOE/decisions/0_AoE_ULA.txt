@@ -164,10 +164,8 @@ political_decisions = {
 			}
 		}
 		allow = {
-			139 = {
-				has_building = fort
-				has_building = naval_base
-			}
+			has_building = fort
+			has_building = port
 			money = 100000
 		}
 		effect = {
