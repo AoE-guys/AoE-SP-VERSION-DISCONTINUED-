@@ -876,6 +876,7 @@ help_ai_russia = {
 			owns = 2379 #Argentina
 			owns = 2172 #Mexico
 			owns = 549 #Prussia
+			owns = 300 #Britain/England
 			primary_culture = central_american
 			is_culture_group = south_slavic
 			primary_culture = greek
@@ -914,6 +915,11 @@ help_ai_sweden_and_austria = {
 				owns = 619 #Austria
 				NOT = { year = 1705 }
 			}
+			AND = {
+				owns = 232 #USA
+				year = 1756
+				NOT = { year = 1789 }
+			}
 		}
 		ai = yes
 	}
@@ -922,7 +928,7 @@ help_ai_sweden_and_austria = {
 	administrative_efficiency_modifier = 0.05
 	supply_consumption = -0.1
 	education_efficiency_modifier = 0.2
-	mobilisation_size = 0.15
+	mobilisation_size = 0.2
 	war_exhaustion = -0.5
 }
 
@@ -942,7 +948,7 @@ german_minors_ai_help = {
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	war_exhaustion = -0.5
-	mobilisation_size = 0.1
+	mobilisation_size = 0.3
 
 }
 
