@@ -39,8 +39,8 @@
 	}
 
 	farmers = {
-		culture = central_american
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 2581
 	}
 }
@@ -71,8 +71,8 @@
 	}
 
 	farmers = {
-		culture = central_american
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 463
 	}
 }
@@ -103,8 +103,8 @@
 	}
 
 	farmers = {
-		culture = central_american
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 649
 	}
 }
@@ -180,6 +180,12 @@
 		culture = native_american_minor #native_american_minor
 		religion = animist
 		size = 1744
+	}
+	
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 1044
 	}
 
 }
