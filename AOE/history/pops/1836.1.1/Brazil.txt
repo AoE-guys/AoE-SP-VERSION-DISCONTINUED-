@@ -288,6 +288,36 @@
 		size = 87
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 26
+	}
+
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 130
+	}
+
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 26
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 168
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 30
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
@@ -384,6 +414,18 @@
 		culture = amazonian
 		religion = catholic
 		size = 46
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 198
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 10
 	}
 
 	slaves = {
@@ -584,19 +626,25 @@
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 32
+		size = 52
 	}
 
 	labourers = {
 		culture = french
 		religion = catholic
-		size = 30
+		size = 3
 	}
 	
-	slaves = {
+	farmers = {
 		culture = afro_antillean
 		religion = catholic
 		size = 52
+	}
+
+	labourers = {
+		culture = afro_antillean
+		religion = catholic
+		size = 3
 	}
 
 	aristocrats = {
@@ -1040,10 +1088,28 @@
 		size = 26
 	}
 
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 226
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 15
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 43
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 260
+		size = 560
 	}
 }
 #Under loose authority of Brazil 1836
@@ -1235,16 +1301,40 @@
 		size = 282
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39
+	}
+
 	artisans = {
 		culture = tupinamba
 		religion = animist
 		size = 190
 	}
 
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 78
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 482
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 131
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 280
+		size = 680
 	}
 }
 #Chapada (48000/12000 POPS)
@@ -1353,16 +1443,40 @@
 		size = 94
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39
+	}
+
 	artisans = {
 		culture = tupinamba
 		religion = animist
 		size = 468
 	}
 
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 1091
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 890
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 152
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1200
+		size = 3200
 	}
 }
 #Oieras (44000/11000 POPS)
@@ -1473,6 +1587,12 @@
 		size = 427
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 26
+	}
+
 	artisans = {
 		culture = tupinamba
 		religion = animist
@@ -1485,10 +1605,22 @@
 		size = 426
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 215
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 43
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 560
+		size = 1560
 	}
 }
 #Fortaleza (180000/45000 POPS)
@@ -1541,10 +1673,40 @@
 		size = 604
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39
+	}
+
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 442
+	}
+
+	soldiers = {
+		culture = tupinamba
+		religion = animist
+		size = 291
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 15
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 53
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2000
+		size = 5000
 	}
 }
 #Crato (52000/13000 POPS)
@@ -1585,6 +1747,24 @@
 		size = 188
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 26
+	}
+
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 130
+	}
+
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 426
+	}
+
 	farmers = {
 		culture = tupinamba
 		religion = animist
@@ -1600,7 +1780,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 560
+		size = 1560
 	}
 }
 #Natal (132000/33000 POPS)
@@ -1641,6 +1821,30 @@
 		size = 365
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39
+	}
+
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 90
+	}
+
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 1078
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 482
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -1650,7 +1854,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2080
+		size = 4080
 	}
 }
 #Pernambuco Region (516000)
@@ -1705,16 +1909,40 @@
 		size = 550
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39
+	}
+
 	artisans = {
 		culture = tupinamba
 		religion = animist
 		size = 560
 	}
 
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 91
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 152
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 98
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2400
+		size = 8400
 	}
 }
 #Cabreibo (80000/20000 POPS)
@@ -1773,10 +2001,22 @@
 		size = 65
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 1087
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 110
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1640
+		size = 3640
 	}
 }
 #Maceio (152000/38000 POPS)
@@ -1817,10 +2057,28 @@
 		size = 495
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39
+	}
+
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 16
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 91
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 445
 	}
 
 	labourers = {
@@ -1832,7 +2090,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2200
+		size = 5200
 	}
 }
 #Aracaju (120000/30000 POPS)
@@ -1879,16 +2137,34 @@
 		size = 26
 	}
 
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 38
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 65
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 262
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 109
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1160
+		size = 4160
 	}
 }
 #Bahia Region (896000)
@@ -1961,22 +2237,40 @@
 		size = 78
 	}
 
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 260
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 156
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 989
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 57
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 7060
+		size = 9360
 	}
 	
 	slaves = {
 		culture = afro_brazilian
 		religion = sunni
-		size = 1040
+		size = 3640
 	}
 }
 #Juazeiro (180000/45000 POPS)
@@ -2035,6 +2329,12 @@
 		size = 143
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 400
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2044,7 +2344,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2320
+		size = 8320
 	}
 }
 #Vila do Barra (140000/35000 POPS)
@@ -2091,16 +2391,34 @@
 		size = 39
 	}
 
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 90
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 78
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 282
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 31
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1680
+		size = 4680
 	}
 }
 #Porto Seguro (120000/30000 POPS)
@@ -2147,10 +2465,22 @@
 		size = 26
 	}
 
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 38
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 65
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 262
 	}
 
 	labourers = {
@@ -2162,7 +2492,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2960
+		size = 11960
 	}
 }
 #Vitoria da Conquista (100000/25000 POPS)
@@ -2209,16 +2539,34 @@
 		size = 39
 	}
 
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 64
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 78
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 254
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 145
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2620
+		size = 9620
 	}
 }
 #Minas Gerais Region (716000)
@@ -2291,6 +2639,12 @@
 		size = 117
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 408
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2300,7 +2654,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2960
+		size = 11960
 	}
 }
 #Sabara (104000/26000 POPS)
@@ -2359,6 +2713,12 @@
 		size = 65
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 262
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2368,7 +2728,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 3360
+		size = 9360
 	}
 }
 #Januaria (100000/25000 POPS)
@@ -2427,6 +2787,12 @@
 		size = 78
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 482
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2436,7 +2802,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1680
+		size = 4680
 	}
 }
 #Paracatu (80000/20000 POPS)
@@ -2495,6 +2861,12 @@
 		size = 52
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 133
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2504,7 +2876,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1060
+		size = 2860
 	}
 }
 #Uberaba (68000/17000 POPS)
@@ -2563,6 +2935,12 @@
 		size = 52
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 155
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2572,7 +2950,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1020
+		size = 3020
 	}
 }
 #Sao Joao del Rey (132000/33000 POPS)
@@ -2631,6 +3009,12 @@
 		size = 104
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 310
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -2640,7 +3024,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2040
+		size = 6040
 	}
 }
 #Rio de Janeiro Region (976000)
@@ -2713,10 +3097,40 @@
 		size = 3055
 	}
 
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 78
+	}
+
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 222
+	}
+
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 156
+	}
+
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 545
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 239
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2060
+		size = 5060
 	}
 }
 #Campos (160000/40000 POPS)
@@ -2775,10 +3189,22 @@
 		size = 104
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 401
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 211
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2040
+		size = 6040
 	}
 }
 #Vitoria (120000/30000 POPS)
@@ -2837,10 +3263,22 @@
 		size = 65
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 287
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 110
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 3040
+		size = 8040
 	}
 }
 #Sao Paulo Region (580000)
@@ -2916,7 +3354,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 300
+		size = 1300
 	}
 }
 #Sao Paulo (252000/63000 POPS)
@@ -2987,10 +3425,22 @@
 		size = 78
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 282
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 31
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1280
+		size = 2280
 	}
 }
 #Santos (132000/33000 POPS)
@@ -3049,10 +3499,22 @@
 		size = 52
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 155
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 87
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1020
+		size = 2320
 	}
 }
 #Campiras (64000/16000 POPS)
@@ -3111,6 +3573,12 @@
 		size = 39
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 125
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -3120,7 +3588,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 820
+		size = 1820
 	}
 }
 #Assis (52000/14000 POPS)
@@ -3158,7 +3626,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 26
+		size = 56
 	}
 
 	aristocrats = {
@@ -3253,6 +3721,12 @@
 		size = 26
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 80
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -3262,7 +3736,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2000
+		size = 4000
 	}
 }
 #Araraquara (8000/2000 POPS)
@@ -3300,7 +3774,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 56
+		size = 156
 	}
 
 	aristocrats = {
@@ -3409,10 +3883,22 @@
 		size = 26
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 84
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 44
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 3000
+		size = 6000
 	}
 }
 #Garapuava (40000/10000 POPS)
@@ -3486,7 +3972,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 410
+		size = 910
 	}
 
 	clergymen = {
@@ -3590,7 +4076,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 300
+		size = 1300
 	}
 
 	aristocrats = {
@@ -3685,6 +4171,12 @@
 		size = 26
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 93
+	}
+
 	labourers = {
 		culture = tupinamba
 		religion = animist
@@ -3694,7 +4186,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 300
+		size = 1300
 	}
 
 	clergymen = {
@@ -3789,10 +4281,16 @@
 		size = 125
 	}
 
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 5
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 720
+		size = 1720
 	}
 }
 #Sao Miguel (80000/20000 POPS)
@@ -3866,7 +4364,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 1000
+		size = 2000
 	}
 }
 #Sao Pedro Region (532000)
@@ -3933,16 +4431,34 @@
 		size = 26
 	}
 
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 38
+	}
+
 	soldiers = {
 		culture = tupinamba
 		religion = animist
 		size = 65
 	}
 
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 262
+	}
+
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 109
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 2060
+		size = 4060
 	}
 }
 #Sao Pedro (44000/11000 POPS)
@@ -4007,10 +4523,16 @@
 		size = 93
 	}
 
+	labourers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 31
+	}
+
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 300
+		size = 1300
 	}
 }
 #Passo Fundo (112000/28000 POPS)
@@ -4084,7 +4606,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 560
+		size = 1560
 	}
 
 	clergymen = {
@@ -4188,7 +4710,7 @@
 	slaves = {
 		culture = afro_brazilian
 		religion = catholic
-		size = 520
+		size = 1020
 	}
 }
 #Alegrete (64000/16000 POPS)
