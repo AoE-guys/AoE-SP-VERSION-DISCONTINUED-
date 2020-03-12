@@ -971,7 +971,7 @@ country_event = {
 		
 		add_country_modifier = {
 			name = stamp_act_on_colonies
-			duration = -1
+			duration = 9125
 		}
 		
 		any_pop = {
@@ -1030,7 +1030,7 @@ country_event = {
 		name = "This is preposterous!"
 		add_country_modifier = {
 			name = tea_act_on_colonies
-			duration = -1
+			duration = 6205
 		}		
 		any_pop = {
 			militancy = 1
@@ -1100,7 +1100,7 @@ country_event = {
 		name = "This is preposterous!"
 		add_country_modifier = {
 			name = intoreable_act_on_colonies
-			duration = -1
+			duration = 6205
 		}
 		relation = {
 			who = GBR
