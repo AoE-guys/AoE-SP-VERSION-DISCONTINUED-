@@ -27,39 +27,7 @@ country_event = {
 		prestige = 30
 		
 		ai_chance = { 
-			factor = 40
-			modifier = {
-				factor = 10
-				OR = {
-					tag = PBZ
-					tag = BRZ
-				}
-			}
-		}
-	}
-	option = {
-		name = "A Federal Republic representing all of our states"	
-		government = federal_democracy
-		any_pop = { 
-			limit = { 
-				type = aristocrats
-			}
-			militancy = 1 
-			consciousness = 5
-		}
-		political_reform = universal_weighted_voting
-		political_reform = free_press
-		political_reform = state_equal_weight
-		political_reform = all_trade_unions
-		political_reform = first_past_the_post
-		political_reform = gerrymandering
-		political_reform = federalism
-		set_country_flag = constitution_made
-		election = yes
-		prestige = 30
-		
-		ai_chance = { 
-			factor = 40
+			factor = 80
 			modifier = {
 				factor = 10
 				OR = {

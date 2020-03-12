@@ -1750,7 +1750,7 @@ political_decisions = {
 		effect = {
 			random_owned = {
 				limit = { province_id = 690 }
-				690 = { change_province_name = "Gdánsk" }
+				690 = { change_province_name = "Gdañsk" }
 				owner = { 
 					set_global_flag = danzig_rename_polish
 					clr_global_flag = danzig_rename_german 
@@ -1762,7 +1762,7 @@ political_decisions = {
 					change_province_name = "Tuchola" 
 					state_scope = { change_region_name = "Pomorskie" }
 				}
-				694 = { change_province_name = "Torun"  }
+				694 = { change_province_name = "Toruñ"  }
 				owner = { 
 					set_global_flag = west_prussia_rename_polish
 					clr_global_flag = west_prussia_rename_german
@@ -1794,8 +1794,8 @@ political_decisions = {
 		effect = {
 			set_global_flag = posen_rename_polish
 			699 = { 
-				change_province_name = "Poznán"
-				state_scope = { change_region_name = "Poznán" }
+				change_province_name = "Poznañ"
+				state_scope = { change_region_name = "Poznañ" }
 			}
 			700 = { change_province_name = "Bydgoszcz" }
 			701 = { change_province_name = "Gniezno" }

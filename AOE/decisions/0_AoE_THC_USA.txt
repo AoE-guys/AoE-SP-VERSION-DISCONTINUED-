@@ -103,7 +103,6 @@ political_decisions = {
 					ruling_party_ideology = reactionary
 					OR = {
 						government = democracy
-						government = hms_government
 						government = federal_democracy
 					}
 					NOT = {
@@ -197,7 +196,7 @@ political_decisions = {
 	}
 	
 	usa_navy = {
-		picture = navy
+		picture = merchant_navy
 		potential = {
 			tag = USA
 			NOT = { has_country_flag = usa_navy }
@@ -243,6 +242,10 @@ political_decisions = {
 					name = recently_built_city
 					duration = 3650
 				}
+				add_province_modifier = {
+					name = white_house
+					duration = 3650
+				}
 			}
 			prestige = 20
 		}
@@ -251,36 +254,37 @@ political_decisions = {
 		}
 	}
 	
-#	burn_down_the_white_house = {
-#		picture = white_house_boom
-#		potential = {
-#			NOT = { tag = USA }
-#			USA = {
-#				exists = yes
-#			}
-#			USA = {
-#				capital_scope = {
-#					controlled_by = THIS
-#				}
-#			}
-#			NOT = { has_global_flag = white_house_burned }
-#		}
-#		allow = {
-#			USA = {
-#				capital_scope = {
-#					controlled_by = THIS
-#				}
-#			}
-#		}
-#		effect = {
-#			set_global_flag = white_house_burned
-#			country_event = 17860002
-#			badboy = 7
-#		}
-#		ai_will_do = {					
-#			factor = 1
-#		}
-#	}
+	burn_down_the_white_house = {
+		picture = white_house_boom
+		potential = {
+			NOT = { tag = USA }
+			USA = {
+				exists = yes
+				has_country_flag = build_the_white_house
+			}
+			USA = {
+				capital_scope = {
+					controlled_by = THIS
+				}
+			}
+			NOT = { has_global_flag = white_house_burned }
+		}
+		allow = {
+			USA = {
+				capital_scope = {
+					controlled_by = THIS
+				}
+			}
+		}
+		effect = {
+			set_global_flag = white_house_burned
+			country_event = 17860002
+			badboy = 7
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
 	
 	the_bastion_of_liberty = {
 		picture = liberty
@@ -291,6 +295,7 @@ political_decisions = {
 			}
 			is_vassal = no
 			NOT = { has_global_flag = bastion_of_liberty }
+			NOT = { government = tribal_democracy }
 			NOT = {
 				OR = {
 					government = colonial_company

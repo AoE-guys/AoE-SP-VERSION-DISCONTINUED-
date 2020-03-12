@@ -1,6 +1,6 @@
 country_event = {
 	id = 1679000
-	title = "Louisiana asks for French investigation"
+	title = "Louisiana asks for French advisors"
 	desc = "EVTDESC1679000"
 	picture = conscription_marching
 	is_triggered_only = yes
@@ -22,7 +22,9 @@ country_event = {
 	
 	option = {
 		name = "They're on their own"
-		country_event = 1679002
+		ULA = {
+			country_event = 1679002
+		}
 		prestige = 5
 	}
 }
@@ -51,6 +53,7 @@ country_event = {
 	
 	option = {
 		name = "Oh well..."
+		prestige = -5
 		relation = {
 			who = BOR
 			value = -20

@@ -213,102 +213,102 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	findland_rename = {
-		picture = gtfo
-		potential = {	
-			primary_culture = swedish
-			owns = 343
-			owns = 336
-			owns = 345
-			NOT = { has_global_flag = finland_rename_swe } 
-			NOT = { tag = SCA }			
-		}
-		
-		allow = {
-			war = no
-		}
-		
-		effect = {
-			###Swedish###
-			random_owned = {
-				limit = {
-					owns = 343
-					owns = 336
-					owns = 345
-					owner = { 
-						primary_culture = swedish 
-						NOT = { tag = SCA }
-					}
-				}
-				##Northern Finland##
-				336 = {
-					change_province_name = "Uleåborg"
-					state_scope = { change_region_name = "Österbotten" }
-				}
-				337 = { change_province_name = "Kajana" }
-				338 = { change_province_name = "Torneå" }
-				
-				##Western Finland##
-				345 = {
-					change_province_name = "Åbo"
-					state_scope = { change_region_name = "Egentliga Finland" }
-				}
-				346 = { change_province_name = "Vasa" }
-				347 = { change_province_name = "Tammerfors" }
-				348 = { change_province_name = "Landskapet Åland" }
-				
-				##Eastern Finland##
-				343 = {
-					change_province_name = "Helsingfors"
-					state_scope = { change_region_name = "Nyland" }
-				}
-				344 = { change_province_name = "Tavastehus" }
-				341 = { change_province_name = "St. Michel" }
-	
-				owner = { set_global_flag = finland_rename_swe }
-			}
-
-			###Finnish###
-			random_owned = {
-				limit = {
-					owns = 343
-					owns = 336
-					owns = 345
-					owner = { 
-						OR = {
-							primary_culture = finnish
-							tag = SCA
-						}
-					}
-				}
-				##Northern Finland##
-				336 = {
-					change_province_name = "Oulu"
-					state_scope = { change_region_name = "Ostrobothnia" }
-				}
-				337 = { change_province_name = "Kajaani" }
-				338 = { change_province_name = "Tornio" }
-				
-				##Western Finland##
-				345 = {
-					change_province_name = "Turku"
-					state_scope = { change_region_name = "Varsinais-Suomi" }
-				}
-				346 = { change_province_name = "Vaasa" }
-				347 = { change_province_name = "Tampere" }
-				348 = { change_province_name = "Ahvenanmaan" }
-				
-				##Eastern Finland##
-				343 = {
-					change_province_name = "Helsinki"
-					state_scope = { change_region_name = "Uusimaa" }
-				}
-				344 = { change_province_name = "Hämeenlinna" }
-				341 = { change_province_name = "Mikkeli" }
-	
-				owner = { set_global_flag = finland_rename_swe }
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
+#	findland_rename = {
+#		picture = gtfo
+#		potential = {	
+#			primary_culture = swedish
+#			owns = 343
+#			owns = 336
+#			owns = 345
+#			NOT = { has_global_flag = finland_rename_swe } 
+#			NOT = { tag = SCA }			
+#		}
+#		
+#		allow = {
+#			war = no
+#		}
+#		
+#		effect = {
+#			###Swedish###
+#			random_owned = {
+#				limit = {
+#					owns = 343
+#					owns = 336
+#					owns = 345
+#					owner = { 
+#						primary_culture = swedish 
+#						NOT = { tag = SCA }
+#					}
+#				}
+#				##Northern Finland##
+#				336 = {
+#					change_province_name = "Uleåborg"
+#					state_scope = { change_region_name = "Österbotten" }
+#				}
+#				337 = { change_province_name = "Kajana" }
+#				338 = { change_province_name = "Torneå" }
+#				
+#				##Western Finland##
+#				345 = {
+#					change_province_name = "Åbo"
+#					state_scope = { change_region_name = "Egentliga Finland" }
+#				}
+#				346 = { change_province_name = "Vasa" }
+#				347 = { change_province_name = "Tammerfors" }
+#				348 = { change_province_name = "Landskapet Åland" }
+#				
+#				##Eastern Finland##
+#				343 = {
+#					change_province_name = "Helsingfors"
+#					state_scope = { change_region_name = "Nyland" }
+#				}
+#				344 = { change_province_name = "Tavastehus" }
+#				341 = { change_province_name = "St. Michel" }
+#	
+#				owner = { set_global_flag = finland_rename_swe }
+#			}
+#
+#			###Finnish###
+#			random_owned = {
+#				limit = {
+#					owns = 343
+#					owns = 336
+#					owns = 345
+#					owner = { 
+#						OR = {
+#							primary_culture = finnish
+#							tag = SCA
+#						}
+#					}
+#				}
+#				##Northern Finland##
+#				336 = {
+#					change_province_name = "Oulu"
+#					state_scope = { change_region_name = "Ostrobothnia" }
+#				}
+#				337 = { change_province_name = "Kajaani" }
+#				338 = { change_province_name = "Tornio" }
+#				
+#				##Western Finland##
+#				345 = {
+#					change_province_name = "Turku"
+#					state_scope = { change_region_name = "Varsinais-Suomi" }
+#				}
+#				346 = { change_province_name = "Vaasa" }
+#				347 = { change_province_name = "Tampere" }
+#				348 = { change_province_name = "Ahvenanmaan" }
+#				
+#				##Eastern Finland##
+#				343 = {
+#					change_province_name = "Helsinki"
+#					state_scope = { change_region_name = "Uusimaa" }
+#				}
+#				344 = { change_province_name = "Hämeenlinna" }
+#				341 = { change_province_name = "Mikkeli" }
+#	
+#				owner = { set_global_flag = finland_rename_swe }
+#			}
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
 }
