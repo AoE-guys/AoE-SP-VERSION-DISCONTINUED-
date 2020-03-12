@@ -520,7 +520,7 @@ navy = {
 
 leader = {
 	name = "Eugene of Savoy"
-	date = 1805.1.1
+	date = 1695.1.1
 	type = land
 	personality = implacable
 	background = natural_born_leader
@@ -529,7 +529,7 @@ leader = {
 
 leader = {
 	name = "Louis of Baden"
-	date = 1835.1.1
+	date = 1700.1.1
 	type = land
 	personality = defiant
 	background = natural_born_leader
@@ -538,9 +538,53 @@ leader = {
 
 leader = {
 	name = "Count Starhemberg"
-	date = 1835.1.1
+	date = 1700.1.1
 	type = land
 	personality = active_p
+	background = aristocrat
+	prestige = 0.1
+}
+
+leader = {
+	name = "Hermann von Hess"
+	date = 1700.1.1
+	type = land
+	personality = aggressive
+	background = generals_aide
+	prestige = 0.1
+}
+
+leader = {
+	name = "d’Aspre und Hoobreuck"
+	date = 1700.1.1
+	type = land
+	personality = bold
+	background = drillmaster
+	prestige = 0.1
+}
+
+leader = {
+	name = "Alfred von Windischgraetz"
+	date = 1700.1.1
+	type = land
+	personality = arrogant
+	background = butcher
+	prestige = 0.3
+}
+
+leader = {
+	name = "Erzherzog Albrecht"
+	date = 1700.1.1
+	type = land
+	personality = active_p
+	background = aristocrat
+}
+
+leader = {
+	name = "Paolucci delle Roncole"
+	date = 1700.1.1
+	type = sea
+	personality = competent
 	background = aristocrat
 	prestige = 0.1
 }

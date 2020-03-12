@@ -122,36 +122,29 @@ country_event = {
 	option = {
 		name = "Construct a new capital!!"
 		prestige = 15
-		capital = 220
-		220 = {
-			set_province_flag = us_capital
-		}
+		money = -5000
+		capital = 2146
+		set_country_flag = capital_chosen
 	}
 	option = {
 		name = "Philadelphia is our most beautiful city"
 		prestige = 15
 		capital = 223
-		223 = {
-			set_province_flag = us_capital
-		}
+		set_country_flag = capital_chosen
 	}
 	
 	option = {
 		name = "New York obviously, it has the biggest population"
 		prestige = 15
 		capital = 232
-		232 = {
-			set_province_flag = us_capital
-		}
+		set_country_flag = capital_chosen
 	}
 	
 	option = {
 		name = "Charleston, since southern states are more important"
 		prestige = 15
 		capital = 205
-		205 = {
-			set_province_flag = us_capital
-		}
+		set_country_flag = capital_chosen
 	}
 }
 country_event = {

@@ -228,9 +228,7 @@ political_decisions = {
 		potential = {
 			tag = USA
 			NOT = { has_country_flag = build_the_white_house }
-			any_province = {
-				has_province_flag = us_capital
-			}
+			has_country_flag = capital_chosen
 		}
 		allow = {
 			money = 20000
@@ -239,10 +237,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = build_the_white_house
 			money = -20000
-			any_province = {
-				limit = {
-					has_province_flag = us_capital
-				}
+			capital_scope = {
 				set_province_flag = white_house
 				add_province_modifier = {
 					name = recently_built_city
@@ -257,7 +252,7 @@ political_decisions = {
 	}
 	
 #	burn_down_the_white_house = {
-#		picture = white_house_fire
+#		picture = white_house_boom
 #		potential = {
 #			NOT = { tag = USA }
 #			USA = {
@@ -278,7 +273,7 @@ political_decisions = {
 #			}
 #		}
 #		effect = {
-#			set_country_flag = white_house_burned
+#			set_global_flag = white_house_burned
 #			country_event = 17860002
 #			badboy = 7
 #		}

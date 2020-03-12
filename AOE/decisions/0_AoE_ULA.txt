@@ -128,6 +128,7 @@ political_decisions = {
 			is_vassal = no
 			FCA = {
 				exists = yes
+				is_vassal = yes
 			}
 		}
 		allow = {
@@ -164,8 +165,10 @@ political_decisions = {
 			}
 		}
 		allow = {
-			has_building = fort
-			has_building = port
+			139 = {
+				has_building = fort
+				has_building = naval_base
+			}
 			money = 100000
 		}
 		effect = {
