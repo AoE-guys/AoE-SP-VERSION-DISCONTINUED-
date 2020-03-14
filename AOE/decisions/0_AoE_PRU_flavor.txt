@@ -76,9 +76,11 @@ political_decisions = {
 		effect = {
 			set_country_flag = encouraged_protestant_migration
 			any_pop = { militancy = 2 }
-			add_province_modifier = {
-				name = encouraging_protestant_migration
-				duration = 5475
+			all_core = {
+				add_province_modifier = {
+					name = encouraging_protestant_migration
+					duration = 5475
+				}
 			}
 		}
 		ai_will_do = {					

@@ -1,5 +1,6 @@
 capital = 2348
 civilized = yes   primary_culture = platinean
+culture = spanish
 religion = catholic
 government = colonial_company
 plurality = 0.0
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = federalism
 colonial_policy = no_colonies 

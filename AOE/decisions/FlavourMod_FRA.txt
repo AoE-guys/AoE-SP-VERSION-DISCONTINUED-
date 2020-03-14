@@ -1178,8 +1178,8 @@ political_decisions = {
 				tag = FRA
 				tag = BOR
 			}
-			is_great_power = yes
-			NOT = { has_country_flag = { established_an_engineer_school }}
+			is_greater_power = yes
+			NOT = { has_country_flag = established_an_engineer_school }
 		}
 		allow = {
 			steel_railroad = 1
@@ -1189,7 +1189,7 @@ political_decisions = {
 			FRA_425 = { infrastructure = 2 }
 			FRA_428 = { infrastructure = 2 }
 			money = -100000
-			set_country_flag = { established_an_engineer_school }
+			set_country_flag = established_an_engineer_school 
 		}
 		ai_will_do = {
 			factor = 1

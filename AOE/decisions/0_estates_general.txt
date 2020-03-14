@@ -12,7 +12,7 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-			set_country_flag = { estates_general_summoned }
+			set_country_flag = estates_general_summoned 
 			country_event = {
 				id = 19000
 				days = 0

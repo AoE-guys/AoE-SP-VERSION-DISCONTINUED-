@@ -10,8 +10,8 @@ political_decisions = {
 		allow = {
 			OR = {
 				AND = {
-				year = 1789
-				pop_militancy = 4
+					year = 1789
+					pop_militancy = 4
 				}
 				political_thought_8 = 1
 			}
@@ -41,17 +41,21 @@ political_decisions = {
 			political_thought_7 = 1
 		}
 		effect = {
-			set_country_flag = { edict_of_tolerance }
+	
 			add_country_modifier = {
 				name = freedom_of_religion
 				duration = -1
 			}
-			random_pop = {
-				religion = protestant 
+			any_pop = {
+				limit = {
+					religion = protestant 
+				}
 				militancy = -2
 			}
-			random_pop = {
-				religion = catholic 
+			any_pop = {
+				limit = {
+					religion = catholic 
+				}
 				militancy = 1
 			}
 		}

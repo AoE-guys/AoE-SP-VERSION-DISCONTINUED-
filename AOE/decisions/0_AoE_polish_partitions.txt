@@ -10,7 +10,7 @@ political_decisions = {
 		}
 		allow = {
 			PLC = {
-				part_of_sphere = THIS
+				in_sphere = THIS
 			}
 			war = no
 			mass_politics = 1
