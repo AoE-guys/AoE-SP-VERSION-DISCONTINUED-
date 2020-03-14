@@ -3292,7 +3292,7 @@ ai_warships_cooldown = {
 foreign_weapons_imported = {
 	icon = 9
 }
-
+###Sweden###
 swedish_caroleans = {
 	org_regain = 0.25
 	land_organisation = 0.15
@@ -3302,11 +3302,62 @@ swedish_caroleans = {
 	mobilisation_size = 0.1
 	icon = 15
 }
+riksdaler = {
+	administrative_efficiency_modifier = 0.10
+	tax_efficiency = 0.2
+}
+gustav_iii = {
+	army_tech_research_bonus = 0.05
+	ruling_party_support = 0.35
+	influence_modifier = 0.2
+}
+swedish_absolitism = {
+	ruling_party_support = 0.35
+	influence_modifier = 0.2
+}
+###Russia###
 improved_administration = {
 	administrative_efficiency_modifier = 0.10
 	tax_efficiency = 0.1
 	icon = 5
 }
+table_of_ranks = {
+	leadership_modifier = 0.2
+	land_unit_start_experience = 10
+	supply_consumption = -0.05
+	icon = 5
+}
+peter_the_great = {
+	culture_tech_research_bonus = 0.1
+	army_tech_research_bonus = 0.05
+	navy_tech_research_bonus = 0.1
+	influence_modifier = 0.2
+	ruling_party_support = 0.35
+	prestige = 0.01
+}
+peter_iii= {
+	culture_tech_research_bonus = -0.1
+	army_tech_research_bonus = 0.05
+	navy_tech_research_bonus = -0.1
+	commerce_tech_research_bonus = -0.05
+	ruling_party_support = -0.15
+	prestige = -0.01
+}
+catharine_the_great = {
+	culture_tech_research_bonus = 0.1
+	diplomatic_points_modifier = 0.25
+	influence_modifier = 0.2
+	bad_badboy = -0.05
+	ruling_party_support = 0.35
+	prestige = 0.01
+}
+nakaz = {
+	administrative_efficiency_modifier = 0.10
+	war_exhaustion = -0.1
+	ruling_party_support = 0.05
+	tax_efficiency = 0.1
+}
+#####
 ecole_militire = {
 	army_tech_research_bonus = 0.05
 	land_organisation = 0.1

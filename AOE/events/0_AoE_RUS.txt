@@ -1,0 +1,310 @@
+country_event = {
+	id = 170000
+	title = "Peter the first's voyage around the Europe"
+	desc = "EVTDESC170000"
+	picture = peter_the_great
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		year = 1700
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "It's time to reform this backwards state"
+		add_country_modifier = {
+			name = peter_the_great
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = 1700001
+	title = "Death of Peter the Great"
+	desc = "EVTDESC1700001"
+	picture = peters_death
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		year = 1725
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Truly a great leader he was..."
+		remove_country_modifier = peter_the_great
+	}
+}
+country_event = {
+	id = 1700002
+	title = "Ascention of Peter the Third"
+	desc = "EVTDESC1700002"
+	picture = peter_iii
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		year = 1762
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "This can't end well"
+		add_country_modifier = {
+			name = peter_iii
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = 1700003
+	title = "Death of Cathrine the Great"
+	desc = "EVTDESC1700003"
+	picture = death_of_cat
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		year = 1796
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Another great mind leaves our cruel world..."
+		remove_country_modifier = catharine_the_great
+	}
+}
+#coup d'etat#
+country_event = {
+	id = 1700004
+	title = "Possible coup d'etat?"
+	desc = "EVTDESC1700004"
+	picture = palace_rus
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		has_country_modifier = peter_iii
+	}
+	mean_time_to_happen = {
+		months = 7
+	}
+	
+	option = {
+		name = "It's nothing..."
+		set_country_flag = ignore_coup
+	}
+	
+	option = {
+		name = "Bring Cathrine to me."
+		set_country_flag = cathrine_coup
+	}
+}
+country_event = {
+	id = 1700005
+	title = "Cathrine's coup d'etat "
+	desc = "EVTDESC1700005"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		OR = {
+			has_country_flag = ignore_coup
+			has_country_flag = cathrine_coup
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Bested by my own wife..."
+		remove_country_modifier = peter_iii
+		add_country_modifier = {
+			name = catharine_the_great
+			duration = -1
+		}
+	}
+}
+##Anjala conspiracy##
+country_event = {
+	id = 1788000
+	title = "The Anjala conspiracy"
+	desc = "EVTDESC1788000"
+	picture = finland
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1788
+		tag = RUS
+		FIN = { exists = no }
+		RUS = {
+			NOT = { owns = 343}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Support the Fins"
+		SWE = { country_event 1788001 }
+		ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 1
+				war_with = SWE
+			}
+			modifier = {
+				factor = 1
+				relation = { 
+					who = SWE
+					value = -200
+				}
+				NOT = {
+					relation = { 
+						who = SWE
+						value = -20
+					}	
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "They aren't worth our time"
+		prestige = -5
+		ai_chance = {
+			factor = 0.6
+		}
+		modifier = {
+			factor = 1
+			alliance_with  = SWE
+		}
+		modifier = {
+			factor = 1
+			relation = { 
+				who = SWE
+				value = 50
+			}
+		}
+		modifier = {
+			factor = 1
+			SWE = {
+				in_sphere = THIS
+			}
+		}
+	}
+}
+country_event = {
+	id = 1788001
+	title = "The Anjala conspiracy"
+	desc = "EVTDESC1788001"
+	picture = finland
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's war then."
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		relation = { who = FIN value = -100 }
+		any_owned = {
+			limit = { is_core = SWE }
+			remove_province_modifier = liberal_agitation
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -6
+		}
+		add_country_modifier = {
+			name = no_more_war
+			duration = 7
+		}
+		FIN = {
+			capital = 343
+			political_reform = mandatory_service 
+			government = hms_government
+			political_reform = non_secret_ballots
+			political_reform = universal_weighted_voting
+			political_reform = population_equal_weight
+			political_reform = free_press
+			political_reform = yes_meeting
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			set_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+			add_country_modifier = {
+				name = no_more_war
+				duration = 7
+			}
+			create_alliance = RUS
+			relation = {
+				who = RUS
+				value = 200
+			}
+		}
+		war = {
+			target = FIN
+			attacker_goal = { casus_belli = conquest }
+			defender_goal = { casus_belli = status_quo }
+		} 
+	}
+	
+	option = {
+		name = "Let the fins go"
+		prestige = -5
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		relation = { who = FIN value = -100 }
+		FIN = {
+			capital = 343
+			political_reform = mandatory_service 
+			government = hms_government
+			political_reform = non_secret_ballots
+			political_reform = universal_weighted_voting
+			political_reform = population_equal_weight
+			political_reform = free_press
+			political_reform = yes_meeting
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			set_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+			add_country_modifier = {
+				name = no_more_war
+				duration = 7
+			}
+			create_alliance = RUS
+			relation = {
+				who = RUS
+				value = 200
+			}
+		}
+	}
+}

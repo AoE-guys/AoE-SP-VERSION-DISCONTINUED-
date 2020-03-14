@@ -815,6 +815,29 @@ hormuz_strait = {
 	tariff_efficiency_modifier = 0.05
 	icon = 16
 }
+dominus_mare_baltici = {
+	trigger = {
+		exists = yes
+		owns = 332
+		owns = 994
+		owns = 354
+		owns = 695
+		owns = 690
+		owns = 696
+		owns = 372
+		owns = 530
+		owns = 546
+		owns = 679
+		owns = 350
+		owns = 345
+	}
+
+	tax_efficiency = 0.01
+	tariff_efficiency_modifier = 0.05
+	prestige = 0.03
+	war_exhaustion = -0.3
+	icon = 16
+}
 
 malacca_strait = {
 		trigger = {
