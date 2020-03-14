@@ -1,17 +1,5 @@
-owner = VNS
-controller = VNS
 add_core = VNS
 add_core = MEX
 add_core = TEX
 trade_goods = sulphur  state_building = {  level = 5  building = sulphur_factory  upgrade = yes  }
-life_rating = 35
-#colonial = 2
-
-1861.1.1 = {
-	controller = CSA
-	owner = CSA
-	add_core = CSA
-	add_core = USA
-	remove_core = MEX
-	#colonial = 0
-}
+life_rating = 25
