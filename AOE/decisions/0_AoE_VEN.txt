@@ -1,8 +1,6 @@
 political_decisions = {
 	claim_malta = {
 		picture = venetian_ambitions
-		title = "Claim Malta"
-		desc = "Malta, while not previously part of our empire, Malta retains itself as a strategically and economically important province. If we seize this important Mediterranean chokepoint, we may begin recovering our maritime influence."
 		potential = {
 			tag = VEN
 			NOT = { has_country_flag = claim_malta }
@@ -29,8 +27,6 @@ political_decisions = {
 	
 	claim_albania = {
 		picture = venetian_ambitions
-		title = "Reclaim Albania"
-		desc = "With our claims across the Mediterranean islands fulfilled once more, we are once again in a position to restore our lost territory in the Balkans. The first of these shall be the land of Albania, taken from us by the Ottoman Turks over a hundred years ago. Venezia Eterna!"
 		potential = {
 			tag = VEN
 			NOT = { has_country_flag = claim_albania }
@@ -68,8 +64,6 @@ political_decisions = {
 	
 	claim_istria = {
 		picture = venetian_ambitions
-		title = "Seize Istria"
-		desc = "Austria's ownership of Istria greatly threatens our monopoly on the Adriatic trade node. If we are able to seize control of it, we can secure our position as the maritime power of the Mediterranean."
 		potential = {
 			tag = VEN
 			NOT = { has_country_flag = claim_istria }

@@ -39,7 +39,7 @@ political_decisions = {
 			}
 			change_tag = GBR
 			add_accepted_culture = scottish
-			random_country = {
+			any_country = {
 				limit = {
 					tag = SCO
 					exists = yes
@@ -48,14 +48,16 @@ political_decisions = {
 				SCO = { all_core = { add_core = ENG } }
 				THIS = { inherit = SCO }
 			}
-			random_country = {
+			any_country = {
 				limit = {
 					tag = SCO
 					exists = yes
 					ai = no
 				}
 				country_event = 11101
-				add_core = GBR
+				any_owned = {
+					add_core = GBR
+				}
 			}
 			any_country = {
 				limit = {
@@ -70,7 +72,7 @@ political_decisions = {
 						OR = {
 							is_core = SCO
 							is_core = WHA
-							region = GBR_254
+							region = ENG_254
 						}
 					}
 					secede_province = THIS
@@ -88,7 +90,7 @@ political_decisions = {
 			BNG = {
 				is_vassal = yes
 			}
-			is_great_power = yes
+			is_greater_power = yes
 		}
 		allow = {
 			bolt_action_rifles = 1
@@ -96,7 +98,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 10
-			bandboy = 10
+			badboy = 10
 			inherit = BNG
 		}
 	}
@@ -105,7 +107,7 @@ political_decisions = {
 		picture = raj
 		potential = {
 			tag = GBR
-			is_great_power = yes
+			is_greater_power = yes
 		}
 		allow = {
 			ENG_1305 = {
@@ -136,7 +138,7 @@ political_decisions = {
 		picture	= cape_map
 		potential = {
 			tag = GBR
-			is_great_power = yes
+			is_greater_power = yes
 		}
 		allow = {
 			ENG_2087 = {
@@ -146,7 +148,7 @@ political_decisions = {
 		effect = {
 			prestige = 20
 			ENG_2087 = {
-				add_country_modifier = {
+				add_province_modifier = {
 					name = colonial_exploitation
 					duration = 7300
 				}

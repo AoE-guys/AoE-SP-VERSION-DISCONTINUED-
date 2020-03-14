@@ -22,8 +22,9 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	claim_florida = {
+
 		picture = florida_map
 		potential = {
 			OR = {
@@ -41,12 +42,14 @@ political_decisions = {
 		effect = {
 			set_country_flag = claim_florida_usa
 			FLO = {
-				add_core = USA
-			}			
-			ai_will_do = {
-				factor = 1
+				all_core = {
+					add_core = USA
+				}
 			}
 			badboy = 6
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -74,7 +77,9 @@ political_decisions = {
 		effect = {
 			set_country_flag = claim_louisiana_usa
 			ULA = {
-				add_core = USA
+				all_core = {
+					add_core = USA
+				}
 			}
 			badboy = 25
 		}
@@ -107,8 +112,8 @@ political_decisions = {
 					}
 					NOT = {
 						OR = {
-						political_reforms = party_appointed
-						political_reforms = appointed
+						upper_house_composition  = party_appointed
+						upper_house_composition  = appointed
 						}
 					}
 				}
@@ -136,16 +141,16 @@ political_decisions = {
 			NOT = { has_country_flag = war_on_natives }
 		}
 		allow = {
-			is_independent = yes
+			is_independant = yes
 			machine_guns = 1
 			nationalism_n_imperialism = 1
 		}
 		effect = {
-			IQS = { add_core = THIS }
-			LNP = { add_core = THIS }
-			CRK = { add_core = THIS }
-			CHS = { add_core = THIS }
-			CHT = { add_core = THIS }
+			IQS = { all_core = { add_core = THIS } }
+			LNP = { all_core = { add_core = THIS } }
+			CRK = { all_core = { add_core = THIS } }
+			CHS = { all_core = { add_core = THIS } }
+			CHT = { all_core = { add_core = THIS } }
 			set_country_flag = war_on_natives
 			badboy = 20
 		}
@@ -191,7 +196,9 @@ political_decisions = {
 				duration = -1
 			}
 			set_country_flag = bill_of_rights
-			militancy = 3
+			any_pop = {
+				militancy = 3
+			}
 		}
 	}
 	
@@ -325,6 +332,9 @@ political_decisions = {
 				duration = 109050
 			}
 			prestige = 60
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }

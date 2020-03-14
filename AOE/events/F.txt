@@ -1,0 +1,49 @@
+country_event = {
+
+	id = 996 	#Hungary won
+	title = "EVTNAME996" 
+	desñ = "EVTDESC996"
+	picture = "unite"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		any_core = { 
+			AND = {
+				has_province_flag = hunn
+				OR = {
+					controlled_by = THIS
+					owned_by = THIS
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		clr_global_flag = hungarian_revolution_occurred
+		set_global_flag = hungarian_revolution_succeede
+	}
+
+	option = {
+		name = "EVT996OPT1"
+		any_owned = {
+			limit = {
+				owned_by = THIS
+				NOT = { has_province_flag = hunn }
+			}
+			secede_province = AUS
+		}
+		all_core = { 
+			clr_province_flag = hunn
+		}
+		end_war = AUS
+		prestige = 25
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

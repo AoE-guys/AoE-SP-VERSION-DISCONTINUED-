@@ -86,7 +86,6 @@ political_decisions = {
 		effect = {
 			set_country_flag = abolished_janisseries
 			clr_country_flag = janisseries
-			remove_country_modifier = janisseries_influence
 			any_pop = { militancy = 3 }
 			money = -1000000
 		}

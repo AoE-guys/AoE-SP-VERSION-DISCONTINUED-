@@ -208,7 +208,7 @@ political_decisions = {
 	literacy_SPA = {
 		potential = {
 			tag = SPA
-			always = no
+			
 		}
 		
 		allow = {
@@ -393,7 +393,7 @@ political_decisions = {
 	literacy_ENG = {
 		potential = {
 			tag = ENG
-			always = no
+			
 		}
 		
 		allow = {
@@ -589,7 +589,7 @@ political_decisions = {
 	literacy_NET = {
 		potential = {
 			tag = NET
-			always = no
+			
 		}
 		
 		allow = {
@@ -667,7 +667,7 @@ political_decisions = {
 	literacy_POR = {
 		potential = {
 			tag = POR
-			always = no
+			
 		}
 		
 		allow = {
@@ -711,7 +711,7 @@ political_decisions = {
 	literacy_PRU = {
 		potential = {
 			tag = PRU
-			always = no
+			
 		}
 		
 		allow = {
@@ -818,7 +818,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = TUR
-			always = no
+			
 		}
 		
 		allow = {
@@ -942,7 +942,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = EGY
-			always = no
+			
 		}
 		
 		allow = {
@@ -973,7 +973,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			primary_culture = kurdish
-			always = no
+			
 		}
 		
 		allow = {
@@ -1013,7 +1013,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = PER
-			always = no
+			
 		}
 		
 		allow = {
@@ -1048,7 +1048,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = RUS
-			always = no
+			
 		}
 		
 		allow = {
@@ -1228,7 +1228,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = AUS
-			always = no
+			
 		}
 		
 		allow = {
@@ -1367,7 +1367,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = DEN
-			always = no
+			
 		}
 		
 		allow = {
@@ -1462,7 +1462,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = UBD
-			always = no
+			
 		}
 		
 		allow = {
@@ -1483,7 +1483,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = FIN
-			always = no
+			
 		}
 		
 		allow = {
@@ -1514,7 +1514,7 @@ political_decisions = {
 				tag = DAG
 				tag = CIR
 			}
-			always = no
+			
 		}
 		
 		allow = {
@@ -1541,7 +1541,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = TCA
-			always = no
+			
 		}
 		
 		allow = {
@@ -1559,7 +1559,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = ABK
-			always = no
+			
 		}
 		
 		allow = {
@@ -1576,7 +1576,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = FRA
-			always = no
+			
 		}
 		
 		allow = {
@@ -1648,7 +1648,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = PAP
-			always = no
+			
 		}
 		
 		allow = {
@@ -1668,7 +1668,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = SAR
-			always = no
+			
 		}
 		
 		allow = {
@@ -1686,7 +1686,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = USA
-			always = no
+			
 		}
 		
 		allow = {
@@ -1775,7 +1775,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = BRZ
-			always = no
+			
 		}
 		
 		allow = {
@@ -1834,7 +1834,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = PEU
-			always = no
+			
 		}
 		
 		allow = {
@@ -1923,7 +1923,7 @@ political_decisions = {
 	URU_1836_setup = {
 		potential = {
 			tag = URU
-			always = no
+			
 		}
 		
 		allow = {
@@ -1943,7 +1943,7 @@ political_decisions = {
 				tag = PBC
 				tag = BOL
 			}
-			always = no
+			
 		}
 		
 		allow = {
@@ -1962,7 +1962,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = SWI
-			always = no
+			
 		}
 		
 		allow = {
@@ -1978,7 +1978,7 @@ political_decisions = {
 	ECU_1836_setup = {
 		potential = {
 			tag = ECU
-			always = no
+			
 		}
 		
 		allow = {
@@ -1996,7 +1996,7 @@ political_decisions = {
 	CHL_1836_setup = {
 		potential = {
 			tag = CHL
-			always = no
+			
 		}
 		
 		allow = {
@@ -2012,7 +2012,7 @@ political_decisions = {
 	CLM_1836_setup = {
 		potential = {
 			tag = CLM
-			always = no
+			
 		}
 		
 		allow = {
@@ -2040,7 +2040,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = UCA
-			always = no
+			
 		}
 		
 		allow = {
@@ -2065,7 +2065,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = ARC
-			always = no
+			
 		}
 		
 		allow = {
@@ -2108,7 +2108,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = GRE
-			always = no
+			
 		}
 		
 		allow = {
@@ -2779,7 +2779,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = EGY
-			always = no
+			
 		}
 		
 		allow = {
@@ -2809,7 +2809,7 @@ political_decisions = {
 		picture = constantinople
 		potential = {
 			tag = QNG
-			always = no
+			
 		}
 		
 		allow = {

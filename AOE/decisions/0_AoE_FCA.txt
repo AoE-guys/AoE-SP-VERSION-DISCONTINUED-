@@ -39,7 +39,9 @@ political_decisions = {
 		effect = {
 			set_country_flag = hundsun_bay_company_claimed
 			RPL = {
-				add_core = THIS
+				any_owned = {
+					add_core = THIS
+				}
 			}
 			badboy = 10
 		}
@@ -112,8 +114,11 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = claimed_fench_canada
+			
 			FCA = {
-				add_core = THIS
+				any_owned = {
+					add_core = THIS
+				}
 			}
 			badboy = 10
 		}

@@ -31,7 +31,7 @@ political_decisions = {
 		potential = {
 			AND= {
 				primary_culture = serb
-				NOT = { TAG = YUG }
+				NOT = { tag = YUG }
 			}
 			owns = 767
 			owns = 768
@@ -328,7 +328,7 @@ political_decisions = {
 		potential = {
 			AND = {
 				primary_culture = serb
-				NOT = { TAG = YUG }
+				NOT = { tag = YUG }
 			}
 			owns = 769
 			owns = 736
@@ -416,7 +416,7 @@ political_decisions = {
 		potential = {
 			AND= {
 				primary_culture = serb
-				NOT = { TAG = YUG }
+				NOT = { tag = YUG }
 			}
 			owns = 770
 			owns = 778
@@ -2000,7 +2000,7 @@ political_decisions = {
 		potential = {
 			AND= {
 				primary_culture = serb
-				NOT = { TAG = YUG }
+				NOT = { tag = YUG }
 			}
 			NOT = { owns = 771 }
 			owns = 772
@@ -2029,7 +2029,7 @@ political_decisions = {
 		potential = {
 			AND= {
 				primary_culture = serb
-				NOT = { TAG = YUG }
+				NOT = { tag = YUG }
 			}
 			owns = 771
 			NOT = { has_global_flag = serbia_rename_cro }
@@ -2168,7 +2168,7 @@ political_decisions = {
 		potential = {
 			AND= {
 				primary_culture = serb
-				NOT = { TAG = YUG }
+				NOT = { tag = YUG }
 			}
 			owns = 777
 			owns = 779

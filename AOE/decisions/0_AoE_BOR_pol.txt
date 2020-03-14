@@ -6,12 +6,12 @@ political_decisions = {
 				tag = FRA
 				tag = BOR
 			}
-			is_great_power = yes
+			is_greater_power = yes
 			NOT = { has_country_flag = established_ecole_militire }
 		}
 		allow = {
 			bolt_action_rifles = 1
-			military_spending = 100
+			military_spending = 1
 			money = 100000
 		}
 		effect = {
@@ -20,7 +20,7 @@ political_decisions = {
 				name = ecole_militire
 				duration = -1
 			}
-			set_country_flag = { established_ecole_militire }
+			set_country_flag = established_ecole_militire 
 		}
 		ai_will_do = {
 			factor = 1
