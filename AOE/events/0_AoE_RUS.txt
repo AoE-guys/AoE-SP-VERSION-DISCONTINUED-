@@ -149,7 +149,7 @@ country_event = {
 		tag = RUS
 		FIN = { exists = no }
 		RUS = {
-			NOT = { owns = 343}
+			NOT = { 343 = { owned_by = RUS } }
 		}
 	}
 	mean_time_to_happen = {
@@ -158,7 +158,7 @@ country_event = {
 	
 	option = {
 		name = "Support the Fins"
-		SWE = { country_event 1788001 }
+		SWE = { country_event = 1788000001 }
 		ai_chance = {
 			factor = 0.4
 			modifier = {
@@ -167,15 +167,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 1
-				relation = { 
+				relation = {
 					who = SWE
 					value = -200
 				}
 				NOT = {
-					relation = { 
+					relation = {
 						who = SWE
 						value = -20
-					}	
+					}
 				}
 			}
 		}
@@ -186,7 +186,6 @@ country_event = {
 		prestige = -5
 		ai_chance = {
 			factor = 0.6
-		}
 		modifier = {
 			factor = 1
 			alliance_with  = SWE
@@ -204,10 +203,11 @@ country_event = {
 				in_sphere = THIS
 			}
 		}
+		}
 	}
 }
 country_event = {
-	id = 1788001
+	id = 1788000001
 	title = "The Anjala conspiracy"
 	desc = "EVTDESC1788001"
 	picture = finland
