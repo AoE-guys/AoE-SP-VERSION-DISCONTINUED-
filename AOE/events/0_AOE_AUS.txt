@@ -133,12 +133,12 @@ country_event = {
 				limit = {
 					OR = {
 						AND = {
-							consciousness = 0.1
-							militancy = 0.5
+							consciousness = 0.5
+							militancy = 2
 							has_pop_culture = romanian
 						}
 						AND = {
-							militancy = 0.5
+							militancy = 2
 							NOT = { has_pop_culture = romanian	}
 							NOT = { has_pop_culture = south_german }
 						}
