@@ -1,0 +1,18 @@
+army = {
+	name = "The Khan's Army"
+	location = 1600
+	regiment = {
+		name= "Oirat Cavalry"
+		type = cavalry
+		home = 1600
+	}
+}
+
+leader = {
+	name = "Tsewang Rabtan"
+	type = land
+	date = 1700.1.1
+	background = aristocrat
+	personality = mediocre
+}
+	

@@ -92,4 +92,100 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	riksdaler_reform = {
+		picture = tresury_reforms
+		potential = {
+			tag = SWE
+			NOT = { has_country_flag = riksdaler_reform } 
+		}
+		allow = {
+			war = no
+			market_determined_exchange_rates = 1
+			investment_banks = 1
+			NOT = {
+				OR = {
+					health_care = no_health_care
+					health_care = trinket_health_care
+				}
+			}
+		}
+		effect = {
+			set_country_flag = riksdaler_reform
+			prestige = 5
+			add_country_modifier = {
+				name = riksdaler
+				duration = -1
+			}
+		}
+	}
+	
+	gustav_iii_reforms = {
+		picture = gustav_iii
+		potential = {
+			tag = SWE
+			NOT = { has_country_flag = gustav_iii_reforms } 
+		}
+		allow = {
+			war = no
+			has_country_modifier = gustav_iii
+			NOT = {
+				OR = {
+					safety_regulations = no_safety
+					safety_regulations = trinket_safety
+					safety_regulations = low_safety
+				}
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			ruling_party_ideology = reactionary
+			war = no
+		}
+		effect = {
+			government = absolute_monarchy
+			social_reform = good_safety
+			add_country_modifier = {
+				name = swedish_absolutism
+				duration = -1
+			}
+		}
+	}
+	
+	dominus_mare_baltici = {
+		picture = baltic_sea
+		potential = {
+			is_culture_group = scandinavian
+			NOT = { has_country_flag = dominus_mare_baltici } 
+		}
+		allow = {
+			war = no
+			owns = 332
+			owns = 994
+			owns = 354
+			owns = 695
+			owns = 690
+			owns = 696
+			owns = 372
+			owns = 530
+			owns = 546
+			owns = 679
+			owns = 350
+			owns = 345
+		}
+		effect = {
+			prestige = 100
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 7300
+			}
+			SWE = {
+				any_core = {
+					limit = { PRU_546 }
+					lose_core = PRU
+				}
+			}
+		}
+	}
 }

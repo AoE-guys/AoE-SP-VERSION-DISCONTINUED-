@@ -8,6 +8,12 @@ political_decisions = {
 			}
 		}
 		allow = {
+			NOT = {
+				OR = {
+					health_care = no_health_care
+					health_care = trinket_health_care
+				}
+			}
 			central_bank_money_bill_printing = 1
 			war = no
 		}
@@ -105,5 +111,164 @@ political_decisions = {
 			badboy = 15
 		}
 		ai_will_do = { factor = 1 }
+	}
+	claim_crimea_south_ukrine = {
+		picture = crimea
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = claimed_crimea_south_ukrine }
+		}
+		allow = {
+			military_score = 150
+			is_greater_power = yes
+			war_policy  = jingoism
+			government = absolute_monarchy
+		}
+		effect = {
+			set_country_flag = claimed_crimea_south_ukrine
+			RUS_964 = { add_core = RUS }
+			RUS_968 = { add_core = RUS }
+			RUS_973 = { add_core = RUS }
+			1048 =  { add_core = RUS }
+			badboy = 15
+		}
+		ai_will_do = { factor = 1 }	
+	}
+	enact_the_table_of_ranks = {
+		picture = table_of_ranks
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = enacted_the_table_of_ranks
+			}
+		}
+		allow = {
+			NOT = {
+				OR = {
+					safety_regulations = no_safety
+					safety_regulations = trinket_safety
+				}
+			}
+			OR = {
+				pensions = low_pensions
+				pensions = acceptable_pensions
+				pensions = good_pensions
+			}
+			war = no
+		}
+		effect = {
+		add_country_modifier = {
+			name = table_of_ranks
+			duration = -1
+		}
+		set_country_flag = enacted_the_table_of_ranks
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	integrate_kalmyk = {
+		picture = kalmyk
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = integrated_kalmyk }
+		}
+		allow = {
+			KMK = {
+				is_vassal_of = THIS
+			}
+			mass_politics = 1
+			is_greater_power = yes
+			war_policy  = jingoism
+		}
+		effect = {
+			set_country_flag = integrated_kalmyk
+			KMK = {
+				add_core = THIS
+			}
+			inherit = KMK
+			badboy = 5
+		}
+		ai_will_do = { factor = 1 }	
+	}
+	enact_nakaz = {
+		picture = nakaz
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = enacted_nakaz
+			}
+		}
+		allow = {
+			has_country_modifer = catharine_the_great
+			NOT = {
+				OR = {
+					safety_regulations = no_safety
+					safety_regulations = trinket_safety
+				}
+			}
+			NOT = {
+				OR = {
+					health_care = no_health_care
+					health_care = trinket_health_care
+				}
+			}
+			OR = {
+				upper_house_composition = party_appointed
+				upper_house_composition = appointed
+			}
+			government = absolute_monarchy
+			ruling_party_ideology = reactionary
+			war = no
+		}
+		effect = {
+			political_reform = party_appointed
+			political_reform = unitary
+			add_country_modifier = {
+				name = nakaz
+				duration = -1
+			}
+			set_country_flag = enacted_nakaz
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	claim_ruthenia = {
+		picture = ruthenia
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = claimed_ruthenia }
+		}
+		allow = {
+			is_greater_power = yes
+			war_policy  = jingoism
+			owns = 718
+			owns = 958
+			owns = 360
+			OR = {
+				POL = {
+					NOT = { is_greater_power = yes }
+					exists = yes
+				}
+				PLC = {
+					NOT = { is_greater_power = yes }
+					exists = yes
+				}
+			}
+		}
+		effect = {
+			set_country_flag = claimed_ruthenia
+			RUS_947 = { add_core = RUS }
+			RUS_718 = { add_core = RUS }
+			RUS_940 = { add_core = RUS }
+			RUS_947 = { add_core = RUS }
+			RUS_959 = { add_core = RUS }
+			RUS_973 = { add_core = RUS }
+			RUS_360 = { add_core = RUS }
+			RUS_354 = { add_core = RUS }
+			badboy = 22
+		}
+		ai_will_do = { factor = 1 }	
 	}
 }
