@@ -1853,3 +1853,17 @@ small_but_efficient_VEN = {
 	education_efficiency_modifier = 0.05
 	supply_consumption = -0.9
 }
+
+hungarian_revolution = {
+	trigger = {
+		exists = yes
+		tag = HUN
+		has_global_flag = hungarian_revolution_occurred
+		war_with = AUS
+	}
+
+	icon = 7
+	mobilisation_size = 0.5
+	mobilization_economy_impact = 0.25
+	mobilization_impact = 0.25
+}

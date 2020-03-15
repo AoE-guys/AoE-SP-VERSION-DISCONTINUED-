@@ -26,15 +26,16 @@ country_event = {
 	option = {
 		name = "To Belgrade!"
 		casus_belli = {
-		target = FROM
-		type = acquire_state
-		months = 80
+			target = TUR
+			type = acquire_state
+			state_id = SER_794
+			months = 80
 		}
 		war = {
 			target = TUR
 			attacker_goal = { 
 			casus_belli = acquire_state 
-			state_province_id = SER_794
+			state_id = SER_794
 			}
 		}
 	}

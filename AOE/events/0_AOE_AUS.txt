@@ -1,19 +1,123 @@
 country_event = {
 	id = 999
 	title = "EVTNAME999" 
-	desñ = "EVTDESC999"
+	desc = "EVTDESC999"
 	picture = "unite"
 
 	is_triggered_only = yes
 
 	option = {
 		name = "EVT999OPT"
-		war = {
-			target = AUS
-			attacker_goal = { casus_belli = civil_war }
-			defender_goal = { casus_belli = civil_war }
-		}
 		HUN = {
+			ammunition = 100
+			small_arms = 100
+			canned_food = 500
+			wool = 200
+			steel = 50
+			fabric = 50
+			luxury_clothes = 30
+			set_country_flag = hungary_prepares_to_war
+			any_pop = {
+				limit = {
+					OR = {
+						AND = {
+							consciousness = 0.1
+							militancy = 0.5
+							has_pop_culture = hungarian
+						}
+						AND = {
+							militancy = 0.5
+							NOT = { has_pop_culture = hungarian	}
+							NOT = { has_pop_culture = south_german }
+						}
+					}		
+				}
+			pop_type = soldiers
+			}
+
+#			all_core = {
+#				limit = {
+#					OR = {
+#						owned_by = AUS
+#						owned_by = HUN
+#					}
+#				}
+#				add_province_modifier = { name = hungarians_rise 
+#					duration = -1 }
+#			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 5555
+	title = "EVTNAME5555"
+	desc = "EVTDESC5555"
+	picture = "unite"
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = hungary_prepares_to_war
+	}
+	
+	mean_time_to_happen = {
+		month = 3
+	}
+	
+	option = {
+		name = "EVT5555OPT"
+		AUS = {
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+			}
+			casus_belli = {
+				target = SIE
+				type = make_puppet
+				months = 120
+			}
+		}
+		prestige = 20
+		clr_country_flag = hungary_prepares_to_war
+	}
+}
+
+country_event = {
+	id = 55555
+	title = "EVTNAME55555" 
+	desc = "EVTDESC55555"
+	picture = "unite"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT55555OPT1"
+		release_vassal = SIE
+		leave_alliance = AUS
+		any_country = {
+			limit = {
+				war_with = SIE
+			}
+			end_war = SIE
+			create_alliance = SIE
+			relation = {
+				who = SIE
+				value = 100
+			}
+		}
+		relation = {
+			who = AUS
+			value = -200
+		}
+		
+		SIE = {
 			ammunition = 100
 			small_arms = 100
 			canned_food = 500
@@ -25,30 +129,42 @@ country_event = {
 				limit = {
 					OR = {
 						AND = {
-						consciousness = 1
-						militancy = 1
-						is_primary_culture = yes
+							consciousness = 0.1
+							militancy = 0.5
+							has_pop_culture = romanian
 						}
-						
 						AND = {
-						militancy = 2
-						is_primary_culture = no
-						NOT = { primary_culture = south_german }
+							militancy = 0.5
+							NOT = { has_pop_culture = romanian	}
+							NOT = { has_pop_culture = south_german }
 						}
-					}		
+					}
 				}
 			pop_type = soldiers
 			}
-			all_core = {
-				set_province_flag = hunn	
-			}
 		}
-	
 		ai_chance = {
-			factor = 100
+			factor = 90
 		}
 	}
+	option = {
+		name = "EVT55555OPT2"
+		relation = {
+			who = AUS
+			value = 100
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = romanian 
+			}
+			militancy = 4
+		}
+		ai_chance = {
+			factor = 10
+		}	
+	}
 }
+
 country_event = {
 	id = 10225
 	title = "EVTNAME10225" #Hungarian Revolution of $YEAR$
@@ -82,27 +198,20 @@ country_event = {
 	}
 
 	option = {
+
 		name = "EVT10225OPTA"
 		778 = { remove_core = HUN }
-		AUS_641 = {
-			secede_province = HUN
-			set_province_flag = hunn
-		}
-		AUS_623 = {
-			secede_province = HUN
-			set_province_flag = hunn
-		}
-		AUS_950 = {
-			secede_province = HUN
-			set_province_flag = hunn
-		}
-		any_owned_province = {
+		
+		AUS = {
+			any_owned = {
 				limit = {
-					is_core = HUN
-				}
-				set_province_flag = hunn
-		}
-		relation = { who = HUN value = -100 }
+						is_core = HUN
+					}
+				add_province_modifier = { name = hungarians_rise 
+				duration = -1 }
+				secede_province = HUN
+			}
+			relation = { who = HUN value = -100 }
 		any_owned = {
 			limit = { is_core = AUS }
 			remove_province_modifier = liberal_agitation
@@ -114,6 +223,16 @@ country_event = {
 		add_country_modifier = {
 			name = no_more_war
 			duration = 7
+		}
+		AUS_641 = {
+			remove_province_modifier = hungarians_rise
+		}
+		AUS_623 = {
+			remove_province_modifier = hungarians_rise
+		}
+		
+
+		
 		}
 		HUN = {
 			capital = 641
@@ -142,6 +261,9 @@ country_event = {
 				background = cavalry_school
 			}
 			country_event = 999
+		}
+		SIE = {
+			country_event = 55555
 		}
 		ai_chance = {
 			factor = 100

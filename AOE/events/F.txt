@@ -1,49 +1,119 @@
+#country_event = {
+#	id = 5555 	#Hungary won
+#	title = "EVTNAME996" 
+#	desc = "EVTDESC996"
+#	picture = "unite"
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = HUN
+#		HUN = {
+#			any_owned_province = {
+#				has_province_modifier = hungarians_rise 
+#				controlled_by = HUN 
+#			}
+#		}
+#		AUS = {
+#			any_owned_province = {
+#				NOT = { has_province_modifier = hungarians_rise }
+#			}
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 10
+#	}
+#
+#	immediate = {
+#		clr_global_flag = hungarian_revolution_occurred
+#		set_global_flag = hungarian_revolution_succeede
+#	}
+#
+#	option = {
+#		name = "EVT5555OPT1"
+#		all_core = { 
+#			remove_province_modifier = hungarians_rise 
+#		}
+#		end_war = AUS
+#		prestige = 50
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#}
+
 country_event = {
-
-	id = 996 	#Hungary won
-	title = "EVTNAME996" 
-	desñ = "EVTDESC996"
-	picture = "unite"
-
-	fire_only_once = yes
+	id = 997
 
 	trigger = {
-		tag = HUN
-		any_core = { 
-			AND = {
-				has_province_flag = hunn
-				OR = {
-					controlled_by = THIS
-					owned_by = THIS
-				}
+		is_greater_power = yes
+		ai = yes
+		has_global_flag = hungarian_revolution_occurred
+		HUN = { exists = yes }
+		HUN = {
+			any_owned_province = {
+						NOT = { controlled_by = HUN }
+						is_capital = no
+						has_province_modifier = hungarians_rise
 			}
 		}
 	}
-	mean_time_to_happen = {
-		months = 2
+		mean_time_to_happen = {
+		days = 7
 	}
 
-	immediate = {
-		clr_global_flag = hungarian_revolution_occurred
-		set_global_flag = hungarian_revolution_succeede
+	title = "EVTNAME997"
+	desc = "EVTDESC997"
+
+	option = {
+		name = "EVTOPTA997"
+		HUN = {
+			any_owned = {
+				limit = {
+						NOT = { controlled_by = HUN }
+						is_capital = no
+						has_province_modifier = hungarians_rise
+				}
+				secede_province = AUS
+			}
+		}
+	}
+}
+country_event = {
+	id = 998
+
+	trigger = {
+		is_greater_power = yes
+		ai = yes
+		has_global_flag = hungarian_revolution_occurred
+		HUN = { exists = yes }
+		AUS = {
+			any_owned_province = {
+						NOT = { controlled_by = AUS }
+						is_capital = no
+						has_province_modifier = hungarians_rise
+			}
+		}
+	}
+
+	title = "EVTNAME998"
+	desc = "EVTDESC998"
+	
+	mean_time_to_happen = {
+		days = 7
 	}
 
 	option = {
-		name = "EVT996OPT1"
-		any_owned = {
-			limit = {
-				owned_by = THIS
-				NOT = { has_province_flag = hunn }
+		name = "EVTOPTA998"
+		AUS = {
+			any_owned = {
+				limit = {
+						NOT = { controlled_by = AUS }
+						is_capital = no
+						has_province_modifier = hungarians_rise
+				}
+				secede_province = HUN
 			}
-			secede_province = AUS
-		}
-		all_core = { 
-			clr_province_flag = hunn
-		}
-		end_war = AUS
-		prestige = 25
-		ai_chance = {
-			factor = 100
 		}
 	}
 }

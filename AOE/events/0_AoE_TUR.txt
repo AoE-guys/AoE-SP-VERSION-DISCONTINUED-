@@ -19,7 +19,9 @@ country_event = {
 	option = {
 		name = "Recompensate their losses"
 		treasury = -1500
-		militancy = 1.5
+		middle_strata = {
+			militancy = 1.5
+		}
 		add_country_modifier = {
 			name = janisseries_angry
 			duration = 1825
@@ -28,7 +30,9 @@ country_event = {
 	
 	option = {
 		name = "Don't bother me with those fools"
-		militancy = 3
+		middle_strata = {
+			militancy = 3
+		}
 		add_country_modifier = {
 			name = janisseries_furious
 			duration = 1825
@@ -56,7 +60,9 @@ country_event = {
 	option = {
 		name = "Pay them off"
 		treasury = -1000
-		militancy = 1.5
+		middle_strata = {
+			militancy = 1.5
+		}
 		add_country_modifier = {
 			name = janisseries_angry
 			duration = 1825
@@ -65,7 +71,9 @@ country_event = {
 	
 	option = {
 		name = "Force them to obey reforms"
-		militancy = 3
+		middle_strata = {
+			militancy = 3
+		}
 		add_country_modifier = {
 			name = janisseries_furious
 			duration = 1825
@@ -97,7 +105,9 @@ country_event = {
 	
 	option = {
 		name = "Ignore them"
-		militancy = 1
+		middle_strata = {
+			militancy = 1
+		}
 		add_country_modifier = {
 			name = janisseries_angry
 			duration = 1825

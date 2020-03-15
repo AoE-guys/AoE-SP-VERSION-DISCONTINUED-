@@ -148,7 +148,7 @@ country_event = {
 		name = "EVTNAME93001OPTA"
 		create_alliance = AUS
 		set_country_flag = support_habsburg_heir_heir
-		set_gloabal_flag = spanish_war_begun
+		set_global_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.30
 			modifier = {
@@ -182,7 +182,7 @@ country_event = {
 		create_alliance = SPA
 		create_alliance = BOR
 	    set_country_flag = support_bourbon_heir
-		set_gloabal_flag = spanish_war_begun
+		set_global_flag = spanish_war_begun
 	    ai_chance = {
 			factor = 0.20
 			modifier = {
@@ -194,7 +194,7 @@ country_event = {
 
 	option = { #Support None
 		name = "EVTNAME93001OPTC"
-		set_gloabal_flag = spanish_war_begun
+		set_global_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.50
 			modifier = {
@@ -218,8 +218,8 @@ country_event = {
 	trigger = {  
                tag = AUS	
 			   has_global_flag = support_bourbon_heir_spa
-			   has_gloabal_flag = spanish_war_begun
-			   NOT = { has_gloabal_flag = spanish_war_realy_begun }
+			   has_global_flag = spanish_war_begun
+			   NOT = { has_global_flag = spanish_war_realy_begun }
 	}
 	
 	mean_time_to_happen = {
@@ -243,7 +243,7 @@ country_event = {
 		       	      call_ally = yes
 		       }
 		}
-		set_gloabal_flag = spanish_war_realy_begun
+		set_global_flag = spanish_war_realy_begun
 		ai_chance = {
 			factor = 1.0
 		}
@@ -271,13 +271,13 @@ country_event = {
 		name = "EVTNAME93008OPTA"
 	    set_country_flag = support_bourbon_heir
 		any_country = { 
-		               limit = { 
-					            continent = europe 
-								NOT = { tag = SPA } 
-								NOT = { tag = AUS } 
-								NOT = { is_vassal = yes } 
-						} 
-						country_event = 93004 
+			limit = { 
+				continent = europe 
+				NOT = { tag = SPA } 
+				NOT = { tag = AUS } 
+				NOT = { is_vassal = yes } 				
+				} 
+			country_event = 93004 
 		}
 	    ai_chance = {
 			factor = 0.99
@@ -312,7 +312,7 @@ country_event = {
 		name = "EVTNAME93004OPTA"
 		create_alliance = BOR
 		set_country_flag = support_bourbon_heir
-		set_gloabal_flag = spanish_war_begun
+		set_global_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.30
 			modifier = {
@@ -346,7 +346,7 @@ country_event = {
 		create_alliance = SPA
 		create_alliance = AUS
 	    set_country_flag = support_habsburg_heir
-		set_gloabal_flag = spanish_war_begun
+		set_global_flag = spanish_war_begun
 	    ai_chance = {
 			factor = 0.20
 			modifier = {
@@ -362,7 +362,7 @@ country_event = {
 
 	option = { #Support None
 		name = "EVTNAME93004OPTB"
-		set_gloabal_flag = spanish_war_begun
+		set_global_flag = spanish_war_begun
 		ai_chance = {
 			factor = 0.50
 			modifier = {
@@ -386,8 +386,8 @@ country_event = {
 	trigger = {  
                tag = BOR	
 			   has_global_flag = support_habsburg_heir_spa
-			   has_gloabal_flag = spanish_war_begun
-			   NOT = { has_gloabal_flag = spanish_war_realy_begun }
+			   has_global_flag = spanish_war_begun
+			   NOT = { has_global_flag = spanish_war_realy_begun }
 	}
 	
 	mean_time_to_happen = {
@@ -411,7 +411,7 @@ country_event = {
 		       	      call_ally = yes
 		       }
 		}
-		set_gloabal_flag = spanish_war_realy_begun
+		set_global_flag = spanish_war_realy_begun
 		ai_chance = {
 			factor = 1.0
 		}
@@ -422,11 +422,13 @@ country_event = {
 country_event = {
 	id = 13005
 	title = "EVTNAME93005" 
+	desc = "..."
 	picture = "spanish_king"
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
+		name = "..."
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -438,7 +440,6 @@ country_event = {
 						region = SIC_753
 						region = SIC_754
 						region = AUS_726
-						region = SIC_754
 						region = NET_379
 						region = PRU_575
 						region = SAR_765
@@ -463,8 +464,8 @@ country_event = {
 		}
 		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA  end_war = BOR }
 		end_war = SPA  end_war = BOR
-		remove_global_flag =  spanish_succesion_crisis
-		add_global_flag = spanish_succesion_resolved
+		clr_global_flag =  spanish_succesion_crisis
+		set_global_flag = spanish_succesion_resolved
 		any_country = {
 			limit = {
 				exists = yes
@@ -485,11 +486,13 @@ country_event = {
 country_event = {
 	id = 13006
 	title = "EVTNAME93006" 
+	desc = "..."
 	picture = "spanish_king"
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
+		name = "End"
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -501,7 +504,6 @@ country_event = {
 					region = SIC_753
 					region = SIC_754
 					region = AUS_726
-					region = SIC_754
 					region = NET_379
 					region = PRU_575
 					region = SAR_765
@@ -516,8 +518,8 @@ country_event = {
 		}
 		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA  end_war = AUS }
 		end_war = SPA  end_war = AUS
-		remove_global_flag =  spanish_succesion_crisis
-		add_global_flag = spanish_succesion_resolved
+		clr_global_flag = spanish_succesion_crisis
+		set_global_flag = spanish_succesion_resolved
 		any_country = {
 			limit = {
 				exists = yes
@@ -538,6 +540,7 @@ country_event = {
 country_event= {
 	id = 13007
 	title = "The end of the succesion crisis"
+	desc = "Finally..."
 	major = yes
 	is_triggered_only = yes
 	
