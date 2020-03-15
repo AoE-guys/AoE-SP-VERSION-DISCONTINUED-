@@ -1,0 +1,18 @@
+army = {
+	name = "The Khan's Army"
+	location = 1594
+	regiment = {
+		name= "Oirat Cavalry"
+		type = cavalry
+		home = 1226
+	}
+}
+
+leader = {
+	name = "Akbash Khan"
+	type = land
+	date = 1700.1.1
+	background = aristocrat
+	personality = mediocre
+}
+	
