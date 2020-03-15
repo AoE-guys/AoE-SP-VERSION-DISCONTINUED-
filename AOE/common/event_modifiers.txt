@@ -3314,10 +3314,13 @@ gustav_iii = {
 	army_tech_research_bonus = 0.05
 	ruling_party_support = 0.35
 	influence_modifier = 0.2
+	global_pop_consciousness_modifier = 0.03
+	icon = 13
 }
-swedish_absolitism = {
+swedish_absolutism = {
 	ruling_party_support = 0.35
 	influence_modifier = 0.2
+	icon = 7
 }
 ###Russia###
 improved_administration = {
@@ -3329,7 +3332,7 @@ table_of_ranks = {
 	leadership_modifier = 0.2
 	land_unit_start_experience = 10
 	supply_consumption = -0.05
-	icon = 5
+	icon = 15
 }
 peter_the_great = {
 	culture_tech_research_bonus = 0.1
@@ -3338,6 +3341,7 @@ peter_the_great = {
 	influence_modifier = 0.2
 	ruling_party_support = 0.35
 	prestige = 0.01
+	icon = 13
 }
 peter_iii= {
 	culture_tech_research_bonus = -0.1
@@ -3346,6 +3350,7 @@ peter_iii= {
 	commerce_tech_research_bonus = -0.05
 	ruling_party_support = -0.15
 	prestige = -0.01
+	icon = 14
 }
 catharine_the_great = {
 	culture_tech_research_bonus = 0.1
@@ -3354,12 +3359,14 @@ catharine_the_great = {
 	bad_badboy = -0.05
 	ruling_party_support = 0.35
 	prestige = 0.01
+	icon = 13
 }
 nakaz = {
 	administrative_efficiency_modifier = 0.10
 	war_exhaustion = -0.1
 	ruling_party_support = 0.05
 	tax_efficiency = 0.1
+	icon = 5
 }
 #####
 ecole_militire = {
@@ -3633,7 +3640,7 @@ rich_unrest_5 = {
 	RGO_throughput = -0.50
 	education_efficiency_modifier = -0.25
 	global_pop_militancy_modifier = 0.005
-	icon = 20
+	icon = 18
 }
 
 rich_unrest_4 = {
@@ -3641,7 +3648,7 @@ rich_unrest_4 = {
 	RGO_throughput = -0.40
 	education_efficiency_modifier = -0.20
 	global_pop_militancy_modifier = 0.004
-	icon = 20
+	icon = 18
 }
 
 rich_unrest_3 = {
@@ -3649,7 +3656,7 @@ rich_unrest_3 = {
 	RGO_throughput = -0.30
 	education_efficiency_modifier = -0.15
 	global_pop_militancy_modifier = 0.003
-	icon = 20
+	icon = 18
 }
 
 rich_unrest_2 = {
@@ -3657,7 +3664,7 @@ rich_unrest_2 = {
 	RGO_throughput = -0.20
 	education_efficiency_modifier = -0.10
 	global_pop_militancy_modifier = 0.002
-	icon = 20
+	icon = 18
 }
 
 rich_unrest_1 = {
@@ -3665,7 +3672,7 @@ rich_unrest_1 = {
 	RGO_throughput = -0.10
 	education_efficiency_modifier = -0.05
 	global_pop_militancy_modifier = 0.001
-	icon = 20
+	icon = 18
 }
 
 middle_class_unrest_5 = {
@@ -3673,7 +3680,7 @@ middle_class_unrest_5 = {
 	RGO_throughput = -0.25
 	factory_throughput = -0.25
     factory_input = 0.50	
-	icon = 20
+	icon = 18
 }
 
 middle_class_unrest_4 = {
@@ -3681,7 +3688,7 @@ middle_class_unrest_4 = {
 	RGO_throughput = -0.20
 	factory_throughput = -0.20 
     factory_input = 0.40	
-	icon = 20
+	icon = 18
 }
 
 middle_class_unrest_3 = {
@@ -3689,7 +3696,7 @@ middle_class_unrest_3 = {
 	RGO_throughput = -0.15
 	factory_throughput = -0.15
     factory_input = 0.30	
-	icon = 20
+	icon = 18
 }
 
 middle_class_unrest_2 = {
@@ -3697,7 +3704,7 @@ middle_class_unrest_2 = {
 	RGO_throughput = -0.10
 	factory_throughput = -0.10
     factory_input = 0.20	
-	icon = 20
+	icon = 18
 }
 
 middle_class_unrest_1 = {
@@ -3705,42 +3712,42 @@ middle_class_unrest_1 = {
 	RGO_throughput = -0.05
 	factory_throughput = -0.05
     factory_input = 0.10	
-	icon = 20
+	icon = 18
 }
 
 lower_class_unrest_5 = {
     tax_efficiency = -0.05
 	factory_throughput = -0.50
 	factory_output = -0.50
-	icon = 20
+	icon = 18
 }
 
 lower_class_unrest_4 = {
     tax_efficiency = -0.04
 	factory_throughput = -0.40
 	factory_output = -0.40
-	icon = 20
+	icon = 18
 }
 
 lower_class_unrest_3 = {
     tax_efficiency = -0.03
 	factory_throughput = -0.30
 	factory_output = -0.30
-	icon = 20
+	icon = 18
 }
 
 lower_class_unrest_2 = {
     tax_efficiency = -0.02
 	factory_throughput = -0.20
 	factory_output = -0.20
-	icon = 20
+	icon = 18
 }
 
 lower_class_unrest_1 = {
     tax_efficiency = -0.01
 	factory_throughput = -0.10
 	factory_output = -0.10
-	icon = 20
+	icon = 18
 }
 
 army_unrest_5 = {
@@ -3749,7 +3756,7 @@ army_unrest_5 = {
 	leadership_modifier = -1.00
 	supply_consumption = 1.00
 	mobilisation_size = -0.05
-	icon = 20
+	icon = 18
 }
 
 army_unrest_4 = {
@@ -3758,7 +3765,7 @@ army_unrest_4 = {
 	leadership_modifier = -0.80
 	supply_consumption = 0.80
 	mobilisation_size = -0.04
-	icon = 20
+	icon = 18
 }
 
 army_unrest_3 = {
@@ -3767,7 +3774,7 @@ army_unrest_3 = {
 	leadership_modifier = -0.60
 	supply_consumption = 0.60
 	mobilisation_size = -0.03
-	icon = 20
+	icon = 18
 }
 
 army_unrest_2 = {
@@ -3776,7 +3783,7 @@ army_unrest_2 = {
 	leadership_modifier = -0.40
 	supply_consumption = 0.40
 	mobilisation_size = -0.02
-	icon = 20
+	icon = 18
 }
 
 army_unrest_1 = {
@@ -3785,7 +3792,7 @@ army_unrest_1 = {
 	leadership_modifier = -0.20
 	supply_consumption = 0.20
 	mobilisation_size = -0.01
-	icon = 20
+	icon = 18
 }
 
 bureaucratic_unrest_5 = {
@@ -3794,7 +3801,7 @@ bureaucratic_unrest_5 = {
 	education = -0.10
 	min_social_spending = 0.25
 	pension_level = 1.25
-	icon = 20
+	icon = 18
 }
 
 bureaucratic_unrest_4 = {
@@ -3803,7 +3810,7 @@ bureaucratic_unrest_4 = {
 	education = -0.08
 	min_social_spending = 0.20
 	pension_level = 1.00
-	icon = 20
+	icon = 18
 }
 
 bureaucratic_unrest_3 = {
@@ -3812,7 +3819,7 @@ bureaucratic_unrest_3 = {
 	education = -0.06
 	min_social_spending = 0.15
 	pension_level = 0.75
-	icon = 20
+	icon = 18
 }
 
 bureaucratic_unrest_2 = {
@@ -3821,7 +3828,7 @@ bureaucratic_unrest_2 = {
 	education = -0.04
 	min_social_spending = 0.10
 	pension_level = 0.50
-	icon = 20
+	icon = 18
 }
 
 bureaucratic_unrest_1 = {
@@ -3830,7 +3837,7 @@ bureaucratic_unrest_1 = {
 	education = -0.02
 	min_social_spending = 0.05
 	pension_level = 0.25
-	icon = 20
+	icon = 18
 }
 
 ###

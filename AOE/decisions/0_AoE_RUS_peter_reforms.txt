@@ -184,7 +184,9 @@ political_decisions = {
 		effect = {
 			set_country_flag = integrated_kalmyk
 			KMK = {
-				add_core = THIS
+				all_core = {
+					add_core = THIS
+				}
 			}
 			inherit = KMK
 			badboy = 5

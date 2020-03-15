@@ -818,18 +818,102 @@ hormuz_strait = {
 dominus_mare_baltici = {
 	trigger = {
 		exists = yes
-		owns = 332
-		owns = 994
-		owns = 354
-		owns = 695
-		owns = 690
-		owns = 696
-		owns = 372
-		owns = 530
-		owns = 546
-		owns = 679
-		owns = 350
-		owns = 345
+	OR = {
+				owns = 332
+				332 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 994
+				994 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 354
+				354 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 695
+				695 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 690
+				690 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 696
+				696 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 372
+				372 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 530
+				530 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 546
+				546 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 679
+				679 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 350
+				350 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
+			OR = {
+				owns = 345
+				345 = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
 	}
 
 	tax_efficiency = 0.01
