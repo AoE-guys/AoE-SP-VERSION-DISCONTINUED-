@@ -8,11 +8,6 @@ country_event = {
 
 	option = {
 		name = "EVT999OPT"
-		war = {
-			target = AUS
-			attacker_goal = { casus_belli = status_quo }
-			defender_goal = { casus_belli = conquest  }
-		}
 		HUN = {
 			ammunition = 100
 			small_arms = 100
@@ -21,6 +16,7 @@ country_event = {
 			steel = 50
 			fabric = 50
 			luxury_clothes = 30
+			set_country_flag = hungary_prepares_to_war
 			any_pop = {
 				limit = {
 					OR = {
@@ -29,7 +25,6 @@ country_event = {
 							militancy = 0.5
 							has_pop_culture = hungarian
 						}
-						
 						AND = {
 							militancy = 0.5
 							NOT = { has_pop_culture = hungarian	}
@@ -40,20 +35,57 @@ country_event = {
 			pop_type = soldiers
 			}
 
-			all_core = {
-				limit = {
-					OR = {
-						owned_by = AUS
-						owned_by = HUN
-					}
-				}
-				add_province_modifier = { name = hungarians_rise 
-					duration = 100000000 }
-			}
+#			all_core = {
+#				limit = {
+#					OR = {
+#						owned_by = AUS
+#						owned_by = HUN
+#					}
+#				}
+#				add_province_modifier = { name = hungarians_rise 
+#					duration = -1 }
+#			}
 		}
 		ai_chance = {
 			factor = 100
 		}
+	}
+}
+
+country_event = {
+	id = 5555
+	title = "EVTNAME5555"
+	desc = "EVTDESC5555"
+	picture = "unite"
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = hungary_prepares_to_war
+	}
+	
+	mean_time_to_happen = {
+		month = 3
+	}
+	
+	option = {
+		name = "EVT5555OPT"
+		AUS = {
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+			}
+			casus_belli = {
+				target = SIE
+				type = make_puppet
+				months = 120
+			}
+		}
+		prestige = 20
+		clr_country_flag = hungary_prepares_to_war
 	}
 }
 
@@ -176,7 +208,7 @@ country_event = {
 						is_core = HUN
 					}
 				add_province_modifier = { name = hungarians_rise 
-				duration = 100000000 }
+				duration = -1 }
 				secede_province = HUN
 			}
 			relation = { who = HUN value = -100 }
