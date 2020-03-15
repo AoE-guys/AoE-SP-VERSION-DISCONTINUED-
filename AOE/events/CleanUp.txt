@@ -310,6 +310,7 @@ country_event = {
 		NOT = { vote_franschise = none_voting }
 		NOT = { political_parties = underground_parties }
 		NOT = { upper_house_composition = party_appointed }
+		NOT = { has_country_modifier = not_dictatorship }
 	}
 	
 	mean_time_to_happen = {
@@ -336,6 +337,8 @@ country_event = {
 		election = yes
 		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 		random_owned = { limit = { owner = { centralization = totalitarianism } } owner = { political_reform = unitary } }
+		add_country_modifier = { name = not_dictatorship duration = 3650 }
+					
 	}
 }
 
