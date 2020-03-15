@@ -81,6 +81,9 @@ country_event = {
 		name = EVTOPTA19000
 		prestige = 15
 		set_country_flag = neglecting_the_third_estate
+		ai_will_do = {
+			factor = 20
+		}
 	}
 	option = {
 		name = EVTOPTB19000
@@ -90,13 +93,17 @@ country_event = {
 			relation = { who = BOR value = 30 }
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 40
 		}
 	}
 	option = {
 		name = EVTOPTC19000
 		prestige = -40
 		set_country_flag = third_estate_satisfied
+		
+		ai_will_do = {
+			factor = 5
+		}
 	}
 }
 	

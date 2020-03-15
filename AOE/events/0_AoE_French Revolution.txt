@@ -54,7 +54,6 @@ country_event = {
 		name = "EVT10400OPTA"
 		prestige = -25
 		any_owned = { remove_province_modifier = liberal_agitation }
-		remove_country_modifier = neglecting_the_third_estate
 		remove_country_modifier = global_liberal_agitation
 		random_owned = {
 			limit = {
