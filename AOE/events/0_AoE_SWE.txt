@@ -1,0 +1,146 @@
+country_event = {
+	id = 172100
+	title = "Age of Liberty in Sweden"
+	desc = "EVTDESC172100"
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		tag = SWE
+		war = no
+		war_exhaustion = 10
+		OR = {
+			AND = {
+				NOT = {
+					owns = 349
+					owns = 350
+					owns = 351
+					owns = 352
+					owns = 353
+					owns = 994
+					owns = 354
+					owns = 996
+					owns = 355
+				}
+			}
+			government = hms_government	
+		}
+		NOT = {
+			has_country_modifier = gustav_iii
+		}
+		NOT = {
+			has_country_flag = gustav_assasinated
+		}
+	}
+	
+	option = {
+		name = "Let our nation be guided towards prosperity!"
+		prestige = 15
+		government = hms_government
+		political_reform = wealth_weighted_voting
+		political_reform = state_equal_weight
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = non_secret_ballots
+		social_reform = no_safety
+		social_reform = trinket_pensions
+		set_coutry_flag = age_of_liberalism
+		add_country_modifier = {
+			name = new_constitution
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = 1721001
+	title = "Swedish Revolution"
+	desc = "EVTDESC1721001"
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		war = no
+		year = 1772
+		tag = SWE
+		OR = {
+			average_consciousness = 5
+			average_militancy = 4
+		}
+		NOT = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+		}
+	}
+	
+	option = {
+		name = "Long live the king!"
+		government = prussian_constitutionalism
+		political_reform = landed_voting
+		political_reform = appointed
+		political_reform = harassment
+		prestige = 15
+		add_country_modifier = {
+			name =	gustav_iii
+			duration = -1
+		}
+		add_country_modifier = {
+			name =	liberal_reaction
+			duration = 3650
+		}
+	}
+}
+country_event = {
+	id = 1721002
+	title = "Our King Assasinated!"
+	desc = "EVTDESC1721002"
+	picture = assasination
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		year = 1792
+		tag = SWE
+		average_militancy = 6
+		has_country_flag = gustav_iii_reforms
+		has_country_modifier = gustav_iii
+	}
+	
+	option = {
+		name = "Give the power back to the parliment"
+		government = hms_government
+		prestige = 15
+		political_reform = wealth_weighted_voting
+		political_reform = state_equal_weight
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = non_secret_ballots
+		social_reform = no_safety
+		social_reform = trinket_pensions
+		add_country_modifier = {
+			name = new_constitution
+			duration = 1825
+		}
+		remove_country_modifier = gustav_iii
+	}
+	option = {
+		name = "Continue Gustav's Autocracy"
+		remove_country_modifier = gustav_iii
+		add_country_modifier = {
+			name = liberal_agitation
+			duration = 1825
+		}
+		prestige = -15
+	}
+}

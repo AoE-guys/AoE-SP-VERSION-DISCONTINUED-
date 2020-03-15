@@ -298,7 +298,12 @@ political_decisions = {
 		potential = {
 			OR = {
 				has_country_flag = new_world_nation
-				tag = USA
+				capital_scope = {
+					continent = north_america
+				}
+				capital_scope = {
+					continent = south_america
+				}
 			}
 			is_vassal = no
 			NOT = { has_global_flag = bastion_of_liberty }
