@@ -101,6 +101,7 @@ country_event = {
 		name = "EVT55555OPT1"
 		release_vassal = SIE
 		leave_alliance = AUS
+		create_alliance = HUN
 		any_country = {
 			limit = {
 				war_with = SIE
@@ -109,14 +110,17 @@ country_event = {
 			create_alliance = SIE
 			relation = {
 				who = SIE
-				value = 100
+				value = 200
 			}
 		}
 		relation = {
 			who = AUS
 			value = -200
 		}
-		
+		relation = {
+			who = HUN
+			value = 200
+		}
 		SIE = {
 			ammunition = 100
 			small_arms = 100
