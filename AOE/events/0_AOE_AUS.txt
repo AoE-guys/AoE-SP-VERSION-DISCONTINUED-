@@ -37,16 +37,16 @@ country_event = {
 				pop_type = soldiers
 			}
 
-#			all_core = {
-#				limit = {
-#					OR = {
-#						owned_by = AUS
-#						owned_by = HUN
-#					}
-#				}
-#				add_province_modifier = { name = hungarians_rise 
-#					duration = -1 }
-#			}
+			all_core = {
+				limit = {
+					OR = {
+						owned_by = AUS
+						owned_by = HUN
+					}
+				}
+				add_province_modifier = { name = hungarians_rise 
+					duration = -1 }
+			}
 		
 		}
 		ai_chance = {
@@ -312,7 +312,7 @@ country_event = {
 						is_core = HUN
 					}
 				add_province_modifier = { name = hungarians_rise 
-				duration = -1 }
+				duration = 3650 }
 				secede_province = HUN
 			}
 			relation = { who = HUN value = -100 }
@@ -328,15 +328,10 @@ country_event = {
 			name = no_more_war
 			duration = 7
 		}
-		AUS_641 = {
+		641 = {
 			remove_province_modifier = hungarians_rise
 		}
-		AUS_623 = {
-			remove_province_modifier = hungarians_rise
-		}
-		
 
-		
 		}
 		HUN = {
 			capital = 641
