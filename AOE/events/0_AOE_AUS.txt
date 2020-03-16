@@ -34,7 +34,7 @@ country_event = {
 						}
 					}		
 				}
-			pop_type = soldiers
+				pop_type = soldiers
 			}
 
 #			all_core = {
@@ -47,6 +47,7 @@ country_event = {
 #				add_province_modifier = { name = hungarians_rise 
 #					duration = -1 }
 #			}
+		
 		}
 		ai_chance = {
 			factor = 100
@@ -193,7 +194,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {
+	trigger = {	
 		tag = AUS
 		has_global_flag = hungarian_revolution_occurred
 		HUN = { exists = no }
