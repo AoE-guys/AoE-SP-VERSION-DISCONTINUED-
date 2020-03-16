@@ -1,6 +1,6 @@
 country_event = {
 	id = 999
-	title = "EVTNAME999" 
+	title = "EVTNAME999" #hungarian prepararions
 	desc = "EVTDESC999"
 	picture = "unite"
 
@@ -24,11 +24,13 @@ country_event = {
 							consciousness = 0.1
 							militancy = 0.5
 							has_pop_culture = hungarian
+							strata = poor
 						}
 						AND = {
-							militancy = 0.5
+							militancy = 1
 							NOT = { has_pop_culture = hungarian	}
 							NOT = { has_pop_culture = south_german }
+							strata = poor
 						}
 					}		
 				}
@@ -54,7 +56,7 @@ country_event = {
 
 country_event = {
 	id = 5555
-	title = "EVTNAME5555"
+	title = "EVTNAME5555" #War
 	desc = "EVTDESC5555"
 	picture = "unite"
 	
@@ -91,7 +93,7 @@ country_event = {
 
 country_event = {
 	id = 55555
-	title = "EVTNAME55555" 
+	title = "EVTNAME55555" #Rakoczi decides
 	desc = "EVTDESC55555"
 	picture = "unite"
 
@@ -111,6 +113,13 @@ country_event = {
 			relation = {
 				who = SIE
 				value = 200
+			}
+		}
+		HUN = {
+			define_general = {
+				name = "Francis II Rakoczi"
+				personality = persistant
+				background = cavalry_school
 			}
 		}
 		relation = {
@@ -136,15 +145,17 @@ country_event = {
 							consciousness = 0.5
 							militancy = 2
 							has_pop_culture = romanian
+							strata = poor
 						}
 						AND = {
 							militancy = 2
 							NOT = { has_pop_culture = romanian	}
 							NOT = { has_pop_culture = south_german }
+							strata = poor
 						}
 					}
 				}
-			pop_type = soldiers
+				pop_type = soldiers
 			}
 		}
 		ai_chance = {
@@ -163,12 +174,100 @@ country_event = {
 			}
 			militancy = 4
 		}
+		set_country_flag = rakoczi_decide
+		define_general = {
+				name = "Francis II Rakoczi"
+				personality = persistant
+				background = cavalry_school
+		}
 		ai_chance = {
 			factor = 10
 		}	
 	}
 }
 
+country_event = {
+	id = 10555
+	title = "EVTNAME10555" #Clear
+	desc = "EVTDESC10555"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AUS
+		has_global_flag = hungarian_revolution_occurred
+		HUN = { exists = no }
+		SIE = { vassal_of = AUS }
+	}
+	
+	immediate = {
+		clr_global_flag = hungarian_revolution_occurred
+		set_global_flag = hungarian_revolution_fail
+	}
+	
+	option = {
+		name = "EVT10555OPT"
+		any_owned = {
+			limit = {
+				has_province_modifier = hungarians_rise
+			}
+			remove_province_modifier = hungarians_rise
+			any_pop = {
+				limit = {
+					NOT = { has_pop_culture = hungarian }
+				}
+				militancy = -2
+				consciousness = -2
+			}
+		}
+		prestige = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 10556
+	title = "EVTNAME10556" #Transylvania 
+	desc = "EVTDESC10556"
+	
+	fire_only_once = no
+	
+	trigger = {
+		tag = AUS
+		has_global_flag = hungarian_revolution_fail
+		SIE = { has_country_flag = rakoczi_decide }
+	}
+
+	option = {
+		name = "EVT10556OPT1"
+		651 = { secede_province = SIE }
+		647 = { secede_province = SIE }
+		prestige = 10
+		ai_chance = {
+			factor = 9
+		}
+	}
+		option = {
+		name = "EVT10556OPT1"
+		651 = {
+			any_pop = {
+				militancy = -2
+			}
+		}
+		647 = {
+			any_pop = {
+				militancy = -2
+			}
+		}
+		prestige = -10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+	
 country_event = {
 	id = 10225
 	title = "EVTNAME10225" #Hungarian Revolution of $YEAR$
@@ -258,11 +357,6 @@ country_event = {
 			add_country_modifier = {
 				name = no_more_war
 				duration = 7
-			}
-			define_general = {
-				name = "Francis II Rakoczi"
-				personality = persistant
-				background = cavalry_school
 			}
 			country_event = 999
 		}
