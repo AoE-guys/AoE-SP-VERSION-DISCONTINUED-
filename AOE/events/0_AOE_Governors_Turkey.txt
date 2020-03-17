@@ -19,7 +19,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 80
+		months = 50
 		modifier = {
 			factor = 1.5
 			NOT = { culture = misri }
@@ -39,7 +39,6 @@ province_event = {
 			name = inefficient_bureacracy
 			}
 		}
-	}
 	option = {
 		name = "We can handle it ourselves."
 		state_scope = {
@@ -73,7 +72,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 80
+		months = 50
 		modifier = {
 			factor = 1.5
 			NOT = { culture = kurdish }
@@ -93,7 +92,6 @@ province_event = {
 			name = inefficient_bureacracy
 			}
 		}
-	}
 	option = {
 		name = "We can handle it ourselves."
 		state_scope = {
@@ -127,7 +125,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 80
+		months = 50
 		modifier = {
 			factor = 1.5
 			NOT = { culture = kurdish }
@@ -146,7 +144,6 @@ province_event = {
 			name = inefficient_bureacracy
 			}
 		}
-	}
 	option = {
 		name = "We can handle it ourselves."
 		state_scope = {
