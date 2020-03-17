@@ -259,6 +259,7 @@ political_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = dominus_mare_baltici
 			prestige = 100
 			add_country_modifier = {
 				name = fanatic_army
