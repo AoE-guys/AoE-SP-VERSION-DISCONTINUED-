@@ -28,14 +28,14 @@ country_event = {
 		casus_belli = {
 			target = TUR
 			type = acquire_state
-			state_id = SER_794
+			state_province_id = 794
 			months = 80
 		}
 		war = {
 			target = TUR
 			attacker_goal = { 
 			casus_belli = acquire_state 
-			state_id = SER_794
+			state_province_id = 794
 			}
 		}
 	}
