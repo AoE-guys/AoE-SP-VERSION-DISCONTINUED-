@@ -11,7 +11,7 @@ province_event = {
 			is_core = EGY
 			state_scope = { any_owned_province = { is_capital = yes } }
 			region = TUR_860
-			region = GRE_837
+			region = TUR_837
 		}
 		any_neighbor_province = {
 			is_core = EGY
@@ -65,7 +65,7 @@ province_event = {
 			is_core = IRQ
 			state_scope = { any_owned_province = { is_capital = yes } }
 			region = TUR_860
-			region = GRE_837
+			region = TUR_837
 		}
 		any_neighbor_province = {
 			is_core = IRQ
@@ -119,7 +119,7 @@ province_event = {
 			is_core = KDS
 			state_scope = { any_owned_province = { is_capital = yes } }
 			region = TUR_860
-			region = GRE_837
+			region = TUR_837
 		}
 		any_neighbor_province = {
 			is_core = KDS
