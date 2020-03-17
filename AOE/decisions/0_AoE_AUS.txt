@@ -1,1 +1,53 @@
-#
+political_decisions = {	
+	end_transylvanian_inpedendance = {
+		picture = revise_andrusovo
+		potential = {
+			tag = AUS
+			has_global_flag = hungarian_revolution_fail
+			SIE = {
+				exists = yes 
+			}
+		}
+		allow = {
+			is_our_vassal = SIE
+			state_n_government = 1
+		}
+		
+		effect = {
+			SIE = {
+				annex_to = THIS
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = romanian
+				}
+				militancy = 2
+			}
+			badboy = 1
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	start_pest_congress = {
+		picture = revise_andrusovo
+		potential = {
+			tag = HUN
+			has_global_flag = hungarian_revolution_succes
+			NOT = { has_country_flag = pest_congress}
+			SIE = {
+				exists = yes 
+			}
+		}
+		allow = {
+			state_n_government = 1
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = pest_congress
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

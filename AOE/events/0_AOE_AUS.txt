@@ -68,6 +68,7 @@ country_event = {
 		has_global_flag = hungarian_revolution_occurred
 		HUN = { exists = yes }
 		SIE = { NOT = { vassal_of = AUS } }
+		has_recently_lost_war = yes
 	}
 	
 	immediate = {
@@ -121,6 +122,7 @@ country_event = {
 		has_global_flag = hungarian_revolution_succes
 		HUN = { exists = yes }
 		SIE = { vassal_of = AUS  }
+		AUS = { has_recently_lost_war = yes }
 	}
 	
 	option = {
@@ -147,7 +149,7 @@ country_event = {
 	
 	trigger = {	
 		tag = HUN
-		has_global_flag = hungarian_revolution_succes
+		has_global_flag = pest_congress
 		HUN = { exists = yes }
 		AUS = { exists = yes }
 		SIE = { vassal_of = HUN  }
@@ -856,6 +858,12 @@ country_event = {
 				pop_type = soldiers
 			}
 		}
+		HUN = {
+			661 = { secede_province = SIE }
+			654 = { secede_province = SIE }
+			656 = { secede_province = SIE }
+			659 = { secede_province = SIE }
+		}
 		ai_chance = {
 			factor = 90
 		}
@@ -880,7 +888,7 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 10
-		}	
+		}
 	}
 }
 
@@ -896,6 +904,7 @@ country_event = {
 		has_global_flag = hungarian_revolution_occurred
 		HUN = { exists = no }
 		SIE = { vassal_of = AUS }
+		has_recently_lost_war = no
 	}
 	
 	immediate = {
