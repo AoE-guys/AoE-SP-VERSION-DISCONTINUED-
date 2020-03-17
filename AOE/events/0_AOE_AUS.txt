@@ -76,15 +76,15 @@ country_event = {
 	option = {
 		name = "EVT5555OPT"
 		AUS = {
+			casus_belli = {
+				target = HUN
+				type = restore_austrian_empire
+				months = 120
+			}
 			war = {
 				target = HUN
-				attacker_goal = { casus_belli = conquest }
+				attacker_goal = { casus_belli = restore_austrian_empire state_province_id = 641 }
 				defender_goal = { casus_belli = status_quo }
-			}
-			casus_belli = {
-				target = SIE
-				type = make_puppet
-				months = 120
 			}
 		}
 		prestige = 20
@@ -114,6 +114,13 @@ country_event = {
 			relation = {
 				who = SIE
 				value = 200
+			}
+		}
+		AUS = {
+			casus_belli = {
+				target = SIE
+				type = make_puppet
+				months = 120
 			}
 		}
 		HUN = {
