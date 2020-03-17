@@ -1,0 +1,27 @@
+#Relations
+
+SIA = {
+	value = -200		#relation
+}
+
+ENG = {
+	value = -5		#relation
+}
+
+
+army = {
+	name = "Army of Arakan"
+	location = 1345
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1345
+	}
+
+	regiment = {
+		name= "2. Brigade"
+		type = cavalry
+		home = 1345
+	}
+
+}
