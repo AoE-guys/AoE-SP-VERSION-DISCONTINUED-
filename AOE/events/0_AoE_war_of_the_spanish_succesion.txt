@@ -170,7 +170,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 1
-				any_country = {
+				THIS = {
 					in_sphere = AUS
 				}
 			}
@@ -334,7 +334,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 1
-				any_country = {
+				THIS = {
 					in_sphere = AUS
 				}
 			}

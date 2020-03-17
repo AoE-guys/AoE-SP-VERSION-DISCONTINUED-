@@ -81,7 +81,7 @@ country_event = {
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}	
-		ai_will_do = { factor = 1 }	
+		ai_chance = { factor = 1 }	
 	}
 
 	option = {
