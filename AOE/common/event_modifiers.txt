@@ -3044,8 +3044,72 @@ drang_nach_osten_country = {
 	icon = 19
 }
 
+###AoE Virex Modifiers (Austria-Hungary)
+
 hungarians_rise = {
 	icon = 7
+}
+
+
+national_unrest = {
+	pop_militancy_modifier = 0.2
+	pop_consciousness_modifier = 0.1
+	local_rgo_output = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.75
+	population_growth = -0.001
+	icon = 4
+}
+
+national_rebellion = {
+	pop_militancy_modifier = 0.3
+	pop_consciousness_modifier = 0.1
+	local_rgo_output = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.75
+	population_growth = -0.001
+	local_factory_output = -0.1
+	icon = 4
+}
+
+serbian_rebellion = {
+	icon = 4
+}
+
+ruthenian_rebellion = {
+	icon = 4
+}
+
+romanian_rebellion = {
+	icon = 4
+}
+
+slovakian_rebellion = {
+	icon = 4
+}
+
+slovenian_rebellion = {
+	icon = 4
+}
+
+croatian_rebellion = {
+	icon = 4
+}
+
+hungarian_autocracy = {
+	global_assimilation_rate = 0.5
+	global_population_growth = -0.001
+	non_accepted_pop_militancy_modifier = 0.01
+	war_exhaustion = 0.1
+	icon = 19
+}
+
+hungarian_constitutions = {
+	global_population_growth = 0.001
+	global_pop_militancy_modifier = -0.01
+	social_reform_desire = 0.2
+	political_reform_desire = 0.2
+	icon = 19
 }
 
 ###HFM China Modifiers

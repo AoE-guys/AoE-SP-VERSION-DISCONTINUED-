@@ -26,7 +26,7 @@ country_event = {
 	option = {
 		name = "Let them be"
 		prestige = 5
-		ai_will_do = 1
+		ai_chance = 1
 	}
 }
 country_event = {
@@ -166,7 +166,7 @@ country_event = {
 	
 	option = {
 		name = "This is too drastic for my liking"
-		ai_will_do = { factor = 1 }
+		ai_chance = { factor = 1 }
 	}
 }
 country_event = {
