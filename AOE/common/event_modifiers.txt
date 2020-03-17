@@ -4810,21 +4810,3 @@ colonial_benefits_100 = {
 not_dictatorship = {
 	icon = 3
 }
-
-####
-
-inefficient_bureacracy = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.2
-	immigrant_push = 0.75
-	farm_rgo_eff = -0.5
-	icon = 3
-}
-
-efficient_bureacracy = {
-	pop_consciousness_modifier = -0.2
-	pop_militancy_modifier = -0.2
-	immigrant_push = -0.75
-	farm_rgo_eff = 0.5
-	icon = 3
-}
