@@ -4238,13 +4238,13 @@
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 20
+		size = 300
 	}
 
 	bureaucrats = {
 		culture = russian
 		religion = orthodox
-		size = 350
+		size = 450
 	}
 
 	officers = {
@@ -4256,37 +4256,37 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 125
+		size = 425
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 97
+		size = 7970
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 125
+		size = 2125
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 1426
+		size = 14426
 	}
 
 	labourers = {
 		culture = russian
 		religion = orthodox
-		size = 59
+		size = 1590
 	}
 
 	aristocrats = {
 		culture = tatar
 		religion = sunni
-		size = 675
+		size = 275
 	}
 
 	bureaucrats = {
@@ -4310,7 +4310,7 @@
 	artisans = {
 		culture = tatar
 		religion = sunni
-		size = 5000
+		size = 500
 	}
 
 	soldiers = {
@@ -4322,7 +4322,7 @@
 	farmers = {
 		culture = tatar
 		religion = sunni
-		size = 16815
+		size = 7015
 	}
 
 	labourers = {
@@ -4334,7 +4334,7 @@
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 15000
+		size = 6000
 	}
 
 	aristocrats = {
@@ -4364,7 +4364,7 @@
 	farmers = {
 		culture = tatar
 		religion = orthodox
-		size = 14736
+		size = 7036
 	}
 
 	labourers = {
@@ -4376,7 +4376,7 @@
 	clergymen = {
 		culture = ugrian
 		religion = orthodox
-		size = 50
+		size = 150
 	}
 
 	artisans = {
@@ -5057,56 +5057,56 @@
 	}
 
 	clergymen = {
-		culture = volga_german
-		religion = protestant
+		culture = russian
+		religion = orthodox
 		size = 250
 	}
 
 	artisans = {
-		culture = volga_german
-		religion = protestant
+		culture = russian
+		religion = orthodox
 		size = 2500
 	}
 
 	soldiers = {
-		culture = volga_german
-		religion = protestant
+		culture = russian
+		religion = orthodox
 		size = 450
 	}
 
 	farmers = {
-		culture = volga_german
-		religion = protestant
+		culture = russian
+		religion = orthodox
 		size = 5759
 	}
 
 	labourers = {
-		culture = volga_german
-		religion = protestant
+		culture = tatar
+		religion = sunni
 		size = 566
 	}
 
 	clergymen = {
-		culture = volga_german
-		religion = catholic
+		culture = russian
+		religion = orthodox
 		size = 175
 	}
 	
 	bureaucrats = {
-		culture = volga_german
-		religion = catholic
+		culture = russian
+		religion = orthodox
 		size = 88
 	}
 
 	artisans = {
-		culture = volga_german
-		religion = catholic
+		culture = tatar
+		religion = sunni
 		size = 1950
 	}
 
 	soldiers = {
-		culture = volga_german
-		religion = catholic
+		culture = russian
+		religion = orthodox
 		size = 250
 	}
 
@@ -5117,14 +5117,14 @@
 	}
 
 	labourers = {
-		culture = volga_german
-		religion = catholic
+		culture = tatar
+		religion = sunni
 		size = 269
 	}
 	
 	aristocrats = {
-		culture = volga_german
-		religion = catholic
+		culture = tatar
+		religion = sunni
 		size = 300
 	}
 
@@ -8078,6 +8078,12 @@
 		culture = tatar
 		religion = animist
 		size = 150
+	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 12
 	}
 
 	soldiers = {
