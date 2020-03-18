@@ -14,11 +14,11 @@ country_event = {
 						has_province_modifier = hungarians_rise
 			}
 		}
+	
+	mean_time_to_heppen = {
+		days = 1
 	}
-		mean_time_to_happen = {
-		months = 1
-	}
-
+	
 	title = "EVTNAME997"
 	desc = "EVTDESC997"
 
@@ -54,13 +54,13 @@ country_event = {
 			}
 		}
 	}
+	
+	mean_time_to_heppen = {
+		days = 1
+	}
 
 	title = "EVTNAME998"
 	desc = "EVTDESC998"
-	
-	mean_time_to_happen = {
-		months = 1
-	}
 
 	option = {
 		name = "EVTOPTA998"

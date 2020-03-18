@@ -34,20 +34,72 @@ political_decisions = {
 		potential = {
 			tag = HUN
 			has_global_flag = hungarian_revolution_succes
-			NOT = { has_country_flag = pest_congress}
+			NOT = { has_global_flag = pest_congress }
 			SIE = {
-				exists = yes 
+				vassal_of = HUN
 			}
 		}
 		allow = {
-			state_n_government = 1
+			idealism = 1
 			war = no
 		}
 		
 		effect = {
 			set_global_flag = pest_congress
+			prestige = 10
 		}
 		
 		ai_will_do = { factor = 1 }
+	}
+	
+	make_confederation = {
+		picture = revise_andrusovo
+		
+		potential = {
+			tag = HUN
+			has_global_flag = hungarian_revolution_succes
+			AUS = { has_country_flag = confederation }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			war = no
+			HUN = {
+				rank = 16
+			}
+			AUS = {
+				is_our_vassal = yes
+			}
+		}
+		effect = {
+			HUN = { change_tag = KUK }
+			inherit = AUS
+			KUK = {
+				capital = 641
+			}
+			AUS = {
+				all_core = {
+					add_core = KUK
+				}
+			}
+			HUN = {
+				all_core = {
+					limit = {
+						NOT = {
+							is_core = SIE
+							is_core = SLV
+							is_core = SLO
+							is_core = CRO
+							is_core = RUT
+							is_core = SER
+						}
+					}
+					add_core = KUK
+				}
+			}
+			badboy = 8
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }
