@@ -52,13 +52,13 @@ decision = west_prussia_rename_polish
 decision = posen_rename_polish
 
 schools = culture_tech_school
-ruling_party = "Nobility Faction"
+ruling_party = "Magnate Faction"
 upper_house = {
 	fascist = 0
 	liberal = 30
-	conservative = 60
+	conservative = 65
 	reactionary = 5
-	anarcho_liberal = 5
+	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }

@@ -428,7 +428,7 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = "..."
+		name = "Victorious at last!"
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -484,7 +484,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = 13006
+	id = 13006000
 	title = "EVTNAME93006" 
 	desc = "..."
 	picture = "spanish_king"
@@ -492,7 +492,7 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = "End"
+		name = "Victorious at last!"
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -508,8 +508,8 @@ country_event = {
 					region = PRU_575
 					region = SAR_765
 					region = SIC_763
-					}
 				}
+			}
 			secede_province = BOR
 		}
 		BOR = {

@@ -273,4 +273,183 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }	
 	}
+	conquer_east_prussia = {
+		picture = ducal_prussia
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = conquer_east_prussia }
+		}
+		allow = {
+			owns = 695
+			is_greater_power = yes
+			war_policy = jingoism
+			NOT = {
+				PRU = {
+					is_greater_power = yes
+				}
+			}
+		}
+		effect = {
+			set_country_flag = conquer_east_prussia
+			any_owned = {
+				limit = {
+					region = PRU_695
+				}
+				add_province_modifier = {
+					name = core_integration
+					duration = 7300
+				}
+			}
+			695 = { add_core = RUS }
+			697 = { add_core = RUS }
+			698 = { add_core = RUS }
+			badboy = 5
+		}
+		ai_will_do = { factor = 1 }
+	}
+	settle_alaska = {
+		picture = alaska
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = settled_alaska }
+			has_global_flag = alaska_discovered
+		}
+		allow = {
+			is_greater_power = yes
+			money = 30000
+			blue_and_brown_water_schools = 1
+			naval_statistics = 1
+		}
+		effect = {
+			set_country_flag = settled_alaska
+			1 = { secede_province = THIS add_core = LSK }
+			2 = { secede_province = THIS add_core = LSK }
+			4 = { secede_province = THIS add_core = LSK }
+			5 = { secede_province = THIS add_core = LSK }
+			release_vassal = LSK
+			LSK = {
+				government = colonial_company
+				political_reforms = yes_meeting
+				political_reforms = free_press
+				political_reforms = gerrymandering
+				political_reforms = all_voting_pops
+				political_reforms = open_borders
+				political_reforms = unitary
+				add_country_modifier = {
+					name = land_of_opportunity
+					duration = 7300
+				}
+				add_country_modifier = {
+					name = cultural_resurgence
+					duration = 7300
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	invite_germans_to_southern_border = {
+		picture = migration
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = volga_germs }
+		}
+		allow = {
+			money = 30000
+		}
+		effect = {
+			set_country_flag = volga_germs
+			PRU_578 = { 
+				any_pop = { 
+					limit = { 
+						OR = {
+							has_pop_culture = north_german
+							has_pop_culture = south_german
+						}
+						pop_militancy = 5
+					} 
+					move_pop = 1037
+				}
+			}
+			PRU_575 = { 
+				any_pop = { 
+					limit = { 
+						OR = {
+							has_pop_culture = north_german
+							has_pop_culture = south_german
+						}
+						pop_militancy = 5
+					} 
+					move_pop = 1035
+				}
+			}
+			PRU_570 = { 
+				any_pop = { 
+					limit = { 
+						OR = {
+							has_pop_culture = north_german
+							has_pop_culture = south_german
+						}
+						pop_militancy = 5
+					} 
+					move_pop = 973 
+				}
+			}
+			BAV_599 = { 
+				any_pop = { 
+					limit = { 
+						OR = {
+							has_pop_culture = north_german
+							has_pop_culture = south_german
+						}
+						pop_militancy = 5
+					} 
+					move_pop = 970
+				}
+			}
+			BAV_595 = { 
+				any_pop = { 
+					limit = { 
+						OR = {
+							has_pop_culture = north_german
+							has_pop_culture = south_german
+						}
+						pop_militancy = 5
+					} 
+					move_pop = 968 
+				}
+			}
+			1037 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 1325
+				}
+			}
+			1035 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 1325
+				}
+			}
+			973 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 1325
+				}
+			}
+			970 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 1325
+				}
+			}
+			968 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 1325
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

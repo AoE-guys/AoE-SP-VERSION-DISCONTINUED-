@@ -41,7 +41,6 @@ political_decisions = {
 			political_thought_7 = 1
 		}
 		effect = {
-	
 			add_country_modifier = {
 				name = freedom_of_religion
 				duration = -1
@@ -63,4 +62,26 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	#louis_dream = {
+	#	picture = france_natural_borders
+	#	potential = {
+	#		tag = BOR
+	#		NOT = { has_country_flag = louis_dream }
+	#	}
+	#	allow = {
+	#		BEL_387 = {
+	#			is_owned_by = THIS
+	#		}
+	#		BEL_394 = {
+	#			is_owned_by = THIS
+	#		}
+	#		NET_379 = {
+	#			is_owned_by = THIS
+	#		}
+	#	}
+	#	effect = {
+	#		
+	#	}
+	#}
 }

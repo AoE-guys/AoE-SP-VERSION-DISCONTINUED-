@@ -11,13 +11,13 @@
 	clergymen = {
 		culture = tatar
 		religion = sunni
-		size = 8
+		size = 18
 	}
 
 	artisans = {
 		culture = tatar
 		religion = sunni
-		size = 18
+		size = 118
 	}
 
 	soldiers = {
@@ -35,13 +35,13 @@
 	farmers = {
 		culture = tatar
 		religion = sunni
-		size = 315
+		size = 1315
 	}
 	
 	farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 600
+		size = 1800
 	}
 
 	labourers = {
@@ -53,19 +53,19 @@
 	aristocrats = {
 		culture = kazak
 		religion = sunni
-		size = 38
+		size = 138
 	}
 
 	clergymen = {
 		culture = kazak
 		religion = sunni
-		size = 38
+		size = 138
 	}
 
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 100
+		size = 1100
 	}
 
 	soldiers = {
@@ -83,7 +83,7 @@
 	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 191
+		size = 391
 	}
 }
 #Aqtobe (20000/5000 POPS)
@@ -91,25 +91,25 @@
 	aristocrats = {
 		culture = kazak
 		religion = sunni
-		size = 38
+		size = 138
 	}
 
 	clergymen = {
 		culture = kazak
 		religion = sunni
-		size = 25
+		size = 125
 	}
 
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 125
+		size = 1125
 	}
 
 	soldiers = {
 		culture = kazak
 		religion = sunni
-		size = 700
+		size = 1700
 	}
 
 	farmers = {
@@ -121,7 +121,7 @@
 	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 114
+		size = 1114
 	}
 }
 #Uralsk (13000/3250 POPS)
@@ -129,7 +129,7 @@
 	clergymen = {
 		culture = tatar
 		religion = sunni
-		size = 15
+		size = 115
 	}
 
 	artisans = {
@@ -159,19 +159,19 @@
 	farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 200
+		size = 500
 	}
 
 	labourers = {
 		culture = tatar
 		religion = sunni
-		size = 129
+		size = 229
 	}
 
 	aristocrats = {
 		culture = kazak
 		religion = sunni
-		size = 12
+		size = 112
 	}
 
 	clergymen = {
@@ -183,7 +183,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 50
+		size = 150
 	}
 
 	soldiers = {
@@ -201,7 +201,7 @@
 	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 146
+		size = 346
 	}
 }
 #Turgay (20000/5000 POPS)
@@ -215,7 +215,7 @@
 	clergymen = {
 		culture = kazak
 		religion = sunni
-		size = 25
+		size = 125
 	}
 
 	artisans = {
@@ -227,7 +227,7 @@
 	soldiers = {
 		culture = kazak
 		religion = sunni
-		size = 700
+		size = 1700
 	}
 
 	farmers = {
@@ -239,7 +239,7 @@
 	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 114
+		size = 914
 	}
 }
 #Eastern Kazakh Steppes Region (376000)
@@ -343,6 +343,12 @@
 		religion = sunni
 		size = 1112
 	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 950
+	}
 
 	farmers = {
 		culture = kazak
@@ -407,6 +413,12 @@
 		religion = sunni
 		size = 175
 	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 950
+	}
 
 	clergymen = {
 		culture = kazak
@@ -444,6 +456,12 @@
 		culture = kazak
 		religion = sunni
 		size = 162
+	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 950
 	}
 
 	clergymen = {
@@ -484,6 +502,12 @@
 		culture = kazak
 		religion = sunni
 		size = 175
+	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 950
 	}
 
 	clergymen = {
@@ -553,6 +577,12 @@
 		religion = sunni
 		size = 1880
 	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 2250
+	}
 
 	farmers = {
 		culture = kazak
@@ -606,8 +636,8 @@
 #Alma-Ata (88000/22000 POPS)
 1186 = {
 	aristocrats = {
-		culture = kirgiz
-		religion = sunni
+		culture = mongol
+		religion = gelugpa
 		size = 50
 	}
 
@@ -627,6 +657,12 @@
 		culture = kirgiz
 		religion = sunni
 		size = 880
+	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 2250
 	}
 
 	farmers = {
@@ -764,6 +800,12 @@
 		religion = sunni
 		size = 548
 	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 950
+	}
 }
 #Aqtau (32000/8000 POPS)
 1194 = {
@@ -808,7 +850,7 @@
 	aristocrats = {
 		culture = kazak
 		religion = sunni
-		size = 50
+		size = 150
 	}
 
 	clergymen = {
@@ -820,7 +862,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 175
+		size = 575
 	}
 
 	soldiers = {
@@ -838,7 +880,7 @@
 	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 161
+		size = 1161
 	}
 	
 	farmers = {
@@ -850,7 +892,7 @@
 	labourers = {
 		culture = uzbek
 		religion = sunni
-		size = 43
+		size = 1143
 	}
 }
 #Mawarannahr Region (180000) #see Uzbekistan.txt, Tajikistan.txt, Kirghizstan.txt for balance of region 
@@ -933,6 +975,12 @@
 		culture = tatar
 		religion = sunni
 		size = 3000
+	}
+	
+	soldiers = {
+		culture = mongol
+		religion = gelugpa
+		size = 950
 	}
 
 }

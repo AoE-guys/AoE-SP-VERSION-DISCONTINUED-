@@ -3378,7 +3378,7 @@ gustav_iii = {
 	army_tech_research_bonus = 0.05
 	ruling_party_support = 0.35
 	influence_modifier = 0.2
-	global_pop_consciousness_modifier = 0.03
+	global_pop_consciousness_modifier = 0.003
 	icon = 13
 }
 swedish_absolutism = {
@@ -4808,23 +4808,5 @@ colonial_benefits_100 = {
 ####
 
 not_dictatorship = {
-	icon = 3
-}
-
-####
-
-inefficient_bureacracy = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.2
-	immigrant_push = 0.75
-	farm_rgo_eff = -0.5
-	icon = 3
-}
-
-efficient_bureacracy = {
-	pop_consciousness_modifier = -0.2
-	pop_militancy_modifier = -0.2
-	immigrant_push = -0.75
-	farm_rgo_eff = 0.5
 	icon = 3
 }

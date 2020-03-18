@@ -1,1 +1,131 @@
-#
+political_decisions = {	
+	end_transylvanian_inpedendance = {
+		picture = revise_andrusovo
+		potential = {
+			tag = AUS
+			has_global_flag = hungarian_revolution_fail
+			SIE = {
+				exists = yes 
+			}
+		}
+		allow = {
+			is_our_vassal = SIE
+			state_n_government = 1
+		}
+		
+		effect = {
+			SIE = {
+				annex_to = THIS
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = romanian
+				}
+				militancy = 2
+			}
+			badboy = 1
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	hungarian_reunification = {
+		picture = revise_andrusovo
+		potential = {
+			tag = AUS
+			has_global_flag = hungarian_revolution_fail
+			HUN = {
+				vassal_of = AUS
+			}
+		}
+		allow = {
+			idealism = 1
+		}
+		
+		effect = {
+			HUN = {
+				annex_to = THIS
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = hungarian
+				}
+				militancy = 2
+			}
+			badboy = 1
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	start_pest_congress = {
+		picture = revise_andrusovo
+		potential = {
+			tag = HUN
+			has_global_flag = hungarian_revolution_succes
+			NOT = { has_global_flag = pest_congress }
+			SIE = {
+				vassal_of = HUN
+			}
+		}
+		allow = {
+			idealism = 1
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = pest_congress
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	make_confederation = {
+		picture = revise_andrusovo
+		
+		potential = {
+			tag = HUN
+			has_global_flag = hungarian_revolution_succes
+			AUS = { has_country_flag = confederation }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			war = no
+			HUN = {
+				rank = 16
+			}
+			
+			is_our_vassal = AUS
+		}
+		effect = {
+			HUN = { change_tag = KUK }
+			inherit = AUS
+			KUK = {
+				capital = 641
+			}
+			AUS = {
+				all_core = {
+					add_core = KUK
+				}
+			}
+			HUN = {
+				all_core = {
+					limit = {
+						NOT = {
+							is_core = SIE
+							is_core = SLV
+							is_core = SLO
+							is_core = CRO
+							is_core = RUT
+							is_core = SER
+						}
+					}
+					add_core = KUK
+				}
+			}
+			badboy = 8
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
