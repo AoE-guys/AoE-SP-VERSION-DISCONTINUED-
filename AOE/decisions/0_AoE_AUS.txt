@@ -28,7 +28,34 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-	
+	hungarian_reunification = {
+		picture = revise_andrusovo
+		potential = {
+			tag = AUS
+			has_global_flag = hungarian_revolution_fail
+			HUN = {
+				vassal_of = AUS
+			}
+		}
+		allow = {
+			idealism = 1
+		}
+		
+		effect = {
+			HUN = {
+				annex_to = THIS
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = hungarian
+				}
+				militancy = 2
+			}
+			badboy = 1
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 	start_pest_congress = {
 		picture = revise_andrusovo
 		potential = {
