@@ -66,9 +66,8 @@ political_decisions = {
 			HUN = {
 				rank = 16
 			}
-			AUS = {
-				is_our_vassal = yes
-			}
+			
+			is_our_vassal = AUS
 		}
 		effect = {
 			HUN = { change_tag = KUK }
