@@ -308,3 +308,119 @@ country_event = {
 		}
 	}
 }
+###Alaska events####
+country_event = {
+	id = 1788000002
+	title = "Expedition for new land?"
+	desc = "EVTDESC1788001"
+	picture = new_world
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1740
+		tag = RUS
+		money = 5050
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Fund the expedition"
+		money = -5050
+		set_country_flag = alaska_expedition
+	}
+	
+	option = {
+		name = "Get out of my sight!"
+		prestige = - 15
+		set_country_flag = alaska_expedition_refused
+		DNN = {
+			country_event = 1788000003
+		}
+	}
+}
+country_event = {
+	id = 1788000003
+	title = "Expedition for new land?"
+	desc = "EVTDESC1788001"
+	picture = new_world
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fund the expedition"
+		money = -5050
+		set_country_flag = alaska_expedition
+	}
+	
+	option = {
+		name = "Get out of my sight!"
+		prestige = - 15
+		set_country_flag = alaska_expedition_refused
+		SWE = {
+			country_event = 1788000004
+		}
+	}
+}
+country_event = {
+	id = 1788000004
+	title = "Expedition for new land?"
+	desc = "EVTDESC1788004"
+	picture = new_world
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fund the expedition"
+		money = -5050
+		set_country_flag = alaska_expedition
+	}
+	
+	option = {
+		name = "Get out of my sight!"
+		prestige = - 15
+		set_country_flag = alaska_expedition_refused
+		GBR = {
+			country_event = 1788000005
+		}
+	}
+}
+country_event = {
+	id = 1788000005
+	title = "Expedition for new land?"
+	desc = "EVTDESC1788004"
+	picture = new_world
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fund the expedition"
+		money = -5050
+		set_country_flag = alaska_expedition
+	}
+	
+	option = {
+		name = "Get out of my sight!"
+		prestige = - 15
+		set_country_flag = alaska_expedition_refused
+	}
+}
+country_event = {
+	id = 1788000006
+	title = "Expedition for new land?"
+	desc = "EVTDESC1788006"
+	picture = new_world
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		year = 1741
+		has_country_flag = alaska_expedition
+	}
+	
+	option = {
+		name = "Amazing! New riches will come to $COUNTRYNAME$ !"
+		prestige = 50
+		set_global_flag = alaska_discovered
+	}
+}

@@ -1,0 +1,41 @@
+country_event = {
+	id = 6001
+	title = "Potential western ally?"
+	desc = "Thirteen colonies has declared it's independence from Great Britain. There have been a few talks about offering them our allience, should we accept their offer and hamper british expanision in america"
+
+}
+
+
+country_event = {
+	
+	id = 6001
+	title = "Help from the French!"
+	desc = "The French wish to help us fight for our freedom!"
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			OR = {
+				war_with = ENG
+				war_with = GBR
+				war_with = GBJ
+			}
+			tag = THC
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We welcome their help"
+		create_alliance = BOR
+	}
+	
+	option = {
+		name = "We fight alone"
+	}
+}
