@@ -120,8 +120,11 @@ country_event = {
 					            continent = europe 
 								NOT = { tag = SPA } 
 								NOT = { tag = BOR } 
-								NOT = { is_vassal = yes } 
-						} 
+								OR = {
+									NOT = { is_vassal = yes } 
+									tag = HOL
+								}
+						}
 						country_event = 93001 
 		}
 	    ai_chance = {
@@ -156,6 +159,20 @@ country_event = {
 	option = { #Support Habsburg
 		name = "EVTNAME93001OPTA"
 		create_alliance = AUS
+		leave_alliance = BOR
+		leave_alliance = SPA
+		relation = {
+			who = BOR 
+			value = -100
+		}
+		relation = {
+			who = SPA
+			value = -100
+		}
+		relation = {
+			who = AUS
+			value = 100
+		}
 		set_country_flag = support_habsburg_heir_heir
 		set_global_flag = spanish_war_begun
 		ai_chance = {
@@ -171,14 +188,27 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 1
+				factor = 5
+				OR = {
+					tag = RUS
+					tag = PLC
+				}
+				TUR = { has_country_flag = support_bourbon_heir }
+			}
+			modifier = {
+				factor = 2
+				tag = TUR
+				PLC = { has_country_flag = support_bourbon_heir }
+			}
+			modifier = {
+				factor = 5
 				OR = {
 					owns = 300 #England
 					owns = 720 #Savoy
 				}
 			}
 			modifier = {
-				factor = 1
+				factor = 10
 				THIS = {
 					in_sphere = AUS
 				}
@@ -190,13 +220,39 @@ country_event = {
 		name = "EVTNAME93001OPTB"
 		create_alliance = SPA
 		create_alliance = BOR
+		leave_alliance = AUS
+		relation = {
+			who = BOR 
+			value = 100
+		}
+		relation = {
+			who = SPA
+			value = 100
+		}
+		relation = {
+			who = AUS
+			value = -100
+		}
 	    set_country_flag = support_bourbon_heir
 		set_global_flag = spanish_war_begun
 	    ai_chance = {
 			factor = 0.20
 			modifier = {
-				factor = 2
+				factor = 10
 				owns = 599 #Bavaria
+			}
+			modifier = {
+				factor = 5
+				war_with = AUS
+			}
+			modifier = {
+				factor = 10
+				THIS = {
+					OR = {
+						in_sphere = BOR
+						in_sphere = SPA
+					}
+				}
 			}
 		}
 	}
@@ -205,7 +261,7 @@ country_event = {
 		name = "EVTNAME93001OPTC"
 		set_global_flag = spanish_war_begun
 		ai_chance = {
-			factor = 0.50
+			factor = 0.10
 			modifier = {
 				factor = 1
 				war = yes
@@ -238,12 +294,6 @@ country_event = {
 	option = {
 		name = "EVTNAME93003OPTA"
 		BOR = { create_alliance = SPA }
-		war = {
-			target = SPA
-			attacker_goal = { casus_belli = change_heir_habsburg_cb }
-			defender_goal = { casus_belli = change_heir_bourbon_cb }
-			call_ally = yes
-		}
 		BOR = {
 		       war = {
 		       	      target = AUS
@@ -251,6 +301,12 @@ country_event = {
 		       	      defender_goal = { casus_belli = change_heir_habsburg_cb }
 		       	      call_ally = yes
 		       }
+		}
+		war = {
+			target = SPA
+			attacker_goal = { casus_belli = change_heir_habsburg_cb }
+			defender_goal = { casus_belli = change_heir_bourbon_cb }
+			call_ally = yes
 		}
 		set_global_flag = spanish_war_realy_begun
 		ai_chance = {
@@ -283,9 +339,12 @@ country_event = {
 			limit = { 
 				continent = europe 
 				NOT = { tag = SPA } 
-				NOT = { tag = AUS } 
-				NOT = { is_vassal = yes } 				
-				} 
+				NOT = { tag = AUS }
+				OR = {
+					NOT = { is_vassal = yes } 
+					tag = HOL
+				}
+			}
 			country_event = 93004 
 		}
 	    ai_chance = {
@@ -320,6 +379,20 @@ country_event = {
 	option = { #Support Habsburg
 		name = "EVTNAME93004OPTA"
 		create_alliance = BOR
+		leave_alliance = SPA
+		leave_alliance = AUS
+		relation = {
+			who = BOR 
+			value = 100
+		}
+		relation = {
+			who = SPA
+			value = -100
+		}
+		relation = {
+			who = AUS
+			value = -100
+		}
 		set_country_flag = support_bourbon_heir
 		set_global_flag = spanish_war_begun
 		ai_chance = {
@@ -344,7 +417,7 @@ country_event = {
 			modifier = {
 				factor = 1
 				THIS = {
-					in_sphere = AUS
+					in_sphere = BOR
 				}
 			}
 		}
@@ -354,6 +427,19 @@ country_event = {
 		name = "EVTNAME93004OPTB"
 		create_alliance = SPA
 		create_alliance = AUS
+		leave_alliance = BOR
+		relation = {
+			who = BOR 
+			value = -100
+		}
+		relation = {
+			who = SPA
+			value = 100
+		}
+		relation = {
+			who = AUS
+			value = 100
+		}
 	    set_country_flag = support_habsburg_heir
 		set_global_flag = spanish_war_begun
 	    ai_chance = {
@@ -366,6 +452,15 @@ country_event = {
 					owns = 599
 				}
 			}
+			modifier = {
+			factor = 2
+				THIS = {
+					OR = {
+						in_sphere = AUS
+						in_sphere = SPA
+					}
+				}
+			}
 		}
 	}
 
@@ -373,7 +468,7 @@ country_event = {
 		name = "EVTNAME93004OPTB"
 		set_global_flag = spanish_war_begun
 		ai_chance = {
-			factor = 0.50
+			factor = 0.10
 			modifier = {
 				factor = 1
 				war = yes

@@ -182,3 +182,333 @@ country_event = {
 		election = yes
 	}
 }
+####Royal election of 1733####
+country_event = {
+	id = 15730000
+	title = "Royal Election of 1733"
+	desc = "EVTDESC1573000"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		year = 1733
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Stanislaw Leszczynski will become our King!"
+		set_country_flag = lesczynski_rule
+		BOR = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		create_alliance = BOR
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		SAX = { country_event = 15730010 }
+		relation = {
+			who = LOR
+			value = 100
+		}
+		diplomatic_influence = {
+			who = PLC
+			value = 200
+		}
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		create_vassal = LOR
+	}
+	option = {
+		name = "Friedrich August III of Saxony is the best choice!"
+		set_country_flag = saxon_rule
+		relation = {
+			who = SAX
+			value = 100
+		}
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		create_vassal = SAX
+	}
+	option = {
+		name = "Infante Manuel, the Count of Ourem, is the obvious choice!"
+		set_country_flag = infante_rule
+		AUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		SAX = { country_event = 15730010 }
+		relation = {
+			who = POR
+			value = 100
+		}
+		create_alliance = AUS
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+	}
+}
+country_event = {
+	id = 15730010
+	title = "Crisis in Poland!"
+	desc = "EVTDESC1573001"	
+	major = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Approach Russia"
+		RUS = {
+			country_event = 15730020
+			set_global_flag = polish_succesion_crisis
+		}
+	}
+	
+	option = {
+		name = "We don't need them."
+	}
+}
+country_event = {
+	id = 15730020
+	title = "Crisis in Poland!"
+	desc = "EVTDESC1573002"	
+	major = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "Let's take back what is rightfully ours!"
+		create_allience = SAX
+		war = {
+			target = PLC
+			attacker_goal = { casus_belli = add_to_sphere }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+	}
+	
+	option = {
+		name = "This isn't our buisness"
+	}
+}
+country_event = {
+	id = 15730030
+	title = "August III returns to Poland Lithuania"
+	desc = "EVTDESC1573002"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		OR = {
+			has_country_flag = lesczynski_rule
+			has_country_flag = infante_rule
+		}
+		has_global_flag = polish_succesion_crisis
+		in_sphere = RUS
+		has_recently_lost_war = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "And he shall be known as the one who ruled with an iron fist"
+		create_vassal = SAX
+		relation = { who = SAX value = 200 }
+		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		clr_global_flag = polish_succesion_crisis
+	}
+}
+####Royal Election of 1764####
+country_event = {
+	id = 15730040
+	title = "Royal Election of 1764"
+	desc = "EVTDESC1573004"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		year = 1764
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Stanisław August Poniatowski will bring great reforms to our country!"
+		set_country_flag = poniatowski_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+	}
+	
+	option = {
+		name = "Jan Klemens Branicki, a republican, will lead us to greatness"
+		set_country_flag = branicki_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -100
+			}
+		}
+	}
+
+	option = {
+		name = "Adam Kazimierz Czartoryski will rule us!"
+		set_country_flag = czartoryski_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -100
+			}
+		}
+	}
+}
+country_event = {
+	id = 15730041
+	title = "Constitution of 3rd May"
+	desc = "EVTDESC15730041"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		year = 1791
+		NOT = { has_country_flag = enacted_3rd_may_constitution }
+		in_sphere = RUS
+		exists = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "A great day for our nation!"
+		set_country_flag = poniatowski_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		set_country_flag = enacted_3rd_may_constitution
+		prestige = 50
+		political_reform = wealth_weighted_voting
+		random_owned = {
+			limit = {
+				owner = { political_parties = underground_parties }
+			}
+			owner = {
+				political_reform = harassment
+			}
+		}	
+		random_owned = {
+			limit = {
+				owner = { debt_law = peonage }
+			}
+			owner = {
+				political_reform = debtors_prisons
+			}
+		}
+		random_owned = {
+			limit = { owner = { primary_culture = polish } }
+			owner = {
+				add_accepted_culture = byelorussian
+			}
+			LIT = {
+				all_core = { add_core = PLC }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { debt_law = serfdom }
+			}
+			owner = {
+				political_reform = debtors_prisons
+			}
+		}
+		inherit = KUR	
+		random_owned = {
+			limit = {
+				owner = { ai = yes }
+			}
+			owner = {
+				treasury = 150000
+			}
+		}
+			
+		government = hms_government
+		any_pop = { militancy = -2 }
+	}
+}
+###Targowica stuff###
+country_event = {
+	id = 15730042
+	title = "Targowica Confederation"
+	desc = "EVTDESC15730042"	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		has_country_flag = enacted_3rd_may_constitution
+		exists = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "They wish to ruin our country! I Refuse to do that!"
+		set_country_flag = refused_targowica
+		add_country_modifier = {
+			name = targowica
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = "They are right..."
+		government = elective_monarchy_oligarchy
+		election = yes
+		prestige = -50
+	}
+}

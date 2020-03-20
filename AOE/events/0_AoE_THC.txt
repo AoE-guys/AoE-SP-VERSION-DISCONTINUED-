@@ -251,4 +251,99 @@ country_event = {
 		name = "Shame, we could use the money..."
 		prestige = -4
 	}
-}		
+}
+###independence war ally###
+country_event = {
+	id = 160010
+	title = "Help from the French?"
+	desc = "EVTDESC16001"
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			OR = {
+				war_with = ENG
+				war_with = GBR
+				war_with = GBJ
+			}
+			tag = THC
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We need their help"
+		425 = {
+			owner = {
+				country_event = 160020
+			}
+		}
+	}
+	
+	option = {
+		name = "We fight alone"
+	}
+}
+
+country_event = {
+	id = 160020
+	title = "Potential western ally?"
+	desc = "EVTDESC16002"
+	is_triggered_only = yes
+	
+	option = {
+		name = "We'll do anything to mess with the British"
+		create_alliance = THC
+		money = -20000
+		ammunition = -200
+		small_arms = -100
+		artillery = -50
+		
+		relation = {
+			who = THC
+			value = 100
+		}
+		THC = {
+			country_event = 160030
+		}
+	}
+	
+	option = {
+		name = "This war will put us in debt!"
+		relation = {
+			who = THC
+			value = -10
+		}
+		THC = {
+			country_event = 160040
+		}
+	}
+}
+country_event = {
+	id = 160030
+	title = "France Agrees!"
+	desc = "EVTDESC16003"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		money = 20000
+		ammunition = 200
+		small_arms = 100
+		artillery = 50
+	}
+}
+country_event = {
+	id = 16004
+	title = "France refuses!"
+	desc = "The French refused our offer and won't help us in our struggle"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		prestige = -10
+	}
+}	

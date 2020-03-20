@@ -400,11 +400,14 @@ country_event = {
 		name = "Get out of my sight!"
 		prestige = - 15
 		set_country_flag = alaska_expedition_refused
+		RUS = {
+			country_event = 1788000002
+		}
 	}
 }
 country_event = {
 	id = 1788000006
-	title = "Expedition for new land?"
+	title = "New land discovered!"
 	desc = "EVTDESC1788006"
 	picture = new_world
 	fire_only_once = yes

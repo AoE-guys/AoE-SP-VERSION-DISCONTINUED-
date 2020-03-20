@@ -943,7 +943,7 @@ country_event = { #5555 Hungarian rebellion (War)
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 2
 	}
 	
 	option = {
@@ -958,7 +958,7 @@ country_event = { #5555 Hungarian rebellion (War)
 				target = HUN
 				attacker_goal = { casus_belli = make_puppet }
 				defender_goal = { casus_belli = cut_down_to_size }
-				call_ally = yes
+				call_ally = no
 			}
 		}
 		prestige = 20
@@ -1003,6 +1003,25 @@ country_event = { #10225 Hungarian rebellion
 		name = "EVT10225OPTA"
 		778 = { remove_core = HUN }
 		
+		AUS_641 = {
+			secede_province = HUN
+		}
+		AUS_950 = {
+			secede_province = HUN
+		}
+		AUS_654 = {
+			secede_province = HUN
+		}
+		AUS_657 = {
+			secede_province = HUN
+		}
+		AUS_652 = {
+			secede_province = HUN
+		}
+		AUS_2538 = {
+			secede_province = HUN
+		}
+		
 		AUS = {
 			any_owned = {
 				limit = {
@@ -1010,7 +1029,6 @@ country_event = { #10225 Hungarian rebellion
 					}
 				add_province_modifier = { name = hungarians_rise 
 				duration = -1 }
-				secede_province = HUN
 			}
 			relation = { who = HUN value = -100 }
 		any_owned = {
@@ -1122,7 +1140,7 @@ country_event = { #10225 Hungarian rebellion
 			country_event = 55555
 		}
 		ai_chance = {
-			factor = 100
+			factor = 0
 		}
 	}
 }
@@ -1154,13 +1172,11 @@ country_event = { #999 Preparations to war event
 							consciousness = 0.1
 							militancy = 0.5
 							has_pop_culture = hungarian
-							strata = poor
 						}
 						AND = {
 							militancy = 1
 							NOT = { has_pop_culture = hungarian	}
 							NOT = { has_pop_culture = south_german }
-							strata = poor
 						}
 					}		
 				}

@@ -452,4 +452,50 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	introduce_proper_consciption = {
+		picture = army_training
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = introduced_proper_consciption
+			}
+		}
+		allow = {
+			army_professionalism = 1
+			has_country_modifer = peter_the_great
+		}
+		effect = {
+			add_country_modifier = {
+				name = petes_conscription
+				duration = -1
+			}
+			set_country_flag = introduced_proper_consciption
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	vaccination_cat = {
+		picture = conscription
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = vaccination_cat
+			}
+		}
+		allow = {
+			chemistry_and_electricity_7 = 1
+			has_country_modifer = catharine_the_great
+		}
+		effect = {
+			add_country_modifier = {
+				name = russian_vaccination
+				duration = 3650
+			}
+			set_country_flag = vaccination_cat
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
 }
