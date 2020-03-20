@@ -182,6 +182,7 @@ country_event = {
 		election = yes
 	}
 }
+####Royal election of 1733####
 country_event = {
 	id = 15730000
 	title = "Royal Election of 1733"
@@ -346,5 +347,168 @@ country_event = {
 			}
 		}
 		clr_global_flag = polish_succesion_crisis
+	}
+}
+####Royal Election of 1764####
+country_event = {
+	id = 15730040
+	title = "Royal Election of 1764"
+	desc = "EVTDESC1573004"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		year = 1764
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Stanisław August Poniatowski will bring great reforms to our country!"
+		set_country_flag = poniatowski_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+	}
+	
+	option = {
+		name = "Jan Klemens Branicki, a republican, will lead us to greatness"
+		set_country_flag = branicki_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -100
+			}
+		}
+	}
+
+	option = {
+		name = "Adam Kazimierz Czartoryski will rule us!"
+		set_country_flag = czartoryski_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -100
+			}
+		}
+	}
+}
+country_event = {
+	id = 15730041
+	title = "Constitution of 3rd May"
+	desc = "EVTDESC15730041"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		year = 1791
+		NOT = { has_country_flag = enacted_3rd_may_constitution }
+		in_sphere = RUS
+		exists = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "A great day for our nation!"
+		set_country_flag = poniatowski_rule
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		set_country_flag = enacted_3rd_may_constitution
+		prestige = 50
+		political_reform = wealth_weighted_voting
+		random_owned = {
+			limit = {
+				owner = { political_parties = underground_parties }
+			}
+			owner = {
+				political_reform = harassment
+			}
+		}	
+		random_owned = {
+			limit = {
+				owner = { debt_law = peonage }
+			}
+			owner = {
+				political_reform = debtors_prisons
+			}
+		}
+		random_owned = {
+			limit = { owner = { primary_culture = polish } }
+			owner = {
+				add_accepted_culture = byelorussian
+			}
+			LIT = {
+				all_core = { add_core = PLC }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { debt_law = serfdom }
+			}
+			owner = {
+				political_reform = debtors_prisons
+			}
+		}
+		inherit = KUR	
+		random_owned = {
+			limit = {
+				owner = { ai = yes }
+			}
+			owner = {
+				treasury = 150000
+			}
+		}
+			
+		government = hms_government
+		any_pop = { militancy = -2 }
+	}
+}
+###Targowica stuff###
+country_event = {
+	id = 15730042
+	title = "Targowica Confederation"
+	desc = "EVTDESC15730042"	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		has_country_flag = enacted_3rd_may_constitution
+		exists = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "They wish to ruin our country! I Refuse to do that!"
+		set_country_flag = refused_targowica
+		add_country_modifier = {
+			name = targowica
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = "They are right..."
+		government = elective_monarchy_oligarchy
+		election = yes
+		prestige = -50
 	}
 }
