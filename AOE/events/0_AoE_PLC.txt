@@ -182,3 +182,169 @@ country_event = {
 		election = yes
 	}
 }
+country_event = {
+	id = 15730000
+	title = "Royal Election of 1733"
+	desc = "EVTDESC1573000"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		year = 1733
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Stanislaw Leszczynski will become our King!"
+		set_country_flag = lesczynski_rule
+		BOR = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		create_alliance = BOR
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		SAX = { country_event = 15730010 }
+		relation = {
+			who = LOR
+			value = 100
+		}
+		diplomatic_influence = {
+			who = PLC
+			value = 200
+		}
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		create_vassal = LOR
+	}
+	option = {
+		name = "Friedrich August III of Saxony is the best choice!"
+		set_country_flag = saxon_rule
+		relation = {
+			who = SAX
+			value = 100
+		}
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		create_vassal = SAX
+	}
+	option = {
+		name = "Infante Manuel, the Count of Ourem, is the obvious choice!"
+		set_country_flag = infante_rule
+		AUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		SAX = { country_event = 15730010 }
+		relation = {
+			who = POR
+			value = 100
+		}
+		create_alliance = AUS
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+	}
+}
+country_event = {
+	id = 15730010
+	title = "Crisis in Poland!"
+	desc = "EVTDESC1573001"	
+	major = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Approach Russia"
+		RUS = {
+			country_event = 15730020
+			set_global_flag = polish_succesion_crisis
+		}
+	}
+	
+	option = {
+		name = "We don't need them."
+	}
+}
+country_event = {
+	id = 15730020
+	title = "Crisis in Poland!"
+	desc = "EVTDESC1573002"	
+	major = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "Let's take back what is rightfully ours!"
+		create_allience = SAX
+		war = {
+			target = PLC
+			attacker_goal = { casus_belli = add_to_sphere }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+	}
+	
+	option = {
+		name = "This isn't our buisness"
+	}
+}
+country_event = {
+	id = 15730030
+	title = "August III returns to Poland Lithuania"
+	desc = "EVTDESC1573002"	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		OR = {
+			has_country_flag = lesczynski_rule
+			has_country_flag = infante_rule
+		}
+		has_global_flag = polish_succesion_crisis
+		in_sphere = RUS
+		has_recently_lost_war = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "And he shall be known as the one who ruled with an iron fist"
+		create_vassal = SAX
+		relation = { who = SAX value = 200 }
+		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		clr_global_flag = polish_succesion_crisis
+	}
+}

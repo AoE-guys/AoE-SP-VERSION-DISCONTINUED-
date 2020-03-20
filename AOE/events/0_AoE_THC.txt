@@ -254,9 +254,9 @@ country_event = {
 }
 ###independence war ally###
 country_event = {
-	id = 6001
+	id = 160010
 	title = "Help from the French?"
-	desc = "With our ongoing revolution we should approach France for help."
+	desc = "EVTDESC16001"
 	fire_only_once = yes
 	
 	trigger = {
@@ -278,7 +278,7 @@ country_event = {
 		name = "We need their help"
 		425 = {
 			owner = {
-				country_event = 6002
+				country_event = 160020
 			}
 		}
 	}
@@ -289,9 +289,9 @@ country_event = {
 }
 
 country_event = {
-	id = 6002
+	id = 160020
 	title = "Potential western ally?"
-	desc = "Thirteen colonies has declared it's independence from Great Britain. Their delegates have came to Versailles to offer us an allience and ask to provide them a loan as well as supplies to keep their revolution alive, should we accept their offer and hamper british expanision in america?"
+	desc = "EVTDESC16002"
 	is_triggered_only = yes
 	
 	option = {
@@ -307,7 +307,7 @@ country_event = {
 			value = 100
 		}
 		THC = {
-			country_event = 6003
+			country_event = 160030
 		}
 	}
 	
@@ -318,14 +318,14 @@ country_event = {
 			value = -10
 		}
 		THC = {
-			country_event = 6004
+			country_event = 160040
 		}
 	}
 }
 country_event = {
-	id = 6003
+	id = 160030
 	title = "France Agrees!"
-	desc = "The French wish to help us fight for our freedom!"
+	desc = "EVTDESC16003"
 	is_triggered_only = yes
 	
 	option = {
@@ -337,7 +337,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = 6004
+	id = 16004
 	title = "France refuses!"
 	desc = "The French refused our offer and won't help us in our struggle"
 	is_triggered_only = yes
