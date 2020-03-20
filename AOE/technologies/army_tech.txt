@@ -278,8 +278,6 @@ iron_muzzle_loaded_artillery = {
 	cost = 7200
 	unciv_military = yes
 	
-	activate_unit = tank
-	
 	artillery = {
 		attack = 0.25
 		support = 0.5
@@ -341,6 +339,7 @@ indirect_artillery_fire = {
 		support = 1
 		supply_consumption = 0.3
 	}
+	activate_unit = tank
 	tank = {
 		attack = 0.5
 		defence = 2

@@ -3378,7 +3378,7 @@ gustav_iii = {
 	army_tech_research_bonus = 0.05
 	ruling_party_support = 0.35
 	influence_modifier = 0.2
-	global_pop_consciousness_modifier = 0.003
+	global_pop_consciousness_modifier = 0.03
 	icon = 13
 }
 swedish_absolutism = {
@@ -3404,7 +3404,8 @@ peter_the_great = {
 	navy_tech_research_bonus = 0.1
 	influence_modifier = 0.2
 	ruling_party_support = 0.35
-	prestige = 0.01
+	bad_badboy = -0.05
+	prestige = 0.05
 	icon = 13
 }
 peter_iii= {
@@ -3422,7 +3423,7 @@ catharine_the_great = {
 	influence_modifier = 0.2
 	bad_badboy = -0.05
 	ruling_party_support = 0.35
-	prestige = 0.01
+	prestige = 0.05
 	icon = 13
 }
 nakaz = {
@@ -3431,6 +3432,44 @@ nakaz = {
 	ruling_party_support = 0.05
 	tax_efficiency = 0.1
 	icon = 5
+}
+petes_conscription = {
+	mobilisation_economy_impact = -0.15
+	supply_consumption = -0.15
+	mobilisation_size = 0.05
+	min_military_spending = 0.1
+}
+russian_vaccination = {
+	global_population_growth = 0.02
+}
+####Austria stuff####
+maria_theresa = {
+	culture_tech_research_bonus = 0.1
+	influence_modifier = 0.2
+	ruling_party_support = 0.35
+	bad_badboy = -0.05
+	prestige = 0.05
+	icon = 13
+}
+codex_theresianus = {
+	administrative_efficiency_modifier = 0.3
+	tax_efficiency = 0.1
+	global_pop_militancy_modifier = -0.03
+}
+austrian_vaccination = {
+	global_population_growth = 0.02
+}
+josephism = {
+	administrative_efficiency_modifier = 0.15
+	tax_efficiency = 0.075
+	global_pop_militancy_modifier = -0.06
+}
+theresian_military_academy = {
+	army_tech_research_bonus = 0.05
+	land_organisation = 0.1
+	supply_consumption = -0.1
+	org_regain = 0.2
+	land_unit_start_experience = 5
 }
 #####
 ecole_militire = {
@@ -4030,16 +4069,16 @@ szlachta_taxes = {
 	factory_throughput = -0.15
 	rgo_output = -0.15
 	tax_efficiency = -0.15
-	loan_interest = 0.5
-	pop_militancy_modifier = 0.02
+	loan_interest = 0.15
+	pop_militancy_modifier = 0.0002
 	icon = 18
 }
 szlachta_war_taxes = {
 	factory_throughput = -0.15
 	rgo_output = -0.15
 	tax_efficiency = -0.15
-	loan_interest = 0.5
-	land_organisation = 0.1
+	loan_interest = 0.15
+	land_organisation = 0.2
 	icon = 18
 }
 szlachta_pissed = {
@@ -4047,7 +4086,7 @@ szlachta_pissed = {
 	rgo_output = -0.05
 	tax_efficiency = -0.05
 	loan_interest = 0.25
-	pop_militancy_modifier = 0.02
+	pop_militancy_modifier = 0.002
 	non_accepted_pop_consciousness_modifier = 0.2
 	ruling_party_support = -0.05
 	icon = 18
@@ -4058,7 +4097,13 @@ szlachta_opposition = {
 	tax_efficiency = -0.15
 	loan_interest = 0.5
 	land_organisation = -0.05
-	pop_militancy_modifier = 0.04
+	pop_militancy_modifier = 0.004
+	non_accepted_pop_consciousness_modifier = 0.2
+	ruling_party_support = -0.05
+	icon = 18
+}
+targowica = {
+	pop_militancy_modifier = 0.004
 	non_accepted_pop_consciousness_modifier = 0.2
 	ruling_party_support = -0.05
 	icon = 18
@@ -4809,4 +4854,33 @@ colonial_benefits_100 = {
 
 not_dictatorship = {
 	icon = 3
+}
+
+####
+
+inefficient_bureacracy = {
+	pop_consciousness_modifier = 0.2
+	pop_militancy_modifier = 0.2
+	immigrant_push = 0.75
+	farm_rgo_eff = -0.5
+	icon = 3
+}
+
+efficient_bureacracy = {
+	pop_consciousness_modifier = -0.2
+	pop_militancy_modifier = -0.2
+	immigrant_push = -0.75
+	farm_rgo_eff = 0.5
+	icon = 3
+}
+
+illegitimate_heir = {
+	pop_consciousness_modifier = 0.05
+	pop_militancy_modifier = 0.05
+	core_pop_militancy_modifier = 0.2
+	prestige = -0.02
+	tax_efficiency = -0.05
+	admin_efficiency = -0.05
+	war_exhaustion = 0.005
+	diplomatic_points_modifier = -0.05
 }

@@ -21,7 +21,8 @@ country_event = {
 		NOT = { 		
 		       OR = {
                      has_global_flag = support_bourbon_heir_spa
-                     has_global_flag = support_habsburg_heir_spa						 
+                     has_global_flag = support_habsburg_heir_spa
+		     has_global_flag = bastard_child						 
 			   }
 		}
 	}
@@ -60,6 +61,14 @@ country_event = {
 	    ai_chance = {
 			factor = 0.15
 		}
+	}
+
+	option = { #Bastard Child
+		name = "Surely there must be a bastard child of some sort! Even illegitimacy is better than subservience."
+		set_global_flag = bastard_child
+		add_country_modifier = {
+			name = illegitimate_heir
+			duration = 10950
 	}
 }
 
@@ -523,7 +532,7 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = "Victorious at last!"
+		name = "..."
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -579,7 +588,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = 13006000
+	id = 13006
 	title = "EVTNAME93006" 
 	desc = "..."
 	picture = "spanish_king"
@@ -587,7 +596,7 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = "Victorious at last!"
+		name = "End"
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -603,8 +612,8 @@ country_event = {
 					region = PRU_575
 					region = SAR_765
 					region = SIC_763
+					}
 				}
-			}
 			secede_province = BOR
 		}
 		BOR = {
