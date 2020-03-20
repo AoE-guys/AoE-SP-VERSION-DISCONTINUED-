@@ -3404,7 +3404,8 @@ peter_the_great = {
 	navy_tech_research_bonus = 0.1
 	influence_modifier = 0.2
 	ruling_party_support = 0.35
-	prestige = 0.01
+	bad_badboy = -0.05
+	prestige = 0.05
 	icon = 13
 }
 peter_iii= {
@@ -3422,7 +3423,7 @@ catharine_the_great = {
 	influence_modifier = 0.2
 	bad_badboy = -0.05
 	ruling_party_support = 0.35
-	prestige = 0.01
+	prestige = 0.05
 	icon = 13
 }
 nakaz = {
@@ -3431,6 +3432,15 @@ nakaz = {
 	ruling_party_support = 0.05
 	tax_efficiency = 0.1
 	icon = 5
+}
+petes_conscription = {
+	mobilisation_economy_impact = -0.15
+	supply_consumption = -0.15
+	mobilisation_size = 0.05
+	min_military_spending = 0.1
+}
+russian_vaccination = {
+	global_population_growth = 0.02
 }
 #####
 ecole_militire = {
