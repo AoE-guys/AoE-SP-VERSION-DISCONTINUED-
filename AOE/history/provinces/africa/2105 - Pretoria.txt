@@ -5,10 +5,3 @@ add_core = BSH
 add_core = TRN
 trade_goods = coal  state_building = {  level = 5  building = coal_factory  upgrade = yes  }
 life_rating = 15
-1861.1.1 = {
-	owner = TRN
-	controller = TRN
-	add_core = SAF
-	remove_core = BSH
-	life_rating = 35
-}
