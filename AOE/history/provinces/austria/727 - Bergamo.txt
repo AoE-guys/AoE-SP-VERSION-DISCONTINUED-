@@ -4,8 +4,3 @@ add_core = VEN
 add_core = ITA
 trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
 life_rating = 35
-1861.1.1 = {
-	owner = ITA
-	controller = ITA
-}
-1861.1.1 = { railroad = 1 }
