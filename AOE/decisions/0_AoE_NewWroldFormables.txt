@@ -167,7 +167,7 @@ political_decisions = {
 		}
 	}
 	
-	draft_a_constitution =	{
+	draft_a_constitution = {
 		picture = constitution
 		potential = {
 			is_vassal = no
@@ -190,4 +190,93 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	increase_colonization_efforts_nw = {
+		potential = {
+			OR = {
+				government = colonial_company
+				government = dominion
+			}
+			NOT = { has_country_flag = increased_colonization_efforts_nw }
+		}
+		
+		allow = {
+			war = no
+			money = 30000
+			medicine = 1
+		}
+		effect = {
+			money = -30000
+			set_country_flag = increased_colonization_efforts_nw
+			add_country_modifier = {
+				name = global_baby_boom
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	land_of_opportunity_nw = {
+		potential = {
+			OR = {
+				government = colonial_company
+				government = dominion
+			}
+			NOT = { has_country_flag = land_of_opportunity_nw }
+		}
+		
+		allow = {
+			war = no
+			money = 10000
+			NOT = {
+				safety_regulations = no_safety
+				safety_regulations = trinket_safety
+			}
+			NOT = {
+				unemployment_subsidies = no_subsidies
+				unemployment_subsidies = trinket_subsidies
+			}
+			NOT = {
+				health_care = no_health_care
+				health_care = trinket_health_care
+			}
+		}
+		effect = {
+			money = -10000
+			set_country_flag = land_of_opportunity_nw
+			add_country_modifier = {
+				name = land_of_opportunity
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	colonial_militia = {
+		potential = {
+			OR = {
+				government = colonial_company
+				government = dominion
+			}
+			NOT = { has_country_flag = colonial_militia }
+		}
+		
+		allow = {
+			money = 10000
+			military_plans = 1
+			strategic_mobility = 1
+		}
+		effect = {
+			money = -10000
+			set_country_flag = colonial_militia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

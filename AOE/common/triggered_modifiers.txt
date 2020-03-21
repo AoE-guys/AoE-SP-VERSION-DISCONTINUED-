@@ -1058,7 +1058,22 @@ german_minors_ai_help = {
 	mobilisation_size = 0.5
 	global_pop_militancy_modifier = -0.3
 }
+colonial_militia = {
 
+	trigger = {
+		OR = {
+			government = colonial_company
+			government = dominion
+		}
+		has_country_flag = colonial_militia
+		NOT = { military_score = 25 }
+	}
+	icon = 10
+	supply_consumption = -0.15
+	war_exhaustion = -0.02
+	mobilisation_size = 0.5
+	global_pop_militancy_modifier = -0.02
+}
 
 help_ai_usa = {
 	trigger = {
