@@ -1292,6 +1292,10 @@ nationalist_rebels = {
 			has_country_modifier = global_liberal_agitation
 		}
 		modifier = {
+			factor = 0.75
+			has_country_modifier = decentralized_rule
+		}
+		modifier = {
 			factor = 0.5
 			has_country_flag = arab_revolt
 		}
