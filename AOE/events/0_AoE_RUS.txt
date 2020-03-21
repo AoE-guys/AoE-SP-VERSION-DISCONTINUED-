@@ -332,8 +332,7 @@ country_event = {
 	
 	option = {
 		name = "Get out of my sight!"
-		prestige = - 15
-		set_country_flag = alaska_expedition_refused
+		prestige = -15
 		DNN = {
 			country_event = 1788000003
 		}
@@ -355,7 +354,6 @@ country_event = {
 	option = {
 		name = "Get out of my sight!"
 		prestige = - 15
-		set_country_flag = alaska_expedition_refused
 		SWE = {
 			country_event = 1788000004
 		}
@@ -377,7 +375,6 @@ country_event = {
 	option = {
 		name = "Get out of my sight!"
 		prestige = - 15
-		set_country_flag = alaska_expedition_refused
 		GBR = {
 			country_event = 1788000005
 		}
@@ -399,7 +396,6 @@ country_event = {
 	option = {
 		name = "Get out of my sight!"
 		prestige = - 15
-		set_country_flag = alaska_expedition_refused
 		RUS = {
 			country_event = 1788000002
 		}

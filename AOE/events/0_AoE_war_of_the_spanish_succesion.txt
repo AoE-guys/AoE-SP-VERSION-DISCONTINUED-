@@ -18,12 +18,12 @@ country_event = {
 		exists = yes
 		BOR = { exists = yes }
 		AUS = { exists = yes }
-		NOT = { 		
-		       OR = {
-                     has_global_flag = support_bourbon_heir_spa
-                     has_global_flag = support_habsburg_heir_spa
-		     has_global_flag = bastard_child						 
-			   }
+		NOT = {
+			OR = {
+				has_global_flag = support_bourbon_heir_spa
+				has_global_flag = support_habsburg_heir_spa
+				has_global_flag = bastard_child						 
+			}
 		}
 	}
 	
@@ -69,6 +69,7 @@ country_event = {
 		add_country_modifier = {
 			name = illegitimate_heir
 			duration = 10950
+		}
 	}
 }
 
