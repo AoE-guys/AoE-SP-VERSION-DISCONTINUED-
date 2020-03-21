@@ -3,7 +3,7 @@ color = { 69  157  208 }
 hms_government = { 66  94  193 }
 absolute_monarchy = { 66  94  193 }
 party = {
-	name = "Gentry Faction"
+	name = "Democratic-Republicans Party"
 	start_date = 1600.1.1
 	end_date = 2000.1.1
 
@@ -18,14 +18,14 @@ party = {
 }
 
 party = {
-	name = "Nobility Faction"
+	name = "Federalist Party"
 	start_date = 1600.1.1
 	end_date = 1860.1.1
 
 	ideology = conservative
 
 	social_policy = no_position_set
-	economic_policy = laissez_faire
+	economic_policy = interventionism
 	trade_policy = free_trade
 	religious_policy = pluralism
 	citizenship_policy = limited_citizenship

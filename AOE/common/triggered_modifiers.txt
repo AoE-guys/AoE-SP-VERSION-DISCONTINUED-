@@ -1074,7 +1074,51 @@ colonial_militia = {
 	mobilisation_size = 0.5
 	global_pop_militancy_modifier = -0.02
 }
-
+nerf_exotic_mob = {
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					region = KAL_1221
+					region = PAN_1224
+					region = PAN_1227
+					region = SIN_1288
+					region = ENG_1236
+					region = ENG_1247
+					region = ENG_1251
+					region = ENG_1252
+					region = ENG_1258
+					region = ENG_1261
+					region = ENG_1275
+					region = NAG_1277
+					region = ENG_1264
+					region = HYD_1283
+					region = ENG_1291
+					region = ENG_1297
+					region = ENG_1304
+					region = ENG_1305
+					region = MYS_1314
+					region = ENG_1317
+					region = ENG_1321
+					region = TIB_1591
+					region = BUR_1330
+					region = BUR_1334
+					region = BUR_1339
+					region = ENG_1343
+					region = ENG_2125
+				}
+			}
+			tag = CHI
+			tag = JAP
+			tag = TKG
+			tag = QNG
+		}
+	}
+	icon = 10
+	supply_consumption = -0.15
+	influence_modifier = -0.05
+	mobilisation_size = -0.75
+}
 help_ai_usa = {
 	trigger = {
 		owns = 2146
