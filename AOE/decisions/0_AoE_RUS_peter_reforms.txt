@@ -363,9 +363,12 @@ political_decisions = {
 		}
 		allow = {
 			money = 30000
+			#synthetic_polymers = 1
+			#mass_politics = 1
 		}
 		effect = {
 			set_country_flag = volga_germs
+			money = -30000
 			PRU_578 = { 
 				any_pop = { 
 					limit = { 
@@ -373,8 +376,9 @@ political_decisions = {
 							has_pop_culture = north_german
 							has_pop_culture = south_german
 						}
-						pop_militancy = 5
-					} 
+						militancy = 5
+					}
+					NOT = { has_pop_culture = south_italian }
 					move_pop = 1037
 				}
 			}
@@ -385,7 +389,8 @@ political_decisions = {
 							has_pop_culture = north_german
 							has_pop_culture = south_german
 						}
-						pop_militancy = 5
+						NOT = { has_pop_culture = south_italian }
+						militancy = 5
 					} 
 					move_pop = 1035
 				}
@@ -397,7 +402,8 @@ political_decisions = {
 							has_pop_culture = north_german
 							has_pop_culture = south_german
 						}
-						pop_militancy = 5
+						NOT = { has_pop_culture = south_italian }
+						militancy = 5
 					} 
 					move_pop = 973 
 				}
@@ -409,6 +415,7 @@ political_decisions = {
 							has_pop_culture = north_german
 							has_pop_culture = south_german
 						}
+						NOT = { has_pop_culture = south_italian }
 						pop_militancy = 5
 					} 
 					move_pop = 970
@@ -421,7 +428,8 @@ political_decisions = {
 							has_pop_culture = north_german
 							has_pop_culture = south_german
 						}
-						pop_militancy = 5
+						NOT = { has_pop_culture = south_italian }
+						militancy = 5
 					} 
 					move_pop = 968 
 				}
