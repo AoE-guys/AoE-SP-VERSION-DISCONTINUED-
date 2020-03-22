@@ -4859,9 +4859,12 @@ not_dictatorship = {
 ####Mughal breakup stuff####
 decentralized_rule = {
 	core_pop_militancy_modifier = 0.02
-	icon = 8
+	org_regain = -0.15
+	army_organisation = -0.2
+	admin_efficiency = -0.1
+	icon = 3
 }
-
+##
 inefficient_bureacracy = {
 	pop_consciousness_modifier = 0.2
 	pop_militancy_modifier = 0.2

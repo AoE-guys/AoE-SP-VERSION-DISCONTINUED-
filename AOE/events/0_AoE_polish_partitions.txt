@@ -425,7 +425,9 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		inherit = KUR
+		RUS = {
+			inherit = KUR
+		}
 		PLC = {
 		3337 = { secede_province = RUS }
 		RUS_360	= { limit = { NOT = { province_id = 362 } } secede_province = RUS }
@@ -464,8 +466,8 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		RUS_707 = { secede_province = PRU }
 		RUS_708 = { secede_province = PRU }
+		706 = { secede_province = PRU }
 		362 = { secede_province = PRU }
 		prestige = -10
 		ai_chance = { factor = 95 }
@@ -474,7 +476,7 @@ country_event = {
 	option = {
 		name = "We will not give up!"
 		PLC = {
-			RUS_707 = { add_core = PRU }
+			706 = { add_core = PRU }
 			RUS_708 = { add_core = PRU }
 			362 = { add_core = PRU }
 		}

@@ -5,7 +5,7 @@ politcal_decisions = {
 			NOT = { has_country_flag = mughal_conquest }
 		}
 		allow = {
-			military_socre = 30
+			military_score = 30
 			OR = {
 				pensions = acceptable_pensions
 				pensions = good_pensions
@@ -75,7 +75,7 @@ politcal_decisions = {
 	maratha_empire = {
 		potential = {
 			tag = MAH
-			NOT = { has_country_flag = abolished_mughal_supremacy }
+			NOT = { has_country_flag = maratha_empire }
 		}
 		allow = {
 			is_greater_power = yes
@@ -109,7 +109,7 @@ politcal_decisions = {
 		effect = {
 			prestige = 30
 			badboy = 15
-			set_country_flag = abolished_mughal_supremacy
+			set_country_flag = maratha_empire
 			add_country_modifier = {
 				name = indian_raj
 				duration = -1

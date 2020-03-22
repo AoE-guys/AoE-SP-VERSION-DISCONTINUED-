@@ -261,14 +261,21 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = claimed_ruthenia
-			RUS_947 = { add_core = RUS }
-			RUS_718 = { add_core = RUS }
+			356	= { add_core = RUS }
+			945	= { add_core = RUS }
+			944	= { add_core = RUS }
+			949 = { add_core = RUS }
+			RUS_947	= { add_core = RUS }
+			RUS_718	= { add_core = RUS }
+			RUS_958	= { add_core = RUS }
+			961	= { add_core = RUS }
+			954 = { add_core = RUS }
+			947 = { add_core = RUS }
+			3337 = { add_core = RUS }
+			RUS_360	= { limit = { NOT = { province_id = 362 } } add_core = RUS }
+			RUS_707	= { add_core = RUS }
 			RUS_940 = { add_core = RUS }
-			RUS_947 = { add_core = RUS }
 			RUS_959 = { add_core = RUS }
-			RUS_973 = { add_core = RUS }
-			RUS_360 = { add_core = RUS }
-			RUS_354 = { add_core = RUS }
 			badboy = 22
 		}
 		ai_will_do = { factor = 1 }	
