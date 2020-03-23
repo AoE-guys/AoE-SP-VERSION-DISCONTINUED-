@@ -6,34 +6,3 @@ life_rating = 42
 terrain = stpetersburg
 naval_base = 1
 fort = 1
-#state_building = {
-#	level = 5
-#	building = lumber_mill
-#	upgrade = yes
-#}
-#state_building = {
-#	level = 5
-#	building = cement_factory
-#	upgrade = yes
-#}
-1861.1.1 = { 
-	state_building = {
-		level = 5
-		building = steamer_shipyard
-		upgrade = yes
-	} 
-	state_building = {
-		level = 5
-		building = ammunition_factory
-		upgrade = yes
-	} 
-	state_building = {
-		level = 5
-		building = small_arms_factory
-		upgrade = yes
-	} 
-}
-1861.1.1 = {
-	railroad = 2
-	fort = 2
-}
