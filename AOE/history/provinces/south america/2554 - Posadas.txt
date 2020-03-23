@@ -5,8 +5,3 @@ add_core = CRT
 add_core = ARC
 trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
 life_rating = 31
-1861.1.1 = { 
-	owner = PRG
-	controller = PRG
-	add_core = PRG
-}
