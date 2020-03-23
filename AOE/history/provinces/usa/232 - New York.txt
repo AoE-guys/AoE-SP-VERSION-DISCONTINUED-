@@ -4,17 +4,8 @@ add_core = THC
 trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
 life_rating = 35
 terrain = newyork
-railroad = 1
 fort = 1
 naval_base = 1
-party_loyalty = {
-	ideology = conservative
-	loyalty_value = 13
-}
-party_loyalty = {
-	ideology = liberal
-	loyalty_value = 12
-}
 state_building = {
 	level = 5
 	building = cement_factory
@@ -35,17 +26,3 @@ state_building = {
 	building = steamer_shipyard
 	upgrade = yes
 }
-
-1861.1.1 = {
-	naval_base = 3
-	party_loyalty = {
-	ideology = liberal
-	loyalty_value = 17
-	}
-	state_building = {
-		level = 5
-		building = ammunition_factory
-		upgrade = yes
-	}
-}
-1861.1.1 = { railroad = 3 }

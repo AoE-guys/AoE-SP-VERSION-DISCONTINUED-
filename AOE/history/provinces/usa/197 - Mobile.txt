@@ -3,23 +3,3 @@ controller = FLO
 add_core = FLO
 trade_goods = cotton  state_building = {  level = 5  building = cotton_factory  upgrade = yes  }
 life_rating = 35
-
-party_loyalty = {
-	ideology = conservative
-	loyalty_value = 15
-}
-party_loyalty = {
-	ideology = liberal
-	loyalty_value = 12
-}
-
-1861.1.1 = {
-	controller = CSA
-	owner = CSA
-	add_core = CSA
-}
-1861.1.1 = { 
-	railroad = 3 
-	naval_base = 1
-	fort = 1
-}
