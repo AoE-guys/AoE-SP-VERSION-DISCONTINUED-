@@ -2,10 +2,7 @@ owner = LIG
 controller = LIG
 add_core = LIG
 add_core = BEL
-
 add_core = WLL
 trade_goods = iron  state_building = {  level = 5  building = iron_factory  upgrade = yes  }
 terrain = namur
 life_rating = 35
-1861.1.1 = { railroad = 3 }
-1861.1.1 = { remove_core = NET }
