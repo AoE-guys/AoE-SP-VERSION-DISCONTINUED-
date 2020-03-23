@@ -4,9 +4,3 @@ add_core = SGM
 add_core = GER
 trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
 life_rating = 40
-1861.1.1 = {
-	controller = PRU
-	owner = PRU
-	add_core = PRU
-	remove_core = SGM
-}

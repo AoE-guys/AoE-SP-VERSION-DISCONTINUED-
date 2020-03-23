@@ -5,26 +5,3 @@ add_core = RHI
 add_core = GER
 trade_goods = iron  state_building = {  level = 5  building = iron_factory  upgrade = yes  }
 life_rating = 40
-1861.1.1 = {
-	state_building = {
-		level = 5
-		building = steel_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 5
-		building = small_arms_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 5
-		building = cement_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 5
-		building = winery
-		upgrade = yes
-	}
-}
-1861.1.1 = { railroad = 3 }
