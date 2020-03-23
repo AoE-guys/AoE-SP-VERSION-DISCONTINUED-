@@ -3,11 +3,3 @@ add_core = MEX
 add_core = CAL
 trade_goods = fish  state_building = {  level = 5  building = fish_factory  upgrade = yes  }
 life_rating = 25
-#colonial = 2
-1861.1.1 = {
-	owner = USA
-	controller = USA
-	add_core = USA
-	remove_core = MEX
-	#colonial = 0
-}
