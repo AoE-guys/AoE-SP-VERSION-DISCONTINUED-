@@ -4,16 +4,3 @@ add_core = BOR
 trade_goods = iron  state_building = {  level = 5  building = iron_factory  upgrade = yes  }
 life_rating = 30
 terrain = lille
-#state_building = {
-#	level = 5
-#	building = steel_factory
-#	upgrade = yes
-#}
-1861.1.1 = {
-	state_building = {
-		level = 5
-		building = canned_food_factory
-		upgrade = yes
-	}
-}
-1861.1.1 = { railroad = 3 }

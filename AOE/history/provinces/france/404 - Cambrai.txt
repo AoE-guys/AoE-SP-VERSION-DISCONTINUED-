@@ -3,26 +3,3 @@ controller = BOR
 add_core = BOR
 trade_goods = coal  state_building = {  level = 5  building = coal_factory  upgrade = yes  }
 life_rating = 30
-#state_building = {
-#	level = 5
-#	building = explosives_factory
-#	upgrade = yes
-#}
-#state_building = {
-#	level = 5
-#	building = artillery_factory
-#	upgrade = yes
-#}
-1861.1.1 = {
-	state_building = {
-		level = 5
-		building = paper_mill
-		upgrade = yes
-	}
-	state_building = {
-		level = 5
-		building = regular_clothes_factory
-		upgrade = yes
-	}
-}
-1861.1.1 = { railroad = 3 }
