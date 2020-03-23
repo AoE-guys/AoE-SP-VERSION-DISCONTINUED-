@@ -157,6 +157,69 @@ political_decisions = {
 		factor = 1
 		}
 	}
+	joseph_i_bureacracy = {
+		picture = josephism
+			potential = {
+			tag = AUS
+			NOT = {
+				has_country_flag = joseph_i_bureacracy
+			}
+		}
+		allow = {
+			private_bank_money_bill_printing = 1
+			ruling_party_ideology = conservative
+			NOT = { has_country_modifer = maria_theresa }
+			NOT = {
+				OR = {
+					health_care = good_health_care
+					health_care = acceptable_health_care
+				}
+			}
+			war = no
+		}
+		effect = {
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+				}
+				militancy = -2
+			}
+			prestige = 5
+			social_reform = acceptable_health_care
+			set_country_flag = joseph_i_bureacracy
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	charles_vi_court = {
+		picture = josephism
+			potential = {
+			tag = AUS
+			NOT = {
+				has_country_flag = austrian_court
+			}
+		}
+		allow = {
+			impressionism = 1
+			NOT = { has_country_modifer = maria_theresa }
+			387 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 20
+			state_scope = {
+				any_pop = {
+					literacy = 0.1
+				}
+			}	
+			set_country_flag = austrian_court
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
 #####Hungary stuff#####
 	start_pest_congress = {
 		picture = hungary_flag
