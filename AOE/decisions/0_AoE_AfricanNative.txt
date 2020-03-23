@@ -1,0 +1,23 @@
+political_decisions = {	
+	female_guard = {
+		picture = unciv_army
+		potential = {
+			tag = DAH
+		}
+		allow = {
+			muzzle_loaded_rifles = 1
+		}
+		
+		effect = {
+			prestige = 10
+			random_pop = {
+				limit ={
+					type = soldiers
+				}
+				reduce_pop = 5
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}
