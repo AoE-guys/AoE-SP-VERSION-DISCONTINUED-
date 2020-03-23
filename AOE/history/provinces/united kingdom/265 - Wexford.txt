@@ -4,7 +4,3 @@ add_core = ENG
 add_core = IRE
 trade_goods = iron  state_building = {  level = 5  building = iron_factory  upgrade = yes  }
 life_rating = 35
-party_loyalty = {
-	ideology = liberal
-	loyalty_value = 20
-}

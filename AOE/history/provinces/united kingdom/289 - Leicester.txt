@@ -3,12 +3,3 @@ controller = ENG
 add_core = ENG
 trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
 life_rating = 35
-party_loyalty = {
-	ideology = conservative
-	loyalty_value = 20
-}
-party_loyalty = {
-	ideology = liberal
-	loyalty_value = 10
-}
-1861.1.1 = { railroad = 3 }
