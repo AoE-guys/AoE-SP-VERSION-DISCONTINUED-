@@ -1,8 +1,6 @@
-capital = 1898
-civilized = yes   primary_culture = dyula
-culture = senufo
-culture = mande
-culture = akan
+capital = 1882
+civilized = yes   primary_culture = mande
+culture = dyula
 culture = western_nigritic
 religion = sunni
 government = absolute_monarchy
@@ -31,7 +29,7 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
+conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
@@ -44,19 +42,17 @@ colonial_policy = no_colonies
 ruling_party = "Nobility Faction"
 upper_house = {
 	fascist = 0
-	liberal = 20
-	conservative = 40
-	reactionary = 40
+	liberal = 16
+	conservative = 21
+	reactionary = 63
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-set_country_flag = lacking_writing_system
 set_country_flag = sunni_country
 
 # Technologies
-
 
 # Inventions
 
@@ -64,9 +60,9 @@ set_country_flag = sunni_country
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "KNG_oob.txt"
+oob = "JAL_oob.txt"
 1861.1.1 = {
-	oob = "/1861/KNG_oob.txt"
+	oob = "/1861/JAL_oob.txt"
 	foreign_weapons = yes_foreign_weapons
 	flintlock_rifles = 1
 }

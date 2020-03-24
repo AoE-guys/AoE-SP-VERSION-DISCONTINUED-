@@ -1,9 +1,5 @@
-capital = 1898
-civilized = yes   primary_culture = dyula
-culture = senufo
-culture = mande
-culture = akan
-culture = western_nigritic
+capital = 1947
+civilized = yes   primary_culture = hausa
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -18,7 +14,7 @@ vote_franschise = none_voting
 public_meetings = no_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = first_past_the_post
+voting_system = jefferson_method
 political_parties = underground_parties
 
 # Social Reforms
@@ -31,7 +27,7 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
+conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
@@ -44,19 +40,17 @@ colonial_policy = no_colonies
 ruling_party = "Nobility Faction"
 upper_house = {
 	fascist = 0
-	liberal = 20
-	conservative = 40
-	reactionary = 40
+	liberal = 16
+	conservative = 63
+	reactionary = 21
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-set_country_flag = lacking_writing_system
 set_country_flag = sunni_country
 
 # Technologies
-
 
 # Inventions
 
@@ -64,9 +58,10 @@ set_country_flag = sunni_country
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "KNG_oob.txt"
 1861.1.1 = {
-	oob = "/1861/KNG_oob.txt"
+	oob = "/1861/SOK_oob.txt"
+	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.05
+	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.04
 	foreign_weapons = yes_foreign_weapons
 	flintlock_rifles = 1
 }
