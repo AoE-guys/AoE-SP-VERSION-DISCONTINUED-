@@ -21,10 +21,8 @@ country_event = {
 		MAH = { all_core = { limit = { owned_by = THIS } secede_province = MAH } }
 		NAG = { all_core = { limit = { owned_by = THIS } secede_province = NAG } }
 		release_vassal = NAG
-		release_vassal = SHI
 		release_vassal = KRN
 		release_vassal = MAH
-		release_vassal = LAD
 		release_vassal = ORI
 		all_core = { limit = { NOT = { owned_by = THIS } } remove_core = THIS }
 		add_country_modifier = {
