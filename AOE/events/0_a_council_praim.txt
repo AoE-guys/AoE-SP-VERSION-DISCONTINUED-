@@ -4228,6 +4228,9 @@ country_event = {
 			has_country_flag = church_premier
 			has_country_flag = gentry_premier
 		}
+		NOT = {
+		has_country_flag = no_spam_prime
+		}
 	}
 	
 	
@@ -4294,6 +4297,7 @@ country_event = {
 			
 		}
 		country_event = 9992033
+		set_country_flag = no_spam_prime
 		ai_chance = {
 			factor = 1.0
 		}

@@ -2,11 +2,13 @@ political_decisions = {
 	enable_council = {
 		picture = reichstag
 		potential = {
-		}
-		allow = {
 			NOT = {
 				has_global_flag = not_enable_council
+				has_country_flag = hide_council
 			}
+			has_country_flag = open_council
+		}
+		allow = {
 		}
 		effect = {
 			set_country_flag = enable_council
@@ -25,21 +27,66 @@ political_decisions = {
 			month = 2
 			}
 			ai = no
-		}
-		allow = {
 			NOT = {
 				has_global_flag = not_enable_council
 			}
+			has_country_flag = open_council
+		}
+		allow = {
 		}
 		effect = {
 			set_global_flag = not_enable_council
 		}
 	}
-	
+	hide_council = {
+		picture = reichstag
+		potential = {
+			NOT = {
+				has_global_flag = not_enable_council
+			}
+			has_country_flag = open_council
+			NOT = {
+				has_country_flag = hide_council
+			}
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = hide_council
+			clr_country_flag = open_council
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	open_council = {
+		picture = reichstag
+		potential = {
+			NOT = {
+				OR = {
+					has_global_flag = not_enable_council
+					has_country_flag = open_council
+				}
+			}
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = open_council
+			clr_country_flag = hide_council
+		}
+	}
 	set_prime_minister = {
 		picture = reichstag
 		potential = {
 			has_country_flag = enable_council
+			NOT = {
+				has_global_flag = not_enable_council
+				has_country_flag = hide_council
+			}
+			has_country_flag = open_council
 		}
 		allow = {
 			NOT = {
@@ -120,6 +167,11 @@ political_decisions = {
 		picture = reichstag
 		potential = {
 			has_country_flag = enable_council
+			NOT = {
+				has_global_flag = not_enable_council
+				has_country_flag = hide_council
+			}
+			has_country_flag = open_council
 		}
 		allow = {
 				OR = {
@@ -249,6 +301,7 @@ political_decisions = {
 			remove_country_modifier = incorruptible_premier
 			remove_country_modifier = rised_from_bottom_premier
 			clr_country_flag = prime_minister_set
+			clr_country_flag = no_spam_prime
 		}
 		ai_will_do = {
 			factor = 1
