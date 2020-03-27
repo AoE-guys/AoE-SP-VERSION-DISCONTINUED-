@@ -20,6 +20,7 @@ country_event = {
 		TRA = { all_core = { limit = { owned_by = THIS } secede_province = TRA } }
 		MAH = { all_core = { limit = { owned_by = THIS } secede_province = MAH } }
 		NAG = { all_core = { limit = { owned_by = THIS } secede_province = NAG } }
+		BAS = { any_owned = { limit = { is_core = NAG } secede_province = NAG } }
 		release_vassal = NAG
 		release_vassal = SHI
 		release_vassal = KRN
