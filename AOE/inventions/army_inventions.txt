@@ -783,7 +783,7 @@ colonial_negotiations = {
 			factor = -75
 			NOT = {
 				OR = {
-					continent = north_amercia
+					continent = north_america
 					continent = europe
 					is_greater_power = yes
 				}
@@ -978,7 +978,7 @@ anti_aircraft_artillery = {
 		base = 2
 		modifier = {
 			factor = 2
-			invention = wright_n_langleys_aeroplaneplanes
+			invention = wright_n_langleys_aeroplanes
 		}
 		modifier = {
 			factor = 2
