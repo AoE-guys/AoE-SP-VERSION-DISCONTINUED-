@@ -209,9 +209,12 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 20
-			state_scope = {
+			capital_scope = {
 				any_pop = {
 					literacy = 0.1
+				}
+				gentry = {
+					reduce_pop = 1.5
 				}
 			}	
 			set_country_flag = austrian_court
