@@ -205,3 +205,94 @@ country_event = {
 		}
 	}
 }
+#Crimean raids#
+country_event = {
+	id = 173608
+	title = "Raids on Russia?"
+	desc = "EVTDESC173608"
+	picture = cossacs
+	fire_only_once
+	
+	trigger = {
+		tag = CRI
+		CRI = { exists = yes }
+		year = 1735
+		OR = {
+			pensions = acceptable_pensions
+			pensions = good_pensions
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Countless richess awaits us"
+		RUS = { country_event = 173609 }
+		money = 5000
+		grain = 200
+		fruit = 100
+		fish = 40
+		cattle = 60
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "what if they retaliate?"
+		prestige = -15
+	}
+}
+country_event = {
+	id = 173609
+	title = "Raids on our lands!"
+	desc = "EVTDESC173609"
+	picture = cossacs
+	is_triggered_only = yes
+
+	option = {
+		name = "We will not forget this! Send the envoy to the Ottoman Sultan!"
+		TUR = { country_event = 173610 }
+		money = -5000
+		grain = -200
+		fruit = -100
+		fish = -40
+		cattle = -60
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Let it go."
+		prestige = -60
+	}
+}
+country_event = {
+	id = 173610
+	title = "A Russian envoy arrives"
+	desc = "EVTDESC173610"
+	picture = cossacs
+	is_triggered_only = yes
+
+	option = {
+		name = "This is outragous! We will not give up our lands!"
+		RUS = {
+			war = {
+				target = TUR
+				attacker_goal = { casus_belli = annex_core_country country = CRI }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Let it go."
+		CRI = {
+			all_core = {
+				secede_province = RUS
+			}
+		}
+		prestige = -60
+	}
+}

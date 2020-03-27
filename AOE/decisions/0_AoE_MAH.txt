@@ -1,5 +1,6 @@
 political_decisions = {
 	mughal_conquest = {
+		picture = maratha_empire
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = mughal_conquest }
@@ -45,6 +46,7 @@ political_decisions = {
 	}
 	
 	abolish_mughal_supremacy = {
+		picture = mughal_empire
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = abolished_mughal_supremacy }
@@ -55,7 +57,9 @@ political_decisions = {
 				pensions = acceptable_pensions
 				pensions = good_pensions
 			}
-			NOT = { exists = MUG }
+			MUG = {
+				exists = yes
+			}
 		}
 		effect = {
 			prestige = 30
@@ -73,6 +77,7 @@ political_decisions = {
 	}
 	
 	maratha_empire = {
+		picture = maratha_empire
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = maratha_empire }
@@ -103,7 +108,9 @@ political_decisions = {
 			any_core = {
 				owned_by = THIS
 			}
-			NOT = { exists = MUG }
+			MUG = {
+				exists = yes
+			}
 		}
 		
 		effect = {

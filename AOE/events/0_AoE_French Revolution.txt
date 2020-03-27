@@ -22,11 +22,9 @@ country_event = {
 		is_greater_power = yes
 		capital = 425
 		NOT = { government = democracy }
-		NOT = { has_country_flag = third_estate_satisfied}
-		OR = {
-			has_country_flag = neglecting_the_third_estate
-			year = 1789
-		}
+		NOT = { has_country_flag = third_estate_satisfied }	
+		year = 1789
+		has_country_modifier = peasant_turmoil
 	}
 	
 	mean_time_to_happen =  {

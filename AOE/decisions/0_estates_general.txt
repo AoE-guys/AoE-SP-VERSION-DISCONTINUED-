@@ -6,6 +6,7 @@ political_decisions = {
 			NOT = {
 				BOR = { government = democracy }
 			}
+			has_country_modifier = peasant_turmoil
 		}
 		allow = {
 			political_thought_7 = 1
@@ -13,10 +14,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = estates_general_summoned 
-			country_event = {
-				id = 19000
-				days = 0
-			}
+			country_event = 19000
 		}
 		
 		ai_will_do = {

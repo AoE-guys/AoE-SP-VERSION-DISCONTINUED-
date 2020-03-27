@@ -4297,16 +4297,17 @@ petes_conscription = {
 	supply_consumption = -0.15
 	mobilisation_size = 0.05
 	min_military_spending = 0.1
+	icon = 15
 }
 russian_vaccination = {
 	global_population_growth = 0.02
+	icon = 17
 }
 ####Austria stuff####
 maria_theresa = {
 	culture_tech_research_bonus = 0.1
 	influence_modifier = 0.2
 	ruling_party_support = 0.35
-	bad_badboy = -0.05
 	prestige = 0.05
 	icon = 13
 }
@@ -4314,14 +4315,17 @@ codex_theresianus = {
 	administrative_efficiency_modifier = 0.3
 	tax_efficiency = 0.1
 	global_pop_militancy_modifier = -0.03
+	icon = 5
 }
 austrian_vaccination = {
 	global_population_growth = 0.02
+	icon = 17
 }
 josephism = {
 	administrative_efficiency_modifier = 0.15
 	tax_efficiency = 0.075
 	global_pop_militancy_modifier = -0.06
+	icon = 13
 }
 theresian_military_academy = {
 	army_tech_research_bonus = 0.05
@@ -4329,17 +4333,54 @@ theresian_military_academy = {
 	supply_consumption = -0.1
 	org_regain = 0.2
 	land_unit_start_experience = 5
+	icon = 15
 }
-#####
+#####Bourbon France####
 ecole_militire = {
 	army_tech_research_bonus = 0.05
 	land_organisation = 0.1
 	supply_consumption = -0.1
 	org_regain = 0.2
 	land_unit_start_experience = 5
-	icon = 1
+	icon = 15
 }
-	
+louis_grande = {
+	influence_modifier = 0.2
+	ruling_party_support = 0.35
+	bad_badboy = -0.05
+	global_pop_militancy_modifier = -0.02
+	diplomatic_points_modifier = 0.05
+	supply_consumption = -0.05
+	prestige = 0.05
+	icon = 13
+}
+peasant_turmoil = {
+	ruling_party_support = -0.15
+	global_pop_militancy_modifier = 0.003
+	tax_efficiency = -0.05
+	import_cost = -0.25
+	loan_interest = 0.35
+	icon = 18
+}
+poor_tax_laws = {
+	admin_efficiency = 0.05
+	tax_efficiency = -0.1
+	icon = 10
+}
+poor_conscript_laws = {
+	mobilisation_economy_impact = -0.05
+	mobilisation_size = -0.3
+	icon = 16
+}
+peasant_in_government = {
+	influence_modifier = -0.2
+	ruling_party_support = 0.35
+	global_pop_militancy_modifier = 0.003
+	icon = 18
+}
+clergy_and_nobility_domination = {
+	icon = 18
+}
 ###+RGO_education###
 
 RGO_education_0 = {
@@ -4714,7 +4755,7 @@ lower_class_unrest_1 = {
 
 army_unrest_5 = {
     tax_efficiency = -0.025
-	land_organisation = -1.00
+	land_organisation = -0.4
 	leadership_modifier = -1.00
 	supply_consumption = 1.00
 	mobilisation_size = -0.05
@@ -4723,7 +4764,7 @@ army_unrest_5 = {
 
 army_unrest_4 = {
     tax_efficiency = -0.020
-	land_organisation = -0.80
+	land_organisation = -0.3
 	leadership_modifier = -0.80
 	supply_consumption = 0.80
 	mobilisation_size = -0.04
@@ -4732,7 +4773,7 @@ army_unrest_4 = {
 
 army_unrest_3 = {
     tax_efficiency = -0.015
-	land_organisation = -0.60
+	land_organisation = -0.2
 	leadership_modifier = -0.60
 	supply_consumption = 0.60
 	mobilisation_size = -0.03
@@ -4741,7 +4782,7 @@ army_unrest_3 = {
 
 army_unrest_2 = {
     tax_efficiency = -0.010
-	land_organisation = -0.40
+	land_organisation = -0.1
 	leadership_modifier = -0.40
 	supply_consumption = 0.40
 	mobilisation_size = -0.02
@@ -4750,7 +4791,7 @@ army_unrest_2 = {
 
 army_unrest_1 = {
     tax_efficiency = -0.005
-	land_organisation = -0.20
+	land_organisation = -0.05
 	leadership_modifier = -0.20
 	supply_consumption = 0.20
 	mobilisation_size = -0.01
