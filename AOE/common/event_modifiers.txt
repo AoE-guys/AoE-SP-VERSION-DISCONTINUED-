@@ -3292,15 +3292,13 @@ embezzler_premier = {
 non-iniative_placeholder_premier = {
 	icon = 4
 }
-involuntarily_placed_premier = {
-	icon = 4
-}
 incorruptible_premier = {
 	icon = 4
 }
 rised_from_bottom_premier = {
 	icon = 4
 }
+
 ###financial
 mentor_aristocrat_financial = {
 	icon = 4
@@ -4635,7 +4633,29 @@ RGO_education_10 = {
 	#immigrant_push = 1.0
 	icon = 3
 }
-
+###
+lower_class_exhaustion = {
+	local_ruling_party_support = -0.1
+	pop_militancy_modifier = 0.5
+	population_growth = -0.05
+	farm_rgo_eff = -0.3
+	local_factory_output = -0.1
+	immigrant_push = 1
+	icon = 18	
+}
+direct_control = {
+	pop_militancy_modifier = -0.5
+	local_ruling_party_support = 0.1
+	local_RGO_throughput = 0.1
+	local_factory_input = 0.1
+	local_factory_output = 0.1
+	immigrant_attract = 0.25
+	icon = 3
+}
+lawlesness_reaction = {
+	social_reform_desire = 0.2
+	icon = 3
+}
 ###
 
 rich_unrest_5 = {

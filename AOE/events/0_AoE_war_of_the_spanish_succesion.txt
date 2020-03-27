@@ -538,20 +538,20 @@ country_event = {
 		prestige = 80
 		SPA = {
 			any_owned = {
-					limit = {
-						OR = {
-							region = BEL_387
-							region = BEL_394
-							region = SIC_753
-							region = SIC_754
-							region = AUS_726
-							region = NET_379
-							region = PRU_575
-							region = SAR_765
-						}
+				limit = {
+					OR = {
+						region = BEL_387
+						region = BEL_394
+						region = SIC_753
+						region = SIC_754
+						region = AUS_726
+						region = NET_379
+						region = PRU_575
+						region = SAR_765
 					}
-					secede_province = AUS
 				}
+				secede_province = AUS
+			}
 			any_owned = {
 				limit = {
 					region = SIC_763
@@ -617,25 +617,25 @@ country_event = {
 		money = 1000000
 		prestige = 80
 		SPA = {
-		any_owned = {
-			limit = {
-				OR = {
-					region = BEL_387
-					region = BEL_394
-					region = SIC_753
-					region = SIC_754
-					region = AUS_726
-					region = NET_379
-					region = PRU_575
-					region = SAR_765
-					region = SIC_763
+			any_owned = {
+				limit = {
+					OR = {
+						region = BEL_387
+						region = BEL_394
+						region = SIC_753
+						region = SIC_754
+						region = AUS_726
+						region = NET_379
+						region = PRU_575
+						region = SAR_765
+						region = SIC_763
 					}
 				}
-			secede_province = BOR
+				secede_province = BOR
+			}
 		}
 		BOR = {
 			release_vassal = NAP
-		}
 		}
 		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA  end_war = AUS }
 		end_war = SPA  end_war = AUS
