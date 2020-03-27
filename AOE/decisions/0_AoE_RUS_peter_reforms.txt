@@ -175,7 +175,7 @@ political_decisions = {
 		}
 		allow = {
 			KMK = {
-				vassal_of = THIS
+				is_vassal_of = THIS
 			}
 			mass_politics = 1
 			is_greater_power = yes
@@ -272,7 +272,7 @@ political_decisions = {
 			954 = { add_core = RUS }
 			947 = { add_core = RUS }
 			3337 = { add_core = RUS }
-			RUS_360	= { any_owned = { limit = { NOT = { province_id = 362 } } add_core = RUS } }
+			RUS_360	= { limit = { NOT = { province_id = 362 } } add_core = RUS }
 			RUS_707	= { add_core = RUS }
 			RUS_940 = { add_core = RUS }
 			RUS_959 = { add_core = RUS }
@@ -368,7 +368,7 @@ political_decisions = {
 			NOT = { CRI = { exists = yes } }
 			owns = 968
 			owns = 970
-			owns = 973
+			owsn = 973
 		}
 		effect = {
 			set_country_flag = volga_germs
@@ -381,9 +381,8 @@ political_decisions = {
 							has_pop_culture = south_german
 						}
 						militancy = 5
-					NOT = { has_pop_culture = south_italian }
 					}
-					
+					NOT = { has_pop_culture = south_italian }
 					move_pop = 1037
 				}
 			}
