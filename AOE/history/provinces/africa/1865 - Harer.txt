@@ -1,6 +1,8 @@
-owner = HAR
-controller = HAR
+owner = AWS
+controller = AWS
+add_core = AWS
 add_core = HAR
-add_core = WRLadd_core = ETH
+add_core = WRL
+add_core = ETH
 trade_goods = coffee  state_building = {  level = 5  building = coffee_factory  upgrade = yes  }
 life_rating = 35
