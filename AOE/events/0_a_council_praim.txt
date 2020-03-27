@@ -4213,8 +4213,8 @@ country_event = {
 ###Main Prime Minister
 country_event = {
 	id = 100000001
-	title = "EVTNAME9991998" 
-	desc = "EVTDESC9991998"
+	title = "EVTNAME100000001" 
+	desc = "EVTDESC100000001"
 	picture = "autocracy"
 	
 	is_triggered_only = no
@@ -4235,14 +4235,14 @@ country_event = {
 	
 	
 	option = {
-		name = "EVTNAME9991998PTA"
+		name = "EVTNAME100000001PTA"
 		THIS = {
 			limit = {
 					has_country_flag = bureaucracy_premier
 				}
 				set_variable = {
 					which = bureaucratic_premier
-					value = 10
+					value = 11
 				}
 			
 		}
@@ -4252,7 +4252,7 @@ country_event = {
 				}
 				set_variable = {
 					which = burghers_premier
-					value = 10
+					value = 14
 				}
 			
 		}
@@ -4262,7 +4262,7 @@ country_event = {
 				}
 				set_variable = {
 					which = army_premier
-					value = 10
+					value = 9
 				}
 			
 		}
@@ -4296,7 +4296,7 @@ country_event = {
 				}
 			
 		}
-		country_event = 9992033
+		country_event = 10000000
 		set_country_flag = no_spam_prime
 		ai_chance = {
 			factor = 1.0
@@ -6333,406 +6333,413 @@ country_event = {
 
 #Powers_decrease Prime minister
 country_event = { 
-	id = 9992033
-	title = "EVTNAME9992033" 
-	desc = "EVTDESC9992033"
+	id = 10000000
+	title = "EVTNAME10000000" 
+	desc = "EVTDESC10000000"
 	picture = "autocracy"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTNAME9992033PTA"
-			random_list = {
-				10 = {
+		name = "EVTNAME10000000PTA"
+				random = {
+					chance = 20
 					change_variable = {
 						which = church_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = church_premier
 						value = -1
 					}
 				}
 				
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = church_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = church_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = church_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = church_premier
 						value = -1
 					}
 				}
-				10 = {
-					change_variable = {
-						which = church_premier
-						value = -1
-					}
-				}
-				35 = {  }
-			}
-			random_list = {
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = noble_premier
 						value = -1
 					}
 				}
-				10 = {
-					change_variable = {
-						which = noble_premier
-						value = -1
-					}
-				}
-				55 = {  }
-			}
-			random_list = {
-				10 = {
+			
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = army_premier
 						value = -1
 					}
 				}
-				10 = {
-					change_variable = {
-						which = army_premier
-						value = -1
-					}
-				}
-				40 = { }
-			}
-			random_list = {
-				10 = {
+			
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = burghers_premier
 						value = -1
 					}
 				}
-				10 = {
-					change_variable = {
-						which = burghers_premier
-						value = -1
-					}
-				}
-				75 = { }
-			}
-			random_list = {
-				10 = {
+			
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = bureaucracy_premier
 						value = -1
 					}
 				}
-				10 = {
-					change_variable = {
-						which = bureaucracy_premier
-						value = -1
-					}
-				}
-				60 = { }
-			}
-			random_list = {
-				10 = {
+			
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
+				random = {
+					chance = 20
 					change_variable = {
 						which = gentry_premier
 						value = -1
 					}
 				}
-				10 = {
-					change_variable = {
-						which = gentry_premier
-						value = -1
-					}
-				}
-				45 = {  }
-			}
+				
 		clr_country_flag = clean_prime
 		ai_chance = {
 			factor = 1.0
