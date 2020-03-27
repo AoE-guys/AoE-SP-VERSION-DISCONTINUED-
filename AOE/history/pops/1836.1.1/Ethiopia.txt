@@ -671,129 +671,45 @@
 #Awsa (68000/17000 POPS)
 1858 = {
 	aristocrats = {
-		culture = harari
+		culture = afar
 		religion = sunni
-		size = 746
-	}
-
-	bureaucrats = {
-		culture = harari
-		religion = sunni
-		size = 20
-	}
-
-	officers = {
-		culture = harari
-		religion = sunni
-		size = 20
+		size = 258
 	}
 
 	clergymen = {
-		culture = harari
+		culture = afar
 		religion = sunni
-		size = 234
+		size = 144
 	}
 
 	artisans = {
-		culture = harari
-		religion = sunni
-		size = 1558
-	}
-
-	soldiers = {
-		culture = harari
-		religion = sunni
-		size = 902
-	}
-
-	farmers = {
-		culture = harari
-		religion = sunni
-		size = 30548
-	}
-
-	labourers = {
-		culture = harari
-		religion = sunni
-		size = 1608
-	}
-
-	aristocrats = {
-		culture = oromo
-		religion = sunni
-		size = 246
-	}
-
-	clergymen = {
-		culture = oromo
-		religion = sunni
-		size = 135
-	}
-
-	artisans = {
-		culture = oromo
+		culture = afar
 		religion = sunni
 		size = 574
 	}
 
 	soldiers = {
-		culture = oromo
-		religion = sunni
-		size = 959
-	}
-
-	farmers = {
-		culture = oromo
-		religion = sunni
-		size = 9087
-	}
-
-	labourers = {
-		culture = oromo
-		religion = sunni
-		size = 478
-	}
-	
-	slaves = {
-		culture = cushitic
-		religion = animist
-		size = 1804
-	}
-
-	aristocrats = {
-		culture = somali
-		religion = sunni
-		size = 779
-	}
-
-	clergymen = {
-		culture = somali
-		religion = sunni
-		size = 390
-	}
-
-	artisans = {
-		culture = somali
-		religion = sunni
-		size = 1968
-	}
-
-	soldiers = {
-		culture = somali
+		culture = afar
 		religion = sunni
 		size = 144
 	}
 
 	farmers = {
-		culture = somali
+		culture = afar
 		religion = sunni
-		size = 25551
+		size = 9843
 	}
 
 	labourers = {
-		culture = somali
+		culture = afar
 		religion = sunni
-		size = 1345
+		size = 518
+	}
+
+	slaves = {
+		culture = cushitic
+		religion = animist
+		size = 2460
 	}
 }
 #Shoa Region (2068000)
@@ -1589,45 +1505,129 @@
 #Harer (384000/96000 POPS)
 1865 = {
 	aristocrats = {
-		culture = afar
+		culture = harari
 		religion = sunni
-		size = 258
+		size = 746
+	}
+
+	bureaucrats = {
+		culture = harari
+		religion = sunni
+		size = 20
+	}
+
+	officers = {
+		culture = harari
+		religion = sunni
+		size = 20
 	}
 
 	clergymen = {
-		culture = afar
+		culture = harari
 		religion = sunni
-		size = 144
+		size = 234
 	}
 
 	artisans = {
-		culture = afar
+		culture = harari
+		religion = sunni
+		size = 1558
+	}
+
+	soldiers = {
+		culture = harari
+		religion = sunni
+		size = 902
+	}
+
+	farmers = {
+		culture = harari
+		religion = sunni
+		size = 30548
+	}
+
+	labourers = {
+		culture = harari
+		religion = sunni
+		size = 1608
+	}
+
+	aristocrats = {
+		culture = oromo
+		religion = sunni
+		size = 246
+	}
+
+	clergymen = {
+		culture = oromo
+		religion = sunni
+		size = 135
+	}
+
+	artisans = {
+		culture = oromo
 		religion = sunni
 		size = 574
 	}
 
 	soldiers = {
-		culture = afar
+		culture = oromo
+		religion = sunni
+		size = 959
+	}
+
+	farmers = {
+		culture = oromo
+		religion = sunni
+		size = 9087
+	}
+
+	labourers = {
+		culture = oromo
+		religion = sunni
+		size = 478
+	}
+	
+	slaves = {
+		culture = cushitic
+		religion = animist
+		size = 1804
+	}
+
+	aristocrats = {
+		culture = somali
+		religion = sunni
+		size = 779
+	}
+
+	clergymen = {
+		culture = somali
+		religion = sunni
+		size = 390
+	}
+
+	artisans = {
+		culture = somali
+		religion = sunni
+		size = 1968
+	}
+
+	soldiers = {
+		culture = somali
 		religion = sunni
 		size = 144
 	}
 
 	farmers = {
-		culture = afar
+		culture = somali
 		religion = sunni
-		size = 9843
+		size = 25551
 	}
 
 	labourers = {
-		culture = afar
+		culture = somali
 		religion = sunni
-		size = 518
-	}
-
-	slaves = {
-		culture = cushitic
-		religion = animist
-		size = 2460
+		size = 1345
 	}
 }
 #uncolonized in 1836
