@@ -49,7 +49,7 @@ upper_house = {
 }
 
 set_country_flag = sunni_country
-foreign_weapons = yes_foreign_weapons
+
 
 # Technologies
 flintlock_rifles = 1
@@ -61,10 +61,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "MAK_oob.txt"
-1861.1.1 = {
-	oob = "/1861/MAK_oob.txt"
-	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.04
-	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.02
-	foreign_weapons = yes_foreign_weapons
-	flintlock_rifles = 1
-}

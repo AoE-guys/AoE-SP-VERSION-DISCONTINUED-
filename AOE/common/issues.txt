@@ -752,7 +752,10 @@ social_reforms = {
 			#education_efficiency_modifier = 0.00
 			core_pop_consciousness_modifier = 0.00
 			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+			allow = { 
+				has_global_flag = factions_setup_done 
+				NOT = { has_country_modifier = clergy_and_nobility_domination }
+			}
 		}
 		acceptable_minimum_wage = { #marginally relevant
 			tax_efficiency = 0.025
@@ -801,7 +804,8 @@ social_reforms = {
 			factory_input = -0.10
 			goods_demand = 0.10
 			minimum_wage = 0.06
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done 
+			NOT = { has_country_modifier = clergy_and_nobility_domination }}
 		}
 		ten_hours = { #influential
 			tax_efficiency = -0.025
@@ -839,7 +843,10 @@ social_reforms = {
 			factory_throughput = 0.05
 			goods_demand = -0.15
 			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done }
+			allow = { 
+				has_global_flag = factions_setup_done 
+				NOT = { has_country_modifier = clergy_and_nobility_domination }
+			}
 		}
 		low_safety = { #slightly influential
 			tax_efficiency = 0.00
@@ -899,7 +906,10 @@ social_reforms = {
 			factory_throughput = 0.15
 			factory_output = 0.15
 			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+			allow = { 
+				has_global_flag = factions_setup_done 
+				NOT = { has_country_modifier = clergy_and_nobility_domination }
+			}
 		}
 		good_subsidies = { #very influential
 			tax_efficiency = -0.05

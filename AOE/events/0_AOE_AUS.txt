@@ -1309,3 +1309,51 @@ country_event = { #55555 Rakoczi decides
 		}
 	}
 }
+####Maria theresa#####
+country_event = {
+	id = 174500
+	title = "The reign of Maria Theresa"
+	desc = "EVTDESC174500"
+	picture = maria_theresa
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AUS
+		year = 1745
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "May she guide us to prosperity!"
+		prestige = 5
+		add_country_modifier = {
+			name = maria_theresa
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = 174501
+	title = "Death of Maria Theresa"
+	desc = "EVTDESC174501"
+	picture = maria_theresa_ded
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AUS
+		year = 1780
+	}
+	
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+		name = "Tragic..."
+		prestige = 5
+		remove_country_modifier = maria_theresa
+	}
+}

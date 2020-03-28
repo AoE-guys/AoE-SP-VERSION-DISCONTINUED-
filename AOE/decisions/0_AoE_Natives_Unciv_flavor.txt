@@ -202,4 +202,30 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	iqs_ireddentalism = {
+		picture = iqs_irr
+		potential = {
+			tag = IQS
+			NOT = { has_country_flag = iqs_ireddentalism }
+		}
+		allow = {
+			war = no
+			war_policy = jingoism
+			NOT = { government = tribal_democracy }
+		}
+		effect = {
+			set_country_flag = iqs_ireddentalism
+			badboy = 10
+			USA_170 = { add_core = THIS }
+			174 = { add_core = THIS }
+			173 = { add_core = THIS }
+			175 = { add_core = THIS }
+			176 = { add_core = THIS }
+			165 = { add_core = THIS }
+			168 = { add_core = THIS }
+			167 = { add_core = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

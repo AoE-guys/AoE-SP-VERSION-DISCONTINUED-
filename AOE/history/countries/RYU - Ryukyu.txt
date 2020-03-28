@@ -53,7 +53,7 @@ upper_house = {
 }
 
 
-foreign_weapons = yes_foreign_weapons
+
 education_reform = yes_education_reform
 # Technologies
 flintlock_rifles = 1
@@ -67,17 +67,3 @@ nonstate_consciousness = 0
 modern_winemaking = yes
 
 oob = "RYU_oob.txt"
-1861.1.1 = {
-	oob = "/1861/RYU_oob.txt"
-}
-1861.1.1 = {
-
-foreign_weapons = yes_foreign_weapons
-army_schools = yes_army_schools
-land_reform = yes_land_reform
-education_reform = yes_education_reform
-
-# Technologies
-flintlock_rifles = 1
-
-}

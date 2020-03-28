@@ -2,7 +2,10 @@ political_decisions = {
 	partition_poland = {
 		picture = polish_partitions
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = PRU
+			}
 			PLC = {
 				exists = yes
 			}		

@@ -10,8 +10,8 @@ country_event = {
 	
 	option = {
 		name = "Send a delegation to Prussia and Austria"
-		set_country_flag = polish_partition_one
-		country_event = 1773
+		set_country_flag = main_partitioner
+		RUS = {country_event = 1773 }
 		PRU = { country_event = 1774 }
 		AUS = { country_event = 1775 }
 		
@@ -203,7 +203,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = polish_partition
-		tag = RUS
+		has_country_flag = main_partitioner
 	}
 	
 	mean_time_to_happen = {
@@ -212,7 +212,7 @@ country_event = {
 	
 	option = {
 		name = "Send a delegation to Prussia and Austria"
-		country_event = 1780
+		RUS = { country_event = 1780 }
 		PRU = { country_event = 1781 }
 		
 		ai_chance = { factor = 100 }
@@ -343,7 +343,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = polish_partition
-		tag = RUS
+		has_country_flag = main_partitioner
 	}
 	
 	mean_time_to_happen = {
@@ -352,7 +352,7 @@ country_event = {
 	
 	option = {
 		name = "Send a delegation to Prussia and Austria"
-		country_event = 1785
+		RUS = { country_event = 1785 }
 		PRU = { country_event = 1786 }
 		AUS = { country_event = 1787 }
 		

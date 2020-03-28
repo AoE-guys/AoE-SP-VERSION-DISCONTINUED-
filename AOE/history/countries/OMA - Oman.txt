@@ -49,10 +49,20 @@ upper_house = {
 }
 
 set_country_flag = ibadi_country
-foreign_weapons = yes_foreign_weapons
+
 
 # Technologies
+post_napoleonic_thought = 1
 flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+no_standard = 1
+guild_based_production = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+clipper_design = 1
+malthusian_thought = 1
 
 # Inventions
 
@@ -61,8 +71,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "OMA_oob.txt"
-1861.1.1 = {
-	oob = "/1861/OMA_oob.txt"
-	literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.13
-	#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.06
-}

@@ -9,7 +9,7 @@ plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.12
 #non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
-#civilized = no
+
 
 # Political reforms
 slavery = no_slavery
@@ -44,13 +44,13 @@ set_country_flag = protestant_country
 
 ruling_party = "Nobility Faction"
 
-foreign_officers = yes_foreign_officers 
-foreign_weapons = yes_foreign_weapons
-foreign_artillery = yes_foreign_artillery
-foreign_training = yes_foreign_training
-land_reform = yes_land_reform
-monetary_reform = yes_monetary_reform
-admin_reform = yes_admin_reform
+
+
+
+
+
+
+
 
 upper_house = {
 	fascist = 0
@@ -81,6 +81,3 @@ piston_steam_engine = 1
 consciousness = 0
 nonstate_consciousness = 0
 
-1861.1.1 = {
-	oob = "/1861/LIB_oob.txt"
-}

@@ -559,13 +559,13 @@ country_event = {
 				}
 				secede_province = SVY
 			}
-			any_owned = {
-				limit = {
-					province_id = 517
-					ENG = { has_country_flag = support_habsburg_heir }
-				}
-				secede_province = ENG
+		}
+		any_country = {
+			limit = {
+				owns = 300
+				has_country_flag = support_habsburg_heir
 			}
+			country_event = 17071707
 		}
 		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA  end_war = BOR }
 		end_war = SPA  end_war = BOR
@@ -586,6 +586,22 @@ country_event = {
 			} 
 			country_event = 13007
 		}
+	}
+}
+country_event = {
+	id = 17071707
+	title = "Spoils from the succesion crisis" 
+	desc = "EVTDESC170717071707"
+	picture = "spanish_king"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Victory!"
+		517 = {
+			secede_province = THIS
+			add_core = THIS
+		}
+		prestige = 15
 	}
 }
 country_event = {

@@ -50,34 +50,23 @@ upper_house = {
 
 set_country_flag = sunni_country
 
-foreign_training = yes_foreign_training
-foreign_weapons = yes_foreign_weapons
+
 
 # Technologies
+post_napoleonic_thought = 1
 flintlock_rifles = 1
-
-# Inventions
+bronze_muzzle_loaded_artillery = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+no_standard = 1
+guild_based_production = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+clipper_design = 1
+malthusian_thought = 1
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "ALD_oob.txt"
-
-1861.1.1 = {
-
-	# Political reforms
-	slavery = no_slavery
-
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-	army_schools = yes_army_schools
-
-	# Technologies
-	military_staff_system = 1
-	flintlock_rifles = 1
-
-	# Inventions
-
-}
