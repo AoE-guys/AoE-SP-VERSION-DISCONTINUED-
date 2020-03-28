@@ -636,6 +636,7 @@ country_event = {
 		}
 		BOR = {
 			release_vassal = NAP
+			create_vassal = LOM
 		}
 		any_country = { limit = { has_country_flag = support_habsburg_heir } end_war = SPA  end_war = AUS }
 		end_war = SPA  end_war = AUS

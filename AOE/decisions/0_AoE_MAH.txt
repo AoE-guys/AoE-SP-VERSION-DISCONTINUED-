@@ -58,7 +58,7 @@ political_decisions = {
 				pensions = good_pensions
 			}
 			MUG = {
-				exists = yes
+				exists = no
 			}
 		}
 		effect = {
@@ -95,11 +95,13 @@ political_decisions = {
 				owned_by = THIS
 			}
 			OR = {
-				ENG_1251 = {
-					owned_by = THIS
-				}
-				ENG_1252 = {
-					owned_by = THIS
+				AND = {
+					ENG_1251 = {
+						owned_by = THIS
+					}
+					ENG_1252 = {
+						owned_by = THIS
+					}
 				}
 				BNG = {
 					vassal_of = THIS
@@ -109,7 +111,7 @@ political_decisions = {
 				owned_by = THIS
 			}
 			MUG = {
-				exists = yes
+				exists = no
 			}
 		}
 		
@@ -123,5 +125,60 @@ political_decisions = {
 			}
 		}
 		ai_will_do = { factor = 1 }
+	}
+	
+	modernize_our_weaponary = {
+		picture = troops
+		potential = {
+			tag = MAH
+			NOT = { has_country_flag = modernize_our_weaponary }
+		}
+		allow = {
+			infiltration = 1
+			OR = {
+				pensions = acceptable_pensions
+				pensions = good_pensions
+			}
+			OR = {
+				relation = {
+					who = GBR
+					value = 100
+				}
+				relation = {
+					who = BOR
+					value = 100
+				}
+			}
+			money = 50000
+		}
+		effect = {
+			money = -50000
+			add_country_modifier = {
+				name = foreign_weapons
+				duration = 7300
+			}
+		}
+	}
+	
+	government_reform_mah = {
+		picture = maratha_empire
+		potential = {
+			tag = MAH
+			NOT = { has_country_flag = modernize_our_weaponary }
+		}
+		allow = {
+			OR = {
+				health_care = acceptable_health_care
+				health_care = good_health_care
+			}
+			OR = {
+				safety_regulations = acceptable_safety
+				safety_regulations = good_safety
+			}
+			money = 100000
+		}
+		effect = {
+			political_reform = unitary
+		}
 	}
 }

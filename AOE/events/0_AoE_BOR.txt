@@ -846,3 +846,141 @@ country_event = {
 		}
 	}
 }
+#####Crown of Italy#####
+country_event = {
+	id = 171110
+	title = "France claims the crown of Italy"
+	desc = "EVTDESC171110"
+	picture = italia
+	is_triggered_only = yes
+	
+	option = {
+		name = "Propose an Confederation of North italian states "
+		prestige = 5
+		VEN = { country_event = 171112 }
+		SVY = { country_event = 171111 }
+		PAR = { country_event = 171111 }
+		GEN = { country_event = 171111 }
+		all_core = {
+			add_core = CIS
+		}
+		change_tag = CIS
+		CIS = {
+			political_reform = landed_voting
+			political_reform = confederalism
+			government = prussian_constitutionalism
+		}
+	}
+	
+	option = {
+		name = "Approach the Austrians for help"
+		AUS = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
+	}
+}
+country_event = {
+	id = 171113
+	title = "Cisalpine Confederation"
+	desc = "EVTDESC171111"
+	picture = italia
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the Confederation"
+		prestige = 5
+		all_core = {
+			add_core = CIS
+			secede_province = CIS
+		}
+	}
+	
+	option = {
+		name = "Approach the Austrians for help instead"
+		AUS = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
+	}
+}
+country_event = {
+	id = 171112
+	title = "Cisalpine Confederation"
+	desc = "EVTDESC171112"
+	picture = italia
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the Confederation"
+		prestige = 5
+		all_core = {
+			add_core = CIS
+			secede_province = CIS
+		}
+	}
+	
+	option = {
+		name = "Join the Confederation, but ask for more autonomy"
+		CIS = {
+			create_vassal = VEN
+		}
+	}
+	
+	option = {
+		name = "Approach the Austrians for help instead"
+		AUS = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
+	}
+}
+country_event = {
+	id = 171113
+	title = "Help from the emperor?"
+	desc = "EVTDESC171113"
+	picture = italia
+	fire_only_once = yes
+	
+	trigger = {
+		CIS = { exists = yes }
+		tag = CIS
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	
+	option = {
+		name = "Approach the Emperor."
+		AUS = { country_event = 171114 }
+	}
+	
+	option = {
+		name = "We can stand alone."
+		prestige = 5
+	}
+}
+country_event = {
+	id = 171114
+	title = "Anti-French Coalition"
+	desc = "EVTDESC171111"
+	picture = italia
+	is_triggered_only = yes
+	
+	option = {
+		name = "Approach the Emperor."
+		create_allience = CIS
+	}
+	
+	option = {
+		name = "Italian affairs.. pffff!"
+		prestige = 5
+	}
+}

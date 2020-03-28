@@ -127,6 +127,10 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 15
+			}
 		}
 	}
 	
@@ -281,6 +285,55 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	crown_of_italy = {
+		picture = italia
+		potential = {
+			tag = BOR
+			NOT = { has_country_flag = crown_of_italy }
+		}
+		allow = {
+			NAP = { is_vassal_of = THIS }
+			LOM = { is_vassal_of = THIS }
+			military_score = 50
+			NOT = {
+				OR = {
+					pensions = no_penions
+					pensions = trinket_pensions
+				}
+			}
+		}
+		effect = {
+			badboy = 25
+			SAR_720 = {
+				add_core = THIS
+			}
+			TUS_744 = {
+				add_core = THIS
+			}
+			AUS_726 = {
+				add_core = THIS
+			}
+			AUS_729 = {
+				add_core = THIS
+			}
+			AUS_736 = {
+				add_core = THIS
+			}
+			SAR_765 = {
+				add_core = THIS
+			}
+			prestige = 15
+			TUS = { country_event = 171110 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 15
+			}
 		}
 	}
 }

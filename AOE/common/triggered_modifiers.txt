@@ -1446,6 +1446,42 @@ south_american_ai = {
 	mobilisation_size = 0.02
 	icon = 19
 }
+asia_balance = {
+	trigger = {
+		OR = {
+			month = 1
+			year = 1701
+			OR = {
+				AND = {
+					tag = QNG
+					schools = unciv_tech_school
+				}
+				AND = {
+					tag = BNG
+					schools = unciv_tech_school
+				}
+				AND = {
+					tag = MUG
+					schools = unciv_tech_school
+				}
+				AND = {
+					tag = KOR
+					schools = unciv_tech_school
+				}
+				AND = {
+					tag = MAH
+					schools = unciv_tech_school
+					NOT = {
+						MUG = {
+							is_greater_power = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	farm_rgo_size = 0.5
+}
 
 south_american_ai_ii = {
 	trigger = {
