@@ -80,7 +80,7 @@ country_event = {
 	}
 	
 	trigger = {
-		has_country_modifier = aristocracy_puppet_premier
+		has_country_modifier = aristoracy_puppet_premier
 	}
 	
 	option = {
@@ -128,5 +128,78 @@ country_event = {
 		treasury = -10000
 		prestige_factor = 0.1
 		war_exhaustion = -10
+	}
+}
+country_event = { 
+	id = 9992167
+	title = "Government Roots" 
+	desc = "EVTDESC9992167"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_country_modifier = aristocrat_in_web_premier
+	}
+	
+	option = {
+		name = "Hope he is our vassal"
+		random = {
+			chance = 20
+			prestige = 10
+			any_pop = {
+				militancy = -3
+			}
+			add_country_modifier = {
+				name = ruling_web
+				duration = -1
+			}
+		}
+		random = {
+			chance = 20
+			prestige = -10
+			any_pop = {
+				militancy = 3
+			}
+			add_country_modifier = {
+				name = takeover_web
+				duration = -1
+			}
+		}
+		prestige = 5
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992168
+	title = "Web passes over" 
+	desc = "We can't anymore see effects of our influential with our past Prime Minister"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = aristocrat_in_web_premier
+		}
+		OR = {
+			has_country_modifier = ruling_web
+			has_country_modifier = takeover_web
+		}
+	}
+	
+	option = {
+		name = "Years passed"
+		remove_country_modifier = ruling_web
+		remove_country_modifier = takeover_web
+		plurality = 5
 	}
 }
