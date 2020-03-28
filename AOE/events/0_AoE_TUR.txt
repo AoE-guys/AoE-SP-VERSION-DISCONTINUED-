@@ -212,7 +212,6 @@ country_event = {
 	desc = "EVTDESC173608"
 	picture = cossacs
 	fire_only_once
-	
 	trigger = {
 		tag = CRI
 		CRI = { exists = yes }
