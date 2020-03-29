@@ -192,6 +192,34 @@ political_decisions = {
 		factor = 1
 		}
 	}
+	financial_reform = {
+		picture = josephism
+			potential = {
+			tag = AUS
+			NOT = {
+				has_country_flag = financial_reform
+			}
+			has_country_flag = joseph_i_bureacracy
+		}
+		allow = {
+			stock_exchange  = 1
+			ruling_party_ideology = conservative
+			NOT = { has_country_modifer = maria_theresa }
+		}
+		effect = {
+			add_tax_relative_income = 0.1
+			prestige = 5
+			social_reform = good_health_care
+			set_country_flag = financial_reform
+			add_country_modifier = {
+				name = habsburg_finances
+				duration = -1
+			}
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
 	charles_vi_court = {
 		picture = josephism
 			potential = {
