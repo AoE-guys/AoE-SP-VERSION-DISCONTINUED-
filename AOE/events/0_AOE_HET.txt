@@ -1,0 +1,57 @@
+country_event = {
+	id = 91241542
+	title = "Masepa Rebellion"
+	desc = "EVTDESC91241542"
+	picture = masepa
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "So he is a traitor? After all!"
+		release_vassal = HET
+		war = {
+			target = HET
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Forgive them"
+		release_vassal = HET
+		prestige = -20
+		ai_chance = {
+			factor = 0.1
+		}
+	}
+}
+country_event = {
+	id = 91241543
+	title = "Masepa Rebellion"
+	desc = "EVTDESC91241543"
+	picture = masepa
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We all cossack brothers!"
+		RUS = {
+			release_vassal = ZZH
+		}
+		annex_to = HET
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Stand with Moscow"
+		prestige = -20
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
