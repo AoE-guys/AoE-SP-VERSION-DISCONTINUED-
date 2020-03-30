@@ -474,8 +474,13 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
-		FROM = {
-			country_event = 171106
+		BOR = {
+			war = {
+				target = LIG
+				attacker_goal = { casus_belli = make_puppet }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
 		}
 		relation = {
 			who = AUS
@@ -552,8 +557,13 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
-		FROM = {
-			country_event = 171106
+		BOR = {
+			war = {
+				target = KOL
+				attacker_goal = { casus_belli = make_puppet }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
 		}
 		relation = {
 			who = AUS
@@ -630,8 +640,13 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
-		FROM = {
-			country_event = 171106
+		BOR = {
+			war = {
+				target = ACH
+				attacker_goal = { casus_belli = make_puppet }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
 		}
 		relation = {
 			who = AUS
@@ -708,8 +723,13 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
-		FROM = {
-			country_event = 171106
+		BOR = {
+			war = {
+				target = TRR
+				attacker_goal = { casus_belli = make_puppet }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
 		}
 		relation = {
 			who = AUS
@@ -740,23 +760,6 @@ country_event = {
 		relation = {
 			who = AUS
 			value = -200
-		}
-	}
-}
-country_event = {
-	id = 171106
-	title = "$FROMCOUNTRY$ refuses!"
-	desc = "EVTDESC171106"
-	picture = bor_fra
-	is_triggered_only = yes
-	
-	option = {
-		name = "They will bow before me in the end!"
-		prestige = -5
-		casus_belli = {
-			target = FROM
-			type = make_puppet
-			months = 60
 		}
 	}
 }
