@@ -56,6 +56,38 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+	order_to_siebenburger = {
+		picture = wallachia
+		potential = {
+			tag = AUS
+			has_global_flag = hungarian_revolution_fail
+			HUN = {
+				exists = no
+			}
+			SIE = {
+				exists = yes
+				is_vassal = no
+			}
+		}
+		allow = {
+			rank = 8
+			is_sphere_leader_of = SIE
+			
+		}
+		
+		effect = {
+			create_vassal = SIE
+			any_pop = {
+				limit = {
+					has_pop_culture = romanian
+				}
+				militancy = 2
+			}
+			badboy = 1
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 	enact_codex_theresianus = {
 		picture = codex_theresianus
 		potential = {
@@ -85,6 +117,31 @@ political_decisions = {
 		factor = 1
 		}
 	}
+	constitutio_criminalis_theresiana = {
+		picture = codex_theresianus
+		potential = {
+			tag = AUS
+			NOT = {
+				has_country_flag = constitutio_criminalis_theresiana
+			}
+			has_country_flag = enacted_codex_theresianus
+		}
+		allow = {
+			has_country_modifer = maria_theresa
+			health_care = good_health_care
+			social_alienation = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = constitutio_criminalis_theresiana
+				duration = -1
+			}
+			set_country_flag = constitutio_criminalis_theresiana
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
 	vaccination_mar = {
 		picture = ill_hand
 		potential = {
@@ -108,7 +165,7 @@ political_decisions = {
 		factor = 1
 		}
 	}
-	esablish_theresian_military_academy = {
+	establish_theresian_military_academy = {
 		picture = army_training
 		potential = {
 			tag = AUS
@@ -192,7 +249,7 @@ political_decisions = {
 		factor = 1
 		}
 	}
-	financial_reform = {
+	financial_reform_joseph = {
 		picture = josephism
 			potential = {
 			tag = AUS
@@ -246,6 +303,33 @@ political_decisions = {
 				}
 			}	
 			set_country_flag = austrian_court
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	ambitions_in_bavaria = {
+		picture = austria_coa
+			potential = {
+			tag = AUS
+			NOT = {
+				has_country_flag = ambitions_in_bavaria
+			}
+		}
+		allow = {
+			mass_politics = 1
+			has_country_modifer = maria_theresa
+			rank = 4
+		}
+		effect = {
+			prestige = 10
+			badboy = 20
+			BAV = {
+				any_owned = {
+					add_core = AUS
+				}
+			}
+			set_country_flag = ambitions_in_bavaria
 		}
 		ai_will_do = {					
 		factor = 1

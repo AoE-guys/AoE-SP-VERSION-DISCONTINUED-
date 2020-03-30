@@ -1,0 +1,128 @@
+political_decisions = {
+	annex_west_bank = {
+		picture = cossak_state
+		
+		potential = {
+			tag = HET
+			vassal_of = RUS
+			NOT = {
+				has_country_flag = ukranian_reunification
+			}
+		}
+		
+		allow = {
+			war = no
+			PLC = {
+				war_with = SWE
+				NOT = {
+					rank = 8
+				}
+			}
+			961 = {
+				average_militancy = 6
+			}
+			960 = {
+				average_militancy = 6
+			}
+		}
+			
+		effect = {
+			PLC = {
+				961 = {
+					secede_province = HET
+				}
+				960 = {
+					secede_province = HET
+				}
+			}
+			set_country_flag = ukrainian_reunification
+			badboy = 3
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	masepa_revolt = {
+		picture = cossak_state
+		
+		potential = {
+			tag = HET
+			vassal_of = RUS
+			has_country_flag = ukranian_reunification
+			NOT = {
+				has_country_flag = masepa_revolt
+			}
+		}
+		
+		allow = {
+			RUS = {
+				war_with = SWE
+				NOT = {
+					rank = 5
+				}
+			}
+		}
+			
+		effect = {
+			prestige = 10
+			RUS = {
+				country_event = 91241542
+			}
+			create_alliance = SWE
+			set_country_flag = masepa_revolt
+			ZZH = {
+				country_event = 91241543
+			}
+			any_pop = {
+				limit = {
+					type = soldier
+				}
+				reduce_pop = 2
+			}
+			treasury = 100000
+			ammunition = 300
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	subsidize_cossak_rebellions = {
+		picture = cossak_state
+		
+		potential = {
+			tag = HET
+			vassal_of = RUS
+			NOT = {
+				has_country_flag = ukranian_reunification
+			}
+		}
+		
+		allow = {
+			PLC = {
+				OR = {
+					war_with = SWE
+					war_with = RUS
+				}
+				NOT = {
+					rank = 8
+				}
+				social_movement_strength = 0.1
+			}
+			money = 10000
+		}
+			
+		effect = {
+			money = -10000
+			PLC = {
+				any_pop = {
+					limit = {
+						has_pop_culture = ukrainian
+					}
+					militancy = 1
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}
