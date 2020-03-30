@@ -19,10 +19,10 @@ political_decisions = {
 				}
 			}
 			961 = {
-				pop_militancy = 6
+				average_militancy = 6
 			}
 			960 = {
-				pop_militancy = 6
+				average_militancy = 6
 			}
 		}
 			
@@ -99,7 +99,10 @@ political_decisions = {
 		
 		allow = {
 			PLC = {
-				war_with = SWE
+				OR = {
+					war_with = SWE
+					war_with = RUS
+				}
 				NOT = {
 					rank = 8
 				}
