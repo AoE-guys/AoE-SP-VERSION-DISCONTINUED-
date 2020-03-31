@@ -6,8 +6,6 @@ hussar = {
 	active = no
 	unit_type = cavalry
 	floating_flag = yes
-	#move_sound = cavalry_move
-	#select_sound = cavalry_selected
 	
 	#Avatar
 	sprite_override = Cavalry
@@ -35,14 +33,13 @@ hussar = {
 		small_arms = 0.015 #0.01
 		ammunition = 0.075 #0
 		canned_food = 0.08 #0.08
-		luxury_clothes = 0.04
 	}
 	
 
 	#Land Abilties
 	reconnaissance = 2
-	attack = 4
-	defence = 3
+	attack = 4.5
+	defence = 4
 	discipline = 1.0
 	support = 0.0
 	maneuver = 4

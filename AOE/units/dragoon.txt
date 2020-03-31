@@ -11,8 +11,6 @@ dragoon = {
 	sprite_mount = GenericMount
 	sprite_mount_attach_node = Saddle_Node
 	floating_flag = yes
-	#move_sound = cavalry_move
-	#select_sound = cavalry_selected
 	
 	#Core Abilities
 	priority = 35
@@ -35,13 +33,12 @@ dragoon = {
 		small_arms = 0.012 #0.008
 		ammunition = 0.075 # 0
 		canned_food = 0.07 #0.08
-		luxury_clothes = 0.04 #0
 	}
 	
 
 	#Land Abilties
 	reconnaissance = 1
-	attack = 5
+	attack = 5.5
 	defence = 3
 	discipline = 1.0
 	support = 0.0

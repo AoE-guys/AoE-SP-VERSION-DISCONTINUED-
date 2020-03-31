@@ -13,8 +13,8 @@ political_decisions = {
 			mass_politics = 1
 			plurality = 20
 			OR = {
-				ideology = liberal
-				ideology = communist
+				ruling_party_ideology  = liberal
+				ruling_party_ideology  = communist
 			}
 			NOT = {
 			part_of_sphere = yes

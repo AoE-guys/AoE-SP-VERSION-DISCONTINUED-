@@ -845,7 +845,7 @@ social_reforms = {
 			factory_throughput = 0.05
 			goods_demand = -0.15
 			minimum_wage = 0.03
-			allow = { has_global_flag = factions_setup_done NOT = { has_country_modifier = clergy_and_nobility_domination } }
+			allow = { has_global_flag = factions_setup_done NOT = { has_country_flag = clergy_and_nobility_domination } }
 		}
 		low_safety = { #slightly influential
 			tax_efficiency = 0.00
@@ -907,7 +907,7 @@ social_reforms = {
 			minimum_wage = 0.09
 			allow = { 
 				has_global_flag = factions_setup_done 
-				NOT = { has_country_modifier = clergy_and_nobility_domination }
+				NOT = { has_country_flag = clergy_and_nobility_domination }
 			}
 		}
 		good_subsidies = { #very influential
