@@ -36,7 +36,7 @@ guiTypes = {
 	
 	positionType = {
 		name = "budget_social_spending_wrap_count"
-		position = { x=2 y =0}
+		position = { x=200 y =0}
 	}
 	
 	
@@ -243,7 +243,7 @@ guiTypes = {
 			name = "total_inc"
 			position = { x = 270 y = 338 }
 			font = "vic_32_black"
-			text = "10¤"	
+			text = "10Â¤"	
 			maxWidth = 190
 			maxHeight = 32	
 			format = right
@@ -329,7 +329,7 @@ guiTypes = {
 			name = "interest_val"
 			position = { x = 375 y = 426 }
 			font = "vic_18_black"
-			text = "100¤"	
+			text = "100Â¤"	
 			maxWidth = 100
 			maxHeight = 32	
 			format = right
@@ -412,7 +412,7 @@ guiTypes = {
 			name = "nat_stock_est"
 			position = { x = 900 y = 113 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 90
 			maxHeight = 32	
 			format = centre
@@ -421,7 +421,7 @@ guiTypes = {
 			name = "nat_stock_val"
 			position = { x = 527 y = 115 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 90
 			maxHeight = 32	
 			format = centre
@@ -439,7 +439,7 @@ guiTypes = {
 			name = "mil_cost_val"
 			position = { x = 753  y = 81 }
 			font = "Arial12_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 60
 			maxHeight = 32	 
 			format = right
@@ -457,7 +457,7 @@ guiTypes = {
 			name = "overseas_cost_val"
 			position = { x = 922 y = 81 }
 			font = "Arial12_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 60
 			maxHeight = 22	
 			format = right
@@ -477,7 +477,7 @@ guiTypes = {
 			name = "ind_sub_val"
 			position = { x = 910 y = 54 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 70
 			maxHeight = 18	
 			format = centre
@@ -537,7 +537,7 @@ guiTypes = {
 			name = "exp_val_0"
 			position = { x = 915 y = 185 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 60
 			maxHeight = 32	
 			format = centre
@@ -547,7 +547,7 @@ guiTypes = {
 			name = "exp_val_1"
 			position = { x = 915 y = 240 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 60
 			maxHeight = 32	
 			format = centre
@@ -557,7 +557,7 @@ guiTypes = {
 			name = "exp_val_2"
 			position = { x = 915 y = 308 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 60
 			maxHeight = 32	
 			format = centre
@@ -567,7 +567,7 @@ guiTypes = {
 			name = "exp_val_3"
 			position = { x = 915 y = 388 }
 			font = "vic_22_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 60
 			maxHeight = 32	
 			format = centre
@@ -577,7 +577,7 @@ guiTypes = {
 			name = "total_exp"
 			position = { x = 753 y = 437 }
 			font = "vic_32_black"
-			text = "100¤"	
+			text = "100Â¤"	
 			maxWidth = 190
 			maxHeight = 32	
 			format = right
@@ -587,7 +587,7 @@ guiTypes = {
 			name = "tariff_val"
 			position = { x = 869 y = 499 }
 			font = "vic_22_black"
-			text = "100¤"	
+			text = "100Â¤"	
 			maxWidth = 160
 			maxHeight = 32	
 			format = centre
@@ -597,7 +597,7 @@ guiTypes = {
 			name = "diplomatic_balance"
 			position = { x = 869 y = 542 }
 			font = "vic_22_black"
-			text = "100¤"	
+			text = "100Â¤"	
 			maxWidth = 160
 			maxHeight = 32	
 			format = centre
@@ -617,7 +617,7 @@ guiTypes = {
 			name = "balance"
 			position = { x = 792 y = 578 }
 			font = "vic_42_black"
-			text = "0¤"	
+			text = "0Â¤"	
 			maxWidth = 200
 			maxHeight = 32	
 			format = centre
