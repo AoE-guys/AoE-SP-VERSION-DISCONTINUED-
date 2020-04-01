@@ -3831,7 +3831,10 @@ country_event = { #Powers_decrease
 						value = -1
 					}
 			}
-		
+		add_country_modifier = {
+			name = waiting_for_minister
+			duration = 180
+		}
 		ai_chance = {
 			factor = 1.0
 		}

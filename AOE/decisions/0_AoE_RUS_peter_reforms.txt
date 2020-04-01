@@ -202,7 +202,7 @@ political_decisions = {
 			}
 		}
 		allow = {
-			has_country_modifer = catharine_the_great
+			has_country_modifier = catharine_the_great
 			NOT = {
 				OR = {
 					safety_regulations = no_safety
@@ -287,7 +287,6 @@ political_decisions = {
 			NOT = { has_country_flag = conquer_east_prussia }
 		}
 		allow = {
-			owns = 994
 			owns = 695
 			is_greater_power = yes
 			war_policy = jingoism
@@ -337,12 +336,12 @@ political_decisions = {
 			release_vassal = LSK
 			LSK = {
 				government = colonial_company
-				political_reforms = yes_meeting
-				political_reforms = free_press
-				political_reforms = gerrymandering
-				political_reforms = all_voting_pops
-				political_reforms = open_borders
-				political_reforms = unitary
+				political_reform = yes_meeting
+				political_reform = free_press
+				political_reform = gerrymandering
+				political_reform = all_voting_pops
+				political_reform = open_borders
+				political_reform = unitary
 				add_country_modifier = {
 					name = land_of_opportunity
 					duration = 7300
@@ -486,7 +485,7 @@ political_decisions = {
 		}
 		allow = {
 			army_professionalism = 1
-			has_country_modifer = peter_the_great
+			has_country_modifier = peter_the_great
 		}
 		effect = {
 			add_country_modifier = {
@@ -509,7 +508,7 @@ political_decisions = {
 		}
 		allow = {
 			chemistry_and_electricity_7 = 1
-			has_country_modifer = catharine_the_great
+			has_country_modifier = catharine_the_great
 		}
 		effect = {
 			add_country_modifier = {

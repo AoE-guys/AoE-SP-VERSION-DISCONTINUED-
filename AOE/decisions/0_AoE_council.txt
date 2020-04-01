@@ -72,7 +72,6 @@ political_decisions = {
 		}
 		allow = {
 			NOT = {
-				OR = {
 				has_country_modifier = ancien_regime_men_premier
 				has_country_modifier = aristoracy_puppet_premier
 				has_country_modifier = absolutism_fanatic_premier
@@ -134,7 +133,6 @@ political_decisions = {
 			has_country_modifier = non-iniative_placeholder_premier
 			has_country_modifier = incorruptible_premier
 			has_country_modifier = rised_from_bottom_premier
-				}
 			}
 		}
 		effect = {
@@ -220,6 +218,8 @@ political_decisions = {
 				}
 			}
 		effect = {
+			prestige = -25
+			plurality = -5
 			remove_country_modifier = ancien_regime_men_premier
 				remove_country_modifier = aristoracy_puppet_premier
 				remove_country_modifier = absolutism_fanatic_premier

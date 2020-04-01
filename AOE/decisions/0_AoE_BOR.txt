@@ -145,10 +145,10 @@ political_decisions = {
 			NOT = { has_country_flag = form_french_rhineland }
 		}
 		allow = {
-			LIG = { is_vassal_of = THIS in_sphere = THIS }
-			ACH = { is_vassal_of = THIS in_sphere = THIS }
-			TRR = { is_vassal_of = THIS in_sphere = THIS }
-			KOL = { is_vassal_of = THIS in_sphere = THIS }
+			LIG = { vassal_of = THIS in_sphere = THIS }
+			ACH = { vassal_of = THIS in_sphere = THIS }
+			TRR = { vassal_of = THIS in_sphere = THIS }
+			KOL = { vassal_of = THIS in_sphere = THIS }
 			has_recently_lost_war = no
 		}
 		effect = {
@@ -201,7 +201,7 @@ political_decisions = {
 			FRH = { exists = yes }
 		}
 		allow = {
-			FRH = { is_vassal_of = THIS in_sphere = THIS }
+			FRH = { vassal_of = THIS in_sphere = THIS }
 			FRH = {
 				all_core = {
 					OR = {
@@ -310,6 +310,55 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	crown_of_italy = {
+		picture = italia
+		potential = {
+			tag = BOR
+			NOT = { has_country_flag = crown_of_italy }
+		}
+		allow = {
+			NAP = { vassal_of = THIS }
+			LOM = { vassal_of = THIS }
+			military_score = 50
+			NOT = {
+				OR = {
+					pensions = no_pensions
+					pensions = trinket_pensions
+				}
+			}
+		}
+		effect = {
+			badboy = 25
+			SAR_720 = {
+				add_core = THIS
+			}
+			TUS_744 = {
+				add_core = THIS
+			}
+			AUS_726 = {
+				add_core = THIS
+			}
+			AUS_729 = {
+				add_core = THIS
+			}
+			AUS_736 = {
+				add_core = THIS
+			}
+			SAR_765 = {
+				add_core = THIS
+			}
+			prestige = 15
+			TUS = { country_event = 171110 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 15
+			}
 		}
 	}
 }

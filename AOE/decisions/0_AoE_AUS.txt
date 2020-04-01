@@ -97,7 +97,7 @@ political_decisions = {
 			}
 		}
 		allow = {
-			has_country_modifer = maria_theresa
+			has_country_modifier = maria_theresa
 			NOT = {
 				OR = {
 					health_care = no_health_care
@@ -127,7 +127,7 @@ political_decisions = {
 			has_country_flag = enacted_codex_theresianus
 		}
 		allow = {
-			has_country_modifer = maria_theresa
+			has_country_modifier = maria_theresa
 			health_care = good_health_care
 			social_alienation = 1
 		}
@@ -152,7 +152,7 @@ political_decisions = {
 		}
 		allow = {
 			electricity = 1
-			has_country_modifer = maria_theresa
+			has_country_modifier = maria_theresa
 		}
 		effect = {
 			add_country_modifier = {
@@ -176,7 +176,7 @@ political_decisions = {
 		allow = {
 			army_nco_training = 1
 			ruling_party_ideology = reactionary
-			has_country_modifer = maria_theresa
+			has_country_modifier = maria_theresa
 			NOT = { pensions = no_pensions }
 		}
 		effect = {
@@ -201,7 +201,7 @@ political_decisions = {
 		allow = {
 			political_thought_7 = 1
 			ruling_party_ideology = reactionary
-			NOT = { has_country_modifer = maria_theresa }
+			NOT = { has_country_modifier = maria_theresa }
 		}
 		effect = {
 			add_country_modifier = {
@@ -225,7 +225,7 @@ political_decisions = {
 		allow = {
 			private_bank_money_bill_printing = 1
 			ruling_party_ideology = conservative
-			NOT = { has_country_modifer = maria_theresa }
+			NOT = { has_country_modifier = maria_theresa }
 			NOT = {
 				OR = {
 					health_care = good_health_care
@@ -261,7 +261,7 @@ political_decisions = {
 		allow = {
 			stock_exchange  = 1
 			ruling_party_ideology = conservative
-			NOT = { has_country_modifer = maria_theresa }
+			NOT = { has_country_modifier = maria_theresa }
 		}
 		effect = {
 			add_tax_relative_income = 0.1
@@ -279,7 +279,7 @@ political_decisions = {
 	}
 	charles_vi_court = {
 		picture = josephism
-		potential = {
+			potential = {
 			tag = AUS
 			NOT = {
 				has_country_flag = austrian_court
@@ -287,7 +287,7 @@ political_decisions = {
 		}
 		allow = {
 			impressionism = 1
-			NOT = { has_country_modifer = maria_theresa }
+			NOT = { has_country_modifier = maria_theresa }
 			387 = {
 				owned_by = THIS
 			}
@@ -298,7 +298,7 @@ political_decisions = {
 				any_pop = {
 					literacy = 0.1
 				}
-				gentry = {
+				labourers = {
 					reduce_pop = 1.5
 				}
 			}	
@@ -318,7 +318,7 @@ political_decisions = {
 		}
 		allow = {
 			mass_politics = 1
-			has_country_modifer = maria_theresa
+			has_country_modifier = maria_theresa
 			rank = 4
 		}
 		effect = {

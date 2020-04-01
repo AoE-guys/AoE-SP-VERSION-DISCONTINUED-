@@ -10348,3 +10348,120 @@ country_event = {
 		set_country_flag = clean_prime
 	}
 }
+
+#####Clean event if losed 
+country_event = { 
+	id = 999418
+	title = "Minor Political crisis" 
+	desc = "EVTDESC999418"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = ancien_regime_men_premier
+			has_country_modifier = aristoracy_puppet_premier
+			has_country_modifier = absolutism_fanatic_premier
+			has_country_modifier = mentor_aristocrat_premier
+			has_country_modifier = important_feudal_lord_premier
+			has_country_modifier = aristocrat_in_web_premier
+			has_country_modifier = kid_glove_premier
+			has_country_modifier = grey_cardinal_premier
+			has_country_modifier = liberal_lord_premier
+			has_country_modifier = foreign_nobelman_premier
+			has_country_modifier = dunniwassal_premier
+			has_country_modifier = zealot_premier
+			has_country_modifier = corrupt_churchsmen_premier
+			has_country_modifier = cardinal_premier
+			has_country_modifier = progressive_clergyman_premier
+			has_country_modifier = mastermind_theologian_premier
+			has_country_modifier = dutifyl_cleric_premier
+			has_country_modifier = intolerant_clergyman_premier
+			has_country_modifier = noble_reformer_premier
+			has_country_modifier = liberal_idealist_premier
+			has_country_modifier = science_worshipper_premier
+			has_country_modifier = enlighted_philosopher_premier
+			has_country_modifier = landed_traditionalist_premier
+			has_country_modifier = famous_adventurer_premier
+			has_country_modifier = fallen_house_member_premier
+			has_country_modifier = gigolo_premier
+			has_country_modifier = decadent_premier
+			has_country_modifier = con_man_premier
+			has_country_modifier = free_thinker_premier
+			has_country_modifier = expansionist_premier
+			has_country_modifier = colonialist_premier
+			has_country_modifier = charismatic_negotiator_premier
+			has_country_modifier = babbling_buffoon_premier
+			has_country_modifier = obsessive_perfectionist_premier
+			has_country_modifier = midas_touched_premier
+			has_country_modifier = middle_of_web_premier
+			has_country_modifier = ghetto_king_premier
+			has_country_modifier = pragmatic_scum_premier
+			has_country_modifier = rich_merchant_premier
+			has_country_modifier = master_of_law_premier
+			has_country_modifier = incompetent_politian_premier
+			has_country_modifier = oligarchy_puppet_premier
+			has_country_modifier = ambitious_general_premier
+			has_country_modifier = jingoistic_leader_premier
+			has_country_modifier = landlubber_premier
+			has_country_modifier = grand_admiral_premier
+			has_country_modifier = armchair_general_premier
+			has_country_modifier = unqualified_premier
+			has_country_modifier = staff_rat_premier
+			has_country_modifier = old_school_stubborn_premier
+			has_country_modifier = corrupt_bureaucrat_premier
+			has_country_modifier = administrative_horror_premier
+			has_country_modifier = good_manager_premier
+			has_country_modifier = genious_manager_premier
+			has_country_modifier = lazy_nobleman_premier
+			has_country_modifier = economics_scientist_premier
+			has_country_modifier = schoolar_premier
+			has_country_modifier = embezzler_premier
+			has_country_modifier = non-iniative_placeholder_premier
+			has_country_modifier = incorruptible_premier
+			has_country_modifier = rised_from_bottom_premier
+		}
+		NOT = {
+			has_country_modifier = waiting_for_minister
+		}
+		has_country_flag = prime_minister_set
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		
+		clr_country_flag = prime_minister_set
+		clr_country_flag = no_spam_prime
+		clr_country_flag = clean_prime
+		
+		set_variable = {
+			which = noble_power
+			value = 0
+		}
+		set_variable = {
+			which = church_power
+			value = 0
+		}
+		set_variable = {
+			which = gentry_power
+			value = 0
+		}
+		set_variable = {
+			which = army_power
+			value = 0
+		}
+		set_variable = {
+			which = burghers_power
+			value = 0
+		}
+		set_variable = {
+			which = bureaucracy_power
+			value = 0
+		}
+	}
+}

@@ -3112,6 +3112,9 @@ hungarian_constitutions = {
 	icon = 19
 }
 ###AoE Leader&Council system modifiers
+waiting_for_minister = {
+	icon = 5
+}
 
 #Premier
 
@@ -3140,6 +3143,10 @@ grey_cardinal_premier = {
 	icon = 4
 }
 liberal_lord_premier = {
+	social_reform_desire = 0.2
+	political_reform_desire = 0.2
+	suppression_points_modifier = -0.2
+	ruling_party_support = -0.1
 	icon = 4
 }
 foreign_nobelman_premier = {
@@ -4692,6 +4699,14 @@ constitutio_criminalis_theresiana = {
 	prestige = 0.01
 	ruling_party_support = 0.05
 	icon = 17
+}
+intrigue_game = {
+	suppression_points_modifier = 1
+	culture_tech_research_bonus = 0.1
+	research_points = 0.1
+	min_social_spending = -0.1
+	leadership_modifier = 0.1
+	global_pop_militancy_modifier = -0.5
 }
 ###
 
