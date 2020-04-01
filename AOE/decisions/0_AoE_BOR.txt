@@ -145,9 +145,18 @@ political_decisions = {
 			NOT = { has_country_flag = form_french_rhineland }
 		}
 		allow = {
-			LIG = { vassal_of = THIS in_sphere = THIS }
-			ACH = { vassal_of = THIS in_sphere = THIS }
-			TRR = { vassal_of = THIS in_sphere = THIS }
+			LIG = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			ACH = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			TRR = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
 			KOL = { vassal_of = THIS in_sphere = THIS }
 			has_recently_lost_war = no
 		}
@@ -321,8 +330,16 @@ political_decisions = {
 					pensions = trinket_pensions
 				}
 			}
-			NAP = { vassal_of = THIS in_sphere = THIS }
-			LOM = { vassal_of = THIS in_sphere = THIS }
+			NAP = {
+				exists = yes
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			LOM = {
+				exists = yes
+				vassal_of = THIS
+				in_sphere = THIS
+			}
 		}
 		effect = {
 			badboy = 25
