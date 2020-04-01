@@ -38,6 +38,7 @@ country_event = {
 	title = "Nawab of Bengal secedes!"
 	desc = "EVTDESC170771"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MUG
@@ -86,6 +87,7 @@ country_event = {
 	title = "Nawab of Karnatak secedes!"
 	desc = "EVTDESC170772"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MUG
@@ -122,6 +124,7 @@ country_event = {
 	title = "Sikh Confederacy secedes!"
 	desc = "EVTDESC170773"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MUG
@@ -159,6 +162,7 @@ country_event = {
 	title = "Ouduh secedes!"
 	desc = "EVTDESC170774"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MUG
@@ -200,6 +204,7 @@ country_event = {
 	title = "Nizam's diminions secede!"
 	desc = "EVTDESC170775"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MUG
@@ -247,6 +252,7 @@ country_event = {
 	title = "Newab of Sind secedes!"
 	desc = "EVTDESC170776"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MUG
@@ -289,6 +295,7 @@ country_event = {
 	title = "Mahrathan conquests"
 	desc = "EVTDESC170777"
 	fire_only_once = yes
+	picture = maratha_conquest
 	
 	trigger = {
 		tag = MAH
@@ -329,6 +336,7 @@ country_event = {
 	title = "Collapse of the Mughals"
 	desc = "EVTDESC170777"
 	fire_only_once = yes
+	picture = mughal_breakup
 	
 	trigger = {
 		tag = MAH
@@ -364,6 +372,7 @@ country_event = {
 	id = 170778
 	title = "Dissolution of our Empire"
 	desc = "EVTDESC170778"
+	picture = mughal_breakup
 	
 	fire_only_once = yes
 	trigger = {
@@ -389,6 +398,7 @@ country_event = {
 	id = 175001
 	title = "Mughal dissolution"
 	desc = "EVTDESC175001"
+	picture = mughal_breakup
 	
 	fire_only_once = yes
 	trigger = {
@@ -426,6 +436,7 @@ country_event = {
 	id = 175000
 	title = "Expansion in india?"
 	desc = "bng_evt_desc"
+	picture = eng_india
 	
 	fire_only_once = yes
 	trigger = {

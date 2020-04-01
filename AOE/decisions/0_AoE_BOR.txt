@@ -145,10 +145,10 @@ political_decisions = {
 			NOT = { has_country_flag = form_french_rhineland }
 		}
 		allow = {
-			LIG = { is_vassal_of = THIS in_sphere = THIS }
-			ACH = { is_vassal_of = THIS in_sphere = THIS }
-			TRR = { is_vassal_of = THIS in_sphere = THIS }
-			KOL = { is_vassal_of = THIS in_sphere = THIS }
+			LIG = { vassal_of = THIS in_sphere = THIS }
+			ACH = { vassal_of = THIS in_sphere = THIS }
+			TRR = { vassal_of = THIS in_sphere = THIS }
+			KOL = { vassal_of = THIS in_sphere = THIS }
 			has_recently_lost_war = no
 		}
 		effect = {
@@ -158,33 +158,27 @@ political_decisions = {
 				all_core = {
 					add_core = FRH
 				}
-				any_owned = {
-					secede_province = FRH
-				}
+				change_tag = FRH
 			}
 			ACH = { 
 				all_core = {
 					add_core = FRH
-				}
-				any_owned = {
-					secede_province = FRH
 				}
 			}
 			TRR = { 
 				all_core = {
 					add_core = FRH
 				}
-				any_owned = {
-					secede_province = FRH
-				}
 			}
 			KOL = { 
 				all_core = {
 					add_core = FRH
 				}
-				any_owned = {
-					secede_province = FRH
-				}
+			}
+			FRH = {
+				inherit = ACH
+				inherit = TRR
+				inherit = KOL
 			}
 			create_vassal = FRH
 			prestige = 15
@@ -201,7 +195,7 @@ political_decisions = {
 			FRH = { exists = yes }
 		}
 		allow = {
-			FRH = { is_vassal_of = THIS in_sphere = THIS }
+			FRH = { vassal_of = THIS in_sphere = THIS }
 			FRH = {
 				all_core = {
 					OR = {
@@ -314,24 +308,23 @@ political_decisions = {
 	}
 	
 	crown_of_italy = {
-		picture = italia_irredenta
+		picture = crown_of_italy
 		potential = {
 			tag = BOR
 			NOT = { has_country_flag = crown_of_italy }
 		}
 		allow = {
-			owns = 371
+			owns = 471
 			NOT = {
 				OR = {
 					pensions = no_pensions
 					pensions = trinket_pensions
 				}
 			}
-			NAP = { is_vassal_of = THIS in_sphere = THIS }
-			LOM = { is_vassal_of = THIS in_sphere = THIS }
+			NAP = { vassal_of = THIS in_sphere = THIS }
+			LOM = { vassal_of = THIS in_sphere = THIS }
 		}
 		effect = {
-			set_country_flag = crown_of_italy
 			badboy = 25
 			SAR_720 = {
 				add_core = THIS
@@ -353,6 +346,7 @@ political_decisions = {
 			}
 			prestige = 15
 			TUS = { country_event = 171110 }
+			set_country_flag = crown_of_italy
 		}
 		ai_will_do = {
 			factor = 1

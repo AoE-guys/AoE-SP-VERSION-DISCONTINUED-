@@ -306,7 +306,7 @@ country_event = {
 	id = 19003
 	title = "Third estate satisfied" #Estates general
 	desc = "EVTDESC19003"
-	picture = peasants
+	picture = peasant
 	fire_only_once = yes
 	
 	trigger = {
@@ -475,6 +475,11 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
+		relation = {
+			who = AUS
+			value = 200
+		}
+		create_allience = AUS
 		BOR = {
 			war = {
 				target = LIG
@@ -483,11 +488,6 @@ country_event = {
 				call_ally = yes
 			}
 		}
-		relation = {
-			who = AUS
-			value = 200
-		}
-		create_allience = AUS
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -558,6 +558,11 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
+		relation = {
+			who = AUS
+			value = 200
+		}
+		create_allience = AUS
 		BOR = {
 			war = {
 				target = KOL
@@ -566,11 +571,6 @@ country_event = {
 				call_ally = yes
 			}
 		}
-		relation = {
-			who = AUS
-			value = 200
-		}
-		create_allience = AUS
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -641,6 +641,11 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
+		relation = {
+			who = AUS
+			value = 200
+		}
+		create_allience = AUS
 		BOR = {
 			war = {
 				target = ACH
@@ -649,11 +654,6 @@ country_event = {
 				call_ally = yes
 			}
 		}
-		relation = {
-			who = AUS
-			value = 200
-		}
-		create_allience = AUS
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -724,6 +724,11 @@ country_event = {
 	
 	option = {
 		name = "Our aligence remains with the Emperor"
+		relation = {
+			who = AUS
+			value = 200
+		}
+		create_allience = AUS
 		BOR = {
 			war = {
 				target = TRR
@@ -732,11 +737,6 @@ country_event = {
 				call_ally = yes
 			}
 		}
-		relation = {
-			who = AUS
-			value = 200
-		}
-		create_allience = AUS
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -769,7 +769,7 @@ country_event = {
 	id = 171107
 	title = "The Sun King"
 	desc = "EVTDESC171107"
-	picture = sun_king
+	picture = louis_xiv
 	fire_only_once = yes
 	
 	trigger = {
@@ -797,9 +797,9 @@ country_event = {
 }
 country_event = {
 	id = 171108
-	title = "Death of Luis XIV"
+	title = "Death of Louis XIV"
 	desc = "EVTDESC171108"
-	picture = sun_king_ded
+	picture = louis_xiv_ded
 	fire_only_once = yes
 	
 	trigger = {
@@ -824,6 +824,7 @@ country_event = {
 	desc = "EVTDESC171109"
 	picture = peasants
 	fire_only_once = yes
+	picture = peasant
 	
 	trigger = {
 		tag = BOR
@@ -895,6 +896,7 @@ country_event = {
 	desc = "EVTDESC171111"
 	picture = italia
 	is_triggered_only = yes
+	picture = italian_war_of_independence_won
 	
 	option = {
 		name = "Join the Confederation"
@@ -923,6 +925,7 @@ country_event = {
 	desc = "EVTDESC171112"
 	picture = italia
 	is_triggered_only = yes
+	picture = italian_war_of_independence_won
 	
 	option = {
 		name = "Join the Confederation"
@@ -959,6 +962,7 @@ country_event = {
 	desc = "EVTDESC171113"
 	picture = italia
 	fire_only_once = yes
+	picture = deliberation
 	
 	trigger = {
 		CIS = { exists = yes }
@@ -985,6 +989,7 @@ country_event = {
 	desc = "EVTDESC171111"
 	picture = italia
 	is_triggered_only = yes
+	picture = deliberation
 	
 	option = {
 		name = "Approach the Emperor."
