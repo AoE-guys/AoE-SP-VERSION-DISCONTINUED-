@@ -292,7 +292,7 @@ country_event = {
 }
 country_event = {
 	id = 170777
-	title = "Mahrathan conquests"
+	title = "Return of the Chhatrapati"
 	desc = "EVTDESC170777"
 	fire_only_once = yes
 	picture = maratha_conquest
@@ -334,7 +334,7 @@ country_event = {
 country_event = {
 	id = 170778
 	title = "Collapse of the Mughals"
-	desc = "EVTDESC170777"
+	desc = "EVTDESC170778"
 	fire_only_once = yes
 	picture = mughal_breakup
 	
@@ -369,11 +369,10 @@ country_event = {
 	}
 }
 country_event = {
-	id = 170778
+	id = 170779
 	title = "Dissolution of our Empire"
-	desc = "EVTDESC170778"
-	picture = mughal_breakup
-	
+	desc = "EVTDESC170779"
+	major = yes
 	fire_only_once = yes
 	trigger = {
 		tag = MUG
