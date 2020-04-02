@@ -330,16 +330,8 @@ political_decisions = {
 					pensions = trinket_pensions
 				}
 			}
-			NAP = {
-				exists = yes
-				vassal_of = THIS
-				in_sphere = THIS
-			}
-			LOM = {
-				exists = yes
-				vassal_of = THIS
-				in_sphere = THIS
-			}
+			is_our_vassal = NAP
+			is_our_vassal = LOM
 		}
 		effect = {
 			badboy = 25

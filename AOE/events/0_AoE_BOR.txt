@@ -479,7 +479,7 @@ country_event = {
 			who = AUS
 			value = 200
 		}
-		create_allience = AUS
+		create_alliance = AUS
 		BOR = {
 			war = {
 				target = LIG
@@ -487,6 +487,7 @@ country_event = {
 				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}
+			badboy = -10
 		}
 		ai_chance = {
 			factor = 1
@@ -562,7 +563,7 @@ country_event = {
 			who = AUS
 			value = 200
 		}
-		create_allience = AUS
+		create_alliance = AUS
 		BOR = {
 			war = {
 				target = KOL
@@ -570,6 +571,7 @@ country_event = {
 				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}
+			badboy = -10
 		}
 		ai_chance = {
 			factor = 1
@@ -645,7 +647,7 @@ country_event = {
 			who = AUS
 			value = 200
 		}
-		create_allience = AUS
+		create_alliance = AUS
 		BOR = {
 			war = {
 				target = ACH
@@ -653,6 +655,7 @@ country_event = {
 				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}
+			badboy = -10
 		}
 		ai_chance = {
 			factor = 1
@@ -728,7 +731,7 @@ country_event = {
 			who = AUS
 			value = 200
 		}
-		create_allience = AUS
+		create_alliance = AUS
 		BOR = {
 			war = {
 				target = TRR
@@ -736,6 +739,7 @@ country_event = {
 				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}
+			badboy = -10
 		}
 		ai_chance = {
 			factor = 1
@@ -878,6 +882,16 @@ country_event = {
 			political_reform = confederalism
 			government = prussian_constitutionalism
 		}
+		LOM = {
+			all_core = {
+				add_core = CIS
+			}
+		}
+		NAP = {
+			all_core = {
+				add_core = CIS
+			}
+		}
 	}
 	
 	option = {
@@ -993,7 +1007,7 @@ country_event = {
 	
 	option = {
 		name = "Approach the Emperor."
-		create_allience = CIS
+		create_alliance = CIS
 	}
 	
 	option = {
