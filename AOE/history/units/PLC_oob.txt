@@ -2,10 +2,10 @@ RUS = { value = -5 }
 AUS = { value = -50 }
 PRU = { value = -150 }
 TUR = { value = -175 }
-BOR = { value = 55 }
+BOR = { value = 35 }
 ENG = { value = 25 }
 NET = { value = -100 }
-SWE = { value -175 }
+SWE = { value -150 }
 army = { 
 
 name = "1. Armia Polska" location = 706 
@@ -26,8 +26,8 @@ regiment = { name = "3. brygada" type = infantry home = 685 }
 regiment = { name = "4. brygada" type = dragoon home = 699 } 
 regiment = { name = "5. brygada" type = cuirassier home = 699 } 
 regiment = { name = "6. brygada" type = hussar home = 700 } 
-regiment = { name = "7. brygada" type = artillery home = 701 } 
-regiment = { name = "8. brygada" type = artillery home = 702 } 
+regiment = { name = "7. brygada" type = cuirassier home = 701 } 
+regiment = { name = "8. brygada" type = cuirassier home = 702 } 
 regiment = { name = "9. brygada" type = artillery home = 703 } 
 regiment = { name = "10. brygada" type = artillery home = 705 }
 }

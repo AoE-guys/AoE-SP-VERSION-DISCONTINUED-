@@ -861,7 +861,7 @@ social_reforms = {
 			factory_throughput = 0.15
 			goods_demand = -0.05
 			minimum_wage = 0.09
-			allow = { has_global_flag = factions_setup_done }
+			allow = { has_global_flag = factions_setup_done NOT = { has_country_flag = republic } }
 		}
 		good_safety = { #irrelevant
 			tax_efficiency = 0.05

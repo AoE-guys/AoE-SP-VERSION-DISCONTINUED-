@@ -378,6 +378,8 @@ country_event = {
 				value = 400
 			}
 		}
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
 	}
 	
 	option = {
@@ -390,6 +392,8 @@ country_event = {
 				value = -100
 			}
 		}
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
 	}
 
 	option = {
@@ -402,6 +406,8 @@ country_event = {
 				value = -100
 			}
 		}
+		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
 	}
 }
 country_event = {

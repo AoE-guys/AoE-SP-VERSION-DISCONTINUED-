@@ -261,7 +261,7 @@ political_decisions = {
 			SAR_466 = {
 				add_core = THIS
 			}
-			371 = {
+			471 = {
 				add_core = THIS
 			}
 		}
@@ -364,5 +364,23 @@ political_decisions = {
 				badboy = 15
 			}
 		}
+	}
+	
+	annex_lor = {
+		picture = lorraine
+		potential = {
+			tag = BOR
+			NOT = { has_country_flag = annex_lor }
+		}
+		allow = {
+			mass_politics = 1
+			LOR = { in_sphere = THIS }
+		}
+		effect = {
+			inherit = LOR
+			badboy = 5
+			set_country_flag = annex_lor
+		}
+		ai_will_do = { factor = 1 }
 	}
 }

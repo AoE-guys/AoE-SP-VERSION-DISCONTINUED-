@@ -54,7 +54,8 @@ DAI = {
 }
 
 #GPs
-RUS = { value = 25 }
+RUS = { value = 15 }
+PLC = { value = 35 }
 AUS = { value = -50 }
 USA = { value = 150 }
 PRU = { value = -50 }
@@ -62,7 +63,8 @@ TUR = { value = -75 }
 SPA = { value = 55 }
 ENG = { value = -150 }
 NET = { value = -100 }
-SWE = { value -75 }
+SWE = { value = -75 }
+DNN = { value = -100 }
 
 army = {
 	name = "Garde Royale"
