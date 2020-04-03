@@ -329,6 +329,519 @@ country_event = {
 		}
 	}
 }
+country_event = { 
+	id = 9992173
+	title = "New sorts of ...mania" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	trigger = {
+		has_country_modifier = foreign_nobelman_premier
+	}
+	
+	option = {
+		name = "Gallomania, anglomania, germanomania and now this new mania"
+		any_pop = {
+			limit = {
+				has_pop_culture = THIS 
+				NOT = {
+					consciousness = 2
+				}
+				strata = rich
+			}
+			move_issue_percentage = { 
+				from = jingoism 
+				to = anti_military
+				value = 0.1
+			}
+			ideology = {
+				factor = 0.3
+				value = reactionary
+			}
+		}
+		prestige = 10
+		research_points = 100
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992174
+	title = "Lower nobility overturn" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_country_modifier = dunniwassal_premier
+	}
+	
+	option = {
+		name = "New order with big amount of faces"
+		any_pop = {
+			limit = {
+				type = labourers
+				consciousness = 3
+			}
+			reduce_pop = 1.1
+		}
+		any_pop = {
+			limit = {
+				type = aristocrats
+				NOT = { consciousness = 3 }
+			}
+			reduce_pop = 0.9
+		}
+		prestige = -5
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992175
+	title = "Cruel repressions" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	trigger = {
+		has_country_modifier = zealot_premier
+	}
+	
+	option = {
+		name = "There were rivers of blood"
+		random_pop = {
+			limit = {
+				NOT = {
+					has_pop_religion = THIS
+				}
+			}
+			reduce_pop = 0.9
+			militancy = 2
+		}
+		
+		badboy = 1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992176
+	title = "Low church corruption" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	trigger = {
+		has_country_modifier = corrupt_churchsmen_premier
+		OR ={
+			wage_reform = no_minimum_wage
+			wage_reform = trinket_wage
+		}
+	}
+	
+	option = {
+		name = "Not my problem"
+		add_country_modifier = {
+			name = corruption_1
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992177
+	title = "Medium	 church corruption" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	trigger = {
+		has_country_modifier = corrupt_churchsmen_premier
+		OR ={
+			wage_reform = no_minimum_wage
+			wage_reform = trinket_wage
+		}
+		has_country_modifier = corruption_1
+	}
+	
+	option = {
+		name = "Well..."
+		add_country_modifier = {
+			name = corruption_2
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992178
+	title = "Terrible church corruption" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	trigger = {
+		has_country_modifier = corrupt_churchsmen_premier
+		OR ={
+			wage_reform = no_minimum_wage
+			wage_reform = trinket_wage
+		}
+		has_country_modifier = corruption_2
+	}
+	
+	option = {
+		name = "Terrible"
+		add_country_modifier = {
+			name = corruption_3
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992179
+	title = "Important clergyman piety" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	trigger = {
+		has_country_modifier = cardinal_premier
+		NOT = {
+			check_variable = {
+				which = piety
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "Terrible"
+		set_variable = {
+			which = piety
+			value = 1
+		}
+		prestige = 5
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992180
+	title = "Important clergyman piety" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	trigger = {
+		has_country_modifier = cardinal_premier
+		NOT = {
+			check_variable = {
+				which = piety
+				value = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "Terrible"
+		change_variable = {
+			which = piety
+			value = 1
+		}
+		prestige = 10
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992181
+	title = "Important clergyman piety" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	trigger = {
+		has_country_modifier = cardinal_premier
+		NOT = {
+			check_variable = {
+				which = piety
+				value = 3
+			}
+		}
+	}
+	
+	option = {
+		name = "Terrible"
+		change_variable = {
+			which = piety
+			value = 1
+		}
+		prestige = 20
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992182
+	title = "Church reforms" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	trigger = {
+		has_country_modifier = progressive_clergyman_premier
+	}
+	
+	option = {
+		name = "Terrible"
+		any_pop = {
+			limit = {
+				has_pop_religion = THIS
+			}
+			militancy = 4
+		}
+		change_variable = {
+			which = piety
+			value = -1
+		}
+		prestige = -10
+		any_owned = {
+			add_province_modifier = {
+				name = religious_reforms
+				duration = 1800
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992183
+	title = "Church reforms" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	trigger = {
+		has_country_modifier = progressive_clergyman_premier
+		any_owned = {
+			has_province_modifier = religious_reforms
+		}
+		OR = {
+			wage_reform = no_minimum_wage
+			wage_reform = trinket_wage
+			wage_reform = low_minimum_wage
+			wage_reform = acceptable_minimum_wage
+		}
+	}
+	
+	option = {
+		name = "Church reformed"
+		wage_reform = good_minimum_wage
+		years_of_research = 0.12
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992184
+	title = "Culture and religious debates" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_country_modifier = mastermind_theologian_premier
+	}
+	
+	option = {
+		name = "Church reformed"
+		random_list = {
+			80 = { add_country_modifier = {
+					name = religion_wins
+					duration = 1000
+				}
+			}
+			20 = { add_country_modifier = {
+					name = religion_lose
+					duration = 1000
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992185
+	title = "Piety is first" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_country_modifier = dutifyl_cleric_premier
+		has_country_modifier = corruption_3
+	}
+	
+	option = {
+		name = "Church reformed"
+		remove_country_modifier = corruption_3
+		add_country_modifier = corruption_2
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992186
+	title = "Piety is first" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_country_modifier = dutifyl_cleric_premier
+		has_country_modifier = corruption_2
+	}
+	
+	option = {
+		name = "Church reformed"
+		remove_country_modifier = corruption_2
+		add_country_modifier = corruption_1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992187
+	title = "Piety is first" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_country_modifier = dutifyl_cleric_premier
+		has_country_modifier = corruption_1
+	}
+	
+	option = {
+		name = "Church reformed"
+		remove_country_modifier = corruption_1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { 
+	id = 9992188
+	title = "Religious war" 
+	desc = "EVTDESC9992171"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	trigger = {
+		has_country_modifier = intolerant_clergyman_premier
+	}
+	
+	option = {
+		name = "Church reformed"
+		rendom_pop = {
+			limit = { NOT = { has_pop_religion = THIS } }
+			militancy = 5
+			reduce_pop = 0.9
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
 
 country_event = { 
 	id = 9992200

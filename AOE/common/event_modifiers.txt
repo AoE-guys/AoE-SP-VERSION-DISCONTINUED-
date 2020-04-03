@@ -4707,6 +4707,45 @@ intrigue_game = {
 	min_social_spending = -0.1
 	leadership_modifier = 0.1
 	global_pop_militancy_modifier = -0.5
+	icon = 17
+}
+corruption_1 = {
+	factory_cost = 0.1
+	land_organisation = -0.1
+	global_pop_militancy_modifier = 0.01
+	min_social_spending = 0.1
+	research_points_modifier = -0.1
+	icon = 17
+}
+corruption_2 = {
+	factory_cost = 0.3
+	land_organisation = -0.2
+	global_pop_militancy_modifier = 0.05
+	min_social_spending = 0.25
+	research_points_modifier = -0.25
+	icon = 17
+}
+corruption_3 = {
+	factory_cost = 0.5
+	land_organisation = -0.3
+	global_pop_militancy_modifier = 0.1
+	min_social_spending = 0.5
+	research_points_modifier = -0.5
+	icon = 17
+}
+religious_reforms = {
+	icon = 1
+	pop_consciousness_modifier = 0.1
+	assimilation_rate = -0.1
+	life_rating = 3
+}
+religion_wins = {
+	icon = 1
+	culture_tech_research_bonus = 0.1
+religion_lose = {
+	icon = 1
+	culture_tech_research_bonus = -0.05
+	research_points = 0.1
 }
 ###
 
