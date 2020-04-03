@@ -1,0 +1,21 @@
+army = {
+	name = "Army of the Khan of Crimea"
+	location = 964
+	regiment = {
+		name= "Crimean Cavalry"	
+		type = hussar
+		home = 973
+	}
+
+	regiment = {
+		name= " 1st Crimean Infantry"
+		type = infantry
+		home = 976	
+	}
+	
+	regiment = {
+		name= "2nd Crimean Infantry"
+		type = infantry
+		home = 964
+	}
+}
