@@ -839,7 +839,7 @@ country_event = {
 		}
 		OR = {
 			blockade = 0.85
-			poor_tax = 1
+			poor_tax = 0.85
 		}
 	}
 	
@@ -1000,7 +1000,7 @@ country_event = {
 country_event = {
 	id = 171114
 	title = "Anti-French Coalition"
-	desc = "EVTDESC171111"
+	desc = "EVTDESC171114"
 	picture = italia
 	is_triggered_only = yes
 	picture = deliberation

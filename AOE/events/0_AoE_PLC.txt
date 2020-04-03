@@ -369,7 +369,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Stanisław August Poniatowski will bring great reforms to our country!"
+		name = "Stanislaw August Poniatowski will bring great reforms to our country!"
 		set_country_flag = poniatowski_rule
 		ruling_party_ideology = liberal
 		RUS = {
@@ -383,7 +383,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Jan Klemens Branicki, a republican, will lead us to greatness"
+		name = "Jan Klemens Branicki, will lead us to greatness"
 		set_country_flag = branicki_rule
 		ruling_party_ideology = conservative
 		RUS = {
@@ -421,6 +421,7 @@ country_event = {
 		tag = PLC
 		government = elective_monarchy_oligarchy
 		year = 1791
+		ruling_party_ideology = liberal
 		NOT = { has_country_flag = enacted_3rd_may_constitution }
 		in_sphere = RUS
 		exists = yes

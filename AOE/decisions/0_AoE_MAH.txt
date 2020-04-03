@@ -1,6 +1,6 @@
 political_decisions = {
 	mughal_conquest = {
-		picture = maratha_empire
+		picture = west_india_mah
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = mughal_conquest }
@@ -128,7 +128,7 @@ political_decisions = {
 	}
 	
 	modernize_our_weaponary = {
-		picture = troops
+		picture = new_world_militia
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = modernize_our_weaponary }
