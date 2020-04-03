@@ -373,7 +373,7 @@ army = {
 
 army = {
 	name = "6-i Armeiskii Korpus" #Crimean Army
-	location = 964
+	location = 979
 	regiment = {
 		name= "6.1-ya Pekhotnaya Diviziya"
 		type = infantry
@@ -432,39 +432,7 @@ army = {
 
 army = {
 	name = "8-i Armeiskii Korpus" #Odessa Army
-	location = 968
-	
-
-	regiment = {
-		name= "8.1-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 963
-	}
-
-	regiment = {
-		name= "8.2-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 963
-	}
-
-	regiment = {
-		name= "8.3-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 963
-	}
-
-	regiment = {
-		name= "8.4-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 963
-	}
-
-	regiment = {
-		name= "8.5-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 963
-	}
-
+	location = 974
 	regiment = {
 		name= "8.6-ya Pekhotnaya Diviziya"
 		type = infantry
@@ -475,12 +443,6 @@ army = {
 		name= "8.7-ya Pekhotnaya Diviziya"
 		type = infantry
 		home = 978
-	}
-
-	regiment = {
-		name= "8.8-ya Pekhotnaya Diviziya"
-		type = infantry
-		home = 962
 	}
 	
 	regiment = {
@@ -498,7 +460,7 @@ army = {
 
 army = {
 	name = "1-i Kavkazskii Korpus"
-	location = 1048
+	location = 1047
 	
 	regiment = {
 		name= "1.1-ya Kavkazskii Pekhotnaya Diviziya"
@@ -529,13 +491,7 @@ army = {
 		type = infantry
 		home = 1011
 	}
-	
-	regiment = {
-		name= "1.6-ya Kavkazskii Pekhotnaya Diviziya"
-		type = infantry
-		home = 962
-	}
-	
+
 	regiment = {
 		name= "1.1-ya Kavkazskii Kavalerijskaya Diviziya"
 		type = cavalry
