@@ -139,6 +139,7 @@ political_decisions = {
 			add_accepted_culture = south_italian
 			all_core = {
 				limit = {
+					is_core = ITA
 					owner = {
 						OR = {
 							in_sphere = THIS

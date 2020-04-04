@@ -111,10 +111,6 @@ ANH = {
 	value = 125
 	military_access = yes
 }
-ATB = {
-	value = 125
-	military_access = yes
-}
 BRA = {
 	value = 125
 	military_access = yes
@@ -244,6 +240,11 @@ MOD = {
 	influence_value = 0
 }
 TUS = {
+	value = 75
+	level = 5
+	influence_value = 0
+}
+SIE = {
 	value = 75
 	level = 5
 	influence_value = 0

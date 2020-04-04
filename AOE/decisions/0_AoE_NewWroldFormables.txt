@@ -192,6 +192,7 @@ political_decisions = {
 	}
 	
 	increase_colonization_efforts_nw = {
+		picture = new_world_colonization
 		potential = {
 			OR = {
 				government = colonial_company
@@ -219,6 +220,7 @@ political_decisions = {
 	}
 	
 	land_of_opportunity_nw = {
+		picture = new_world_shipment
 		potential = {
 			OR = {
 				government = colonial_company
@@ -257,6 +259,7 @@ political_decisions = {
 	}
 	
 	colonial_militia = {
+		picture = new_world_militia
 		potential = {
 			OR = {
 				government = colonial_company

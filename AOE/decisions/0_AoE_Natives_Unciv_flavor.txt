@@ -204,7 +204,7 @@ political_decisions = {
 	}
 	
 	iqs_ireddentalism = {
-		picture = iqs_irr
+		picture = native_persecution
 		potential = {
 			tag = IQS
 			NOT = { has_country_flag = iqs_ireddentalism }

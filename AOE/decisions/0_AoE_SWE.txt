@@ -4,6 +4,7 @@ political_decisions = {
 		picture = concede_finland
 		potential = {
 			NOT = { has_country_flag = Conceded_Finland }
+			owns = 322
 			322 = { is_capital = yes }
 			NOT = { tag = FIN }
 		}
@@ -38,6 +39,7 @@ political_decisions = {
 	remove_russian_claims = {
 		picture = baltic_russia
 		potential = {
+			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = removed_russian_claims }
 		}
@@ -72,6 +74,7 @@ political_decisions = {
 		picture = caroleans
 		
 		potential = {
+			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = mobilzied_the_caroleans } 
 		}
@@ -96,6 +99,7 @@ political_decisions = {
 	riksdaler_reform = {
 		picture = tresury_reforms
 		potential = {
+			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = riksdaler_reform } 
 		}
@@ -123,6 +127,7 @@ political_decisions = {
 	gustav_iii_reforms = {
 		picture = gustav_iii
 		potential = {
+			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = gustav_iii_reforms } 
 		}
@@ -336,6 +341,7 @@ political_decisions = {
 			add_accepted_culture = sami
 			all_core = {
 				limit = {
+					is_core = SCA
 					owner = {
 						OR = {
 							in_sphere = THIS
