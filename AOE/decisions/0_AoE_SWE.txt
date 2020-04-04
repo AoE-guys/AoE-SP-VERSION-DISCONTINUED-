@@ -4,7 +4,7 @@ political_decisions = {
 		picture = concede_finland
 		potential = {
 			NOT = { has_country_flag = Conceded_Finland }
-			tag = SWE
+			322 = { is_capital = yes }
 			NOT = { tag = FIN }
 		}
 		
@@ -38,7 +38,7 @@ political_decisions = {
 	remove_russian_claims = {
 		picture = baltic_russia
 		potential = {
-			tag = SWE
+			322 = { is_capital = yes }
 			NOT = { has_country_flag = removed_russian_claims }
 		}
 		
@@ -72,8 +72,8 @@ political_decisions = {
 		picture = caroleans
 		
 		potential = {
-		tag = SWE
-		NOT = { has_country_flag = mobilzied_the_caroleans } 
+			322 = { is_capital = yes }
+			NOT = { has_country_flag = mobilzied_the_caroleans } 
 		}
 		
 		allow = {
@@ -96,7 +96,7 @@ political_decisions = {
 	riksdaler_reform = {
 		picture = tresury_reforms
 		potential = {
-			tag = SWE
+			322 = { is_capital = yes }
 			NOT = { has_country_flag = riksdaler_reform } 
 		}
 		allow = {
@@ -123,7 +123,7 @@ political_decisions = {
 	gustav_iii_reforms = {
 		picture = gustav_iii
 		potential = {
-			tag = SWE
+			322 = { is_capital = yes }
 			NOT = { has_country_flag = gustav_iii_reforms } 
 		}
 		allow = {
@@ -269,6 +269,81 @@ political_decisions = {
 				all_core = {
 					remove_core = PRU
 				}
+			}
+		}
+	}
+	
+	form_scandinavia = {
+		picture = SCA_political_union
+		potential = {
+			is_culture_group = scandinavian
+			SCA = { NOT = { exists = yes } }
+		}
+		allow = {
+			is_greater_power = yes
+			DNN = {
+				OR = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+					AND = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+			SWE = {
+				OR = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+					AND = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 20
+			DNN = {
+				all_core = {
+					add_core = SCA
+				}
+			}
+			SWE = {
+				all_core = {
+					add_core = SCA
+				}
+			}
+			change_tag = SCA
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = norwegian
+			add_accepted_culture = finnish
+			add_accepted_culture = icelandic
+			add_accepted_culture = sami
+			all_core = {
+				limit = {
+					owner = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+				secede_province = THIS
 			}
 		}
 	}
