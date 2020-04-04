@@ -10,7 +10,8 @@ country_event = {
 	}
 	
 	trigger = {
-		tag = SWE
+		owns = 322
+		322 = { is_capital = yes }
 		war = no
 		OR = {
 			AND = {
@@ -69,7 +70,8 @@ country_event = {
 	trigger = {
 		war = no
 		year = 1772
-		tag = SWE
+		owns = 322
+		322 = { is_capital = yes }
 		OR = {
 			average_consciousness = 5
 			average_militancy = 4
@@ -110,7 +112,8 @@ country_event = {
 	
 	trigger = {
 		year = 1792
-		tag = SWE
+		owns = 322
+		322 = { is_capital = yes }
 		average_militancy = 6
 		has_country_flag = gustav_iii_reforms
 		has_country_modifier = gustav_iii
