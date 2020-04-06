@@ -754,7 +754,7 @@ social_reforms = {
 			minimum_wage = 0.06
 			allow = { 
 				has_global_flag = factions_setup_done 
-				NOT = { has_country_modifier = clergy_and_nobility_domination }
+				NOT = { has_country_flag = clergy_and_nobility_domination }
 			}
 		}
 		acceptable_minimum_wage = { #marginally relevant
@@ -806,7 +806,7 @@ social_reforms = {
 			minimum_wage = 0.06
 			allow = { 
 				has_global_flag = factions_setup_done
-				NOT = { has_country_modifier = clergy_and_nobility_domination } 
+				NOT = { has_country_flag = clergy_and_nobility_domination } 
 			}
 		}
 		ten_hours = { #influential
