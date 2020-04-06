@@ -1,3 +1,11 @@
+#Persia - Kakheti
+vassal = {  #substate
+	first = PER
+	second = KKH
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
 #Papal State - Jesuits
 vassal = {  #substate
 	first = PAP
@@ -6,7 +14,7 @@ vassal = {  #substate
 	end_date = 2000.1.1
 }
 
-#Russia - Hetmanat
+#Russia - Hetmanate
 vassal = {  #substate
 	first = RUS
 	second = HET
