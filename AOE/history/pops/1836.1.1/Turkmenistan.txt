@@ -51,21 +51,27 @@
 	}
 
 	artisans = {
-		culture = uzbek
+		culture = qaraqalpaq
 		religion = sunni
 		size = 50
 	}
 
 	soldiers = {
-		culture = uzbek
+		culture = qaraqalpaq
 		religion = sunni
 		size = 12
 	}
 
 	farmers = {
+		culture = qaraqalpaq
+		religion = sunni
+		size = 440
+	}
+
+	farmers = {
 		culture = uzbek
 		religion = sunni
-		size = 866
+		size = 426
 	}
 
 	labourers = {
@@ -267,7 +273,13 @@
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 9986
+		size = 9486
+	}
+	
+	farmers = {
+		culture = sart
+		religion = sunni
+		size = 500
 	}
 
 	labourers = {

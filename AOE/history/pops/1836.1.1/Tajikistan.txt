@@ -193,7 +193,13 @@
 	farmers = {
 		culture = tajik
 		religion = sunni
-		size = 13039
+		size = 12039
+	}
+	
+	farmers = {
+		culture = sart
+		religion = sunni
+		size = 1000
 	}
 
 	labourers = {
@@ -217,49 +223,55 @@
 #Khorugh (92000/23000 POPS)   
 1208 = {
 	aristocrats = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 175
 	}
 	
 	bureaucrats = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 75
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 88
 	}
 
 	artisans = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 425
 	}
 	
 	officers = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 50
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 500
 	}
 
 	farmers = {
+		culture = pamiri
+		religion = sunni
+		size = 11089
+	}
+	
+	farmers = {
 		culture = tajik
 		religion = sunni
-		size = 12089
+		size = 1000
 	}
 
 	labourers = {
-		culture = tajik
+		culture = pamiri
 		religion = sunni
 		size = 636
 	}
