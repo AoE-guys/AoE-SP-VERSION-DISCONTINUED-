@@ -1357,3 +1357,28 @@ country_event = {
 		remove_country_modifier = maria_theresa
 	}
 }
+###Hre###
+country_event = {
+	id = 800000
+	title = "$FROMCOUNTRY$ joins the Empire!"
+	desc = "EVTDESC800000"
+	picture = hre_prince
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 15
+	}
+}
+country_event = {
+	id = 800001
+	title = "$FROMCOUNTRY$ leaves the Empire!"
+	desc = "EVTDESC800001"
+	picture = hre_prince
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will be back, begging at my feet."
+		prestige = -15
+	}
+}
