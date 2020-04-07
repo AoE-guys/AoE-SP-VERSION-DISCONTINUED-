@@ -21,7 +21,7 @@ germanic = {
 		"von Wrangel" "von Zieten" "zur Lippe" "von Roon" }
 	}
 	south_german = {
-		color = { 90 60 60 } #{ 110 80 80 }
+		color = { 110 80 80 } #{ 90 60 60 }
 		first_names = { Adolf Albrecht Alexander Alfons Alois Anton Arthur Bernhard Christian
 		Edmund Eduard Engelbert Ernst Erwin Ferdinand Franz Friedrich Gebhard Gerhard Gottfried
 		Günther Gustav Heinrich Hermann Horst Jakob Joachim Johann Joseph
@@ -216,7 +216,7 @@ pan_swiss = {
 		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant }
 	}	
 	swiss_german = {
-		color = { 90 60 60 }
+		color = { 110 80 80 }
 		first_names = { Adolf Albrecht Alexander Alfons Alois Anton Arthur Bernhard Christian
 		Edmund Eduard Engelbert Ernst Erwin Ferdinand Franz Friedrich Gebhard Gerhard Gottfried
 		Günther Gustav Heinrich Hermann Horst Jakob Joachim Johann Joseph
@@ -1229,6 +1229,17 @@ iranian_turanian = {
 			Bahadur Bukhari Khan
 			}
 	}
+	qaraqalpaq = {
+		color = {152 152 50}
+		first_names = {
+			"Abd al-Ahad" "Abd al-Karim" "Abu al-Ghazi" Abulfayz Alimqul Aqim "Allah Quli" Haydar Husayn 
+			Iltazar Isfandiyar Jahangir Khudayar Madali Mahmud Muhammad Murad 
+			Nasrallah "Nasir al-Din" Nurali Pulad Qilich Qutlugh Rahim Shir Umar Yadigar Yaqub 
+			}
+		last_names = {
+			Bahadur Bukhari Khan
+			}
+	}
 	kazak = {
 		color = {83 102 46}
 		first_names = {
@@ -1251,8 +1262,34 @@ iranian_turanian = {
 			Beg 
 			}
 	}
+	sart = {
+		color = {122 197 100}
+			first_names = {
+			Abbas Abolghasem "Abu al-Ghazi" Abdolsamad Abdolazim Ahmad Ali Bahram
+			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
+			Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
+			Nadir "Nasir al-Din" Nosret Reza
+			}
+		last_names = {
+			Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani Bahadur Bukhari
+			}
+		radicalism = 10
+	}
 	tajik = {
 		color = {122 127 111}
+			first_names = {
+			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
+			Mahmoud Mahsud Mirza Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin 
+			Nadir "Naser ed-Din" Nosret Reza
+			}
+		last_names = {
+			Khan Tajik Emomali Shohmurod Rahbar Ghoib Fayzullo Sabouri Furmuli Badakhshi Baghlani Mazari Panjsheri Kabuli Herati Kohistani
+			}
+		radicalism = 10
+	}
+	pamiri = {
+		color = {132 117 151}
 			first_names = {
 			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
 			Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali" 
