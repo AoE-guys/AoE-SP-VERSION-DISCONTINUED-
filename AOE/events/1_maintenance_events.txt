@@ -6,6 +6,7 @@ country_event = {
 	desc = "Game Master"
 
 	trigger = { 
+				tag = HAW
 	           ai = yes
 			   month = 0
 			   NOT = { month = 1 }

@@ -1322,9 +1322,63 @@ unification_humiliate_cb = {
 		country_event = 99996
 	}
 }
+dismantle_hre = {
+	sprite_index = 26
+	constructing_cb = no
+	months = 12
+	crisis = no
 
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 85
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 60
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	always = no
+
+	can_use = {
+		THIS = {
+			is_greater_power = yes
+			NOT = { has_country_modifier = neutrality }
+			NOT = { tag = KUK }
+			NOT = { tag = UBD }
+			NOT = { tag = DNB }
+			NOT = { tag = AUS }
+			political_thought_7 = 1
+		}
+		has_country_flag = hre_emperor
+		NOT = { has_global_flag = hre_dismantled }
+	}
+	
+	tws_battle_factor = 2.0 # battle score twice that of oppenent
+	
+	war_name = HRE_WAR_NAME
+	
+	po_remove_prestige = yes
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		prestige_factor = -0.2
+		country_event = 800002
+	}
+}
 change_heir_habsburg_cb = {
-	sprite_index = 24
+	sprite_index = 26
 	is_triggered_only = yes
 	months = 12
 	crisis = no
@@ -1379,7 +1433,7 @@ change_heir_habsburg_cb = {
 }
 
 change_heir_bourbon_cb = {
-	sprite_index = 24
+	sprite_index = 26
 	is_triggered_only = yes
 	months = 48
 	crisis = no

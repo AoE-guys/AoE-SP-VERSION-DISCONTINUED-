@@ -1382,3 +1382,21 @@ country_event = {
 		prestige = -15
 	}
 }
+country_event = {
+	id = 800002
+	title = "Ruina Imperii..."
+	desc = "EVTDESC800002"
+	picture = hre_prince
+	is_triggered_only = yes
+	
+	option = {
+		name = "Dark times are ahead of us"
+		prestige = -150
+		HRE = {
+			all_core = {
+				remove_core = HRE
+			}
+		}
+		set_global_flag = hre_dismantled
+	}
+}
