@@ -1,7 +1,7 @@
 country_event = {
 	id = 6083
-	title = "Local Khans of Kokand Secedes!"
-	desc = "The Khans of Kokand have broken off from us in our eastern frontier"
+	title = "Eastern Khans Secede from us!"
+	desc = "With the encroachment of the oirats on our territory, the local rulers have used this opportunity to break off from us in our eastern frontier"
 	fire_only_once = yes
 	picture = mughal_breakup
 	
@@ -16,7 +16,11 @@ country_event = {
 	
 	option = {
 		name = "Oh no. I guess we cant do anything about it."
+		DZN = {
+			1190 = { secede_province = DZN }
+		}
 		BUK = { any_owned = { limit = { is_core = KOK } secede_province = KOK } }
+		BUK = { any_owned = { limit = { is_core = BDK } secede_province = BDK } }
 		relation = {
 			who = KOK
 			value = 200
