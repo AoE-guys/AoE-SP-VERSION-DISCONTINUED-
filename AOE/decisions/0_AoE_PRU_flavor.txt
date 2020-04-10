@@ -215,4 +215,267 @@ political_decisions = {
 		factor = 1
 		}
 	}
+	
+	prussian_saxony = {
+		picture = silesia_prussia
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = prussian_saxony }
+		}
+		
+		allow = {
+			war = no
+			war_policy = jingoism
+			military_score = 100
+		}
+		
+		effect = {
+			set_country_flag = prussian_saxony
+			687 = {
+				add_core = THIS 
+			}
+			556 = {
+				add_core = THIS 
+			}
+			554 = {
+				add_core = THIS 
+			}
+			badboy = 5
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	begin_retablissement = {
+		picture = cantons
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = retablissement }
+		}
+		
+		allow = {
+			monetary_system_7 = 1
+			limited_access_roads = 1
+			aeronautics = 1
+			has_country_modifier = frederick_grosse
+		}
+		
+		effect = {
+			add_country_modifier = { name = retablissement duration = 7300 }
+			tech_school = prussian_tech_school
+			prestige = 5
+			set_country_flag = retablissement
+		}
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	silesia_heartland = {
+		picture = silesia_prussia
+		potential = {
+			PRU_682 = {
+				owned_by = THIS
+			}
+			NOT = { has_global_flag = ruhr_boom_has_happened }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					market_structure = 1
+					organized_factories = 1
+					early_railroad = 1
+				}
+				tech_school = prussian_tech_school
+			}
+		}
+		
+		effect = {
+			random_owned = {
+				limit = {
+					province_id = 682 #Ost-Rhineland
+					state_scope = {
+						NOT = { has_building = steel_factory }
+					}
+				}
+				
+				owner = { 
+					capital = 682
+					build_factory_in_capital_state = steel_factory
+				}
+			}
+			random_owned = {
+				limit = {
+					province_id = 549 #Berlin
+					owned_by = PRU
+				}
+				owner = { capital = 549 }
+			}
+			random_owned = {
+				limit = {
+					province_id = 706 #Warsaw
+					owned_by = PLC
+				}
+				owner = { capital = 706 }
+			}
+			random_owned = {
+				limit = {
+					province_id = 549 #Berlin
+					owned_by = GER
+					owner = { primary_culture = north_german }
+				}
+				owner = { capital = 549 }
+			}
+			random_owned = {
+				limit = {
+					province_id = 619 #Vienna
+					owned_by = HRE
+				}
+				owner = { capital = 619 }
+			}
+			add_country_modifier = {
+				name = silesia_boom
+				duration = 3650
+			}
+			add_country_modifier = {
+				name = global_baby_boom_small
+				duration = 720
+			}
+			any_owned = {
+				limit = {
+					region = PRU_682
+				}
+				add_province_modifier = {
+					name = silesia_boom_city
+					duration = 720
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = baby_boom
+					duration = 365
+				}
+			}
+			set_global_flag = ruhr_boom_has_happened
+		}
+		
+		ai_will_do = {					
+		factor = 1
+		}
+	}
+	
+	renovate_berlin = {
+		picture = berlin
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = renovated_berlin }
+		}
+
+		allow = {
+			owns = 549 # Berlin
+			money = 30000
+			OR = {
+				expressionism = 1
+				AND = {
+					OR = {
+						work_hours = ten_hours
+						work_hours = eight_hours
+					}
+					NOT = {
+						OR = {
+							trinket_subsidies = no_subsidies
+							trinket_subsidies = trinket_subsidies
+						}
+					}
+				}
+			}
+		}
+	
+		effect = {
+			set_country_flag = renovated_berlin
+			money = -30000
+			549 = {
+				life_rating = 5	
+				railroad = 1
+				fort = 2
+				add_province_modifier = {
+					name = baby_boom
+					duration = 5475
+				}
+			}
+			prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_rhineland = {
+		picture = rhine
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = prussian_saxony }
+		}
+		
+		allow = {
+			war = no
+			military_score = 150
+			owns = 3265
+			owns = 580
+			owns = 577
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = prussian_saxony
+			PRU_575 = {
+				add_core = THIS 
+			}
+			PRU_578 = {
+				add_core = THIS 
+			}
+			PRU_581 = {
+				add_core = THIS 
+			}
+			badboy = 15
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 15
+			}
+		}
+	}
+	
+	bohemian_crown = {
+		picture = bohemian
+		potential = {
+			tag = PRU
+			NOT = { has_country_flag = bohemian_crown }
+		}
+		
+		allow = {
+			war = no
+			military_score = 150
+			NOT = { has_country_flag = hre_member }
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = bohemian_crown
+			country_event = 1740003
+			badboy = 15
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 15
+			}
+		}
+	}
 }

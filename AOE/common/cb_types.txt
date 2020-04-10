@@ -5174,7 +5174,14 @@ annex_india = {
 				THIS = { num_of_ports = 1 } 
 				num_of_ports = 1
 			}
-			neighbour = THIS
+			OR = {
+				neighbour = THIS
+				any_neighbor_province = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
 			AND = { war_with = THIS ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
@@ -5195,7 +5202,6 @@ annex_india = {
 		NOT = {
 			has_country_flag = post_colonial_country
 		}
-		civilized = no
 		is_vassal = no
 		capital_scope = {
 			OR = {
@@ -5294,7 +5300,14 @@ annex_india_full = {
 				THIS = { num_of_ports = 1 } 
 				num_of_ports = 1
 			}
-			neighbour = THIS
+			OR = {
+				neighbour = THIS
+				any_neighbor_province = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
 			AND = { war_with = THIS ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
@@ -5314,7 +5327,6 @@ annex_india_full = {
 			civilized = yes
 			has_global_flag = india_for_grabs
 		}
-		civilized = no
 		is_vassal = no
 		NOT = {
 			has_country_flag = post_colonial_country
