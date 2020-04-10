@@ -101,3 +101,27 @@ country_event = {
 		inherit = EFR
 	}
 }
+country_event = {
+	id = 1740005
+	title = "Frederick land reforms"
+	desc = "EVTDESC1740005"
+	picture = fredrick_grosse
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		has_country_modifier = frederick_grosse
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "A much needed change"
+		add_country_modifier = {
+			name = reformed_industry
+			duration = 3700
+		}
+	}
+}

@@ -91,6 +91,10 @@ political_decisions = {
 				name = reformed_industry
 				duration = -1
 			}
+			add_country_modifier = {
+				name = global_baby_boom
+				duration = 1825
+			}
 			any_pop = {
 				limit = {
 					pop_majority_ideology = reactionary
@@ -104,7 +108,20 @@ political_decisions = {
 				}
 			}
 		}
-		ai_will_do = { factor = 1 }
+		ai_will_do = { 
+			factor = 0
+			modifier = {
+				factor = 100
+				NOT = {
+					OR = {
+						tag = QNG
+						tag = KOR
+						tag = MUG
+						tag = BNG
+					}
+				}
+			}
+		}
 	}
 	embrace_western_cultural_ideas = {
 		picture = unciv_culture
@@ -155,6 +172,14 @@ political_decisions = {
 						AND = {
 							is_greater_power = yes
 							has_recently_lost_war = yes
+						}
+					}
+					NOT = {
+						OR = {
+							tag = QNG
+							tag = KOR
+							tag = MUG
+							tag = BNG
 						}
 					}
 				}

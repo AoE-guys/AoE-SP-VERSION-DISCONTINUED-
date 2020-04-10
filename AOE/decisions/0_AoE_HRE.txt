@@ -1,6 +1,7 @@
 political_decisions = {
 	
 	join_hre = {
+		picture = flag_hre
 		potential = {
 			NOT = { is_greater_power = yes }
 			NOT = { is_vassal = yes }
@@ -37,6 +38,7 @@ political_decisions = {
 	}
 	
 	leave_hre = {
+		picture = flag_hre
 		potential = {
 			has_country_flag = hre_member
 		}

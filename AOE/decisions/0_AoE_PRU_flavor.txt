@@ -217,7 +217,7 @@ political_decisions = {
 	}
 	
 	prussian_saxony = {
-		picture = silesia_prussia
+		picture = saxony
 		potential = {
 			tag = PRU
 			NOT = { has_country_flag = prussian_saxony }
@@ -247,7 +247,7 @@ political_decisions = {
 	}
 	
 	begin_retablissement = {
-		picture = cantons
+		picture = prussia_king
 		potential = {
 			tag = PRU
 			NOT = { has_country_flag = retablissement }
@@ -412,7 +412,7 @@ political_decisions = {
 	}
 	
 	expand_rhineland = {
-		picture = rhine
+		picture = rhineland
 		potential = {
 			tag = PRU
 			NOT = { has_country_flag = prussian_saxony }
@@ -451,7 +451,7 @@ political_decisions = {
 	}
 	
 	bohemian_crown = {
-		picture = bohemian
+		picture = bohemian_crown
 		potential = {
 			tag = PRU
 			NOT = { has_country_flag = bohemian_crown }
