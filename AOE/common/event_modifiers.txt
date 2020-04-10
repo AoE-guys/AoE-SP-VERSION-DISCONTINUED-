@@ -5011,6 +5011,36 @@ berlin_academy_of_sciences = {
 	influence_modifier = 0.1
 	icon = 9
 }
+retablissement = {
+	education_efficiency_modifier = 0.75
+	administrative_efficiency_modifier = 0.3
+	land_organisation = 0.05
+	land_unit_start_experience = 1
+	mobilisation_size = 0.01
+	icon = 3
+}
+silesia_boom = {
+	factory_owner_cost = -0.5
+	#global_population_growth = 0.001
+	factory_throughput = 0.05
+	icon = 11
+}
+
+silesia_boom_city = {
+	population_growth = 0.01
+	immigrant_attract = 1.5
+	icon = 13
+}
+frederick_grosse = {
+	army_tech_research_bonus = 0.1
+	culture_tech_research_bonus = 0.05
+	diplomatic_points_modifier = 0.25
+	influence_modifier = 0.2
+	bad_badboy = -0.05
+	ruling_party_support = 0.35
+	prestige = 0.06
+	icon = 13
+}
 ###Spain refrom bonuses###
 renovated_armada = {
 	prestige = 0.01
