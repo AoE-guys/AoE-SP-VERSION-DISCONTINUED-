@@ -82,6 +82,93 @@ political_decisions = {
 					duration = 5475
 				}
 			}
+			PRU_578 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						militancy = 5
+						NOT = { has_pop_culture = south_italian }
+					}
+					
+					move_pop = 549
+				}
+			}
+			PRU_575 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						militancy = 5
+					} 
+					move_pop = 550
+				}
+			}
+			PRU_570 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						NOT = { has_pop_culture = north_italian }
+						militancy = 5
+					} 
+					move_pop = 551 
+				}
+			}
+			BAV_599 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						NOT = { has_pop_culture = north_italian }
+						militancy = 5
+					} 
+					move_pop = 552
+				}
+			}
+			BAV_595 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						NOT = { has_pop_culture = north_italian }
+						militancy = 5
+					} 
+					move_pop = 553 
+				}
+			}
+			AUS_625 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						NOT = { has_pop_culture = north_italian }
+						militancy = 5
+					} 
+					move_pop = 679 
+				}
+			}
+			AUS_626 = { 
+				any_pop = { 
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						NOT = { has_pop_culture = north_italian }
+						militancy = 5
+					} 
+					move_pop = 680 
+				}
+			}
+			PRU_554 = { 
+				any_pop = {
+					limit = { 
+						has_pop_religion = protestant
+						NOT = { has_pop_culture = south_italian }
+						NOT = { has_pop_culture = north_italian }
+						militancy = 5
+					} 
+					move_pop = 681 
+				}
+			}
 		}
 		ai_will_do = {					
 		factor = 1
