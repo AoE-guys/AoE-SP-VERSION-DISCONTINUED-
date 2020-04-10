@@ -1,0 +1,61 @@
+political_decisions = {
+	
+	join_hre = {
+		picture = flag_hre
+		potential = {
+			NOT = { is_greater_power = yes }
+			NOT = { is_vassal = yes }
+			capital_scope = {
+				continent = europe
+			}
+			NOT = { number_of_states = 4 }
+			any_neighbor_province = {
+				is_core = HRE
+			}
+			NOT = { has_country_flag = hre_member }
+		}
+		allow = {
+			relation = { who = AUS value = 150 }
+		}
+		effect = {
+			all_core = {
+				limit = {
+					continent = europe
+				}
+				add_core = HRE
+			}
+			AUS = { country_event = 800000 }
+			prestige = 5
+			set_country_flag = hre_member
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				in_sphere = AUS
+			}
+		}
+	}
+	
+	leave_hre = {
+		picture = flag_hre
+		potential = {
+			has_country_flag = hre_member
+		}
+		allow = {
+			relation = { who = AUS value = -10 }
+		}
+		effect = {
+			all_core = {
+				limit = {
+					continent = europe
+				}
+				remove_core = HRE
+			}
+			AUS = { country_event = 800001 }
+			prestige = 5
+			clr_country_flag = hre_member
+		}
+		ai_will_do = { factor = 0 }
+	}
+}

@@ -58,10 +58,10 @@ political_decisions = {
 		}
 		
 		effect = {
+			set_country_flag = removed_russian_claims
 			all_core = {
 				remove_core = RUS
 			}
-			set_country_flag = removed_russian_claims
 			prestige = 20
 		}
 		
@@ -281,57 +281,31 @@ political_decisions = {
 	form_scandinavia = {
 		picture = SCA_political_union
 		potential = {
-			is_culture_group = scandinavian
-			SCA = { NOT = { exists = yes } }
+			OR = {
+				is_culture_group = scandinavian
+				is_culture_group = bears
+			}
+			NOT = {
+				exists = SCA
+			}
 		}
 		allow = {
 			is_greater_power = yes
-			DNN = {
-				OR = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
+			prestige = 45
+			war = no
+			SCA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
 						}
-					}
-					AND = {
-						vassal_of = THIS
-						in_sphere = THIS
 					}
 				}
 			}
-			SWE = {
-				OR = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-					AND = {
-						vassal_of = THIS
-						in_sphere = THIS
-					}
-				}
-			}
-			nationalism_n_imperialism = 1
-		}
+		}	
 		effect = {
 			prestige = 20
-			DNN = {
-				all_core = {
-					add_core = SCA
-				}
-			}
-			SWE = {
-				all_core = {
-					add_core = SCA
-				}
-			}
 			change_tag = SCA
 			add_accepted_culture = swedish
 			add_accepted_culture = danish
@@ -339,18 +313,19 @@ political_decisions = {
 			add_accepted_culture = finnish
 			add_accepted_culture = icelandic
 			add_accepted_culture = sami
-			all_core = {
+			any_country = {
 				limit = {
-					is_core = SCA
-					owner = {
-						OR = {
-							in_sphere = THIS
-							vassal_of = THIS
-						}
+					NOT = {
+						is_greater_power = yes
 					}
+					is_culture_group = scandinavian
+					in_sphere = THIS
 				}
-				secede_province = THIS
+				country_event = 11101
 			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

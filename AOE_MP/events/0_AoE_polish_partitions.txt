@@ -200,6 +200,7 @@ country_event = {
 	title = "Second Partion of Poland-Lithuania"
 	desc = "The commonwealth is to weak to govern it's people and it is our duty as great powers of europe to do it for them!"
 	picture = polish_partition
+	fire_only_once = yes
 	
 	trigger = {
 		has_global_flag = polish_partition
@@ -340,6 +341,7 @@ country_event = {
 	title = "the Third Partion of Poland-Lithuania"
 	desc = "The commonwealth is to weak to govern it's people and it is our duty as great powers of europe to do it for them!"
 	picture = polish_partition
+	fire_only_once = yes
 	
 	trigger = {
 		has_global_flag = polish_partition

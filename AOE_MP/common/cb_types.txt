@@ -47,6 +47,7 @@ become_independent
 dismantle_cb
 dismantle_cb_add
 dismantle_cb_add_new
+dismantle_hre
 change_heir_bourbon_cb
 change_heir_habsburg_cb
 colonial_competition
@@ -580,43 +581,7 @@ restore_austrian_empire = {
 		is_vassal = no
 		neighbour = THIS
 		any_owned_province = {
-			OR = {
-				is_core = ACH
-				is_core = ANH
-				is_core = ANS
-				is_core = BOH
-				is_core = ATB
-				is_core = AUG
-				is_core = BAD
-				is_core = BRE
-				is_core = EFR
-				is_core = FRM
-				is_core = HAM
-				is_core = HAN
-				is_core = HEH
-				is_core = HEK
-				is_core = HES
-				is_core = HOL
-				is_core = KOL
-				is_core = LIG
-				is_core = LIP
-				is_core = LNE
-				is_core = LUB
-				is_core = MEC
-				is_core = MUN
-				is_core = NAS
-				is_core = OLD
-				is_core = PAL
-				is_core = PRU
-				is_core = RAV
-				is_core = SAL
-				is_core = SAX
-				is_core = THU
-				is_core = TRR
-				is_core = ULM
-				is_core = WUL
-				is_core = WUR
-			}
+			is_core = HRE
 		}
 		OR = {
 			NOT = { tag = ITA }
@@ -634,43 +599,7 @@ restore_austrian_empire = {
 	
 	allowed_states = {
 		any_owned_province = {
-			OR = {
-				is_core = ACH
-				is_core = ANH
-				is_core = ANS
-				is_core = BOH
-				is_core = ATB
-				is_core = AUG
-				is_core = BAD
-				is_core = BRE
-				is_core = EFR
-				is_core = FRM
-				is_core = HAM
-				is_core = HAN
-				is_core = HEH
-				is_core = HEK
-				is_core = HES
-				is_core = HOL
-				is_core = KOL
-				is_core = LIG
-				is_core = LIP
-				is_core = LNE
-				is_core = LUB
-				is_core = MEC
-				is_core = MUN
-				is_core = NAS
-				is_core = OLD
-				is_core = PAL
-				is_core = PRU
-				is_core = RAV
-				is_core = SAL
-				is_core = SAX
-				is_core = THU
-				is_core = TRR
-				is_core = ULM
-				is_core = WUL
-				is_core = WUR
-			}
+			is_core = HRE
 		}
 	}
 
@@ -1397,9 +1326,63 @@ unification_humiliate_cb = {
 		country_event = 99996
 	}
 }
+dismantle_hre = {
+	sprite_index = 26
+	constructing_cb = no
+	months = 12
+	crisis = no
 
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 85
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 60
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	always = no
+
+	can_use = {
+		THIS = {
+			is_greater_power = yes
+			NOT = { has_country_modifier = neutrality }
+			NOT = { tag = KUK }
+			NOT = { tag = UBD }
+			NOT = { tag = DNB }
+			NOT = { tag = AUS }
+			political_thought_7 = 1
+		}
+		has_country_flag = hre_emperor
+		NOT = { has_global_flag = hre_dismantled }
+	}
+	
+	tws_battle_factor = 2.0 # battle score twice that of oppenent
+	
+	war_name = HRE_WAR_NAME
+	
+	po_remove_prestige = yes
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		prestige_factor = -0.2
+		country_event = 800002
+	}
+}
 change_heir_habsburg_cb = {
-	sprite_index = 24
+	sprite_index = 26
 	is_triggered_only = yes
 	months = 12
 	crisis = no
@@ -1454,7 +1437,7 @@ change_heir_habsburg_cb = {
 }
 
 change_heir_bourbon_cb = {
-	sprite_index = 24
+	sprite_index = 26
 	is_triggered_only = yes
 	months = 48
 	crisis = no
@@ -5194,7 +5177,14 @@ annex_india = {
 				THIS = { num_of_ports = 1 } 
 				num_of_ports = 1
 			}
-			neighbour = THIS
+			OR = {
+				neighbour = THIS
+				any_neighbor_province = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
 			AND = { war_with = THIS ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
@@ -5215,7 +5205,6 @@ annex_india = {
 		NOT = {
 			has_country_flag = post_colonial_country
 		}
-		civilized = no
 		is_vassal = no
 		capital_scope = {
 			OR = {
@@ -5314,7 +5303,14 @@ annex_india_full = {
 				THIS = { num_of_ports = 1 } 
 				num_of_ports = 1
 			}
-			neighbour = THIS
+			OR = {
+				neighbour = THIS
+				any_neighbor_province = {
+					owner = {
+						vassal_of = THIS
+					}
+				}
+			}
 			AND = { war_with = THIS ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
@@ -5334,7 +5330,6 @@ annex_india_full = {
 			civilized = yes
 			has_global_flag = india_for_grabs
 		}
-		civilized = no
 		is_vassal = no
 		NOT = {
 			has_country_flag = post_colonial_country
@@ -7854,4 +7849,3 @@ take_capital = {
 		}
 	}
 }
-

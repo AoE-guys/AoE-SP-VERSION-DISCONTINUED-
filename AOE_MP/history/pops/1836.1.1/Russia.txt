@@ -910,7 +910,7 @@
 	farmers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 2370
+		size = 1370
 	}
 
 	labourers = {
@@ -946,7 +946,13 @@
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 456
+		size = 200
+	}
+	
+	farmers = {
+		culture = tatar
+		religion = sunni
+		size = 256
 	}
 
 	labourers = {
@@ -982,7 +988,7 @@
 	farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 51
+		size = 1051
 	}
 
 	labourers = {
@@ -4058,32 +4064,38 @@
 	}
 	
 	clergymen = {
+		culture = ugrian
+		religion = orthodox
+		size = 250
+	}
+	
+	clergymen = {
 		culture = tatar
-		religion = sunni
+		religion = orthodox
 		size = 250
 	}
 
 	artisans = {
-		culture = tatar
-		religion = sunni
+		culture = ugrian
+		religion = orthodox
 		size = 1750
 	}
 
 	soldiers = {
-		culture = tatar
-		religion = sunni
+		culture = ugrian
+		religion = orthodox
 		size = 1120
 	}
 
 	farmers = {
-		culture = tatar
-		religion = sunni
+		culture = ugrian
+		religion = orthodox
 		size = 11440
 	}
 
 	labourers = {
-		culture = tatar
-		religion = sunni
+		culture = ugrian
+		religion = orthodox
 		size = 1440
 	}
 }

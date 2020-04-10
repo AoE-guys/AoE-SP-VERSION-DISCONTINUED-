@@ -2,13 +2,9 @@
 
 USA_1 = { 1 2 3 4 5 2599 2630 2631 3317 } #Alaska
 
-#ENG_6 = { 6 7 } #Yukon
-
 ENG_9 = { 11 2595 2596 2598 6 7 } #Northwest Territories
 
 CAN_13 = { 13 14 20 21 15 19 16 18 17 2629 3341 } #Columbia
-
-#CAN_18 = { 18 17 2629 } #New Caledonia
 
 ENG_22 = { 27 26 22 23 24 25 28 2597 } #Alberta
 
@@ -367,8 +363,6 @@ RUS_715 = { 715 711 713 716 } #Lesser Poland
 
 AUS_726 = { 726 727 728 2669 } #Lombardia
 
-#AUS_733 = { 733 736 } #Friuli
-
 AUS_729 = { 729 730 731 732 733 3262 } #Venetia
 
 AUS_734 = { 734 735 } #South Tirol
@@ -391,8 +385,6 @@ AUS_2538 = { 2538 791 792 3309 3319 } #Vojvodina
 ### Italy
 
 SAR_720 = { 720 721 722 723 724 725 } #Piemonte
-
-#MOD_739 = { 739 738 740 } #Emilia
 
 TUS_744 = { 744 745 746 747 748 740 } #Tuscany
 
@@ -602,7 +594,7 @@ RUS_1008 = { 1008 1011 1012 1013 1022 } #Moscow
 
 RUS_1009 = { 1009 1010 1014 1015 1016 } #Bryansk
 
-RUS_1020 = { 1020 1027 1028 1030 1032 1033 } #Kazan
+RUS_1020 = { 1020 1027 1028 1030 1033 } #Kazan
 
 RUS_1026 = { 1026 2689 1029 1031 2700 } #Perm
 
@@ -614,7 +606,7 @@ RUS_1048 = { 1048 1049 1050 1051 1056 } #Circassia
 
 RUS_1052 = { 1052 1053 1054 1055 1057 } #North Caucasia
 
-RUS_1060 = { 1060 1044 1042 1034 1043 1035 } #Samara
+RUS_1060 = { 1060 1044 1042 1032 1034 1043 1035 } #Samara
 
 RUS_1064 = { 1064 1066 1061 } #Tobolsk
 
@@ -656,15 +648,11 @@ RUS_2615 = { 2657 2680 2654 2694 2655 2693 2692 2675 } #Lower Yeniseysk - Taymyr
 
 RUS_2618 = { 1072 2641 2618 1073 2660 2620 } #Upper Okhotsk - Magadan
 
-#RUS_2621 = { } #Inner Chukotka
-
 RUS_2653 = { 2646 1065 1062 } #North Siberia
 
 RUS_2668 = { 2668 2667 2672 2621 2619 2642 } #North Yakutsk
 
 RUS_2685 = { 1058 2685 1059 2614 2658 } #Ural
-
-#RUS_2694 = {  } #Middle Siberia - Evensk
 
 
 ### India
@@ -928,8 +916,6 @@ TRI_1731 = { 1731 1733 1734 1732 1744 1740 1741 1742 } #Tripolitania
 
 TRI_1735 = { 1735 1736 1737 1738 2585 } #Cyrenaica
 
-#TRI_1740 = { 1740 1741 1742 1743 } #Fezzan
-
 EGY_1745 = { 1745 1747 1750 1748 1749 } #Cairo
 
 EGY_1751 = { 1751 1752 1753 1746 } #Alexandria
@@ -969,8 +955,6 @@ ETH_1853 = { 1856 1857 1858 1865 } #Tigray
 
 ETH_1859 = { 1859 1860 1861 1862 1864 } #Shewa
 
-#ETH_1862 = {  } #Gibe
-
 ETH_1865 = { 1866 1867 } #Hararghe
 
 ENG_1848 = { 1848 1849 1850 1851 } #Eritrea
@@ -993,8 +977,6 @@ ENG_2044 = { 2044 2043 2046 2042 } #Tanganyika
 ### West Africa
 
 FRA_1775 = { 1775 1776 1777 1778 1779 1781 1782 } #Mauritania
-
-#FRA_1780 = { 1780 1781 1782 } #Inner Mauritania
 
 FRA_1783 = { 1783 1784 1786 1787 1789 1790 2573 } #Senegal
 
@@ -1053,8 +1035,6 @@ SOK_1963 = { 1963 1964 1961 1953 1960 } #Adamawa
 
 FRA_1965 = { 1965 1966 1967 1968 1970 1971 1969 } #Ubangi-Shari
 
-#FRA_1970 = { } #Bangassou
-
 FRA_1972 = { 1972 1974 1975 1976 } #Gabon
 
 BEL_1977 = { 1982 1983 1985 2000 3342 } #Bas-Congo
@@ -1112,8 +1092,6 @@ ENG_2087 = { 2087 2090 2089 2088 2091 2092 2558 } #Cape Colony
 
 ENG_2092 = { 2093 2094 2095 } #Northern Cape
 
-#ENG_2094 = { 2094 2095 } #Kimberley - called originally Griqualand
-
 ENG_2096 = { 2096 2097 2098 2099 2100 } #Eastern Cape
 
 ORA_2103 = { 2101 2103 2102 } #Vrystaat - called originally Basutoland
@@ -1145,8 +1123,6 @@ MEX_2161 = { 2161 2168 2166 2169 2167 } #Jalisco
 MEX_2170 = { 2170 2171 2177 2178 2179 2180 } #Guerrero
 
 MEX_2172 = { 2172 2173 2174 2175 2176 } #Mexico
-
-#MEX_2181 = {   } #Oasaca
 
 MEX_2181 = { 2181 2182 2165 } #Chiapas
 
