@@ -2,6 +2,7 @@ owner = DNN
 controller = DNN
 add_core = DNN
 add_core = NOR
+add_core = SCA
 trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
 terrain = montane_tundra
 life_rating = 20
