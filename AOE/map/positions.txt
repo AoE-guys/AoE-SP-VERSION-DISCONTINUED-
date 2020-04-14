@@ -34014,20 +34014,20 @@
 # Fiume
 778 = {
     text_position = {
-        x = 3030.400000
-        y = 1537.300000
+        x = 3025
+        y = 1535
     }
 
-    text_rotation = 5.451557
-    text_scale = 0.50
+    text_rotation = 90
+    text_scale = 2
     unit = {
-        x = 3030.925000
-        y = 1537.850000
+        x = 3025
+        y = 1535
     }
 
     factory = {
-        x = 3032.333333
-        y = 1537.458333
+        x = 3025
+        y = 1535
     }
 
     building_position = {
@@ -50665,40 +50665,41 @@
 # Naryn
 1190 = {
     text_position = {
-        x = 4006.000000
-        y = 1461.000000
+        x = 3986
+        y = 1464.000000
     }
 
+text_rotation = 90
     text_scale = 3.799999
     unit = {
-        x = 4006.000000
-        y = 1468.000000
+        x = 3986
+        y = 1464.000000
     }
 
     city = {
-        x = 3988.866667
-        y = 1459.933333
+        x = 3986
+        y = 1464.000000
     }
 
     factory = {
-        x = 3998.000000
-        y = 1475.000000
+        x = 3986
+        y = 1464.000000
     }
 
     building_construction = {
-        x = 4036.000000
-        y = 1473.000000
+        x = 3986
+        y = 1464.000000
     }
 
     military_construction = {
-        x = 4002.000000
-        y = 1456.099976
+        x = 3986
+        y = 1464.000000
     }
 
     building_position = {
         fort = {
-            x = 4026.000000
-            y = 1483.000000
+			x = 3986
+			y = 1464.000000
         }
 
     }
@@ -127878,4 +127879,90 @@
         y = 1406
     }
 	
+}
+
+# Tyup
+3344 = {
+    text_position = {
+        x = 4012
+        y = 1467
+    }
+
+    text_scale = 3.799999
+    unit = {
+        x = 4012
+        y = 1467
+    }
+
+    city = {
+        x = 4012
+        y = 1467
+    }
+
+    factory = {
+        x = 4012
+        y = 1467
+    }
+
+    building_construction = {
+        x = 4012
+        y = 1467
+    }
+
+    military_construction = {
+        x = 4012
+        y = 1467
+    }
+
+    building_position = {
+        fort = {
+        x = 4012
+        y = 1467
+        }
+
+    }
+
+}
+
+# Kolka
+3337 = {
+    text_position = {
+        x = 3152
+        y = 1788
+    }
+
+    text_scale = 2.5
+    unit = {
+        x = 3158
+        y = 1788
+    }
+
+    city = {
+        x = 3147
+        y = 1784
+    }
+
+    factory = {
+        x = 3152
+        y = 1788
+    }
+
+    building_construction = {
+        x = 3152
+        y = 1788
+    }
+
+    military_construction = {
+        x = 3152
+        y = 1788
+    }
+
+    building_position = {
+        fort = {
+        x = 3148
+        y = 1787
+        }
+
+    }
+
 }
