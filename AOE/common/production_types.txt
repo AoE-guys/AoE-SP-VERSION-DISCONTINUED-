@@ -214,7 +214,7 @@ dye2_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = dye
-	value = 0.22
+	value = 0.3
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -10.00
@@ -960,7 +960,7 @@ fabric_factory = {
 	template = factory_template
 	input_goods = {     
 		cotton = 18		# 36
-		dye = 2			# 24 total input+maint = 70
+		dye = 1			# 24 total input+maint = 70
 	}
 	output_goods = fabric
 	value = 45			#81
@@ -970,8 +970,12 @@ fabric_factory = {
 	}
 	bonus = {
 		trigger = {
-			has_building = dye_factory 
+			has_building = dye_factory
 			}
+		value = 0.125
+	}
+	bonus = {
+		trigger = { has_building = dye2_factory }
 		value = 0.125
 	}
 }
@@ -980,15 +984,18 @@ wool_fabric_factory = {
 	template = factory_template
 	input_goods = {     
 		wool = 30		# 31,25
-		dye = 2			# 20,6 total input+maint = 61,85
+		dye = 1			# 20,6 total input+maint = 61,85
 	}
 	output_goods = fabric
 	value = 39			#70
 	bonus = {
 		trigger = {
 			has_building = dye_factory
-
 			}
+		value = 0.125
+	}
+	bonus = {
+		trigger = { has_building = dye2_factory }
 		value = 0.125
 	}
 	bonus = {
@@ -1722,7 +1729,7 @@ artisan_lumber = {
 artisan_fabric = {       
 	input_goods = {     
 		cotton = 23	#46
-		dye = 3	#24
+		dye = 1	#24
 	}
 	output_goods = fabric
 	value = 45			#81
@@ -1790,7 +1797,7 @@ artisan_fertilizer = {
 artisan_fabric_wool = {
 	input_goods = {     
 		wool = 25 #46
-		dye = 2	#24
+		dye = 1	#24
 	}
 	output_goods = fabric
 	value = 40			#81
