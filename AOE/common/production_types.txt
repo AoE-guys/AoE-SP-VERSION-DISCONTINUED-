@@ -214,7 +214,7 @@ dye2_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = dye
-	value = 0.3
+	value = 1.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -10.00
@@ -661,7 +661,7 @@ luxury_clothes_factory = {
 	template = factory_template
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		#dye = 0.83
+		dye = 0.5
 		silk = 3.4		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes
@@ -1444,7 +1444,7 @@ artisan_steamer = {
 artisan_luxury_clothes = {       
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		#dye = 0.83
+		dye = 0.4
 		silk = 3.4		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes 
