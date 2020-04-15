@@ -565,9 +565,13 @@ political_reforms = {
 					primary_culture = anglo_canadian
 					primary_culture = french_canadian
 				}
+				NOT = { has_country_flag = unciv }
 			}
 		}
 		open_borders = {
+			allow = {
+				NOT = { has_country_flag = unciv }
+			}
 		}
 	}
 	
