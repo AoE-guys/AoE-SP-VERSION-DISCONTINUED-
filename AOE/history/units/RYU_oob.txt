@@ -1,13 +1,35 @@
 QNG = { value = 125 }
 JAP = { value = 125 }
+POR = { value = 50 }
+SPA = { value = 30 }
+NET = { value = 30 }
 
 army = {
 	name = "Royal Army of Ryukyu"
 	location = 1678
 	regiment = {
-		name= "Ryukyuan Warriors"
-		type = irregular
+		name= "King's Guard"
+		type = infantry
 		home = 1678	
 	}
 }
 
+navy = {
+	name = "Royal Navy of Ryukyu"
+	location = 1678
+	ship = {
+		name= "Kaisen"
+		type = frigate
+	}
+
+	ship = {
+		name= "Sekkosen"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Shinkosen"
+		type = clipper_transport
+	}
+
+}
