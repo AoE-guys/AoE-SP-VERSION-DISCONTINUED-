@@ -91,6 +91,115 @@ country_event = {
 			who = QNG
 			value = -200
 		}
+		QNG = { country_event = 6082 }
 		prestige = 15
+	}
+}
+country_event = {
+	id = 6081
+	title = "Dzungars in Tibet"
+	desc = "EVTDESC6081"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	
+	trigger = {
+		tag = QNG
+		year = 1718
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "We should start working with the Dalai Lama to curb Dzungar expansionism"
+		relation = {
+			who = DZN
+			value = -200
+		}
+		relation = {
+			who = TIB
+			value = 200
+		}
+	}
+}
+country_event = {
+	id = 6080
+	title = "Intervention in Tibet"
+	desc = "EVTDESC6080"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	
+	trigger = {
+		tag = QNG
+		year = 1720
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "It's time to kick them out of Tibet"
+		relation = {
+			who = DZN
+			value = -200
+		DZN = { country_event = 6079 }
+		}
+	}
+}
+country_event = {
+	id = 6079
+	title = "Chinese Threats"
+	desc = "EVTDESC6079"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	
+	trigger = {
+		tag = DZN
+		year = 1721
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Tibet is Ours!"
+		relation = {
+			who = QNG
+			value = -200
+		}
+			1588 = { secede_province = TIB }
+			1587 = { secede_province = TIB }
+			1590 = { secede_province = TIB }
+			1593 = { secede_province = TIB }
+		relation = {
+			who = TIB
+			value = -200
+		}
+		QNG = {
+			create_vassal = TIB
+		}
+		war = {
+			target = TIB
+			attacker_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = acquire_all_cores }
+			call_ally = no
+		}
+		prestige = 15
+	}
+	
+	option = {
+		name = "Fine."
+		relation = {
+			who = QNG
+			value = 100
+		}
+		DZN = { any_owned = { limit = { is_core = TIB } secede_province = TIB } }
+		QNG = {
+			create_vassal = TIB
+		}
+		prestige = -15
 	}
 }
