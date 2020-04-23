@@ -42,7 +42,7 @@ country_event = {
 			1190 = { secede_province = DZN }
 		}
 		BUK = { any_owned = { limit = { is_core = KOK } secede_province = KOK } }
-		BUK = { any_owned = { limit = { is_core = BDK } secede_province = BDK } }
+		BUK = { release_vassal = BDK }
 		relation = {
 			who = KOK
 			value = 200
@@ -133,6 +133,9 @@ country_event = {
 	trigger = {
 		tag = QNG
 		year = 1720
+		1587 = {
+			controlled_by = DZN
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -144,8 +147,8 @@ country_event = {
 		relation = {
 			who = DZN
 			value = -200
-		DZN = { country_event = 6079 }
 		}
+		DZN = { country_event = 6079 }
 	}
 }
 country_event = {
@@ -183,6 +186,7 @@ country_event = {
 		}
 		war = {
 			target = TIB
+			target = QNG
 			attacker_goal = { casus_belli = status_quo }
 			defender_goal = { casus_belli = acquire_all_cores }
 			call_ally = no
