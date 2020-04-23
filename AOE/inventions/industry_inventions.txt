@@ -687,7 +687,7 @@ fordism = {
 	}
 	effect = {
 		factory_goods_output = {
-			aeroplanes = 0.03
+			machine_parts = 0.02 
 		}
 	}
 }
@@ -1273,7 +1273,7 @@ artificial_fertilizers = {
 		rgo_goods_output = { cattle = 0.02 }
 		rgo_goods_output = { fruit = 0.02 }
 		
-		factory_goods_output = { fertilizer = 0.05 }
+		factory_goods_output = { pesticide = 0.05 }
 	}
 }
 nitroglycerin = {
@@ -1483,7 +1483,7 @@ bell_n_greys_telephones = {
 		}
 	}
 	effect = {
-		factory_goods_output = { electric_gear = 0.03 } 
+		factory_goods_output = { electric_gear = 0.03 }
 	}
 }
 electrical_lighting = {
@@ -1523,9 +1523,7 @@ rayon = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			fabric = 0.05
-		} 
+		factory_goods_output = { fabric = 0.05 } 
 	}
 }
 
@@ -1543,9 +1541,7 @@ bakelite = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			glass  = 0.05
-		} 
+		factory_goods_output = { glass  = 0.05 } 
 	}
 }
 
@@ -1686,7 +1682,7 @@ carl_bosch = {
 	effect = {
 		factory_goods_output = { sulphur = 0.2 }
 		factory_goods_output = { oil = 0.2 }
-		factory_goods_output = { fertilizer = 0.2 }
+		factory_goods_output = { pesticide = 0.2 }
 		factory_goods_output = { fuel = 0.2 }
 	}
 }
