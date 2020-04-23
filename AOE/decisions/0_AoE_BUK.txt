@@ -20,6 +20,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			set_country_flag = reintegrated_moghulistan
 			prestige = 20
 			XIN = {
 				all_core = {
@@ -27,7 +28,6 @@ political_decisions = {
 			}
 			}
 			add_accepted_culture = uighur
-			set_country_flag = reintegrated_moghulistan
 		}
 		
 		ai_will_do = { factor = 1 }
