@@ -1807,8 +1807,7 @@ national_radio_networks = {
 			NOT = { invention = vacuum_tube }
 		}
 	}
-	effect = { 
-		activate_building = radio_factory 
+	effect = {
 		suppression_points_modifier = -0.05
 	}
 	core_pop_consciousness_modifier = 0.01

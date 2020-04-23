@@ -19,7 +19,6 @@ daimlers_automobile = {
 		}
 	}
 	effect = {
-		activate_building = automobile_factory 
 		factory_goods_output = {
 			machine_parts = 0.01 
 		}
@@ -687,9 +686,6 @@ fordism = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			automobiles = 0.03
-		}
 		factory_goods_output = {
 			aeroplanes = 0.03
 		}
@@ -1487,7 +1483,7 @@ bell_n_greys_telephones = {
 		}
 	}
 	effect = {
-		activate_building = telephone_factory 
+		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
 electrical_lighting = {
@@ -1570,8 +1566,6 @@ vacuum_tube = {
 		}			
 	}
 	effect = {
-		factory_goods_output = { radio = 0.03 } 
-		factory_goods_output = { telephones = 0.03 } 
 		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
@@ -1622,9 +1616,7 @@ telephone_switchboard = {
 		}			
 	}
 	effect = {
-		factory_goods_output = {
-			telephones = 0.03
-		} 
+		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
 

@@ -455,9 +455,7 @@ steamer_automatic_construction_plants = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			steamer_convoy = 0.20
-		}
+		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
 steamer_transports = {
@@ -513,7 +511,7 @@ steamer_shipyard_construction = {
 		}
 	}
 	effect = {
-		activate_building = steamer_shipyard
+		factory_goods_output = { electric_gear = 0.01 } 
 	}
 }
 
