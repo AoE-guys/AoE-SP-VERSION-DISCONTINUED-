@@ -14,9 +14,6 @@ post_napoleonic_thought = {
 	
 	ai_chance = {
 		factor = 2
-		modifier = {
-			factor = 2
-		}
 	}
 }
 
@@ -150,9 +147,6 @@ flintlock_rifles = {
 
 	ai_chance = {
 		factor = 2
-		modifier = {
-			factor = 2
-		}
 	}
 }
 muzzle_loaded_rifles = {
@@ -166,14 +160,6 @@ muzzle_loaded_rifles = {
 
 	ai_chance = {
 		factor = 4
-		modifier = {
-			factor = 6
-			rank = 16
-			year = 1720
-		}
-		modifier = {
-			factor = 2
-		}
 	}
 }
 breech_loaded_rifles = {
