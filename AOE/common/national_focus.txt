@@ -293,8 +293,6 @@ promotion_focus = {
 production_focus = {
 	automation_focus = {
 		aeroplanes = 50
-		barrels = 50
-		automobiles = 50
 		icon = 22
 		limit = { 
 			year = 1880 
@@ -307,8 +305,6 @@ production_focus = {
 	}
 
 	electrical_focus = {
-		radio = 50
-		telephones = 50
 		electric_gear = 50
 		icon = 23
 		limit = {
@@ -336,7 +332,6 @@ production_focus = {
 	}
 
 	shipping_focus = {
-		steamer_convoy = 50
 		clipper_convoy = 50
 		icon = 25
 		limit = { 
@@ -399,7 +394,7 @@ production_focus = {
 		ammunition = 40
 		canned_food = 40
 		explosives = 40
-		fertilizer = 40
+		pesticide = 40
 		icon = 29
 		limit = {
 		#	civilized = yes
