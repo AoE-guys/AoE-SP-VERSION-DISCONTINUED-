@@ -418,31 +418,30 @@ asia_balance_yeet = {
 			OR = {
 				month = 1
 				year = 1701
-				OR = {
-					AND = {
-						tag = QNG
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = BNG
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = MUG
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = KOR
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = MAH
-						NOT = { schools = unciv_tech_school }
-							MUG = {
-								is_greater_power = yes
-							}
-						}
-					}
+			}
+			OR = {
+				AND = {
+					tag = QNG
+					NOT = { schools = unciv_tech_school }
+				}
+				AND = {
+					tag = BNG
+					NOT = { schools = unciv_tech_school }
+				}
+				AND = {
+					tag = MUG
+					NOT = { schools = unciv_tech_school }
+				}
+				AND = {
+					tag = KOR
+					NOT = { schools = unciv_tech_school }
+				}
+				AND = {
+					tag = MAH
+					NOT = { schools = unciv_tech_school }
+					MUG = {
+						is_greater_power = yes
+					}	
 				}
 			}
 		}

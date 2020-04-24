@@ -1397,6 +1397,13 @@ country_event = {
 				remove_core = HRE
 			}
 		}
+		any_country = {
+			limit = {
+				has_country_flag = hre_member
+			}
+			clr_country_flag = hre_member
+		}
+		clr_country_flag = hre_emperor
 		set_global_flag = hre_dismantled
 	}
 }

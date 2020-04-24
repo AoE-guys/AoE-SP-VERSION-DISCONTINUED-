@@ -1,0 +1,22 @@
+political_decisions = {
+	test_hre = {
+		potential = {
+			tag = AUS
+			NOT = { has_country_flag = hre_tested }
+		}
+		allow = {
+			HRE = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 15
+			set_country_flag = hre_tested
+		}
+	}
+}

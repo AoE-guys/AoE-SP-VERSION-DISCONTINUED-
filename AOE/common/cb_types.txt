@@ -1046,74 +1046,74 @@ civil_war = {
 }
 
 #Unification Annex
-unification_annex_casus_belli = {
-	sprite_index = 5
-	is_triggered_only = no
-	months = 12
-	crisis = no
-	
-	badboy_factor = 0
-	prestige_factor = 0
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	always = yes
-	
-	can_use = {
-		is_vassal = no
-		NOT = { is_our_vassal = THIS }
-		THIS = {
-			culture_has_union_tag = yes
-			nationalism_n_imperialism = 1
-			is_greater_power = yes
-			NOT = { has_country_modifier = neutrality }
-		}
-		OR = {
-			NOT = { is_culture_group = THIS }
-			AND = {
-				war_with = THIS
-				is_culture_group = THIS
-				part_of_sphere = no
-				THIS = { NOT = { tag = AUS } }
-				THIS = { NOT = { tag = KUK } }
-				THIS = { NOT = { tag = DNB } }
-				THIS = { NOT = { tag = UBD } }
-			}
-		}
-		NOT = { number_of_states = 2 }
-		any_owned_province = {
-			any_core = {
-				this_culture_union = this_union
-				is_cultural_union = yes
-			}
-		}
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
-		}
-	}
-	
-	po_annex = yes
-	
-	war_name = WAR_UNIFICATION_ANNEX_NAME
-
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.1
-		}
-	}
-}
+#unification_annex_casus_belli = {
+#	sprite_index = 5
+#	is_triggered_only = no
+#	months = 12
+#	crisis = no
+#	
+#	badboy_factor = 0
+#	prestige_factor = 0
+#	peace_cost_factor = 1
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 48
+#	
+#	good_relation_prestige_factor = 1
+#	good_relation_infamy_factor = 1
+#	good_relation_militancy_factor = 1
+#	
+#	always = yes
+#	
+#	can_use = {
+#		is_vassal = no
+#		NOT = { is_our_vassal = THIS }
+#		THIS = {
+#			culture_has_union_tag = yes
+#			nationalism_n_imperialism = 1
+#			is_greater_power = yes
+#			NOT = { has_country_modifier = neutrality }
+#		}
+#		OR = {
+#			NOT = { is_culture_group = THIS }
+#			AND = {
+#				war_with = THIS
+#				is_culture_group = THIS
+#				part_of_sphere = no
+#				THIS = { NOT = { tag = AUS } }
+#				THIS = { NOT = { tag = KUK } }
+#				THIS = { NOT = { tag = DNB } }
+#				THIS = { NOT = { tag = UBD } }
+#			}
+#		}
+#		NOT = { number_of_states = 2 }
+#		any_owned_province = {
+#			any_core = {
+#				this_culture_union = this_union
+#				is_cultural_union = yes
+#			}
+#		}
+#		OR = {
+#			war_with = THIS
+#			THIS = { NOT = { has_country_modifier = punitive_effects } }
+#		}
+#	}
+#	
+#	po_annex = yes
+#	
+#	war_name = WAR_UNIFICATION_ANNEX_NAME
+#
+#	on_add = {
+#		move_issue_percentage = { 
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.1
+#		}
+#	}
+#}
 
 # Annex Core Country
 annex_core_country = {
@@ -1343,7 +1343,7 @@ dismantle_hre = {
 	good_relation_infamy_factor = 1
 	good_relation_militancy_factor = 1
 
-	always = no
+	always = yes
 
 	can_use = {
 		THIS = {
@@ -1357,6 +1357,7 @@ dismantle_hre = {
 		}
 		has_country_flag = hre_emperor
 		NOT = { has_global_flag = hre_dismantled }
+		NOT = { HRE = { exists = yes } }
 	}
 	
 	tws_battle_factor = 2.0 # battle score twice that of oppenent

@@ -1,7 +1,6 @@
 ##################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
-
 french_liberal_school = {
 	max_tariff = -0.25
 	administrative_efficiency_modifier = 0.2
@@ -5037,6 +5036,7 @@ frederick_grosse = {
 	diplomatic_points_modifier = 0.25
 	influence_modifier = 0.2
 	bad_badboy = -0.05
+	global_pop_militancy_modifier = -0.02
 	ruling_party_support = 0.35
 	prestige = 0.06
 	icon = 13
@@ -5934,4 +5934,27 @@ illegitimate_heir = {
 	admin_efficiency = -0.05
 	war_exhaustion = 0.005
 	diplomatic_points_modifier = -0.05
+}
+####Hre reforms###
+hre_mendling = {
+	bad_badboy = 0.01
+	icon = 6
+}
+reichsreform = {
+	education_efficiency_modifier = 0.05
+	icon = 11
+}
+reichsregiment = {
+	mobilisation_size = 0.1
+	icon = 17
+}
+the_hofgericht = {
+	diplomatic_points_modifier = 0.1
+	bad_badboy = -0.02
+	icon = 5
+}
+erbkaisertum = {
+	diplomatic_points_modifier = 0.05
+	prestige = 0.0002
+	icon = 5
 }

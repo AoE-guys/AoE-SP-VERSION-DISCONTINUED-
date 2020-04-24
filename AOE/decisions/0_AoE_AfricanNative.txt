@@ -3,6 +3,7 @@ political_decisions = {
 		picture = unciv_army
 		potential = {
 			tag = DAH
+			NOT = { has_country_flag = female_guard }
 		}
 		allow = {
 			muzzle_loaded_rifles = 1
@@ -16,6 +17,7 @@ political_decisions = {
 				}
 				reduce_pop = 5
 			}
+			set_country_flag = female_guard
 		}
 		
 		ai_will_do = { factor = 1 }

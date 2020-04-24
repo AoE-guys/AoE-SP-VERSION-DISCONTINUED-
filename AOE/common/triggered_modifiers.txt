@@ -1027,13 +1027,17 @@ help_ai_sweden_and_austria = {
 				year = 1756
 				NOT = { year = 1789 }
 			}
+			AND = {
+				owns = 549
+				has_country_modifier = frederick_grosse
+			}
 		}
 		ai = yes
 	}
 	icon = 10
 	tax_efficiency = 0.15
 	administrative_efficiency_modifier = 0.05
-	supply_consumption = -0.1
+	supply_consumption = -0.15
 	education_efficiency_modifier = 0.2
 	mobilisation_size = 0.35
 	war_exhaustion = -0.5
@@ -1047,7 +1051,7 @@ german_minors_ai_help = {
 			primary_culture = south_german
 		}
 		NOT = { owns = 619 }
-		NOT = { year = 1740 }
+		NOT = { year = 1750 }
 		ai = yes
 	}
 	icon = 10
@@ -1057,6 +1061,31 @@ german_minors_ai_help = {
 	war_exhaustion = -0.5
 	mobilisation_size = 0.4
 	global_pop_militancy_modifier = -0.3
+}
+hre_member = {
+
+	trigger = {
+		has_country_flag = hre_member
+	}
+	icon = 10
+	supply_consumption = -0.15
+	influence_modifier = 0.05
+	war_exhaustion = -0.02
+	mobilisation_size = 0.05
+	global_pop_militancy_modifier = -0.003
+}
+hre_emperor = {
+
+	trigger = {
+		has_country_flag = hre_emperor
+	}
+	icon = 10
+	supply_consumption = -0.15
+	influence_modifier = 0.05
+	war_exhaustion = -0.02
+	mobilisation_size = 0.05
+	global_pop_militancy_modifier = -0.003
+	prestige = 0.002
 }
 colonial_militia = {
 
@@ -1076,6 +1105,7 @@ colonial_militia = {
 }
 nerf_exotic_mob = {
 	trigger = {
+		OR = { month = 1  year = 1701 }
 		OR = {
 			capital_scope = {
 				OR = {
@@ -1117,7 +1147,7 @@ nerf_exotic_mob = {
 	icon = 10
 	supply_consumption = -0.15
 	influence_modifier = -0.05
-	mobilisation_size = -0.75
+	mobilisation_size = -0.95
 }
 help_ai_usa = {
 	trigger = {
@@ -1445,42 +1475,6 @@ south_american_ai = {
 	supply_consumption = -0.2
 	mobilisation_size = 0.02
 	icon = 19
-}
-asia_balance = {
-	trigger = {
-		OR = {
-			month = 1
-			year = 1701
-			OR = {
-				AND = {
-					tag = QNG
-					schools = unciv_tech_school
-				}
-				AND = {
-					tag = BNG
-					schools = unciv_tech_school
-				}
-				AND = {
-					tag = MUG
-					schools = unciv_tech_school
-				}
-				AND = {
-					tag = KOR
-					schools = unciv_tech_school
-				}
-				AND = {
-					tag = MAH
-					schools = unciv_tech_school
-					NOT = {
-						MUG = {
-							is_greater_power = yes
-						}
-					}
-				}
-			}
-		}
-	}
-	farm_rgo_size = 1.5
 }
 
 south_american_ai_ii = {
