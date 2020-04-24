@@ -115,7 +115,7 @@ political_decisions = {
 			OR = {
 				AND = {
 					ai = no
-					steamer_convoy = 24
+					clipper_convoy = 24
 					artillery = 10
 					canned_food = 10
 				}
@@ -138,7 +138,7 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { ai = no } }
 				owner = {
-					steamer_convoy = -24
+					clipper_convoy = -24
 					artillery = -10
 					canned_food = -10
 				}

@@ -21,7 +21,6 @@ country_event = {
 		is_greater_power = yes
 		colonial_nation = yes
 		iron_steamers = 1
-		steamer_convoy = 1
 		clipper_convoy = 1
 	}
 	
@@ -53,7 +52,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA23300"
 		clipper_convoy = -1
-		steamer_convoy = -1
 		set_country_flag = i_am_chasing_nemo
 		set_global_flag = mobilis_in_mobile
 	}
@@ -76,7 +74,6 @@ country_event = {
 	trigger = {
 		has_global_flag = mobilis_in_mobile
 		has_global_flag = easter_eggs_enabled
-		steamer_convoy = 1
 		clipper_convoy = 1
 		NOT = {
 			has_country_flag = i_do_not_want_to_chase_nemo
@@ -107,7 +104,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA23300"
 		clipper_convoy = -1
-		steamer_convoy = -1
 		set_country_flag = i_am_chasing_nemo_to
 	}
 	

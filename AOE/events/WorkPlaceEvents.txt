@@ -199,7 +199,7 @@ province_event = {
 	desc = "EVTDESC12040"
 	
 	trigger = {
-		state_scope = { has_building = fertilizer_factory }
+		state_scope = { has_building = pesticide_factory }
 		NOT = { unemployment_by_type = { type = craftsmen value = 0.3 } }
 		state_scope = { has_pop_type = capitalists }
 		NOT = { has_global_flag = workplace_events_disabled }
@@ -226,7 +226,7 @@ province_event = {
 	option = {
 		name = "EVTOPTA12040"
 		any_pop = { consciousness = 0.5 }
-		owner = { fertilizer = 10 }
+		owner = { pesticide = 10 }
 	}
 	
 	option = {
@@ -714,7 +714,7 @@ province_event = {
 		
 	trigger = {
 		state_scope = { has_building = steamer_shipyard }
-		owner = { steamer_convoy = 5 }
+		owner = { clipper_convoy = 5 }
 		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
@@ -740,7 +740,7 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA12150"
-		owner = { steamer_convoy = -5 }
+		owner = { clipper_convoy = -5 }
 	}
 	option = {
 		name = "EVTOPTB12150"
@@ -1087,10 +1087,10 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			radio = 5
+			sugar = 5000
 			war = yes
 		}
-		state_scope = { has_building = radio_factory }
+		state_scope = { has_building = sugar_factory }
 		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
@@ -1099,7 +1099,7 @@ province_event = {
 		modifier = {
 			factor = 0.8
 			owner = {
-				radio = 5
+				sugar = 5000
 			}
 		}
 		modifier = {
@@ -1126,7 +1126,6 @@ province_event = {
 	option = {
 		name = "EVTOPTB12230"
 		state_scope = { any_pop = { militancy = -1 consciousness = -1 } }
-		owner = { radio = -5 }
 	}
 }
 
