@@ -757,21 +757,10 @@ BUILDING_ANOTHER;Another building construction is in progress;La construction d'
 BUILDING_CONSTRUCTION_TOOLTIP;Currently building §Y$NAME$§W, which will be finished earliest §Y$DATE$§W.;§Y$NAME$§W actuellement en construction.\nLes travaux seront terminés au plus tôt le §Y$DATE$§W.;Momentan ist §Y$NAME$§W im Bau, das frühestens am §Y$DATE$§W fertiggestellt wird.;;Se est?construyendo un edificio (§Y$NAME$§W), que estar?terminado, como muy pronto, el §Y$DATE$§W.;;;;;;;;;x;;;;
 UNIT_CONSTRUCTION_TOOLTIP;Currently building §Y$NAME$§W, which will be finished earliest §Y$DATE$§W.;§Y$NAME$§W actuellement en construction.\nLes travaux seront terminés au plus tôt le §Y$DATE$§W.;Momentan ist §Y$NAME$§W im Bau, das frühestens am §Y$DATE$§W fertiggestellt wird.;;Se est?construyendo un edificio (§Y$NAME$§W), que estar?terminado, como muy pronto, el §Y$DATE$§W.;;;;;;;;;x;;;;
 aeroplane_factory;Aeroplane Factory;Usine d'avions;Flugzeugfabrik;;Fábrica de aeroplanos;;;;;;;;;x;;;;
-<<<<<<< HEAD
-=======
-barrel_factory;Tank Factory;Usine de blindés;Geschützrohrfabrik;;Fábrica de carros de combate;;;;;;;;;x;;;;
-automobile_factory;Automobile Factory;Usine d'automobiles;Automobilfabrik;;Fábrica de automóviles;;;;;;;;;x;;;;
-radio_factory;Radio Factory;Usine de radios;Radiofabrik;;Fábrica de radios;;;;;;;;;x;;;;
-telephone_factory;Telephone Factory;Usine de téléphones;Telefonfabrik;;Fábrica de teléfonos;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 electric_gear_factory;Electric Gear Factory;Usine de composants électriques;Elektroteilefabrik;;Fábrica de componentes eléctricos;;;;;;;;;x;;;;
 machine_parts_factory;Machine Parts Factory;Usine de pièces mécaniques;Maschinenteilefabrik;;Fábrica de piezas de maquinaria;;;;;;;;;x;;;;
 synthetic_oil_factory;Synthetic Oil Factory;Usine d'huile de synthèse;Syntheseölfabrik;;Fábrica de petróleo sintético;;;;;;;;;x;;;;
 fuel_refinery;Fuel Refinery;Raffinerie de carburant;Treibstoffraffinerie;;Refinería de petróleo;;;;;;;;;x;;;;
-<<<<<<< HEAD
-=======
-steamer_shipyard;Steamer Shipyard;Chantier ?bateaux ?vapeur;Dampferwerft;;Astillero de vapores;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 luxury_clothes_factory;Luxury Clothes Factory;Atelier de vêtements de luxe;Luxuskleiderfabrik;;Fábrica de ropa de lujo;;;;;;;;;x;;;;
 luxury_furniture_factory;Luxury Furniture Factory;Fabrique de meubles de luxe;Luxusmöbelfabrik;;Fábrica de muebles de lujo;;;;;;;;;x;;;;
 steel_factory;Steel Factory;Aciérie;Stahlfabrik;;Fábrica de acero;;;;;;;;;x;;;;
@@ -791,28 +780,13 @@ lumber_mill;Lumber Mill;Scierie;Sägemühle;;Aserradero;;;;;;;;;x;;;;
 fabric_factory;Fabric Factory;Fabrique de tissus;Stofffabrik;;Fábrica de telas;;;;;;;;;x;;;;
 cement_factory;Cement Factory;Cimenterie;Betonfabrik;;Fábrica de cemento;;;;;;;;;x;;;;
 glass_factory;Glass Factory;Verrerie;Glashütte;;Fábrica de vidrio;;;;;;;;;x;;;;
-<<<<<<< HEAD
 naval_base;Naval Base;Base navale;Marinestützpunkt;;Base naval;;;;;;;;;x;;;;
 railroad;Railroad;Chemin de fer;Eisenbahn;;Ferrocarril;;;;;;;;;x;;;;
 aeroplane_factory_desc;Machine parts, electric gear and rubber are needed to produce aeroplanes.;Des pièces mécaniques, des composants électriques et du caoutchouc sont nécessaires pour produire des avions.;Zum Flugzeugbau sind Maschinenteile, Elektroteile und Gummi erforderlich.;;Para hacer aeroplanos se necesitan componentes eléctricos, caucho y piezas de maquinaria.;;;;;;x;;;;;;;
-=======
-fertilizer_factory;Pesticide Factory;Usine d’engrais;Düngerfabrik;;Fábrica de fertilizantes;;;;;;;;;x;;;;
-naval_base;Naval Base;Base navale;Marinestützpunkt;;Base naval;;;;;;;;;x;;;;
-railroad;Railroad;Chemin de fer;Eisenbahn;;Ferrocarril;;;;;;;;;x;;;;
-aeroplane_factory_desc;Machine parts, electric gear and rubber are needed to produce aeroplanes.;Des pièces mécaniques, des composants électriques et du caoutchouc sont nécessaires pour produire des avions.;Zum Flugzeugbau sind Maschinenteile, Elektroteile und Gummi erforderlich.;;Para hacer aeroplanos se necesitan componentes eléctricos, caucho y piezas de maquinaria.;;;;;;x;;;;;;;
-barrel_factory_desc;Tanks were little more than artillery mounted on a moving chassis. Therefore, automobiles and artillery are required to produce tanks.;Les chars n'étaient guère plus que des pièces d'artillerie montées sur un châssis mobile. Par conséquent, des automobiles et des pièces d'artillerie sont nécessaires pour produire des chars.;Panzer waren anfänglich kaum mehr als auf bewegliche Untersätze montierte Artillerie. Daher sind Automobile und Artillerie zur Panzerproduktion erforderlich.;;Los tanques eran poco más que artillería montada sobre un chasis móvil. Por tanto, son necesarios automóviles y artillería para producir tanques.;;;;;;x;;;;;;;
-automobile_factory_desc;Machine parts, electric gear and rubber are needed to produce automobiles.;Des pièces mécaniques, des composants électriques et du caoutchouc sont nécessaires pour produire des automobiles.;Zur Automobilproduktion sind Maschinenteile, Elektroteile und Gummi erforderlich.;;Para hacer coches se necesitan componentes eléctricos, caucho y piezas de maquinaria.;;;;;;x;;;;;;;
-radio_factory_desc;Radios were one of the first mass consumer goods of the 20th century. Glass and electric gears are required for this.;Les radios furent parmi les premiers biens de consommation de masse du XXe siècle. Du verre et des composants électriques sont nécessaires pour les produire.;Radiogeräte gehörten zu den ersten Massengebrauchsgütern des zwanzigstens Jahrhunderts. Für diese Geräte werden Glas und Elektroteile benötigt.;;Las radios fueron uno de los primeros bienes de consumo masivo del siglo XX. Requiere vidrio y equipos eléctricos.;;;;;;x;;;;;;;
-telephone_factory_desc;The telephone is a major breakthrough in communications technology. Glass and electric gear is needed in this factory.;Le téléphone est une invention déterminante dans le secteur des communications. Du verre et des composants électriques sont nécessaires pour sa production.;Das Telefon ist ein wichtiger Durchbruch in der Kommunikationstechnologie. Glas und Elektroteile werden in dieser Fabrik gebraucht.;;El teléfono es un gran adelanto en la tecnología de las comunicaciones. Esta fábrica requiere vidrio y componentes eléctricos.;;;;;;x;;;;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 electric_gear_factory_desc;Using rubber, coal and iron, electric gear is produced. Electric gear is needed for a variety of things, among them automobiles and aeroplanes.;Les composants électriques sont produits ?l'aide de caoutchouc, de charbon et de fer. Les composants électriques sont nécessaires dans différents secteurs, notamment pour la production d'automobiles et d'avions.;Elektroteile werden mit Gummi, Kohle und Eisen produziert. Elektroteile sind wichtig für eine Reihe von Produkten, unter anderem für Automobile und Flugzeuge.;;Los componentes eléctricos se producen mediante caucho, hierro y carbón. Estos componentes se necesitan para muchas cosas, entre ellas, automóviles y aeroplanos.;;;;;;x;;;;;;;
 machine_parts_factory_desc;Machine parts are very important tools for every industrial plant. Steel and Coal are required to produce them.;Les pièces mécaniques sont indispensables ?toutes les usines. De l'acier et du charbon sont nécessaires pour les produire.;Maschinenteile sind sehr wichtig für jede Fabrik. Stahl und Kohle sind für ihre Produktion erforderlich.;;Las piezas de maquinaria son elementos muy importantes de toda planta industrial. Hay que disponer de acero y carbón para producirlas.;;;;;;x;;;;;;;
 synthetic_oil_factory_desc;Using coal, the synthetic oil factory produces oil out of that coal. Vital for nations that do not have ready access to oil.;L'usine d'huile de synthèse produit de l'huile ?partir de charbon. Cette huile de synthèse est vitale pour les nations qui n'ont pas accès au pétrole.;Die Syntheseölfabrik produziert Öl aus Kohle. Unerlässlich für Nationen, die keinen Zugang zu Ölvorkommen haben.;;La fábrica de petróleo sintético utiliza carbón para producir este recurso. Es vital para aquellos países que no tienen acceso al petróleo.;;;;;;x;;;;;;;
 fuel_refinery_desc;The fuel factory processes oil into fuel for automobiles.;La raffinerie transforme le pétrole en carburant pour les automobiles.;Die Treibstoffraffinerie verarbeitet Öl zu Treibstoffen für Automobile.;;La refinería procesa el crudo y lo convierte en combustible para vehículos.;;;;;;x;;;;;;;
-<<<<<<< HEAD
-=======
-steamer_shipyard_desc;Steamers are a huge improvement over clippers because they are independent from wind and can also be built bigger and sturdier. Steel and coal are the prerequisites for steamers.;Les bateaux ?vapeur (steamers), constituent un progrès majeur par rapport aux bateaux ?voile (clippers), car ils ne dépendent pas du vent. De plus, ils peuvent être plus grands et plus robustes. L'acier et le charbon sont indispensables aux bateaux ?vapeur.;Dampfer stellen eine gewaltige Verbesserung gegenüber den Klippern dar, da sie windunabhängig und größer sind und stabiler gebaut werden können. Für den Dampferbau sind Stahl und Kohle erforderlich.;;Los vapores representan un gran avance sobre los clíperes porque no necesitan del viento y se pueden construir más grandes y recios. Acero y carbón son los prerrequisitos de los vapores.;;;;;;x;;;;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 luxury_clothes_factory_desc;In this factory, regular clothes are reworked using silk to produce luxury clothes for the rich strata’s of the populace.;Dans cette usine, les vêtements ordinaires sont retraités avec de la soie afin de produire des vêtements de soie pour les classes supérieures de la population.;In dieser Fabrik werden normale Kleidungsstücke unter Verwendung von Seide zu Kleidung für die reichen Bevölkerungsschichten umgearbeitet.;;En estas fábricas se transforman ropas normales usando seda para producir vestidos de lujo para las clases altas.;;;;;;x;;;;;;;
 luxury_furniture_factory_desc;Here, furniture is transformed into a luxury good using tropical wood. The resulting luxury furniture is used by the rich strata’s of the population for their homes.;Les meubles sont ici transformés en produits de luxe grâce ?du bois exotique. Le mobilier de luxe qui en résulte est achet?par les classes supérieures de la population.;Hier werden Möbel mit Tropenhölzern in Luxusgüter verwandelt. Die fertigen Tropenmöbel werden von den reichen Bevölkerungsschichten für ihre Häuser gekauft.;;Aqu? los muebles se transforman en bienes de lujo mediante madera tropical. Las clases altas de la población utilizan en sus casas el lujoso mobiliario resultante.;;;;;;x;;;;;;;
 steel_factory_desc;Here, Iron and Coal are used to produce steel. Steel is used to produce weapons, railways, and a wide range of other buildings and items.;Du fer et du charbon sont ici utilisés pour produire de l'acier. L'acier permet de fabriquer des armes, des voies ferrées ainsi qu'un large éventail de bâtiments et autres éléments.;Hier werden Eisen und Kohle zur Stahlproduktion eingesetzt. Stahl wird bei der Produktion Bau von Waffen, Eisenbahnschienen und einer breiten Palette anderer Gebäude und Gegenstände eingesetzt.;;Aqu?se produce acero utilizando hierro y carbón. El acero se utiliza para fabricar armas, ferrocarriles y un gran abanico de edificios y objetos.;;;;;;x;;;;;;;
@@ -832,10 +806,6 @@ lumber_mill_desc;In a lumber mill, timber is processed into lumber. Lumber can t
 fabric_factory_desc;Cotton is processed into fabric here. Fabric is a tightly woven textile which is, among other things, used to produce sails for ships as well as clothing.;Le coton est ici transform?en tissu qui sert notamment ?fabriquer les voiles des navires ainsi que des vêtements.;Baumwolle wird hier zu Stoffen verarbeitet. Stoffe sind dicht gewebte Textilien und werden unter anderem für Segel und Kleidung gebraucht.;;Aqu?se produce tela utilizando algodón. La tela es un paño compactamente tejido que se usa, entre otras cosas, para producir velas para barcos, además de ropa.;;;;;;x;;;;;;;
 cement_factory_desc;Cement is a building materiel used to build sturdy objects like fortresses or bridges. Coal is required to produce cement.;Le ciment est utilis?pour construire des édifices robustes comme les forteresses ou les ponts. Du charbon est nécessaire pour produire du ciment.;Beton ist ein Baumaterial für solide Objekte wie Festungen oder Brücken. Zur Betonproduktion ist Kohle notwendig.;;El cemento es el material de construcción que se utiliza para erigir obras resistentes, como fortalezas o puentes. El carbón es necesario para producir cemento.;;;;;;x;;;;;;;
 glass_factory_desc;This factory requires coal to produce glass. Glass is used mainly for mirrors and windows.;Du charbon est nécessaire pour produire du verre. Le verre est principalement utilis?pour produire des miroirs et des fenêtres.;Diese Fabrik braucht Kohle zur Glasproduktion. Glas wird hauptsächlich für Spiegeln und Fenstern verwendet.;;Esta fábrica necesita carbón para producir vidrio. Éste se utiliza básicamente para ventanas y espejos.;;;;;;x;;;;;;;
-<<<<<<< HEAD
-=======
-fertilizer_factory_desc;In this factory, sulphur is processed into pesticide. These pesticides are used to increase the productivity of farms.;Dans cette usine, le soufre est transform?en engrais. Ce dernier permet d'améliorer la productivit?des fermes.;In dieser Fabrik wird Schwefel zu Dünger verarbeitet. Diese Dünger werden auf Farmen zur Produktivitätserhöhung eingesetzt.;;En esta fábrica se procesa azufre para convertirlo en fertilizantes. Éstos se utilizan para aumentar la productividad de las granjas.;;;;;;x;;;;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 mild_climate;Mild Climate;Climat doux;Mildes Klima;;Clima suave;;;;;;;;;x;;;;
 temperate_climate;Temperate Climate;Climat tempér?Gemäßigtes Klima;;Clima templado;;;;;;;;;x;;;;
 harsh_climate;Harsh Climate;Climat rude;Raues Klima;;Clima duro;;;;;;;;;x;;;;
@@ -6447,10 +6417,6 @@ military_goods;Military Goods;Equipements militaires;Militärgüter;;Productos mil
 ammunition;Ammunition;Balles/Obus;Munition;;Munición;;;;;;;;;x;;;;
 small_arms;Small Arms;Armes de poing/d'épaules;Handfeuerwaffen;;Armas ligeras;;;;;;;;;x;;;;
 canned_food;Canned Food;Nourriture en boîte;Konserven;;Conservas;;;;;;;;;x;;;;
-<<<<<<< HEAD
-=======
-barrels;Tanks;Blindés;Geschützrohre;;Carros de combate;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 raw_material_goods;Raw Material Goods;Matières premières;Rohmaterialen;;Materias primas;;;;;;;;;x;;;;
 cotton;Cotton;Coton;Baumwolle;;Algodón;;;;;;;;;x;;;;
 dye;Dye;Colorants (teintures/pigments);Farbstoffe;;Tinte;;;;;;;;;x;;;;
@@ -6470,15 +6436,8 @@ cement;Cement;Ciment;Beton;;Cemento;;;;;;;;;x;;;;
 machine_parts;Machine Parts;Pièces mécaniques;Maschinenteile;;Piezas de maquinaria;;;;;;;;;x;;;;
 glass;Glass;Verre;Glas;;Vidrio;;;;;;;;;x;;;;
 fuel;Fuel;Carburant;Treibstoff;;Combustible;;;;;;;;;x;;;;
-<<<<<<< HEAD
 explosives;Explosives;Explosifs;Sprengstoffe;;Explosivos;;;;;;;;;x;;;;
 clipper_convoy;Clipper Convoys;Convoi de voiliers marchands;Klipper-Konvoi;;Convoy de clíperes;;;;;;;;;x;;;;
-=======
-fertilizer;Pesticide;Engrais;Dünger;;Fertilizante;;;;;;;;;x;;;;
-explosives;Explosives;Explosifs;Sprengstoffe;;Explosivos;;;;;;;;;x;;;;
-clipper_convoy;Clipper Convoys;Convoi de voiliers marchands;Klipper-Konvoi;;Convoy de clíperes;;;;;;;;;x;;;;
-steamer_convoy;Steamer Convoys;Convoi de bateaux ?vapeur;Dampfer-Konvoi;;Convoy de vapores;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 electric_gear;Electric Gear;Composants électriques;Elektroteile;;Componentes eléctricos;;;;;;;;;x;;;;
 fabric;Fabric;Tissu;Stoffe;;Telas;;;;;;;;;x;;;;
 lumber;Lumber;Bois de scierie;Schnittholz;;Tablones;;;;;;;;;x;;;;
@@ -6492,23 +6451,13 @@ tobacco;Tobacco;Tabac;Tabak;;Tabaco;;;;;;;;;x;;;;
 tea;Tea;Th?Tee;;T?;;;;;;;;x;;;;
 coffee;Coffee;Caf?Kaffee;;Caf?;;;;;;;;x;;;;
 opium;Opium;Opium;Opium;;Opio;;;;;;;;;x;;;;
-<<<<<<< HEAD
 aeroplanes;Aeroplanes;Avions;Flugzeuge;;Aeroplanos;;;;;;;;;x;;;;
-=======
-automobiles;Automobiles;Automobiles;Automobile;;Automóviles;;;;;;;;;x;;;;
-aeroplanes;Aeroplanes;Avions;Flugzeuge;;Aeroplanos;;;;;;;;;x;;;;
-telephones;Telephones;Téléphones;Telefone;;Teléfonos;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 wine;Wine;Vin;Wein;;Vino;;;;;;;;;x;;;;
 liquor;Liquor;Alcool;Schnaps;;Licor;;;;;;;;;x;;;;
 regular_clothes;Regular Clothes;Vêtements;Kleidung;;Ropa normal;;;;;;;;;x;;;;
 luxury_clothes;Luxury Clothes;Vêtements de luxe;Luxuskleidung;;Ropa de lujo;;;;;;;;;x;;;;
 furniture;Furniture;Meubles;Möbel;;Muebles;;;;;;;;;x;;;;
 luxury_furniture;Luxury Furniture;Meubles de luxe;Luxusmöbel;;Muebles de lujo;;;;;;;;;x;;;;
-<<<<<<< HEAD
-=======
-radio;Radio;Radio;Radio;;Radios;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 fascist;Fascist;Fasciste;Faschistisch;;Fascista;;;;;;;;;x;;;;
 reactionary;Absolutist;Réactionnaire;Reaktionär;;Reaccionaria;;;;;;;;;x;;;;
 conservative;Traditional;Conservateur;Konservativ;;Conservadora;;;;;;;;;x;;;;
@@ -14711,24 +14660,14 @@ fuel_refinery;Fuel Refinery;Raffinerie de pétrole;Treibstoffraffinerie;;Refinerí
 ammunition_factory;Ammunition Factory;Usine de munitions;Munitionsfabrik;;Fábrica de municiones;;;;;;;;;x;;;;
 small_arms_factory;Small arms Factory;Usine d'armes légères;Handfeuerwaffenfabrik;;Fábrica de armas ligeras;;;;;;;;;x;;;;
 artillery_factory;Artillery Factory;Usine d'artillerie;Artilleriefabrik;;Fábrica de piezas de artillería;;;;;;;;;x;;;;
-<<<<<<< HEAD
-=======
-barrel_factory;Barrel Factory;Usine de chars;Geschützrohrfabrik;;Fábrica de carros de combate;;;;;;;;;x;;;;
-fertilizer_factory;Pesticide Factory;Usine d’engrais;Düngerfabrik;;Fábrica de fertilizantes;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 explosives_factory;Explosives Factory;Usine d'explosifs;Sprengstofffabrik;;Fábrica de explosivos;;;;;;;;;x;;;;
 dye_factory;Dye Factory;Usine de teinture;Farbstofffabrik;;Fábrica de tintes;;;;;;;;;x;;;;
 clipper_shipyard;Clipper Shipyard;Chantier de construction de clippers;Klipperwerft;;Astillero de clíperes;;;;;;;;;x;;;;
-steamer_shipyard;Steamer Shipyard;Chantier de construction de steamers;Dampferwerft;;Astillero de vapores;;;;;;;;;x;;;;
+salt_factory;Salt Production;Salt Production;Salt Production;;Salt Production;;;;;;;;;x;;;;
 machine_parts_factory;Machine Parts Factory;Usine de pièces mécaniques;Maschinenteilefabrik;;Fábrica de piezas de maquinaria;;;;;;;;;x;;;;
-automobile_factory;Automobile Factory;Usine d'automobiles;Automobilfabrik;;Fábrica de automóviles;;;;;;;;;x;;;;
+fur_factory;Fur Harvesting;Fur Harvesting;Fur Harvesting;;Fur Harvesting;;;;;;;;;x;;;;
 aeroplane_factory;Aeroplane Factory;Usine d'avions;Flugzeugfabrik;;Fábrica de aeroplanos;;;;;;;;;x;;;;
 electric_gear_factory;Electric Gear Factory;Usine de composants électriques;Elektroteilefabrik;;Fábrica de componentes eléctricos;;;;;;;;;x;;;;
-<<<<<<< HEAD
-=======
-telephone_factory;Telephone Factory;Usine de téléphones;Telefonfabrik;;Fábrica de teléfonos;;;;;;;;;x;;;;
-radio_factory;Radio Factory;Usine de radios;Radiofabrik;;Fábrica de radios;;;;;;;;;x;;;;
->>>>>>> parent of 7dd0d3d1... wooo big economy update
 winery;Winery;Exploitation vinicole;Winzerei;;Bodega;;;;;;;;;x;;;;
 liquor_distillery;Liquor Distillery;Distillerie;Schnapsbrennerei;;Destilería de licor;;;;;;;;;x;;;;
 canned_food_factory;Canned Food Factory;Usine de conserves alimentaires;Konservenfabrik;;Fábrica de conservas;;;;;;;;;x;;;;
