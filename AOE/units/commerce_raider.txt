@@ -23,7 +23,6 @@ commerce_raider = {
 	#Building Costs
 	build_time = 360
 	build_cost = {
-		steamer_convoy = 10
 		artillery = 5
 		canned_food = 2
 		luxury_clothes = 0.5
@@ -34,7 +33,6 @@ commerce_raider = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		steamer_convoy = 0.2
 		artillery = 0.1
 		canned_food = 0.16
 	}

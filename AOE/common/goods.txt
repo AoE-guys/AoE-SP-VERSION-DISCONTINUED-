@@ -20,10 +20,9 @@ military_goods = {
 		cost = 16.00 
 		color = { 255 39 12 }
 	}
-	barrels = {	
-		cost = 98.00 
+	horses = {	
+		cost = 50.00 
 		color = { 55 41 9 }
-		available_from_start = no 
 	}
 	aeroplanes = { 
 		cost = 110.00 
@@ -115,7 +114,7 @@ industrial_goods = {
 		available_from_start = no
 		color = { 145 110 89 }
 	}
-	fertilizer = { 
+	pesticide = { 
 		cost = 10.0
 		color = { 133 101 35 }
 	}
@@ -129,10 +128,8 @@ industrial_goods = {
 		overseas_penalty = yes
 		color = { 21 65 30 }
 	}
-	steamer_convoy = { 
-		cost = 65.00
-		available_from_start = no
-		overseas_penalty = yes
+	salt = { 
+		cost = 5.00
 		color = { 76 18 0 }
 	}
 	electric_gear = { 
@@ -187,14 +184,12 @@ consumer_goods = {
 		cost = 3.2
 		color = { 114 162 47 }
 	}
-	automobiles = {	
-		cost = 70.00 
-		available_from_start = no
+	furs = {	
+		cost = 40.00
 		color = { 61 67 64 }
 	}
-	telephones = { 
-		cost = 16.00
-		available_from_start = no
+	spices = { 
+		cost = 8.00
 		color = { 123 112 54 }
 	}
 	wine = {
@@ -221,9 +216,8 @@ consumer_goods = {
 		cost = 59.00
 		color = { 255 140 184 }
 	}
-	radio = { 
-		cost = 16.00 
-		available_from_start = no
+	sugar = { 
+		cost = 6.00
 		color = { 129 63 6 }
 	}
 }

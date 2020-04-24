@@ -852,7 +852,7 @@ political_decisions = {
 		allow = {
 			OR = {
 				AND = {
-					steamer_convoy = 6
+					clipper_convoy = 6
 					check_variable = { which = owed_steamers value = 5 }
 				}
 				AND = {
@@ -909,12 +909,12 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						steamer_convoy = 5
+						clipper_convoy = 5
 						check_variable = { which = owed_steamers value = 5 }
 					}
 				}
 				owner = {
-					steamer_convoy = -5
+					clipper_convoy = -5
 					change_variable = { which = owed_steamers value = -5 }
 				}
 			}
@@ -922,12 +922,12 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						steamer_convoy = 5
+						clipper_convoy = 5
 						check_variable = { which = owed_steamers value = 5 }
 					}
 				}
 				owner = {
-					steamer_convoy = -5
+					clipper_convoy = -5
 					change_variable = { which = owed_steamers value = -5 }
 				}
 			}
@@ -935,12 +935,12 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						steamer_convoy = 5
+						clipper_convoy = 5
 						check_variable = { which = owed_steamers value = 5 }
 					}
 				}
 				owner = {
-					steamer_convoy = -5
+					clipper_convoy = -5
 					change_variable = { which = owed_steamers value = -5 }
 				}
 			}
@@ -1185,7 +1185,7 @@ political_decisions = {
 					ai = no
 					OR = {
 						AND = {
-							steamer_convoy = 2
+							clipper_convoy = 2
 							check_variable = { which = owed_steamers value = 1 }
 						}
 						AND = {
@@ -1278,7 +1278,7 @@ political_decisions = {
 					ai = no
 					OR = {
 						AND = {
-							steamer_convoy = 2
+							clipper_convoy = 2
 							check_variable = { which = owed_steamers value = 1 }
 						}
 						AND = {
@@ -1445,12 +1445,12 @@ political_decisions = {
 				random_owned = {
 					limit = {
 						owner = {
-							steamer_convoy = 4
+							clipper_convoy = 4
 							check_variable = { which = owed_steamers value = 4 }
 						}
 					}
 					owner = {
-						steamer_convoy = -4
+						clipper_convoy = -4
 						change_variable = { which = owed_steamers value = -4 }
 					}
 				}
@@ -1458,12 +1458,12 @@ political_decisions = {
 				random_owned = {
 					limit = {
 						owner = {
-							steamer_convoy = 4
+							clipper_convoy = 4
 							check_variable = { which = owed_steamers value = 4 }
 						}
 					}
 					owner = {
-						steamer_convoy = -4
+						clipper_convoy = -4
 						change_variable = { which = owed_steamers value = -4 }
 					}
 				}
@@ -1471,12 +1471,12 @@ political_decisions = {
 				random_owned = {
 					limit = {
 						owner = {
-							steamer_convoy = 2
+							clipper_convoy = 2
 							check_variable = { which = owed_steamers value = 1 }
 						}
 					}
 					owner = {
-						steamer_convoy = -2
+						clipper_convoy = -2
 						change_variable = { which = owed_steamers value = -2 }
 					}
 				}

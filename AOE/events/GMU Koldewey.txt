@@ -1266,7 +1266,7 @@ country_event = {
 
 	trigger = {
                 has_country_flag = pyramid_riddle 
-                fertilizer = 1
+                pesticide = 1
                 NOT = { has_country_flag = pyramid_riddle_solved_artefact_scene }
                 NOT = { has_country_flag = pyramid_riddle_solved_escape }
 	}
@@ -1279,7 +1279,7 @@ country_event = {
 		name = "Gently... carefully... I'll do it..."
                 set_country_flag = pyramid_riddle_solved_artefact_scene
                 prestige = 1
-                fertilizer = -1
+                pesticide = -1
 	}
 	option = {
 		name = "I know this scene - it never works out. Grab the damn artefact and RUN!"
@@ -1581,7 +1581,6 @@ country_event = {
                 has_country_flag = inca_expedition_preparations
                 ai = no
                 aeroplanes = 1
-	        automobiles = 1
                 canned_food = 2
                 fuel = 3
 		NOT = {
@@ -1597,7 +1596,6 @@ country_event = {
 
 	option = {
 		name = "We go by car."
-                automobiles = -1
                 fuel = -1
                 canned_food = -2
 		set_country_flag = inca_expedition_begins

@@ -36,10 +36,9 @@ everyday_needs = {
 	tobacco = 20 
 	coffee = 20
 	tea = 10
-	#radio = 4
-	#telephones = 5
-	#automobiles = 1
-	steamer_convoy = 1.5
+	salt = 5
+	sugar = 5
+	spices = 5
 }
 
 #Total cash needed: 3883 - Vanilla value: 3863
@@ -54,17 +53,13 @@ luxury_needs = {
 	cattle = 40
 	fish = 40
 	opium = 20
-	#oil = 10
-	#rubber = 10
-	#telephones = 20
-	#automobiles = 20
-	#aeroplanes = 5
-	#radio = 20
 	fuel = 30
 	ammunition = 1 
 	small_arms = 1 
 	clipper_convoy = 2
-	steamer_convoy = 3
+	furs = 6
+	horses = 4
+	luxury_clothes = 5
 }
 
 

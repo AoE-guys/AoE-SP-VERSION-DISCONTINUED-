@@ -1,0 +1,35 @@
+political_decisions = {
+
+	reintegrate_moghulistan = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = DZN
+			NOT = { war_with = XIN }
+			NOT = {
+				has_country_flag = reintegrated_moghulistan
+			}
+		}
+		
+		allow = {
+			1594 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = reintegrated_moghulistan
+			prestige = 20
+			XIN = {
+				all_core = {
+					add_core = DZN
+			}
+			}
+			add_accepted_culture = uighur
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

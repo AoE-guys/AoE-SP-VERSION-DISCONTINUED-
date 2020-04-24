@@ -19,7 +19,6 @@ daimlers_automobile = {
 		}
 	}
 	effect = {
-		activate_building = automobile_factory 
 		factory_goods_output = {
 			machine_parts = 0.01 
 		}
@@ -445,7 +444,6 @@ asia_balance_yeet = {
 				}
 			}
 		}
-	}
 	effect = {
 		farm_rgo_size = -3
 	}
@@ -687,10 +685,7 @@ fordism = {
 	}
 	effect = {
 		factory_goods_output = {
-			automobiles = 0.03
-		}
-		factory_goods_output = {
-			aeroplanes = 0.03
+			machine_parts = 0.02 
 		}
 	}
 }
@@ -1276,7 +1271,7 @@ artificial_fertilizers = {
 		rgo_goods_output = { cattle = 0.02 }
 		rgo_goods_output = { fruit = 0.02 }
 		
-		factory_goods_output = { fertilizer = 0.05 }
+		factory_goods_output = { pesticide = 0.05 }
 	}
 }
 nitroglycerin = {
@@ -1486,7 +1481,7 @@ bell_n_greys_telephones = {
 		}
 	}
 	effect = {
-		activate_building = telephone_factory 
+		factory_goods_output = { electric_gear = 0.03 }
 	}
 }
 electrical_lighting = {
@@ -1526,9 +1521,7 @@ rayon = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			fabric = 0.05
-		} 
+		factory_goods_output = { fabric = 0.05 } 
 	}
 }
 
@@ -1546,9 +1539,7 @@ bakelite = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			glass  = 0.05
-		} 
+		factory_goods_output = { glass  = 0.05 } 
 	}
 }
 
@@ -1569,8 +1560,6 @@ vacuum_tube = {
 		}			
 	}
 	effect = {
-		factory_goods_output = { radio = 0.03 } 
-		factory_goods_output = { telephones = 0.03 } 
 		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
@@ -1621,9 +1610,7 @@ telephone_switchboard = {
 		}			
 	}
 	effect = {
-		factory_goods_output = {
-			telephones = 0.03
-		} 
+		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
 
@@ -1693,7 +1680,7 @@ carl_bosch = {
 	effect = {
 		factory_goods_output = { sulphur = 0.2 }
 		factory_goods_output = { oil = 0.2 }
-		factory_goods_output = { fertilizer = 0.2 }
+		factory_goods_output = { pesticide = 0.2 }
 		factory_goods_output = { fuel = 0.2 }
 	}
 }
