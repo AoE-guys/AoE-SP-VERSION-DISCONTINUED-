@@ -146,31 +146,31 @@
 #Port-de-Paix (204000/51000 POPS)
 3328 = {
 	aristocrats = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 200
 	}
 
 	slaves = {
-		culture = afro_antillean
+		culture = afro_caribeno
 		religion = catholic
 		size = 16825
 	}
@@ -208,36 +208,65 @@
 		religion = catholic
 		size = 16825
 	}
-
-}
-#Manneville (204000/51000 POPS)
-3330 = {
 	aristocrats = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 200
 	}
 
 	slaves = {
-		culture = afro_antillean
+		culture = afro_caribeno
+		religion = catholic
+		size = 16825
+	}
+
+}
+#Manneville (204000/51000 POPS)
+3330 = {
+	aristocrats = {
+		culture = caribeno
+		religion = catholic
+		size = 550
+	}
+
+	clergymen = {
+		culture = caribeno
+		religion = catholic
+		size = 75
+	}
+
+	artisans = {
+		culture = caribeno
+		religion = catholic
+		size = 2550
+	}
+
+	soldiers = {
+		culture = caribeno
+		religion = catholic
+		size = 200
+	}
+
+	slaves = {
+		culture = afro_caribeno
 		religion = catholic
 		size = 16825
 	}
