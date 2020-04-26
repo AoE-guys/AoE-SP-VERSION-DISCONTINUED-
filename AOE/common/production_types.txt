@@ -453,86 +453,53 @@ aeroplane_factory = {
 
 barrel_factory = {       
 	template = machine_part_user_template
-	input_goods = {   
-		automobiles = 0.3	#21
-		machine_parts = 1	#29.2
-		electric_gear = 0.85	#16
-		steel = 2		#7
+	input_goods = {
+	precious_goods = 0.1
 	}
 	output_goods = barrels 
-	value = 1.0			#98	total input+maint = 83
+	value = 2.0			#98	total input+maint = 83
 	bonus = {
-		trigger = { has_building = automobile_factory }
-		value = 0.1
-	}
-	bonus = {
-		trigger = { has_building = machine_parts_factory }
-		value = 0.05
-	}
-	bonus = {
-		trigger = { has_building = steel_factory }
-		value = 0.1
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -10.00
 	}
 }
 
 automobile_factory = {       
 	template = machine_part_user_template
-	input_goods = {     
-		machine_parts = 1.05	#36.5
-		electric_gear = 1.5	#24
-		rubber = 1		#7
-		steel = 2.25		#10.58	total input+maint = 89
+	input_goods = {
+	precious_goods = 0.1
 	}
-	
 	output_goods = automobiles 
-	value = 1.43			#100
+	value = 2.43			#100
 	bonus = {
-		trigger = { has_building = machine_parts_factory }
-		value = 0.1
-	}
-	bonus = {
-		trigger = { has_building = steel_factory }
-		value = 0.1
-	}
-	bonus = {
-		trigger = { has_building = electric_gear_factory }
-		value = 0.05
+		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
+		value = -10.00
 	}
 }
 
 radio_factory = {       
 	template = factory_template
-	input_goods = {      
-		glass = 10 		#29
-		electric_gear = 3	#48  	total input+maint = 87
+	input_goods = {
+	precious_goods = 0.1
 	}
 	output_goods = radio 
-	value = 6.5			#104
+	value = 2.5			#104
 	bonus = {
-		trigger = { has_building = electric_gear_factory }
-		value = 0.15
-	}
-		bonus = {
-		trigger = { has_building = glass_factory }
-		value = 0.1
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -10.00
 	}
 }
 
 telephone_factory = {       
 	template = factory_template
-	input_goods = {       
-		glass = 15 		#43.5
-		electric_gear = 2.5	#40 	total input+maint = 93.5
+	input_goods = {
+	precious_goods = 0.1
 	}
-	output_goods = telephones 
-	value = 6.5			#104
-		bonus = {
-		trigger = { has_building = electric_gear_factory }
-		value = 0.15
-	}
+	output_goods = telephones
+	value = 2.5		
 	bonus = {
-		trigger = { has_building = glass_factory }
-		value = 0.1
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -10.00
 	}
 }
 
@@ -633,25 +600,20 @@ fuel_refinery = {
 steamer_shipyard = {       
 	template = factory_template
 	input_goods = {
-		lumber = 10
-		steel = 22		#94
-		coal = 25		#69
-		machine_parts = 0.25 #9.125 total input+maint = 191.125
+	precious_goods = 0.1
 	}
-	output_goods = steamer_convoy 
-	is_coastal = yes
+	output_goods = steamer_convoy
 	value = 3.2			#208, base profitability 16.875 up from 13
 	bonus = {
-		trigger = { has_building = lumber_mill }
-		value = 0.125
-	}
-	bonus = {
-		trigger = { has_building = steel_factory }
-		value = 0.125
-	}
-	bonus = {
-		trigger = { has_building = machine_parts_factory }
-		value = 0.125
+		trigger = { 
+			NOT = { 
+				OR = { 
+					any_owned_province = { has_building = fishing_export }
+					any_owned_province = { has_building = mines_export }				
+				} 
+			}
+		}
+		value = -10.00
 	}
 }
 

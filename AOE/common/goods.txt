@@ -23,7 +23,6 @@ military_goods = {
 	barrels = {	
 		cost = 98.00 
 		color = { 55 41 9 }
-		available_from_start = no 
 	}
 	aeroplanes = { 
 		cost = 110.00 
@@ -131,7 +130,6 @@ industrial_goods = {
 	}
 	steamer_convoy = { 
 		cost = 65.00
-		available_from_start = no
 		overseas_penalty = yes
 		color = { 76 18 0 }
 	}
@@ -188,13 +186,11 @@ consumer_goods = {
 		color = { 114 162 47 }
 	}
 	automobiles = {	
-		cost = 70.00 
-		available_from_start = no
+		cost = 70.00
 		color = { 61 67 64 }
 	}
 	telephones = { 
 		cost = 16.00
-		available_from_start = no
 		color = { 123 112 54 }
 	}
 	wine = {
@@ -223,8 +219,7 @@ consumer_goods = {
 		color = { 255 140 184 }
 	}
 	radio = { 
-		cost = 16.00 
-		available_from_start = no
+		cost = 16.00
 		color = { 129 63 6 }
 	}
 }
