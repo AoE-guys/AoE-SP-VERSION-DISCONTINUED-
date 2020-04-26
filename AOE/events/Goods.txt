@@ -452,11 +452,13 @@ province_event = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = daimlers_automobile } }
 			owner = { part_of_sphere = yes sphere_owner = { invention = wright_n_langleys_aeroplanes } }
 			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = aeroplane_factory } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = automobile_factory } } }
 			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = electric_gear_factory } } }
 			owner = { invention = edison_light_bulb }
 			owner = { invention = daimlers_automobile }
 			owner = { invention = wright_n_langleys_aeroplanes }
 			owner = { any_owned_province = { has_building = aeroplane_factory } }
+			owner = { any_owned_province = { has_building = automobile_factory } }
 			owner = { any_owned_province = { has_building = electric_gear_factory } }
 			year = 1900
 		}
@@ -514,11 +516,13 @@ province_event = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = daimlers_automobile } }
 			owner = { part_of_sphere = yes sphere_owner = { invention = wright_n_langleys_aeroplanes } }
 			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = aeroplane_factory } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = automobile_factory } } }
 			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = electric_gear_factory } } }
 			owner = { invention = edison_light_bulb }
 			owner = { invention = daimlers_automobile }
 			owner = { invention = wright_n_langleys_aeroplanes }
 			owner = { any_owned_province = { has_building = aeroplane_factory } }
+			owner = { any_owned_province = { has_building = automobile_factory } }
 			owner = { any_owned_province = { has_building = electric_gear_factory } }
 			year = 1900
 		}
