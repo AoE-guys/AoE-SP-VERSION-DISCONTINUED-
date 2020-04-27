@@ -1271,7 +1271,7 @@ artificial_fertilizers = {
 		rgo_goods_output = { cattle = 0.02 }
 		rgo_goods_output = { fruit = 0.02 }
 		
-		factory_goods_output = { pesticide = 0.05 }
+		factory_goods_output = { fertilizer = 0.05 }
 	}
 }
 nitroglycerin = {
@@ -1680,7 +1680,7 @@ carl_bosch = {
 	effect = {
 		factory_goods_output = { sulphur = 0.2 }
 		factory_goods_output = { oil = 0.2 }
-		factory_goods_output = { pesticide = 0.2 }
+		factory_goods_output = { fertilizer = 0.2 }
 		factory_goods_output = { fuel = 0.2 }
 	}
 }

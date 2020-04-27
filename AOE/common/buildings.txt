@@ -416,7 +416,7 @@ opium_factory = {
 	max_level = 500
 	goods_cost =
 	{
-	precious_goods = 1000
+precious_goods = 1000
 	}
 	time = 1
 	visibility = yes
@@ -453,99 +453,91 @@ aeroplane_factory = {
 	advanced_factory = yes
 }
 
-horse_factory = {
+barrel_factory = {
 	type = factory
 	on_completion = factory
 	completion_size = 0.2
 	max_level = 500
 	goods_cost =
 	{
-	precious_goods = 1000
+		machine_parts = 20
+		electric_gear = 50
+		steel = 50
+		cement = 50
 	}
+
 	time = 1
 	visibility = yes
 	onmap = no
 
-	production_type = horse_factory
+	production_type = barrel_factory
 	pop_build_factory = yes
-	strategic_factory = yes
-	default_enabled = yes 
+	advanced_factory = yes
 }
 
-salt_factory = {
+automobile_factory = {
 	type = factory
 	on_completion = factory
 	completion_size = 0.2
 	max_level = 500
 	goods_cost =
 	{
-	precious_goods = 1000
+		machine_parts = 20
+		electric_gear = 20
+		steel = 40
+		cement = 40
 	}
 	time = 1
 	visibility = yes
 	onmap = no
 
-	production_type = salt_factory
+	production_type = automobile_factory
 	pop_build_factory = yes
-	strategic_factory = yes
-	default_enabled = yes 
+	advanced_factory = yes
 }
 
-fur_factory = {
+radio_factory = {
 	type = factory
+
 	on_completion = factory
 	completion_size = 0.2
 	max_level = 500
 	goods_cost =
 	{
-	precious_goods = 1000
+		machine_parts = 20
+		electric_gear = 20
+		steel = 20
+		cement = 20
 	}
 	time = 1
 	visibility = yes
 	onmap = no
 
-	production_type = fur_factory
+	production_type = radio_factory
 	pop_build_factory = yes
-	strategic_factory = yes
-	default_enabled = yes 
+	advanced_factory = yes
 }
 
-sugar_factory = {
+telephone_factory = {
 	type = factory
+
 	on_completion = factory
 	completion_size = 0.2
 	max_level = 500
 	goods_cost =
 	{
-	precious_goods = 1000
+		machine_parts = 20
+		electric_gear = 20
+		steel = 20
+		cement = 20
 	}
 	time = 1
 	visibility = yes
 	onmap = no
 
-	production_type = sugar_factory
+	production_type = telephone_factory
 	pop_build_factory = yes
-	strategic_factory = yes
-	default_enabled = yes 
-}
-
-spice_factory = {
-	type = factory
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 500
-	goods_cost =
-	{
-	precious_goods = 1000
-	}
-	time = 1
-	visibility = yes
-	onmap = no
-
-	production_type = spice_factory
-	pop_build_factory = yes
-	strategic_factory = yes
-	default_enabled = yes 
+	advanced_factory = yes
 }
 
 ############# STRATEGIC FACTORIES
@@ -656,6 +648,28 @@ synthetic_sulphur_factory = {
 }
 
 ############# NAVAL FACTORIES
+
+steamer_shipyard = {
+	type = factory
+	
+	steam = yes
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 500
+	goods_cost =
+	{
+		machine_parts = 40
+		steel = 20
+		cement = 20
+	}
+	time = 1
+	visibility = yes
+	onmap = no
+
+	production_type = steamer_shipyard
+	pop_build_factory = yes
+}
 
 clipper_shipyard = {
 	type = factory
@@ -1003,26 +1017,6 @@ fabric_factory = {
 	pop_build_factory = yes
 }
 
-
-wool_fabric_factory = {
-	type = factory
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 500
-	goods_cost =
-	{
-		machine_parts = 2
-		iron = 20
-		cement = 20
-	}
-	time = 1
-	visibility = yes
-	onmap = no
-
-	production_type = wool_fabric_factory
-	pop_build_factory = yes
-}
-
 cement_factory = {
 	type = factory
 	on_completion = factory
@@ -1062,7 +1056,7 @@ glass_factory = {
 	pop_build_factory = yes
 }
 
-pesticide_factory = {
+fertilizer_factory = {
 	type = factory
 	on_completion = factory
 	completion_size = 0.2
@@ -1077,7 +1071,7 @@ pesticide_factory = {
 	visibility = yes
 	onmap = no
 
-	production_type = pesticide_factory
+	production_type = fertilizer_factory
 	pop_build_factory = yes
 }
 

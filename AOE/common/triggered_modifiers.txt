@@ -815,113 +815,6 @@ hormuz_strait = {
 	tariff_efficiency_modifier = 0.05
 	icon = 16
 }
-dominus_mare_baltici = {
-	trigger = {
-		exists = yes
-	OR = {
-				owns = 332
-				332 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 994
-				994 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 354
-				354 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 695
-				695 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 690
-				690 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 696
-				696 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 372
-				372 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 530
-				530 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 546
-				546 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 679
-				679 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 350
-				350 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-			OR = {
-				owns = 345
-				345 = {
-					owner = {
-						vassal_of = THIS
-					}
-				}
-			}
-	}
-
-	tax_efficiency = 0.01
-	tariff_efficiency_modifier = 0.05
-	prestige = 0.03
-	war_exhaustion = -0.3
-	icon = 16
-}
 
 malacca_strait = {
 		trigger = {
@@ -1020,16 +913,12 @@ help_ai_sweden_and_austria = {
 			}
 			AND = { 
 				owns = 619 #Austria
-				NOT = { year = 1715 }
+				NOT = { year = 1705 }
 			}
 			AND = {
 				owns = 232 #USA
 				year = 1756
 				NOT = { year = 1789 }
-			}
-			AND = {
-				owns = 549
-				has_country_modifier = frederick_grosse
 			}
 		}
 		ai = yes
@@ -1037,9 +926,9 @@ help_ai_sweden_and_austria = {
 	icon = 10
 	tax_efficiency = 0.15
 	administrative_efficiency_modifier = 0.05
-	supply_consumption = -0.15
+	supply_consumption = -0.1
 	education_efficiency_modifier = 0.2
-	mobilisation_size = 0.35
+	mobilisation_size = 0.2
 	war_exhaustion = -0.5
 }
 
@@ -1051,7 +940,7 @@ german_minors_ai_help = {
 			primary_culture = south_german
 		}
 		NOT = { owns = 619 }
-		NOT = { year = 1750 }
+		NOT = { year = 1740 }
 		ai = yes
 	}
 	icon = 10
@@ -1059,96 +948,11 @@ german_minors_ai_help = {
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	war_exhaustion = -0.5
-	mobilisation_size = 0.4
-	global_pop_militancy_modifier = -0.3
-}
-hre_member = {
+	mobilisation_size = 0.3
 
-	trigger = {
-		has_country_flag = hre_member
-	}
-	icon = 10
-	supply_consumption = -0.15
-	influence_modifier = 0.05
-	war_exhaustion = -0.02
-	mobilisation_size = 0.05
-	global_pop_militancy_modifier = -0.003
 }
-hre_emperor = {
 
-	trigger = {
-		has_country_flag = hre_emperor
-	}
-	icon = 10
-	supply_consumption = -0.15
-	influence_modifier = 0.05
-	war_exhaustion = -0.02
-	mobilisation_size = 0.05
-	global_pop_militancy_modifier = -0.003
-	prestige = 0.002
-}
-colonial_militia = {
 
-	trigger = {
-		OR = {
-			government = colonial_company
-			government = dominion
-		}
-		has_country_flag = colonial_militia
-		NOT = { military_score = 25 }
-	}
-	icon = 10
-	supply_consumption = -0.15
-	war_exhaustion = -0.02
-	mobilisation_size = 0.5
-	global_pop_militancy_modifier = -0.02
-}
-nerf_exotic_mob = {
-	trigger = {
-		OR = { month = 1  year = 1701 }
-		OR = {
-			capital_scope = {
-				OR = {
-					region = KAL_1221
-					region = PAN_1224
-					region = PAN_1227
-					region = SIN_1288
-					region = ENG_1236
-					region = ENG_1247
-					region = ENG_1251
-					region = ENG_1252
-					region = ENG_1258
-					region = ENG_1261
-					region = ENG_1275
-					region = NAG_1277
-					region = ENG_1264
-					region = HYD_1283
-					region = ENG_1291
-					region = ENG_1297
-					region = ENG_1304
-					region = ENG_1305
-					region = MYS_1314
-					region = ENG_1317
-					region = ENG_1321
-					region = TIB_1591
-					region = BUR_1330
-					region = BUR_1334
-					region = BUR_1339
-					region = ENG_1343
-					region = ENG_2125
-				}
-			}
-			tag = CHI
-			tag = JAP
-			tag = TKG
-			tag = QNG
-		}
-	}
-	icon = 10
-	supply_consumption = -0.15
-	influence_modifier = -0.05
-	mobilisation_size = -0.95
-}
 help_ai_usa = {
 	trigger = {
 		owns = 2146
@@ -1941,18 +1745,4 @@ small_but_efficient_VEN = {
 	tariff_efficiency_modifier = 0.3
 	education_efficiency_modifier = 0.05
 	supply_consumption = -0.9
-}
-
-hungarian_revolution = {
-	trigger = {
-		exists = yes
-		tag = HUN
-		has_global_flag = hungarian_revolution_occurred
-		war_with = AUS
-	}
-
-	icon = 7
-	mobilisation_size = 0.5
-	mobilization_economy_impact = 0.25
-	mobilization_impact = 0.25
 }
