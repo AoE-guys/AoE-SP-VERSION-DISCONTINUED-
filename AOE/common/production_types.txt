@@ -191,7 +191,7 @@ grain_factory = {
 	value = 1.9
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -204,7 +204,7 @@ cotton_factory = {
 	value = 2.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -217,7 +217,7 @@ dye2_factory = {
 	value = 0.22
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -230,7 +230,7 @@ wool_factory = {
 	value = 4.8
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -243,7 +243,7 @@ silk_factory = {
 	value = 0.25
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -256,7 +256,7 @@ coal_factory = {
 	value = 3.2
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -269,7 +269,7 @@ sulphur_factory = {
 	value = 3.2
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -282,7 +282,7 @@ iron_factory = {
 	value = 3.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -295,7 +295,7 @@ timber_factory = {
 	value = 8
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -308,7 +308,7 @@ tropical_wood_factory = {
 	value = 4
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -321,7 +321,7 @@ rubber_factory = {
 	value = 0.75
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -334,7 +334,7 @@ oil_factory = {
 	value = 1
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -347,7 +347,7 @@ cattle_factory = {
 	value = 1.7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -360,7 +360,7 @@ fish_factory = {
 	value = 2.1
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -373,7 +373,7 @@ fruit_factory = {
 	value = 3.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -386,7 +386,7 @@ tobacco_factory = {
 	value = 2
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -399,7 +399,7 @@ tea_factory = {
 	value = 1.75
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -412,7 +412,7 @@ coffee_factory = {
 	value = 1.5
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -425,7 +425,7 @@ opium_factory = {
 	value = 0.7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -452,7 +452,7 @@ aeroplane_factory = {
 }
 
 barrel_factory = {       
-	template = machine_part_user_template
+	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
 	}
@@ -460,12 +460,12 @@ barrel_factory = {
 	value = 2.0			#98	total input+maint = 83
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
 automobile_factory = {       
-	template = machine_part_user_template
+	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
 	}
@@ -473,12 +473,12 @@ automobile_factory = {
 	value = 2.43			#100
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
 radio_factory = {       
-	template = factory_template
+	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
 	}
@@ -486,12 +486,12 @@ radio_factory = {
 	value = 2.5			#104
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
 telephone_factory = {       
-	template = factory_template
+	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
 	}
@@ -499,7 +499,7 @@ telephone_factory = {
 	value = 2.5		
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
-		value = -10.00
+		value = -9.50
 	}
 }
 
@@ -598,7 +598,7 @@ fuel_refinery = {
 }
 
 steamer_shipyard = {       
-	template = factory_template
+	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
 	}
@@ -613,7 +613,7 @@ steamer_shipyard = {
 				} 
 			}
 		}
-		value = -10.00
+		value = -9.50
 	}
 }
 
