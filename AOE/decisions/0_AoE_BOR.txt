@@ -257,6 +257,7 @@ political_decisions = {
 			ideological_thought = 1
 		}
 		effect = {
+			set_country_flag = claimed_south_border
 			badboy = 6
 			SAR_466 = {
 				add_core = THIS
