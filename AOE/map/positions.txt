@@ -95991,34 +95991,35 @@ text_rotation = 90
 # Port Au Prince
 2213 = {
     text_position = {
-        x = 1669.103333
-        y = 1250.731667
+        x = 1676.000000
+        y = 1260.500000
     }
 
-    text_scale = 2.400000
+    text_rotation = 5.455260
+    text_scale = 1.25
     unit = {
-        x = 1679.000000
-        y = 1255.000000
+        x = 1678.000000
+        y = 1254.150000
     }
 
     city = {
-        x = 1657.199951
-        y = 1251.599976
+        x = 1672.250000
+        y = 1263.900000
     }
 
     factory = {
-        x = 1665.900024
-        y = 1259.599976
+        x = 1679.100000
+        y = 1257.200000
     }
 
     building_construction = {
-        x = 1652.000000
-        y = 1253.000000
+        x = 1674.650000
+        y = 1260.450000
     }
 
     military_construction = {
-        x = 1680.000000
-        y = 1253.000000
+        x = 1673.250000
+        y = 1267.650000
     }
 
     building_position = {
@@ -96028,23 +96029,22 @@ text_rotation = 90
         }
 
         railroad = {
-            x = 1657.000000
-            y = 1252.000000
+            x = 1677.150000
+            y = 1263.600000
         }
 
         naval_base = {
-            x = 1682.691667
-            y = 1248.096667
+            x = 1671.100000
+            y = 1262.150000
         }
 
     }
 
     building_rotation = {
-        naval_base = 5.235987
+        naval_base = 5.448182
     }
 
 }
-
 # Santo Domingo
 2214 = {
     text_position = {
@@ -96086,46 +96086,57 @@ text_rotation = 90
 # Cap Haitien
 2215 = {
     text_position = {
-        x = 1680.350000
-        y = 1267.350000
+        x = 1675.300000
+        y = 1272.950000
     }
 
-    text_scale = 2.000000
+    text_rotation = 6.147658
+    text_scale = 1.5
     unit = {
+        x = 1667.700000
+        y = 1276.150000
+    }
+
+    city = {
         x = 1675.300000
-        y = 1270.300000
+        y = 1272.850000
     }
 
     factory = {
-        x = 1682.199951
-        y = 1271.699951
+        x = 1683.200000
+        y = 1272.650000
     }
 
     building_construction = {
-        x = 1682.000000
-        y = 1263.000000
+        x = 1685.350000
+        y = 1270.650000
     }
 
     military_construction = {
-        x = 1673.000000
-        y = 1275.000000
+        x = 1670.850000
+        y = 1277.350000
     }
 
     building_position = {
         fort = {
-            x = 1661.350000
-            y = 1274.750000
+            x = 1678.750000
+            y = 1273.600000
+        }
+
+        railroad = {
+            x = 1685.900000
+            y = 1272.350000
         }
 
         naval_base = {
-            x = 1667.750000
-            y = 1270.850000
+            x = 1670.650000
+            y = 1281.900000
         }
 
     }
 
     building_rotation = {
-        naval_base = 5.235987
+        naval_base = 1.565796
     }
 
 }
@@ -96133,46 +96144,47 @@ text_rotation = 90
 # La Vega
 2216 = {
     text_position = {
-        x = 1698.083333
-        y = 1260.166667
+        x = 1698.026667
+        y = 1268.000000
     }
 
-    text_scale = 2.999999
+    text_rotation = 0.165972
+    text_scale = 1.75
     unit = {
-        x = 1698.000000
-        y = 1264.000000
+        x = 1690.880000
+        y = 1270.986667
     }
 
     factory = {
-        x = 1704.000000
-        y = 1269.900024
+        x = 1689.706667
+        y = 1262.026667
     }
 
     building_construction = {
-        x = 1692.099976
-        y = 1249.000000
+        x = 1705.280000
+        y = 1266.560000
     }
 
     military_construction = {
-        x = 1698.000000
-        y = 1255.000000
+        x = 1707.520000
+        y = 1270.773333
     }
 
     building_position = {
         fort = {
-            x = 1707.000000
-            y = 1253.000000
+            x = 1698.880000
+            y = 1273.653333
         }
 
         naval_base = {
-            x = 1696.750000
-            y = 1245.500000
+            x = 1704.853333
+            y = 1277.120000
         }
 
     }
 
     building_rotation = {
-        naval_base = 3.665191
+        naval_base = 2.373860
     }
 
 }
@@ -125888,46 +125900,25 @@ text_rotation = 90
 # Mole St. Nicolas
 3284 = {
     text_position = {
-        x = 1657.800000
-        y = 1279.500000
+        x = 1660.450000
+        y = 1278.800000
     }
 
     text_rotation = 0.5
     text_scale = 0.9
-    unit = {
-        x = 1662.200000
-        y = 1275.900000
-    }
-
-    factory = {
-        x = 1664.050000
-        y = 1275.450000
-    }
-
-    military_construction = {
-        x = 1660.350000
-        y = 1274.000000
-    }
-
     building_position = {
-        fort = {
-            x = 1663.700000
-            y = 1277.450000
-        }
-
         naval_base = {
-            x = 1657.950000
-            y = 1275.800000
+            x = 1661.650000
+            y = 1277.500000
         }
 
     }
 
     building_rotation = {
-        naval_base = 0.120624
+        naval_base = 0.015074
     }
 
 }
-
 # Wadowice
 3285 = {
     text_position = {
@@ -127580,227 +127571,230 @@ text_rotation = 90
 # Port Au Prince
 3327 = {
     text_position = {
-        x = 1650.103333
-        y = 1256.731667
+        x = 1658.150000
+        y = 1251.850000
     }
 
-    text_scale = 1.000000
+    text_rotation = 6.182517
+    text_scale = 1.250000
     unit = {
-        x = 1650.000000
-        y = 1256.000000
+        x = 1663.250000
+        y = 1252.000000
     }
 
     city = {
-        x = 1650.199951
-        y = 1256.599976
+        x = 1658.400000
+        y = 1252.300000
     }
 
     factory = {
-        x = 1650.900024
-        y = 1256.599976
+        x = 1667.950000
+        y = 1251.450000
     }
 
     building_construction = {
-        x = 1650.000000
-        y = 1253.000000
+        x = 1659.900000
+        y = 1254.400000
     }
 
     military_construction = {
-        x = 1650.000000
-        y = 1253.000000
+        x = 1656.150000
+        y = 1249.100000
     }
 
     building_position = {
         fort = {
-            x = 1650.000000
-            y = 1253.000000
+            x = 1650.950000
+            y = 1255.600000
         }
 
         railroad = {
-            x = 1650.000000
-            y = 1253.000000
+            x = 1670.600000
+            y = 1251.350000
         }
 
         naval_base = {
-            x = 1650.691667
-            y = 1253.096667
+            x = 1654.500000
+            y = 1249.350000
         }
 
     }
 
     building_rotation = {
-        naval_base = 5.235987
+        naval_base = 5.455260
     }
 
 }
+
 # Port Au Prince
 3328 = {
     text_position = {
-        x = 1669.103333
-        y = 1278.731667
+        x = 1698.900000
+        y = 1255.900000
     }
 
-    text_scale = 2.400000
+    text_rotation = 0.575538
+    text_scale = 1.5
     unit = {
-        x = 1669.000000
-        y = 1278.000000
+        x = 1692.520000
+        y = 1247.815000
     }
 
     city = {
-        x = 1669.199951
-        y = 1278.599976
+        x = 1699.010000
+        y = 1255.735000
     }
 
     factory = {
-        x = 1669.199951
-        y = 1278.599976
+        x = 1709.625000
+        y = 1253.535000
     }
 
     building_construction = {
-        x = 1669.199951
-        y = 1278.599976
+        x = 1691.640000
+        y = 1254.690000
     }
 
     military_construction = {
-        x = 1669.199951
-        y = 1278.599976
+        x = 1706.380000
+        y = 1261.015000
     }
 
     building_position = {
         fort = {
-        x = 1669.199951
-        y = 1278.599976
+            x = 1692.355000
+            y = 1243.360000
         }
 
         railroad = {
-        x = 1669.199951
-        y = 1278.599976
+            x = 1697.745000
+            y = 1260.850000
         }
 
         naval_base = {
-        x = 1669.199951
-        y = 1278.599976
+            x = 1703.795000
+            y = 1252.105000
         }
 
     }
 
     building_rotation = {
-        naval_base = 5.235987
+        naval_base = 4.712389
     }
 
 }
-# Port Au Prince
-3330 = {
-    text_position = {
-        x = 1669.103333
-        y = 1250.731667
-    }
 
-    text_scale = 2.400000
-    unit = {
-        x = 1679.000000
-        y = 1255.000000
-    }
-
-    city = {
-        x = 1657.199951
-        y = 1251.599976
-    }
-
-    factory = {
-        x = 1665.900024
-        y = 1259.599976
-    }
-
-    building_construction = {
-        x = 1652.000000
-        y = 1253.000000
-    }
-
-    military_construction = {
-        x = 1680.000000
-        y = 1253.000000
-    }
-
-    building_position = {
-        fort = {
-            x = 1646.000000
-            y = 1253.000000
-        }
-
-        railroad = {
-            x = 1657.000000
-            y = 1252.000000
-        }
-
-        naval_base = {
-            x = 1682.691667
-            y = 1248.096667
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 5.235987
-    }
-
-}
 # Port Au Prince
 3329 = {
     text_position = {
-        x = 1683.103333
-        y = 1274.731667
+        x = 1681.200000
+        y = 1265.900000
     }
 
-    text_scale = 2.400000
+    text_rotation = 5.819538
+    text_scale = 1.250000
     unit = {
-        x = 1683.103333
-        y = 1274.731667
+        x = 1681.150000
+        y = 1265.800000
     }
 
     city = {
-        x = 1683.103333
-        y = 1274.731667
+        x = 1681.200000
+        y = 1265.900000
     }
 
     factory = {
-        x = 1683.103333
-        y = 1274.731667
+        x = 1676.500000
+        y = 1268.050000
     }
 
     building_construction = {
-        x = 1683.103333
-        y = 1274.731667
+        x = 1685.350000
+        y = 1259.700000
     }
 
     military_construction = {
-        x = 1683.103333
-        y = 1274.731667
+        x = 1684.700000
+        y = 1257.100000
     }
 
     building_position = {
         fort = {
-        x = 1683.103333
-        y = 1274.731667
+            x = 1679.050000
+            y = 1269.500000
         }
 
         railroad = {
-        x = 1683.103333
-        y = 1274.731667
-        }
-
-        naval_base = {
-        x = 1683.103333
-        y = 1274.731667
+            x = 1685.700000
+            y = 1265.500000
         }
 
     }
 
     building_rotation = {
-        naval_base = 5.235987
+        naval_base = 1.560797
     }
 
 }
+
+# Port Au Prince
+3330 = {
+    text_position = {
+        x = 1714.800000
+        y = 1266.500000
+    }
+
+    text_rotation = 6.106476
+    text_scale = 1.50000
+    unit = {
+        x = 1714.100000
+        y = 1270.150000
+    }
+
+    city = {
+        x = 1714.800000
+        y = 1266.300000
+    }
+
+    factory = {
+        x = 1723.250000
+        y = 1267.100000
+    }
+
+    building_construction = {
+        x = 1725.450000
+        y = 1267.000000
+    }
+
+    military_construction = {
+        x = 1711.000000
+        y = 1264.400000
+    }
+
+    building_position = {
+        fort = {
+            x = 1714.950000
+            y = 1272.550000
+        }
+
+        railroad = {
+            x = 1709.400000
+            y = 1267.200000
+        }
+
+        naval_base = {
+            x = 1718.750000
+            y = 1268.900000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.306939
+    }
+
+}
+
 # Bahamas
 3333 = {
     text_position = {
