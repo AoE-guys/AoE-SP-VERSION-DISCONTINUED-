@@ -240,7 +240,7 @@ silk_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = silk
-	value = 0.25
+	value = 2.25
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -457,7 +457,7 @@ barrel_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = barrels 
-	value = 2.0			#98	total input+maint = 83
+	value = 3.0			#98	total input+maint = 83
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -470,7 +470,7 @@ automobile_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = automobiles 
-	value = 2.43			#100
+	value = 3.0			#100
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
 		value = -9.50
@@ -483,7 +483,7 @@ radio_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = radio 
-	value = 2.5			#104
+	value = 4.5			#104
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -623,11 +623,11 @@ luxury_clothes_factory = {
 	template = factory_template
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		#dye = 0.83
-		silk = 3.4		#39	total input+maint = 54
+		dye = 0.83
+		silk = 4.4		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes
-	value = 1			#65
+	value = 2			#65
 	bonus = {
 		trigger = { has_building = regular_clothes_factory }
 		value = 0.2
