@@ -3,8 +3,8 @@ controller = MUG
 add_core = MUG
 add_core = BER
 add_core = HND
-trade_goods = tobacco  state_building = {  level = 5  building = tobacco_factory  upgrade = yes  }
+trade_goods = coffee
+state_building = {  level = 5  building = telephone_factory  upgrade = yes  }
 life_rating = 32
-
 naval_base = 1
 terrain = plains
