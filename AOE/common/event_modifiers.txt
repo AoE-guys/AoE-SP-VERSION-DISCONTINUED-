@@ -4236,6 +4236,7 @@ swedish_caroleans = {
 riksdaler = {
 	administrative_efficiency_modifier = 0.10
 	tax_efficiency = 0.2
+	loan_interest = -0.5
 }
 gustav_iii = {
 	army_tech_research_bonus = 0.05
@@ -4248,6 +4249,21 @@ swedish_absolutism = {
 	ruling_party_support = 0.35
 	influence_modifier = 0.2
 	icon = 7
+}
+agriculture_reform = {
+	factory_cost = -0.3
+	war_exhaustion = -0.03
+	global_pop_consciousness_modifier = 0.003
+}
+commodity_act = {
+	tariff_efficiency_modifier = 0.25
+	factory_input = -0.02
+	loan_interest = 0.25
+}
+great_partition = {
+	farm_rgo_eff = 0.05
+	factory_output = 0.1
+	loan_interest = 0.25
 }
 ###Russia###
 improved_administration = {
@@ -5904,10 +5920,16 @@ not_dictatorship = {
 ####Mughal breakup stuff####
 decentralized_rule = {
 	core_pop_militancy_modifier = 0.02
-	org_regain = -0.15
-	army_organisation = -0.2
+	org_regain = -0.4
+	army_organisation = -0.3
 	admin_efficiency = -0.1
+	mobilisation_size = -0.4
 	icon = 3
+}
+political_chaos = {
+	diplomatic_points_modifier = -0.2
+	influence_modifier = -0.1
+	global_pop_militancy_modifier = 0.04
 }
 ##
 inefficient_bureacracy = {
@@ -5958,4 +5980,10 @@ erbkaisertum = {
 	diplomatic_points_modifier = 0.05
 	prestige = 0.0002
 	icon = 5
+}
+####Saint-Domingue####
+pearl_of_the_antilles = {
+	local_factory_throughput = 1.00
+	goods_demand = 0.10
+	population_growth = 0.01
 }
