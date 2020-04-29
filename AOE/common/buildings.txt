@@ -460,10 +460,7 @@ barrel_factory = {
 	max_level = 500
 	goods_cost =
 	{
-		machine_parts = 20
-		electric_gear = 50
-		steel = 50
-		cement = 50
+precious_goods = 1000
 	}
 
 	time = 1
@@ -482,10 +479,7 @@ automobile_factory = {
 	max_level = 500
 	goods_cost =
 	{
-		machine_parts = 20
-		electric_gear = 20
-		steel = 40
-		cement = 40
+precious_goods = 1000
 	}
 	time = 1
 	visibility = yes
@@ -504,10 +498,7 @@ radio_factory = {
 	max_level = 500
 	goods_cost =
 	{
-		machine_parts = 20
-		electric_gear = 20
-		steel = 20
-		cement = 20
+precious_goods = 1000
 	}
 	time = 1
 	visibility = yes
@@ -526,10 +517,7 @@ telephone_factory = {
 	max_level = 500
 	goods_cost =
 	{
-		machine_parts = 20
-		electric_gear = 20
-		steel = 20
-		cement = 20
+precious_goods = 1000
 	}
 	time = 1
 	visibility = yes
@@ -659,9 +647,7 @@ steamer_shipyard = {
 	max_level = 500
 	goods_cost =
 	{
-		machine_parts = 40
-		steel = 20
-		cement = 20
+precious_goods = 1000
 	}
 	time = 1
 	visibility = yes

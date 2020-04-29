@@ -31,7 +31,7 @@ everyday_needs = {
 	coal = 20
 	paper = 20
 	regular_clothes = 200
-	luxury_furniture = 20
+	luxury_furniture = 5
 	wine = 20
 	tobacco = 20 
 	coffee = 20
@@ -43,23 +43,23 @@ everyday_needs = {
 
 #Total cash needed: 3883 - Vanilla value: 3863
 luxury_needs = {
-	steel = 1
-	cement = 1
-	lumber = 1
+	steel = 2
+	cement = 2
+	lumber = 2
 	canned_food = 5
-	grain = 40
-	fruit = 40
-	wool = 40
-	cattle = 40
-	fish = 40
+	grain = 10
+	fruit = 10
+	wool = 10
+	cattle = 10
+	fish = 10
 	opium = 20
-	fuel = 30
 	ammunition = 1 
-	small_arms = 1 
-	clipper_convoy = 2
-	automobiles = 6
+	small_arms = 5
+	clipper_convoy = 3
+	automobiles = 5
 	barrels = 4
-	luxury_clothes = 5
+	luxury_clothes = 20
+	luxury_furnitue = 20
 }
 
 

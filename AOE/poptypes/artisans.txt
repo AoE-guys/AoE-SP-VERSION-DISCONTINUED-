@@ -15,7 +15,7 @@ rebel = {
 
 #Total = 11		Vanilla = 11
 life_needs = {
-	cattle = 0.75	#1.5
+	cattle = 1	#1.5
 	wool =  1		#0.7
 	fish =  1		#1.5
 	fruit =  1		#1.8
@@ -33,14 +33,14 @@ everyday_needs = {
 	tobacco = 3
 	tea = 4
 	coffee = 2
-	radio = 0.5
-	steamer_convoy = 0.5
-	telephones = 0.5
+	radio = 1
+	steamer_convoy = 1
+	telephones = 1
 }
 
 #Total cash needed: 429.2 - Vanilla value: 383.4
 luxury_needs = {
-	canned_food = 0.75
+	canned_food = 1.75
 	fruit = 1
 	wool = 3
 	opium = 1
@@ -48,7 +48,6 @@ luxury_needs = {
 	luxury_furniture = 1
 	telephones = 2
 	wine = 10
-	fuel = 0.2
 	barrels = 1
 	automobiles = 1
 }

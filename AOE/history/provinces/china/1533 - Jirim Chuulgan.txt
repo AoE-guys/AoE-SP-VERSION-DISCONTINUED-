@@ -4,5 +4,6 @@ add_core = QNG
 add_core = CHI
 add_core = MCK
 add_core = IMG
-trade_goods = timber  state_building = {  level = 5  building = timber_factory  upgrade = yes  }
+trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
+state_building = {  level = 5  building = barrel_factory  upgrade = yes  }
 life_rating = 32
