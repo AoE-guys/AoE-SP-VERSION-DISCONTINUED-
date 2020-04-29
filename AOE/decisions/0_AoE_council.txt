@@ -63,6 +63,7 @@ political_decisions = {
 	set_prime_minister = {
 		picture = reichstag
 		potential = {
+			ai = no
 			NOT = {
 				has_global_flag = not_enable_council
 				has_country_flag = hide_council
@@ -139,9 +140,9 @@ political_decisions = {
 			country_event = 9991991
 			set_country_flag = prime_minister_set
 		}
-		ai_will_do = {
-			factor = 1
-		}
+		#ai_will_do = {
+		#	factor = 1
+		#}
 	}
 	dismiss_prime_minister = {
 		picture = reichstag
