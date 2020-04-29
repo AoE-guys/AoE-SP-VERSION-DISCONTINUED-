@@ -4621,10 +4621,10 @@ province_event = {
 		name = "EVTOPTA90955"
 		add_province_modifier = { name = treaty_port duration = -1 }
 		random_list = {
-			25 = { trade_goods = fish }
-			25 = { trade_goods = silk }
-			25 = { trade_goods = tea }
-			25 = { trade_goods = opium }
+			25 = { trade_goods = precious_goods }
+			25 = { trade_goods = precious_goods }
+			25 = { trade_goods = precious_goods }
+			25 = { trade_goods = precious_goods }
 		}
 	}
 }
