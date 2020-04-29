@@ -32,4 +32,33 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+
+	pressure_bukhara = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = DZN
+			has_country_flag = reintegrated_moghulistan
+			NOT = {
+				has_country_flag = attacked_bukhara
+			}
+		}
+		
+		allow = {
+			year = 1709
+			1594 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = attacked_bukhara
+			BUK = { country_event = 6083 }
+			prestige = 15
+			}
+		
+		ai_will_do = { factor = 1 }
+	}
 }

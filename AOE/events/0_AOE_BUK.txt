@@ -1,26 +1,4 @@
 country_event = {
-	id = 6084
-	title = "Pressure Bukhara"
-	desc = "EVTDESC6084"
-	fire_only_once = yes
-	picture = mughal_breakup
-	
-	trigger = {
-		tag = DZN
-		year = 1709
-	}
-	
-	mean_time_to_happen = {
-		months = 2
-	}
-	
-	option = {
-		name = "Ok, They better give us it"
-		BUK = { country_event = 6083 }
-		prestige = 15
-	}
-}
-country_event = {
 	id = 6083
 	title = "Oirat Pressure"
 	desc = "EVTDESC6083"
@@ -105,6 +83,9 @@ country_event = {
 	trigger = {
 		tag = QNG
 		year = 1718
+		1587 = {
+			controlled_by = DZN
+		}
 	}
 	
 	mean_time_to_happen = {
