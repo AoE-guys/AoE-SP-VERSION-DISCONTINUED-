@@ -1571,6 +1571,7 @@ tulls_seed_drill = {
 		base = 6
 	}
 	effect = {
+		activate_building =  fabric_factory
 		rgo_goods_output = {
 			grain = 0.1
 		}
