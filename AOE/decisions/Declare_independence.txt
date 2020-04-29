@@ -7,13 +7,31 @@ political_decisions = {
 		civilized = yes
 		}
 		allow = {
-			war = no
-			overlord = {
-				NOT = { relation = {
-					who = THIS
-					value = 0
+			OR = {
+				AND = {
+					war = no
+					overlord = {
+						NOT = { 
+							relation = {
+								who = THIS
+								value = 0
+							}
+							truce_with = THIS
+						}
 					}
-				truce_with = THIS
+				}
+				AND = {
+					year = 1790
+					ai = YES
+					overlord = {
+						NOT = { 
+							relation = {
+								who = THIS
+								value = 0
+							}
+							truce_with = THIS
+						}
+					}
 				}
 			}
 		}
