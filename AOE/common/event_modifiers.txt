@@ -451,6 +451,7 @@ silver_mine = {
 trade_city = {
 	farm_rgo_eff = 0.25
 	goods_demand = -0.10
+	local_factory_output = 0.1
 	icon = 11
 }
 
@@ -4254,16 +4255,19 @@ agriculture_reform = {
 	factory_cost = -0.3
 	war_exhaustion = -0.03
 	global_pop_consciousness_modifier = 0.003
+	icon = 17
 }
 commodity_act = {
 	tariff_efficiency_modifier = 0.25
 	factory_input = -0.02
 	loan_interest = 0.25
+	icon = 17
 }
 great_partition = {
 	farm_rgo_eff = 0.05
 	factory_output = 0.1
 	loan_interest = 0.25
+	icon = 17
 }
 ###Russia###
 improved_administration = {
@@ -4320,7 +4324,7 @@ petes_conscription = {
 	icon = 15
 }
 russian_vaccination = {
-	global_population_growth = 0.02
+	global_population_growth = 0.002
 	icon = 17
 }
 ####Austria stuff####
@@ -4338,7 +4342,7 @@ codex_theresianus = {
 	icon = 5
 }
 austrian_vaccination = {
-	global_population_growth = 0.02
+	global_population_growth = 0.002
 	icon = 17
 }
 josephism = {
@@ -5115,7 +5119,7 @@ prussian_military_advisors = {
 	land_unit_start_experience = 5
 	icon = 17
 }
-nizam-i_djedid = {
+nizam_i_djedid = {
 	land_organisation = 0.1
 	supply_consumption = -0.1
 	org_regain = 0.2

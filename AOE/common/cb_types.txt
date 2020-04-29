@@ -569,11 +569,15 @@ restore_austrian_empire = {
 				war_policy = jingoism
 				war_policy = pro_military
 			}
+			has_country_flag = hre_emperor
 			tag = AUS
 			OR = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+		}
+		HRE = {
+			exists = yes
 		}
 		is_vassal = no
 		neighbour = THIS
