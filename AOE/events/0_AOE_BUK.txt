@@ -35,7 +35,7 @@ country_event = {
 			attacker_goal = { casus_belli = status_quo }
 			defender_goal = { casus_belli = acquire_all_cores }
 			defender_goal = { casus_belli = liberate_country country = KOK }
-			defender_goal = { casus_belli = liberate_country country = BDK }
+			defender_goal = { casus_belli = release_puppet country = BDK }
 			call_ally = no
 		}
 		prestige = 15
