@@ -2,6 +2,7 @@ owner = RYU
 controller = RYU
 add_core = RYU
 trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
+state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 35
 fort = 1
 naval_base = 1

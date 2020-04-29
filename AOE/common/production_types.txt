@@ -1219,10 +1219,10 @@ artisan_aeroplane = {
 
 artisan_barrel = {       
 	input_goods = {   
-		automobiles = 0.3	#21
-		machine_parts = 1	#29.2
-		electric_gear = 0.85	#16
-		steel = 2		#7
+		fruit = 3
+		lumber = 8
+		wood = 3
+		grain = 8
 	}
 	output_goods = barrels 
 	value = 1.0			#98	total input+maint = 83
@@ -1239,14 +1239,15 @@ artisan_barrel = {
 
 artisan_automobile = {       
 	input_goods = {     
-		machine_parts = 1.05	#36.5
-		electric_gear = 1.5	#24
-		rubber = 1		#7
-		steel = 2.25		#10.58	total input+maint = 89
+		wood = 4
+		steel = 3
+		lumber = 3
+		small_arms = 1
+		ammunition = 1
 	}
 	
 	output_goods = automobiles 
-	value = 1.43			#100
+	value = 1.43
 	
 	owner = {
 		poptype = artisans 
@@ -1260,8 +1261,10 @@ artisan_automobile = {
 
 artisan_radio = {       
 	input_goods = {      
-		glass = 10 		#29
-		electric_gear = 3	#48  	total input+maint = 87
+		glass = 3
+		fruit = 5
+		wood = 1
+		steel = 1
 	}
 	output_goods = radio 
 	value = 6.5			#104
@@ -1278,8 +1281,8 @@ artisan_radio = {
 
 artisan_telephone = {       
 	input_goods = {       
-		glass = 15 		#43.5
-		electric_gear = 2.5	#40 	total input+maint = 93.5
+		glass = 2
+		grain = 5
 	}
 	output_goods = telephones 
 	value = 6.5			#104
