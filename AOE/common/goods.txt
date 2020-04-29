@@ -70,6 +70,7 @@ raw_material_goods = {
 	}
 	rubber = { 
 		cost = 7.0
+		available_from_start = no
 		color = { 123 110 86 }
 	}
 	oil = { 
@@ -207,7 +208,7 @@ consumer_goods = {
 		color = { 217 17 19 }
 	}
 	luxury_clothes = { 
-		cost = 55.00
+		cost = 37.00
 		color = { 234 227 40 }
 	}
 	furniture = {
@@ -215,7 +216,7 @@ consumer_goods = {
 		color = { 173 129 40 }
 	}
 	luxury_furniture = { 
-		cost = 59.00
+		cost = 39.00
 		color = { 255 140 184 }
 	}
 	radio = { 
