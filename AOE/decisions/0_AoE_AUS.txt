@@ -335,6 +335,28 @@ political_decisions = {
 		factor = 1
 		}
 	}
+	
+	issue_pragmatic_sanction = {
+		picture = austria_coa
+		potential = {
+			tag = AUS
+			NOT = {
+				has_country_modifier = maria_theresa
+			}
+			NOT = { has_country_flag = issued_pragmatic_sanction }
+			NOT = { has_country_flag = maria_ded }
+			has_country_flag = dynastic_crisis
+		}
+		allow = {
+			state_n_government = 1
+			prestige = 200
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = issued_pragmatic_sanction
+			country_event = 174503
+		}
+	}
 #####Hungary stuff#####
 	start_pest_congress = {
 		picture = hungary_flag
