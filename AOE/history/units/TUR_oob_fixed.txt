@@ -1,25 +1,19 @@
 #Sphere of Influence
 #Asia
 PER = {
-	value = -50	
+	value = -100	
 	level = 0		
 	influence_value = 0
 }
 
 DLM = {
-	value = 150	
+	value = 75	
 	level = 5		
 	influence_value = 0
 }
 
 QNG = {
 	level = 0
-}
-
-BAN = {
-	value = 125		
-	level = 5		
-	influence_value = 0
 }
 
 CRI = {
@@ -29,13 +23,13 @@ CRI = {
 }
 
 WAL = {
-	value = 25		
+	value = 5		
 	level = 3		
 	influence_value = 40
 }
 
 MOL = {
-	value = 25		
+	value = 5		
 	level = 3		
 	influence_value = 40
 }
@@ -106,17 +100,7 @@ GRE = {
 }
 SER = {
 	value = 0		
-	level = 5		
-	influence_value = 0
-}
-MOL = {
-	value = 125
-	level = 4
-	influence_value = 0
-}
-WAL = {
-	value = 125
-	level = 4
+	level = 3		
 	influence_value = 0
 }
 ATJ = {
