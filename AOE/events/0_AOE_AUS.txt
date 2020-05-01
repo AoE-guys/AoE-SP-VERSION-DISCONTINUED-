@@ -1608,12 +1608,14 @@ country_event = {
 	
 	trigger = {
 		tag = BOR
-		set_country_flag = refused_sanction
+		has_country_flag = refused_sanction
 		LOR = {
 			is_vassal = no
 		}
 	}
-	
+	mean_time_to_happen = {
+		months = 1
+	}
 	option = {
 		name = "Send the envoy!"
 		AUS = {

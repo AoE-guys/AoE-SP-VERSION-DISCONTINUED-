@@ -26,7 +26,9 @@ country_event = {
 	option = {
 		name = "Let them be"
 		prestige = 5
-		ai_chance = 1
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 country_event = {
@@ -182,9 +184,9 @@ country_event = {
 		election = yes
 	}
 }
-####Royal election of 1733####
+
 country_event = {
-	id = 15730000
+	id = 1573000040
 	title = "Royal Election of 1733"
 	desc = "EVTDESC1573000"	
 	major = yes
@@ -284,6 +286,9 @@ country_event = {
 			country_event = 15730020
 			set_global_flag = polish_succesion_crisis
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	
 	option = {
@@ -296,7 +301,6 @@ country_event = {
 	desc = "EVTDESC1573002"	
 	major = yes
 	is_triggered_only = yes
-	
 
 	option = {
 		name = "Let's take back what is rightfully ours!"
@@ -306,6 +310,9 @@ country_event = {
 			attacker_goal = { casus_belli = add_to_sphere }
 			defender_goal = { casus_belli = humiliate }
 			call_ally = yes
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 	
@@ -380,6 +387,9 @@ country_event = {
 		}
 		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
 		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
+		ai_chance = {
+			factor = 1
+		}
 	}
 	
 	option = {
