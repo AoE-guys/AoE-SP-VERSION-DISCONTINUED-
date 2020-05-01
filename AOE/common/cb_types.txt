@@ -576,9 +576,7 @@ restore_austrian_empire = {
 				is_secondary_power = yes
 			}
 		}
-		HRE = {
-			exists = yes
-		}
+		NOT = { tag = HRE }
 		is_vassal = no
 		neighbour = THIS
 		any_owned_province = {

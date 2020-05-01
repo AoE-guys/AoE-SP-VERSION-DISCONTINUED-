@@ -4255,6 +4255,7 @@ agriculture_reform = {
 	factory_cost = -0.3
 	war_exhaustion = -0.03
 	global_pop_consciousness_modifier = 0.003
+	education_efficiency_modifier = 0.75
 	icon = 17
 }
 commodity_act = {
@@ -4357,6 +4358,10 @@ theresian_military_academy = {
 	supply_consumption = -0.1
 	org_regain = 0.2
 	land_unit_start_experience = 5
+	icon = 15
+}
+ost_land_company = {
+	tariff_efficiency_modifier = 0.4
 	icon = 15
 }
 #####Bourbon France####
@@ -5964,11 +5969,11 @@ illegitimate_heir = {
 }
 ####Hre reforms###
 hre_mendling = {
-	bad_badboy = 0.01
+	bad_badboy = 0.02
 	icon = 6
 }
 reichsreform = {
-	education_efficiency_modifier = 0.05
+	education_efficiency_modifier = 0.15
 	icon = 11
 }
 reichsregiment = {

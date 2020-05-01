@@ -62,6 +62,7 @@ political_decisions = {
 	}
 
 	enact_reichsreform = {
+		picture = hre_reform_1
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
@@ -114,6 +115,7 @@ political_decisions = {
 	}
 	
 	institute_reichsregiment = {
+		picture = hre_reform_3
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
@@ -127,13 +129,12 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
-			HRE = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
+			all_core = {
+				tag = HRE
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
 					}
 				}
 			}
@@ -167,6 +168,7 @@ political_decisions = {
 	}
 	
 	reform_the_hofgericht = {
+		picture = hre_reform_2
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
@@ -180,13 +182,12 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
-			HRE = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
+			all_core = {
+				tag = HRE
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
 					}
 				}
 			}
@@ -219,6 +220,7 @@ political_decisions = {
 	}
 	
 	reform_imperial_circles = {
+		picture = imperial_circles
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
@@ -232,17 +234,12 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
-			HRE = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							OR = {
-								NOT = { is_vassal = yes }
-								vassal_of = THIS
-							}
-						}
+			all_core = {
+				tag = HRE
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
 					}
 				}
 			}
@@ -345,8 +342,9 @@ political_decisions = {
 	}
 	
 	proclaim_erbkaisertum = {
+		picture = flag_hre
 		potential = {
-			has_country_flag = hre_emperor
+			has_country_flag = hre_reform_4
 			NOT = {
 				exists = HRE
 			}
@@ -358,14 +356,12 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
-			HRE = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							has_country_flag = hre_member
-						}
+			all_core = {
+				tag = HRE
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
 					}
 				}
 			}
@@ -391,6 +387,7 @@ political_decisions = {
 				name = hre_mendling
 				duration = 3650
 			}
+			badboy = 20
 		}
 		ai_will_do = {
 			factor = 1
@@ -398,6 +395,7 @@ political_decisions = {
 	}
 	
 	renoveto_imperii= {
+		picture = renoveto_imperii
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
@@ -411,14 +409,12 @@ political_decisions = {
 			has_country_flag = proclaimed_erbkaisertum
 			is_greater_power = yes
 			war = no
-			HRE = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							has_country_flag = hre_member
-						}
+			all_core = {
+				tag = HRE
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
 					}
 				}
 			}
@@ -444,7 +440,7 @@ political_decisions = {
 	}
 	
 	add_belgium_hre = {
-		#picture = louis_dream
+		picture = austria_coa
 		potential = {
 			tag = AUS
 			NOT = { has_country_flag = added_belgium_hre }

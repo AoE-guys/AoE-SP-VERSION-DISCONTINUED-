@@ -1320,6 +1320,10 @@ country_event = {
 	trigger = {
 		tag = AUS
 		year = 1745
+		OR = {
+			NOT = { government = presidential_dictatorship }
+			NOT = { government = democracy }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1343,7 +1347,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = AUS
+		has_country_modifier = maria_theresa
 		year = 1780
 	}
 	
@@ -1355,6 +1359,348 @@ country_event = {
 		name = "Tragic..."
 		prestige = 5
 		remove_country_modifier = maria_theresa
+		set_country_flag = maria_ded
+	}
+}
+####
+country_event = {
+	id = 174504
+	title = "The Ost-Land Company"
+	desc = "EVTDESC174504"
+	picture = maria_theresa_ded
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AUS
+		year = 1722
+		owns = 387
+		owns = 394
+		owns = 397
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Let the riches of the east come to our realm!"
+		prestige = 5
+		add_country_modifier = {
+			name = ost_land_company
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = 174502
+	title = "Dynastic Crisis"
+	desc = "EVTDESC174502"
+	picture = maria_theresa_ded
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AUS
+		NOT = {
+			OR = {
+				government = presidential_dictatorship
+				government = democracy
+			}
+		}
+		year = 1711
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We have to do something...."
+		set_country_flag = dynastic_crisis
+	}
+}
+country_event = {
+	id = 174503
+	title = "The Pragmatic Sanction of $YEAR%"
+	desc = "EVTDESC174503"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Our possesions must be secure!"
+		BOR = { country_event = 174507 }
+		GBR = { country_event = 174507 }
+		NET = { country_event = 174507 }
+		PLC = { country_event = 174507 }
+		PRU = { country_event = 174507 }
+		BAV = { country_event = 174507 }
+		SPA = { country_event = 174507 }
+		RUS = { country_event = 174507 }
+	}
+}
+country_event = {
+	id = 174505
+	title = "$FROMCOUNTRY$ accepts!"
+	desc = "EVTDESC174505"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 2
+	}
+}
+country_event = {
+	id = 174506
+	title = "$FROMCOUNTRY$ refuses!"
+	desc = "EVTDESC174506"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 2
+	}
+}
+country_event = {
+	id = 174507
+	title = "The Pragmatic Sanction of $YEAR$"
+	desc = "EVTDESC174507"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sign it."
+		FROM = { country_event = 174505	}
+		prestige = -2
+		set_country_flag = accepted_sanction
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 5
+				in_sphere = AUS
+				NOT = {
+					tag = BAV
+				}
+			}
+			modifier = {
+				factor = 6
+				alliance_with = AUS
+				NOT = {
+					tag = GBR
+				}
+			}
+			modifier = {
+				factor = 5
+				relation = { who = AUS value = 70 }
+				NOT = {
+					tag = GBR
+				}
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = hre_member
+				NOT = {
+					tag = BAV
+				}
+			}
+		}
+	}
+	option = {
+		name = "We will not accept such stupid document!"
+		FROM = { country_event = 174506	}
+		prestige = 2
+		set_country_flag = refused_sanction
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 5
+				war_with = AUS
+			}
+			modifier = {
+				factor = 5
+				NOT = { relation = { who = AUS value = 0 } }
+			}
+		}
+	}
+}
+country_event = {
+	id = 174508
+	title = "Recognition of Austrian Pragmatic Sanction"
+	desc = "EVTDESC174508"
+	picture = maria_theresa_ded
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GBR
+		has_country_flag = refused_sanction
+		AUS = {
+			has_country_modifier = ost_land_company
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Send the envoy!"
+		AUS = {
+			country_event = 1745081
+		}
+	}
+	option = {
+		name = "We have more pressing matters."
+	}
+}
+country_event = {
+	id = 1745081
+	title = "$FROMCOUNTRY$ proposes to recognize the Pragmatic Sanction"
+	desc = "EVTDESC1745081"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Agree"
+		prestige = -5
+		remove_country_modifier = ost_land_company
+		FROM = {
+			set_country_flag = accepted_sanction
+			clr_country_flag = refused_sanction
+			country_event = 1745082
+		}
+	}
+	
+	option = {
+		name = "That's Ridiculous!"
+		prestige = 5
+		FROM = {
+			country_event = 1745083
+		}
+	}
+}
+country_event = {
+	id = 1745082
+	title = "$FROMCOUNTRY$ Agrees!"
+	desc = "EVTDESC1745081"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+	}
+}
+country_event = {
+	id = 1745083
+	title = "$FROMCOUNTRY$ Refuses!"
+	desc = "EVTDESC1745083"
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will pay for that"
+		prestige = -5
+	}
+}
+country_event = {
+	id = 174509
+	title = "Recognition of Austrian Pragmatic Sanction"
+	desc = "EVTDESC174509"
+	picture = maria_theresa_ded
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOR
+		set_country_flag = refused_sanction
+		LOR = {
+			is_vassal = no
+		}
+	}
+	
+	option = {
+		name = "Send the envoy!"
+		AUS = {
+			country_event = 1745081
+		}
+	}
+	option = {
+		name = "We have more pressing matters."
+	}
+}
+country_event = {
+	id = 1745091
+	title = "$FROMCOUNTRY$ proposes to recognize the Pragmatic Sanction"
+	desc = "EVTDESC1745091"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Agree"
+		prestige = -5
+		FROM = {
+			set_country_flag = accepted_sanction
+			clr_country_flag = refused_sanction
+			country_event = 1745082
+			create_vassal = LOR
+		}
+	}
+	
+	option = {
+		name = "That's Ridiculous!"
+		prestige = 5
+		FROM = {
+			country_event = 1745083
+		}
+	}
+}
+country_event = {
+	id = 174510
+	title = "Recognition of Austrian Pragmatic Sanction"
+	desc = "EVTDESC174510"
+	picture = maria_theresa_ded
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NET
+		has_country_flag = refused_sanction
+		AUS = {
+			has_country_modifier = ost_land_company
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Send the envoy!"
+		AUS = {
+			country_event = 1745081
+		}
+	}
+	option = {
+		name = "We have more pressing matters."
+	}
+}
+country_event = {
+	id = 1745101
+	title = "$FROMCOUNTRY$ proposes to recognize the Pragmatic Sanction"
+	desc = "EVTDESC1745101"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Agree"
+		prestige = -5
+		remove_country_modifier = ost_land_company
+		FROM = {
+			set_country_flag = accepted_sanction
+			clr_country_flag = refused_sanction
+			country_event = 1745082
+		}
+	}
+	
+	option = {
+		name = "That's Ridiculous!"
+		prestige = 5
+		FROM = {
+			country_event = 1745083
+		}
 	}
 }
 ###Hre###
