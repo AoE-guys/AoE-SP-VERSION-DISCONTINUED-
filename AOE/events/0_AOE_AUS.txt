@@ -934,17 +934,17 @@ country_event = { #5555 Hungarian rebellion (War)
 	desc = "EVTDESC5555"
 	picture = "unite"
 	
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 	
-	trigger = {
-		tag = HUN
-		has_country_flag = hungary_prepares_to_war
-	}
+#	trigger = {
+#		tag = HUN
+#		has_country_flag = hungary_prepares_to_war
+#	}
 	
-	mean_time_to_happen = {
-		months = 2
-	}
+#	mean_time_to_happen = {
+#		months = 1
+#	}
 	
 	option = {
 		name = "EVT5555OPT"
@@ -1193,6 +1193,7 @@ country_event = { #999 Preparations to war event
 				add_province_modifier = { name = hungarians_rise 
 					duration = 7200 }
 			}
+			country_event = 5555
 		
 		}
 		ai_chance = {
@@ -1608,12 +1609,14 @@ country_event = {
 	
 	trigger = {
 		tag = BOR
-		set_country_flag = refused_sanction
+		has_country_flag = refused_sanction
 		LOR = {
 			is_vassal = no
 		}
 	}
-	
+	mean_time_to_happen = {
+		months = 1
+	}
 	option = {
 		name = "Send the envoy!"
 		AUS = {
