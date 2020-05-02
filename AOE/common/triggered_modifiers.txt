@@ -931,7 +931,17 @@ help_ai_sweden_and_austria = {
 	mobilisation_size = 0.2
 	war_exhaustion = -0.5
 }
+prussia_ai_help = {
 
+	trigger = {	
+		owns = 619
+		has_country_modifier = frederick_grosse
+		ai = yes
+	}
+	icon = 10
+	supply_consumption = -0.35
+	min_military_spending = -0.75
+}
 german_minors_ai_help = {
 
 	trigger = {
