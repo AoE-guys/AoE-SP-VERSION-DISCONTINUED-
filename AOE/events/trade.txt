@@ -1,0 +1,21 @@
+country_event = {
+	id = 69420
+	title = "Economy Setup"
+	desc = EVTDESC69420
+	
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		530 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
