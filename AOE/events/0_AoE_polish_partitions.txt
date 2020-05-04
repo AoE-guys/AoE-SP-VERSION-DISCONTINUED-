@@ -89,6 +89,7 @@ country_event = {
 		945	= { secede_province = RUS }
 		944	= { secede_province = RUS }
 		949 = { secede_province = RUS }
+		948 = { secede_province = RUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -98,6 +99,7 @@ country_event = {
 		945	= { add_core = RUS }
 		944	= { add_core = RUS }
 		949 = { add_core = RUS }
+		948 = { add_core = RUS }
 		RUS = {
 			war = {
 				target = PLC
@@ -166,6 +168,7 @@ country_event = {
 		952 = { secede_province = AUS }
 		953 = { secede_province = AUS }
 		3331 = { secede_province = AUS }
+		3310 = { secede_province = AUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -181,6 +184,7 @@ country_event = {
 		952 = { add_core = AUS }
 		953 = { add_core = AUS }
 		3331 = { add_core = AUS }
+		3310 = { add_core = AUS }
 		AUS = {
 			war = {
 				target = PLC
@@ -270,6 +274,7 @@ country_event = {
 		961	= { secede_province = RUS }
 		954 = { secede_province = RUS }
 		947 = { secede_province = RUS }
+		939 = { secede_province = RUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -281,6 +286,7 @@ country_event = {
 		961	= { add_core = RUS }
 		954 = { add_core = RUS }
 		947 = { add_core = RUS }
+		939 = { add_core = RUS }
 		RUS = {
 			war = {
 				target = PLC

@@ -172,6 +172,7 @@ country_event = {
 		                  limit = { NOT = { tag = THIS } exists = yes ai = yes }
 		                  country_event = 9999883 
 		}
+		country_event = 99998839090
 	}
 }
 
@@ -376,7 +377,36 @@ country_event = {
 		set_global_flag = factions_setup_done
 	}
 }
-
+country_event = {
+	id = 99998839090
+	title = "Asia Balance"
+	desc = "Asia Balance"		
+    is_triggered_only = yes	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Factions SetUp II"
+		#Church
+		any_country = {
+			limit = {
+				capital_scope = {
+					continent = asia
+				}
+				NOT = { tag = PER }
+				NOT = { vassal_of = PER }
+			}
+			all_core = {
+				add_province_modifier = {
+					name = asian_farms
+					duration = -1
+				}
+			}
+		}
+	}
+}
 country_event = {
 	id = 9999882
 	title = "Change in the Balance of Power"
