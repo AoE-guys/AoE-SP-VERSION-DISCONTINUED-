@@ -60,7 +60,7 @@ claim_holy_land
 restore_british_raj
 unification_casus_belli
 civil_war
-unification_annex_casus_belli
+#unification_annex_casus_belli
 annex_core_country
 unification_add_to_sphere
 add_to_sphere
@@ -3150,13 +3150,11 @@ annex_foreign_colony_big_cb = {
 	# war target country of goal is scope
 	allowed_countries = {
 	    FROM = { 
-	    	    AND = {
-	               OR = {
-	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
-	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
-	    	       }
-	    	    }
-	    }
+			OR = {
+				AND = { has_country_flag = dynamic_colony is_vassal = yes }
+				AND = { has_country_flag = dynamic_tag is_vassal = yes }
+			}
+		}
 		FROM = { total_pops = 500000 }
 		is_our_vassal = FROM
 		FROM = { is_substate = no }
@@ -3231,13 +3229,11 @@ annex_foreign_colony_cb = {
 	# war target country of goal is scope
 	allowed_countries = {
 	    FROM = { 
-	    	    AND = {
-	               OR = {
-	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
-	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
-	    	       }
-	    	    }
-	    }
+			OR = {
+				AND = { has_country_flag = dynamic_colony is_vassal = yes }
+				AND = { has_country_flag = dynamic_tag is_vassal = yes }
+			}
+		}
 		FROM = { total_pops = 50000 }
 		FROM = { NOT = { total_pops = 500000 } }
 		is_our_vassal = FROM
@@ -3252,8 +3248,8 @@ annex_foreign_colony_cb = {
 	
 	on_add = {
 		any_country = { 
-		               limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
-					   set_country_flag = contested_colony 
+			limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+			set_country_flag = contested_colony 
 		}
 		#set_country_flag = colony_contestor
 		move_issue_percentage = { 
@@ -3313,13 +3309,17 @@ annex_foreign_colony_small_cb = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
-	    FROM = { 
-	    	    AND = {
-	               OR = {
-	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
-	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
-	    	       }
-	    	    }
+	    FROM = {
+			OR = {
+				AND = {
+					has_country_flag = dynamic_colony
+					is_vassal = yes
+				}
+				AND = {
+					has_country_flag = dynamic_tag
+					is_vassal = yes
+				}
+			}
 	    }
 		FROM = { NOT = { total_pops = 50000 } }
 		is_our_vassal = FROM
@@ -3334,8 +3334,8 @@ annex_foreign_colony_small_cb = {
 	
 	on_add = {
 		any_country = { 
-		               limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
-					   set_country_flag = contested_colony 
+			limit = { vassal_of = FROM  OR = { has_country_flag = dynamic_colony has_country_flag = dynamic_tag } } 
+			set_country_flag = contested_colony 
 		}
 		#set_country_flag = colony_contestor
 		move_issue_percentage = { 
@@ -5314,9 +5314,7 @@ annex_india_full = {
 			AND = { war_with = THIS ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
-		OR = { 
-			NOT = { number_of_states = 2 }
-		}
+		NOT = { number_of_states = 2 }
 		THIS = {
 			mass_politics = 1
 			capital_scope = { continent = europe }
