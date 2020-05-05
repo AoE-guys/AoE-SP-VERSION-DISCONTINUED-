@@ -18,7 +18,7 @@ rebel = {
 
 #Total = 44
 life_needs = {
-	cattle = 3	#6
+	cattle = 10	#6
 	wool = 2.5	#2.8
 	fish = 4	#6
 	fruit = 4	#7.2
@@ -39,6 +39,8 @@ everyday_needs = {
 	telephones = 5
 	radio = 5
 	steamer_convoy = 5
+	cattle = 20
+	grain = 20
 }
 
 #Total cash needed: 2618 - Vanilla value: 2121

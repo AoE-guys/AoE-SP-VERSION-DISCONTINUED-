@@ -17,11 +17,11 @@ rebel = {
 }
 
 life_needs = {
-	cattle = 0.5
-	wool =  0.5
-	fish =  0.5
-	fruit =  0.5
-	grain =  1
+	cattle = 2
+	wool = 0.5
+	fish = 0.75
+	fruit = 0.75
+	grain = 2
 }
 
 everyday_needs = {
@@ -30,6 +30,8 @@ everyday_needs = {
 	liquor = 1
 	tobacco = 1
 	cotton = 0.5
+	cattle = 5
+	grain = 5
 }
 
 luxury_needs = {
