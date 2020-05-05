@@ -11,7 +11,7 @@ political_decisions = {
 			NOT = { number_of_states = 4 }
 			any_core = {
 				any_neighbor_province = {
-					is_core = HRE
+					is_core = NNN
 				}
 			}
 			NOT = { has_country_flag = hre_member }
@@ -24,7 +24,7 @@ political_decisions = {
 				limit = {
 					continent = europe
 				}
-				add_core = HRE
+				add_core = NNN
 			}
 			AUS = { country_event = 800000 }
 			prestige = 5
@@ -52,7 +52,7 @@ political_decisions = {
 				limit = {
 					continent = europe
 				}
-				remove_core = HRE
+				remove_core = NNN
 			}
 			AUS = { country_event = 800001 }
 			prestige = 5
@@ -66,14 +66,14 @@ political_decisions = {
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
-				exists = HRE
+				exists = NNN
 			}
 			NOT = { has_country_flag = enacted_reichsreform }
 			NOT = { has_global_flag = hre_dismantled }
 		}
 		
 		allow = {
-		HRE = {
+		NNN = {
 			all_core = {
 				OR = {
 					owned_by = THIS
@@ -120,7 +120,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
-				exists = HRE
+				exists = NNN
 			}
 			NOT = { has_country_flag = instituted_reichsregiment }
 			NOT = { has_global_flag = hre_dismantled }
@@ -130,12 +130,13 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
-			all_core = {
-				tag = HRE
-				OR = {
-					owned_by = THIS
-					owner = {
-						in_sphere = THIS
+			NNN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
 					}
 				}
 			}
@@ -173,7 +174,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
-				exists = HRE
+				exists = NNN
 			}
 			NOT = { has_country_flag = reformed_the_hofgericht }
 			NOT = { has_global_flag = hre_dismantled }
@@ -183,8 +184,8 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
+			NNN = {
 			all_core = {
-				tag = HRE
 				OR = {
 					owned_by = THIS
 					owner = {
@@ -192,6 +193,7 @@ political_decisions = {
 					}
 				}
 			}
+		}
 			NOT = { has_country_modifier = hre_mendling }
 		}
 		effect = {
@@ -225,7 +227,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
-				exists = HRE
+				exists = NNN
 			}
 			NOT = { has_country_flag = reformed_imperial_circles }
 			NOT = { has_global_flag = hre_dismantled }
@@ -235,8 +237,8 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
+			NNN = {
 			all_core = {
-				tag = HRE
 				OR = {
 					owned_by = THIS
 					owner = {
@@ -244,6 +246,7 @@ political_decisions = {
 					}
 				}
 			}
+		}
 			NOT = { has_country_modifier = hre_mendling }
 			has_country_modifier = the_hofgericht
 			has_country_modifier = reichsregiment
@@ -347,7 +350,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = hre_reform_4
 			NOT = {
-				exists = HRE
+				exists = NNN
 			}
 			NOT = { has_country_flag = proclaimed_erbkaisertum }
 			NOT = { has_global_flag = hre_dismantled }
@@ -357,8 +360,8 @@ political_decisions = {
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
+			NNN = {
 			all_core = {
-				tag = HRE
 				OR = {
 					owned_by = THIS
 					owner = {
@@ -366,6 +369,7 @@ political_decisions = {
 					}
 				}
 			}
+		}
 			has_country_flag = reformed_imperial_circles
 			NOT = { has_country_modifier = hre_mendling }
 		}
@@ -400,7 +404,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = hre_emperor
 			NOT = {
-				exists = HRE
+				exists = NNN
 			}
 			NOT = { has_global_flag = hre_dismantled }
 		}
@@ -410,8 +414,8 @@ political_decisions = {
 			has_country_flag = proclaimed_erbkaisertum
 			is_greater_power = yes
 			war = no
+			NNN = {
 			all_core = {
-				tag = HRE
 				OR = {
 					owned_by = THIS
 					owner = {
@@ -419,10 +423,11 @@ political_decisions = {
 					}
 				}
 			}
+		}
 			NOT = { has_country_modifier = hre_mendling }
 		}
 		effect = {
-			change_tag = HRE
+			change_tag = NNN
 			all_core = {
 				limit = {
 					owner = {
@@ -430,7 +435,7 @@ political_decisions = {
 					}
 				}
 				owner = {
-					annex_to = HRE
+					annex_to = NNN
 				}
 			}
 			badboy = 30
@@ -470,7 +475,7 @@ political_decisions = {
 						owned_by = LIG
 					}
 				}
-				add_core = HRE
+				add_core = NNN
 			}
 			prestige = 20
 			badboy = 10
