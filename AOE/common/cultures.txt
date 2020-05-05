@@ -305,26 +305,6 @@ scandinavian = {
 		last_names = { ArnÛrsson ¡sgeirsson Benediktsson Bjarnasen Bjˆrnsson Eggers Eldj·rn Hafstein Hansen
 		Hermannsson Joh·nesson JÛnsson Magn˙sson Stef·nsson Steinthosson ThÛrdarson ThÛrhallson Thorl·ksson Thurs }
 	}
-	finnish = { 
-		color = { 220 220 220}
-		first_names = { Aatto Akseli Aleksanteri Anders Aukusti Edvard Eemil Erkki Erno Fabian
-		Fredrik Fridolf Georg Gˆsta Harald Hjalmar Hugo Johannes Juho Kaarlo
-		Kurt Lars Martti Mikko Paavo Petteri Rudolf V‰inˆ Viktor Vilho }
-		
-		last_names = { Airo Alopaeus Aspara Cajander Ehrnrooth Heinrichs Heiskanen Holsti Ignatius J‰rnef‰lt
-		Linder Mannerheim Multam‰ki Nenonen Oesch ÷quist ÷sterman Paasikivi Raappana Ramsay
-		Sihvo Siilasvuo Talvela Thesleff Tujulin Tuompo "von Hesse-Kassel" Walden Wallenius Wetzer }
-		radicalism = 5
-	}
-	sami = {
-		color = { 150 125 175 }
-		first_names = {
-			Asllak Biejas Dure Erke Hanno Iskko Joha Laras Markkos Mikko Niillas Osku Uhkku
-		}
-		last_names = {
-			HÊtta Somby Turi Magga Dunfjeld Kvitfjell Kappfjell
-		}
-	}
 }
 
 british = {
@@ -416,19 +396,6 @@ italian = {
 iberian = {
 	leader = southamerican
 	unit = SpanishGC
-	basque = {
-		color = {220 170 30}
-		first_names = { AgustÌn Aitor Alberto Ander Andoni AndrÈs ¡ngel Antonio Arturo Carlos
-		Ceferino Cosme Cristobal Dami·n Endika "Francisco Javier" Ignacio Imanol IÒaki Jes˙s
-		Jon "JosÈ Antonio" "JosÈ MarÌa" Joseba Josu Juan Julen Koldobika Luis Manuel
-		Marino Miguel Paulino Pedro Rafael Ramiro RamÛn Sabino Tom·s Vicente }
-		
-		last_names = { Aguirre Ajuriaguerra Aldecoa Arana Aranzadi Arizmendiarrieta Armend·riz Aznar Balenciaga Berasategui 
-		Bilbao CampiÛn Churruca "de AmÈsquita" "de Azpilicueta" "de Erauso" "de RenterÌa" "de Ubisztongo" Echag¸e Echave
-	 	Echegaray EchevarrÌa Elorza GaztaÒeta Ibarrola Ib·rruri Irujo Lazcano Mendizabal Moneo 
-		N·rdiz Olano Olave Oyarz·bal Rotaeche Uzcudun Zam·rraga Z·rate Zavala Zumalac·rregui }
-		radicalism = 15
-	}
 	spanish = {
 		color = {220 220 30}
 		first_names = { AgustÌn Alberto Alejandro Alfonso ¡lvaro Antonio "Antonio MarÌa" Arsenio Augusto Baldomero
@@ -439,7 +406,7 @@ iberian = {
 		Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicol·s Pablo Pascual
 		Pedro Rafael Raimundo RamÛn Ricardo Santiago Sebasti·n Segismundo Valeriano Vicente }
 		
-	last_names = { AcuÒa Aguirre Alcal·-Zamora Allendesalazar Alonso ¡lvarez "¡lvarez de Toledo" Aranda Arg¸elles-Meres Asensio
+		last_names = { AcuÒa Aguirre Alcal·-Zamora Allendesalazar Alonso ¡lvarez "¡lvarez de Toledo" Aranda Arg¸elles-Meres Asensio
 		Aznar Barradas Bugallal Cabrera "Cagigal de la Vega" Cano Cervera "de Albornoz" "de BorbÛn"
 		"de Carvajal" "de la Fuente" "de Orleans" DÌaz Espartero Fern·ndez "Fern·ndez de CÛrdoba" "Fitz-James Stuart" Franco 
 		GarcÌa "GarcÌa de la Noceda" Gonz·lez Heredia Hern·ndez Herrera Hevia "Hidalgo de Cisneros" Linares LÛpez 
@@ -457,7 +424,7 @@ iberian = {
 		Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicol·s Pablo Pascual
 		Pedro Rafael Raimundo RamÛn Ricardo Santiago Sebasti·n Segismundo Valeriano Vicente }
 		
-	last_names = { AcuÒa Aguirre Alcal·-Zamora Allendesalazar Alonso ¡lvarez "¡lvarez de Toledo" Aranda Arg¸elles-Meres Asensio
+		last_names = { AcuÒa Aguirre Alcal·-Zamora Allendesalazar Alonso ¡lvarez "¡lvarez de Toledo" Aranda Arg¸elles-Meres Asensio
 		Aznar Barradas Bugallal Cabrera "Cagigal de la Vega" Cano Cervera "de Albornoz" "de BorbÛn"
 		"de Carvajal" "de la Fuente" "de Orleans" DÌaz Espartero Fern·ndez "Fern·ndez de CÛrdoba" "Fitz-James Stuart" Franco 
 		GarcÌa "GarcÌa de la Noceda" Gonz·lez Heredia Hern·ndez Herrera Hevia "Hidalgo de Cisneros" Linares LÛpez 
@@ -496,6 +463,24 @@ iberian = {
 		Herculano Ivens Keil Lopes Machado Magalh„es Mendes Moniz Mouzinho Nogueira 
 		Nunes Ortig„o Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
 		Ribeiro Rodrigues Salazar Sampaio SÈrgio Silveira Tavares Teixeira Vidigal Vieira }
+	}
+}
+
+basque = {
+	leader = southamerican
+	unit = SpanishGC
+	basque = {
+		color = {220 170 30}
+		first_names = { Agust˙ã Aitor Alberto Ander Andoni AndrÈs ¡ngel Antonio Arturo Carlos
+		Ceferino Cosme Cristobal Dami·n Endika "Francisco Javier" Ignacio Imanol IÒaki Jes˙s
+		Jon "JosÅEAntonio" "JosÅEMar˙}" Joseba Josu Juan Julen Koldobika Luis Manuel
+		Marino Miguel Paulino Pedro Rafael Ramiro RamÛn Sabino Tom·s Vicente }
+		
+		last_names = { Aguirre Ajuriaguerra Aldecoa Arana Aranzadi Arizmendiarrieta Armend·riz Aznar Balenciaga Berasategui 
+		Bilbao CampiÛn Churruca "de AmÈsquita" "de Azpilicueta" "de Erauso" "de Renter˙}" "de Ubisztongo" EchagÅE Echave
+	 	Echegaray Echevarr˙} Elorza GaztaÒeta Ibarrola Ib·rruri Irujo Lazcano Mendizabal Moneo 
+		N·rdiz Olano Olave Oyarz·bal Rotaeche Uzcudun Zam·rraga Z·rate Zavala Zumalac·rregui }
+		radicalism = 15
 	}
 }
 
@@ -746,6 +731,26 @@ hungarian_culture_group = {
 		Lichtenstein Liszt Miksz·th Moln·r Nagy-S·ndor ÷sterreicher Ottinger Perczel Poeltenberg RemÈnyi
 		Rohr Schweidel SzÈchenyi Szemere Szl·vic Tersztyansky Tˆrˆk Varga VÈcsey "von Benedek" }
 		radicalism = 5
+	}
+	finnish = { 
+		color = { 220 220 220}
+		first_names = { Aatto Akseli Aleksanteri Anders Aukusti Edvard Eemil Erkki Erno Fabian
+		Fredrik Fridolf Georg Gˆsta Harald Hjalmar Hugo Johannes Juho Kaarlo
+		Kurt Lars Martti Mikko Paavo Petteri Rudolf V‰inÅEViktor Vilho }
+		
+		last_names = { Airo Alopaeus Aspara Cajander Ehrnrooth Heinrichs Heiskanen Holsti Ignatius J‰rnef‰lt
+		Linder Mannerheim Multam‰ki Nenonen Oesch ÷quist ÷sterman Paasikivi Raappana Ramsay
+		Sihvo Siilasvuo Talvela Thesleff Tujulin Tuompo "von Hesse-Kassel" Walden Wallenius Wetzer }
+		radicalism = 5
+	}
+	sami = {
+		color = { 150 125 175 }
+		first_names = {
+			Asllak Biejas Dure Erke Hanno Iskko Joha Laras Markkos Mikko Niillas Osku Uhkku
+		}
+		last_names = {
+			HÊtta Somby Turi Magga Dunfjeld Kvitfjell Kappfjell
+		}
 	}
 }
 
@@ -1056,7 +1061,7 @@ caucasian = {
 		#radicalism = 10
 		#}
 		
-		dagestani = {
+	dagestani = {
 		color = {134 100 49}
 		first_names = {
 			Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar V·rkony Shamil Kamil Magomet Ibrahim Muhammad Mansur Dzhokhar Avshalumov Aliyeva Askerkhanov Gamzatov Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
@@ -1066,9 +1071,9 @@ caucasian = {
 			Awaral Gamzatov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak Nogai Aghul Rutul al-Tsakhur Muhammad Hotso Bamat Gadzhiyev Fazu Gamzatovna
 		}
 		radicalism = 25
-		}
+	}
 		
-		chechen = {
+	chechen = {
 		color = {46 112 99}
 		first_names = {
 			Abuu Ayub Adam Ahmad Alikhan Alkhazur Aluu Andarbek Anzor Aptii Arzu Aslan Aslanbek Asuu Balavdi Baudi Bekkhan Bislan Bula Buvaisar Bworz Chabworz Deni Duqvaakha Eela Elbek Elbrus Elberd Emin Gada Ghanii Hassuh Hamid Hamzat Haaron Hasan Hooza Humid Husein Ibraahim Iljas Kanta Katii Kazbek Khasboolat Khasmohmad Khavazh Kyyra Lyoma Lecha "Madii Nel" Mairbek Mamed Mikaail Mohmad Movldi Movsar Mumaadi Murad Muusa Nezh Nurdi Ortsa Ramzan Ruman Ruslan Rustam Saida Saidali Saipuddi Shamsuuddi Sha'raani Sherip Shirvani Siraazhdi Sols Suliim Suliman Supjan Surkho "T'aaus" Umalt Turpal Vaakha Vaakhiita Yaaqub Visiita Yunaadi Yunus Yusup Yousef Zaindi Zakrii Zeelim Zhabii Zhamal Zhamalaila Zovra Mansur
@@ -1078,9 +1083,9 @@ caucasian = {
 			Ajndi Shishani Akhmadov Dudayev Yamadayev Abramov Alkhanov Bargishev Basayev Dudaev Kadyrov Maskhadov Saidullayev Umarov Zakayev Akkiy Myalkiy Nokhchmakhkakhoy Alaroy Beltagoy Benoy Biltoy Dishni Chartoy Elistanzhkhoy Centoroy Enganoy Ersenoy Gendargenoy Gunoi Kharachoi Zandakhoi Terloy Beshni Chinkhoi Chanti Cheberloy Mutawakil Rigakhoy Buni Sharoy Shotoy Varandoy Batsbi al-Ingush al-Kist Tchermoeff
 		}
 		radicalism = 30
-		}
+	}
 		
-		circassian = {
+	circassian = {
 		color = {185 206 6}
 		first_names = {
 			Aghwrbiy Abatiy Albech Albot "Alhx'es" "Alhx'o" Alijiqwe Bale Batirbiy Biylhosten Blaneshu Bubeird Chetsu "Ch'ischiqwe" Chawis Dariqwe Dokshiqua Dzeghaschte Dzune Foqwe Ghwaze Gushina Gushipsa Hegwtsire Hanaqua Hetsu Jirandiqwe Kwshbiy Lhostenasch Mamsriqwe Menshaq Meshiqwe Nalbiy Nartshu Nerzan Pschimaxwe Qideghaze Schebet Shumaxwe Shupashe Takwu Tsumash Tighwenbiy Tighwen Werdeschawe Wezroqwe Yedij Zhore
@@ -1090,8 +1095,8 @@ caucasian = {
 			Neghwey al-Shishani Shapsug Zhaney Temirgoy Natukhai Syupako Abadzehs Kerzedzh Kuytsuk Khatirame Birdzh Cherch Ubykhs Mamkhegh Kabarday Cherkess Hatuqwai Bzhedug Kabardi Adyghe
 		}
 		radicalism = 20
-		}
 	}
+}
 
 
 arab = {
@@ -1254,19 +1259,6 @@ iranian_turanian = {
 			Bahadur Bukhari Khan
 			}
 	}
-	kazak = {
-		color = {83 102 46}
-		first_names = {
-			Ablai "Abu al-Khayr" Aryn Bukei Chokan 
-			Dulat Ibirai Isatai Ishim Jangir Kenisary 
-			Mashur Murat "Nur Ali" Qayip 
-			Sadyk Sirim Sarzhan 
-			Tenek Tolshan Vali
-			}
-		last_names = {
-			Beg  Khan "Konanbai uli" "Kutebar uli" "Muhammad uli" "Qasim uli" 
-			}
-	}
 	kirgiz = {
 		color = {62 73 41}
 		first_names = {
@@ -1315,15 +1307,6 @@ iranian_turanian = {
 			}
 		radicalism = 10
 	}
-	uighur = {
-		color = {92 96 168}
-		first_names = { 
-			Afaq Ahmed Arshad Bahayeddin Burhan Daud Hakim Husayin Kemal Maqsud Muhammad Musa Rashidin Satuq Timur Yaqub
-			}
-		last_names = {
-			Beg Khan
-			}
-	}
 	pashtun = {
 		color = {199 151 230}
 		
@@ -1366,24 +1349,6 @@ iranian_turanian = {
 			Beg Khan
 		}
 	}
-	tatar = {
-		color = {45 87 99}
-		first_names = {
-			Asaf Baqi Galiaskar Ismail Makhmut  Musa Rustam Yusuf
-		}
-		last_names = {
-			Amirkhanov Faysi Gizzat Ibragimov Kamal Khusainov Tinchurin Tukay Yanbayev
-		}
-		radicalism = 10
-	}
-	
-	gypsy = {
-	color = {16 102 163}
-		first_names = { Amberline Belcher Baul Bavol Bersh Beval Bidshika Brishen Camlo Chik Cam Chaine Chal  Chavula Danior Dukker Durriken Durril Dangerfield Garridan Gillie Guibran Goliath Gilderoy Hezekiah Jal Javert Jibben Jivin Ker Lel Lennor Lendar Lensar Mander Merripen Mestipen  Major Nehemiah Pal Pattin Pias Pov Rye Stiggur Shadrack Silvanus Tas Tobar Tobbar Tawno Tem Terkari Vandlo Wen Wesh Yarb }
-		
-		last_names = { Petulengro Vardo-mescro Chumomisto Gry Balorengre Purrum Bedra-kero Camlo Mokkado Baremescre Baryor Beshaley Kaulo }
-		radicalism = 1
-	}
 }
 
 central_asian = {
@@ -1399,7 +1364,28 @@ central_asian = {
                Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav
 		}
 	}
-	
+	uighur = {
+		color = {92 96 168}
+		first_names = { 
+			Afaq Ahmed Arshad Bahayeddin Burhan Daud Hakim Husayin Kemal Maqsud Muhammad Musa Rashidin Satuq Timur Yaqub
+			}
+		last_names = {
+			Beg Khan
+			}
+	}
+	kazak = {
+		color = {83 102 46}
+		first_names = {
+			Ablai "Abu al-Khayr" Aryn Bukei Chokan 
+			Dulat Ibirai Isatai Ishim Jangir Kenisary 
+			Mashur Murat "Nur Ali" Qayip 
+			Sadyk Sirim Sarzhan 
+			Tenek Tolshan Vali
+			}
+		last_names = {
+			Beg  Khan "Konanbai uli" "Kutebar uli" "Muhammad uli" "Qasim uli" 
+			}
+	}
 	siberian = {
 		color = {40 240 240}
 		first_names = {
@@ -1441,6 +1427,16 @@ central_asian = {
 		last_names = { Thapa "Singh Thapa" Singh Rana "Bahadur Rana" 
                
 		}
+	}
+	tatar = {
+		color = {45 87 99}
+		first_names = {
+			Asaf Baqi Galiaskar Ismail Makhmut  Musa Rustam Yusuf
+		}
+		last_names = {
+			Amirkhanov Faysi Gizzat Ibragimov Kamal Khusainov Tinchurin Tukay Yanbayev
+		}
+		radicalism = 10
 	}
 }
 
@@ -1649,6 +1645,13 @@ indo_iranian = {
 		last_names = { Alwani Bjaeen Bhatti Bhil Bhurgari Bulfati Chandio Daudpota Gabol Kalpar Kolhi Magsi Mallaah Rajpar Sarki Sirki Solangi
                
 		}
+	}
+	gypsy = {
+		color = {16 102 163}
+		first_names = { Amberline Belcher Baul Bavol Bersh Beval Bidshika Brishen Camlo Chik Cam Chaine Chal  Chavula Danior Dukker Durriken Durril Dangerfield Garridan Gillie Guibran Goliath Gilderoy Hezekiah Jal Javert Jibben Jivin Ker Lel Lennor Lendar Lensar Mander Merripen Mestipen  Major Nehemiah Pal Pattin Pias Pov Rye Stiggur Shadrack Silvanus Tas Tobar Tobbar Tawno Tem Terkari Vandlo Wen Wesh Yarb }
+		
+		last_names = { Petulengro Vardo-mescro Chumomisto Gry Balorengre Purrum Bedra-kero Camlo Mokkado Baremescre Baryor Beshaley Kaulo }
+		radicalism = 1
 	}
 }
 
