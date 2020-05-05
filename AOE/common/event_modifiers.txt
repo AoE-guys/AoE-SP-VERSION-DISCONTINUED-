@@ -6045,3 +6045,13 @@ pearl_of_the_antilles = {
 	goods_demand = 0.10
 	population_growth = 0.01
 }
+#modifier_above_gay
+trade_centre = {
+	icon = 11
+	goods_demand = 0.2
+	immigrant_attract = 0.25
+}
+
+potential_trade_post = {
+	icon = 7
+}
