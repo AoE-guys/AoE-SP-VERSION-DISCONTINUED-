@@ -1748,7 +1748,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 
+				factor = 5
 				in_sphere = AUS
 				NOT = {
 					tag = BAV
@@ -1863,9 +1863,9 @@ country_event = {
 	option = {
 		name = "Dark times are ahead of us"
 		prestige = -150
-		HRE = {
+		NNN = {
 			all_core = {
-				remove_core = HRE
+				remove_core = NNN
 			}
 		}
 		any_country = {

@@ -4259,7 +4259,7 @@ agriculture_reform = {
 	factory_cost = -0.3
 	war_exhaustion = -0.03
 	global_pop_consciousness_modifier = 0.003
-	education_efficiency_modifier = 0.75
+	education_efficiency_modifier = 0.25
 	icon = 17
 }
 commodity_act = {
@@ -4413,6 +4413,28 @@ peasant_in_government = {
 }
 clergy_and_nobility_domination = {
 	icon = 18
+}
+######Great Britain#####
+agriculture_revolution= {
+	factory_cost = -0.3
+	war_exhaustion = -0.03
+	factory_output = 0.05
+	global_pop_consciousness_modifier = 0.003
+	education_efficiency_modifier = 0.25
+	icon = 17
+}
+british_general_staff = {
+	org_regain = 0.25
+	mobilisation_economy_impact = -0.25
+	land_unit_start_experience = 10
+	supply_consumption = -0.05
+	leadership_modifier = 0.05
+	icon = 15
+}
+fief_and_drum = {
+	land_organisation = 0.10
+	supply_consumption = -0.1
+	icon = 15
 }
 ###+RGO_education###
 
@@ -5994,6 +6016,29 @@ erbkaisertum = {
 	prestige = 0.0002
 	icon = 5
 }
+####South Sea Company####
+the_great_debt = {
+	loan_interest = 0.75
+	tax_efficiency = -0.1
+}
+the_great_debt_1 = {
+	loan_interest = 0.05
+	tax_efficiency = -0.02
+}
+the_south_sea_company = {
+	loan_interest = -0.35
+	tariff_efficiency_modifier = 0.15
+}
+the_south_sea_company_1 = {
+	loan_interest = -0.65
+	tariff_efficiency_modifier = 0.25
+}
+the_south_sea_company_2 = {
+	loan_interest = -0.15
+	tariff_efficiency_modifier = 0.05
+}
+###Great Britain#####
+
 ####Saint-Domingue####
 pearl_of_the_antilles = {
 	local_factory_throughput = 1.00
