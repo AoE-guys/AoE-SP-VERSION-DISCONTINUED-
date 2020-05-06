@@ -91586,6 +91586,63 @@ text_rotation = 90
 
 }
 
+# Tulear
+3348 = {
+    text_position = {
+        x = 3492
+        y = 382
+    }
+
+    text_scale = 3.5
+    unit = {
+        x = 3493
+        y = 384
+    }
+
+    city = {
+        x = 3493
+        y = 384
+    }
+
+    factory = {
+        x = 3493
+        y = 384
+    }
+
+    building_construction = {
+        x = 3493
+        y = 384
+    }
+
+    military_construction = {
+        x = 3493
+        y = 384
+    }
+
+    building_position = {
+        fort = {
+            x = 3488
+            y = 377
+        }
+
+        railroad = {
+            x = 3493
+            y = 384
+        }
+
+        naval_base = {
+            x = 3489
+            y = 381
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.759586
+    }
+
+}
+
 # Comoros
 2123 = {
     text_position = {
@@ -128044,7 +128101,57 @@ text_rotation = 90
 
 }
 
+# Diego-Suarez
+3347 = {
+    text_position = {
+        x = 3574
+        y = 561
+    }
 
+    text_scale = 1.000000
+    unit = {
+        x = 3574
+        y = 561
+    }
+
+    city = {
+        x = 3574
+        y = 561    
+	}
+
+    factory = {
+        x = 3574
+        y = 561
+    }
+
+    building_construction = {
+        x = 3574
+        y = 561
+    }
+
+    military_construction = {
+        x = 3574
+        y = 561
+    }
+
+    building_position = {
+        fort = {
+        x = 3574
+        y = 561
+        }
+
+        naval_base = {
+        x = 3570
+        y = 561
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 6.021386
+    }
+
+}
 
 
 

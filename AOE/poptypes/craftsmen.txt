@@ -7,11 +7,11 @@ can_work_factory = yes
 
 #Total = 11
 life_needs = {
-	cattle = 1
-	wool =  1
-	fish =  1
-	fruit =  1
-	grain =  2.5
+	cattle = 5
+	wool = 1
+	fish = 2.5
+	fruit = 2.5
+	grain = 5
 }
 
 #Total cash needed: 59 - Vanilla value: 64
@@ -27,6 +27,8 @@ everyday_needs = {
 	radio = 1
 	steamer_convoy = 1
 	cotton = 1
+	cattle = 10
+	grain = 10
 }
 
 #Total cash needed: 136.78 - Vanilla value: 125.995

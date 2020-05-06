@@ -151,14 +151,12 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA18540"
-		badboy = -2
-		prestige = 5
-		
+		add_country_modifier = rick_rolled
 	}
 	
 	option = {
 		name = "EVTOPTB18540"
-		badboy = -3
+		add_country_modifier = rick_rolled
 	}
 }
 

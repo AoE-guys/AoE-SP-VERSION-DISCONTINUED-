@@ -88,7 +88,7 @@ political_decisions = {
 		potential = {
 			tag = GBR
 			BNG = {
-				is_vassal = yes
+				vassal_of = THIS
 			}
 			is_greater_power = yes
 		}
@@ -102,11 +102,141 @@ political_decisions = {
 			inherit = BNG
 		}
 	}
+
+	#clonize_australia = {
+	#
+	#}
 	
+	agricultural_revolution = {
+		potential = {
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
+			NOT = { has_country_flag = agricultural_revolution }
+		}
+		allow = {
+			compound_steam_engines = 1
+			semi_automatization = 1
+			hot_blast = 1
+			early_railroad = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = agriculture_revolution
+				duration = 14600
+			}
+			set_country_flag = agricultural_revolution
+		}
+	}
+	
+	duke_of_york_reforms = {
+		potential = {
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
+			NOT = { has_country_flag = duke_of_york_reforms }
+		}
+		allow = {
+			has_leader = "Prince Frederick, Duke of York"
+			is_greater_power = yes
+			army_leadership_7 = 1
+		}
+		effect = {
+			set_country_flag = duke_of_york_reforms
+			add_country_modifier = {
+				name = british_general_staff
+				duration = 7300
+			}
+		}
+	}
+	
+	army_reform = {
+		potential = {
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
+			NOT = { has_country_flag = army_reform }
+		}
+		allow = {
+			military_science_7 = 1
+			army_doctrine_7 = 1
+		}
+		effect = {
+			set_country_flag = army_reform
+			add_country_modifier = {
+				name = fief_and_drum
+				duration = -1
+			}
+		}
+	}
+	
+	press_the_claim_on_french_throne = {
+		potential = {
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
+			NOT = { has_country_flag = french_throne }
+			425 = {
+				owner = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+						government = hms_government
+					}
+				}
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			425 = {
+				owner = {
+					is_greater_power = no
+				}
+			}
+			controls = 425
+			OR = {
+				AND = {
+					military_score = BOR
+					BOR = {
+						exists = yes
+					}
+				}
+				AND = {
+					military_score = FRA
+					FRA = {
+						exists = yes
+					}
+				}
+			}
+		}
+		effect = {
+			badboy = 30
+			set_country_flag = french_throne
+			425 = {
+				owner = {
+					add_casus_belli = {
+						target = THIS
+						type = make_puppet
+						months = 13
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	claim_the_raj_title = {
 		picture = raj
 		potential = {
-			tag = GBR
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
 			is_greater_power = yes
 		}
 		allow = {
@@ -137,7 +267,10 @@ political_decisions = {
 	british_south_africa = {
 		picture	= cape_map
 		potential = {
-			tag = GBR
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
 			is_greater_power = yes
 		}
 		allow = {

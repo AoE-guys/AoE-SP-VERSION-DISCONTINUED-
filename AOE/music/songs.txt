@@ -27,7 +27,45 @@ modifier = {
 		war = no
 	}
 }
+song = {
+	name = "Safe Haven from the Dunes.mp3"
 
+	modifier = {
+		factor = 0
+		war = yes
+		}
+
+modifier = {
+		factor = 1
+		war = no
+	}
+}
+song = {
+	name = "Friedrich II Der Große Concerto No3 in C major for Flute.mp3"
+
+	modifier = {
+		factor = 0
+		war = yes
+		}
+
+modifier = {
+		factor = 1
+		war = no
+	}
+}
+song = {
+	name = "A Decent Challenge.mp3"
+
+	modifier = {
+		factor = 1
+		war = yes
+	}
+
+modifier = {
+		factor = 0
+		war = no
+	}
+}
 song = {
 	name = "Winter_four_seasons.mp3"
 
