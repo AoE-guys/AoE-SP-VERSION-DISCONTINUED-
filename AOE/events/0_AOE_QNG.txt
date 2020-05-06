@@ -1,0 +1,217 @@
+country_event = {
+	id = 16970
+	title = "1712 Border Convention"
+	desc = "EVTDESC16970"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Draw the border on the river"
+		prestige = 5
+		KOR = { country_event = 16971 }
+	}
+		
+	option = {
+		name = "Draw the border on our claim"
+		prestige = -15
+		KOR = { country_event = 16974 }
+	}
+		
+	option = {
+		name = "Draw the border on the Korean claim"
+		prestige = 30
+		3346 = { secede_province = KOR }
+		KOR = { country_event = 16977 }
+		relation = {
+			who = KOR
+			value = 200
+		}
+	}
+}
+
+country_event = {
+	id = 16972
+	title = "Border Change Declined"
+	desc = "EVTDESC16972"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Sad! We will keep claims on them"
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 16973
+	title = "Border Change Accepted"
+	desc = "EVTDESC16973"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 16971
+	title = "River Border"
+	desc = "EVTDESC16971"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Agree to the proposal"
+		3346 = {
+			remove_core = KOR
+		}
+		
+		3345 = {
+			remove_core = QNG
+		}
+
+		1622 = {
+			remove_core = QNG
+		}
+		QNG = { country_event = 16973 }
+	}
+	
+	option = {
+		name = "Decline the proposal"
+		QNG = { country_event = 16972 }
+	}
+}
+
+country_event = {
+	id = 16974
+	title = "Qing Claim on North"
+	desc = "EVTDESC16974"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Agree to the proposal"
+		1622 = { secede_province = QNG }
+		QNG = { country_event = 16975 }
+	}
+	
+	option = {
+		name = "Decline the proposal"
+		QNG = { country_event = 16976 }
+	}
+}
+
+country_event = {
+	id = 16976
+	title = "Border Change Declined"
+	desc = "EVTDESC16976"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Sad! We will keep claims on them"
+		prestige = -5
+	}
+	
+	option = {
+		name = "We will take it by force!"
+		prestige = 5
+		QNG = { release_vassal = KOR }
+		war = {
+			target = KOR
+			attacker_goal = { casus_belli = acquire_all_cores }
+			attacker_goal = { casus_belli = make_puppet country = KOR }
+			defender_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = acquire_all_cores }
+			call_ally = no
+		}
+		war = {
+			target = JGS
+			attacker_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+	}	
+}
+
+country_event = {
+	id = 16975
+	title = "Border Change Accepted"
+	desc = "EVTDESC16975"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 16977
+	title = "Qing offers us Gando"
+	desc = "EVTDESC16977"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Agree to the proposal"
+		prestige = 15
+		QNG = { country_event = 16978 }
+	}
+}
+
+country_event = {
+	id = 16978
+	title = "The border with Korea is done"
+	desc = "EVTDESC16978"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "They'd better be thankful"
+		prestige = 15
+	}
+}
+
+country_event = {
+	id = 16979
+	title = "Geopolitical realities"
+	desc = "EVTDESC16979"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	
+	trigger = {
+		tag = JGS
+		1622 = {
+			controlled_by = QNG
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Ok. We switch allegiances"
+		relation = {
+			who = QNG
+			value = 200
+		}
+		KOR = { release_vassal = JGS }
+		QNG = {
+			create_vassal = JGS
+		}
+	}
+}
