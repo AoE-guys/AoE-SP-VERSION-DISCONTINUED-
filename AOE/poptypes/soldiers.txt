@@ -31,11 +31,11 @@ luxury_needs_income = {
 
 #Total = 11
 life_needs = {
-	cattle = 1
-	wool =  1
-	fish =  1
-	fruit =  1
-	grain =  2.5
+	cattle = 5
+	wool = 1
+	fish = 2
+	fruit = 2
+	grain = 5
 }
 
 #Total cash needed: 69.075 - Vanilla value: 57.35
@@ -50,6 +50,8 @@ everyday_needs = {
 	ammunition = 0.5 #0
 	small_arms = 0.35 #0
 	cotton = 0.5
+	cattle = 10
+	grain = 10
 }
 
 #Total cash needed: 136.78 - Vanilla value: 125.995
