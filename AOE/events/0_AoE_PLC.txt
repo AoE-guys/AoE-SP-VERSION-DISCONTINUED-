@@ -7,7 +7,7 @@ country_event = {
 	
 	trigger = {
 		tag = PLC
-		DPR = { is_our_vassal = PLC }
+		is_our_vassal = DPR
 	}
 	
 	mean_time_to_happen = {

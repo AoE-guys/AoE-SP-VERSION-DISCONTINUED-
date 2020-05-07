@@ -642,7 +642,7 @@ asia_mob_nerf = {
 		}
 	}
 	icon = 10
-	mobilisation_size = -0.75
+	mobilisation_size = -0.90
 }
 chinese_substate = {
 	trigger = {
@@ -918,6 +918,10 @@ help_ai_russia = {
 			is_culture_group = south_slavic
 			primary_culture = greek
 			is_culture_group = pan_romanian
+			AND = { 
+				owns = 619 #Austria
+				NOT = { year = 1705 }
+			}
 			AND = {
 				owns = 322 #Sweden
 				NOT = { year = 1710 }
@@ -1372,7 +1376,6 @@ the_elective_monarchy = {
 		government = elective_monarchy_oligarchy
 	}	
 	global_pop_consciousness_modifier = 0.06
-	global_pop_militancy_modifier = 0.03
 	icon = 8
 }
 janisseries_influence = {

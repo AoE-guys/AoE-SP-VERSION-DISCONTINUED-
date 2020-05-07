@@ -5958,13 +5958,13 @@ decentralized_rule = {
 	org_regain = -0.4
 	army_organisation = -0.3
 	admin_efficiency = -0.1
-	mobilisation_size = -0.4
+	mobilisation_size = -0.75
 	icon = 3
 }
 political_chaos = {
 	diplomatic_points_modifier = -0.2
 	influence_modifier = -0.1
-	global_pop_militancy_modifier = 0.04
+	global_pop_militancy_modifier = 0.06
 }
 ##
 inefficient_bureacracy = {

@@ -1116,6 +1116,20 @@ cuirassier_activation = {
 		activate_unit = cuirassier
 	}
 }
+moose_cav = {
+	limit = { military_staff_system = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 0
+			not = { civilized = yes }
+		}
+	}
+	hussar = {
+		defence = 1
+		maximum_speed = 1
+	}
+}
 dragoon_activation = {
 	limit = { military_staff_system = 1 }
 	chance = {
