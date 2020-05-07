@@ -3,6 +3,6 @@ controller = PBZ
 add_core = PBZ
 add_core = BRZ
 add_core = BAH
-trade_goods = grain  state_building = {  level = 5  building = tobacco_factory  upgrade = yes  }
+trade_goods = tobacco  state_building = {  level = 5  building = tobacco_factory  upgrade = yes  }
 terrain = new_world_semidesert
 life_rating = 25
