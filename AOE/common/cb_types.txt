@@ -7687,6 +7687,11 @@ conquer_trade_post = {
 		}
 		NOT = { is_our_vassal = THIS }
 	}
+	
+	on_po_accepted = {
+		owner = { add_country_modifier = { name = negotiating_port_loss duration = -1 } }
+		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
+	}
 }
 
 obtain_potential_trade_post = {
@@ -7720,5 +7725,10 @@ obtain_potential_trade_post = {
 			has_province_modifier = potential_trade_post
 		}
 		NOT = { is_our_vassal = THIS }
+	}
+	
+	on_po_accepted = {
+		owner = { add_country_modifier = { name = negotiating_port_loss duration = -1 } }
+		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
 	}
 }
