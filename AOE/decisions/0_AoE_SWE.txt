@@ -670,4 +670,26 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	moose_cavalry = {
+		picture = moose_man
+		potential = {
+			is_culture_group = scandinavian
+			owns = 322
+			322 = { is_capital = yes}
+			NOT = { has_country_flag = moose_cav }
+		}
+		allow = {
+			army_professionalism = 1
+			money = 5000
+		}
+		effect = {
+			money = -5000
+			set_country_flag = moose_cav
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }
