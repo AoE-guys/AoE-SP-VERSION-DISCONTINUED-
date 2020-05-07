@@ -86,20 +86,14 @@ eastern = {
 		icon = 10
 	}
 
-	hindu = {
-		color = { 0 0.8 0.8 }
-		icon = 11
-	}
-
-	shinto = {
-		color = { 0.8 0 0 }
-		icon = 12
-	}
-
 	sikh = {
 		color = { 0.3 0.8 0 }
 		icon = 13
 	}
+	
+	taoist = {
+		color = { 1 1 1 }
+		icon = 19
 
 }
 
@@ -109,4 +103,28 @@ pagan = {
 		color = { 0.5 0.0 0.0 }
 		pagan = yes
 	}
+	
+	hindu = {
+		color = { 0 0.8 0.8 }
+		icon = 11
+	}
+
+	shinto = {
+		color = { 0.8 0 0 }
+		icon = 12
+	}
+	
+	tengri = {
+		color = 0 0.6 0.6
+		icon = 21
+	}
+
 }
+
+zoroastrian_group = {
+	zoroastrian = { 
+		color = { 1 0.8 0.1 }
+		icon = 20
+	}
+}
+	
