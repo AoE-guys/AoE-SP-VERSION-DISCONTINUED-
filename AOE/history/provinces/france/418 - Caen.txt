@@ -2,7 +2,7 @@ owner = BOR
 controller = BOR
 add_core = BOR
 add_core = NRM
-trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
+trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
 state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 30
 terrain = caen
