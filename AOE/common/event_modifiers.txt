@@ -5958,13 +5958,13 @@ decentralized_rule = {
 	org_regain = -0.4
 	army_organisation = -0.3
 	admin_efficiency = -0.1
-	mobilisation_size = -0.4
+	mobilisation_size = -0.75
 	icon = 3
 }
 political_chaos = {
 	diplomatic_points_modifier = -0.2
 	influence_modifier = -0.1
-	global_pop_militancy_modifier = 0.04
+	global_pop_militancy_modifier = 0.06
 }
 ##
 inefficient_bureacracy = {
@@ -6045,7 +6045,9 @@ pearl_of_the_antilles = {
 	goods_demand = 0.10
 	population_growth = 0.01
 }
-#modifier_above_gay
+
+#modifiers above gay
+
 trade_centre = {
 	icon = 11
 	goods_demand = 0.2
@@ -6058,4 +6060,12 @@ potential_trade_post = {
 
 rick_rolled = {
 	icon = 3
+}
+
+negotiating_port_demand = {
+	icon = 7
+}
+
+negotiating_port_loss = {
+	icon = 7
 }

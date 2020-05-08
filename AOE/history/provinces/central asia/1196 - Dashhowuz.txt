@@ -2,7 +2,7 @@ owner = KHI
 controller = KHI
 add_core = KHI
 add_core = TKM
-trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
-state_building = {  level = 5  building = barrel_factory  upgrade = yes  }
+trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
+state_building = {  level = 1  building = barrel_factory  upgrade = yes  }
 life_rating = 35
 terrain = semidesert
