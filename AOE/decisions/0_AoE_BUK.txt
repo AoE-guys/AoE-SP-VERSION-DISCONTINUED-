@@ -61,4 +61,62 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+
+	reclaim_district_of_river_ayaguz = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = KAZ
+			NOT = {
+				has_country_flag = reclaimed_agayuz
+			}
+		}
+		
+		allow = {
+			year = 1718
+		}
+		
+		effect = {
+			set_country_flag = reclaimed_agayuz
+			DZN = { country_event = 6078 }
+			}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	reclaim_eastern_tribal_areas = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = KAZ
+			NOT = {
+				has_country_flag = claimed_eastern_tribal_areas
+			}
+		}
+		
+		allow = {
+			1187 = {
+				owned_by = KAZ
+			}
+		}
+		
+		effect = {
+			set_country_flag = claimed_eastern_tribal_areas
+			1186 = {
+				add_core = KAZ
+			}
+			1188 = {
+				add_core = KAZ
+			}
+			1595 = {
+				add_core = KAZ
+			}
+			1596 = {
+				add_core = KAZ
+			}
+			2679 = {
+				add_core = KAZ
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }

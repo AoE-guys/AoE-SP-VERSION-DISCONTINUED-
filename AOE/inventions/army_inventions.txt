@@ -1121,15 +1121,17 @@ moose_cav = {
 	chance = {
 		base = 0
 		modifier = {
-			factor = 0
-			not = { civilized = yes }
+			factor = 100
+			has_country_flag = moose_cav
 		}
 	}
-	hussar = {
+	effect = { 
+		hussar = {
 		defence = 1
 		maximum_speed = 1
+		attack = 1
+		}
 	}
-}
 dragoon_activation = {
 	limit = { military_staff_system = 1 }
 	chance = {

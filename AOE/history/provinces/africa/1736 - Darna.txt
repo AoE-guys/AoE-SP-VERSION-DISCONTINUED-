@@ -2,6 +2,6 @@ owner = TUR
 controller = TUR
 add_core = CYR
 add_core = TUR
-trade_goods = fish  state_building = {  level = 5  building = fish_factory  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
 life_rating = 35
 terrain = plains

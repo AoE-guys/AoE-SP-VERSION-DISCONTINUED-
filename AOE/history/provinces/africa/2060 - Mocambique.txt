@@ -2,7 +2,7 @@ owner = AGC
 controller = AGC
 add_core = MRV
 add_core = AGC
-trade_goods = cotton  state_building = {  level = 5  building = cotton_factory  upgrade = yes  }
+trade_goods = cotton  state_building = {  level = 1  building = cotton_factory  upgrade = yes  }
 life_rating = 35
 
 naval_base = 1
