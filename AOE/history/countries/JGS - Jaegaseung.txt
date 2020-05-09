@@ -11,11 +11,11 @@ prestige = 1
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
-vote_franschise = wealth_voting
-public_meetings = no_meeting
+vote_franschise = none_voting
+public_meetings = yes_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = jefferson_method
+voting_system = first_past_the_post
 political_parties = underground_parties
 
 # Social Reforms
