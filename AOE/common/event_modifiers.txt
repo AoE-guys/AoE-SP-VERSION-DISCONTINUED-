@@ -4420,7 +4420,12 @@ agriculture_revolution= {
 	war_exhaustion = -0.03
 	factory_output = 0.05
 	global_pop_consciousness_modifier = 0.003
-	education_efficiency_modifier = 0.25
+	education_efficiency_modifier = 0.10
+	icon = 17
+}
+encolsure = {
+	education_efficiency_modifier = 0.35
+	factory_input = -0.05
 	icon = 17
 }
 british_general_staff = {
