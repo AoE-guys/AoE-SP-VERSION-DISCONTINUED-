@@ -152,7 +152,7 @@ country_event = {
 			target = TIB
 			attacker_goal = { casus_belli = status_quo }
 			defender_goal = { casus_belli = acquire_all_cores }
-			call_ally = no
+			call_ally = yes
 		}
 		prestige = 15
 	}
