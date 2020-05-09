@@ -138,7 +138,7 @@ promotion_chance = {
 	}
 		
 	modifier = {
-		factor = -5
+		factor = -1
 		strata = rich
 	}
 
@@ -224,12 +224,12 @@ promotion_chance = {
 	}
 	
 	modifier = {
-		factor = -100
+		factor = -1
 		location = { NOT = { controlled_by = owner } }
 	}
 	
 	modifier = {
-		factor = 2.0
+		factor = 1.0
 		state_scope = { is_colonial = yes }
 		country = {
 			colonial_policy = settlement
@@ -241,13 +241,13 @@ promotion_chance = {
 			NOT = { is_core = THIS }
 			NOT = { is_core = CRI }
 			total_pops = 55000
-			#culture = russian
+			culture = russian
 		}
 		year = 1860
 	}
 	
 	modifier = {
-		factor = 2
+		factor = 1.5
 		state_scope = { is_colonial = yes }
 		country = {
 			colonial_policy = settlement
@@ -287,7 +287,7 @@ promotion_chance = {
 	}
 	
 	modifier = {
-		factor = 10
+		factor = 1
 		OR = {
 			is_accepted_culture = yes
 			is_primary_culture = yes
@@ -661,12 +661,12 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = -2.2
+		factor = -0.2
 		state_scope = { is_colonial = yes }
 	}
 	
 	modifier = {
-		factor = -100
+		factor = -1
 		OR = {
 			not = { location = { total_pops = 1000 } }
 			not = { location = { total_pops = 100 } }
@@ -675,7 +675,7 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = 0.15
+		factor = 0.10
 		country = { colonial_policy = settlement }
 	}
 	
@@ -705,7 +705,7 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = 0.4
+		factor = 0.1
 		THIS = { 
 			is_culture_group = polish_culture_group
 		}
@@ -753,7 +753,7 @@ migration_chance = {
 	}
 
 	modifier = {
-		factor = -0.8
+		factor = -0.08
 		country = { has_country_flag = preparations_to_kill }
 		is_primary_culture = no
 		is_accepted_culture = no
@@ -821,7 +821,7 @@ migration_chance = {
 	}
 		
 	modifier = {
-		factor = 10
+		factor = 1
 		THIS = { 
 			OR = {
 				has_pop_culture = north_german
@@ -842,7 +842,7 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = 10
+		factor = 1
 		THIS = { 
 			OR = {
 				has_pop_culture = french
@@ -860,7 +860,7 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = 100
+		factor = 2
 		THIS = { is_culture_group = east_slavic }
 		country = {
 			colonial_policy = settlement
@@ -882,7 +882,7 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = 100
+		factor = 2
 		THIS = { is_culture_group = east_slavic }
 		country = {
 			colonial_policy = settlement
@@ -904,7 +904,7 @@ migration_chance = {
 	}
 	
 	modifier = {
-		factor = 100
+		factor = 2
 		state_scope = { is_colonial = yes }
 		THIS = { is_culture_group = east_slavic }
 		location = { 
@@ -951,7 +951,7 @@ colonialmigration_chance = {
 	}
 	
 	modifier = {
-		factor = -100
+		factor = -1
 		OR = {
 			state_scope = { is_colonial = yes }
 			not = { location = { total_pops = 1000 } }
@@ -1094,7 +1094,7 @@ emigration_chance = {
 	factor = 0.5
 	
 	modifier = {
-		factor = -2.0
+		factor = -1.5
 		OR = {
 			location = { continent = north_america }
 			location = { continent = south_america }
@@ -1117,7 +1117,7 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -100
+		factor = -2
 		OR = {
 			state_scope = { is_colonial = yes }
 			not = { location = { total_pops = 1000 } }
@@ -1309,7 +1309,7 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -20
+		factor = -1
 		has_pop_religion = animist
 		not = { literacy = 0.5 }
 		not = { country = { has_country_flag = animists_run } }
@@ -1573,7 +1573,7 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = 0.1
+		factor = 1
 		THIS = { 
 			has_pop_culture = irish
 		}
@@ -1598,7 +1598,7 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -0.1
+		factor = -0.2
 		country = { 
 			OR = {
 				has_country_flag = sunni_country
@@ -1645,7 +1645,7 @@ emigration_chance = {
 	}
 		
 	modifier = {
-		factor = 0.3
+		factor = -0.1
 		year = 1837
 		NOT = { year = 1905 }
 		THIS = { NOT = { is_culture_group = east_asian } }
@@ -1706,12 +1706,12 @@ assimilation_chance = {
 	}
 	
 	modifier = {
-		factor = -20
+		factor = -2
 		has_culture_core = yes
 	}
 	
 	modifier = {
-		factor = -20
+		factor = -2
 		OR = { 
 			is_culture_group = east_asian
 			is_culture_group = south_asian
@@ -1938,7 +1938,7 @@ conversion_chance = {
 	}
 	
 	modifier = {
-		factor = -0.75
+		factor = 0.15
 		OR = {
 			country = { capital_scope = { pop_majority_religion = sunni } }
 			country = { capital_scope = { pop_majority_religion = shiite } }
@@ -1955,7 +1955,7 @@ conversion_chance = {
 	}
 	
 	modifier = {
-		factor = -0.75
+		factor = -0.25
 		OR = {
 			country = { capital_scope = { pop_majority_religion = protestant } }
 			country = { capital_scope = { pop_majority_religion = catholic } }
@@ -1970,7 +1970,7 @@ conversion_chance = {
 	}
 			
 	modifier = {
-		factor = 0.8
+		factor = 0.25
 		has_pop_religion = animist
 		location = { continent = africa }
 		country = { civilized = yes }
@@ -1990,7 +1990,7 @@ conversion_chance = {
 	}
 	
 	modifier = {
-		factor = 1.5
+		factor = 0.15
 		has_pop_culture = ainu
 		country = { primary_culture = japanese }
 	}
