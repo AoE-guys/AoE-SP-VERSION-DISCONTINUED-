@@ -9,7 +9,7 @@ literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.5
 civilized = yes
 is_releasable_vassal = no
 
-prestige = 4
+prestige = 10
 
 # Political reforms
 slavery = no_slavery
@@ -55,8 +55,8 @@ schools = culture_tech_school
 ruling_party = "Stronnictwo Magnackie"
 upper_house = {
 	fascist = 0
-	liberal = 30
-	conservative = 65
+	liberal = 40
+	conservative = 55
 	reactionary = 5
 	anarcho_liberal = 0
 	socialist = 0

@@ -1,8 +1,8 @@
 political_decisions = {
 
 	unite_great_britain = {
-			picture = union_act
-			potential = {
+		picture = union_act
+		potential = {
 			tag = ENG
 			NOT = { exists = GBR }
 		}
@@ -45,7 +45,7 @@ political_decisions = {
 					exists = yes
 					ai = yes
 				}
-				SCO = { all_core = { add_core = ENG } }
+				SCO = { all_core = { add_core = THIS } }
 				THIS = { inherit = SCO }
 			}
 			any_country = {
@@ -108,6 +108,7 @@ political_decisions = {
 	#}
 	
 	agricultural_revolution = {
+		picture = agriculture_rev
 		potential = {
 			owns = 300
 			300 = {
@@ -130,7 +131,29 @@ political_decisions = {
 		}
 	}
 	
+	begin_encolsure = {
+		potential = {
+			owns = 300
+			300 = {
+				is_capital = yes
+			}
+			NOT = { has_country_flag = encolsure }
+		}
+		allow = {
+			steam_turbine = 1
+			has_country_modifier = agriculture_revolution
+		}
+		effect = {
+			add_country_modifier = {
+				name = encolsure
+				duration = 14600
+			}
+			set_country_flag = encolsure
+		}
+	}
+	
 	duke_of_york_reforms = {
+		picture = duke_of_york
 		potential = {
 			owns = 300
 			300 = {
@@ -139,7 +162,7 @@ political_decisions = {
 			NOT = { has_country_flag = duke_of_york_reforms }
 		}
 		allow = {
-			has_leader = "Prince Frederick, Duke of York"
+			has_country_flag = duke_of_york
 			is_greater_power = yes
 			army_leadership_7 = 1
 		}
@@ -153,6 +176,7 @@ political_decisions = {
 	}
 	
 	army_reform = {
+		picture = british_granadiers
 		potential = {
 			owns = 300
 			300 = {
@@ -174,6 +198,7 @@ political_decisions = {
 	}
 	
 	press_the_claim_on_french_throne = {
+		picture = anglo_french_union
 		potential = {
 			owns = 300
 			300 = {
@@ -230,6 +255,63 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	unite_french_and_english_crowns = {
+		picture = union_act
+		potential = {
+			owns = 300
+			300 = { is_capital = yes }
+			NOT = { exists = EFM }
+		}
+		
+		allow = {
+			war = no
+			owns = 300
+			ideological_thought = 1
+			425 = {
+				owner = {
+					in_sphere = THIS
+					vassal_of = THIS
+					ai = yes
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = 29
+			all_core = {
+				add_core = EFM
+				remove_core = THIS
+			}
+			any_country = {
+				limit = {
+					owns = 425
+					exists = yes
+					vassal_of = THIS
+					ai = yes
+				}
+				
+				all_core = { 
+					add_core = THIS
+					secede_province = THIS
+				}
+			}
+			change_tag = EFM
+			add_accepted_culture = french
+			any_country = {
+				limit = {
+					NOT = { tag = SCO }
+					exists = yes
+					owns = 300
+					owns = 269
+				}
+				release_vassal = SCO
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 	claim_the_raj_title = {
 		picture = raj
 		potential = {
@@ -241,16 +323,36 @@ political_decisions = {
 		}
 		allow = {
 			ENG_1305 = {
-				owned_by = GBR
+				OR = {
+					owned_by = GBR
+					owner = {
+						vassal_of = THIS
+					}
+				}
 			}
 			ENG_1261 = {
-				owned_by = GBR
+				OR = {
+					owned_by = GBR
+					owner = {
+						vassal_of = THIS
+					}
+				}
 			}
 			ENG_1251 = {
-				owned_by = GBR
+				OR = {
+					owned_by = GBR
+					owner = {
+						vassal_of = THIS
+					}
+				}
 			}
 			ENG_1252 = {
-				owned_by = GBR
+				OR = {
+					owned_by = GBR
+					owner = {
+						vassal_of = THIS
+					}
+				}
 			}
 			political_thought_7 = 1
 		}
@@ -275,7 +377,15 @@ political_decisions = {
 		}
 		allow = {
 			ENG_2087 = {
-				owned_by = GBR
+				OR = {
+					owned_by = GBR
+					owner = {
+						vassal_of = THIS
+						NOT = { 
+							tag = NET
+						}
+					}
+				}
 			}
 		}
 		effect = {

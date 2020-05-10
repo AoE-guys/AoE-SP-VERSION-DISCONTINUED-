@@ -5963,7 +5963,12 @@ decentralized_rule = {
 	org_regain = -0.4
 	army_organisation = -0.3
 	admin_efficiency = -0.1
-	mobilisation_size = -0.75
+	mobilisation_size = -0.45
+	icon = 3
+}
+decentralized_rule_efm = {
+	admin_efficiency = -0.1
+	mobilisation_size = -0.4
 	icon = 3
 }
 political_chaos = {
@@ -6051,7 +6056,7 @@ pearl_of_the_antilles = {
 	population_growth = 0.01
 }
 
-#modifiers above gay
+#modifiers below gay
 
 trade_centre = {
 	icon = 11
