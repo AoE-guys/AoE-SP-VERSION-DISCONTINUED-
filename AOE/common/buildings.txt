@@ -22,7 +22,7 @@ grain_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -44,7 +44,7 @@ cotton_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -66,7 +66,7 @@ dye2_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -88,7 +88,7 @@ wool_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -110,7 +110,7 @@ silk_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -132,7 +132,7 @@ coal_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -154,7 +154,7 @@ sulphur_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -176,7 +176,7 @@ iron_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -198,7 +198,7 @@ timber_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -220,7 +220,7 @@ tropical_wood_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -242,7 +242,7 @@ rubber_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -264,7 +264,7 @@ oil_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -286,7 +286,7 @@ cattle_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -308,7 +308,7 @@ fish_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -330,7 +330,7 @@ fruit_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -352,7 +352,7 @@ tobacco_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -374,7 +374,7 @@ tea_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -396,7 +396,7 @@ coffee_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -418,7 +418,7 @@ opium_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -444,7 +444,7 @@ aeroplane_factory = {
 		steel = 60
 		cement = 60
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -463,7 +463,7 @@ barrel_factory = {
 precious_goods = 1000
 	}
 
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -481,7 +481,7 @@ automobile_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -500,7 +500,7 @@ radio_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -519,7 +519,7 @@ telephone_factory = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -542,7 +542,7 @@ electric_gear_factory = {
 		steel = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -563,7 +563,7 @@ machine_parts_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -584,7 +584,7 @@ synthetic_oil_factory = {
 		steel = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -605,7 +605,7 @@ fuel_refinery = {
 		steel = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -626,7 +626,7 @@ synthetic_sulphur_factory = {
 		steel = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -649,7 +649,7 @@ steamer_shipyard = {
 	{
 precious_goods = 1000
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -671,7 +671,7 @@ clipper_shipyard = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -693,7 +693,7 @@ luxury_clothes_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -713,7 +713,7 @@ luxury_furniture_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -735,7 +735,7 @@ steel_factory = {
 		iron = 20
 		coal = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 	
@@ -755,7 +755,7 @@ artillery_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -774,7 +774,7 @@ small_arms_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -795,7 +795,7 @@ furniture_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -814,7 +814,7 @@ paper_mill = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 	
@@ -833,7 +833,7 @@ regular_clothes_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -852,7 +852,7 @@ explosives_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -874,7 +874,7 @@ ammunition_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -894,7 +894,7 @@ canned_food_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -914,7 +914,7 @@ dye_factory = {
 		steel = 20 #was iron
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -935,7 +935,7 @@ liquor_distillery = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 	
@@ -955,7 +955,7 @@ winery = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -976,7 +976,7 @@ lumber_mill = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -995,7 +995,7 @@ fabric_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -1014,7 +1014,7 @@ cement_factory = {
 		iron = 20
 		lumber = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -1033,7 +1033,7 @@ glass_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 	
@@ -1053,7 +1053,7 @@ fertilizer_factory = {
 		iron = 20
 		cement = 20
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = no
 
@@ -1075,7 +1075,7 @@ fort = {
 		artillery = 40
 		ammunition = 10
 	}
-	time = 1080 
+	time = 180 
 	visibility = yes
 	onmap = yes
 	max_level = 6
@@ -1093,7 +1093,7 @@ naval_base = {
 		steel = 100
 		machine_parts = 1
 	}
-	time = 1080
+	time = 180
 	naval_capacity = 1
 	capital = yes
 	onmap = yes
@@ -1116,7 +1116,7 @@ railroad = {
 		cement = 100
 		steel = 100
 	}
-	time = 1
+	time = 30
 	visibility = yes
 	onmap = yes
 	max_level = 6
@@ -1138,7 +1138,7 @@ temperate_climate_agriculture = {
 	{
 
 	}
-	time = 1080 
+	time = 180 
 	visibility = no
 	onmap = no
 	max_level = 1
@@ -1152,7 +1152,7 @@ hot_climate_agriculture = {
 	{
 
 	}
-	time = 1080 
+	time = 180 
 	visibility = no
 	onmap = no
 	max_level = 1
@@ -1166,7 +1166,7 @@ mines_export = {
 	{
 
 	}
-	time = 1080 
+	time = 30080 
 	visibility = no
 	onmap = no
 	max_level = 1
@@ -1180,7 +1180,7 @@ fishing_export = {
 	{
 
 	}
-	time = 1080 
+	time = 180 
 	visibility = no
 	onmap = no
 	max_level = 1
@@ -1194,7 +1194,7 @@ wood_export = {
 	{
 
 	}
-	time = 1080 
+	time = 180 
 	visibility = no
 	onmap = no
 	max_level = 1
@@ -1208,7 +1208,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1222,7 +1222,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1236,7 +1236,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1250,7 +1250,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1264,7 +1264,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1278,7 +1278,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1292,7 +1292,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1306,7 +1306,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1320,7 +1320,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1334,7 +1334,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1348,7 +1348,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1362,7 +1362,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1376,7 +1376,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1390,7 +1390,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1404,7 +1404,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1418,7 +1418,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1432,7 +1432,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1446,7 +1446,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
@@ -1460,7 +1460,7 @@ wood_export = {
 #	{
 #
 #	}
-#	time = 1080 
+#	time = 30080 
 #	visibility = no
 #	onmap = no
 #	max_level = 1
