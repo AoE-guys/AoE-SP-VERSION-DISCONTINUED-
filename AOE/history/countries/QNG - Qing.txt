@@ -20,12 +20,13 @@ voting_system = jefferson_method
 political_parties = underground_parties
 
 # Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions
+wage_reform = good_minimum_wage #irrelevant church
+work_hours = ten_hours #influential gentry
+safety_regulations = low_safety #slightly influential nobility
+unemployment_subsidies = no_subsidies #irrelevant burghers
+pensions = low_pensions #slightly influential army
+health_care = good_health_care #very influential bureaucracy
+
 school_reforms = no_schools
 
 # New Reforms
