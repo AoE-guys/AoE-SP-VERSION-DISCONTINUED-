@@ -527,6 +527,7 @@ country_event = {
 		name = "They're not worth our time"
 		prestige = -10
 		militancy = 4
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
@@ -558,6 +559,7 @@ country_event = {
 	option = {
 		name = "They're not worth our time"
 		prestige = -10
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
