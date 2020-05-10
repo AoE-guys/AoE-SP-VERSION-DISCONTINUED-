@@ -1796,3 +1796,136 @@ small_but_efficient_VEN = {
 	education_efficiency_modifier = 0.05
 	supply_consumption = -0.9
 }
+own_australia = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 2468 2469 2470 2471 2472 2473 2474 2475 2508 2476 2477 2478 2479 2480 2481 2482 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_canada = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 46 50 51 57 55 56 52 53 54 58 65 62 61 63 64 66 67 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_new_york = {
+	trigger = {
+		exists = yes
+		owns = 232
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_illinois = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 163 168 167 166 165 164 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_indiana = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 169 170 172 171 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_michigan = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 173 174 175 176 177 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_ohio = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 179 178 180 183 182 181 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_kentucky = {
+	trigger = {
+		exists = yes
+		owns = { 
+			AND = { 184 185 186 187 }
+		}
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_montevideo = {
+	trigger = {
+		exists = yes
+		owns = 2344
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_buenos_aires = {
+	trigger = {
+		exists = yes
+		owns = 2348
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+own_rio_de_janeiro = {
+	trigger = {
+		exists = yes
+		owns = 2447
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 0.1
+}
+
+new_colossus = {
+	trigger = {
+		exists = yes
+		poor_strata_life_needs = 1.0
+		civilized = yes
+	}
+	icon = 9
+	global_immigrant_attract = 1.0
+}
