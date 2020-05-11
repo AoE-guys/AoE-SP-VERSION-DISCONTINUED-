@@ -9,7 +9,7 @@ literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.03
 civilized = yes
 
 #GreaterPowers = prestige
-prestige = 15
+prestige = 65
 
 # Political reforms
 slavery = yes_slavery
@@ -22,12 +22,13 @@ voting_system = first_past_the_post
 political_parties = underground_parties
 
 # Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = acceptable_pensions 
+wage_reform = low_minimum_wage #slightly influential church
+work_hours = no_work_hour_limit #irrelevant gentry
+safety_regulations = acceptable_safety #marginally relevant nobility
+unemployment_subsidies = trinket_subsidies #marginally relevant burghers
+pensions = good_pensions #very influential army
+health_care = acceptable_health_care #influential bureaucracy
+
 school_reforms = no_schools
 
 # New Reforms
