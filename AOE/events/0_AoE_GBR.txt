@@ -60,12 +60,20 @@ country_event = {
 	
 	option = {
 		name = "We'll search for another candidate..."
-		
+		ai_chance = {
+			factor = 1
+		}
 	}
 	
 	option = {
 		name = "God save the King!"
 		country_event = 171402
+		ai_chance = {
+			factor = 0
+			modifier = {
+				average_militancy = 6
+			}
+		}
 	}
 }
 country_event = {
@@ -1370,6 +1378,7 @@ country_event = {
 		300 = {
 			is_capital = yes
 		}
+		year = 1770
 		any_owned_province = {
 			OR = {
 				region = KAL_1221
@@ -1411,6 +1420,7 @@ country_event = {
 		name = "Give the land to the company"
 		any_owned = {
 			limit = {
+				NOT = { province_id = 3263 }
 				OR = {
 					region = KAL_1221
 					region = PAN_1224
@@ -1480,5 +1490,103 @@ country_event = {
 			personality = resolute
 			background = genius
 		}
+		set_country_flag = duke_of_york
 	}
 }
+country_event = {
+	id = 171009
+	title = "French War of Independence"
+	desc = "EVTDESC171009"
+	picture = english_parliment
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = EFM
+		owns = 425
+		average_militancy = 6
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Horrible News"
+		prestige = -10
+		all_core = {
+			limit = {
+				is_core = BOR
+			}
+			secede_province = BOR
+		}
+		425 = {
+			owner = {
+				war = {
+					target = EFM
+					attacker_goal = { casus_belli = humiliate }
+					defender_goal = { casus_belli = acquire_all_cores }
+					call_ally = no
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = 171010
+	title = "Loss of France"
+	desc = "EVTDESC171010"
+	picture = english_parliment
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = EFM
+		NOT = { owns = 425 }
+		OR = {
+			BOR = {
+				exists = yes
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		war = no
+		average_militancy = 6
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Oh well..."
+		prestige = -60
+		any_country = {
+			limit = {
+				SCO = {
+					vassal_of = THIS
+				}
+				THIS = {
+					owns = 300
+					has_country_flag = jacobism_prevails
+				}
+			}
+			change_tag = GBJ
+		}
+		any_country = {
+			limit = {
+				SCO = {
+					vassal_of = THIS
+				}
+				THIS = {
+					owns = 300
+				}
+			}
+			change_tag = ENG
+		}	
+	}
+}
+country_event = {
+	id = 171010
+	title = "Loss of France"
+	desc = "EVTDESC171010"
+	picture = english_parliment
+	fire_only_once = yes

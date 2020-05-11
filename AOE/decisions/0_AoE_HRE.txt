@@ -15,6 +15,7 @@ political_decisions = {
 				}
 			}
 			NOT = { has_country_flag = hre_member }
+			NOT = { has_global_flag = hre_dismantled }
 		}
 		allow = {
 			relation = { who = AUS value = 150 }
@@ -43,6 +44,7 @@ political_decisions = {
 		picture = flag_hre
 		potential = {
 			has_country_flag = hre_member
+			NOT = { has_global_flag = hre_dismantled }
 		}
 		allow = {
 			relation = { who = AUS value = -10 }
@@ -450,6 +452,7 @@ political_decisions = {
 		potential = {
 			tag = AUS
 			NOT = { has_country_flag = added_belgium_hre }
+			NOT = { has_global_flag = hre_dismantled }
 			owns = 387
 			owns = 394
 			owns = 397

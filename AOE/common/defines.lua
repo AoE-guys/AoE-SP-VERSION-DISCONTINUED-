@@ -694,7 +694,7 @@ pops = {
 	
 	POP_TO_LEADERSHIP = 0.0001, -- how much leadership every 1000 officers gives each day.
 	ARTISAN_MIN_PRODUCTIVITY = 5, -- Minimum efficiency of an artisan
-	SLAVE_GROWTH_DIVISOR = 10, -- Slaves have N times lower growth
+	SLAVE_GROWTH_DIVISOR = 25, -- Slaves have N times lower growth
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
 	LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxury goods

@@ -53,7 +53,7 @@ country_event = {
 		name = "We must let them know who is really in charge of the orient!"
 		war = {
 			target = TIB
-			attacker_goal = { casus_belli = unification_annex_casus_belli }
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}
@@ -61,7 +61,7 @@ country_event = {
 			who = QNG
 			value = -200
 		}
-		QNG = { country_event = 6082 }
+		QNG = { country_event = 6081 }
 		prestige = 15
 	}
 }
@@ -69,20 +69,10 @@ country_event = {
 	id = 6081
 	title = "Dzungars in Tibet"
 	desc = "EVTDESC6081"
+	is_triggered_only = yes
 	fire_only_once = yes
 	picture = central_asian_tribes
-	
-	trigger = {
-		tag = QNG
-		1587 = {
-			controlled_by = DZN
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 2
-	}
-	
+
 	option = {
 		name = "We should start working with the Dalai Lama to curb Dzungar expansionism"
 		relation = {
@@ -186,7 +176,7 @@ country_event = {
 		war = {
 			target = KAZ
 			attacker_goal = { casus_belli = status_quo } 
-			defender_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = acquire_all_cores country = KAZ }
 			call_ally = no
 		}
 		KAZ = { country_event = 6076 }

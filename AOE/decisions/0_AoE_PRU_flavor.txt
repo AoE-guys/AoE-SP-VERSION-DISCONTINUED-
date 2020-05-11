@@ -565,4 +565,50 @@ political_decisions = {
 			}
 		}
 	}
+	
+	form_brandenburg = {
+		picture = prussia_king
+		potential = {
+			tag = PRU
+			NOT = {
+				owns = 691
+				owns = 695
+			}
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			all_core = {
+				add_core = BRN
+				remove_core = PRU
+			}
+			change_tag = BRN
+			prestige = -15
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	form_prussia = {
+		picture = prussia_king
+		potential = {
+			tag = BRN
+			OR = {
+				owns = 691
+				owns = 695
+			}
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			all_core = {
+				add_core = PRU
+				remove_core = BRN
+			}
+			change_tag = PRU
+			prestige = 15
+		}
+		ai_will_do = { factor = 1 }
+	}
 }
