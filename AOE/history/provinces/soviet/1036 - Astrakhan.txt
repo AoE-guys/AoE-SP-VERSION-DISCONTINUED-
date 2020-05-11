@@ -3,7 +3,7 @@ controller = RUS
 add_core = KMK
 add_core = RUS
 add_core = AKH
-trade_goods = wool  state_building = {  level = 5  building = wool_factory  upgrade = yes  }
-state_building = {  level = 5  building = barrel_factory  upgrade = yes  }
+trade_goods = wool  state_building = {  level = 1  building = wool_factory  upgrade = yes  }
+state_building = {  level = 1  building = barrel_factory  upgrade = yes  }
 life_rating = 35
 fort = 1

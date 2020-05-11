@@ -12,7 +12,7 @@ french_liberal_school = {
 	icon = 9
 }
 asian_farms = {
-	farm_rgo_size = 10
+	#farm_rgo_size = 10
 	icon = 9
 }
 smithian_school = {
@@ -6045,7 +6045,9 @@ pearl_of_the_antilles = {
 	goods_demand = 0.10
 	population_growth = 0.01
 }
-#modifier_above_gay
+
+#modifiers above gay
+
 trade_centre = {
 	icon = 11
 	goods_demand = 0.2
@@ -6058,4 +6060,12 @@ potential_trade_post = {
 
 rick_rolled = {
 	icon = 3
+}
+
+negotiating_port_demand = {
+	icon = 7
+}
+
+negotiating_port_loss = {
+	icon = 7
 }

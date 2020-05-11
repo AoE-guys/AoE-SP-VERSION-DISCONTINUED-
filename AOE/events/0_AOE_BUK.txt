@@ -2,17 +2,9 @@ country_event = {
 	id = 6083
 	title = "Oirat Pressure"
 	desc = "EVTDESC6083"
+	is_triggered_only = yes
 	fire_only_once = yes
 	picture = mughal_breakup
-	
-	trigger = {
-		tag = BUK
-		year = 1720
-	}
-	
-	mean_time_to_happen = {
-		months = 2
-	}
 	
 	option = {
 		name = "We have no other option than to accept"
@@ -82,7 +74,6 @@ country_event = {
 	
 	trigger = {
 		tag = QNG
-		year = 1718
 		1587 = {
 			controlled_by = DZN
 		}
@@ -136,18 +127,10 @@ country_event = {
 	id = 6079
 	title = "Chinese Threats"
 	desc = "EVTDESC6079"
+	is_triggered_only = yes
 	fire_only_once = yes
 	picture = central_asian_tribes
-	
-	trigger = {
-		tag = DZN
-		year = 1721
-	}
-	
-	mean_time_to_happen = {
-		months = 2
-	}
-	
+
 	option = {
 		name = "Tibet is Ours!"
 		relation = {
@@ -167,10 +150,9 @@ country_event = {
 		}
 		war = {
 			target = TIB
-			target = QNG
 			attacker_goal = { casus_belli = status_quo }
 			defender_goal = { casus_belli = acquire_all_cores }
-			call_ally = no
+			call_ally = yes
 		}
 		prestige = 15
 	}
@@ -187,4 +169,68 @@ country_event = {
 		}
 		prestige = -15
 	}
+}
+country_event = {
+	id = 6078
+	title = "Kazakhs Seize Agayuz"
+	desc = "EVTDESC6078"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Agayuz is Ours!"
+		relation = {
+			who = KAZ
+			value = -200
+		}
+		war = {
+			target = KAZ
+			attacker_goal = { casus_belli = status_quo } 
+			defender_goal = { casus_belli = acquire_all_cores }
+			call_ally = no
+		}
+		KAZ = { country_event = 6076 }
+	}
+	
+	option = {
+		name = "Fine."
+		relation = {
+			who = KAZ
+			value = 100
+		}
+		1187 = { secede_province = KAZ }
+		prestige = -15
+		KAZ = { country_event = 6077 }
+	}
+}
+country_event = {
+	id = 6077
+	title = "Dzungars allow it"
+	desc = "EVTDESC6077"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Agayuz is Ours!"
+		relation = {
+			who = DZN
+			value = 100
+		}
+	}
+}
+country_event = {
+	id = 6076
+	title = "War has broken out"
+	desc = "EVTDESC6076"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Agayuz is Ours!"
+		relation = {
+			who = QNG
+			value = 100
+		}
+	}
+
 }
