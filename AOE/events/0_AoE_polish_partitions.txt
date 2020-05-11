@@ -313,7 +313,6 @@ country_event = {
 		PRU_701 = { secede_province = FROM }
 		717 = { secede_province = FROM }
 		3323 = { secede_province = FROM }
-		712 = { secede_province = FROM }
 		710 = { secede_province = FROM }
 		696	= { secede_province = FROM }
 		690	= { secede_province = FROM }
@@ -326,7 +325,6 @@ country_event = {
 		PRU_701 = { add_core = FROM }
 		717 = { add_core = FROM }
 		3323 = { add_core = FROM }
-		712 = { add_core = FROM }
 		710 = { add_core = FROM }
 		696	= { add_core = FROM }
 		690	= { add_core = FROM }
@@ -481,6 +479,7 @@ country_event = {
 		RUS_708 = { secede_province = FROM }
 		706 = { secede_province = FROM }
 		362 = { secede_province = FROM }
+		712 = { secede_province = FROM }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -491,6 +490,7 @@ country_event = {
 			706 = { add_core = FROM }
 			RUS_708 = { add_core = FROM }
 			362 = { add_core = FROM }
+			712 = { add_core = FROM }
 		}
 		549 = {
 			owner = {
