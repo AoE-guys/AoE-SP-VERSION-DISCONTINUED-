@@ -278,8 +278,9 @@ political_decisions = {
 			961	= { add_core = RUS }
 			954 = { add_core = RUS }
 			947 = { add_core = RUS }
+			939 = { add_core = RUS }
 			3337 = { add_core = RUS }
-			RUS_360	= { any_owned = { limit = { NOT = { province_id = 362 } } add_core = RUS } }
+			RUS_360	= { limit = { NOT = { province_id = 362 } } add_core = RUS }
 			RUS_707	= { add_core = RUS }
 			RUS_940 = { add_core = RUS }
 			RUS_959 = { add_core = RUS }
