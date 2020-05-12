@@ -32486,11 +32486,11 @@
 745 = {
     text_position = {
         x = 2972.620000
-        y = 1497.490000
+        y = 1498
     }
 
     text_rotation = 5.576197
-    text_scale = 1.800000
+    text_scale = 1.6
     unit = {
         x = 2976.750000
         y = 1496.090000
@@ -32530,6 +32530,64 @@
         naval_base = {
             x = 2968.399902
             y = 1495.800049
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.846853
+    }
+
+}
+
+# Pisa
+3356 = {
+    text_position = {
+        x = 2969
+        y = 1503
+    }
+
+    text_rotation = 5.576197
+    text_scale = 1.5
+    unit = {
+        x = 2970
+        y = 1502
+    }
+
+    city = {
+        x = 2970
+        y = 1502
+    }
+
+    factory = {
+        x = 2970
+        y = 1502
+    }
+
+    building_construction = {
+        x = 2970
+        y = 1502
+    }
+
+    military_construction = {
+        x = 2970
+        y = 1502
+    }
+
+    building_position = {
+        fort = {
+            x = 2970
+            y = 1502
+        }
+
+        railroad = {
+            x = 2970
+            y = 1502
+        }
+
+        naval_base = {
+            x = 2970
+            y = 1502
         }
 
     }
@@ -74958,48 +75016,100 @@
 
 }
 
-# Tunis
+## Tunis
 1725 = {
     unit = {
-        x = 2963.000000
-        y = 1372.000000
+        x = 2969
+        y = 1380
     }
 
     text_position = {
-        x = 2964.899902
-        y = 1368.699951
+        x = 2966.899902
+        y = 1379.300049
     }
 
-    text_scale = 2.899999
+    text_scale = 2.4
     city = {
-        x = 2958.000000
-        y = 1370.000000
+        x = 2966.899902
+        y = 1379.300049
     }
 
     building_construction = {
-        x = 2961.800049
-        y = 1366.300049
+        x = 2966.899902
+        y = 1379.300049
     }
 
     military_construction = {
-        x = 2973.000000
-        y = 1374.000000
+        x = 2966.899902
+        y = 1379.300049
     }
 
     factory = {
         x = 2966.899902
-        y = 1367.000000
+        y = 1379.300049
     }
 
     building_position = {
         fort = {
-            x = 2976.899902
-            y = 1378.000000
+            x = 2966.899902
+            y = 1379.300049
         }
 
         naval_base = {
             x = 2966.899902
             y = 1379.300049
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.443462
+    }
+
+}
+
+# Nabeul
+3355 = {
+    unit = {
+        x = 2961
+        y = 1368
+    }
+
+    text_position = {
+        x = 2961
+        y = 1370
+    }
+
+    text_scale = 2.7
+    city = {
+        x = 2960
+        y = 1369
+    }
+
+    building_construction = {
+        x = 2961
+        y = 1369
+    }
+
+    military_construction = {
+        x = 2957
+        y = 1369
+    }
+
+    factory = {
+        x = 2957
+        y = 1369
+    }
+
+    building_position = {
+        fort = {
+            x = 2957
+            y = 1369
+        }
+
+        naval_base = {
+            x = 2975
+            y = 1378
         }
 
     }
