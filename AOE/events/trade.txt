@@ -845,3 +845,39 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 69422
+	title = "Province lost"
+	desc = "We were forced to let the enemy gain use of a trade post."
+	option = {
+		random_owned = {
+			OR = {
+				has_province_modifier = { potential_trade_post }
+				has_province_modifier = { trade_centre }
+			}
+			add_province_modifier = { negotiated }
+		}
+	}
+}
+
+country_event = {
+	id = 69423
+	title = "Trade Port Gained"
+	desc = "Stonks"
+	option = {
+		any_country = { 
+			limit = { 
+				truce_with = { THIS }
+			}
+			any_owned = {
+				limit = { 
+					has_province_modifier = { negotiated }
+				}
+				secede_province = THIS 
+			}
+		}
+	}
+}	
+			
+			
