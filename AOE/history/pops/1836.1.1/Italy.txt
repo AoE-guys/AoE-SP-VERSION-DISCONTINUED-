@@ -1454,57 +1454,115 @@
 	aristocrats = {
 		culture = north_italian
 		religion = catholic
-		size = 1286
+		size = 600
 	}
 
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 561
+		size = 280
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 6000
+		size = 3000
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 5080
+		size = 2500
 	}
 
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size = 1726
+		size = 900
 	}
 
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 50044
+		size = 25000
 	}
 
 	labourers = {
 		culture = north_italian
 		religion = catholic
-		size = 2792
+		size = 1500
 	}
 
 	clergymen = {
 		culture = north_italian
 		religion = jewish
-		size = 16
+		size = 8
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = jewish
-		size = 808
+		size = 404
 	}
 }
+
+#Pisa (380000/95000 POPS)
+3350 = {
+	aristocrats = {
+		culture = north_italian
+		religion = catholic
+		size = 600
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 280
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 3000
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 2500
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 900
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 25000
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 1500
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = jewish
+		size = 8
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = jewish
+		size = 404
+	}
+}
+
 #Siena (380000/95000 POPS)
 747 = {
 	aristocrats = {
