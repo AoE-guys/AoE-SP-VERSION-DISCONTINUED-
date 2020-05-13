@@ -93,7 +93,7 @@ country_event = {
 		add_country_modifier = { name = ghost_country_haunting  duration = 60 }
 		treasury = 1000
 		neutrality = yes
-		random_country = {
+		any_country = {
 			limit = { war_with = THIS }
 			end_war = THIS
 		}
@@ -123,7 +123,7 @@ country_event = {
 		any_country = { clr_country_flag = ghost_country }
 		clr_global_flag = ghost_units_cleanup
 		neutrality = yes
-		any_country = {
+		random_country = {
 			limit = { has_country_flag = ghost_country_host }
 			clr_country_flag = ghost_country_host
 			inherit = THIS
