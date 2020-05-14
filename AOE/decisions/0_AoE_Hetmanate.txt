@@ -125,4 +125,74 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+
+	destroy_the_sich = {
+		picture = cossak_state
+		
+		potential = {
+			tag = RUS
+			HET = {
+				exists = yes
+			}
+			NOT = {
+				has_country_flag = destroy_the_sich
+			}
+			NOT = {
+				has_country_flag = fate_of_the_sich
+			}
+			year = 1770
+		}
+		
+		allow = {
+			has_country_modifier = catharine_the_great
+			owns = 966
+			HET = {
+				vassal_of = RUS
+			}
+		}
+			
+		effect = {
+			inherit = HET
+			inherit = ZZH
+			prestige = 5
+			badboy = 3
+			set_country_flag = destroy_the_sich
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	fate_of_the_sich = {
+		picture = cossak_state
+		
+		potential = {
+			tag = RUS
+			HET = {
+				has_country_flag = masepa_revolt
+				exists = yes
+			}
+			NOT = {
+				has_country_flag = fate_of_the_sich
+				has_country_flag = sich
+			}
+		}
+		
+		allow = {
+			HET = {
+				vassal_of = RUS
+			}
+			ZZH = {
+				OR = {
+					exists = no
+					vassal_of = RUS
+				}
+			}
+		}
+			
+		effect = {
+			country_event = 91241544
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }
