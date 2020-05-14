@@ -589,10 +589,8 @@ restore_austrian_empire = {
 		NOT = { in_sphere = THIS }
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		NOT = { has_country_flag = hre_member }
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
-		}
+		war_with = THIS
+		THIS = { NOT = { has_country_modifier = punitive_effects } }
 	}
 
 	allowed_states = {
