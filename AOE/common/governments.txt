@@ -232,7 +232,14 @@ trade_monarchy = {
 	anarcho_liberal = yes
 	socialist = yes
 	election = yes
-	appoint_ruling_party =  yes
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
+
+khanate = {
+	conservative = yes
+	reactionary = yes
+	appoint_ruling_party = yes
 	flagType = monarchy
 }
 
