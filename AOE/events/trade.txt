@@ -888,6 +888,24 @@ country_event = {
 				duration = -1
 			}
 		}
+		44 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3284 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		203 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
