@@ -2877,51 +2877,56 @@
 }
 #Suwalki (196000/49000 POPS)
 707 = {
+	bureaucrats = {
+		culture = north_german
+		religion = protestant
+		size = 250
+	}
 	aristocrats = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 505
 	}
 
 	clergymen = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 188
 	}
 
 	artisans = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 950
 	}
 
 	soldiers = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 188
 	}
 
 	farmers = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 20021
 	}
 
 	labourers = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 1191
 	}
 	
 	serfs = {
-		culture = polish
+		culture = lithuanian
 		religion = catholic
 		size = 2500
 	}
 
 	clergymen = {
-		culture = lithuanian
-		religion = catholic
+		culture = north_german
+		religion = protestant
 		size = 50
 	}
 
