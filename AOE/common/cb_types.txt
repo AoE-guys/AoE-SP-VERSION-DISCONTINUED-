@@ -7721,11 +7721,10 @@ obtain_potential_trade_post = {
 	good_relation_militancy_factor = 0
 	
 	can_use = {
-		THIS = {
-			OR = {
-				government = merchant_republic
-				government = trade_monarchy
-			}
+		THIS ={
+			civilized = yes
+			government = merchant_republic
+			government = trade_monarchy
 		}
 		any_owned_province = {
 			has_province_modifier = potential_trade_post
