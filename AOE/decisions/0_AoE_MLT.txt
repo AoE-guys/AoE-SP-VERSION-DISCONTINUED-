@@ -1,0 +1,45 @@
+political_decisions = {
+	form_jerusalem = {
+		potenital = {
+			tag = MLT
+		}
+		allow = {
+			owns = 917
+		}
+		effect = {
+			prestige = 50
+			EGY_921 = {
+				add_core = THIS
+			}
+			all_core = {
+				add_core = ISR
+				remove_core = THIS
+			}
+			change_tag = ISR
+			capital = 917
+		}
+	}
+	levant_conquests = {
+		potenital = {
+			tag = ISR
+			NOT = { has_country_flag = levant_conquests }
+		}
+		allow = {
+			owns = 917
+			military_score = 25
+		}
+		effect = {
+			set_country_flag = levant_conquests
+			badboy = 20
+			EGY_915 = {
+				add_core = THIS
+			}
+			EGY_910 = {
+				add_core = THIS
+			}
+			EGY_903 = {
+				add_core = THIS
+			}
+		}
+	}
+}

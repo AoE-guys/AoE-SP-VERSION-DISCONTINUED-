@@ -39,7 +39,7 @@ country_event = {
 
 	trigger = {
 		government = elective_monarchy_oligarchy
-		rich_tax = 1
+		rich_tax = 0.9
 	}
 	
 	mean_time_to_happen = {
@@ -95,6 +95,7 @@ country_event = {
 		war_exhaustion = 5
 		war = yes
 		NOT = { has_country_modifier = szlachta_war_taxes }
+		NOT = { has_country_modifier = noble_democracy }
 	}
 	
 	mean_time_to_happen = {
@@ -125,6 +126,7 @@ country_event = {
 		war_exhaustion = 15
 		has_country_modifier = szlachta_war_taxes
 		part_of_sphere = yes
+		NOT = { has_country_modifier = noble_democracy }
 	}
 	
 	mean_time_to_happen = {
@@ -229,6 +231,44 @@ country_event = {
 		}
 		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
 		create_vassal = LOR
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				allience_with = BOR
+			}
+			modifier = {
+				factor = 6
+				in_sphere = BOR
+			}
+			modifier = {
+				factor = 8
+				BOR = {
+					diplomatic_influence = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				BOR = {
+					relation = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				BOR = {
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
 	}
 	option = {
 		name = "Friedrich August III of Saxony is the best choice!"
@@ -244,6 +284,30 @@ country_event = {
 			}
 		}
 		create_vassal = SAX
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				allience_with = RUS
+			}
+			modifier = {
+				factor = 1
+				in_sphere = RUS
+			}
+			modifier = {
+				factor = 4
+				RUS = {
+					relation = {
+						who = THIS
+						value = 160
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				part_of_sphere = no
+			}
+		}
 	}
 	option = {
 		name = "Infante Manuel, the Count of Ourem, is the obvious choice!"
@@ -265,8 +329,51 @@ country_event = {
 			who = POR
 			value = 100
 		}
+		relation = {
+			who = AUS
+			value = 100
+		}
 		create_alliance = AUS
 		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 2
+				allience_with = AUS
+			}
+			modifier = {
+				factor = 6
+				in_sphere = AUS
+			}
+			modifier = {
+				factor = 8
+				AUS = {
+					diplomatic_influence = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				AUS = {
+					relation = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				POR = {
+					relation = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -313,11 +420,31 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 6
+				brigades_compare = 1.3
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					relation = {
+						who = PLC
+						value = 120
+					}
+				}
+			}
 		}
 	}
 	
 	option = {
 		name = "This isn't our buisness"
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				NOT = { is_greater_power = yes }
+			}
+		}
 	}
 }
 country_event = {
@@ -435,6 +562,7 @@ country_event = {
 		NOT = { has_country_flag = enacted_3rd_may_constitution }
 		in_sphere = RUS
 		exists = yes
+		NOT = { has_country_modifier = noble_democracy }
 	}
 	
 	mean_time_to_happen = {
@@ -495,7 +623,7 @@ country_event = {
 				treasury = 150000
 			}
 		}
-			
+
 		government = hms_government
 		any_pop = { militancy = -2 }
 	}
@@ -531,5 +659,68 @@ country_event = {
 		government = elective_monarchy_oligarchy
 		election = yes
 		prestige = -50
+	}
+}
+#
+country_event = {
+	id = 15730044
+	title = "Glos wolny wolnosc ubezpieczajacy"
+	desc = "EVTDESC15730044"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		has_country_flag = lesczynski_rule
+		war = no
+		year = 1734
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Enact the reforms!"
+		add_country_modifier = {
+			name = noble_democracy
+			duration = -1
+		}
+		social_reform = ten_hours
+		social_reform = acceptable_subsidies
+		social_reform = low_pensions
+		political_reform = wealth_voting
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Strengthening the sejm? Over my dead body!"
+		prestige = -15
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 15730043
+	title = "Polish Folwark System"
+	desc = "EVTDESC15730043"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		year = 1700
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "It isn't that bad...."
+		add_country_modifier = {
+			name = folwark_serf_economy
+			duration = -1
+		}
+		set_country_flag = serfdom_not_abolished
 	}
 }

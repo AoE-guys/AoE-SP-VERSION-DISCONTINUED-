@@ -5206,6 +5206,16 @@ targowica = {
 	ruling_party_support = -0.05
 	icon = 18
 }
+folwark_serf_economy = {
+	factory_output = 0.05
+	tariff_efficiency_modifier = 0.1
+	tax_efficiency = -0.1
+	icon = 18
+}
+noble_democracy = {
+	global_pop_consciousness_modifier = -0.003
+	icon = 17
+}
 #####British colonial policies on THC#####
 sugar_act_on_colonies = {
 	tax_efficiency = -0.05
@@ -6047,7 +6057,21 @@ the_south_sea_company_2 = {
 	loan_interest = -0.15
 	tariff_efficiency_modifier = 0.05
 }
-###Great Britain#####
+###Denmark-Norway#####
+johann_struensee = {
+	prestige = 0.004
+	admin_efficiency = 0.05
+}
+christian_vii = {
+	prestige = -0.004
+	tax_efficiency = -0.05
+}
+local_hegemon = {
+	prestige = 0.01
+	diplomatic_points_modifier = 0.3
+	war_exhaustion = -0.05
+	
+}
 
 ####Saint-Domingue####
 pearl_of_the_antilles = {
