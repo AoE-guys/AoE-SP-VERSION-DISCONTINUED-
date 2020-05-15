@@ -1192,7 +1192,7 @@
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 1514
+		size = 1014
 	}
 
 	labourers = {
@@ -1222,7 +1222,7 @@
 	farmers = {
 		culture = ugrian
 		religion = orthodox
-		size = 1579
+		size = 2079
 	}
 
 	labourers = {
@@ -1236,19 +1236,19 @@
 	farmers = {
 		culture = sami
 		religion = tengri
-		size = 71
+		size = 171
 	}
 
 	labourers = {
 		culture = sami
 		religion = tengri
-		size = 4
+		size = 104
 	}
 
 	farmers = {
 		culture = finnish
 		religion = orthodox
-		size = 190
+		size = 90
 	}
 
 	labourers = {
@@ -1442,7 +1442,7 @@
 	labourers = {
 		culture = sami
 		religion = tengri
-		size = 6
+		size = 106
 	}
 
 	clergymen = {
@@ -1498,7 +1498,7 @@
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 195
+		size = 495
 	}
 
 	labourers = {
@@ -1510,7 +1510,7 @@
 	farmers = {
 		culture = ugrian
 		religion = orthodox
-		size = 475
+		size = 175
 	}
 
 	labourers = {
@@ -2029,7 +2029,7 @@
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 48
+		size = 748
 	}
 
 	labourers = {
@@ -2059,7 +2059,7 @@
 	farmers = {
 		culture = ugrian
 		religion = orthodox
-		size = 1758
+		size = 1058
 	}
 
 	labourers = {
@@ -4250,9 +4250,15 @@
 	}
 
 	farmers = {
+		culture = ugrian
+		religion = orthodox
+		size = 19199
+	}
+	
+	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 29199
+		size = 9199
 	}
 
 	labourers = {
@@ -10084,8 +10090,8 @@
 	}
 
 	farmers = {
-		culture = siberian
-		religion = tengri
+		culture = inuit
+		religion = animist
 		size = 394
 	}
 
@@ -10100,7 +10106,7 @@
 2666 = {
 	aristocrats = {
 		culture = inuit
-		religion = tengri
+		religion = animist
 		size = 1
 	}
 
@@ -10124,13 +10130,13 @@
 
 	farmers = {
 		culture = inuit
-		religion = tengri
+		religion = animist
 		size = 65
 	}
 
 	labourers = {
 		culture = inuit
-		religion = tengri
+		religion = animist
 		size = 3
 	}
 }
@@ -10410,7 +10416,7 @@
 	farmers = {
 		culture = siberian
 		religion = tengri
-		size = 109
+		size = 1109
 	}
 
 	labourers = {
@@ -10422,7 +10428,7 @@
 	farmers = {
 		culture = tatar
 		religion = tengri
-		size = 1900
+		size = 900
 	}
 
 	labourers = {
@@ -10899,38 +10905,38 @@
 
 	aristocrats = {
 		culture = mongol
-		religion = gelugpa
-		size = 188
+		religion = tengri
+		size = 388
 	}
 
 	clergymen = {
 		culture = mongol
-		religion = gelugpa
+		religion = tengri
 		size = 138
 	}
 
 	artisans = {
 		culture = mongol
-		religion = gelugpa
-		size = 225
+		religion = tengri
+		size = 1025
 	}
 
 	soldiers = {
 		culture = mongol
-		religion = gelugpa
-		size = 450
+		religion = tengri
+		size = 750
 	}
 
 	farmers = {
 		culture = mongol
-		religion = gelugpa
+		religion = tengri
 		size = 1380
 	}
 
 	labourers = {
 		culture = mongol
-		religion = gelugpa
-		size = 220
+		religion = tengri
+		size = 1220
 	}
 
 	aristocrats = {
@@ -10960,7 +10966,7 @@
 	farmers = {
 		culture = siberian
 		religion = tengri
-		size = 4280
+		size = 480
 	}
 
 	labourers = {
