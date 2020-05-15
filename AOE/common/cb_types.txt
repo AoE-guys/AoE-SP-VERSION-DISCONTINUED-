@@ -42,6 +42,8 @@
 # Order that CBs are executed in a peace treaty
 peace_order = {
 treaty_port_casus_belli
+conquer_trade_post
+obtain_potential_trade_post
 war_reparations
 become_independent
 dismantle_cb
@@ -7683,13 +7685,29 @@ conquer_trade_post = {
 	can_use = {
 		THIS ={
 			civilized = yes
-			government = merchant_republic
-			government = trade_monarchy
+			OR = {
+				government = merchant_republic
+				government = trade_monarchy
+			}
 		}
 		any_owned_province = {
 			has_province_modifier = trade_centre
 		}
 		NOT = { is_our_vassal = THIS }
+	}
+	
+	po_reparations = yes
+	
+	tws_battle_factor = 1.5
+	
+	war_name = PUNITIVE_EXPEDITION_WAR_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
 	}
 	
 	on_po_accepted = {
@@ -7722,13 +7740,29 @@ obtain_potential_trade_post = {
 	can_use = {
 		THIS ={
 			civilized = yes
-			government = merchant_republic
-			government = trade_monarchy
+			OR = {
+				government = merchant_republic
+				government = trade_monarchy
+			}
 		}
 		any_owned_province = {
 			has_province_modifier = potential_trade_post
 		}
 		NOT = { is_our_vassal = THIS }
+	}
+	
+	po_reparations = yes
+	
+	tws_battle_factor = 1.5
+	
+	war_name = PUNITIVE_EXPEDITION_WAR_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
 	}
 	
 	on_po_accepted = {
