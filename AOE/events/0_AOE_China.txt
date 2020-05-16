@@ -9,6 +9,7 @@ country_event = {
 			   month = 1
 			   tag = QNG
 			   NOT = { has_country_flag = mandate_of_heaven_setup }
+			   NOT = { has_country_flag = blue_turban_rebellion_happened }
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -25,7 +26,12 @@ country_event = {
 		add_country_modifier = {
 			name = mandate_of_heaven_2
 			duration = -1
-		}      		
+		}      	
+        #CHI_1552 = { remove_core = CHI }
+        #CHI_1552 = { remove_core = CHI }
+        #1555 = { remove_core = CHI } 	
+        #1554 = { remove_core = CHI } 
+        #CHI_1082 = { remove_core = CHI }		
 	}
 }
 
@@ -36,6 +42,7 @@ country_event = {
 	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
+	     has_country_flag = mandate_of_heaven_setup
 	     NOT = {
 	        check_variable = {
 					which = mandate_of_heaven_variable
@@ -47,7 +54,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	fire_only_once = yes
 	
 	option = {
 	    name = "And they are right, indeed!"
@@ -72,6 +78,7 @@ country_event = {
 	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
+	        has_country_flag = mandate_of_heaven_setup
 	        check_variable = {
 					which = mandate_of_heaven_variable
 					value = 29.99
@@ -87,7 +94,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	fire_only_once = yes
 	
 	option = {
 	    name = "Let's hope for a stable reign"
@@ -108,6 +114,7 @@ country_event = {
 	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
+	        has_country_flag = mandate_of_heaven_setup
 	        check_variable = {
 					which = mandate_of_heaven_variable
 					value = 59.99
@@ -117,7 +124,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	fire_only_once = yes
 	
 	option = {
 	    name = "We may only hope that the worst won't come..."
@@ -184,7 +190,6 @@ country_event = {
 				average_militancy = 10
 		}
 	}
-	fire_only_once = yes
 	
 	option = {
 	          name = "Fools!"
@@ -253,7 +258,6 @@ country_event = {
 				poor_strata_luxury_needs = 0.99
 		}
 	}
-	fire_only_once = yes
 	
 	option = {
 	          name = "As it should be"
@@ -322,7 +326,6 @@ country_event = {
 				NOT = { administration_spending = 0.99 }
 		}
 	}
-	fire_only_once = yes
 	
 	option = {
 	          name = "It is the wrath of Heavens"
@@ -394,7 +397,6 @@ country_event = {
 				education_spending = 0.99
 		}
 	}
-	fire_only_once = yes
 	
 	option = {
 	          name = "That's surely thanks to the three classics!"
@@ -406,5 +408,434 @@ country_event = {
 			  any_pop = {
 			  	  militancy = -1
 			  }			  
+	}
+}
+
+country_event = {
+	id = 100008
+	title = "Blue Turban Rebellion"
+	desc = "EVTDESC100008"
+	picture = "mandate_of_heaven_pic"
+	
+	trigger = {
+	        check_variable = {
+					which = mandate_of_heaven_variable
+					value = 89.99
+			}
+            has_country_modifier = mandate_of_heaven_3
+			NOT = { has_global_flag = blue_turban_rebellion_happened }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "Rebel Scum!"
+		prestige = -100
+		set_global_flag = blue_turban_rebellion_happened
+		
+		clr_country_flag = mandate_of_heaven_setup
+		remove_country_modifier = mandate_of_heaven_1
+		remove_country_modifier = mandate_of_heaven_2
+		remove_country_modifier = mandate_of_heaven_3		
+		
+        CHI_1604 = { add_core = KMT }
+        CHI_1470 = { add_core = KMT }
+        CHI_2221 = { add_core = KMT }	
+        CHI_1477 = { add_core = KMT }
+        CHI_1540 = { add_core = KMT }
+     	release = KMT #Ming
+
+        CHI_1547 = { add_core = GMJ }
+        CHI_1545 = { add_core = GMJ }
+        CHI_1522 = { add_core = GMJ }	
+        CHI_1519 = { add_core = GMJ }
+        CHI_1524 = { add_core = GMJ }	
+        CHI_1526 = { add_core = GMJ }	
+     	release = GMJ #Mao	
+
+        CHI_1482 = { add_core = FJN }
+        CHI_1485 = { add_core = FJN }
+        CHI_1610 = { add_core = FJN }		
+     	release = FJN #Cao
+
+        CHI_1493 = { add_core = GNG }
+        CHI_1499 = { add_core = GNG }
+        CHI_1504 = { add_core = GNG }	
+     	release = GNG #Wen	
+		
+        CHI_1505 = { add_core = YNN }
+        CHI_1601 = { add_core = YNN }
+        CHI_1578 = { add_core = YNN }		
+     	release = YNN #Liao		
+		
+        CHI_1579 = { add_core = SXI }
+        CHI_1559 = { add_core = SXI }
+        CHI_1490 = { add_core = SXI }	
+     	release = SXI #Xie	
+		
+        CHI_1508 = { add_core = NIA }
+        CHI_1510 = { add_core = NIA }
+        CHI_1572 = { add_core = NIA }	
+     	release = NIA #Hao	
+		
+        CHI_1563 = { add_core = HUI }
+        CHI_1565 = { add_core = HUI }	
+     	release = HUI #Kung
+		
+		release = IMG
+		1533 = { secede_province = QNG }
+		1002 = { secede_province = QNG }
+		1552 = { secede_province = QNG }
+		QNG = { create_vassal = IMG }
+		
+		KMT = { create_vassal = GMJ }
+		KMT = { create_vassal = FJN }
+		KMT = { create_vassal = GNG }
+		KMT = { create_vassal = YNN }
+		KMT = { create_vassal = SXI }
+		KMT = { create_vassal = NIA }
+        KMT = { create_vassal = HUI }
+		
+        GMJ = { set_country_flag = turban_rebel }
+        FJN = { set_country_flag = turban_rebel }		
+        GNG = { set_country_flag = turban_rebel }		
+        YNN = { set_country_flag = turban_rebel }		
+        SXI = { set_country_flag = turban_rebel }		
+        NIA = { set_country_flag = turban_rebel }		
+        HUI = { set_country_flag = turban_rebel }
+		KMT = { set_country_flag = turban_rebel }		
+		
+        GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+        FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        GNG = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        YNN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        SXI = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
+		
+		KMT = {
+			war = {
+				target = QNG
+				attacker_goal = { casus_belli = depose_qing_cb }
+				defender_goal = { casus_belli = kill_chinese_rebels_cb }
+				call_ally = yes
+			}		
+		}
+	}
+	option = {
+	    name = "Ming shall rule China Once again!"
+		set_global_flag = blue_turban_rebellion_happened
+		
+		clr_country_flag = mandate_of_heaven_setup
+		remove_country_modifier = mandate_of_heaven_1
+		remove_country_modifier = mandate_of_heaven_2
+		remove_country_modifier = mandate_of_heaven_3		
+		
+        CHI_1604 = { add_core = KMT }
+        CHI_1470 = { add_core = KMT }
+        CHI_2221 = { add_core = KMT }	
+        CHI_1477 = { add_core = KMT }
+        CHI_1540 = { add_core = KMT }
+     	release = KMT #Ming
+
+        CHI_1547 = { add_core = GMJ }
+        CHI_1545 = { add_core = GMJ }
+        CHI_1522 = { add_core = GMJ }	
+        CHI_1519 = { add_core = GMJ }
+        CHI_1524 = { add_core = GMJ }	
+        CHI_1526 = { add_core = GMJ }	
+     	release = GMJ #Mao	
+
+        CHI_1482 = { add_core = FJN }
+        CHI_1485 = { add_core = FJN }
+        CHI_1610 = { add_core = FJN }		
+     	release = FJN #Cao
+
+        CHI_1493 = { add_core = GNG }
+        CHI_1499 = { add_core = GNG }
+        CHI_1504 = { add_core = GNG }	
+     	release = GNG #Wen	
+		
+        CHI_1505 = { add_core = YNN }
+        CHI_1601 = { add_core = YNN }
+        CHI_1578 = { add_core = YNN }		
+     	release = YNN #Liao		
+		
+        CHI_1579 = { add_core = SXI }
+        CHI_1559 = { add_core = SXI }
+        CHI_1490 = { add_core = SXI }	
+     	release = SXI #Xie	
+		
+        CHI_1508 = { add_core = NIA }
+        CHI_1510 = { add_core = NIA }
+        CHI_1572 = { add_core = NIA }	
+     	release = NIA #Hao	
+		
+        CHI_1563 = { add_core = HUI }
+        CHI_1565 = { add_core = HUI }	
+     	release = HUI #Kung
+		
+		release = IMG
+		1533 = { secede_province = QNG }
+		1002 = { secede_province = QNG }
+		1552 = { secede_province = QNG }
+		QNG = { create_vassal = IMG }
+		
+		KMT = { create_vassal = GMJ }
+		KMT = { create_vassal = FJN }
+		KMT = { create_vassal = GNG }
+		KMT = { create_vassal = YNN }
+		KMT = { create_vassal = SXI }
+		KMT = { create_vassal = NIA }
+        KMT = { create_vassal = HUI }
+		
+        GMJ = { set_country_flag = turban_rebel }
+        FJN = { set_country_flag = turban_rebel }		
+        GNG = { set_country_flag = turban_rebel }		
+        YNN = { set_country_flag = turban_rebel }		
+        SXI = { set_country_flag = turban_rebel }		
+        NIA = { set_country_flag = turban_rebel }		
+        HUI = { set_country_flag = turban_rebel }
+		KMT = { set_country_flag = turban_rebel }		
+		
+        GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+        FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        GNG = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        YNN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        SXI = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
+		
+		KMT = {
+			war = {
+				target = QNG
+				attacker_goal = { casus_belli = depose_qing_cb }
+				defender_goal = { casus_belli = kill_chinese_rebels_cb }
+				call_ally = yes
+			}		
+		}
+		change_tag_no_core_switch = KMT
+	}
+}
+
+country_event = {
+	id = 100009
+	title = "Victory of Blue Turbans!"
+	desc = "EVTDESC100009"
+	picture = "mandate_of_heaven_pic"
+	
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "Victory at last..."
+		prestige = 100
+        set_global_flag = blue_turban_victory
+        release_vassal = GMJ		
+        release_vassal = FJN		
+        release_vassal = GNG		
+        release_vassal = YNN		
+        release_vassal = SXI		
+        release_vassal = NIA		
+        release_vassal = HUI		
+        release_vassal = KMT				
+	    any_owned = {
+		             limit = { is_core = QNG }
+					 secede_province = HUI
+		} 
+        HUI = { country_event = 100011 }		
+	}
+}
+
+country_event = {
+	id = 100011
+	title = "Victory of Blue Turbans!"
+	desc = "EVTDESC100009"
+	picture = "mandate_of_heaven_pic"
+	
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "Victory at last..."
+		prestige = 100
+	    any_owned = {
+		             limit = { is_core = QNG }
+					 secede_province = HUI
+		} 
+        release = MCK
+        1479 = { secede_province = HUI }
+        1480 = { secede_province = HUI }
+        1481 = { secede_province = HUI }
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = GMJ } }
+		war = {
+			target = GMJ
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}
+     
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = FJN } }
+		war = {
+			target = FJN
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}	
+       
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = GNG } }
+		war = {
+			target = GNG
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}
+       	
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = YNN } }
+		war = {
+			target = YNN
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}
+       
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = SXI } }
+		war = {
+			target = SXI
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}
+       
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = NIA } }
+		war = {
+			target = NIA
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}	
+       
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = HUI } }
+		war = {
+			target = HUI
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}
+	any_country = {
+		limit = { has_country_flag = turban_rebel  NOT = { tag = KMT } }
+		war = {
+			target = KMT
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = no
+		}
+	}
+    any_country = { limit = { has_country_flag = turban_rebel } country_event = 100012 }
+    country_event = 100012	
+	}
+}
+
+country_event = {
+	id = 100012
+	title = "China on Fire!"
+	desc = "EVTDESC100012"
+	picture = "mandate_of_heaven_pic"
+	
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "The empire long united must divide, long divided must unite..."
+        CHI = { all_core = { add_core = THIS } }    
+	}
+}
+
+country_event = {
+	id = 100010
+	title = "Victory over Blue Turbans!"
+	desc = "EVTDESC100010"
+	picture = "mandate_of_heaven_pic"
+	
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "Victory at last..."
+		prestige = 50
+		set_global_flag = blue_turban_defeat
+	    any_country = { limit = { has_country_flag = turban_rebel } country_event = 100013 }		
+	}
+}
+
+country_event = {
+	id = 100013
+	title = "We lost!"
+	desc = "EVTDESC100013"
+	picture = "mandate_of_heaven_pic"
+	
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "Nooooo..."
+	    FROM = { inherit = THIS }		
+	}
+}
+
+country_event = {
+	id = 100014
+	title = "Blue Turban Rebellion Inconclusive"
+	desc = "EVTDESC100014"
+	picture = "mandate_of_heaven_pic"
+	
+	trigger = {
+	           has_globa_flag = blue_turban_rebellion_happened
+			   NOT = { has_globa_flag = blue_turban_victory }
+			   NOT = { has_globa_flag = blue_turban_defeat }
+	           has_country_flag = turban_rebel
+			   NOT = { has_country_flag = blue_turban_stalmate }
+		       NOT = { war_with = QNG }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    prestige = -25
+	    name = "We will resolve it sooner or later!"
+	    set_country_flag = blue_turban_stalmate
+     	CHI = { all_core = { add_core = THIS } }	
 	}
 }

@@ -7844,3 +7844,103 @@ take_capital = {
 		}
 	}
 }
+
+depose_qing_cb = {
+	sprite_index = 26
+	is_triggered_only = yes
+	months = 48
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 0.5
+	break_truce_militancy_factor = 0.5
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = no
+
+	can_use = {
+		THIS = {
+			is_culture_group = east_asian
+			NOT = { tag = QNG }
+		}
+		is_culture_group = east_asian
+		tag = QNG
+	}
+	tws_battle_factor = 1.0 # battle score twice that of oppenent
+	
+	war_name = CIVIL_WAR_NAME
+	
+	po_annex = yes
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		THIS = { country_event = 100009 }
+	}
+
+}
+
+kill_chinese_rebels_cb = {
+	sprite_index = 26
+	is_triggered_only = yes
+	months = 48
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 0.5
+	break_truce_militancy_factor = 0.5
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = no
+
+	can_use = {
+		THIS = {
+			is_culture_group = east_asian
+			NOT = { tag = QNG }
+		}
+		is_culture_group = east_asian
+		tag = QNG
+	}
+	tws_battle_factor = 1.0 # battle score twice that of oppenent
+	
+	war_name = CIVIL_WAR_NAME
+	
+	po_annex = yes
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		THIS = { country_event = 100010 }
+	}
+
+}
