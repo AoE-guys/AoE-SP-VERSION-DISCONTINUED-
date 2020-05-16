@@ -436,7 +436,7 @@ country_event = {
 		clr_country_flag = mandate_of_heaven_setup
 		remove_country_modifier = mandate_of_heaven_1
 		remove_country_modifier = mandate_of_heaven_2
-		remove_country_modifier = mandate_of_heaven_3
+		remove_country_modifier = mandate_of_heaven_3		
 		
         CHI_1604 = { add_core = KMT }
         CHI_1470 = { add_core = KMT }
@@ -454,7 +454,8 @@ country_event = {
      	release = GMJ #Mao	
 
         CHI_1482 = { add_core = FJN }
-        CHI_1485 = { add_core = FJN }	
+        CHI_1485 = { add_core = FJN }
+        CHI_1610 = { add_core = FJN }		
      	release = FJN #Cao
 
         CHI_1493 = { add_core = GNG }
@@ -463,7 +464,8 @@ country_event = {
      	release = GNG #Wen	
 		
         CHI_1505 = { add_core = YNN }
-        CHI_1601 = { add_core = YNN }	
+        CHI_1601 = { add_core = YNN }
+        CHI_1578 = { add_core = YNN }		
      	release = YNN #Liao		
 		
         CHI_1579 = { add_core = SXI }
@@ -501,7 +503,7 @@ country_event = {
         SXI = { set_country_flag = turban_rebel }		
         NIA = { set_country_flag = turban_rebel }		
         HUI = { set_country_flag = turban_rebel }
-		KMT = { set_country_flag = turban_rebel }
+		KMT = { set_country_flag = turban_rebel }		
 		
         GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
         FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
@@ -511,9 +513,8 @@ country_event = {
         NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
         HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
 		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-		
 
-        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }		
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
 		
 		KMT = {
 			war = {
