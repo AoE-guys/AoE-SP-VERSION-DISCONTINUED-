@@ -44,4 +44,37 @@ political_decisions = {
 			}
 		}
 	}
+		attract_french = {
+		picture = migration
+		potential = {
+			tag = ISR
+			NOT = { has_country_flag = attract_french }
+		}
+		allow = {
+			owns = 917
+		}
+		effect = {
+		add_accepted_culture = french
+			FRA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+						has_pop_religion = catholic
+						militancy = 5
+						}
+					move_pop = 917
+				}
+			}	
+			BOR = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+						has_pop_religion = catholic
+						militancy = 5
+						}
+					move_pop = 917
+				}
+			}
+		}
+	}
 }
