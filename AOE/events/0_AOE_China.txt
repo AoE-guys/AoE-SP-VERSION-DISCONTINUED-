@@ -20,7 +20,7 @@ country_event = {
 	    set_country_flag = mandate_of_heaven_setup
 		set_variable = {
 			which = mandate_of_heaven_variable
-			value = 60
+			value = 40
 		}
 		add_country_modifier = {
 			name = mandate_of_heaven_2
@@ -74,12 +74,12 @@ country_event = {
 	trigger = {
 	        check_variable = {
 					which = mandate_of_heaven_variable
-					value = 59.99
+					value = 29.99
 			}
 	        NOT = {
 	           check_variable = {
 		    			which = mandate_of_heaven_variable
-		    			value = 89.99
+		    			value = 59.99
 		    	}
 		    }
             NOT = { has_country_modifier = mandate_of_heaven_2 }
@@ -110,7 +110,7 @@ country_event = {
 	trigger = {
 	        check_variable = {
 					which = mandate_of_heaven_variable
-					value = 89.99
+					value = 59.99
 			}
 			NOT = { has_country_modifier = mandate_of_heaven_3 }
 	}
