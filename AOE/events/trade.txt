@@ -923,7 +923,7 @@ country_event = {
 				has_province_modifier = { potential_trade_post }
 				has_province_modifier = { trade_centre }
 			}
-			add_province_modifier = { name = "negotiated"  duration = 12 }
+			add_province_modifier = { name = negotiated  duration = 12 }
 		}
 	}
 }
