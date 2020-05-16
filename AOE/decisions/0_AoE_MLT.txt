@@ -1,5 +1,6 @@
 political_decisions = {
 	form_jerusalem = {
+		picture = become_isr
 		potential = {
 			tag = MLT
 		}
@@ -20,6 +21,7 @@ political_decisions = {
 		}
 	}
 	levant_conquests = {
+		picture = crusade
 		potential = {
 			tag = ISR
 			NOT = { has_country_flag = levant_conquests }

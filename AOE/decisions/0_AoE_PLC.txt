@@ -182,6 +182,7 @@ political_decisions = {
 	}
 	
 	abolish_folwark_system = {
+		picture = folwark
 		potential = {
 			tag = PLC
 			NOT = { has_country_flag = second_union_of_hadiach }
