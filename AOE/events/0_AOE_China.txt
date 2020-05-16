@@ -630,6 +630,107 @@ country_event = {
 			factor = 0
 		}
 	}
+	option = {
+	    name = "Let's stand together with descendants of Confucius!"
+		set_global_flag = blue_turban_rebellion_happened
+		
+		clr_country_flag = mandate_of_heaven_setup
+		remove_country_modifier = mandate_of_heaven_1
+		remove_country_modifier = mandate_of_heaven_2
+		remove_country_modifier = mandate_of_heaven_3		
+		
+        CHI_1604 = { add_core = KMT }
+        CHI_1470 = { add_core = KMT }
+        CHI_2221 = { add_core = KMT }	
+        CHI_1477 = { add_core = KMT }
+        CHI_1540 = { add_core = KMT }
+     	release = KMT #Ming
+
+        CHI_1547 = { add_core = GMJ }
+        CHI_1545 = { add_core = GMJ }
+        CHI_1522 = { add_core = GMJ }	
+        CHI_1519 = { add_core = GMJ }
+        CHI_1524 = { add_core = GMJ }	
+        CHI_1526 = { add_core = GMJ }	
+     	release = GMJ #Mao	
+
+        CHI_1482 = { add_core = FJN }
+        CHI_1485 = { add_core = FJN }
+        CHI_1610 = { add_core = FJN }		
+     	release = FJN #Cao
+
+        CHI_1493 = { add_core = GNG }
+        CHI_1499 = { add_core = GNG }
+        CHI_1504 = { add_core = GNG }	
+     	release = GNG #Wen	
+		
+        CHI_1505 = { add_core = YNN }
+        CHI_1601 = { add_core = YNN }
+        CHI_1578 = { add_core = YNN }		
+     	release = YNN #Liao		
+		
+        CHI_1579 = { add_core = SXI }
+        CHI_1559 = { add_core = SXI }
+        CHI_1490 = { add_core = SXI }	
+     	release = SXI #Xie	
+		
+        CHI_1508 = { add_core = NIA }
+        CHI_1510 = { add_core = NIA }
+        CHI_1572 = { add_core = NIA }	
+     	release = NIA #Hao	
+		
+        CHI_1563 = { add_core = HUI }
+        CHI_1565 = { add_core = HUI }	
+     	release = HUI #Kung
+		
+		release = IMG
+		1533 = { secede_province = QNG }
+		1002 = { secede_province = QNG }
+		1552 = { secede_province = QNG }
+		QNG = { create_vassal = IMG }
+		
+		KMT = { create_vassal = GMJ }
+		KMT = { create_vassal = FJN }
+		KMT = { create_vassal = GNG }
+		KMT = { create_vassal = YNN }
+		KMT = { create_vassal = SXI }
+		KMT = { create_vassal = NIA }
+        KMT = { create_vassal = HUI }
+		
+        GMJ = { set_country_flag = turban_rebel }
+        FJN = { set_country_flag = turban_rebel }		
+        GNG = { set_country_flag = turban_rebel }		
+        YNN = { set_country_flag = turban_rebel }		
+        SXI = { set_country_flag = turban_rebel }		
+        NIA = { set_country_flag = turban_rebel }		
+        HUI = { set_country_flag = turban_rebel }
+		KMT = { set_country_flag = turban_rebel }		
+		
+        GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+        FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        GNG = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        YNN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        SXI = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
+        HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
+		
+		KMT = {
+			war = {
+				target = QNG
+				attacker_goal = { casus_belli = depose_qing_cb }
+				defender_goal = { casus_belli = kill_chinese_rebels_cb }
+				call_ally = yes
+			}		
+		}
+		change_tag_no_core_switch = HUI
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 country_event = {
