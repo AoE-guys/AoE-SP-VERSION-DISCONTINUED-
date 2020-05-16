@@ -525,6 +525,9 @@ country_event = {
 				call_ally = yes
 			}		
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 	    name = "Ming shall rule China Once again!"
@@ -622,6 +625,10 @@ country_event = {
 			}		
 		}
 		change_tag_no_core_switch = KMT
+		
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -837,5 +844,50 @@ country_event = {
 	    name = "We will resolve it sooner or later!"
 	    set_country_flag = blue_turban_stalmate
      	CHI = { all_core = { add_core = THIS } }	
+	}
+}
+
+country_event = {
+	id = 100015
+	title = "Choosing of the Capital"
+	desc = "EVTDESC100015"
+	picture = "mandate_of_heaven_pic"
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    name = "Nanjing!"
+		prestige = 5
+        capital = 2221	
+		ai_chance = {
+			factor = 0.4
+		}
+	}
+	option = {
+	    name = "Hangzhou!"
+		prestige = 5
+        capital = 1604
+		ai_chance = {
+			factor = 0.2
+		}		
+	}
+	option = {
+	    name = "Kaifeng!"
+		prestige = 5
+        capital = 1508	
+		ai_chance = {
+			factor = 0.2
+		}		
+	}
+	option = {
+	    name = "Peking!"
+		prestige = 5
+        capital = 1616	
+		ai_chance = {
+			factor = 0.2
+		}		
 	}
 }
