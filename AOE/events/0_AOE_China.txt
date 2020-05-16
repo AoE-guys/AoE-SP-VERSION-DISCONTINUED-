@@ -969,9 +969,9 @@ country_event = {
 	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
-	           has_globa_flag = blue_turban_rebellion_happened
-			   NOT = { has_globa_flag = blue_turban_victory }
-			   NOT = { has_globa_flag = blue_turban_defeat }
+	           has_global_flag = blue_turban_rebellion_happened
+			   NOT = { has_global_flag = blue_turban_victory }
+			   NOT = { has_global_flag = blue_turban_defeat }
 	           has_country_flag = turban_rebel
 			   NOT = { has_country_flag = blue_turban_stalmate }
 		       NOT = { war_with = QNG }
