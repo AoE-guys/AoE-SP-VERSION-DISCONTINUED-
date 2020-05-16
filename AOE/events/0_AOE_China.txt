@@ -540,6 +540,7 @@ country_event = {
 	}
 	option = {
 	    name = "Ming shall rule China Once again!"
+		prestige = -100
 		set_global_flag = blue_turban_rebellion_happened
 		
 		clr_country_flag = mandate_of_heaven_setup
@@ -641,6 +642,7 @@ country_event = {
 	}
 	option = {
 	    name = "Let's stand together with descendants of Confucius!"
+		prestige = -100
 		set_global_flag = blue_turban_rebellion_happened
 		
 		clr_country_flag = mandate_of_heaven_setup
