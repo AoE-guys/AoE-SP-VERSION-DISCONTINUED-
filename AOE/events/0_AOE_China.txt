@@ -1,7 +1,7 @@
 country_event = {
 	id = 100000
-	title = "Chinese Modus Operandi" #mandate of heaven setup
-	desc = "Chinese Modus Operandi"
+	title = "All Under the Heaven" #mandate of heaven setup
+	desc = "EVTDESC100000"
 	
 	trigger = {
 	           year = 1700
@@ -15,10 +15,11 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	    name = "May the mandate be bestowed upon us!"
 	    set_country_flag = mandate_of_heaven_setup
 		set_variable = {
 			which = mandate_of_heaven_variable
-			value = 70
+			value = 60
 		}
 		add_country_modifier = {
 			name = mandate_of_heaven_2
@@ -30,7 +31,7 @@ country_event = {
 country_event = {
 	id = 100001
 	title = "High Mandate of Heaven"
-	desc = "High Mandate of Heaven"
+	desc = "EVTDESC100001"
 	
 	trigger = {
 	     NOT = {
@@ -47,6 +48,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	    name = "And they are right, indeed!"
 		set_variable = {
 			which = mandate_of_heaven_variable
 			value = 70
@@ -64,7 +66,7 @@ country_event = {
 country_event = {
 	id = 100002
 	title = "Average Mandate of Heaven"
-	desc = "Average Mandate of Heaven"
+	desc = "EVTDESC100002"
 	
 	trigger = {
 	        check_variable = {
@@ -85,6 +87,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	    name = "Let's hope for a stable reign"
 		remove_country_modifier = mandate_of_heaven_1
 		remove_country_modifier = mandate_of_heaven_2
 		remove_country_modifier = mandate_of_heaven_3
@@ -98,7 +101,7 @@ country_event = {
 country_event = {
 	id = 100003
 	title = "Low Mandate of Heaven"
-	desc = "Low Mandate of Heaven"
+	desc = "EVTDESC100003"
 	
 	trigger = {
 	        check_variable = {
@@ -113,6 +116,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	    name = "We may only hope that the worst won't come..."
 		remove_country_modifier = mandate_of_heaven_1
 		remove_country_modifier = mandate_of_heaven_2
 		remove_country_modifier = mandate_of_heaven_3
@@ -126,7 +130,7 @@ country_event = {
 country_event = {
 	id = 100004
 	title = "Mandate of Heaven Decreases"
-	desc = "Mandate of Heaven Decreases"
+	desc = "EVTDESC100004"
 	
 	trigger = {
 	        has_country_flag = mandate_of_heaven_setup
@@ -178,6 +182,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	          name = "Fools!"
 	          prestige = -5
               change_variable = {
               	                  which = mandate_of_heaven_variable
@@ -193,7 +198,7 @@ country_event = {
 country_event = {
 	id = 100005
 	title = "Mandate of Heaven Increases"
-	desc = "Mandate of Heaven Increases"
+	desc = "EVTDESC100005"
 	
 	trigger = {
 	        has_country_flag = mandate_of_heaven_setup
@@ -245,6 +250,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	          name = "As it should be"
 	          prestige = 5
               change_variable = {
               	                  which = mandate_of_heaven_variable
@@ -260,7 +266,7 @@ country_event = {
 country_event = {
 	id = 100006
 	title = "Great Flood"
-	desc = "Great Flood"
+	desc = "EVTDESC100006"
 	
 	trigger = {
 	           has_country_flag = mandate_of_heaven_setup
@@ -312,6 +318,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	          name = "It is the wrath of Heavens"
 	          prestige = -10
               change_variable = {
               	                  which = mandate_of_heaven_variable
@@ -320,14 +327,17 @@ country_event = {
 		      add_country_modifier = {
 		      	  name = mandate_of_heaven_natural_disaster
 		      	  duration = 18
-		      }  			  
+		      } 
+			  any_pop = {
+			  	  militancy = 3
+			  }			  
 	}
 }
 
 country_event = {
 	id = 100007
 	title = "Meritocratic Examinations"
-	desc = "Meritocratic Examinations"
+	desc = "EVTDESC100007"
 	
 	trigger = {
 	           has_country_flag = mandate_of_heaven_setup
@@ -379,10 +389,14 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+	          name = "That's surely thanks to the three classics!"
 	          prestige = 5
               change_variable = {
               	                  which = mandate_of_heaven_variable
               	                  value = -10
-              }  			  
+              }  	
+			  any_pop = {
+			  	  militancy = -1
+			  }			  
 	}
 }
