@@ -1191,7 +1191,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Arrange the Scheme"
+		name = "Damnit we need the money!"
 		add_country_modifier = {
 			name = the_south_sea_company
 			duration = -1
@@ -1199,7 +1199,7 @@ country_event = {
 		money = 25000
 	}
 	option = {
-		name = "This is never going to work"
+		name = "This can't possibly end well, shut it all down"
 		prestige = -10
 	}
 }
