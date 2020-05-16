@@ -6099,3 +6099,63 @@ rick_rolled = {
 negotiated = {
 	icon = 7
 }
+
+### Mandate of Heaven
+mandate_of_heaven_change = {
+	icon = 7
+}
+
+mandate_of_heaven_1 = {
+    prestige = 0.01
+	goods_demand = 0.10
+	education_efficiency_modifier = 0.10
+    leadership_modifier = 0.1
+	global_population_growth = 0.001
+	diplomatic_points_modifier = -0.25
+	influence_modifier = -0.25
+	cb_generation_speed_modifier = -0.25
+	icon = 7
+}
+
+mandate_of_heaven_2 = {
+	tax_efficiency = -0.05
+	factory_output = -0.05
+	administrative_efficiency_modifier = -0.30
+	social_reform_desire = 0.1
+	land_organisation = -0.05
+	global_pop_consciousness_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
+	diplomatic_points_modifier = -0.5
+	influence_modifier = -0.5
+	cb_generation_speed_modifier = -0.50
+	icon = 7
+}
+
+mandate_of_heaven_3 = {
+    prestige = -0.01
+	tax_efficiency = -0.10
+	factory_output = -0.10
+	goods_demand = -0.1
+	education_efficiency_modifier = -0.10
+	leadership_modifier = -0.1
+	administrative_efficiency_modifier = -0.60
+	social_reform_desire = 0.2
+	land_organisation = -0.10
+	global_population_growth = -0.001
+	global_pop_consciousness_modifier = 0.02
+	global_pop_militancy_modifier = 0.02
+	diplomatic_points_modifier = -0.75
+	influence_modifier = -0.75
+	cb_generation_speed_modifier = -0.75
+	icon = 7
+}
+
+mandate_of_heaven_natural_disaster = {
+    prestige = -0.03
+	pop_militancy_modifier = 0.05
+	pop_consciousness_modifier = 0.03
+	tax_efficiency = -0.05
+	factory_throughput = -0.25
+	rgo_output = -0.25
+	icon = 7
+}

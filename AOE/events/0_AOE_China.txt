@@ -1,0 +1,379 @@
+country_event = {
+	id = 100000
+	title = "Chinese Modus Operandi" #mandate of heaven setup
+	desc = "Chinese Modus Operandi"
+	
+	trigger = {
+	           year = 1700
+			   month = 1
+			   tag = QNG
+			   NOT = { has_country_flag = mandate_of_heaven_setup }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+	    set_country_flag = mandate_of_heaven_setup
+		set_variable = {
+			which = mandate_of_heaven_variable
+			value = 70
+		}
+		add_country_modifier = {
+			name = mandate_of_heaven_2
+			duration = -1
+		}      		
+	}
+}
+
+country_event = {
+	id = 100001
+	title = "High Mandate of Heaven"
+	desc = "High Mandate of Heaven"
+	
+	trigger = {
+	     NOT = {
+	        check_variable = {
+					which = mandate_of_heaven_variable
+					value = 29.99
+			}
+		}
+		NOT = { has_country_modifier = mandate_of_heaven_1 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		set_variable = {
+			which = mandate_of_heaven_variable
+			value = 70
+		}
+		add_country_modifier = {
+			name = mandate_of_heaven_1
+			duration = -1
+		}      		
+	}
+}
+
+country_event = {
+	id = 100002
+	title = "Average Mandate of Heaven"
+	desc = "Average Mandate of Heaven"
+	
+	trigger = {
+	        check_variable = {
+					which = mandate_of_heaven_variable
+					value = 59.99
+			}
+	        NOT = {
+	           check_variable = {
+		    			which = mandate_of_heaven_variable
+		    			value = 89.99
+		    	}
+		    }
+            NOT = { has_country_modifier = mandate_of_heaven_2 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		add_country_modifier = {
+			name = mandate_of_heaven_2
+			duration = -1
+		}      		
+	}
+}
+
+country_event = {
+	id = 100003
+	title = "Low Mandate of Heaven"
+	desc = "Low Mandate of Heaven"
+	
+	trigger = {
+	        check_variable = {
+					which = mandate_of_heaven_variable
+					value = 89.99
+			}
+			NOT = { has_country_modifier = mandate_of_heaven_3 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		add_country_modifier = {
+			name = mandate_of_heaven_3
+			duration = -1
+		}      		
+	}
+}
+
+country_event = {
+	id = 100004
+	title = "Mandate of Heaven Decreases"
+	desc = "Mandate of Heaven Decreases"
+	
+	trigger = {
+	        has_country_flag = mandate_of_heaven_setup
+			NOT = { has_country_modifier = mandate_of_heaven_change }
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.95
+				average_militancy = 1
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 2
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 6
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 9
+		}
+		modifier = {
+			factor = 0.9
+				average_militancy = 10
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	          prestige = -5
+              change_variable = {
+              	                  which = mandate_of_heaven_variable
+              	                  value = 10
+              } 
+		      add_country_modifier = {
+		      	  name = mandate_of_heaven_change
+		      	  duration = 12
+		      }  			  
+	}
+}
+
+country_event = {
+	id = 100005
+	title = "Mandate of Heaven Increases"
+	desc = "Mandate of Heaven Increases"
+	
+	trigger = {
+	        has_country_flag = mandate_of_heaven_setup
+			NOT = { has_country_modifier = mandate_of_heaven_change }
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.95
+				poor_strata_everyday_needs = 0.2
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_everyday_needs = 0.4
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_everyday_needs = 0.6
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_everyday_needs = 0.8
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_everyday_needs = 0.99
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_luxury_needs = 0.2
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_luxury_needs = 0.4
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_luxury_needs = 0.6
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_luxury_needs = 0.8
+		}
+		modifier = {
+			factor = 0.9
+				poor_strata_luxury_needs = 0.99
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	          prestige = 5
+              change_variable = {
+              	                  which = mandate_of_heaven_variable
+              	                  value = -10
+              } 
+		      add_country_modifier = {
+		      	  name = mandate_of_heaven_change
+		      	  duration = 12
+		      }  			  
+	}
+}
+
+country_event = {
+	id = 100006
+	title = "Great Flood"
+	desc = "Great Flood"
+	
+	trigger = {
+	           has_country_flag = mandate_of_heaven_setup
+			   NOT = { has_country_modifier = mandate_of_heaven_natural_disaster }
+	}
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.1 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.2 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.3 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.4 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.5 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.6 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.7 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.8 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.9 }
+		}
+		modifier = {
+			factor = 0.95
+				NOT = { administration_spending = 0.99 }
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	          prestige = -10
+              change_variable = {
+              	                  which = mandate_of_heaven_variable
+              	                  value = 20
+              } 
+		      add_country_modifier = {
+		      	  name = mandate_of_heaven_natural_disaster
+		      	  duration = 18
+		      }  			  
+	}
+}
+
+country_event = {
+	id = 100007
+	title = "Meritocratic Examinations"
+	desc = "Meritocratic Examinations"
+	
+	trigger = {
+	           has_country_flag = mandate_of_heaven_setup
+			   NOT = { has_country_modifier = mandate_of_heaven_natural_disaster }
+	}
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.95
+				education_spending = 0.1
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.2
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.3
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.4
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.5
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.6
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.7
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.8
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.9
+		}
+		modifier = {
+			factor = 0.95
+				education_spending = 0.99
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+	          prestige = 5
+              change_variable = {
+              	                  which = mandate_of_heaven_variable
+              	                  value = -10
+              }  			  
+	}
+}
