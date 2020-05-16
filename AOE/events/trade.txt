@@ -916,13 +916,14 @@ country_event = {
 	id = 69422
 	title = "Province lost"
 	desc = "We were forced to let the enemy gain use of a trade post."
+	is_triggerd_only = yes
 	option = {
 		random_owned = {
 			OR = {
 				has_province_modifier = { potential_trade_post }
 				has_province_modifier = { trade_centre }
 			}
-			add_province_modifier = { negotiated }
+			add_province_modifier = { name = "negotiated"  duration = 12 }
 		}
 	}
 }
@@ -931,6 +932,7 @@ country_event = {
 	id = 69423
 	title = "Trade Port Gained"
 	desc = "Stonks"
+	is_triggerd_only = yes
 	option = {
 		any_country = { 
 			limit = { 
@@ -938,7 +940,7 @@ country_event = {
 			}
 			any_owned = {
 				limit = { 
-					has_province_modifier = { negotiated }
+					has_province_modifier = negotiated
 				}
 				secede_province = THIS 
 			}
