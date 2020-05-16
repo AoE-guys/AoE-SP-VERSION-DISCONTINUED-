@@ -6166,9 +6166,10 @@ blue_turbans = {
     prestige = 0.01
 	pop_militancy_modifier = -0.05
 	tax_efficiency = 0.10
-	mobilisation_size = 0.25
+	mobilisation_size = 0.10
 	org_regain = 0.10
 	land_organisation = -0.20
+	war_exhaustion = -0.5
 	icon = 7
 }
 
@@ -6176,8 +6177,9 @@ manchu_call_to_arms = {
     prestige = -0.01
 	pop_militancy_modifier = 0.01
 	tax_efficiency = 0.10
-	mobilisation_size = 0.50
+	mobilisation_size = 0.25
 	org_regain = 0.10
 	land_organisation = -0.20
+	war_exhaustion = -0.25
 	icon = 7
 }

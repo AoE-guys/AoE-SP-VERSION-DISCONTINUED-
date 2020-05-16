@@ -209,7 +209,7 @@ country_event = {
               } 
 		      add_country_modifier = {
 		      	  name = mandate_of_heaven_change
-		      	  duration = 12
+		      	  duration = 360
 		      }  			  
 	}
 }
@@ -277,7 +277,7 @@ country_event = {
               } 
 		      add_country_modifier = {
 		      	  name = mandate_of_heaven_change
-		      	  duration = 12
+		      	  duration = 360
 		      }  			  
 	}
 }
@@ -345,7 +345,7 @@ country_event = {
               } 
 		      add_country_modifier = {
 		      	  name = mandate_of_heaven_natural_disaster
-		      	  duration = 18
+		      	  duration = 540
 		      } 
 			  any_pop = {
 			  	  militancy = 3
@@ -506,6 +506,15 @@ country_event = {
 		KMT = { create_vassal = NIA }
         KMT = { create_vassal = HUI }
 		
+        GMJ = { create_alliance = KMT }
+        FJN = { create_alliance = KMT }		
+        GNG = { create_alliance = KMT }		
+        YNN = { create_alliance = KMT }		
+        SXI = { create_alliance = KMT }		
+        NIA = { create_alliance = KMT }		
+        HUI = { create_alliance = KMT }
+		#KMT = { create_alliance = KMT }
+		
         GMJ = { set_country_flag = turban_rebel }
         FJN = { set_country_flag = turban_rebel }		
         GNG = { set_country_flag = turban_rebel }		
@@ -515,16 +524,16 @@ country_event = {
         HUI = { set_country_flag = turban_rebel }
 		KMT = { set_country_flag = turban_rebel }		
 		
-        GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-        FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        GNG = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        YNN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        SXI = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+        GMJ = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+        FJN = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        GNG = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        YNN = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        SXI = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        NIA = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        HUI = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+		KMT = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
 
-        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 3600 } }
 		
 		KMT = {
 			war = {
@@ -606,6 +615,15 @@ country_event = {
 		KMT = { create_vassal = NIA }
         KMT = { create_vassal = HUI }
 		
+        GMJ = { create_alliance = KMT }
+        FJN = { create_alliance = KMT }		
+        GNG = { create_alliance = KMT }		
+        YNN = { create_alliance = KMT }		
+        SXI = { create_alliance = KMT }		
+        NIA = { create_alliance = KMT }		
+        HUI = { create_alliance = KMT }
+		#KMT = { create_alliance = KMT }
+		
         GMJ = { set_country_flag = turban_rebel }
         FJN = { set_country_flag = turban_rebel }		
         GNG = { set_country_flag = turban_rebel }		
@@ -615,16 +633,16 @@ country_event = {
         HUI = { set_country_flag = turban_rebel }
 		KMT = { set_country_flag = turban_rebel }		
 		
-        GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-        FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        GNG = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        YNN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        SXI = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
+        GMJ = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+        FJN = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        GNG = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        YNN = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        SXI = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        NIA = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        HUI = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+		KMT = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
 
-        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 3600 } }
 		
 		KMT = {
 			war = {
@@ -716,17 +734,27 @@ country_event = {
         NIA = { set_country_flag = turban_rebel }		
         HUI = { set_country_flag = turban_rebel }
 		KMT = { set_country_flag = turban_rebel }		
-		
-        GMJ = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-        FJN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        GNG = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        YNN = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        SXI = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        NIA = { add_country_modifier = { name = blue_turbans  duration = 180 } }		
-        HUI = { add_country_modifier = { name = blue_turbans  duration = 180 } }
-		KMT = { add_country_modifier = { name = blue_turbans  duration = 180 } }
 
-        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 120 } }
+
+        GMJ = { create_alliance = KMT }
+        FJN = { create_alliance = KMT }		
+        GNG = { create_alliance = KMT }		
+        YNN = { create_alliance = KMT }		
+        SXI = { create_alliance = KMT }		
+        NIA = { create_alliance = KMT }		
+        HUI = { create_alliance = KMT }
+		#KMT = { create_alliance = KMT }				
+		
+        GMJ = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+        FJN = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        GNG = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        YNN = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        SXI = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        NIA = { add_country_modifier = { name = blue_turbans  duration = 5400 } }		
+        HUI = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+		KMT = { add_country_modifier = { name = blue_turbans  duration = 5400 } }
+
+        QNG = { add_country_modifier = { name = manchu_call_to_arms  duration = 3600 } }
 		
 		KMT = {
 			war = {
@@ -759,14 +787,15 @@ country_event = {
 	    name = "Victory at last..."
 		prestige = 100
         set_global_flag = blue_turban_victory
-        release_vassal = GMJ		
-        release_vassal = FJN		
-        release_vassal = GNG		
-        release_vassal = YNN		
-        release_vassal = SXI		
-        release_vassal = NIA		
-        release_vassal = HUI		
-        release_vassal = KMT				
+		
+        KMT = { release_vassal = GMJ }		
+        KMT = { release_vassal = FJN }		
+        KMT = { release_vassal = GNG }		
+        KMT = { release_vassal = YNN }		
+        KMT = { release_vassal = SXI }		
+        KMT = { release_vassal = NIA }		
+        KMT = { release_vassal = HUI }		
+        KMT = { release_vassal = KMT }				
 	    any_owned = {
 		             limit = { is_core = QNG }
 					 secede_province = HUI
