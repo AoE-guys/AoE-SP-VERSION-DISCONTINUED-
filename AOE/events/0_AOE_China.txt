@@ -2,6 +2,7 @@ country_event = {
 	id = 100000
 	title = "All Under the Heaven" #mandate of heaven setup
 	desc = "EVTDESC100000"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	           year = 1700
@@ -32,6 +33,7 @@ country_event = {
 	id = 100001
 	title = "High Mandate of Heaven"
 	desc = "EVTDESC100001"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	     NOT = {
@@ -67,6 +69,7 @@ country_event = {
 	id = 100002
 	title = "Average Mandate of Heaven"
 	desc = "EVTDESC100002"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	        check_variable = {
@@ -102,6 +105,7 @@ country_event = {
 	id = 100003
 	title = "Low Mandate of Heaven"
 	desc = "EVTDESC100003"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	        check_variable = {
@@ -131,6 +135,7 @@ country_event = {
 	id = 100004
 	title = "Mandate of Heaven Decreases"
 	desc = "EVTDESC100004"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	        has_country_flag = mandate_of_heaven_setup
@@ -199,6 +204,7 @@ country_event = {
 	id = 100005
 	title = "Mandate of Heaven Increases"
 	desc = "EVTDESC100005"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	        has_country_flag = mandate_of_heaven_setup
@@ -267,6 +273,7 @@ country_event = {
 	id = 100006
 	title = "Great Flood"
 	desc = "EVTDESC100006"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	           has_country_flag = mandate_of_heaven_setup
@@ -338,6 +345,7 @@ country_event = {
 	id = 100007
 	title = "Meritocratic Examinations"
 	desc = "EVTDESC100007"
+	picture = "mandate_of_heaven_pic"
 	
 	trigger = {
 	           has_country_flag = mandate_of_heaven_setup
