@@ -431,6 +431,7 @@ country_event = {
 	
 	option = {
 	    name = "Rebel Scum!"
+		prestige = -100
 		set_global_flag = blue_turban_rebellion_happened
 		
 		clr_country_flag = mandate_of_heaven_setup
@@ -637,6 +638,7 @@ country_event = {
 	
 	option = {
 	    name = "Victory at last..."
+		prestige = 100
         set_global_flag = blue_turban_victory
         release_vassal = GMJ		
         release_vassal = FJN		
@@ -657,7 +659,7 @@ country_event = {
 country_event = {
 	id = 100011
 	title = "Victory of Blue Turbans!"
-	desc = "EVTDESC100011"
+	desc = "EVTDESC100009"
 	picture = "mandate_of_heaven_pic"
 	
 	is_triggered_only = yes
@@ -667,6 +669,7 @@ country_event = {
 	
 	option = {
 	    name = "Victory at last..."
+		prestige = 100
 	    any_owned = {
 		             limit = { is_core = QNG }
 					 secede_province = HUI
@@ -760,7 +763,7 @@ country_event = {
 
 country_event = {
 	id = 100012
-	title = "China in Fire!"
+	title = "China on Fire!"
 	desc = "EVTDESC100012"
 	picture = "mandate_of_heaven_pic"
 	
@@ -770,7 +773,7 @@ country_event = {
 	}
 	
 	option = {
-	    name = "Victory at last..."
+	    name = "The empire long united must divide, long divided must unite..."
         CHI = { all_core = { add_core = THIS } }    
 	}
 }
@@ -788,6 +791,7 @@ country_event = {
 	
 	option = {
 	    name = "Victory at last..."
+		prestige = 50
 		set_global_flag = blue_turban_defeat
 	    any_country = { limit = { has_country_flag = turban_rebel } country_event = 100013 }		
 	}
@@ -829,6 +833,7 @@ country_event = {
 	}
 	
 	option = {
+	    prestige = -25
 	    name = "We will resolve it sooner or later!"
 	    set_country_flag = blue_turban_stalmate
      	CHI = { all_core = { add_core = THIS } }	
