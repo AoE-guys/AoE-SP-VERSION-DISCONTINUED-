@@ -6,5 +6,6 @@ add_core = GER
 add_core = SLS
 add_core = NNN
 trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
+state_building = {  level = 1  building = cement_factory  upgrade = yes  }
 life_rating = 40
 
