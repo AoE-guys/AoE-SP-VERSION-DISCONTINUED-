@@ -173,12 +173,12 @@ neglected_education_1 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.10
 		    	education_spending = 0.10
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.10
 		    	education_spending = 0.05
 		    }
@@ -197,12 +197,12 @@ neglected_education_2 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.20
 		    	education_spending = 0.20
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.20
 		    	education_spending = 0.10
 		    }
@@ -221,12 +221,12 @@ neglected_education_3 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.30
 		    	education_spending = 0.30
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.30
 		    	education_spending = 0.15
 		    }
@@ -245,12 +245,12 @@ neglected_education_4 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.40
 		    	education_spending = 0.40
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.40
 		    	education_spending = 0.10
 		    }
@@ -269,12 +269,12 @@ neglected_education_5 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.50
 		    	education_spending = 0.50
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.50
 		    	education_spending = 0.25
 		    }
@@ -293,12 +293,12 @@ neglected_education_6 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.60
 		    	education_spending = 0.60
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.60
 		    	education_spending = 0.30
 		    }
@@ -317,12 +317,12 @@ neglected_education_7 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.70
 		    	education_spending = 0.70
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.70
 		    	education_spending = 0.35
 		    }
@@ -341,12 +341,12 @@ neglected_education_8 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.80
 		    	education_spending = 0.80
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.80
 		    	education_spending = 0.40
 		    }
@@ -365,12 +365,12 @@ neglected_education_9 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.90
 		    	education_spending = 0.90
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.90
 		    	education_spending = 0.45
 		    }
@@ -389,12 +389,12 @@ neglected_education_10 = { #Changed to bonus
 		#total_pops = 1000000
 		OR = {
 		    AND = { 
-			    #ai = no
+			    ai = no
 		    	literacy = 0.99
 		    	education_spending = 0.99
 		    }
 		    AND = { 
-			    #ai = yes
+			    ai = yes
 		    	literacy = 0.99
 		    	education_spending = 0.50
 		    }
