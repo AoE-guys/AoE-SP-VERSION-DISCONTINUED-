@@ -6185,3 +6185,47 @@ manchu_call_to_arms = {
 	supply_consumption = -0.80
 	icon = 7
 }
+
+#Prime Ministers
+
+bureucracy_pm = {
+    tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.10
+	icon = 4
+}
+
+burghers_pm = {
+	factory_output = 0.05
+	education_efficiency_modifier = 0.10
+	icon = 4
+}
+
+church_pm = {
+    core_pop_consciousness_modifier = -0.02
+	RGO_throughput = 0.10
+	icon = 4
+}
+
+nobility_pm = {
+    prestige = 0.01
+	RGO_throughput = 0.10
+	icon = 4
+}
+
+gentry_pm = {
+	RGO_throughput = 0.05
+	factory_throughput = 0.05
+	education_efficiency_modifier = 0.05
+	icon = 4
+}
+
+army_pm = {
+	land_organisation = 0.05
+	leadership_modifier = 0.10
+	icon = 4
+}
+
+5_year_term = {
+	prestige = 0.001
+	icon = 4
+}
