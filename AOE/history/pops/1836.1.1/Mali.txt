@@ -368,6 +368,12 @@
 }
 #Jenne (360000/90000 POPS)
 1802 = {
+	bureaucrats = {
+		culture = bedouin
+		religion = sunni
+		size = 500
+	}
+
 	aristocrats = {
 		culture = bambara
 		religion = animist
@@ -395,7 +401,13 @@
 	farmers = {
 		culture = bambara
 		religion = animist
-		size = 15619
+		size = 10000
+	}
+	
+	farmers = {
+		culture = bedouin
+		religion = sunni
+		size = 5619
 	}
 
 	labourers = {
@@ -1588,4 +1600,12 @@
 		size = 25
 	}
 
+}
+
+3358 = {
+	farmers = {
+		culture = maures
+		religion = sunni
+		size = 50
+	}
 }

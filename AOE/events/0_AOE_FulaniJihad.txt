@@ -1,0 +1,38 @@
+country_event = {
+	id = 10978
+	title = "Fulani Jihad!"
+	desc = "EVTDESC10978"
+	fire_only_once = yes
+	picture = mughal_breakup
+	
+	trigger = {
+		tag = GFL
+		year = 1776
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "We are an Islamic theocracy now."
+			1786 = { secede_province = TOO }
+			1787 = { secede_province = TOO }
+			1790 = { secede_province = TOO }
+			1778 = { secede_province = TRZ }
+			GFL = { country_event = 10979 }
+			change_tag_no_core_switch = TOO
+	}
+}
+country_event = {
+	id = 10979
+	title = "AI_FULANI_1"
+	desc = "EVTDESC10979"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "AI_FULANI_1"
+			1796 = { secede_province = SEG }
+	}
+}

@@ -464,7 +464,7 @@ country_event = {
 
 	option = {
 		name = "Let's take back what is rightfully ours!"
-		create_allience = SAX
+		create_alliance = SAX
 		war = {
 			target = PLC
 			attacker_goal = { casus_belli = add_to_sphere }

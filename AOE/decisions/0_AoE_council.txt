@@ -45,6 +45,7 @@ political_decisions = {
 	open_council = {
 		picture = reichstag
 		potential = {
+		always = no
 			NOT = {
 				OR = {
 					has_global_flag = not_enable_council
