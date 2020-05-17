@@ -2425,13 +2425,13 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 500
+		size = 15500
 	}
 
 	farmers = {
 		culture = tatar
 		religion = sunni
-		size = 10887
+		size = 40887
 	}
 
 	labourers = {
@@ -2577,7 +2577,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 3300
+		size = 3700
 	}
 
 	aristocrats = {
@@ -2607,7 +2607,7 @@
 	farmers = {
 		culture = tatar
 		religion = sunni
-		size = 2174
+		size = 2574
 	}
 
 	labourers = {
@@ -2697,7 +2697,7 @@
 	farmers = {
 		culture = bulgarian
 		religion = orthodox
-		size = 1341
+		size = 341
 	}
 
 	labourers = {
@@ -2833,7 +2833,7 @@
 	farmers = {
 		culture = armenian
 		religion = orthodox
-		size = 428
+		size = 5428
 	}
 
 	labourers = {
@@ -2863,13 +2863,13 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 50
+		size = 5050
 	}
 
 	farmers = {
 		culture = tatar
 		religion = sunni
-		size = 4454
+		size = 35454
 	}
 
 	labourers = {
@@ -2893,7 +2893,7 @@
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
-		size = 280
+		size = 5280
 	}
 
 	labourers = {
@@ -2960,6 +2960,12 @@
 		culture = volga_german
 		religion = catholic
 		size = 22
+	}
+	
+	bureaucrats = {
+		culture = turkish
+		religion = sunni
+		size = 138
 	}
 }
 #Odessa Region (1488000)
