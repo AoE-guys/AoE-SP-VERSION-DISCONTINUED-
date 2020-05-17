@@ -1320,68 +1320,119 @@ promote_to = {
 
 	craftsmen = {
 		factor = 0.01
-		group = {
+		#group = {
+		#	modifier = {
+		#		factor = -5
+		#		not = { literacy = 0.1 }
+		#	}
+		#	modifier = {
+		#		factor = -3
+		#		not = { literacy = 0.15 }
+		#	}
+		#	modifier = {
+		#		factor = -2
+		#		not = { literacy = 0.2 }
+		#	}
+		#	modifier = {
+		#		factor = -2
+		#		not = { literacy = 0.25 }
+		#	}
+		#	modifier = {
+		#		factor = -2
+		#		not = { literacy = 0.3 }
+		#	}
+		#}
+		#group = {
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.3
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.4
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.5
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.6
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.7
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.8
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 0.9
+		#	}
+		#	modifier = {
+		#		factor = 1
+		#		literacy = 1
+		#	}
+		#}
+		
+		#group = {
 			modifier = {
-				factor = -5
-				not = { literacy = 0.1 }
+				factor = 50
+				literacy = 0.1
+				NOT = { literacy = 0.2 }
+				NOT = { craftsmen = 0.025 }
 			}
 			modifier = {
-				factor = -3
-				not = { literacy = 0.15 }
+				factor = 50
+				literacy = 0.2
+				NOT = { literacy = 0.3 }
+				NOT = { craftsmen = 0.05 }
 			}
 			modifier = {
-				factor = -2
-				not = { literacy = 0.2 }
-			}
-			modifier = {
-				factor = -2
-				not = { literacy = 0.25 }
-			}
-			modifier = {
-				factor = -2
-				not = { literacy = 0.3 }
-			}
-		}
-		group = {
-			modifier = {
-				factor = 1
+				factor = 50
 				literacy = 0.3
+				NOT = { literacy = 0.4 }
+				NOT = { craftsmen = 0.075 }
 			}
 			modifier = {
-				factor = 1
+				factor = 50
 				literacy = 0.4
+				NOT = { literacy = 0.5 }
+				NOT = { craftsmen = 0.10 }
 			}
 			modifier = {
-				factor = 1
-				literacy = 0.5
-			}
-			modifier = {
-				factor = 1
+				factor = 50
 				literacy = 0.6
+				NOT = { literacy = 0.7 }
+				NOT = { craftsmen = 0.125 }
 			}
 			modifier = {
-				factor = 1
-				literacy = 0.7
-			}
-			modifier = {
-				factor = 1
+				factor = 50
 				literacy = 0.8
+				NOT = { literacy = 0.9 }
+				NOT = { craftsmen = 0.15 }
 			}
 			modifier = {
-				factor = 1
+				factor = 50
 				literacy = 0.9
+				NOT = { literacy = 0.99 }
+				NOT = { craftsmen = 0.175 }
 			}
 			modifier = {
-				factor = 1
-				literacy = 1
+				factor = 50
+				literacy = 0.99
+				NOT = { craftsmen = 0.20 }
 			}
-		}
-		modifier = {
-			factor = 30
-			state_scope = { has_factories = yes }
-			#work_available = { worker = craftsmen }
-			#NOT = { state_scope = { unemployment_by_type = { type = craftsmen value = 0.5 } } }
-		}
+		#}
+		
+		#modifier = {
+		#	factor = 30
+		#	state_scope = { has_factories = yes }
+		#	#work_available = { worker = craftsmen }
+		#	#NOT = { state_scope = { unemployment_by_type = { type = craftsmen value = 0.5 } } }
+		#}
 		#modifier = {
 		#	factor = -40
 		#	state_scope = { has_factories = no }
