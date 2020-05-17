@@ -24,11 +24,10 @@ country_event = {
 		any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
 		any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
 		
-		any_pop = { limit = { culture = ashkenazi } literacy = 0.95 }
-		any_pop = { limit = { culture = sephardic } literacy = 0.95 }
+		any_pop = { limit = { culture = ashkenazi } literacy = 1.00 }
+		any_pop = { limit = { culture = sephardic } literacy = 1.00 }
 		
-		any_pop = { limit = { culture = dutch } literacy = 0.90 }
-		any_pop = { limit = { culture = frisian } literacy = 0.86 }
+		any_pop = { limit = { culture = dutch } literacy = 0.95 }
 		any_pop = { limit = { culture = flemish } literacy = 0.86 }
 		any_pop = { limit = { culture = wallonian } literacy = 0.46 }
 		
@@ -181,7 +180,7 @@ country_event = {
         any_pop = { limit = { culture = dixie } literacy = 0.50 }
 		any_pop = { limit = { culture = texan } literacy = 0.50 }					 
 		
-        any_pop = { limit = { culture = boer } literacy = 0.95 }
+        any_pop = { limit = { culture = boer } literacy = 1.00 }
 		any_pop = { limit = { culture = australian } literacy = 0.25 }
 		any_pop = { limit = { culture = anglo_canadian } literacy = 0.35 }
 		any_pop = { limit = { culture = french_canadian } literacy = 0.35 }
