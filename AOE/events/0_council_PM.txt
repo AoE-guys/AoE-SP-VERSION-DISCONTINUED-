@@ -150,8 +150,12 @@ country_event = {
 	
 	option = {
 		name = "EVTNAME9991995PTA"
-		#set_country_flag = prime_minister_set
-			###country_event = 
+		remove_country_modifier = bureucracy_pm
+		remove_country_modifier = burghers_pm
+		remove_country_modifier = church_pm
+		remove_country_modifier = nobility_pm
+		remove_country_modifier = gentry_pm
+		remove_country_modifier = army_pm
 		add_country_modifier = { name = church_pm  duration = -1 }
 		add_country_modifier = { name = 5_year_term  duration = 1800 }
 		ai_chance = {
