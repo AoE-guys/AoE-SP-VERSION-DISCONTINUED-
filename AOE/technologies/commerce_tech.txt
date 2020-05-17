@@ -66,7 +66,7 @@ mutual_funds = {
 financial_institutions_7 = {
 	area = financial_institutions
 	year = 1790
-	cost = 18000
+	cost = 25200
 
 	tax_eff = 2.5
 	ai_chance = {
@@ -76,7 +76,7 @@ financial_institutions_7 = {
 financial_institutions_8 = {
 	area = financial_institutions
 	year = 1805
-	cost = 21600
+	cost = 30200
 
 	tax_eff = 2.5
 	ai_chance = {
@@ -158,7 +158,7 @@ market_determined_exchange_rates = {
 monetary_system_7 = {
 	area = monetary_system
 	year = 1770
-	cost = 18000
+	cost = 25200
 
 	administrative_efficiency = 0.05
 	ai_chance = {
@@ -168,7 +168,7 @@ monetary_system_7 = {
 monetary_system_8 = {
 	area = monetary_system
 	year = 1790
-	cost = 21600
+	cost = 30200
 
 
 	administrative_efficiency = 0.05
@@ -253,7 +253,7 @@ keynesian_economics = {
 economic_thought_and_critique_7 = {
 	area = economic_thought_and_critique
 	year = 1770
-	cost = 18000
+	cost = 25200
 
 	factory_input = -0.01
 	factory_goods_output = { precious_goods = 0.1 }
@@ -265,7 +265,7 @@ economic_thought_and_critique_7 = {
 economic_thought_and_critique_8 = {
 	area = economic_thought_and_critique
 	year = 1795
-	cost = 21600
+	cost = 30200
 
 	factory_input = -0.01
 	factory_goods_output = { precious_goods = 0.1 }
@@ -415,7 +415,7 @@ government_interventionism = {
 market_functionality_7 = {
 	area = market_functionality
 	year = 1770
-	cost = 18000
+	cost = 25200
 
 	influence = 0.2
 	factory_goods_output = { precious_goods = 0.20 }
@@ -427,7 +427,7 @@ market_functionality_7 = {
 market_functionality_8 = {
 	area = market_functionality
 	year = 1790
-	cost = 21600
+	cost = 30200
 
 	influence = 0.2
 	factory_goods_output = { precious_goods = 0.20 }
@@ -511,7 +511,7 @@ organizational_development = {
 tech_organization_7 = {
 	area = tech_organization
 	year = 1770
-	cost = 18000
+	cost = 25200
 
 	factory_output = 0.01
 	factory_goods_output = { precious_goods = 0.1 }
@@ -523,7 +523,7 @@ tech_organization_7 = {
 tech_organization_8 = {
 	area = tech_organization
 	year = 1790
-	cost = 21600
+	cost = 30200
 
 	factory_output = 0.01
 	factory_goods_output = { precious_goods = 0.1 }
