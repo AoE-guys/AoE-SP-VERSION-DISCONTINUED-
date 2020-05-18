@@ -80,7 +80,12 @@ country_event = {
 	trigger = {
 		is_vassal = no
 		civilized = yes
-		government = democracy
+		OR = {
+		      government = democracy
+			  federal_democracy
+			  tribal_democracy
+			  merchant_republic
+		}
 		ruling_party_ideology = reactionary
 		average_militancy = 3
 		OR = {
@@ -352,6 +357,8 @@ country_event = {
 		OR = {
 			government = hms_government
 			government = prussian_constitutionalism
+			government = elective_monarchy_oligarchy
+			government = trade_monarchy
 		}
 		civilized = yes	
 		vote_franschise = none_voting
@@ -392,7 +399,12 @@ country_event = {
 	picture = "Monarchy"
 	
 	trigger = {
-		government = absolute_monarchy
+	    OR = {
+		      government = absolute_monarchy
+			  government = tsardom
+			  government = khanate
+			  government = archduchy
+		}
 		NOT = { vote_franschise = none_voting }		
 		civilized = yes	
 	}
@@ -481,7 +493,12 @@ country_event = {
 	picture = "communist_crowd"
 	
 	trigger = {
-		government = democracy
+		OR = {
+		      government = democracy
+			  federal_democracy
+			  tribal_democracy
+			  merchant_republic
+		}
 		vote_franschise = none_voting		
 		OR = {
 			ruling_party_ideology = conservative
@@ -610,7 +627,12 @@ country_event = {
 	picture = "communist_crowd"
 	
 	trigger = {
-		government = democracy
+		OR = {
+		      government = democracy
+			  federal_democracy
+			  tribal_democracy
+			  merchant_republic
+		}
 		vote_franschise = none_voting
 		ruling_party_ideology = fascist
 		civilized = yes

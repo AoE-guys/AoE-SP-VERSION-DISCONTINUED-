@@ -33,6 +33,15 @@ reactionary_rebels = {
 		federal_democracy = presidential_dictatorship
 		theocracy = theocracy
 		colonial_company = absolute_monarchy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = presidential_dictatorship
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = presidential_dictatorship
+		trade_monarchy = absolute_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -332,6 +341,15 @@ fascist_rebels = {
 		democracy = fascist_dictatorship
 		theocracy = fascist_dictatorship
 		colonial_company = fascist_dictatorship
+		
+		archduchy = fascist_dictatorship
+		elective_monarchy_oligarchy = fascist_dictatorship
+		federal_democracy = fascist_dictatorship
+		tribal_democracy = fascist_dictatorship 
+		tsardom = fascist_dictatorship
+		merchant_republic = fascist_dictatorship
+		trade_monarchy = fascist_dictatorship
+		khanate = fascist_dictatorship
 	}
 	
 	
@@ -621,6 +639,15 @@ communist_rebels = {
 		democracy = presidential_dictatorship
 		theocracy = presidential_dictatorship
 		colonial_company = presidential_dictatorship
+		
+		archduchy = presidential_dictatorship
+		elective_monarchy_oligarchy = presidential_dictatorship
+		federal_democracy = presidential_dictatorship
+		tribal_democracy = presidential_dictatorship 
+		tsardom = presidential_dictatorship
+		merchant_republic = presidential_dictatorship
+		trade_monarchy = presidential_dictatorship
+		khanate = presidential_dictatorship
 	}
 	
 	
@@ -927,6 +954,15 @@ anarcho_liberal_rebels = {
 		democracy = bourgeois_dictatorship
 		theocracy = bourgeois_dictatorship
 		colonial_company = bourgeois_dictatorship
+		
+		archduchy = bourgeois_dictatorship
+		elective_monarchy_oligarchy = bourgeois_dictatorship
+		federal_democracy = bourgeois_dictatorship
+		tribal_democracy = bourgeois_dictatorship 
+		tsardom = bourgeois_dictatorship
+		merchant_republic = bourgeois_dictatorship
+		trade_monarchy = bourgeois_dictatorship
+		khanate = bourgeois_dictatorship
 	}
 	
 	
@@ -1245,6 +1281,15 @@ nationalist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -1573,6 +1618,15 @@ pan_nationalist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none			# (It was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2000,6 +2054,15 @@ carlist_rebels = {
 		democracy = absolute_monarchy
 		theocracy = theocracy
 		colonial_company = absolute_monarchy
+		
+		archduchy = absolute_monarchy
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = absolute_monarchy
+		tribal_democracy = absolute_monarchy 
+		tsardom = absolute_monarchy
+		merchant_republic = absolute_monarchy
+		trade_monarchy = absolute_monarchy
+		khanate = absolute_monarchy
 	}
 	
 	
@@ -2264,6 +2327,15 @@ szlachta_rebels = {
 		theocracy = theocracy
 		colonial_company = elective_monarchy_oligarchy
 		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		
+		archduchy = elective_monarchy_oligarchy
+		#elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = elective_monarchy_oligarchy
+		tribal_democracy = elective_monarchy_oligarchy 
+		tsardom = elective_monarchy_oligarchy
+		merchant_republic = elective_monarchy_oligarchy
+		trade_monarchy = elective_monarchy_oligarchy
+		khanate = elective_monarchy_oligarchy
 	}
 	
 	
@@ -2521,6 +2593,15 @@ christino_rebels = {
 		democracy = hms_government
 		theocracy = theocracy
 		colonial_company = hms_government
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = hms_government
+		federal_democracy = hms_government
+		tribal_democracy = tribal_democracy 
+		tsardom = hms_government
+		merchant_republic = hms_government
+		trade_monarchy = hms_government
+		khanate = hms_government
 	}
 	
 	
@@ -2765,6 +2846,15 @@ boxer_rebels = {
 		democracy = absolute_monarchy
 		theocracy = theocracy
 		colonial_company = absolute_monarchy
+		
+		archduchy = absolute_monarchy
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = absolute_monarchy
+		tribal_democracy = absolute_monarchy 
+		tsardom = absolute_monarchy
+		merchant_republic = absolute_monarchy
+		trade_monarchy = absolute_monarchy
+		khanate = absolute_monarchy
 	}
 	
 	defection = none				
@@ -3036,6 +3126,15 @@ red_shirts = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = hms_government
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none			# (Was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3279,6 +3378,15 @@ indian_sepoys = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = pan_nationalist		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3543,6 +3651,15 @@ indian_nationalists = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3760,6 +3877,15 @@ liberal_rebels = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = hms_government
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = hms_government
+		merchant_republic = hms_government
+		trade_monarchy = hms_government
+		khanate = hms_government
 	}
 	
 	
@@ -4209,6 +4335,15 @@ unciv_reactionary_rebels = {
 		democracy = absolute_monarchy
 		theocracy = absolute_monarchy
 		colonial_company = colonial_company
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = presidential_dictatorship
+		tribal_democracy = tribal_democracy 
+		tsardom = absolute_monarchy
+		merchant_republic = absolute_monarchy
+		trade_monarchy = absolute_monarchy
+		khanate = khanate
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -4505,6 +4640,15 @@ separatist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -4764,6 +4908,15 @@ socialist_rebels = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = democracy
+		elective_monarchy_oligarchy = democracy
+		federal_democracy = democracy
+		tribal_democracy = democracy 
+		tsardom = democracy
+		merchant_republic = democracy
+		trade_monarchy = democracy
+		khanate = democracy
 	}
 	
 	
@@ -5246,6 +5399,15 @@ independence_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -5418,6 +5580,15 @@ turkish_nationalist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = democracy
+		elective_monarchy_oligarchy = democracy
+		federal_democracy = democracy
+		tribal_democracy = democracy 
+		tsardom = democracy
+		merchant_republic = democracy
+		trade_monarchy = democracy
+		khanate = democracy
 	}
 	
 	
@@ -5663,6 +5834,15 @@ native_rebels = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = democracy
+		elective_monarchy_oligarchy = democracy
+		federal_democracy = democracy
+		tribal_democracy = democracy 
+		tsardom = democracy
+		merchant_republic = democracy
+		trade_monarchy = democracy
+		khanate = democracy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -5850,6 +6030,15 @@ sioux_nation = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -5974,6 +6163,15 @@ apache = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -6102,6 +6300,15 @@ jacobite_rebels = {
 		democracy = hms_government
 		theocracy = theocracy
 		colonial_company = hms_government
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = hms_government
+		federal_democracy = hms_government
+		tribal_democracy = hms_government 
+		tsardom = hms_government
+		merchant_republic = hms_government
+		trade_monarchy = hms_government
+		khanate = hms_government
 	}
 	
 	
