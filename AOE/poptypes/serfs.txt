@@ -60,13 +60,123 @@ migration_target = { factor = 0 }
 	
 promote_to = {
 	farmers = {
-		factor = 1
-			
+		factor = 0.01
 		modifier = {
-			factor = 2
-			luxury_needs = 0.8
+			factor = 50
+			NOT = { literacy = 0.1 }
+			serfs = 0.95
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+			serfs = 0.90
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+			serfs = 0.80
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+			serfs = 0.70
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.4
+			NOT = { literacy = 0.5 }
+			serfs = 0.60
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.5
+			NOT = { literacy = 0.6 }
+			serfs = 0.50
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.6
+			NOT = { literacy = 0.7 }
+			serfs = 0.40
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.8
+			NOT = { literacy = 0.9 }
+			serfs = 0.30
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.9
+			NOT = { literacy = 0.99 }
+			serfs = 0.20
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.99
+			serfs = 0.10
 		}
 	}
+	#clergymen =
+	#{
+	#	factor = 0.01
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.1
+	#		NOT = { education_spending = 0.2 }
+	#		NOT = { clergymen = 0.004 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.2
+	#		NOT = { education_spending = 0.3 }
+	#		NOT = { clergymen = 0.008 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.3
+	#		NOT = { education_spending = 0.4 }
+	#		NOT = { clergymen = 0.012 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.4
+	#		NOT = { education_spending = 0.5 }
+	#		NOT = { clergymen = 0.016 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.5
+	#		NOT = { education_spending = 0.6 }
+	#		NOT = { clergymen = 0.020 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.7
+	#		NOT = { education_spending = 0.8 }
+	#		NOT = { clergymen = 0.024 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.8
+	#		NOT = { education_spending = 0.9 }
+	#		NOT = { clergymen = 0.028 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.9
+	#		NOT = { education_spending = 0.99 }
+	#		NOT = { clergymen = 0.032 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.99
+	#		NOT = { clergymen = 0.036 }
+	#	}
+	#}
 }
 
 
