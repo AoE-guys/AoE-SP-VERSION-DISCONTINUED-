@@ -434,24 +434,24 @@ john_ramsay_mcculloch = {
 		activate_building = furniture_factory
 	}
 }
-nassau_william_sr = {
-	limit = { early_classical_theory_and_critique = 1 }
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			economic_policy = laissez_faire
-		}
-		modifier = {
-			factor = 1
-			ruling_party_ideology = liberal
-		}
-	}
-	effect = {
-		activate_building = paper_mill 
-	}
-}
+# nassau_william_sr = {
+	# limit = { early_classical_theory_and_critique = 1 }
+	# news = no
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# economic_policy = laissez_faire
+		# }
+		# modifier = {
+			# factor = 1
+			# ruling_party_ideology = liberal
+		# }
+	# }
+	# effect = {
+		# activate_building = paper_mill 
+	# }
+# }
 james_mill = {
 	limit = { early_classical_theory_and_critique = 1 }
 	news = no

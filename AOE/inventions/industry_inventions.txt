@@ -1,3 +1,15 @@
+# piston_steam_engine - Water Wheel Power
+i_paper_mill = {
+	limit = { piston_steam_engine = 1 }
+	news = no
+	chance = {
+		base = 2
+	}
+	effect = {
+		activate_building = paper_mill 
+	}
+}
+
 #combustion_engine
 daimlers_automobile = {
 	limit = { combustion_engine = 1 }
@@ -1480,7 +1492,7 @@ vacuum_tube = {
 	}
 }
 
-tulls_seed_drill = {
+weaving = {
 	limit = { piston_steam_engine = 1 }
 	chance = {
 		base = 6
@@ -1599,6 +1611,16 @@ carl_bosch = {
 		factory_goods_output = { oil = 0.2 }
 		factory_goods_output = { fertilizer = 0.2 }
 		factory_goods_output = { fuel = 0.2 }
+	}
+}
+
+tulls_seed_drill = {
+	limit = { piston_steam_engine = 1 }
+	chance = {
+		base = 6
+	}
+	effect = {
+
 	}
 }
 
