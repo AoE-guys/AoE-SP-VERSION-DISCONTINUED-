@@ -1032,3 +1032,33 @@ country_event = {
 		}		
 	}
 }
+
+country_event = {
+	id = 100018
+	title = "Soldiers Return to Fields"
+	desc = "EVTDESC100018"
+	picture = "mandate_of_heaven_pic"
+	
+	trigger = {
+	           has_global_flag = blue_turban_rebellion_happened
+			   OR = {
+	                 has_country_modifier = blue_turbans
+			         has_country_modifier = manchu_call_to_arms
+			   }
+			   war = no
+		       
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+	    prestige = 5
+		any_pop = {
+			#consciousness = -3
+			militancy = -3
+		}
+	    remove_country_modifier = blue_turbans
+		remove_country_modifier = manchu_call_to_arms	
+	}
+}
