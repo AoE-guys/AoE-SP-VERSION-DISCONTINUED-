@@ -6080,12 +6080,14 @@ pearl_of_the_antilles = {
 	population_growth = 0.01
 }
 
-#modifiers below gay
+#modifiers above gay
 
 trade_centre = {
 	icon = 11
 	goods_demand = 0.2
 	immigrant_attract = 0.25
+	local_factory_throughput = 0.2
+	tariff_efficiency_modifier = 0.25
 }
 
 potential_trade_post = {
@@ -6228,4 +6230,11 @@ army_pm = {
 5_year_term = {
 	prestige = 0.001
 	icon = 4
+}
+
+#daniel is a catgirl
+
+come_to_brz = {
+	global_immigrant_attract = 0.5
+	icon = 11
 }
