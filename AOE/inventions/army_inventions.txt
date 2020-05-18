@@ -969,21 +969,7 @@ rear_area_dumps = {
 		}
 	}
 }
-#iron_muzzle_loaded_artillery
-culverin = {
-	limit = { iron_muzzle_loaded_artillery = 1 }
-	chance = {
-		base = 2
-	}
-	effect = {
-
-	}
-}
-
 #iron_breech_loaded_artillery
-
-
-
 #indirect_artillery_fire
 #heavy_armament
 anti_aircraft_artillery = {
