@@ -134,6 +134,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		3356 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
