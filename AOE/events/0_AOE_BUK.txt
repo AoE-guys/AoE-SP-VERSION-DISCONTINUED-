@@ -256,9 +256,26 @@ country_event = {
 		}
 		war = {
 			target = QNG
-			attacker_goal = { casus_belli = liberate_country country = TIB } 
+			attacker_goal = { casus_belli = war_reparations } 
 			defender_goal = { casus_belli = status_quo }
 			call_ally = yes
 		}
+	}
+}
+country_event = {
+	id = 6073
+	title = "Qinghai offers vassalization"
+	desc = "EVTDESC6073"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		relation = {
+			who = XBI
+			value = 200
+		}
+		create_vassal = XBI
 	}
 }
