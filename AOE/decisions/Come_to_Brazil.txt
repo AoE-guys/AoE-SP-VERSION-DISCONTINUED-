@@ -1,0 +1,37 @@
+political_decisions = {
+
+	come_to_brazil = {
+		picture = become_brz
+		news = yes
+		news_desc_long = "come_to_brazil_NEWS_LONG"
+		news_desc_medium = "come_to_brazil_NEWS_MEDIUM"
+		news_desc_short = "come_to_brazil_NEWS_SHORT"
+		potential = {
+			OR = {
+				tag = BRZ
+				tag = PBZ
+				tag = RGS
+			}
+			NOT = {
+				has_country_flag = coming_to_brazil
+			}
+		}
+		allow = {
+			is_vassal = no
+			war = no
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = come_to_brz
+				duration = -1
+			}
+			set_country_flag = coming_to_brazil
+		}
+	}
+	
+	
+}
