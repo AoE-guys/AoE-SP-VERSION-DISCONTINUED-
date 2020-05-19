@@ -119,4 +119,36 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+	
+	qinghai_uprising = {
+			picture = claim_greater_mongolia
+			potential = {
+			year = 1723
+			tag = XBI
+			NOT = {
+				has_country_flag = influenced_qinghai
+			}
+		}
+		
+		allow = {
+			NOT = { war_with = DZN }
+		}
+		
+		effect = {
+			set_country_flag = influenced_qinghai
+			prestige = 40
+			QNG = { release_vassal = XBI }
+			create_alliance = DZN
+			war = {
+			target = QNG
+			attacker_goal = { casus_belli = status_quo } 
+			defender_goal = { casus_belli = establish_protectorate_casus_belli }
+			call_ally = yes
+			}
+			DZN = { country_event = 6074 }
+			QNG = { country_event = 6075 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }
