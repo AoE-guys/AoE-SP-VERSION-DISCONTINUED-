@@ -662,7 +662,7 @@ pops = {
 	MIL_HAS_EVERYDAY_NEED = -0.1,
 	MIL_HAS_LUXURY_NEED = -0.2,
 	MIL_NO_LIFE_NEED = 0.2,
-	MIL_REQUIRE_REFORM = 0.2,
+	MIL_REQUIRE_REFORM = 0.1,
 	MIL_IDEOLOGY = -0.1,
 	MIL_RULING_PARTY = -0.1,
 	MIL_REFORM_IMPACT = 2,
@@ -684,7 +684,7 @@ pops = {
 	
 	POP_SAVINGS = 0.03,
 	
-	STATE_CREATION_ADMIN_LIMIT = 0.01,
+	STATE_CREATION_ADMIN_LIMIT = 0.00,
 	MIL_TO_JOIN_REBEL = 8, -- Rebels over this will join a faction
 	MIL_TO_JOIN_RISING = 9, -- Rebels over this will join a general rising
 	MIL_TO_AUTORISE = 9, -- Rebels over this rise no matter what
