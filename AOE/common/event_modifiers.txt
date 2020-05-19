@@ -6190,7 +6190,7 @@ manchu_call_to_arms = {
 
 #Prime Ministers
 
-bureucracy_pm = {
+bureaucracy_pm = {
     tax_efficiency = 0.05
 	administrative_efficiency_modifier = 0.10
 	icon = 4
@@ -6237,4 +6237,22 @@ army_pm = {
 come_to_brz = {
 	global_immigrant_attract = 0.5
 	icon = 11
+}
+
+#EIC
+victory_over_eic = {
+    prestige = 0.01
+	global_pop_militancy_modifier = -0.01
+	icon = 7
+}
+
+indian_campaign_target_prepare = {
+	global_pop_militancy_modifier = 0.01
+	icon = 7
+}
+
+indian_campaign_target = {
+	global_pop_militancy_modifier = 0.01
+	mobilisation_size = -0.025
+	icon = 7
 }

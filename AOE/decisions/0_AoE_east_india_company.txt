@@ -1,23 +1,50 @@
-#political_decisions = {
-#	fund_east_india_company = {
-#		picture = map_india
-#		potential = {
-#			any_owned_province = {
-#				continent = asia	
-#			}
-#			is_great_power = yes
-#			civilized = yes
-#		}
-#		allow = {
-#			any_owned_province = {
-#				continent = asia	
-#			}
-#			mass_politics = 1
-#			money = 1000000
-#		}
-#		effect = {
-#			money = -1000000
-#			set_country_flag = east_india_company_funded
-#		}
-#	}
-#}
+political_decisions = {
+	fund_east_india_company = {
+		picture = map_india
+		potential = {
+		    capital_scope = { continent = europe }
+		}
+		allow = {
+			any_owned_province = {
+				is_core = HND	
+			}
+			business_regulations = 1
+			money = 100000
+		}
+		effect = {
+			money = -100000
+			prestige = 10
+			country_event = 100019
+			set_country_flag = east_india_company_funded
+		}
+	}
+	eic_prepare_campaign_in_india = {
+		picture = map_india
+		potential = {
+		    has_country_flag = dynamic_tag
+			exists = yes
+		}
+		allow = {
+		    NOT = { has_country_flag = campaigning_in_india }
+			HND = {
+                   any_core = { 
+				               owner = { 
+							            capital_scope = { is_core = HND }
+										neighbour = THIS
+										NOT = { has_country_flag = indian_campaign_target_flag }
+										NOT = { has_country_modifier = victory_over_eic }
+							   } 
+				   }			
+			}
+			money = 30000
+		}
+		effect = {
+			money = -25000
+			set_country_flag = campaigning_in_india
+			random_country = {
+				limit = { capital_scope = { is_core = HND }  neighbour = THIS  NOT = { has_country_flag = indian_campaign_target } }
+				country_event = 100021
+			}
+		}
+	}
+}

@@ -1,0 +1,293 @@
+country_event = {
+	id = 100019
+	title = "East Indian Company Monopoly Granted"
+	desc = "EVTDESC100019"
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { months = 1 }
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "It will be the pearl in our crown!"
+        any_country = {
+                       limit = {
+        			            #NOT = { has_global_flag = colony_already_established }
+                                AND = { 
+                       	             has_country_flag = dynamic_tag
+                                        exists = no
+                                        OR = { 
+                                              AND = { tag = D01 } 
+                                              AND = { tag = D02  D01 = { exists = yes } }
+                                              AND = { tag = D03  D01 = { exists = yes } D02 = { exists = yes } }
+                                              AND = { tag = D04  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } }
+                                              AND = { tag = D05  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } }
+                                              AND = { tag = D06  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } }
+                                              AND = { tag = D07  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } }
+                                              AND = { tag = D08  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } }
+                                              AND = { tag = D09  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } }
+                                              AND = { tag = D10  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } }
+                                              AND = { tag = D11  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } }	
+                                              AND = { tag = D12  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } }
+                                              AND = { tag = D13  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } }	
+                                              AND = { tag = D14  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } }
+                                              AND = { tag = D15  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } }	
+                                              AND = { tag = D16  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } }
+                                              AND = { tag = D17  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } }	
+                                              AND = { tag = D18  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } }
+                                              AND = { tag = D19  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } }
+                                              AND = { tag = D20  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } }	
+                                              AND = { tag = D21  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } }	
+                                              AND = { tag = D22  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } }	
+                                              AND = { tag = D23  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } }
+                                              AND = { tag = D24  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } }
+                                              AND = { tag = D25  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } }
+                                              AND = { tag = D26  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } }
+                                              AND = { tag = D27  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } }
+                                              AND = { tag = D28  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } }
+                                              AND = { tag = D29  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } }
+                                              AND = { tag = D30  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } }
+                                              AND = { tag = D31  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } }
+                                              AND = { tag = D32  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D31 = {  exists = yes } }
+                                              AND = { tag = D33  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } }
+                                              AND = { tag = D34  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } }
+                                              AND = { tag = D35  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } }
+                                              AND = { tag = D36  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } }
+                                              AND = { tag = D37  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } }
+                                              AND = { tag = D38  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } }
+                                              AND = { tag = D39  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } }
+                                              AND = { tag = D40  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } }
+                                              AND = { tag = D41  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } }
+                                              AND = { tag = D42  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } }
+                                              AND = { tag = D43  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } }
+                                              AND = { tag = D44  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } }
+                                              AND = { tag = D45  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } D44 = {  exists = yes } }
+                                              AND = { tag = D46  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } D44 = {  exists = yes } D45 = {  exists = yes } }
+                                              AND = { tag = D47  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } D44 = {  exists = yes } D45 = {  exists = yes } D46 = {  exists = yes } }
+                                              AND = { tag = D48  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } D44 = {  exists = yes } D45 = {  exists = yes } D46 = {  exists = yes } D47 = {  exists = yes } }	
+                                              AND = { tag = D49  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } D44 = {  exists = yes } D45 = {  exists = yes } D46 = {  exists = yes } D47 = {  exists = yes } D48 = {  exists = yes } }	
+                                              AND = { tag = D50  D01 = { exists = yes } D02 = { exists = yes } D03 = { exists = yes } D04 = { exists = yes } D05 = { exists = yes } D06 = { exists = yes } D07 = { exists = yes } D08 = { exists = yes } D09 = { exists = yes } D10 = { exists = yes } D12 = { exists = yes } D13 = { exists = yes } D14 = { exists = yes } D15 = { exists = yes } D16 = { exists = yes } D17 = { exists = yes } D18 = { exists = yes } D19 = { exists = yes } D20 = { exists = yes } D21 = { exists = yes } D22 = { exists = yes } D23 = { exists = yes } D24 = {  exists = yes } D25 = {  exists = yes } D26 = {  exists = yes } D27 = {  exists = yes } D28 = {  exists = yes } D29 = {  exists = yes } D30 = {  exists = yes } D32 = {  exists = yes } D33 = {  exists = yes } D34 = {  exists = yes } D35 = {  exists = yes } D36 = {  exists = yes } D37 = {  exists = yes } D38 = {  exists = yes } D39 = {  exists = yes } D40 = {  exists = yes } D41 = {  exists = yes } D42 = {  exists = yes } D43 = {  exists = yes } D44 = {  exists = yes } D45 = {  exists = yes } D46 = {  exists = yes } D47 = {  exists = yes } D48 = {  exists = yes } D49 = {  exists = yes } }												   
+        							 }											 
+                       	      }
+                       }
+        			 country_event = 100020
+        }		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	title = "East Indian Company Monopoly Granted"
+	desc = "EVTDESC100020"
+	#major = yes
+
+	id = 100020
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "It will be the pearl in our crown!"
+			  HND = { all_core = { add_core = THIS } }
+			  FROM = { release = THIS }
+			  FROM = { create_vassal = THIS }
+			  FROM = { country_event = 100026 }
+			  THIS = { government = colonial_company }
+			  THIS = { money = 100000 }
+	}
+}
+
+country_event = {
+	title = "East Indian Company Monopoly Granted"
+	desc = "EVTDESC100021"
+	#major = yes
+
+	id = 100026
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "It will be the pearl in our crown!"
+			  prestige = 5
+	}
+	#option = {
+	#          name = "Let me take closer look at company's endeavours..."
+	#		  prestige = 5
+	#		  change_tag_no_core_switch = FROM
+	#}
+}
+
+country_event = {
+	title = "Targeted by Indian Company"
+	desc = "EVTDESC100021"
+	#major = yes
+
+	id = 100021
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Sepoys are gathering..."
+			  #prestige = -1
+			  any_pop = { militancy = 1 }
+		      any_pop = {
+		      	limit = {
+		      			type = labourers
+		      	}
+		      	militancy = 10
+				money = 1000
+		      }
+			  set_country_flag = indian_campaign_target_flag
+			  add_country_modifier = { name = indian_campaign_target_prepare  duration = 360 }
+			  add_country_modifier = { name = indian_campaign_target  duration = 720 }
+	}
+}
+
+country_event = {
+	title = "Victory Over East Indian Company"
+	desc = "EVTDESC100022"
+	#major = yes
+
+	id = 100022
+
+	trigger = {
+	           has_country_flag = indian_campaign_target_flag
+			   NOT = { has_country_modifier = indian_campaign_target }
+			   NOT = { any_owned_province = { controlled_by = REB } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "India does not belong to Europeans!"
+			  prestige = 5
+			  any_pop = { militancy = -1 }
+		      any_pop = {
+		      	limit = {
+		      			type = labourers
+		      	}
+		      	militancy = -10
+		      }
+			  clr_country_flag = indian_campaign_target_flag
+			  add_country_modifier = { name = victory_over_eic  duration = 1800 }
+			  random_country = { limit = { neighbour = THIS  has_country_flag = campaigning_in_india } country_event = 100025 }
+	}
+}
+
+country_event = {
+	title = "East Indian Company Triumphs Over Us"
+	desc = "EVTDESC100023"
+	#major = yes
+
+	id = 100023
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "And so the European reign begins..."
+			  prestige = -10
+			  random_country = {
+			                   limit = { neighbour = THIS  has_country_flag = campaigning_in_india }
+							   country_event = 100024
+			  }
+	}
+}
+
+country_event = {
+	title = "Our Campaign is Successful"
+	desc = "EVTDESC100024"
+	#major = yes
+
+	id = 100024
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "We shall rule over India!"
+			  THIS = { inherit = FROM }
+	}
+}
+
+country_event = {
+	title = "Unsuccessful Campaign"
+	desc = "EVTDESC100025"
+	#major = yes
+
+	id = 100025
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Investors won't be happy..."
+			  clr_country_flag = campaigning_in_india
+	}
+}
+
+#Colony Conquest
+country_event = {
+	title = "Foreign Colony Conquered"
+	desc = "We were able to secure foreign colony in a peace treaty."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999805
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+			  any_country = {
+			                 limit = {
+			                          has_country_flag = contested_colony
+									  in_sphere = THIS
+									  is_vassal = no
+									  NOT = { vassal_of = THIS }
+									  #has_recently_lost_war = yes
+			                 }
+                             country_event = 9999804
+			  }
+	}
+}
+
+country_event = {
+	title = "We were conquered"
+	desc = "We were conquered."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999804
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+	          clr_country_flag = contested_colony
+			  FROM = { inherit = THIS }
+	}
+}
