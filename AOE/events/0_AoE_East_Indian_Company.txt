@@ -96,6 +96,7 @@ country_event = {
 			  FROM = { release = THIS }
 			  FROM = { create_vassal = THIS }
 			  FROM = { country_event = 100026 }
+			  THIS = { government = colonial_company }
 			  THIS = { money = 100000 }
 	}
 }
