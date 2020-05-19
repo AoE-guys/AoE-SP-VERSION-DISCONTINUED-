@@ -82,9 +82,9 @@ country_event = {
 		civilized = yes
 		OR = {
 		      government = democracy
-			  federal_democracy
-			  tribal_democracy
-			  merchant_republic
+			  government = federal_democracy
+			  government = tribal_democracy
+			  government = merchant_republic
 		}
 		ruling_party_ideology = reactionary
 		average_militancy = 3
@@ -495,9 +495,9 @@ country_event = {
 	trigger = {
 		OR = {
 		      government = democracy
-			  federal_democracy
-			  tribal_democracy
-			  merchant_republic
+			  government = federal_democracy
+			  government = tribal_democracy
+			  government = merchant_republic
 		}
 		vote_franschise = none_voting		
 		OR = {
@@ -629,9 +629,9 @@ country_event = {
 	trigger = {
 		OR = {
 		      government = democracy
-			  federal_democracy
-			  tribal_democracy
-			  merchant_republic
+			  government = federal_democracy
+			  government = tribal_democracy
+			  government = merchant_republic
 		}
 		vote_franschise = none_voting
 		ruling_party_ideology = fascist
