@@ -141,12 +141,35 @@ political_decisions = {
 			create_alliance = DZN
 			war = {
 			target = QNG
-			attacker_goal = { casus_belli = status_quo } 
+			attacker_goal = { casus_belli = acquire_state state_province_id = 1490 } 
 			defender_goal = { casus_belli = establish_protectorate_casus_belli }
 			call_ally = yes
 			}
 			DZN = { country_event = 6074 }
 			QNG = { country_event = 6075 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	vassalize_qinghai = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = XBI
+			has_country_flag = influenced_qinghai
+			NOT = {
+				has_country_flag = vassalized_qinghai
+			}
+		}
+		
+		allow = {
+			NOT = { war_with = QNG }
+		}
+		
+		effect = {
+			set_country_flag = vassalized_qinghai
+			prestige = 10
+			DZN = { country_event = 6073 }
 		}
 		
 		ai_will_do = { factor = 1 }
