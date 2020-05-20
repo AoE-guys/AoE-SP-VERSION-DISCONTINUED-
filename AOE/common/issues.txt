@@ -248,8 +248,8 @@ political_reforms = {
 	vote_franschise = {
 		next_step_only = yes
 		none_voting = {
-			rich_vote = 0
-			middle_vote = 0
+			rich_vote = 0.5
+			middle_vote = 0.01
 			poor_vote = 0
 			allow = { 
 				NOT = { election = yes }
@@ -311,26 +311,34 @@ political_reforms = {
 		}
 	}
 	
-	upper_house_composition = {
-		party_appointed = {
+	upper_house_composition = { #legislative power
+	    next_step_only = yes
+		party_appointed = { #executive head
 			rules = { same_as_ruling_party = yes }
 			ruling_party_support = 0.05
 			allow = { NOT = { government = elective_monarchy_oligarchy } }
 		}
-		appointed = {
-			rules = { rich_only = yes }
+		appointed = { #house of lords
+			rules = { population_vote = yes }
+			rich_vote = 5.00
+			middle_vote = 0.10
 			global_immigrant_attract = 0.01
 		}
-		state_equal_weight = {
-			rules = { state_vote = yes }
+		state_equal_weight = { #house of commons
+			rules = { population_vote = yes }
+			rich_vote = 1.00
+			middle_vote = 0.50
 			allow = {
 				NOT = { vote_franschise = none_voting }
 				NOT = { has_country_flag = theocratic_government }
 			}
 			global_immigrant_attract = 0.02
 		}
-		population_equal_weight = {
+		population_equal_weight = { #popular sovereignty
 			rules = { population_vote = yes }
+			rich_vote = 0.20
+			middle_vote = 0.10
+			poor_vote = 0.01
 			allow = { NOT = { vote_franschise = none_voting } }
 			global_immigrant_attract = 0.03
 		}
@@ -739,6 +747,11 @@ social_reforms = {
 			#education_efficiency_modifier = 0.10
 			core_pop_consciousness_modifier = -0.02
 			minimum_wage = 0.00
+		
+			rich_vote = 0.20
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_wage = { #influential
@@ -748,6 +761,11 @@ social_reforms = {
 			#education_efficiency_modifier = 0.05
 			core_pop_consciousness_modifier = -0.01
 			minimum_wage = 0.03
+			
+			rich_vote = 0.15
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		low_minimum_wage = { #silghtly influential
@@ -757,6 +775,11 @@ social_reforms = {
 			#education_efficiency_modifier = 0.00
 			core_pop_consciousness_modifier = 0.00
 			minimum_wage = 0.06
+			
+			rich_vote = 0.10
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { 
 				has_global_flag = factions_setup_done 
 				NOT = { has_country_flag = clergy_and_nobility_domination }
@@ -769,6 +792,11 @@ social_reforms = {
 			#education_efficiency_modifier = -0.05
 			core_pop_consciousness_modifier = 0.01
 			minimum_wage = 0.09
+			
+			rich_vote = 0.05
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		good_minimum_wage = { #irrelevant
@@ -778,6 +806,11 @@ social_reforms = {
 			#education_efficiency_modifier = -0.10
 			core_pop_consciousness_modifier = 0.02
 			minimum_wage = 0.12
+			
+			rich_vote = 0.00
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 	}
@@ -791,6 +824,11 @@ social_reforms = {
 			factory_input = 0.00
 			goods_demand = 0.00
 			minimum_wage = 0.00
+			
+			rich_vote = 0.00
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		fourteen_hours = { #marginally relevant
@@ -800,6 +838,11 @@ social_reforms = {
 			factory_input = -0.05
 			goods_demand = 0.05
 			minimum_wage = 0.03
+			
+			rich_vote = 0.00
+			middle_vote = 0.02
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		twelve_hours = { #slightly influential
@@ -809,6 +852,11 @@ social_reforms = {
 			factory_input = -0.10
 			goods_demand = 0.10
 			minimum_wage = 0.06
+			
+			rich_vote = 0.00
+			middle_vote = 0.04
+			poor_vote = 0.00
+			
 			allow = { 
 				has_global_flag = factions_setup_done
 				NOT = { has_country_flag = clergy_and_nobility_domination } 
@@ -821,6 +869,11 @@ social_reforms = {
 			factory_input = -0.15
 			goods_demand = 0.15
 			minimum_wage = 0.09
+			
+			rich_vote = 0.00
+			middle_vote = 0.06
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		eight_hours = { #very influential
@@ -830,6 +883,11 @@ social_reforms = {
 			factory_input = -0.20
 			goods_demand = 0.20
 			minimum_wage = 0.12
+			
+			rich_vote = 0.00
+			middle_vote = 0.08
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 	}
@@ -842,6 +900,11 @@ social_reforms = {
 			factory_throughput = 0.00
 			goods_demand = -0.20
 			minimum_wage = 0.00
+			
+			rich_vote = 0.20
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_safety = { #influential
@@ -850,6 +913,11 @@ social_reforms = {
 			factory_throughput = 0.05
 			goods_demand = -0.15
 			minimum_wage = 0.03
+			
+			rich_vote = 0.15
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done NOT = { has_country_flag = clergy_and_nobility_domination } }
 		}
 		low_safety = { #slightly influential
@@ -858,6 +926,11 @@ social_reforms = {
 			factory_throughput = 0.10
 			goods_demand = -0.10
 			minimum_wage = 0.06
+			
+			rich_vote = 0.10
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_safety = { #marginally relevant
@@ -866,6 +939,11 @@ social_reforms = {
 			factory_throughput = 0.15
 			goods_demand = -0.05
 			minimum_wage = 0.09
+			
+			rich_vote = 0.05
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done NOT = { has_country_flag = republic } }
 		}
 		good_safety = { #irrelevant
@@ -874,6 +952,11 @@ social_reforms = {
 			factory_throughput = 0.20
 			goods_demand = 0.00
 			minimum_wage = 0.12
+			
+			rich_vote = 0.00
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done  NOT = { government = elective_monarchy_oligarchy } }
 		}
 	}
@@ -886,6 +969,11 @@ social_reforms = {
 			factory_throughput = 0.00
 			factory_output = 0.00
 			minimum_wage = 0.00
+			
+			rich_vote = 0.00
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_subsidies = { #marginally relevant
@@ -894,6 +982,11 @@ social_reforms = {
 			factory_throughput = 0.05
 			factory_output = 0.05
 			minimum_wage = 0.03
+			
+			rich_vote = 0.00
+			middle_vote = 0.02
+			poor_vote = 0.01
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		low_subsidies = { #slightly influential
@@ -902,6 +995,11 @@ social_reforms = {
 			factory_throughput = 0.10
 			factory_output = 0.10
 			minimum_wage = 0.06
+			
+			rich_vote = 0.00
+			middle_vote = 0.04
+			poor_vote = 0.02
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_subsidies = { #influential
@@ -910,6 +1008,11 @@ social_reforms = {
 			factory_throughput = 0.15
 			factory_output = 0.15
 			minimum_wage = 0.09
+			
+			rich_vote = 0.00
+			middle_vote = 0.06
+			poor_vote = 0.03
+			
 			allow = { 
 				has_global_flag = factions_setup_done 
 				NOT = { has_country_flag = clergy_and_nobility_domination }
@@ -921,6 +1024,11 @@ social_reforms = {
 			factory_throughput = 0.20
 			factory_output = 0.20
 			minimum_wage = 0.12
+			
+			rich_vote = 0.00
+			middle_vote = 0.08
+			poor_vote = 0.04
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 	}
@@ -934,6 +1042,11 @@ social_reforms = {
 			min_military_spending = 0.00
 			max_military_spending = 0.00
 			mobilisation_size = 0.00
+			
+			rich_vote = 0.00
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_pensions = { #marginally relevant
@@ -945,6 +1058,11 @@ social_reforms = {
 			min_military_spending = 0.10
 			max_military_spending = 0.10
 			mobilisation_size = 0.01
+			
+			rich_vote = 0.03
+			middle_vote = 0.02
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		low_pensions = { #slightly influential
@@ -956,6 +1074,11 @@ social_reforms = {
 			min_military_spending = 0.20
 			max_military_spending = 0.20
 			mobilisation_size = 0.02
+			
+			rich_vote = 0.06
+			middle_vote = 0.04
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_pensions = { #influential
@@ -967,6 +1090,11 @@ social_reforms = {
 			min_military_spending = 0.30
 			max_military_spending = 0.30
 			mobilisation_size = 0.03
+			
+			rich_vote = 0.09
+			middle_vote = 0.06
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		good_pensions = { #very influential
@@ -978,6 +1106,11 @@ social_reforms = {
 			min_military_spending = 0.40
 			max_military_spending = 0.40
 			mobilisation_size = 0.04
+			
+			rich_vote = 0.12
+			middle_vote = 0.08
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 	}
@@ -990,6 +1123,11 @@ social_reforms = {
 			education = 0.00
 			min_social_spending = 0.05
 			pension_level = 0.25
+			
+			rich_vote = 0.00
+			middle_vote = 0.00
+			poor_vote = 0.00
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		trinket_health_care = { #marginally relevant
@@ -998,6 +1136,11 @@ social_reforms = {
 			education_efficiency_modifier = 0.05
 			min_social_spending = 0.10
 			pension_level = 0.50
+			
+			rich_vote = 0.00
+			middle_vote = 0.02
+			poor_vote = 0.00			
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		low_health_care = { #slightly influential
@@ -1006,6 +1149,11 @@ social_reforms = {
 			education_efficiency_modifier = 0.10
 			min_social_spending = 0.15
 			pension_level = 0.75
+			
+			rich_vote = 0.00
+			middle_vote = 0.04
+			poor_vote = 0.00			
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		acceptable_health_care = { #influential
@@ -1014,6 +1162,11 @@ social_reforms = {
 			education_efficiency_modifier = 0.15
 			min_social_spending = 0.20
 			pension_level = 1.00
+			
+			rich_vote = 0.00
+			middle_vote = 0.06
+			poor_vote = 0.00			
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 		good_health_care = { #very influential
@@ -1022,6 +1175,11 @@ social_reforms = {
 			education_efficiency_modifier = 0.20
 			min_social_spending = 0.25
 			pension_level = 1.25
+			
+			rich_vote = 0.00
+			middle_vote = 0.08
+			poor_vote = 0.00			
+			
 			allow = { has_global_flag = factions_setup_done }
 		}
 	}

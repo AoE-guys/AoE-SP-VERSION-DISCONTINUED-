@@ -1387,7 +1387,7 @@ ideologies = {
 	}
 
 	conservative = {
-		factor = 4
+		factor = 2
 		
 		#modifier = {
 		#	factor = 10
@@ -1751,7 +1751,7 @@ ideologies = {
 	}
 
 	communist = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_equality
@@ -1922,7 +1922,7 @@ ideologies = {
 		#}
 	}
 	liberal = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 0.9
 			OR = {
