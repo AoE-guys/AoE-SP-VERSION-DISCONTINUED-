@@ -84,7 +84,6 @@ country_event = {
 		      government = democracy
 			  government = federal_democracy
 			  government = tribal_democracy
-			  government = merchant_republic
 		}
 		ruling_party_ideology = reactionary
 		average_militancy = 3
@@ -358,7 +357,6 @@ country_event = {
 			government = hms_government
 			government = prussian_constitutionalism
 			government = elective_monarchy_oligarchy
-			government = trade_monarchy
 		}
 		civilized = yes	
 		vote_franschise = none_voting
@@ -402,7 +400,6 @@ country_event = {
 	    OR = {
 		      government = absolute_monarchy
 			  government = tsardom
-			  government = khanate
 			  government = archduchy
 		}
 		NOT = { vote_franschise = none_voting }		
@@ -497,7 +494,6 @@ country_event = {
 		      government = democracy
 			  government = federal_democracy
 			  government = tribal_democracy
-			  government = merchant_republic
 		}
 		vote_franschise = none_voting		
 		OR = {
@@ -631,7 +627,6 @@ country_event = {
 		      government = democracy
 			  government = federal_democracy
 			  government = tribal_democracy
-			  government = merchant_republic
 		}
 		vote_franschise = none_voting
 		ruling_party_ideology = fascist
