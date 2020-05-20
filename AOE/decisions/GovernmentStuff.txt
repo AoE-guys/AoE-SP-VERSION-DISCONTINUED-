@@ -68,6 +68,10 @@ political_decisions = {
 		}
 		allow = { 
 			war = no
+			OR = { 
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 			OR = {
 				relation = { who = PAP value = 200 }
 				relation = { who = RUS value = 200 }
