@@ -1099,7 +1099,6 @@ country_event = {
 				religion = shiite
 				set_country_flag = shiite_country
 				add_country_modifier = { name = khan_converted duration = 1825 }
-				create_alliance = PER
 				any_country = {
 					limit = {
 						has_country_flag = { shiite_country }
