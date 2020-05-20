@@ -1661,6 +1661,10 @@ emigration_chance = {
 		factor = -1
 		country = { has_country_flag = micro_nation }
 	}
+	modifier = {
+		factor = -1
+		country = { nationalvalue = nv_tradition }
+	}
 }
 
 #general assimilation mtth, same for all pops
