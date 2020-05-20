@@ -174,4 +174,65 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+	
+	exile_amursana = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = DZN
+			NOT = {
+				has_country_flag = exiled_amursana
+			}
+			year = 1952
+		}
+		
+		allow = {
+			year = 1952
+		}
+		
+		effect = {
+			set_country_flag = exiled_amursana
+			prestige = 10
+			QNG = { country_event = 6072 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	reorganize_dzungaria = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = QNG
+			1600 = {
+				owned_by = QNG
+			}
+			NOT = {
+				has_country_flag = dzungaria_reorg
+			}
+		}
+		
+		allow = {
+			1600 = {
+				owned_by = QNG
+			}
+		}
+		
+		effect = {
+			set_country_flag = dzungaria_reorg
+			prestige = 50
+			1068 = { secede_province = TNT }
+			1187 = { secede_province = KAZ }
+			1600 = { secede_province = XIN }
+			1595 = { secede_province = XIN }
+			1596 = { secede_province = XIN }
+			1188 = { secede_province = XIN }
+			1186 = { secede_province = XIN }
+			2607 = { secede_province = XIN }
+			1597 = { secede_province = XIN }
+			1598 = { secede_province = XIN }
+			1594 = { secede_province = XIN }
+			1190 = { secede_province = XIN }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }
