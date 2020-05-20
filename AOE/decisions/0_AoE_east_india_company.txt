@@ -123,8 +123,8 @@ political_decisions = {
 	curtail_eic_power = {
 		picture = map_india
 		potential = {
+		         NOT = { has_country_modifier = eic_monopoly_broken }
 		         OR = {
-				       NOT = { has_country_modifier = eic_monopoly_broken }
                        D01 = { vassal_of = THIS  exists = yes rank = 8 } 
                        D02 = { vassal_of = THIS  exists = yes rank = 8 } 
                        D03 = { vassal_of = THIS  exists = yes rank = 8 } 
