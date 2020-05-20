@@ -931,6 +931,7 @@ country_event = {
 			}
 			add_province_modifier = { name = negotiated  duration = 12 }
 		}
+		sphere_owner = { country_event = 69423 }
 		ai_chance = {
 			factor = 100
 		}
