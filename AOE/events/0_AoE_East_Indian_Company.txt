@@ -80,7 +80,7 @@ country_event = {
 
 country_event = {
 	title = "East Indian Company Monopoly Granted"
-	desc = "EVTDESC100020"
+	desc = "EVTDESC100019"
 	#major = yes
 
 	id = 100020
@@ -95,7 +95,7 @@ country_event = {
 			  HND = { all_core = { add_core = THIS } }
 			  FROM = { release = THIS }
 			  FROM = { create_vassal = THIS }
-			  FROM = { country_event = 100026 }
+			  #FROM = { country_event = 100026 }
 			  THIS = { government = colonial_company }
 			  THIS = { money = 100000 } 
 			  THIS = { 
@@ -108,28 +108,28 @@ country_event = {
 	}
 }
 
-country_event = {
-	title = "East Indian Company Monopoly Granted"
-	desc = "EVTDESC100021"
-	#major = yes
-
-	id = 100026
-
-	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = {
-	          name = "It will be the pearl in our crown!"
-			  prestige = 5
-	}
-	#option = {
-	#          name = "Let me take closer look at company's endeavours..."
-	#		  prestige = 5
-	#		  change_tag_no_core_switch = FROM
-	#}
-}
+#country_event = {
+#	title = "East Indian Company Monopoly Granted"
+#	desc = "EVTDESC100021"
+#	#major = yes
+#
+#	id = 100026
+#
+#	is_triggered_only = yes
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	option = {
+#	          name = "It will be the pearl in our crown!"
+#			  prestige = 5
+#	}
+#	#option = {
+#	#          name = "Let me take closer look at company's endeavours..."
+#	#		  prestige = 5
+#	#		  change_tag_no_core_switch = FROM
+#	#}
+#}
 
 country_event = {
 	title = "Targeted by Indian Company"
@@ -274,7 +274,7 @@ country_event = {
 }
 
 country_event = {
-	title = "Central Government Breaks our Monopoly"
+	title = "Central Government Takes Control"
 	desc = "EVTDESC100027"
 	#major = yes
 
