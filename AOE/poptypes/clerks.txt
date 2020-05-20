@@ -892,54 +892,54 @@ promote_to = {
 			factor = 15
 			military_spending = 0.1
 			NOT = { military_spending = 0.2 }
-			NOT = { soldiers = 0.01 }
+			NOT = { soldiers = 0.006 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.2
 			NOT = { military_spending = 0.3 }
-			NOT = { soldiers = 0.02 }
+			NOT = { soldiers = 0.012 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.3
 			NOT = { military_spending = 0.4 }
-			NOT = { soldiers = 0.03 }
+			NOT = { soldiers = 0.018 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.4
 			NOT = { military_spending = 0.5 }
-			NOT = { soldiers = 0.04 }
+			NOT = { soldiers = 0.024 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.5
 			NOT = { military_spending = 0.6 }
-			NOT = { soldiers = 0.05 }
+			NOT = { soldiers = 0.030 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.7
 			NOT = { military_spending = 0.8 }
-			NOT = { soldiers = 0.06 }
+			NOT = { soldiers = 0.036 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.8
 			NOT = { military_spending = 0.9 }
-			NOT = { soldiers = 0.07 }
+			NOT = { soldiers = 0.042 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.9
 			NOT = { military_spending = 0.99 }
-			NOT = { soldiers = 0.08 }
+			NOT = { soldiers = 0.048 }
 		}
 		modifier = {
 			factor = 15
 			military_spending = 0.99
-			NOT = { soldiers = 0.09 }
+			NOT = { soldiers = 0.054 }
 		} 
 	}
 
