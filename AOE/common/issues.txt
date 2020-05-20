@@ -278,8 +278,8 @@ political_reforms = {
 			cb_generation_speed_modifier = 0.1
 		}
 		wealth_weighted_voting = {
-			rich_vote = 2
-			middle_vote = 1
+			rich_vote = 1
+			middle_vote = 0.5
 			poor_vote = 0
 			cb_generation_speed_modifier = 0.05
 			global_immigrant_attract = 0.02
@@ -295,9 +295,9 @@ political_reforms = {
 			global_immigrant_attract = 0.08
 		}
 		universal_weighted_voting = {
-			rich_vote = 3
-			middle_vote = 2
-			poor_vote = 1
+			rich_vote = 1.5
+			middle_vote = 1
+			poor_vote = 0.5
 			cb_generation_speed_modifier = -0.1
 			global_immigrant_attract = 0.30
 		}
