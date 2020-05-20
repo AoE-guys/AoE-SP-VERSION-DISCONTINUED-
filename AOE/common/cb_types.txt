@@ -7711,7 +7711,7 @@ conquer_trade_post = {
 	}
 	
 	on_po_accepted = {
-		owner = { add_country_modifier = { name = negotiating_port_loss duration = -1 } }
+		add_country_modifier = { name = negotiating_port_loss duration = -1 }
 		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
 	}
 }
@@ -7751,7 +7751,7 @@ obtain_potential_trade_post = {
 		NOT = { is_our_vassal = THIS }
 	}
 	
-	po_reparations = yes
+	po_add_to_sphere = yes
 	
 	tws_battle_factor = 1.5
 	
@@ -7766,8 +7766,8 @@ obtain_potential_trade_post = {
 	}
 	
 	on_po_accepted = {
-		owner = { country_event = 69422 }
-		THIS = { country_event = 69423 }
+		country_event = 69422
+		#THIS = { country_event = 69423 }
 	}
 }
 take_capital = {
