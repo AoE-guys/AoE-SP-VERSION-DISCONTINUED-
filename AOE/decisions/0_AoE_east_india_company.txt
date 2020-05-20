@@ -33,6 +33,7 @@ political_decisions = {
 										neighbour = THIS
 										NOT = { has_country_flag = indian_campaign_target_flag }
 										NOT = { has_country_modifier = victory_over_eic }
+										NOT = { has_country_flag = dynamic_tag }
 							   } 
 				   }			
 			}
