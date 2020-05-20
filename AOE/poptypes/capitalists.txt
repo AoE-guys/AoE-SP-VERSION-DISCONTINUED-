@@ -916,8 +916,8 @@ promote_to =
 
 ideologies = {
 	
-	#fascist = {
-	#	factor = 0
+	fascist = {
+		factor = 0
 	#	
 	#	modifier = {
 	#		factor = 0.25
@@ -1052,7 +1052,7 @@ ideologies = {
 	#		factor = 1.1
 	#		poor_strata_militancy = 8
 	#	}
-	#}
+	}
 	
 	reactionary = {
 		factor = 5
