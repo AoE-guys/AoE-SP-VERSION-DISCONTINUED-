@@ -97,7 +97,14 @@ country_event = {
 			  FROM = { create_vassal = THIS }
 			  FROM = { country_event = 100026 }
 			  THIS = { government = colonial_company }
-			  THIS = { money = 100000 }
+			  THIS = { money = 100000 } 
+			  THIS = { 
+				          diplomatic_influence = {
+						                           who = FROM 
+						                           value = 800
+						  } 
+			  } 
+			  
 	}
 }
 
@@ -243,6 +250,63 @@ country_event = {
 	}
 }
 
+country_event = {
+	title = "Land Granted to Company"
+	desc = "EVTDESC100026"
+	#major = yes
+
+	id = 100026
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "More land to explo-... invest in!"
+			  overlord = { 
+			          any_owned = {  
+			                       limit = { is_core = HND }
+								   secede_province = THIS
+			          } 
+			  }
+	}
+}
+
+country_event = {
+	title = "Central Government Breaks our Monopoly"
+	desc = "EVTDESC100027"
+	#major = yes
+
+	id = 100027
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "But muh profits?!"
+			  #FROM = { 
+			  #        inherit = THIS
+			  #}
+		      any_country = {
+		      	            limit = {
+		      	            	     any_core = { owned_by = THIS }
+		      	            	     exists = no
+		      	            	     is_cultural_union = no
+									 NOT = { has_country_flag = dynamic_country }
+									 NOT = { tag = MUG }
+									 NOT = { tag = HND }
+									 capital_scope = { is_core = HND }
+									 NOT = { tag = UTI }
+									 NOT = { tag UT2 }
+		      	            }								
+		      	            country_event = 9999813
+		      }
+	}
+}
+
 #Colony Conquest
 country_event = {
 	title = "Foreign Colony Conquered"
@@ -289,5 +353,49 @@ country_event = {
 	          name = "Ok"
 	          clr_country_flag = contested_colony
 			  FROM = { inherit = THIS }
+	}
+}
+
+#General Dynamic Colonies Events
+country_event = {
+	title = "New Colony"
+	desc = "Colonial Administration has been established."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999813
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			  #all_core = { limit = { NOT = { is_overseas = yes } } remove_core = THIS  add_core = UT2 }
+			  #all_core = { limit = { is_core = FROM } remove_core = THIS  add_core = UT2 }
+			  FROM = { release = THIS }
+			  #UT2 = { all_core = { remove_core = UT2  add_core = THIS } }
+			  FROM = { overlord = { create_vassal = THIS } }
+			  #THIS = { primary_culture = FROM }
+			  THIS = { government = colonial_company }
+			  #FROM = { relation = { who = THIS value = 400 } }
+			  #FROM = { diplomatic_influence = { who = THIS value = 800 } }
+			  #any_owned = { limit = { is_core = FROM } secede_province = FROM } 
+              #set_country_flag = dynamic_colony			  
+	}
+    option = { 
+	          name = "Ok" 
+			  FROM = { 
+			         overlord = { 
+					             diplomatic_influence = {
+								                         who = THIS 
+								                         value = 800
+								 } 
+			          } 
+			  }
+			  HND = { all_core = { add_core = FROM } }
+			  #UTI = { country_event = 9999817 }
+			  #clr_global_flag = making_colonies
+			  #clr_global_flag = colony_already_established
 	}
 }
