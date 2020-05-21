@@ -453,6 +453,9 @@ country_event = {
 	
 	option = {
 		name = "We don't need them."
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 country_event = {
