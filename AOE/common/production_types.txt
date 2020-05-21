@@ -515,11 +515,11 @@ electric_gear_factory = {
 	output_goods = electric_gear 
 	value = 5.5			#88
 	bonus = {
-		trigger = { trade_goods_in_state = rubber }
+		trigger = { has_building = rubber_factory }
 		value = 0.05
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.05
 	}
 	bonus = {
@@ -541,7 +541,7 @@ machine_parts_factory = {
 		value = 0.15
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.15
 	}
 }
@@ -554,7 +554,7 @@ synthetic_oil_factory = {
 	output_goods = oil 
 	value = 2.5			#30
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.25
 	}
 }
@@ -568,11 +568,11 @@ synthetic_sulphur_factory = {
 	output_goods = sulphur
 	value = 2.5			#15
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.20
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = iron }
+		trigger = { has_building = iron_factory }
 		value = 0.05
 	}
 }
@@ -589,7 +589,7 @@ fuel_refinery = {
 	bonus = {
 		trigger = { 
 			OR = {
-				trade_goods_in_state = oil 
+				has_building = oil_factory 
 				has_building = synthetic_oil_factory
 				}
 			}
@@ -633,7 +633,7 @@ luxury_clothes_factory = {
 		value = 0.2
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = silk }
+		trigger = { has_building = silk_factory }
 		value = 0.05
 	}
 }
@@ -651,7 +651,7 @@ luxury_furniture_factory = {
 		value = 0.2
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = tropical_wood }
+		trigger = { has_building = tropical_wood_factory }
 		value = 0.05
 	}
 }
@@ -668,11 +668,11 @@ steel_factory = {
 	output_goods = steel
 	value = 19		#89.3, was 20 - 94
 	bonus = {
-		trigger = { trade_goods_in_state = iron }
+		trigger = { has_building = iron_factory }
 		value = 0.2
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.125
 	}
 }
@@ -809,7 +809,7 @@ ammunition_factory = {
 	output_goods = ammunition 
 	value = 2.2			#35
 	bonus = {
-		trigger = { trade_goods_in_state = sulphur }
+		trigger = { has_building = sulphur_factory }
 		value = 0.1
 	}
 	bonus = {
@@ -829,14 +829,14 @@ canned_food_factory = {
 	output_goods = canned_food 
 	value = 2.2			#33.6
 	bonus = {
-		trigger = { trade_goods_in_state = grain }
+		trigger = { has_building = grain_factory }
 		value = 0.075
 	}
 	bonus = {
 		trigger = { 
 			OR = {
-				trade_goods_in_state = fish
-				trade_goods_in_state = cattle
+				has_building = fish_factory
+				has_building = cattle_factory
 			}
 		}
 		value = 0.075
@@ -855,7 +855,7 @@ dye_factory = {
 	output_goods = dye 
 	value = 3.5			#Used to be 30 (2.5) now 36
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.25
 	}
 }
@@ -875,11 +875,11 @@ liquor_distillery = {
 		value = 0.15
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = grain }
+		trigger = { has_building = grain_factory }
 		value = 0.05
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = fruit }
+		trigger = { has_building = fruit_factory }
 		value = 0.05
 	}
 }
@@ -897,7 +897,7 @@ winery = {
 		value = 0.15
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = fruit }
+		trigger = { has_building = fruit_factory }
 		value = 0.1
 	}
 }
@@ -913,7 +913,7 @@ lumber_mill = {
 	
 	value = 110			#110
 	bonus = {
-		trigger = { trade_goods_in_state = timber }
+		trigger = { has_building = timber_factory }
 		value = 0.25
 	}
 }
@@ -927,14 +927,14 @@ fabric_factory = {
 	output_goods = fabric
 	value = 45			#81
 	bonus = {
-		trigger = { trade_goods_in_state = cotton }
+		trigger = { has_building = cotton_factory }
 		value = 0.125
 	}
 	bonus = {
 		trigger = {
 			OR = {
 				has_building = dye_factory 
-				trade_goods_in_state = dye
+				has_building = dye2_factory
 				}
 			}
 		value = 0.125
@@ -949,7 +949,7 @@ cement_factory = {
 	output_goods = cement 
 	value = 3.5			#48
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.25
 	}
 }
@@ -962,7 +962,7 @@ glass_factory = {
 	output_goods = glass 
 	value = 18			#52.2
 	bonus = {
-		trigger = { trade_goods_in_state = coal }
+		trigger = { has_building = coal_factory }
 		value = 0.25
 	}
 }
@@ -975,7 +975,7 @@ fertilizer_factory = {
 	output_goods = fertilizer 
 	value = 5			#50
 	bonus = {
-		trigger = { trade_goods_in_state = sulphur }
+		trigger = { has_building = sulphur_factory }
 		value = 0.25
 	}
 }
