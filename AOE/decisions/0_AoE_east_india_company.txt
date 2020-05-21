@@ -48,6 +48,9 @@ political_decisions = {
 				country_event = 100021
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	give_land_to_eic = {
 		picture = map_india
@@ -117,6 +120,9 @@ political_decisions = {
 							  }
 							  country_event = 100026
 			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -189,6 +195,9 @@ political_decisions = {
 							  }
 							  country_event = 100027
 			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }
