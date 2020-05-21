@@ -931,7 +931,10 @@ country_event = {
 			}
 			add_province_modifier = { name = negotiated  duration = 12 }
 		}
-		sphere_owner = { country_event = 69423 }
+		random_coutnry = { 
+		                  limit = { has_country_flag = getring_trade_port }
+		                  country_event = 69423 
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -944,6 +947,7 @@ country_event = {
 	desc = "Stonks"
 	is_triggered_only = yes
 	option = {
+	    clr_countr_flag = getring_trade_port
 		any_country = { 
 			limit = { 
 				truce_with = { THIS }

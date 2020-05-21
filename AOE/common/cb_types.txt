@@ -7661,62 +7661,62 @@ war_reparations = {
 	}
 }
 
-conquer_trade_post = {
-	sprite_index = 32
-	is_triggered_only = yes
-	months = 18
-	construction_speed = 1
-	crisis = no
-	
-	badboy_factor = 1
-	prestige_factor = 1
-	peace_cost_factor = 1
-	penalty_factor = 1
+#conquer_trade_post = {
+#	sprite_index = 32
+#	is_triggered_only = yes
+#	months = 18
+#	construction_speed = 1
+#	crisis = no
+#	
+#	badboy_factor = 1
+#	prestige_factor = 1
+#	peace_cost_factor = 1
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 36
+#	
+#	good_relation_prestige_factor = 0
+#	good_relation_infamy_factor = 0
+#	good_relation_militancy_factor = 0
+#	
+#	can_use = {
+#		THIS ={
+#			civilized = yes
+#			OR = {
+#				government = merchant_republic
+#				government = trade_monarchy
+#			}
+#		}
+#		any_owned_province = {
+#			has_province_modifier = trade_centre
+#		}
+#		NOT = { is_our_vassal = THIS }
+#	}
+#	
+#	po_reparations = yes
+#	
+#	tws_battle_factor = 1.5
+#	
+#	war_name = PUNITIVE_EXPEDITION_WAR_NAME
+#
+#	on_add = {
+#		move_issue_percentage = { 
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.1
+#		}
+#	}
+#	
+#	on_po_accepted = {
+#		add_country_modifier = { name = negotiating_port_loss duration = -1 }
+#		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
+#	}
+#}
 
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 36
-	
-	good_relation_prestige_factor = 0
-	good_relation_infamy_factor = 0
-	good_relation_militancy_factor = 0
-	
-	can_use = {
-		THIS ={
-			civilized = yes
-			OR = {
-				government = merchant_republic
-				government = trade_monarchy
-			}
-		}
-		any_owned_province = {
-			has_province_modifier = trade_centre
-		}
-		NOT = { is_our_vassal = THIS }
-	}
-	
-	po_reparations = yes
-	
-	tws_battle_factor = 1.5
-	
-	war_name = PUNITIVE_EXPEDITION_WAR_NAME
-
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.1
-		}
-	}
-	
-	on_po_accepted = {
-		add_country_modifier = { name = negotiating_port_loss duration = -1 }
-		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
-	}
-}
-
-obtain_potential_trade_post = {
+conquer_trade_post = { #obtain_potential_trade_post
 	sprite_index = 32
 	is_triggered_only = yes
 	months = 18
@@ -7725,7 +7725,7 @@ obtain_potential_trade_post = {
 	
 	badboy_factor = 0.5
 	prestige_factor = 1
-	peace_cost_factor = 1
+	peace_cost_factor = 20
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -7746,7 +7746,10 @@ obtain_potential_trade_post = {
 			}
 		}
 		any_owned_province = {
-			has_province_modifier = potential_trade_post
+		    OR = {
+			      has_province_modifier = potential_trade_post
+			      has_province_modifier = trade_centre
+			}
 		}
 		NOT = { is_our_vassal = THIS }
 	}
@@ -7767,6 +7770,7 @@ obtain_potential_trade_post = {
 	
 	on_po_accepted = {
 		country_event = 69422
+		THIS = { add_coutnry_flag = getting_trade_port }
 		#THIS = { country_event = 69423 }
 	}
 }
