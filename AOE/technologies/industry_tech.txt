@@ -555,7 +555,10 @@ steel_railroad = {
 	year = 1740
 	cost = 14400
 
-	max_railroad = 1 
+	army_base = {
+		maximum_speed = 1
+	}
+	factory_throughput = 0.16
 	ai_chance = {
 		factor = 5
 	}
@@ -585,9 +588,8 @@ tech_infrastructure_7 = {
 	year = 1800
 	cost = 25200
 	
-	army_base = {
-		maximum_speed = 1
-	}
+	max_railroad = 1 
+	
 	ai_chance = {
 		factor = 2
 	}
@@ -600,7 +602,7 @@ tech_infrastructure_8 = {
 	army_base = {
 		maximum_speed = 1
 	}
-
+	factory_throughput = 0.16
 	ai_chance = {
 		factor = 2
 	}

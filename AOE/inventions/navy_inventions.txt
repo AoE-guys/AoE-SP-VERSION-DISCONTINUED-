@@ -412,108 +412,112 @@ clipper_shipyard_construction = {
 #	}
 #}
 #steamers
-mechanized_fishing_vessels = {
-	limit = { steamers = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			interchangeable_parts = 1
-		}
-		modifier = {
-			factor = 2
-			invention = work_specialization
-		}
-		modifier = {
-			factor = -10
-			civilized = no
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			fish = 0.65
-		}
-	}
-}
-steamer_automatic_construction_plants = {
-	limit = { steamers = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			semi_automatization = 1
+# mechanized_fishing_vessels = {
+	# limit = { steamers = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# interchangeable_parts = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = work_specialization
+		# }
+		# modifier = {
+			# factor = -10
+			# civilized = no
+		# }
+	# }
+	# effect = {
+		# rgo_goods_output = {
+			# fish = 0.65
+		# }
+	# }
+# }
+# steamer_automatic_construction_plants = {
+	# limit = { steamers = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# semi_automatization = 1
 			
-		}
-		modifier = {
-			factor = 2
-			invention = building_station_shipyards
-		}
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = building_station_shipyards
+		# }
 		
-		modifier = {
-			factor = -10
-			civilized = no
-		}
-	}
-	effect = {
-		factory_goods_output = { electric_gear = 0.03 } 
-	}
-}
+		# modifier = {
+			# factor = -10
+			# civilized = no
+		# }
+	# }
+	# effect = {
+		# factory_goods_output = { electric_gear = 0.03 } 
+	# }
+# }
 steamer_transports = {
 	limit = { steamers = 1 }
 	chance = {
 		base = 5
 		modifier = {
 			factor = 2
-			mechanical_production = 1
+			late_classical_theory = 1
+		}
+		modifier = {
+			factor = 2
+			naval_plans = 1
 		}
 		modifier = {
 			factor = 1
-			hot_blast = 1
+			semi_automatization = 1
 		}
 	}
 	effect = {
 		activate_unit = steam_transport 
 	}
 }
-commerce_raiders = {
-	limit = { steamers = 1 }
-	chance = {
-		base = 5
-		modifier = {
-			factor = 1
-			fire_control_systems = 1
-		}
-		modifier = {
-			factor = 3
-			raider_group_doctrine = 1
-		}
-	}
-	effect = {
-		activate_unit = commerce_raider
-	}
-}
 
-steamer_shipyard_construction = {
-	limit = { steamers = 1 }
-	chance = {
-		base = 5
-		modifier = {
-			factor = 1
-			semi_automatization = 1
-		}
-		modifier = {
-			factor = 3
-			raider_group_doctrine = 1
-		}
-		modifier = {
-			factor = -10
-			civilized = no
-		}
-	}
-	effect = {
-		factory_goods_output = { electric_gear = 0.01 } 
-	}
-}
+# steamer_shipyard_construction = {
+	# limit = { steamers = 1 }
+	# chance = {
+		# base = 5
+		# modifier = {
+			# factor = 1
+			# semi_automatization = 1
+		# }
+		# modifier = {
+			# factor = 3
+			# raider_group_doctrine = 1
+		# }
+		# modifier = {
+			# factor = -10
+			# civilized = no
+		# }
+	# }
+	# effect = {
+		# factory_goods_output = { electric_gear = 0.01 } 
+	# }
+# }
+#steamers 
+# manowars = {
+	# limit = {
+		# steamers = 1
+		# has_country_flag = existing_country
+	# }
+	# chance = {
+		# base = 5
+		# modifier = {
+			# factor = 3
+			# clipper_design = 1
+		# }
+	# }
+	# effect = {
+		# activate_unit = manowar  
+	# }
+#}
 
 #iron_steamers
 ironclads = {
@@ -526,10 +530,6 @@ ironclads = {
 		modifier = {
 			factor = 2
 			invention = monitors
-		}
-		modifier = {
-			factor = 2
-			invention = torpedo_boats
 		}
 	}
 	effect = {
@@ -547,50 +547,76 @@ monitors = {
 			factor = 2
 			invention = ironclads
 		}
-		modifier = {
-			factor = 2
-			invention = torpedo_boats
-		}
 	}
 	effect = {
 		activate_unit = monitor 
 	}
 }
-torpedo_boats = {
-	limit = { iron_steamers = 1 }
+
+# torpedo_boats = {
+	# limit = { iron_steamers = 1 }
+	# chance = {
+		# base = 4
+		# modifier = {
+			# factor = 2
+			# invention = ironclads
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = monitors
+		# }		
+	# }
+	# effect = {
+		# commerce_raider = {
+			# hull = 4
+			# torpedo_attack = 2
+		# }
+	# }
+# }
+#steel_steamers
+pre_dreadnought = {
+	limit = {
+		steel_steamers = 1
+		has_country_flag = existing_country
+	}
 	chance = {
-		base = 4
+		base = 5
 		modifier = {
 			factor = 2
 			invention = ironclads
 		}
 		modifier = {
-			factor = 2
-			invention = monitors
-		}		
-	}
-	effect = {
-		commerce_raider = {
-			hull = 4
-			torpedo_attack = 2
+			factor = 1
+			bessemer_process = 1
+		}
+		modifier = {
+			factor = 1
+			main_armament = 1
 		}
 	}
+	effect = {
+		ironclad = {
+			hull = 1
+			gun_power = 1
+			maximum_speed = 1
+		}
+		activate_unit = battleship 
+	}
 }
-#steel_steamers
 protected_cruisers = {
 	limit = {
-		steel_steamers = 1
+		steam_turbine_ships = 1
 		has_country_flag = existing_country
 	}
 	chance = {
 		base = 3
 		modifier = {
 			factor = 2
-			invention = ironclads
+			invention = battleship
 		}
 		modifier = {
 			factor = 2
-			bessemer_process = 1
+			naval_nco_training = 1
 		}
 	}
 	effect = {
@@ -621,56 +647,9 @@ protected_cruisers = {
 #	effect = {
 #	}
 #}
-pre_dreadnought = {
-	limit = {
-		steel_steamers = 1
-		has_country_flag = existing_country
-	}
-	chance = {
-		base = 5
-		modifier = {
-			factor = 2
-			invention = ironclads
-		}
-		modifier = {
-			factor = 1
-			bessemer_process = 1
-		}
-		modifier = {
-			factor = 1
-			main_armament = 1
-		}
-	}
-	effect = {
-		ironclad = {
-			hull = 1
-			gun_power = 1
-			maximum_speed = 1
-		}
-		activate_unit = battleship 
-	}
-}
+
 #steam_turbine_ships
-dreadnoughts = {
-	limit = {
-		steam_turbine_ships = 1
-		has_country_flag = existing_country
-	}
-	chance = {
-		base = 5
-		modifier = {
-			factor = 2
-			invention = pre_dreadnought
-		}
-		modifier = {
-			factor = 2
-			naval_logistics = 1
-		}
-	}
-	effect = {
-		activate_unit = dreadnought 
-	}
-}
+
 #light_cruisers = {
 #	limit = { steam_turbine_ships = 1 }
 #	chance = {
@@ -707,6 +686,7 @@ dreadnoughts = {
 #	effect = {
 #	}
 #}
+
 #oil_driven_ships
 #advanced_destroyers = {
 #	limit = { oil_driven_ships = 1 }
@@ -841,6 +821,29 @@ modern_battleships = {
 		} 
 	}
 }
+bomb_vessel = {
+	limit = { oil_driven_ships = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = advanced_battleships
+		}
+		modifier = {
+			factor = 1
+			assembly_line = 1
+		}
+		modifier = {
+			factor = 2
+			modern_naval_training = 1
+		}
+	}
+	effect = {
+		frigate = {
+			gun_power = 2
+		}
+	}
+}
 #experimental_carriers = {
 #	limit = { oil_driven_ships = 1 }
 #	chance = {
@@ -897,6 +900,46 @@ modern_battleships = {
 #	effect = {
 #	}
 #}
+
+# ship_construction_7
+dreadnoughts = {
+	limit = {
+		ship_construction_7 = 1
+		has_country_flag = existing_country
+	}
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			invention = pre_dreadnought
+		}
+		modifier = {
+			factor = 2
+			naval_integration = 1
+		}
+	}
+	effect = {
+		activate_unit = dreadnought 
+	}
+}
+# ship_construction_8
+commerce_raiders = {
+	limit = { ship_construction_8 = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 1
+			invention = dreadnoughts
+		}
+		modifier = {
+			factor = 3
+			tech_power_8 = 1
+		}
+	}
+	effect = {
+		activate_unit = commerce_raider
+	}
+}
 #fire_control_systems
 optical_rangefinders = {
 	limit = { fire_control_systems = 1 }

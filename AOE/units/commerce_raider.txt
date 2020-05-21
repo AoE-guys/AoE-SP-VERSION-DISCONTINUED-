@@ -23,18 +23,20 @@ commerce_raider = {
 	#Building Costs
 	build_time = 360
 	build_cost = {
-		artillery = 5
-		canned_food = 2
-		luxury_clothes = 0.5
+		artillery = 15
+		canned_food = 17
+		luxury_clothes = 1
 	}
-	min_port_level = 5
-	limit_per_port = -1
+	min_port_level = 6
+	limit_per_port = 1
 	supply_consumption_score = 3
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		artillery = 0.1
 		canned_food = 0.16
+		coal = 0.25
+		ammunition = 0.1
 	}
 	
 	#Naval Abilties
