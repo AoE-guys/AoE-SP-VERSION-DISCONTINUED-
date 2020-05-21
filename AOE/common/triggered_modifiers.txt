@@ -3,7 +3,7 @@
 #
 # Effects are fully scriptable here.
 
-small_coutnry = {
+small_country = {
 		trigger = {
 			exists = yes
 			NOT = { total_pops = 100000 }
