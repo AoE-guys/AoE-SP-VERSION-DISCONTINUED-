@@ -926,8 +926,8 @@ country_event = {
 	option = {
 		random_owned = {
 			OR = {
-				has_province_modifier = { potential_trade_post }
-				has_province_modifier = { trade_centre }
+				has_province_modifier = potential_trade_post
+				has_province_modifier = trade_centre
 			}
 			add_province_modifier = { name = negotiated  duration = 12 }
 		}
@@ -950,7 +950,7 @@ country_event = {
 	    clr_countr_flag = getting_trade_port
 		any_country = { 
 			limit = { 
-				truce_with = { THIS }
+				truce_with = THIS
 			}
 			any_owned = {
 				limit = { 
@@ -1028,7 +1028,7 @@ country_event = {
 				create_alliance = PAP
 				any_country = {
 					limit = {
-						has_country_flag = { catholic_country }
+						has_country_flag = catholic_country
 					}
 					relation = {
 						who = THIS
@@ -1055,7 +1055,7 @@ country_event = {
 				add_country_modifier = { name = khan_converted duration = 1825 }
 				any_country = {
 					limit = {
-						has_country_flag = { protestant_country }
+						has_country_flag = protestant_country
 					}
 					relation = {
 						who = THIS
@@ -1082,7 +1082,7 @@ country_event = {
 				add_country_modifier = { name = khan_converted duration = 1825 }
 				any_country = {
 					limit = {
-						has_country_flag = { sunni_country }
+						has_country_flag = sunni_country
 					}
 					relation = {
 						who = THIS
@@ -1106,7 +1106,7 @@ country_event = {
 				add_country_modifier = { name = khan_converted duration = 1825 }
 				any_country = {
 					limit = {
-						has_country_flag = { shiite_country }
+						has_country_flag = shiite_country
 					}
 					relation = {
 						who = THIS
@@ -1133,7 +1133,7 @@ country_event = {
 				add_country_modifier = { name = khan_converted duration = 1825 }
 				any_country = {
 					limit = {
-						has_country_flag = { orthodox_country }
+						has_country_flag = orthodox_country
 					}
 					relation = {
 						who = THIS
@@ -1160,7 +1160,7 @@ country_event = {
 				add_country_modifier = { name = khan_converted duration = 1825 }
 				any_country = {
 					limit = {
-						has_country_flag = { taoist_country }
+						has_country_flag = taoist_country
 					}
 					relation = {
 						who = THIS

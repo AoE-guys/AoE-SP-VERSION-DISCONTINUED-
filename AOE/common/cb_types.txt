@@ -3126,6 +3126,7 @@ annex_foreign_colony_big_cb = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+	    THIS = { is_greater_power = yes }
 		OR = {
 			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
 			neighbour = THIS
@@ -3205,6 +3206,7 @@ annex_foreign_colony_cb = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+	    THIS = { is_greater_power = yes }
 		OR = {
 			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
 			neighbour = THIS
@@ -3286,6 +3288,7 @@ annex_foreign_colony_small_cb = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+	    THIS = { is_greater_power = yes }
 		OR = {
 			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
 			neighbour = THIS
@@ -7769,8 +7772,8 @@ conquer_trade_post = { #obtain_potential_trade_post
 	}
 	
 	on_po_accepted = {
+	    THIS = { set_country_flag = getting_trade_port }
 		country_event = 69422
-		THIS = { add_country_flag = getting_trade_port }
 		#THIS = { country_event = 69423 }
 	}
 }
