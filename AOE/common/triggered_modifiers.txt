@@ -642,7 +642,7 @@ asia_mob_nerf = {
 		}
 	}
 	icon = 10
-	mobilisation_size = -0.90
+	mobilisation_size = -0.60
 }
 chinese_substate = {
 	trigger = {
@@ -961,6 +961,10 @@ help_ai_sweden_and_austria = {
 				year = 1756
 				NOT = { year = 1789 }
 			}
+			AND = {
+				owns = 1600 #DZN
+				NOT = { year = 1740 }
+			}
 		}
 		ai = yes
 	}
@@ -989,6 +993,8 @@ german_minors_ai_help = {
 		OR = {
 			primary_culture = north_german
 			primary_culture = south_german
+			primary_culture = north_italian
+			primary_culture = south_italian
 		}
 		NOT = { owns = 619 }
 		NOT = { year = 1740 }
@@ -999,7 +1005,7 @@ german_minors_ai_help = {
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	war_exhaustion = -0.5
-	mobilisation_size = 0.3
+	mobilisation_size = 0.25
 
 }
 
@@ -1755,7 +1761,7 @@ ai_militancy_fix = {
 		exists = yes
 		average_militancy = 5
 	}
-	core_pop_militancy_modifier = -0.2
+	core_pop_militancy_modifier = -0.002
 }
 ai_exotic_research_fix = {
 	trigger = {

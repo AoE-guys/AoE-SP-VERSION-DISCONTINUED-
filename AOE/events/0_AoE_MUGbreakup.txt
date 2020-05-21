@@ -27,6 +27,7 @@ country_event = {
 		release_vassal = LAD
 		release_vassal = ORI
 		all_core = { limit = { NOT = { owned_by = THIS } } remove_core = THIS }
+		militancy = 15
 		add_country_modifier = {
 			name = decentralized_rule
 			duration = 6570
@@ -61,6 +62,10 @@ country_event = {
 			1248 = { secede_province = BNG }
 			1247 = { secede_province = BNG }
 			1250 = { secede_province = BNG }
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
 		}
 		war = {
 			target = BNG
@@ -104,7 +109,12 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		KRN = { all_core = { limit = { owned_by = THIS } secede_province = KRN } }
+		KRN = { all_core = { limit = { owned_by = THIS } secede_province = KRN } 
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		war = {
 			target = KRN
 			attacker_goal = { casus_belli = make_puppet }
@@ -141,8 +151,16 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		PNJ = { all_core = { limit = { owned_by = THIS } secede_province = PNJ } }
-		AFG = { all_core = { limit = { owned_by = THIS } secede_province = AFG } } 
+		PNJ = { all_core = { limit = { owned_by = THIS } secede_province = PNJ } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
+		AFG = { all_core = { limit = { owned_by = THIS } secede_province = AFG } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		} 
 		war = {
 			target = PNJ
 			attacker_goal = { casus_belli = make_puppet }
@@ -154,6 +172,7 @@ country_event = {
 	option = {
 		name = "We have more pressing issues."
 		PNJ = { all_core = { limit = { owned_by = THIS } secede_province = PNJ } }
+		AFG = { all_core = { limit = { owned_by = THIS } secede_province = AFG } }
 		relation = {
 			who = PNJ
 			value = 100
@@ -183,7 +202,11 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		BUN = { all_core = { limit = { owned_by = THIS } secede_province = BUN } }
+		BUN = { all_core = { limit = { owned_by = THIS } secede_province = BUN } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		war = {
 			target = BUN
 			attacker_goal = { casus_belli = make_puppet }
@@ -225,7 +248,11 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		HYD = { all_core = { limit = { owned_by = THIS } secede_province = HYD } }
+		HYD = { all_core = { limit = { owned_by = THIS } secede_province = HYD } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		war = {
 			target = HYD
 			attacker_goal = { casus_belli = make_puppet }
@@ -275,7 +302,11 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		SIN = { all_core = { limit = { owned_by = THIS } secede_province = SIN } }
+		SIN = { all_core = { limit = { owned_by = THIS } secede_province = SIN } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		1222 = { secede_province = SIN }
 		war = {
 			target = SIN

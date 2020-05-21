@@ -139,11 +139,12 @@ political_decisions = {
 	}
 	
 	danish_gp = {
+		picture = danish_straits
 		potential = {
-			picture = danish_straits
 			is_capital = 372
 			owns = 372
 			NOT = { has_country_flag = danish_gp }
+			NOT = { tag = SCA }
 		}
 		allow = {
 			all_core = {
@@ -180,7 +181,7 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 7
-			set_country_flag = struensee_reforms
+			set_country_flag = claimed_estonia_and_livonia
 			RUS_349 = {
 				add_core = THIS
 			}
@@ -195,7 +196,7 @@ political_decisions = {
 		potential = {
 			is_capital = 372
 			owns = 372
-			NOT = { has_country_flag = education_reform }
+			NOT = { has_country_flag = claimed_pomerania_den }
 		}
 		allow = {
 			has_country_flag = danish_gp
@@ -206,6 +207,7 @@ political_decisions = {
 			military_score = 50
 		}
 		effect = {
+			set_country_flag = claimed_pomerania_den
 			badboy = 5
 			set_country_flag = struensee_reforms
 			PRU_546 = {
