@@ -27,7 +27,7 @@ country_event = {
 		release_vassal = LAD
 		release_vassal = ORI
 		all_core = { limit = { NOT = { owned_by = THIS } } remove_core = THIS }
-		militancy = 15
+		any_pop = { militancy = 15 }
 		add_country_modifier = {
 			name = decentralized_rule
 			duration = 6570

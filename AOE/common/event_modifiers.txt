@@ -6181,6 +6181,7 @@ blue_turbans = {
 	land_organisation = -0.20
 	war_exhaustion = -0.5
 	supply_consumption = -0.80
+	land_unit_start_experience = -10
 	icon = 7
 }
 
@@ -6189,8 +6190,8 @@ manchu_call_to_arms = {
 	pop_militancy_modifier = 0.01
 	tax_efficiency = 0.10
 	mobilisation_size = 0.25
-	org_regain = 0.10
-	land_organisation = -0.20
+	#org_regain = 0.10
+	#land_organisation = -0.20
 	war_exhaustion = -0.25
 	supply_consumption = -0.80
 	icon = 7
