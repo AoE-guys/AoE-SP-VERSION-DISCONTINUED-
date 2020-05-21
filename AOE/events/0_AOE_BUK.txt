@@ -224,3 +224,97 @@ country_event = {
 	}
 
 }
+country_event = {
+	id = 6075
+	title = "Qinghai Revolt!"
+	desc = "EVTDESC6075"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Unacceptable. We will put down their revolt."
+		relation = {
+			who = XBI
+			value = -200
+		}
+	}
+}
+country_event = {
+	id = 6074
+	title = "Qinghai Revolt!"
+	desc = "EVTDESC6074"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We must aid them in their fight against the Manchu."
+		relation = {
+			who = XBI
+			value = 200
+		}
+		war = {
+			target = QNG
+			attacker_goal = { casus_belli = war_reparations } 
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+	}
+}
+country_event = {
+	id = 6073
+	title = "Qinghai offers vassalization"
+	desc = "EVTDESC6073"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		relation = {
+			who = XBI
+			value = 200
+		}
+		create_vassal = XBI
+	}
+}
+country_event = {
+	id = 6072
+	title = "Dzungars exile pretender Khan"
+	desc = "EVTDESC6072"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will recognize his rule as legitimate"
+		relation = {
+			who = DZN
+			value = -200
+		}
+		war = {
+			target = DZN
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli } 
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+		DZN = { country_event = 6071 }
+	}
+}
+country_event = {
+	id = 6071
+	title = "The Qing recognize the pretender"
+	desc = "EVTDESC6071"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not accept this at any cost."
+		relation = {
+			who = QNG
+			value = -200
+		}
+	}
+}

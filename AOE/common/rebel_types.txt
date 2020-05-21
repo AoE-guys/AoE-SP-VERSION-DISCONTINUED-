@@ -33,6 +33,15 @@ reactionary_rebels = {
 		federal_democracy = presidential_dictatorship
 		theocracy = theocracy
 		colonial_company = absolute_monarchy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = presidential_dictatorship
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = presidential_dictatorship
+		trade_monarchy = absolute_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -82,6 +91,7 @@ reactionary_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.02
 		modifier = {
 			factor = 0.01
@@ -332,6 +342,15 @@ fascist_rebels = {
 		democracy = fascist_dictatorship
 		theocracy = fascist_dictatorship
 		colonial_company = fascist_dictatorship
+		
+		archduchy = fascist_dictatorship
+		elective_monarchy_oligarchy = fascist_dictatorship
+		federal_democracy = fascist_dictatorship
+		tribal_democracy = fascist_dictatorship 
+		tsardom = fascist_dictatorship
+		merchant_republic = fascist_dictatorship
+		trade_monarchy = fascist_dictatorship
+		khanate = fascist_dictatorship
 	}
 	
 	
@@ -349,7 +368,7 @@ fascist_rebels = {
 	reinforcing = yes				# Receives reinforcements
 	general = yes					# Uses generals
 	smart = yes					# Assaults forts, tactically withdraws from battle, etc.
-	unit_transfer = yes				# Units remain after enforcing demands.
+	unit_transfer = no				# Units remain after enforcing demands.
 	
 	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
 
@@ -387,6 +406,7 @@ fascist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.02
 		
 		modifier = {
@@ -621,6 +641,15 @@ communist_rebels = {
 		democracy = presidential_dictatorship
 		theocracy = presidential_dictatorship
 		colonial_company = presidential_dictatorship
+		
+		archduchy = presidential_dictatorship
+		elective_monarchy_oligarchy = presidential_dictatorship
+		federal_democracy = presidential_dictatorship
+		tribal_democracy = presidential_dictatorship 
+		tsardom = presidential_dictatorship
+		merchant_republic = presidential_dictatorship
+		trade_monarchy = presidential_dictatorship
+		khanate = presidential_dictatorship
 	}
 	
 	
@@ -638,7 +667,7 @@ communist_rebels = {
 	reinforcing = yes				# Does not receive reinforcements
 	general = yes					# Does use generals
 	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = yes				# Units do not remain after enforcing demands.
+	unit_transfer = no				# Units do not remain after enforcing demands.
 	
 	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
 
@@ -678,6 +707,7 @@ communist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.02
 		
 		modifier = {
@@ -904,323 +934,333 @@ communist_rebels = {
 	}
 }
 
-###################################
-# Anarcho-Liberal Rebels
-###################################
-anarcho_liberal_rebels = {
-	icon = 4
-	
-	area = nation 					# Stays within the nation
-	break_alliance_on_win = no
-	
-	# <this is the government in the country> = <this is what the rebels want>
-	government = {
-		proletarian_dictatorship = bourgeois_dictatorship
-		presidential_dictatorship = bourgeois_dictatorship
-		bourgeois_dictatorship = bourgeois_dictatorship
-		fascist_dictatorship = bourgeois_dictatorship
-		absolute_monarchy = bourgeois_dictatorship
-		prussian_constitutionalism = bourgeois_dictatorship
-		hms_government = bourgeois_dictatorship
-		french_bourbon = bourgeois_dictatorship
-		dominion = bourgeois_dictatorship
-		democracy = bourgeois_dictatorship
-		theocracy = bourgeois_dictatorship
-		colonial_company = bourgeois_dictatorship
-	}
-	
-	
-	defection = none					# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	ideology = anarcho_liberal
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Disbands on retreat
-	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
-	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = no				# Units do not remain after enforcing demands.
-	
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-	will_rise = {
-		factor = 0.5
-		
-		modifier = {
-			war = yes
-			factor = 0.8
-		}
-		modifier = {
-			war_exhaustion = 4
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 6
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 8
-			factor = 0.95
-		}
-		modifier = {
-			factor = 0.95
-			any_neighbor_country = {
-				government = bourgeois_dictatorship
-			}
-		}
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 1.01
-		modifier = {
-			factor = 0
-			NOT = {
-				is_ideology_enabled = anarcho_liberal
-			}
-		}
-		modifier = {
-			factor = 0
-			country = { civilized = no }
-		}
-		modifier = {
-			factor = 0
-			location = {
-				is_colonial = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				political_movement = yes
-				social_movement = yes
-			}	
-		}
-		modifier = {
-			factor = 0
-			country = { government = bourgeois_dictatorship }
-		}
-		modifier = {
-			factor = 0
-			country = {
-				OR = {
-					government = democracy
-					government = hms_government
-				}
-				ruling_party_ideology = anarcho_liberal
-			}
-		}
-		modifier = {
-			factor = 0.5
-			country = {
-				OR = {
-					government = democracy
-					government = hms_government
-				}
-				ruling_party_ideology = liberal
-			}
-		}
-		modifier = {
-			factor = 1.015
-			country = { NOT = { plurality = 35 } }
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				OR = {
-					pop_majority_ideology = anarcho_liberal
-					pop_majority_ideology = liberal
-				}
-			}
-		}
-		modifier = {
-			factor = 1.15
-			pop_majority_ideology = anarcho_liberal
-		}
-		modifier = {
-			factor = 1.02
-			pop_majority_ideology = liberal
-		}
-		
-		modifier = {
-			factor = 0.1
-			country = {
-				OR = {
-					government = democracy
-					government = hms_government
-				}
-				OR = { 
-					vote_franschise = universal_weighted_voting
-					vote_franschise = universal_voting
-				}
-				OR = {
-					upper_house_composition = state_equal_weight
-					upper_house_composition = population_equal_weight
-				}
-				NOT = { debt_law = serfdom }
-				NOT = { border_policy = closed_borders }
-				public_meetings = yes_meeting
-				press_rights = free_press
-				slavery = no_slavery
-			}
-		}
-		
-		modifier = {
-			factor = 0
-			is_primary_culture = no
-			is_accepted_culture = no
-			location = {
-				any_core = {
-					is_cultural_union = no
-					OR = {
-						is_primary_culture = THIS
-						is_accepted_culture = THIS
-					}
-					exists = no
-				}
-			}
-		}
-		modifier = {
-			factor = 0.01
-			is_primary_culture = no
-			location = {
-				any_core = {
-					is_primary_culture = THIS
-					is_cultural_union = no
-					exists = no
-				}
-			}
-		}
-		modifier = {
-			factor = 0.01
-			is_primary_culture = yes
-			location = {
-				NOT = { is_core = THIS }
-				any_core = {
-					is_primary_culture = THIS
-					is_cultural_union = no
-					exists = no
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { is_culture_group = THIS }
-		}
-		modifier = {
-			factor = 0.1
-			is_primary_culture = no
-			is_accepted_culture = no
-		}
-	}
- 
- 	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-			NOT = { is_capital = yes }
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-			NOT = { is_capital = yes }
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 6
-		}
-		modifier = {
-			factor = 1.5
-			average_militancy = 8
-		}
-		modifier = {
-			factor = 5.0
-			is_capital = yes
-		}
-	}
-	
- 	# Province Scope
- 	siege_won_trigger = {
-		NOT = { has_province_modifier = war_torn }
- 	}
-	
-	siege_won_effect = {
-		add_province_modifier = {
-			name = war_torn
-			duration = 365
-		}
-		any_pop = {
-			ideology = {
-				value = anarcho_liberal
-				factor = 0.05
-			}
-		}
-		owner = { war_exhaustion = 2.5 }
-	}
-	
-
-	# Country scope
-	demands_enforced_trigger = {
-		OR = {
-			capital_scope = {
-				controlled_by = REB
-				province_control_days = 120
-			}
-			NOT = {
-				any_owned_province = {
-					is_colonial = no
-					controlled_by = THIS
-				}
-			}
-		}
-	}
-	demands_enforced_effect = {
-		clr_country_flag = theocratic_government
-		clr_country_flag = communist_gov
-		clr_country_flag = absolute_monarchy_gov
-		clr_country_flag = semi_constitutional_monarchy_gov
-		clr_country_flag = constitutional_monarchy_gov
-		clr_country_flag = democracy_gov
-		clr_country_flag = presidential_dictatorship_gov
-		clr_country_flag = fascist_gov
-		clr_country_flag = anarcho_liberal_gov
-		ruling_party_ideology = anarcho_liberal
-		political_reform = universal_voting
-		political_reform = party_appointed
-		political_reform = no_meeting
-		political_reform = state_press
-		political_reform = no_trade_unions
-		political_reform = underground_parties
-		political_reform = debtors_prisons
-		social_reform = no_minimum_wage
-		social_reform = no_work_hour_limit
-		social_reform = no_safety
-		social_reform = no_subsidies
-		social_reform = no_pensions
-		social_reform = no_health_care
-
-		add_country_modifier = {
-			name = national_confusion
-			duration = 365
-		}
-		
-		prestige_factor = -0.25	
-		plurality = -25
-		country_event = 800053
-	}
-}
+####################################
+## Anarcho-Liberal Rebels
+####################################
+#anarcho_liberal_rebels = {
+#	icon = 4
+#	
+#	area = nation 					# Stays within the nation
+#	break_alliance_on_win = no
+#	
+#	# <this is the government in the country> = <this is what the rebels want>
+#	government = {
+#		proletarian_dictatorship = bourgeois_dictatorship
+#		presidential_dictatorship = bourgeois_dictatorship
+#		bourgeois_dictatorship = bourgeois_dictatorship
+#		fascist_dictatorship = bourgeois_dictatorship
+#		absolute_monarchy = bourgeois_dictatorship
+#		prussian_constitutionalism = bourgeois_dictatorship
+#		hms_government = bourgeois_dictatorship
+#		french_bourbon = bourgeois_dictatorship
+#		dominion = bourgeois_dictatorship
+#		democracy = bourgeois_dictatorship
+#		theocracy = bourgeois_dictatorship
+#		colonial_company = bourgeois_dictatorship
+#		
+#		archduchy = bourgeois_dictatorship
+#		elective_monarchy_oligarchy = bourgeois_dictatorship
+#		federal_democracy = bourgeois_dictatorship
+#		tribal_democracy = bourgeois_dictatorship 
+#		tsardom = bourgeois_dictatorship
+#		merchant_republic = bourgeois_dictatorship
+#		trade_monarchy = bourgeois_dictatorship
+#		khanate = bourgeois_dictatorship
+#	}
+#	
+#	
+#	defection = none					# Will defect to the "best" alternative.
+#	independence = none				# Does not strive for independence
+#	defect_delay = 18
+#	
+#	ideology = anarcho_liberal
+#	
+#	allow_all_cultures = yes
+#	allow_all_religions = yes
+#	allow_all_ideologies = yes
+#	
+#	resilient = yes					# Disbands on retreat
+#	reinforcing = yes				# Does not receive reinforcements
+#	general = yes					# Does use generals
+#	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
+#	unit_transfer = no				# Units do not remain after enforcing demands.
+#	
+#	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
+#
+#	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
+#	will_rise = {
+#		factor = 0.5
+#		
+#		modifier = {
+#			war = yes
+#			factor = 0.8
+#		}
+#		modifier = {
+#			war_exhaustion = 4
+#			factor = 0.95
+#		}
+#		modifier = {
+#			war_exhaustion = 6
+#			factor = 0.95
+#		}
+#		modifier = {
+#			war_exhaustion = 8
+#			factor = 0.95
+#		}
+#		modifier = {
+#			factor = 0.95
+#			any_neighbor_country = {
+#				government = bourgeois_dictatorship
+#			}
+#		}
+#	}
+#	
+#	# The rebel type with the highest modifier for this pop gets picked
+#	spawn_chance = {
+# 
+#		factor = 1.01
+#		modifier = {
+#			factor = 0
+#			NOT = {
+#				is_ideology_enabled = anarcho_liberal
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			country = { civilized = no }
+#		}
+#		modifier = {
+#			factor = 0
+#			location = {
+#				is_colonial = yes
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			OR = {
+#				political_movement = yes
+#				social_movement = yes
+#			}	
+#		}
+#		modifier = {
+#			factor = 0
+#			country = { government = bourgeois_dictatorship }
+#		}
+#		modifier = {
+#			factor = 0
+#			country = {
+#				OR = {
+#					government = democracy
+#					government = hms_government
+#				}
+#				ruling_party_ideology = anarcho_liberal
+#			}
+#		}
+#		modifier = {
+#			factor = 0.5
+#			country = {
+#				OR = {
+#					government = democracy
+#					government = hms_government
+#				}
+#				ruling_party_ideology = liberal
+#			}
+#		}
+#		modifier = {
+#			factor = 1.015
+#			country = { NOT = { plurality = 35 } }
+#		}
+#		modifier = {
+#			factor = 0
+#			NOT = {
+#				OR = {
+#					pop_majority_ideology = anarcho_liberal
+#					pop_majority_ideology = liberal
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 1.15
+#			pop_majority_ideology = anarcho_liberal
+#		}
+#		modifier = {
+#			factor = 1.02
+#			pop_majority_ideology = liberal
+#		}
+#		
+#		modifier = {
+#			factor = 0.1
+#			country = {
+#				OR = {
+#					government = democracy
+#					government = hms_government
+#				}
+#				OR = { 
+#					vote_franschise = universal_weighted_voting
+#					vote_franschise = universal_voting
+#				}
+#				OR = {
+#					upper_house_composition = state_equal_weight
+#					upper_house_composition = population_equal_weight
+#				}
+#				NOT = { debt_law = serfdom }
+#				NOT = { border_policy = closed_borders }
+#				public_meetings = yes_meeting
+#				press_rights = free_press
+#				slavery = no_slavery
+#			}
+#		}
+#		
+#		modifier = {
+#			factor = 0
+#			is_primary_culture = no
+#			is_accepted_culture = no
+#			location = {
+#				any_core = {
+#					is_cultural_union = no
+#					OR = {
+#						is_primary_culture = THIS
+#						is_accepted_culture = THIS
+#					}
+#					exists = no
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 0.01
+#			is_primary_culture = no
+#			location = {
+#				any_core = {
+#					is_primary_culture = THIS
+#					is_cultural_union = no
+#					exists = no
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 0.01
+#			is_primary_culture = yes
+#			location = {
+#				NOT = { is_core = THIS }
+#				any_core = {
+#					is_primary_culture = THIS
+#					is_cultural_union = no
+#					exists = no
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 0.5
+#			NOT = { is_culture_group = THIS }
+#		}
+#		modifier = {
+#			factor = 0.1
+#			is_primary_culture = no
+#			is_accepted_culture = no
+#		}
+#	}
+# 
+# 	#This is checked for EACH province in the Area of Operations
+#	movement_evaluation = {
+#		factor = 1
+#		modifier = {
+#			factor = 0.1
+#			units_in_province = 1
+#			NOT = { is_capital = yes }
+#		}
+#		modifier = {
+#			factor = 0.001
+#			controlled_by = REB
+#			NOT = { is_capital = yes }
+#		}
+#		modifier = {
+#			factor = 1.5
+#			average_militancy = 4
+#		}
+#		modifier = {
+#			factor = 1.5
+#			average_militancy = 6
+#		}
+#		modifier = {
+#			factor = 1.5
+#			average_militancy = 8
+#		}
+#		modifier = {
+#			factor = 5.0
+#			is_capital = yes
+#		}
+#	}
+#	
+# 	# Province Scope
+# 	siege_won_trigger = {
+#		NOT = { has_province_modifier = war_torn }
+# 	}
+#	
+#	siege_won_effect = {
+#		add_province_modifier = {
+#			name = war_torn
+#			duration = 365
+#		}
+#		any_pop = {
+#			ideology = {
+#				value = anarcho_liberal
+#				factor = 0.05
+#			}
+#		}
+#		owner = { war_exhaustion = 2.5 }
+#	}
+#	
+#
+#	# Country scope
+#	demands_enforced_trigger = {
+#		OR = {
+#			capital_scope = {
+#				controlled_by = REB
+#				province_control_days = 120
+#			}
+#			NOT = {
+#				any_owned_province = {
+#					is_colonial = no
+#					controlled_by = THIS
+#				}
+#			}
+#		}
+#	}
+#	demands_enforced_effect = {
+#		clr_country_flag = theocratic_government
+#		clr_country_flag = communist_gov
+#		clr_country_flag = absolute_monarchy_gov
+#		clr_country_flag = semi_constitutional_monarchy_gov
+#		clr_country_flag = constitutional_monarchy_gov
+#		clr_country_flag = democracy_gov
+#		clr_country_flag = presidential_dictatorship_gov
+#		clr_country_flag = fascist_gov
+#		clr_country_flag = anarcho_liberal_gov
+#		ruling_party_ideology = anarcho_liberal
+#		political_reform = universal_voting
+#		political_reform = party_appointed
+#		political_reform = no_meeting
+#		political_reform = state_press
+#		political_reform = no_trade_unions
+#		political_reform = underground_parties
+#		political_reform = debtors_prisons
+#		social_reform = no_minimum_wage
+#		social_reform = no_work_hour_limit
+#		social_reform = no_safety
+#		social_reform = no_subsidies
+#		social_reform = no_pensions
+#		social_reform = no_health_care
+#
+#		add_country_modifier = {
+#			name = national_confusion
+#			duration = 365
+#		}
+#		
+#		prestige_factor = -0.25	
+#		plurality = -25
+#		country_event = 800053
+#	}
+#}
 
 ###################################
 # Nationalist Rebels
@@ -1245,6 +1285,15 @@ nationalist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -1260,7 +1309,7 @@ nationalist_rebels = {
 	reinforcing = yes				# Does not receive reinforcements
 	general = yes					# Does use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = yes				# Units do remain after enforcing demands.
+	unit_transfer = no				# Units do remain after enforcing demands.
 	
 	occupation_mult = 5.0			# The amount of strength this rebel gains from taking provinces	
 
@@ -1322,6 +1371,7 @@ nationalist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 3
 		
 		modifier = {
@@ -1573,6 +1623,15 @@ pan_nationalist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none			# (It was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -1654,6 +1713,7 @@ pan_nationalist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 0
 		
 		modifier = {
@@ -2000,6 +2060,15 @@ carlist_rebels = {
 		democracy = absolute_monarchy
 		theocracy = theocracy
 		colonial_company = absolute_monarchy
+		
+		archduchy = absolute_monarchy
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = absolute_monarchy
+		tribal_democracy = absolute_monarchy 
+		tsardom = absolute_monarchy
+		merchant_republic = absolute_monarchy
+		trade_monarchy = absolute_monarchy
+		khanate = absolute_monarchy
 	}
 	
 	
@@ -2017,7 +2086,7 @@ carlist_rebels = {
 	reinforcing = yes				
 	general = yes					
 	smart = yes
-	unit_transfer = yes				# Units do not remain after enforcing demands.
+	unit_transfer = no				# Units do not remain after enforcing demands.
 		
 	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
 
@@ -2062,6 +2131,7 @@ carlist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 0
 		
 		modifier = {
@@ -2264,6 +2334,15 @@ szlachta_rebels = {
 		theocracy = theocracy
 		colonial_company = elective_monarchy_oligarchy
 		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		
+		archduchy = elective_monarchy_oligarchy
+		#elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = elective_monarchy_oligarchy
+		tribal_democracy = elective_monarchy_oligarchy 
+		tsardom = elective_monarchy_oligarchy
+		merchant_republic = elective_monarchy_oligarchy
+		trade_monarchy = elective_monarchy_oligarchy
+		khanate = elective_monarchy_oligarchy
 	}
 	
 	
@@ -2312,6 +2391,7 @@ szlachta_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.1
 		
 		modifier = {
@@ -2521,6 +2601,15 @@ christino_rebels = {
 		democracy = hms_government
 		theocracy = theocracy
 		colonial_company = hms_government
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = hms_government
+		federal_democracy = hms_government
+		tribal_democracy = tribal_democracy 
+		tsardom = hms_government
+		merchant_republic = hms_government
+		trade_monarchy = hms_government
+		khanate = hms_government
 	}
 	
 	
@@ -2565,6 +2654,7 @@ christino_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.1
 		
 		modifier = {
@@ -2765,6 +2855,15 @@ boxer_rebels = {
 		democracy = absolute_monarchy
 		theocracy = theocracy
 		colonial_company = absolute_monarchy
+		
+		archduchy = absolute_monarchy
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = absolute_monarchy
+		tribal_democracy = absolute_monarchy 
+		tsardom = absolute_monarchy
+		merchant_republic = absolute_monarchy
+		trade_monarchy = absolute_monarchy
+		khanate = absolute_monarchy
 	}
 	
 	defection = none				
@@ -2832,6 +2931,7 @@ boxer_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.1
 		modifier = {
 			factor = 0
@@ -3036,6 +3136,15 @@ red_shirts = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = hms_government
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none			# (Was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3052,7 +3161,7 @@ red_shirts = {
 	reinforcing = yes				# Does not receive reinforcements
 	general = yes					# Does not use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = yes				# Units remain after enforcing demands.
+	unit_transfer = no				# Units remain after enforcing demands.
 	
 	occupation_mult = 10.0			# The amount of strength this rebel gains from taking provinces	
 
@@ -3087,6 +3196,7 @@ red_shirts = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.2
 		
 		modifier = {
@@ -3279,148 +3389,81 @@ indian_sepoys = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
-	defection = pan_nationalist		# If the country seeks independence, defection specifies what type of provinces it wants.
-	independence = culture			# (Was culture)
-	defect_delay = 12				# Can spontaneously declare independence after 12 months (earliest)
+	defection = none				
+	independence = none				# Does not strive for independence
+	defect_delay = 18
 	
-	ideology = liberal
+	ideology = conservative
+	
 	allow_all_cultures = yes
-	allow_all_culture_groups = no
 	allow_all_religions = yes
 	allow_all_ideologies = yes
 	
-	resilient = yes					# Disbands on retreat
-	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does not use generals
-	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = no				# Units remain after enforcing demands.
+	resilient = yes					
+	reinforcing = yes				
+	general = yes					
+	smart = yes
+	unit_transfer = no				# Units do not remain after enforcing demands.
 	
-	occupation_mult = 3.0			# The amount of strength this rebel gains from taking provinces	
+	occupation_mult = 5.0			# The amount of strength this rebel gains from taking provinces	
 
 	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
 	will_rise = {
 		factor = 0.5
-		
 		modifier = {
-			war = yes
-			factor = 0.8
+			factor = 0.01
+			country = { has_country_flag = indian_campaign_target_flag }
+			NOT = { country = { has_country_modifier = indian_campaign_target_prepare } }
 		}
 		modifier = {
-			war_exhaustion = 4
-			factor = 0.95
+			factor = 0
+			country = { has_country_modifier = indian_campaign_target_prepare }
 		}
 		modifier = {
-			war_exhaustion = 6
-			factor = 0.95
-		}
-		modifier = {
-			war_exhaustion = 8
-			factor = 0.95
-		}
-		modifier = {
-			factor = 0.25
-			year = 1880
+			factor = 0
+			NOT = { country = { has_country_flag = indian_campaign_target_flag } }
 		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
-		factor = 1.1
+		factor = 1
 		modifier = {
 			factor = 0
+			NOT = { country = { has_country_flag = indian_campaign_target_flag } }
+		}
+		modifier = {
+			factor = 100
 			OR = {
-				location = { NOT = { is_core = HND } }
-				country = { tag = HND }
-				country = { NOT = { has_country_flag = sepoy_rebellion } }
-				NOT = { is_culture_group = south_asian }
-				country = { has_global_flag = indian_call_to_union }
+			      country = { has_country_modifier = indian_campaign_target }
+			      country = { any_owned_province = { controlled_by = REB } }
 			}
-		}
-		modifier = {
-			factor = 1.5
-			is_culture_group = south_asian
-		}
-		modifier = {
-			factor = 0
-			country = {
-				NOT = {
-					OR = {
-						owns = 1236
-						owns = 1251
-						owns = 1304
-						owns = 1297
-						owns = 1247
-						owns = 1291
-						owns = 1227
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			country = { is_culture_group = south_asian }
-		}		
-		modifier = {
-			factor = 1.2
-			pop_majority_ideology = liberal
-		}
-		modifier = {
-			factor = 1.1
-			pop_majority_ideology = conservative
-		}
-		modifier = {
-			factor = 1.3
-			pop_majority_ideology = anarcho_liberal
-		}
-		modifier = {
-			factor = 1.05
-			political_reform_want = 0.05
-		}
-		modifier = {
-			factor = 1.05
-			political_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.05
-			political_reform_want = 0.15
 		}
 	}
- 
+	
  	#This is checked for EACH province in the Area of Operations
 	movement_evaluation = {
 		factor = 1
 		modifier = {
 			factor = 0.1
 			units_in_province = 1
-			NOT = {
-				province_id = 1236
-				province_id = 1251
-				province_id = 1304
-				province_id = 1297
-				province_id = 1247
-				province_id = 1227
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				province_id = 1236
-				province_id = 1251
-				province_id = 1304
-				province_id = 1297
-				province_id = 1247
-				province_id = 1227
-			}
+			NOT = { is_capital = yes }
 		}
 		modifier = {
 			factor = 0.001
 			controlled_by = REB
-		}
-		modifier = {
-			factor = 0.1
-			controller = { is_culture_group = south_asian }
+			NOT = { is_capital = yes }
 		}
 		modifier = {
 			factor = 1.5
@@ -3435,8 +3478,8 @@ indian_sepoys = {
 			average_militancy = 8
 		}
 		modifier = {
-			factor = 0
-			NOT = { is_core = HND }
+			factor = 5.0
+			is_capital = yes
 		}
 	}
 	
@@ -3450,73 +3493,87 @@ indian_sepoys = {
 			name = war_torn
 			duration = 365
 		}
-		add_province_modifier = {
-			name = nationalist_agitation
-			duration = 180
-		}
+		#add_province_modifier = {
+		#	name = nationalist_agitation
+		#	duration = 180
+		#}
 	}
 	
 
 	# Country scope
+	#demands_enforced_trigger = {
+	#	1236 = { #Delhi
+	#		OR = {
+	#			NOT = { owned_by = THIS }
+	#			AND = {
+	#				controlled_by = REB
+	#				province_control_days = 90
+	#			}
+	#		}
+	#	}
+	#	1251 = { #Calcutta
+	#		OR = {
+	#			NOT = { owned_by = THIS }
+	#			AND = {
+	#				controlled_by = REB
+	#				province_control_days = 90
+	#			}
+	#		}
+	#	}
+	#	1304 = { #Madras
+	#		OR = {
+	#			NOT = { owned_by = THIS }
+	#			AND = {
+	#				controlled_by = REB
+	#				province_control_days = 90
+	#			}
+	#		}
+	#	}
+	#	1297 = { #Bombay
+	#		OR = {
+	#			NOT = { owned_by = THIS }
+	#			AND = {
+	#				controlled_by = REB
+	#				province_control_days = 90
+	#			}
+	#		}
+	#	}
+	#	1247 = { #Patna
+	#		OR = {
+	#			NOT = { owned_by = THIS }
+	#			AND = {
+	#				controlled_by = REB
+	#				province_control_days = 90
+	#			}
+	#		}
+	#	}
+	#	1227 = { #Lahore
+	#		OR = {
+	#			NOT = { owned_by = THIS }
+	#			AND = {
+	#				controlled_by = REB
+	#				province_control_days = 90
+	#			}
+	#		}
+	#	}		
+	#}
 	demands_enforced_trigger = {
-		1236 = { #Delhi
-			OR = {
-				NOT = { owned_by = THIS }
-				AND = {
-					controlled_by = REB
-					province_control_days = 90
+		OR = {
+			capital_scope = {
+				controlled_by = REB
+				province_control_days = 180
+			}
+			NOT = {
+				any_owned_province = {
+					is_colonial = no
+					controlled_by = THIS
 				}
 			}
 		}
-		1251 = { #Calcutta
-			OR = {
-				NOT = { owned_by = THIS }
-				AND = {
-					controlled_by = REB
-					province_control_days = 90
-				}
-			}
-		}
-		1304 = { #Madras
-			OR = {
-				NOT = { owned_by = THIS }
-				AND = {
-					controlled_by = REB
-					province_control_days = 90
-				}
-			}
-		}
-		1297 = { #Bombay
-			OR = {
-				NOT = { owned_by = THIS }
-				AND = {
-					controlled_by = REB
-					province_control_days = 90
-				}
-			}
-		}
-		1247 = { #Patna
-			OR = {
-				NOT = { owned_by = THIS }
-				AND = {
-					controlled_by = REB
-					province_control_days = 90
-				}
-			}
-		}
-		1227 = { #Lahore
-			OR = {
-				NOT = { owned_by = THIS }
-				AND = {
-					controlled_by = REB
-					province_control_days = 90
-				}
-			}
-		}		
 	}
 	
 	demands_enforced_effect = {
-		country_event = 800147
+		country_event = 100023
 	}
 }
 
@@ -3543,6 +3600,15 @@ indian_nationalists = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3611,6 +3677,7 @@ indian_nationalists = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.1
 		modifier = {
 			factor = 0
@@ -3760,6 +3827,15 @@ liberal_rebels = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = hms_government
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = hms_government
+		merchant_republic = hms_government
+		trade_monarchy = hms_government
+		khanate = hms_government
 	}
 	
 	
@@ -3812,6 +3888,7 @@ liberal_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.02
 		
 		modifier = {
@@ -4209,6 +4286,15 @@ unciv_reactionary_rebels = {
 		democracy = absolute_monarchy
 		theocracy = absolute_monarchy
 		colonial_company = colonial_company
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = absolute_monarchy
+		federal_democracy = presidential_dictatorship
+		tribal_democracy = tribal_democracy 
+		tsardom = absolute_monarchy
+		merchant_republic = absolute_monarchy
+		trade_monarchy = absolute_monarchy
+		khanate = khanate
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -4284,6 +4370,7 @@ unciv_reactionary_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 3
 		
 		modifier = {
@@ -4505,6 +4592,15 @@ separatist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -4556,6 +4652,7 @@ separatist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 3
 		modifier = {
 			factor = 0
@@ -4764,6 +4861,15 @@ socialist_rebels = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = democracy
+		elective_monarchy_oligarchy = democracy
+		federal_democracy = democracy
+		tribal_democracy = democracy 
+		tsardom = democracy
+		merchant_republic = democracy
+		trade_monarchy = democracy
+		khanate = democracy
 	}
 	
 	
@@ -4808,6 +4914,7 @@ socialist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.02
 		modifier = {
 			factor = 0
@@ -5246,6 +5353,15 @@ independence_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 	
 	
@@ -5290,6 +5406,7 @@ independence_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.2
 		modifier = {
 			factor = 0
@@ -5418,6 +5535,15 @@ turkish_nationalist_rebels = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = democracy
+		elective_monarchy_oligarchy = democracy
+		federal_democracy = democracy
+		tribal_democracy = democracy 
+		tsardom = democracy
+		merchant_republic = democracy
+		trade_monarchy = democracy
+		khanate = democracy
 	}
 	
 	
@@ -5462,6 +5588,7 @@ turkish_nationalist_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 3
 		modifier = {
 			factor = 0
@@ -5663,6 +5790,15 @@ native_rebels = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = democracy
+		elective_monarchy_oligarchy = democracy
+		federal_democracy = democracy
+		tribal_democracy = democracy 
+		tsardom = democracy
+		merchant_republic = democracy
+		trade_monarchy = democracy
+		khanate = democracy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -5707,6 +5843,7 @@ native_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 3
 		modifier = {
 			factor = 0
@@ -5850,6 +5987,15 @@ sioux_nation = {
 		democracy = democracy
 		theocracy = theocracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -5878,6 +6024,7 @@ sioux_nation = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 2
 		modifier = {
 			factor = 0
@@ -5915,7 +6062,7 @@ sioux_nation = {
 		}
 		modifier = {
 			factor = 1.5
-			not = { average_militancy = 6 }
+			NOT = { militancy = 6 }
 		}
 		modifier = {
 			factor = 1.5
@@ -5974,6 +6121,15 @@ apache = {
 		democracy = democracy
 		theocracy = democracy
 		colonial_company = democracy
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -6002,6 +6158,7 @@ apache = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 2
 		modifier = {
 			factor = 0
@@ -6044,7 +6201,7 @@ apache = {
 		}
 		modifier = {
 			factor = 1.5
-			not = { average_militancy = 6 }
+			NOT = { militancy = 6 }
 		}
 		modifier = {
 			factor = 1.5
@@ -6102,6 +6259,15 @@ jacobite_rebels = {
 		democracy = hms_government
 		theocracy = theocracy
 		colonial_company = hms_government
+		
+		archduchy = hms_government
+		elective_monarchy_oligarchy = hms_government
+		federal_democracy = hms_government
+		tribal_democracy = hms_government 
+		tsardom = hms_government
+		merchant_republic = hms_government
+		trade_monarchy = hms_government
+		khanate = hms_government
 	}
 	
 	
@@ -6119,7 +6285,7 @@ jacobite_rebels = {
 	reinforcing = yes				
 	general = yes					
 	smart = yes
-	unit_transfer = yes				# Units do not remain after enforcing demands.
+	unit_transfer = no				# Units do not remain after enforcing demands.
 	
 	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
 
@@ -6146,6 +6312,7 @@ jacobite_rebels = {
 	
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
+ 
 		factor = 1.1
 		
 		modifier = {

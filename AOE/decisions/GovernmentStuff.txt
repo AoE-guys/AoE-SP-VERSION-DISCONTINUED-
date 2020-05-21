@@ -1,0 +1,96 @@
+political_decisions = {
+	khanate_to_feudal = {
+		potential = {
+			government = khanate
+		}
+		allow = {
+			OR = { 
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			any_owned_province = { continent = europe }
+			vote_franschise = none_voting
+			public_meetings = no_meeting
+			press_rights = state_press
+			trade_unions = no_trade_unions
+			war = no
+		}
+		effect = {
+			THIS = { country_event = 69424 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	trader_to_republic = {
+		potential = {
+			government = merchant_republic
+			vote_franschise = universal_voting
+			public_meetings = yes_meeting
+			press_rights = free_press
+			trade_unions = all_trade_unions
+		}
+		allow = {	
+			war = no
+		}
+		effect = {
+			THIS = { country_event = 69425 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	richboi_to_monarchy = {
+		potential = {
+			government = trade_monarchy
+			vote_franschise = none_voting
+			public_meetings = no_meeting
+			press_rights = state_press
+			trade_unions = no_trade_unions
+		}
+		allow = {	
+			war = no
+		}
+		effect = {
+			THIS = { country_event = 69426 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	khanate_religious_conversion = {
+		potential = {
+			government = khanate
+			NOT = { has_country_modifier = khan_converted }
+			vote_franschise = none_voting
+		}
+		allow = { 
+			war = no
+			OR = { 
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			OR = {
+				relation = { who = PAP value = 200 }
+				relation = { who = RUS value = 200 }
+				relation = { who = GRE value = 200 }
+				relation = { who = NET value = 200 }
+				relation = { who = PRU value = 200 }
+				relation = { who = PER value = 200 }
+				relation = { who = QNG value = 200 }
+				relation = { who = CHI value = 200 }
+				relation = { who = TUR value = 200 }
+				relation = { who = HDJ value = 200 }
+			}
+			
+		}
+		effect = {
+			THIS = { country_event = 69427 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

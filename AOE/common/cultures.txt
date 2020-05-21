@@ -122,8 +122,7 @@ beneluxian = {
 			Thomas
 			Victor Willem Vincent
 			Zacharias
-		}
-		
+		}	
 		last_names = { 
 			"van der Aa" "van Assendelft" 
 			Boetge Boumeester "van Bronkhorst" Batenburg Bentinck Boreel Brandt "van Brederode" Brouwer Buyskes "van Braam Houckgeest"
@@ -152,6 +151,43 @@ beneluxian = {
 			"van Vredenburch" Verspijck Vetter Weitzel "Van Utenhove"
 			"van Walbeeck" "van Wassenaer" "van der Werff" "van Wesembeke" "van Wingle" "van der Wijck" "van Wijngaarden" "de Winter"
 			Wolterbeek
+		}
+	}
+	frisian = {
+	color = { 200 140 60}
+	first_names = {
+		Audulf Aldgisl Radboud Poppo Anne Rorik Godfried Gerolf Dirk Arnulf Floris Liudolf Bruno Egbert Hendrik Haringh Juw Albrecht Hendrik George Wilhelm
+		Georg Maximiliaan Jan Karel Gillis Caspar Francisco Willem "Ernst Casimir" Johan
+	}
+
+	last_names = {
+		"van der Aa" "van Assendelft"
+		Boetge Boumeester "van Bronkhorst" Batenburg Bentinck Boreel Brandt "van Brederode" Brouwer Buyskes "van Braam Houckgeest"
+		"van der Capellen" Chasse Cochius Coops "de Casembroot" Cleerens Coehoorn Coen "de Constant Rebecque" Crijnssen
+
+		"van Culemborg"
+		Duycker	"de Eerens" "de Kock" Deijkerhoff "den Beer Poortugael" Daendels "van Diemen" "van der Does" "van Duivenvoorde"
+		Ellis Engels Engelvaart "van Egmont" Evertzen
+		Fabius
+		Gregory "van Galen" "de Grouwe" "van Geen"
+		"van Ham" "van Haren" "van Heemskerck" "van Heutsz" "Cort-Heyligers" "de Houtman" "van Huchtenbroek"
+		"van Ilpendam"
+		Janssens
+		Kohler Kool Kruys Kater "van Keppel" Kortenaer
+		List Lucas
+		Michiels "van Marnix" Martena "de Moor" "Melvill van Carnbee"
+		Nepveu Nachtegaal "van Nieuwenaar" "van Noort"
+		Ongerboer
+		"van Pallandt"
+		Rijk Roell "van Raephorst" "van Rechteren" Reijersen "van Renesse" "van Riebeeck" "de Rijk" "van Rossum"
+		Sabron "Schimmelpenninck van der Oye" "van Saksen-Weimar" "van Spilbergen" Staal Stokhuyzen Schouten Schenk Spiegel
+
+		Steltman Stuyvesant
+		Tasman "van Troyen" Trip
+		"van Dambenoy" "van den Bosch" "van der Heijden" "van Hoensbroeck" "van Oranje-Nassau" "van Swieten"
+		"van Vredenburch" Verspijck Vetter Weitzel "Van Utenhove"
+		"van Walbeeck" "van Wassenaer" "van der Werff" "van Wesembeke" "van Wingle" "van der Wijck" "van Wijngaarden" "de Winter"
+		Wolterbeek
 		}
 	}
 	flemish = { 
@@ -477,8 +513,8 @@ basque = {
 		Marino Miguel Paulino Pedro Rafael Ramiro RamÛn Sabino Tom·s Vicente }
 		
 		last_names = { Aguirre Ajuriaguerra Aldecoa Arana Aranzadi Arizmendiarrieta Armend·riz Aznar Balenciaga Berasategui 
-		Bilbao CampiÛn Churruca "de AmÈsquita" "de Azpilicueta" "de Erauso" "de Renter˙}" "de Ubisztongo" EchagÅE Echave
-	 	Echegaray Echevarr˙} Elorza GaztaÒeta Ibarrola Ib·rruri Irujo Lazcano Mendizabal Moneo 
+		Bilbao CampiÛn Churruca "de AmÈsquita" "de Azpilicueta" "de Erauso" "de Renter˙" "de Ubisztongo" EchagÅE Echave
+	 	Echegaray Echevarr˙ Elorza GaztaÒeta Ibarrola Ib·rruri Irujo Lazcano Mendizabal Moneo 
 		N·rdiz Olano Olave Oyarz·bal Rotaeche Uzcudun Zam·rraga Z·rate Zavala Zumalac·rregui }
 		radicalism = 15
 	}

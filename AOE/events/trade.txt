@@ -134,6 +134,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		3356 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -925,6 +931,10 @@ country_event = {
 			}
 			add_province_modifier = { name = negotiated  duration = 12 }
 		}
+		sphere_owner = { country_event = 69423 }
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -945,7 +955,216 @@ country_event = {
 				secede_province = THIS 
 			}
 		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 69424
+	title = "Westernizing time"
+	desc = "At last our country has decided to embrace western feudalism."
+	is_triggered_only = yes
+	option = {
+		government = absolute_monarchy
+		set_country_flag = absolute_monarchy_gov
+	}
+	ai_chance = {
+		factor = 100
 	}
 }	
 			
+country_event = {
+	id = 69425
+	title = "Freedom time"
+	desc = "Bring down the merchant elites, we want true democracy!"
+	is_triggered_only = yes
+	option = {
+		government = democracy
+		set_country_flag = democracy_gov
+		election = yes
+	}
+	ai_chance = {
+		factor = 100
+	}
+}	
+			
+country_event = {
+	id = 69426
+	title = "Feudalism time"
+	desc = "At last our country has decided to embrace western feudalism."
+	is_triggered_only = yes
+	option = {
+		government = absolute_monarchy
+		set_country_flag = absolute_monarchy_gov
+	}
+	ai_chance = {
+		factor = 100
+	}
+}	
+
+country_event = {
+	id = 69427
+	title = "Conversion time"
+	desc = "Our Great Khan has decided that the official religion of our Horde is..."
+	is_triggered_only = yes
+	option = {
+		name = "Catholicism"
+		random_owned = {
+			limit = {
+				owner = {
+					relation = { who = PAP value = 200 }
+				}
+			}
+			owner = {
+				religion = catholic
+				set_country_flag = catholic_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				create_alliance = PAP
+				any_country = {
+					limit = {
+						has_country_flag = { catholic_country }
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Protestantism"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						relation = { who = NET value = 200 }
+						relation = { who = PRU value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = protestant
+				set_country_flag = protestant_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = { protestant_country }
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Sunni Islam"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						relation = { who = TUR value = 200 }
+						relation = { who = HDJ value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = sunni
+				set_country_flag = sunni_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = { sunni_country }
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Shia Islam"
+		random_owned = {
+			limit = {
+				owner = {
+					relation = { who = PER value = 200 }
+				}
+			}
+			owner = {
+				religion = shiite
+				set_country_flag = shiite_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = { shiite_country }
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Eastern Orthodoxy"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						relation = { who = RUS value = 200 }
+						relation = { who = GRE value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = orthodox
+				set_country_flag = orthodox_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = { orthodox_country }
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Taoism and Confucianism"
+		random_owned = {
+			limit = { 
+				owner = {
+					OR = { 
+						relation = { who = QNG value = 200 }
+						relation = { who = CHI value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = taoist
+				set_country_flag = taoist_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = { taoist_country }
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+}	
 			

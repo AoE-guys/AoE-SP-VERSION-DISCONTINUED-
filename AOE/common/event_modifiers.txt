@@ -4492,7 +4492,7 @@ RGO_education_1 = {
 RGO_education_2 = {
 	#local_RGO_output = 0.1
 	#local_factory_output = 0.02
-	farm_rgo_size = -0.15
+	farm_rgo_size = -0.20
 	#mine_rgo_size = -0.20
 	
 	#poor_life_needs = -0.4
@@ -6080,16 +6080,26 @@ pearl_of_the_antilles = {
 	population_growth = 0.01
 }
 
-#modifiers below gay
+#modifiers above gay
 
 trade_centre = {
 	icon = 11
 	goods_demand = 0.2
 	immigrant_attract = 0.25
+	local_factory_throughput = 0.2
+	tariff_efficiency_modifier = 0.25
 }
 
 potential_trade_post = {
 	icon = 7
+}
+
+negotiating_port_loss = {
+	icon = 18
+}
+
+negotiating_port_demand = {
+	icon = 17
 }
 
 rick_rolled = {
@@ -6183,5 +6193,84 @@ manchu_call_to_arms = {
 	land_organisation = -0.20
 	war_exhaustion = -0.25
 	supply_consumption = -0.80
+	icon = 7
+}
+
+#Prime Ministers
+
+bureaucracy_pm = {
+    tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.10
+	icon = 4
+}
+
+burghers_pm = {
+	factory_output = 0.05
+	education_efficiency_modifier = 0.10
+	icon = 4
+}
+
+church_pm = {
+    core_pop_consciousness_modifier = -0.02
+	RGO_throughput = 0.10
+	icon = 4
+}
+
+nobility_pm = {
+    prestige = 0.01
+	RGO_throughput = 0.10
+	icon = 4
+}
+
+gentry_pm = {
+	RGO_throughput = 0.05
+	factory_throughput = 0.05
+	education_efficiency_modifier = 0.05
+	icon = 4
+}
+
+army_pm = {
+	land_organisation = 0.05
+	leadership_modifier = 0.10
+	icon = 4
+}
+
+5_year_term = {
+	prestige = 0.001
+	icon = 4
+}
+
+#daniel is a catgirl
+
+come_to_brz = {
+	global_immigrant_attract = 0.5
+	icon = 11
+}
+
+khan_converted = {
+	global_pop_militancy_modifier = 0.02
+	icon = 6
+}
+
+#EIC
+victory_over_eic = {
+    prestige = 0.01
+	global_pop_militancy_modifier = -0.01
+	icon = 7
+}
+
+indian_campaign_target_prepare = {
+	global_pop_militancy_modifier = 0.01
+	icon = 7
+}
+
+indian_campaign_target = {
+	global_pop_militancy_modifier = 0.01
+	mobilisation_size = -0.025
+	icon = 7
+}
+
+eic_monopoly_broken = {
+	prestige = 0.001
 	icon = 7
 }

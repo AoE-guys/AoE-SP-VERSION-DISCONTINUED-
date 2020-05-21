@@ -1,23 +1,194 @@
-#political_decisions = {
-#	fund_east_india_company = {
-#		picture = map_india
-#		potential = {
-#			any_owned_province = {
-#				continent = asia	
-#			}
-#			is_great_power = yes
-#			civilized = yes
-#		}
-#		allow = {
-#			any_owned_province = {
-#				continent = asia	
-#			}
-#			mass_politics = 1
-#			money = 1000000
-#		}
-#		effect = {
-#			money = -1000000
-#			set_country_flag = east_india_company_funded
-#		}
-#	}
-#}
+political_decisions = {
+	fund_east_india_company = {
+		picture = map_india
+		potential = {
+		    capital_scope = { continent = europe }
+			NOT = { has_country_flag = east_india_company_funded }
+		}
+		allow = {
+			any_owned_province = {
+				is_core = HND	
+			}
+			business_regulations = 1
+			money = 100000
+		}
+		effect = {
+			money = -100000
+			prestige = 10
+			country_event = 100019
+			set_country_flag = east_india_company_funded
+		}
+	}
+	eic_prepare_campaign_in_india = {
+		picture = map_india
+		potential = {
+		    has_country_flag = dynamic_tag
+			exists = yes
+		}
+		allow = {
+		    NOT = { has_country_flag = campaigning_in_india }
+			HND = {
+                   any_core = { 
+				               owner = { 
+							            capital_scope = { is_core = HND }
+										neighbour = THIS
+										NOT = { has_country_flag = indian_campaign_target_flag }
+										NOT = { has_country_modifier = victory_over_eic }
+										NOT = { has_country_flag = dynamic_tag }
+							   } 
+				   }			
+			}
+			money = 30000
+		}
+		effect = {
+			money = -25000
+			set_country_flag = campaigning_in_india
+			random_country = {
+				limit = { capital_scope = { is_core = HND }  neighbour = THIS  NOT = { has_country_flag = indian_campaign_target } }
+				country_event = 100021
+			}
+		}
+	}
+	give_land_to_eic = {
+		picture = map_india
+		potential = {
+		         OR = {
+                       D01 = { vassal_of = THIS  exists = yes } 
+                       D02 = { vassal_of = THIS  exists = yes } 
+                       D03 = { vassal_of = THIS  exists = yes } 
+                       D04 = { vassal_of = THIS  exists = yes } 
+                       D05 = { vassal_of = THIS  exists = yes } 
+                       D06 = { vassal_of = THIS  exists = yes } 
+                       D07 = { vassal_of = THIS  exists = yes } 
+                       D08 = { vassal_of = THIS  exists = yes } 
+                       D09 = { vassal_of = THIS  exists = yes } 
+                       D10 = { vassal_of = THIS  exists = yes } 
+                       D11 = { vassal_of = THIS  exists = yes } 
+                       D12 = { vassal_of = THIS  exists = yes } 
+                       D13 = { vassal_of = THIS  exists = yes } 
+                       D14 = { vassal_of = THIS  exists = yes } 
+                       D15 = { vassal_of = THIS  exists = yes } 
+                       D16 = { vassal_of = THIS  exists = yes } 
+                       D17 = { vassal_of = THIS  exists = yes } 
+                       D18 = { vassal_of = THIS  exists = yes } 
+                       D19 = { vassal_of = THIS  exists = yes } 
+                       D20 = { vassal_of = THIS  exists = yes } 
+                       D21 = { vassal_of = THIS  exists = yes } 
+                       D22 = { vassal_of = THIS  exists = yes } 
+                       D23 = { vassal_of = THIS  exists = yes } 
+                       D24 = { vassal_of = THIS  exists = yes } 
+                       D25 = { vassal_of = THIS  exists = yes } 
+                       D26 = { vassal_of = THIS  exists = yes } 
+                       D27 = { vassal_of = THIS  exists = yes } 
+                       D28 = { vassal_of = THIS  exists = yes } 
+                       D29 = { vassal_of = THIS  exists = yes } 
+                       D30 = { vassal_of = THIS  exists = yes } 
+                       D31 = { vassal_of = THIS  exists = yes } 
+                       D32 = { vassal_of = THIS  exists = yes } 
+                       D33 = { vassal_of = THIS  exists = yes } 
+                       D34 = { vassal_of = THIS  exists = yes } 
+                       D35 = { vassal_of = THIS  exists = yes } 
+                       D36 = { vassal_of = THIS  exists = yes } 
+                       D37 = { vassal_of = THIS  exists = yes } 
+                       D38 = { vassal_of = THIS  exists = yes } 
+                       D39 = { vassal_of = THIS  exists = yes } 
+                       D40 = { vassal_of = THIS  exists = yes } 
+                       D41 = { vassal_of = THIS  exists = yes } 
+                       D42 = { vassal_of = THIS  exists = yes } 
+                       D43 = { vassal_of = THIS  exists = yes } 
+                       D44 = { vassal_of = THIS  exists = yes } 
+                       D45 = { vassal_of = THIS  exists = yes } 
+                       D46 = { vassal_of = THIS  exists = yes } 
+                       D47 = { vassal_of = THIS  exists = yes } 
+                       D48 = { vassal_of = THIS  exists = yes } 
+                       D49 = { vassal_of = THIS  exists = yes } 
+                       D50 = { vassal_of = THIS  exists = yes } 
+                 }				 
+		}
+		allow = {
+		         any_owned_province = { is_core = HND }
+		}
+		effect = {
+		    prestige = 1
+			random_country = {
+				              limit = {
+							           vassal_of = THIS
+                                       has_country_flag = dynamic_tag									   
+							  }
+							  country_event = 100026
+			}
+		}
+	}
+
+	curtail_eic_power = {
+		picture = map_india
+		potential = {
+		         NOT = { has_country_modifier = eic_monopoly_broken }
+		         OR = {
+                       D01 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D02 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D03 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D04 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D05 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D06 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D07 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D08 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D09 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D10 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D11 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D12 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D13 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D14 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D15 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D16 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D17 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D18 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D19 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D20 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D21 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D22 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D23 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D24 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D25 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D26 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D27 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D28 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D29 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D30 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D31 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D32 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D33 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D34 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D35 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D36 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D37 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D38 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D39 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D40 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D41 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D42 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D43 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D44 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D45 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D46 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D47 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D48 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D49 = { vassal_of = THIS  exists = yes rank = 8 } 
+                       D50 = { vassal_of = THIS  exists = yes rank = 8 } 
+                 }				 
+		}
+		allow = {
+		}
+		effect = {
+		    prestige = 1
+			add_country_modifier = { name = eic_monopoly_broken  duration = 360 }
+			random_country = {
+				              limit = {
+							           vassal_of = THIS
+                                       has_country_flag = dynamic_tag									   
+							  }
+							  country_event = 100027
+			}
+		}
+	}
+}

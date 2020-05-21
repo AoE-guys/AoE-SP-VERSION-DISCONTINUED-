@@ -3,7 +3,6 @@ country_event = {
 	title = "Fulani Jihad!"
 	desc = "EVTDESC10978"
 	fire_only_once = yes
-	picture = mughal_breakup
 	
 	trigger = {
 		tag = GFL
@@ -34,5 +33,157 @@ country_event = {
 	option = {
 		name = "AI_FULANI_1"
 			1796 = { secede_province = SEG }
+	}
+}
+
+country_event = {
+	id = 10980
+	title = "Fulani Jihad!"
+	desc = "EVTDESC10980"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MND
+		year = 1776
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "We are an Islamic theocracy now."
+			1881 = { secede_province = JAL }
+			JAL = { country_event = 10981 }
+			change_tag_no_core_switch = JAL
+	}
+	
+	option = {
+		name = "We will remain a state for the Mande people."
+			1881 = { secede_province = JAL }
+			JAL = { country_event = 10981 }
+	}
+	
+}
+
+country_event = {
+	id = 10981
+	title = "AI_FULANI_2"
+	desc = "EVTDESC10981"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "AI_FULANI_2"
+			1880 = { secede_province = JAL }
+			random_owned = {
+				limit = {
+					owner = {
+						owns = 1881 #Dinguiraye
+						1791 = { empty = yes }
+					}
+				}
+				1791 = { secede_province = JAL any_pop = { literacy = -0.99 } life_rating = 5 }
+				owner = { prestige = 1 }
+			}
+	}
+}
+
+country_event = {
+	id = 10982
+	title = "Fulani Jihad!"
+	desc = "EVTDESC10982"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GOB
+		year = 1804
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "The Fula of Sokoto have come and established a caliphate"
+			1948 = { secede_province = SOK }
+			change_tag_no_core_switch = SOK
+			GOB = { country_event = 10985 }
+	}
+	
+}
+
+country_event = {
+	id = 10985
+	title = "AI_FULANI_3"
+	desc = "EVTDESC10985"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "AI_FULANI_3"
+			1946 = { secede_province = SOK }
+	}
+}
+
+
+country_event = {
+	id = 10984
+	title = "Expansion of Sokoto"
+	desc = "EVTDESC10984"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOK
+		1948 = {
+				owned_by = SOK
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "We must expand our caliphate and spread Islam"
+			1948 = { secede_province = SOK }
+			KAT = { country_event = 10986 }
+			NPE = { country_event = 10987 }
+	}
+	
+}
+
+country_event = {
+	id = 10986
+	title = "Sokoto invasion"
+	desc = "EVTDESC10986"
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Sokoto has invaded and integrated us"
+			1947 = { secede_province = SOK }
+	}
+}
+
+country_event = {
+	id = 10987
+	title = "Sokoto invasion"
+	desc = "EVTDESC10987"
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Sokoto has seized our west!"
+		1940 = { secede_province = SOK }
+	}
+	option = {
+		name = "We can not allow this"
+		war = {
+			target = SOK
+			attacker_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = acquire_all_cores }
+			call_ally = no
+		}
 	}
 }

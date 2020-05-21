@@ -7,7 +7,7 @@ country_event = {
     trigger = {
 	           rich_strata_militancy = 7
 			   OR = {
-			         has_country_flag = noble_influence_5
+			         has_country_flag = nobility_influence_5
 			         has_country_flag = church_influence_5
 			   }
 			   NOT = { has_country_modifier = rich_unrest_5 }
@@ -43,12 +43,12 @@ country_event = {
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
-			         has_country_flag = noble_influence_5
+			         has_country_flag = nobility_influence_5
 			         has_country_flag = church_influence_5
 			   }
 			   }
 			   OR = {
-			         has_country_flag = noble_influence_4
+			         has_country_flag = nobility_influence_4
 			         has_country_flag = church_influence_4
 			   }
 			   NOT = { has_country_modifier = rich_unrest_5 }
@@ -84,14 +84,14 @@ country_event = {
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
-			         has_country_flag = noble_influence_5
+			         has_country_flag = nobility_influence_5
 			         has_country_flag = church_influence_5
-			         has_country_flag = noble_influence_4
+			         has_country_flag = nobility_influence_4
 			         has_country_flag = church_influence_4
 			   }
 			   }
 			   OR = {
-			         has_country_flag = noble_influence_3
+			         has_country_flag = nobility_influence_3
 			         has_country_flag = church_influence_3
 			   }
 			   NOT = { has_country_modifier = rich_unrest_5 }
@@ -127,16 +127,16 @@ country_event = {
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
-			         has_country_flag = noble_influence_5
+			         has_country_flag = nobility_influence_5
 			         has_country_flag = church_influence_5
-			         has_country_flag = noble_influence_4
+			         has_country_flag = nobility_influence_4
 			         has_country_flag = church_influence_4
-					 has_country_flag = noble_influence_3
+					 has_country_flag = nobility_influence_3
 			         has_country_flag = church_influence_3
 			   }
 			   }
 			   OR = {
-			         has_country_flag = noble_influence_2
+			         has_country_flag = nobility_influence_2
 			         has_country_flag = church_influence_2
 			   }
 			   NOT = { has_country_modifier = rich_unrest_5 }
@@ -172,18 +172,18 @@ country_event = {
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
-			         has_country_flag = noble_influence_5
+			         has_country_flag = nobility_influence_5
 			         has_country_flag = church_influence_5
-			         has_country_flag = noble_influence_4
+			         has_country_flag = nobility_influence_4
 			         has_country_flag = church_influence_4
-					 has_country_flag = noble_influence_3
+					 has_country_flag = nobility_influence_3
 			         has_country_flag = church_influence_3
-                     has_country_flag = noble_influence_2
+                     has_country_flag = nobility_influence_2
 			         has_country_flag = church_influence_2
 			   }
 			   }
 			   OR = {
-			         has_country_flag = noble_influence_1
+			         has_country_flag = nobility_influence_1
 			         has_country_flag = church_influence_1
 			   }
 			   NOT = { has_country_modifier = rich_unrest_5 }
