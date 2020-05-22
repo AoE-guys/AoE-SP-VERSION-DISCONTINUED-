@@ -4,7 +4,7 @@ add_core = OLD
 add_core = DNN
 add_core = GER
 add_core = NNN
-trade_goods = fish  state_building = {  level = 2  building = fish_factory  upgrade = yes  }
-state_building = {  level = 2  building = steamer_shipyard  upgrade = yes  }
-state_building = {  level = 2  building = clipper_shipyard  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
+state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
+state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 40

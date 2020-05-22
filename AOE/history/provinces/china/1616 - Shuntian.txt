@@ -2,8 +2,8 @@ owner = QNG
 controller = QNG
 add_core = QNG
 add_core = CHI
-trade_goods = tea  state_building = {  level = 2  building = tea_factory  upgrade = yes  }
-state_building = {  level = 2  building = clipper_shipyard  upgrade = yes  }
+trade_goods = tea  state_building = {  level = 1  building = tea_factory  upgrade = yes  }
+state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 32
 terrain = peking
 fort = 1

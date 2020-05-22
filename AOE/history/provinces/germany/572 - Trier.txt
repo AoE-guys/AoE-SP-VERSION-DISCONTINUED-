@@ -3,8 +3,8 @@ controller = TRR
 add_core = TRR
 add_core = GER
 add_core = NNN
-trade_goods = iron  state_building = {  level = 2  building = iron_factory  upgrade = yes  }
-state_building = {  level = 2  building = ammunition_factory  upgrade = yes  }
-state_building = {  level = 2  building = small_arms_factory  upgrade = yes  }
-state_building = {  level = 2  building = explosives_factory  upgrade = yes  }
+trade_goods = iron  state_building = {  level = 1  building = iron_factory  upgrade = yes  }
+state_building = {  level = 1  building = ammunition_factory  upgrade = yes  }
+state_building = {  level = 1  building = small_arms_factory  upgrade = yes  }
+state_building = {  level = 1  building = explosives_factory  upgrade = yes  }
 life_rating = 40

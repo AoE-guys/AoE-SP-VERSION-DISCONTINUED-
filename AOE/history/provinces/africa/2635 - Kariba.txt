@@ -2,7 +2,7 @@ owner = MTP
 controller =  MTP
 add_core = MTP
 add_core = ZBW
-trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
-state_building = {  level = 2  building = tobacco_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+state_building = {  level = 1  building = tobacco_factory  upgrade = yes  }
 terrain = dryhills
 life_rating = 10

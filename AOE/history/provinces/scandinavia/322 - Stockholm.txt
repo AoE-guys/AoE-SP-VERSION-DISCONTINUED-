@@ -2,8 +2,8 @@ owner = SWE
 controller = SWE
 add_core = SWE
 add_core = SCA
-trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
-state_building = {  level = 2  building = clipper_shipyard  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
+state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 45
 terrain = stockholm
 naval_base = 1
@@ -22,4 +22,4 @@ state_building = {
 	building = small_arms_factory
 	upgrade = yes
 }
-state_building = {  level = 2  building = cement_factory  upgrade = yes  }
+state_building = {  level = 1  building = cement_factory  upgrade = yes  }

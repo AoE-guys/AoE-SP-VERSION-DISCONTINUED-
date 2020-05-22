@@ -931,7 +931,7 @@ country_event = {
 			}
 			add_province_modifier = { name = negotiated  duration = 12 }
 		}
-		random_country = { 
+		random_coutnry = { 
 		                  limit = { has_country_flag = getting_trade_port }
 		                  country_event = 69423 
 		}

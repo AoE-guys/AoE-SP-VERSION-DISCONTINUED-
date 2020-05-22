@@ -753,26 +753,20 @@ promote_to = {
 		}
 		modifier = {
 			factor = 50
-			literacy = 0.7
-			NOT = { literacy = 0.8 }
-			craftsmen = 0.175
-		}
-		modifier = {
-			factor = 50
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			craftsmen = 0.200
+			craftsmen = 0.175
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			craftsmen = 0.225
+			craftsmen = 0.200
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.99
-			craftsmen = 0.25
+			craftsmen = 0.225
 		}
 		modifier = {
 			factor = -100
@@ -898,60 +892,54 @@ promote_to = {
 			factor = 30
 			military_spending = 0.1
 			NOT = { military_spending = 0.2 }
-			NOT = { soldiers = 0.005 }
+			NOT = { soldiers = 0.006 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.2
 			NOT = { military_spending = 0.3 }
-			NOT = { soldiers = 0.010 }
+			NOT = { soldiers = 0.012 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.3
 			NOT = { military_spending = 0.4 }
-			NOT = { soldiers = 0.015 }
+			NOT = { soldiers = 0.018 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.4
 			NOT = { military_spending = 0.5 }
-			NOT = { soldiers = 0.020 }
+			NOT = { soldiers = 0.024 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.5
 			NOT = { military_spending = 0.6 }
-			NOT = { soldiers = 0.025 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.6
-			NOT = { military_spending = 0.7 }
 			NOT = { soldiers = 0.030 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.7
 			NOT = { military_spending = 0.8 }
-			NOT = { soldiers = 0.035 }
+			NOT = { soldiers = 0.036 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.8
 			NOT = { military_spending = 0.9 }
-			NOT = { soldiers = 0.040 }
+			NOT = { soldiers = 0.042 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.9
 			NOT = { military_spending = 0.99 }
-			NOT = { soldiers = 0.045 }
+			NOT = { soldiers = 0.048 }
 		}
 		modifier = {
 			factor = 30
 			military_spending = 0.99
-			NOT = { soldiers = 0.050 }
+			NOT = { soldiers = 0.054 }
 		} 
 	}
 
@@ -995,15 +983,9 @@ promote_to = {
 		}
 		modifier = {
 			factor = 50
-			literacy = 0.7
-			NOT = { literacy = 0.8 }
-			NOT = { clerks = 0.042 }
-		}
-		modifier = {
-			factor = 50
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			NOT = { clerks = 0.048 }
+			NOT = { clerks = 0.042 }
 		}
 		modifier = {
 			factor = 50

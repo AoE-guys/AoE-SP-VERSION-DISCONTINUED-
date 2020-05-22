@@ -3,6 +3,6 @@ controller = LUA
 add_core = LUA
 add_core = SIA
 add_core = CHK
-trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 33
 terrain = jungle_hills

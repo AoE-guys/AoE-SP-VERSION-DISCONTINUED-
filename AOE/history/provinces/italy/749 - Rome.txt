@@ -2,7 +2,7 @@ owner = PAP
 controller = PAP
 add_core = PAP
 add_core = ITA
-trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 45
 terrain = rome
 naval_base = 1

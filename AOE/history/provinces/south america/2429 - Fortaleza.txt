@@ -2,6 +2,6 @@ owner = PBZ
 controller = PBZ
 add_core = PBZ
 add_core = BRZ
-trade_goods = fish  state_building = {  level = 2  building = fish_factory  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
 terrain = savanna
 life_rating = 35

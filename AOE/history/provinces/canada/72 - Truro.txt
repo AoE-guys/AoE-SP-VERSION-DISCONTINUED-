@@ -2,5 +2,5 @@ owner = FCA
 controller = FCA
 add_core = FCA
 add_core = MRU
-trade_goods = timber  state_building = {  level = 2  building = timber_factory  upgrade = yes  }
+trade_goods = timber  state_building = {  level = 1  building = timber_factory  upgrade = yes  }
 life_rating = 30

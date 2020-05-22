@@ -2,6 +2,6 @@ owner = VLP
 controller = VLP
 add_core = VLP
 add_core = ARC
-trade_goods = fruit  state_building = {  level = 2  building = fruit_factory  upgrade = yes  }
+trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
 terrain = dryhills
 life_rating = 35

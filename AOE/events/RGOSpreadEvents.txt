@@ -354,10 +354,10 @@ province_event = {
 			state_scope = { is_colonial = yes }
 		}
 		
-		#modifier = {
-		#	factor = 2
-		#	state_scope = { has_pop_type = serfs }
-		#}
+		modifier = {
+			factor = 2
+			state_scope = { has_pop_type = serfs }
+		}
 		
 		modifier = {
 			factor = 3
@@ -3701,10 +3701,10 @@ province_event = {
 			average_militancy = 7
 		}
 		
-		#modifier = {
-		#	factor = 2
-		#	state_scope = { has_pop_type = serfs }
-		#}
+		modifier = {
+			factor = 2
+			state_scope = { has_pop_type = serfs }
+		}
 		
 		modifier = {
 			factor = 8
@@ -4093,10 +4093,10 @@ province_event = {
 			average_militancy = 7
 		}
 		
-		#modifier = {
-		#	factor = 2
-		#	state_scope = { has_pop_type = serfs }
-		#}
+		modifier = {
+			factor = 2
+			state_scope = { has_pop_type = serfs }
+		}
 		
 		modifier = {
 			factor = 8

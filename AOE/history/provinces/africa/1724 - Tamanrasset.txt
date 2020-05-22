@@ -2,6 +2,6 @@ owner = SCO
 controller = SCO
 add_core = ENG
 add_core = SCO
-trade_goods = wool  state_building = {  level = 2  building = wool_factory  upgrade = yes  }
+trade_goods = wool  state_building = {  level = 1  building = wool_factory  upgrade = yes  }
 terrain = small_island
 life_rating = 30

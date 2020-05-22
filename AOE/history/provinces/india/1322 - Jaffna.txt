@@ -2,7 +2,7 @@ owner = NET
 controller = NET
 add_core = MUG
 add_core = SRI
-trade_goods = coffee  state_building = {  level = 2  building = coffee_factory  upgrade = yes  }
+trade_goods = coffee  state_building = {  level = 1  building = coffee_factory  upgrade = yes  }
 life_rating = 33
 
 terrain = jungle_farmland

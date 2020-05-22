@@ -1,653 +1,644 @@
 #general promote mtth, same for all pops
 promotion_chance = {
-	factor = 1	
+	factor = 0.25	
+	
+		group = {
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.1
+			 luxury_needs = 0.25
+			}
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.2
+			 luxury_needs = 0.25
+			}
+			literacy = 0.10
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.3
+			 luxury_needs = 0.25
+			}
+			literacy = 0.20
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.4
+			 luxury_needs = 0.25
+			}
+			literacy = 0.30
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.5
+			 luxury_needs = 0.25
+			}
+			literacy = 0.40
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.6
+			 luxury_needs = 0.25
+			}
+			literacy = 0.50
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.7
+			 luxury_needs = 0.25
+			}
+		    literacy = 0.60
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.8
+			 luxury_needs = 0.25
+			}
+			literacy = 0.70
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.9
+			 luxury_needs = 0.25
+			}
+			literacy = 0.80
+			strata = poor
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+			 everyday_needs = 0.99
+			 luxury_needs = 0.25
+			}
+			literacy = 0.90
+			strata = poor
+		}
+		}		
+	
+	group = {
+		modifier = {
+			factor = 0.02
+			literacy = 0.05
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.1
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.2
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.3
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.7
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.8
+		}
+		modifier = {
+			factor = 0.02
+			literacy = 0.9
+		}
+	}
+		
+	modifier = {
+		factor = -1
+		strata = rich
+	}
+
+	group = {
+		modifier = {
+			factor = -0.05
+			militancy = 7
+		}
+		modifier = {
+			factor = -0.05
+			militancy = 8
+		}
+		modifier = {
+			factor = -0.05
+			militancy = 9
+		}
+	}
+
+	group = {
+		modifier = {
+			factor = 0.1
+			life_needs = 0.7
+			strata = poor
+		}
+		modifier = {
+			factor = 0.1
+			life_needs = 0.8 
+		}
+		modifier = {
+			factor = 0.1
+			life_needs = 0.9
+		}
+	}
 
 	modifier = {
-		factor = 100
-		always = yes
-	}	
-#		group = {
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.1
-#			 luxury_needs = 0.25
-#			}
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.2
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.10
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.3
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.20
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.4
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.30
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.5
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.40
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.6
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.50
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.7
-#			 luxury_needs = 0.25
-#			}
-#		    literacy = 0.60
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.8
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.70
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.9
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.80
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.10
-#			OR = {
-#			 everyday_needs = 0.99
-#			 luxury_needs = 0.25
-#			}
-#			literacy = 0.90
-#			strata = poor
-#		}
-#		}		
-#	
-#	group = {
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.05
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.1
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.2
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.3
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.4
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.5
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.6
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.7
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.8
-#		}
-#		modifier = {
-#			factor = 0.02
-#			literacy = 0.9
-#		}
-#	}
-#		
-#	modifier = {
-#		factor = -1
-#		strata = rich
-#	}
-#
-#	group = {
-#		modifier = {
-#			factor = -0.05
-#			militancy = 7
-#		}
-#		modifier = {
-#			factor = -0.05
-#			militancy = 8
-#		}
-#		modifier = {
-#			factor = -0.05
-#			militancy = 9
-#		}
-#	}
-#
-#	group = {
-#		modifier = {
-#			factor = 0.1
-#			life_needs = 0.7
-#			strata = poor
-#		}
-#		modifier = {
-#			factor = 0.1
-#			life_needs = 0.8 
-#		}
-#		modifier = {
-#			factor = 0.1
-#			life_needs = 0.9
-#		}
-#	}
-#
-#	modifier = {
-#		factor = -0.1
-#		is_state_religion = no
-#	}
-#	
-#	modifier = {
-#		factor = -0.1
-#		is_primary_culture = no
-#		is_accepted_culture = no
-#		state_scope = { is_colonial = yes }
-#		country = {
-#			NOT = { colonial_policy = settlement }
-#		}
-#	}
-#	
-#	modifier = {
-#		factor = 0.15
-#		OR = {
-#			is_primary_culture = yes
-#			is_accepted_culture = yes
-#		}
-#		state_scope = { 
-#			is_colonial = yes 
-#			total_pops = 55000
-#		}
-#		country = { colonial_policy = settlement }
-#	}
-#	
-#	
-#	modifier = {
-#		factor = -0.1
-#		not = { culture = this }
-#	}
-#	
-#	modifier = {
-#		factor = -0.1
-#		country = { 
-#			OR = {
-#				slavery = yes_slavery 
-#				slavery = freedom_of_womb
-#				debt_law = serfdom
-#			}
-#		}
-#	}
-#	
-#	modifier = {
-#		factor = -0.05
-#		state_scope = { is_slave = yes }
-#	}
-#	
-#	modifier = {
-#		factor = -1
-#		location = { NOT = { controlled_by = owner } }
-#	}
-#	
-#	modifier = {
-#		factor = 1.0
-#		state_scope = { is_colonial = yes }
-#		country = {
-#			colonial_policy = settlement
-#			primary_culture = russian
-#		}
-#		location = { 
-#			is_colonial = yes 
-#			is_overseas = no
-#			NOT = { is_core = THIS }
-#			NOT = { is_core = CRI }
-#			total_pops = 55000
-#			culture = russian
-#		}
-#		year = 1860
-#	}
-#	
-#	modifier = {
-#		factor = 1.5
-#		state_scope = { is_colonial = yes }
-#		country = {
-#			colonial_policy = settlement
-#			primary_culture = russian
-#		}
-#		location = { 
-#			is_colonial = yes 
-#			OR = { 
-#				NOT = { is_core = THIS }
-#				state_id = 1086
-#			}
-#			NOT = { is_core = CRI }
-#			total_pops = 75000
-#			culture = russian
-#		}
-#		year = 1860
-#	}
-#	
-#	modifier = {
-#		factor = 2.5
-#		state_scope = { is_colonial = yes }
-#		country = {
-#			colonial_policy = settlement
-#			primary_culture = russian
-#		}
-#		location = { 
-#			is_colonial = yes 
-#			OR = { 
-#				NOT = { is_core = THIS }
-#				state_id = 1086
-#			}
-#			NOT = { is_core = CRI }
-#			total_pops = 125000
-#			culture = russian
-#		}
-#		year = 1880
-#	}
-#	
-#	modifier = {
-#		factor = 1
-#		OR = {
-#			is_accepted_culture = yes
-#			is_primary_culture = yes
-#		}
-#		state_scope = { is_colonial = yes }
-#		country = {
-#			colonial_policy = settlement
-#			primary_culture = russian
-#		}
-#		location = {
-#			is_colonial = yes 
-#			NOT = { is_core = THIS }
-#			NOT = { is_core = CRI }
-#			total_pops = 25000
-#			or = {
-#				continent = africa
-#				continent = west_africa
-#				continent = central_africa
-#				continent = east_africa
-#				continent = south_west_africa
-#			}
-#			culture = russian
-#		}
-#	}
-#	
-#	modifier = {
-#		factor = 0.5
-#		strata = poor
-#		OR = {
-#			is_primary_culture = yes
-#			is_accepted_culture = yes
-#		}
-#		location = { 
-#			OR = { 
-#				state_id = 1086
-#				state_id = 1643
-#			}
-#		}
-#		state_scope = { 
-#			is_colonial = yes 
-#			total_pops = 155000
-#		}
-#		country = { colonial_policy = settlement }
-#	}
-#	
-#	modifier = {
-#		factor = 0.2
-#		OR = {
-#			is_accepted_culture = yes
-#			is_primary_culture = yes
-#		}
-#		location = {
-#			is_colonial = yes
-#			is_core = ALD
-#			OR = { 
-#				is_core = FRA
-#				is_core = BOR
-#			}
-#		}
-#		country = { primary_culture = french }
-#	}
+		factor = -0.1
+		is_state_religion = no
+	}
+	
+	modifier = {
+		factor = -0.1
+		is_primary_culture = no
+		is_accepted_culture = no
+		state_scope = { is_colonial = yes }
+		country = {
+			NOT = { colonial_policy = settlement }
+		}
+	}
+	
+	modifier = {
+		factor = 0.15
+		OR = {
+			is_primary_culture = yes
+			is_accepted_culture = yes
+		}
+		state_scope = { 
+			is_colonial = yes 
+			total_pops = 55000
+		}
+		country = { colonial_policy = settlement }
+	}
+	
+	
+	modifier = {
+		factor = -0.1
+		not = { culture = this }
+	}
+	
+	modifier = {
+		factor = -0.1
+		country = { 
+			OR = {
+				slavery = yes_slavery 
+				slavery = freedom_of_womb
+				debt_law = serfdom
+			}
+		}
+	}
+	
+	modifier = {
+		factor = -0.05
+		state_scope = { is_slave = yes }
+	}
+	
+	modifier = {
+		factor = -1
+		location = { NOT = { controlled_by = owner } }
+	}
+	
+	modifier = {
+		factor = 1.0
+		state_scope = { is_colonial = yes }
+		country = {
+			colonial_policy = settlement
+			primary_culture = russian
+		}
+		location = { 
+			is_colonial = yes 
+			is_overseas = no
+			NOT = { is_core = THIS }
+			NOT = { is_core = CRI }
+			total_pops = 55000
+			culture = russian
+		}
+		year = 1860
+	}
+	
+	modifier = {
+		factor = 1.5
+		state_scope = { is_colonial = yes }
+		country = {
+			colonial_policy = settlement
+			primary_culture = russian
+		}
+		location = { 
+			is_colonial = yes 
+			OR = { 
+				NOT = { is_core = THIS }
+				state_id = 1086
+			}
+			NOT = { is_core = CRI }
+			total_pops = 75000
+			culture = russian
+		}
+		year = 1860
+	}
+	
+	modifier = {
+		factor = 2.5
+		state_scope = { is_colonial = yes }
+		country = {
+			colonial_policy = settlement
+			primary_culture = russian
+		}
+		location = { 
+			is_colonial = yes 
+			OR = { 
+				NOT = { is_core = THIS }
+				state_id = 1086
+			}
+			NOT = { is_core = CRI }
+			total_pops = 125000
+			culture = russian
+		}
+		year = 1880
+	}
+	
+	modifier = {
+		factor = 1
+		OR = {
+			is_accepted_culture = yes
+			is_primary_culture = yes
+		}
+		state_scope = { is_colonial = yes }
+		country = {
+			colonial_policy = settlement
+			primary_culture = russian
+		}
+		location = {
+			is_colonial = yes 
+			NOT = { is_core = THIS }
+			NOT = { is_core = CRI }
+			total_pops = 25000
+			or = {
+				continent = africa
+				continent = west_africa
+				continent = central_africa
+				continent = east_africa
+				continent = south_west_africa
+			}
+			culture = russian
+		}
+	}
+	
+	modifier = {
+		factor = 0.5
+		strata = poor
+		OR = {
+			is_primary_culture = yes
+			is_accepted_culture = yes
+		}
+		location = { 
+			OR = { 
+				state_id = 1086
+				state_id = 1643
+			}
+		}
+		state_scope = { 
+			is_colonial = yes 
+			total_pops = 155000
+		}
+		country = { colonial_policy = settlement }
+	}
+	
+	modifier = {
+		factor = 0.2
+		OR = {
+			is_accepted_culture = yes
+			is_primary_culture = yes
+		}
+		location = {
+			is_colonial = yes
+			is_core = ALD
+			OR = { 
+				is_core = FRA
+				is_core = BOR
+			}
+		}
+		country = { primary_culture = french }
+	}
 }
 
 demotion_chance = {
 	factor = 1
 
-	modifier = {
-		factor = 100
-		always = yes
+	group = {
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.99 }
+			NOT = { luxury_needs = 0.25 }
+			type = farmers
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.9 }
+			NOT = { luxury_needs = 0.25 }
+			type = farmers
+			literacy = 0.10	
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.8 }
+			NOT = { luxury_needs = 0.25 }
+			location = { controlled_by = owner }
+			type = farmers
+			literacy = 0.20
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.7 }
+			NOT = { luxury_needs = 0.25 }
+			location = { controlled_by = owner }
+			type = farmers
+			literacy = 0.30
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.6 }
+			NOT = { luxury_needs = 0.25 }
+			location = { controlled_by = owner }
+			type = farmers 
+			literacy = 0.40
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.5 }
+			NOT = { luxury_needs = 0.25 }
+			NOT = { OR = { type = craftsmen  type = clerks } }
+			location = { controlled_by = owner }
+			type = farmers 
+			literacy = 0.50
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.4 }
+			NOT = { luxury_needs = 0.25 }
+			NOT = { OR = { type = craftsmen  type = clerks } }
+			location = { controlled_by = owner }
+			type = farmers 
+			literacy = 0.60
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.3 }
+			NOT = { luxury_needs = 0.25 }
+			NOT = { OR = { type = craftsmen  type = clerks } }
+			location = { controlled_by = owner }
+			type = farmers 
+			literacy = 0.70
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.2 }
+			NOT = { luxury_needs = 0.25 }
+			NOT = { OR = { type = craftsmen  type = clerks } }
+			location = { controlled_by = owner }
+			type = farmers 
+			literacy = 0.80
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { everyday_needs = 0.1 }
+			NOT = { luxury_needs = 0.25 }
+			NOT = { OR = { type = craftsmen  type = clerks } }
+			location = { controlled_by = owner }
+			type = farmers
+			literacy = 0.90
+		}
 	}	
-#	
-#	group = {
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.99 }
-#			NOT = { luxury_needs = 0.25 }
-#			type = farmers
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.9 }
-#			NOT = { luxury_needs = 0.25 }
-#			type = farmers
-#			literacy = 0.10	
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.8 }
-#			NOT = { luxury_needs = 0.25 }
-#			location = { controlled_by = owner }
-#			type = farmers
-#			literacy = 0.20
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.7 }
-#			NOT = { luxury_needs = 0.25 }
-#			location = { controlled_by = owner }
-#			type = farmers
-#			literacy = 0.30
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.6 }
-#			NOT = { luxury_needs = 0.25 }
-#			location = { controlled_by = owner }
-#			type = farmers 
-#			literacy = 0.40
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.5 }
-#			NOT = { luxury_needs = 0.25 }
-#			#NOT = { OR = { type = craftsmen  type = clerks } }
-#			location = { controlled_by = owner }
-#			type = farmers 
-#			literacy = 0.50
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.4 }
-#			NOT = { luxury_needs = 0.25 }
-#			#NOT = { OR = { type = craftsmen  type = clerks } }
-#			location = { controlled_by = owner }
-#			type = farmers 
-#			literacy = 0.60
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.3 }
-#			NOT = { luxury_needs = 0.25 }
-#			#NOT = { OR = { type = craftsmen  type = clerks } }
-#			location = { controlled_by = owner }
-#			type = farmers 
-#			literacy = 0.70
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.2 }
-#			NOT = { luxury_needs = 0.25 }
-#			#NOT = { OR = { type = craftsmen  type = clerks } }
-#			location = { controlled_by = owner }
-#			type = farmers 
-#			literacy = 0.80
-#		}
-#		modifier = {
-#			factor = 0.05
-#			NOT = { everyday_needs = 0.1 }
-#			NOT = { luxury_needs = 0.25 }
-#			#NOT = { OR = { type = craftsmen  type = clerks } }
-#			location = { controlled_by = owner }
-#			type = farmers
-#			literacy = 0.90
-#		}
-#	}	
-#	
-#	modifier = {
-#		factor = -0.1
-#		country = { 
-#			OR = {
-#				slavery = yes_slavery
-#				slavery = freedom_of_womb
-#				debt_law = serfdom
-#			}
-#		}
-#	}
-#	
-#	group = {
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.9 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.8 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.7 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.6 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.5 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.4 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.3 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.2 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.15 }
-#		}
-#		modifier = {
-#			factor = -0.02
-#			not = { literacy = 0.1 }
-#		}
-#	}
-#
-#	group = {
-#		modifier = {
-#			factor = 0.1
-#			not = { life_needs = 0.9 }
-#		}
-#		modifier = {
-#			factor = 0.1
-#			not = { life_needs = 0.8 }
-#		}
-#		modifier = {
-#			factor = 0.1
-#			not = { life_needs = 0.7 }
-#		}
-#	}
-#
-#
-#	group = {
-#		modifier = {
-#			factor = 0.1
-#			not = { luxury_needs = 0.9 }
-#		}
-#		modifier = {
-#			factor = 0.1
-#			not = { luxury_needs = 0.4 }
-#		}
-#	}
-#		
-#	group = {
-#		modifier = {
-#			factor = -0.1
-#			everyday_needs = 0.7
-#			strata = middle
-#			state_scope = { is_colonial = no }
-#		}
-#		modifier = {
-#			factor = -0.1
-#			everyday_needs = 0.8 
-#			strata = middle
-#			state_scope = { is_colonial = no }
-#		}
-#		modifier = {
-#			factor = -0.1
-#			everyday_needs = 0.9
-#			strata = middle
-#			state_scope = { is_colonial = no }
-#		}
-#	}
-#	group = {
-#		modifier = {
-#			factor = 0.5
-#			not = { life_needs = 0.3 }
-#			strata = middle
-#		}
-#		modifier = {
-#			factor = 0.5
-#			not = { life_needs = 0.2 }
-#			strata = middle
-#		}
-#		modifier = {
-#			factor = 0.5
-#			not = { life_needs = 0.1 }
-#			strata = middle
-#		}
-#	}
-#	
-#	group = {
-#		modifier = {
-#			factor = 0.1
-#			unemployment = 0.1
-#		}
-#		modifier = {
-#			factor = 0.1
-#			unemployment = 0.2
-#		}
-#		modifier = {
-#			factor = 0.5
-#			unemployment = 0.3
-#			location = { controlled_by = owner }
-#		}
-#	}
-#	
-#	modifier = {
-#		factor = -0.05
-#		state_scope = { is_slave = yes }
-#	}
-#	
-#	modifier = {
-#		factor = -0.1
-#		is_state_religion = no
-#		strata = poor
-#	}
-#	
-#	modifier = {
-#		factor = -0.1
-#		not = { culture = this }
-#		strata = poor
-#	}
-#	
-#	modifier = {
-#		factor = -0.1
-#		not = { consciousness = 4 }
-#		strata = poor
-#	}
-#	
-#	modifier = {
-#		factor = -0.1
-#		state_scope = { is_colonial = yes }
-#		strata = poor
-#	}
-#	
-#	modifier = {
-#		factor = 0.5
-#		strata = middle
-#		state_scope = { is_colonial = yes }
-#		not = { culture = this }			
-#	}
-#	
-#	modifier = {
-#		factor = 0.2
-#		not = { life_needs = 0.1 }
-#		strata = middle
-#	}
-#	
-#	modifier = {
-#		factor = -0.5
-#		strata = rich
-#		OR = { 
-#			is_accepted_culture = yes
-#			is_primary_culture = yes
-#		}
-#		state_scope = { is_colonial = yes }
-#	}
-#	
-#	modifier = {
-#		factor = 0.5
-#		strata = rich
-#		is_accepted_culture = no
-#		is_primary_culture = no
-#		state_scope = { is_colonial = yes }
-#		country = { colonial_policy = settlement }
-#	}
-#	
-#	modifier = {
-#		factor = -100
-#		location = { NOT = { controlled_by = owner } }
-#	}
+	
+	modifier = {
+		factor = -0.1
+		country = { 
+			OR = {
+				slavery = yes_slavery
+				slavery = freedom_of_womb
+				debt_law = serfdom
+			}
+		}
+	}
+	
+	group = {
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.9 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.8 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.7 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.15 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.1 }
+		}
+	}
+
+	group = {
+		modifier = {
+			factor = 0.1
+			not = { life_needs = 0.9 }
+		}
+		modifier = {
+			factor = 0.1
+			not = { life_needs = 0.8 }
+		}
+		modifier = {
+			factor = 0.1
+			not = { life_needs = 0.7 }
+		}
+	}
+
+
+	group = {
+		modifier = {
+			factor = 0.1
+			not = { luxury_needs = 0.9 }
+		}
+		modifier = {
+			factor = 0.1
+			not = { luxury_needs = 0.4 }
+		}
+	}
+		
+	group = {
+		modifier = {
+			factor = -0.1
+			everyday_needs = 0.7
+			strata = middle
+			state_scope = { is_colonial = no }
+		}
+		modifier = {
+			factor = -0.1
+			everyday_needs = 0.8 
+			strata = middle
+			state_scope = { is_colonial = no }
+		}
+		modifier = {
+			factor = -0.1
+			everyday_needs = 0.9
+			strata = middle
+			state_scope = { is_colonial = no }
+		}
+	}
+	group = {
+		modifier = {
+			factor = 0.5
+			not = { life_needs = 0.3 }
+			strata = middle
+		}
+		modifier = {
+			factor = 0.5
+			not = { life_needs = 0.2 }
+			strata = middle
+		}
+		modifier = {
+			factor = 0.5
+			not = { life_needs = 0.1 }
+			strata = middle
+		}
+	}
+	
+	group = {
+		modifier = {
+			factor = 0.1
+			unemployment = 0.1
+		}
+		modifier = {
+			factor = 0.1
+			unemployment = 0.2
+		}
+		modifier = {
+			factor = 0.5
+			unemployment = 0.3
+			location = { controlled_by = owner }
+		}
+	}
+	
+	modifier = {
+		factor = -0.05
+		state_scope = { is_slave = yes }
+	}
+	
+	modifier = {
+		factor = -0.1
+		is_state_religion = no
+		strata = poor
+	}
+	
+	modifier = {
+		factor = -0.1
+		not = { culture = this }
+		strata = poor
+	}
+	
+	modifier = {
+		factor = -0.1
+		not = { consciousness = 4 }
+		strata = poor
+	}
+	
+	modifier = {
+		factor = -0.1
+		state_scope = { is_colonial = yes }
+		strata = poor
+	}
+	
+	modifier = {
+		factor = 0.5
+		strata = middle
+		state_scope = { is_colonial = yes }
+		not = { culture = this }			
+	}
+	
+	modifier = {
+		factor = 0.2
+		not = { life_needs = 0.1 }
+		strata = middle
+	}
+	
+	modifier = {
+		factor = -0.5
+		strata = rich
+		OR = { 
+			is_accepted_culture = yes
+			is_primary_culture = yes
+		}
+		state_scope = { is_colonial = yes }
+	}
+	
+	modifier = {
+		factor = 0.5
+		strata = rich
+		is_accepted_culture = no
+		is_primary_culture = no
+		state_scope = { is_colonial = yes }
+		country = { colonial_policy = settlement }
+	}
+	
+	modifier = {
+		factor = -100
+		location = { NOT = { controlled_by = owner } }
+	}
 }
 
 #general migration chance mtth, same for all pops

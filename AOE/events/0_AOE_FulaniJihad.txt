@@ -164,6 +164,15 @@ country_event = {
 		name = "Sokoto has invaded and integrated us"
 			1947 = { secede_province = SOK }
 	}
+	option = {
+		name = "We will resist the Sokoto"
+		war = {
+			target = SOK
+			attacker_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = acquire_all_cores }
+			call_ally = no
+		}
+	}
 }
 
 country_event = {

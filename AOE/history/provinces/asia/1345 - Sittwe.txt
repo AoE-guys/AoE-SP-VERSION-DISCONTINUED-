@@ -2,7 +2,7 @@ owner = ARK
 controller = ARK
 add_core = ARK
 add_core = BUR
-trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 35
 
 terrain = jungle_hills

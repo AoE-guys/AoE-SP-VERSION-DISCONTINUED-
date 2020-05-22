@@ -1,6 +1,6 @@
 owner = FCA
 controller = FCA
 add_core = FCA
-trade_goods = fish  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
-state_building = {  level = 2  building = steamer_shipyard  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
 life_rating = 35

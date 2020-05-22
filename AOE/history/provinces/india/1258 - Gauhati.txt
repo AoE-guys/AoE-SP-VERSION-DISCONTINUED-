@@ -3,7 +3,7 @@ controller = ASM
 add_core = AHO
 add_core = HND
 add_core = ASM
-trade_goods = fish  state_building = {  level = 2  building = fish_factory  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
 life_rating = 32
 
 terrain = jungle_hills

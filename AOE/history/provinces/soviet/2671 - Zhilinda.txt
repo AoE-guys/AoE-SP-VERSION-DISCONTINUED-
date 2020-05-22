@@ -4,8 +4,8 @@ add_core = RUS
 add_core = BRY
 add_core = KAM
 add_core = MGL
-trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
-state_building = {  level = 2  building = barrel_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+state_building = {  level = 1  building = barrel_factory  upgrade = yes  }
 life_rating = 35
 terrain = hills
 
