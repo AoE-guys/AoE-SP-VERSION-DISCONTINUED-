@@ -6086,10 +6086,10 @@ pearl_of_the_antilles = {
 
 trade_centre = {
 	icon = 11
-	goods_demand = 0.2
+	#goods_demand = 0.2
 	immigrant_attract = 0.25
-	local_factory_throughput = 0.2
-	tariff_efficiency_modifier = 0.25
+	local_factory_throughput = 0.25
+	tariff_efficiency_modifier = 0.01
 }
 
 potential_trade_post = {
