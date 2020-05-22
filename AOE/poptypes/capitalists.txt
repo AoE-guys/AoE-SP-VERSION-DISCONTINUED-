@@ -1,7 +1,7 @@
 sprite = 4
 color = { 18 129 10 }
 strata = rich
-state_capital_only = yes
+#state_capital_only = yes
 
 demote_migrant = yes
 can_build = yes
@@ -683,54 +683,60 @@ promote_to =
 			factor = 20
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			capitalists = 0.005
+			capitalists = 0.004
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			capitalists = 0.010
+			capitalists = 0.008
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			capitalists = 0.015
+			capitalists = 0.012
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			capitalists = 0.020
+			capitalists = 0.016
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.5
 			NOT = { literacy = 0.5 }
-			capitalists = 0.025
+			capitalists = 0.020
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			capitalists = 0.030
+			capitalists = 0.024
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			capitalists = 0.028
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			capitalists = 0.035
+			capitalists = 0.032
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			capitalists = 0.040
+			capitalists = 0.036
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.99
-			capitalists = 0.045
+			capitalists = 0.040
 		}  
 	}
 	officers = {
