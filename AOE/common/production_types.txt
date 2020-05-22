@@ -188,7 +188,7 @@ grain_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = grain
-	value = 20
+	value = 24
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -201,7 +201,7 @@ cotton_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = cotton
-	value = 2.0
+	value = 2.4
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -214,7 +214,7 @@ dye2_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = dye
-	value = 0.22
+	value = 1.00
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -227,7 +227,7 @@ wool_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = wool
-	value = 4.8
+	value = 5.76
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -240,7 +240,7 @@ silk_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = silk
-	value = 2.25
+	value = 2.7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -253,7 +253,7 @@ coal_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = coal
-	value = 3.2
+	value = 3.84
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -266,7 +266,7 @@ sulphur_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = sulphur
-	value = 3.2
+	value = 3.84
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -279,7 +279,7 @@ iron_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = iron
-	value = 3.0
+	value = 3.6
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -292,7 +292,7 @@ timber_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = timber
-	value = 8
+	value = 9.6
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
 		value = -9.50
@@ -305,7 +305,7 @@ tropical_wood_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = tropical_wood
-	value = 4
+	value = 4.8
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
 		value = -9.50
@@ -318,7 +318,7 @@ rubber_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = rubber
-	value = 0.75
+	value = 0.9
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -331,7 +331,7 @@ oil_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = oil
-	value = 1
+	value = 1.2
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -344,7 +344,7 @@ cattle_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = cattle
-	value = 20
+	value = 24
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -357,7 +357,7 @@ fish_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = fish
-	value = 5
+	value = 6
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
 		value = -9.50
@@ -370,7 +370,7 @@ fruit_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = fruit
-	value = 5.0
+	value = 6.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -383,7 +383,7 @@ tobacco_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = tobacco
-	value = 2
+	value = 2.4
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -396,7 +396,7 @@ tea_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = tea
-	value = 1.75
+	value = 2.1
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -409,7 +409,7 @@ coffee_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = coffee
-	value = 1.5
+	value = 1.8
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -422,7 +422,7 @@ opium_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = opium
-	value = 0.7
+	value = 0.84
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -853,7 +853,7 @@ dye_factory = {
 		coal = 9   		#20.7	total input+maint = Used to be 24.7 now 30.7
 	}
 	output_goods = dye 
-	value = 3.5			#Used to be 30 (2.5) now 36
+	value = 14.0			#Used to be 30 (2.5) now 36
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.25
@@ -991,11 +991,11 @@ RGO_template_farmers = {
 	}
 		
 	employees = {
-		{
-			poptype = farmers 
-			effect = throughput
-			amount = 1
-		}
+		#{
+		#	poptype = farmers 
+		#	effect = throughput
+		#	amount = 1
+		#}
 		
 		{
 			poptype = serfs 
@@ -1012,7 +1012,7 @@ RGO_template_farmers = {
 	}
 	
 	type = rgo
-	workforce = 60000
+	workforce = 6000
 }
 
 RGO_template_labourers = {
@@ -1022,11 +1022,11 @@ RGO_template_labourers = {
 	}
 		
 	employees = {
-		{ 
-			poptype = farmers 
-			effect = throughput
-			amount = 1
-		}
+		#{ 
+		#	poptype = farmers 
+		#	effect = throughput
+		#	amount = 1
+		#}
 		
 		{
 			poptype = serfs 
@@ -1127,14 +1127,14 @@ orchard = {
 precious_metal_mine = {
 	template = RGO_template_labourers
 	output_goods = precious_metal 
-	value = 30
+	value = 3.0
 	farm = yes
 }
 
 precious_goods_market = {
 	template = RGO_template_labourers
 	output_goods = precious_goods
-	value = 10
+	value = 1.0
 	farm = yes
 	#mine = yes
 }
