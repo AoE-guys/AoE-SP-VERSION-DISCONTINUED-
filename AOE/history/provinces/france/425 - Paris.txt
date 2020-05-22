@@ -1,7 +1,7 @@
 owner = BOR
 controller = BOR
 add_core = BOR
-trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
 life_rating = 40
 terrain = paris
 state_building = {
@@ -19,4 +19,4 @@ state_building = {
 	building = liquor_distillery
 	upgrade = yes
 }
-state_building = {  level = 1  building = ammunition_factory  upgrade = yes  }
+state_building = {  level = 2  building = ammunition_factory  upgrade = yes  }

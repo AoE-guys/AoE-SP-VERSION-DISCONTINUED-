@@ -2,6 +2,6 @@ owner = BRD
 controller = BRD
 add_core = BRD
 add_core = RWA
-trade_goods = coffee  state_building = {  level = 1  building = coffee_factory  upgrade = yes  }
+trade_goods = coffee  state_building = {  level = 2  building = coffee_factory  upgrade = yes  }
 terrain = montane_forest
 life_rating = 10

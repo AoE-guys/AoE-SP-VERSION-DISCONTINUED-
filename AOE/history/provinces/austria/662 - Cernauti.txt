@@ -4,6 +4,6 @@ add_core = ROM
 add_core = RUT
 add_core = MOL
 add_core = BKV
-trade_goods = coal  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
-state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 2  building = fruit_factory  upgrade = yes  }
+state_building = {  level = 2  building = steamer_shipyard  upgrade = yes  }
 life_rating = 35

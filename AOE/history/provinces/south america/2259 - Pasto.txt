@@ -2,6 +2,6 @@ owner = VNG
 controller = VNG
 add_core = VNG
 add_core = CLM
-trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
+trade_goods = cattle  state_building = {  level = 2  building = cattle_factory  upgrade = yes  }
 terrain = montane_forest
 life_rating = 32

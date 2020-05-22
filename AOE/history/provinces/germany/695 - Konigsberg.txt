@@ -2,8 +2,8 @@ owner = PRU
 controller = PRU
 add_core = PRU
 add_core = GER
-trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
-state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
+trade_goods = cattle  state_building = {  level = 2  building = cattle_factory  upgrade = yes  }
+state_building = {  level = 2  building = clipper_shipyard  upgrade = yes  }
 life_rating = 40
 terrain = konigsberg
 fort = 1

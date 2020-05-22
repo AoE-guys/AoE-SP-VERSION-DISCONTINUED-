@@ -17,17 +17,11 @@ country_event = {
 			who = KOK
 			value = 200
 		}
-		1190 = {
-			add_core = DZN
-		}
 		prestige = -15
 	}
 	
 	option = {
 		name = "We must fight to defend our territories against the Mongol barbarians!"
-		1190 = {
-			add_core = DZN
-		}
 		war = {
 			target = DZN
 			attacker_goal = { casus_belli = status_quo }
@@ -49,11 +43,6 @@ country_event = {
 	trigger = {
 		tag = DZN
 		year = 1717
-		NOT = {
-			1587 = {
-				owned_by = DZN
-			}
-		}
 	}
 	
 	mean_time_to_happen = {

@@ -2,6 +2,6 @@ owner = HAD
 controller = HAD
 add_core = HAD
 add_core = SOK
-trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
 terrain = semidesert
 life_rating = 35

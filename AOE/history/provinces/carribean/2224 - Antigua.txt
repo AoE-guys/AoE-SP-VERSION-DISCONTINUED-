@@ -1,7 +1,7 @@
 owner = ENG
 controller = ENG
-trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
-state_building = {  level = 1  building = radio_factory  upgrade = yes  }
+trade_goods = fruit  state_building = {  level = 2  building = fruit_factory  upgrade = yes  }
+state_building = {  level = 2  building = radio_factory  upgrade = yes  }
 life_rating = 35
 #colonial = 2
 naval_base = 1

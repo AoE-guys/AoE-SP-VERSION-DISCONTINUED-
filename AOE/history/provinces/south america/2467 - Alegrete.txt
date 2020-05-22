@@ -3,7 +3,7 @@ controller = VLP
 add_core = VLP
 add_core = RGS
 add_core = BRZ
-trade_goods = grain  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 2  building = cattle_factory  upgrade = yes  }
 life_rating = 35
 1860.1.1 = {
 	owner = BRZ

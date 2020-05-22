@@ -2,7 +2,7 @@ owner = SWE
 controller = SWE
 add_core = SWE
 add_core = LAT
-trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 2  building = fish_factory  upgrade = yes  }
 life_rating = 40
 terrain = riga
 naval_base = 2

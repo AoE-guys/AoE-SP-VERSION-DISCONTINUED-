@@ -2,7 +2,7 @@ owner = PLC
 controller = PLC
 add_core = PLC
 add_core = POL
-trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
-state_building = {  level = 1  building = ammunition_factory  upgrade = yes  }
+trade_goods = cattle  state_building = {  level = 2  building = cattle_factory  upgrade = yes  }
+state_building = {  level = 2  building = ammunition_factory  upgrade = yes  }
 life_rating = 40
 terrain = warsaw

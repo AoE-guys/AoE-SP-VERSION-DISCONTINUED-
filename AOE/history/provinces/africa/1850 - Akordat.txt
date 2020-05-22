@@ -2,6 +2,6 @@ owner = ETH
 controller = ETH
 add_core = ETH
 add_core = TIG
-trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
+trade_goods = fruit  state_building = {  level = 2  building = fruit_factory  upgrade = yes  }
 terrain = semidesert
 life_rating = 32

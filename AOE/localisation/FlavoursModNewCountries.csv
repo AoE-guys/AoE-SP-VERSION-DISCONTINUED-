@@ -259,7 +259,7 @@ BLZ_colonial_company;British Honduras;;;;;;;;;;;;;x,
 BLZ_dominion;British Honduras;;;;;;;;;;;;;x,
 MGL_colonial_company;Wai Menggu;;;;;;;;;;;;;x,
 MGL_theocracy;Bogd Khaanate;;;;;;;;;;;;;x,
-MGL_french_bourbon;Mongolian People's Republic;;;;;;;;;;;;;x,
+MGL_proletarian_dictatorship;Mongolian People's Republic;;;;;;;;;;;;;x,
 ALS_colonial_company;Elsass-Lothringen;;;;;;;;;;;;;x,
 ALS_dominion;Elsass-Lothringen;;;;;;;;;;;;;x,
 MCK_absolute_monarchy;Manchukuo;;;;;;;;;x;;;;;;;;
@@ -280,9 +280,9 @@ SIA_communist;Communist Party of Thailand;;;;;;;;;;;;;x,
 SIA_conservative;Ratchawong Chakkri;;;;;;;;;;;;;x,
 SIA_liberal;Ratchawong Chakkri;;;;;;;;;;;;;x,
 SPA_democracy;The Spanish Republic;;;;;;;;;;;;;x,
-SPA_french_bourbon;The Spanish Republic;;;;;;;;;;;;;x,
+SPA_proletarian_dictatorship;The Spanish Republic;;;;;;;;;;;;;x,
 SPA_presidential_dictatorship;The Spanish State;;;;;;;;;;;;;x,
-SPA_french_bourbon;The Spanish State;;;;;;;;;;;;;x,
+SPA_fascist_dictatorship;The Spanish State;;;;;;;;;;;;;x,
 BOR;France;;;;;;;;;x;;;;;;;;
 BOR_absolute_monarchy;The Kingdom of France;;;;;;;;;x;;;;;;;;
 BOR_prussian_constitutionalism;The Kingdom of France;;;;;;;;;x;;;;;;;;
@@ -335,7 +335,7 @@ KNY_colonial_company;East Africa;;;;;;;;;;;;;x,
 KNY_dominion;The Dominion of East Africa;;;;;;;;;;;;;x,
 NGR_colonial_company;West Africa;;;;;;;;;;;;;x,
 NGR_dominion;West Africa;;;;;;;;;;;;;x,
-IRE_french_bourbon;Eire;;;;;;;;;;;;;x,
+IRE_fascist_dictatorship;Eire;;;;;;;;;;;;;x,
 IRE_colonial_company;The Irish Dominion;;;;;;;;;;;;;x,
 IRE_dominion;The Irish Free State;;;;;;;;;;;;;x,
 UBD_absolute_monarchy;The United Baltic Duchy;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -403,8 +403,8 @@ VLG_absolute_monarchy;Kosakenstadt;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 VLG_prussian_constitutionalism;Kosakenstadt ;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 VLG_hms_government;Kosakenstadt ;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 VLG_democracy;The German Volga Republic;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
-VLG_french_bourbon;The Volga German SSR;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
-VLG_french_bourbon;The German Volga Republic;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
+VLG_proletarian_dictatorship;The Volga German SSR;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
+VLG_fascist_dictatorship;The German Volga Republic;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 VLG_fascist;Volga Fascist Union;;;;;;;;;;;;;;;;;;;;;;x;;;;
 VLG_communist;Volga German Workers' Party;;;;;;;;;;;;;;;;;;;;;;x;;;;
 VLG_socialist;Union of Volga Workers and Socialists;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -446,10 +446,10 @@ JAP_absolute_monarchy_ADJ;Nippon;Nippon;Nippon;;;;;;;;;;;x,
 MEX_absolute_monarchy;The Empire of Mexico;Empire du Mexique;Mexikanisches Kaiserreich;;Imperio de México;;;;;;;;;x
 MEX_prussian_constitutionalism;The Empire of Mexico;Empire du Mexique;Mexikanisches Kaiserreich;;Imperio de México;;;;;;;;;x
 MEX_hms_government;The Empire of Mexico;Empire du Mexique;Mexikanisches Kaiserreich;;Imperio de México;;;;;;;;;x
-FRA_french_bourbon;The Commune of France;;;;;;;;;;;;;x,
+FRA_proletarian_dictatorship;The Commune of France;;;;;;;;;;;;;x,
 FRA_presidential_dictatorship;The French Republic;;;;;;;;;;;;;x,
 FRA_bourgeois_dictatorship;The French Republic;;;;;;;;;;;;;x,
-FRA_french_bourbon;The French State;;;;;;;;;;;;;x,
+FRA_fascist_dictatorship;The French State;;;;;;;;;;;;;x,
 FRA_democracy;The French Republic;;;;;;;;;;;;;x,
 FRA_absolute_monarchy;The French Empire;;;;;;;;;;;;;x,
 FRA_prussian_constitutionalism;The French Empire;;;;;;;;;;;;;x,
@@ -458,10 +458,10 @@ FRA_french_bourbon;The Kingdom of France;;;;;;;;;;;;;x,
 GER_absolute_monarchy;The German Empire;;;;;;;;;;;;;x,
 GER_prussian_constitutionalism;The German Empire;;;;;;;;;;;;;x,
 GER_hms_government;The German Empire;;;;;;;;;;;;;x,
-VIC_french_bourbon;The Commune of France;;;;;;;;;;;;x,
+VIC_proletarian_dictatorship;The Commune of France;;;;;;;;;;;;x,
 VIC_presidential_dictatorship;Nationalist France;;;;;;;;;;;;x,
 VIC_bourgeois_dictatorship;Nationalist France;;;;;;;;;;;;x,
-VIC_french_bourbon;Vichy France;;;;;;;;;;;;x,
+VIC_fascist_dictatorship;Vichy France;;;;;;;;;;;;x,
 VIC_democracy;Nationalist France;;;;;;;;;;;;x,
 VIC_absolute_monarchy;The French Empire;;;;;;;;;;;;x,
 VIC_prussian_constitutionalism;The French Empire;;;;;;;;;;;;x,
@@ -474,15 +474,15 @@ CRB_absolute_monarchy;Caribbean Federation;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 CRB_prussian_constitutionalism;Caribbean Federation;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 CRB_hms_government;Caribbean Federation;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 CRB_democracy;Caribbean Federation;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
-CRB_french_bourbon;Caribbean People's Republic;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
-CRB_french_bourbon;Caribbean Empire;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
+CRB_proletarian_dictatorship;Caribbean People's Republic;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
+CRB_fascist_dictatorship;Caribbean Empire;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 SDB;The Sonderbund;;;;;;;;;;;;x
 SDB_ADJ;Sonderbund;;;;;;;;;;;;x
 SDB_democracy;The Sonderbund;;;;;;;;;;;;;x,
-AOG_french_bourbon;The Chinese Socialist Republic;;;;;;;;;;;;;;x
+AOG_proletarian_dictatorship;The Chinese Socialist Republic;;;;;;;;;;;;;;x
 AOG_presidential_dictatorship;Allgemeine Ostasiatische GmbH;;;;;;;;;;;;;;x,
 AOG_bourgeois_dictatorship;Allgemeine Ostasiatische GmbH;;;;;;;;;;;;;;x,
-AOG_french_bourbon;Reichskommissariat Ostasien;;;;;;;;;;;;;x,
+AOG_fascist_dictatorship;Reichskommissariat Ostasien;;;;;;;;;;;;;x,
 AOG_democracy;Allgemeine Ostasiatische GmbH;;;;;;;;;;;;;x,
 AOG_absolute_monarchy;Allgemeine Ostasiatische GmbH;;;;;;;;;;;;;x,
 AOG_prussian_constitutionalism;Allgemeine Ostasiatische GmbH;;;;;;;;;;;;;x,
@@ -547,7 +547,7 @@ URP;The United Principalities;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 URP_ADJ;Romanian;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 GCF;Germany;;;;;;;;;;;;;x,
 GCF_ADJ;German;;;;;;;;;;;;;x,
-GCF_french_bourbon;The German Reich;;;;;;;;;;;;;x,
+GCF_fascist_dictatorship;The German Reich;;;;;;;;;;;;;x,
 GCF_absolute_monarchy;The German Confederation;;;;;;;;;;;;;x,
 GCF_prussian_constitutionalism;The German Confederation;;;;;;;;;;;;;x,
 GCF_hms_government;The German Confederation;;;;;;;;;;;;;x,
