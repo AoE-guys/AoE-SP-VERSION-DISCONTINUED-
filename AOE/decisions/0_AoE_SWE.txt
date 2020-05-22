@@ -216,20 +216,20 @@ political_decisions = {
 		potential = {
 			owns = 322
 			322 = { is_capital = yes }
-			NOT = { has_country_flag = agricilture_reforms } 
+			NOT = { has_country_flag = commodity_act } 
 		}
 		allow = {
 			war = no
 			NOT = {
 				health_care = no_health_care
 			}
-			industrial_score = 200
+			industrial_score = 350
 			has_country_modifier = agriculture_reform
 			trade_policy = protectionism
 			money = 20000
 		}
 		effect = {
-			set_country_flag = agricilture_reforms
+			set_country_flag = commodity_act
 			money = -20000
 			add_country_modifier = {
 				name = commodity_act
@@ -253,7 +253,7 @@ political_decisions = {
 			NOT = {
 				health_care = no_health_care
 			}
-			industrial_score = 250
+			industrial_score = 400
 			has_country_modifier = agriculture_reform
 			trade_policy = protectionism
 			money = 20000
