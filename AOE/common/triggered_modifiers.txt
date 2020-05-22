@@ -3,6 +3,19 @@
 #
 # Effects are fully scriptable here.
 
+small_country = {
+		trigger = {
+			exists = yes
+			NOT = { total_pops = 100000 }
+		}
+
+	global_population_growth = 0.001
+	education_efficiency_modifier = 0.1
+	tax_efficiency = 0.10
+	global_pop_militancy_modifier = -0.3
+	icon = 16
+}
+
 #trinket_health_care_fully_funded = {
 #	trigger = {
 #		exists = yes
@@ -998,6 +1011,9 @@ german_minors_ai_help = {
 		}
 		NOT = { owns = 619 }
 		NOT = { year = 1740 }
+		NOT = { owns = 729 }
+		NOT = { tag = PAP }
+		NOT = { tag = NAP }
 		ai = yes
 	}
 	icon = 10

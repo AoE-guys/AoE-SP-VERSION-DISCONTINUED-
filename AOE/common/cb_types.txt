@@ -43,7 +43,7 @@
 peace_order = {
 treaty_port_casus_belli
 conquer_trade_post
-obtain_potential_trade_post
+#obtain_potential_trade_post
 war_reparations
 become_independent
 dismantle_cb
@@ -3126,6 +3126,7 @@ annex_foreign_colony_big_cb = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+	    THIS = { is_greater_power = yes }
 		OR = {
 			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
 			neighbour = THIS
@@ -3205,6 +3206,7 @@ annex_foreign_colony_cb = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+	    THIS = { is_greater_power = yes }
 		OR = {
 			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
 			neighbour = THIS
@@ -3286,6 +3288,7 @@ annex_foreign_colony_small_cb = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+	    THIS = { is_greater_power = yes }
 		OR = {
 			AND = { THIS = { num_of_ports = 1 } num_of_ports = 1 }
 			neighbour = THIS
@@ -6341,64 +6344,68 @@ become_independent = {
 	}
 }
 
-# Revert from Communist Government
-uninstall_communist_gov_cb = {
-	sprite_index = 13
-	is_triggered_only = yes
-	months = 12
-	crisis = no
-	
-	# Is automatically added to countries that intervened at while install_communist_gov_cb
-	# so they can revert those countries government.
-	constructing_cb = no
-
-	badboy_factor = 0.5
-	prestige_factor = 1
-	peace_cost_factor = 5
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
-		THIS = { NOT = { ruling_party_ideology = communist } }
-		government = proletarian_dictatorship
-		is_vassal = no
-		THIS = {
-			NOT = { has_country_modifier = neutrality }
-		}
-		OR = {
-			war_with = THIS
-			THIS = {
-				NOT = {
-					has_country_modifier = no_more_war
-				}
-			}
-		}
-	}
-	
-	po_uninstall_communist_gov_type = yes
-
-	war_name = WAR_NAME
-	
-	on_add = {
-		move_issue_percentage = {
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-}
+## Revert from Communist Government
+#uninstall_communist_gov_cb = {
+#	sprite_index = 13
+#	is_triggered_only = no
+#	months = 12
+#	crisis = no
+#	
+#	# Is automatically added to countries that intervened at while install_communist_gov_cb
+#	# so they can revert those countries government.
+#	constructing_cb = no
+#
+#	badboy_factor = 0.5
+#	prestige_factor = 1
+#	peace_cost_factor = 5
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 48
+#	
+#	good_relation_prestige_factor = 1
+#	good_relation_infamy_factor = 1
+#	good_relation_militancy_factor = 1
+#
+#	can_use = {
+#		THIS = { NOT = { OR = { government = proletarian_dictatorship  government = fascist_dictatorship } } }
+#		OR = { government = proletarian_dictatorship  government = fascist_dictatorship }
+#		is_vassal = no
+#		THIS = {
+#			NOT = { has_country_modifier = neutrality }
+#		}
+#		OR = {
+#			war_with = THIS
+#			THIS = {
+#				NOT = {
+#					has_country_modifier = no_more_war
+#				}
+#			}
+#		}
+#	}
+#	
+#	po_uninstall_communist_gov_type = yes
+#
+#	war_name = WAR_NAME
+#	
+#	on_add = {
+#		move_issue_percentage = {
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.25
+#		}
+#	}
+#	on_po_accepted = {
+#		THIS = { set_country_flag = friendly_democracy }
+#		country_event = 96085
+#	}
+#}
 
 great_war_install_democracy = {
 	sprite_index = 19
-	is_triggered_only = yes
+	is_triggered_only = no
 	months = 12
 	construction_speed = 1.5
 	crisis = no
@@ -6422,10 +6429,8 @@ great_war_install_democracy = {
 		THIS = {
 			has_country_flag = in_great_war
 			is_greater_power = yes
-			OR = {
-				government = hms_government
-				government = democracy
-			}
+			NOT = { government = proletarian_dictatorship }
+			NOT = { government = fascist_dictatorship }
 		}
 		has_country_flag = in_great_war
 		is_vassal = no
@@ -6458,7 +6463,7 @@ great_war_install_democracy = {
 
 great_war_install_fascism = {
 	sprite_index = 17
-	is_triggered_only = yes
+	is_triggered_only = no
 	months = 12
 	construction_speed = 1.5
 	crisis = no
@@ -6490,6 +6495,7 @@ great_war_install_fascism = {
 		NOT = { is_our_vassal = THIS }
 		war_with = THIS
 		NOT = { government = fascist_dictatorship }
+		NOT = { government = proletarian_dictatorship }
 	}
 	
 	po_remove_prestige = yes
@@ -6511,8 +6517,8 @@ great_war_install_fascism = {
 }
 
 great_war_install_communism = {
-	sprite_index = 12
-	is_triggered_only = yes
+	sprite_index = 17
+	is_triggered_only = no
 	months = 12
 	construction_speed = 1.5
 	crisis = no
@@ -6590,10 +6596,8 @@ install_democracy = {
 		THIS = {
 			NOT = { has_country_flag = in_great_war }
 			is_greater_power = yes
-			OR = {
-				government = hms_government
-				government = democracy
-			}
+			NOT = { government = proletarian_dictatorship }
+			NOT = { government = fascist_dictatorship }
 		}
 		has_global_flag = great_wars_enabled
 		is_vassal = no
@@ -6671,11 +6675,12 @@ install_fascism = {
 			NOT = { has_country_flag = in_great_war }
 			government = fascist_dictatorship
 		}
-		is_ideology_enabled = fascist
+		#is_ideology_enabled = fascist
 		is_vassal = no
 		civilized = yes
 		NOT = { is_our_vassal = THIS }
 		NOT = { government = fascist_dictatorship }
+		NOT = { government = proletarian_dictatorship }
 		THIS = {
 			NOT = { has_country_modifier = neutrality }
 		}
@@ -6705,23 +6710,23 @@ install_fascism = {
 	on_po_accepted = {
 		THIS = {
 			set_country_flag = friendly_fascist
-			any_country = {
-				limit = {
-					OR = {
-						government = hms_government
-						government = democracy
-					}
-				}
-				relation = { who = THIS value = -50 }
-			}
+			#any_country = {
+			#	limit = {
+			#		OR = {
+			#			government = hms_government
+			#			government = democracy
+			#		}
+			#	}
+			#	relation = { who = THIS value = -50 }
+			#}
 		}
 		country_event = 96086
 	}
 }
 
 install_communism = {
-	sprite_index = 12
-	is_triggered_only = yes
+	sprite_index = 17
+	is_triggered_only = no
 	months = 12
 	construction_speed = 1.5
 	crisis = no
@@ -6745,7 +6750,7 @@ install_communism = {
 			NOT = { has_country_flag = in_great_war }
 			government = proletarian_dictatorship
 		}
-		is_ideology_enabled = communist
+		#is_ideology_enabled = communist
 		is_vassal = no
 		civilized = yes
 		NOT = { is_our_vassal = THIS }
@@ -6781,15 +6786,15 @@ install_communism = {
 	on_po_accepted = {
 		THIS = {
 			set_country_flag = friendly_communist
-			any_country = {
-				limit = {
-					OR = {
-						government = hms_government
-						government = democracy
-					}
-				}
-				relation = { who = THIS value = -50 }
-			}
+			#any_country = {
+			#	limit = {
+			#		OR = {
+			#			government = hms_government
+			#			government = democracy
+			#		}
+			#	}
+			#	relation = { who = THIS value = -50 }
+			#}
 		}
 		country_event = 96087
 	}
@@ -7335,128 +7340,128 @@ treaty_port_casus_belli = {
 	}
 }
 
-install_fascism_make_puppet = {
-	sprite_index = 17
-	is_triggered_only = yes
-	constructing_cb = no
-	months = 12
-	crisis = no
+#install_fascism_make_puppet = {
+#	sprite_index = 17
+#	is_triggered_only = yes
+#	constructing_cb = no
+#	months = 12
+#	crisis = no
+#
+#	badboy_factor = 2
+#	prestige_factor = 1
+#	peace_cost_factor = 1.17
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 48
+#	
+#	good_relation_prestige_factor = 1
+#	good_relation_infamy_factor = 1
+#	good_relation_militancy_factor = 1
+#
+#	can_use = {
+#		NOT = { is_our_vassal = THIS }
+#		is_vassal = no
+#	}
+#	
+#	po_make_puppet = yes
+#
+#	war_name = WAR_NAME
+#	
+#	on_add = {
+#		move_issue_percentage = {
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.05
+#		}
+#	}
+#	
+#	on_po_accepted = { THIS = { set_country_flag = friendly_fascist_puppet } country_event = 96086 }
+#}
 
-	badboy_factor = 2
-	prestige_factor = 1
-	peace_cost_factor = 1.17
-	penalty_factor = 1
+#install_communism_make_puppet = {
+#	sprite_index = 17
+#	is_triggered_only = yes
+#	constructing_cb = no
+#	months = 12
+#	crisis = no
+#
+#	badboy_factor = 2
+#	prestige_factor = 1
+#	peace_cost_factor = 1.17
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 48
+#	
+#	good_relation_prestige_factor = 1
+#	good_relation_infamy_factor = 1
+#	good_relation_militancy_factor = 1
+#
+#	can_use = {
+#		NOT = { is_our_vassal = THIS }
+#		is_vassal = no
+#	}
+#	
+#	po_make_puppet = yes
+#
+#	war_name = WAR_NAME
+#	
+#	on_add = {
+#		move_issue_percentage = {
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.05
+#		}
+#	}
+#	
+#	on_po_accepted = { THIS = { set_country_flag = friendly_communist_puppet } country_event = 96087 }
+#}
 
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-		is_vassal = no
-	}
-	
-	po_make_puppet = yes
-
-	war_name = WAR_NAME
-	
-	on_add = {
-		move_issue_percentage = {
-			from = jingoism 
-			to = pro_military
-			value = 0.05
-		}
-	}
-	
-	on_po_accepted = { THIS = { set_country_flag = friendly_fascist_puppet } country_event = 96086 }
-}
-
-install_communism_make_puppet = {
-	sprite_index = 17
-	is_triggered_only = yes
-	constructing_cb = no
-	months = 12
-	crisis = no
-
-	badboy_factor = 2
-	prestige_factor = 1
-	peace_cost_factor = 1.17
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-		is_vassal = no
-	}
-	
-	po_make_puppet = yes
-
-	war_name = WAR_NAME
-	
-	on_add = {
-		move_issue_percentage = {
-			from = jingoism 
-			to = pro_military
-			value = 0.05
-		}
-	}
-	
-	on_po_accepted = { THIS = { set_country_flag = friendly_communist_puppet } country_event = 96087 }
-}
-
-install_democracy_make_puppet = {
-	sprite_index = 17
-	is_triggered_only = yes
-	constructing_cb = no
-	months = 12
-	crisis = no
-
-	badboy_factor = 2
-	prestige_factor = 1
-	peace_cost_factor = 1.17
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-		is_vassal = no
-	}
-	
-	po_make_puppet = yes
-
-	war_name = WAR_NAME
-	
-	on_add = {
-		move_issue_percentage = {
-			from = jingoism 
-			to = pro_military
-			value = 0.05
-		}
-	}
-	
-	on_po_accepted = { THIS = { set_country_flag = friendly_democracy_puppet } country_event = 96085 }
-}
+#install_democracy_make_puppet = {
+#	sprite_index = 17
+#	is_triggered_only = yes
+#	constructing_cb = no
+#	months = 12
+#	crisis = no
+#
+#	badboy_factor = 2
+#	prestige_factor = 1
+#	peace_cost_factor = 1.17
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 48
+#	
+#	good_relation_prestige_factor = 1
+#	good_relation_infamy_factor = 1
+#	good_relation_militancy_factor = 1
+#
+#	can_use = {
+#		NOT = { is_our_vassal = THIS }
+#		is_vassal = no
+#	}
+#	
+#	po_make_puppet = yes
+#
+#	war_name = WAR_NAME
+#	
+#	on_add = {
+#		move_issue_percentage = {
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.05
+#		}
+#	}
+#	
+#	on_po_accepted = { THIS = { set_country_flag = friendly_democracy_puppet } country_event = 96085 }
+#}
 
 #Colonial Conquest
 colonial_conquest = {
@@ -7661,16 +7666,71 @@ war_reparations = {
 	}
 }
 
-conquer_trade_post = {
+#conquer_trade_post = {
+#	sprite_index = 32
+#	is_triggered_only = yes
+#	months = 18
+#	construction_speed = 1
+#	crisis = no
+#	
+#	badboy_factor = 1
+#	prestige_factor = 1
+#	peace_cost_factor = 1
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 36
+#	
+#	good_relation_prestige_factor = 0
+#	good_relation_infamy_factor = 0
+#	good_relation_militancy_factor = 0
+#	
+#	can_use = {
+#		THIS ={
+#			civilized = yes
+#			OR = {
+#				government = merchant_republic
+#				government = trade_monarchy
+#			}
+#		}
+#		any_owned_province = {
+#			has_province_modifier = trade_centre
+#		}
+#		NOT = { is_our_vassal = THIS }
+#	}
+#	
+#	po_reparations = yes
+#	
+#	tws_battle_factor = 1.5
+#	
+#	war_name = PUNITIVE_EXPEDITION_WAR_NAME
+#
+#	on_add = {
+#		move_issue_percentage = { 
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.1
+#		}
+#	}
+#	
+#	on_po_accepted = {
+#		add_country_modifier = { name = negotiating_port_loss duration = -1 }
+#		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
+#	}
+#}
+
+conquer_trade_post = { #obtain_potential_trade_post
 	sprite_index = 32
 	is_triggered_only = yes
 	months = 18
 	construction_speed = 1
 	crisis = no
 	
-	badboy_factor = 1
-	prestige_factor = 1
-	peace_cost_factor = 1
+	badboy_factor = 2.5
+	prestige_factor = 5
+	peace_cost_factor = 20
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -7691,62 +7751,10 @@ conquer_trade_post = {
 			}
 		}
 		any_owned_province = {
-			has_province_modifier = trade_centre
-		}
-		NOT = { is_our_vassal = THIS }
-	}
-	
-	po_reparations = yes
-	
-	tws_battle_factor = 1.5
-	
-	war_name = PUNITIVE_EXPEDITION_WAR_NAME
-
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.1
-		}
-	}
-	
-	on_po_accepted = {
-		add_country_modifier = { name = negotiating_port_loss duration = -1 }
-		THIS = { add_country_modifier = { name = negotiating_port_demand duration = -1 } }
-	}
-}
-
-obtain_potential_trade_post = {
-	sprite_index = 32
-	is_triggered_only = yes
-	months = 18
-	construction_speed = 1
-	crisis = no
-	
-	badboy_factor = 0.5
-	prestige_factor = 1
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 36
-	
-	good_relation_prestige_factor = 0
-	good_relation_infamy_factor = 0
-	good_relation_militancy_factor = 0
-	
-	can_use = {
-		THIS ={
-			civilized = yes
-			OR = {
-				government = merchant_republic
-				government = trade_monarchy
+		    OR = {
+			      has_province_modifier = potential_trade_post
+			      has_province_modifier = trade_centre
 			}
-		}
-		any_owned_province = {
-			has_province_modifier = potential_trade_post
 		}
 		NOT = { is_our_vassal = THIS }
 	}
@@ -7766,6 +7774,7 @@ obtain_potential_trade_post = {
 	}
 	
 	on_po_accepted = {
+	    THIS = { set_country_flag = getting_trade_port }
 		country_event = 69422
 		#THIS = { country_event = 69423 }
 	}
