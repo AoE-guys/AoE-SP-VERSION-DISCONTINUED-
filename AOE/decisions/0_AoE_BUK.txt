@@ -238,6 +238,42 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
+	victory_of_oirat = {
+			picture = claim_greater_mongolia
+			potential = {
+			war = no
+			NOT = {
+				has_country_flag = oirat_vic
+			}
+			tag = DZN
+			year = 1952
+			1488 = {
+					owned_by = DZN
+			}
+		}
+		
+		allow = {
+			OR = {
+				1488 = {
+					owned_by = DZN
+				}
+				1488 = {
+					owned_by = XBI
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = oirat_vic
+			prestige = 50
+			KML = { country_event = 6070 }
+			MGL = { country_event = 6069 }
+			TNT = { country_event = 6068 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
 	sell_gwadar = {
 			picture = claim_greater_mongolia
 			potential = {
@@ -260,7 +296,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = sold_gwadar
 			prestige = 20
-			money = 2000
+			money = 50000
 			2640 = { secede_province = OMA }
 		}
 		

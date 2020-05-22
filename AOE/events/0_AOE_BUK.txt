@@ -307,6 +307,8 @@ country_event = {
 		war = {
 			target = DZN
 			attacker_goal = { casus_belli = establish_protectorate_casus_belli } 
+			defender_goal = { casus_belli = war_reparations } 
+			defender_goal = { casus_belli = casus_belli = acquire_state state_province_id = 1490 }
 			defender_goal = { casus_belli = status_quo }
 			call_ally = yes
 		}
@@ -327,5 +329,74 @@ country_event = {
 			who = QNG
 			value = -200
 		}
+	}
+}
+country_event = {
+	id = 6070
+	title = "Kumul succesion to Dzungaria"
+	desc = "EVTDESC6070"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		relation = {
+			who = DZN
+			value = 200
+		}
+		1599 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6069
+	title = "Khalka succesion to Dzungaria"
+	desc = "EVTDESC6069"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		relation = {
+			who = DZN
+			value = 200
+		}
+		2579 = { secede_province = DZN }
+		2608 = { secede_province = DZN }
+		1468 = { secede_province = DZN }
+		2678 = { secede_province = DZN }
+		1466 = { secede_province = DZN }
+		1465 = { secede_province = DZN }
+		2207 = { secede_province = DZN }
+		1467 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6068
+	title = "Tuvan succesion to Dzungaria"
+	desc = "EVTDESC6068"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		relation = {
+			who = DZN
+			value = 200
+		}
+		1469 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6067
+	title = "Price for peace with Dzungars"
+	desc = "EVTDESC6067"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		1535 = { secede_province = DZN }
+		1532 = { secede_province = DZN }
+		1534 = { secede_province = DZN }
 	}
 }
