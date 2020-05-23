@@ -1,5 +1,7 @@
 owner = PLC
 controller = PLC
 add_core = PLC
+add_core = LIT
+add_core = BYE
 trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 35
