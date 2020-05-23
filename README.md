@@ -14,6 +14,7 @@ This is still being developed, but we expect them to be online soon.
 ## Credits
 
 The mod owes its existence to HPM, HFM, and PDM developers, as well as:
+* Choxflan
 * MaTi5893 (Lead Developer)
 * Mitusonator
 * JmanThunder
