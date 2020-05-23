@@ -3,7 +3,7 @@
 Welcome to the github repository of Age of Enlightenment. AoE is a modification to Victoria II, with the setting of the game in 18th century. 
 The player plays as a nation, leading them toward enlightenment and posperity.
 
-![Screenshot of the game](/screenshots/20200405180947_1.1,jpg)
+![Screenshot of the game](/screenshots/20200405180947_1.1.jpg)
 
 ## Wiki & Changelog
 This is still being developed, but we expect them to be online soon.
