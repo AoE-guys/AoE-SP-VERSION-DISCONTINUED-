@@ -5,15 +5,15 @@ The player plays as a nation, leading them toward enlightenment and prosperity.
 
 ![Screenshot of the game](/screenshots/20200405180947_1.1.jpg)
 
+*This version of the mod is still being constructed, frequently updated etc., and so bugs is not uncommon.
+We recommend storing your save files between each update.* 
+
 ## Wiki & Changelog
 This is still being developed, but we expect them to be online soon.
 
-*This version of the mod is still being constructed, frequently updated etc., and so bugs is not uncommon.
-We recommend storing your save files between each update* 
-
 ## Credits
 
-The mod owes it's existence to HPM, HFM, and PDM developers, as well as:
+The mod owes its existence to HPM, HFM, and PDM developers, as well as:
 * MaTi5893 (Lead Developer)
 * Mitusonator
 * JmanThunder
