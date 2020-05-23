@@ -7,12 +7,13 @@ country_event = {
 
 	id = 9999856
 	
-	is_triggered_only = yes
+	#is_triggered_only = yes
 
-	#trigger = {
-	#	NOT = { has_global_flag = education_setup_b }
-	#	ai = no
-	#}
+	trigger = {
+		NOT = { has_global_flag = education_setup_b }
+		#ai = yes
+		tag = HAW
+	}
 	mean_time_to_happen = {
 		days = 1
 	}
