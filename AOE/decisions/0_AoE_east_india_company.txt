@@ -38,10 +38,10 @@ political_decisions = {
 							   } 
 				   }			
 			}
-			money = 30000
+			money = 60000
 		}
 		effect = {
-			money = -25000
+			money = -50000
 			set_country_flag = campaigning_in_india
 			random_country = {
 				limit = { capital_scope = { is_core = HND }  neighbour = THIS  NOT = { has_country_flag = indian_campaign_target } }
