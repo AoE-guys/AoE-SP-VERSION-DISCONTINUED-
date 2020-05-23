@@ -1065,6 +1065,7 @@ fertilizer_factory = {
 
 fort = {      
 	type = fort
+	cost = 15000
 	goods_cost =
 	{
 		steel = 100
@@ -1080,7 +1081,8 @@ fort = {
 	onmap = yes
 	max_level = 6
 	province = yes
-	fort_level = 1
+	one_per_state = yes
+	fort_level = 2
 }
 
 naval_base = {    
