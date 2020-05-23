@@ -1,7 +1,7 @@
-# AOE-exp: Age of Enligthenment Expanded
+# AOE-exp: Age of Enlightenment Expanded
 
-Welcome to the github repository of Age of Enlightenment. AoE is a modification to Victoria II, with the setting of the game in 18th century. 
-The player plays as a nation, leading them toward enlightenment and posperity.
+Welcome to the GitHub repository of Age of Enlightenment. AoE is a modification to Victoria II, with the setting of the game in 18th century. 
+The player plays as a nation, leading them toward enlightenment and prosperity.
 
 ![Screenshot of the game](/screenshots/20200405180947_1.1.jpg)
 
