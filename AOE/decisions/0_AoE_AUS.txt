@@ -38,7 +38,9 @@ political_decisions = {
 			}
 		}
 		allow = {
-			idealism = 1
+			HUN = {
+				vassal_of = AUS
+			}
 		}
 		
 		effect = {
@@ -70,9 +72,8 @@ political_decisions = {
 			}
 		}
 		allow = {
-			rank = 8
+			#rank = 8
 			is_sphere_leader_of = SIE
-			
 		}
 		
 		effect = {

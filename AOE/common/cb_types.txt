@@ -2400,7 +2400,7 @@ liberate_country = {
 				is_cultural_union = no
 				involved_in_crisis = yes
 			}
-			NOT = { tag = NNN }
+			FROM = { NOT = { has_country_flag = unreleasable_country } }
 		}
 		OR = {
 			FROM = { involved_in_crisis = yes }
