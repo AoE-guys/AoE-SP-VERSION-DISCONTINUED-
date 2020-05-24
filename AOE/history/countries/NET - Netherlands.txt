@@ -56,7 +56,10 @@ upper_house = {
 }
 
 decision = literacy_NET
-
+govt_flag = {
+	government = trade_monarchy
+	flag = democracy
+}
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
@@ -91,8 +94,3 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "NET_oob.txt"
-
-govt_flag = {
-	government = trade_monarchy
-	flag = republic
-}

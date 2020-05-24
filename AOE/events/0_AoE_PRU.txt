@@ -8,6 +8,8 @@ country_event = {
 	trigger = {
 		tag = PRU
 		year = 1740
+		NOT = { government = democracy }
+		NOT = { government = presidential_dictatorship }
 	}
 	
 	mean_time_to_happen = {
@@ -15,7 +17,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Glory awaits us!"
+		name = "Goose-step hither King in Prussia!"
 		add_country_modifier = {
 			name = frederick_grosse
 			duration = -1
@@ -24,14 +26,22 @@ country_event = {
 }
 country_event = {
 	id = 1740002
-	title = "Frederick II Hohenzollern"
+	title = "Death of Frederick II Hohenzollern"
 	desc = "EVTDESC1740002"
 	picture = fredrick_grosse
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
-		year = 1786
+		OR = {
+			AND = {
+				has_country_modifier = frederick_grosse
+				year = 1786
+			}
+			OR = {
+				government = democracy
+				government = presidential_dictatorship
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
