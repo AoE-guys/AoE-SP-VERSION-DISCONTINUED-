@@ -1366,7 +1366,7 @@ country_event = {
 ####
 country_event = {
 	id = 174504
-	title = "The Ost-Land Company"
+	title = "The Ostend Company"
 	desc = "EVTDESC174504"
 	picture = maria_theresa_ded
 	fire_only_once = yes
@@ -1441,7 +1441,7 @@ country_event = {
 country_event = {
 	id = 174505
 	title = "$FROMCOUNTRY$ accepts!"
-	desc = "EVTDESC174505"
+	desc = ""
 	major = yes
 	is_triggered_only = yes
 	
@@ -1453,7 +1453,7 @@ country_event = {
 country_event = {
 	id = 174506
 	title = "$FROMCOUNTRY$ refuses!"
-	desc = "EVTDESC174506"
+	desc = ""
 	major = yes
 	is_triggered_only = yes
 	
@@ -1581,7 +1581,7 @@ country_event = {
 country_event = {
 	id = 1745082
 	title = "$FROMCOUNTRY$ Agrees!"
-	desc = "EVTDESC1745081"
+	desc = ""
 	is_triggered_only = yes
 	
 	option = {
@@ -1592,7 +1592,7 @@ country_event = {
 country_event = {
 	id = 1745083
 	title = "$FROMCOUNTRY$ Refuses!"
-	desc = "EVTDESC1745083"
+	desc = ""
 	is_triggered_only = yes
 	
 	option = {
@@ -1789,11 +1789,11 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 6
+				factor = 8
 				alliance_with = AUS
 			}
 			modifier = {
-				factor = 5
+				factor = 8
 				relation = { who = AUS value = 20 }
 				NOT = {
 					tag = GBR
@@ -1810,7 +1810,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 3
+				factor = 7
 				NOT = { neighbour = AUS }
 			}
 			modifier = {
@@ -1826,7 +1826,7 @@ country_event = {
 country_event = {
 	id = 800000
 	title = "$FROMCOUNTRY$ joins the Empire!"
-	desc = "EVTDESC800000"
+	desc = ""
 	picture = hre_prince
 	is_triggered_only = yes
 	
@@ -1838,7 +1838,7 @@ country_event = {
 country_event = {
 	id = 800001
 	title = "$FROMCOUNTRY$ leaves the Empire!"
-	desc = "EVTDESC800001"
+	desc = ""
 	picture = hre_prince
 	is_triggered_only = yes
 	
