@@ -1013,7 +1013,7 @@ colonial_mismanagement = {
 colonial_recruitment = {
 	immigrant_attract = 1		#100%
 	life_rating = 0.1
-	population_growth = 0.01
+	population_growth = 0.001
 	assimilation_rate = 0.25
 	icon = 9
 }
@@ -6082,8 +6082,8 @@ local_hegemon = {
 ####Saint-Domingue####
 pearl_of_the_antilles = {
 	local_factory_throughput = 1.00
-	goods_demand = 0.10
-	population_growth = 0.01
+	#goods_demand = 0.10
+	population_growth = 0.001
 }
 mass_slave_revolt = {
 	mobilisation_size = 0.25

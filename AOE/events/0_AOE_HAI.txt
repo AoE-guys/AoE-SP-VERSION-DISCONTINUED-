@@ -3,13 +3,13 @@
 country_event = {
 	id = 17910
 	title = "Saint-Domingue"
-	desc = "EVTDESC180317910"
-	picture = "exemplar_colony
+	desc = "EVTDESC17910"
+	picture = exemplar_colony
 	trigger = {
 	OR = {
 		tag = FRA
 		tag = BOR
-		}
+	}
 		NOT = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
 		}
@@ -30,14 +30,14 @@ country_event = {
 			random_list = {
 				90 = {country_event = 17911}
 				10 = {country_event = 17912}
-		}
+		    }
 	}
 }
 #Saint-Domingue prospers
 country_event = { 
-	id = 180317911
+	id = 17911
 	title = "Saint-Domingue prospers"
-	desc = "EVTDESC180317911"
+	desc = "EVTDESC17911"
 	picture = "exemplar_colony"
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -53,7 +53,7 @@ country_event = {
 		add_province_modifier = {
 					name = colonial_recruitment
 					duration = 1825
-			}
+		}
 		}
 	}
 }
@@ -61,7 +61,7 @@ country_event = {
 country_event = {
 	id = 17912
 	title = "Slaves revolt"
-	desc = "EVTDESC180317912"
+	desc = "EVTDESC17912"
 	picture = "haiti_debts"
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -177,7 +177,7 @@ country_event = {
 country_event = {
 	id = 17915
 	title = "Haitian Revolution."
-	desc = "EVTDESC180317915"
+	desc = "EVTDESC17915"
 	picture = "haiti_debts"
 	fire_only_once = yes
 	trigger = {
