@@ -537,34 +537,34 @@ political_decisions = {
 		}
 	}
 	
-	bohemian_crown = {
-		picture = bohemian_crown
-		potential = {
-			tag = PRU
-			NOT = { has_country_flag = bohemian_crown }
-		}
-		
-		allow = {
-			war = no
-			military_score = 150
-			NOT = { has_country_flag = hre_member }
-			is_greater_power = yes
-		}
-		
-		effect = {
-			set_country_flag = bohemian_crown
-			country_event = 1740003
-			badboy = 15
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				badboy = 15
-			}
-		}
-	}
+#	bohemian_crown = {
+#		picture = bohemian_crown
+#		potential = {
+#			tag = PRU
+#			NOT = { has_country_flag = bohemian_crown }
+#		}
+#		
+#		allow = {
+#			war = no
+#			military_score = 150
+#			NOT = { has_country_flag = hre_member }
+#			is_greater_power = yes
+#		}
+#		
+#		effect = {
+#			set_country_flag = bohemian_crown
+#			country_event = 1740003
+#			badboy = 15
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				badboy = 15
+#			}
+#		}
+#	}
 	
 	form_brandenburg = {
 		picture = prussia_king

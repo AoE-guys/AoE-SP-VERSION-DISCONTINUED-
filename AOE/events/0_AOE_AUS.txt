@@ -1421,7 +1421,7 @@ country_event = {
 }
 country_event = {
 	id = 174503
-	title = "The Pragmatic Sanction of $YEAR%"
+	title = "The Pragmatic Sanction of $YEAR$"
 	desc = "EVTDESC174503"
 	major = yes
 	is_triggered_only = yes
@@ -1458,8 +1458,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Great!"
-		prestige = 2
+		name = "Oh well..."
+		prestige = -2
 	}
 }
 country_event = {

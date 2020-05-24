@@ -947,6 +947,10 @@ help_ai_russia = {
 					primary_culture = japanese
 				}
 			}
+			AND = {
+				owns = 1600 #DZN
+				NOT = { year = 1750 }
+			}
 		}
 		ai = yes
 	}
