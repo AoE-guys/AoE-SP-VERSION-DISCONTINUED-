@@ -1,111 +1,138 @@
 political_decisions = {
-	claim_malta = {
+
+###Venice's Expansion###
+
+	the_future_of_venice = {
 		picture = venetian_ambitions
 		potential = {
 			tag = VEN
-			NOT = { has_country_flag = claim_malta }
-			NOT = { has_country_flag = lost_empire }
+			NOT = { has_country_flag = venice_expansion }
 		}
-
+			
 		allow = {
 			war = no
-			all_core = {
-				owned_by = THIS
-			}
-		}
-
-		effect = {
-			set_country_flag = claim_malta 
-			854 = {
-				add_core = THIS
-			}
-			badboy = 1	
+			invention = expansionism
+			collectivist_theory = 1
 		}
 		
-		ai_will_do = { factor = 1 }
-	}
-	
-	claim_albania = {
-		picture = venetian_ambitions
-		potential = {
-			tag = VEN
-			NOT = { has_country_flag = claim_albania }
-			NOT = { has_country_flag = lost_empire }
-		}
-
-		allow = {
-			war = no
-			all_core = {
-				owned_by = THIS
-			}
-		}
-	
-		effect = {
-			set_country_flag = claim_albania
-			850 = {
-				add_core = THIS 
-			}
-			851 = {
-				add_core = THIS
-			}
-			852 = {
-				add_core = THIS
-			}
-			849 = {
-				add_core = THIS
-			}
-			853 = {
-				add_core = THIS
-			}
-			badboy = 7		
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	claim_istria = {
-		picture = venetian_ambitions
-		potential = {
-			tag = VEN
-			NOT = { has_country_flag = claim_istria }
-			NOT = { has_country_flag = lost_empire }
-		}
-
-		allow = {
-			war = no
-			all_core = {
-				owned_by = THIS
-			}
+		effect = { 
+			set_country_flag = the_future_of_venice_event
+			country_event = 712340
+			
 		}
 		
-		effect = {
-			set_country_flag = claim_istria
-			774 = {
-				add_core = THIS
-			}
-			773 = {
-				add_core = THIS
-			}
-			770 = {
-				add_core = THIS
-			}
-			769 = {
-				add_core = THIS
-			}
-			736 = {
-				add_core = THIS
-			}
-			737 = {
-				add_core = THIS	
-			}
-			3288 = {
-				add_core = THIS
-			}
-			badboy = 10
-		
-		}
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 0 }
 	}
-	
+
+		
+###
+#	claim_malta = {
+#		picture = venetian_ambitions
+#		potential = {
+#			tag = VEN
+#			NOT = { has_country_flag = claim_malta }
+#			NOT = { has_country_flag = lost_empire }
+#		}
+#
+#		allow = {
+#			war = no
+#			all_core = {
+#				owned_by = THIS
+#			}
+#		}
+#
+#		effect = {
+#			set_country_flag = claim_malta 
+#			854 = {
+#				add_core = THIS
+#			}
+#			badboy = 1	
+#		}
+#		
+#		ai_will_do = { factor = 1 }
+#	}
+#	
+#	claim_albania = {
+#		picture = venetian_ambitions
+#		potential = {
+#			tag = VEN
+#			NOT = { has_country_flag = claim_albania }
+#			NOT = { has_country_flag = lost_empire }
+#		}
+#
+#		allow = {
+#			war = no
+#			all_core = {
+#				owned_by = THIS
+#			}
+#		}
+#	
+#		effect = {
+#			set_country_flag = claim_albania
+#			850 = {
+#				add_core = THIS 
+#			}
+#			851 = {
+#				add_core = THIS
+#			}
+#			852 = {
+#				add_core = THIS
+#			}
+#			849 = {
+#				add_core = THIS
+#			}
+#			853 = {
+#				add_core = THIS
+#			}
+#			badboy = 7		
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+#	
+#	claim_istria = {
+#		picture = venetian_ambitions
+#		potential = {
+#			tag = VEN
+#			NOT = { has_country_flag = claim_istria }
+#			NOT = { has_country_flag = lost_empire }
+#		}
+#
+#		allow = {
+#			war = no
+#			all_core = {
+#				owned_by = THIS
+#			}
+#		}
+#		
+#		effect = {
+#			set_country_flag = claim_istria
+#			774 = {
+#				add_core = THIS
+#			}
+#			773 = {
+#				add_core = THIS
+#			}
+#			770 = {
+#				add_core = THIS
+#			}
+#			769 = {
+#				add_core = THIS
+#			}
+#			736 = {
+#				add_core = THIS
+#			}
+#			737 = {
+#				add_core = THIS	
+#			}
+#			3288 = {
+#				add_core = THIS
+#			}
+#			badboy = 10
+#		
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+#	
 	form_italy = {
 		news = yes
 		news_desc_long = "form_italy_NEWS_LONG"
