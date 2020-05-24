@@ -196,3 +196,35 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 6066
+	title = "Damagaram Founded"
+	desc = "EVTDESC6066"
+	fire_only_once = yes
+
+	trigger = {
+		year = 1731
+		tag = KBO
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Ok. They will be our neighbour"
+		1815 = { secede_province = DAM }
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 1816 #Kufe
+					1952 = { empty = yes }
+				}
+			}
+			1952 = { secede_province = DAM any_pop = { literacy = -0.99 } life_rating = 5 }
+			owner = { prestige = 1 }
+		}
+
+	}
+}
