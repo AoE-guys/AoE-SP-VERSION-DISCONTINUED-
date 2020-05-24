@@ -1310,26 +1310,6 @@ country_event = {
 	}
 }
 country_event = {
-	id = 171005
-	title = "Walpole's solution"
-	desc = "EVTDESC171005"
-	picture = english_parliment
-	fire_only_once = yes
-	
-	trigger = {
-		owns = 300
-		has_country_flag = walpole_minister
-	}
-	mean_time_to_happen = {
-		months = 2
-	}
-	
-	option = {
-		name = "Oh thank God!"
-		remove_country_modifier = stock_market_crash
-	}
-}
-country_event = {
 	id = 171006
 	title = "The Great debt Stabilized"
 	desc = "EVTDESC171006"
