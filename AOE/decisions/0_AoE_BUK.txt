@@ -143,7 +143,7 @@ political_decisions = {
 			create_alliance = DZN
 			war = {
 			target = QNG
-			attacker_goal = { casus_belli = acquire_state state_province_id = 1490 } 
+			attacker_goal = { casus_belli = status_quo } 
 			defender_goal = { casus_belli = establish_protectorate_casus_belli }
 			call_ally = yes
 			}
@@ -246,20 +246,15 @@ political_decisions = {
 				has_country_flag = oirat_vic
 			}
 			tag = DZN
-			year = 1952
+			year = 1752
 			1488 = {
 					owned_by = DZN
 			}
 		}
 		
 		allow = {
-			OR = {
-				1488 = {
-					owned_by = DZN
-				}
-				1488 = {
-					owned_by = XBI
-				}
+			1488 = {
+				owned_by = DZN
 			}
 		}
 		
@@ -269,6 +264,11 @@ political_decisions = {
 			KML = { country_event = 6070 }
 			MGL = { country_event = 6069 }
 			TNT = { country_event = 6068 }
+			QNG = { country_event = 6067 }
+			1490 = { secede_province = QNG }
+			1491 = { secede_province = QNG }
+			1492 = { secede_province = QNG }
+			1489 = { secede_province = QNG }
 		}
 		
 		ai_will_do = { factor = 1 }
