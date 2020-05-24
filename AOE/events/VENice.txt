@@ -94,12 +94,8 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 	
-	trigger = 
-	
-	mean_time_to_happen = {
-	months = 0
-	}
-	
+	is_triggered_only = yes
+
 	option = {
 		name = "Il Nostro Mare!"
 		prestige = 10
@@ -107,11 +103,13 @@ country_event = {
 	}
 	
 	option = {
-		name = "Avanti a Italia"
+		name = "Avanti a Italia!"
 		prestige = 10
 		set_country_flag = into_italy
 	}
 }
+
+
 		
 
 
