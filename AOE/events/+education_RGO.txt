@@ -417,8 +417,8 @@ country_event = 999904
 
 province_event = {
 	id = 9999969
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -429,7 +429,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_1 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -484,8 +484,48 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 31 } }
-			life_rating = 1		
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 1	
+			}
+			#any_owned = {
+            #limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = -3		
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = -4		
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = -5		
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = -6		
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -7		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -8		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -9		
 			}
 		}
 	}
@@ -493,8 +533,8 @@ province_event = {
 
 province_event = {
 	id = 9999968
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -505,7 +545,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_2 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -560,17 +600,57 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 32 } }
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 2
+			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
 			life_rating = 1		
-			}		
+			}
+			#any_owned = {
+            #limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = -3		
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = -4		
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = -5		
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -6		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -7		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -8		
+			}
 		}
 	}
 }
 
 province_event = {
 	id = 9999967
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -581,7 +661,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_3 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -636,8 +716,48 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 33 } }
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 3
+			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 2		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
 			life_rating = 1		
+			}
+			#any_owned = {
+            #limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = -3		
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = -4		
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -5		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -6		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -7		
 			}
 		}
 	}
@@ -645,8 +765,8 @@ province_event = {
 
 province_event = {
 	id = 9999966
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -657,7 +777,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_4 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -712,8 +832,48 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 34 } }
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 4
+			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 3		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 2	
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
 			life_rating = 1		
+			}
+			#any_owned = {
+            #limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = -3		
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -4		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -5		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -6		
 			}
 		}
 	}
@@ -721,8 +881,8 @@ province_event = {
 
 province_event = {
 	id = 9999965
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -733,7 +893,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_5 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -788,8 +948,48 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 35 } }
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 5
+			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 4		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 3	
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = 2		
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
 			life_rating = 1		
+			}
+			#any_owned = {
+            #limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -3		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -4		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -5		
 			}
 		}
 	}
@@ -797,8 +997,8 @@ province_event = {
 
 province_event = {
 	id = 9999964
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -809,7 +1009,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_6 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -864,17 +1064,57 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 36 } }
-			life_rating = 1		
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 6
 			}
-				}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 5		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 4	
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = 3		
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = 2		
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = 1	
+			}
+			#any_owned = {
+            #limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -3		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -4		
+			}
+		}
 	}
 }
 
 province_event = {
 	id = 9999963
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -885,7 +1125,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_7 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -940,17 +1180,57 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 37 } }
-			life_rating = 1
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 7
 			}
-				}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 6		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 5	
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = 4		
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = 3		
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = 2	
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = 1		
+			}
+			#any_owned = {
+            #limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -2		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -3		
+			}
+		}
 	}
 }
 
 province_event = {
 	id = 9999962
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -961,7 +1241,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_8 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -1016,8 +1296,48 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 38 } }
-			life_rating = 1		
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 8
+			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 7		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 6
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = 5	
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = 4	
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = 3
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = 2	
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = 1	
+			}
+			#any_owned = {
+            #limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = -1		
+			}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -2		
 			}
 		}
 	}
@@ -1025,8 +1345,8 @@ province_event = {
 
 province_event = {
 	id = 9999961
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -1037,7 +1357,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_9 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -1092,8 +1412,48 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 39 } }
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 9
+			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 8		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 7
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = 6	
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = 5	
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = 4
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = 3	
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = 2	
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
 			life_rating = 1		
+			}
+			#any_owned = {
+            #limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			#life_rating = 0		
+			#}
+			any_owned = {
+            limit = { life_rating = 40 }
+			life_rating = -1		
 			}
 		}
 	}
@@ -1101,8 +1461,8 @@ province_event = {
 
 province_event = {
 	id = 9999960
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -1112,7 +1472,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_10 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
@@ -1167,17 +1527,57 @@ province_event = {
 				}
 			}
 			any_owned = {
-            limit = { NOT = { life_rating = 40 } }
-			life_rating = 1	
+            limit = { life_rating = 30  NOT = { life_rating = 31 } }
+			life_rating = 10
 			}
+			any_owned = {
+            limit = { life_rating = 31  NOT = { life_rating = 33 } }
+			life_rating = 9		
+			}
+			any_owned = {
+            limit = { life_rating = 32  NOT = { life_rating = 33 } }
+			life_rating = 8
+			}
+			any_owned = {
+            limit = { life_rating = 33  NOT = { life_rating = 34 } }
+			life_rating = 7	
+			}
+			any_owned = {
+            limit = { life_rating = 34  NOT = { life_rating = 35 } }
+			life_rating = 6	
+			}
+			any_owned = {
+            limit = { life_rating = 35  NOT = { life_rating = 36 } }
+			life_rating = 5
+			}
+			any_owned = {
+            limit = { life_rating = 36  NOT = { life_rating = 37 } }
+			life_rating = 4	
+			}
+			any_owned = {
+            limit = { life_rating = 37  NOT = { life_rating = 38 } }
+			life_rating = 3
+			}
+			any_owned = {
+            limit = { life_rating = 38  NOT = { life_rating = 39 } }
+			life_rating = 2		
+			}
+			any_owned = {
+            limit = { life_rating = 39  NOT = { life_rating = 40 } }
+			life_rating = 1		
+			}
+			#any_owned = {
+            #limit = { life_rating = 40 }
+			#life_rating = 0		
+			#}
 		}
 	}
 }
 
 province_event = {
 	id = 9999959
-	title = "Education in $STATENAME$"
-	desc = "Education in $STATENAME$ accelerates economic growth."
+	title = "Development in $STATENAME$"
+	desc = "Development in $STATENAME$ changes."
 
 	trigger = {
 	has_global_flag = education_setup
@@ -1188,7 +1588,7 @@ province_event = {
 	  NOT = { has_province_modifier = RGO_education_0 }
 	}
 
-	allow_multiple_instances = yes
+	#allow_multiple_instances = yes
 
 	mean_time_to_happen = {
 		months = 1
