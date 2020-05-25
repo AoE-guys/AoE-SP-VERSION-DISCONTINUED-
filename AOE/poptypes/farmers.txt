@@ -822,54 +822,60 @@ promote_to = {
 			factor = 40
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			NOT = { artisans = 0.0125 }
+			NOT = { artisans = 0.01 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			NOT = { artisans = 0.025 }
+			NOT = { artisans = 0.02 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			NOT = { artisans = 0.0375 }
+			NOT = { artisans = 0.03 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			NOT = { artisans = 0.05 }
+			NOT = { artisans = 0.04 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.5
 			NOT = { literacy = 0.6 }
-			NOT = { artisans = 0.0625 }
+			NOT = { artisans = 0.05 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			NOT = { artisans = 0.075 }
+			NOT = { artisans = 0.06 }
+		}
+		modifier = {
+			factor = 40
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			NOT = { artisans = 0.07 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			NOT = { artisans = 0.0875 }
+			NOT = { artisans = 0.08 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			NOT = { artisans = 0.10 }
+			NOT = { artisans = 0.09 }
 		}
 		modifier = {
 			factor = 40
 			literacy = 0.99
-			NOT = { artisans = 0.125 }
+			NOT = { artisans = 0.10 }
 		}
 	}
 	bureaucrats = {
