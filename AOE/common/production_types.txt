@@ -127,8 +127,8 @@ farming_factory_template = {
 	
 	owner = {
 		poptype = labourers 
-		effect = input
-		effect_multiplier = -2.5
+		effect = output
+		effect_multiplier = 5.0
 	}
 	
 	employees = {		
@@ -139,8 +139,8 @@ farming_factory_template = {
 		}		
 		{ 
 			poptype = artisans 
-			effect = output
-			effect_multiplier = 1.5
+			effect = throughput
+			effect_multiplier = 2.0
 			amount = 0.2
 		}
 	
@@ -991,11 +991,11 @@ RGO_template_farmers = {
 	}
 		
 	employees = {
-		#{
-		#	poptype = farmers 
-		#	effect = throughput
-		#	amount = 1
-		#}
+		{
+			poptype = farmers 
+			effect = throughput
+			amount = 1
+		}
 		
 		{
 			poptype = serfs 
@@ -1012,7 +1012,7 @@ RGO_template_farmers = {
 	}
 	
 	type = rgo
-	workforce = 6000
+	workforce = 60000
 }
 
 RGO_template_labourers = {
@@ -1022,11 +1022,11 @@ RGO_template_labourers = {
 	}
 		
 	employees = {
-		#{ 
-		#	poptype = farmers 
-		#	effect = throughput
-		#	amount = 1
-		#}
+		{ 
+			poptype = farmers 
+			effect = throughput
+			amount = 1
+		}
 		
 		{
 			poptype = serfs 
@@ -1127,14 +1127,14 @@ orchard = {
 precious_metal_mine = {
 	template = RGO_template_labourers
 	output_goods = precious_metal 
-	value = 3.0
+	value = 30.0
 	farm = yes
 }
 
 precious_goods_market = {
 	template = RGO_template_labourers
 	output_goods = precious_goods
-	value = 1.0
+	value = 10.0
 	farm = yes
 	#mine = yes
 }

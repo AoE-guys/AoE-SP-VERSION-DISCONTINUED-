@@ -714,6 +714,69 @@ migration_target = {
 }
 
 promote_to = {
+
+	officers = {
+		factor = 0.01		
+		modifier = {
+			factor = 50
+			military_spending = 0.1
+			NOT = { military_spending = 0.2 }
+			NOT = { officers = 0.001 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.2
+			NOT = { military_spending = 0.3 }
+			NOT = { officers = 0.002 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.3
+			NOT = { military_spending = 0.4 }
+			NOT = { officers = 0.003 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.4
+			NOT = { military_spending = 0.5 }
+			NOT = { officers = 0.004 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.5
+			NOT = { military_spending = 0.6 }
+			NOT = { officers = 0.005 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.6
+			NOT = { military_spending = 0.7 }
+			NOT = { officers = 0.006 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.7
+			NOT = { military_spending = 0.8 }
+			NOT = { officers = 0.007 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.8
+			NOT = { military_spending = 0.9 }
+			NOT = { officers = 0.008 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.9
+			NOT = { military_spending = 0.99 }
+			NOT = { officers = 0.009 }
+		}
+		modifier = {
+			factor = 50
+			military_spending = 0.99
+			NOT = { officers = 0.010 }
+		}
+	}
 		
 	artisans = {
 		factor = 0.01
@@ -805,26 +868,32 @@ promote_to = {
 		}
 		modifier = {
 			factor = 25
+			administration_spending = 0.6
+			NOT = { administration_spending = 0.7 }
+			NOT = { bureaucrats = 0.018 }
+		}
+		modifier = {
+			factor = 25
 			administration_spending = 0.7
 			NOT = { administration_spending = 0.8 }
-			NOT = { bureaucrats = 0.018 }
+			NOT = { bureaucrats = 0.021 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.8
 			NOT = { administration_spending = 0.9 }
-			NOT = { bureaucrats = 0.021 }
+			NOT = { bureaucrats = 0.024 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.9
 			NOT = { administration_spending = 0.99 }
-			NOT = { bureaucrats = 0.024 }
+			NOT = { bureaucrats = 0.027 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.99
-			NOT = { bureaucrats = 0.027 }
+			NOT = { bureaucrats = 0.030 }
 		}
 	}
 	farmers =
@@ -993,26 +1062,32 @@ promote_to = {
 		}
 		modifier = {
 			factor = 25
+			education_spending = 0.6
+			NOT = { education_spending = 0.7 }
+			NOT = { clergymen = 0.024 }
+		}
+		modifier = {
+			factor = 25
 			education_spending = 0.7
 			NOT = { education_spending = 0.8 }
-			NOT = { clergymen = 0.024 }
+			NOT = { clergymen = 0.028 }
 		}
 		modifier = {
 			factor = 25
 			education_spending = 0.8
 			NOT = { education_spending = 0.9 }
-			NOT = { clergymen = 0.028 }
+			NOT = { clergymen = 0.032 }
 		}
 		modifier = {
 			factor = 25
 			education_spending = 0.9
 			NOT = { education_spending = 0.99 }
-			NOT = { clergymen = 0.032 }
+			NOT = { clergymen = 0.036 }
 		}
 		modifier = {
 			factor = 25
 			education_spending = 0.99
-			NOT = { clergymen = 0.036 }
+			NOT = { clergymen = 0.040 }
 		}
 	}
 	labourers = {

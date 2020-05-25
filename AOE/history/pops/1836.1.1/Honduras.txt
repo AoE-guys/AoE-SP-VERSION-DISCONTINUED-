@@ -141,3 +141,84 @@
 	}
 
 }
+#Bluefields (12000/3000 POPS)
+3362 = {
+	aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 1
+	}
+
+	clergymen = {
+		culture = central_american
+		religion = catholic
+		size = 8
+	}
+
+	artisans = {
+		culture = central_american
+		religion = catholic
+		size = 2
+	}
+
+	soldiers = {
+		culture = central_american
+		religion = catholic
+		size = 105
+	}
+
+	serfs = {
+		culture = central_american
+		religion = catholic
+		size = 9
+	}
+
+	labourers = {
+		culture = central_american
+		religion = catholic
+		size = 3
+	}
+
+	soldiers = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 2
+	}
+
+	slaves = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 233
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = catholic
+		size = 7
+	}
+	
+	serfs = {
+		culture = afro_caribbean
+		religion = animist
+		size = 9
+	}
+
+	labourers = {
+		culture = afro_caribbean
+		religion = animist
+		size = 5
+	}
+	
+	serfs = {
+		culture = native_american_minor #native_american_minor
+		religion = animist
+		size = 1744
+	}
+	
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 1044
+	}
+
+}

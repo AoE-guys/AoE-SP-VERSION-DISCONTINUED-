@@ -1,5 +1,7 @@
 # AOE-exp: Age of Enlightenment Expanded
 
+[Latest Version](https://github.com/AoE-guys/AoE-exp/releases/latest)
+
 Welcome to the GitHub repository of Age of Enlightenment. AoE is a modification to Victoria II, with the setting of the game in 18th century. 
 The player plays as a nation, leading them toward enlightenment and prosperity.
 
@@ -8,6 +10,10 @@ The player plays as a nation, leading them toward enlightenment and prosperity.
 The economy system is entirely reworked, based on the psysiocracy theory in the 18th century. The nations produce by and large subsistence agriculture. As technology advanced more and more at the arrival of industrial revolution, so did production become increasingly for industry. This is modelled in game by having province RGO replaced by subsistence agriculture, and the players (or the gentries, industrialists) can build farms, mines and factories in the industrial tab.
 
 ![Reworked Industry](/screenshots/v2_7.bmp)
+
+Reworked Tech tree and more!
+
+![Reworked Tech Tree](/screenshots/v2_8.bmp)
 
 *This version of the mod is still being constructed, frequently updated etc., and so bugs is not uncommon.
 We recommend backing up your save files between each update.* 

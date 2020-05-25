@@ -58,6 +58,8 @@ country_event = {
         furniture = 1000
         luxury_furniture = 1000
         radio = 1000
+		any_pop = { limit = { type = serfs } pop_type = farmers }
+		any_country = { any_pop = { limit = { type = serfs } pop_type = farmers } }
 		any_country = { 
 		               money = 10000
                        ammunition = 1000
