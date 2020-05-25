@@ -14,6 +14,7 @@ country_event = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
 		}
 	slavery = yes_slavery
+	2213 = { controled_by = THIS }
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -147,8 +148,7 @@ country_event = {
 			tag = FRA
 			tag = BOR
 		}
-
-
+       NOT = { 2213 = { controled_by = THIS } }
 	}
 	mean_time_to_happen = {
 		days = 1
