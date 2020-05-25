@@ -763,26 +763,32 @@ promote_to = {
 		}
 		modifier = {
 			factor = 20
+			military_spending = 0.6
+			NOT = { military_spending = 0.7 }
+			NOT = { officers = 0.006 }
+		}
+		modifier = {
+			factor = 20
 			military_spending = 0.7
 			NOT = { military_spending = 0.8 }
-			NOT = { officers = 0.006 }
+			NOT = { officers = 0.007 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.8
 			NOT = { military_spending = 0.9 }
-			NOT = { officers = 0.007 }
+			NOT = { officers = 0.008 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.9
 			NOT = { military_spending = 0.99 }
-			NOT = { officers = 0.008 }
+			NOT = { officers = 0.009 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.99
-			NOT = { officers = 0.009 }
+			NOT = { officers = 0.010 }
 		}
 	}		
 	artisans = {
@@ -886,26 +892,32 @@ promote_to = {
 		}
 		modifier = {
 			factor = 25
+			administration_spending = 0.5
+			NOT = { administration_spending = 0.6 }
+			bureaucrats = 0.018
+		}
+		modifier = {
+			factor = 25
 			administration_spending = 0.7
 			NOT = { administration_spending = 0.8 }
-			bureaucrats = 0.018
+			bureaucrats = 0.021
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.8
 			NOT = { administration_spending = 0.9 }
-			bureaucrats = 0.021
+			bureaucrats = 0.024
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.9
 			NOT = { administration_spending = 0.99 }
-			bureaucrats = 0.024
+			bureaucrats = 0.027
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.99
-			bureaucrats = 0.027
+			bureaucrats = 0.030
 		}
 	}
 	soldiers =
@@ -1075,26 +1087,32 @@ promote_to = {
 		}
 		modifier = {
 			factor = 25
+			education_spending = 0.6
+			NOT = { education_spending = 0.7 }
+			NOT = { clergymen = 0.024 }
+		}
+		modifier = {
+			factor = 25
 			education_spending = 0.7
 			NOT = { education_spending = 0.8 }
-			NOT = { clergymen = 0.024 }
+			NOT = { clergymen = 0.028 }
 		}
 		modifier = {
 			factor = 25
 			education_spending = 0.8
 			NOT = { education_spending = 0.9 }
-			NOT = { clergymen = 0.028 }
+			NOT = { clergymen = 0.032 }
 		}
 		modifier = {
 			factor = 25
 			education_spending = 0.9
 			NOT = { education_spending = 0.99 }
-			NOT = { clergymen = 0.032 }
+			NOT = { clergymen = 0.036 }
 		}
 		modifier = {
 			factor = 25
 			education_spending = 0.99
-			NOT = { clergymen = 0.036 }
+			NOT = { clergymen = 0.040 }
 		}
 	}
 	labourers = {
