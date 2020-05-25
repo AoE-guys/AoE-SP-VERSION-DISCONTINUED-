@@ -153,6 +153,8 @@ infrastructure = {
 ##########################################################################
 
 base_values = {
+	global_pop_militancy_modifier = -0.05
+	global_pop_consciousness_modifier = -0.05
 	supply_limit = 5
 }
 
@@ -284,6 +286,8 @@ in_bankrupcy = {
 	min_tariff = 0.75
 	min_tax = 0.45
 	max_military_spending = -0.2
+	#max_social_spending = -0.75
+	min_social_spending = -0.75
 	#max_social_spending = 0.5
 	ruling_party_support = -0.75
 }
