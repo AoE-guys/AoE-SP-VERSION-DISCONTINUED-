@@ -385,8 +385,9 @@ country_event = {
 		#}
 		
 		set_global_flag = education_setup_b
-		country_event = 999958
+		#country_event = 999958
 		any_country = { limit = { NOT = { tag = THIS } } country_event = 9999855 }
+		country_event = 9999886
 	}
 }
 
@@ -1193,5 +1194,6 @@ country_event = {
 #set_global_flag = education_setup
 #country_event = 999904
 #any_country { limit = { NOT = THIS } country_event = 9999855 }
+country_event = 999958
 }
 }
