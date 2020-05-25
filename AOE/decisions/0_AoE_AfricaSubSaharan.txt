@@ -45,7 +45,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 7
+			badboy = 3
 			1173 = {
 				add_core = THIS
 			}
@@ -64,7 +64,7 @@ political_decisions = {
 		}
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 	}
 

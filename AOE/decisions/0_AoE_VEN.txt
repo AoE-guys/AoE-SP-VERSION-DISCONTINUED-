@@ -13,17 +13,108 @@ political_decisions = {
 			war = no
 			invention = expansionism
 			collectivist_theory = 1
+			is_secondary_power = yes
 		}
 		
 		effect = { 
 			set_country_flag = the_future_of_venice_event
+			set_country_flag = venice_expansion
 			country_event = 712340
+			badboy = 6
 			
 		}
 		
 		ai_will_do = { factor = 0 }
 	}
+	
+	unto_emilia-romagna = {
+		picture = emilia-romagna
+		potential = {
+			has_country_flag = into_italy
+			NOT = { has_country_flag = emilia_romagna_done }
+		}
+		
+		allow = {
+			war = no
+			is_independant = yes
+			is_secondary_power = yes
+		}
+		
+		effect = {
+			set_country_flag = emilia_romagna_done
+			738 = { 
+				add_core = THIS 
+			}	#parma
+			739 = {
+				add_core = THIS 
+			}	#Modena
+			741 = {
+				add_core = THIS 
+			}	#Bologna
+			 742 = {
+				add_core = THIS 
+			}	#Ferrara
+			 743 = {
+				add_core = THIS 
+			}	#Ravenna
+			badboy = 2
+			poor_strata = {	consciousness = -1.5 }
+			middle_strata = {
+				consciousness = 2
+				militancy = 2
+			}
+			rich_strata = { militancy = -1.5 }
+			
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	demand_milan = {
+		picture = milan
+		potential = {
+			has_country_flag = into_italy
+			has_country_flag = emilia_romagna_done
+			NOT = { has_country_flag = demand_milan_done }
+		}
+		
+		allow = {
 
+			OR = {
+				LOM = { is_independant = no }
+				LOM = { exists = no }
+				is_secondary_power = yes
+				military_score = 25
+			}
+		}
+		
+		effect = {
+			set_country_flag = demand_milan_done
+			LOM = { 
+				overlord = { country_event = 712341 }
+			}
+			 
+			 722 = { 
+				add_core = THIS 
+			}
+			 723 = {
+				add_core = THIS 
+			}
+			 726 = {
+				add_core = THIS 
+			}
+					
+		ai_will_do = { factor = 0 }
+		
+		}
+	}
+	
+			
+			
+				
+			
+			
+			
+			
 		
 ###
 #	claim_malta = {
