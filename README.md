@@ -9,6 +9,8 @@ The economy system is entirely reworked, based on the psysiocracy theory in the 
 
 ![Reworked Industry](/screenshots/v2_7.bmp)
 
+[Latest Version](https://github.com/AoE-guys/AoE-exp/releases/latest)
+
 *This version of the mod is still being constructed, frequently updated etc., and so bugs is not uncommon.
 We recommend backing up your save files between each update.* 
 
