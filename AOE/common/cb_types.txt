@@ -1462,6 +1462,7 @@ change_heir_bourbon_cb = {
 	can_use = {
 		THIS = {
 			is_greater_power = yes
+			capital = 425
 			NOT = { has_country_modifier = neutrality }
 			NOT = { tag = KUK }
 			NOT = { tag = UBD }
