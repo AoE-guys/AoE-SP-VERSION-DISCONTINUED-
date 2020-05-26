@@ -1407,6 +1407,7 @@ change_heir_habsburg_cb = {
 	can_use = {
 		THIS = {
 			is_greater_power = yes
+			capital = 619
 			NOT = { has_country_modifier = neutrality }
 			NOT = { tag = KUK }
 			NOT = { tag = UBD }
@@ -1462,13 +1463,13 @@ change_heir_bourbon_cb = {
 	can_use = {
 		THIS = {
 			is_greater_power = yes
+			capital = 425
 			NOT = { has_country_modifier = neutrality }
 			NOT = { tag = KUK }
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 		}
 		is_greater_power = yes
-		has_cultural_sphere = yes
 		has_global_flag = spanish_succesion_crisis
 		has_country_flag = support_bourbon_heir
 	}
@@ -1488,7 +1489,11 @@ change_heir_bourbon_cb = {
 	
 	on_po_accepted = {
 		prestige_factor = -0.2
-		country_event = 13006000
+		425 = {
+			owner = {
+				country_event = 13006000
+			}
+		}
 	}
 
 }

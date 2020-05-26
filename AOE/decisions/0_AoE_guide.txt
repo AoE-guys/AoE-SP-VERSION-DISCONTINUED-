@@ -1,0 +1,17 @@
+political_decisions = {
+	guide_reminder = {
+		#picture = map_india
+		potential = {
+		    has_global_flag = welcome_to_AoE
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = 9999853
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

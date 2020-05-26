@@ -713,66 +713,66 @@ promote_to = {
 		modifier = {
 			factor = 50
 			NOT = { literacy = 0.1 }
-			craftsmen = 0.001
+			#craftsmen = 0.000
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			craftsmen = 0.025
+			craftsmen = 0.015
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			craftsmen = 0.05
+			craftsmen = 0.03
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			craftsmen = 0.075
+			craftsmen = 0.045
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			craftsmen = 0.10
+			craftsmen = 0.06
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.5
 			NOT = { literacy = 0.5 }
-			craftsmen = 0.125
+			craftsmen = 0.075
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			craftsmen = 0.150
+			craftsmen = 0.09
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.7
 			NOT = { literacy = 0.8 }
-			craftsmen = 0.175
+			craftsmen = 0.105
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			craftsmen = 0.200
+			craftsmen = 0.12
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			craftsmen = 0.225
+			craftsmen = 0.135
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.99
-			craftsmen = 0.25
+			craftsmen = 0.15
 		}
 		modifier = {
 			factor = -100
@@ -785,54 +785,60 @@ promote_to = {
 			factor = 5
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			NOT = { artisans = 0.0125 }
+			NOT = { artisans = 0.01 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			NOT = { artisans = 0.025 }
+			NOT = { artisans = 0.02 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			NOT = { artisans = 0.0375 }
+			NOT = { artisans = 0.03 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			NOT = { artisans = 0.05 }
+			NOT = { artisans = 0.04 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.5
 			NOT = { literacy = 0.6 }
-			NOT = { artisans = 0.0625 }
+			NOT = { artisans = 0.05 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			NOT = { artisans = 0.075 }
+			NOT = { artisans = 0.06 }
+		}
+		modifier = {
+			factor = 5
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			NOT = { artisans = 0.07 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			NOT = { artisans = 0.0875 }
+			NOT = { artisans = 0.08 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			NOT = { artisans = 0.10 }
+			NOT = { artisans = 0.09 }
 		}
 		modifier = {
 			factor = 5
 			literacy = 0.99
-			NOT = { artisans = 0.125 }
+			NOT = { artisans = 0.10 }
 		}
 	}
 	bureaucrats = {
@@ -967,54 +973,60 @@ promote_to = {
 			factor = 50
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			NOT = { clerks = 0.006 }
+			NOT = { clerks = 0.003 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			NOT = { clerks = 0.012 }
+			NOT = { clerks = 0.006 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			NOT = { clerks = 0.018 }
+			NOT = { clerks = 0.009 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			NOT = { clerks = 0.024 }
+			NOT = { clerks = 0.012 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.5
 			NOT = { literacy = 0.5 }
-			NOT = { clerks = 0.030 }
+			NOT = { clerks = 0.015 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			NOT = { clerks = 0.036 }
+			NOT = { clerks = 0.018 }
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			NOT = { clerks = 0.021 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			NOT = { clerks = 0.042 }
+			NOT = { clerks = 0.024 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			NOT = { clerks = 0.054 }
+			NOT = { clerks = 0.027 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.99
-			NOT = { clerks = 0.060 }
+			NOT = { clerks = 0.030 }
 		}
 		modifier = {
 			factor = -100
