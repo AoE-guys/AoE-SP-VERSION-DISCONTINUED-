@@ -48,10 +48,7 @@ political_decisions = {
 		
 		allow = {
 			1594 = {
-				OR = {
-					owned_by = THIS
-					owner = { in_sphere = THIS }
-				}
+				owned_by = THIS
 			}
 		}
 		
