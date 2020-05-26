@@ -18,6 +18,9 @@ political_decisions = {
 			country_event = 100019
 			set_country_flag = east_india_company_funded
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	eic_prepare_campaign_in_india = {
 		picture = map_india

@@ -127,8 +127,8 @@ farming_factory_template = {
 	
 	owner = {
 		poptype = labourers 
-		effect = input
-		effect_multiplier = -2.5
+		effect = output
+		effect_multiplier = 5.0
 	}
 	
 	employees = {		
@@ -139,8 +139,8 @@ farming_factory_template = {
 		}		
 		{ 
 			poptype = artisans 
-			effect = output
-			effect_multiplier = 1.5
+			effect = throughput
+			effect_multiplier = 2.0
 			amount = 0.2
 		}
 	
