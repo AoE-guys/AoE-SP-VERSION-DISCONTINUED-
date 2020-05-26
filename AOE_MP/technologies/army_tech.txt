@@ -14,9 +14,6 @@ post_napoleonic_thought = {
 	
 	ai_chance = {
 		factor = 2
-		modifier = {
-			factor = 2
-		}
 	}
 }
 
@@ -109,7 +106,7 @@ modern_army_doctrine = {
 army_doctrine_7 = {
 	area = army_doctrine
 	year = 1790
-	cost = 18000
+	cost = 25200
 	unciv_military = yes
 	army_base = {
 		supply_consumption = 0.20
@@ -123,7 +120,7 @@ army_doctrine_7 = {
 army_doctrine_8 = {
 	area = army_doctrine
 	year = 1805
-	cost = 21600
+	cost = 30200
 	unciv_military = yes
 	
 	army_base = {
@@ -150,9 +147,6 @@ flintlock_rifles = {
 
 	ai_chance = {
 		factor = 2
-		modifier = {
-			factor = 2
-		}
 	}
 }
 muzzle_loaded_rifles = {
@@ -166,14 +160,6 @@ muzzle_loaded_rifles = {
 
 	ai_chance = {
 		factor = 4
-		modifier = {
-			factor = 6
-			rank = 16
-			year = 1720
-		}
-		modifier = {
-			factor = 2
-		}
 	}
 }
 breech_loaded_rifles = {
@@ -234,7 +220,7 @@ modern_divisional_structure = {
 light_armament_7 = {
 	area = light_armament
 	year = 1790
-	cost = 18000
+	cost = 25200
 	unciv_military = yes
 	unit = 1
 	
@@ -248,7 +234,7 @@ light_armament_7 = {
 light_armament_8 = {
 	area = light_armament
 	year = 1805
-	cost = 21600
+	cost = 30200
 	unciv_military = yes
 
 	unit = 2
@@ -376,7 +362,7 @@ heavy_armament_dunno = {
 heavy_armament_7 = {
 	area = heavy_armament
 	year = 1775
-	cost = 18000
+	cost = 25200
 	unciv_military = yes
 	artillery = {
 		attack = 0.5
@@ -398,7 +384,7 @@ heavy_armament_7 = {
 heavy_armament_8 = {
 	area = heavy_armament
 	year = 1790
-	cost = 21600
+	cost = 30200
 	unciv_military = yes
 	artillery = {
 		attack = 0.5
@@ -513,7 +499,7 @@ aeronautics = {
 military_science_7 = {
 	area = military_science
 	year = 1790
-	cost = 18000
+	cost = 25200
 	unciv_military = yes
 	
 	army_base = {
@@ -527,7 +513,7 @@ military_science_7 = {
 military_science_8 = {
 	area = military_science
 	year = 1805
-	cost = 21600
+	cost = 30200
 	army_base = {
 		default_organisation = 10
 		supply_consumption = 0.20
@@ -647,7 +633,7 @@ great_war_experience = {
 army_leadership_7 = {
 	area = army_leadership
 	year = 1790
-	cost = 18000
+	cost = 25200
 	unciv_military = yes
 	morale = 0.25
 	
@@ -665,7 +651,7 @@ army_leadership_7 = {
 army_leadership_8 = {
 	area = army_leadership
 	year = 1805
-	cost = 21600
+	cost = 30200
 	unciv_military = yes
 	morale = 0.5
 

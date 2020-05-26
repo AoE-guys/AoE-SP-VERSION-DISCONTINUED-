@@ -5,8 +5,8 @@ controller = WUL
 add_core = WUL
 
 add_core = GER
-add_core = HRE
+add_core = NNN
 
-trade_goods = fruit  state_building = {  level = 5  building = fruit_factory  upgrade = yes  }
+trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
 
 life_rating = 40

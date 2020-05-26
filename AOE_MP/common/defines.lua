@@ -531,7 +531,7 @@ diplomacy = {
 	
 	GUNBOAT_DIPLOMATIC_COST = 1,
 	GUNBOAT_RELATION_ON_ACCEPT = 1,
-	WARGOAL_JINGOISM_REQUIREMENT = 0.055,
+	WARGOAL_JINGOISM_REQUIREMENT = 0.01,
 
 	LIBERATE_STATE_RELATION_INCREASE = 50,
 	DISHONORED_CALLALLY_PRESTIGE_PENALTY = -3,
@@ -658,11 +658,11 @@ pops = {
 	LIFE_RATING_GROWTH_BONUS = 0.00005,
 	LIFE_NEED_STARVATION_LIMIT = 0.01,
 
-	MIL_LACK_EVERYDAY_NEED = 0.1,
+	MIL_LACK_EVERYDAY_NEED = 0.05,
 	MIL_HAS_EVERYDAY_NEED = -0.1,
 	MIL_HAS_LUXURY_NEED = -0.2,
-	MIL_NO_LIFE_NEED = 0.2,
-	MIL_REQUIRE_REFORM = 0.2,
+	MIL_NO_LIFE_NEED = 0.1,
+	MIL_REQUIRE_REFORM = 0.05,
 	MIL_IDEOLOGY = -0.1,
 	MIL_RULING_PARTY = -0.1,
 	MIL_REFORM_IMPACT = 2,
@@ -684,7 +684,7 @@ pops = {
 	
 	POP_SAVINGS = 0.03,
 	
-	STATE_CREATION_ADMIN_LIMIT = 0.01,
+	STATE_CREATION_ADMIN_LIMIT = 0.00,
 	MIL_TO_JOIN_REBEL = 8, -- Rebels over this will join a faction
 	MIL_TO_JOIN_RISING = 9, -- Rebels over this will join a general rising
 	MIL_TO_AUTORISE = 9, -- Rebels over this rise no matter what
@@ -694,7 +694,7 @@ pops = {
 	
 	POP_TO_LEADERSHIP = 0.0001, -- how much leadership every 1000 officers gives each day.
 	ARTISAN_MIN_PRODUCTIVITY = 5, -- Minimum efficiency of an artisan
-	SLAVE_GROWTH_DIVISOR = 10, -- Slaves have N times lower growth
+	SLAVE_GROWTH_DIVISOR = 25, -- Slaves have N times lower growth
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
 	LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxury goods
@@ -727,7 +727,7 @@ ai =
 	SPAM_PENALTY = 20, -- makes certain diplomatic action less common 
 	ONE_SIDE_MAX_WARSCORE = 150, -- don't add too many wargoals to one side in a war
 	POP_PROJECT_INVESTMENT_MAX_BUDGET_FACTOR = 0.25, -- how much % of our current budget can be spend on the pop project investments.
-	RELATION_LIMIT_NO_ALLIANCE_OFFER = 0, -- if relation lower then this value, AI will not ally
+	RELATION_LIMIT_NO_ALLIANCE_OFFER = 50, -- if relation lower then this value, AI will not ally
 	NAVAL_SUPPLY_PENALTY_LIMIT = 0.2, -- AI will allow to have max X% of supply penalty (when too little naval bases)
 	CHANCE_BUILD_RAILROAD = 0.5, -- chances in % of AI decisions (max value 1.0)
 	CHANCE_BUILD_NAVAL_BASE = 1.0,

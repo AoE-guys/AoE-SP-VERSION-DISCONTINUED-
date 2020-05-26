@@ -1,0 +1,28 @@
+political_decisions = {
+
+	choose_capital_of_china = {
+		picture = chinese_capital_pic
+		potential = {
+			has_country_flag = turban_rebel
+			NOT = { has_country_flag = chiense_capital_chosen }
+			#owns = 2221
+			#owns = 1604
+			#owns = 1508
+			#owns = 1616	
+		}
+		
+		allow = {
+		    has_country_flag = turban_rebel
+			owns = 2221
+			owns = 1604
+			owns = 1508
+			owns = 1616
+		}
+		
+		effect = {
+		    set_country_flag = chiense_capital_chosen
+			prestige = 5
+			country_event = 100015
+		}
+	}
+}

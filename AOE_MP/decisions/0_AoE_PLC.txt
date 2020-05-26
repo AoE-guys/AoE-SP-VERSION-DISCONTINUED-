@@ -16,6 +16,7 @@ political_decisions = {
 				ruling_party_ideology  = liberal
 				ruling_party_ideology  = communist
 			}
+			NOT = { has_country_modifier = noble_democracy }
 			NOT = {
 			part_of_sphere = yes
 			}
@@ -34,14 +35,6 @@ political_decisions = {
 				}
 			}
 			
-			random_owned = {
-				limit = {
-					owner = { debt_law = peonage }
-				}
-				owner = {
-					political_reform = debtors_prisons
-				}
-			}
 			random_owned = {
 				limit = { owner = { primary_culture = polish } }
 				owner = {
@@ -94,7 +87,12 @@ political_decisions = {
 			962 = { add_core = PLC }
 			1016 = { add_core = PLC }
 			943 = { add_core = PLC }
-			1017 = { add_core = PLC }
+			958 = { add_core = PLC }
+			1007 = { add_core = PLC }
+			961 = { add_core = PLC }
+			974 = { add_core = PLC }
+			972 = { add_core = PLC }
+			971 = { add_core = PLC }
 			badboy = 15
 		
 			relation = {
@@ -158,7 +156,10 @@ political_decisions = {
 			NOT = { has_country_flag = second_union_of_hadiach }
 		}
 		allow = {
-			NOT = { government = elective_monarchy_oligarchy }
+			OR = {
+				NOT = { government = elective_monarchy_oligarchy }
+				has_country_modifier = noble_democracy
+			}
 			owns = 963
 			political_thought_7 = 1
 			average_militancy = 4
@@ -174,9 +175,47 @@ political_decisions = {
 				add_core = PLR
 			}
 			change_tag = PLR
+			add_accepted_culture = ukrainian
 			prestige = 15
 		}
 		ai_will_do = { factor = 1 }	
+	}
+	
+	abolish_folwark_system = {
+		picture = folwark
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = second_union_of_hadiach }
+			has_country_modifier = folwark_serf_economy
+		}
+		allow = {
+			compound_steam_engines = 1
+			semi_automatization = 1
+			hot_blast = 1
+			early_railroad = 1
+		}
+		effect = {
+			remove_country_modifier = folwark_serf_economy
+			prestige = 15
+			any_pop = {
+				limit = {
+					strata = poor
+				}
+				militancy = -3
+			}
+			random_owned = {
+				limit = {
+					owner = { debt_law = peonage }
+				}
+				owner = {
+					political_reform = debtors_prisons
+				}
+			}
+			add_country_modifier = {
+				name = mercantilism
+				duration = 365
+			}
+		}
 	}
 	
 	recover_inflanty = {

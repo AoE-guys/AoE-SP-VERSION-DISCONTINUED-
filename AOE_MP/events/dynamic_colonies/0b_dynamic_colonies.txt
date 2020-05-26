@@ -1,0 +1,154 @@
+
+#Colony Conquest
+country_event = {
+	title = "Foreign Colony Conquered"
+	desc = "We were able to secure foreign colony in a peace treaty."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999805
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+			  any_country = {
+			                 limit = {
+			                          has_country_flag = contested_colony
+									  in_sphere = THIS
+									  is_vassal = no
+									  NOT = { vassal_of = THIS }
+									  #has_recently_lost_war = yes
+			                 }
+                             country_event = 9999804
+			  }
+	}
+}
+
+country_event = {
+	title = "We were conquered"
+	desc = "We were conquered."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999804
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+	          clr_country_flag = contested_colony
+			  FROM = { inherit = THIS }
+	}
+}
+
+country_event = {
+	title = "No longer under foreign threat"
+	desc = "The war is over and we are no longer under the threat of foreign powere wanting to annex us."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999799
+    trigger = {
+	            has_country_flag = contested_colony
+				war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Ok"
+	          clr_country_flag = contested_colony
+	}
+}
+
+##Return Colonies Cores
+country_event = {
+	title = "New Colony"
+	desc = "We happened to be in possession of new overseas land, it's time to establish formal administration."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999819
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+	          name = "Ok"
+			  any_country = {
+			                 limit = {
+			                          AND = { 
+				               	             tag = FROM
+                                             #exists = no							  
+				               	      }
+			                 }
+	                         any_owned = {
+				               		       limit = {
+				               		                AND = {
+				               		                       is_core = UTI
+				               		                       is_overseas = yes
+														   NOT = { is_core = FROM }
+				               			    		}
+				               		       }
+				               		       secede_province = THIS						
+			                 }
+			  }			  
+	}
+	option = {
+	          name = "Ok"
+	          UTI = { country_event = 9999817 }
+			  clr_global_flag = making_colonies
+			  clr_global_flag = colony_already_established
+	}
+}
+
+country_event = {
+	title = "New Colony"
+	desc = "We happened to be in possession of new overseas land, it's time to establish formal administration."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999811
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+	          name = "Ok"
+			  any_country = {
+			                 limit = {
+			                          AND = { 
+				               	             tag = FROM
+                                             #exists = no							  
+				               	      }
+			                 }
+	                         any_owned = {
+				               		       limit = {
+				               		                AND = {
+				               		                       is_core = THIS
+				               		                       is_overseas = yes
+														   NOT = { is_core = FROM }
+				               			    		}
+				               		       }
+				               		       secede_province = THIS						
+			                 }
+			  }			  
+	}
+	option = {
+	          name = "Ok"
+			  clr_global_flag = making_colonies
+			  clr_global_flag = colony_already_established
+	}
+}

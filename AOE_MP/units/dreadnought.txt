@@ -25,11 +25,9 @@ dreadnought = {
 		clipper_convoy = 125
 		artillery = 30
 		canned_food = 20
-		telephones = 20
 		luxury_clothes = 2.0
-		fuel = 60
 	}
-	min_port_level = 5
+	min_port_level = 6
 	limit_per_port = 1
 	supply_consumption_score = 60
 	
@@ -38,7 +36,6 @@ dreadnought = {
 		clipper_convoy = 2
 		artillery = 0.8
 		canned_food = 1
-		telephones = 0.02
 		fuel = 4
 		ammunition = 0.8
 		luxury_clothes = 0.05

@@ -1,0 +1,305 @@
+political_decisions = {
+
+	reintegrate_moghulistan = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = DZN
+			NOT = { war_with = XIN }
+			NOT = {
+				has_country_flag = reintegrated_moghulistan
+			}
+		}
+		
+		allow = {
+			1594 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = reintegrated_moghulistan
+			prestige = 20
+			XIN = {
+				all_core = {
+					add_core = DZN
+			}
+			}
+			1190 = {
+				remove_core = DZN
+			}
+			add_accepted_culture = uighur
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	pressure_bukhara = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = DZN
+			has_country_flag = reintegrated_moghulistan
+			NOT = {
+				has_country_flag = attacked_bukhara
+			}
+		}
+		
+		allow = {
+			1594 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = attacked_bukhara
+			BUK = { country_event = 6083 }
+			prestige = 15
+			}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	reclaim_district_of_river_ayaguz = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = KAZ
+			NOT = {
+				has_country_flag = reclaimed_agayuz
+			}
+		}
+		
+		allow = {
+			year = 1718
+		}
+		
+		effect = {
+			set_country_flag = reclaimed_agayuz
+			DZN = { country_event = 6078 }
+			}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	reclaim_eastern_tribal_areas = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = KAZ
+			NOT = {
+				has_country_flag = claimed_eastern_tribal_areas
+			}
+		}
+		
+		allow = {
+			1187 = {
+				owned_by = KAZ
+			}
+		}
+		
+		effect = {
+			set_country_flag = claimed_eastern_tribal_areas
+			1186 = {
+				add_core = KAZ
+			}
+			1188 = {
+				add_core = KAZ
+			}
+			1595 = {
+				add_core = KAZ
+			}
+			1596 = {
+				add_core = KAZ
+			}
+			2679 = {
+				add_core = KAZ
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	qinghai_uprising = {
+			picture = claim_greater_mongolia
+			potential = {
+			year = 1723
+			tag = XBI
+			NOT = {
+				has_country_flag = influenced_qinghai
+			}
+		}
+		
+		allow = {
+			NOT = { war_with = DZN }
+		}
+		
+		effect = {
+			set_country_flag = influenced_qinghai
+			prestige = 40
+			QNG = { release_vassal = XBI }
+			create_alliance = DZN
+			war = {
+			target = QNG
+			attacker_goal = { casus_belli = status_quo } 
+			defender_goal = { casus_belli = establish_protectorate_casus_belli }
+			call_ally = yes
+			}
+			DZN = { country_event = 6074 }
+			QNG = { country_event = 6075 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	vassalize_qinghai = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = XBI
+			has_country_flag = influenced_qinghai
+			NOT = {
+				has_country_flag = vassalized_qinghai
+			}
+		}
+		
+		allow = {
+			NOT = { war_with = QNG }
+		}
+		
+		effect = {
+			set_country_flag = vassalized_qinghai
+			prestige = 10
+			DZN = { country_event = 6073 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	exile_amursana = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = DZN
+			NOT = {
+				has_country_flag = exiled_amursana
+			}
+			year = 1952
+		}
+		
+		allow = {
+			year = 1952
+		}
+		
+		effect = {
+			set_country_flag = exiled_amursana
+			prestige = 10
+			QNG = { country_event = 6072 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	reorganize_dzungaria = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = QNG
+			1600 = {
+				owned_by = QNG
+			}
+			NOT = {
+				has_country_flag = dzungaria_reorg
+			}
+		}
+		
+		allow = {
+			1600 = {
+				owned_by = QNG
+			}
+		}
+		
+		effect = {
+			set_country_flag = dzungaria_reorg
+			prestige = 50
+			1068 = { secede_province = TNT }
+			1187 = { secede_province = KAZ }
+			1600 = { secede_province = XIN }
+			1595 = { secede_province = XIN }
+			1596 = { secede_province = XIN }
+			1188 = { secede_province = XIN }
+			1186 = { secede_province = XIN }
+			2607 = { secede_province = XIN }
+			1597 = { secede_province = XIN }
+			1598 = { secede_province = XIN }
+			1594 = { secede_province = XIN }
+			1190 = { secede_province = XIN }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	victory_of_oirat = {
+			picture = claim_greater_mongolia
+			potential = {
+			war = no
+			NOT = {
+				has_country_flag = oirat_vic
+			}
+			tag = DZN
+			year = 1752
+			1488 = {
+					owned_by = DZN
+			}
+		}
+		
+		allow = {
+			1488 = {
+				owned_by = DZN
+			}
+		}
+		
+		effect = {
+			set_country_flag = oirat_vic
+			prestige = 50
+			KML = { country_event = 6070 }
+			MGL = { country_event = 6069 }
+			TNT = { country_event = 6068 }
+			QNG = { country_event = 6067 }
+			1490 = { secede_province = QNG }
+			1491 = { secede_province = QNG }
+			1492 = { secede_province = QNG }
+			1489 = { secede_province = QNG }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	sell_gwadar = {
+			picture = claim_greater_mongolia
+			potential = {
+			tag = KAL
+			2640 = {
+				owned_by = KAL
+			}
+			NOT = {
+				has_country_flag = sold_gwadar
+			}
+		}
+		
+		allow = {
+			2640 = {
+				owned_by = KAL
+			}
+			year = 1783
+		}
+		
+		effect = {
+			set_country_flag = sold_gwadar
+			prestige = 20
+			money = 50000
+			2640 = { secede_province = OMA }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,0 +1,81 @@
+political_decisions = {
+	form_jerusalem = {
+		picture = become_isr
+		potential = {
+			tag = MLT
+		}
+		allow = {
+			owns = 917
+		}
+		effect = {
+			prestige = 50
+			EGY_921 = {
+				add_core = THIS
+			}
+			all_core = {
+				add_core = ISR
+				remove_core = THIS
+			}
+			change_tag = ISR
+			capital = 917
+		}
+	}
+	levant_conquests = {
+		picture = crusade
+		potential = {
+			tag = ISR
+			NOT = { has_country_flag = levant_conquests }
+		}
+		allow = {
+			owns = 917
+			military_score = 25
+		}
+		effect = {
+			set_country_flag = levant_conquests
+			badboy = 20
+			EGY_915 = {
+				add_core = THIS
+			}
+			EGY_910 = {
+				add_core = THIS
+			}
+			EGY_903 = {
+				add_core = THIS
+			}
+		}
+	}
+		attract_french = {
+		picture = migration
+		potential = {
+			tag = ISR
+			NOT = { has_country_flag = attract_french }
+		}
+		allow = {
+			owns = 917
+		}
+		effect = {
+		set_country_flag = attract_french
+		add_accepted_culture = french
+			FRA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+						has_pop_religion = catholic
+						militancy = 8
+						}
+					move_pop = 917
+				}
+			}	
+			BOR = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+						has_pop_religion = catholic
+						militancy = 8
+						}
+					move_pop = 917
+				}
+			}
+		}
+	}
+}

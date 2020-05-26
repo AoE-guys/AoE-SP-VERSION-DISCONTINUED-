@@ -3,6 +3,7 @@ controller = RPL
 add_core = RPL
 add_core = ASB
 add_core = MTC
-trade_goods = cattle  state_building = {  level = 5  building = cattle_factory  upgrade = yes  }
+trade_goods = timber  state_building = {  level = 1  building = timber_factory  upgrade = yes  }
+state_building = {  level = 1  building = automobile_factory  upgrade = yes  }
 terrain = new_world_boreal
 life_rating = 10

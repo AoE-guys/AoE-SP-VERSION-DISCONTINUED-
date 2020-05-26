@@ -1,0 +1,2775 @@
+#Benefits from Colonies II
+country_event = {
+	title = "Economic Benefits from Colonies"
+	desc = "Our Colonies are bringing wealth home!"
+	#picture = "Education"
+	#major = yes
+
+	id = 9999798
+
+	is_triggered_only = yes
+	
+	#trigger = {
+    #           check_variable = {
+    #           	                 which = colonial_contribution_overlord
+    #           	                 value = 0.99
+    #           }
+	#           NOT = { 
+	#		          OR = {
+	#				        has_country_modifier = colonial_benefits_001
+	#						has_country_modifier = colonial_benefits_002
+	#					    has_country_modifier = colonial_benefits_003
+	#						has_country_modifier = colonial_benefits_004
+	#						has_country_modifier = colonial_benefits_005
+	#						has_country_modifier = colonial_benefits_006
+	#						has_country_modifier = colonial_benefits_007
+	#						has_country_modifier = colonial_benefits_008
+	#						has_country_modifier = colonial_benefits_009
+	#						has_country_modifier = colonial_benefits_010
+	#						has_country_modifier = colonial_benefits_011
+	#						has_country_modifier = colonial_benefits_012
+	#						has_country_modifier = colonial_benefits_013
+	#						has_country_modifier = colonial_benefits_014
+	#						has_country_modifier = colonial_benefits_015
+	#						has_country_modifier = colonial_benefits_016
+	#						has_country_modifier = colonial_benefits_017
+	#						has_country_modifier = colonial_benefits_018
+	#						has_country_modifier = colonial_benefits_019
+	#						has_country_modifier = colonial_benefits_020
+	#					    has_country_modifier = colonial_benefits_021
+	#						has_country_modifier = colonial_benefits_022
+	#						has_country_modifier = colonial_benefits_023
+	#						has_country_modifier = colonial_benefits_024
+	#						has_country_modifier = colonial_benefits_025
+	#						has_country_modifier = colonial_benefits_026
+	#						has_country_modifier = colonial_benefits_027
+	#						has_country_modifier = colonial_benefits_028
+	#						has_country_modifier = colonial_benefits_029
+	#						has_country_modifier = colonial_benefits_030
+	#						has_country_modifier = colonial_benefits_031
+	#						has_country_modifier = colonial_benefits_032
+	#						has_country_modifier = colonial_benefits_033
+	#						has_country_modifier = colonial_benefits_034
+	#						has_country_modifier = colonial_benefits_035
+	#						has_country_modifier = colonial_benefits_036
+	#						has_country_modifier = colonial_benefits_037
+	#						has_country_modifier = colonial_benefits_038
+	#						has_country_modifier = colonial_benefits_039
+	#						has_country_modifier = colonial_benefits_040
+	#						has_country_modifier = colonial_benefits_041
+	#						has_country_modifier = colonial_benefits_042
+	#						has_country_modifier = colonial_benefits_043
+	#						has_country_modifier = colonial_benefits_044
+	#						has_country_modifier = colonial_benefits_045
+	#						has_country_modifier = colonial_benefits_046
+	#						has_country_modifier = colonial_benefits_047
+	#						has_country_modifier = colonial_benefits_048
+	#						has_country_modifier = colonial_benefits_049
+	#						has_country_modifier = colonial_benefits_050
+    #                       has_country_modifier = colonial_benefits_051
+	#						has_country_modifier = colonial_benefits_052
+	#						has_country_modifier = colonial_benefits_053
+	#						has_country_modifier = colonial_benefits_054
+	#						has_country_modifier = colonial_benefits_055
+	#						has_country_modifier = colonial_benefits_056
+	#						has_country_modifier = colonial_benefits_057
+	#						has_country_modifier = colonial_benefits_058
+	#						has_country_modifier = colonial_benefits_059
+	#						has_country_modifier = colonial_benefits_060
+    #                       has_country_modifier = colonial_benefits_061
+	#						has_country_modifier = colonial_benefits_062
+	#						has_country_modifier = colonial_benefits_063
+	#						has_country_modifier = colonial_benefits_064
+	#						has_country_modifier = colonial_benefits_065
+	#						has_country_modifier = colonial_benefits_066
+	#						has_country_modifier = colonial_benefits_067
+	#						has_country_modifier = colonial_benefits_068
+	#						has_country_modifier = colonial_benefits_069
+	#						has_country_modifier = colonial_benefits_070
+	#						has_country_modifier = colonial_benefits_071
+	#						has_country_modifier = colonial_benefits_072
+	#						has_country_modifier = colonial_benefits_073
+	#						has_country_modifier = colonial_benefits_074
+	#						has_country_modifier = colonial_benefits_075
+	#						has_country_modifier = colonial_benefits_076
+	#						has_country_modifier = colonial_benefits_077
+	#						has_country_modifier = colonial_benefits_078
+	#						has_country_modifier = colonial_benefits_079
+	#						has_country_modifier = colonial_benefits_080
+	#						has_country_modifier = colonial_benefits_081
+	#						has_country_modifier = colonial_benefits_082
+	#						has_country_modifier = colonial_benefits_083
+	#						has_country_modifier = colonial_benefits_084
+	#						has_country_modifier = colonial_benefits_085
+	#						has_country_modifier = colonial_benefits_086
+	#						has_country_modifier = colonial_benefits_087
+	#						has_country_modifier = colonial_benefits_088
+	#						has_country_modifier = colonial_benefits_089
+	#						has_country_modifier = colonial_benefits_090
+	#						has_country_modifier = colonial_benefits_091
+	#						has_country_modifier = colonial_benefits_092
+	#						has_country_modifier = colonial_benefits_093
+	#						has_country_modifier = colonial_benefits_094
+	#						has_country_modifier = colonial_benefits_095
+	#						has_country_modifier = colonial_benefits_096
+	#						has_country_modifier = colonial_benefits_097
+	#						has_country_modifier = colonial_benefits_098
+	#						has_country_modifier = colonial_benefits_099
+	#						has_country_modifier = colonial_benefits_100							
+	#				  }
+	#		   }
+	#}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	          name = "Great!"
+			  random_country = { limit = { exists = yes ai = yes NOT = { tag = THIS } } country_event = 9999802 }
+			  #country_event = 9999840
+	}
+}
+
+country_event = {
+	title = "Calculating Colonial Benefits"
+	desc = "Calculating Colonial Benefits!"
+	#picture = "Education"
+	#major = yes
+
+	id = 9999802
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 1000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 1500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	   
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 2000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 2500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 3000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 3500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 4000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 4500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 5000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 5500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 6000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 6500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 7000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }			
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 7500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 8000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				 
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 8500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 9000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 9500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 10000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 1500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 1500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 11000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 11500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	   
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 12000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 12500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 13000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 13500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 14000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 14500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 15000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 15500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 16000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 16500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 17000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }			
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 17500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 18000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				 
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 18500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 19000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 19500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 20000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 1500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 11000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 11500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	   
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 12000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 12500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 13000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 13500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 14000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 14500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 15000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 15500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 16000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }	
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 16500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 17000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }			
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 17500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 18000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				 
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 18500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 19000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }		
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 29500000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				
+		         any_country = {
+                                limit = { 
+		         			             tag = FROM 				
+		         			             total_pops = 30000000
+		         			    }
+                                change_variable = {
+                                	               which = colonial_contribution_overlord
+                                	               value = -1
+                                } 
+		         }				 
+	}
+	option = {
+	          name = "Great!"
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 0.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 1.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_001
+		                	duration = 730
+		                }						
+			  }
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 1.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 2.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_002
+		                	duration = 730
+		                }						
+			  }
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 2.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 3.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_003
+		                	duration = 730
+		                }						
+			  }
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 3.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 4.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_004
+		                	duration = 730
+		                }					
+			  }
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 4.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 5.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_005
+		                	duration = 730
+		                }				
+			  } 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 5.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 6.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_006
+		                	duration = 730
+		                }					
+			  }
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 6.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 7.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_007
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 7.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 8.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_008
+		                	duration = 730
+		                }				
+			  }
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 8.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 9.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_009
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 9.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 10.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_010
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 10.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 11.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_011
+		                	duration = 730
+		                }					
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 11.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 12.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_012
+		                	duration = 730
+		                }				
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 12.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 13.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_013
+		                	duration = 730
+		                }						
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 13.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 14.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_014
+		                	duration = 730
+		                }					
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 14.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 15.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_015
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 15.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 16.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_016
+		                	duration = 730
+		                }					
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 16.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 17.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_017
+		                	duration = 730
+		                }				
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 17.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 18.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_018
+		                	duration = 730
+		                }				
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 18.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 19.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_019
+		                	duration = 730
+		                }					
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 19.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 20.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_020
+		                	duration = 730
+		                }			
+			  }	
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 20.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 21.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_021
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 21.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 22.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_022
+		                	duration = 730
+		                }		
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 22.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 23.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_023
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 23.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 24.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_024
+		                	duration = 730
+		                }		
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 24.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 25.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_025
+		                	duration = 730
+		                }		
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 25.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 26.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_026
+		                	duration = 730
+		                }		
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 26.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 27.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_027
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 27.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 28.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_028
+		                	duration = 730
+		                }			
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 28.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 29.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_029
+		                	duration = 730
+		                }	
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 29.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 30.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_030
+		                	duration = 730
+		                }		
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 30.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 31.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_031
+		                	duration = 730
+		                }				
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 31.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 32.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_032
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 32.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 33.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_033
+		                	duration = 730
+		                }	
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 33.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 34.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_034
+		                	duration = 730
+		                }	
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 34.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 35.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_035
+		                	duration = 730
+		                }	
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 35.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 36.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_036
+		                	duration = 730
+		                }	
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 36.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 37.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_037
+		                	duration = 730
+		                }	
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 37.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 38.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_038
+		                	duration = 730
+		                }	
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 38.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 39.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_039
+		                	duration = 730
+		                }		
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 39.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 40.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_040
+		                	duration = 730
+		                }	
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 40.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 41.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_041
+		                	duration = 730
+		                }	
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 41.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 42.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_042
+		                	duration = 730
+		                }	
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 42.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 43.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_043
+		                	duration = 730
+		                }	
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 43.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 44.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_044
+		                	duration = 730
+		                }		
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 44.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 45.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_045
+		                	duration = 730
+		                }		
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 45.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 46.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_046
+		                	duration = 730
+		                }		
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 46.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 47.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_047
+		                	duration = 730
+		                }	
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 47.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 48.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_048
+		                	duration = 730
+		                }	
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 48.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 49.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_049
+		                	duration = 730
+		                }	
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 49.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 50.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_050
+		                	duration = 730
+		                }		
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 50.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 51.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_051
+		                	duration = 730
+		                }	
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 51.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 52.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_052
+		                	duration = 730
+		                }		
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 52.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 53.01
+                                           	     }
+                                           }							         
+						        }
+						}
+		                add_country_modifier = {
+		                	name = colonial_benefits_053
+		                	duration = 730
+		                }	
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 53.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 54.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_054
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 54.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 55.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_055
+		                	duration = 730
+		                }				
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 55.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 56.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_056
+		                	duration = 730
+		                }			
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 56.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 57.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_057
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 57.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 58.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_058
+		                	duration = 730
+		                }			
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 58.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 59.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_059
+		                	duration = 730
+		                }			
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 59.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 60.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_060
+		                	duration = 730
+		                }			
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 60.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 61.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_061
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 61.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 62.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_062
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 62.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 63.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_063
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 63.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 64.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_064
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 64.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 65.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_065
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 65.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 66.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_066
+		                	duration = 730
+		                }			
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 66.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 67.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_067
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 67.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 68.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_068
+		                	duration = 730
+		                }			
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 68.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 69.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_069
+		                	duration = 730
+		                }			
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 69.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 70.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_070
+		                	duration = 730
+		                }			
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 70.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 71.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_071
+		                	duration = 730
+		                }					
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 71.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 72.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_072
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 72.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 73.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_073
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 73.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 74.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_074
+		                	duration = 730
+		                }				
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 74.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 75.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_075
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 75.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 76.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_076
+		                	duration = 730
+		                }			
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 76.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 77.01
+                                           	     }
+                                           }							         
+						        }
+						}
+  		                add_country_modifier = {
+		                	name = colonial_benefits_077
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 77.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 78.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_078
+		                	duration = 730
+		                }			
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 78.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 79.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_079
+		                	duration = 730
+		                }			
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 79.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 80.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_080
+		                	duration = 730
+		                }			
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 80.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 81.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_081
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 81.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 82.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_082
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 82.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 83.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_083
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 83.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 84.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_084
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 84.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 85.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_085
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 85.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 86.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_086
+		                	duration = 730
+		                }				
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 86.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 87.01
+                                           	     }
+                                           }							         
+						        }
+						}
+  		                add_country_modifier = {
+		                	name = colonial_benefits_087
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 87.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 88.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_088
+		                	duration = 730
+		                }			
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 88.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 89.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_089
+		                	duration = 730
+		                }			
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 89.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 90.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_090
+		                	duration = 730
+		                }					
+			  }
+             any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 90.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 91.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_091
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 91.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 92.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_092
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 92.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 93.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_093
+		                	duration = 730
+		                }			
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 93.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 94.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_094
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 94.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 95.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_095
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 95.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 96.01
+                                           	     }
+                                           }							         
+						        }
+						}
+  		                add_country_modifier = {
+		                	name = colonial_benefits_096
+		                	duration = 730
+		                }			
+			  }			 
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 96.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 97.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_097
+		                	duration = 730
+		                }			
+			  }		
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 97.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 98.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_098
+		                	duration = 730
+		                }			
+			  }			
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 98.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 99.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_099
+		                	duration = 730
+		                }			
+			  }			  
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {  
+                                           check_variable = {
+                                           	                 which = colonial_contribution_overlord
+                                           	                 value = 99.99
+                                           }
+                                           NOT = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 100.01
+                                           	     }
+                                           }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_100
+		                	duration = 730
+		                }				
+			  }	
+              any_country = {
+			              limit = {  tag = FROM
+			                       FROM = {
+                                           	     check_variable = {
+                                           	     	               which = colonial_contribution_overlord
+                                           	     	               value = 100.01
+                                           	     }							         
+						        }
+						}
+ 		                add_country_modifier = {
+		                	name = colonial_benefits_100
+		                	duration = 730
+		                }				
+			  }			  
+	}
+}

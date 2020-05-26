@@ -185,11 +185,11 @@ political_decisions = {
 				}
 			}
 		}
-		civilize = {
-			picture = unciv_civilize
-			potential = {
-				civilized = yes
-				tech_school = unciv_tech_school
+	civilize = {
+		picture = unciv_civilize
+		potential = {
+			civilized = yes
+			tech_school = unciv_tech_school
 			NOT = {
 				has_country_modifier = academic_confusion
 			}
@@ -210,6 +210,7 @@ political_decisions = {
 				duration = 3650
 			}
 			tech_school = traditional_academic
+			clr_country_flag = unciv
 		}
 		ai_will_do = { factor = 1 }
 	}

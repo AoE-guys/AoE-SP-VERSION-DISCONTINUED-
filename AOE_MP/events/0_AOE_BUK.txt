@@ -1,39 +1,10 @@
 country_event = {
-	id = 6084
-	title = "Pressure Bukhara"
-	desc = "EVTDESC6084"
-	fire_only_once = yes
-	picture = mughal_breakup
-	
-	trigger = {
-		tag = DZN
-		year = 1709
-	}
-	
-	mean_time_to_happen = {
-		months = 2
-	}
-	
-	option = {
-		name = "Ok, They better give us it"
-		BUK = { country_event = 6083 }
-	}
-}
-country_event = {
 	id = 6083
 	title = "Oirat Pressure"
 	desc = "EVTDESC6083"
+	is_triggered_only = yes
 	fire_only_once = yes
 	picture = mughal_breakup
-	
-	trigger = {
-		tag = BUK
-		year = 1720
-	}
-	
-	mean_time_to_happen = {
-		months = 2
-	}
 	
 	option = {
 		name = "We have no other option than to accept"
@@ -41,24 +12,391 @@ country_event = {
 			1190 = { secede_province = DZN }
 		}
 		BUK = { any_owned = { limit = { is_core = KOK } secede_province = KOK } }
-		BUK = { any_owned = { limit = { is_core = BDK } secede_province = BDK } }
+		BUK = { release_vassal = BDK }
 		relation = {
 			who = KOK
 			value = 200
+		}
+		1190 = {
+			add_core = DZN
 		}
 		prestige = -15
 	}
 	
 	option = {
 		name = "We must fight to defend our territories against the Mongol barbarians!"
+		1190 = {
+			add_core = DZN
+		}
 		war = {
 			target = DZN
 			attacker_goal = { casus_belli = status_quo }
 			defender_goal = { casus_belli = acquire_all_cores }
 			defender_goal = { casus_belli = liberate_country country = KOK }
-			defender_goal = { casus_belli = liberate_country country = BDK }
+			defender_goal = { casus_belli = release_puppet country = BDK }
 			call_ally = no
 		}
 		prestige = 15
+	}
+}
+country_event = {
+	id = 6082
+	title = "Occupy Tibet?"
+	desc = "EVTDESC6082"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	
+	trigger = {
+		tag = DZN
+		year = 1717
+		NOT = {
+			1587 = {
+				owned_by = DZN
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "We must let them know who is really in charge of the orient!"
+		war = {
+			target = TIB
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		relation = {
+			who = QNG
+			value = -200
+		}
+		QNG = { country_event = 6081 }
+		prestige = 15
+	}
+}
+country_event = {
+	id = 6081
+	title = "Dzungars in Tibet"
+	desc = "EVTDESC6081"
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = central_asian_tribes
+
+	option = {
+		name = "We should start working with the Dalai Lama to curb Dzungar expansionism"
+		relation = {
+			who = DZN
+			value = -200
+		}
+		relation = {
+			who = TIB
+			value = 200
+		}
+	}
+}
+country_event = {
+	id = 6080
+	title = "Intervention in Tibet"
+	desc = "EVTDESC6080"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	
+	trigger = {
+		tag = QNG
+		year = 1720
+		1587 = {
+			controlled_by = DZN
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "It's time to kick them out of Tibet"
+		relation = {
+			who = DZN
+			value = -200
+		}
+		DZN = { country_event = 6079 }
+	}
+}
+country_event = {
+	id = 6079
+	title = "Chinese Threats"
+	desc = "EVTDESC6079"
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = central_asian_tribes
+
+	option = {
+		name = "Tibet is Ours!"
+		relation = {
+			who = QNG
+			value = -200
+		}
+			1588 = { secede_province = TIB }
+			1587 = { secede_province = TIB }
+			1590 = { secede_province = TIB }
+			1593 = { secede_province = TIB }
+		relation = {
+			who = TIB
+			value = -200
+		}
+		QNG = {
+			create_vassal = TIB
+		}
+		war = {
+			target = TIB
+			attacker_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = acquire_all_cores }
+			call_ally = yes
+		}
+		prestige = 15
+	}
+	
+	option = {
+		name = "Fine."
+		relation = {
+			who = QNG
+			value = 100
+		}
+		DZN = { any_owned = { limit = { is_core = TIB } secede_province = TIB } }
+		QNG = {
+			create_vassal = TIB
+		}
+		prestige = -15
+	}
+}
+country_event = {
+	id = 6078
+	title = "Kazakhs Seize Agayuz"
+	desc = "EVTDESC6078"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Agayuz is Ours!"
+		relation = {
+			who = KAZ
+			value = -200
+		}
+		war = {
+			target = KAZ
+			attacker_goal = { casus_belli = status_quo } 
+			defender_goal = { casus_belli = acquire_all_cores country = KAZ }
+			call_ally = no
+		}
+		KAZ = { country_event = 6076 }
+	}
+	
+	option = {
+		name = "Fine."
+		relation = {
+			who = KAZ
+			value = 100
+		}
+		1187 = { secede_province = KAZ }
+		prestige = -15
+		KAZ = { country_event = 6077 }
+	}
+}
+country_event = {
+	id = 6077
+	title = "Dzungars allow it"
+	desc = "EVTDESC6077"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Agayuz is Ours!"
+		relation = {
+			who = DZN
+			value = 100
+		}
+	}
+}
+country_event = {
+	id = 6076
+	title = "War has broken out"
+	desc = "EVTDESC6076"
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Agayuz is Ours!"
+		relation = {
+			who = QNG
+			value = 100
+		}
+	}
+
+}
+country_event = {
+	id = 6075
+	title = "Qinghai Revolt!"
+	desc = "EVTDESC6075"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Unacceptable. We will put down their revolt."
+		relation = {
+			who = XBI
+			value = -200
+		}
+	}
+}
+country_event = {
+	id = 6074
+	title = "Qinghai Revolt!"
+	desc = "EVTDESC6074"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We must aid them in their fight against the Manchu."
+		relation = {
+			who = XBI
+			value = 200
+		}
+		war = {
+			target = QNG
+			attacker_goal = { casus_belli = war_reparations } 
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+	}
+}
+country_event = {
+	id = 6073
+	title = "Qinghai offers vassalization"
+	desc = "EVTDESC6073"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		relation = {
+			who = XBI
+			value = 200
+		}
+		create_vassal = XBI
+	}
+}
+country_event = {
+	id = 6072
+	title = "Dzungars exile pretender Khan"
+	desc = "EVTDESC6072"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will recognize his rule as legitimate"
+		relation = {
+			who = DZN
+			value = -200
+		}
+		war = {
+			target = DZN
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli } 
+			defender_goal = { casus_belli = war_reparations } 
+			defender_goal = { casus_belli = casus_belli = acquire_state state_province_id = 1490 }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+		DZN = { country_event = 6071 }
+	}
+}
+country_event = {
+	id = 6071
+	title = "The Qing recognize the pretender"
+	desc = "EVTDESC6071"
+	fire_only_once = yes
+	picture = central_asian_tribes
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not accept this at any cost."
+		relation = {
+			who = QNG
+			value = -200
+		}
+	}
+}
+country_event = {
+	id = 6070
+	title = "Kumul succesion to Dzungaria"
+	desc = "EVTDESC6070"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		relation = {
+			who = DZN
+			value = 200
+		}
+		1599 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6069
+	title = "Khalka succesion to Dzungaria"
+	desc = "EVTDESC6069"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		relation = {
+			who = DZN
+			value = 200
+		}
+		2608 = { secede_province = DZN }
+		1468 = { secede_province = DZN }
+		2678 = { secede_province = DZN }
+		1466 = { secede_province = DZN }
+		1465 = { secede_province = DZN }
+		2207 = { secede_province = DZN }
+		1467 = { secede_province = DZN }
+		2679 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6068
+	title = "Tuvan succesion to Dzungaria"
+	desc = "EVTDESC6068"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		relation = {
+			who = DZN
+			value = 200
+		}
+		1469 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6067
+	title = "Price for peace with Dzungars"
+	desc = "EVTDESC6067"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		1535 = { secede_province = DZN }
+		1532 = { secede_province = DZN }
+		1534 = { secede_province = DZN }
 	}
 }

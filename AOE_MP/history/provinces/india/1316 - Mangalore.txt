@@ -3,7 +3,7 @@ controller = KLD
 add_core = KLD
 add_core = MYS
 add_core = HND
-trade_goods = fruit  state_building = {  level = 5  building = fruit_factory  upgrade = yes  }
+trade_goods = coffee
+state_building = {  level = 1  building = telephone_factory  upgrade = yes  }
 life_rating = 32
-
 naval_base = 1

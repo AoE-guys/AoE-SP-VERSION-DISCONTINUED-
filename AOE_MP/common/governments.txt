@@ -9,7 +9,7 @@ proletarian_dictatorship = {
 	
 	election = no
 	appoint_ruling_party = yes
-	flagType = communist
+	flagType = republic
 }
 
 presidential_dictatorship = {
@@ -67,7 +67,7 @@ fascist_dictatorship = {
 	
 	election = no
 	appoint_ruling_party = yes
-	flagType = fascist
+	flagType = republic
 }
  
 absolute_monarchy = {
@@ -212,6 +212,35 @@ tsardom = {
 	duration = 48
 	appoint_ruling_party = yes
 	flagType = republic
+}
+
+merchant_republic = {
+	liberal = yes
+	conservative = yes
+	reactionary = yes
+	anarcho_liberal = yes
+	socialist = yes
+	election = yes
+	appoint_ruling_party = no
+	flagType = republic
+}
+
+trade_monarchy = {
+	liberal = yes
+	conservative = yes
+	reactionary = yes
+	anarcho_liberal = yes
+	socialist = yes
+	election = yes
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
+
+khanate = {
+	conservative = yes
+	reactionary = yes
+	appoint_ruling_party = yes
+	flagType = monarchy
 }
 
 #absolute_monarchy_empire = {

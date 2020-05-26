@@ -108,6 +108,9 @@ political_decisions = {
 			996 = {
 				add_core = THIS
 			}
+			339 = {
+				add_core = THIS
+			}
 			badboy = 15
 		}
 		ai_will_do = { factor = 1 }
@@ -275,8 +278,9 @@ political_decisions = {
 			961	= { add_core = RUS }
 			954 = { add_core = RUS }
 			947 = { add_core = RUS }
+			939 = { add_core = RUS }
 			3337 = { add_core = RUS }
-			RUS_360	= { any_owned = { limit = { NOT = { province_id = 362 } } add_core = RUS } }
+			RUS_360	= { limit = { NOT = { province_id = 362 } } add_core = RUS }
 			RUS_707	= { add_core = RUS }
 			RUS_940 = { add_core = RUS }
 			RUS_959 = { add_core = RUS }
@@ -349,11 +353,11 @@ political_decisions = {
 				political_reform = unitary
 				add_country_modifier = {
 					name = land_of_opportunity
-					duration = 7300
+					duration = 1825
 				}
 				add_country_modifier = {
 					name = cultural_resurgence
-					duration = 7300
+					duration = 1825
 				}
 			}
 		}

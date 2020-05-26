@@ -20,22 +20,22 @@ country_event = {
 		any_country = {
 			            limit = { wage_reform = trinket_wage }
 			            
-			            	     set_country_flag = church_influentce_4
+			            	     set_country_flag = church_influence_4
 		}
 		any_country = {
 			            limit = { wage_reform = low_minimum_wage }
 			            
-			            	     set_country_flag = church_influentce_3
+			            	     set_country_flag = church_influence_3
 		}
 		any_country = {
 			            limit = { wage_reform = acceptable_minimum_wage }
 			            
-			            	     set_country_flag = church_influentce_2
+			            	     set_country_flag = church_influence_2
 		}
 		any_country = {
 			            limit = { wage_reform = good_minimum_wage }
 			            
-			            	     set_country_flag = church_influentce_1
+			            	     set_country_flag = church_influence_1
 		}
 		#Gentry
 		any_country = {
@@ -172,6 +172,7 @@ country_event = {
 		                  limit = { NOT = { tag = THIS } exists = yes ai = yes }
 		                  country_event = 9999883 
 		}
+		#country_event = 99998839090
 	}
 }
 
@@ -197,25 +198,25 @@ country_event = {
 		any_country = {
 			            limit = { tag = FROM wage_reform = trinket_wage }
 			            
-			            	     set_country_flag = church_influentce_4
+			            	     set_country_flag = church_influence_4
 			             
 		}
 		any_country = {
 			            limit = { tag = FROM wage_reform = low_minimum_wage } 
 			            
-			            	     set_country_flag = church_influentce_3
+			            	     set_country_flag = church_influence_3
 			             
 		}
 		any_country = {
 			            limit = { tag = FROM wage_reform = acceptable_minimum_wage } 
 			            
-			            	     set_country_flag = church_influentce_2
+			            	     set_country_flag = church_influence_2
 			             
 		}
 		any_country = {
 			            limit = { tag = FROM wage_reform = good_minimum_wage }
 			            
-			            	     set_country_flag = church_influentce_1
+			            	     set_country_flag = church_influence_1
 			             
 		}
 		#Gentry
@@ -376,7 +377,36 @@ country_event = {
 		set_global_flag = factions_setup_done
 	}
 }
-
+country_event = {
+	id = 99998839090
+	title = "Asia Balance"
+	desc = "Asia Balance"		
+    is_triggered_only = yes	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Factions SetUp II"
+		#Church
+		any_country = {
+			limit = {
+				capital_scope = {
+					continent = asia
+				}
+				NOT = { tag = PER }
+				NOT = { vassal_of = PER }
+			}
+			all_core = {
+				add_province_modifier = {
+					name = asian_farms
+					duration = -1
+				}
+			}
+		}
+	}
+}
 country_event = {
 	id = 9999882
 	title = "Change in the Balance of Power"

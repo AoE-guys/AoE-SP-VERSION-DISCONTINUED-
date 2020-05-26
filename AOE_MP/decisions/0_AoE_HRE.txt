@@ -1,5 +1,5 @@
 political_decisions = {
-	
+
 	join_hre = {
 		picture = flag_hre
 		potential = {
@@ -9,10 +9,13 @@ political_decisions = {
 				continent = europe
 			}
 			NOT = { number_of_states = 4 }
-			any_neighbor_province = {
-				is_core = HRE
+			any_core = {
+				any_neighbor_province = {
+					is_core = NNN
+				}
 			}
 			NOT = { has_country_flag = hre_member }
+			NOT = { has_global_flag = hre_dismantled }
 		}
 		allow = {
 			relation = { who = AUS value = 150 }
@@ -22,7 +25,7 @@ political_decisions = {
 				limit = {
 					continent = europe
 				}
-				add_core = HRE
+				add_core = NNN
 			}
 			AUS = { country_event = 800000 }
 			prestige = 5
@@ -31,7 +34,7 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 10
 				in_sphere = AUS
 			}
 		}
@@ -41,6 +44,7 @@ political_decisions = {
 		picture = flag_hre
 		potential = {
 			has_country_flag = hre_member
+			NOT = { has_global_flag = hre_dismantled }
 		}
 		allow = {
 			relation = { who = AUS value = -10 }
@@ -50,12 +54,441 @@ political_decisions = {
 				limit = {
 					continent = europe
 				}
-				remove_core = HRE
+				remove_core = NNN
 			}
 			AUS = { country_event = 800001 }
 			prestige = 5
 			clr_country_flag = hre_member
 		}
 		ai_will_do = { factor = 0 }
+	}
+
+	enact_reichsreform = {
+		picture = hre_reform_1
+		potential = {
+			has_country_flag = hre_emperor
+			NOT = {
+				exists = NNN
+			}
+			NOT = { has_country_flag = enacted_reichsreform }
+			NOT = { has_global_flag = hre_dismantled }
+		}
+		
+		allow = {
+		NNN = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+			has_recently_lost_war = no
+			is_greater_power = yes
+			war = no
+			THIS = {
+				NOT = { has_country_modifier = hre_mendling }
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+				}
+				add_country_modifier = {
+					name = reichsreform
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = reichsreform
+				duration = -1
+			}
+			add_country_modifier = {
+				name = hre_mendling
+				duration = 3650
+			}
+			prestige = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	institute_reichsregiment = {
+		picture = hre_reform_3
+		potential = {
+			has_country_flag = hre_emperor
+			NOT = {
+				exists = NNN
+			}
+			NOT = { has_country_flag = instituted_reichsregiment }
+			NOT = { has_global_flag = hre_dismantled }
+		}
+		
+		allow = {
+			has_recently_lost_war = no
+			is_greater_power = yes
+			war = no
+			NNN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			military_score = 150
+			NOT = { has_country_modifier = hre_mendling }
+		}
+		effect = {
+			set_country_flag = instituted_reichsregiment
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+				}
+				add_country_modifier = {
+					name = reichsregiment
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = reichsregiment
+				duration = -1
+			}
+			add_country_modifier = {
+				name = hre_mendling
+				duration = 3650
+			}
+			prestige = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reform_the_hofgericht = {
+		picture = hre_reform_2
+		potential = {
+			has_country_flag = hre_emperor
+			NOT = {
+				exists = NNN
+			}
+			NOT = { has_country_flag = reformed_the_hofgericht }
+			NOT = { has_global_flag = hre_dismantled }
+		}
+		
+		allow = {
+			has_recently_lost_war = no
+			is_greater_power = yes
+			war = no
+			NNN = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+			NOT = { has_country_modifier = hre_mendling }
+		}
+		effect = {
+			set_country_flag = reformed_the_hofgericht
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+				}
+				add_country_modifier = {
+					name = the_hofgericht
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = the_hofgericht
+				duration = -1
+			}
+			add_country_modifier = {
+				name = hre_mendling
+				duration = 3650
+			}
+			prestige = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reform_imperial_circles = {
+		picture = imperial_circles
+		potential = {
+			has_country_flag = hre_emperor
+			NOT = {
+				exists = NNN
+			}
+			NOT = { has_country_flag = reformed_imperial_circles }
+			NOT = { has_global_flag = hre_dismantled }
+		}
+		
+		allow = {
+			has_recently_lost_war = no
+			is_greater_power = yes
+			war = no
+			NNN = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+			NOT = { has_country_modifier = hre_mendling }
+			has_country_modifier = the_hofgericht
+			has_country_modifier = reichsregiment
+			has_country_modifier = reichsreform
+		}
+		effect = {
+			set_country_flag = reformed_imperial_circles
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = BAV_599
+							region = BAV_595
+						}
+					}
+				}
+				annex_to = BAV
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = WUR_589
+							region = BAD_586
+						}
+					}
+				}
+				annex_to = WUR
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = PRU_570
+							region = PRU_575
+							region = PRU_578
+						}
+					}
+				}
+				annex_to = RHI
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = HAN_540
+							region = PRU_581
+							region = HES_2560
+						}
+					}
+				}
+				annex_to = MUN
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = HOL_369
+							region = HAN_528
+							region = HAN_534
+						}
+					}
+				}
+				annex_to = HAN
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = PRU_544
+							region = PRU_546
+							region = PRU_549
+							region = PRU_553
+							region = SAX_558
+							region = PRU_554
+						}
+					}
+				}
+				annex_to = PRU
+			}
+			prestige = 50
+			badboy = 15
+			add_country_modifier = {
+				name = hre_mendling
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	proclaim_erbkaisertum = {
+		picture = flag_hre
+		potential = {
+			has_country_flag = hre_reform_4
+			NOT = {
+				exists = NNN
+			}
+			NOT = { has_country_flag = proclaimed_erbkaisertum }
+			NOT = { has_global_flag = hre_dismantled }
+		}
+		
+		allow = {
+			has_recently_lost_war = no
+			is_greater_power = yes
+			war = no
+			NNN = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+			has_country_flag = reformed_imperial_circles
+			NOT = { has_country_modifier = hre_mendling }
+		}
+		effect = {
+			set_country_flag = proclaimed_erbkaisertum
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+				}
+				add_country_modifier = {
+					name = erbkaisertum
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = erbkaisertum
+				duration = -1
+			}
+			add_country_modifier = {
+				name = hre_mendling
+				duration = 3650
+			}
+			badboy = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	renoveto_imperii= {
+		picture = renoveto_imperii
+		potential = {
+			has_country_flag = hre_emperor
+			NOT = {
+				exists = NNN
+			}
+			NOT = { has_global_flag = hre_dismantled }
+		}
+		
+		allow = {
+			has_recently_lost_war = no
+			has_country_flag = proclaimed_erbkaisertum
+			is_greater_power = yes
+			war = no
+			NNN = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+			NOT = { has_country_modifier = hre_mendling }
+		}
+		effect = {
+			change_tag = NNN
+			all_core = {
+				limit = {
+					owner = {
+						has_country_flag = hre_member
+					}
+				}
+				owner = {
+					annex_to = NNN
+				}
+			}
+			badboy = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	add_belgium_hre = {
+		picture = austria_coa
+		potential = {
+			tag = AUS
+			NOT = { has_country_flag = added_belgium_hre }
+			NOT = { has_global_flag = hre_dismantled }
+			owns = 387
+			owns = 394
+			owns = 397
+		}
+		allow = {
+			owns = 387
+			owns = 394
+			owns = 397
+			has_recently_lost_war = no
+		}
+		effect = {
+			set_country_flag = added_belgium_hre
+			any_owned = {
+				limit = {
+					OR = {
+						region = BEL_387
+						region = BEL_394
+						province_id = 397
+						province_id = 3313
+						province_id = 381
+					}
+					NOT = {
+						owned_by = LIG
+					}
+				}
+				add_core = NNN
+			}
+			prestige = 20
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 20
+			}
+		}
 	}
 }

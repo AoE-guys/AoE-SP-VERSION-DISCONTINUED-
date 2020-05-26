@@ -173,7 +173,7 @@ electrical_power_generation = {
 tech_power_7 = {
 	area = tech_power
 	year = 1790
-	cost = 18000
+	cost = 25200
 
 	factory_goods_output = { coal = 0.15 }
 	factory_goods_output = { iron = 0.15 }
@@ -201,7 +201,7 @@ tech_power_7 = {
 tech_power_8 = {
 	area = tech_power
 	year = 1805
-	cost = 21600
+	cost = 30200
 
 	factory_goods_output = { coal = 0.15 }
 	factory_goods_output = { iron = 0.15 }
@@ -305,7 +305,7 @@ shift_work = {
 mechanization_7 = {
 	area = mechanization
 	year = 1790
-	cost = 18000
+	cost = 25200
 	factory_throughput = 0.1
 	factory_cost = -0.1 
 	ai_chance = {
@@ -315,7 +315,7 @@ mechanization_7 = {
 mechanization_8 = {
 	area = mechanization
 	year = 1805
-	cost = 21600
+	cost = 30200
 
 	
 	rgo_output = 0.05
@@ -474,7 +474,7 @@ electric_furnace = {
 metallurgy_7 = {
 	area = metallurgy
 	year = 1790
-	cost = 18000
+	cost = 25200
 
 	factory_goods_output = {
 		sulphur = 0.4
@@ -499,7 +499,7 @@ metallurgy_7 = {
 metallurgy_8 = {
 	area = metallurgy
 	year = 1805
-	cost = 21600
+	cost = 30200
 
 	factory_goods_output = {
 		steel = 0.05 
@@ -555,7 +555,10 @@ steel_railroad = {
 	year = 1740
 	cost = 14400
 
-	max_railroad = 1 
+	army_base = {
+		maximum_speed = 1
+	}
+	factory_throughput = 0.16
 	ai_chance = {
 		factor = 5
 	}
@@ -583,11 +586,10 @@ limited_access_roads = {
 tech_infrastructure_7 = {
 	area = tech_infrastructure
 	year = 1800
-	cost = 18000
+	cost = 25200
 	
-	army_base = {
-		maximum_speed = 1
-	}
+	max_railroad = 1 
+	
 	ai_chance = {
 		factor = 2
 	}
@@ -595,12 +597,12 @@ tech_infrastructure_7 = {
 tech_infrastructure_8 = {
 	area = tech_infrastructure
 	year = 1815
-	cost = 21600
+	cost = 30200
 	
 	army_base = {
 		maximum_speed = 1
 	}
-
+	factory_throughput = 0.16
 	ai_chance = {
 		factor = 2
 	}
@@ -678,7 +680,7 @@ synthetic_polymers = {
 chemistry_and_electricity_7 = {
 	area = chemistry_and_electricity
 	year = 1775
-	cost = 18000
+	cost = 25200
 	
 	supply_limit = 0.50
 	ai_chance = {
@@ -689,7 +691,7 @@ chemistry_and_electricity_7 = {
 chemistry_and_electricity_8 = {
 	area = chemistry_and_electricity
 	year = 1795
-	cost = 21600
+	cost = 30200
 
 	supply_limit = 0.50
 	ai_chance = {

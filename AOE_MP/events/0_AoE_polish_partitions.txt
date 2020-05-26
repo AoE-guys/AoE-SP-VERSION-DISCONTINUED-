@@ -12,14 +12,14 @@ country_event = {
 		name = "Send a delegation to Prussia and Austria"
 		set_country_flag = main_partitioner
 		RUS = {country_event = 1773 }
-		PRU = { country_event = 1774 }
+		549 = { owner = { country_event = 1774 } }
 		AUS = { country_event = 1775 }
 		
 		ai_chance = { factor = 100 }
 		set_global_flag = polish_partition
 	}
 }
-#RUS+PRU+AUS send demends for land
+#RUS+FROM+AUS send demends for land
 country_event = {
 	id = 1773
 	title = "Partions of Poland-Lithuania"
@@ -49,7 +49,7 @@ country_event = {
 	option = {
 		name = "This isn't right"
 		PLC = {
-			relation = { who = PRU value = 100 }
+			relation = { who = FROM value = 100 }
 		}
 		prestige = -5
 	}
@@ -89,6 +89,7 @@ country_event = {
 		945	= { secede_province = RUS }
 		944	= { secede_province = RUS }
 		949 = { secede_province = RUS }
+		948 = { secede_province = RUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -98,6 +99,7 @@ country_event = {
 		945	= { add_core = RUS }
 		944	= { add_core = RUS }
 		949 = { add_core = RUS }
+		948 = { add_core = RUS }
 		RUS = {
 			war = {
 				target = PLC
@@ -119,30 +121,32 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		691 = { secede_province = PRU }
-		692 = { secede_province = PRU }
-		700 = { secede_province = PRU }
-		694 = { secede_province = PRU }
-		693 = { secede_province = PRU }
-		696	= { secede_province = PRU }
+		691 = { secede_province = FROM }
+		692 = { secede_province = FROM }
+		700 = { secede_province = FROM }
+		694 = { secede_province = FROM }
+		693 = { secede_province = FROM }
+		696	= { secede_province = FROM }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
 	
 	option = {
 		name = "We will not give up!"
-		691 = { add_core = PRU }
-		692 = { add_core = PRU }
-		700 = { add_core = PRU }
-		694 = { add_core = PRU }
-		693 = { add_core = PRU }
-		696	= { add_core = PRU }
-		PRU = {
-			war = {
-				target = PLC
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = humiliate }
-				call_ally = no
+		691 = { add_core = FROM }
+		692 = { add_core = FROM }
+		700 = { add_core = FROM }
+		694 = { add_core = FROM }
+		693 = { add_core = FROM }
+		696	= { add_core = FROM }
+		549 = {
+			owner = {
+				war = {
+					target = PLC
+					attacker_goal = { casus_belli = acquire_all_cores }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = no
+				}
 			}
 		}
 		ai_chance = { factor = 5 }
@@ -166,6 +170,7 @@ country_event = {
 		952 = { secede_province = AUS }
 		953 = { secede_province = AUS }
 		3331 = { secede_province = AUS }
+		3310 = { secede_province = AUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -181,6 +186,7 @@ country_event = {
 		952 = { add_core = AUS }
 		953 = { add_core = AUS }
 		3331 = { add_core = AUS }
+		3310 = { add_core = AUS }
 		AUS = {
 			war = {
 				target = PLC
@@ -214,12 +220,12 @@ country_event = {
 	option = {
 		name = "Send a delegation to Prussia and Austria"
 		RUS = { country_event = 1780 }
-		PRU = { country_event = 1781 }
+		549 = { owner = { country_event = 1781 } }
 		
 		ai_chance = { factor = 100 }
 	}
 }
-#RUS+PRU send demends for land
+#RUS+FROM send demends for land
 country_event = {
 	id = 1780
 	title = "Partions of Poland-Lithuania"
@@ -249,7 +255,7 @@ country_event = {
 	option = {
 		name = "This isn't right"
 		PLC = {
-			relation = { who = PRU value = 100 }
+			relation = { who = FROM value = 100 }
 		}
 		prestige = -5
 	}
@@ -270,6 +276,7 @@ country_event = {
 		961	= { secede_province = RUS }
 		954 = { secede_province = RUS }
 		947 = { secede_province = RUS }
+		939 = { secede_province = RUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -281,6 +288,7 @@ country_event = {
 		961	= { add_core = RUS }
 		954 = { add_core = RUS }
 		947 = { add_core = RUS }
+		939 = { add_core = RUS }
 		RUS = {
 			war = {
 				target = PLC
@@ -302,32 +310,32 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		PRU_701 = { secede_province = PRU }
-		717 = { secede_province = PRU }
-		3323 = { secede_province = PRU }
-		712 = { secede_province = PRU }
-		710 = { secede_province = PRU }
-		696	= { secede_province = PRU }
-		690	= { secede_province = PRU }
+		PRU_701 = { secede_province = FROM }
+		717 = { secede_province = FROM }
+		3323 = { secede_province = FROM }
+		710 = { secede_province = FROM }
+		696	= { secede_province = FROM }
+		690	= { secede_province = FROM }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
 	
 	option = {
 		name = "We will not give up!"
-		PRU_701 = { add_core = PRU }
-		717 = { add_core = PRU }
-		3323 = { add_core = PRU }
-		712 = { add_core = PRU }
-		710 = { add_core = PRU }
-		696	= { add_core = PRU }
-		690	= { add_core = PRU }
-		PRU = {
-			war = {
-				target = PLC
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = humiliate }
-				call_ally = no
+		PRU_701 = { add_core = FROM }
+		717 = { add_core = FROM }
+		3323 = { add_core = FROM }
+		710 = { add_core = FROM }
+		696	= { add_core = FROM }
+		690	= { add_core = FROM }
+		549 = {
+			owner = {
+				war = {
+					target = PLC
+					attacker_goal = { casus_belli = acquire_all_cores }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = no
+				}
 			}
 		}
 		ai_chance = { factor = 5 }
@@ -355,13 +363,13 @@ country_event = {
 	option = {
 		name = "Send a delegation to Prussia and Austria"
 		RUS = { country_event = 1785 }
-		PRU = { country_event = 1786 }
+		549 = { owner = { country_event = 1786 } }
 		AUS = { country_event = 1787 }
 		
 		ai_chance = { factor = 100 }
 	}
 }
-#RUS+PRU+AUS send demends for land
+#RUS+FROM+AUS send demends for land
 country_event = {
 	id = 1785
 	title = "Partions of Poland-Lithuania"
@@ -391,7 +399,7 @@ country_event = {
 	option = {
 		name = "This isn't right"
 		PLC = {
-			relation = { who = PRU value = 100 }
+			relation = { who = FROM value = 100 }
 		}
 		prestige = -5
 	}
@@ -468,9 +476,10 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		RUS_708 = { secede_province = PRU }
-		706 = { secede_province = PRU }
-		362 = { secede_province = PRU }
+		RUS_708 = { secede_province = FROM }
+		706 = { secede_province = FROM }
+		362 = { secede_province = FROM }
+		712 = { secede_province = FROM }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -478,16 +487,19 @@ country_event = {
 	option = {
 		name = "We will not give up!"
 		PLC = {
-			706 = { add_core = PRU }
-			RUS_708 = { add_core = PRU }
-			362 = { add_core = PRU }
+			706 = { add_core = FROM }
+			RUS_708 = { add_core = FROM }
+			362 = { add_core = FROM }
+			712 = { add_core = FROM }
 		}
-		PRU = {
-			war = {
-				target = PLC
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = humiliate }
-				call_ally = no
+		549 = {
+			owner = {
+				war = {
+					target = PLC
+					attacker_goal = { casus_belli = acquire_all_cores }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = no
+				}
 			}
 		}
 		ai_chance = { factor = 5 }

@@ -20,13 +20,13 @@
 		size = 250 
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 15350
 	}
 	
-	farmers = {
+	serfs = {
 		culture = croat
 		religion = catholic
 		size = 500
@@ -50,40 +50,10 @@
 		size = 50 
 	}
 
-	farmers = {
+	serfs = {
 		culture = croat
 		religion = catholic
 		size = 3675  
-	}
-
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 300  
-	}
-
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 50   
-	}
-
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 350
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 75     
-	}
-
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 5225  
 	}
 }
 #Pancevo (268000/67000 POPS) #part of Serbia today
@@ -112,7 +82,7 @@
 		size = 16325
 	}
 	
-	farmers = {
+	serfs = {
 		culture = croat
 		religion = catholic
 		size = 1000
@@ -142,7 +112,7 @@
 		size = 100  
 	}
 
-	farmers = {
+	serfs = {
 		culture = hungarian
 		religion = catholic
 		size = 100 
@@ -172,7 +142,7 @@
 		size = 200     
 	}
 
-	farmers = {
+	serfs = {
 		culture = south_german
 		religion = catholic
 		size = 2600  
@@ -196,7 +166,7 @@
 		size = 100 
 	}
 
-	farmers = {
+	serfs = {
 		culture = romanian
 		religion = orthodox
 		size = 7500 
@@ -220,7 +190,7 @@
 		size = 25 
 	}
 
-	farmers = {
+	serfs = {
 		culture = slovak
 		religion = catholic
 		size = 2000 
@@ -276,43 +246,12 @@
 		size = 100  
 	}
 
-	farmers = {
+	serfs = {
 		culture = hungarian
 		religion = catholic
 		size = 8700 
 	}
-
-	aristocrats = {
-		culture = south_german
-		religion = catholic
-		size = 600  
-	}
-
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 200   
-	}
-
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 600
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size = 100     
-	}
-
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 15000  
-	}
-
-	farmers = {
+	serfs = {
 		culture = romanian
 		religion = orthodox
 		size = 300 
@@ -350,7 +289,7 @@
 		size = 20000 
 	}
 	
-	farmers = {
+	serfs = {
 		culture = croat
 		religion = catholic
 		size = 1000 
@@ -380,7 +319,7 @@
 		size = 100  
 	}
 
-	farmers = {
+	serfs = {
 		culture = hungarian
 		religion = catholic
 		size = 7500 
@@ -464,7 +403,7 @@
 		size = 150     
 	}
 
-	farmers = {
+	serfs = {
 		culture = south_german
 		religion = catholic
 		size = 13500 
@@ -520,7 +459,7 @@
 		size = 300  
 	}
 
-	farmers = {
+	serfs = {
 		culture = hungarian
 		religion = catholic
 		size = 18000 
@@ -556,7 +495,7 @@
 		size = 1000  
 	}
 
-	farmers = {
+	serfs = {
 		culture = croat
 		religion = catholic
 		size = 200 
@@ -586,7 +525,7 @@
 		size = 100     
 	}
 
-	farmers = {
+	serfs = {
 		culture = south_german
 		religion = catholic
 		size = 7000 
@@ -633,13 +572,13 @@
 		size = 2025
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 55925
 	}
 	
-	farmers = {
+	serfs = {
 		culture = gypsy
 		religion = orthodox
 		size = 4500
@@ -671,7 +610,7 @@
 		size = 1600
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 25360
@@ -695,7 +634,7 @@
 		size = 400
 	}
 	
-	farmers = {
+	serfs = {
 		culture = romanian
 		religion = orthodox
 		size = 24000
@@ -727,7 +666,7 @@
 		size = 1500
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 40200
@@ -759,7 +698,7 @@
 		size = 500
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 13000
@@ -787,7 +726,7 @@
 		size = 2000
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 48300
@@ -829,7 +768,7 @@
 		size = 1100
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
 		size = 3450
@@ -856,7 +795,7 @@
 		size = 1500
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 35000
@@ -899,7 +838,7 @@
 		size = 150
 	}
 
-	farmers = {
+	serfs = {
 		culture = bulgarian
 		religion = orthodox
 		size = 25000
@@ -929,7 +868,7 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
 		size = 4575
@@ -958,10 +897,10 @@
 		size = 900
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
-		size = 17420
+		size = 12420
 	}
 	
 	aristocrats = {
@@ -994,13 +933,13 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = bulgarian
 		religion = orthodox
 		size = 100
 	}
 	
-	farmers = {
+	serfs = {
 		culture = gypsy
 		religion = sunni
 		size = 300
@@ -1042,7 +981,7 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
 		size = 1800
@@ -1051,7 +990,7 @@
 	soldiers = {
 		culture = albanian
 		religion = sunni
-		size = 100
+		size = 3100
 	}
 
 	clergymen = {
@@ -1072,10 +1011,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	serfs = {
 		culture = albanian
 		religion = sunni
-		size = 25700
+		size = 5570
 	}
 }
 #Prizren (186000/46000 POPS)
@@ -1111,10 +1050,10 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = bosniak
 		religion = sunni
-		size = 3000
+		size = 2000
 	}
 		
 	aristocrats = {
@@ -1147,13 +1086,13 @@
 		size = 200
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 4000
 	}
 	
-	farmers = {
+	serfs = {
 		culture = gypsy
 		religion = sunni
 		size = 600
@@ -1174,7 +1113,7 @@
 	artisans = {
 		culture = turkish
 		religion = sunni
-		size = 1750
+		size = 750
 	}
 
 	soldiers = {
@@ -1183,13 +1122,13 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
-		size = 5150
+		size = 3150
 	}
 	
-	farmers = {
+	serfs = {
 		culture = circassian
 		religion = sunni
 		size = 100
@@ -1216,7 +1155,7 @@
 	artisans = {
 		culture = albanian
 		religion = sunni
-		size = 900
+		size = 1900
 	}
 
 	soldiers = {
@@ -1225,10 +1164,10 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = albanian
 		religion = sunni
-		size = 34550
+		size = 6455
 	}
 }
 #Kosovska Mitrovica
@@ -1264,7 +1203,7 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = bosniak
 		religion = sunni
 		size = 3000
@@ -1300,13 +1239,13 @@
 		size = 200
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 10000
 	}
 	
-	farmers = {
+	serfs = {
 		culture = gypsy
 		religion = sunni
 		size = 600
@@ -1336,7 +1275,7 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
 		size = 2000
@@ -1372,10 +1311,10 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = albanian
 		religion = sunni
-		size = 10000
+		size = 1000
 	}
 }
 #Novi Pazar (72000/18000 POPS)
@@ -1392,7 +1331,7 @@
 		size = 400
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 33250
@@ -1422,7 +1361,7 @@
 		size = 1100
 	}
 
-	farmers = {
+	serfs = {
 		culture = bosniak
 		religion = sunni
 		size = 7450
@@ -1451,7 +1390,7 @@
 		size = 550
 	}
 
-	farmers = {
+	serfs = {
 		culture = bulgarian
 		religion = orthodox
 		size = 25000
@@ -1475,7 +1414,7 @@
 		size = 100
 	}
 
-	farmers = {
+	serfs = {
 		culture = serb
 		religion = orthodox
 		size = 1300
@@ -1505,7 +1444,7 @@
 		size = 50
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
 		size = 2250
@@ -1533,7 +1472,7 @@
 		size = 500
 	}
 
-	farmers = {
+	serfs = {
 		culture = bulgarian
 		religion = orthodox
 		size = 17500
@@ -1563,7 +1502,7 @@
 		size = 50
 	}
 
-	farmers = {
+	serfs = {
 		culture = turkish
 		religion = sunni
 		size = 1200

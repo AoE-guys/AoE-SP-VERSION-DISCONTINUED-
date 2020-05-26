@@ -1,0 +1,295 @@
+
+#General Dynamic Colonies Events
+country_event = {
+	title = "New Colony"
+	desc = "Colonial Administration has been established."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999813
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			  #all_core = { limit = { NOT = { is_overseas = yes } } remove_core = THIS  add_core = UT2 }
+			  #all_core = { limit = { is_core = FROM } remove_core = THIS  add_core = UT2 }
+			  FROM = { release = THIS }
+			  #UT2 = { all_core = { remove_core = UT2  add_core = THIS } }
+			  FROM = { create_vassal = THIS }
+			  #THIS = { primary_culture = FROM }
+			  THIS = { government = colonial_company }
+			  FROM = { relation = { who = THIS value = 400 } }
+			  FROM = { diplomatic_influence = { who = THIS value = 800 } }
+			  any_owned = { limit = { is_core = FROM } secede_province = FROM } 
+              set_country_flag = dynamic_colony			  
+	}
+    option = { 
+	          name = "Ok" 
+			  #UTI = { country_event = 9999817 }
+			  #clr_global_flag = making_colonies
+			  #clr_global_flag = colony_already_established
+	}
+}
+
+country_event = {
+	title = "Colony No More"
+	desc = "We are no longer foreign colony!"
+	#picture = "Education"
+	#major = yes
+
+	id = 9999812
+
+	trigger = {
+	           has_country_flag = dynamic_colony
+			   is_vassal = no
+			   is_substate = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			  clr_country_flag = dynamic_colony
+			  prestige = 1
+	}
+}
+
+country_event = {
+	title = "New Colony"
+	desc = "Colonial Administration has been established."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999818
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			  #any_owned = { limit = { is_core = FROM } secede_province = FROM }
+			  release = FROM
+			  create_vassal = FROM
+			  #THIS = { primary_culture = FROM }
+			  FROM = { government = colonial_company }
+			  relation = { who = FROM value = 400 }
+			  diplomatic_influence = { who = FROM value = 800 }				  
+	}
+    option = { 
+	          name = "Ok" 
+			  FROM = { country_event = 9999817 }
+			  UTI = { country_event = 9999817 }
+			  clr_global_flag = making_colonies
+			  clr_global_flag = colony_already_established
+	}
+}
+
+country_event = {
+	title = "Colony Core Removal"
+	desc = "Colony Core Removal."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999817
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			  all_core = { remove_core = THIS }
+	}
+}
+
+country_event = {
+	title = "Colony Crumbles"
+	desc = "Colony Crumbles."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999816
+
+	trigger = {
+	           has_country_flag = dynamic_tag
+			   AND = {
+			         is_vassal = no
+			         is_substate = no
+			   }
+			   exists = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			  all_core = { remove_core = THIS }
+		      any_country = {
+		      	             limit = { vassal_of = THIS }
+		      	             leave_alliance = THIS
+		      	             country_event = 31523
+		      }
+		      any_country = {
+		      	limit = {
+		      		neighbour = THIS
+		      		exists = yes
+		      		any_core = { owned_by = THIS }
+		      	}
+		      	country_event = 9999814
+		      }
+		      any_country = {
+		      	limit = {
+		      		any_core = { owned_by = THIS }
+		      		exists = no
+		      		is_cultural_union = no
+		      	}
+		      	country_event = 9999815
+		      }
+	}
+}
+
+country_event = {
+	id = 9999815
+	title = "Territory gain from collapsing colony!"
+	desc = "We territory gain from collapsing colony."
+	picture = "celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's about time!"
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 9999814
+	title = "Independence from collapsing colony!"
+	desc = "We gained independence from collapsing colony."
+	picture = "celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's about time!"
+		FROM = {
+			release = THIS
+		}
+	}
+}
+
+country_event = {
+	title = "End of Colonial Provisional Government"
+	desc = "End of Colonial Provisional Government."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999810
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			any_country = {
+			limit = { any_owned_province = { is_core = THIS } has_country_flag = dynamic_tag }
+			country_event = 9999809
+		    }
+	}
+}
+
+country_event = {
+	title = "End of Colonial Provisional Government"
+	desc = "End of Colonial Provisional Government."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999809
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			  overlord = { country_event = 9999808 }
+	}
+}
+
+country_event = {
+	title = "End of Colonial Provisional Government"
+	desc = "End of Colonial Provisional Government."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999808
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+			  inherit = FROM
+	}
+}
+
+country_event = {
+	title = "Return Cores to Proper Colony"
+	desc = "Return Cores to Proper Colony."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999807
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+		      any_country = {
+		      	  limit = { exists = yes any_core = { owned_by = THIS } overlord = { is_our_vassal = THIS } }
+		      	  THIS = { country_event = 9999806 }
+		      }
+	}
+}
+
+country_event = {
+	title = "Return Cores to Proper Colony"
+	desc = "Return Cores to Proper Colony."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999806
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = { 
+	          name = "Ok" 
+		      any_owned = {
+		      	  limit = { is_core = FROM }
+		      	  secede_province = FROM
+		      }
+	}
+}

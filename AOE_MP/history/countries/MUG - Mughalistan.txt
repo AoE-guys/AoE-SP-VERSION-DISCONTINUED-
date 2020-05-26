@@ -7,7 +7,7 @@ culture = gujarati
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.03
 prestige = 20
 
@@ -21,7 +21,7 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
-
+set_country_flag = unciv
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
@@ -37,12 +37,13 @@ trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = underground_parties
 
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+wage_reform = low_minimum_wage #silghtly influential church
+work_hours = no_work_hour_limit #irrelevant gentry
+safety_regulations = no_safety #very influential nobility
+unemployment_subsidies = no_subsidies #irrelevant burghers
+pensions = trinket_pensions #marginally relevant army
+health_care = low_health_care #slightly influential bureaucracy
+
 school_reforms = no_schools
 
 # Technologies

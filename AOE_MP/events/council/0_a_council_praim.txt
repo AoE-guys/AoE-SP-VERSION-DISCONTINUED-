@@ -1,0 +1,6752 @@
+country_event = { #Powers
+	id = 9991991
+	title = "EVTNAME9991991" 
+	desc = "EVTDESC9991991"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTNAME9991991PTA"
+################### CHURCH
+		THIS = {
+			limit = {
+				wage_reform = no_minimum_wage 
+			}
+				set_variable = {
+					which = church_power
+					value = 5
+				}
+			
+		}
+		THIS = {
+			limit = {
+				wage_reform = trinket_wage	
+			}
+				set_variable = {
+					which = church_power
+					value = 4
+				}
+			
+		}
+		THIS = {
+			limit = {
+				wage_reform = low_minimum_wage 
+			}
+				set_variable = {
+					which = church_power
+					value = 3
+				}
+			
+		}
+		THIS = {
+			limit = {
+				wage_reform = acceptable_minimum_wage 
+			}
+				set_variable = {
+					which = church_power
+					value = 2
+				}
+			
+		}
+		THIS = {
+			limit = {
+				wage_reform = good_minimum_wage 
+			}
+				set_variable = {
+					which = church_power
+					value = 1
+				}
+			
+		}
+######################		NOBLE
+		THIS = {
+			limit = {
+				safety_regulations = no_safety	
+			}
+				set_variable = {
+					which = noble_power
+					value = 5
+				}
+			
+		}
+		THIS = {
+			limit = {
+				safety_regulations = trinket_safety	
+			}
+				set_variable = {
+					which = noble_power
+					value = 4
+				}
+			
+		}
+		THIS = {
+			limit = {
+				safety_regulations = low_safety	
+			}
+				set_variable = {
+					which = noble_power
+					value = 3
+				}
+			
+		}
+		THIS = {
+			limit = {
+				safety_regulations = acceptable_safety	 
+			}
+				set_variable = {
+					which = noble_power
+					value = 2
+				}
+			
+		}
+		THIS = {
+			limit = {
+				safety_regulations = good_safety	 
+			}
+				set_variable = {
+					which = noble_power
+					value = 1
+				}
+			
+		}
+##################				GENTRY
+		THIS = {
+			limit = {
+				work_hours = no_work_hour_limit	 	 
+			}
+				set_variable = {
+					which = gentry_power
+					value = 1
+				}
+			
+		}
+		THIS = {
+			limit = {
+				work_hours = fourteen_hours 	 	 
+			}
+				set_variable = {
+					which = gentry_power
+					value = 2
+				}
+			
+		}
+		THIS = {
+			limit = {
+				work_hours = twelve_hours	 
+			}
+				set_variable = {
+					which = gentry_power
+					value = 3
+				}
+			
+		}
+		THIS = {
+			limit = {
+				work_hours = ten_hours	 
+			}
+				set_variable = {
+					which = gentry_power
+					value = 4
+				}
+			
+		}
+		THIS = {
+			limit = {
+				work_hours = eight_hours	 
+			}
+				set_variable = {
+					which = gentry_power
+					value = 5
+				}
+			
+		}
+############3333		BURGHERS
+		THIS = {
+			limit = {
+				unemployment_subsidies = no_subsidies	 
+			}
+				set_variable = {
+					which = burghers_power
+					value = 1
+				}
+			
+		}
+		THIS = {
+			limit = {
+				unemployment_subsidies = trinket_subsidies	 
+			}
+				set_variable = {
+					which = burghers_power
+					value = 2
+				}
+			
+		}
+		THIS = {
+			limit = {
+				unemployment_subsidies = low_subsidies	 
+			}
+				set_variable = {
+					which = burghers_power
+					value = 3
+				}
+			
+		}
+		THIS = {
+			limit = {
+				unemployment_subsidies = acceptable_subsidies	 
+			}
+				set_variable = {
+					which = burghers_power
+					value = 4
+				}
+			
+		}
+		THIS = {
+			limit = {
+				unemployment_subsidies = good_subsidies	 
+			}
+				set_variable = {
+					which = burghers_power
+					value = 5
+				}
+			
+		}
+####################3	 ARMY
+		THIS = {
+			limit = {
+				pensions = no_pensions		 
+			}
+				set_variable = {
+					which = army_power
+					value = 1
+				}
+			
+		}		
+		THIS = {
+			limit = {
+				pensions = trinket_pensions		 
+			}
+				set_variable = {
+					which = army_power
+					value = 2
+				}
+			
+		}		
+		THIS = {
+			limit = {
+				pensions = low_pensions		 
+			}
+				set_variable = {
+					which = army_power
+					value = 3
+				}
+			
+		}		
+		THIS = {
+			limit = {
+				pensions = acceptable_pensions		 
+			}
+				set_variable = {
+					which = army_power
+					value = 4
+				}
+			
+		}		
+		THIS = {
+			limit = {
+				pensions = good_pensions		 
+			}
+				set_variable = {
+					which = army_power
+					value = 5
+				}
+			
+		}	
+################## BUREAUCRACY
+		THIS = {
+			limit = {
+				health_care = no_health_care		 
+			}
+				set_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			
+		}		
+		THIS = {
+			limit = {
+				health_care = trinket_health_care		 
+			}
+				set_variable = {
+					which = bureaucracy_power
+					value = 2
+				}
+			
+		}		
+		THIS = {
+			limit = {
+				health_care = low_health_care		 
+			}
+				set_variable = {
+					which = bureaucracy_power
+					value = 3
+				}
+			
+		}	
+		THIS = {
+			limit = {
+				health_care = acceptable_health_care		 
+			}
+				set_variable = {
+					which = bureaucracy_power
+					value = 4
+				}
+			
+		}	
+		THIS = {
+			limit = {
+				health_care = good_health_care		 
+			}
+				set_variable = {
+					which = bureaucracy_power
+					value = 5
+				}
+			
+		}			
+	set_country_flag = minister_choose
+	ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = { #Powers_decrease
+	id = 9991992
+	title = "EVTNAME9991992" 
+	desc = "EVTDESC9991992"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	trigger = {
+		
+		OR = {
+			AND = {
+				check_variable = {
+					which = church_power 
+					value = 1
+				}
+				check_variable = {
+					which = noble_power 
+					value = 1
+				}
+				NOT = {
+					OR = {
+						AND = {
+							NOT = {
+								check_variable = {
+									which = church_power
+									value = 1
+								}
+							}
+							NOT = {
+								check_variable = {
+									which = noble_power
+									value = 1
+								}
+							}
+							NOT = {
+								check_variable = {
+									which = gentry_power
+									value = 1
+								}
+							}
+							NOT = {
+								check_variable = {
+									which = army_power
+									value = 1
+								}
+							}			
+							NOT = {
+								check_variable = {
+									which = burghers_power
+									value = 1
+								}
+							}
+							check_variable = {
+								which = bureaucracy_power
+								value = 1
+							}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = church_power 
+					value = 1
+				}
+				check_variable = {
+					which = gentry_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = church_power 
+					value = 1
+				}
+				check_variable = {
+					which = burghers_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = church_power 
+					value = 1
+				}
+				check_variable = {
+					which = bureaucracy_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = church_power 
+					value = 1
+				}
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = noble_power 
+					value = 1
+				}
+				check_variable = {
+					which = gentry_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = noble_power 
+					value = 1
+				}
+				check_variable = {
+					which = burghers_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = noble_power 
+					value = 1
+				}
+				check_variable = {
+					which = bureaucracy_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = noble_power 
+					value = 1
+				}
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = gentry_power 
+					value = 1
+				}
+				check_variable = {
+					which = burghers_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = gentry_power 
+					value = 1
+				}
+				check_variable = {
+					which = bureaucracy_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = gentry_power 
+					value = 1
+				}
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = burghers_power 
+					value = 1
+				}
+				check_variable = {
+					which = bureaucracy_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = burghers_power 
+					value = 1
+				}
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+			AND = {
+				check_variable = {
+					which = bureaucracy_power 
+					value = 1
+				}
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+				NOT = {
+		OR = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = church_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = noble_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = army_power
+					value = 1
+				}	
+			}
+			AND = {
+				NOT = {
+					check_variable = {
+						which = bureaucracy_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = church_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = noble_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_power
+						value = 1
+					}
+				}
+				NOT = {
+					check_variable = {
+						which = army_power
+						value = 1
+					}
+				}
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}	
+			}
+		}
+		}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991992PTA"
+			random = {
+				chance = 50
+					change_variable = {
+						which = church_power
+						value = -1
+					}
+			}
+			random = {
+				chance = 50
+					change_variable = {
+						which = noble_power
+						value = -1
+					}
+			}
+			random = {
+				chance = 50
+					change_variable = {
+						which = army_power
+						value = -1
+					}
+			}
+			random = {
+				chance = 50
+					change_variable = {
+						which = burghers_power
+						value = -1
+					}
+			}
+			random = {
+				chance = 50
+					change_variable = {
+						which = bureaucracy_power
+						value = -1
+					}
+			}
+			random = {
+				chance = 50
+					change_variable = {
+						which = gentry_power
+						value = -1
+					}
+			}
+		add_country_modifier = {
+			name = waiting_for_minister
+			duration = 180
+		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+ #Premier
+#BUREAUCRACY
+country_event = {
+	id = 9991993
+	title = "EVTNAME9991993" 
+	desc = "EVTDESC9991993"
+	picture = "autocracy"
+	
+	trigger = {
+		
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = bureaucracy_power
+				value = 1
+			}
+			NOT = {
+				has_country_flag = bureaucracy_premier
+			}
+			has_country_flag = prime_minister_set
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991993PTA"
+			###country_event = 
+		set_country_flag = bureaucracy_premier
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+#BURGHERS
+country_event = {
+	id = 9991994
+	title = "EVTNAME9991994" 
+	desc = "EVTDESC9991994"
+	picture = "autocracy"
+	
+	trigger = {
+		has_country_flag = prime_minister_set
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = burghers_power
+				value = 1
+			}
+			NOT = {
+				has_country_flag = burghers_premier
+			}
+		}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991994PTA"
+			###country_event = 
+		set_country_flag = burghers_premier
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+#CHURCH
+country_event = {
+	id = 9991995
+	title = "EVTNAME9991995" 
+	desc = "EVTDESC9991995"
+	picture = "autocracy"
+	
+	trigger = {
+		has_country_flag = prime_minister_set
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = church_power
+				value = 1
+			}
+			NOT = {
+				has_country_flag = church_premier
+			}
+		}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991995PTA"
+			###country_event = 
+		set_country_flag = church_premier
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+#NOBLE
+country_event = {
+	id = 9991996
+	title = "EVTNAME9991996" 
+	desc = "EVTDESC9991996"
+	picture = "autocracy"
+	
+	trigger = {
+		has_country_flag = prime_minister_set
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = noble_power
+				value = 1
+			}
+			NOT = {
+				has_country_flag = noble_premier
+			}
+		}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991996PTA"
+			###country_event = 
+		set_country_flag = noble_premier
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+#GENTRY
+country_event = {
+	id = 9991997
+	title = "EVTNAME9991997" 
+	desc = "EVTDESC9991997"
+	picture = "autocracy"
+	
+	trigger = {
+		has_country_flag = prime_minister_set
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = gentry_power
+				value = 1
+			}
+			NOT = {
+				has_country_flag = gentry_premier
+			}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991997PTA"
+			###country_event = 
+		set_country_flag = gentry_premier	
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+#ARMY
+country_event = {
+	id = 9991998
+	title = "EVTNAME9991998" 
+	desc = "EVTDESC9991998"
+	picture = "autocracy"
+	
+	trigger = {
+		has_country_flag = prime_minister_set
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = army_power
+				value = 1
+			}
+			NOT = {
+				has_country_flag = army_premier
+			}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+			###country_event = 
+		set_country_flag = army_premier
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+###Main Prime Minister
+country_event = {
+	id = 100000001
+	title = "EVTNAME100000001" 
+	desc = "EVTDESC100000001"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	
+	trigger = {
+		OR = {
+			has_country_flag = bureaucracy_premier
+			has_country_flag = army_premier
+			has_country_flag = burghers_premier
+			has_country_flag = noble_premier
+			has_country_flag = church_premier
+			has_country_flag = gentry_premier
+		}
+		NOT = {
+		has_country_flag = no_spam_prime
+		}
+	}
+	
+	
+	option = {
+		name = "EVTNAME100000001PTA"
+		THIS = {
+			limit = {
+					has_country_flag = bureaucracy_premier
+				}
+				set_variable = {
+					which = bureaucratic_premier
+					value = 11
+				}
+			
+		}
+		THIS = {
+			limit = {
+					has_country_flag = burghers_premier
+				}
+				set_variable = {
+					which = burghers_premier
+					value = 14
+				}
+			
+		}
+		THIS = {
+			limit = {
+					has_country_flag = army_premier
+				}
+				set_variable = {
+					which = army_premier
+					value = 9
+				}
+			
+		}
+		THIS = {
+			limit = {
+					has_country_flag = noble_premier
+				}
+				set_variable = {
+					which = noble_premier
+					value = 11
+				}
+			
+		}
+		THIS = {
+			limit = {
+					has_country_flag = church_premier
+				}
+				set_variable = {
+					which = church_premier
+					value = 7
+				}
+			
+		}
+		THIS = {
+			limit = {
+					has_country_flag = gentry_premier
+				}
+				set_variable = {
+					which = gentry_premier
+					value = 9
+				}
+			
+		}
+		country_event = 10000000
+		set_country_flag = no_spam_prime
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+
+ #Financial
+country_event = {
+	id = 9991999
+	title = "EVTNAME9991999" 
+	desc = "EVTDESC99919939"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = bureaucracy_power
+				value = 1
+			}
+			has_country_flag = financial_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991993PTA"
+			###country_event = 
+		set_country_flag = bureaucracy_financial
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992000
+	title = "EVTNAME9992000" 
+	desc = "EVTDESC9992000"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = burghers_power
+				value = 1
+			}
+			has_country_flag = financial_set
+		
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992000PTA"
+			###country_event = 
+		set_country_flag = burghers_financial
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992001
+	title = "EVTNAME9992001" 
+	desc = "EVTDESC9992001"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = church_power
+				value = 1
+			}
+			has_country_flag = financial_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992001PTA"
+			###country_event = 
+		set_country_flag = church_financial
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992002
+	title = "EVTNAME9992002" 
+	desc = "EVTDESC9992002"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = noble_power
+				value = 1
+			}
+			has_country_flag = financial_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991996PTA"
+			###country_event = 
+		set_country_flag = noble_financial
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992003
+	title = "EVTNAME9992003" 
+	desc = "EVTDESC9992003"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = gentry_power
+				value = 1
+			}
+			has_country_flag = financial_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991997PTA"
+			###country_event = 
+		set_country_flag = gentry_financial	
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992004
+	title = "EVTNAME9992004" 
+	desc = "EVTDESC9992004"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = army_power
+				value = 1
+			}
+			has_country_flag = financial_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+			###country_event = 
+		set_country_flag = army_financial
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+###Main Prime Financial
+country_event = {
+	id = 9992005
+	title = "EVTNAME9992005" 
+	desc = "EVTDESC9992005"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+		THIS = {
+			limit = {
+					has_country_flag = bureaucracy_financial
+				}
+				set_variable = {
+					which = bureaucratic_financial
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = burghers_financial
+				}
+				set_variable = {
+					which = burghers_financial
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = army_financial
+				}
+				set_variable = {
+					which = army_financial
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = noble_financial
+				}
+				set_variable = {
+					which = noble_financial
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = church_financial
+				}
+				set_variable = {
+					which = church_financial
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = gentry_financial
+				}
+				set_variable = {
+					which = gentry_financial
+					value = 10
+				}
+		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+
+
+ #War minister
+country_event = {
+	id = 9992006
+	title = "EVTNAME9992006" 
+	desc = "EVTDESC9992006"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = bureaucracy_power
+				value = 1
+			}
+			has_country_flag = army_minister_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991993PTA"
+			###country_event = 
+		set_country_flag = bureaucracy_war_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992007
+	title = "EVTNAME9992007" 
+	desc = "EVTDESC9992007"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = burghers_power
+				value = 1
+			}
+			has_country_flag = army_minister_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992000PTA"
+			###country_event = 
+		set_country_flag = burghers_war_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992008
+	title = "EVTNAME9992008" 
+	desc = "EVTDESC9992008"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = church_power
+				value = 1
+			}
+			has_country_flag = army_minister_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992001PTA"
+			###country_event = 
+		set_country_flag = church_war_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992009
+	title = "EVTNAME9992009" 
+	desc = "EVTDESC9992009"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = noble_power
+				value = 1
+			}
+			has_country_flag = army_minister_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991996PTA"
+			###country_event = 
+		set_country_flag = noble_war_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992010
+	title = "EVTNAME9992010" 
+	desc = "EVTDESC9992010"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = gentry_power
+				value = 1
+			}
+			has_country_flag = army_minister_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991997PTA"
+			###country_event = 
+		set_country_flag = gentry_war_minister	
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992011
+	title = "EVTNAME9992011" 
+	desc = "EVTDESC9992011"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = army_power
+				value = 1
+			}
+			has_country_flag = army_minister_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+			###country_event = 
+		set_country_flag = army_war_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+###Main Prime War minister
+country_event = {
+	id = 9910000
+	title = "EVTNAME9992012" 
+	desc = "EVTDESC999202"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+		THIS = {
+			limit = {
+					has_country_flag = bureaucracy_war_minister
+				}
+				set_variable = {
+					which = bureaucratic_war_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = burghers_war_minister
+				}
+				set_variable = {
+					which = burghers_war_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = army_war_minister
+				}
+				set_variable = {
+					which = army_war_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = noble_war_minister
+				}
+				set_variable = {
+					which = noble_war_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = church_war_minister
+				}
+				set_variable = {
+					which = church_war_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = gentry_war_minister
+				}
+				set_variable = {
+					which = gentry_war_minister
+					value = 10
+				}
+		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+
+
+ #Schoolar minister
+country_event = {
+	id = 9992012
+	title = "EVTNAME9992012" 
+	desc = "EVTDESC9992012"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = bureaucracy_power
+				value = 1
+			}
+			has_country_flag = schoolar_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991993PTA"
+			###country_event = 
+		set_country_flag = bureaucracy_schoolar_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992013
+	title = "EVTNAME9992013" 
+	desc = "EVTDESC9992013"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = burghers_power
+				value = 1
+			}
+			has_country_flag = schoolar_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992000PTA"
+			###country_event = 
+		set_country_flag = burghers_schoolar_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992014
+	title = "EVTNAME9992014" 
+	desc = "EVTDESC9992014"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = church_power
+				value = 1
+			}
+			has_country_flag = schoolar_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992001PTA"
+			###country_event = 
+		set_country_flag = church_schoolar_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992015
+	title = "EVTNAME9992015" 
+	desc = "EVTDESC9992015"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = noble_power
+				value = 1
+			}
+			has_country_flag = schoolar_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991996PTA"
+			###country_event = 
+		set_country_flag = noble_schoolar_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992016
+	title = "EVTNAME9992016" 
+	desc = "EVTDESC9992016"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = gentry_power
+				value = 1
+			}
+			has_country_flag = schoolar_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991997PTA"
+			###country_event = 
+		set_country_flag = gentry_schoolar_minister	
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992017
+	title = "EVTNAME9992017" 
+	desc = "EVTDESC9992017"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = army_power
+				value = 1
+			}
+			has_country_flag = schoolar_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+			###country_event = 
+		set_country_flag = army_schoolar_minister
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+###Main Prime Schoolar minister
+country_event = {
+	id = 9992018
+	title = "EVTNAME9992018" 
+	desc = "EVTDESC9992018"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+		THIS = {
+			limit = {
+					has_country_flag = bureaucracy_schoolar_minister
+				}
+				set_variable = {
+					which = bureaucratic_schoolar_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = burghers_schoolar_minister
+				}
+				set_variable = {
+					which = burghers_schoolar_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = army_schoolar_minister
+				}
+				set_variable = {
+					which = army_schoolar_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = noble_schoolar_minister
+				}
+				set_variable = {
+					which = noble_schoolar_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = church_schoolar_minister
+				}
+				set_variable = {
+					which = church_schoolar_minister
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = gentry_schoolar_minister
+				}
+				set_variable = {
+					which = gentry_schoolar_minister
+					value = 10
+				}
+		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+
+
+ #Administrator
+country_event = {
+	id = 9992019
+	title = "EVTNAME9992019" 
+	desc = "EVTDESC9992019"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = bureaucracy_power
+				value = 1
+			}
+			has_country_flag = administrator_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991993PTA"
+			###country_event = 
+		set_country_flag = bureaucracy_administrator
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992020
+	title = "EVTNAME9992020" 
+	desc = "EVTDESC9992020"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = burghers_power
+				value = 1
+			}
+			has_country_flag = administrator_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992000PTA"
+			###country_event = 
+		set_country_flag = burghers_administrator
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992021
+	title = "EVTNAME9992021" 
+	desc = "EVTDESC9992021"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = church_power
+				value = 1
+			}
+			has_country_flag = administrator_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992001PTA"
+			###country_event = 
+		set_country_flag = church_administrator
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992022
+	title = "EVTNAME9992022" 
+	desc = "EVTDESC9992022"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = noble_power
+				value = 1
+			}
+			has_country_flag = administrator_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991996PTA"
+			###country_event = 
+		set_country_flag = noble_administrator
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992023
+	title = "EVTNAME9992023" 
+	desc = "EVTDESC9992023"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = gentry_power
+				value = 1
+			}
+			has_country_flag = administrator_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991997PTA"
+			###country_event = 
+		set_country_flag = gentry_administrator	
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992024
+	title = "EVTNAME9992024" 
+	desc = "EVTDESC9992024"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = army_power
+				value = 1
+			}
+			has_country_flag = administrator_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+			###country_event = 
+		set_country_flag = army_administrator
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+###Main Prime Administrator
+country_event = {
+	id = 9992025
+	title = "EVTNAME9992025" 
+	desc = "EVTDESC9992025"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+		THIS = {
+			limit = {
+					has_country_flag = bureaucracy_administrator
+				}
+				set_variable = {
+					which = bureaucratic_administrator
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = burghers_administrator
+				}
+				set_variable = {
+					which = burghers_administrator
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = army_administrator
+				}
+				set_variable = {
+					which = army_administrator
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = noble_administrator
+				}
+				set_variable = {
+					which = noble_administrator
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = church_administrator
+				}
+				set_variable = {
+					which = church_administrator
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = gentry_administrator
+				}
+				set_variable = {
+					which = gentry_administrator
+					value = 10
+				}
+		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+
+
+ #Diplomat
+country_event = {
+	id = 9992026
+	title = "EVTNAME9992026" 
+	desc = "EVTDESC9992026"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = burghers_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = bureaucracy_power
+				value = 1
+			}
+			has_country_flag = diplomat_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991993PTA"
+			###country_event = 
+		set_country_flag = bureaucracy_diplomatt
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992027
+	title = "EVTNAME9992027" 
+	desc = "EVTDESC9992027"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = church_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power
+					value = 1
+				}
+			}
+			check_variable = {
+				which = burghers_power
+				value = 1
+			}
+			has_country_flag = diplomat_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992000PTA"
+			###country_event = 
+		set_country_flag = burghers_diplomatt
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992028
+	title = "EVTNAME9992028" 
+	desc = "EVTDESC9992028"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = church_power
+				value = 1
+			}
+			has_country_flag = diplomat_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9992001PTA"
+			###country_event = 
+		set_country_flag = church_diplomatt
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992029
+	title = "EVTNAME9992029" 
+	desc = "EVTDESC9992029"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = noble_power
+				value = 1
+			}
+			has_country_flag = diplomat_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991996PTA"
+			###country_event = 
+		set_country_flag = noble_diplomatt
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992030
+	title = "EVTNAME9992030" 
+	desc = "EVTDESC9992030"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = army_power 
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = gentry_power
+				value = 1
+			}
+			has_country_flag = diplomat_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991997PTA"
+			###country_event = 
+		set_country_flag = gentry_diplomatt	
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+country_event = {
+	id = 9992031
+	title = "EVTNAME9992031" 
+	desc = "EVTDESC9992031"
+	picture = "autocracy"
+	
+	trigger = {
+			NOT = {
+				check_variable = {
+					which = burghers_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = church_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = noble_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = gentry_power #
+					value = 1
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = bureaucracy_power #
+					value = 1
+				}
+			}
+			check_variable = {
+				which = army_power
+				value = 1
+			}
+			has_country_flag = diplomat_set
+	}
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+			###country_event = 
+		set_country_flag = army_diplomatt
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+###Main Prime Diplomat
+country_event = {
+	id = 9992032
+	title = "EVTNAME9992032" 
+	desc = "EVTDESC9992032"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTNAME9991998PTA"
+		THIS = {
+			limit = {
+					has_country_flag = bureaucracy_diplomatt
+				}
+				set_variable = {
+					which = bureaucratic_diplomatt
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = burghers_diplomatt
+				}
+				set_variable = {
+					which = burghers_diplomatt
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = army_diplomatt
+				}
+				set_variable = {
+					which = army_diplomatt
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = noble_diplomatt
+				}
+				set_variable = {
+					which = noble_diplomatt
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = church_diplomatt
+				}
+				set_variable = {
+					which = church_diplomatt
+					value = 10
+				}
+		}
+		THIS = {
+			limit = {
+					has_country_flag = gentry_diplomatt
+				}
+				set_variable = {
+					which = gentry_diplomatt
+					value = 10
+				}
+		}
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+
+
+
+#Powers_decrease Prime minister
+country_event = { 
+	id = 10000000
+	title = "EVTNAME10000000" 
+	desc = "EVTDESC10000000"
+	picture = "autocracy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTNAME10000000PTA"
+				random = {
+					chance = 20
+					change_variable = {
+						which = church_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = church_premier
+						value = -1
+					}
+				}
+				
+				random = {
+					chance = 20
+					change_variable = {
+						which = church_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = church_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = church_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = church_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = noble_premier
+						value = -1
+					}
+				}
+			
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = army_premier
+						value = -1
+					}
+				}
+			
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = burghers_premier
+						value = -1
+					}
+				}
+			
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = bureaucracy_premier
+						value = -1
+					}
+				}
+			
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				random = {
+					chance = 20
+					change_variable = {
+						which = gentry_premier
+						value = -1
+					}
+				}
+				
+		clr_country_flag = clean_prime
+		ai_chance = {
+			factor = 1.0
+		}
+	}
+}
+

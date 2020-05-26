@@ -2,7 +2,7 @@ owner = THC
 controller = THC
 add_core = THC
 add_core = NEN
-trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 35
 terrain = boston
 naval_base = 1
@@ -16,3 +16,4 @@ state_building = {
 	building = glass_factory
 	upgrade = yes
 }
+state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }

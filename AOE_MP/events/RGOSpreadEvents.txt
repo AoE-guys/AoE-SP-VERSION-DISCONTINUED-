@@ -354,10 +354,10 @@ province_event = {
 			state_scope = { is_colonial = yes }
 		}
 		
-		modifier = {
-			factor = 2
-			state_scope = { has_pop_type = serfs }
-		}
+		#modifier = {
+		#	factor = 2
+		#	state_scope = { has_pop_type = serfs }
+		#}
 		
 		modifier = {
 			factor = 3
@@ -3597,7 +3597,7 @@ province_event = {
 			trade_goods = coal
 			trade_goods = iron
 			trade_goods = oil
-			trade_goods = precious_metal
+			trade_goods = precious_goods
 			trade_goods = sulphur
 		}
 		NOT = { has_province_modifier = treaty_port }
@@ -3701,10 +3701,10 @@ province_event = {
 			average_militancy = 7
 		}
 		
-		modifier = {
-			factor = 2
-			state_scope = { has_pop_type = serfs }
-		}
+		#modifier = {
+		#	factor = 2
+		#	state_scope = { has_pop_type = serfs }
+		#}
 		
 		modifier = {
 			factor = 8
@@ -3727,7 +3727,7 @@ province_event = {
 						trade_goods = coal
 						trade_goods = iron
 						trade_goods = oil
-						trade_goods = precious_metal
+						trade_goods = precious_goods
 						trade_goods = sulphur
 					}
 				}
@@ -3752,7 +3752,7 @@ province_event = {
 						trade_goods = coal
 						trade_goods = iron
 						trade_goods = oil
-						trade_goods = precious_metal
+						trade_goods = precious_goods
 						trade_goods = sulphur
 					}
 				}
@@ -3773,7 +3773,7 @@ province_event = {
 							trade_goods = coal
 							trade_goods = iron
 							trade_goods = oil
-							trade_goods = precious_metal
+							trade_goods = precious_goods
 							trade_goods = sulphur
 						}
 					}
@@ -3785,7 +3785,7 @@ province_event = {
 									trade_goods = coal
 									trade_goods = iron
 									trade_goods = oil
-									trade_goods = precious_metal
+									trade_goods = precious_goods
 									trade_goods = sulphur
 								}
 							}
@@ -3813,7 +3813,7 @@ province_event = {
 						trade_goods = coal
 						trade_goods = iron
 						trade_goods = oil
-						trade_goods = precious_metal
+						trade_goods = precious_goods
 						trade_goods = sulphur
 					}
 				}
@@ -3834,7 +3834,7 @@ province_event = {
 							trade_goods = coal
 							trade_goods = iron
 							trade_goods = oil
-							trade_goods = precious_metal
+							trade_goods = precious_goods
 							trade_goods = sulphur
 						}
 					}
@@ -3846,7 +3846,7 @@ province_event = {
 									trade_goods = coal
 									trade_goods = iron
 									trade_goods = oil
-									trade_goods = precious_metal
+									trade_goods = precious_goods
 									trade_goods = sulphur
 								}
 							}
@@ -3874,7 +3874,7 @@ province_event = {
 						trade_goods = coal
 						trade_goods = iron
 						trade_goods = oil
-						trade_goods = precious_metal
+						trade_goods = precious_goods
 						trade_goods = sulphur
 					}
 				}
@@ -3895,7 +3895,7 @@ province_event = {
 							trade_goods = coal
 							trade_goods = iron
 							trade_goods = oil
-							trade_goods = precious_metal
+							trade_goods = precious_goods
 							trade_goods = sulphur
 						}
 					}
@@ -3907,7 +3907,7 @@ province_event = {
 									trade_goods = coal
 									trade_goods = iron
 									trade_goods = oil
-									trade_goods = precious_metal
+									trade_goods = precious_goods
 									trade_goods = sulphur
 								}
 							}
@@ -3935,7 +3935,7 @@ province_event = {
 						trade_goods = coal
 						trade_goods = iron
 						trade_goods = oil
-						trade_goods = precious_metal
+						trade_goods = precious_goods
 						trade_goods = sulphur
 					}
 				}
@@ -3956,7 +3956,7 @@ province_event = {
 							trade_goods = coal
 							trade_goods = iron
 							trade_goods = oil
-							trade_goods = precious_metal
+							trade_goods = precious_goods
 							trade_goods = sulphur
 						}
 					}
@@ -3968,7 +3968,7 @@ province_event = {
 									trade_goods = coal
 									trade_goods = iron
 									trade_goods = oil
-									trade_goods = precious_metal
+									trade_goods = precious_goods
 									trade_goods = sulphur
 								}
 							}
@@ -4093,10 +4093,10 @@ province_event = {
 			average_militancy = 7
 		}
 		
-		modifier = {
-			factor = 2
-			state_scope = { has_pop_type = serfs }
-		}
+		#modifier = {
+		#	factor = 2
+		#	state_scope = { has_pop_type = serfs }
+		#}
 		
 		modifier = {
 			factor = 8

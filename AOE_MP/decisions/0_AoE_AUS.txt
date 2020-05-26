@@ -38,7 +38,9 @@ political_decisions = {
 			}
 		}
 		allow = {
-			idealism = 1
+			HUN = {
+				vassal_of = AUS
+			}
 		}
 		
 		effect = {
@@ -70,9 +72,8 @@ political_decisions = {
 			}
 		}
 		allow = {
-			rank = 8
+			#rank = 8
 			is_sphere_leader_of = SIE
-			
 		}
 		
 		effect = {
@@ -333,6 +334,28 @@ political_decisions = {
 		}
 		ai_will_do = {					
 		factor = 1
+		}
+	}
+	
+	issue_pragmatic_sanction = {
+		picture = austria_coa
+		potential = {
+			tag = AUS
+			NOT = {
+				has_country_modifier = maria_theresa
+			}
+			NOT = { has_country_flag = issued_pragmatic_sanction }
+			NOT = { has_country_flag = maria_ded }
+			has_country_flag = dynastic_crisis
+		}
+		allow = {
+			state_n_government = 1
+			prestige = 200
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = issued_pragmatic_sanction
+			country_event = 174503
 		}
 	}
 #####Hungary stuff#####

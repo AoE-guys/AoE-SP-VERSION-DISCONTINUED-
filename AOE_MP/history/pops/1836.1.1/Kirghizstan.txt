@@ -38,7 +38,7 @@
 		size = 500
 	}
 
-	farmers = {
+	serfs = {
 		culture = kirgiz
 		religion = sunni
 		size = 16044
@@ -74,7 +74,7 @@
 		size = 38
 	}
 
-	farmers = {
+	serfs = {
 		culture = kazak
 		religion = sunni
 		size = 3064
@@ -110,7 +110,7 @@
 		size = 38
 	}
 
-	farmers = {
+	serfs = {
 		culture = uighur
 		religion = sunni
 		size = 3504
@@ -148,7 +148,7 @@
 		size = 550
 	}
 
-	farmers = {
+	serfs = {
 		culture = kirgiz
 		religion = sunni
 		size = 1319
@@ -184,7 +184,7 @@
 		size = 25
 	}
 
-	farmers = {
+	serfs = {
 		culture = kirgiz
 		religion = animist
 		size = 2174
@@ -220,7 +220,7 @@
 		size = 25
 	}
 
-	farmers = {
+	serfs = {
 		culture = kazak
 		religion = sunni
 		size = 2185
@@ -260,7 +260,7 @@
 		size = 50
 	}
 
-	farmers = {
+	serfs = {
 		culture = uzbek
 		religion = sunni
 		size = 3895
@@ -302,16 +302,68 @@
 		size = 500
 	}
 
-	farmers = {
+	serfs = {
 		culture = kirgiz
 		religion = sunni
 		size = 5436
 	}
 	
-	farmers = {
+	serfs = {
 		culture = tajik
 		religion = sunni
 		size = 1000
+	}
+
+
+	labourers = {
+		culture = kirgiz
+		religion = sunni
+		size = 339
+	}
+
+}
+
+3344 = {
+	aristocrats = {
+		culture = kirgiz
+		religion = sunni
+		size = 188
+	}
+
+	clergymen = {
+		culture = mongol
+		religion = animist
+		size = 88
+	}
+
+	artisans = {
+		culture = kirgiz
+		religion = sunni
+		size = 450
+	}
+
+	soldiers = {
+		culture = kirgiz
+		religion = sunni
+		size = 500
+	}
+
+	soldiers = {
+		culture = kirgiz
+		religion = animist
+		size = 500
+	}
+
+	serfs = {
+		culture = kirgiz
+		religion = sunni
+		size = 2436
+	}
+	
+	serfs = {
+		culture = kazak
+		religion = sunni
+		size = 5000
 	}
 
 

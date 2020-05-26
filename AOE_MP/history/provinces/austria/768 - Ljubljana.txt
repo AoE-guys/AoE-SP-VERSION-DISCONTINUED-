@@ -1,8 +1,9 @@
 owner = AUS
 controller = AUS
 add_core = AUS
-add_core = HRE
+add_core = NNN
 add_core = SLO
-trade_goods = cotton  state_building = {  level = 5  building = cotton_factory  upgrade = yes  }
+trade_goods = cotton  state_building = {  level = 1  building = cotton_factory  upgrade = yes  }
+state_building = {  level = 1  building = barrel_factory  upgrade = yes  }
 life_rating = 35
 terrain = ljubljana

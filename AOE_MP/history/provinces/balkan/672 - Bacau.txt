@@ -2,5 +2,6 @@ owner = MOL
 controller = MOL
 add_core = MOL
 add_core = ROM
-trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
 life_rating = 35

@@ -1,0 +1,2353 @@
+#Colony Maintenance
+country_event = {
+	title = "Colony Maintenance"
+	desc = "Colony Maintenance."
+	#picture = "Education"
+	#major = yes
+
+	id = 9999800
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	    name = "Ok"
+		any_country = {
+                       limit = { 
+	                            any_owned_province = {  
+			                                          is_overseas = yes								 
+				                 					  NOT = { is_core = THIS }
+			                    }
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_overlord
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+          		  } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9100000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9200000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9300000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9400000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9500000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9600000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9700000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9800000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9900000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony  OR = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 10000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 1000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 2000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 3000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 4000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 5000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 6000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 7000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 8000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 9000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 10000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 11000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 12000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 13000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 14000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 15000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 16000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+          		  } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 17000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 18000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 19000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 20000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 21000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 22000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 23000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 24000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 25000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 26000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 27000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 28000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 29000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 30000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 31000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 32000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 33000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 34000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 35000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 36000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 37000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 38000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 39000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 40000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 41000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 42000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 43000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 44000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 45000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 46000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 47000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 48000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 49000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 50000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 51000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 52000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 53000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 54000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 55000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 56000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 57000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 58000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 59000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 60000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 61000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 62000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 63000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 64000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 65000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 66000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 67000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 68000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 69000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 60000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 61000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 62000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 63000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 64000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 65000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 66000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 67000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 68000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 69000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 70000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 71000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 72000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 73000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 74000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 75000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 76000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 77000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 78000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 79000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 80000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 81000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 82000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 83000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 84000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 85000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 86000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 87000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 88000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 89000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 90000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 91000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 92000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 93000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 94000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 95000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 96000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 97000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 98000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 99000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+                       limit = { 
+					            has_country_flag = dynamic_colony NOT = { capital_scope = { continent = north_america } capital_scope = { continent = south_america } capital_scope = { continent = australia_new_zealand  } } 				
+					            total_pops = 100000000 
+					   }
+                       change_variable = {
+                       	                  which = colonial_contribution_vassal
+                       	                  value = 1
+                       } 
+		}
+		any_country = {
+					        remove_country_modifier = colonial_benefits_001
+							remove_country_modifier = colonial_benefits_002
+						    remove_country_modifier = colonial_benefits_003
+							remove_country_modifier = colonial_benefits_004
+							remove_country_modifier = colonial_benefits_005
+							remove_country_modifier = colonial_benefits_006
+							remove_country_modifier = colonial_benefits_007
+							remove_country_modifier = colonial_benefits_008
+							remove_country_modifier = colonial_benefits_009
+							remove_country_modifier = colonial_benefits_010
+							remove_country_modifier = colonial_benefits_011
+							remove_country_modifier = colonial_benefits_012
+							remove_country_modifier = colonial_benefits_013
+							remove_country_modifier = colonial_benefits_014
+							remove_country_modifier = colonial_benefits_015
+							remove_country_modifier = colonial_benefits_016
+							remove_country_modifier = colonial_benefits_017
+							remove_country_modifier = colonial_benefits_018
+							remove_country_modifier = colonial_benefits_019
+							remove_country_modifier = colonial_benefits_020
+						    remove_country_modifier = colonial_benefits_021
+							remove_country_modifier = colonial_benefits_022
+							remove_country_modifier = colonial_benefits_023
+							remove_country_modifier = colonial_benefits_024
+							remove_country_modifier = colonial_benefits_025
+							remove_country_modifier = colonial_benefits_026
+							remove_country_modifier = colonial_benefits_027
+							remove_country_modifier = colonial_benefits_028
+							remove_country_modifier = colonial_benefits_029
+							remove_country_modifier = colonial_benefits_030
+							remove_country_modifier = colonial_benefits_031
+							remove_country_modifier = colonial_benefits_032
+							remove_country_modifier = colonial_benefits_033
+							remove_country_modifier = colonial_benefits_034
+							remove_country_modifier = colonial_benefits_035
+							remove_country_modifier = colonial_benefits_036
+							remove_country_modifier = colonial_benefits_037
+							remove_country_modifier = colonial_benefits_038
+							remove_country_modifier = colonial_benefits_039
+							remove_country_modifier = colonial_benefits_040
+							remove_country_modifier = colonial_benefits_041
+							remove_country_modifier = colonial_benefits_042
+							remove_country_modifier = colonial_benefits_043
+							remove_country_modifier = colonial_benefits_044
+							remove_country_modifier = colonial_benefits_045
+							remove_country_modifier = colonial_benefits_046
+							remove_country_modifier = colonial_benefits_047
+							remove_country_modifier = colonial_benefits_048
+							remove_country_modifier = colonial_benefits_049
+							remove_country_modifier = colonial_benefits_050
+                            remove_country_modifier = colonial_benefits_051
+							remove_country_modifier = colonial_benefits_052
+							remove_country_modifier = colonial_benefits_053
+							remove_country_modifier = colonial_benefits_054
+							remove_country_modifier = colonial_benefits_055
+							remove_country_modifier = colonial_benefits_056
+							remove_country_modifier = colonial_benefits_057
+							remove_country_modifier = colonial_benefits_058
+							remove_country_modifier = colonial_benefits_059
+							remove_country_modifier = colonial_benefits_060
+                            remove_country_modifier = colonial_benefits_061
+							remove_country_modifier = colonial_benefits_062
+							remove_country_modifier = colonial_benefits_063
+							remove_country_modifier = colonial_benefits_064
+							remove_country_modifier = colonial_benefits_065
+							remove_country_modifier = colonial_benefits_066
+							remove_country_modifier = colonial_benefits_067
+							remove_country_modifier = colonial_benefits_068
+							remove_country_modifier = colonial_benefits_069
+							remove_country_modifier = colonial_benefits_070
+							remove_country_modifier = colonial_benefits_071
+							remove_country_modifier = colonial_benefits_072
+							remove_country_modifier = colonial_benefits_073
+							remove_country_modifier = colonial_benefits_074
+							remove_country_modifier = colonial_benefits_075
+							remove_country_modifier = colonial_benefits_076
+							remove_country_modifier = colonial_benefits_077
+							remove_country_modifier = colonial_benefits_078
+							remove_country_modifier = colonial_benefits_079
+							remove_country_modifier = colonial_benefits_080
+							remove_country_modifier = colonial_benefits_081
+							remove_country_modifier = colonial_benefits_082
+							remove_country_modifier = colonial_benefits_083
+							remove_country_modifier = colonial_benefits_084
+							remove_country_modifier = colonial_benefits_085
+							remove_country_modifier = colonial_benefits_086
+							remove_country_modifier = colonial_benefits_087
+							remove_country_modifier = colonial_benefits_088
+							remove_country_modifier = colonial_benefits_089
+							remove_country_modifier = colonial_benefits_090
+							remove_country_modifier = colonial_benefits_091
+							remove_country_modifier = colonial_benefits_092
+							remove_country_modifier = colonial_benefits_093
+							remove_country_modifier = colonial_benefits_094
+							remove_country_modifier = colonial_benefits_095
+							remove_country_modifier = colonial_benefits_096
+							remove_country_modifier = colonial_benefits_097
+							remove_country_modifier = colonial_benefits_098
+							remove_country_modifier = colonial_benefits_099
+							remove_country_modifier = colonial_benefits_100
+		}		
+	}
+}

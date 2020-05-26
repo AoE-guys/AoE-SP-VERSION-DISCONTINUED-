@@ -1,0 +1,211 @@
+###Haiti Stuff###
+#Haiti setup
+country_event = {
+	id = 17910
+	title = "Saint-Domingue"
+	desc = "EVTDESC17910"
+	picture = exemplar_colony
+	trigger = {
+	OR = {
+		tag = FRA
+		tag = BOR
+	}
+		NOT = {
+			2213 = { has_province_modifier = pearl_of_the_antilles }
+		}
+	slavery = yes_slavery
+	2213 = { controled_by = THIS }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "We are blessed with wealth"
+			any_owned = {
+				limit = { is_core = HAI }
+				add_province_modifier = {
+					name = pearl_of_the_antilles
+					duration = 3650
+				}
+			}
+			random_list = {
+				90 = {country_event = 17911}
+				10 = {country_event = 17912}
+		    }
+	}
+}
+#Saint-Domingue prospers
+country_event = { 
+	id = 17911
+	title = "Saint-Domingue prospers"
+	desc = "EVTDESC17911"
+	picture = "exemplar_colony"
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = { 
+		money = 250000
+		radio = 25000
+		HAI_2213 = {
+		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.5 }
+		any_pop = { limit = { has_pop_culture = afro_antillean } reduce_pop = 1.5 }
+		any_pop = { literacy = 0.1 }
+		add_province_modifier = {
+					name = colonial_recruitment
+					duration = 1825
+		}
+		}
+	}
+}
+#Haitian Revolution starts
+country_event = {
+	id = 17912
+	title = "Slaves revolt"
+	desc = "EVTDESC17912"
+	picture = "haiti_debts"
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "We can always get new Slaves!"
+		any_pop = {
+			consciousness = 7
+			militancy = 3
+		}
+			2215 = {
+			secede_province = HAI
+		}
+		diplomatic_influence = {
+			who = HAI
+			value = -400
+		}			
+
+		BOR = {
+			war = {
+				target = HAI
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = acquire_all_cores }
+			}
+		}
+				HAI = { 
+		country_event = 17913
+		}
+	}
+	
+	option = {
+		name = "VIVE LA HAITI!"
+		any_pop = {
+			consciousness = 7
+			militancy = 3
+		}
+			2215 = {
+			secede_province = HAI
+		}
+		diplomatic_influence = {
+			who = HAI
+			value = -400
+		}			
+		release_vassal = HAI
+		change_tag_no_core_switch = HAI
+		
+		BOR = {
+			war = {
+				target = HAI
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = acquire_all_cores }
+			}
+		}
+		HAI = { 
+		country_event = 17913
+		}
+	}
+}
+
+#Slave revolt
+country_event = {
+	id = 17913
+	title = "Slave revolt."
+	desc = "We must rally our peeople around are cause for liberation."
+	picture = "haiti_debts"
+	fire_only_once = yes
+	trigger = {
+		tag = HAI
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Rally the People!"
+        add_country_modifier = { name = mass_slave_revolt duration = 3650 }
+	}
+}
+
+#Slaves Capture Port-Au-Prince
+country_event = {
+	id = 17914
+	title = "Port-Au-Prince has fallen"
+	desc = "Port-Au-Prince has fallen to the slaves."
+	picture = haiti_debts
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = BOR
+		}
+       NOT = { 2213 = { controled_by = THIS } }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Darn!"
+		HAI = { 
+		capital = 2213
+		}
+		2213 = {
+			secede_province = HAI
+			}
+		}
+		option = {
+		name = "We Surrender!"
+		end_war = HAI
+		any_owned = {
+				limit = {
+					is_core = HAI
+				}
+				secede_province = HAI
+			}
+	}
+}
+#The Haitian Revolution
+country_event = {
+	id = 17915
+	title = "Haitian Revolution."
+	desc = "EVTDESC17915"
+	picture = "haiti_debts"
+	fire_only_once = yes
+	trigger = {
+		tag = HAI
+		war = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "KILL THE WHITES!"
+		capital = 2213
+		prestige = 50
+		money = 250000
+		any_pop = { limit = { has_pop_culture = french } reduce_pop = 0 }
+		}
+		option = {
+		name = "Let there be Peace"
+		capital = 2213
+		add_accepted_culture = french
+		any_pop = { limit = { has_pop_culture = french } reduce_pop = 2.5 }
+		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.5 }
+		any_pop = { limit = { has_pop_culture = french } reduce_pop = 1.15 }
+	}
+}

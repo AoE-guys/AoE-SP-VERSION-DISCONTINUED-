@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		is_vassal = no
 		civilized = yes
-		NOT = { government = presidential_dictatorship }
+		NOT = { government = proletarian_dictatorship }
 		ruling_party_ideology = communist
 		average_militancy = 3
 		OR = {
@@ -46,7 +46,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA60000"
-		government = presidential_dictatorship
+		government = proletarian_dictatorship
 
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -57,10 +57,10 @@ country_event = {
 		political_reform = no_slavery
 		political_reform = debtors_prisons
 		political_reform = culture_voting_only
-		social_reform = good_minimum_wage
-		social_reform = eight_hours
-		social_reform = good_subsidies
-		social_reform = good_pensions
+		#social_reform = good_minimum_wage
+		#social_reform = eight_hours
+		#social_reform = good_subsidies
+		#social_reform = good_pensions
 		prestige_factor = -0.1
 		country_event = 800052
 	}
@@ -80,7 +80,11 @@ country_event = {
 	trigger = {
 		is_vassal = no
 		civilized = yes
-		government = democracy
+		OR = {
+		      government = democracy
+			  government = federal_democracy
+			  government = tribal_democracy
+		}
 		ruling_party_ideology = reactionary
 		average_militancy = 3
 		OR = {
@@ -352,6 +356,7 @@ country_event = {
 		OR = {
 			government = hms_government
 			government = prussian_constitutionalism
+			government = elective_monarchy_oligarchy
 		}
 		civilized = yes	
 		vote_franschise = none_voting
@@ -392,7 +397,11 @@ country_event = {
 	picture = "Monarchy"
 	
 	trigger = {
-		government = absolute_monarchy
+	    OR = {
+		      government = absolute_monarchy
+			  government = tsardom
+			  government = archduchy
+		}
 		NOT = { vote_franschise = none_voting }		
 		civilized = yes	
 	}
@@ -481,7 +490,11 @@ country_event = {
 	picture = "communist_crowd"
 	
 	trigger = {
-		government = democracy
+		OR = {
+		      government = democracy
+			  government = federal_democracy
+			  government = tribal_democracy
+		}
 		vote_franschise = none_voting		
 		OR = {
 			ruling_party_ideology = conservative
@@ -610,7 +623,11 @@ country_event = {
 	picture = "communist_crowd"
 	
 	trigger = {
-		government = democracy
+		OR = {
+		      government = democracy
+			  government = federal_democracy
+			  government = tribal_democracy
+		}
 		vote_franschise = none_voting
 		ruling_party_ideology = fascist
 		civilized = yes

@@ -41,7 +41,7 @@ country_event = {
 		add_country_modifier = { name = gm_timer  duration = 60 }
 		
 		any_country = {
-			limit = { exists = no OR = { is_mobilised = yes total_amount_of_ships = 1 } }
+			limit = { NOT = { has_global_flag = ghost_units_cleanup } exists = no OR = { is_mobilised = yes total_amount_of_ships = 1 } }
 			country_event = 6016821
 		}
 		
@@ -87,12 +87,13 @@ country_event = {
 		name = "Ghost Unit CleanUp 1/2"
 		random_country = { limit = { owns = 2127 NOT = { has_country_flag = ghost_country } } set_country_flag = ghost_country_host }
 		set_country_flag = ghost_country
+		set_global_flag = ghost_units_cleanup
 		2127 = { secede_province = THIS }
 		#political_reform = closed_borders
 		add_country_modifier = { name = ghost_country_haunting  duration = 60 }
 		treasury = 1000
 		neutrality = yes
-		random_country = {
+		any_country = {
 			limit = { war_with = THIS }
 			end_war = THIS
 		}
@@ -119,13 +120,15 @@ country_event = {
 	option = {
 		name = "Ghost Unit CleanUp 2/2"
 		clr_country_flag = ghost_country
+		any_country = { clr_country_flag = ghost_country }
+		clr_global_flag = ghost_units_cleanup
 		neutrality = yes
 		random_country = {
 			limit = { has_country_flag = ghost_country_host }
 			clr_country_flag = ghost_country_host
 			inherit = THIS
 		}
-		random_country = {
+		any_country = {
 			limit = { exists = no OR = { is_mobilised = yes total_amount_of_ships = 1 } }
 			country_event = 6016821
 		}

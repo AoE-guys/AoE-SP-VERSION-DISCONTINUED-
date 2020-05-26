@@ -115,7 +115,7 @@ political_decisions = {
 			OR = {
 				AND = {
 					ai = no
-					steamer_convoy = 24
+					clipper_convoy = 24
 					artillery = 10
 					canned_food = 10
 				}
@@ -138,7 +138,7 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { ai = no } }
 				owner = {
-					steamer_convoy = -24
+					clipper_convoy = -24
 					artillery = -10
 					canned_food = -10
 				}
@@ -164,197 +164,6 @@ political_decisions = {
 			
 			modifier = { factor = 0 NOT = { month = 6 } }
 		}
-	}
-	
-	commodity_production_in_uzbekistan = {
-		picture = commodities_in_central_asia
-		potential = {
-			owns = 1200
-			owns = 1198
-			owns = 1195
-			NOT = { has_global_flag = uzbekistan_commodities }
-		}
-		
-		allow = {
-			war = no
-			money = 50000
-			OR = {
-				market_determined_exchange_rates = 1
-				AND = {
-					economic_policy = planned_economy
-					modern_central_bank_system = 1
-					investment_banks = 1
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = uzbekistan_commodities
-			treasury = -50000
-			1200 = { trade_goods = cotton }
-			1198 = { trade_goods = cotton }
-			1195 = { trade_goods = silk }
-			1199 = { trade_goods = silk }
-			1202 = { trade_goods = tobacco } #kokand
-		}
-		ai_will_do = {  factor = 1 }
-	}
-	
-	
-	commodity_production_in_kyrgyzstan = {
-		picture = commodities_in_central_asia
-		potential = {
-			owns = 1203
-			owns = 1190
-			owns = 1189
-			NOT = { has_global_flag = kyrgyzstan_commodities }
-		}
-		
-		allow = {
-			war = no
-			money = 50000
-			OR = {
-				market_determined_exchange_rates = 1
-				AND = {
-					economic_policy = planned_economy
-					modern_central_bank_system = 1
-					investment_banks = 1
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = kyrgyzstan_commodities
-			treasury = -50000
-			1203 = { trade_goods = coal }
-			1190 = { trade_goods = cotton }
-			1189 = { trade_goods = coal } #Bishkek
-		}
-		ai_will_do = {  factor = 1 }
-	}
-	
-	commodity_production_in_turkmenia = {
-		picture = commodities_in_central_asia
-		potential = {
-			owns = 1206 
-			owns = 1196
-			owns = 1205 
-			NOT = { has_global_flag = turkmenia_commodities }
-		}
-		
-		allow = {
-			war = no
-			money = 50000
-			OR = {
-				market_determined_exchange_rates = 1
-				AND = {
-					economic_policy = planned_economy
-					modern_central_bank_system = 1
-					investment_banks = 1
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = turkmenia_commodities
-			treasury = -50000
-			1206 = { trade_goods = cotton }
-			1196 = { trade_goods = cotton }
-		}
-		ai_will_do = {  factor = 1 }
-	}
-	
-	commodity_production_in_tajikstan = {
-		picture = commodities_in_central_asia
-		potential = {
-			owns = 1208
-			owns = 1201
-			NOT = { has_global_flag = tajikstan_commodities }
-		}
-		
-		allow = {
-			war = no
-			money = 50000
-			OR = {
-				market_determined_exchange_rates = 1
-				AND = {
-					economic_policy = planned_economy
-					modern_central_bank_system = 1
-					investment_banks = 1
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = tajikstan_commodities
-			treasury = -50000
-			1208 = { trade_goods = cotton }
-			1201 = { trade_goods = precious_metal }
-		}
-		ai_will_do = {  factor = 1 }
-	}
-	
-	commodity_production_in_philippines = {
-		picture = map_phillipines
-		potential = {
-			owns = 2565
-			owns = 1457
-			owns = 1458
-			NOT = { has_global_flag = philippines_commodities }
-		}
-		
-		allow = {
-			war = no
-			money = 50000
-			OR = {
-				market_determined_exchange_rates = 1
-				AND = {
-					economic_policy = planned_economy
-					modern_central_bank_system = 1
-					investment_banks = 1
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = philippines_commodities
-			treasury = -50000
-			2565 = { trade_goods = tobacco }
-			1457 = { trade_goods = coffee }
-			1458 = { trade_goods = coffee }
-		}
-		ai_will_do = {  factor = 1 }
-	}
-	
-	commodity_production_in_new_zealand = {
-		picture = map_new_zealand
-		potential = {
-			owns = 2510
-			owns = 2571
-			owns = 2514
-			owns = 2516
-			owns = 2512
-			owns = 2524
-			NOT = { has_global_flag = new_zealand_commodities }
-			has_global_flag = north_island_renamed
-		}
-		
-		allow = {
-			war = no
-			modern_central_bank_system = 1
-			investment_banks = 1
-		}
-		
-		effect = {
-			set_global_flag = new_zealand_commodities
-			2510 = { trade_goods = oil }
-			2571 = { trade_goods = cattle }
-			2514 = { trade_goods = coal }
-			2516 = { trade_goods = timber }
-			2512 = { trade_goods = wool }
-			2524 = { trade_goods = coal }
-		}
-		ai_will_do = {  factor = 1 }
 	}
 	
 	north_island_renaming = {

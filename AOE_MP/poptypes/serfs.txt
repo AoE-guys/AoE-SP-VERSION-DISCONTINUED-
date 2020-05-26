@@ -3,7 +3,7 @@ color = { 63 80 62 }
 strata = poor
 unemployment = yes
 
-allowed_to_vote = no
+allowed_to_vote = yes
 
 rebel = {
 	cavalry = 0
@@ -19,38 +19,39 @@ rebel = {
 #Total 11.5
 life_needs = {
 	cattle = 1	  #2.0
-	wool =  1 	  #0.7
-	fish =  1 	  #1.5
-	fruit =  1 	  #1.8
-	grain =  2.5  #5.5
+	wool = 0.25 	  #0.7
+	fish = 0.375 	  #1.5
+	fruit = 0.375 	  #1.8
+	grain = 1  #5.5
 }
 
 everyday_needs = {
-	coal = 1
-	tobacco = 5
-	tea = 2
-	liquor = 2
-	regular_clothes = 1.2
-	furniture = 1.1
-	opium = 10
-	fertilizer = 0.5 #0
-	#explosives = 0.25
+	coal = 0.25
+	tobacco = 1.25
+	tea = 0.5
+	liquor = 0.5
+	regular_clothes = 0.3
+	furniture = 0.275
+	opium = 1.25
+	fertilizer = 0.25 #0
+	cotton = 0.125
+	cattle = 1.75
+	grain = 1.75
 }
 
 
 luxury_needs = {
-	regular_clothes = 2
-	furniture = 3
-	liquor = 1.5
-	wine = 1
-	coffee = 3
-	tobacco = 3
-	paper = 1.0
-	#telephones = 1.0
-	#automobiles = 0.5
-	#radio = 1.0
-	#fuel = 0.1
-	opium = 2
+	regular_clothes = 0.5
+	furniture = 0.75
+	liquor = 0.375
+	wine = 0.25
+	coffee = 0.75
+	tobacco = 0.75
+	paper = 0.25
+	opium = 0.5
+	telephones = 0.125
+	radio = 0.125
+	steamer_convoy = 0.125
 }
 
 country_migration_target = { factor = 0 }
@@ -59,13 +60,139 @@ migration_target = { factor = 0 }
 	
 promote_to = {
 	farmers = {
-		factor = 1
-			
+		factor = 0.01
 		modifier = {
-			factor = 2
-			luxury_needs = 0.8
+			factor = 100
+			NOT = { literacy = 0.1 }
+			serfs = 0.95
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+			#NOT = { farmers = 0.10 }
+			serfs = 0.90
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+			#NOT = { farmers = 0.20 }
+			serfs = 0.80
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+			#NOT = { farmers = 0.30 }
+			serfs = 0.70
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.4
+			NOT = { literacy = 0.5 }
+			#NOT = { farmers = 0.40 }
+			serfs = 0.60
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.5
+			NOT = { literacy = 0.6 }
+			#NOT = { farmers = 0.50 }
+			serfs = 0.50
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.6
+			NOT = { literacy = 0.7 }
+			#NOT = { farmers = 0.60 }
+			serfs = 0.40
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			#NOT = { farmers = 0.60 }
+			serfs = 0.30
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.8
+			NOT = { literacy = 0.9 }
+			#NOT = { farmers = 0.80 }
+			serfs = 0.20
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.9
+			NOT = { literacy = 0.99 }
+			#NOT = { farmers = 0.90 }
+			serfs = 0.10
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.99
+			#NOT = { farmers = 0.95 }
+			serfs = 0.05
 		}
 	}
+	#clergymen =
+	#{
+	#	factor = 0.01
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.1
+	#		NOT = { education_spending = 0.2 }
+	#		NOT = { clergymen = 0.004 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.2
+	#		NOT = { education_spending = 0.3 }
+	#		NOT = { clergymen = 0.008 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.3
+	#		NOT = { education_spending = 0.4 }
+	#		NOT = { clergymen = 0.012 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.4
+	#		NOT = { education_spending = 0.5 }
+	#		NOT = { clergymen = 0.016 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.5
+	#		NOT = { education_spending = 0.6 }
+	#		NOT = { clergymen = 0.020 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.7
+	#		NOT = { education_spending = 0.8 }
+	#		NOT = { clergymen = 0.024 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.8
+	#		NOT = { education_spending = 0.9 }
+	#		NOT = { clergymen = 0.028 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.9
+	#		NOT = { education_spending = 0.99 }
+	#		NOT = { clergymen = 0.032 }
+	#	}
+	#	modifier = {
+	#		factor = 5
+	#		education_spending = 0.99
+	#		NOT = { clergymen = 0.036 }
+	#	}
+	#}
 }
 
 

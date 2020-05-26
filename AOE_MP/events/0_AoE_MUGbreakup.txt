@@ -27,8 +27,13 @@ country_event = {
 		release_vassal = LAD
 		release_vassal = ORI
 		all_core = { limit = { NOT = { owned_by = THIS } } remove_core = THIS }
+		any_pop = { militancy = 15 }
 		add_country_modifier = {
 			name = decentralized_rule
+			duration = 6570
+		}
+		add_country_modifier = {
+			name = political_chaos
 			duration = 6570
 		}
 	}
@@ -57,6 +62,10 @@ country_event = {
 			1248 = { secede_province = BNG }
 			1247 = { secede_province = BNG }
 			1250 = { secede_province = BNG }
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
 		}
 		war = {
 			target = BNG
@@ -100,7 +109,12 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		KRN = { all_core = { limit = { owned_by = THIS } secede_province = KRN } }
+		KRN = { all_core = { limit = { owned_by = THIS } secede_province = KRN } 
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		war = {
 			target = KRN
 			attacker_goal = { casus_belli = make_puppet }
@@ -137,8 +151,16 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		PNJ = { all_core = { limit = { owned_by = THIS } secede_province = PNJ } }
-		AFG = { all_core = { limit = { owned_by = THIS } secede_province = AFG } } 
+		PNJ = { all_core = { limit = { owned_by = THIS } secede_province = PNJ } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
+		AFG = { all_core = { limit = { owned_by = THIS } secede_province = AFG } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		} 
 		war = {
 			target = PNJ
 			attacker_goal = { casus_belli = make_puppet }
@@ -150,6 +172,7 @@ country_event = {
 	option = {
 		name = "We have more pressing issues."
 		PNJ = { all_core = { limit = { owned_by = THIS } secede_province = PNJ } }
+		AFG = { all_core = { limit = { owned_by = THIS } secede_province = AFG } }
 		relation = {
 			who = PNJ
 			value = 100
@@ -179,7 +202,11 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		BUN = { all_core = { limit = { owned_by = THIS } secede_province = BUN } }
+		BUN = { all_core = { limit = { owned_by = THIS } secede_province = BUN } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		war = {
 			target = BUN
 			attacker_goal = { casus_belli = make_puppet }
@@ -221,13 +248,18 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		HYD = { all_core = { limit = { owned_by = THIS } secede_province = HYD } }
+		HYD = { all_core = { limit = { owned_by = THIS } secede_province = HYD } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		war = {
 			target = HYD
 			attacker_goal = { casus_belli = make_puppet }
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}
+		ai_chance = { factor = 0 }
 	}
 	
 	option = {
@@ -245,6 +277,7 @@ country_event = {
 		name = "Nothing can stop the HYDERABAD EMPIRE"
 		HYD = { all_core = { limit = { owned_by = THIS } secede_province = HYD } }
 		change_tag = HYD
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
@@ -269,7 +302,11 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		SIN = { all_core = { limit = { owned_by = THIS } secede_province = SIN } }
+		SIN = { all_core = { limit = { owned_by = THIS } secede_province = SIN } add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
 		1222 = { secede_province = SIN }
 		war = {
 			target = SIN
@@ -439,10 +476,16 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		tag = GBR
+		owns = 300
+		300 = { is_capital = yes }
 		is_greater_power = yes
 		year = 1730
 		exists = BNG
+		BNG = {
+			NOT = {
+				in_sphere = THIS
+			}
+		}
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -479,8 +522,103 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = "Riches of india will soon be only ours soon enough."
+		name = "Riches of india will be only ours soon enough."
 		set_global_flag = india_for_grabs
+		ai_chance = { factor = 1 }	
+	}
+}
+country_event = {
+	id = 175003
+	title = "Costs of War"
+	desc = "EVTDESC175003"
+	picture = eng_india
+	
+	fire_only_once = yes
+	trigger = {
+		tag = BNG
+		OR = {
+			war = yes
+			year = 1722
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Don't worry, we are only lending it..."
+		300 = {
+			owner = {
+				country_event = 175004
+			}
+		}
+		ai_chance = { factor = 1 }	
+	}
+
+	option = {
+		name = "They're not worth our time"
+		prestige = -10
+		militancy = 4
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 175004
+	title = "Bengal sells it's lands"
+	desc = "EVTDESC175003"
+	picture = eng_india
+	is_triggered_only = yes
+	
+	option = {
+		name = "We'd be foulish not to accept... heh.."
+		1253 = {
+			secede_province = THIS
+		}
+		1251 = {
+			secede_province = THIS
+		}
+		diplomatic_influence = {
+			who = BNG
+			value = 200
+		}
+		money = -20000
+		BNG = {
+			money = 20000
+		}
+		ai_chance = { factor = 1 }	
+	}
+
+	option = {
+		name = "They're not worth our time"
+		prestige = -10
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 175005
+	title = "Bengal's western ties"
+	desc = "EVTDESC175005"
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = BNG
+		ai = yes
+		OR = {
+			in_sphere = ENG
+			in_sphere = GBR
+			in_sphere = EFR
+			in_sphere = GBJ
+		}
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "We have no other choice"
+		300 = {
+			owner = {
+				create_vassal = BNG
+			}
+		}
 		ai_chance = { factor = 1 }	
 	}
 }

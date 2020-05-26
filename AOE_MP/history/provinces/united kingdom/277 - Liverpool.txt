@@ -1,7 +1,8 @@
 owner = ENG
 controller = ENG
 add_core = ENG
-trade_goods = fish  state_building = {  level = 5  building = fish_factory  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
+state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
 life_rating = 40
 terrain = liverpool
 railroad = 1
@@ -25,4 +26,3 @@ state_building = {
 	building = liquor_distillery
 	upgrade = yes
 }
-naval_base = 2

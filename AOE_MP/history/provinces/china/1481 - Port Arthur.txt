@@ -1,7 +1,8 @@
-owner = MCK
-controller = MCK
+owner = QNG
+controller = QNG
+add_core = QNG
 add_core = MCK
 add_core = CHI
-trade_goods = timber  state_building = {  level = 5  building = timber_factory  upgrade = yes  }
+trade_goods = timber  state_building = {  level = 1  building = timber_factory  upgrade = yes  }
 life_rating = 32
 terrain = portarthur

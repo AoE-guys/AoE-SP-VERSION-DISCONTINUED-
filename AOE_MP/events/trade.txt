@@ -1,0 +1,1174 @@
+country_event = {
+	id = 69420
+	title = "Trade Centre Setup"
+	desc = EVTDESC69420
+	fire_only_once = yes
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		530 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		528 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		729 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		782 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		724 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		3269 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		375 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		390 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		860 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1166 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1661 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1455 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1498 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		232 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1036 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		521 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		517 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1725 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		2048 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		1678 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		243 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		3356 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 69421
+	title = "Potential Trade Setup"
+	desc = EVTDESC69420
+	fire_only_once = yes
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		3300 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		539 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		533 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3259 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		543 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		419 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		304 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1709 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1701 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1700 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1704 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1689 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2590 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1686 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1695 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1784 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1783 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1894 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1909 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1908 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1907 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2000 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2087 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2049 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1412 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1875 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1755 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1731 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2690 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		920 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		979 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1047 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		932 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		935 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1132 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1162 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1165 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2664 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1071 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1142 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2640 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1136 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1138 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1141 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1145 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1146 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1303 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1319 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2591 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1312 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3263 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1320 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3264 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1384 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1386 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1388 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1438 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2647 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1430 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1464 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3315 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1375 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2632 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1496 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2406 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1482 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3326 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1608 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1606 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1540 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1566 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1569 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3249 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1481 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1628 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1637 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2589 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1662 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3260 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1651 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3341 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		104 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2146 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		233 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		73 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		197 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1723 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		737 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		736 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		778 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		781 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2582 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		851 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		826 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		827 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		742 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		725 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		472 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		746 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2567 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		743 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1096 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1177 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2029 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2039 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2038 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2030 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1972 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2244 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1451 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		10 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2576 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1679 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		658 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2285 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		309 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		348 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		374 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		331 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		354 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		400 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		2083 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		1955 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		44 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3284 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		203 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 69422
+	title = "Province lost"
+	desc = "We were forced to let the enemy gain use of a trade post."
+	is_triggered_only = yes
+	option = {
+		random_owned = {
+			OR = {
+				has_province_modifier = potential_trade_post
+				has_province_modifier = trade_centre
+			}
+			add_province_modifier = { name = negotiated  duration = 12 }
+		}
+		random_country = { 
+		                  limit = { has_country_flag = getting_trade_port }
+		                  country_event = 69423 
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 69423
+	title = "Trade Port Gained"
+	desc = "Stonks"
+	is_triggered_only = yes
+	option = {
+	    clr_countr_flag = getting_trade_port
+		any_country = { 
+			limit = { 
+				truce_with = THIS
+			}
+			any_owned = {
+				limit = { 
+					has_province_modifier = negotiated
+				}
+				secede_province = THIS 
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 69424
+	title = "Westernizing time"
+	desc = "At last our country has decided to embrace western feudalism."
+	is_triggered_only = yes
+	option = {
+		government = absolute_monarchy
+		set_country_flag = absolute_monarchy_gov
+	}
+	ai_chance = {
+		factor = 100
+	}
+}	
+			
+country_event = {
+	id = 69425
+	title = "Freedom time"
+	desc = "Bring down the merchant elites, we want true democracy!"
+	is_triggered_only = yes
+	option = {
+		government = democracy
+		set_country_flag = democracy_gov
+		election = yes
+	}
+	ai_chance = {
+		factor = 100
+	}
+}	
+			
+country_event = {
+	id = 69426
+	title = "Feudalism time"
+	desc = "At last our country has decided to embrace western feudalism."
+	is_triggered_only = yes
+	option = {
+		government = absolute_monarchy
+		set_country_flag = absolute_monarchy_gov
+	}
+	ai_chance = {
+		factor = 100
+	}
+}	
+
+country_event = {
+	id = 69427
+	title = "Conversion time"
+	desc = "Our Great Khan has decided that the official religion of our Horde is..."
+	is_triggered_only = yes
+	option = {
+		name = "Catholicism"
+		random_owned = {
+			limit = {
+				owner = {
+					relation = { who = PAP value = 200 }
+				}
+			}
+			owner = {
+				religion = catholic
+				set_country_flag = catholic_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				create_alliance = PAP
+				any_country = {
+					limit = {
+						has_country_flag = catholic_country
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Protestantism"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						relation = { who = NET value = 200 }
+						relation = { who = PRU value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = protestant
+				set_country_flag = protestant_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = protestant_country
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Sunni Islam"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						relation = { who = TUR value = 200 }
+						relation = { who = HDJ value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = sunni
+				set_country_flag = sunni_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = sunni_country
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Shia Islam"
+		random_owned = {
+			limit = {
+				owner = {
+					relation = { who = PER value = 200 }
+				}
+			}
+			owner = {
+				religion = shiite
+				set_country_flag = shiite_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = shiite_country
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Eastern Orthodoxy"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						relation = { who = RUS value = 200 }
+						relation = { who = GRE value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = orthodox
+				set_country_flag = orthodox_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = orthodox_country
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Taoism and Confucianism"
+		random_owned = {
+			limit = { 
+				owner = {
+					OR = { 
+						relation = { who = QNG value = 200 }
+						relation = { who = CHI value = 200 }
+					}
+				}
+			}
+			owner = {
+				religion = taoist
+				set_country_flag = taoist_country
+				add_country_modifier = { name = khan_converted duration = 1825 }
+				any_country = {
+					limit = {
+						has_country_flag = taoist_country
+					}
+					relation = {
+						who = THIS
+						value = 50
+					}
+				}
+			}
+		}
+	}
+}	
+			

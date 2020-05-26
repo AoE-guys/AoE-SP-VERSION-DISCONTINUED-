@@ -37,7 +37,45 @@ country_event = {
 		set_country_flag = annie_is_ded
 	}
 }
-
+country_event = {
+	id = 1714011
+	title = "The British Throne"
+	desc = "EVTDESC171401"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		year = 1714
+		has_country_flag = annie_is_ded
+		NOT = { year = 1760 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "We'll search for another candidate..."
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "God save the King!"
+		country_event = 171402
+		ai_chance = {
+			factor = 0
+			modifier = {
+				average_militancy = 6
+			}
+		}
+	}
+}
 country_event = {
 	id = 171401
 	title = "Coronation of King George I"
@@ -85,8 +123,12 @@ country_event = {
 		name = "Long live the king"
 		prestige = -25
 		set_country_flag = jacobism_prevails
-		government = absolute_monarchy
-
+		#government = absolute_monarchy
+		all_core = {
+			add_core = GBJ
+			change_tag = GBJ
+			remove_core = GBR
+		}
 		add_country_modifier = {
 			name = national_confusion
 			duration = 365
@@ -164,7 +206,7 @@ country_event = {
 					factor = 6
 				}
 			}
-		}		
+		}
 	}
 }
 country_event = {
@@ -1103,5 +1145,421 @@ country_event = {
 		any_pop = {
 			militancy = 1
 		}
+	}
+}
+######################
+###South Sea Bubble###
+######################
+country_event = {
+	id = 171000
+	title = "The Great Debt"
+	desc = "EVTDESC171000"
+	picture = english_parliment
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		year = 1710
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "How are we going to make up for this?"
+		add_country_modifier = {
+			name = the_great_debt
+			duration = -1
+		}
+		money = -50000
+	}
+}
+country_event = {
+	id = 171001
+	title = "The South Sea Company"
+	desc = "EVTDESC171001"
+	picture = english_parliment
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		year = 1711
+		has_country_modifier = the_great_debt
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "Damnit we need the money!"
+		add_country_modifier = {
+			name = the_south_sea_company
+			duration = -1
+		}
+		money = 25000
+	}
+	option = {
+		name = "This can't possibly end well, shut it all down"
+		prestige = -10
+	}
+}
+country_event = {
+	id = 171002
+	title = "The South Sea Company Act"
+	desc = "EVTDESC171002"
+	picture = english_parliment
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		year = 1715
+		has_country_modifier = the_south_sea_company
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "The Company will controll the stocks"
+		remove_country_modifier = the_south_sea_company
+		add_country_modifier = {
+			name = the_south_sea_company_1
+			duration = -1
+		}
+		money = 25000
+	}
+	option = {
+		name = "The government should control the prices"
+		remove_country_modifier = the_south_sea_company
+		add_country_modifier = {
+			name = the_south_sea_company_2
+			duration = -1
+		}
+		money = 10000
+		prestige = -10
+	}
+}
+country_event = {
+	id = 171003
+	title = "The South Sea Company Crash!"
+	desc = "EVTDESC171003"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		year = 1720
+		has_country_modifier = the_south_sea_company_1
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Oh."
+		remove_country_modifier = the_south_sea_company_1
+		add_country_modifier = {
+			name = stock_market_crash
+			duration = 7300
+		}
+	}
+}
+country_event = {
+	id = 171004
+	title = "Walpole's solution"
+	desc = "EVTDESC171004"
+	picture = ssbubble
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		year = 1720
+		has_country_modifier = the_south_sea_company_1
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Fallow Wolpole's Plan"
+		set_country_flag = walpole_minister
+	}
+	
+	option = {
+		name = "We'll figure it our ourselves!"
+	}
+}
+country_event = {
+	id = 171005
+	title = "Walpole's solution"
+	desc = "EVTDESC171005"
+	picture = ssbubble
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		has_country_flag = walpole_minister
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Oh thank God!"
+		remove_country_modifier = stock_market_crash
+	}
+}
+country_event = {
+	id = 171006
+	title = "The Great debt Stabilized"
+	desc = "EVTDESC171006"
+	picture = english_parliment
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		has_country_flag = the_great_debt
+		OR = {
+			year = 1750
+			AND = {
+				stock_exchange = 1
+				central_bank_money_bill_printing = 1
+				NOT = {
+					OR = {
+						unemployment_subsidies = no_subsidies
+						unemployment_subsidies = trinket_subsidies
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Oh thank God!"
+		remove_country_modifier = the_great_debt
+		add_country_modifier = {
+			name = the_great_debt_1
+			duration = -1
+		}
+	}
+}
+#####East India Company####
+#country_event = {
+#	id = 171007
+#	title = "East India Company Demands Land!"
+#	desc = "EVTDESC171007"
+#	picture = english_parliment
+#	
+#	trigger = {
+#		owns = 300
+#		300 = {
+#			is_capital = yes
+#		}
+#		year = 1770
+#		any_owned_province = {
+#			OR = {
+#				region = KAL_1221
+#				region = PAN_1224
+#				region = PAN_1227
+#				region = SIN_1288
+#				region = ENG_1236
+#				region = NEP_1327
+#				region = ENG_1247
+#				region = ENG_1251
+#				region = ENG_1252
+#				region = ENG_1258
+#				region = ENG_1261
+#				region = ENG_1275
+#				region = NAG_1277
+#				region = ENG_1264
+#				region = HYD_1283
+#				region = ENG_1291
+#				region = ENG_1297
+#				region = ENG_1304
+#				region = ENG_1305
+#				region = MYS_1314
+#				region = ENG_1317
+#				region = ENG_1321
+#				region = TIB_1591
+#				region = BUR_1330
+#				region = BUR_1334
+#				region = BUR_1339
+#				region = ENG_1343
+#				region = ENG_2125
+#			}
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = "Give the land to the company"
+#		any_owned = {
+#			limit = {
+#				NOT = { province_id = 3263 }
+#				OR = {
+#					region = KAL_1221
+#					region = PAN_1224
+#					region = PAN_1227
+#					region = SIN_1288
+#					region = ENG_1236
+#					region = NEP_1327
+#					region = ENG_1247
+#					region = ENG_1251
+#					region = ENG_1252
+#					region = ENG_1258
+#					region = ENG_1261
+#					region = ENG_1275
+#					region = NAG_1277
+#					region = ENG_1264
+#					region = HYD_1283
+#					region = ENG_1291
+#					region = ENG_1297
+#					region = ENG_1304
+#					region = ENG_1305
+#					region = MYS_1314
+#					region = ENG_1317
+#					region = ENG_1321
+#					region = TIB_1591
+#					region = BUR_1330
+#					region = BUR_1334
+#					region = BUR_1339
+#					region = ENG_1343
+#					region = ENG_2125
+#				}
+#			}
+#			secede_province = EIC
+#		}
+#	}
+#	
+#	option = {
+#		name = "We will keep it for ourselves."
+#		badboy = 7
+#		relation = {
+#			who = EIC
+#			value = -75
+#		}
+#	}
+#}
+country_event = {
+	id = 171008
+	title = "A notable general"
+	desc = "EVTDESC171008"
+	picture = english_parliment
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 300
+		300 = {
+			is_capital = yes
+		}
+		year = 1793
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "He will achieve great things!"
+		define_general = {
+			name = "Prince Frederick, Duke of York"
+			personality = resolute
+			background = genius
+		}
+		set_country_flag = duke_of_york
+	}
+}
+country_event = {
+	id = 171009
+	title = "French War of Independence"
+	desc = "EVTDESC171009"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = EFM
+		owns = 425
+		average_militancy = 6
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Horrible News"
+		prestige = -10
+		all_core = {
+			limit = {
+				is_core = BOR
+			}
+			secede_province = BOR
+		}
+		425 = {
+			owner = {
+				war = {
+					target = EFM
+					attacker_goal = { casus_belli = humiliate }
+					defender_goal = { casus_belli = acquire_all_cores }
+					call_ally = no
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = 171010
+	title = "Loss of France"
+	desc = "EVTDESC171010"
+	picture = english_parliment
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = EFM
+		NOT = { owns = 425 }
+		OR = {
+			BOR = {
+				exists = yes
+			}
+			FRA = {
+				exists = yes
+			}
+		}
+		war = no
+		average_militancy = 6
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Oh well..."
+		prestige = -60
+		any_country = {
+			limit = {
+				SCO = {
+					vassal_of = THIS
+				}
+				THIS = {
+					owns = 300
+					has_country_flag = jacobism_prevails
+				}
+			}
+			change_tag = GBJ
+		}
+		any_country = {
+			limit = {
+				SCO = {
+					vassal_of = THIS
+				}
+				THIS = {
+					owns = 300
+				}
+			}
+			change_tag = ENG
+		}	
 	}
 }

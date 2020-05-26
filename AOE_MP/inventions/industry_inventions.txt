@@ -19,7 +19,6 @@ daimlers_automobile = {
 		}
 	}
 	effect = {
-		activate_building = automobile_factory 
 		factory_goods_output = {
 			machine_parts = 0.01 
 		}
@@ -365,92 +364,6 @@ machine_tools = {
 		factory_throughput = 0.05		
 	}
 }
-asia_balance = {
-	limit = { electrical_power_generation = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 100
-			OR = {
-				month = 1
-				year = 1701
-				OR = {
-					AND = {
-						tag = QNG
-						schools = unciv_tech_school
-					}
-					AND = {
-						tag = BNG
-						schools = unciv_tech_school
-					}
-					AND = {
-						tag = MUG
-						schools = unciv_tech_school
-					}
-					AND = {
-						tag = KOR
-						schools = unciv_tech_school
-					}
-					AND = {
-						tag = MAH
-						schools = unciv_tech_school
-						NOT = {
-							MUG = {
-								is_greater_power = yes
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	effect = {
-		farm_rgo_size = 3
-	}
-}
-asia_balance_yeet = {
-	limit = { electrical_power_generation = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 100
-			invention = asia_balance
-			OR = {
-				month = 1
-				year = 1701
-				OR = {
-					AND = {
-						tag = QNG
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = BNG
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = MUG
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = KOR
-						NOT = { schools = unciv_tech_school }
-					}
-					AND = {
-						tag = MAH
-						NOT = { schools = unciv_tech_school }
-							MUG = {
-								is_greater_power = yes
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	effect = {
-		farm_rgo_size = -3
-	}
-}
 whitney_n_colts_standardized_small_arms = {
 	limit = { semi_automatization = 1 }
 	chance = {
@@ -688,10 +601,7 @@ fordism = {
 	}
 	effect = {
 		factory_goods_output = {
-			automobiles = 0.03
-		}
-		factory_goods_output = {
-			aeroplanes = 0.03
+			machine_parts = 0.02 
 		}
 	}
 }
@@ -1487,7 +1397,7 @@ bell_n_greys_telephones = {
 		}
 	}
 	effect = {
-		activate_building = telephone_factory 
+		factory_goods_output = { electric_gear = 0.03 }
 	}
 }
 electrical_lighting = {
@@ -1527,9 +1437,7 @@ rayon = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			fabric = 0.05
-		} 
+		factory_goods_output = { fabric = 0.05 } 
 	}
 }
 
@@ -1547,9 +1455,7 @@ bakelite = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			glass  = 0.05
-		} 
+		factory_goods_output = { glass  = 0.05 } 
 	}
 }
 
@@ -1570,8 +1476,6 @@ vacuum_tube = {
 		}			
 	}
 	effect = {
-		factory_goods_output = { radio = 0.03 } 
-		factory_goods_output = { telephones = 0.03 } 
 		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
@@ -1582,6 +1486,7 @@ tulls_seed_drill = {
 		base = 6
 	}
 	effect = {
+		activate_building =  fabric_factory
 		rgo_goods_output = {
 			grain = 0.1
 		}
@@ -1622,9 +1527,7 @@ telephone_switchboard = {
 		}			
 	}
 	effect = {
-		factory_goods_output = {
-			telephones = 0.03
-		} 
+		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
 

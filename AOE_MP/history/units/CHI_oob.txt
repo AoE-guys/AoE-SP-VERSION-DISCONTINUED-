@@ -1,31 +1,38 @@
 POR = {
-	value = 125		#relation
+	value = 125
+	level = 3
 }
 
 LAN = {
-	value = 200		#relation
+	value = 200		
 }
 
 LUA = {
-	value = 300		#relation
-}
-
-MCK = {
-	value = 125		#relation
+	value = 300		
 }
 
 UYG = {
-	value = -50		#relation
+	value = -50
+	level = 2
 }
 
 TIB = {
-	value = -100		#relation
+	value = -100
+	level = 2
 }
+
 MUG = {
-	value = -200		#relation
+	value = -200		
 }
+
+KOR = {
+	value = 25
+	level = 5
+}
+
 MGL = {
-	value = 25		#relation
+	value = 25
+	level = 2
 }
 
 army = {

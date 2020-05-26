@@ -190,7 +190,7 @@ BEL_394 = { 394 392 393 395 398 3318 3320 } #Wallonia
 
 ### France
 
-FRA_399 = { 403 402 2570 } #Picardie
+FRA_399 = { 403 402 2570 3350 } #Picardie
 
 FRA_406 = { 406 405 408 407 } #Champagne
 
@@ -206,7 +206,7 @@ FRA_418 = { 418 415 416 417 } #Normandie
 
 FRA_420 = { 420 421 422 423 424 } #Bretagne 
 
-FRA_425 = { 425 426 427 } #Ile de France
+FRA_425 = { 425 426 427 3349 } #Ile de France
 
 FRA_428 = { 428 429 431 } #Bourgogne 
 
@@ -224,13 +224,13 @@ FRA_451 = { 451 454 469 } #Rhone
 
 FRA_455 = { 455 457 456 450 462 } #Le Midi
 
-FRA_458 = { 458 459 460 } #Aquitaine
+FRA_458 = { 458 459 460 3351 } #Aquitaine
 
 FRA_461 = { 461 463 464 453 449 } #Languedoc
 
 SAR_466 = { 465 466 472 3251} #Savoie
 
-FRA_467 = { 467 468 470 471 } #Provence
+FRA_467 = { 467 468 470 471 3352 3359 } #Provence
 
 
 ### Spain & Portugal
@@ -314,9 +314,9 @@ SWI_2568 = { 2568 } #Alpen
  
 PRU_682 = { 682 683 684 685 688 689 2584 3277 687 } #Lower Silesia
 
-PRU_690 = { 690 691 694 692 693 } #Westpreuﬂen
+PRU_690 = { 690 691 694 692 693 696 } #Westpreuﬂen
 
-PRU_695 = { 695 696 697 698 } #Ostpreuﬂen
+PRU_695 = { 695 697 698 } #Ostpreuﬂen
 
 PRU_701 = { 701 699 700 3281 } #Posen
 
@@ -384,9 +384,9 @@ AUS_2538 = { 2538 791 792 3309 3319 } #Vojvodina
 
 ### Italy
 
-SAR_720 = { 720 721 722 723 724 725 } #Piemonte
+SAR_720 = { 720 721 722 723 724 725 3360 } #Piemonte
 
-TUS_744 = { 744 745 746 747 748 740 } #Tuscany
+TUS_744 = { 744 745 746 747 748 740 3356 } #Tuscany
 
 PAP_741 = { 741 742 743 739 738 } #Emilia-Romagna
 
@@ -423,7 +423,7 @@ TUR_805 = { 805 819 820 821 822 824 } #Southern Macedonia
 
 TUR_806 = { 806 807 1780 3291 } #Northern Macedonia
 
-TUR_809 = { 815 817 808 816 } #Eastern Rumelia
+TUR_809 = { 815 817 808 816 3353 3354 } #Eastern Rumelia
 
 TUR_810 = { 809 810 811 812 813 814 3290 } #Bulgaria
 
@@ -526,7 +526,7 @@ YEM_1412 = { 1412 1173 1175 1176 1177 3273 } #Aden
 
 YEM_1178 = { 1178 1179 1180 } #Sanaa
 
-KOK_1190 = { 1189 1190 1203  } #Kirghizia
+KOK_1190 = { 1189 1190 1203 3344 } #Kirghizia
 
 KHI_1191 = { 1191 1192 1195 1198 1199 1200 1202 29 2656 } #Uzbekia
 
@@ -544,39 +544,39 @@ RUS_349 = { 349 350 351 352 353 } #Estonia
 
 RUS_354 = { 354 355 356 357 358 359 3337 } #Latvia
 
-RUS_360 = { 360 361 362 363 364 365 } #Lithuania
+RUS_360 = { 360 361 362 363 364 365 707 } #Lithuania
 
 RUS_339 = { 339 984 995 988 2587 983 982 } #Karelia
 
 RUS_706 = { 706 710 717 712 3323 } #Masovia
 
-RUS_708 = { 707 708 709 719 } #Bialystok
+RUS_708 = { 708 709 719 } #Bialystok
 
-RUS_707 = { 937 940 936 } #BrÍst
+RUS_707 = { 937 940 } #BrÍst
 
-RUS_718 = { 718 941 942 } #Minsk
+RUS_718 = { 718 941 942 939 } #Minsk
 
-RUS_940 = { 939 938 947 } #Pinsk
+RUS_940 = { 938 947 936 } #Pinsk
 
 RUS_943 = { 943 999 1000 1007 } #Smolensk
 
 RUS_947 = { 944 945 946 948 949 } #Orsha
 
-RUS_958 = { 958 959 960 955 } #Kiev
+RUS_958 = { 958 959 960 955 969 } #Kiev
 
 RUS_959 = { 956 957 } #Volyn
 
 RUS_964 = { 967 966 964 } #Crimea
 
-RUS_968 = { 968 969 954 } #Transnistria
+RUS_968 = { 968 954 } #Transnistria
 
 RUS_973 = { 976 973 975 965 } #Kherson-Zaporizhia
 
-RUS_955 = { 972 971 970 961 } #Yekaterinoslav
+RUS_955 = { 972 971 970 } #Yekaterinoslav
 
 RUS_977 = { 977 1017 1018 1019 } #Kursk
 
-RUS_978 = { 978 962 963 980 974 } #Kharkov
+RUS_978 = { 978 962 963 980 974 961 } #Kharkov
 
 RUS_979 = { 979 1047 1046 1045 } #Don Host Oblast
 
@@ -602,7 +602,7 @@ RUS_1037 = { 1037 1038 1025 1021 } #Tartaria
 
 RUS_1041 = { 1041 1036 1040 1039 } #Astrakhan
 
-RUS_1048 = { 1048 1049 1050 1051 1056 } #Circassia
+RUS_1048 = { 1048 1049 1050 1051 1056 3363 } #Circassia
 
 RUS_1052 = { 1052 1053 1054 1055 1057 } #North Caucasia
 
@@ -786,7 +786,7 @@ CHI_1470 = { 1470 1471 1473 1475 } #South Anhui
 
 CHI_1477 = { 1477 1474 1476 1472 1478 } #North Anhui
 
-CHI_1479 = { 1479 1480 1481 1554 1555 }  #Fengtian
+CHI_1479 = { 1479 1480 1481 1554 1555 3346 }  #Fengtian
 
 CHI_1482 = { 1482 1483 1484 1486 1487 } #Fujian
 
@@ -857,7 +857,7 @@ CHI_1616 = { 1616 1613 1617 3249 } #Peking
 
 ### Japan & Korea
 
-KOR_1619 = { 1619 1620 1623 1621 1622 } #Pyongyang
+KOR_1619 = { 1619 1620 1623 1621 1622 3345 } #Pyongyang
 
 KOR_1624 = { 1624 1630 1631 1636 1628 } #Seoul
 
@@ -908,9 +908,9 @@ ALD_1713 = { 1713 1710 1715 1712 } #North Central Sahara
 
 #ALD_1714 = { 1714 1716 1717 1720 } #West Sahara / Saoura
 
-ALD_1718 = { 1720 1711 1718 1719 1721 1722 1716 1717 } #Sahara
+ALD_1718 = { 1720 1711 1718 1719 1721 1722 1716 1717 3357 } #Sahara
 
-TUN_1726 = { 1725 1726 1727 1728 1729 1730 } #Tunisia
+TUN_1726 = { 1725 1726 1727 1728 1729 1730 3355 } #Tunisia
 
 TRI_1731 = { 1731 1733 1734 1732 1744 1740 1741 1742 } #Tripolitania
 
@@ -986,7 +986,7 @@ FRA_1798 = { 1798 1794 1799 1800 } #Eastern Mali
 
 FRA_1801 = { 1795 1796 1797 1801 } #Western Mali
 
-FRA_1803 = { 1803 1802 1805 1804 1807 2609 } #Timbuktu
+FRA_1803 = { 1803 1802 1805 1804 1807 2609 3358 } #Timbuktu
 
 FRA_1883 = { 1879 1880 1881 1882 1883 } #Upper Guinea - Now just Guinea
 
@@ -1100,9 +1100,9 @@ TRN_2108 = { 2105 2108 2110 2109 2107 2106 2114 3273 } #Transvaal - called origi
 
 ZUL_2113 = { 2113 2112 2111 2104 } #Zululand - Natal
 
-MAD_2117 = { 2117 2122 2116 2118 } #South Madagascar
+MAD_2117 = { 2117 2122 2116 2118 3348 } #South Madagascar
 
-MAD_2121 = { 2121 2115 2120 2119 } #North Madagascar
+MAD_2121 = { 2121 2115 2120 2119 3347 } #North Madagascar
 
 ### Mexico
 
@@ -1133,7 +1133,7 @@ UCA_2186 = { 2186 2187 2188 2189 2190 2628 } #Guatemala
 
 UCA_2191 = { 2191 2192 } #El Salvador
 
-UCA_2193 = { 2193 2194 2195 2196 } #Honduras
+UCA_2193 = { 2193 2194 2195 2196 3362 } #Honduras
 
 UCA_2197 = { 2197 2198 2199 2200 } #Nicaragua
 
@@ -1146,7 +1146,7 @@ CLM_1723 = { 2204 1723 2205 2206 2208 } #Panama
 
 SPA_2209 = { 2209 2210 2211 44 2212 } #Cuba
 
-HAI_2213 = { 2213 2214 2215 2216 3284 3327 3328 3329 3330 } #Hispanola
+HAI_2213 = { 2213 2214 2215 2216 3284 3327 3328 3329 3330 3361 } #Hispanola
 
 ENG_203 = { 2217 203 2219 2218 2220 3333 } #Caribbean Islands
 

@@ -15,7 +15,7 @@ civilized = yes
 set_country_flag = serfdom_not_abolished
 
 #GreaterPowers = prestige
-prestige = 110
+prestige = 160
 
 # Political reforms
 slavery = no_slavery
@@ -28,12 +28,13 @@ voting_system = first_past_the_post
 political_parties = underground_parties
 
 # Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+wage_reform = trinket_wage #influential church
+work_hours = no_work_hour_limit #irrelevant gentry
+safety_regulations = no_safety #very influential nobility
+unemployment_subsidies = no_subsidies #irrelevant burghers
+pensions = trinket_pensions #marginally relevant army
+health_care = no_health_care #irrelevant bureaucracy
+
 school_reforms = no_schools
 
 #New Reforms

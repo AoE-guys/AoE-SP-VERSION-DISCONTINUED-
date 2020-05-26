@@ -1,6 +1,6 @@
 capital = 1301
 civilized = yes   primary_culture = marathi
-culture = sindi
+culture = gujarati
 culture = kannada
 religion = hindu
 government = absolute_monarchy
@@ -34,11 +34,11 @@ debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
-border_policy = open_borders
+border_policy = closed_borders
 centralization = confederalism
 colonial_policy = no_colonies 
 
-
+set_country_flag = unciv
 set_country_flag = hindu_country
 schools = unciv_tech_school
 ruling_party = "Nobility Faction"
@@ -78,3 +78,5 @@ piston_steam_engine = 1
 mechanical_production = 1
 #oob
 oob = "MAH_oob.txt"
+
+asia_balance = yes

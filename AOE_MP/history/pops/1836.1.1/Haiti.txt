@@ -146,31 +146,31 @@
 #Port-de-Paix (204000/51000 POPS)
 3328 = {
 	aristocrats = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 200
 	}
 
 	slaves = {
-		culture = afro_antillean
+		culture = afro_caribeno
 		religion = catholic
 		size = 16825
 	}
@@ -208,38 +208,106 @@
 		religion = catholic
 		size = 16825
 	}
-
-}
-#Manneville (204000/51000 POPS)
-3330 = {
 	aristocrats = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mulatto
+		culture = caribeno
 		religion = catholic
 		size = 200
 	}
 
 	slaves = {
-		culture = afro_antillean
+		culture = afro_caribeno
 		religion = catholic
 		size = 16825
+	}
+
+}
+#Manneville (204000/51000 POPS)
+3330 = {
+	aristocrats = {
+		culture = caribeno
+		religion = catholic
+		size = 550
+	}
+
+	clergymen = {
+		culture = caribeno
+		religion = catholic
+		size = 75
+	}
+
+	artisans = {
+		culture = caribeno
+		religion = catholic
+		size = 2550
+	}
+
+	soldiers = {
+		culture = caribeno
+		religion = catholic
+		size = 200
+	}
+
+	slaves = {
+		culture = afro_caribeno
+		religion = catholic
+		size = 16825
+	}
+
+}
+#Jacmel (204000/51000 POPS)
+3361 = {
+	aristocrats = {
+		culture = french
+		religion = catholic
+		size = 286
+	}
+
+	clergymen = {
+		culture = french
+		religion = catholic
+		size = 39
+	}
+
+	artisans = {
+		culture = mulatto
+		religion = catholic
+		size = 1326
+	}
+
+	soldiers = {
+		culture = mulatto
+		religion = catholic
+		size = 104
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 20168
+	}
+
+	labourers = {
+		culture = french
+		religion = catholic
+		size = 1061
 	}
 
 }

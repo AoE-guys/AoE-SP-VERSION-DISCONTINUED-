@@ -2,6 +2,7 @@ owner = SVY
 controller = SVY
 add_core = SVY
 add_core = ITA
-trade_goods = coal  state_building = {  level = 5  building = coal_factory  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
+state_building = {  level = 1  building = cement_factory  upgrade = yes  }
 terrain = annecy
 life_rating = 30

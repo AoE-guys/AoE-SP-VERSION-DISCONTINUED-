@@ -1,7 +1,6 @@
 ##################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
-
 french_liberal_school = {
 	max_tariff = -0.25
 	administrative_efficiency_modifier = 0.2
@@ -10,6 +9,10 @@ french_liberal_school = {
 	commerce_tech_research_bonus = 0.05
 	culture_tech_research_bonus = 0.05
 	influence_modifier = 0.1
+	icon = 9
+}
+asian_farms = {
+	#farm_rgo_size = 10
 	icon = 9
 }
 smithian_school = {
@@ -452,6 +455,7 @@ silver_mine = {
 trade_city = {
 	farm_rgo_eff = 0.25
 	goods_demand = -0.10
+	local_factory_output = 0.1
 	icon = 11
 }
 
@@ -1009,7 +1013,7 @@ colonial_mismanagement = {
 colonial_recruitment = {
 	immigrant_attract = 1		#100%
 	life_rating = 0.1
-	population_growth = 0.01
+	population_growth = 0.001
 	assimilation_rate = 0.25
 	icon = 9
 }
@@ -1513,7 +1517,7 @@ ruhr_boom = {
 }
 
 encouraging_protestant_migration = {
-	population_growth = 0.01
+	education_efficiency_modifier = 0.20
 	immigrant_attract = 1.5
 	icon = 13
 }
@@ -1523,7 +1527,11 @@ ruhr_boom_city = {
 	immigrant_attract = 1.5
 	icon = 13
 }
-
+land_reform_pru = {
+	education_efficiency_modifier = 0.20
+	global_pop_militancy_modifier = -0.03
+	icon = 13
+}
 prussian_general_staff = {
 	org_regain = 0.25
 	land_organisation = 0.15
@@ -1884,7 +1892,7 @@ war_torn = {
 	local_rgo_output = -0.25
 	immigrant_attract = -0.25
 	immigrant_push = 0.25
-	population_growth = -0.001
+	#population_growth = -0.001
 	icon = 4
 }
 
@@ -4237,6 +4245,7 @@ swedish_caroleans = {
 riksdaler = {
 	administrative_efficiency_modifier = 0.10
 	tax_efficiency = 0.2
+	loan_interest = -0.5
 }
 gustav_iii = {
 	army_tech_research_bonus = 0.05
@@ -4249,6 +4258,25 @@ swedish_absolutism = {
 	ruling_party_support = 0.35
 	influence_modifier = 0.2
 	icon = 7
+}
+agriculture_reform = {
+	factory_cost = -0.3
+	war_exhaustion = -0.03
+	global_pop_consciousness_modifier = 0.003
+	education_efficiency_modifier = 0.25
+	icon = 17
+}
+commodity_act = {
+	tariff_efficiency_modifier = 0.25
+	factory_input = -0.02
+	loan_interest = 0.25
+	icon = 17
+}
+great_partition = {
+	farm_rgo_eff = 0.05
+	factory_output = 0.1
+	loan_interest = 0.25
+	icon = 17
 }
 ###Russia###
 improved_administration = {
@@ -4305,7 +4333,7 @@ petes_conscription = {
 	icon = 15
 }
 russian_vaccination = {
-	global_population_growth = 0.02
+	global_population_growth = 0.002
 	icon = 17
 }
 ####Austria stuff####
@@ -4323,7 +4351,7 @@ codex_theresianus = {
 	icon = 5
 }
 austrian_vaccination = {
-	global_population_growth = 0.02
+	global_population_growth = 0.002
 	icon = 17
 }
 josephism = {
@@ -4338,6 +4366,10 @@ theresian_military_academy = {
 	supply_consumption = -0.1
 	org_regain = 0.2
 	land_unit_start_experience = 5
+	icon = 15
+}
+ost_land_company = {
+	tariff_efficiency_modifier = 0.4
 	icon = 15
 }
 #####Bourbon France####
@@ -4385,6 +4417,33 @@ peasant_in_government = {
 }
 clergy_and_nobility_domination = {
 	icon = 18
+}
+######Great Britain#####
+agriculture_revolution= {
+	factory_cost = -0.3
+	war_exhaustion = -0.03
+	factory_output = 0.05
+	global_pop_consciousness_modifier = 0.003
+	education_efficiency_modifier = 0.10
+	icon = 17
+}
+encolsure = {
+	education_efficiency_modifier = 0.35
+	factory_input = -0.05
+	icon = 17
+}
+british_general_staff = {
+	org_regain = 0.25
+	mobilisation_economy_impact = -0.25
+	land_unit_start_experience = 10
+	supply_consumption = -0.05
+	leadership_modifier = 0.05
+	icon = 15
+}
+fief_and_drum = {
+	land_organisation = 0.10
+	supply_consumption = -0.1
+	icon = 15
 }
 ###+RGO_education###
 
@@ -4437,7 +4496,7 @@ RGO_education_1 = {
 RGO_education_2 = {
 	#local_RGO_output = 0.1
 	#local_factory_output = 0.02
-	farm_rgo_size = -0.15
+	farm_rgo_size = -0.20
 	#mine_rgo_size = -0.20
 	
 	#poor_life_needs = -0.4
@@ -4529,7 +4588,7 @@ RGO_education_5 = {
 RGO_education_6 = {
 	#local_RGO_output = 0.3
 	#local_factory_output = 0.06
-	farm_rgo_size = -0.60
+    farm_rgo_size = -0.60
 	#mine_rgo_size = -0.3
 	
 	#poor_life_needs = -0.20
@@ -4742,6 +4801,7 @@ religious_reforms = {
 religion_wins = {
 	icon = 1
 	culture_tech_research_bonus = 0.1
+}
 religion_lose = {
 	icon = 1
 	culture_tech_research_bonus = -0.05
@@ -5037,6 +5097,7 @@ frederick_grosse = {
 	diplomatic_points_modifier = 0.25
 	influence_modifier = 0.2
 	bad_badboy = -0.05
+	global_pop_militancy_modifier = -0.02
 	ruling_party_support = 0.35
 	prestige = 0.06
 	icon = 13
@@ -5098,7 +5159,7 @@ prussian_military_advisors = {
 	land_unit_start_experience = 5
 	icon = 17
 }
-nizam-i_djedid = {
+nizam_i_djedid = {
 	land_organisation = 0.1
 	supply_consumption = -0.1
 	org_regain = 0.2
@@ -5148,6 +5209,17 @@ targowica = {
 	non_accepted_pop_consciousness_modifier = 0.2
 	ruling_party_support = -0.05
 	icon = 18
+}
+folwark_serf_economy = {
+	rgo_output = 0.05
+	factory_throughput = -0.10
+	tariff_efficiency_modifier = 0.05
+	tax_efficiency = -0.1
+	icon = 18
+}
+noble_democracy = {
+	global_pop_consciousness_modifier = -0.003
+	icon = 17
 }
 #####British colonial policies on THC#####
 sugar_act_on_colonies = {
@@ -5902,11 +5974,23 @@ not_dictatorship = {
 
 ####Mughal breakup stuff####
 decentralized_rule = {
-	core_pop_militancy_modifier = 0.02
-	org_regain = -0.15
-	army_organisation = -0.2
+	core_pop_militancy_modifier = 0.04
+	org_regain = -0.4
+	army_organisation = -0.3
 	admin_efficiency = -0.1
+	mobilisation_size = -0.45
 	icon = 3
+}
+decentralized_rule_efm = {
+	admin_efficiency = -0.1
+	mobilisation_size = -0.4
+	icon = 3
+}
+political_chaos = {
+	diplomatic_points_modifier = -0.2
+	influence_modifier = -0.1
+	global_pop_militancy_modifier = 0.06
+	war_exhaustion = 0.01
 }
 ##
 inefficient_bureacracy = {
@@ -5934,4 +6018,276 @@ illegitimate_heir = {
 	admin_efficiency = -0.05
 	war_exhaustion = 0.005
 	diplomatic_points_modifier = -0.05
+}
+####Hre reforms###
+hre_mendling = {
+	bad_badboy = 0.02
+	icon = 6
+}
+reichsreform = {
+	education_efficiency_modifier = 0.15
+	icon = 11
+}
+reichsregiment = {
+	mobilisation_size = 0.1
+	icon = 17
+}
+the_hofgericht = {
+	diplomatic_points_modifier = 0.1
+	bad_badboy = -0.02
+	icon = 5
+}
+erbkaisertum = {
+	diplomatic_points_modifier = 0.05
+	prestige = 0.0002
+	icon = 5
+}
+####South Sea Company####
+the_great_debt = {
+	loan_interest = 0.75
+	tax_efficiency = -0.1
+}
+the_great_debt_1 = {
+	loan_interest = 0.05
+	tax_efficiency = -0.02
+}
+the_south_sea_company = {
+	loan_interest = -0.35
+	tariff_efficiency_modifier = 0.15
+}
+the_south_sea_company_1 = {
+	loan_interest = -0.65
+	tariff_efficiency_modifier = 0.25
+}
+the_south_sea_company_2 = {
+	loan_interest = -0.15
+	tariff_efficiency_modifier = 0.05
+}
+###Denmark-Norway#####
+johann_struensee = {
+	prestige = 0.004
+	admin_efficiency = 0.05
+}
+christian_vii = {
+	prestige = -0.004
+	tax_efficiency = -0.05
+}
+local_hegemon = {
+	prestige = 0.01
+	diplomatic_points_modifier = 0.3
+	war_exhaustion = -0.05
+	
+}
+
+####Saint-Domingue####
+pearl_of_the_antilles = {
+	local_factory_throughput = 1.00
+	#goods_demand = 0.10
+	population_growth = 0.001
+}
+mass_slave_revolt = {
+	mobilisation_size = 0.25
+	mobilisation_economy_impact = -0.8
+	core_pop_militancy_modifier = -0.1
+	war_exhaustion = -0.05
+	land_defense_modifier = 0.5
+    land_attack_modifier = 0.5
+    land_organisation = 0.5
+	icon = 17
+}
+
+#put god damned proper dividers
+
+trade_centre = {
+	icon = 11
+	#goods_demand = 0.2
+	immigrant_attract = 0.25
+	local_factory_throughput = 0.25
+	tariff_efficiency_modifier = 0.01
+}
+
+potential_trade_post = {
+	icon = 7
+}
+
+negotiating_port_loss = {
+	icon = 18
+}
+
+negotiating_port_demand = {
+	icon = 17
+}
+
+rick_rolled = {
+	icon = 3
+}
+
+negotiated = {
+	icon = 7
+}
+
+### Mandate of Heaven
+mandate_of_heaven_change = {
+	icon = 7
+}
+
+mandate_of_heaven_1 = {
+    prestige = 0.01
+	goods_demand = 0.10
+	education_efficiency_modifier = 0.10
+    leadership_modifier = 0.1
+	global_population_growth = 0.001
+	diplomatic_points_modifier = -0.25
+	influence_modifier = -0.25
+	cb_generation_speed_modifier = -0.25
+	icon = 7
+}
+
+mandate_of_heaven_2 = {
+	tax_efficiency = -0.05
+	factory_output = -0.05
+	administrative_efficiency_modifier = -0.30
+	social_reform_desire = 0.1
+	land_organisation = -0.05
+	global_pop_consciousness_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
+	diplomatic_points_modifier = -0.5
+	influence_modifier = -0.5
+	cb_generation_speed_modifier = -0.50
+	mobilisation_size = -0.01
+	icon = 7
+}
+
+mandate_of_heaven_3 = {
+    prestige = -0.01
+	tax_efficiency = -0.10
+	factory_output = -0.10
+	goods_demand = -0.1
+	education_efficiency_modifier = -0.10
+	leadership_modifier = -0.1
+	administrative_efficiency_modifier = -0.60
+	social_reform_desire = 0.2
+	land_organisation = -0.10
+	global_population_growth = -0.001
+	global_pop_consciousness_modifier = 0.02
+	global_pop_militancy_modifier = 0.02
+	diplomatic_points_modifier = -0.75
+	influence_modifier = -0.75
+	cb_generation_speed_modifier = -0.75
+	mobilisation_size = -0.02
+	icon = 7
+}
+
+mandate_of_heaven_natural_disaster = {
+    prestige = -0.03
+	pop_militancy_modifier = 0.05
+	pop_consciousness_modifier = 0.03
+	tax_efficiency = -0.05
+	factory_throughput = -0.25
+	rgo_output = -0.25
+	icon = 7
+}
+
+blue_turbans = {
+    prestige = 0.01
+	pop_militancy_modifier = -0.05
+	tax_efficiency = 0.10
+	mobilisation_size = 0.10
+	org_regain = 0.10
+	land_organisation = -0.20
+	war_exhaustion = -0.5
+	supply_consumption = -0.80
+	land_unit_start_experience = -10
+	icon = 7
+}
+
+manchu_call_to_arms = {
+    prestige = -0.01
+	pop_militancy_modifier = 0.01
+	tax_efficiency = 0.10
+	mobilisation_size = 0.25
+	#org_regain = 0.10
+	#land_organisation = -0.20
+	war_exhaustion = -0.25
+	supply_consumption = -0.80
+	icon = 7
+}
+
+#Prime Ministers
+
+bureaucracy_pm = {
+    tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.10
+	icon = 4
+}
+
+burghers_pm = {
+	factory_output = 0.05
+	education_efficiency_modifier = 0.10
+	icon = 4
+}
+
+church_pm = {
+    core_pop_consciousness_modifier = -0.02
+	RGO_throughput = 0.10
+	icon = 4
+}
+
+nobility_pm = {
+    prestige = 0.01
+	RGO_throughput = 0.10
+	icon = 4
+}
+
+gentry_pm = {
+	RGO_throughput = 0.05
+	factory_throughput = 0.05
+	education_efficiency_modifier = 0.05
+	icon = 4
+}
+
+army_pm = {
+	land_organisation = 0.05
+	leadership_modifier = 0.10
+	icon = 4
+}
+
+5_year_term = {
+	prestige = 0.001
+	icon = 4
+}
+
+#daniel is a catgirl
+
+come_to_brz = {
+	global_immigrant_attract = 0.5
+	icon = 11
+}
+
+khan_converted = {
+	global_pop_militancy_modifier = 0.02
+	icon = 6
+}
+
+#EIC
+victory_over_eic = {
+    prestige = 0.01
+	global_pop_militancy_modifier = -0.01
+	icon = 7
+}
+
+indian_campaign_target_prepare = {
+	global_pop_militancy_modifier = 0.01
+	icon = 7
+}
+
+indian_campaign_target = {
+	global_pop_militancy_modifier = 0.01
+	mobilisation_size = -0.025
+	icon = 7
+}
+
+eic_monopoly_broken = {
+	prestige = 0.001
+	icon = 7
 }

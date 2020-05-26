@@ -1,7 +1,7 @@
 capital = 729
 civilized = yes   primary_culture = north_italian
 religion = catholic
-government = democracy
+government = merchant_republic
 plurality = 0.1
 nationalvalue = nv_productivity
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.4
@@ -19,12 +19,13 @@ voting_system = first_past_the_post
 political_parties = non_secret_ballots
 
 # Social Reforms
-wage_reform = low_minimum_wage
-work_hours = twelve_hours
-safety_regulations = acceptable_safety
-health_care = no_health_care
-unemployment_subsidies = acceptable_subsidies
-pensions = no_pensions 
+wage_reform = low_minimum_wage #silghtly influential church
+work_hours = twelve_hours #slightly influential gentry
+safety_regulations = good_safety #irrelevant nobility
+unemployment_subsidies = good_subsidies #very influential burghers
+pensions = low_pensions #slightly influential army
+health_care = no_health_care #irrelevant bureaucracy
+
 school_reforms = no_schools
 
 

@@ -7997,7 +7997,7 @@ country_event = {
 #Events for the imposition of a new government
 country_event = {
 	id = 96085
-	title = "EVTNAME96085" #Democracy
+	title = "EVTNAME96085" #Ancien Regime
 	desc = "EVTDESC96085"
 	news = yes
 	news_title = "EVTNAME96085_NEWS_TITLE"
@@ -8010,20 +8010,19 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA96085" #We welcome the new regime.
-		government = democracy
-		ruling_party_ideology = liberal
-		political_reform = universal_weighted_voting
-		political_reform = population_equal_weight
-		political_reform = yes_meeting
-		political_reform = free_press
-		political_reform = non_socialist
+		government = prussian_constitutionalism
+		ruling_party_ideology = conservative
+		political_reform = landed_voting
+		political_reform = appointed
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = no_trade_unions
 		political_reform = gerrymandering
-		political_reform = non_secret_ballots
 		clr_country_flag = communist_gov
 		clr_country_flag = absolute_monarchy_gov
-		clr_country_flag = semi_constitutional_monarchy_gov
+		set_country_flag = semi_constitutional_monarchy_gov
 		clr_country_flag = constitutional_monarchy_gov
-		set_country_flag = democracy_gov
+		clr_country_flag = democracy_gov
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
@@ -8043,12 +8042,13 @@ country_event = {
 			relation = { who = THIS value = 400 }
 			diplomatic_influence = { who = THIS value = 100 }
 			create_alliance = THIS
+			create_vassal = THIS
 			clr_country_flag = friendly_democracy
 		}
 		capital_scope = {
 			any_pop = {
 				limit = { literacy = 0.2 }
-				ideology = { factor = 0.1 value = liberal }
+				ideology = { factor = 0.1 value = conservative }
 				ideology = { factor = -0.5 value = communist }
 			}
 		}
@@ -8058,19 +8058,19 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 6
+				factor = 1
 			}
 			scaled_militancy = {
 				ideology = communist
-				factor = 6
-			}
-			scaled_militancy = {
-				ideology = fascist
-				factor = 6
+				factor = 8
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = -4
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -9
 			}
 		}
 		
@@ -8085,7 +8085,7 @@ country_event = {
 
 country_event = {
 	id = 96086
-	title = "EVTNAME96085" #Fascist
+	title = "EVTNAME96085" #Napoleon-like
 	desc = "EVTDESC96086"
 	news = yes
 	news_title = "EVTNAME96086_NEWS_TITLE"
@@ -8106,8 +8106,11 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		political_reform = primary_culture_only
-		political_reform = mandatory_service
+		#social_reform = good_minimum_wage
+		#social_reform = eight_hours
+		#social_reform = good_subsidies
+		#social_reform = good_pensions
+		#social_reform = good_health_care
 		clr_country_flag = communist_gov
 		clr_country_flag = absolute_monarchy_gov
 		clr_country_flag = semi_constitutional_monarchy_gov
@@ -8132,12 +8135,13 @@ country_event = {
 			relation = { who = THIS value = 400 }
 			diplomatic_influence = { who = THIS value = 200 }
 			create_alliance = THIS
+			create_vassal = THIS
 			clr_country_flag = friendly_fascist
 		}
 		capital_scope = {
 			any_pop = {
 				limit = { is_primary_culture = yes }
-				ideology = { factor = 0.1 value = fascist }
+				ideology = { factor = 0.1 value = reactionary }
 			}
 		}
 		any_owned = {
@@ -8155,23 +8159,19 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 6
+				factor = -4
 			}
 			scaled_militancy = {
 				ideology = communist
-				factor = 8
-			}
-			scaled_militancy = {
-				ideology = socialist
-				factor = 2
-			}
-			scaled_militancy = {
-				ideology = fascist
-				factor = -8
+				factor = -4
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = 4
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 5
 			}
 		}
 		any_country = {
@@ -8185,7 +8185,7 @@ country_event = {
 
 country_event = {
 	id = 96087
-	title = "EVTNAME96085" #Communist
+	title = "EVTNAME96085" #radical
 	desc = "EVTDESC96087"
 	news = yes
 	news_title = "EVTNAME96087_NEWS_TITLE"
@@ -8206,11 +8206,11 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		social_reform = good_minimum_wage
-		social_reform = eight_hours
-		social_reform = good_subsidies
-		social_reform = good_pensions
-		social_reform = good_health_care
+		#social_reform = good_minimum_wage
+		#social_reform = eight_hours
+		#social_reform = good_subsidies
+		#social_reform = good_pensions
+		#social_reform = good_health_care
 		nationalize = yes
 
 		set_country_flag = communist_gov
@@ -8237,6 +8237,7 @@ country_event = {
 			relation = { who = THIS value = 400 }
 			diplomatic_influence = { who = THIS value = 200 }
 			create_alliance = THIS
+			create_vassal = THIS
 			clr_country_flag = friendly_communist
 		}
 		capital_scope = {
@@ -8247,23 +8248,27 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 6
+				factor = -2
 			}
 			scaled_militancy = {
 				ideology = communist
 				factor = -8
 			}
-			scaled_militancy = {
-				ideology = socialist
-				factor = -4
-			}
-			scaled_militancy = {
-				ideology = fascist
-				factor = 8
-			}
+			#scaled_militancy = {
+			#	ideology = socialist
+			#	factor = -4
+			#}
+			#scaled_militancy = {
+			#	ideology = fascist
+			#	factor = 8
+			#}
 			scaled_militancy = {
 				ideology = liberal
-				factor = 4
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 8
 			}
 		}
 		any_owned = {

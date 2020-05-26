@@ -3,7 +3,9 @@ controller = RUS
 add_core = RUS
 add_core = BRY
 add_core = KAM
-trade_goods = grain  state_building = {  level = 5  building = grain_factory  upgrade = yes  }
+add_core = MGL
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+state_building = {  level = 1  building = barrel_factory  upgrade = yes  }
 life_rating = 35
 terrain = hills
 

@@ -1,0 +1,26 @@
+political_decisions = {
+
+	korean_border = {
+			picture = annex_korea
+			potential = {
+			tag = QNG
+			NOT = { war_with = KOR }
+			NOT = {
+				has_country_flag = korean_border_treaty
+			}
+		}
+		
+		allow = {
+			tag = QNG
+			year = 1712
+		}
+		
+		effect = {
+			set_country_flag = korean_border_treaty
+			QNG = { country_event = 16970 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+}

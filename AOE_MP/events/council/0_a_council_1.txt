@@ -1,0 +1,10467 @@
+
+###################################Prime minister check
+
+###################################Church
+###Very powerful
+country_event = { 
+	id = 9992034
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mastermind_theologian_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992035
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dutifyl_cleric_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992036
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = progressive_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992037
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = intolerant_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992038
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992039
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = zealot_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992040
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = no_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_churchsmen_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Powerful
+country_event = { 
+	id = 9992041
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mastermind_theologian_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992042
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dutifyl_cleric_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992043
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = intolerant_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992044
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992045
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = zealot_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992046
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_churchsmen_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992047
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = trinket_wage
+				check_variable = {
+					which = church_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = progressive_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Slightly powerful
+country_event = { 
+	id = 9992048
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mastermind_theologian_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992049
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = cardinal_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992050
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dutifyl_cleric_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992051
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = zealot_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992052
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_churchsmen_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992053
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = intolerant_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992054
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = low_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = progressive_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Marginally powerful
+country_event = { 
+	id = 9992055
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mastermind_theologian_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992056
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = cardinal_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992057
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_churchsmen_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992058
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = intolerant_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992059
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = zealot_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992060
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dutifyl_cleric_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992061
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = acceptable_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = progressive_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Irrelevant
+country_event = { 
+	id = 9992062
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mastermind_theologian_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992063
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = cardinal_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992064
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_churchsmen_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992065
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = intolerant_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992066
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = zealot_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992067
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dutifyl_cleric_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992068
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				wage_reform = good_minimum_wage
+				check_variable = {
+					which = church_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = church_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = church_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = progressive_clergyman_premier
+			duration = -1
+
+		}
+	}
+}
+
+###################################Gentry
+###Very powerful
+country_event = { 
+	id = 9992069
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = fallen_house_member_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992070
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = famous_adventurer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992071
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = enlighted_philosopher_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992072
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = science_worshipper_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992073
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = gentry_premier
+				
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = noble_reformer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992074
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = gigolo_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992075
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_idealist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992076
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = decadent_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992077
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = eight_hours
+				check_variable = {
+					which = gentry_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landed_traditionalist_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Powerful
+
+country_event = { 
+	id = 9992078
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = famous_adventurer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992079
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = enlighted_philosopher_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992080
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = fallen_house_member_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992081
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = gigolo_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992082
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = science_worshipper_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992083
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = noble_reformer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992084
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = decadent_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992085
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_idealist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992086
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = ten_hours
+				check_variable = {
+					which = gentry_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landed_traditionalist_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Slightly Powerful
+
+country_event = { 
+	id = 9992087
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = famous_adventurer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992088
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = enlighted_philosopher_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992089
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = gigolo_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992090
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = fallen_house_member_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992091
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = science_worshipper_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992092
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = decadent_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992093
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = noble_reformer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992094
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landed_traditionalist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992095
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = twelve_hours
+				check_variable = {
+					which = gentry_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_idealist_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Marginaly Powerful
+
+country_event = { 
+	id = 9992096
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = famous_adventurer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992097
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = gigolo_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992098
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = enlighted_philosopher_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992099
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = science_worshipper_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992100
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = decadent_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992101
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = fallen_house_member_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992102
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landed_traditionalist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992103
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = noble_reformer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992104
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = fourteen_hours
+				check_variable = {
+					which = gentry_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_idealist_premier
+			duration = -1
+
+		}
+	}
+}
+
+
+###Irrelevant
+
+country_event = { 
+	id = 9992105
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = famous_adventurer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992106
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = gigolo_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992107
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = enlighted_philosopher_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992108
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = decadent_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9999999
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landed_traditionalist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992109
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = science_worshipper_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992110
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = fallen_house_member_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992111
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = noble_reformer_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992112
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				work_hours = no_work_hour_limit
+				check_variable = {
+					which = gentry_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = gentry_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = gentry_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_idealist_premier
+			duration = -1
+
+		}
+	}
+}
+
+###################################Noble
+###Very powerful
+country_event = { 
+	id = 9992113
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mentor_aristocrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992114
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dunniwassal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992115
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = foreign_nobelman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992116
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grey_cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992117
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_lord_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992118
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = noble_premier
+				
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = kid_glove_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992119
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = absolutism_fanatic_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999220
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristocrat_in_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999221
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = important_feudal_lord_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999222
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ancien_regime_men_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999223
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = no_safety
+				check_variable = {
+					which = noble_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristoracy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Powerful
+country_event = { 
+	id = 9992124
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mentor_aristocrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992125
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dunniwassal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992126
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grey_cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992127
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = foreign_nobelman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992128
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_lord_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992129
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = absolutism_fanatic_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992130
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = kid_glove_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999231
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristocrat_in_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999232
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ancien_regime_men_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999233
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = important_feudal_lord_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999234
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = trinket_safety
+				check_variable = {
+					which = noble_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristoracy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Slightly Powerful
+country_event = { 
+	id = 9992135
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mentor_aristocrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992136
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = kid_glove_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992137
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grey_cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992138
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = absolutism_fanatic_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992139
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dunniwassal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992140
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristocrat_in_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992141
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ancien_regime_men_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999242
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = important_feudal_lord_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999243
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristoracy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999244
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = foreign_nobelman_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999245
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = low_safety
+				check_variable = {
+					which = noble_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_lord_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Marginally Powerful
+country_event = { 
+	id = 9992146
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mentor_aristocrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992147
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = kid_glove_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992148
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ancien_regime_men_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992149
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = absolutism_fanatic_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992150
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grey_cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992151
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristocrat_in_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992152
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristoracy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999253
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = important_feudal_lord_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999254
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dunniwassal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999255
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = foreign_nobelman_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999256
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = acceptable_safety
+				check_variable = {
+					which = noble_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_lord_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Irrelevant
+country_event = { 
+	id = 9992157
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = mentor_aristocrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992158
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = kid_glove_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992159
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristoracy_puppet_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992160
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = absolutism_fanatic_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992161
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ancien_regime_men_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 9992162
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grey_cardinal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999213
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = important_feudal_lord_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999264
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = aristocrat_in_web_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999265
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = foreign_nobelman_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999266
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = dunniwassal_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999267
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				safety_regulations = good_safety
+				check_variable = {
+					which = noble_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = noble_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = noble_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = liberal_lord_premier
+			duration = -1
+
+		}
+	}
+}
+
+###################################BURGHERS
+###Very powerful
+country_event = { 
+	id = 999268
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = midas_touched_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999269
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = expansionist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999270
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = pragmatic_scum_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999271
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = colonialist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999272
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = charismatic_negotiator_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999273
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = master_of_law_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999274
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = obsessive_perfectionist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999275
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incompetent_politian_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999276
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ghetto_king_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999277
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rich_merchant_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999278
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = middle_of_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999279
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = free_thinker_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999280
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 11.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 12.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = babbling_buffoon_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999281
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 12.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 13.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = con_man_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999282
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = good_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 13.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 14.01
+					}
+				}
+				
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = oligarchy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Powerful
+country_event = { 
+	id = 999283
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = expansionist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999284
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = pragmatic_scum_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999285
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = colonialist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999286
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = midas_touched_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999287
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incompetent_politian_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999288
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = charismatic_negotiator_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999289
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ghetto_king_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999290
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = obsessive_perfectionist_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999291
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rich_merchant_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999292
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = middle_of_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999293
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = master_of_law_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999294
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = babbling_buffoon_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999295
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 11.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 12.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = con_man_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999296
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 12.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 13.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = oligarchy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999297
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = acceptable_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 13.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 14.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = free_thinker_premier 
+			duration = -1
+
+		}
+	}
+}
+
+###Slightly Powerful
+
+country_event = { 
+	id = 999298
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = expansionist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999299
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = pragmatic_scum_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999300
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = colonialist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999301
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = midas_touched_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999302
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incompetent_politian_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999303
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ghetto_king_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999304
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = charismatic_negotiator_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999305
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rich_merchant_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999306
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = obsessive_perfectionist_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999307
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = middle_of_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999308
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = babbling_buffoon_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999309
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = master_of_law_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999310
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 11.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 12.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = con_man_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999311
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 12.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 13.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = oligarchy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999312
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = low_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 13.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 14.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = free_thinker_premier 
+			duration = -1
+
+		}
+	}
+}
+
+###Marginally Powerful
+
+country_event = { 
+	id = 999313
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = expansionist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999314
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = pragmatic_scum_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999315
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = colonialist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999316
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = midas_touched_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999317
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incompetent_politian_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999318
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ghetto_king_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999319
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = charismatic_negotiator_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999320
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rich_merchant_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999321
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = obsessive_perfectionist_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999322
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = middle_of_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999323
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = babbling_buffoon_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999324
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = master_of_law_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999325
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 11.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 12.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = con_man_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999326
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 12.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 13.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = oligarchy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999327
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = trinket_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 13.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 14.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = free_thinker_premier 
+			duration = -1
+
+		}
+	}
+}
+
+###Irrelevant
+
+country_event = { 
+	id = 999328
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = expansionist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999329
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = pragmatic_scum_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999330
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = colonialist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999331
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = midas_touched_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999332
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incompetent_politian_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999333
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ghetto_king_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999334
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = charismatic_negotiator_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999335
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rich_merchant_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999336
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = obsessive_perfectionist_premier 
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999337
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = middle_of_web_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999338
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = babbling_buffoon_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999339
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = master_of_law_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999340
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 11.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 12.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = con_man_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999341
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 12.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 13.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = oligarchy_puppet_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999342
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				unemployment_subsidies = no_subsidies
+				check_variable = {
+					which = burghers_premier
+					value = 13.99
+				}
+				NOT = {
+					check_variable = {
+						which = burghers_premier
+						value = 14.01
+					}
+				}
+				has_country_flag = burghers_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = free_thinker_premier 
+			duration = -1
+
+		}
+	}
+}
+
+###################################BUREAUCRACY
+###Very powerful
+
+country_event = { 
+	id = 999343
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rised_from_bottom_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999344
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incorruptible_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999345
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = genious_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999346
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = schoolar_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999347
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = non-iniative_placeholder_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999348
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = lazy_nobleman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999349
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = administrative_horror_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999350
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = economics_scientist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999351
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = good_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999352
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = embezzler_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999353
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = good_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_bureaucrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Powerful
+
+country_event = { 
+	id = 999354
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rised_from_bottom_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999355
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incorruptible_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999356
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = genious_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999357
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = schoolar_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999358
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = non-iniative_placeholder_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999359
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = lazy_nobleman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999360
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = administrative_horror_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999361
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = economics_scientist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999362
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = good_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999363
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = embezzler_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999364
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = acceptable_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 1099
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_bureaucrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Slightly Powerful
+
+country_event = { 
+	id = 999366
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+				
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rised_from_bottom_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999367
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incorruptible_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999368
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = genious_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999369
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = schoolar_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999370
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = non-iniative_placeholder_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999371
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = lazy_nobleman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999372
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = administrative_horror_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999373
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = economics_scientist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999374
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = good_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999375
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = embezzler_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999376
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_bureaucrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+
+###Marginally Powerful
+country_event = { 
+	id = 999377
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rised_from_bottom_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999378
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incorruptible_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999379
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = genious_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999380
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = schoolar_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999381
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = non-iniative_placeholder_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999382
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = lazy_nobleman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999383
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = administrative_horror_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999384
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = trinket_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = economics_scientist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999385
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = good_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999386
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = embezzler_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999387
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = low_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_bureaucrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Irrelevant
+country_event = { 
+	id = 999388
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = rised_from_bottom_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999389
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = incorruptible_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999390
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = genious_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999391
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = schoolar_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999392
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = non-iniative_placeholder_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999393
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = lazy_nobleman_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999394
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = administrative_horror_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999395
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = economics_scientist_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999396
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = good_manager_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999397
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 9.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 10.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = embezzler_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999398
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				health_care = no_health_care
+				check_variable = {
+					which = bureaucracy_premier
+					value = 10.99
+				}
+				NOT = {
+					check_variable = {
+						which = bureaucracy_premier
+						value = 11.01
+					}
+				}
+				has_country_flag = bureaucracy_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = corrupt_bureaucrat_premier
+			duration = -1
+
+		}
+	}
+}
+
+###################################ARMY
+###Very powerful
+country_event = { 
+	id = 999399
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landlubber_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999400
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = unqualified_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999401
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grand_admiral_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999402
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grand_admiral_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999403
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = old_school_stubborn_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999404
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = armchair_general_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999405
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = jingoistic_leader_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999406
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = staff_rat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999407
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = good_pensions
+				check_variable = {
+					which = army_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ambitious_general_premier
+			duration = -1
+
+		}
+	}
+}
+
+###Powerful
+country_event = { 
+	id = 999408
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 0.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 1.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = landlubber_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999409
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 1.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 2.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = unqualified_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999410
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 2.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 3.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grand_admiral_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999411
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 3.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 4.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = grand_admiral_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999412
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 4.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 5.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = old_school_stubborn_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999413
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 5.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 6.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = armchair_general_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999414
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 6.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 7.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = jingoistic_leader_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999415
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 7.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 8.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = staff_rat_premier
+			duration = -1
+
+		}
+	}
+}
+
+country_event = { 
+	id = 999416
+	title = "EVTNAME9992034" 
+	desc = "EVTDESC9992034"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+				pensions = acceptable_pensions
+				check_variable = {
+					which = army_premier
+					value = 8.99
+				}
+				NOT = {
+					check_variable = {
+						which = army_premier
+						value = 9.01
+					}
+				}
+				has_country_flag = army_premier
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		add_country_modifier = {
+			name = ambitious_general_premier
+			duration = -1
+
+		}
+	}
+}
+
+#####Clean event
+country_event = { 
+	id = 999417
+	title = "EVTNAME999417" 
+	desc = "EVTDESC999417"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		OR = {
+			has_country_modifier = ancien_regime_men_premier
+			has_country_modifier = aristoracy_puppet_premier
+			has_country_modifier = absolutism_fanatic_premier
+			has_country_modifier = mentor_aristocrat_premier
+			has_country_modifier = important_feudal_lord_premier
+			has_country_modifier = aristocrat_in_web_premier
+			has_country_modifier = kid_glove_premier
+			has_country_modifier = grey_cardinal_premier
+			has_country_modifier = liberal_lord_premier
+			has_country_modifier = foreign_nobelman_premier
+			has_country_modifier = dunniwassal_premier
+			has_country_modifier = zealot_premier
+			has_country_modifier = corrupt_churchsmen_premier
+			has_country_modifier = cardinal_premier
+			has_country_modifier = progressive_clergyman_premier
+			has_country_modifier = mastermind_theologian_premier
+			has_country_modifier = dutifyl_cleric_premier
+			has_country_modifier = intolerant_clergyman_premier
+			has_country_modifier = noble_reformer_premier
+			has_country_modifier = liberal_idealist_premier
+			has_country_modifier = science_worshipper_premier
+			has_country_modifier = enlighted_philosopher_premier
+			has_country_modifier = landed_traditionalist_premier
+			has_country_modifier = famous_adventurer_premier
+			has_country_modifier = fallen_house_member_premier
+			has_country_modifier = gigolo_premier
+			has_country_modifier = decadent_premier
+			has_country_modifier = con_man_premier
+			has_country_modifier = free_thinker_premier
+			has_country_modifier = expansionist_premier
+			has_country_modifier = colonialist_premier
+			has_country_modifier = charismatic_negotiator_premier
+			has_country_modifier = babbling_buffoon_premier
+			has_country_modifier = obsessive_perfectionist_premier
+			has_country_modifier = midas_touched_premier
+			has_country_modifier = middle_of_web_premier
+			has_country_modifier = ghetto_king_premier
+			has_country_modifier = pragmatic_scum_premier
+			has_country_modifier = rich_merchant_premier
+			has_country_modifier = master_of_law_premier
+			has_country_modifier = incompetent_politian_premier
+			has_country_modifier = oligarchy_puppet_premier
+			has_country_modifier = ambitious_general_premier
+			has_country_modifier = jingoistic_leader_premier
+			has_country_modifier = landlubber_premier
+			has_country_modifier = grand_admiral_premier
+			has_country_modifier = armchair_general_premier
+			has_country_modifier = unqualified_premier
+			has_country_modifier = staff_rat_premier
+			has_country_modifier = old_school_stubborn_premier
+			has_country_modifier = corrupt_bureaucrat_premier
+			has_country_modifier = administrative_horror_premier
+			has_country_modifier = good_manager_premier
+			has_country_modifier = genious_manager_premier
+			has_country_modifier = lazy_nobleman_premier
+			has_country_modifier = economics_scientist_premier
+			has_country_modifier = schoolar_premier
+			has_country_modifier = embezzler_premier
+			has_country_modifier = non-iniative_placeholder_premier
+			has_country_modifier = incorruptible_premier
+			has_country_modifier = rised_from_bottom_premier
+		}
+		NOT = {
+			has_country_flag = clean_prime
+		}
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		set_variable = {
+			which = army_premier
+			value = 0
+		}
+		set_variable = {
+			which = noble_premier
+			value = 0
+		}
+		set_variable = {
+			which = church_premier
+			value = 0
+		}
+		set_variable = {
+			which = burghers_premier
+			value = 0
+		}
+		set_variable = {
+			which = bureaucracy_premier
+			value = 0
+		}
+		set_variable = {
+			which = gentry_premier
+			value = 0
+		}
+		set_country_flag = clean_prime
+	}
+}
+
+#####Clean event if losed 
+country_event = { 
+	id = 999418
+	title = "Minor Political crisis" 
+	desc = "EVTDESC999418"
+	picture = "autocracy"
+	
+	is_triggered_only = no
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = ancien_regime_men_premier
+			has_country_modifier = aristoracy_puppet_premier
+			has_country_modifier = absolutism_fanatic_premier
+			has_country_modifier = mentor_aristocrat_premier
+			has_country_modifier = important_feudal_lord_premier
+			has_country_modifier = aristocrat_in_web_premier
+			has_country_modifier = kid_glove_premier
+			has_country_modifier = grey_cardinal_premier
+			has_country_modifier = liberal_lord_premier
+			has_country_modifier = foreign_nobelman_premier
+			has_country_modifier = dunniwassal_premier
+			has_country_modifier = zealot_premier
+			has_country_modifier = corrupt_churchsmen_premier
+			has_country_modifier = cardinal_premier
+			has_country_modifier = progressive_clergyman_premier
+			has_country_modifier = mastermind_theologian_premier
+			has_country_modifier = dutifyl_cleric_premier
+			has_country_modifier = intolerant_clergyman_premier
+			has_country_modifier = noble_reformer_premier
+			has_country_modifier = liberal_idealist_premier
+			has_country_modifier = science_worshipper_premier
+			has_country_modifier = enlighted_philosopher_premier
+			has_country_modifier = landed_traditionalist_premier
+			has_country_modifier = famous_adventurer_premier
+			has_country_modifier = fallen_house_member_premier
+			has_country_modifier = gigolo_premier
+			has_country_modifier = decadent_premier
+			has_country_modifier = con_man_premier
+			has_country_modifier = free_thinker_premier
+			has_country_modifier = expansionist_premier
+			has_country_modifier = colonialist_premier
+			has_country_modifier = charismatic_negotiator_premier
+			has_country_modifier = babbling_buffoon_premier
+			has_country_modifier = obsessive_perfectionist_premier
+			has_country_modifier = midas_touched_premier
+			has_country_modifier = middle_of_web_premier
+			has_country_modifier = ghetto_king_premier
+			has_country_modifier = pragmatic_scum_premier
+			has_country_modifier = rich_merchant_premier
+			has_country_modifier = master_of_law_premier
+			has_country_modifier = incompetent_politian_premier
+			has_country_modifier = oligarchy_puppet_premier
+			has_country_modifier = ambitious_general_premier
+			has_country_modifier = jingoistic_leader_premier
+			has_country_modifier = landlubber_premier
+			has_country_modifier = grand_admiral_premier
+			has_country_modifier = armchair_general_premier
+			has_country_modifier = unqualified_premier
+			has_country_modifier = staff_rat_premier
+			has_country_modifier = old_school_stubborn_premier
+			has_country_modifier = corrupt_bureaucrat_premier
+			has_country_modifier = administrative_horror_premier
+			has_country_modifier = good_manager_premier
+			has_country_modifier = genious_manager_premier
+			has_country_modifier = lazy_nobleman_premier
+			has_country_modifier = economics_scientist_premier
+			has_country_modifier = schoolar_premier
+			has_country_modifier = embezzler_premier
+			has_country_modifier = non-iniative_placeholder_premier
+			has_country_modifier = incorruptible_premier
+			has_country_modifier = rised_from_bottom_premier
+		}
+		NOT = {
+			has_country_modifier = waiting_for_minister
+		}
+		has_country_flag = prime_minister_set
+	}
+	
+	option = {
+		name = "EVTNAME9992034PTA"
+		
+		clr_country_flag = prime_minister_set
+		clr_country_flag = no_spam_prime
+		clr_country_flag = clean_prime
+		
+		set_variable = {
+			which = noble_power
+			value = 0
+		}
+		set_variable = {
+			which = church_power
+			value = 0
+		}
+		set_variable = {
+			which = gentry_power
+			value = 0
+		}
+		set_variable = {
+			which = army_power
+			value = 0
+		}
+		set_variable = {
+			which = burghers_power
+			value = 0
+		}
+		set_variable = {
+			which = bureaucracy_power
+			value = 0
+		}
+	}
+}

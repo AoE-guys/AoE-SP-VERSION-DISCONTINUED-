@@ -4334,13 +4334,13 @@ country_event = {
 		#	}
 		#	any_pop = { limit = { type = serfs } pop_type = labourers }
 		#}
-		any_owned = {
-			limit = {
-				#has_pop_type = farmers
-				has_pop_type = serfs
-			}
-			any_pop = { limit = { type = serfs } pop_type = farmers }
-		}
+		#any_owned = {
+		#	limit = {
+		#		#has_pop_type = farmers
+		#		has_pop_type = serfs
+		#	}
+		#	any_pop = { limit = { type = serfs } pop_type = farmers }
+		#}
 	}
 }
 
@@ -4589,45 +4589,45 @@ province_event = {
 	}
 }
 
-#End of Treaty Ports
-province_event = {
-	id = 90955
-	title = "EVTNAME90954"
-	desc = "EVTDESC90955"
-		
-	trigger = {
-		owner = { capital_scope = { continent = asia } }
-		OR = {
-			owner = { is_culture_group = east_asian }
-			owner = { is_culture_group = far_east_asian }
-		}
-		trade_goods = precious_goods
-		OR = {
-			province_id = 1498
-			province_id = 1496
-			province_id = 1566
-			province_id = 1569
-			province_id = 2632
-			AND = {
-				province_id = 1538
-				owner = { civilized = yes }
-			}
-		}
-	}
-
-	mean_time_to_happen = { months = 1 }
-	
-	option = {
-		name = "EVTOPTA90955"
-		add_province_modifier = { name = treaty_port duration = -1 }
-		random_list = {
-			25 = { trade_goods = fish }
-			25 = { trade_goods = silk }
-			25 = { trade_goods = tea }
-			25 = { trade_goods = opium }
-		}
-	}
-}
+##End of Treaty Ports
+#province_event = {
+#	id = 90955
+#	title = "EVTNAME90954"
+#	desc = "EVTDESC90955"
+#		
+#	trigger = {
+#		owner = { capital_scope = { continent = asia } }
+#		OR = {
+#			owner = { is_culture_group = east_asian }
+#			owner = { is_culture_group = far_east_asian }
+#		}
+#		trade_goods = precious_goods
+#		OR = {
+#			province_id = 1498
+#			province_id = 1496
+#			province_id = 1566
+#			province_id = 1569
+#			province_id = 2632
+#			AND = {
+#				province_id = 1538
+#				owner = { civilized = yes }
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = { months = 1 }
+#	
+#	option = {
+#		name = "EVTOPTA90955"
+#		add_province_modifier = { name = treaty_port duration = -1 }
+#		random_list = {
+#			25 = { trade_goods = precious_goods }
+#			25 = { trade_goods = precious_goods }
+#			25 = { trade_goods = precious_goods }
+#			25 = { trade_goods = precious_goods }
+#		}
+#	}
+#}
 
 #Migration to Hong Kong
 province_event = {
@@ -4663,7 +4663,7 @@ province_event = {
 				culture = yue
 				type = serfs
 			}
-			pop_type = labourers	
+			#pop_type = labourers	
 			reduce_pop = 0.9
 		}
 		

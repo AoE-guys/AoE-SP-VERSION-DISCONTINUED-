@@ -1,9 +1,9 @@
 capital = 425
-civilized = yes   
 primary_culture = french
 culture = occitan
 culture = picard
 culture = breton
+culture = picard
 culture = arpitan
 culture = louisianan
 culture = french_canadian
@@ -17,7 +17,7 @@ literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.50
 civilized = yes
 
 #GreaterPowers = prestige
-prestige = 90
+prestige = 140
 
 # Political reforms
 slavery = yes_slavery
@@ -30,12 +30,13 @@ voting_system = first_past_the_post
 political_parties = non_secret_ballots
 
 # Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+wage_reform = no_minimum_wage #very influential church
+work_hours = no_work_hour_limit #irrelevant gentry
+safety_regulations = no_safety #very influential nobility
+unemployment_subsidies = trinket_subsidies #marginally relevant burghers
+pensions = low_pensions # slifhtly influential army
+health_care = low_health_care #slightly influential bureaucracy
+
 school_reforms = no_schools
 
 #New Reforms

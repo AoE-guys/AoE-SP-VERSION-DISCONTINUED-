@@ -2,7 +2,8 @@ owner = GEN
 controller = GEN
 add_core = ITA
 add_core = GEN
-trade_goods = fruit  state_building = {  level = 5  building = fruit_factory  upgrade = yes  }
+trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
+state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 40
 terrain = genoa
 naval_base = 1

@@ -1,3 +1,27 @@
+#Morroco - Timbuktu
+vassal = {  #substate
+	first = MOR
+	second = TIM
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
+#Korea - Jaegaseung
+vassal = {  #substate
+	first = KOR
+	second = JGS
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
+#Bukhara - Bandakhshan
+vassal = {  #substate
+	first = BUK
+	second = BDK
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
 #Persia - Kakheti
 vassal = {  #substate
 	first = PER
@@ -254,13 +278,6 @@ vassal = {  #substate
 	end_date = 1936.1.1
 }
 
-#Central India Agency
-vassal = {  #substate
-	first = ENG
-	second = BUN
-	start_date = 1600.1.1
-	end_date = 1936.1.1
-}
 
 #Balochistan Agency
 vassal = {  #substate

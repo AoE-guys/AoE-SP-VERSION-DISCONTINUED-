@@ -7,12 +7,13 @@ country_event = {
 
 	id = 9999856
 	
-	is_triggered_only = yes
+	#is_triggered_only = yes
 
-	#trigger = {
-	#	NOT = { has_global_flag = education_setup_b }
-	#	ai = no
-	#}
+	trigger = {
+		NOT = { has_global_flag = education_setup_b }
+		#ai = yes
+		tag = HAW
+	}
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -28,6 +29,7 @@ country_event = {
 		any_pop = { limit = { culture = sephardic } literacy = 1.00 }
 		
 		any_pop = { limit = { culture = dutch } literacy = 0.95 }
+		any_pop = { limit = { culture = frisian } literacy = 0.86 }
 		any_pop = { limit = { culture = flemish } literacy = 0.86 }
 		any_pop = { limit = { culture = wallonian } literacy = 0.46 }
 		
@@ -240,7 +242,7 @@ country_event = {
 		#			   any_pop = { limit = { culture = catalan } literacy = 0.36 }
 		#			   any_pop = { limit = { culture = portuguese } literacy = 0.39 }
 		#			   
-		#			   any_pop = { limit = { culture = french } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = french } literacy = 0.70 }
 		#			   any_pop = { limit = { culture = breton } literacy = 0.44 }
 		#			   any_pop = { limit = { culture = occitan } literacy = 0.44 }
 		#			   any_pop = { limit = { culture = picard } literacy = 0.44 }
@@ -384,8 +386,9 @@ country_event = {
 		#}
 		
 		set_global_flag = education_setup_b
-		country_event = 999958
+		#country_event = 999958
 		any_country = { limit = { NOT = { tag = THIS } } country_event = 9999855 }
+		country_event = 9999886
 	}
 }
 
@@ -1192,5 +1195,6 @@ country_event = {
 #set_global_flag = education_setup
 #country_event = 999904
 #any_country { limit = { NOT = THIS } country_event = 9999855 }
+country_event = 999958
 }
 }

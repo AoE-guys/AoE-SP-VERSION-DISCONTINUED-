@@ -1,0 +1,12 @@
+owner = QNG
+controller = QNG
+add_core = QNG
+add_core = CHI
+add_core = MCK
+trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+life_rating = 32
+1861.1.1 = {
+	owner = RUS
+	controller = RUS
+	#colonial = 2
+}
