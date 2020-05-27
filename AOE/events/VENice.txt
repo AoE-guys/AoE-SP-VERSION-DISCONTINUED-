@@ -161,6 +161,8 @@ country_event = {
 	major = no
 	fire_only_once = yes
 	
+	is_triggered_only = yes
+	
 	immediate = {
 		VEN = { create_vassal = LOM }
 	}
@@ -170,6 +172,58 @@ country_event = {
 		prestige = 20
 	}
 }
+
+country_event = {
+	id = 712344
+	title = "Corsican Nationalists Take Over!"
+	major = no
+	fire_only_once = yes
+	
+	immediate = {
+		473 = { secede_province = CRS }
+	}
+	
+	trigger = {
+		war = no
+		has_country_flag = ended_genoa
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Force them unto their knees!"
+		473 = { secede_province = VEN }
+		badboy = 4
+		prestige = -5
+		473 = { 
+			any_pop = { 
+				militancy = 7 
+			}
+		}
+	}
+	
+	option = {
+		name = "Find a compromise"
+		badboy = 1
+		create_vassal = CRS
+		473 = { 
+			any_pop = { 
+				militancy = 3
+				consciousness = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "Let them go"
+		badboy = -3
+	}
+}
+		
+		
+	
 		
 		
 		

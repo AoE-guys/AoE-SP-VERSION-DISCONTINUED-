@@ -82,9 +82,11 @@ political_decisions = {
 			OR = {
 				LOM = { is_independant = no }
 				LOM = { exists = no }
-				is_secondary_power = yes
-				military_score = 25
 			}
+			is_secondary_power = yes
+			military_score = 25
+			war = no
+			
 		}
 		
 		effect = {
@@ -107,6 +109,56 @@ political_decisions = {
 		
 		}
 	}
+	
+	End Genoa once and for all = {
+		picture = genoa
+		potential = {
+			has_country_flag = into_italy
+			has_country_flag = demand_milan_done
+			NOT = {
+				has_country_flag = ended_genoa
+			}
+		}
+		
+		allow = {
+			is_secondary_power = yes
+			war = no
+			OR = {
+				is_our_vassal = LOM
+				AND = {
+					owns = 722
+					owns = 723
+					owns = 726
+				}
+			}
+		}
+		
+		effect = {
+			
+			war = {
+				target = GEN
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = yes
+			}
+			724 = { 
+				add_core = THIS 
+			}
+			725 = {
+				add_core = THIS 
+			}
+			740 = {
+				add_core = THIS 
+			}
+			set_country_flag = ended_genoa
+		}
+	}
+			
+
+		
+			
+				
+			
 	
 			
 			
