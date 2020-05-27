@@ -93,6 +93,7 @@ political_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = enacted_reichsreform
 			any_country = {
 				limit = {
 					has_country_flag = hre_member
@@ -350,7 +351,7 @@ political_decisions = {
 	proclaim_erbkaisertum = {
 		picture = flag_hre
 		potential = {
-			has_country_flag = hre_reform_4
+			has_country_flag = hre_emperor
 			NOT = {
 				exists = NNN
 			}
@@ -363,15 +364,15 @@ political_decisions = {
 			is_greater_power = yes
 			war = no
 			NNN = {
-			all_core = {
-				OR = {
-					owned_by = THIS
-					owner = {
-						in_sphere = THIS
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
 					}
 				}
 			}
-		}
 			has_country_flag = reformed_imperial_circles
 			NOT = { has_country_modifier = hre_mendling }
 		}

@@ -947,7 +947,7 @@ cement_factory = {
 		coal = 12		#27.6		total input+maint = 37
 	} 
 	output_goods = cement 
-	value = 3.5			#48
+	value = 6.0			#48
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.25
