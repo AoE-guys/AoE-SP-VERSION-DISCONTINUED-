@@ -44893,8 +44893,8 @@
 # Chirskaya
 1046 = {
     text_position = {
-        x = 3469.600098
-        y = 1572.800049
+        x = 3456.600098
+        y = 1582.800049
     }
 
     text_scale = 3.299999
@@ -44931,40 +44931,40 @@
 # Azov
 1047 = {
     text_position = {
-        x = 3419
-        y = 1567
+        x = 3422
+        y = 1577
     }
 
-    text_scale = 3.399999
+    text_scale = 2.99999
     unit = {
-        x = 3419
-        y = 1567
+        x = 3422
+        y = 1577
     }
 
     factory = {
-        x = 3419
-        y = 1567
+        x = 3422
+        y = 1577
     }
 
     building_construction = {
-        x = 3419
-        y = 1567
+        x = 3422
+        y = 1577
     }
 
     military_construction = {
-        x = 3419
-        y = 1567
+        x = 3422
+        y = 1577
     }
 
     building_position = {
         fort = {
-            x = 3419
-            y = 1567
+        x = 3422
+        y = 1577
         }
 
         naval_base = {
-            x = 3405.200000
-            y = 1566.650000
+            x = 3419.200000
+            y = 1574.650000
         }
 
     }
@@ -74671,35 +74671,36 @@
 # Chenachene
 1717 = {
     unit = {
-        x = 2762.000000
+        x = 2735.000000
         y = 1194.000000
     }
 
     text_position = {
-        x = 2762.000000
-        y = 1181.000000
+        x = 2737.000000
+        y = 1184.000000
     }
 
+	text_rotation = 0.785399
     text_scale = 4.599998
     building_construction = {
-        x = 2778.000000
-        y = 1198.000000
+        x = 2735.000000
+        y = 1194.000000
     }
 
     military_construction = {
-        x = 2762.000000
-        y = 1171.000000
+        x = 2734.000000
+        y = 1193.000000
     }
 
     factory = {
-        x = 2746.000000
-        y = 1197.000000
+        x = 2736.000000
+        y = 1190.000000
     }
 
     building_position = {
         fort = {
-            x = 2781.000000
-            y = 1149.000000
+			x = 2737.000000
+			y = 1194.000000
         }
 
     }
@@ -78262,32 +78263,32 @@
 
 }
 
-# Jenne
+# Timebuktu
 1802 = {
     text_position = {
-        x = 2748.545000
-        y = 1028.168333
+        x = 2761
+        y = 1021
     }
 
     text_scale = 3.0
     unit = {
-        x = 2734.131667
-        y = 1025.740000
+        x = 2762
+        y = 1024
     }
 
     factory = {
-        x = 2763.193333
-        y = 1020.256667
+        x = 2761
+        y = 1021
     }
 
     building_construction = {
-        x = 2764.368333
-        y = 1035.923333
+        x = 2761
+        y = 1021
     }
 
 }
 
-# Timbuktu
+# Djenne
 1803 = {
     text_position = {
         x = 2740.001667
@@ -84178,35 +84179,35 @@
 # Gombe
 1944 = {
     text_position = {
-        x = 2992.045000
-        y = 933.585000
+        x = 2999
+        y = 952
     }
 
     text_scale = 3.499999
     unit = {
-        x = 2983.000000
-        y = 927.000000
+        x = 2998
+        y = 953
     }
 
     factory = {
-        x = 2993.125000
-        y = 940.335000
+        x = 2999
+        y = 952
     }
 
     building_construction = {
-        x = 2994.000000
-        y = 929.000000
+        x = 2999
+        y = 952
     }
 
     military_construction = {
-        x = 2980.000000
-        y = 916.000000
+        x = 2999
+        y = 952
     }
 
     building_position = {
         fort = {
-            x = 2968.000000
-            y = 921.000000
+			x = 2999
+			y = 952
         }
 
     }
@@ -128786,6 +128787,36 @@
 
     building_rotation = {
         naval_base = 3.979945
+    }
+
+}
+
+# Erg Iguidi
+3357 = {
+    text_position = {
+        x = 2700.150000
+        y = 1200.700000
+    }
+
+    text_scale = 2.5
+    unit = {
+        x = 2709.150000
+        y = 1193.700000
+    }
+
+}
+
+# El Djouf
+3358 = {
+    text_position = {
+        x = 2719.150000
+        y = 1134.700000
+    }
+
+    text_scale = 2.5
+    unit = {
+        x = 2719.150000
+        y = 1134.700000
     }
 
 }
