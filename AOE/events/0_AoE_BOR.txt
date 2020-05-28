@@ -1080,3 +1080,29 @@ country_event = {
 		prestige = -10
 	}
 }
+
+country_event = {
+	id = 171117
+	title = "National Awakening"
+	desc = "The Norman culture shall not disappear!"
+	picture = deliberation
+	fire_only_once = yes
+	
+	option = {
+		name = "Surprise, we'r back, where them thrones at?"
+		415 = {
+			add_province_modifier = normans_back
+		}
+		416 = {
+			add_province_modifier = normans_back
+		}
+		417 = {
+			add_province_modifier = normans_back
+		}
+		418 = {
+			add_province_modifier = normans_back
+		}
+		prestige = 20
+		ai_chance = { factor = 1 }	
+	}
+}
