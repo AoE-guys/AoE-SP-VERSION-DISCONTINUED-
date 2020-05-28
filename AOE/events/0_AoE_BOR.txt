@@ -1091,16 +1091,28 @@ country_event = {
 	option = {
 		name = "Surprise, we'r back, where them thrones at?"
 		415 = {
-			add_province_modifier = normans_back
+			add_province_modifier = { 
+				name = normans_back
+				duration = 3000
+			}
 		}
 		416 = {
-			add_province_modifier = normans_back
+			add_province_modifier = { 
+				name = normans_back
+				duration = 3000
+			}
 		}
 		417 = {
-			add_province_modifier = normans_back
+			add_province_modifier = { 
+				name = normans_back
+				duration = 3000
+			}
 		}
 		418 = {
-			add_province_modifier = normans_back
+			add_province_modifier = { 
+				name = normans_back
+				duration = 3000
+			}
 		}
 		prestige = 20
 		ai_chance = { factor = 1 }	
