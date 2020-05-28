@@ -34,8 +34,13 @@ political_decisions = {
 		effect = {
 			prestige = 20
 			all_core = {
-				remove_core = ENG
 				add_core = GBR
+				remove_core = ENG
+			}
+			SCO = {
+				all_core = {
+					add_core = GBR
+				}
 			}
 			change_tag = GBR
 			add_accepted_culture = scottish
@@ -54,10 +59,10 @@ political_decisions = {
 					exists = yes
 					ai = no
 				}
-				country_event = 11101
 				any_owned = {
 					add_core = GBR
 				}
+				country_event = 11101
 			}
 			any_country = {
 				limit = {
