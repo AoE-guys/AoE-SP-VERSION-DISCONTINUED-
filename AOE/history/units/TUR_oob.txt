@@ -1,8 +1,14 @@
 #Sphere of Influence
 #Asia
 PER = {
-	value = -50	#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	value = -100	
+	level = 0		
+	influence_value = 0
+}
+
+DLM = {
+	value = 75	
+	level = 5		
 	influence_value = 0
 }
 
@@ -10,37 +16,31 @@ QNG = {
 	level = 0
 }
 
-BTL = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
+CRI = {
+	value = 125		
+	level = 5		
 	influence_value = 0
 }
 
-BHT = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+MOL = {
+	value = 65
+	level = 3
+	influence_value = 25
 }
 
-BNB = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
-}
-
-BDN = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
+WAL = {
+	value = 25
+	level = 3
 	influence_value = 0
 }
 
 #Middle East
-KWT = {
+ALD = {
 	value = 150
 	level = 5
 	influence_value = 0
 }
-HAL = {
+MOR = {
 	value = 150
 	level = 5
 	influence_value = 0
@@ -54,39 +54,38 @@ NEJ = {
 	value = 50
 }
 HDJ = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 = sphere
+	value = 125		
+	level = 5		
 	influence_value = 0
 }
-
 NYE = {
-	value = 0
-	level = 1		#3=cordial, 4 = friendly, 5 = sphere
+	value = 50
+	level = 3		
 	influence_value = 0
 }
 
 BHR = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 = sphere
+	value = 125		
+	level = 5		
 	influence_value = 0
 }
 
 QAT = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 = sphere
+	value = 125		
+	level = 5		
 	influence_value = 0
 }
 
 #Africa
 EGY = {
-	value = -50		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
+	value = -50		
+	level = 1		
 	influence_value = 0
 	truce_until = 1838.1.1
 }
 TUN = {
-	value = 125		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	value = 125		
+	level = 5		
 	influence_value = 0
 }
 MOR = {
@@ -95,28 +94,18 @@ MOR = {
 
 #Europe
 GRE = {
-	value = -25		#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	value = -25		
+	level = 0		
 	influence_value = 0
 }
 SER = {
-	value = 0		#relation
-	level = 5		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
-}
-MOL = {
-	value = 125
-	level = 4
-	influence_value = 0
-}
-WAL = {
-	value = 125
-	level = 4
+	value = 0		
+	level = 3		
 	influence_value = 0
 }
 ATJ = {
-	value = 50		#relation
-	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	value = 50		
+	level = 3		
 	influence_value = 0
 }
 
@@ -127,61 +116,62 @@ SPA = { value = 25 }
 AUS = { value = 25 }
 RUS = { value = 75 }
 ENG = { value = 125 }
-FRA = { value = -75 }
+BOR = { value = -75 }
+MUG = { value = -100 }
 
 army = {
 	name = "Mansure Army"
-	location = 1049
+	location = 860
 	regiment = {
-		name= "1. Tümeni Firkasi"
+		name= "1. TEeni Firkasi"
 		type = infantry
 		home = 860
 	}
 
 	regiment = {
-		name= "2. Tümeni Firkasi"
+		name= "2. TEeni Firkasi"
 		type = infantry
 		home = 828
 	}
 
 	regiment = {
-		name= "3. Tümeni Firkasi"
+		name= "3. TEeni Firkasi"
 		type = infantry
 		home = 859
 	}
 	
 	regiment = {
-		name= "4. Tümeni Firkasi"
+		name= "4. TEeni Firkasi"
 		type = infantry
 		home = 802
 	}
 
 	regiment = {
-		name= "5. Tümeni Firkasi"
+		name= "5. TEeni Firkasi"
 		type = infantry
 		home = 803
 	}
 
 	regiment = {
-		name= "6. Tümeni Firkasi"
+		name= "6. TEeni Firkasi"
 		type = infantry
 		home = 860
 	}
 	
 	regiment = {
-		name= "1. Süvari Firkasi"
+		name= "1. SEari Firkasi"
 		type = cuirassier
 		home = 798
 	}
 
 	regiment = {
-		name= "2. Süvari Firkasi"
+		name= "2. SEari Firkasi"
 		type = cuirassier
 		home = 799
 	}
 	
 	regiment = {
-		name= "3. Süvari Firkasi"
+		name= "3. SEari Firkasi"
 		type = cuirassier
 		home = 853
 	}
@@ -196,58 +186,58 @@ army = {
 
 army = {
 	name = "1st Army"
-	location = 970
+	location = 810
 	
 	regiment = {
-		name= "7. Tümeni Firkasi"
+		name= "7. TEeni Firkasi"
 		type = infantry
 		home = 807
 	}
 
 	regiment = {
-		name= "8. Tümeni Firkasi"
+		name= "8. TEeni Firkasi"
 		type = infantry
 		home = 807
 	}
 	
 	regiment = {
-		name= "9. Tümeni Firkasi"
+		name= "9. TEeni Firkasi"
 		type = infantry
 		home = 849
 	}
 
 	regiment = {
-		name= "10. Tümeni Firkasi"
+		name= "10. TEeni Firkasi"
 		type = infantry
 		home = 850
 	}
 
 	regiment = {
-		name= "11. Tümeni Firkasi"
+		name= "11. TEeni Firkasi"
 		type = infantry
 		home = 851
 	}
 	
 	regiment = {
-		name= "12. Tümeni Firkasi"
+		name= "12. TEeni Firkasi"
 		type = infantry
 		home = 882
 	}
 	
 	regiment = {
-		name= "4. Süvari Firkasi"
+		name= "4. SEari Firkasi"
 		type = cuirassier
 		home = 783
 	}
 	
 	regiment = {
-		name= "5. Süvari Firkasi"
+		name= "5. SEari Firkasi"
 		type = cuirassier
 		home = 806
 	}
 	
 	regiment = {
-		name= "6. Süvari Firkasi"
+		name= "6. SEari Firkasi"
 		type = cuirassier
 		home = 884
 	}
@@ -261,52 +251,52 @@ army = {
 
 army = {
 	name = "2nd Army"
-	location = 973
+	location = 878
 	
 	regiment = {
-		name= "13. Tümeni Firkasi"
+		name= "13. TEeni Firkasi"
 		type = infantry
 		home = 879
 	}
 
 	regiment = {
-		name= "14. Tümeni Firkasi"
+		name= "14. TEeni Firkasi"
 		type = infantry
 		home = 1780
 	}
 	
 	regiment = {
-		name= "15. Tümeni Firkasi"
+		name= "15. TEeni Firkasi"
 		type = infantry
 		home = 813
 	}
 
 	regiment = {
 		name= "1. Timariot"
-		type = artillery
+		type = irregular
 		home = 887
 	}
 
 	regiment = {
 		name= "2. Timariot"
-		type = artillery
+		type = irregular
 		home = 887
 	}
 	
 	regiment = {
 		name= "3. Timariot"
-		type = artillery
+		type = irregular
 		home = 675
 	}
 	
 	regiment = {
-		name= "7. Süvari Firkasi"
+		name= "7. SEari Firkasi"
 		type = cuirassier
 		home = 806
 	}
 
 	regiment = {
-		name= "8. Süvari Firkasi"
+		name= "8. SEari Firkasi"
 		type = cuirassier
 		home = 811
 	}
@@ -321,29 +311,29 @@ army = {
 
 army = {
 	name = "3rd Army"
-	location = 967
+	location = 818
 	
 
 	regiment = {
-		name= "16. Tümeni Firkasi"
+		name= "16. TEeni Firkasi"
 		type = infantry
 		home = 818
 	}
 
 	regiment = {
 		name= "4. Timariot"
-		type = artillery
+		type = irregular
 		home = 809
 	}
 
 	regiment = {
 		name= "5. Timariot"
-		type = artillery
+		type = irregular
 		home = 814
 	}
 	
 	regiment = {
-		name= "9. Süvari Firkasi"
+		name= "9. SEari Firkasi"
 		type = cuirassier
 		home = 812
 	}
@@ -361,20 +351,20 @@ army = {
 	location = 923
 	
 	regiment = {
-		name= "17. Tümeni Firkasi"
+		name= "17. TEeni Firkasi"
 		type = infantry
 		home = 860
 	}
 	
 	regiment = {
 		name= "6. Timariot"
-		type = artillery
+		type = irregular
 		home = 863
 	}
 	
 	regiment = {
 		name= "7. Timariot"
-		type = artillery
+		type = irregular
 		home = 923
 	}
 	
@@ -397,14 +387,14 @@ army = {
 	location = 1096
 
 	regiment = {
-		name= "18. Tümeni Firkasi"
+		name= "18. TEeni Firkasi"
 		type = infantry
 		home = 923
 	}
 
 	regiment = {
 		name= "2. Timariot"
-		type = artillery
+		type = irregular
 		home = 824
 	}
 	
@@ -426,7 +416,7 @@ army = {
 	location = 1736
 	regiment = {
 		name= "1. Askäris"
-		type = artillery
+		type = irregular
 		home = 1735
 	}
 	regiment = {
@@ -630,7 +620,7 @@ leader = {
 }
 
 leader = {
-	name = "Abdülkerim Pasha"
+	name = "AbdEkerim Pasha"
 	date = 1836.1.1
 	type = land
 	personality = active_p

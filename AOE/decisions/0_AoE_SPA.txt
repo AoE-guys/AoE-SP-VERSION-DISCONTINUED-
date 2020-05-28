@@ -130,6 +130,7 @@ political_decisions = {
 			}
 			set_country_flag = claimed_leon
 			add_accepted_culture = spanish
+			badboy = 5
 		}
 		ai_will_do = {					
 			factor = 1
@@ -161,6 +162,7 @@ political_decisions = {
 			}
 			set_country_flag = claimed_douro
 			add_accepted_culture = portuguese
+			badboy = 5
 		}
 		ai_will_do = {					
 			factor = 1
@@ -183,6 +185,8 @@ political_decisions = {
 				add_core = THIS
 			}
 			set_country_flag = claimed_logrono
+			badboy = 2
+			prestige = 5
 		}
 		ai_will_do = {					
 			factor = 1
