@@ -840,6 +840,10 @@ promote_to = {
 			literacy = 0.99
 			NOT = { artisans = 0.10 }
 		}
+		modifier = {
+			factor = -500
+			artisans = 0.10
+		}
 	}
 	bureaucrats = {
 		factor = 0.01
@@ -901,6 +905,10 @@ promote_to = {
 			factor = 25
 			administration_spending = 0.99
 			NOT = { bureaucrats = 0.030 }
+		}
+		modifier = {
+			factor = -500
+			bureaucrats = 0.030
 		}
 	}
 	soldiers =
@@ -965,6 +973,10 @@ promote_to = {
 			military_spending = 0.99
 			NOT = { soldiers = 0.050 }
 		} 
+		modifier = {
+			factor = -500
+			soldiers = 0.050
+		}
 	}
 
 	clerks = {
@@ -1032,6 +1044,10 @@ promote_to = {
 			factor = -100
 			location = { is_colonial = yes }
 		}
+		modifier = {
+			factor = -500
+			clerks = 0.030
+		}
 	}
 
 
@@ -1097,6 +1113,10 @@ promote_to = {
 			education_spending = 0.99
 			NOT = { clergymen = 0.040 }
 		}
+		modifier = {
+			factor = -500
+			clergymen = 0.040
+		}
 	}
 	capitalists = 
 	{
@@ -1105,55 +1125,59 @@ promote_to = {
 			factor = 20
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			NOT = { capitalists = 0.005 }
+			NOT = { capitalists = 0.004 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			NOT = { capitalists = 0.010 }
+			NOT = { capitalists = 0.008 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			NOT = { capitalists = 0.015 }
+			NOT = { capitalists = 0.012 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			NOT = { capitalists = 0.020 }
+			NOT = { capitalists = 0.016 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.5
 			NOT = { literacy = 0.5 }
-			NOT = { capitalists = 0.025 }
+			NOT = { capitalists = 0.020 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			NOT = { capitalists = 0.030 }
+			NOT = { capitalists = 0.024 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			NOT = { capitalists = 0.035 }
+			NOT = { capitalists = 0.032 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			NOT = { capitalists = 0.040 }
+			NOT = { capitalists = 0.036 }
 		}
 		modifier = {
 			factor = 20
 			literacy = 0.99
-			NOT = { capitalists = 0.045 }
+			NOT = { capitalists = 0.040 }
 		}  
+		modifier = {
+			factor = -500
+			capitalists = 0.040
+		}
 	}
 }
 
