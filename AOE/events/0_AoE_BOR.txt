@@ -1088,6 +1088,10 @@ country_event = {
 	picture = deliberation
 	fire_only_once = yes
 	
+	trigger = {
+		tag = NRM
+	}
+	
 	option = {
 		name = "Surprise, we'r back, where them thrones at?"
 		415 = {
