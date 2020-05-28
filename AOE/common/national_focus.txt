@@ -480,34 +480,34 @@ party_loyalty_focus = {
 	#	icon = 32
 	#}
 	
-	reactionary_focus = {
-		ideology = reactionary
-		loyalty_value = 0.005 # By that much pops will be more loyal
-		icon = 33
-	}
-	
 	conservative_focus = {
 		ideology = conservative
 		loyalty_value = 0.005 # By that much pops will be more loyal
 		icon = 34
 	}
 	
-	socialist_focus = {
-		ideology = socialist
+	reactionary_focus = {
+		ideology = reactionary
 		loyalty_value = 0.005 # By that much pops will be more loyal
-		icon = 35
+		icon = 33
+	}
+	
+	#socialist_focus = {
+	#	ideology = socialist
+	#	loyalty_value = 0.005 # By that much pops will be more loyal
+	#	icon = 35
+	#}
+
+	liberal_focus = {
+		ideology = liberal
+		loyalty_value = 0.005 # By that much pops will be more loyal
+		icon = 37
 	}
 	
 	communist_focus = {
 		ideology = communist
 		loyalty_value = 0.005 # By that much pops will be more loyal
 		icon = 36
-	}
-	
-	liberal_focus = {
-		ideology = liberal
-		loyalty_value = 0.005 # By that much pops will be more loyal
-		icon = 37
 	}
 	
 	#anarcho_liberal_focus = {
