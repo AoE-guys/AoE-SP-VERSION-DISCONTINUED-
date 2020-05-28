@@ -1,0 +1,309 @@
+country_event = {
+	id = 78883
+	title = "Taman Penninsula Ceded"
+	desc = "EVTDESC78883"
+	picture = janisseries_tur
+	is_triggered_only = yes
+	
+	option = {
+		name = "Recompensate their losses financially"
+		treasury = -1500
+	}
+}
+country_event = {
+	id = 173600
+	title = "Janissaries furious"
+	desc = "EVTDESC173600"
+	picture = janisseries_tur
+	
+	trigger = {
+		tag = TUR
+		NOT = { military_spending = 0.5 }
+		NOT = { has_country_modifier = janisseries_angry }
+		NOT = { has_country_modifier = janisseries_furious }
+		NOT = { has_country_flag = abolished_janisseries }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Recompensate their losses"
+		treasury = -1500
+		middle_strata = {
+			militancy = 1.5
+		}
+		add_country_modifier = {
+			name = janisseries_angry
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "Don't bother me with those fools"
+		middle_strata = {
+			militancy = 3
+		}
+		add_country_modifier = {
+			name = janisseries_furious
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 173601
+	title = "Janissaries oppose new reforms"
+	desc = "EVTDESC173601"
+	picture = janisseries_tur
+	
+	trigger = {
+		tag = TUR
+		has_country_modifier = prussian_military_advisors
+		NOT = { has_country_modifier = janisseries_angry }
+		NOT = { has_country_modifier = janisseries_furious }
+		NOT = { has_country_flag = abolished_janisseries }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Pay them off"
+		treasury = -1000
+		middle_strata = {
+			militancy = 1.5
+		}
+		add_country_modifier = {
+			name = janisseries_angry
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "Force them to obey reforms"
+		middle_strata = {
+			militancy = 3
+		}
+		add_country_modifier = {
+			name = janisseries_furious
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 173602
+	title = "Janissaries demand higher pay for war"
+	desc = "EVTDESC173602"
+	picture = janisseries_tur
+	
+	trigger = {
+		tag = TUR
+		war = yes
+		NOT = { has_country_modifier = janisseries_angry }
+		NOT = { has_country_modifier = janisseries_furious }
+		NOT = { has_country_flag = abolished_janisseries }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Pay them off"
+		treasury = -10000
+	}
+	
+	option = {
+		name = "Ignore them"
+		middle_strata = {
+			militancy = 1
+		}
+		add_country_modifier = {
+			name = janisseries_angry
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 173603
+	title = "The Great Sack of Vienna"
+	desc = "EVTDESC173603"
+	picture = vienna_boom
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "HA! Take that Habsburgs!"
+		treasury = 5000
+		619 = {
+			life_rating = -5
+			RGO_size = -1
+			fort = -2
+			infrastructure = -2
+		}
+		AUS = { country_event = 173604 }
+		prestige = 30
+		badboy = 10
+	}
+}
+
+country_event = {
+	id = 173604
+	title = "The Great Sack of Vienna"
+	desc = "EVTDESC173604"
+	picture = vienna_boom
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "Those saveges..."
+		treasury = -5000
+		prestige = -30
+	}
+}
+
+country_event = {
+	id = 173605
+	title = "Prussian military delegation to Turkey"
+	desc = "EVTDESC173605"
+	picture = conscription_marching
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "Send off the envoy immedietly"
+		money = 5000
+		TUR = {	country_event = 173606 }
+		prestige = 30
+		ai_chance = { factor = 1 }	
+	}
+	
+	option = {
+		name = "They're on their own"
+		TUR = {	country_event = 173607 }
+		prestige = 5
+	}
+}
+country_event = {
+	id = 173606
+	title = "Prussian advisors arrive"
+	desc = "EVTDESC173606"
+	picture = conscription_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		money = -5000 
+		add_country_modifier = {
+			name = prussian_military_advisors
+			duration = 7300
+		}
+	}
+}
+country_event = {
+	id = 173607
+	title = "Prussia refuses"
+	desc = "EVTDESC173607"
+	picture = conscription_marching
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh well..."
+		relation = {
+			who = PRU
+			value = -20
+		}
+	}
+}
+#Crimean raids#
+country_event = {
+	id = 173608
+	title = "Raids on Russia?"
+	desc = "EVTDESC173608"
+	picture = cossacs
+	fire_only_once = yes
+	trigger = {
+		tag = CRI
+		CRI = { exists = yes }
+		year = 1735
+		OR = {
+			pensions = acceptable_pensions
+			pensions = good_pensions
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Countless richess awaits us"
+		RUS = { country_event = 173609 }
+		money = 5000
+		grain = 200
+		fruit = 100
+		fish = 40
+		cattle = 60
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "what if they retaliate?"
+		prestige = -15
+	}
+}
+country_event = {
+	id = 173609
+	title = "Raids on our lands!"
+	desc = "EVTDESC173609"
+	picture = cossacs
+	is_triggered_only = yes
+
+	option = {
+		name = "We will not forget this! Send the envoy to the Ottoman Sultan!"
+		TUR = { country_event = 173610 }
+		money = -5000
+		grain = -200
+		fruit = -100
+		fish = -40
+		cattle = -60
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Let it go."
+		prestige = -60
+	}
+}
+country_event = {
+	id = 173610
+	title = "A Russian envoy arrives"
+	desc = "EVTDESC173610"
+	picture = cossacs
+	is_triggered_only = yes
+
+	option = {
+		name = "This is outragous! We will not give up our lands!"
+		RUS = {
+			war = {
+				target = TUR
+				attacker_goal = { casus_belli = annex_core_country country = CRI }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Let it go."
+		CRI = {
+			all_core = {
+				secede_province = RUS
+			}
+		}
+		prestige = -60
+	}
+}
