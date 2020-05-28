@@ -140,6 +140,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		690 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -907,6 +913,18 @@ country_event = {
 			}
 		}
 		203 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		3363 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		693 = {
 			add_province_modifier = {
 				name = potential_trade_post
 				duration = -1
