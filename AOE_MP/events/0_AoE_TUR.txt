@@ -1,4 +1,16 @@
 country_event = {
+	id = 78883
+	title = "Taman Penninsula Ceded"
+	desc = "EVTDESC78883"
+	picture = janisseries_tur
+	is_triggered_only = yes
+	
+	option = {
+		name = "Recompensate their losses financially"
+		treasury = -1500
+	}
+}
+country_event = {
 	id = 173600
 	title = "Janissaries furious"
 	desc = "EVTDESC173600"
