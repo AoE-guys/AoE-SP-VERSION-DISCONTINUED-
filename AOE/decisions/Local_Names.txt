@@ -1,0 +1,78 @@
+political_decisions = {
+	scottish_gaelic_province_names = {
+		picture = gtfo
+		potential = {
+				tag = SCO
+				NOT = { has_country_flag = scottish_gaelic_names }
+			}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = scottish_gaelic_names
+			267 = { change_province_name = "Inbhir Nis" }
+			266 = { change_province_name = "Obar Dheathain" }
+			268 = { change_province_name = "Dún Deagh" } 
+			270 = { change_province_name = "Sruighlea" }
+			269 = { change_province_name = "Glaschu" }
+			271 = { change_province_name = "Dún Èideann" }
+			272 = { change_province_name = "Dún Phris" }
+			1724 = { change_province_name = "Arcaibh & Sealtainn" }
+			304 = { change_province_name = "Eilean Mhanainn" }
+		}
+		ai_will_do = { factor = 0 }
+	}
+}
+
+political_decisions = {
+	irish_province_names = {
+		picture = gtfo
+		potential = {
+				tag = IRE
+				NOT = { has_country_flag = irish_names }
+			}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = irish_names
+			254 = { change_province_name = "Béal Feirste" }
+			256 = { change_province_name = "Ard Mhacha" }
+			255 = { change_province_name = "Doire" }
+			257 = { change_province_name = "Dún na nGall" }
+			263 = { change_province_name = "Baile Átha Cliath" }
+			264 = { change_province_name = "Chill Dara" }
+			265 = { change_province_name = "Loch Garman" }
+			259 = { change_province_name = "Sligeach" }
+			258 = { change_province_name = "Gaillimh" }
+			261 = { change_province_name = "Luimneach" }
+			262 = { change_province_name = "Phort Láirge" }
+			260 = { change_province_name = "Chorcaí" }
+		}
+		ai_will_do = { factor = 0 }
+	}
+}
+
+political_decisions = {
+	welsh_province_names = {
+		picture = gtfo
+		potential = {
+				tag = WHA
+				NOT = { has_country_flag = welsh_names }
+			}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = welsh_names
+			276 = { change_province_name = "Caergybi" }
+			275 = { change_province_name = "Llandrindod" }
+			274 = { change_province_name = "Aberteifi" }
+			273 = { change_province_name = "Caerdydd" }
+		}
+		ai_will_do = { factor = 0 }
+	}
+}

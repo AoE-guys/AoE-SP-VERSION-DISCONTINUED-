@@ -1,4 +1,33 @@
 political_decisions = {
+
+	cede_taman = {
+			picture = commodities_in_central_asia
+			potential = {
+			tag = CRI
+			NOT = {
+				has_country_flag = ceded_taman
+			}
+		}
+		
+		allow = {
+			1047 = {
+				owned_by = RUS
+			}
+			3363 = {
+				owned_by = THIS
+			}
+			year = 1783
+		}
+		
+		effect = {
+			set_country_flag = ceded_taman
+			3363 = { secede_province = TUR }
+			treasury = 1500000
+			TUR = { country_event = 78883 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 	
 	recruit_prussian_military_advisors = {
 		picture = prussian_advisor
