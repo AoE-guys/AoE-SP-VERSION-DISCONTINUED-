@@ -129,6 +129,7 @@ political_decisions = {
 				add_core = THIS
 			}
 			set_country_flag = claimed_leon
+			add_accepted_culture = spanish
 		}
 		ai_will_do = {					
 			factor = 1
@@ -141,11 +142,9 @@ political_decisions = {
 			NOT = { has_country_flag = claimed_douro }
 		}
 		allow = {
-			OR = {
-				owns = 475
-				owns = 477
-				owns = 482
-			}
+			owns = 475
+			owns = 477
+			owns = 482
 		}
 		effect = {
 			518 = {
@@ -161,6 +160,29 @@ political_decisions = {
 				add_core = THIS
 			}
 			set_country_flag = claimed_douro
+			add_accepted_culture = portuguese
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	navarra_claim_logrono
+		picture = armada
+		potential = {
+			tag = BSQ
+			NOT = { has_country_flag = claimed_logrono }
+		}
+		allow = {
+			OR = {
+				is_vassal = no
+				owns = 460
+			}
+		}
+		effect = {
+			494 = {
+				add_core = THIS
+			}
+			set_country_flag = claimed_logrono
 		}
 		ai_will_do = {					
 			factor = 1
