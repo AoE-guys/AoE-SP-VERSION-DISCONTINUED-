@@ -747,7 +747,11 @@ promote_to = {
 			factor = 20
 			literacy = 0.99
 			NOT = { capitalists = 0.040 }
-		}  
+		} 
+		modifier = {
+			factor = -500
+			capitalists = 0.040
+		}  		
 	}
 	clerks = {
 		factor = 0.01
@@ -814,6 +818,10 @@ promote_to = {
 			factor = -100
 			location = { is_colonial = yes }
 		}
+		modifier = {
+			factor = -500
+			clerks = 0.030
+		}  
 	}
 	farmers = {
 		factor = 0.01
@@ -943,6 +951,10 @@ promote_to = {
 			administration_spending = 0.99
 			NOT = { bureaucrats = 0.030 }
 		}
+		modifier = {
+			factor = -500
+			bureaucrats = 0.030
+		} 
 	}
 	soldiers =
 	{
@@ -1005,6 +1017,10 @@ promote_to = {
 			factor = 30
 			military_spending = 0.99
 			NOT = { soldiers = 0.050 }
+		} 
+		modifier = {
+			factor = -500
+			soldiers = 0.050
 		} 
 	}
 
@@ -1073,6 +1089,10 @@ promote_to = {
 			factor = -100
 			location = { is_colonial = yes }
 		}
+		modifier = {
+			factor = -500
+			craftsmen = 0.15
+		} 
 	}
 
 
@@ -1138,6 +1158,10 @@ promote_to = {
 			education_spending = 0.99
 			NOT = { clergymen = 0.040 }
 		}
+		modifier = {
+			factor = -500
+			clergymen = 0.040
+		} 
 	}
 }
 

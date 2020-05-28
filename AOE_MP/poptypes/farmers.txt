@@ -877,6 +877,10 @@ promote_to = {
 			literacy = 0.99
 			NOT = { artisans = 0.10 }
 		}
+		modifier = {
+			factor = -500
+			artisans = 0.10
+		}
 	}
 	bureaucrats = {
 		factor = 0.01
@@ -938,6 +942,10 @@ promote_to = {
 			factor = 25
 			administration_spending = 0.99
 			NOT = { bureaucrats = 0.030 }
+		}
+		modifier = {
+			factor = -500
+			bureaucrats = 0.030
 		}
 	}
 	soldiers =
@@ -1002,6 +1010,10 @@ promote_to = {
 			military_spending = 0.99
 			NOT = { soldiers = 0.050 }
 		} 
+		modifier = {
+			factor = -500
+			soldiers = 0.050
+		}
 	}
 
 	craftsmen = {
@@ -1010,64 +1022,68 @@ promote_to = {
 			factor = 50
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
-			NOT = { craftsmen = 0.025 }
+			NOT = { craftsmen = 0.015 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
-			NOT = { craftsmen = 0.05 }
+			NOT = { craftsmen = 0.030 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
-			NOT = { craftsmen = 0.075 }
+			NOT = { craftsmen = 0.045 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
-			NOT = { craftsmen = 0.10 }
+			NOT = { craftsmen = 0.060 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.5
 			NOT = { literacy = 0.5 }
-			NOT = { craftsmen = 0.125 }
+			NOT = { craftsmen = 0.075 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
-			NOT = { craftsmen = 0.150 }
+			NOT = { craftsmen = 0.09 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.7
 			NOT = { literacy = 0.8 }
-			NOT = { craftsmen = 0.175 }
+			NOT = { craftsmen = 0.105 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
-			NOT = { craftsmen = 0.200 }
+			NOT = { craftsmen = 0.120 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
-			NOT = { craftsmen = 0.225 }
+			NOT = { craftsmen = 0.135 }
 		}
 		modifier = {
 			factor = 50
 			literacy = 0.99
-			NOT = { craftsmen = 0.250 }
+			NOT = { craftsmen = 0.150 }
 		}
 		modifier = {
 			factor = -100
 			location = { is_colonial = yes }
+		}
+		modifier = {
+			factor = -500
+			craftsmen = 0.150
 		}
 	}
 
@@ -1134,6 +1150,10 @@ promote_to = {
 			education_spending = 0.99
 			NOT = { clergymen = 0.040 }
 		}
+		modifier = {
+			factor = -500
+			clergymen = 0.040
+		}
 	}
 	labourers = {
 		factor = 0.01
@@ -1141,6 +1161,10 @@ promote_to = {
 		modifier = {
 			factor = 10
 			NOT = { labourers = 0.05 }
+		}
+		modifier = {
+			factor = -500
+			labourers = 0.05
 		}
 	}
 }
