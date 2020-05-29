@@ -11,7 +11,7 @@ name = "The Russo-Turkish War"
 	# country - 3rd party
 	# state_province_id - target state capital
 	war_goal = {
-		casus_belli = acquire_state
+		casus_belli = acquire_substate_core_region
 		actor = RUS
 		receiver = TUR
 		state_province_id = 979
