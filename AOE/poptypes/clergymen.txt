@@ -715,55 +715,59 @@ promote_to = {
 			factor = 20
 			military_spending = 0.2
 			NOT = { military_spending = 0.3 }
-			NOT = { officers = 0.002 }
+			NOT = { officers = 0.001 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.3
 			NOT = { military_spending = 0.4 }
-			NOT = { officers = 0.003 }
+			NOT = { officers = 0.002 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.4
 			NOT = { military_spending = 0.5 }
-			NOT = { officers = 0.004 }
+			NOT = { officers = 0.002 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.5
 			NOT = { military_spending = 0.6 }
-			NOT = { officers = 0.005 }
+			NOT = { officers = 0.003 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.6
 			NOT = { military_spending = 0.7 }
-			NOT = { officers = 0.006 }
+			NOT = { officers = 0.003 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.7
 			NOT = { military_spending = 0.8 }
-			NOT = { officers = 0.007 }
+			NOT = { officers = 0.004 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.8
 			NOT = { military_spending = 0.9 }
-			NOT = { officers = 0.008 }
+			NOT = { officers = 0.004 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.9
 			NOT = { military_spending = 0.99 }
-			NOT = { officers = 0.009 }
+			NOT = { officers = 0.005 }
 		}
 		modifier = {
 			factor = 20
 			military_spending = 0.99
-			NOT = { officers = 0.010 }
+			NOT = { officers = 0.005 }
 		}
+		modifier = {
+			factor = -500
+			officers = 0.005
+		} 
 	}		
 	artisans = {
 		factor = 0.01
@@ -826,6 +830,10 @@ promote_to = {
 			literacy = 0.99
 			NOT = { artisans = 0.10 }
 		}
+		modifier = {
+			factor = -500
+			artisans = 0.10
+		} 
 	}
 	bureaucrats = {
 		factor = 0.01
@@ -888,6 +896,10 @@ promote_to = {
 			administration_spending = 0.99
 			NOT = { bureaucrats = 0.030 }
 		}
+		modifier = {
+			factor = -500
+			bureaucrats = 0.030
+		} 
 	}
 	soldiers =
 	{
@@ -950,6 +962,10 @@ promote_to = {
 			factor = 30
 			military_spending = 0.99
 			NOT = { soldiers = 0.050 }
+		} 
+		modifier = {
+			factor = -500
+			soldiers = 0.050
 		} 
 	}
 
@@ -1018,6 +1034,10 @@ promote_to = {
 			factor = -100
 			location = { is_colonial = yes }
 		}
+		modifier = {
+			factor = -500
+			craftsmen = 0.15
+		} 
 	}
 
 
@@ -1096,6 +1116,10 @@ promote_to = {
 			factor = 10
 			NOT = { labourers = 0.05 }
 		}
+		modifier = {
+			factor = -500
+			labourers = 0.05
+		} 
 	}
 }
 

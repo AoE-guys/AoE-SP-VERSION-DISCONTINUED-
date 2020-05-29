@@ -1,14 +1,8 @@
 #Sphere of Influence
 #Asia
 PER = {
-	value = -100	
-	level = 0		
-	influence_value = 0
-}
-
-DLM = {
-	value = 75	
-	level = 5		
+	value = -50	#relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0
 }
 
@@ -16,31 +10,37 @@ QNG = {
 	level = 0
 }
 
-CRI = {
-	value = 125		
-	level = 5		
+BTL = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0
 }
 
-MOL = {
-	value = 65
-	level = 3
-	influence_value = 25
+BHT = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
 }
 
-WAL = {
-	value = 25
-	level = 3
+BNB = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+BDN = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0
 }
 
 #Middle East
-ALD = {
+KWT = {
 	value = 150
 	level = 5
 	influence_value = 0
 }
-MOR = {
+HAL = {
 	value = 150
 	level = 5
 	influence_value = 0
@@ -54,38 +54,39 @@ NEJ = {
 	value = 50
 }
 HDJ = {
-	value = 125		
-	level = 5		
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 = sphere
 	influence_value = 0
 }
+
 NYE = {
-	value = 50
-	level = 3		
+	value = 0
+	level = 1		#3=cordial, 4 = friendly, 5 = sphere
 	influence_value = 0
 }
 
 BHR = {
-	value = 125		
-	level = 5		
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 = sphere
 	influence_value = 0
 }
 
 QAT = {
-	value = 125		
-	level = 5		
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 = sphere
 	influence_value = 0
 }
 
 #Africa
 EGY = {
-	value = -50		
-	level = 1		
+	value = -50		#relation
+	level = 1		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0
 	truce_until = 1838.1.1
 }
 TUN = {
-	value = 125		
-	level = 5		
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0
 }
 MOR = {
@@ -94,18 +95,33 @@ MOR = {
 
 #Europe
 GRE = {
-	value = -25		
-	level = 0		
+	value = -25		#relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0
 }
 SER = {
-	value = 0		
-	level = 3		
+	value = 0		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+MOL = {
+	value = 75
+	level = 4
+	influence_value = 0
+}
+WAL = {
+	value = 45
+	level = 4
 	influence_value = 0
 }
 ATJ = {
-	value = 50		
-	level = 3		
+	value = 50		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+DLM = {
+	value = 50
+	level = 4
 	influence_value = 0
 }
 
@@ -116,12 +132,11 @@ SPA = { value = 25 }
 AUS = { value = 25 }
 RUS = { value = 75 }
 ENG = { value = 125 }
-BOR = { value = -75 }
-MUG = { value = -100 }
+FRA = { value = -75 }
 
 army = {
 	name = "Mansure Army"
-	location = 860
+	location = 1049
 	regiment = {
 		name= "1. Tümeni Firkasi"
 		type = infantry
@@ -186,7 +201,7 @@ army = {
 
 army = {
 	name = "1st Army"
-	location = 810
+	location = 970
 	
 	regiment = {
 		name= "7. Tümeni Firkasi"
@@ -251,7 +266,7 @@ army = {
 
 army = {
 	name = "2nd Army"
-	location = 878
+	location = 973
 	
 	regiment = {
 		name= "13. Tümeni Firkasi"
@@ -273,19 +288,19 @@ army = {
 
 	regiment = {
 		name= "1. Timariot"
-		type = irregular
+		type = artillery
 		home = 887
 	}
 
 	regiment = {
 		name= "2. Timariot"
-		type = irregular
+		type = artillery
 		home = 887
 	}
 	
 	regiment = {
 		name= "3. Timariot"
-		type = irregular
+		type = artillery
 		home = 675
 	}
 	
@@ -311,7 +326,7 @@ army = {
 
 army = {
 	name = "3rd Army"
-	location = 818
+	location = 967
 	
 
 	regiment = {
@@ -322,13 +337,13 @@ army = {
 
 	regiment = {
 		name= "4. Timariot"
-		type = irregular
+		type = artillery
 		home = 809
 	}
 
 	regiment = {
 		name= "5. Timariot"
-		type = irregular
+		type = artillery
 		home = 814
 	}
 	
@@ -358,13 +373,13 @@ army = {
 	
 	regiment = {
 		name= "6. Timariot"
-		type = irregular
+		type = artillery
 		home = 863
 	}
 	
 	regiment = {
 		name= "7. Timariot"
-		type = irregular
+		type = artillery
 		home = 923
 	}
 	
@@ -394,7 +409,7 @@ army = {
 
 	regiment = {
 		name= "2. Timariot"
-		type = irregular
+		type = artillery
 		home = 824
 	}
 	
@@ -416,7 +431,7 @@ army = {
 	location = 1736
 	regiment = {
 		name= "1. Askäris"
-		type = irregular
+		type = artillery
 		home = 1735
 	}
 	regiment = {

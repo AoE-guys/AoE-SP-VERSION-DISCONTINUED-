@@ -323,4 +323,31 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	unite_dalmatia_ragusa = {
+		picture = venetian_ambitions
+		potential = {
+			tag = DLM
+			NOT = { has_country_flag = ragusa_united_dalmatia }
+		}
+
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = ragusa_united_dalmatia
+			774 = {
+				add_core = THIS
+			}
+			778 = {
+				add_core = THIS
+			}
+			badboy = 5
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
 }

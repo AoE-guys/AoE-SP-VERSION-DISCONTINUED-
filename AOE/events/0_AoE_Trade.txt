@@ -140,6 +140,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		690 = {
+			add_province_modifier = {
+				name = trade_centre
+				duration = -1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -912,6 +918,18 @@ country_event = {
 				duration = -1
 			}
 		}
+		3363 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
+		693 = {
+			add_province_modifier = {
+				name = potential_trade_post
+				duration = -1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -1170,5 +1188,262 @@ country_event = {
 			}
 		}
 	}
-}	
-			
+}
+	
+country_event = {
+	id = 69428
+	title = "Potat"
+	desc = "Mmmmmmmmmmmpotat"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		254 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		256 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		255 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		257 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		263 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		264 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		265 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		259 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		258 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		261 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		262 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+		260 = { 
+			add_province_modifier = {
+				name = potat
+				duration = -1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = 69429
+	title = "Austrian Baroque"
+	desc = "Austria Rising"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		3253 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		614 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		612 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		735 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		734 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		615 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		618 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		613 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		3311 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		617 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		616 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		3312 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		767 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		768 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		620 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		622 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		621 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		619 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		3288 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		769 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		736 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+		737 = { 
+			add_province_modifier = {
+				name = austrian_baroque
+				duration = -1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = 69430
+	title = "Hara Hachi Bun Me"
+	desc = "Ryukyuan Longetivity"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		1678 = { 
+			add_province_modifier = {
+				name = hara_hachi_bun_me
+				duration = -1
+			} 
+		}
+		1679 = { 
+			add_province_modifier = {
+				name = hara_hachi_bun_me
+				duration = -1
+			} 
+		}
+	}
+}

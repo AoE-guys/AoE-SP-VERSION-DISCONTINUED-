@@ -655,7 +655,7 @@ asia_mob_nerf = {
 		}
 	}
 	icon = 10
-	mobilisation_size = -0.60
+	mobilisation_size = -0.025
 }
 chinese_substate = {
 	trigger = {
@@ -671,6 +671,22 @@ chinese_substate = {
 	icon = 10
 	research_points_modifier = -0.2
 	global_pop_consciousness_modifier = 0.02
+}
+
+own_kiel_canal = {
+	trigger = {
+		exists = yes
+		ai = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	icon = 9
+	global_pop_militancy_modifier = -0.05
 }
 
 own_kiel_canal = {
