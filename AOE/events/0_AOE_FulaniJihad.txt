@@ -223,9 +223,8 @@ country_event = {
 				}
 			}
 			1952 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-			release = DAM
-			owner = { prestige = 1 }
 		}
+		release = DAM
 
 	}
 }
