@@ -105,18 +105,23 @@ SER = {
 	influence_value = 0
 }
 MOL = {
-	value = 125
+	value = 75
 	level = 4
 	influence_value = 0
 }
 WAL = {
-	value = 125
+	value = 45
 	level = 4
 	influence_value = 0
 }
 ATJ = {
 	value = 50		#relation
 	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+DLM = {
+	value = 50
+	level = 4
 	influence_value = 0
 }
 

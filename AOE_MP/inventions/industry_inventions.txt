@@ -43,12 +43,6 @@ wright_n_langleys_aeroplanes = {
 			}
 		}
 	}
-	effect = {
-		activate_building = aeroplane_factory 
-		factory_goods_output = {
-			machine_parts = 0.02 
-		}
-	}
 }
 
 tractors = {

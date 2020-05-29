@@ -6100,7 +6100,6 @@ mass_slave_revolt = {
 
 trade_centre = {
 	icon = 11
-	#goods_demand = 0.2
 	immigrant_attract = 0.25
 	local_factory_throughput = 0.25
 	tariff_efficiency_modifier = 0.01
@@ -6270,8 +6269,31 @@ khan_converted = {
 }
 
 potat = {
-	population_growth = 0.001
+	population_growth = 0.002
 	immigrant_push = 0.35
+	icon = 19
+}
+
+austrian_baroque = {
+	population_growth = 0.001
+	prestige = 0.001
+	icon = 5
+}
+
+normans_back = {
+	assimilation_rate = 2.5
+	icon = 19
+}
+
+hara_hachi_bun_me = {
+	population_growth = 0.001
+	goods_demand = 0.1
+	icon = 5
+}
+
+caledonia = {
+	global_immigrant_attract = 2.5
+	icon = 19
 }
 
 #EIC

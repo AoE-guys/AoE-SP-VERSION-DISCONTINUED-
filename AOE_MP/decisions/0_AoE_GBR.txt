@@ -404,4 +404,23 @@ political_decisions = {
 			}
 		}
 	}
+	
+	third_darien_expedition = {
+		picture = Panama3
+		potential = {
+			tag  = SCO
+			is_vassal = no
+			NOT = { has_country_flag = third_expedition_to_panama }
+		}
+		allow = {
+			is_secondary_power = yes
+			money = 20000
+		}
+		effect = {
+			prestige = 10
+			CLM_1723 = {
+				add_core = SCO
+			}
+		}
+	}
 }

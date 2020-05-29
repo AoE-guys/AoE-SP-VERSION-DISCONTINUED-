@@ -106,4 +106,93 @@ political_decisions = {
 		factor = 1
 		}
 	}
+	galicia_claim_leon = {
+		picture = armada
+		potential = {
+			tag = GLC
+			NOT = { has_country_flag = claimed_leon }
+		}
+		allow = {
+			OR = {
+				is_vassal = no
+				is_secondary_power = yes
+			}
+		}
+		effect = {
+			475 = {
+				add_core = THIS
+			}
+			477 = {
+				add_core = THIS
+			}
+			482 = {
+				add_core = THIS
+			}
+			set_country_flag = claimed_leon
+			add_accepted_culture = spanish
+			badboy = 5
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	galicia_claim_douro = {
+		picture = armada
+		potential = {
+			tag = GLC
+			NOT = { has_country_flag = claimed_douro }
+		}
+		allow = {
+			owns = 475
+			owns = 477
+			owns = 482
+		}
+		effect = {
+			518 = {
+				add_core = THIS
+			}
+			519 = {
+				add_core = THIS
+			}
+			520 = {
+				add_core = THIS
+			}
+			522 = {
+				add_core = THIS
+			}
+			set_country_flag = claimed_douro
+			add_accepted_culture = portuguese
+			badboy = 5
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	navarra_claim_logrono
+		picture = armada
+		potential = {
+			tag = BSQ
+			NOT = { has_country_flag = claimed_logrono }
+		}
+		allow = {
+			OR = {
+				is_vassal = no
+					AND = {
+						owns = 460
+						owns = 492
+						owns = 493
+					}
+			}
+		}
+		effect = {
+			494 = {
+				add_core = THIS
+			}
+			set_country_flag = claimed_logrono
+			prestige = 5
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
 }
