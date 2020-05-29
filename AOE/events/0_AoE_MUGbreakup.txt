@@ -514,7 +514,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		mass_politics = 1
+		revolution_n_counterrevolution = 1
 		exists = yes
 		NOT = { has_global_flag = india_for_grabs }
 	}
