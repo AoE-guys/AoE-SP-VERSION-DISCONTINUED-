@@ -75,16 +75,16 @@ political_decisions = {
 		}
 		
 		allow = {
-		NNN = {
-			all_core = {
-				OR = {
-					owned_by = THIS
-					owner = {
-						in_sphere = THIS
+			NNN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
 					}
 				}
 			}
-		}
 			has_recently_lost_war = no
 			is_greater_power = yes
 			war = no
