@@ -177,9 +177,11 @@ political_decisions = {
 		allow = {
 			OR = {
 				is_vassal = no
-				owns = 460
-				owns = 492
-				owns = 493
+					AND = {
+						owns = 460
+						owns = 492
+						owns = 493
+					}
 			}
 		}
 		effect = {
@@ -187,7 +189,6 @@ political_decisions = {
 				add_core = THIS
 			}
 			set_country_flag = claimed_logrono
-			badboy = 2
 			prestige = 5
 		}
 		ai_will_do = {					
