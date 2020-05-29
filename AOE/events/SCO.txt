@@ -1,1 +1,43 @@
-#
+country_event = {
+	id = 4206969
+	title = "Darien Scheme Complete"
+	desc = "The Expedition was finally a success!"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SCO
+		owns = 2205
+	}
+	
+	option = {
+		name = "At last!"
+		PNM = { 
+			primary_culture = THIS
+			set_country_flag = new_world_nation
+			set_country_flag = dynamic_colony
+			set_country_flag = scottish_panama
+		}
+		release_vassal = PNM
+		create_alliance = PNM
+		military_access = PNM
+	}
+}
+
+country_event = {
+	id = 4206970
+	title = "Caledonia"
+	desc = "Yay Caledonia is a thing now"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PNM
+		has_country_flag = scottish_panama
+	}
+	
+	option = {
+		add_country_modifier = {
+			name = caledonia
+			duration = 3000
+		} 
+	}
+}
