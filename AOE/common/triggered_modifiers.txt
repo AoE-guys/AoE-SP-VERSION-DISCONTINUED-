@@ -676,6 +676,22 @@ chinese_substate = {
 own_kiel_canal = {
 	trigger = {
 		exists = yes
+		ai = yes
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	icon = 9
+	global_pop_militancy_modifier = -0.05
+}
+
+own_kiel_canal = {
+	trigger = {
+		exists = yes
 		owns = 369
 		civilized = yes
 		is_canal_enabled = 1

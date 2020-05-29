@@ -1325,6 +1325,10 @@ nationalist_rebels = {
 	will_rise = {
 		factor = 0.3
 		modifier = {
+			factor = 0
+			has_country_flag = hre_member
+		}
+		modifier = {
 			war = yes
 			factor = 0.8
 		}
@@ -1572,6 +1576,10 @@ nationalist_rebels = {
 				tag = QNG
 			}
 		}
+		modifier = {
+			factor = 0
+			has_country_flag = hre_member
+		}
 	}
 	
  	# Province Scope
@@ -1668,7 +1676,12 @@ pan_nationalist_rebels = {
 			year = 1800
 			factor = 0.5
 		}
-			
+		
+		modifier = {
+			factor = 0
+			has_country_flag = hre_member
+		}
+		
 		modifier = {
 			war = yes
 			year = 1800

@@ -91,9 +91,9 @@ political_decisions = {
 	annex_bengal = {
 		picture = bengal
 		potential = {
-			tag = GBR
-			BNG = {
-				vassal_of = THIS
+			owns = 300
+			300 = {
+				is_capital = yes
 			}
 			is_greater_power = yes
 		}
@@ -401,6 +401,25 @@ political_decisions = {
 					name = colonial_exploitation
 					duration = 7300
 				}
+			}
+		}
+	}
+	
+	third_darien_expedition = {
+		picture = Panama3
+		potential = {
+			tag  = SCO
+			is_vassal = no
+			NOT = { has_country_flag = third_expedition_to_panama }
+		}
+		allow = {
+			is_secondary_power = yes
+			money = 20000
+		}
+		effect = {
+			prestige = 10
+			CLM_1723 = {
+				add_core = SCO
 			}
 		}
 	}

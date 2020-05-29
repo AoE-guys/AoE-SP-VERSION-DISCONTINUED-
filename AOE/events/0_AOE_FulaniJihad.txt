@@ -214,7 +214,7 @@ country_event = {
 	
 	option = {
 		name = "Ok. They will be our neighbour"
-		1815 = { secede_province = DAM }
+		1815 = { secede_province = THIS }
 		random_owned = {
 			limit = {
 				owner = {
@@ -222,9 +222,9 @@ country_event = {
 					1952 = { empty = yes }
 				}
 			}
-			1952 = { secede_province = DAM any_pop = { literacy = -0.99 } life_rating = 5 }
-			owner = { prestige = 1 }
+			1952 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 		}
+		release = DAM
 
 	}
 }
