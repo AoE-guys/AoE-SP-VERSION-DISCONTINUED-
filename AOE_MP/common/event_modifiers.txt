@@ -5978,12 +5978,12 @@ decentralized_rule = {
 	org_regain = -0.4
 	army_organisation = -0.3
 	admin_efficiency = -0.1
-	mobilisation_size = -0.45
+	mobilisation_size = -0.01
 	icon = 3
 }
 decentralized_rule_efm = {
 	admin_efficiency = -0.1
-	mobilisation_size = -0.4
+	mobilisation_size = -0.01
 	icon = 3
 }
 political_chaos = {
@@ -5991,6 +5991,7 @@ political_chaos = {
 	influence_modifier = -0.1
 	global_pop_militancy_modifier = 0.06
 	war_exhaustion = 0.01
+	icon = 3
 }
 ##
 inefficient_bureacracy = {

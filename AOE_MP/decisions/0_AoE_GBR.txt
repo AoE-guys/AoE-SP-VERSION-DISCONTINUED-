@@ -91,9 +91,9 @@ political_decisions = {
 	annex_bengal = {
 		picture = bengal
 		potential = {
-			tag = GBR
-			BNG = {
-				vassal_of = THIS
+			owns = 300
+			300 = {
+				is_capital = yes
 			}
 			is_greater_power = yes
 		}
