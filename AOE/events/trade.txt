@@ -1422,4 +1422,28 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 69430
+	title = "Hara Hachi Bun Me"
+	desc = "Ryukyuan Longetivity"
+	fire_only_once = yes
 	
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		1678 = { 
+			add_province_modifier = {
+				name = hara_hachi_bun_me
+				duration = -1
+			} 
+		}
+		1679 = { 
+			add_province_modifier = {
+				name = hara_hachi_bun_me
+				duration = -1
+			} 
+		}
+	}
+}
