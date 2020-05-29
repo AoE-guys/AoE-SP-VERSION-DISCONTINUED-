@@ -253,7 +253,7 @@ coal_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = coal
-	value = 3.84
+	value = 5.84
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
