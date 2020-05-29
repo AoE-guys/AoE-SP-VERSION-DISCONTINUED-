@@ -103,7 +103,14 @@ country_event = {
 		any_country = {
 			limit = {
 				tag = FRA
+				exists = yes
+			}
+			create_alliance = THIS
+		}
+		any_country = {
+			limit = {
 				tag = BOR
+				exists = yes
 			}
 			create_alliance = THIS
 		}
