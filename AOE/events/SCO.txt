@@ -41,3 +41,71 @@ country_event = {
 		} 
 	}
 }
+
+country_event = {
+	id = 4206971
+	title = "French ally?"
+	desc = "Will France aid us now in our times of need?"
+	
+	trigger = {
+		tag = SCO
+		OR = {
+			war_with = ENG
+			war_with = ENL
+			war_with = GBR
+		}
+		NOT = { 
+			OR = {
+				alliance_with = FRA
+				alliance_with = BOR
+			}
+		}
+		OR = {
+			BOR = {
+				exists = yes
+				NOT = {
+					OR = {
+						relation = { who = ENG value = 25 }
+						relation = { who = ENL value = 25 }
+						relation = { who = GBR value = 25 }
+					}
+				}
+				NOT = { 
+					OR = {
+						truce_with = ENG
+						truce_with = ENL
+						truce_with = GBR
+					}
+				}
+			}
+			FRA = {
+				exists = yes
+				NOT = {
+					OR = {
+						relation = { who = ENG value = 25 }
+						relation = { who = ENL value = 25 }
+						relation = { who = GBR value = 25 }
+					}
+				}
+				NOT = { 
+					OR = {
+						truce_with = ENG
+						truce_with = ENL
+						truce_with = GBR
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We can only hope..."
+		any_country = {
+			limit = {
+				tag = FRA
+				tag = BOR
+			}
+			create_alliance = THIS
+		}
+	}
+}
