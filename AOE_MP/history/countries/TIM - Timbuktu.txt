@@ -1,28 +1,3 @@
-<<<<<<< HEAD:AOE_MP/history/countries/~VNS - Colonial Spain.txt
-capital = 2172
-civilized = yes   primary_culture = mexican
-culture = central_american
-culture = spanish
-religion = catholic
-government = colonial_company
-plurality = 25.0
-nationalvalue = nv_order
-literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.03
-#non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
-civilized = yes
-prestige = 3
-
-
-# Political reforms
-slavery = no_slavery
-upper_house_composition = state_equal_weight
-vote_franschise = none_voting
-public_meetings = yes_meeting
-press_rights = state_press
-trade_unions = no_trade_unions
-voting_system = first_past_the_post
-political_parties = non_secret_ballots
-=======
 capital = 1802
 civilized = yes   primary_culture = maghrebi
 culture = tuareg
@@ -42,7 +17,6 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = underground_parties
->>>>>>> master:AOE_MP/history/countries/TIM - Timbuktu.txt
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -50,41 +24,17 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-<<<<<<< HEAD:AOE_MP/history/countries/~VNS - Colonial Spain.txt
-pensions = no_pensions 
-=======
 pensions = no_pensions
->>>>>>> master:AOE_MP/history/countries/TIM - Timbuktu.txt
 school_reforms = no_schools
 
 
 # New Reforms
-<<<<<<< HEAD:AOE_MP/history/countries/~VNS - Colonial Spain.txt
-conscription = one_year_draft
-=======
 conscription = no_draft
->>>>>>> master:AOE_MP/history/countries/TIM - Timbuktu.txt
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
-<<<<<<< HEAD:AOE_MP/history/countries/~VNS - Colonial Spain.txt
-centralization = federalism
-colonial_policy = no_colonies 
-
-
-set_country_flag = catholic_country
-set_country_flag = new_world_nation
-
-ruling_party = "Nobility Faction"
-last_election = 1835.1.28
-upper_house = {
-	fascist = 0
-	liberal = 25
-	conservative = 63
-	reactionary = 12
-=======
 centralization = unitary
 colonial_policy = no_colonies 
 
@@ -95,19 +45,11 @@ upper_house = {
 	liberal = 14
 	conservative = 60
 	reactionary = 26
->>>>>>> master:AOE_MP/history/countries/TIM - Timbuktu.txt
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-<<<<<<< HEAD:AOE_MP/history/countries/~VNS - Colonial Spain.txt
-govt_flag = {
-	government = presidential_dictatorship
-	flag = theocracy
-}
-
-=======
 set_country_flag = sunni_country
 
 govt_flag = {
@@ -119,31 +61,12 @@ govt_flag = {
 
 
 
->>>>>>> master:AOE_MP/history/countries/TIM - Timbuktu.txt
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 army_command_principle = 1
 post_nelsonian_thought = 1
-<<<<<<< HEAD:AOE_MP/history/countries/~VNS - Colonial Spain.txt
-private_banks = 1
-no_standard = 1
-guild_based_production = 1
-classicism_n_early_romanticism = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-piston_steam_engine = 1
-mechanical_production = 1
-
-# Inventions
-
-#Starting Consciousness
-consciousness = 2
-nonstate_consciousness = 0
-
-oob = "MEX_oob.txt"
-=======
 no_standard = 1
 guild_based_production = 1
 late_enlightenment_philosophy = 1
@@ -154,4 +77,3 @@ malthusian_thought = 1
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
->>>>>>> master:AOE_MP/history/countries/TIM - Timbuktu.txt

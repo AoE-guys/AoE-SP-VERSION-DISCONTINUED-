@@ -29,8 +29,8 @@ country_event = {
 				}
 			}
 			random_list = {
-				95 = {country_event = 17911}
-				5 = {country_event = 17912}
+				90 = {country_event = 17911}
+				10 = {country_event = 17912}
 		    }
 	}
 }
@@ -82,7 +82,7 @@ country_event = {
 			value = -400
 		}			
 
-		BOR = {
+		THIS = {
 			war = {
 				target = HAI
 				attacker_goal = { casus_belli = conquest }
@@ -108,15 +108,15 @@ country_event = {
 			value = -400
 		}			
 		release_vassal = HAI
-		change_tag_no_core_switch = HAI
 		
-		BOR = {
+		THIS = {
 			war = {
 				target = HAI
 				attacker_goal = { casus_belli = conquest }
 				defender_goal = { casus_belli = acquire_all_cores }
 			}
 		}
+		change_tag_no_core_switch = HAI
 		HAI = { 
 		country_event = 17913
 		}
