@@ -605,6 +605,7 @@ country_event = {
 
 	option = {
 		name = "The show must go on!"
+		add_country_modifier = { name = revolutionary_spirit  duration = -1 }
 		prestige = 3		
 		any_pop = {
             limit { strata = poor }
@@ -680,6 +681,7 @@ country_event = {
 	option = {
 		name = "General installs himself as a Monarch!"
 		prestige = 3
+		add_country_modifier = { name = revolutionary_spirit  duration = -1 }
 		government = fascist_dictatorship
 		ruling_party_ideology = reactionary
 		set_country_flag = rev_coup

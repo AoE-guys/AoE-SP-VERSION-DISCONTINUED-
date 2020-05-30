@@ -6332,3 +6332,12 @@ together_in_bancruptcy = {
 	global_pop_militancy_modifier = -0.01
 	icon = 5
 }
+
+revolutionary_spirit = {
+	global_pop_militancy_modifier = -0.03
+	global_pop_consciousness_modifier = 0.01
+	mobilisation_size = 0.01
+	prestige = 0.01
+	war_exhaustion = -0.05
+	icon = 18
+}
