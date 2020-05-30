@@ -6,14 +6,16 @@ political_decisions = {
 		potential = {
 			nationalvalue = nv_tradition
 			NOT = {	has_country_flag = nv_change }
-			civilized = no
 		}
 		
 		allow = {
-			civilization_progress = 0.5
 			NOT = {	has_country_modifier = national_confusion }
 			war = no
 			NOT = { num_of_revolts = 1 }
+			biologism = 1
+			revolution_n_counterrevolution = 1
+			deep_defense_system = 1
+			combustion_engine = 1
 		}
 		
 		effect = { set_country_flag = nv_change }
