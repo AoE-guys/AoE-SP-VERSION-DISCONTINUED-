@@ -6319,16 +6319,3 @@ eic_monopoly_broken = {
 	prestige = 0.001
 	icon = 7
 }
-
-#Revolution Modifiers
-
-alone_in_bancruptcy = {
-	tax_efficiency = -0.05
-	icon = 5
-}
-
-together_in_bancruptcy = {
-	tax_efficiency = 0.05
-	global_pop_militancy_modifier = -0.01
-	icon = 5
-}

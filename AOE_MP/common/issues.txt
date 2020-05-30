@@ -43,7 +43,7 @@ party_issues = {
 			factory_owner_cost = 0.5
 			import_cost = 0.25
 			factory_throughput = -0.05
-			RGO_output = 0.05
+			RGO_throughput = 0.05
 			
 			rules = {
 				build_factory = no
@@ -71,8 +71,8 @@ party_issues = {
 			import_cost = 0.5
 			min_tax = 0.25
 			factory_owner_cost = 0.8
-			factory_output = 0.05
-			rgo_output = -0.05
+			factory_throughput = 0.05
+			RGO_throughput = -0.05
 			
 			rules = {
 				build_factory = yes
@@ -97,10 +97,8 @@ party_issues = {
 		planned_economy = {
 			import_cost = 0.75
 			min_tax = 0.5
-			factory_owner_cost = 1.0
-			factory_output = 0.10
-			rgo_output = -0.15
-			education_efficiency_modifier = 0.10
+			factory_throughput = 0.10
+			RGO_throughput = -0.10
 			factory_owner_cost = -1	#negative costs, can't build.
 			
 			rules = {
@@ -112,11 +110,11 @@ party_issues = {
 				factory_priority = yes
 				can_subsidise = yes
 				pop_build_factory = no
-				pop_expand_factory = yes
+				pop_expand_factory = no
 				pop_open_factory = no				
 				delete_factory_if_no_input = yes		
-				build_factory_invest = no
-				expand_factory_invest = no
+				build_factory_invest = yes
+				expand_factory_invest = yes
 				build_railway_invest = yes
 				can_invest_in_pop_projects = yes
 			}
