@@ -39,7 +39,7 @@ country_event = {
 		prestige = -3
 		country_event = 100029
 		ai_chance = {
-			factor = 95
+			factor = 15
 		}
 	}
 	option = {
@@ -47,7 +47,7 @@ country_event = {
 		add_country_modifier = { name = alone_in_bancruptcy  duration = 3650 }
 		prestige = 3
 		ai_chance = {
-			factor = 5
+			factor = 85
 		}
 	}
 }
