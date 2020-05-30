@@ -247,23 +247,14 @@ political_decisions = {
 		effect = {
 			badboy = 30
 			set_country_flag = french_throne
-			any_country = {
-				limit = {
-					owns = 300
-					BOR = {
-						exists = yes
+			425 = {
+				owner = {
+					add_casus_belli = {
+						target = THIS
+						type = make_puppet
+						months = 13
 					}
 				}
-				create_vassal = BOR
-			}
-			any_country = {
-				limit = {
-					owns = 300
-					FRA = {
-						exists = yes
-					}
-				}
-				create_vassal = FRA
 			}
 		}
 		ai_will_do = {

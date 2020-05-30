@@ -6,10 +6,9 @@
 proletarian_dictatorship = {
 	#which ideology of parties.
 	communist = yes
-	reactionary = yes
 	
 	election = no
-	appoint_ruling_party = no
+	appoint_ruling_party = yes
 	flagType = republic
 }
 
@@ -18,7 +17,7 @@ presidential_dictatorship = {
 	reactionary = yes
 	#fascist = yes
 	conservative = yes
-	#communist = yes
+	communist = yes
 	
 	election = no
 	appoint_ruling_party = yes
@@ -64,9 +63,7 @@ bourgeois_dictatorship = {
 
 fascist_dictatorship = {
 	#which ideology of parties.
-	#fascist = yes
-    reactionary = yes
-	liberal = yes
+	fascist = yes
 	
 	election = no
 	appoint_ruling_party = yes
@@ -145,8 +142,8 @@ democracy = {
 	conservative = yes
 	reactionary = yes
 	communist = yes
-	#anarcho_liberal = yes
-	#fascist = yes
+	anarcho_liberal = yes
+	fascist = yes
 	
 	
 	election = yes
@@ -161,8 +158,8 @@ federal_democracy = {
 	conservative = yes
 	reactionary = yes
 	communist = yes
-	#anarcho_liberal = yes
-	#fascist = yes
+	anarcho_liberal = yes
+	fascist = yes
 	
 	election = yes
 	duration = 48
@@ -176,8 +173,8 @@ tribal_democracy = {
 	conservative = yes
 	reactionary = yes
 	communist = yes
-	#anarcho_liberal = yes
-	#fascist = yes
+	anarcho_liberal = yes
+	fascist = yes
 	
 	election = yes
 	duration = 48
@@ -198,7 +195,7 @@ french_bourbon = {
 	#liberal = yes
 	conservative = yes
 	reactionary = yes
-	#socialist = yes
+	socialist = yes
 	
 	election = no
 	duration = 48
@@ -209,7 +206,7 @@ tsardom = {
 	#liberal = yes
 	conservative = yes
 	reactionary = yes
-	#socialist = yes
+	socialist = yes
 	
 	election = no
 	duration = 48
@@ -221,8 +218,8 @@ merchant_republic = {
 	liberal = yes
 	conservative = yes
 	reactionary = yes
-	#anarcho_liberal = yes
-	#socialist = yes
+	anarcho_liberal = yes
+	socialist = yes
 	election = yes
 	appoint_ruling_party = no
 	flagType = republic
@@ -232,8 +229,8 @@ trade_monarchy = {
 	liberal = yes
 	conservative = yes
 	reactionary = yes
-	#anarcho_liberal = yes
-	#socialist = yes
+	anarcho_liberal = yes
+	socialist = yes
 	election = yes
 	appoint_ruling_party = yes
 	flagType = monarchy
