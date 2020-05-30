@@ -671,6 +671,85 @@ modifier = {
 promote_to =
 {
 
+	farmers = 
+	{
+		factor = 0.01
+ 		modifier = {
+			factor = 20
+			NOT = { literacy = 0.1 }
+			capitalists = 0.001
+			labourers = 0.05
+		}
+ 		modifier = {
+			factor = 20
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+			capitalists = 0.004
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+			capitalists = 0.008
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+			capitalists = 0.012
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.4
+			NOT = { literacy = 0.5 }
+			capitalists = 0.016
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.5
+			NOT = { literacy = 0.6 }
+			capitalists = 0.020
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.6
+			NOT = { literacy = 0.7 }
+			capitalists = 0.024
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			capitalists = 0.028
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.8
+			NOT = { literacy = 0.9 }
+			capitalists = 0.032
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.9
+			NOT = { literacy = 0.99 }
+			capitalists = 0.036
+			labourers = 0.05
+		}
+		modifier = {
+			factor = 20
+			literacy = 0.99
+			capitalists = 0.040
+			labourers = 0.05
+		}  
+	}
 	labourers = 
 	{
 		factor = 0.01
@@ -738,10 +817,10 @@ promote_to =
 			literacy = 0.99
 			capitalists = 0.040
 		}  
-		#modifier = {
-		#	factor = -500
-		#	labourers = 0.05
-		#}
+		modifier = {
+			factor = -500
+			labourers = 0.05
+		}
 	}
 	officers = {
 		factor = 0.01		
