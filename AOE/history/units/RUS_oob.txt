@@ -189,7 +189,7 @@ army = {
 
 army = {
 	name = "3-i Armeiskii Korpus" #Vilna/Marijampole - Baltic Army
-	location = 1003
+	location = 1036
 
 	regiment = {
 		name = "3.1-ya Pekhotnaya Diviziya"
@@ -231,12 +231,6 @@ army = {
 		name = "3.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = dragoon
 		home = 977
-	}
-
-	regiment = {
-		name = "3.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
-		type = dragoon
-		home = 981
 	}
 
 	regiment = {
@@ -432,7 +426,7 @@ army = {
 
 army = {
 	name = "8-i Armeiskii Korpus" #Odessa Army
-	location = 974
+	location = 979
 	regiment = {
 		name= "8.6-ya Pekhotnaya Diviziya"
 		type = infantry
@@ -520,7 +514,7 @@ army = {
 
 army = {
 	name = "Ural Host"
-	location = 1058
+	location = 1050
 	regiment = {
 		name= "1.Don Cossacks"
 		type = cavalry
@@ -549,7 +543,7 @@ army = {
 
 army = {
 	name = "1-i Sibirskii Korpus" #Siberian Army
-	location = 1075
+	location = 1050
 	
 	regiment = {
 		name = "1.1-ya Sibirskii Pekhotnaya Diviziya"
