@@ -159,6 +159,10 @@ country_event = {
 	mean_time_to_happen = {
 		months = 120
 		modifier = {
+			factor = 3
+			ai = yes
+		}
+		modifier = {
 			factor = 0.95
 				average_militancy = 1
 		}
@@ -227,6 +231,10 @@ country_event = {
 	mean_time_to_happen = {
 		months = 120
 		modifier = {
+			factor = 0.75
+			ai = yes
+		}
+		modifier = {
 			factor = 0.95
 				poor_strata_everyday_needs = 0.2
 		}
@@ -294,6 +302,10 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 1.50
+			ai = yes
+		}
 		modifier = {
 			factor = 0.95
 				NOT = { administration_spending = 0.1 }
@@ -365,6 +377,10 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 180
+		modifier = {
+			factor = 0.75
+			ai = yes
+		}
 		modifier = {
 			factor = 0.95
 				education_spending = 0.1
