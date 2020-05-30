@@ -779,41 +779,46 @@ regular_clothes_factory = {
 		value = 0.25
 	}
 }
-       
-explosives_factory = {       
+
+ammunition_factory = {       
 	template = factory_template
 	input_goods = {   
-		fertilizer = 3		#30
-		ammunition = 0.8	#14	total input+maint = 54
+		iron = 3		#30
+		explosives = 0.8	#14	total input+maint = 54
+		paper = 1
 	}
-	output_goods = explosives 
+	output_goods = ammunition 
 	value = 3			#60
 	bonus = {
-		trigger = { has_building = fertilizer_factory }
+		trigger = { has_building = iron_factory }
 		value = 0.15
 	}
 	bonus = {
-		trigger = { has_building = ammunition_factory }
+		trigger = { has_building = explosives_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = paper_mill }
 		value = 0.1
 	}
-}
+}      
 
 ############# CHEAP FACTORIES
 
-ammunition_factory = {       
+explosives_factory = {       
 	template = cheap_factory_template
 	input_goods = {      
-		sulphur = 2		#12
-		steel = 3		#14.1	total input+maint = 30.1
+		coal = 2		#12
+		sulphur = 3		#14.1	total input+maint = 30.1
 	}
-	output_goods = ammunition 
+	output_goods = explosives 
 	value = 2.2			#35
 	bonus = {
-		trigger = { has_building = sulphur_factory }
+		trigger = { has_building = coal_factory }
 		value = 0.1
 	}
 	bonus = {
-		trigger = { has_building = steel_factory }
+		trigger = { has_building = sulphur_factory }
 		value = 0.15
 	}
 }
@@ -1550,8 +1555,8 @@ artisan_regular_clothes = {
 
 artisan_explosives = {       
 	input_goods = {   
-		fertilizer = 3		#30
-		ammunition = 0.8	#14	total input+maint = 54
+		sulphur = 3		#30
+		coal = 0.8	#14	total input+maint = 54
 	}
 	output_goods = explosives 
 	value = 3			#60
@@ -1570,7 +1575,7 @@ artisan_explosives = {
 
 artisan_ammunition = {       
 	input_goods = {      
-		sulphur = 2		#12
+		explosives = 2		#12
 		coal = 2		#4.6
 		iron = 5		#17.5	total input+maint = 44
 	}
