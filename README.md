@@ -1,7 +1,5 @@
 # AOE-exp: Age of Enlightenment Expanded
 
-[Latest Version](https://github.com/AoE-guys/AoE-exp/releases/latest)
-
 Welcome to the GitHub repository of Age of Enlightenment. AoE is a modification to Victoria II, with the setting of the game in 18th century. 
 The player plays as a nation, leading them toward enlightenment and prosperity.
 
@@ -17,6 +15,15 @@ Reworked Tech tree and more!
 
 *This version of the mod is still being constructed, frequently updated etc., and so bugs is not uncommon.
 We recommend backing up your save files between each update.* 
+
+## Download
+[Latest Stable Version](https://github.com/AoE-guys/AoE-exp/releases/latest)
+
+For Dev version, try download directly from GitHub (Select clone or download -> Download Zip). Or use
+
+```shell 
+$ git clone https://github.com/AoE-guys/AOE-exp.git
+```
 
 ## Wiki & Changelog
 This is still being developed, but we expect them to be online soon.

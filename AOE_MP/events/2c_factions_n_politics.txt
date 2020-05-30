@@ -27,7 +27,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = conservative
-				factor = 15
+				factor = 10
 			}	             	
 		}		
 	}
@@ -68,7 +68,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = conservative
-				factor = 10
+				factor = 7
 			}	             	
 		}		
 	}
@@ -236,7 +236,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = liberal
-				factor = 15
+				factor = 10
 			}	             	
 		}		
 	}
@@ -268,7 +268,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = liberal
-				factor = 10
+				factor = 7
 			}	             	
 		}		
 	}
@@ -396,7 +396,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = communist
-				factor = 15
+				factor = 10
 			}	             	
 		}		
 	}
@@ -428,7 +428,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = communist
-				factor = 10
+				factor = 7
 			}	             	
 		}		
 	}
@@ -539,7 +539,7 @@ country_event = {
     trigger = {
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_5
-			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   capital_scope = { any_pop = { type = officers militancy = 7 } }
 			   NOT = { has_country_modifier = army_unrest_5 }
 			   NOT = { has_country_modifier = army_unrest_4 }
 			   NOT = { has_country_modifier = army_unrest_3 }
@@ -572,7 +572,7 @@ country_event = {
     trigger = {
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_4
-			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   capital_scope = { any_pop = { type = officers militancy = 7 } }
 			   NOT = { has_country_modifier = army_unrest_5 }
 			   NOT = { has_country_modifier = army_unrest_4 }
 			   NOT = { has_country_modifier = army_unrest_3 }
@@ -590,7 +590,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 7.5
+				factor = 7
 			}	             	
 		}		
 	}
@@ -605,7 +605,7 @@ country_event = {
     trigger = {
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_3
-			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   capital_scope = { any_pop = { type = officers militancy = 7 } }
 			   NOT = { has_country_modifier = army_unrest_5 }
 			   NOT = { has_country_modifier = army_unrest_4 }
 			   NOT = { has_country_modifier = army_unrest_3 }
@@ -638,7 +638,7 @@ country_event = {
     trigger = {
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_2
-			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   capital_scope = { any_pop = { type = officers militancy = 7 } }
 			   NOT = { has_country_modifier = army_unrest_5 }
 			   NOT = { has_country_modifier = army_unrest_4 }
 			   NOT = { has_country_modifier = army_unrest_3 }
@@ -656,7 +656,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 2.5
+				factor = 3
 			}	             	
 		}		
 	}
@@ -671,7 +671,7 @@ country_event = {
     trigger = {
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_1
-			   capital_scope = { any_pop = { type = officers militancy = 8 } }
+			   capital_scope = { any_pop = { type = officers militancy = 7 } }
 			   NOT = { has_country_modifier = army_unrest_5 }
 			   NOT = { has_country_modifier = army_unrest_4 }
 			   NOT = { has_country_modifier = army_unrest_3 }
@@ -704,7 +704,7 @@ country_event = {
     trigger = {
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_5
-			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
 			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
@@ -737,7 +737,7 @@ country_event = {
     trigger = {
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_4
-			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
 			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
@@ -755,7 +755,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 7.5
+				factor = 7
 			}	             	
 		}		
 	}
@@ -770,7 +770,7 @@ country_event = {
     trigger = {
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_3
-			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
 			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
@@ -803,7 +803,7 @@ country_event = {
     trigger = {
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_2
-			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
 			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_3 }
@@ -821,7 +821,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 2.5
+				factor = 3
 			}	             	
 		}		
 	}
@@ -836,7 +836,7 @@ country_event = {
     trigger = {
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_1
-			   capital_scope = { any_pop = { type = bureaucrats militancy = 8 } }
+			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
 			   NOT = { has_country_modifier = bureaucratic_unrest_5 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_4 }
 			   NOT = { has_country_modifier = bureaucratic_unrest_3 }

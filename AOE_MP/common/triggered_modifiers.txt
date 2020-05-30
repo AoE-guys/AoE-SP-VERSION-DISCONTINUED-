@@ -673,7 +673,7 @@ chinese_substate = {
 	global_pop_consciousness_modifier = 0.02
 }
 
-own_kiel_canal = {
+ai_help = {
 	trigger = {
 		exists = yes
 		ai = yes
@@ -949,7 +949,7 @@ help_ai_russia = {
 			is_culture_group = pan_romanian
 			AND = { 
 				owns = 619 #Austria
-				NOT = { year = 1705 }
+				NOT = { year = 1707 }
 			}
 			AND = {
 				owns = 322 #Sweden
@@ -966,6 +966,10 @@ help_ai_russia = {
 			AND = {
 				owns = 1600 #DZN
 				NOT = { year = 1750 }
+				NOT = { year = 1710 }
+			}
+			AND = {
+				owns = 1121 #Persia
 			}
 		}
 		ai = yes
