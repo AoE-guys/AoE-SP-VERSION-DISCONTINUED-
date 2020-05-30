@@ -14,6 +14,7 @@ country_event = {
 	#major = yes
 	
 	trigger = {
+	           political_thought_7 = 1
 	           is_vassal = no
 		       has_country_modifier = in_bankrupcy
 			   NOT = { has_country_modifier = alone_in_bancruptcy }
@@ -39,7 +40,7 @@ country_event = {
 		prestige = -3
 		country_event = 100029
 		ai_chance = {
-			factor = 95
+			factor = 15
 		}
 	}
 	option = {
@@ -47,7 +48,7 @@ country_event = {
 		add_country_modifier = { name = alone_in_bancruptcy  duration = 3650 }
 		prestige = 3
 		ai_chance = {
-			factor = 5
+			factor = 85
 		}
 	}
 }
