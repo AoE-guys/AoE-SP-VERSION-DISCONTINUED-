@@ -929,14 +929,14 @@ country_event = {
               NOT = { literacy = 0.2 }
 	          }
 		}
-        #change_variable = {
-        #which = dt_rating
-        #value = 1
-        #}
-        #set_variable = {
-        #which = dt_increase
-        #value = 1
-        #}
+        change_variable = {
+        which = dt_rating
+        value = 1
+        }
+        set_variable = {
+        which = dt_increase
+        value = 1
+        }
 		life_rating = 1
 		}
 		any_owned = {
@@ -946,14 +946,14 @@ country_event = {
               NOT = { literacy = 0.3 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 2
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 2
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 2
+        }
+		set_variable = {
+        which = dt_increase
+        value = 2
+        }
 		life_rating = 2
 		}
 		any_owned = {
@@ -963,14 +963,14 @@ country_event = {
               NOT = { literacy = 0.4 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 3
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 3
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 3
+        }
+		set_variable = {
+        which = dt_increase
+        value = 3
+        }
 		life_rating = 3
 		}
 		any_owned = {
@@ -980,14 +980,14 @@ country_event = {
               NOT = { literacy = 0.5 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 4
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 4
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 4
+        }
+		set_variable = {
+        which = dt_increase
+        value = 4
+        }
 		life_rating = 4
 		}
 		any_owned = {
@@ -997,14 +997,14 @@ country_event = {
               NOT = { literacy = 0.6 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 5
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 5
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 5
+        }
+		set_variable = {
+        which = dt_increase
+        value = 5
+        }
 		life_rating = 5
 		}
 		any_owned = {
@@ -1014,14 +1014,14 @@ country_event = {
               NOT = { literacy = 0.7 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 6
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 6
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 6
+        }
+		set_variable = {
+        which = dt_increase
+        value = 6
+        }
 		life_rating = 6
 		}
 		any_owned = {
@@ -1031,14 +1031,14 @@ country_event = {
               NOT = { literacy = 0.8 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 7
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 7
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 7
+        }
+		set_variable = {
+        which = dt_increase
+        value = 7
+        }
 		life_rating = 7
 		}
 		any_owned = {
@@ -1048,14 +1048,14 @@ country_event = {
               NOT = { literacy = 0.9 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 8
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 8
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 8
+        }
+		set_variable = {
+        which = dt_increase
+        value = 8
+        }
 		life_rating = 8
 		}
 		any_owned = {
@@ -1065,14 +1065,14 @@ country_event = {
               NOT = { literacy = 1 }
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 9
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 9
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 9
+        }
+		set_variable = {
+        which = dt_increase
+        value = 9
+        }
 		life_rating = 9
 		}
 		any_owned = {
@@ -1081,14 +1081,14 @@ country_event = {
 	          literacy = 1
 	          }
 		}
-		#change_variable = {
-        #which = dt_rating
-        #value = 10
-        #}
-		#set_variable = {
-        #which = dt_increase
-        #value = 10
-        #}
+		change_variable = {
+        which = dt_rating
+        value = 10
+        }
+		set_variable = {
+        which = dt_increase
+        value = 10
+        }
 		life_rating = 10
 		}
 		#country_event = 9999886
