@@ -548,7 +548,7 @@ country_event = {
 		prestige = 3
 		any_owned = {
 		             any_pop = {
-					            limit = { type = clergy }
+					            limit = { type = clergymen }
 								reduce_pop = 0.90
 					 }
 		}
