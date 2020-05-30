@@ -1,0 +1,158 @@
+#Contents and brief summary
+
+#170000 = notification to country requesting aid that request is made
+
+#17000(2,4,6,8,11) = Receiving country notified giving country will give aid. Ascending, logarithmic, 1000-10 million
+
+country_event = {
+
+	
+	id = 170000
+	
+	title = "Aid Requested"
+	
+	desc = "We have requested aid from foreign powers. We can only hope they respond kindly."
+	
+	is_triggered_only = yes	
+	
+	allow_multiple_instances = yes	
+
+	option = {
+	
+		name = "It is out of our hands."
+
+		any_country = {
+		
+			limit = {
+			
+				has_country_flag = will_give_grants
+			
+				ai = no
+			
+				money = 10000
+		
+			}
+		
+			country_event = {id = 170001 days = 0}
+	
+		}	
+	
+		ai_chance = {factor = 100} 
+	
+	}	
+
+}
+
+
+country_event = {
+	
+id = 170002
+	
+	title = "$FROMCOUNTRY$ Grants Aid"
+	
+	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of thousands of pounds."
+	
+	allow_multiple_instances = yes		
+	
+	is_triggered_only = yes
+	option = {
+	
+		name = "Great!"
+	
+		ai_chance = {factor = 100} 
+	
+		FROM = { country_event = {id = 170013 days = 0}}	
+	
+		FROM = { country_event = {id = 170003 days = 0}}
+	
+	}
+
+}
+
+
+country_event = {
+
+	id = 170004
+
+	title = "$FROMCOUNTRY$ Grants Aid"
+
+	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of tens of thousands of pounds."
+
+	allow_multiple_instances = yes
+	is_triggered_only = yes
+	option = {
+
+		name = "Great!"
+	
+		ai_chance = {factor = 100}
+		 
+FROM = {
+
+		country_event = {id = 170003 days = 0}
+
+		country_event = {id = 170005 days = 0}
+			
+		}
+	
+	}
+
+}
+
+
+country_event = {
+
+	id = 170006
+
+	title = "$FROMCOUNTRY$ Grants Aid"
+
+	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of hundereds of thousands of pounds."
+
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+		
+	option = {
+	
+			name = "Great!"
+			
+	ai_chance = {factor = 100}
+	 
+		FROM = {
+			country_event = {id = 170005 days = 0}
+	
+ 
+			country_event = {id = 170007 days = 0}
+
+		}
+
+	}
+
+}
+
+
+country_event = {
+
+	id = 170008
+
+	title = "$FROMCOUNTRY$ Grants Aid"
+
+	is_triggered_only = yes
+	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of millions of pounds."
+	
+	allow_multiple_instances = yes
+		
+	option = {
+
+			name = "Great!"
+	ai_chance = {factor = 100}
+ 
+			FROM = {
+			country_event = {id = 170007 days = 0}
+
+			country_event = {id = 170009 days = 0}
+
+		}
+
+	}
+
+}
+
