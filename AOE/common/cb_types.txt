@@ -5214,6 +5214,7 @@ annex_india = {
 		NOT = {
 			has_country_flag = post_colonial_country
 		}
+		NOT = { is_greater_power = yes }
 		is_vassal = no
 		capital_scope = {
 			OR = {
@@ -5383,6 +5384,7 @@ annex_india_full = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = punitive_effects } }
 		}
+		NOT = { is_greater_power = yes }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
 			AND = {

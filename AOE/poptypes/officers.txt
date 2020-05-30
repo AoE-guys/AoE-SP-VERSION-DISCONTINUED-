@@ -726,7 +726,7 @@ promote_to =
 		modifier = {
 			factor = 20
 			literacy = 0.5
-			NOT = { literacy = 0.5 }
+			NOT = { literacy = 0.6 }
 			NOT = { capitalists = 0.020 }
 		}
 		modifier = {
@@ -761,6 +761,84 @@ promote_to =
 		modifier = {
 			factor = -500
 			capitalists = 0.040
+		}
+	}
+	farmers = {
+		factor = 0.01
+		modifier = {
+			factor = 10
+			NOT = { military_spending = 0.1 }
+			officers = 0.001
+			soldiers = 0.05
+		}		
+		modifier = {
+			factor = 10
+			military_spending = 0.1
+			NOT = { military_spending = 0.2 }
+			officers = 0.001
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.2
+			NOT = { military_spending = 0.3 }
+			officers = 0.001
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.3
+			NOT = { military_spending = 0.4 }
+			officers = 0.002
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.4
+			NOT = { military_spending = 0.5 }
+			officers = 0.002
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.5
+			NOT = { military_spending = 0.6 }
+			officers = 0.003
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.6
+			NOT = { military_spending = 0.7 }
+			officers = 0.003
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.7
+			NOT = { military_spending = 0.8 }
+			officers = 0.004
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.8
+			NOT = { military_spending = 0.9 }
+			officers = 0.004
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.9
+			NOT = { military_spending = 0.99 }
+			officers = 0.005
+			soldiers = 0.05
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.99
+			officers = 0.005
+			soldiers = 0.05
 		}
 	}
 	soldiers = {
@@ -828,6 +906,10 @@ promote_to =
 			factor = 10
 			military_spending = 0.99
 			officers = 0.005
+		}
+		modifier = {
+			factor = -500
+			soldiers = 0.050
 		}
 	}
 	clergymen =

@@ -749,7 +749,7 @@ promote_to =
 		modifier = {
 			factor = 20
 			literacy = 0.5
-			NOT = { literacy = 0.5 }
+			NOT = { literacy = 0.6 }
 			NOT = { capitalists = 0.020 }
 		}
 		modifier = {
@@ -991,6 +991,19 @@ promote_to =
 		modifier = {
 			factor = 10
 			aristocrats = 0.015
+		}
+		modifier = {
+			factor = -500
+			labourers = 0.05
+		}
+	}
+	farmers = 
+	{
+		factor = 0.01
+		modifier = {
+			factor = 10
+			aristocrats = 0.015
+			labourers = 0.05
 		}
 	}
 

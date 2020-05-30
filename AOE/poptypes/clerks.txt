@@ -982,7 +982,87 @@ promote_to = {
 			soldiers = 0.050
 		}
 	}
-
+	farmers = {
+		factor = 0.01
+		#modifier = {
+		#	factor = 50
+		#	NOT = { literacy = 0.1 }
+		#	clerks = 0.000
+		#}
+		modifier = {
+			factor = 50
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+			clerks = 0.003
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+			clerks = 0.006
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+			clerks = 0.009
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.4
+			NOT = { literacy = 0.5 }
+			clerks = 0.012
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.5
+			NOT = { literacy = 0.6 }
+			clerks = 0.015
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.6
+			NOT = { literacy = 0.7 }
+			clerks = 0.018
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.7
+			NOT = { literacy = 0.8 }
+			clerks = 0.021
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.8
+			NOT = { literacy = 0.9 }
+			clerks = 0.024
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.9
+			NOT = { literacy = 0.99 }
+			clerks = 0.027
+			craftsmen = 0.15
+		}
+		modifier = {
+			factor = 50
+			literacy = 0.99
+			clerks = 0.030
+			craftsmen = 0.15
+		}
+		#modifier = {
+		#	factor = -100
+		#	location = { is_colonial = yes }
+		#}
+	}
 	craftsmen = {
 		factor = 0.01
 		#modifier = {
@@ -1017,7 +1097,7 @@ promote_to = {
 		modifier = {
 			factor = 50
 			literacy = 0.5
-			NOT = { literacy = 0.5 }
+			NOT = { literacy = 0.6 }
 			clerks = 0.015
 		}
 		modifier = {
@@ -1053,10 +1133,10 @@ promote_to = {
 			factor = -100
 			location = { is_colonial = yes }
 		}
-		#modifier = {
-		#	factor = -500
-		#	clerks = 0.030
-		#}
+		modifier = {
+			factor = -500
+			craftsmen = 0.15
+		}
 	}
 
 
@@ -1157,7 +1237,7 @@ promote_to = {
 		modifier = {
 			factor = 20
 			literacy = 0.5
-			NOT = { literacy = 0.5 }
+			NOT = { literacy = 0.6 }
 			NOT = { capitalists = 0.020 }
 		}
 		modifier = {

@@ -1,26 +1,35 @@
 #Relations
 
-USA = {
-	value = 10		
-}
-
 BUR = {
 	value = -200		
 }
 
-ENG = {
+#Recent Revolutions
+BOR = {
+	value = -100 
+}
+
+NET = {
 	value = 75		
 }
 
-DAI = {
-	value = -50
-	truce_until = 1840.1.1
+leader = {
+	name = "Phetracha"
+	date = 1632.1.1
+	type = land
+	personality = soldierly
+	background = hated
+	prestige = 0.2
 }
 
-
 army = {
-	name = "Royal Siamese Army"
+	name = "Royal Ayutthayan Army"
 	location = 1346
+	regiment = {
+		name= "Royal Mercenaries"
+		type = infantry
+		home = 1347
+	}
 	regiment = {
 		name= "1. Brigade"
 		type = irregular
@@ -30,50 +39,29 @@ army = {
 	regiment = {
 		name= "2. Brigade"
 		type = irregular
-		home = 1347
+		home = 1346
 	}
 
 	regiment = {
 		name= "3. Brigade"
 		type = irregular
-		home = 1348
+		home = 1346
 	}
 
 	regiment = {
 		name= "4. Brigade"
 		type = irregular
-		home = 1349
+		home = 1347
 	}
 
 	regiment = {
 		name= "5. Brigade"
 		type = irregular
-		home = 1350
+		home = 1353
 	}
-
 	regiment = {
 		name= "6. Brigade"
 		type = irregular
-		home = 1351
+		home = 1392
 	}
-
-	regiment = {
-		name= "7. Brigade"
-		type = irregular
-		home = 1352
-	}
-
-	regiment = {
-		name= "8. Brigade"
-		type = irregular
-		home = 1353
-	}
-
-	regiment = {
-		name= "9. Brigade"
-		type = irregular
-		home = 1354
-	}
-
 }
-
