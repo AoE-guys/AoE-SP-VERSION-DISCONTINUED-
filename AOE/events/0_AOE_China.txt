@@ -301,7 +301,7 @@ country_event = {
 			   NOT = { has_country_modifier = mandate_of_heaven_natural_disaster }
 	}
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 1.50
 			ai = yes
