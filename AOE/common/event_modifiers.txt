@@ -6341,3 +6341,53 @@ revolutionary_spirit = {
 	war_exhaustion = -0.05
 	icon = 18
 }
+
+#gold mines
+
+vila_rica = {
+	immigrant_attract = 0.5
+	local_factory_output = 0.20
+	tariff_efficiency_modifier = -0.10
+	tax_efficiency = -0.10
+	prestige = 0.02
+	icon = 11
+}
+
+berggeschrei = {
+	immigrant_attract = 0.25
+	local_factory_output = 0.40
+	tariff_efficiency_modifier = -0.10
+	tax_efficiency = -0.05
+	prestige = 0.01
+	icon = 11
+}
+
+bolas_de_plata = {
+	immigrant_attract = 0.5
+	local_factory_output = 0.20
+	tariff_efficiency_modifier = -0.05
+	tax_efficiency = -0.05
+	prestige = 0.01
+	icon = 11
+}
+
+el_eden = {
+	immigrant_attract = 0.25
+	tariff_efficiency_modifier = -0.10
+	tax_efficiency = -0.10
+	local_factory_output = 0.30
+	prestige = 0.02
+	icon = 11
+}
+
+kolar_gold_fields = { 
+	immigrant_attract = 0.25
+	population_growth = 0.001
+	tariff_efficiency_modifier = -0.25
+	tax_efficiency = -0.15
+	local_factory_output = 0.1
+	prestige = 0.1
+	icon = 11
+}
+	
+	
