@@ -1,0 +1,118 @@
+country_event = {
+	id = 4206969
+	title = "Darien Scheme Complete"
+	desc = "The Expedition was finally a success!"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SCO
+		owns = 2205
+	}
+	
+	option = {
+		name = "At last!"
+		PNM = { 
+			primary_culture = THIS
+			set_country_flag = new_world_nation
+			set_country_flag = dynamic_colony
+			set_country_flag = scottish_panama
+		}
+		release_vassal = PNM
+		create_alliance = PNM
+		military_access = PNM
+	}
+}
+
+country_event = {
+	id = 4206970
+	title = "Caledonia"
+	desc = "Yay Caledonia is a thing now"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PNM
+		has_country_flag = scottish_panama
+	}
+	
+	option = {
+		add_country_modifier = {
+			name = caledonia
+			duration = 3000
+		} 
+	}
+}
+
+country_event = {
+	id = 4206971
+	title = "French ally?"
+	desc = "Will France aid us now in our times of need?"
+	
+	trigger = {
+		tag = SCO
+		OR = {
+			war_with = ENG
+			war_with = ENL
+			war_with = GBR
+		}
+		NOT = { 
+			OR = {
+				alliance_with = FRA
+				alliance_with = BOR
+			}
+		}
+		OR = {
+			BOR = {
+				exists = yes
+				NOT = {
+					OR = {
+						relation = { who = ENG value = 25 }
+						relation = { who = ENL value = 25 }
+						relation = { who = GBR value = 25 }
+					}
+				}
+				NOT = { 
+					OR = {
+						truce_with = ENG
+						truce_with = ENL
+						truce_with = GBR
+					}
+				}
+			}
+			FRA = {
+				exists = yes
+				NOT = {
+					OR = {
+						relation = { who = ENG value = 25 }
+						relation = { who = ENL value = 25 }
+						relation = { who = GBR value = 25 }
+					}
+				}
+				NOT = { 
+					OR = {
+						truce_with = ENG
+						truce_with = ENL
+						truce_with = GBR
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We can only hope..."
+		any_country = {
+			limit = {
+				tag = FRA
+				exists = yes
+			}
+			create_alliance = THIS
+		}
+		any_country = {
+			limit = {
+				tag = BOR
+				exists = yes
+			}
+			create_alliance = THIS
+		}
+	}
+}

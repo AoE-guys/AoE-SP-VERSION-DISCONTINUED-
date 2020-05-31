@@ -1,14 +1,3 @@
-<<<<<<< HEAD:AOE_MP/history/countries/~VLP - Colonial La Plata.txt
-capital = 2348
-civilized = yes   primary_culture = platinean
-culture = spanish
-religion = catholic
-government = colonial_company
-plurality = 0.0
-nationalvalue = nv_order
-literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.12
-civilized = yes
-=======
 capital = 1462
 civilized = yes   primary_culture = filipino
 culture = asian_minor
@@ -17,22 +6,15 @@ government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.28
->>>>>>> master:AOE_MP/history/countries/MGW - Maguindanao.txt
 
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = yes_meeting
-<<<<<<< HEAD:AOE_MP/history/countries/~VLP - Colonial La Plata.txt
-press_rights = censored_press
-trade_unions = no_trade_unions
-voting_system = jefferson_method
-=======
 press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
->>>>>>> master:AOE_MP/history/countries/MGW - Maguindanao.txt
 political_parties = underground_parties
 
 # Social Reforms
@@ -45,26 +27,6 @@ pensions = no_pensions
 school_reforms = no_schools
 
 
-<<<<<<< HEAD:AOE_MP/history/countries/~VLP - Colonial La Plata.txt
-# New Reforms
-conscription = one_year_draft
-debt_law = peonage
-penal_system = capital_punishment
-child_labor = child_labor_legal
-citizens_rights = primary_culture_only
-border_policy = open_borders
-centralization = federalism
-colonial_policy = no_colonies 
-
-set_country_flag = catholic_country
-set_country_flag = new_world_nation
-
-ruling_party = "Nobility Faction"
-upper_house = {
-	fascist = 0
-	liberal = 20
-	conservative = 70
-=======
 #New Reforms
 conscription = two_year_draft
 debt_law = peonage
@@ -83,14 +45,11 @@ upper_house = {
 	fascist = 0
 	liberal = 35
 	conservative = 55
->>>>>>> master:AOE_MP/history/countries/MGW - Maguindanao.txt
 	reactionary = 10
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
-<<<<<<< HEAD:AOE_MP/history/countries/~VLP - Colonial La Plata.txt
-=======
 
 schools = unciv_tech_school
 
@@ -107,4 +66,3 @@ modern_winemaking = yes
 consciousness = 4
 nonstate_consciousness = 2
 
->>>>>>> master:AOE_MP/history/countries/MGW - Maguindanao.txt
