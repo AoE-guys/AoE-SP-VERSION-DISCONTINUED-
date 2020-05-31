@@ -293,136 +293,103 @@ political_decisions = {
 			any_pop = { consciousness = 3 }
 			set_country_flag = expanded_west
 		}
+	}
+	
+	demand_greek_lands = {
+		picture = aegean
+		potential = {
+			has_country_flag = our_sea
+			NOT = {
+				has_country_flag = demanded_greek
+			}
+		}
+		
+		allow = {
+			invention = offensive_attitude
+			naval_directionism = 1
+			OR = {
+				steam_turbine_ships
+				advanced_naval_design
+			}
+			expressionism = 1
+			military_score = 30
+			num_of_allies = 3
+			num_of_ports = 5
+			OR = {
+				owns = 765 #Cagliari
+				owns = 756 #Bari
+				owns = 502 #Balearics
+				owns = 759 #Reggio de Calabria
+				owns = 763 #Messina
+			}
+		}
+		
+		effect = {
+			839 = {
+				add_core = THIS #Nafplion
+			}
+			841 = {
+				add_core = THIS #Kalamtas
+			}
+			842 = {
+				add_core = THIS #Patras
+			}
+			827 = {
+				add_core = THIS #Zante
+			}
+			834 = {
+				add_core = THIS #Athina
+			}
+			838 = {
+				add_core = THIS #Khalkis
+			}
+			845 = {
+				add_core = THIS #Cyclades
+			}
+			843 = {
+				add_core = THIS #Chios and Samos
+			}
+			846 = {
+				add_core = THIS #Docandese
+			}
+			847 = {
+				add_core = THIS #Iraklion
+			}
+			848 = {
+				add_core = THIS #Chania
+			}
+			859 = {
+				add_core = THIS #Gallipoli
+			}
+			857 = {
+				add_core = THIS #Famagusta
+			}
+			856 = {
+				add_core = THIS #Limassol
+			}
+			855 = {
+				add_core = THIS #Nicossia
+			}
+			2690 = {
+				add_core = THIS #Akrotri and Dhekelia
+			}
+			826 = {
+				add_core = THIS #Corfu
+			}
+			967 = {
+				add_core = THIS #Sevastopol
+			}
+			country_event = 712346
+		}
+		
+		
 			
-		
-		
+					
 
-
-		
-		
-		
-		
-		
-	
-		
-
-	
-	
-	
-	
-	
-
-
-
+					
+					
 
 ###
-#	claim_malta = {
-#		picture = venetian_ambitions
-#		potential = {
-#			tag = VEN
-#			NOT = { has_country_flag = claim_malta }
-#			NOT = { has_country_flag = lost_empire }
-#		}
-#
-#		allow = {
-#			war = no
-#			all_core = {
-#				owned_by = THIS
-#			}
-#		}
-#
-#		effect = {
-#			set_country_flag = claim_malta 
-#			854 = {
-#				add_core = THIS
-#			}
-#			badboy = 1	
-#		}
-#		
-#		ai_will_do = { factor = 1 }
-#	}
-#	
-#	claim_albania = {
-#		picture = venetian_ambitions
-#		potential = {
-#			tag = VEN
-#			NOT = { has_country_flag = claim_albania }
-#			NOT = { has_country_flag = lost_empire }
-#		}
-#
-#		allow = {
-#			war = no
-#			all_core = {
-#				owned_by = THIS
-#			}
-#		}
-#	
-#		effect = {
-#			set_country_flag = claim_albania
-#			850 = {
-#				add_core = THIS 
-#			}
-#			851 = {
-#				add_core = THIS
-#			}
-#			852 = {
-#				add_core = THIS
-#			}
-#			849 = {
-#				add_core = THIS
-#			}
-#			853 = {
-#				add_core = THIS
-#			}
-#			badboy = 7		
-#		}
-#		ai_will_do = { factor = 1 }
-#	}
-#	
-#	claim_istria = {
-#		picture = venetian_ambitions
-#		potential = {
-#			tag = VEN
-#			NOT = { has_country_flag = claim_istria }
-#			NOT = { has_country_flag = lost_empire }
-#		}
-#
-#		allow = {
-#			war = no
-#			all_core = {
-#				owned_by = THIS
-#			}
-#		}
-#		
-#		effect = {
-#			set_country_flag = claim_istria
-#			774 = {
-#				add_core = THIS
-#			}
-#			773 = {
-#				add_core = THIS
-#			}
-#			770 = {
-#				add_core = THIS
-#			}
-#			769 = {
-#				add_core = THIS
-#			}
-#			736 = {
-#				add_core = THIS
-#			}
-#			737 = {
-#				add_core = THIS	
-#			}
-#			3288 = {
-#				add_core = THIS
-#			}
-#			badboy = 10
-#		
-#		}
-#		ai_will_do = { factor = 1 }
-#	}
-#	
 	form_italy = {
 		news = yes
 		news_desc_long = "form_italy_NEWS_LONG"

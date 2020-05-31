@@ -123,14 +123,92 @@ country_event = {
 		prestige = -15
 		badboy = -3
 		VEN = { country_event = 712342 }
-	}
 		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				VEN = {
+					brigades_compare = 0.6
+				}
+			}
+			modifier = {
+				factor = 4
+				VEN = {
+					brigades_compare = 0.75
+				}
+			}
+			modifier = {
+				factor = 10
+				VEN = {
+					brigades_compare = 1
+				}
+			}
+			modifier = {
+				factor = 3
+				any_pop = {
+					militancy = 3
+				}
+			}
+			modifier = {
+				factor = 5
+				any_pop = {
+					militancy = 5
+				}
+			}
+		}	
+	}
 		
 	option = {
 		name = "Milan is ours! Never an inch to the rats!"
 		VEN = { country_event = 712343 }
 		prestige = 5
+	
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1
+				num_of_allies = 5
+			}
+			modifier = {
+				factor = 2
+				num_of_allies = 10
+			}
+			modifier = {
+				factor = 1
+				VEN = {
+					brigades_compare = 0.5
+				}
+			}
+			modifier = {
+				factor = 3
+				VEN = {
+					brigades_compare = 0.25
+				}
+			}
+			modifier = {
+				factor = 5
+				VEN = {
+					brigades_compare = 0.10
+				}
+			}
+			modifier = {
+				factor 2
+				NOT {
+					VEN = {
+						relation = {
+							who = THIS
+							value = -100
+						}
+					}
+				}
+			}
+		}
 	}
+}
+
+	
+
 		
 country_event = {
 	id = 712343
@@ -146,12 +224,20 @@ country_event = {
 			defender_goal = { casus_belli = status_quo }
 			call_ally = yes
 		}
+		
+		ai_chance = {
+			factor = 1
+		}
 	}
 	
 	option = {
 		name = "They caught our bluff..."
 		prestige = -40
 		any pop = { consciousness = 3 }
+		
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -288,7 +374,7 @@ country_event = {
 				}
 			}
 		}
-		badboy = 2
+		badboy = 3
 	}
 		
 	
@@ -305,6 +391,181 @@ country_event = {
 			militancy = 2
 		}
 	}
+}
+
+country_event = {
+	id = 712346
+	title = "Venice Demands Greek Holdings!"
+	major = yes
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Never! The snakes will not step foot on our shores!"
+		prestige = 10
+		VEN = { country_event = 712347 }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1
+				num_of_allies = 5
+			}
+			modifier = {
+				factor = 2
+				num_of_allies = 10
+			}
+			modifier = {
+				factor = 1
+				VEN = {
+					brigades_compare = 0.5
+				}
+			}
+			modifier = {
+				factor = 3
+				VEN = {
+					brigades_compare = 0.25
+				}
+			}
+			modifier = {
+				factor = 5
+				VEN = {
+					brigades_compare = 0.10
+				}
+			}
+			modifier = {
+				factor 2
+				NOT {
+					VEN = {
+						relation = {
+							who = THIS
+							value = -100
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We have... little choice.."
+		prestige = -35
+		any_pop = { 
+			consciousness = 2
+			militancy = 2
+		}
+		VEN = {
+            any_owned = {
+                limit = {
+                OR = {
+                    province_id = 839
+                    province_id = 841
+                    province_id = 842
+                    province_id = 827
+					province_id = 834
+					province_id = 838
+					province_id = 845
+					province_id = 843
+					province_id = 846
+					province_id = 847
+					province_id = 848
+					province_id = 859
+					province_id = 857
+					province_id = 856
+					province_id = 855
+					province_id = 2690
+					province_id = 826
+					province_id = 967
+                }
+				}
+            secede_province = THIS
+            }
+        }
+		VEN { country_event = 712348 }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				VEN = {
+					brigades_compare = 0.6
+				}
+			}
+			modifier = {
+				factor = 4
+				VEN = {
+					brigades_compare = 0.75
+				}
+			}
+			modifier = {
+				factor = 10
+				VEN = {
+					brigades_compare = 1
+				}
+			}
+			modifier = {
+				factor = 3
+				any_pop = {
+					militancy = 3
+				}
+			}
+			modifier = {
+				factor = 5
+				any_pop = {
+					militancy = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 712347
+	title = "The Ottomans Refuse!"
+	major = no
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We'll show them they made the wrong decision!"
+		war = {
+			target = TUR
+			attacker_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Well that's embarrassing"
+		prestige = -30
+		
+		ai_chance = { factor = 0 }
+	}
+}
+	
+country_event = {
+	id = 712348
+	title = "The Ottomans Cave in!"
+	major = no
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It seems the infidels aren't all stupid"
+		prestige = 45
+	}
+}
+
+
+	
+	
+	
+
 		
 		
 		

@@ -40,8 +40,10 @@ political_decisions = {
 				owns = 1874
 				owns = 1873
 			}
+			And = {
 			late_classical_theory = 1
 			the_rights_of_man = 1
+			}
 		}
 		
 		effect = {
@@ -64,7 +66,7 @@ political_decisions = {
 		}
 			
 			ai_will_do = {
-				factor = 0
+				factor = 1
 			}
 	}
 
