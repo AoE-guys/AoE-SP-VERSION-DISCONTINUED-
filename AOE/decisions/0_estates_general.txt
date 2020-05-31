@@ -5,6 +5,8 @@ political_decisions = {
 			tag = BOR
 			NOT = {
 				BOR = { government = democracy }
+				BOR = { government = proletarian_dictatorship }
+				BOR = { government = fascist_dictatorship }
 			}
 			has_country_modifier = peasant_turmoil
 		}
