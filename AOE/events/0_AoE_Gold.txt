@@ -1,0 +1,190 @@
+
+country_event = {
+	id = 4201337
+	title = "Brazilian Goldrush"
+	desc = "It was a good idea to come to Brazil"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PBZ
+	}
+	
+	option = {
+		2441 = { 
+			add_province_modifier = {
+				name = vila_rica
+				duration = -1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = 4201338
+	title = "Silver Road"
+	desc = "Berggeschrei!"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAX
+	}
+	
+	option = {
+		558 = { 
+			add_province_modifier = {
+				name = berggeschrei
+				duration = -1
+			} 
+		}
+		628 = { 
+			add_province_modifier = {
+				name = berggeschrei
+				duration = -1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = 4201339
+	title = "Planchas de Plata"
+	desc = "JJba steel ball run cancelled, time for silver ball"
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1736
+		owns = 2137
+	}
+	
+	option = {
+		2137 = { 
+			add_province_modifier = {
+				name = bolas_de_plata
+				duration = -1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = 4201340
+	title = "Miners struck a massive vein"
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = opened_kolar_gold_fields
+			owns = 2441
+			owns = 558
+			owns = 628
+			AND = {
+				year = 1736
+				owns = 2137
+			}
+		}	
+	}
+	option = {
+		treasury = 15000
+	}
+}
+
+country_event = {
+	id = 4201341
+	title = "Miners struck a large vein"
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = opened_kolar_gold_fields
+			owns = 2441
+			owns = 558
+			owns = 628
+			AND = {
+				year = 1736
+				owns = 2137
+			}
+		}	
+	}
+	option = {
+		treasury = 10000
+	}
+}
+
+country_event = {
+	id = 4201342
+	title = "Miners struck a notable vein"
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = opened_kolar_gold_fields
+			owns = 2441
+			owns = 558
+			owns = 628
+			AND = {
+				year = 1736
+				owns = 2137
+			}
+		}	
+	}
+	option = {
+		treasury = 5000
+	}
+}
+
+country_event = {
+	id = 4201343
+	title = "Miners struck a new vein"
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = opened_kolar_gold_fields
+			owns = 2441
+			owns = 558
+			owns = 628
+			AND = {
+				year = 1736
+				owns = 2137
+			}
+		}	
+	}
+	option = {
+		treasury = 2500
+	}
+}
+
+country_event = {
+	id = 4201337
+	title = "El Eden"
+	desc = "It was a good idea to come to Brazil"
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = VNS
+			tag = MEX
+		}
+	}
+	
+	option = {
+		2158 = { 
+			add_province_modifier = {
+				name = el_eden
+				duration = -1
+			} 
+		}
+	}
+}

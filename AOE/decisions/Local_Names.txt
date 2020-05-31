@@ -21,8 +21,6 @@ political_decisions = {
 			272 = { change_province_name = "Dun Phris" }
 			1724 = { change_province_name = "Arcaibh & Sealtainn" }
 			304 = { change_province_name = "Eilean Mhanainn" }
-			ENG_266 = { change_region_name = "Gaidhealtachd" }
-			ENG_271 = { change_region_name = "Ghalltachd" }
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -54,11 +52,6 @@ political_decisions = {
 			261 = { change_province_name = "Luimneach" }
 			262 = { change_province_name = "Phort Lairge" }
 			260 = { change_province_name = "Chorcai" }
-			ENG_254 = { change_region_name = "Uladh" }
-			ENG_258 = { change_region_name = "Connachta" }
-			ENG_260 = { change_region_name = "an Mhumhain" }
-			ENG_263 = { change_region_name = "Laighin" }
-			
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -82,7 +75,6 @@ political_decisions = {
 			275 = { change_province_name = "Llandrindod" }
 			274 = { change_province_name = "Aberteifi" }
 			273 = { change_province_name = "Caerdydd" }
-			ENG_273 = { change_region_name = "Cymru" }
 		}
 		ai_will_do = { factor = 0 }
 	}

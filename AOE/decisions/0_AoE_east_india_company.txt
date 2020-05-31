@@ -203,4 +203,46 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	open_kolar_gold_fields = {
+		picture = map_india
+		potential = {
+		    owns = 1313
+			NOT = { has_country_flag = opened_kolar_gold_fields }
+		}
+		allow = {
+			money = 10000
+		}
+		effect = {
+			money = -10000
+			set_country_flag = opened_kolar_gold_fields
+			1313 = 
+				add_province_modifier = {
+					name = kolar_gold_fields
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	close_kolar_gold_fields = {
+		picture = map_india
+		potential = {
+		    owns = 1313
+			has_country_flag = opened_kolar_gold_fields
+		}
+		allow = {
+		}
+		effect = {
+			money = -10000
+			clr_country_flag = opened_kolar_gold_fields
+			1313 = {
+				remove_province_modifier = kolar_gold_fields
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
