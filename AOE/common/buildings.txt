@@ -637,7 +637,7 @@ synthetic_sulphur_factory = {
 }
 
 ############# NAVAL FACTORIES
-
+#Saltworks
 steamer_shipyard = {
 	type = factory
 	
@@ -1022,6 +1022,25 @@ fabric_factory = {
 	pop_build_factory = yes
 }
 
+wool_fabric_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 500
+	goods_cost =
+	{
+		machine_parts = 2
+		iron = 20
+		cement = 20
+		precious_goods = 1000
+	}
+	time = 30
+	visibility = yes
+	onmap = no
+
+	production_type = wool_fabric_factory
+	pop_build_factory = yes
+}					   
 cement_factory = {
 	type = factory
 	on_completion = factory
