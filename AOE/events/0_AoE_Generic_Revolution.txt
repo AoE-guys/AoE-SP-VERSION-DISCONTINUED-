@@ -267,6 +267,7 @@ country_event = {
 	option = {
 		name = "Long Live the Republic!"
         prestige = 10
+		add_tax_relative_income	= 10
 		government = democracy
 		ruling_party_ideology = communist
 		political_reform = universal_weighted_voting
@@ -394,16 +395,19 @@ country_event = {
 	option = {
 		name = "Heads shall roll!"
 		prestige = 5
+		add_tax_relative_income	= 5
 		any_owned = {
 		             any_pop = {
 					            limit = { type = aristocrats }
 								reduce_pop = 0.90
+								money = -100
 					 }
 		}
 		any_owned = {
 		             any_pop = {
 					            limit = { type = labourers }
 								reduce_pop = 0.95
+								money = -50
 					 }
 		}
 		
@@ -470,12 +474,20 @@ country_event = {
 		             any_pop = {
 					            limit = { type = aristocrats }
 								reduce_pop = 0.80
+								money = -100
 					 }
 		}
 		any_owned = {
 		             any_pop = {
 					            limit = { type = labourers }
 								reduce_pop = 0.90
+								money = -50
+					 }
+		}
+		any_owned = {
+		             any_pop = {
+					            limit = { strata = poor }
+								money = 10
 					 }
 		}
 		
@@ -548,6 +560,7 @@ country_event = {
 	option = {
 		name = "The show must go on!"
 		prestige = 3
+		add_tax_relative_income	= 3
 		any_owned = {
 		             any_pop = {
 					            limit = { type = clergymen }
