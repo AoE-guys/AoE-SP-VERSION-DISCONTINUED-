@@ -17,6 +17,7 @@ Reworked Tech tree and more!
 We recommend backing up your save files between each update.* 
 
 ## Download
+### Single Player
 [Latest Stable Version](https://github.com/AoE-guys/AoE-exp/releases/latest)
 
 For Dev version, try download directly from GitHub (Select clone or download -> Download Zip). Or use
@@ -24,6 +25,11 @@ For Dev version, try download directly from GitHub (Select clone or download -> 
 ```shell 
 $ git clone https://github.com/AoE-guys/AOE-exp.git
 ```
+
+### Multiplayer
+[Latest Stable Version](https://github.com/AoE-guys/AOE-exp/tree/AOE-MP) 
+
+Select Branch AOE-MP ->Click Clone or download -> Download Zip. You should get AOE-exp-AOE-MP.zip file to download.
 
 ## Wiki & Changelog
 This is still being developed, but we expect them to be online soon.
