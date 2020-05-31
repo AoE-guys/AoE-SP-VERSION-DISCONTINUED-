@@ -6297,6 +6297,16 @@ caledonia = {
 	icon = 19
 }
 
+order_of_the_dragon = {
+	mobilisation_economy_impact = -0.35
+	land_unit_start_experience = 5
+	org_regain = 0.20
+	land_organisation = 0.15
+	supply_consumption = -0.15
+	prestige = 0.05
+	icon = 15
+}
+	
 #EIC
 victory_over_eic = {
     prestige = 0.01
@@ -6386,7 +6396,7 @@ kolar_gold_fields = {
 	tariff_efficiency_modifier = -0.25
 	tax_efficiency = -0.15
 	local_factory_output = 0.1
-	prestige = 0.1
+	prestige = 0.025
 	icon = 11
 }
 	

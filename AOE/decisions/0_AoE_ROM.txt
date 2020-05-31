@@ -1,5 +1,5 @@
 political_decisions = {
-	prince_mircea
+	prince_mircea = {
 		picture = wallachia
 		potential = {
 			tag = WAL
@@ -27,6 +27,63 @@ political_decisions = {
 		}
 		ai_will_do = {					
 			factor = 1
+		}
+	}
+	
+	revive_order_of_the_dragon = {
+		picture = crusade
+		potential = {
+			tag = WAL
+			NOT = { has_country_flag = dragon_order }
+			military_score = 10
+		}
+		allow = {
+			war_with = TUR
+		}
+		effect = {
+			any_country = {
+				limit = { 
+					OR = {
+						religion = sunni
+						religion = shiite
+						religion = ibadi
+						religion = druze
+					}
+				}
+				relation = {
+					who = WAL
+					value = -50
+				}
+			}
+			any_country = {
+				limit = { 
+					OR = {
+						religion = catholic
+					}
+				}
+				relation = {
+					who = WAL
+					value = 25
+				}
+			}
+			any_country = {
+				limit = { 
+					OR = {
+						religion = orthodox
+					}
+				}
+				relation = {
+					who = WAL
+					value = -25
+				}
+			}
+			add_country_modifier = {
+				name = order_of_the_dragon
+				duration = -1
+			}
+			set_country_flag = dragon_order
+			religion = catholic
+			prestige = 25
 		}
 	}
 }
