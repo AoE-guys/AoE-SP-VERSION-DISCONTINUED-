@@ -455,7 +455,7 @@ country_event = {
 			consciousness = 2
 			militancy = 2
 		}
-		VEN = {
+		TUR = {
             any_owned = {
                 limit = {
                 OR = {
@@ -477,9 +477,10 @@ country_event = {
 					province_id = 2690
 					province_id = 826
 					province_id = 967
+					province_id = 840
                 }
 				}
-            secede_province = THIS
+            secede_province = VEN
             }
         }
 		VEN { country_event = 712348 }
