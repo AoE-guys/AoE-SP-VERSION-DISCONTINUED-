@@ -79,4 +79,42 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	restore_flemish_duchy = {
+		picture = become_belgium
+		potential = {
+			tag = FLA
+			NOT = { has_country_flag = restored_duchy_of_flanders }
+		}
+		
+		allow = {
+			OR = {
+				is_vassal = no
+				owns = 391
+			}
+		}
+		
+		effect = {
+			401 = {
+				add_core = THIS
+			}
+			399 = {
+				add_core = THIS
+			}
+			404 = {
+				add_core = THIS
+			}
+			393 = {
+				add_core = THIS
+			}
+			394 = {
+				add_core = THIS
+			}
+			392 = {
+				add_core = THIS
+			}
+			badboy = 5
+			set_country_flag = claimed_friesland
+		}
+		ai_will_do = { factor = 1 }
+	}
 }
