@@ -197,6 +197,10 @@ grain_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 cotton_factory = {       
@@ -214,6 +218,10 @@ cotton_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 dye2_factory = {       
@@ -226,6 +234,10 @@ dye2_factory = {
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -260,6 +272,10 @@ wool_factory = {
 		trigger = { has_building = steel_factory }
 		value = 0.1
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 silk_factory = {       
@@ -276,6 +292,10 @@ silk_factory = {
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -306,6 +326,10 @@ coal_factory = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 sulphur_factory = {       
@@ -335,6 +359,10 @@ sulphur_factory = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 iron_factory = {       
@@ -360,6 +388,10 @@ iron_factory = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 timber_factory = {       
@@ -380,6 +412,21 @@ timber_factory = {
 	bonus = {
 		trigger = { has_building = iron_factory }
 		value = 0.2
+	}
+	bonus = {
+		trigger = { 
+			owner = { 
+				OR = { 
+					government = colonial_company
+					government = dominion
+				}
+			} 
+		}
+		value = 0.6
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -402,6 +449,10 @@ tropical_wood_factory = {
 	bonus = {
 		trigger = { has_building = iron_factory }
 		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -462,6 +513,10 @@ cattle_factory = {
 		trigger = { has_building = steel_factory }
 		value = 0.1
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 fish_factory = {       
@@ -483,6 +538,21 @@ fish_factory = {
 		trigger = { has_building = clipper_shipyard }
 		value = 0.9
 	}
+	bonus = {
+		trigger = { 
+			owner = { 
+				OR = { 
+					government = merchant_republic
+					government = trade_monarchy
+				}
+			} 
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 fruit_factory = {       
@@ -499,6 +569,10 @@ fruit_factory = {
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -517,6 +591,10 @@ tobacco_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 tea_factory = {       
@@ -533,6 +611,10 @@ tea_factory = {
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -551,6 +633,10 @@ coffee_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 opium_factory = {       
@@ -567,6 +653,10 @@ opium_factory = {
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -605,11 +695,11 @@ barrel_factory = {
 	}
 	bonus = {
 		trigger = { has_building = fruit_factory }
-		value = 0.6
+		value = 0.5
 	}
 	bonus = {
 		trigger = { has_building = grain_factory }
-		value = 0.9
+		value = 0.8
 	}
 	bonus = {
 		trigger = { has_building = timber_factory }
@@ -627,9 +717,24 @@ barrel_factory = {
 		trigger = { has_building = steel_factory }
 		value = 0.25
 	}
+	bonus = {
+		trigger = { 
+			owner = { 
+				OR = { 
+					government = khanate
+					government = tribal_democracy
+				}
+			} 
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
-
-automobile_factory = {	#Fur harvesting  
+#Fur harvesting  
+automobile_factory = {
 	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
@@ -656,6 +761,21 @@ automobile_factory = {	#Fur harvesting
 		trigger = { has_building = grain_factory }
 		value = 0.2
 	}
+	bonus = {
+		trigger = { 
+			owner = { 
+				OR = { 
+					government = dominion
+					government = colonial_company
+				}
+			} 
+		}
+		value = 0.75
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 radio_factory = {    #Sugar   
@@ -673,6 +793,10 @@ radio_factory = {    #Sugar
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 telephone_factory = {	#Spices
@@ -689,6 +813,10 @@ telephone_factory = {	#Spices
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -816,6 +944,23 @@ steamer_shipyard = {	#Saltworks
 			}
 		}
 		value = -9.50
+	}
+	bonus = {
+		trigger = { 
+			owner = { 
+				OR = { 
+					primary_culture = north_german
+					primary_culture = frisian
+					primary_culture = danish
+					primary_culture = polish
+				}
+			} 
+		}
+		value = 0.35
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -1183,6 +1328,10 @@ liquor_distillery = {
 		trigger = { has_building = lumber_mill }
 		value = 0.2
 	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 winery = {       
@@ -1204,6 +1353,10 @@ winery = {
 	bonus = {
 		trigger = { has_building = lumber_mill }
 		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 wool_fabric_factory = {       
@@ -1253,6 +1406,10 @@ lumber_mill = {
 			OR = { has_building = iron_factory }
 		}
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
