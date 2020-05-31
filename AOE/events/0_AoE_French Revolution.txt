@@ -21,6 +21,7 @@ country_event = {
 		primary_culture = french
 		is_greater_power = yes
 		capital = 425
+		NOT = { government = proletarian_dictatorship }
 		NOT = { government = democracy }
 		NOT = { has_country_flag = third_estate_satisfied }	
 		year = 1789
@@ -60,7 +61,7 @@ country_event = {
 			}
 			change_controller = THIS
 		}
-		government = proletarian_dictatorship
+		government = democracy
 		ruling_party_ideology = communist
 		political_reform = universal_voting
 		political_reform = population_equal_weight
@@ -109,11 +110,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				ideology = reactionary
-				factor = 4
+				factor = -6
 			}
 			scaled_militancy = {
 				ideology = conservative
-				factor = -6
+				factor = 4
 			}
 			scaled_militancy = {
 				ideology = communist
@@ -133,10 +134,16 @@ country_event = {
 				NOT = { is_culture_group = scandinavian }
 				NOT = { government = democracy }
 				NOT = { government = hms_government }
+				NOT = { government = proletarian_dictatorship }
+				NOT = { government = fascist_dictatorship }
 			}
 			any_pop = {
 				scaled_militancy = {
 					ideology = liberal
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = communist
 					factor = 4
 				}
 			}
@@ -155,7 +162,11 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				government = democracy
+			    OR = {
+				      government = democracy
+					  government = proletarian_dictatorship
+					  government = fascist_dictatorship
+				}
 				NOT = {
 					vassal_of = THIS
 					substate_of = THIS
