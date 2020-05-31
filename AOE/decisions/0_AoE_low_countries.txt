@@ -23,11 +23,11 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	claim_schleswig = {
-		picture = migration
+	frisia_claim_schleswig = {
+		picture = claim_schleswig
 		potential = {
 			tag = EFR
-			NOT = { has_country_flag = claimed_schleswig }
+			NOT = { has_country_flag = frisia_claimed_schleswig }
 		}
 		
 		allow = {
@@ -42,7 +42,7 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 5
-			set_country_flag = claimed_schleswig
+			set_country_flag = frisia_claimed_schleswig
 		}
 		ai_will_do = { factor = 1 }
 	}
