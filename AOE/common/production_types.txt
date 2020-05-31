@@ -629,7 +629,7 @@ barrel_factory = {
 	}
 }
 
-automobile_factory = {       
+automobile_factory = {	#Fur harvesting  
 	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
@@ -658,7 +658,7 @@ automobile_factory = {
 	}
 }
 
-radio_factory = {       
+radio_factory = {    #Sugar   
 	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
@@ -675,7 +675,7 @@ radio_factory = {
 	}
 }
 
-telephone_factory = {       
+telephone_factory = {	#Spices
 	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
@@ -799,7 +799,7 @@ fuel_refinery = {
 	}
 }
 
-steamer_shipyard = {       
+steamer_shipyard = {	#Saltworks
 	template = farming_factory_template
 	input_goods = {
 	precious_goods = 0.1
@@ -827,13 +827,13 @@ luxury_clothes_factory = {
 		regular_clothes = 0.9	#5.22
 		dye = 0.5
 		silk = 4		#39	total input+maint = 54
-		fur = 3
+		automobiles = 3
 	}
 	output_goods = luxury_clothes
 	value = 2		#65
 	bonus = {
 		trigger = { has_building = regular_clothes_factory }
-		value = 0.2
+		value = 0.35
 	}
 	bonus = {
 		trigger = { has_building = silk_factory }
@@ -849,7 +849,7 @@ luxury_clothes_factory = {
 	}
 	bonus = {
 		trigger = { has_building = luxury_furniture_factory }
-		value = 0.5
+		value = 0.2
 	}
 }
 
@@ -858,7 +858,7 @@ luxury_furniture_factory = {
 	input_goods = { 
 		furniture = 2	 	#45.08
 		tropical_wood = 7.5 #8.1	total input+maint = 53.18
-		fur = 3
+		automobiles = 3
 	}
 	output_goods = luxury_furniture 
 	value = 2			#64.9
@@ -872,7 +872,7 @@ luxury_furniture_factory = {
 	}
 	bonus = {
 		trigger = { has_building = luxury_clothes_factory }
-		value = 0.5
+		value = 0.2
 	}
 }
 
@@ -1206,6 +1206,32 @@ winery = {
 		value = 0.2
 	}
 }
+wool_fabric_factory = {       
+	template = cheap_factory_template
+	input_goods = {     
+		wool = 18		# 36
+		dye = 2			# 24 total input+maint = 70
+	}
+	output_goods = fabric
+	value = 30			#81
+	bonus = {
+		trigger = { has_building = wool_factory }
+		value = 0.85
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = dye_factory 
+				has_building = dye2_factory
+				}
+			}
+		value = 0.25
+	}
+	bonus = {
+		trigger = { has_building = regular_clothes_factory }
+		value = 0.7
+	}
+}			 
 
 ############# BASIC FACTORIES 
 
@@ -1252,7 +1278,7 @@ fabric_factory = {
 		value = 0.25
 	}
 	bonus = {
-		trigger = { has_building = silk_factory }
+		trigger = { has_building = regular_clothes_factory }
 		value = 0.7
 	}
 }
@@ -1295,9 +1321,10 @@ fertilizer_factory = {
 	template = factory_template
 	input_goods = {   
 		sulphur = 6		#36		total input+maint = 46
+		tobacco = 6
 	}
 	output_goods = fertilizer 
-	value = 5			#50
+	value = 10			#50
 	bonus = {
 		trigger = { has_building = sulphur_factory }
 		value = 0.55
@@ -1706,7 +1733,7 @@ artisan_luxury_clothes = {
 	input_goods = {   
 		regular_clothes = 1	#5.22
 		dye = 1
-		fur = 2
+		automobiles = 2
 		silk = 5		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes 
@@ -1726,7 +1753,7 @@ artisan_luxury_furniture = {
 	input_goods = { 
 		furniture = 2	 	#45.08
 		dye = 1
-		fur = 2
+		automobiles = 2
 		tropical_wood = 5 #8.1	total input+maint = 53.18
 	}
 	output_goods = luxury_furniture 
