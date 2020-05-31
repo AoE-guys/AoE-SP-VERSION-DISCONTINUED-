@@ -1093,7 +1093,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Surprise, we'r back, where them thrones at?"
+		name = "Surprise, we're back, where them thrones at?"
 		415 = {
 			add_province_modifier = { 
 				name = normans_back
@@ -1120,5 +1120,22 @@ country_event = {
 		}
 		prestige = 20
 		ai_chance = { factor = 1 }	
+	}
+}
+
+#This is for venice bc for some reason it doesnt work when in the venice file#
+country_event = {
+	id = 712342
+	title = "$FROMCOUNTRY$ cedes Milan!"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		create_vassal = LOM
+	}
+	
+	option = {
+		name = "Excellent"
+		prestige = 25
 	}
 }

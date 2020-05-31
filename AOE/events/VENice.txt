@@ -241,23 +241,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = 712342
-	title = "$FROMCOUNTRY$ cedes Milan!"
-	major = no
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		VEN = { create_vassal = LOM }
-	}
-	
-	option = {
-		name = "Wonderful"
-		prestige = 20
-	}
-}
 
 country_event = {
 	id = 712344
