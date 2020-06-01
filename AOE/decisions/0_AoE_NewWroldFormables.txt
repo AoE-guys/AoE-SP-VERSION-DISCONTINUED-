@@ -207,7 +207,7 @@ political_decisions = {
 			medicine = 1
 		}
 		effect = {
-			law_changed_by_force
+			add_country_modifier = { name = law_changed_by_force  duration = 1216 }
 			money = -30000
 			add_country_modifier = {
 				name = global_baby_boom
