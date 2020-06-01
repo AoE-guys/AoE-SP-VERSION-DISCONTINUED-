@@ -10,7 +10,7 @@ country_event = {
 	}
 	
 	option = {
-		2441 = { 
+		2441 = {
 			add_province_modifier = {
 				name = vila_rica
 				duration = -1
@@ -33,17 +33,17 @@ country_event = {
 	}
 	
 	option = {
-		558 = { 
+		558 = {
 			add_province_modifier = {
 				name = berggeschrei
 				duration = -1
-			} 
+			}
 		}
-		628 = { 
+		628 = {
 			add_province_modifier = {
 				name = berggeschrei
 				duration = -1
-			} 
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -67,7 +67,7 @@ country_event = {
 			add_province_modifier = {
 				name = bolas_de_plata
 				duration = -1
-			} 
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -93,7 +93,7 @@ country_event = {
 				year = 1736
 				owns = 2137
 			}
-		}	
+		}
 	}
 	option = {
 		treasury = 15000
@@ -118,7 +118,7 @@ country_event = {
 				year = 1736
 				owns = 2137
 			}
-		}	
+		}
 	}
 	option = {
 		treasury = 10000
@@ -143,7 +143,7 @@ country_event = {
 				year = 1736
 				owns = 2137
 			}
-		}	
+		}
 	}
 	option = {
 		treasury = 5000
@@ -168,7 +168,7 @@ country_event = {
 				year = 1736
 				owns = 2137
 			}
-		}	
+		}
 	}
 	option = {
 		treasury = 2500
@@ -189,11 +189,11 @@ country_event = {
 	}
 	
 	option = {
-		2158 = { 
+		2158 = {
 			add_province_modifier = {
 				name = el_eden
 				duration = -1
-			} 
+			}
 		}
 		ai_chance = {
 			factor = 100
