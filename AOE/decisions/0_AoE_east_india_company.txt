@@ -206,7 +206,10 @@ political_decisions = {
 	open_kolar_gold_fields = {
 		picture = map_india
 		potential = {
-		    owns = 1313
+			OR = { 
+				owns = 1313
+				capital = 1313
+			}
 			NOT = { has_country_flag = opened_kolar_gold_fields }
 		}
 		allow = {
@@ -215,7 +218,7 @@ political_decisions = {
 		effect = {
 			money = -10000
 			set_country_flag = opened_kolar_gold_fields
-			1313 = 
+			1313 = {
 				add_province_modifier = {
 					name = kolar_gold_fields
 					duration = -1
@@ -229,7 +232,10 @@ political_decisions = {
 	close_kolar_gold_fields = {
 		picture = map_india
 		potential = {
-		    owns = 1313
+		    OR = { 
+				owns = 1313
+				capital = 1313
+			}
 			has_country_flag = opened_kolar_gold_fields
 		}
 		allow = {

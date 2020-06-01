@@ -14,7 +14,10 @@ country_event = {
 			add_province_modifier = {
 				name = vila_rica
 				duration = -1
-			} 
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
@@ -42,6 +45,9 @@ country_event = {
 				duration = -1
 			} 
 		}
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -57,11 +63,14 @@ country_event = {
 	}
 	
 	option = {
-		2137 = { 
+		2137 = {
 			add_province_modifier = {
 				name = bolas_de_plata
 				duration = -1
 			} 
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
@@ -185,6 +194,9 @@ country_event = {
 				name = el_eden
 				duration = -1
 			} 
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
