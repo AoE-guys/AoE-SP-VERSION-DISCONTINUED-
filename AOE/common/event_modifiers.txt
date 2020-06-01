@@ -6391,11 +6391,11 @@ el_eden = {
 }
 
 kolar_gold_fields = { 
-	immigrant_attract = 0.25
+	immigrant_attract = 0.75
 	population_growth = 0.001
-	tariff_efficiency_modifier = -0.25
-	tax_efficiency = -0.15
-	local_factory_output = 0.1
+	tariff_efficiency_modifier = -0.05
+	tax_efficiency = 0.10
+	local_factory_output = -0.15
 	prestige = 0.025
 	icon = 11
 }
