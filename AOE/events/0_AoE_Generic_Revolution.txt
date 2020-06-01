@@ -116,7 +116,7 @@ country_event = {
 		political_reform = gerrymandering
 		government = hms_government
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -1
 			consciousness = -1
 			ideology = {
@@ -125,7 +125,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = -1
 			consciousness = -1
 			ideology = {
@@ -134,7 +134,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = 3
 			consciousness = -3
 			ideology = {
@@ -184,7 +184,7 @@ country_event = {
 		#political_reform = no_trade_unions
 		political_reform = non_secret_ballots
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -3
 			consciousness = -3
 			ideology = {
@@ -193,7 +193,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = -3
 			consciousness = -3
 			ideology = {
@@ -202,7 +202,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = 5
 			consciousness = -5
 			ideology = {
@@ -277,7 +277,7 @@ country_event = {
 		#political_reform = state_controlled
 		political_reform = non_secret_ballots
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -5
 			consciousness = -5
 			ideology = {
@@ -286,7 +286,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = -3
 			consciousness = -3
 			ideology = {
@@ -295,7 +295,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = 8
 			consciousness = -8
 			ideology = {
@@ -412,7 +412,7 @@ country_event = {
 		}
 		
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -3
 			consciousness = 3
 			ideology = {
@@ -421,7 +421,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = 1
 			consciousness = -1
 			ideology = {
@@ -430,7 +430,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = 3
 			consciousness = -3
 			ideology = {
@@ -492,7 +492,7 @@ country_event = {
 		}
 		
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -3
 			consciousness = 1
 			ideology = {
@@ -501,7 +501,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = 2
 			consciousness = -2
 			ideology = {
@@ -510,7 +510,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = 3
 			consciousness = -3
 			ideology = {
@@ -569,7 +569,7 @@ country_event = {
 		}
 		
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -6
 			consciousness = 2
 			ideology = {
@@ -578,7 +578,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = 3
 			consciousness = -3
 			ideology = {
@@ -587,7 +587,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = 3
 			consciousness = -3
 			ideology = {
@@ -623,7 +623,7 @@ country_event = {
 		add_country_modifier = { name = revolutionary_spirit  duration = -1 }
 		prestige = 3		
 		any_pop = {
-            limit { strata = poor }
+            limit = { strata = poor }
 			militancy = -5
 			consciousness = -5
 			ideology = {
@@ -632,7 +632,7 @@ country_event = {
 			}
 		}	
 		any_pop = {
-            limit { strata = middle }
+            limit = { strata = middle }
 			militancy = -5
 			consciousness = -5
 			ideology = {
@@ -641,7 +641,7 @@ country_event = {
 			}
 		}		
 		any_pop = {
-            limit { strata = rich }
+            limit = { strata = rich }
 			militancy = -5
 			consciousness = -5
 			ideology = {

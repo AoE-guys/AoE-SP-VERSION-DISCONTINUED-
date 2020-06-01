@@ -308,7 +308,7 @@ country_event = {
 			target = DZN
 			attacker_goal = { casus_belli = establish_protectorate_casus_belli } 
 			defender_goal = { casus_belli = war_reparations } 
-			defender_goal = { casus_belli = casus_belli = acquire_state state_province_id = 1490 }
+			defender_goal = { casus_belli = acquire_state state_province_id = 1490 }
 			defender_goal = { casus_belli = status_quo }
 			call_ally = yes
 		}

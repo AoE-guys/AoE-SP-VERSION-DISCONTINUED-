@@ -193,8 +193,8 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor 2
-				NOT {
+				factor = 2
+				NOT = {
 					VEN = {
 						relation = {
 							who = THIS
@@ -233,7 +233,7 @@ country_event = {
 	option = {
 		name = "They caught our bluff..."
 		prestige = -40
-		any pop = { consciousness = 3 }
+		any_pop = { consciousness = 3 }
 		
 		ai_chance = {
 			factor = 0
@@ -288,7 +288,7 @@ country_event = {
 	option = {
 		name = "Let them go"
 		badboy = -3
-		prestige -5
+		prestige = -5
 	}
 }
 
@@ -418,8 +418,8 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor 2
-				NOT {
+				factor = 2
+				NOT = {
 					VEN = {
 						relation = {
 							who = THIS
@@ -466,7 +466,7 @@ country_event = {
             secede_province = VEN
             }
         }
-		VEN { country_event = 712348 }
+		VEN = { country_event = 712348 }
 		
 		ai_chance = {
 			factor = 1
