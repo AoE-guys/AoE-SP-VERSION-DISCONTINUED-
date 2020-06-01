@@ -276,4 +276,31 @@ political_decisions = {
 			change_tag = DNN
 		}
 	}
+	#mmmyes
+	danish_tunis = {
+		picture = tunisia_map
+		potential = {
+			OR = {
+				tag = DNN
+				tag = DEN
+				tag = SCA
+			}
+			owns = 1725
+			NOT = {
+				has_country_flag = danish_tunisia
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = danish_tunisia
+			1725 = { change_province_name = "Carthenhagen" }
+			prestige = 15
+			TUN = { 
+				primary_culture = danish
+				add_accepted_culture = maghrebi
+			}
+		}
+	}
 }
