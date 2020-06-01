@@ -1,0 +1,36 @@
+political_decisions = {
+	kalmyk_astrakhan_unite = {
+		picture = kalmyk
+		potential = {
+			tag = KMK
+			exists = AKH
+		}
+		allow = {
+			NOT = { vassal_of = RUS }
+		}
+		effect = {
+			inherit = AKH
+			capital = 1036
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	astrakhan_kalmyk_unite = {
+		picture = kalmyk
+		potential = {
+			tag = AKH
+			exists = KMK
+		}
+		allow = {
+			NOT = { vassal_of = RUS }
+		}
+		effect = {
+			inherit = KMK
+			change_tag = KMK
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+}

@@ -1,38 +1,11 @@
 #Sphere of Influence
 #GPs
 FRA = { value = -150 }
-RUS = { value = -75 }
-AUS = { value = 75 }
-USA = { value = 50 }
-PRU = { value = 25 }
-TUR = { value = 125 }
+RUS = { value = -55 }
+AUS = { value = 45 }
+PRU = { value = 125 }
+TUR = { value = 45 }
 SPA = { value = -75 }
-
-#Africa
-BSH = { value = 75 }
-SUA = {
-	value = 150
-	level = 4
-	influence_value = 0
-}
-
-#KEL = {
-#	value = 150
-#	level = 4
-#	influence_value = 50
-#}
-
-#TER = {
-#	value = 150
-#	level = 4
-#	influence_value = 50
-#}
-
-#KED = {
-#	value = 150
-#	level = 4
-#	influence_value = 50
-#}
 
 SCO = {
 	value = 25
@@ -45,7 +18,7 @@ NET = {
 	influence_value = 0
 }
 THC = {
-	value = 150
+	value = 100
 	level = 5
 	influence_value = 0
 }
@@ -54,6 +27,19 @@ POR = {
 	level = 5
 	influence_value = 0
 }
+
+DNN = {
+	value = 50
+	level = 4
+	influence_value = 0
+}
+
+EFR = {
+	value = 50
+	level = 4
+	influence_value = 0
+}
+
 leader = {
 	name = "Thomas Cochrane"
 	picture = eng_adm_cochrane

@@ -2,8 +2,8 @@
 
 #Europe
 MON = {
-	value = -10
-	level = 5
+	value = 25
+	level = 3
 	influence_value = 0
 }
 
@@ -13,14 +13,8 @@ TCA = {
 	influence_value = 0
 }
 
-UBD = {
-	value = 200
-	level = 5
-	influence_value = 0
-}
-
 PLC = {
-	value = 200
+	value = 100
 	level = 5
 	influence_value = 5
 }
@@ -35,17 +29,10 @@ ZZH = {
 	influence_value = 5
 }
 SWE = {
-	value = 125
-	level = 3 	
-	influence_value = 0
-}
-SER = {
-	value = 125
-	level = 4
-	influence_value = 0
+	value = 75
 }
 GRE = {
-	value = 125
+	value = 100
 	level = 4
 	influence_value = 0
 }
@@ -54,40 +41,25 @@ KRA = {
 	level = 4
 	influence_value = 0
 }
-DEN = {
+DNN = {
 	value = 125
+	level = 4
+	influence_value = 0
 }
 MOL = {
-	value = 125
+	value = 105
 	level = 4
 	influence_value = 0
 }
 WAL = {
-	value = 125
-	level = 4
+	value = 45
+	level = 3
 	influence_value = 0
 }
 
 #Asia
-QNG = {
-	value = 75
-}
-TKG = {
-	value = 75
-}
-KOR = {
-	value = 100
-	level = 0
-	influence_value = 0
-}
 MGL = {
-	value = 100
-}
-
-MCK = {
-	value = 100
-	level = 3
-	influence_value = 0
+	value = -10
 }
 
 PER = {
@@ -95,17 +67,6 @@ PER = {
 	level = 0
 	influence_value = 0
 }
-
-XIN = {
-	value = -200
-	level = 0
-	influence_value = 0
-}
-
-AFG = {
-	value = 100
-}
-
 CIR = {
 	value = -200
 	level = 1
@@ -115,11 +76,11 @@ CIR = {
 #Other GP's
 #GPs
 ENG = { value = -75 }
-FRA = { value = 0 }
+FRA = { value = -10 }
 AUS = { value = 50 }
-USA = { value = 25 }
-PRU = { value = 0 }
-TUR = { value = 75 }
+USA = { value = 0 }
+PRU = { value = 100 }
+TUR = { value = 25 }
 SPA = { value = 0 }
 
 army = {

@@ -71,14 +71,72 @@ leader = {
 	prestige = 0.1
 }
 
-AUS = { value = -15 }
+AUS = { value = -20 }
 DNN = { value = -100}
-RUS = { value = -200}
-PRU = { value = -100}
-PLC = { value = -150}
-ENG = { value = -100}
-BOR = { value = -75 }
-MUG = { value = -100 }
+RUS = { value = -100}
+ENG = { value = 100}
+BOR = { value = -45 }
+MUG = { value = 0 }
+
+PLC = {
+	value = -20
+	level = 3
+	influence_value = 5
+}
+
+BRE = {
+	value = 35
+	level = 4
+	influence_value = 0
+}
+
+HAM = {
+	value = 35
+	level = 4
+	influence_value = 0
+}
+
+LUB = {
+	value = 35
+	level = 4
+	influence_value = 0
+}
+
+OLD = {
+	value = 35
+	level = 4
+	influence_value = 0
+}
+
+MEC = {
+	value = 15
+	level = 4
+	influence_value = 0
+}
+
+EFR = {
+	value = 25
+	level = 4
+	influence_value = 0
+}
+
+KUR = {
+	value = 45
+	level = 5
+	influence_value = 0
+}
+
+MST = {
+	value = 15
+	level = 4
+	influence_value = 0
+}
+
+PRU = {
+	value = -50
+	level = 3
+	influence_value = 5
+}
 
 army = {
 	name = "Svenska Armén"
