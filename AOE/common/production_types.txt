@@ -188,7 +188,7 @@ grain_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = grain
-	value = 24
+	value = 20
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -209,7 +209,7 @@ cotton_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = cotton
-	value = 2.4
+	value = 3.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -222,6 +222,10 @@ cotton_factory = {
 		trigger = { owner = { NOT { num_of_cities = 2 } } }
 		value = 0.9
 	}
+	bonus = {
+		trigger = { any_owned_province = { has_poptype = slaves } }
+		value = 0.5
+	}
 }
 
 dye2_factory = {       
@@ -230,7 +234,7 @@ dye2_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = dye
-	value = 1.00
+	value = 2.00
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -539,6 +543,10 @@ fish_factory = {
 		value = 0.9
 	}
 	bonus = {
+		trigger = { has_building = steamer_shipyard }
+		value = 0.5
+	}
+	bonus = {
 		trigger = { 
 			owner = { 
 				OR = { 
@@ -784,7 +792,7 @@ radio_factory = {    #Sugar
 	precious_goods = 0.1
 	}
 	output_goods = radio 
-	value = 4.0		#104
+	value = 3.0		#104
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -796,6 +804,10 @@ radio_factory = {    #Sugar
 	bonus = {
 		trigger = { owner = { NOT { num_of_cities = 2 } } }
 		value = 0.9
+	}
+	bonus = {
+		trigger = { any_owned_province = { has_poptype = slaves } }
+		value = 0.5
 	}
 }
 
@@ -1258,30 +1270,38 @@ canned_food_factory = {
 		fish = 4 		#6	total input+maint = 29.15
 	}
 	output_goods = canned_food 
-	value = 2.0			#33.6
+	value = 2.5			#33.6
 	bonus = {
 		trigger = { has_building = grain_factory }
-		value = 0.65
+		value = 0.33
 	}
 	bonus = {
 		trigger = { has_building = fish_factory }
-		value = 0.65
+		value = 0.33
 	}
 	bonus = {
 		trigger = { has_building = fruit_factory }
-		value = 0.65
+		value = 0.33
 	}
 	bonus = {
 		trigger = { has_building = cattle_factory }
-		value = 0.65
+		value = 0.33
 	}
 	bonus = {
 		trigger = { has_building = steel_factory }
-		value = 0.3
+		value = 0.15
 	}
 	bonus = {
 		trigger = { has_building = steamer_shipyard }
 		value = 0.55
+	}
+	bonus = {
+		trigger = { has_building = radio_factory }
+		value = 0.25
+	}
+	bonus = {
+		trigger = { has_building = telephone_factory }
+		value = 0.25
 	}
 }
        
@@ -1467,10 +1487,18 @@ glass_factory = {
 		coal = 11		#32.2		total input+maint = 42
 	}
 	output_goods = glass 
-	value = 18			#52.2
+	value = 10			#52.2
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.3
+	}
+	bonus = {
+		trigger = { has_building = winery }
+		value = 0.50
+	}
+	bonus = {
+		trigger = { has_building = liquor_distillery }
+		value = 0.50
 	}
 }
 
