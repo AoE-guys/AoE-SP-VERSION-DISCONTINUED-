@@ -1447,3 +1447,56 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 69431
+	title = "Smol"
+	desc = "Very smol"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAW
+	}
+	
+	option = {
+		ADO = { 
+			add_country_modifier = {
+				name = tax_haven
+				duration = -1
+			} 
+		}
+		SMR = { 
+			add_country_modifier = {
+				name = tax_haven
+				duration = -1
+			} 
+		}
+		MNC = { 
+			add_country_modifier = {
+				name = tax_haven
+				duration = -1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = 69432
+	title = "Smol"
+	desc = "So basically, you are smol."
+	fire_only_once = yes
+	
+	trigger = {
+		exists = LIE
+		tag = LIE
+	}
+	
+	option = {
+		LIE = { 
+			add_country_modifier = {
+				name = tax_haven
+				duration = -1
+			} 
+		}
+	}
+}
