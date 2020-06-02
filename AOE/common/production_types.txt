@@ -222,10 +222,6 @@ cotton_factory = {
 		trigger = { owner = { NOT { num_of_cities = 2 } } }
 		value = 0.9
 	}
-	bonus = {
-		trigger = { any_owned_province = { has_poptype = slaves } }
-		value = 0.5
-	}
 }
 
 dye2_factory = {       
@@ -804,10 +800,6 @@ radio_factory = {    #Sugar
 	bonus = {
 		trigger = { owner = { NOT { num_of_cities = 2 } } }
 		value = 0.9
-	}
-	bonus = {
-		trigger = { any_owned_province = { has_poptype = slaves } }
-		value = 0.5
 	}
 }
 
