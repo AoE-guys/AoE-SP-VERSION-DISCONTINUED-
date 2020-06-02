@@ -1,4 +1,4 @@
-political_decisions = {	
+political_decisions = {
 	female_guard = {
 		picture = unciv_army
 		potential = {
@@ -22,11 +22,9 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-}
+
 
 ###Ethiopia###
-
-political_decisions = {	
 	restore_claim_on_yemen = {
 		picture = yemeni_claims
 		potential = {
@@ -40,9 +38,9 @@ political_decisions = {
 				owns = 1874
 				owns = 1873
 			}
-			And = {
-			late_classical_theory = 1
-			the_rights_of_man = 1
+			AND = {
+				late_classical_theory = 1
+				the_rights_of_man = 1
 			}
 		}
 		

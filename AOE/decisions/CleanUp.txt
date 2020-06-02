@@ -684,7 +684,7 @@ political_decisions = {
 			OR = {
 				any_owned_province = {
 					is_colonial = no
-					state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+					state_scope = { flashpoint_tension = 25 }
 					owner = {
 						OR = {
 							NOT = { has_global_flag = revolution_n_counter_researched }
@@ -697,7 +697,7 @@ political_decisions = {
 					NOT = { has_global_flag = revolution_n_counter_researched }
 					any_owned_province = {
 						is_colonial = no
-						state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+						state_scope = { flashpoint_tension = 25 }
 					}
 				}
 				any_neighbor_country = {
@@ -708,7 +708,7 @@ political_decisions = {
 					}
 					any_owned_province = {
 						is_colonial = no
-						state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+						state_scope = { flashpoint_tension = 25 }
 					}
 				}
 			}
@@ -724,7 +724,7 @@ political_decisions = {
 					}
 				}
 				any_state  = {
-					limit = { has_flashpoint = yes is_colonial = no }
+					limit = { flashpoint_tension = 1 is_colonial = no }
 					flashpoint_tension = -90
 				}
 			}
@@ -739,7 +739,7 @@ political_decisions = {
 				}
 				owner = {
 					any_state  = {
-						limit = { has_flashpoint = yes is_colonial = no }
+						limit = { flashpoint_tension = 1 is_colonial = no }
 						flashpoint_tension = -90
 					}
 				}
@@ -1685,7 +1685,7 @@ political_decisions = {
 			exists = yes
 			civilized = no
 			any_owned_province = {
-				state_scope = { flashpoint_tension = 25 has_flashpoint = yes }
+				state_scope = { flashpoint_tension = 25 }
 				owner = {
 					civilized = no
 				}

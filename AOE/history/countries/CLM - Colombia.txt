@@ -2,7 +2,7 @@ capital = 2247
 civilized = yes   primary_culture = north_andean
 religion = catholic
 government = democracy
-plurality = 25.0
+plurality = 0.25
 nationalvalue = nv_order
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.06
 #non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
@@ -52,7 +52,6 @@ upper_house = {
 	communist = 0
 }
 
-decision = CLM_1836_setup
 set_country_flag = new_world_nation
 
 # Technologies

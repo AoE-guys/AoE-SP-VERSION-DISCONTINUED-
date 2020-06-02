@@ -106,7 +106,10 @@ country_event = {
 	option = {
 		name = "They will get what we promised"
         prestige = -1
-		government = prussian_constitutionalism
+		OR = { 
+			government = hms_government
+			government = prussian_constitutionalism
+		}
 		ruling_party_ideology = liberal
 		political_reform = landed_voting
 		political_reform = appointed
@@ -114,7 +117,6 @@ country_event = {
 		political_reform = censored_press
 		#political_reform = no_trade_unions
 		political_reform = gerrymandering
-		government = hms_government
 		any_pop = {
             limit = { strata = poor }
 			militancy = -1

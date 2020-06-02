@@ -3,7 +3,9 @@ political_decisions = {
 	education_reform = {
 		picture = education_reforms
 		potential = {
-			is_capital = 372
+			372 = {
+				is_capital = yes
+			}
 			owns = 372
 			NOT = { has_country_flag = education_reform }
 		}
@@ -18,7 +20,7 @@ political_decisions = {
 					owner = { NOT = { school_reforms = good_schools } }
 				}
 				owner = {
-					social_reforms = good_schools
+					social_reform = good_schools
 				}
 			}
 			add_country_modifier = {
@@ -46,7 +48,7 @@ political_decisions = {
 					owner = { penal_system = capital_punishment }
 				}
 				owner = {
-					social_reforms = colonial_transportation
+					social_reform = colonial_transportation
 				}
 			}
 			random_owned = {
@@ -60,7 +62,7 @@ political_decisions = {
 					}
 				}
 				owner = {
-					social_reforms = acceptable_health_care
+					social_reform = acceptable_health_care
 				}
 			}
 			random_owned = {
@@ -74,7 +76,7 @@ political_decisions = {
 					}
 				}
 				owner = {
-					social_reforms = low_pensions
+					social_reform = low_pensions
 				}
 			}
 			random_owned = {
@@ -87,7 +89,7 @@ political_decisions = {
 					}
 				}
 				owner = {
-					social_reforms = low_safety
+					social_reform = low_safety
 				}
 			}
 			random_owned = {
@@ -101,7 +103,7 @@ political_decisions = {
 					}
 				}
 				owner = {
-					social_reforms = ten_hours
+					social_reform = ten_hours
 				}
 			}
 			random_owned = {

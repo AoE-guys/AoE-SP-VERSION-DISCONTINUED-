@@ -828,7 +828,6 @@ country_event = {
 	desc = "EVTDESC171109"
 	picture = peasants
 	fire_only_once = yes
-	picture = peasant
 	
 	trigger = {
 		tag = BOR
@@ -908,7 +907,6 @@ country_event = {
 	id = 171111
 	title = "Cisalpine Confederation"
 	desc = "EVTDESC171111"
-	picture = italia
 	is_triggered_only = yes
 	picture = italian_war_of_independence_won
 	
@@ -937,7 +935,6 @@ country_event = {
 	id = 171112
 	title = "Cisalpine Confederation"
 	desc = "EVTDESC171112"
-	picture = italia
 	is_triggered_only = yes
 	picture = italian_war_of_independence_won
 	
@@ -974,7 +971,6 @@ country_event = {
 	id = 171113
 	title = "Help from the emperor?"
 	desc = "EVTDESC171113"
-	picture = italia
 	fire_only_once = yes
 	picture = deliberation
 	

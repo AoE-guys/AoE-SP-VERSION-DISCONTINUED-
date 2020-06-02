@@ -10,6 +10,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Hue hue hue"
 		2441 = {
 			add_province_modifier = {
 				name = vila_rica
@@ -33,6 +34,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "PANZERKAMPFWAGEN SCHADENFREUDE!"
 		558 = {
 			add_province_modifier = {
 				name = berggeschrei
@@ -63,6 +65,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Still not El Dorado"
 		2137 = {
 			add_province_modifier = {
 				name = bolas_de_plata
@@ -78,6 +81,7 @@ country_event = {
 country_event = {
 	id = 4201340
 	title = "Miners struck a massive vein"
+	desc = "Outstanding!"
 	
 	mean_time_to_happen = {
 		months = 36
@@ -96,6 +100,7 @@ country_event = {
 		}
 	}
 	option = {
+		name = "Excellent, Smithers..."
 		treasury = 15000
 	}
 }
@@ -103,6 +108,7 @@ country_event = {
 country_event = {
 	id = 4201341
 	title = "Miners struck a large vein"
+	desc = "Wonderful!"
 	
 	mean_time_to_happen = {
 		months = 24
@@ -121,6 +127,7 @@ country_event = {
 		}
 	}
 	option = {
+		name = "Excellent, Smithers..."
 		treasury = 10000
 	}
 }
@@ -128,6 +135,7 @@ country_event = {
 country_event = {
 	id = 4201342
 	title = "Miners struck a notable vein"
+	desc = "Very good!"
 	
 	mean_time_to_happen = {
 		months = 12
@@ -146,6 +154,7 @@ country_event = {
 		}
 	}
 	option = {
+		name = "Excellent, Smithers..."
 		treasury = 5000
 	}
 }
@@ -153,6 +162,7 @@ country_event = {
 country_event = {
 	id = 4201343
 	title = "Miners struck a new vein"
+	desc = "Good enough!"
 	
 	mean_time_to_happen = {
 		months = 6
@@ -171,12 +181,13 @@ country_event = {
 		}
 	}
 	option = {
+		name = "Excellent, Smithers..."
 		treasury = 2500
 	}
 }
 
 country_event = {
-	id = 4201337
+	id = 4201344
 	title = "El Eden"
 	desc = "It was a good idea to come to Brazil"
 	fire_only_once = yes
@@ -189,6 +200,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "El Dorado when?"
 		2158 = {
 			add_province_modifier = {
 				name = el_eden

@@ -43,10 +43,8 @@ political_decisions = {
 		effect = {
 			religion = catholic
 			any_country = {
-				limit = { 
-					OR = {
-						religion = sunni
-					}
+				limit = {
+					religion = sunni
 				}
 				relation = {
 					who = WAL

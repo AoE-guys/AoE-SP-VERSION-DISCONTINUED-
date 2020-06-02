@@ -372,9 +372,9 @@ country_event = {
 	}
 	immediate = {
 			  #all_core = { limit = { NOT = { is_overseas = yes } } remove_core = THIS  add_core = UT2 }
-			  #all_core = { limit = { is_core = FROM } remove_core = THIS  add_core = UT2 }
+			  #all_core = { limit = { is_core = FROM } remove_core = THIS add_core = UT2 }
 			  FROM = { release = THIS }
-			  #UT2 = { all_core = { remove_core = UT2  add_core = THIS } }
+			  #UT2 = { all_core = { remove_core = UT2 add_core = THIS } }
 			  FROM = { overlord = { create_vassal = THIS } }
 			  #THIS = { primary_culture = FROM }
 			  THIS = { government = colonial_company }

@@ -151,23 +151,23 @@ political_decisions = {
 		}
 		allow = {
 				OR = {
-				      has_coutnry_modifier = bureucracy_pm
-					  has_coutnry_modifier = burghers_pm
-					  has_coutnry_modifier = church_pm
-					  has_coutnry_modifier = nobility_pm
-					  has_coutnry_modifier = gentry_pm
-					  has_coutnry_modifier = army_pm
+				      has_country_modifier = bureucracy_pm
+					  has_country_modifier = burghers_pm
+					  has_country_modifier = church_pm
+					  has_country_modifier = nobility_pm
+					  has_country_modifier = gentry_pm
+					  has_country_modifier = army_pm
 				}
 		}
 		effect = {
 			prestige = -10
 			plurality = -5
-		    remove_coutnry_modifier = bureucracy_pm
-		    remove_coutnry_modifier = burghers_pm
-		    remove_coutnry_modifier = church_pm
-		    remove_coutnry_modifier = nobility_pm
-		    remove_coutnry_modifier = gentry_pm
-		    remove_coutnry_modifier = army_pm
+		    remove_country_modifier = bureucracy_pm
+		    remove_country_modifier = burghers_pm
+		    remove_country_modifier = church_pm
+		    remove_country_modifier = nobility_pm
+		    remove_country_modifier = gentry_pm
+		    remove_country_modifier = army_pm
 		}
 		ai_will_do = {
 			factor = 0
