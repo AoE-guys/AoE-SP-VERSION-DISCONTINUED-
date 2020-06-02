@@ -950,19 +950,6 @@ steamer_shipyard = {	#Saltworks
 		value = -9.50
 	}
 	bonus = {
-		trigger = { 
-			owner = { 
-				OR = { 
-					primary_culture = north_german
-					primary_culture = frisian
-					primary_culture = danish
-					primary_culture = polish
-				}
-			} 
-		}
-		value = 0.35
-	}
-	bonus = {
 		trigger = { owner = { NOT { num_of_cities = 2 } } }
 		value = 0.9
 	}
