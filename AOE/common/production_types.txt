@@ -197,10 +197,10 @@ grain_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 cotton_factory = {       
@@ -218,10 +218,10 @@ cotton_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 dye2_factory = {       
@@ -235,10 +235,10 @@ dye2_factory = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 wool_factory = {       
@@ -272,10 +272,10 @@ wool_factory = {
 		trigger = { has_building = steel_factory }
 		value = 0.1
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 silk_factory = {       
@@ -293,10 +293,10 @@ silk_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 coal_factory = {       
@@ -326,10 +326,10 @@ coal_factory = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 sulphur_factory = {       
@@ -359,10 +359,10 @@ sulphur_factory = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 iron_factory = {       
@@ -388,10 +388,10 @@ iron_factory = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 timber_factory = {       
@@ -424,10 +424,10 @@ timber_factory = {
 		}
 		value = 0.6
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 tropical_wood_factory = {       
@@ -450,10 +450,10 @@ tropical_wood_factory = {
 		trigger = { has_building = iron_factory }
 		value = 0.2
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 rubber_factory = {       
@@ -513,10 +513,10 @@ cattle_factory = {
 		trigger = { has_building = steel_factory }
 		value = 0.1
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 fish_factory = {       
@@ -553,10 +553,10 @@ fish_factory = {
 		}
 		value = 0.5
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 fruit_factory = {       
@@ -574,10 +574,10 @@ fruit_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 tobacco_factory = {       
@@ -595,10 +595,10 @@ tobacco_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 tea_factory = {       
@@ -616,10 +616,10 @@ tea_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 coffee_factory = {       
@@ -637,10 +637,10 @@ coffee_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 opium_factory = {       
@@ -658,10 +658,10 @@ opium_factory = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 ############# LATE GAME FACTORIES
@@ -732,10 +732,10 @@ barrel_factory = {
 		}
 		value = 0.5
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 #Fur harvesting  
 automobile_factory = {
@@ -776,10 +776,10 @@ automobile_factory = {
 		}
 		value = 0.75
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 radio_factory = {    #Sugar   
@@ -797,10 +797,10 @@ radio_factory = {    #Sugar
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 telephone_factory = {	#Spices
@@ -818,10 +818,10 @@ telephone_factory = {	#Spices
 		trigger = { has_building = fertilizer_factory }
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 ############# STRATEGIC FACTORIES
@@ -949,10 +949,10 @@ steamer_shipyard = {	#Saltworks
 		}
 		value = -9.50
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 ############# LUXURY GOODS FACTORIES
@@ -1327,10 +1327,10 @@ liquor_distillery = {
 		trigger = { has_building = lumber_mill }
 		value = 0.2
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 winery = {       
@@ -1353,10 +1353,10 @@ winery = {
 		trigger = { has_building = lumber_mill }
 		value = 0.2
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 wool_fabric_factory = {       
 	template = cheap_factory_template
@@ -1406,10 +1406,10 @@ lumber_mill = {
 		}
 		value = 0.25
 	}
-	#bonus = {
-	#	trigger = { owner = { NOT = { num_of_cities = 2 } } }
-	#	value = 0.9
-	#}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
 }
 
 fabric_factory = {       
