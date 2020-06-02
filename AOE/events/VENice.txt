@@ -91,6 +91,7 @@ country_event = {
 country_event = {
 	id = 712340
 	title = "The Future of Venice"
+	desc = "EVTDESC712340"
 	major = yes
 	fire_only_once = yes
 	
@@ -106,13 +107,14 @@ country_event = {
 	option = {
 		name = "Il Nostro Mare!"
 		prestige = 10
-		set_country_flag = our_sea
+		set_country_flag = our_sea§
 	}
 }
 
 country_event = {
 	id = 712341
 	title = "Venice Demands Sovereignty Over Lombardy!"
+	desc = "EVTDESC712341"
 	major = no
 	fire_only_once = yes
 	
@@ -162,7 +164,7 @@ country_event = {
 				war = yes
 			}
 				
-		}	
+		}
 	}
 		
 	option = {
@@ -216,8 +218,11 @@ country_event = {
 country_event = {
 	id = 712343
 	title = "$FROMCOUNTRY$ refuses to cede Milan"
+	desc = "EVTDESC712343"
 	major = no
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 	
 	option = {
 		name = "We warned them!"
@@ -248,6 +253,7 @@ country_event = {
 country_event = {
 	id = 712344
 	title = "Corsican Nationalists Take Over!"
+	desc = "EVTDESC712344"
 	major = no
 	fire_only_once = yes
 	
@@ -296,13 +302,14 @@ country_event = {
 	
 	option = {
 		name = "Fuck this, Corsica time"
-		VEN = { change_tag_no_core_switch = COR }
+		change_tag_no_core_switch = CRS
 	}
 }
 
 country_event = {
 	id = 712345
 	title = "Breaking Tensions With Genoa!"
+	desc = "EVTDESC712345"
 	major = no
 	fire_only_once = yes
 	
@@ -388,6 +395,7 @@ country_event = {
 	id = 712346
 	title = "Venice Demands Greek Holdings!"
 	major = yes
+	desc = "EVTDESC712346"
 	fire_only_once = yes
 	
 	is_triggered_only = yes
@@ -515,6 +523,7 @@ country_event = {
 country_event = {
 	id = 712347
 	title = "The Ottomans Refuse!"
+	desc = "EVT712347"
 	major = no
 	fire_only_once = yes
 	
@@ -542,6 +551,7 @@ country_event = {
 country_event = {
 	id = 712348
 	title = "The Ottomans Cave in!"
+	desc = "EVT712348
 	major = no
 	fire_only_once = yes
 	

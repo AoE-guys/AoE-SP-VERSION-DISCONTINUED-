@@ -3,7 +3,7 @@ political_decisions = {
 ###Venice's Expansion###
 
 	the_future_of_venice = {
-		picture = venetian_ambitions
+		picture = venetian_ambition
 		potential = {
 			tag = VEN
 			NOT = { has_country_flag = venice_expansion }
@@ -37,7 +37,10 @@ political_decisions = {
 		allow = {
 			war = no
 			is_independant = yes
-			is_secondary_power = yes
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 		}
 		
 		effect = {
@@ -70,7 +73,7 @@ political_decisions = {
 	}
 	
 	demand_milan = {
-		picture = milan
+		picture = lombardy
 		potential = {
 			has_country_flag = into_italy
 			has_country_flag = emilia_romagna_done
@@ -78,7 +81,6 @@ political_decisions = {
 		}
 		
 		allow = {
-
 			OR = {
 				LOM = { is_independant = no }
 				LOM = { exists = no }
@@ -86,12 +88,12 @@ political_decisions = {
 			OR = {
 				owns = 738 #Parma
 				owns = 739 #Modena
+			}
+			owns = 742 #Ferrara
 			is_secondary_power = yes
 			military_score = 25
 			num_of_allies = 4
 			war = no
-			
-			
 		}
 		
 		effect = {
@@ -126,7 +128,10 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_secondary_power = yes
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 			war = no
 			OR = {
 				is_our_vassal = LOM
@@ -169,6 +174,10 @@ political_decisions = {
 		}
 		
 		allow = {
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}			
 			invention = traditionalism
 			invention = collectivism
 			iron_muzzle_loaded_artillery = 1
@@ -211,6 +220,10 @@ political_decisions = {
 		}
 		
 		allow = {
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}			
 			owns = 782
 			owns = 743
 			owns = 778
@@ -263,7 +276,10 @@ political_decisions = {
 			central_bank_money_bill_printing = 1
 			blue_and_brown_water_schools = 1
 			naval_decision_making = 1
-			is_secondary_power = yes
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 		}
 		
 		effect = {
@@ -326,6 +342,10 @@ political_decisions = {
 				owns = 502 #Balearics
 				owns = 759 #Reggio de Calabria
 				owns = 763 #Messina
+			}
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
 			}
 		}
 		
