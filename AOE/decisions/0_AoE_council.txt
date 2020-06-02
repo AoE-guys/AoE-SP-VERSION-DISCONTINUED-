@@ -151,7 +151,7 @@ political_decisions = {
 		}
 		allow = {
 				OR = {
-				      has_country_modifier = bureucracy_pm
+				      has_country_modifier = bureaucracy_pm
 					  has_country_modifier = burghers_pm
 					  has_country_modifier = church_pm
 					  has_country_modifier = nobility_pm
@@ -162,7 +162,7 @@ political_decisions = {
 		effect = {
 			prestige = -10
 			plurality = -5
-		    remove_country_modifier = bureucracy_pm
+		    remove_country_modifier = bureaucracy_pm
 		    remove_country_modifier = burghers_pm
 		    remove_country_modifier = church_pm
 		    remove_country_modifier = nobility_pm
