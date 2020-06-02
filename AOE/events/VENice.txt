@@ -95,12 +95,6 @@ country_event = {
 	fire_only_once = yes
 	
 	is_triggered_only = yes
-
-	option = {
-		name = "Il Nostro Mare!"
-		prestige = 10
-		set_country_flag = our_sea
-	}
 	
 	option = {
 		name = "Avanti a Italia!"
@@ -108,11 +102,17 @@ country_event = {
 		set_country_flag = into_italy
 
 	}
+	
+	option = {
+		name = "Il Nostro Mare!"
+		prestige = 10
+		set_country_flag = our_sea
+	}
 }
 
 country_event = {
 	id = 712341
-	title = "Venice Demands Milan!"
+	title = "Venice Demands Sovereignty Over Lombardy!"
 	major = no
 	fire_only_once = yes
 	
@@ -156,11 +156,17 @@ country_event = {
 					militancy = 5
 				}
 			}
+			
+			modifier = {
+				factor = 3
+				war = yes
+			}
+				
 		}	
 	}
 		
 	option = {
-		name = "Milan is ours! Never an inch to the rats!"
+		name = "Lombardy is ours! Never an inch to the rats!"
 		VEN = { country_event = 712343 }
 		prestige = 5
 	
@@ -187,7 +193,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 5
+				factor = 6
 				VEN = {
 					brigades_compare = 0.10
 				}
@@ -207,9 +213,6 @@ country_event = {
 	}
 }
 
-	
-
-		
 country_event = {
 	id = 712343
 	title = "$FROMCOUNTRY$ refuses to cede Milan"
@@ -290,6 +293,11 @@ country_event = {
 		badboy = -3
 		prestige = -5
 	}
+	
+	option = {
+		name = "Fuck this, Corsica time"
+		VEN = { change_tag_no_core_switch = COR }
+	}
 }
 
 country_event = {
@@ -343,7 +351,7 @@ country_event = {
 	}
 		
 	option = {
-		name = "For the expanse of Venice, to arms!"
+		name = "In the ever growing expanse of Venice, to arms!"
 		GEN = { 
 			war = {
 				target = VEN
@@ -540,41 +548,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "It seems the infidels aren't all stupid"
+		name = "Render unto Veneto..."
 		prestige = 45
 	}
 }
-
-
-	
-	
-	
-
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-
-		
-
-

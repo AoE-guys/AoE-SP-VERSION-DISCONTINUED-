@@ -83,9 +83,14 @@ political_decisions = {
 				LOM = { is_independant = no }
 				LOM = { exists = no }
 			}
+			OR = {
+				owns = 738 #Parma
+				owns = 739 #Modena
 			is_secondary_power = yes
 			military_score = 25
+			num_of_allies = 4
 			war = no
+			
 			
 		}
 		
@@ -196,7 +201,7 @@ political_decisions = {
 	}
 			
 	tighten_adriatic_hold = {
-		picture = conquest_adriatic
+		picture = conquest_adriatic2
 		potential = {
 			has_country_flag = our_sea
 			has_country_flag = reclaimed_adriatic
