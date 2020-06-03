@@ -22,7 +22,7 @@ infantry = {
 	build_cost = {
 		small_arms = 10
 		canned_food = 10
-		luxury_clothes = 2
+		regular_clothes = 2
 	}
 	
 	supply_consumption = 1.0
@@ -30,7 +30,7 @@ infantry = {
 		small_arms = 0.012 #0.012
 		ammunition = 0.075 #0
 		canned_food = 0.07 #0.08
-		luxury_clothes = 0.02 #0
+		regular_clothes = 0.02 #0
 	}
 	
 

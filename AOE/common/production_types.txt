@@ -406,12 +406,15 @@ timber_factory = {
 		value = -9.50
 	}
 	bonus = {
-		trigger = { has_building = steel_factory }
-		value = 0.3
+		trigger = { 
+			OR = { has_building = steel_factory }
+			OR = { has_building = iron_factory }
+		}
+		value = 0.55
 	}
 	bonus = {
-		trigger = { has_building = iron_factory }
-		value = 0.2
+		trigger = { has_building = lumber_mill }
+		value = 0.85
 	}
 	bonus = {
 		trigger = { 
@@ -422,7 +425,7 @@ timber_factory = {
 				}
 			} 
 		}
-		value = 0.6
+		value = 0.75
 	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
@@ -976,16 +979,25 @@ luxury_clothes_factory = {
 		value = 0.35
 	}
 	bonus = {
-		trigger = { has_building = dye_factory }
-		value = 0.25
-	}
-	bonus = {
-		trigger = { has_building = dye2_factory }
+		trigger = { 
+				OR = {
+					has_building = dye_factory 
+					has_building = dye2_factory
+				}
+			}
 		value = 0.25
 	}
 	bonus = {
 		trigger = { has_building = luxury_furniture_factory }
 		value = 0.2
+	}
+	bonus = {
+		trigger = { has_building = cotton_factory }
+		value = 0.3
+	}
+	bonus = {
+		trigger = { has_building = fabric_factory }
+		value = 0.3
 	}
 }
 
@@ -1184,12 +1196,25 @@ regular_clothes_factory = {
 		value = 0.85
 	}
 	bonus = {
-		trigger = { has_building = dye_factory }
+		trigger = {
+				OR = {
+					has_building = dye_factory 
+					has_building = dye2_factory
+				}
+			}
 		value = 0.25
 	}
 	bonus = {
-		trigger = { has_building = dye2_factory }
-		value = 0.25
+		trigger = { has_building = cotton_factory }
+		value = 0.3
+	}
+	bonus = {
+		trigger = { has_building = fabric_factory }
+		value = 0.3
+	}
+	bonus = {
+		trigger = { has_building = silk_factory }
+		value = 0.3
 	}
 }
 
@@ -1404,7 +1429,7 @@ lumber_mill = {
 			OR = { has_building = steel_factory }
 			OR = { has_building = iron_factory }
 		}
-		value = 0.25
+		value = 0.45
 	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
