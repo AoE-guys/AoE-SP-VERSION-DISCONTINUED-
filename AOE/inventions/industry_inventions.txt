@@ -1318,23 +1318,23 @@ carbon_soil_enrichment = {
 		rgo_goods_output = { fruit = 0.05 }
 	}
 }
-cracking = {
-	limit = { organic_chemistry = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = oil_pumping_machinery
-		}
-		modifier = {
-			factor = 2
-			management_strategy = 1
-		}
-	}
-	effect = {
-		activate_building = fuel_refinery 
-	}
-}
+#cracking = {
+#	limit = { organic_chemistry = 1 }
+#	chance = {
+#		base = 2
+#		modifier = {
+#			factor = 2
+#			invention = oil_pumping_machinery
+#		}
+#		modifier = {
+#			factor = 2
+#			management_strategy = 1
+#		}
+#	}
+#	effect = {
+#		activate_building = fuel_refinery 
+#	}
+#}
 #electricity
 x_rays = {
 	limit = { electricity = 1 }

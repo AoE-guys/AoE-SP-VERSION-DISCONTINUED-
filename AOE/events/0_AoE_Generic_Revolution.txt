@@ -16,6 +16,7 @@ country_event = {
 	trigger = {
 	           NOT = { has_country_flag = estates_general_summoned } #so it does not trigger for france after they take summon_the_estates_general decision
 	           political_thought_7 = 1
+			   #NOT = { nationalvalue = nv_tradition }
 	           is_vassal = no
 		       has_country_modifier = in_bankrupcy
 			   NOT = { has_country_modifier = alone_in_bancruptcy }
@@ -671,7 +672,7 @@ country_event = {
 	           is_vassal = no
 		       ruling_party_ideology = reactionary
 			   government = proletarian_dictatorship
-			   has_country_flag = rev_other_children_eaten
+			   has_country_flag = rev_oldest_child_eaten
 			   NOT = { has_country_flag = rev_coup }
 	}
 	
