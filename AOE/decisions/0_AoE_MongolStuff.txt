@@ -33,4 +33,36 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	mongol_manchukuo = {
+		picture = outer_manchuria_map
+		potential = {
+			tag = MGL
+			NOT = {
+				OR = {
+					exists = MCK
+					exists = QNG
+					accepted_culture = manchu
+				}
+			}
+			any_owned_province = {
+				is_core = MCK
+			}
+		}
+		allow = {
+			MCK = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = manchu
+			prestige = 5
+			badboy = -3
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
 }
