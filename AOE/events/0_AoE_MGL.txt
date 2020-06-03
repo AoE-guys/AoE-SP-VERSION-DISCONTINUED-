@@ -28,19 +28,21 @@ country_event = {
 	id = 6691338
 	title = "Khanate time"
 	desc = "And only a Borjigin shall be worthy!"
-	
+	fire_only_once = yes
 	trigger = {
 		tag = MGL
-		is_vassal = no
 		MGL = {
-			OR = {
-				government = dominion
-				government = colonial_company
-				NOT = {
-					government = democracy
-					government = bourgeois_dictatorship
-					government = theocracy
-					government = merchant_republic
+			AND = {
+				is_vassal = no
+				OR = {
+					government = dominion
+					government = colonial_company
+					NOT = {
+						government = democracy
+						government = bourgeois_dictatorship
+						government = theocracy
+						government = merchant_republic
+					}
 				}
 			}
 		}
