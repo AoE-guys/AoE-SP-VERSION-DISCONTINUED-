@@ -969,7 +969,7 @@ luxury_clothes_factory = {
 		automobiles = 3
 	}
 	output_goods = luxury_clothes
-	value = 2		#65
+	value = 3		#65
 	bonus = {
 		trigger = { has_building = regular_clothes_factory }
 		value = 0.35
@@ -1190,7 +1190,7 @@ regular_clothes_factory = {
 		dye = 1
 	}
 	output_goods = regular_clothes 
-	value = 15			#87
+	value = 18			#87
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.85
@@ -1926,7 +1926,7 @@ artisan_luxury_clothes = {
 		silk = 5		#39	total input+maint = 54
 	}
 	output_goods = luxury_clothes 
-	value = 2			#65
+	value = 3			#65
 
 	owner = {
 		poptype = artisans 
@@ -2078,7 +2078,7 @@ artisan_regular_clothes = {
 		silk = 1
 	}
 	output_goods = regular_clothes
-	value = 18			#87
+	value = 20			#87
 	
 	owner = {
 		poptype = artisans 
