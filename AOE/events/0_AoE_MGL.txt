@@ -6,7 +6,10 @@ country_event = {
 	
 	trigger = {
 		tag = MGL
-		IMG = { is_vassal = no }
+		AND = {
+			MGL = { is_vassal = no }
+			IMG = { is_vassal = no }
+		}
 	}
 	
 	option = {
@@ -18,5 +21,35 @@ country_event = {
 			}
 		}
 		inherit = IMG
+	}
+}
+
+country_event = {
+	id = 6691338
+	title = "Khanate time"
+	desc = "And only a Borjigin shall be worthy!"
+	
+	trigger = {
+		tag = MGL
+		is_vassal = no
+		MGL = {
+			OR = {
+				government = dominion
+				government = colonial_company
+				NOT = {
+					government = democracy
+					government = bourgeois_dictatorship
+					government = theocracy
+					government = merchant_republic
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Alright, what next?"
+		prestige = 10
+		government = khanate
+		nationalvalue = nv_autocracy
 	}
 }
