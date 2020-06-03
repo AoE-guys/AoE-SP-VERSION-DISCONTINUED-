@@ -1,0 +1,22 @@
+country_event = {
+	id = 6691337
+	title = "Mongol moment"
+	desc = "Our southern kin have been freed"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MGL
+		IMG = { is_vassal = no }
+	}
+	
+	option = {
+		name = "Why care about Hong Kong, free Inner Mongolia !"
+		prestige = 30
+		IMG = {
+			all_core = {
+				add_core = MGL
+			}
+		}
+		inherit = IMG
+	}
+}
