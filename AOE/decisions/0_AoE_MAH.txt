@@ -3,7 +3,7 @@ political_decisions = {
 		picture = west_india_mah
 		potential = {
 			tag = MAH
-			NOT = { has_country_flag = mughal_conquest }
+			NOT = { has_country_flag = absolute_mughal_conquest }
 		}
 		allow = {
 			military_score = 30
@@ -16,7 +16,7 @@ political_decisions = {
 		effect = {
 			prestige = 30
 			badboy = 15
-			set_country_flag = mughal_conquest
+			set_country_flag = absolute_mughal_conquest
 			NAG_1277 = {
 				add_core = THIS
 			}
@@ -80,7 +80,7 @@ political_decisions = {
 		picture = maratha_empire
 		potential = {
 			tag = MAH
-			NOT = { has_country_flag = maratha_empire }
+			NOT = { has_country_flag = claimed_maratha_empire }
 		}
 		allow = {
 			is_greater_power = yes
@@ -118,7 +118,7 @@ political_decisions = {
 		effect = {
 			prestige = 30
 			badboy = 15
-			set_country_flag = maratha_empire
+			set_country_flag = claimed_maratha_empire
 			add_country_modifier = {
 				name = indian_raj
 				duration = -1
@@ -179,6 +179,7 @@ political_decisions = {
 		}
 		effect = {
 			political_reform = unitary
+			set_country_flag = modernize_our_weaponary
 		}
 	}
 }
