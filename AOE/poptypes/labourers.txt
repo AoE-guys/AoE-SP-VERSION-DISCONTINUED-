@@ -796,7 +796,7 @@ promote_to =
 			NOT = { capitalists = 0.040 }
 		}  
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			capitalists = 0.040
 		}
 	}
@@ -862,7 +862,7 @@ promote_to =
 			NOT = { officers = 0.005 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			officers = 0.005
 		}
 	}
@@ -929,7 +929,7 @@ promote_to =
 			NOT = { clergymen = 0.040 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			clergymen = 0.040
 		}
 	}
@@ -995,7 +995,7 @@ promote_to =
 			NOT = { bureaucrats = 0.030 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			bureaucrats = 0.030
 		}
 	}
@@ -1007,7 +1007,7 @@ promote_to =
 			NOT = { aristocrats = 0.015 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			aristocrats = 0.015
 		}
 	}

@@ -878,7 +878,7 @@ promote_to = {
 			NOT = { artisans = 0.10 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			artisans = 0.10
 		}
 	}
@@ -944,7 +944,7 @@ promote_to = {
 			NOT = { bureaucrats = 0.030 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			bureaucrats = 0.030
 		}
 	}
@@ -1011,7 +1011,7 @@ promote_to = {
 			NOT = { soldiers = 0.050 }
 		} 
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			soldiers = 0.050
 		}
 	}
@@ -1082,7 +1082,7 @@ promote_to = {
 			location = { is_colonial = yes }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			craftsmen = 0.150
 		}
 	}
@@ -1151,7 +1151,7 @@ promote_to = {
 			NOT = { clergymen = 0.040 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			clergymen = 0.040
 		}
 	}
@@ -1163,7 +1163,7 @@ promote_to = {
 			NOT = { labourers = 0.05 }
 		}
 		modifier = {
-			factor = -500
+			factor = -50 #-500
 			labourers = 0.05
 		}
 	}
