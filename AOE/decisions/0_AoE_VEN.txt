@@ -418,10 +418,10 @@ political_decisions = {
 			NOT = {
 				exists = ITA
 			}
-		}
 			NOT = {
 				has_country_flag = our_sea
 			}
+		}
 		
 		allow = {
 			is_greater_power = yes
