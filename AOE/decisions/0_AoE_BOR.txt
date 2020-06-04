@@ -132,7 +132,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 15
+				badboy = 5
 			}
 		}
 	}
@@ -193,7 +193,10 @@ political_decisions = {
 			prestige = 15
 		}
 		ai_will_do = {
-			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 15
+			}
 		}
 	}
 	
@@ -362,7 +365,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 15
+				badboy = 5
 			}
 		}
 	}
