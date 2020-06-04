@@ -32,7 +32,6 @@ political_decisions = {
 		picture = hungary_flag
 		potential = {
 			tag = AUS
-			has_global_flag = hungarian_revolution_fail
 			HUN = {
 				vassal_of = AUS
 			}
@@ -44,9 +43,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			HUN = {
-				annex_to = THIS
-			}
+			inherit = HUN
 			any_pop = {
 				limit = {
 					has_pop_culture = hungarian
@@ -55,7 +52,6 @@ political_decisions = {
 			}
 			badboy = 1
 		}
-		
 		ai_will_do = { factor = 1 }
 	}
 	order_to_siebenburger = {
