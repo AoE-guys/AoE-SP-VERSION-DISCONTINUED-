@@ -38,6 +38,62 @@ country_event = {
 		}
 	}
 }
+ENG_1264
+country_event = {
+	id = 1707712
+	title = "Rajputana secedes!"
+	desc = "EVTDESC1707712"
+	fire_only_once = yes
+	picture = mughal_breakup
+	
+	trigger = {
+		tag = MUG
+		has_global_flag = mughal_breakdown
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "It's time for WAR!"
+		RAJ = { ENG_1264 = { limit = { owned_by = THIS } add_core = RAJ } }
+		RAJ = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = RAJ
+			}
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
+			}
+		}
+		war = {
+			target = RAJ
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+	}
+	
+	option = {
+		name = "We have more pressing issues."
+		BNG = { all_core = { limit = { owned_by = THIS } secede_province = BNG } }
+		BNG = {
+			1249 = { secede_province = BNG }
+			1248 = { secede_province = BNG }
+			1247 = { secede_province = BNG }
+			1250 = { secede_province = BNG }
+		}
+		relation = {
+			who = BNG
+			value = 100
+		}
+		prestige = -15
+	}
+}
 country_event = {
 	id = 170771
 	title = "Nawab of Bengal secedes!"
