@@ -11,12 +11,11 @@ political_decisions = {
 			
 		allow = {
 			war = no
-			invention = expansionism
-			collectivist_theory = 1
+			state_n_government = 1
 			is_secondary_power = yes
 		}
 		
-		effect = { 
+		effect = {
 			set_country_flag = the_future_of_venice_event
 			set_country_flag = venice_expansion
 			country_event = 712340
@@ -34,7 +33,8 @@ political_decisions = {
 			NOT = { has_country_flag = emilia_romagna_done }
 		}
 		
-		allow = {
+		allow = {			
+			collectivist_theory = 1
 			war = no
 			is_independant = yes
 			OR = {
@@ -178,8 +178,6 @@ political_decisions = {
 				is_secondary_power = yes
 				is_greater_power = yes
 			}			
-			invention = traditionalism
-			invention = collectivism
 			iron_muzzle_loaded_artillery = 1
 			war = no
 		}
@@ -257,10 +255,9 @@ political_decisions = {
 			}
 			rich_strata = { militancy = 1 }
 			prestige = 10
-			badboy = 10
-			
-			ai_will_do = { factor = 1 }
+			badboy = 10	
 		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	expand_west = {
