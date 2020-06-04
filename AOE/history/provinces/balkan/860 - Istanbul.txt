@@ -6,3 +6,8 @@ life_rating = 40
 terrain = istanbul
 naval_base = 1
 fort = 2
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

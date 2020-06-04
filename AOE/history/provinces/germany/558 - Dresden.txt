@@ -7,3 +7,8 @@ trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgr
 state_building = {  level = 1  building = ammunition_factory  upgrade = yes  }
 life_rating = 40
 terrain = dresden
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

@@ -7,3 +7,8 @@ trade_goods = precious_goods
 life_rating = 35
 terrain = macao
 fort = 1
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

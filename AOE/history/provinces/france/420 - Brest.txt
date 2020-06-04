@@ -6,3 +6,8 @@ trade_goods = grain  state_building = {  level = 1  building = grain_factory  up
 life_rating = 30
 naval_base = 2
 terrain = brest
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
