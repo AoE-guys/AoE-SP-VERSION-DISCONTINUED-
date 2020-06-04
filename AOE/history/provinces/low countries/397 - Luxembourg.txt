@@ -2,6 +2,11 @@ owner = SPA
 controller = SPA
 add_core = LUX
 trade_goods = iron  state_building = {  level = 1  building = iron_factory  upgrade = yes  }
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
 fort = 2
 life_rating = 35
 terrain = luxemburg

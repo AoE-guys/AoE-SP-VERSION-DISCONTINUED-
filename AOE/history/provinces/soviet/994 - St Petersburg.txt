@@ -7,3 +7,8 @@ life_rating = 42
 terrain = stpetersburg
 naval_base = 1
 fort = 1
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

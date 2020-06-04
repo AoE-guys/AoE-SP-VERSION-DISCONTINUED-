@@ -4,6 +4,11 @@ add_core = FRM
 add_core = GER
 add_core = NNN
 trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
 life_rating = 48
 terrain = frankfurt
 fort = 1

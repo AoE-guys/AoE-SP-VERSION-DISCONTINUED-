@@ -3,6 +3,11 @@ controller = VEN
 add_core = VEN
 trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
 state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
 life_rating = 40
 terrain = venice
 naval_base = 2

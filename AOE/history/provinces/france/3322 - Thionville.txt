@@ -5,3 +5,8 @@ add_core = ALS
 add_core = NNN
 trade_goods = cattle
 life_rating = 31
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

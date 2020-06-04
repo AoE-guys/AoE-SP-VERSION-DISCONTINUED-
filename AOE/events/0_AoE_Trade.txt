@@ -950,8 +950,8 @@ country_event = {
 			add_province_modifier = { name = negotiated  duration = 12 }
 		}
 		random_country = { 
-		                  limit = { has_country_flag = getting_trade_port }
-		                  country_event = 69423 
+			limit = { has_country_flag = getting_trade_port }
+			country_event = 69423 
 		}
 		ai_chance = {
 			factor = 1
@@ -975,6 +975,9 @@ country_event = {
 					has_province_modifier = negotiated
 				}
 				secede_province = THIS 
+				add_province_modifier = trade_centre
+				remove_province_modifier = negotiated
+				remove_province_modifier = potential_trade_post
 			}
 		}
 		ai_chance = {

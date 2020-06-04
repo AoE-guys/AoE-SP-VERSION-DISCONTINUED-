@@ -3,8 +3,8 @@
 
 factory_template = {
 	efficiency = {
-		cement = 0.5 #if no cement, work at 75% efficiency #cost = 8
-		machine_parts = 0.05 # was 0.01 cost = 36.5		# 9.825/day/level for both
+		cement = 0.05 #if no cement, work at 75% efficiency #cost = 8
+		machine_parts = 0.5 # was 0.01 cost = 36.5		# 9.825/day/level for both
 	}
 	
 	owner = {
@@ -33,7 +33,8 @@ factory_template = {
 
 cheap_factory_template = {
 	efficiency = {
-		cement = 0.25 #if no cement, work at 75% efficiency #cost = £4/level
+		cement = 0.025 #if no cement, work at 75% efficiency #cost = £4/level
+		machine_parts = 0.25
 	}
 	
 	owner = {
@@ -62,7 +63,8 @@ cheap_factory_template = {
 
 machine_part_user_template = {
 	efficiency = {
-		cement = 0.5 #if no cement, work at 75% efficiency #cost = 16.0
+		cement = 0.05 #if no cement, work at 75% efficiency #cost = 16.0
+		machine_parts = 0.5
 	}
 	
 	owner = {
@@ -91,8 +93,8 @@ machine_part_user_template = {
 
 cement_template = {
 	efficiency = {
-		iron = 2.3 #if no cement, work at 75% efficiency #cost = 16.0
-		machine_parts = 0.05 # was 0.01 cost = 36.5 		#9.825/day/level for both
+		iron = 0.23 #if no cement, work at 75% efficiency #cost = 16.0
+		machine_parts = 0.23 # was 0.01 cost = 36.5 		#9.825/day/level for both
 	}
 	
 	owner = {
@@ -122,7 +124,8 @@ cement_template = {
 farming_factory_template = {
 	efficiency = {
 	    precious_goods = 0.1
-		#fertilizer = 1
+		machine_parts = 0.25
+		fertilizer = 0.20
 	}
 	
 	owner = {

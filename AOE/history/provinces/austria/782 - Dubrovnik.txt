@@ -8,3 +8,8 @@ trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgr
 life_rating = 40
 naval_base = 1
 state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
