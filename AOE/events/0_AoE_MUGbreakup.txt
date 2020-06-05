@@ -38,6 +38,7 @@ country_event = {
 		}
 	}
 }
+#ENG_1264
 country_event = {
 	id = 1707712
 	title = "Rajputana secedes!"
@@ -291,10 +292,14 @@ country_event = {
 	trigger = {
 		tag = MUG
 		has_global_flag = mughal_breakdown
+		OR = {
+			year = 1717
+			has_recently_lost_war = yes
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 	
 	option = {
