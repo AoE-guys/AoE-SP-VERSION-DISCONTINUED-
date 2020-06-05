@@ -1,6 +1,6 @@
-capital = 1405
-civilized = yes   primary_culture = malay
-culture = 
+capital = 1418
+civilized = yes   primary_culture = javan
+culture = malay
 culture = yue
 religion = sunni
 government = absolute_monarchy
@@ -9,7 +9,18 @@ nationalvalue = nv_order
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
 #non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  ##non_state_culture_literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.01  non_state_culture_literacy = 0.01
 
-slavery = yes_slavery
+ruling_party = "Nobility Faction"
+upper_house = {
+	fascist = 0
+	liberal = 15
+	conservative = 80
+	reactionary = 5
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = no_meeting
@@ -26,34 +37,20 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-#New Reforms
-conscription = two_year_draft
-debt_law = serfdom
+# New Reforms
+conscription = no_draft
+debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = culture_voting_only
+citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies 
 
 
-ruling_party = "Nobility Faction"
-upper_house = {
-	fascist = 0
-	liberal = 15
-	conservative = 70
-	reactionary = 15
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
-}
-
-# Starting Consciousness
-consciousness = 0
-nonstate_consciousness = 0
-
-set_country_flag = sunni_country
 
 flintlock_rifles = 1
 
-oob = "ATJ_oob.txt"
+set_country_flag = sunni_country
+
+oob = "MJA_oob.txt"
