@@ -242,6 +242,14 @@ dye2_factory = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
 		value = 0.9
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.15
+	}
 }
 
 wool_factory = {       
@@ -786,6 +794,10 @@ automobile_factory = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
 		value = 0.9
 	}
+	bonus = {
+		trigger = { has_building = small_arms_factory }
+		value = 0.55
+	}
 }
 
 radio_factory = {    #Sugar   
@@ -852,6 +864,10 @@ electric_gear_factory = {
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
 	}
 }
 
@@ -1002,6 +1018,10 @@ luxury_clothes_factory = {
 		trigger = { has_building = fabric_factory }
 		value = 0.3
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }
 
 luxury_furniture_factory = {       
@@ -1024,6 +1044,10 @@ luxury_furniture_factory = {
 	bonus = {
 		trigger = { has_building = luxury_clothes_factory }
 		value = 0.2
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
 	}
 }
 
@@ -1080,6 +1104,10 @@ artillery_factory = {
 		trigger = { has_building = iron_factory }
 		value = 0.55
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }
 
 clipper_shipyard = {       
@@ -1135,6 +1163,10 @@ small_arms_factory = {
 		trigger = { has_building = iron_factory }
 		value = 0.75
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }
 
 ############# COMMON FACTORIES
@@ -1184,6 +1216,10 @@ paper_mill = {
 		trigger = { has_building = steel_factory }
 		value = 0.35
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }
 
 regular_clothes_factory = {       
@@ -1219,6 +1255,10 @@ regular_clothes_factory = {
 		trigger = { has_building = silk_factory }
 		value = 0.3
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }
 
 ammunition_factory = {       
@@ -1246,6 +1286,10 @@ ammunition_factory = {
 		trigger = { has_building = small_arms_factory }
 		value = 0.95
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }      
 
 ############# CHEAP FACTORIES
@@ -1266,6 +1310,10 @@ explosives_factory = {
 		trigger = { has_building = sulphur_factory }
 		value = 0.55
 	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
 }
 
 canned_food_factory = {       
@@ -1277,7 +1325,7 @@ canned_food_factory = {
 		fish = 4 		#6	total input+maint = 29.15
 	}
 	output_goods = canned_food 
-	value = 2.5			#33.6
+	value = 3.5			#33.6
 	bonus = {
 		trigger = { has_building = grain_factory }
 		value = 0.33
@@ -1326,6 +1374,10 @@ dye_factory = {
 	bonus = {
 		trigger = { has_building = steamer_shipyard }
 		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
 	}
 }
      
@@ -1506,6 +1558,10 @@ glass_factory = {
 	bonus = {
 		trigger = { has_building = liquor_distillery }
 		value = 0.50
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
 	}
 }
 

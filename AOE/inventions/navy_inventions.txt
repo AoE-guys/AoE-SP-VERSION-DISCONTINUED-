@@ -505,7 +505,7 @@ steamer_transports = {
 # manowars = {
 	# limit = {
 		# steamers = 1
-		# has_country_flag = existing_country
+		#  
 	# }
 	# chance = {
 		# base = 5
@@ -523,7 +523,7 @@ steamer_transports = {
 ironclads = {
 	limit = {
 		iron_steamers = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 5
@@ -539,7 +539,7 @@ ironclads = {
 monitors = {
 	limit = {
 		iron_steamers = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 5
@@ -577,7 +577,7 @@ monitors = {
 pre_dreadnought = {
 	limit = {
 		steel_steamers = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 5
@@ -606,7 +606,7 @@ pre_dreadnought = {
 protected_cruisers = {
 	limit = {
 		steam_turbine_ships = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 3
@@ -905,7 +905,7 @@ bomb_vessel = {
 dreadnoughts = {
 	limit = {
 		ship_construction_7 = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 5
