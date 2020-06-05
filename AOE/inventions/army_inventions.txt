@@ -81,7 +81,7 @@ field_fortifications = {
 railroad_transport_groups = {
 	limit = {
 		strategic_mobility = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 0
@@ -774,7 +774,7 @@ colonial_negotiations = {
 	limit = { 
 		year = 1740
 		breech_loaded_rifles = 1
-		has_country_flag = existing_country
+		 
 	}
 	news = no
 	chance = {
@@ -1185,7 +1185,7 @@ telegraph_coordination = {
 mobilization_time_tables = {
 	limit = {
 		military_plans = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 2
@@ -1206,7 +1206,7 @@ mobilization_time_tables = {
 personnel_category_tables = {
 	limit = {
 		military_plans = 1
-		has_country_flag = existing_country
+		 
 	}
 	chance = {
 		base = 2

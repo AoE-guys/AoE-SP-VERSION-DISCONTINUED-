@@ -1,7 +1,7 @@
 gendarmerie = {
 	limit = {
 		military_staff_system = 1
-		has_country_flag = existing_country
+		 
 	}
 	news = no
 	chance = {
@@ -19,7 +19,7 @@ gendarmerie = {
 mountain_warfare = {
 	limit = {
 		military_logistics = 1
-		has_country_flag = existing_country
+		 
 	}
 	news = no
 	chance = {
@@ -59,7 +59,7 @@ mountain_warfare = {
 barrage_fire = {
 	limit = {
 		indirect_artillery_fire = 1
-		has_country_flag = existing_country
+		 
 	}
 	news = no
 	chance = {
@@ -88,7 +88,7 @@ barrage_fire = {
 counter_battery_fire = {
 	limit = {
 		indirect_artillery_fire = 1
-		has_country_flag = existing_country
+		 
 	}
 	news = no
 	chance = {
