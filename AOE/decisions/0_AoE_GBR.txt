@@ -96,10 +96,13 @@ political_decisions = {
 				is_capital = yes
 			}
 			is_greater_power = yes
+			BNG = { exists = yes }
+			BNG = { vassal_of = THIS }
 		}
 		allow = {
 			bolt_action_rifles = 1
 			revolution_n_counterrevolution = 1
+			BNG = { vassal_of = THIS }
 		}
 		effect = {
 			prestige = 10

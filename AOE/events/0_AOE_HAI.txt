@@ -1,5 +1,43 @@
 ###Haiti Stuff###
-#Haiti setup
+#Haiti setup Pre-1750
+country_event = {
+	id = 17910
+	title = "Saint-Domingue"
+	desc = "EVTDESC17910"
+	picture = exemplar_colony
+	trigger = {
+	NOT = {
+	year = 1750
+	}
+	OR = {
+		tag = FRA
+		tag = BOR
+	}
+		NOT = {
+			2213 = { has_province_modifier = pearl_of_the_antilles }
+		}
+	slavery = yes_slavery
+	2213 = { controled_by = THIS }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "We are blessed with wealth"
+			any_owned = {
+				limit = { is_core = HAI }
+				add_province_modifier = {
+					name = pearl_of_the_antilles
+					duration = 3650
+				}
+			}
+			random_list = {
+				100 = {country_event = 17911}
+				0 = {country_event = 17912}
+		    }
+	}
+}
+#Haiti setup Post-1750
 country_event = {
 	id = 17910
 	title = "Saint-Domingue"
