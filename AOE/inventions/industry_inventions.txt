@@ -987,6 +987,17 @@ stainless_steel = {
 #early_railroad
 #iron_railroad
 #steel_railroad
+
+#basic_chemistry
+pesticide = {
+	limit = { basic_chemistry = 1 }
+	chance = {
+		base = 4
+	}
+	effect = {
+		activate_building = fertilizer_factory
+	}
+}
 #medicine
 combat_medicine = {
 	limit = { medicine = 1 }
