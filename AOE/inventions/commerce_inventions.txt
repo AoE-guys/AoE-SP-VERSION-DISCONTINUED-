@@ -1321,6 +1321,29 @@ friedrich_hayek = {
 		permanent_prestige = 1 
 	}
 }
+#freedom_of_trade
+spice_trading = {
+	news = no
+	limit = {
+		freedom_of_trade = 1 
+
+	}
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 2
+			organized_factories = 1
+		}
+	}
+	effect = {
+		activate_building = telephone_factory
+	}
+}
+
 #market_structure
 polypoly_structure = {
 	news = no
