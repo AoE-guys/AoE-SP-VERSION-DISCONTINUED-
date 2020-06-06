@@ -1191,10 +1191,10 @@ artificial_fertilizers = {
 		factory_goods_output = { opium = 0.02 }
 		factory_goods_output = { cattle = 0.02 }
 		factory_goods_output = { fruit = 0.02 }
-		
 		factory_goods_output = { fertilizer = 0.05 }
 	}
 }
+
 nitroglycerin = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
@@ -1272,23 +1272,23 @@ catalytic_fermentative_process = {
 	}
 }
 #organic_chemistry
-synthetic_dye = {
-	limit = { organic_chemistry = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			hot_blast = 1
-		}
-		modifier = {
-			factor = 2
-			management_strategy = 1
-		}
-	}
-	effect = {
-		activate_building = dye_factory 
-	}
-}
+# synthetic_dye = {
+	# limit = { organic_chemistry = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# hot_blast = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# management_strategy = 1
+		# }
+	# }
+	# effect = {
+		# activate_building = dye_factory 
+	# }
+# }
 gaslights = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
