@@ -3,12 +3,13 @@ controller = POR
 add_core = POR
 add_core = CHI
 add_core = GNG
-trade_goods = precious_goods
+add_core = QNG
+trade_goods = silk
 life_rating = 35
 terrain = macao
 fort = 1
 state_building = {
 	level = 1
-	building = machine_parts_factory
+	building = silk_factory
 	upgrade = yes
 }
