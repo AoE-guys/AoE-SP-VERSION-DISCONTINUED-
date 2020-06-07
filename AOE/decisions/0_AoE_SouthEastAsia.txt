@@ -1,7 +1,14 @@
-	Reform_Majapahit = {
-		picture = MJA_political_union
+political_decisions = {
+
+	realize_majapahit = {
+		picture = majapahit
 		potential = {
-			is_culture_group = malayan
+			OR = {
+				primary_culture = javan
+				primary_culture = malay
+				primary_culture = yue
+				primary_culture = moluccan
+			}
 			NOT = {
 				exists = MJA
 			}
@@ -25,7 +32,7 @@
 		}	
 		effect = {
 			prestige = 30
-			change_tag = SCA
+			change_tag = MJA
 			add_accepted_culture = javan
 			add_accepted_culture = malay
 			add_accepted_culture = yue
@@ -35,7 +42,12 @@
 					NOT = {
 						is_greater_power = yes
 					}
-					is_culture_group = malayan
+					OR = {
+						primary_culture = javan
+						primary_culture = malay
+						primary_culture = yue
+						primary_culture = moluccan
+					}
 					in_sphere = THIS
 				}
 				country_event = 11101
@@ -45,3 +57,4 @@
 			factor = 1
 		}
 	}
+}
