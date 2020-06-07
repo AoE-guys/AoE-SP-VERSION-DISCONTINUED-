@@ -21,7 +21,7 @@ combine_harvesters = {
 		base = 5
 	}
 	effect = {
-		rgo_goods_throughput = {
+		factory_goods_throughput = {
 			grain = 0.1
 		}
 	}	
@@ -68,7 +68,7 @@ poudre_b = {
 	}
 	effect = {
 		factory_goods_output = { ammunition = 0.03 }
-		rgo_goods_output = { sulphur = 0.03 }
+		factory_goods_output = { sulphur = 0.03 }
 		infantry = {
 			attack = 0.15
 			defence = 0.15
@@ -118,7 +118,7 @@ the_periodic_table = {
 	}
 	effect = {
 		shared_prestige = 25
-		rgo_goods_throughput = {
+		factory_goods_throughput = {
 			sulphur = 0.05
 		}
 		factory_goods_output = {
