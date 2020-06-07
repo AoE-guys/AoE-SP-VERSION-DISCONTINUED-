@@ -1,0 +1,60 @@
+political_decisions = {
+
+	realize_majapahit = {
+		picture = majapahit
+		potential = {
+			OR = {
+				primary_culture = javan
+				primary_culture = malay
+				primary_culture = yue
+				primary_culture = moluccan
+			}
+			NOT = {
+				exists = MJA
+			}
+		}
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			war = no
+			MJA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}	
+		effect = {
+			prestige = 30
+			change_tag = MJA
+			add_accepted_culture = javan
+			add_accepted_culture = malay
+			add_accepted_culture = yue
+			add_accepted_culture = moluccan
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					OR = {
+						primary_culture = javan
+						primary_culture = malay
+						primary_culture = yue
+						primary_culture = moluccan
+					}
+					in_sphere = THIS
+				}
+				country_event = 11101
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
