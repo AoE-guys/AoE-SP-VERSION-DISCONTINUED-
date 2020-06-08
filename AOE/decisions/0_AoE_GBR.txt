@@ -100,8 +100,7 @@ political_decisions = {
 			BNG = { vassal_of = THIS }
 		}
 		allow = {
-			bolt_action_rifles = 1
-			revolution_n_counterrevolution = 1
+			nationalism_n_imperialism = 1
 			BNG = { vassal_of = THIS }
 		}
 		effect = {
