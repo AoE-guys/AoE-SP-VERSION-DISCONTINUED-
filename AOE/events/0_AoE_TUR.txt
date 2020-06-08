@@ -18,7 +18,7 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
-		NOT = { military_spending = 0.5 }
+		NOT = { military_spending = 0.4 }
 		NOT = { has_country_modifier = janisseries_angry }
 		NOT = { has_country_modifier = janisseries_furious }
 		NOT = { has_country_flag = abolished_janisseries }
@@ -252,6 +252,7 @@ country_event = {
 	option = {
 		name = "what if they retaliate?"
 		prestige = -15
+		ai_chance = { factor = 1 }
 	}
 }
 country_event = {
@@ -274,7 +275,13 @@ country_event = {
 	
 	option = {
 		name = "Let it go."
+		money = -5000
+		grain = -200
+		fruit = -100
+		fish = -40
+		cattle = -60
 		prestige = -60
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {

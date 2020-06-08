@@ -932,6 +932,7 @@ country_event = {
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
 		prestige = -15
+		ai_chance = { factor = 0 }
 	}
 }	
 country_event = {
@@ -992,6 +993,7 @@ country_event = {
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
 		prestige = -15
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
@@ -1052,6 +1054,7 @@ country_event = {
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
 		prestige = -15
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
@@ -1122,6 +1125,7 @@ country_event = {
 	option = {
 		name = "It is unneccessery, get this edict off my sight!"
 		prestige = -65
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {

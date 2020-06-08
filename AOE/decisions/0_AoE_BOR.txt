@@ -200,7 +200,7 @@ political_decisions = {
 		}
 	}
 	
-	annex_rhineland = {
+	annex_rhineland_bor = {
 		picture = louis_dream
 		potential = {
 			tag = BOR
@@ -328,6 +328,7 @@ political_decisions = {
 		}
 		allow = {
 			owns = 471
+			is_core = 471
 			NOT = {
 				OR = {
 					pensions = no_pensions
