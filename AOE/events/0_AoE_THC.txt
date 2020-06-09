@@ -48,11 +48,13 @@ country_event = {
 		name = "let's show them just how much we love their policys!"
 		set_country_flag = boston_tea_party_prep
 		country_event = 177505
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
 		name = "it's wise not to upset our mother country"
 		prestige = -5
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {

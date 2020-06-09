@@ -50,6 +50,12 @@ political_decisions = {
 				}
 				militancy = 2
 			}
+			any_owned = {
+				limit = {
+					has_province_modifier = hungarians_rise
+				}
+				remove_province_modifier = hungarians_rise
+			}
 			badboy = 1
 		}
 		ai_will_do = { factor = 1 }
