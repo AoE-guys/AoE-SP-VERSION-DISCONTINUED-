@@ -5,8 +5,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				primary_culture = javan
-				primary_culture = malay
-				primary_culture = yue
 				primary_culture = moluccan
 			}
 			NOT = {
@@ -34,8 +32,6 @@ political_decisions = {
 			prestige = 30
 			change_tag = MJA
 			add_accepted_culture = javan
-			add_accepted_culture = malay
-			add_accepted_culture = yue
 			add_accepted_culture = moluccan
 			any_country = {
 				limit = {
