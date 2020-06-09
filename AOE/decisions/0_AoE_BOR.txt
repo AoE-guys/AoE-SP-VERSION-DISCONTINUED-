@@ -358,6 +358,14 @@ political_decisions = {
 			SAR_765 = {
 				add_core = THIS
 			}
+			PAP_741 = {
+				limit = {
+					NOT = {
+						is_core = PAP
+					}
+				}
+				add_core = THIS
+			}
 			prestige = 15
 			TUS = { country_event = 171110 }
 			set_country_flag = crown_of_italy
