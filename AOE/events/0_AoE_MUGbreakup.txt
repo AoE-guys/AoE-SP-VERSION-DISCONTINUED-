@@ -80,15 +80,17 @@ country_event = {
 	
 	option = {
 		name = "We have more pressing issues."
-		BNG = { all_core = { limit = { owned_by = THIS } secede_province = BNG } }
-		BNG = {
-			1249 = { secede_province = BNG }
-			1248 = { secede_province = BNG }
-			1247 = { secede_province = BNG }
-			1250 = { secede_province = BNG }
+		RAJ = { ENG_1264 = { limit = { owned_by = THIS } add_core = RAJ } }
+		RAJ = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = RAJ
+			}
 		}
 		relation = {
-			who = BNG
+			who = RAJ
 			value = 100
 		}
 		prestige = -15
