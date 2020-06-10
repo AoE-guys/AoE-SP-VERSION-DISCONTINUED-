@@ -554,7 +554,7 @@ country_event = {
 	option = {
 		name = "Haha, I have you on a list too!... Wait, where are you taking me?!"
 		prestige = -3
-		ruling_party_ideology = reactionary
+		ruling_party_ideology = liberal
 		set_country_flag = rev_oldest_child_eaten
 		ai_chance = {
 			factor = 1
@@ -674,10 +674,14 @@ country_event = {
 			   government = proletarian_dictatorship
 			   has_country_flag = rev_oldest_child_eaten
 			   NOT = { has_country_flag = rev_coup }
+			   OR = {
+			         pensions = acceptable_pensions
+					 pensions = good_pensions
+			   }
 	}
 	
 	mean_time_to_happen =  {
-		months = 12
+		months = 3
 	}
 	
 	option = {
@@ -710,7 +714,7 @@ country_event = {
 	option = {
 		name = "General Restores the Old Monarchy!"
 		prestige = 5
-		ruling_party_ideology = reactionary
+		ruling_party_ideology = liberal
 		government = hms_government
 		political_reform = wealth_weighted_voting
 		political_reform = state_equal_weight
