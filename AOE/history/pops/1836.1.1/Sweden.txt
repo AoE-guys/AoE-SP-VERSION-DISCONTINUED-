@@ -136,43 +136,43 @@
 	clergymen = {
 		culture = swedish
 		religion = protestant
-		size = 37
+		size = 48
 	}
 
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 368
+		size = 800
 	}
 
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 422
+		size = 1000
 	}
 
 	serfs = {
 		culture = swedish
 		religion = protestant
-		size = 5051
+		size = 3200
 	}
 
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 292
+		size = 300
 	}
 
 	serfs = {
-		culture = finnish
+		culture = sami
 		religion = protestant
-		size = 712
+		size = 7000
 	}
 
 	labourers = {
-		culture = finnish
+		culture = sami
 		religion = protestant
-		size = 227
+		size = 1300
 	}
 }
 #Lulea (44000/11000 POPS)
@@ -180,64 +180,64 @@
 	clergymen = {
 		culture = swedish
 		religion = protestant
-		size = 24
+		size = 6
 	}
 
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 196
+		size = 70
 	}
 
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 539
+		size = 200
 	}
 
 	serfs = {
 		culture = swedish
 		religion = protestant
-		size = 1616
+		size = 500
 	}
 
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 148
+		size = 140
 	}
 
 	artisans = {
 		culture = finnish
 		religion = protestant
-		size = 249
+		size = 500
 	}
 
 	serfs = {
 		culture = sami
 		religion = protestant
-		size = 2424
+		size = 6000
 	}
 
 	labourers = {
 		culture = sami
 		religion = protestant
-		size = 454
+		size = 1502
 	}
 
 	serfs = {
 		culture = finnish
 		religion = protestant
-		size = 992
+		size = 2000
 	}
 
 	labourers = {
 		culture = finnish
 		religion = protestant
-		size = 327
+		size = 650
 	}
-
 }
+
 #Svealand Region : 1178000
 #Stockholm (196000/49000 POPs)
 322 = {
@@ -744,7 +744,7 @@
 	aristocrats = {
 		culture = swedish
 		religion = protestant
-		size = 468
+		size = 368
 	}
 
 	bureaucrats = {
@@ -756,45 +756,87 @@
 	clergymen = {
 		culture = swedish
 		religion = protestant
-		size = 184
+		size = 103
 	}
 
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 1838
+		size = 1003
 	}
 
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 1539
+		size = 753
 	}
 
 	serfs = {
 		culture = swedish
 		religion = protestant
-		size = 31177
+		size = 15098
 	}
 
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 1694
+		size = 800
 	}
+	
+	aristocrats = {
+		culture = danish
+		religion = protestant
+		size = 100
+	}
+	
+	clergymen = {
+		culture = danish
+		religion = protestant
+		size = 81
+	}
+	
+	artisans = {
+		culture = danish
+		religion = protestant
+		size = 800
+	}
+	
+	soldiers = {
+		culture = danish
+		religion = protestant
+		size = 750
+	}
+	
+	serfs = {
+		culture = danish
+		religion = protestant
+		size = 13100
+	}
+	
+	serfs = {
+		culture = danish
+		religion = catholic
+		size = 1900
+	}
+	
+	labourers = {
+		culture = danish
+		religion = protestant
+		size = 600
+	}	
 }
 #Karlskrona (259000/64750 POPS)
 335 = {
 	aristocrats = {
 		culture = swedish
 		religion = protestant
-		size = 406
+		size = 306
 	}
 
 	clergymen = {
 		culture = swedish
 		religion = protestant
-		size = 184
+		size = 104
 	}
 
 	artisans = {
@@ -806,21 +848,55 @@
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 1539
+		size = 789
 	}
 
 	serfs = {
 		culture = swedish
 		religion = protestant
-		size = 27221
+		size = 15232
 	}
 
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 1485
+		size = 800
+	}
+	aristocrats = {
+		culture = danish
+		religion = protestant
+		size = 100
 	}
 
+	clergymen = {
+		culture = danish
+		religion = protestant
+		size = 80
+	}
+
+	artisans = {
+		culture = danish
+		religion = protestant
+		size = 750
+	}
+
+	soldiers = {
+		culture = danish
+		religion = protestant
+		size = 759
+	}
+
+	serfs = {
+		culture = danish
+		religion = protestant
+		size = 12121
+	}
+
+	labourers = {
+		culture = danish
+		religion = protestant
+		size = 600
+	}
 }
 #Jan Mayen, now St Barths 
 3246 = {
