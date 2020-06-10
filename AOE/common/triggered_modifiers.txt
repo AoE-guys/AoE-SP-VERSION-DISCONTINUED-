@@ -1800,9 +1800,9 @@ ai_militancy_fix = {
 	trigger = {
 		ai = yes
 		exists = yes
-		average_militancy = 5
+		average_militancy = 4
 	}
-	core_pop_militancy_modifier = -0.002
+	core_pop_militancy_modifier = -0.02
 }
 ai_exotic_research_fix = {
 	trigger = {

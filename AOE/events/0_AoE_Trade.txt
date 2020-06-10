@@ -1277,6 +1277,9 @@ country_event = {
 				duration = -1
 			} 
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 
@@ -1291,7 +1294,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Damn I sure am attracte to my cousin ngl"
+		name = "Damn I sure am attracted to my cousin ngl"
 		3253 = { 
 			add_province_modifier = {
 				name = austrian_baroque
@@ -1424,6 +1427,9 @@ country_event = {
 				duration = -1
 			} 
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 
@@ -1450,6 +1456,9 @@ country_event = {
 				name = hara_hachi_bun_me
 				duration = -1
 			} 
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
@@ -1484,6 +1493,9 @@ country_event = {
 				duration = -1
 			} 
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 
@@ -1505,6 +1517,9 @@ country_event = {
 				name = a_tax_haven
 				duration = -1
 			} 
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
