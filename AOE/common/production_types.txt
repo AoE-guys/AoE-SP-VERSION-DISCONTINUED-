@@ -331,7 +331,7 @@ coal_factory = {
 	}
 	bonus = {
 		trigger = { has_building = steel_factory }
-		value = 0.10
+		value = 0.25
 	}
 	bonus = {
 		trigger = { has_building = timber_factory }
@@ -875,7 +875,6 @@ machine_parts_factory = {
 	template = factory_template
 	input_goods = {    
 		steel = 5		#42.3
-		coal = 1	#11.5  total input+maint = 66
 		lumber = 5
 	}
 	output_goods = machine_parts 
@@ -1477,14 +1476,14 @@ lumber_mill = {
 	value = 70			#110
 	bonus = {
 		trigger = { has_building = timber_factory }
-		value = 0.75
+		value = 0.85
 	}
 	bonus = {
 		trigger = { 
 			OR = { has_building = steel_factory }
 			OR = { has_building = iron_factory }
 		}
-		value = 0.45
+		value = 0.55
 	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
