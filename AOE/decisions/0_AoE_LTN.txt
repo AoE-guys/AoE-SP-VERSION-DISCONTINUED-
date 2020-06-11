@@ -1,0 +1,77 @@
+political_decisions = {
+#Latinization#
+	latinization = {
+		picture = embrace_minority
+		potential = {
+			primary_culture = french
+			capital = 860
+			NOT = { has_country_flag = latinization	 }
+		}
+		allow = {
+			war = no
+			money = 10000
+		}
+		effect = {
+			LTN = { set_country_flag = latinization }
+			FRA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+						has_pop_religion = catholic
+						militancy = 5
+					}
+					move_pop = 860
+				}
+			}
+			BOR = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+						has_pop_religion = catholic
+						militancy = 5
+					}
+					move_pop = 860
+				}
+			}
+			860 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 1325
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				add_province_modifier = {
+					name = french_cultural_unity
+					duration = -1
+				}
+			}
+			random_pop = {
+				limit ={
+					has_pop_culture = greek
+				}
+				reduce_pop = 1.5
+			}
+			random_pop = {
+				limit ={
+					has_pop_culture = french
+				}
+				reduce_pop = 2
+			}
+			random_pop = {
+				limit ={
+					has_pop_culture = north_italian
+				}
+				reduce_pop = 2.5
+			}
+			random_pop = {
+				limit ={
+					has_pop_culture = turkish
+				}
+				reduce_pop = 0.5
+			}
+		}
+	}
+}

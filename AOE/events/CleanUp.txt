@@ -1004,6 +1004,7 @@ country_event = {
 	trigger = {
 		NOT = { government = fascist_dictatorship }
 		NOT = { government = proletarian_dictatorship }
+		NOT = { government = absolute_monarchy }
 		OR = {
 			has_country_modifier = totalitarian_system
 			has_country_modifier = political_education
