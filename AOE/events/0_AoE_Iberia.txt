@@ -23,5 +23,10 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
+		GRE = {
+			all_core = {
+				remove_core = ARN
+			}
+		}
 	}
 }
