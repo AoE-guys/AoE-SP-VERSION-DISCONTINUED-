@@ -1,0 +1,90 @@
+political_decisions = { 
+the_latin_question = {
+		picture = latinempire
+		potential = {
+			tag = GOD
+			NOT = { has_country_flag = latin_empire_claimed }
+		}
+		allow = {
+			war = no
+			NOT = { truce_with = TUR }
+		}
+		effect = {
+			set_country_flag = latin_empire_claimed
+			badboy = 15
+			THIS = {
+				war = {
+					target = TUR
+					attacker_goal = { casus_belli = cut_down_to_size }
+					defender_goal = { casus_belli = status_quo }
+				}
+			}
+			TUR = {
+				any_owned = {
+					limit = {
+						OR = {
+							region = TUR_806
+							region = TUR_805
+							region = TUR_823
+							region = GRE_826
+							region = TUR_832
+							region = GRE_837
+							region = EGY_843
+							region = TUR_853
+							region = TUR_855
+							region = TUR_860
+							region = TUR_863
+							region = TUR_869
+							province_id = 800
+							province_id = 803
+							province_id = 802
+							province_id = 3321
+							province_id = 808
+							province_id = 3353
+							province_id = 3354
+						}
+					}
+					add_core = LTN
+				}
+			}
+			PLS = {
+				all_core = {
+					add_core = ISR
+				}
+			}
+			LBN = {
+				all_core = {
+					add_core = ISR
+				}
+			}
+			SYR = {
+				all_core = {
+					limit = {
+						NOT = { is_core = KDS }
+						NOT = { is_core = AZH }
+					}
+					add_core = ISR
+				}
+			}
+			CLC = {
+				all_core = {
+					add_core = ISR
+				}
+			}
+			JOR = {
+				all_core = {
+					limit = {
+						NOT = { is_core = AZH }
+						NOT = { is_core = HDJ }
+					}
+					add_core = ISR
+				}
+			}
+			904 = {
+				remove_core = ISR
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}
