@@ -62,7 +62,6 @@ the_latin_question = {
 					limit = {
 						NOT = { is_core = KDS }
 						NOT = { is_core = AZH }
-						NOT = 904
 					}
 					add_core = ISR
 				}
@@ -80,6 +79,9 @@ the_latin_question = {
 					}
 					add_core = ISR
 				}
+			}
+			904 = {
+				remove_core = ISR
 			}
 		}
 		
