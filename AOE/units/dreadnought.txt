@@ -22,7 +22,7 @@ dreadnought = {
 	#Building Costs
 	build_time = 360
 	build_cost = {
-		clipper_convoy = 125
+		clipper_convoy = 50
 		artillery = 30
 		canned_food = 20
 		luxury_clothes = 1.0
@@ -33,7 +33,7 @@ dreadnought = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 2
+		clipper_convoy = 3
 		artillery = 0.8
 		canned_food = 1
 		ammunition = 0.8

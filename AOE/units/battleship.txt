@@ -22,7 +22,7 @@ battleship = {
 	#Building Costs
 	build_time = 360
 	build_cost = {
-		clipper_convoy = 80
+		clipper_convoy = 45
 		artillery = 20
 		canned_food = 10
 		luxury_clothes = 1.0
@@ -33,7 +33,7 @@ battleship = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 1.8
+		clipper_convoy = 2.75
 		artillery = 0.6
 		canned_food = 0.8
 		coal = 2.5

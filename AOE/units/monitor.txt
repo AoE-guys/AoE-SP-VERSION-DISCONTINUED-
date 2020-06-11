@@ -20,7 +20,7 @@ monitor = {
 	#Building Costs
 	build_time = 360
 	build_cost = {
-		clipper_convoy = 25
+		clipper_convoy = 20
 		artillery = 12
 		canned_food = 12
 		luxury_clothes = 1.0
@@ -31,7 +31,7 @@ monitor = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 0.35
+		clipper_convoy = 0.95
 		artillery = 0.3
 		canned_food = 0.8
 		ammunition = 0.3
