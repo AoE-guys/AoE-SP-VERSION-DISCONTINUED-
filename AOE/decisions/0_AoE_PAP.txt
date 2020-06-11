@@ -72,93 +72,6 @@ political_decisions = {
 			}
 		}
 	}
-###Latin Empire###
-	the_latin_question = {
-		picture = latinempire
-		potential = {
-			tag = GOD
-			NOT = { has_country_flag = latin_empire_claimed }
-		}
-		allow = {
-			war = no
-			NOT = { truce_with = TUR }
-		}
-		effect = {
-			set_country_flag = latin_empire_claimed
-			badboy = 15
-			THIS = {
-				war = {
-					target = TUR
-					attacker_goal = { casus_belli = cut_down_to_size }
-					defender_goal = { casus_belli = status_quo }
-				}
-			}
-			TUR = {
-				any_owned = {
-					limit = {
-						OR = {
-							region = TUR_806
-							region = TUR_805
-							region = TUR_823
-							region = GRE_826
-							region = TUR_832
-							region = GRE_837
-							region = EGY_843
-							region = TUR_853
-							region = TUR_855
-							region = TUR_860
-							region = TUR_863
-							region = TUR_869
-							province_id = 800
-							province_id = 803
-							province_id = 802
-							province_id = 3321
-							province_id = 808
-							province_id = 3353
-							province_id = 3354
-						}
-					}
-					add_core = LTN
-				}
-			}
-			PLS = {
-				all_core = {
-					add_core = ISR
-				}
-			}
-			LBN = {
-				all_core = {
-					add_core = ISR
-				}
-			}
-			SYR = {
-				all_core = {
-					limit = {
-						NOT = { is_core = KDS }
-						NOT = { is_core = AZH }
-						NOT = 904
-					}
-					add_core = ISR
-				}
-			}
-			CLC = {
-				all_core = {
-					add_core = ISR
-				}
-			}
-			JOR = {
-				all_core = {
-					limit = {
-						NOT = { is_core = AZH }
-						NOT = { is_core = HDJ }
-					}
-					add_core = ISR
-				}
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
 #treaty of ouchy#
 	treaty_of_ouchy = {
 	picture = latinempire
@@ -188,80 +101,11 @@ political_decisions = {
 				create_vassal = LTN
 				create_vassal = ISR
 			}
-		}
-	}
-#Latinization#
-	latinization = {
-		picture = embrace_minority
-		potential = {
-			primary_culture = french
-			capital = 860
-			NOT = { has_country_flag = latinization	 }
-		}
-		allow = {
-			war = no
-			money = 10000
-		}
-		effect = {
-			LTN = { set_country_flag = latinization }
-			FRA = {
-				any_pop = {
-					limit = {
-						has_pop_culture = french
-						has_pop_religion = catholic
-						militancy = 6
-					}
-					move_pop = 860
-				}
+			ISR = {
+				government = absolute_monarchy
 			}
-			BOR = {
-				any_pop = {
-					limit = {
-						has_pop_culture = french
-						has_pop_religion = catholic
-						militancy = 6
-					}
-					move_pop = 860
-				}
-			}
-			860 = {
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 1325
-				}
-			}
-			any_owned = {
-				limit = {
-					is_core = THIS
-				}
-				add_province_modifier = {
-					name = french_cultural_unity
-					duration = -1
-				}
-			}
-			random_pop = {
-				limit ={
-					has_pop_culture = greek
-				}
-				reduce_pop = 1.5
-			}
-			random_pop = {
-				limit ={
-					has_pop_culture = french
-				}
-				reduce_pop = 2
-			}
-			random_pop = {
-				limit ={
-					has_pop_culture = north_italian
-				}
-				reduce_pop = 2.5
-			}
-			random_pop = {
-				limit ={
-					has_pop_culture = turkish
-				}
-				reduce_pop = 0.5
+			LTN = {
+				government = absolute_monarchy
 			}
 		}
 	}

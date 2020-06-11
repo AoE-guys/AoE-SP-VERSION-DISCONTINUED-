@@ -5330,6 +5330,45 @@ french_naval_school = {
 	naval_organisation = 0.10
 	icon = 17
 }
+####Netherlands####
+admiraliteiten = {
+	navy_tech_research_bonus = 0.05
+	leadership_modifier = 0.01
+	naval_organisation = 0.10
+	supply_consumption = 0.2
+	army_organisation = -0.15
+	icon = 17
+}
+stadtholderless_period = {
+	education_efficiency_modifier = -0.1
+	army_organisation = 0.05
+	diplomatic_points_modifier = 0.1
+	global_pop_consciousness_modifier = 0.006
+	icon = 6
+}
+patriots_couse_trouble = {
+	prestige = -0.01
+	pop_militancy_modifier = 0.15
+	core_pop_militancy_modifier = 0.01
+	local_RGO_throughput = -0.3
+	immigrant_push = -0.5
+	icon = 20
+}
+orangist_domination = {
+	bad_badboy = -0.05
+	ruling_party_support = 0.35
+	prestige = 0.05
+	global_pop_consciousness_modifier = 0.01
+	icon = 1
+}
+dutch_banks = {
+	tax_efficiency = 0.05
+	icon = 9
+}
+outdoor_relief = {
+	min_social_spending = 0.25
+	icon = 17
+}
 #colonization##
 native_integration  = {
 	global_assimilation_rate = 0.1

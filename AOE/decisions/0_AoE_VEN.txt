@@ -415,7 +415,9 @@ political_decisions = {
 		news_desc_short = "form_italy_NEWS_SHORT"
 		potential = {
 			is_culture_group = italian
-			
+			NOT = {
+			tag = GOD
+			}
 			NOT = {
 				exists = ITA
 			}

@@ -1118,7 +1118,7 @@ clipper_shipyard = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 5			#403.2, down from 10 with a profit of 420
+	value = 6		#403.2, down from 10 with a profit of 420
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.35
@@ -1129,15 +1129,15 @@ clipper_shipyard = {
 	}
 	bonus = {
 		trigger = { has_building = lumber_mill }
-		value = 0.90
+		value = 0.70
 	}
 	bonus = {
 		trigger = { has_building = fish_factory }
-		value = 0.40
+		value = 0.90
 	}
 	bonus = {
 		trigger = { has_building = steamer_shipyard }
-		value = 0.10
+		value = 0.25
 	}
 }
 
