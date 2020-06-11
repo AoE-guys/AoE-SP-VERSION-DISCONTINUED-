@@ -232,9 +232,7 @@ political_decisions = {
 			NOT = { has_country_flag = aragon_sicily }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
-			}
+			war = no
 		}
 		effect = {
 			SIC_754 = {
@@ -249,6 +247,7 @@ political_decisions = {
 			SAR_765 = {
 				add_core = THIS
 			}
+			set_country_flag = aragon_sicily
 		}
 		ai_will_do = {					
 			factor = 1
@@ -260,7 +259,7 @@ political_decisions = {
 		potential = {
 			tag  = ARN
 			has_country_flag = aragon_sicily
-			NOT = { has_country_flag = aragon_province }
+			NOT = { has_country_flag = aragon_provence }
 		}
 		allow = {
 			all_core = {
@@ -273,6 +272,7 @@ political_decisions = {
 			FRA_467 = {
 				add_core = THIS
 			}
+			set_country_flag = aragon_provence
 		}
 		ai_will_do = {					
 			factor = 0
@@ -284,7 +284,7 @@ political_decisions = {
 		potential = {
 			tag  = ARN
 			has_country_flag = aragon_sicily
-			has_country_flag = aragon_province
+			has_country_flag = aragon_provence
 			NOT = { has_country_flag = aragon_greece }
 		}
 		allow = {
@@ -301,6 +301,30 @@ political_decisions = {
 			EGY_843 = {
 				add_core = THIS
 			}
+			set_country_flag = aragon_greece
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	aragonese_andorra = {
+		picture = french_catalonia
+		potential = {
+			tag  = ARN
+			has_country_flag = aragon_sicily
+			NOT = { has_country_flag = aragon_andorra }
+		}
+		allow = {
+			owns = 762
+		}
+		effect = {
+			prestige = 5
+			badboy = 5.5
+			3252 = {
+				add_core = THIS
+			}
+			set_country_flag = aragon_andorra
 		}
 		ai_will_do = {					
 			factor = 0
