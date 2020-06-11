@@ -198,4 +198,29 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	nueva_planta_decrees = {
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = nueva_planta_decrees }
+			ARN = {
+				exists = yes
+			}
+		}
+		allow = {
+			ARN = {
+				vassal_of = THIS
+			}
+			ideological_thought = 1
+			NOT = { safety_regulations = no_safety }
+		}
+		effect = {
+			inherit = ARN
+			set_country_flag = nueva_planta_decrees
+			prestige = 25
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
 }

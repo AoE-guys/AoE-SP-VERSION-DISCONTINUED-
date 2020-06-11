@@ -219,6 +219,7 @@ political_decisions = {
 				NOT = { has_country_flag = patriots_disbanded }
 				NOT = { government = proletarian_dictatorship }
 				NOT = { government = fascist_dictatorship }
+				year = 1740
 			}
 			allow = {
 				NOT = { militancy = 3 }
