@@ -3,7 +3,7 @@ civilized = yes   primary_culture = dutch
 culture = flemish
 culture = frisian
 religion = protestant
-government = trade_monarchy
+government = merchant_republic
 plurality = 30
 nationalvalue = nv_productivity
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.70
@@ -14,8 +14,8 @@ prestige = 10
 
 # Political reforms
 slavery = yes_slavery
-upper_house_composition = appointed
-vote_franschise = none_voting
+upper_house_composition = state_equal_weight
+vote_franschise = wealth_weighted_voting
 public_meetings = yes_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
@@ -44,12 +44,12 @@ colonial_policy = exploitation
 
 set_country_flag = protestant_country
 
-ruling_party = "Nobility Faction"
+ruling_party = "Dutch States Party"
 upper_house = {
 	fascist = 0
-	liberal = 1
-	conservative = 90
-	reactionary = 1
+	liberal = 40
+	conservative = 40
+	reactionary = 20
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
