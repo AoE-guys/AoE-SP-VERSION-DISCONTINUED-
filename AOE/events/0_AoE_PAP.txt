@@ -24,6 +24,7 @@ country_event = {
 	title = "The Latin Empire"
 	desc = "We have brought back the Latin Empire thus it brings us glory to our nation once again."
 	picture = "Monarchy"
+	fire_only_once = yes
 	trigger = {
 		OR = {
 		tag = PAP
