@@ -1387,12 +1387,12 @@ dismantle_hre = {
 change_heir_habsburg_cb = {
 	sprite_index = 26
 	is_triggered_only = yes
-	months = 12
+	months = 96
 	crisis = no
 
 	badboy_factor = 0
 	prestige_factor = 2
-	peace_cost_factor = 85
+	peace_cost_factor = 60
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1
@@ -1443,12 +1443,12 @@ change_heir_habsburg_cb = {
 change_heir_bourbon_cb = {
 	sprite_index = 26
 	is_triggered_only = yes
-	months = 48
+	months = 96
 	crisis = no
 
 	badboy_factor = 0
 	prestige_factor = 2
-	peace_cost_factor = 85
+	peace_cost_factor = 60
 	penalty_factor = 1
 	
 	break_truce_prestige_factor = 1
