@@ -6,7 +6,7 @@
 proletarian_dictatorship = {
 	#which ideology of parties.
 	communist = yes
-	reactionary = yes
+	liberal = yes
 	
 	election = no
 	appoint_ruling_party = no
@@ -15,9 +15,10 @@ proletarian_dictatorship = {
 
 presidential_dictatorship = {
 	#which ideology of parties.
-	reactionary = yes
+	#reactionary = yes
 	#fascist = yes
 	conservative = yes
+	liberal = yes
 	#communist = yes
 	
 	election = no
@@ -43,8 +44,8 @@ dominion = {
 	conservative = yes
 	reactionary = yes
 	communist = yes
-	anarcho_liberal = yes
-	fascist = yes
+	#anarcho_liberal = yes
+	#fascist = yes
 	
 	election = yes
 	duration = 48
@@ -143,7 +144,7 @@ democracy = {
 	liberal = yes
 	#socialist = yes
 	conservative = yes
-	reactionary = yes
+	#reactionary = yes
 	communist = yes
 	#anarcho_liberal = yes
 	#fascist = yes
@@ -159,7 +160,7 @@ federal_democracy = {
 	liberal = yes
 	#socialist = yes
 	conservative = yes
-	reactionary = yes
+	#reactionary = yes
 	communist = yes
 	#anarcho_liberal = yes
 	#fascist = yes

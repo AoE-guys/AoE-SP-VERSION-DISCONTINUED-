@@ -112,6 +112,7 @@ country_event = { #10226 Clean for Hungary
 		tag = AUS
 		has_global_flag = hungarian_revolution_occurred
 		HUN = { exists = yes }
+		HUN = { any_core = { owned_by = HUN } }
 		SIE = { NOT = { vassal_of = AUS } }
 		has_recently_lost_war = yes
 	}

@@ -1,0 +1,32 @@
+#ARN Athens
+country_event = {
+	id = 666999
+	title = "Greece liberated"
+	desc = "We managed to free Greece from infidel oppression, only we can truly protect them"
+	picture = war_ended
+	fire_only_once = yes
+	trigger = {
+		tag = ARN
+		war = no
+		NOT = {
+			exists = GRE
+		}
+		OR = {
+			owns = 834
+			owns = 845
+		}
+	}
+	option = {
+		name = "Time to unite the faith?"
+		prestige = 50
+		release_vassal = GRE
+		ai_chance = {
+			factor = 1
+		}
+		GRE = {
+			all_core = {
+				remove_core = ARN
+			}
+		}
+	}
+}

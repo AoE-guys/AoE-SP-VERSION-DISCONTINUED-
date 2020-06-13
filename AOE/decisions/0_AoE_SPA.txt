@@ -223,4 +223,111 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	aragonese_italy = {
+		picture = merchant_navy
+		potential = {
+			tag  = ARN
+			is_vassal = no
+			NOT = { has_country_flag = aragon_sicily }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			SIC_754 = {
+				add_core = THIS
+			}
+			SIC_753 = {
+				add_core = THIS
+			}
+			SIC_763 = {
+				add_core = THIS
+			}
+			SAR_765 = {
+				add_core = THIS
+			}
+			set_country_flag = aragon_sicily
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	aragonese_provence = {
+		picture = merchant_navy
+		potential = {
+			tag  = ARN
+			has_country_flag = aragon_sicily
+			NOT = { has_country_flag = aragon_provence }
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 15
+			badboy = 10
+			FRA_467 = {
+				add_core = THIS
+			}
+			set_country_flag = aragon_provence
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	aragonese_athens = {
+		picture = aegean
+		potential = {
+			tag  = ARN
+			has_country_flag = aragon_sicily
+			has_country_flag = aragon_provence
+			NOT = { has_country_flag = aragon_greece }
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 15
+			badboy = 10
+			GRE_837 = {
+				add_core = THIS
+			}
+			EGY_843 = {
+				add_core = THIS
+			}
+			set_country_flag = aragon_greece
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	aragonese_andorra = {
+		picture = french_catalonia
+		potential = {
+			tag  = ARN
+			has_country_flag = aragon_sicily
+			NOT = { has_country_flag = aragon_andorra }
+		}
+		allow = {
+			owns = 762
+		}
+		effect = {
+			prestige = 5
+			badboy = 5.5
+			3252 = {
+				add_core = THIS
+			}
+			set_country_flag = aragon_andorra
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
 }
