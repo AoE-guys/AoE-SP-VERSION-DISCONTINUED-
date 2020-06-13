@@ -6444,3 +6444,25 @@ a_tax_haven = {
 	prestige = 0.01
 	global_immigrant_attract = 0.50
 }
+
+#Ottoman Dhimmi system#
+
+dhimmi_early = {
+	tax_efficiency = 0.25
+	non_accepted_pop_militancy_modifier = -0.01
+	non_accepted_pop_consciousness_modifier = -0.01	
+	icon = 18
+}
+
+dhimmi_mid = {
+	tax_efficiency = 0.15
+	icon = 18
+}
+
+dhimmi_late = {
+	factory_output = -0.05
+	non_accepted_pop_consciousness_modifier = 0.01
+	non_accepted_pop_militancy_modifier = 0.02
+}
+
+}

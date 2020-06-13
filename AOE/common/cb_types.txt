@@ -8025,8 +8025,7 @@ conquest_low = {
 	war_name = WAR_CONQUEST_NAME
 }
 subjugation = {
-	sprite_index = 26
-	sprite_index = 26
+	sprite_index = 2
 	is_triggered_only = yes
 	crisis = no
 	always = yes
@@ -8040,6 +8039,7 @@ subjugation = {
 			capital_scope = { continent = asia }
 			capital_scope = { continent = oceania }
 			capital_scope = { continent = indochina }
+			tag = RUS
 		}
 	}
 
