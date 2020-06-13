@@ -170,12 +170,14 @@ political_decisions = {
 		effect = {
 			set_country_flag = second_union_of_hadiach
 			all_core = {
+				add_core = PLR
 				remove_core = PLC
 				remove_core = RUS
-				add_core = PLR
 			}
 			change_tag = PLR
-			add_accepted_culture = ukrainian
+			PLR = {
+				add_accepted_culture = ukrainian
+			}
 			prestige = 15
 		}
 		ai_will_do = { factor = 1 }	
