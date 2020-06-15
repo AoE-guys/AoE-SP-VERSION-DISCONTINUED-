@@ -922,7 +922,7 @@
 }
 #Laos Region (776000)
 #under the rule of Siam in 1836
-#Udon Thani (596000/149000 POPS) #now part of Thailand    
+#Nong Bua Lumphu(596000/149000 POPS) #now part of Thailand    
 1358 = {
 	aristocrats = {
 		culture = thai
@@ -960,12 +960,6 @@
 		size = 180
 	}
 
-	serfs = {
-		culture = thai
-		religion = theravada
-		size = 15979
-	}
-
 	labourers = {
 		culture = thai
 		religion = theravada
@@ -999,7 +993,7 @@
 	serfs = {
 		culture = lao
 		religion = theravada
-		size = 74176
+		size = 90155
 	}
 
 	labourers = {
@@ -1017,75 +1011,39 @@
 #Sisaket (180000/45000 POPS) #now part of Thailand  
 1359 = {
 	aristocrats = {
-		culture = thai
+		culture = lao
+		religion = theravada
+		size = 600
+	}
+
+	clergymen = {
+		culture = lao
+		religion = theravada
+		size = 320
+	}
+
+	artisans = {
+		culture = lao
+		religion = theravada
+		size = 1620
+	}
+
+	soldiers = {
+		culture = lao
 		religion = theravada
 		size = 340
 	}
 
-	clergymen = {
-		culture = thai
-		religion = theravada
-		size = 180
-	}
-
-	artisans = {
-		culture = thai
-		religion = theravada
-		size = 920
-	}
-
-	soldiers = {
-		culture = thai
-		religion = theravada
-		size = 200
-	}
-
-	serfs = {
-		culture = thai
-		religion = theravada
-		size = 15922
-	}
-
-	labourers = {
-		culture = thai
-		religion = theravada
-		size = 838
-	}
-
-	aristocrats = {
-		culture = lao
-		religion = theravada
-		size = 260
-	}
-
-	clergymen = {
-		culture = lao
-		religion = theravada
-		size = 140
-	}
-
-	artisans = {
-		culture = lao
-		religion = theravada
-		size = 700
-	}
-
-	soldiers = {
-		culture = lao
-		religion = theravada
-		size = 140
-	}
-
 	serfs = {
 		culture = lao
 		religion = theravada
-		size = 13262
+		size = 29184
 	}
 
 	labourers = {
 		culture = lao
 		religion = theravada
-		size = 698
+		size = 1536
 	}
 
 	aristocrats = {

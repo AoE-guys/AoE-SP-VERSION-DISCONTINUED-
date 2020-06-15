@@ -1,6 +1,7 @@
-owner = LUA
-controller = LUA
-add_core = LUA
-add_core = SIA
+owner = LXA
+controller = LXA
+add_core = LXA
+add_core = WIA
+# add_core = SIA
 trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
 life_rating = 35
