@@ -2,6 +2,9 @@ name = "The Russo-Turkish War"
 
 1700.1.1 = {
 	add_attacker = RUS
+	add_attacker = HET
+	add_attacker = KMK
+	add_attacker = ZZH
 	add_defender = TUR
 	add_defender = CRI
 	
@@ -14,7 +17,7 @@ name = "The Russo-Turkish War"
 		casus_belli = acquire_substate_core_region
 		actor = RUS
 		receiver = TUR
-		state_province_id = 979
+		state_province_id = 1047
 	}
 	
 	war_goal = {
