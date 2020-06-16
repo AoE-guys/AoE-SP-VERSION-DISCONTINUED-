@@ -3,12 +3,12 @@ promotion_chance = {
 	factor = 1.00	
 
 	modifier = {
-		factor = 0.50
+		factor = 0.20
 		always = yes
 	}	
 		group = {
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.1
 			 luxury_needs = 0.25
@@ -16,7 +16,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.2
 			 luxury_needs = 0.25
@@ -25,7 +25,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.3
 			 luxury_needs = 0.25
@@ -34,7 +34,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.4
 			 luxury_needs = 0.25
@@ -43,7 +43,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.5
 			 luxury_needs = 0.25
@@ -52,7 +52,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.6
 			 luxury_needs = 0.25
@@ -61,7 +61,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.7
 			 luxury_needs = 0.25
@@ -70,7 +70,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.8
 			 luxury_needs = 0.25
@@ -79,7 +79,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.9
 			 luxury_needs = 0.25
@@ -88,7 +88,7 @@ promotion_chance = {
 			#strata = poor
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.10
 			OR = {
 			 everyday_needs = 0.99
 			 luxury_needs = 0.25
@@ -359,26 +359,26 @@ demotion_chance = {
 	factor = 1.0
 
 	modifier = {
-		factor = 1.00
+		factor = 0.40
 		always = yes
 	}	
 	
 	group = {
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.99 }
 			NOT = { luxury_needs = 0.25 }
 			#type = farmers
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.9 }
 			NOT = { luxury_needs = 0.25 }
 			#type = farmers
 			literacy = 0.10	
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.8 }
 			NOT = { luxury_needs = 0.25 }
 			location = { controlled_by = owner }
@@ -386,7 +386,7 @@ demotion_chance = {
 			literacy = 0.20
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.7 }
 			NOT = { luxury_needs = 0.25 }
 			location = { controlled_by = owner }
@@ -394,7 +394,7 @@ demotion_chance = {
 			literacy = 0.30
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.6 }
 			NOT = { luxury_needs = 0.25 }
 			location = { controlled_by = owner }
@@ -402,7 +402,7 @@ demotion_chance = {
 			literacy = 0.40
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.5 }
 			NOT = { luxury_needs = 0.25 }
 			#NOT = { OR = { type = craftsmen  type = clerks } }
@@ -411,7 +411,7 @@ demotion_chance = {
 			literacy = 0.50
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.4 }
 			NOT = { luxury_needs = 0.25 }
 			#NOT = { OR = { type = craftsmen  type = clerks } }
@@ -420,7 +420,7 @@ demotion_chance = {
 			literacy = 0.60
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.3 }
 			NOT = { luxury_needs = 0.25 }
 			#NOT = { OR = { type = craftsmen  type = clerks } }
@@ -429,7 +429,7 @@ demotion_chance = {
 			literacy = 0.70
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.2 }
 			NOT = { luxury_needs = 0.25 }
 			#NOT = { OR = { type = craftsmen  type = clerks } }
@@ -438,7 +438,7 @@ demotion_chance = {
 			literacy = 0.80
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			NOT = { everyday_needs = 0.1 }
 			NOT = { luxury_needs = 0.25 }
 			#NOT = { OR = { type = craftsmen  type = clerks } }
