@@ -58202,18 +58202,23 @@
 
 # Xiangabouli
 1360 = {
+    text_position = {
+        x = 4387.100098
+        y = 1080.300049
+    }
+
+    text_rotation = 5
+    text_scale = 4
     unit = {
         x = 4389.000000
         y = 1071.000000
     }
 
-    text_position = {
-        x = 4392.100098
-        y = 1067.300049
+    factory = {
+        x = 4377.000000
+        y = 1093.000000
     }
 
-    text_rotation = 1.396264
-    text_scale = 2.700000
     building_construction = {
         x = 4379.000000
         y = 1080.000000
@@ -58222,11 +58227,6 @@
     military_construction = {
         x = 4391.000000
         y = 1064.000000
-    }
-
-    factory = {
-        x = 4377.000000
-        y = 1093.000000
     }
 
     building_position = {
