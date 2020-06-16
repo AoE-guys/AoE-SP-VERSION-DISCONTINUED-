@@ -122,7 +122,18 @@ DLM = {
 USA = { value = 0 }
 PRU = { value = 25 }
 SPA = { value = 25 }
-AUS = { value = 25 }
+AUS = {
+	value = -125
+	truce_until = 1705.1.1
+}
+VEN = {
+	value = 25
+	truce_until = 1705.1.1
+}
+PLC = {
+	value = -125
+	truce_until = 1704.1.1
+}
 RUS = { value = 75 }
 ENG = { value = 125 }
 FRA = { value = -75 }

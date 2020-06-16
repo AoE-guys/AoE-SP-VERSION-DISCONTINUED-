@@ -601,7 +601,7 @@ vassal = {
 }
 
 # England-Scotland
-vassal = {  #substate
+substate = {  #substate
 	first = ENG
 	second = SCO
 	start_date = 1699.1.12
@@ -609,7 +609,7 @@ vassal = {  #substate
 }
 
 # England-Netherlands
-vassal = {  #substate
+substate = {  #substate
 	first = ENG
 	second = NET
 	start_date = 1672.6.4

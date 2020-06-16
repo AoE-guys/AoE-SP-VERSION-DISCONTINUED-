@@ -24,6 +24,11 @@ SWI = {
 	level = 3		
 	influence_value = 25
 }
+BSQ = {
+	value = 125		
+	level = 5		
+	influence_value = 25
+}
 SAR = {
 	value = 125		
 	level = 4		
@@ -33,6 +38,11 @@ GRE = {
 	value = 75	
 	level = 4		
 	influence_value = 10
+}
+PLC = {
+	value = 75
+	level = 3
+	influence_value = 0
 }
 
 #GPs
