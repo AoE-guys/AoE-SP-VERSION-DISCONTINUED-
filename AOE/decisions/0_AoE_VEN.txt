@@ -324,16 +324,12 @@ political_decisions = {
 		}
 		
 		allow = {
-			invention = offensive_attitude
 			naval_directionism = 1
 			OR = {
 				steam_turbine_ships
 				advanced_naval_design
 			}
 			expressionism = 1
-			military_score = 30
-			num_of_allies = 3
-			num_of_ports = 5
 			OR = {
 				owns = 765 #Cagliari
 				owns = 756 #Bari

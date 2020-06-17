@@ -489,6 +489,142 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 986101
+	title = "EVTNAME98610"
+	desc = "EVTDESC98610"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT98610OPTA"
+		war = {
+			target = ARN
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = humiliate
+			}
+		}
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 1.75
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 0.5
+				government = democracy
+			}
+			modifier = {
+				factor = 0.8
+				war = yes
+			}
+			modifier = {
+				factor = 0.8
+				any_greater_power = { war_with = THIS }
+			}
+			modifier = {
+				factor = 0.8
+				war_exhaustion = 10
+			}
+			modifier = {
+				factor = 0.8
+				war_exhaustion = 20
+			}
+			modifier = {
+				factor = 0.8
+				war_exhaustion = 30
+			}
+			modifier = {
+				factor = 0.8
+				num_of_revolts = 1
+			}
+			modifier = {
+				factor = 0.5
+				any_owned_province = {
+					NOT = { controlled_by = THIS }
+					NOT = { controlled_by = REB }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT98610OPTB"
+		casus_belli = {
+			target = FROM
+			type = humiliate
+			months = 36
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				part_of_sphere = no
+			}
+			add_casus_belli = {
+				target = THIS
+				type = add_to_sphere
+				months = 36
+			}
+		}
+		random_country = {
+			limit = {
+				is_sphere_leader_of = FROM
+				NOT = { tag = THIS }
+			}
+			relation = { who = THIS value = -50 }
+			add_casus_belli = {
+				target = THIS
+				type = take_from_sphere
+				months = 36
+			}
+		}
+		FROM = { country_event = 98608 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+					government = proletarian_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+					government = presidential_dictatorship
+				}
+			}
+			modifier = {
+				factor = 0.25
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 1.5
+				government = democracy
+			}
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 2
+				war_exhaustion = 20
+			}
+			modifier = {
+				factor = 2
+				num_of_revolts = 1
+			}
+			modifier = {
+				factor = 2
+				any_owned_province = {
+					NOT = { controlled_by = THIS }
+					NOT = { controlled_by = REB }
+				}
+			}
+		}
+	}
+}
+
 #Vassals will find allies
 country_event = {
 	id = 98611
