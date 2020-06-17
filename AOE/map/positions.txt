@@ -31736,41 +31736,85 @@
 # Brescia
 728 = {
     text_position = {
-        x = 2968.433333
-        y = 1535.901667
+        x = 2967
+        y = 1541
     }
 
     text_rotation = 5.716071
     text_scale = 1.750000
     unit = {
-        x = 2971.000000
-        y = 1536.000000
+        x = 2967
+        y = 1541
     }
 
     factory = {
-        x = 2976.958333
-        y = 1530.838333
+        x = 2965
+        y = 1538
     }
 
     building_construction = {
-        x = 2965.000000
-        y = 1538.400024
+        x = 2965
+        y = 1538
     }
 
     military_construction = {
-        x = 2972.101667
-        y = 1531.768333
+        x = 2965
+        y = 1538
     }
 
     building_position = {
         fort = {
-            x = 2967.600098
-            y = 1544.800049
+            x = 2968
+            y = 1544
         }
 
         railroad = {
-            x = 2967.503333
-            y = 1539.518333
+			x = 2967
+			y = 1541
+        }
+
+    }
+
+}
+
+# Mantua
+3372 = {
+    text_position = {
+        x = 2975
+        y = 1533
+    }
+
+    text_rotation = 1
+    text_scale = 1.9
+    unit = {
+        x = 2975
+        y = 1533
+    }
+
+    factory = {
+        x = 2978
+        y = 1530
+    }
+
+    building_construction = {
+        x = 2977
+        y = 1533
+    }
+
+    military_construction = {
+        x = 2977
+        y = 1533
+    }
+
+    building_position = {
+        fort = {
+            x = 2969
+            y = 1533
+        }
+
+        railroad = {
+			x = 2975
+			y = 1533
         }
 
     }

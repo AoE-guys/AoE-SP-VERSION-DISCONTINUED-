@@ -506,39 +506,40 @@
 	aristocrats = {
 		culture = north_italian
 		religion = catholic
-		size = 2574
+		size = 1300
 	}
 
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 1172
+		size = 598
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 5041
+		size = 2520
 	}
 
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size = 1155
+		size = 601
 	}
 
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 90740
+		size = 52103
 	}
 
 	labourers = {
 		culture = north_italian
 		religion = catholic
-		size = 5050
+		size = 2582
 	}
 }
+
 #Venetia Region (2060000)
 #under the rule of Austria in 1836
 #Venice (448000/112000 POPS)
@@ -1249,6 +1250,46 @@
 		size = 1111
 	}
 }
+
+#Mantua (708000/177000 POPS)
+3372 = {
+	aristocrats = {
+		culture = north_italian
+		religion = catholic
+		size = 1253
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 598
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 2520
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 601
+	}
+
+	serfs = {
+		culture = north_italian
+		religion = catholic
+		size = 45321
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 2525
+	}
+}
+
 #Romagna Region (844000)
 #under the rule of Papal States in 1836
 #Bologna (416000/104000 POPS)
