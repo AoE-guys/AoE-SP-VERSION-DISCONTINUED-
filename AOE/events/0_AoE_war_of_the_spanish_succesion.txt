@@ -704,6 +704,14 @@ country_event = {
 				secede_province = AUS
 			}
 		}
+		ARN = {
+			any_owned = {
+				limit = {
+					region = SAR_765
+				}
+				secede_province = AUS
+			}
+		}
 		any_country = {
 			limit = {
 				owns = 720 #savoy
@@ -814,6 +822,14 @@ country_event = {
 						region = SAR_765
 						region = SIC_763
 					}
+				}
+				secede_province = BOR
+			}
+		}
+		ARN = {
+			any_owned = {
+				limit = {
+					region = SAR_765
 				}
 				secede_province = BOR
 			}

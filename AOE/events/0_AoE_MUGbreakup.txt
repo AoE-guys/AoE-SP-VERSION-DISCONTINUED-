@@ -416,6 +416,7 @@ country_event = {
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
@@ -424,6 +425,7 @@ country_event = {
 			add_core = THIS
 		}
 		prestige = -15
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
