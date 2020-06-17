@@ -271,18 +271,18 @@ khanate = {
 #	flagType = monarchy
 #}
 
-#hms_government_empire = {
-#	liberal = yes
-#	socialist = yes
-#	conservative = yes
-#	reactionary = yes
-#	communist = yes
-#	anarcho_liberal = yes
-#	fascist = yes
-#	
-#	
-#	election = yes
-#	duration = 48
-#	appoint_ruling_party = no
-#	flagType = monarchy
-#}
+hms_government_empire = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	
+	
+	election = yes
+	duration = 48
+	appoint_ruling_party = no
+	flagType = communist
+}

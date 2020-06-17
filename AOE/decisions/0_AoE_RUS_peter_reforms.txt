@@ -111,9 +111,25 @@ political_decisions = {
 			339 = {
 				add_core = THIS
 			}
+			relation = {
+				who = PLC
+				value = 400
+			}
+			relation = {
+				who = DNN
+				value = 400
+			}
+			war = {
+				target = SWE
+				attacker_goal = { casus_belli = acquire_all_cores country = RUS }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
 			badboy = 15
 		}
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	claim_crimea_south_ukrine = {
 		picture = crimea

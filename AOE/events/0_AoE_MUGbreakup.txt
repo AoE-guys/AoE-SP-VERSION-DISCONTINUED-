@@ -412,7 +412,7 @@ country_event = {
 		}
 		war = {
 			target = MUG
-			attacker_goal = { casus_belli = acquire_all_cores }
+			attacker_goal = { casus_belli = acquire_all_cores country = MAH }
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}

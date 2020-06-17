@@ -7,14 +7,13 @@ TUR = {
 }
 BOR = { value = 35 }
 ENG = { value = 25 }
-NET = { value = -100 }
-SWE = { value -150 }
+NET = { value = 100 }
 HET = { value = 200 }
 ZZH = { value = 150 }
 
 army = { 
 
-name = "1. Armia Polska" location = 706 
+name = "1. Armia Polska" location = 703
 
 regiment = { name = "1. brygada" type = infantry home = 706 } 
 regiment = { name = "2. brygada" type = infantry home = 708 } 
