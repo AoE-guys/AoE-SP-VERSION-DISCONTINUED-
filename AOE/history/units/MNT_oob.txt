@@ -1,0 +1,19 @@
+leader = {
+	name = "Ferdinando Carlo I"
+	date = 1815.1.1
+	type = land
+	personality = arrogant
+	background = hated
+	prestige = 0.5
+}
+
+army = {
+	name = "Esercito di Mantua"
+	location = 3372
+	regiment = {
+		name= "1. Fanteria di Linea"
+		type = infantry
+		home = 3372
+	}
+}
+
