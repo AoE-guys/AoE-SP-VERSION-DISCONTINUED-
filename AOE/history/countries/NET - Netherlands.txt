@@ -2,6 +2,7 @@ capital = 375
 civilized = yes   primary_culture = dutch
 culture = flemish
 culture = frisian
+culture = boer
 religion = protestant
 government = merchant_republic
 plurality = 30
@@ -59,10 +60,6 @@ decision = literacy_NET
 govt_flag = {
 	government = trade_monarchy
 	flag = democracy
-}
-govt_flag = {
-	government = proletarian_dictatorship
-	flag = hms_government_empire
 }
 # Technologies
 post_napoleonic_thought = 1
