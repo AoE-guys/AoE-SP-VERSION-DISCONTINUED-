@@ -1420,7 +1420,7 @@ change_heir_habsburg_cb = {
 		has_country_flag = support_habsburg_heir
 	}
 	
-	tws_battle_factor = 2.0 # battle score twice that of oppenent
+	tws_battle_factor = 1.2 # battle score twice that of oppenent
 	
 	war_name = SUCCESSION_WAR_NAME
 	
@@ -1436,7 +1436,11 @@ change_heir_habsburg_cb = {
 	
 	on_po_accepted = {
 		prestige_factor = -0.2
-		country_event = 13005
+		487 = {
+			owner = {
+				country_event = 13005
+			}
+		}
 	}
 }
 
@@ -1475,7 +1479,7 @@ change_heir_bourbon_cb = {
 		has_global_flag = spanish_succesion_crisis
 		has_country_flag = support_bourbon_heir
 	}
-	tws_battle_factor = 2.0 # battle score twice that of oppenent
+	tws_battle_factor = 1.5 # battle score twice that of oppenent
 	
 	war_name = SUCCESSION_WAR_NAME
 	
@@ -1491,7 +1495,7 @@ change_heir_bourbon_cb = {
 	
 	on_po_accepted = {
 		prestige_factor = -0.2
-		425 = {
+		487 = {
 			owner = {
 				country_event = 13006000
 			}
@@ -7814,6 +7818,9 @@ take_capital = {
 		any_owned_province = {
 			not = { is_core = THIS }
 			is_colonial = no
+		}
+		THIS = {
+			ai = no
 		}
 		OR = {
 			AND = {

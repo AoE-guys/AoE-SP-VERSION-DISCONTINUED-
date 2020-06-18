@@ -1002,6 +1002,9 @@ help_ai_sweden_and_austria = {
 				owns = 1600 #DZN
 				NOT = { year = 1740 }
 			}
+			AND = {
+				owns = 1121 #Persia
+			}
 		}
 		ai = yes
 	}
@@ -1045,7 +1048,7 @@ german_minors_ai_help = {
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	war_exhaustion = -0.5
-	mobilisation_size = 0.25
+	mobilisation_size = 0.3
 
 }
 
@@ -1060,7 +1063,7 @@ help_ai_usa = {
 	tax_efficiency = 0.05
 	supply_consumption = -0.15
 	influence_modifier = -0.05
-	mobilisation_size = 0.01
+	mobilisation_size = 0.02
 }
 
 yellow_river = {

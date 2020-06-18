@@ -50,6 +50,7 @@ political_decisions = {
 				}
 				militancy = 2
 			}
+			set_global_flag = hungarian_revolution_fail
 			any_owned = {
 				limit = {
 					has_province_modifier = hungarians_rise
@@ -75,7 +76,7 @@ political_decisions = {
 		}
 		allow = {
 			#rank = 8
-			is_sphere_leader_of = SIE
+			is_greater_power = yes
 		}
 		
 		effect = {
