@@ -84,7 +84,7 @@ country_event = {
 	desc = "Outstanding!"
 	
 	mean_time_to_happen = {
-		months = 36
+		months = 60
 	}
 	
 	trigger = {
@@ -101,7 +101,7 @@ country_event = {
 	}
 	option = {
 		name = "Excellent, Smithers..."
-		treasury = 15000
+		treasury = 30000
 	}
 }
 
@@ -111,7 +111,34 @@ country_event = {
 	desc = "Wonderful!"
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 48
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = opened_kolar_gold_fields
+			owns = 2441
+			owns = 558
+			owns = 628
+			AND = {
+				year = 1736
+				owns = 2137
+			}
+		}
+	}
+	option = {
+		name = "Excellent, Smithers..."
+		treasury = 20000
+	}
+}
+
+country_event = {
+	id = 4201342
+	title = "Miners struck a notable vein"
+	desc = "Very good!"
+	
+	mean_time_to_happen = {
+		months = 36
 	}
 	
 	trigger = {
@@ -133,12 +160,12 @@ country_event = {
 }
 
 country_event = {
-	id = 4201342
-	title = "Miners struck a notable vein"
-	desc = "Very good!"
+	id = 4201343
+	title = "Miners struck a new vein"
+	desc = "Good enough!"
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	trigger = {
@@ -156,33 +183,6 @@ country_event = {
 	option = {
 		name = "Excellent, Smithers..."
 		treasury = 5000
-	}
-}
-
-country_event = {
-	id = 4201343
-	title = "Miners struck a new vein"
-	desc = "Good enough!"
-	
-	mean_time_to_happen = {
-		months = 6
-	}
-	
-	trigger = {
-		OR = {
-			has_country_flag = opened_kolar_gold_fields
-			owns = 2441
-			owns = 558
-			owns = 628
-			AND = {
-				year = 1736
-				owns = 2137
-			}
-		}
-	}
-	option = {
-		name = "Excellent, Smithers..."
-		treasury = 2500
 	}
 }
 
