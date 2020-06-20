@@ -39,4 +39,30 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	macedonia_stronk = {
+		picture = greater_macedonia
+		potential = {
+			tag = MCD
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			is_vassal = no
+		}
+		effect = {
+			TUR_805 = {
+				add_core = THIS
+			}
+			TUR_823 = {
+				add_core = THIS
+			}
+			808 = {
+				add_core = THIS
+			}
+			add_accepted_culture = greek
+		}
+	}
+	
 }
