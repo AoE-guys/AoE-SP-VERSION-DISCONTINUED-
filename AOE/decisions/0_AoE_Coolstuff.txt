@@ -1,0 +1,42 @@
+political_decisions = {
+	transylvanian_chust = {
+		picture = tur_hungary
+		potential = {
+			tag = SIE
+			NOT = { vassal_of = AUS }
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			AUS_950 = {
+				add_core = SIE
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	bohemian_lusatia = {
+		picture = silesia_prussia
+		potential = {
+			tag = BOH
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			687 = {
+				add_core = BOH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
