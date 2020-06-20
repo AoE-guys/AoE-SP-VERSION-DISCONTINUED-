@@ -738,7 +738,7 @@
 	serfs = {
 		culture = native_american_minor
 		religion = animist
-		size = 10
+		size = 100
 	}
 
 	labourers = {
@@ -760,19 +760,19 @@
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 16
+		size = 216
 	}
 
 	serfs = {
 		culture = cree
 		religion = animist
-		size = 102
+		size = 1002
 	}
 
 	labourers = {
 		culture = cree
 		religion = animist
-		size = 8
+		size = 298
 	}
 }
 #Stanley (4000/1000 POPS)
@@ -938,25 +938,25 @@
 	serfs = {
 		culture = native_american_minor
 		religion = animist
-		size = 144
+		size = 440
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 8
+		size = 108
 	}
 
 	serfs = {
 		culture = cree
 		religion = animist
-		size = 100
+		size = 1000
 	}
 
 	labourers = {
 		culture = cree
 		religion = animist
-		size = 5
+		size = 50
 	}
 }
 #Manitoba Region : 52000
@@ -1205,25 +1205,25 @@
 	serfs = {
 		culture = native_american_minor
 		religion = animist
-		size = 152
+		size = 1520
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 8
+		size = 80
 	}
 
 	serfs = {
 		culture = cree
 		religion = animist
-		size = 50
+		size = 500
 	}
 
 	labourers = {
 		culture = cree
 		religion = animist
-		size = 8
+		size = 80
 	}
 }
 #Pembina (8000/2000 POPS)
@@ -1231,25 +1231,25 @@
 	serfs = {
 		culture = native_american_minor
 		religion = animist
-		size = 152
+		size = 1520
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 8
+		size = 80
 	}
 
 	serfs = {
 		culture = cree
 		religion = animist
-		size = 50
+		size = 500
 	}
 
 	labourers = {
 		culture = cree
 		religion = animist
-		size = 8
+		size = 80
 	}
 
 }
@@ -1601,7 +1601,7 @@
 	labourers = {
 		culture = cree
 		religion = animist
-		size = 8
+		size = 80
 	}
 
 }
@@ -2873,21 +2873,27 @@
 
 #Prince Rupert (8000/2000 POPS)
 3341 = {
-	serfs = {
+	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 473
+		size = 1003
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 25
+		size = 425
 	}
 	
-		soldiers = {
+	artisans = {
 		culture = native_american_minor
 		religion = animist
-		size = 3080
+		size = 125
+	}
+	
+	serfs = {
+		culture = native_american_minor
+		religion = animist
+		size = 2580
 	}
 }

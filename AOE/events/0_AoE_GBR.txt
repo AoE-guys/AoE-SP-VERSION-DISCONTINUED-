@@ -1567,3 +1567,24 @@ country_event = {
 		}	
 	}
 }
+
+country_event = {
+	id = 171011
+	title = "Society of Antiquaries of London"
+	desc = "EVTDESC171011"
+	picture = english_parliment
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1707
+		owns = 300
+	}
+	option = {
+		300 = {
+			add_province_modifier = {
+				name = antiquaries_of_london
+				duration = -1
+			}
+		}
+	}
+}
