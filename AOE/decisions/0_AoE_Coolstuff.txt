@@ -158,4 +158,58 @@ political_decisions = {
 		}
 	}
 	
+	trade_with_japan = {
+		picture = french_military_exp_japan
+		potential = {
+			OR = {
+				tag = NET
+				tag = POR
+			}
+			NOT = {
+				has_global_flag = japan_not_isolated
+			}
+		}
+		allow = {
+			is_sphere_leader_of = SAT
+			money = 25000
+		}
+		effect = {
+			SAT = {
+				1661 = {
+					secede_province = THIS
+					remove_core = TKG
+				}
+			}
+			treasury = -25000
+			set_global_flag = japan_not_isolated
+			diplomatic_influence = {
+				who = CHO
+				value = 150
+			}
+			diplomatic_influence = {
+				who = TOS
+				value = 150
+			}
+			diplomatic_influence = {
+				who = JAP
+				value = 100
+			}
+			diplomatic_influence = {
+				who = KAG
+				value = 100
+			}
+			diplomatic_influence = {
+				who = TKG
+				value = 50
+			}
+			diplomatic_influence = {
+				who = YZW
+				value = 50
+			}
+			diplomatic_influence = {
+				who = SEN
+				value = 50
+			}
+		}
+	}
 }
