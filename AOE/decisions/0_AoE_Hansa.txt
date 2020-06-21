@@ -88,11 +88,13 @@ political_decisions = {
 	leave_hansa = {
 		picture = baltic_sea
 		potential = {
-			has_country_flag = member_of_hansa
-			NOT = {
-				has_country_flag = leader_of_hansa
+			any_country = {
+				has_country_flag = member_of_hansa
+				NOT = {
+					has_country_flag = leader_of_hansa
+				}
+				has_global_flag = trade_league_of_hansa
 			}
-			has_global_flag = trade_league_of_hansa
 		}
 		allow = {
 			any_country = {
@@ -117,11 +119,13 @@ political_decisions = {
 	take_leadership_hansa = {
 		picture = baltic_sea
 		potential = {
-			has_country_flag = member_of_hansa
-			NOT = {
-				has_country_flag = leader_of_hansa
+			any_country = {
+				has_country_flag = member_of_hansa
+				NOT = {
+					has_country_flag = leader_of_hansa
+				}
+				has_global_flag = trade_league_of_hansa
 			}
-			has_global_flag = trade_league_of_hansa
 		}
 		allow = {
 			money = 45000
@@ -143,11 +147,13 @@ political_decisions = {
 	form_hansa = {
 		picture = baltic_sea
 		potential = {
-			has_country_flag = member_of_hansa
-			has_global_flag = trade_league_of_hansa
-			has_country_flag = leader_of_hansa
-			NOT = {
-				has_global_flag = hanseatic_league_united
+			any_country = {
+				has_country_flag = member_of_hansa
+				has_global_flag = trade_league_of_hansa
+				has_country_flag = leader_of_hansa
+				NOT = {
+					has_global_flag = hanseatic_league_united
+				}
 			}
 		}
 		allow = {
