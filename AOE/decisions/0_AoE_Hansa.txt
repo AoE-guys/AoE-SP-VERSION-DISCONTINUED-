@@ -2,6 +2,7 @@ political_decisions = {
 	begin_hansa = {
 		picture = baltic_sea
 		potential = {
+			OR = {
 			tag = LUB
 			tag = HAM
 			tag = BRE
@@ -15,6 +16,7 @@ political_decisions = {
 			tag = HOL
 			tag = OLD
 			tag = SWH
+			}
 			NOT = {
 				has_global_flag = trade_league_of_hansa
 			}
@@ -38,6 +40,7 @@ political_decisions = {
 	join_hansa = {
 		picture = baltic_sea
 		potential = {
+			OR = {
 			tag = LUB
 			tag = HAM
 			tag = BRE
@@ -51,6 +54,7 @@ political_decisions = {
 			tag = HOL
 			tag = OLD
 			tag = SWH
+			}
 			has_global_flag = trade_league_of_hansa
 			NOT = {
 				has_country_flag = member_of_hansa
