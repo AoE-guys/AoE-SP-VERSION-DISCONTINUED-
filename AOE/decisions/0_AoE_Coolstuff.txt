@@ -68,4 +68,88 @@ political_decisions = {
 		}
 	}
 	
+	montenegro_monarchy = {
+		picture = montenegro_map
+		potential = {
+			tag = MON
+			government = theocracy
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			OR = {
+				is_vassal = no
+				vassal_of = SER
+				vassal_of = GRE
+				vassal_of = AUS
+			}
+		}
+		effect = {
+			788 = {
+				add_core = THIS
+			}
+			787 = {
+				add_core = THIS
+			}
+			783 = {
+				add_core = THIS
+			}
+			789 = {
+				add_core = THIS
+			}
+			782 = {
+				add_core = THIS
+			}
+			804 = {
+				add_core = THIS
+			}
+			803 = {
+				add_core = THIS
+			}
+			add_accepted_culture = bosniak
+			government = absolute_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_illyria = {
+		picture = greater_croatia_map
+		potential = {
+			tag = CRO
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			OR = {
+				government = absolute_monarchy
+				government = french_bourbon
+			}
+			OR = {
+				is_vassal = no
+				vassal_of = BOR
+				vassal_of = FRA
+			}
+		}
+		effect = {
+			AUS_736 = {
+				add_core = THIS
+			}
+			AUS_768 = {
+				add_core = THIS
+			}
+			TUR_788 = {
+				add_core = THIS
+			}
+			add_accepted_culture = slovene
+			add_accepted_culture = serbian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }
