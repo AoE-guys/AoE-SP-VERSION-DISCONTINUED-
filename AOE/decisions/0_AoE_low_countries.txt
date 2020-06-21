@@ -79,6 +79,32 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	frisian_empire = {
+		picture = dreams_of_empire
+		potential = {
+			tag = EFR
+			has_country_flag = formed_frisia
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			539 = {
+				add_core = THIS
+			}
+			HAN_528 = {
+				add_core = THIS
+			}
+			HOL_369 = {
+				add_core = THIS
+			}
+			government = absolute_monarchy
+		}
+	}
+	
 	restore_flemish_duchy = {
 		picture = become_belgium
 		potential = {
@@ -117,4 +143,6 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	
 }

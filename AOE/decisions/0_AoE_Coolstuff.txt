@@ -3,6 +3,9 @@ political_decisions = {
 		picture = tur_hungary
 		potential = {
 			tag = SIE
+			NOT = {
+				has_country_flag = transylvania_full_duchy
+			}
 			NOT = { vassal_of = AUS }
 		}
 		allow = {
@@ -14,6 +17,7 @@ political_decisions = {
 			AUS_950 = {
 				add_core = SIE
 			}
+			set_country_flag = transylvania_full_duchy
 		}
 		ai_will_do = {					
 			factor = 1
@@ -24,6 +28,9 @@ political_decisions = {
 		picture = silesia_prussia
 		potential = {
 			tag = BOH
+			NOT = {
+				has_country_flag = bohemia_claimed_lusatia
+			}
 		}
 		allow = {
 			all_core = {
@@ -34,6 +41,7 @@ political_decisions = {
 			687 = {
 				add_core = BOH
 			}
+			set_country_flag = bohemia_claimed_lusatia
 		}
 		ai_will_do = {
 			factor = 1
@@ -44,6 +52,9 @@ political_decisions = {
 		picture = greater_macedonia
 		potential = {
 			tag = MCD
+			NOT = {
+				has_country_flag = macedonia_kingdom
+			}
 		}
 		allow = {
 			all_core = {
@@ -62,6 +73,7 @@ political_decisions = {
 				add_core = THIS
 			}
 			add_accepted_culture = greek
+			set_country_flag = macedonia_kingdom
 		}
 		ai_will_do = {
 			factor = 1
@@ -73,6 +85,9 @@ political_decisions = {
 		potential = {
 			tag = MON
 			government = theocracy
+			NOT = {
+				has_country_flag = stronk_montenegro
+			}
 		}
 		allow = {
 			all_core = {
@@ -109,6 +124,7 @@ political_decisions = {
 			}
 			add_accepted_culture = bosniak
 			government = absolute_monarchy
+			set_country_flag = stronk_montenegro
 		}
 		ai_will_do = {
 			factor = 1
@@ -119,6 +135,9 @@ political_decisions = {
 		picture = greater_croatia_map
 		potential = {
 			tag = CRO
+			NOT = {
+				has_country_flag = greater_illyria
+			}
 		}
 		allow = {
 			all_core = {
@@ -152,6 +171,7 @@ political_decisions = {
 			}
 			add_accepted_culture = slovene
 			add_accepted_culture = serbian
+			set_country_flag = greater_illyria
 		}
 		ai_will_do = {
 			factor = 1
@@ -212,4 +232,5 @@ political_decisions = {
 			}
 		}
 	}
+	
 }

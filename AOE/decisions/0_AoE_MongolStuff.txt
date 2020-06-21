@@ -45,6 +45,9 @@ political_decisions = {
 					accepted_culture = manchu
 				}
 			}
+			NOT = {
+				has_country_flag = east_mongolia
+			}
 			any_owned_province = {
 				is_core = MCK
 			}
@@ -60,6 +63,7 @@ political_decisions = {
 			add_accepted_culture = manchu
 			prestige = 5
 			badboy = -3
+			set_country_flag = east_mongolia
 		}
 		ai_will_do = {					
 			factor = 1
