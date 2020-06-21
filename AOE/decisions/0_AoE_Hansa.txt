@@ -88,13 +88,26 @@ political_decisions = {
 	leave_hansa = {
 		picture = baltic_sea
 		potential = {
-			any_country = {
-				has_country_flag = member_of_hansa
-				NOT = {
-					has_country_flag = leader_of_hansa
-				}
-				has_global_flag = trade_league_of_hansa
+			OR = {
+				tag = LUB
+				tag = HAM
+				tag = BRE
+				tag = MEC
+				tag = MST
+				tag = LNE
+				tag = HAN
+				tag = LAU
+				tag = HGL
+				tag = SCH
+				tag = HOL
+				tag = OLD
+				tag = SWH
 			}
+			has_country_flag = member_of_hansa
+			NOT = {
+				has_country_flag = leader_of_hansa
+			}
+			has_global_flag = trade_league_of_hansa
 		}
 		allow = {
 			any_country = {
