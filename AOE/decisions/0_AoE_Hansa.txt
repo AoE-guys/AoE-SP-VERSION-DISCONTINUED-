@@ -1,330 +1,330 @@
-political_decisions = {
-	begin_hansa = {
-		picture = baltic_sea
-		potential = {
-			OR = {
-			tag = LUB
-			tag = HAM
-			tag = BRE
-			tag = MEC
-			tag = MST
-			tag = LNE
-			tag = HAN
-			tag = LAU
-			tag = HGL
-			tag = SCH
-			tag = HOL
-			tag = OLD
-			tag = SWH
-			}
-			NOT = {
-				has_global_flag = trade_league_of_hansa
-			}
-		}
-		allow = {
-			money = 25000
-		}
-		effect = {
-			set_country_flag = leader_of_hansa
-			set_country_flag = member_of_hansa
-			set_global_flag = trade_league_of_hansa
-			all_core = {
-				add_core = NGF
-			}
-			treasury = -20000
-			prestige = 15
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	join_hansa = {
-		picture = baltic_sea
-		potential = {
-			OR = {
-			tag = LUB
-			tag = HAM
-			tag = BRE
-			tag = MEC
-			tag = MST
-			tag = LNE
-			tag = HAN
-			tag = LAU
-			tag = HGL
-			tag = SCH
-			tag = HOL
-			tag = OLD
-			tag = SWH
-			}
-			has_global_flag = trade_league_of_hansa
-			NOT = {
-				has_country_flag = member_of_hansa
-			}
-		}
-		allow = {
-			war = no
-			any_country = { 
-				AND = { 
-					has_country_flag = leader_of_hansa
-					OR = {
-						alliance_with = THIS
-						relation = {
-							who = THIS
-							value = 150
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			set_country_flag = member_of_hansa
-			all_core = {
-				add_core = NGF
-			}
-			prestige = 2
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	leave_hansa = {
-		picture = baltic_sea
-		potential = {
-			OR = {
-				tag = LUB
-				tag = HAM
-				tag = BRE
-				tag = MEC
-				tag = MST
-				tag = LNE
-				tag = HAN
-				tag = LAU
-				tag = HGL
-				tag = SCH
-				tag = HOL
-				tag = OLD
-				tag = SWH
-			}
-			has_country_flag = member_of_hansa
-			NOT = {
-				has_country_flag = leader_of_hansa
-			}
-			has_global_flag = trade_league_of_hansa
-		}
-		allow = {
-			any_country = {
-				limit = {
-					has_country_flag = leader_of_hansa
-					relation = {
-						who = THIS
-						value = -50
-					}
-				}
-			}
-		}
-		effect = {
-			clr_country_flag = member_of_hansa
-			all_core = {
-				remove_core = NGF
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	take_leadership_hansa = {
-		picture = baltic_sea
-		potential = {
-			OR = {
-				tag = LUB
-				tag = HAM
-				tag = BRE
-				tag = MEC
-				tag = MST
-				tag = LNE
-				tag = HAN
-				tag = LAU
-				tag = HGL
-				tag = SCH
-				tag = HOL
-				tag = OLD
-				tag = SWH
-			}
-			has_country_flag = member_of_hansa
-			NOT = {
-				has_country_flag = leader_of_hansa
-			}
-			has_global_flag = trade_league_of_hansa
-		}
-		allow = {
-			money = 45000
-		}
-		effect = {
-			treasury = -40000
-			any_country = {
-				limit = {
-					has_country_flag = leader_of_hansa
-				}
-				clr_country_flag = leader_of_hansa
-			}
-			set_country_flag = leader_of_hansa
-			prestige = 15
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	form_hansa = {
-		picture = baltic_sea
-		potential = {
-			OR = {
-				tag = LUB
-				tag = HAM
-				tag = BRE
-				tag = MEC
-				tag = MST
-				tag = LNE
-				tag = HAN
-				tag = LAU
-				tag = HGL
-				tag = SCH
-				tag = HOL
-				tag = OLD
-				tag = SWH
-			}
-			has_country_flag = member_of_hansa
-			has_global_flag = trade_league_of_hansa
-			has_country_flag = leader_of_hansa
-			NOT = {
-				has_global_flag = hanseatic_league_united
-			}
-		}
-		allow = {
-			LUB = {
-				has_country_flag = member_of_hansa
-			}
-			HAN = {
-				has_country_flag = member_of_hansa
-			}
-			HAM = {
-				has_country_flag = member_of_hansa
-			}
-			BRE = {
-				has_country_flag = member_of_hansa
-			}
-			LNE = {
-				has_country_flag = member_of_hansa
-			}
-			MEC = {
-				has_country_flag = member_of_hansa
-			}
-			MST = {
-				has_country_flag = member_of_hansa
-			}
-			OLD = {
-				has_country_flag = member_of_hansa
-			}
-			OR = {
-				AND = {
-					exists = SCH
-					exists = HOL
-				}
-				exists = SWH
-			}
-		}
-		effect = {
-			change_tag = NGF
-			set_country_flag = hanseatic_league_united
-			LUB = {
-				all_core = {
-					remove_core = LUB
-				}
-			}
-			inherit = LUB
-			
-			HAM = {
-				all_core = {
-					remove_core = HAM
-				}
-			}
-			inherit = HAM
-			
-			
-			HAN = {
-				all_core = {
-					remove_core = HAN
-				}
-			}
-			inherit = HAN
-			
-			
-			MEC = {
-				all_core = {
-					remove_core = MEC
-				}
-			}
-			inherit = MEC
-			
-			MST = {
-				all_core = {
-					remove_core = MST
-				}
-			}
-			inherit = MST
-			
-			
-			LNE = {
-				all_core = {
-					remove_core = LNE
-				}
-			}
-			inherit = LNE
-			
-			LAU = {
-				all_core = {
-					remove_core = LAU
-				}
-			}
-			inherit = LAU
-			
-			OLD = {
-				all_core = {
-					remove_core = OLD
-				}
-			}
-			inherit = OLD
-			
-			
-			BRE = {
-				all_core = {
-					remove_core = BRE
-				}
-			}
-			inherit = BRE
-			
-			HGL = {
-				all_core = {
-					remove_core = BRE
-				}
-			}
-
-			inherit = SWH
-			inherit = SCH
-			inherit = HOL
-			inherit = HGL
-			
-			PRU_546 = {
-				add_core = THIS
-			}
-			HAN_540 = {
-				add_core = THIS
-			}
-			HAN_534 = {
-				add_core = THIS
-			}
-			PRU_690 = {
-				add_core = THIS
-			}
-			
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	
-}
+#political_decisions = {
+#	begin_hansa = {
+#		picture = baltic_sea
+#		potential = {
+#			OR = {
+#			tag = LUB
+#			tag = HAM
+#			tag = BRE
+#			tag = MEC
+#			tag = MST
+#			tag = LNE
+#			tag = HAN
+#			tag = LAU
+#			tag = HGL
+#			tag = SCH
+#			tag = HOL
+#			tag = OLD
+#			tag = SWH
+#			}
+#			NOT = {
+#				has_global_flag = trade_league_of_hansa
+#			}
+#		}
+#		allow = {
+#			money = 25000
+#		}
+#		effect = {
+#			set_country_flag = leader_of_hansa
+#			set_country_flag = member_of_hansa
+#			set_global_flag = trade_league_of_hansa
+#			all_core = {
+#				add_core = NGF
+#			}
+#			treasury = -20000
+#			prestige = 15
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+#	
+#	join_hansa = {
+#		picture = baltic_sea
+#		potential = {
+#			OR = {
+#			tag = LUB
+#			tag = HAM
+#			tag = BRE
+#			tag = MEC
+#			tag = MST
+#			tag = LNE
+#			tag = HAN
+#			tag = LAU
+#			tag = HGL
+#			tag = SCH
+#			tag = HOL
+#			tag = OLD
+#			tag = SWH
+#			}
+#			has_global_flag = trade_league_of_hansa
+#			NOT = {
+#				has_country_flag = member_of_hansa
+#			}
+#		}
+#		allow = {
+#			war = no
+#			any_country = {
+#				AND = {
+#					has_country_flag = leader_of_hansa
+#					OR = {
+#						alliance_with = THIS
+#						relation = {
+#							who = THIS
+#							value = 150
+#						}
+#					}
+#				}
+#			}
+#		}
+#		effect = {
+#			set_country_flag = member_of_hansa
+#			all_core = {
+#				add_core = NGF
+#			}
+#			prestige = 2
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+#	
+#	leave_hansa = {
+#		picture = baltic_sea
+#		potential = {
+#			OR = {
+#				tag = LUB
+#				tag = HAM
+#				tag = BRE
+#				tag = MEC
+#				tag = MST
+#				tag = LNE
+#				tag = HAN
+#				tag = LAU
+#				tag = HGL
+#				tag = SCH
+#				tag = HOL
+#				tag = OLD
+#				tag = SWH
+#			}
+#			has_country_flag = member_of_hansa
+#			NOT = {
+#				has_country_flag = leader_of_hansa
+#			}
+#			has_global_flag = trade_league_of_hansa
+#		}
+#		allow = {
+#			any_country = {
+#				limit = {
+#					has_country_flag = leader_of_hansa
+#					relation = {
+#						who = THIS
+#						value = -50
+#					}
+#				}
+#			}
+#		}
+#		effect = {
+#			clr_country_flag = member_of_hansa
+#			all_core = {
+#				remove_core = NGF
+#			}
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+#	
+#	take_leadership_hansa = {
+#		picture = baltic_sea
+#		potential = {
+#			OR = {
+#				tag = LUB
+#				tag = HAM
+#				tag = BRE
+#				tag = MEC
+#				tag = MST
+#				tag = LNE
+#				tag = HAN
+#				tag = LAU
+#				tag = HGL
+#				tag = SCH
+#				tag = HOL
+#				tag = OLD
+#				tag = SWH
+#			}
+#			has_country_flag = member_of_hansa
+#			NOT = {
+#				has_country_flag = leader_of_hansa
+#			}
+#			has_global_flag = trade_league_of_hansa
+#		}
+#		allow = {
+#			money = 45000
+#		}
+#		effect = {
+#			treasury = -40000
+#			any_country = {
+#				limit = {
+#					has_country_flag = leader_of_hansa
+#				}
+#				clr_country_flag = leader_of_hansa
+#			}
+#			set_country_flag = leader_of_hansa
+#			prestige = 15
+#		}
+#		ai_will_do = { factor = 0 }
+#	}
+#	
+#	form_hansa = {
+#		picture = baltic_sea
+#		potential = {
+#			OR = {
+#				tag = LUB
+#				tag = HAM
+#				tag = BRE
+#				tag = MEC
+#				tag = MST
+#				tag = LNE
+#				tag = HAN
+#				tag = LAU
+#				tag = HGL
+#				tag = SCH
+#				tag = HOL
+#				tag = OLD
+#				tag = SWH
+#			}
+#			has_country_flag = member_of_hansa
+#			has_global_flag = trade_league_of_hansa
+#			has_country_flag = leader_of_hansa
+#			NOT = {
+#				has_global_flag = hanseatic_league_united
+#			}
+#		}
+#		allow = {
+#			LUB = {
+#				has_country_flag = member_of_hansa
+#			}
+#			HAN = {
+#				has_country_flag = member_of_hansa
+#			}
+#			HAM = {
+#				has_country_flag = member_of_hansa
+#			}
+#			BRE = {
+#				has_country_flag = member_of_hansa
+#			}
+#			LNE = {
+#				has_country_flag = member_of_hansa
+#			}
+#			MEC = {
+#				has_country_flag = member_of_hansa
+#			}
+#			MST = {
+#				has_country_flag = member_of_hansa
+#			}
+#			OLD = {
+#				has_country_flag = member_of_hansa
+#			}
+#			OR = {
+#				AND = {
+#					exists = SCH
+#					exists = HOL
+#				}
+#				exists = SWH
+#			}
+#		}
+#		effect = {
+#			change_tag = NGF
+#			set_country_flag = hanseatic_league_united
+#			LUB = {
+#				all_core = {
+#					remove_core = LUB
+#				}
+#			}
+#			inherit = LUB
+#			
+#			HAM = {
+#				all_core = {
+#					remove_core = HAM
+#				}
+#			}
+#			inherit = HAM
+#			
+#			
+#			HAN = {
+#				all_core = {
+#					remove_core = HAN
+#				}
+#			}
+#			inherit = HAN
+#			
+#			
+#			MEC = {
+#				all_core = {
+#					remove_core = MEC
+#				}
+#			}
+#			inherit = MEC
+#			
+#			MST = {
+#				all_core = {
+#					remove_core = MST
+#				}
+#			}
+#			inherit = MST
+#			
+#			
+#			LNE = {
+#				all_core = {
+#					remove_core = LNE
+#				}
+#			}
+#			inherit = LNE
+#			
+#			LAU = {
+#				all_core = {
+#					remove_core = LAU
+#				}
+#			}
+#			inherit = LAU
+#			
+#			OLD = {
+#				all_core = {
+#					remove_core = OLD
+#				}
+#			}
+#			inherit = OLD
+#			
+#			
+#			BRE = {
+#				all_core = {
+#					remove_core = BRE
+#				}
+#			}
+#			inherit = BRE
+#			
+#			HGL = {
+#				all_core = {
+#					remove_core = BRE
+#				}
+#			}
+#
+#			inherit = SWH
+#			inherit = SCH
+#			inherit = HOL
+#			inherit = HGL
+#			
+#			PRU_546 = {
+#				add_core = THIS
+#			}
+#			HAN_540 = {
+#				add_core = THIS
+#			}
+#			HAN_534 = {
+#				add_core = THIS
+#			}
+#			PRU_690 = {
+#				add_core = THIS
+#			}
+#			
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+#	
+#	
+#}
