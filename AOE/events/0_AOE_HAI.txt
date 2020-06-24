@@ -1,7 +1,7 @@
 ###Haiti Stuff###
 #Haiti setup Pre-1750
 country_event = {
-	id = 17910
+	id = 17917
 	title = "Saint-Domingue"
 	desc = "EVTDESC17910"
 	picture = exemplar_colony
@@ -93,7 +93,7 @@ country_event = {
 		add_province_modifier = {
 					name = colonial_recruitment
 					duration = 1825
-		}
+			}
 		}
 	}
 }
@@ -193,7 +193,7 @@ country_event = {
 			tag = FRA
 			tag = BOR
 		}
-       NOT = { 2213 = { controled_by = THIS } }
+       2213 = { controled_by = HAI } 
 	}
 	mean_time_to_happen = {
 		days = 1
