@@ -6472,3 +6472,36 @@ dhimmi_late = {
 	non_accepted_pop_consciousness_modifier = 0.01
 	non_accepted_pop_militancy_modifier = 0.02
 }
+
+##Piracy System##
+
+piracy_mild = {
+    factory_output = -0.075
+    factory_input = 0.075
+    import_cost = 0.075    
+    immigrant_attract = -0.010
+    icon = 18
+}
+
+piracy_moderate = {
+    factory_output = -0.15
+    factory_input = 0.15
+    import_cost = 0.15       
+    immigrant_attract = -0.020
+    icon = 18
+}
+
+piracy_harsh = {
+    factory_output = -0.30
+    factory_input = 0.30
+    import_cost = 0.30    
+    immigrant_attract = -0.030
+    icon = 18
+}
+
+piracy_spoils = {
+    factory_output = 0.15
+    factory_input = -0.15
+    import_cost = -0.15       
+    icon = 17
+}

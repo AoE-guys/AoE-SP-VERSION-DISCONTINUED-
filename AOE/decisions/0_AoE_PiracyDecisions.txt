@@ -1,0 +1,196 @@
+political_decisions = { 
+
+	combat_piracy_1 = {
+		picture = combat_piracy_I
+		potential = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = piracy_mild
+					has_province_modifier = piracy_moderate
+					has_province_modifier = piracy_harsh
+				}
+			}
+			NOT = { has_country_flag = combat_piracy_1 }
+			NOT = { has_country_flag = combat_piracy_2 }
+		}
+			
+		allow = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = piracy_mild
+					has_province_modifier = piracy_moderate
+					has_province_modifier = piracy_harsh
+				}
+			}
+			naval_professionalism = 1
+			battleship_column_doctrine = 1
+			total_amount_of_ships = 10
+			money = 25000
+		}
+		
+		effect = {
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_mild
+				}
+				remove_province_modifier = piracy_mild
+            }
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_moderate
+				}
+				remove_province_modifier = piracy_moderate
+				add_province_modifier = {
+					name = piracy_mild
+					duration = -1
+				}
+            }
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_harsh
+				}
+				remove_province_modifier = piracy_harsh
+				add_province_modifier = {
+					name = piracy_moderate
+					duration = -1
+				}
+			}
+			money = -25000			
+			set_country_flag = combat_piracy_1
+        }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	combat_piracy_2 = {
+		picture = combat_piracy_II
+		potential = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = piracy_mild
+					has_province_modifier = piracy_moderate
+					has_province_modifier = piracy_harsh
+				}
+			}
+			NOT = { has_country_flag = combat_piracy_2 }
+			has_country_flag = combat_piracy_1
+		}
+			
+		allow = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = piracy_mild
+					has_province_modifier = piracy_moderate
+					has_province_modifier = piracy_harsh
+				}
+			}
+			naval_decision_making = 1
+			raider_group_doctrine = 1
+			total_amount_of_ships = 20
+			money = 30000
+		}
+		
+		effect = {
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_mild
+				}
+				remove_province_modifier = piracy_mild
+            }
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_moderate
+				}
+				remove_province_modifier = piracy_moderate
+				add_province_modifier = {
+					name = piracy_mild
+					duration = -1
+				}
+            }
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_harsh
+				}
+				remove_province_modifier = piracy_harsh
+				add_province_modifier = {
+					name = piracy_moderate
+					duration = -1
+				}
+					
+            }
+			set_country_flag = combat_piracy_2
+			money = -30000
+        }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	combat_piracy_3 = {
+		picture = combat_piracy_III
+		potential = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = piracy_mild
+					has_province_modifier = piracy_moderate
+					has_province_modifier = piracy_harsh
+				}
+			}
+			has_country_flag = combat_piracy_2
+			has_global_flag = golden_age_piracy_over
+		}
+			
+		allow = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = piracy_mild
+					has_province_modifier = piracy_moderate
+					has_province_modifier = piracy_harsh
+				}
+			}
+			total_amount_of_ships = 25
+			money = 40000
+		}
+		
+		effect = {
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_mild
+				}
+				remove_province_modifier = piracy_mild
+            }
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_moderate
+				}
+				remove_province_modifier = piracy_moderate
+				add_province_modifier = {
+					name = piracy_mild
+					duration = -1
+				}
+            }
+            any_owned = {
+                limit = {
+					has_province_modifier = piracy_harsh
+				}
+				remove_province_modifier = piracy_harsh
+				add_province_modifier = {
+					name = piracy_moderate
+					duration = -1
+				}
+            }
+			clr_country_flag = combat_piracy_1
+			clr_country_flag = combat_piracy_2
+			money = -40000
+        }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	
+}

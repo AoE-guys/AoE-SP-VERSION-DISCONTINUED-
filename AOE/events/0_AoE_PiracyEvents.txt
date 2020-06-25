@@ -1,0 +1,1415 @@
+country_event = {
+	id = 69690
+	title = "Piracy Setup"
+	desc = EVTDESC69420
+	fire_only_once = yes
+	trigger = {
+		tag = HAW
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	
+	option = {
+		2209 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2210 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2211 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2212 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		44 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2218 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2217 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		3327 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		3361 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2213 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2215 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2209 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		3284 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		3328 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2214 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		3330 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}		
+		2216 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2222 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2223 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2226 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		45 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2236 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}			
+		2227 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		3246 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2224 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2225 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}		
+		2230 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}		
+		2232 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}		
+		2228 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2231 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2409 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2233 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2229 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2238 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2237 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}		
+		2235 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2264 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		2220 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2219 = { 
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		243 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		244 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		242 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		241 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}			
+		233 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		229 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		230 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		231 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		222 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		2146 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		213 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		60 = { 
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}		
+		214 = { 
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}		
+		207 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}		
+		210 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}		
+		205 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}		
+		204 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		199 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}		
+		200 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		198 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		194 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		139  = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		132 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		133 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}				
+		138 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2149 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2150 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2151 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}				
+		2163 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2162 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2164 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2165 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2184 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2183 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2185 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2190 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2188 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2194 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2195 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2196 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		3362 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2200 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2198 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2203 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2205 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2206 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		1723 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2204 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2208 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2253 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2254 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2255 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2270 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		219 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2272 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2268 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2234 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2235 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2268 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2264 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2267 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2269 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2276 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2243 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		2239 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2240 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2241 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2415 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2410 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2424 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2426 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2429 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2431 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2428 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2432 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2434 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2435 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2436 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2447 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		203 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2134 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2135 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2136 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		1876 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		524 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		527 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		526 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}		
+		511 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		512 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		2590 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		514 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		513 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		515 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		506 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		505 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		503 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		502 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		765 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		766 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		473 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		725 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		762 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}		
+		764 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		763 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		759 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		854 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		826 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		867 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		842 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		841 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		839 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		840 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}		
+		848 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		846 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		857 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		855 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		856 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		1689 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}
+		1709 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1686 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1705 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}		
+		1706 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1704 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1701 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1702 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1731 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1736 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1691 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1728 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1783 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1877 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1884 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}				
+		1894 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		1909 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}			
+		1908 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		1907 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}	
+		1919 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1923 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1928 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1931 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}			
+		1934 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}			
+		1954 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}			
+		1972 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1974 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}			
+		1972 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2624 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}			
+		2000 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1983 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}		
+		2001 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1972 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1999 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		2003 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		2087 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}
+		2090 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		3347 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}		
+		2120 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		3348 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		2118 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		2049 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2051 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2057 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2061 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		2060 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}		
+		2063 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		2038 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		2036 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}		
+		2048 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		2029 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		2030 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1868 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1869 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1871 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1872 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1873 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1179 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}			
+		1176 = {
+			add_province_modifier = {
+				name = piracy_harsh
+				duration = -1
+			}
+		}			
+		1851 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1849 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1155 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1173 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1175 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1177 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		2785 = {
+			add_province_modifier = {
+				name = piracy_mild
+				duration = -1
+			}
+		}	
+		1171 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1166 = {
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}	
+		1725 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		1688 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 69691
+	title = "The End of The Golden Age of Piracy"
+	desc = EVTDESC69691
+	picture = piracy_golden_ended
+	fire_only_once = yes
+	trigger = {
+		year = 1730
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	
+	option = {
+		name = "Another sun dips below the waves"
+	    any_owned = {
+            limit = {
+				has_province_modifier = piracy_harsh
+				OR = {
+					continent = west_africa
+					continent = south_west_africa
+					continent = north_america
+					continent = south_america
+				}
+			}
+			remove_province_modifier = piracy_harsh
+			add_province_modifier = {
+				name = piracy_moderate
+				duration = -1
+			}
+		}
+		set_global_flag = golden_age_piracy_over
+	}
+}
+		
+		
+		
+		

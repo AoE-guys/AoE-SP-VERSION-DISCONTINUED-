@@ -26,7 +26,8 @@ dragoon = {
 		small_arms = 10
 		canned_food = 10
 		wine = 10
-		barrels = 1
+		barrels = 3
+		grain = 5
 	}
 	
 	supply_consumption = 1.0
@@ -34,7 +35,8 @@ dragoon = {
 		small_arms = 0.012 #0.008
 		ammunition = 0.075 # 0
 		canned_food = 0.07 #0.08
-		barrels = 0.05
+		barrels = 0.20
+		grain = 0.5
 	}
 	
 
