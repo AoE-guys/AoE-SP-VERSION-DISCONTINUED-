@@ -31,10 +31,7 @@ country_event = {
 					duration = 3650
 				}
 			}
-			random_list = {
-				100 = {country_event = 17911}
-				0 = {country_event = 17912}
-		    }
+		country_event = 17911
 	}
 }
 #Haiti setup Post-1750
@@ -192,10 +189,10 @@ country_event = {
 		OR = {
 			tag = FRA
 			tag = BOR
-		}
 		AND = {
 		2213 = { controled_by = HAI } 
-		}
+			}
+		}	
 	}
 	mean_time_to_happen = {
 		days = 1
