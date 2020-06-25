@@ -1,4 +1,4 @@
-political_decisions = {
+political_decisions = { 
 
 	combat_piracy_1 = {
 		picture = combat_piracy_I
@@ -54,9 +54,9 @@ political_decisions = {
 					name = piracy_moderate
 					duration = -1
 				}
+			}
+			money = -25000			
 			set_country_flag = combat_piracy_1
-			money = -25000
-            }
         }
 		
 		ai_chance = {
