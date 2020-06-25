@@ -24,13 +24,17 @@ cavalry = {
 	build_cost = {
 		wool = 20
 		wine = 10
-		barrels = 1
+		barrels = 2.5
+		grain = 5
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		wool = 0.2
-		barrels = 0.05
+		barrels = 0.15
+		small_arms = 0.012
+		ammunition = 0.025
+		grain = 0.5
 	}
 	
 

@@ -18,40 +18,41 @@ rebel = {
 
 #Total 11.5
 life_needs = {
-	cattle = 1	  #2.0
-	wool = 0.25 	  #0.7
-	fish = 0.375 	  #1.5
-	fruit = 0.375 	  #1.8
-	grain = 1  #5.5
+	cattle = 0.5	  #2.0
+	wool = 0.4 	  #0.7
+	fish = 0.5 	  #1.5
+	fruit = 0.75 	  #1.8
+	grain = 2  #5.5
 }
 
 everyday_needs = {
 	coal = 0.25
-	tobacco = 1.25
+	tobacco = 1
 	tea = 0.5
 	liquor = 0.5
-	regular_clothes = 0.3
-	furniture = 0.275
-	opium = 1.25
-	fertilizer = 0.25 #0
-	cotton = 0.125
-	cattle = 1.75
-	grain = 1.75
+	regular_clothes = 1
+	furniture = 0.5
+	opium = 2
+	fertilizer = 0.5 #0
+	cotton = 1
+	cattle = 2
+	grain = 5
 }
 
 
 luxury_needs = {
-	regular_clothes = 0.5
-	furniture = 0.75
-	liquor = 0.375
-	wine = 0.25
-	coffee = 0.75
-	tobacco = 0.75
+	regular_clothes = 2
+	furniture = 2
+	liquor = 1
+	wine = 0.5
+	coffee = 1
+	tobacco = 2
 	paper = 0.25
-	opium = 0.5
-	telephones = 0.125
-	radio = 0.125
-	steamer_convoy = 0.125
+	opium = 2
+	telephones = 0.25
+	radio = 0.25
+	steamer_convoy = 0.25
+	fruit = 2
 }
 
 country_migration_target = { factor = 0 }

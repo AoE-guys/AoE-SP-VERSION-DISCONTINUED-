@@ -23,7 +23,7 @@ life_needs = {
 	wool = 1.25	#2.8
 	fish = 2.5	#6
 	fruit = 2.5	#7.2
-	grain = 5	#22
+	grain = 10	#22
 }
 
 #Total cash needed: 3775.1 - Vanilla value: 2852
@@ -40,6 +40,7 @@ everyday_needs = {
 	radio = 2.5
 	telephones = 2.5
 	cotton = 0.5
+	glass = 5
 }
 
 #Total cash needed: 3883 - Vanilla value: 3863
@@ -59,8 +60,8 @@ luxury_needs = {
 	clipper_convoy = 1.5
 	automobiles = 2.5
 	barrels = 1
-	luxury_clothes = 7.5
-	luxury_furnitue = 10
+	luxury_clothes = 10
+	luxury_furnitue = 12
 }
 
 
