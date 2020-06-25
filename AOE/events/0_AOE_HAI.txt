@@ -85,7 +85,7 @@ country_event = {
 	}
 	option = { 
 		money = 250000
-		radio = 25000
+		radio = 250
 		HAI_2213 = {
 		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.5 }
 		any_pop = { limit = { has_pop_culture = afro_antillean } reduce_pop = 1.5 }
@@ -182,7 +182,7 @@ country_event = {
 }
 
 #Slaves Capture Port-Au-Prince
-country_event = {
+#country_event = {
 	id = 17914
 	title = "Port-Au-Prince has fallen"
 	desc = "Port-Au-Prince has fallen to the slaves."
@@ -193,7 +193,9 @@ country_event = {
 			tag = FRA
 			tag = BOR
 		}
-       2213 = { controled_by = HAI } 
+		AND = {
+		2213 = { controled_by = HAI } 
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
