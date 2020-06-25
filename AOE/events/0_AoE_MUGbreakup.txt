@@ -474,12 +474,19 @@ country_event = {
 	trigger = {
 		tag = MUG
 		MUG = {
-			NOT = { is_greater_power = yes }
-			NOT = { owns = 1270 }
-			NOT = { owns = 1277 }
-			NOT = { owns = 1305 }
-			NOT = { owns = 1277 }
-			NOT = { owns = 1261 }
+			OR = {
+				AND = {
+					NOT = { is_greater_power = yes }
+					has_recently_lost_war = yes
+				}
+				AND = {
+					NOT = { owns = 1270 }
+					NOT = { owns = 1277 }
+					NOT = { owns = 1305 }
+					NOT = { owns = 1277 }
+					NOT = { owns = 1261 }
+				}
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -542,6 +549,9 @@ country_event = {
 		year = 1730
 		exists = BNG
 		BNG = {
+			NOT = {
+				is_greater_power = yes
+			}
 			NOT = {
 				in_sphere = THIS
 			}
@@ -662,6 +672,11 @@ country_event = {
 	trigger = {
 		tag = BNG
 		ai = yes
+		BNG = {
+			NOT = {
+				is_greater_power = yes
+			}
+		}
 		OR = {
 			in_sphere = ENG
 			in_sphere = GBR

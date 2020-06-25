@@ -6015,10 +6015,10 @@ not_dictatorship = {
 ####Mughal breakup stuff####
 decentralized_rule = {
 	core_pop_militancy_modifier = 0.04
-	org_regain = -0.4
-	army_organisation = -0.3
+	org_regain = -0.45
+	army_organisation = -0.4
 	admin_efficiency = -0.1
-	mobilisation_size = -0.01
+	mobilisation_size = -0.02
 	icon = 3
 }
 decentralized_rule_efm = {
@@ -6030,7 +6030,7 @@ political_chaos = {
 	diplomatic_points_modifier = -0.2
 	influence_modifier = -0.1
 	global_pop_militancy_modifier = 0.06
-	war_exhaustion = 0.01
+	war_exhaustion = 0.04
 	icon = 3
 }
 ##
