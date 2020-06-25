@@ -8,6 +8,7 @@ country_event = {
 	trigger = {
 	NOT = {
 	year = 1750
+	exists = HAI  
 	}
 	OR = {
 		tag = FRA
@@ -48,6 +49,7 @@ country_event = {
 	}
 		NOT = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
+			exists = HAI 
 		}
 	slavery = yes_slavery
 	2213 = { controled_by = THIS }
