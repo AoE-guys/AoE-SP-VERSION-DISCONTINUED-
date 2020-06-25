@@ -67,7 +67,7 @@ political_decisions = {
 	combat_piracy_2 = {
 		picture = combat_piracy_II
 		potential = {
-			any_owned = {
+			any_owned_province = {
 				OR = {
 					has_province_modifier = piracy_mild
 					has_province_modifier = piracy_moderate
@@ -79,7 +79,7 @@ political_decisions = {
 		}
 			
 		allow = {
-			any_owned = {
+			any_owned_province = {
 				OR = {
 					has_province_modifier = piracy_mild
 					has_province_modifier = piracy_moderate
@@ -99,7 +99,7 @@ political_decisions = {
 				}
 				remove_province_modifier = piracy_mild
             }
-            any_owned_province = {
+            any_owned = {
                 limit = {
 					has_province_modifier = piracy_moderate
 				}
@@ -109,7 +109,7 @@ political_decisions = {
 					duration = -1
 				}
             }
-            any_owned_province = {
+            any_owned = {
                 limit = {
 					has_province_modifier = piracy_harsh
 				}
@@ -132,7 +132,7 @@ political_decisions = {
 	combat_piracy_3 = {
 		picture = combat_piracy_III
 		potential = {
-			any_owned = {
+			any_owned_province = {
 				OR = {
 					has_province_modifier = piracy_mild
 					has_province_modifier = piracy_moderate
@@ -144,7 +144,7 @@ political_decisions = {
 		}
 			
 		allow = {
-			any_owned = {
+			any_owned_province = {
 				OR = {
 					has_province_modifier = piracy_mild
 					has_province_modifier = piracy_moderate
