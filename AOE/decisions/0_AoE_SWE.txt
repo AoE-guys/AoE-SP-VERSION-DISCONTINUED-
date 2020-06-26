@@ -675,8 +675,9 @@ political_decisions = {
 		picture = moose_man
 		potential = {
 			is_culture_group = scandinavian
-			owns = 322
-			322 = { is_capital = yes}
+			any_owned_province = {
+				terrain = forest
+			}
 			NOT = { has_country_flag = moose_cav }
 		}
 		allow = {
@@ -691,5 +692,4 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
 }

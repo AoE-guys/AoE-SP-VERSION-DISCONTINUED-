@@ -1,13 +1,14 @@
 ###Haiti Stuff###
 #Haiti setup Pre-1750
 country_event = {
-	id = 17910
+	id = 17917
 	title = "Saint-Domingue"
 	desc = "EVTDESC17910"
 	picture = exemplar_colony
 	trigger = {
 	NOT = {
 	year = 1750
+	exists = HAI  
 	}
 	OR = {
 		tag = FRA
@@ -31,10 +32,7 @@ country_event = {
 					duration = 3650
 				}
 			}
-			random_list = {
-				100 = {country_event = 17911}
-				0 = {country_event = 17912}
-		    }
+		country_event = 17911
 	}
 }
 #Haiti setup Post-1750
@@ -51,6 +49,7 @@ country_event = {
 	}
 		NOT = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
+			exists = HAI 
 		}
 	slavery = yes_slavery
 	2213 = { controled_by = THIS }
@@ -85,7 +84,7 @@ country_event = {
 	}
 	option = { 
 		money = 250000
-		radio = 25000
+		radio = 250
 		HAI_2213 = {
 		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.5 }
 		any_pop = { limit = { has_pop_culture = afro_antillean } reduce_pop = 1.5 }
@@ -93,7 +92,7 @@ country_event = {
 		add_province_modifier = {
 					name = colonial_recruitment
 					duration = 1825
-		}
+			}
 		}
 	}
 }
@@ -182,7 +181,7 @@ country_event = {
 }
 
 #Slaves Capture Port-Au-Prince
-country_event = {
+#country_event = {
 	id = 17914
 	title = "Port-Au-Prince has fallen"
 	desc = "Port-Au-Prince has fallen to the slaves."
@@ -192,8 +191,10 @@ country_event = {
 		OR = {
 			tag = FRA
 			tag = BOR
-		}
-       NOT = { 2213 = { controled_by = THIS } }
+		AND = {
+		2213 = { controled_by = HAI } 
+			}
+		}	
 	}
 	mean_time_to_happen = {
 		days = 1
