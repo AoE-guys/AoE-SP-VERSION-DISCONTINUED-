@@ -2,7 +2,7 @@ owner = TUS
 controller = TUS
 add_core = TUS
 add_core = ITA
-trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  upgrade = yes  }
+trade_goods = fruit  state_building = {  level = 2  building = fruit_factory  upgrade = yes  }
 state_building = {
 	level = 1
 	building = machine_parts_factory

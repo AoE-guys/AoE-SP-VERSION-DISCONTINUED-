@@ -3,7 +3,7 @@ controller = BRE
 add_core = BRE
 add_core = GER
 add_core = NNN
-trade_goods = fish  state_building = {  level = 1  building = fish_factory  upgrade = yes  }
+trade_goods = fish  state_building = {  level = 2  building = fish_factory  upgrade = yes  }
 state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 state_building = {
 	level = 1

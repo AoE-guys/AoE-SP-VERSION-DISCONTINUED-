@@ -3,8 +3,8 @@ controller = BAV
 add_core = BAV
 add_core = GER
 add_core = NNN
-trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
-state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
+state_building = {  level = 2  building = steamer_shipyard  upgrade = yes  }
 state_building = {
 	level = 1
 	building = machine_parts_factory

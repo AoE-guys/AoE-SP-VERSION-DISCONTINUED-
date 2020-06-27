@@ -3,7 +3,7 @@ controller = LOR
 add_core = LOR
 add_core = ALS
 add_core = NNN
-trade_goods = cattle
+trade_goods = cattle  state_building = {  level = 2  building = cattle_factory  upgrade = yes  }
 life_rating = 31
 state_building = {
 	level = 1

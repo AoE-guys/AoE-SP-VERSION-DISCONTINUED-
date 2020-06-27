@@ -3,6 +3,6 @@ controller = AUS
 add_core = SLV
 add_core = HUN
 add_core = CZH
-trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
 state_building = {  level = 1  building = cement_factory  upgrade = yes  }
 life_rating = 35

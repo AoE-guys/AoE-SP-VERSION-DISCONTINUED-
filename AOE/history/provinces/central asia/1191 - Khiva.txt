@@ -2,5 +2,5 @@ owner = KHI
 controller = KHI
 add_core = KHI
 trade_goods = wool  state_building = {  level = 1  building = wool_factory  upgrade = yes  }
-state_building = {  level = 1  building = barrel_factory  upgrade = yes  }
+state_building = {  level = 2  building = barrel_factory  upgrade = yes  }
 life_rating = 35
