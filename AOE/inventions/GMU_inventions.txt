@@ -1,28 +1,3 @@
-early_archaeology = {
-	limit = { idealism = 1 }
-	chance = {
-		base = 1
-		modifier = {
-			factor = 1
-			functionalism = 1
-		}
-		modifier = {
-			factor = 1
-			invention = i_empiricism
-		}
-		modifier = {
-			factor = 2
-			has_country_modifier = local_excavations
-		}
-		modifier = {
-			factor = 2
-			has_country_modifier = egyptian_excavations
-		}
-	}
-	effect = {
-		shared_prestige = 2.5
-	}
-}
 
 modern_archaeology = {
 	limit = { analytic_philosophy = 1 
