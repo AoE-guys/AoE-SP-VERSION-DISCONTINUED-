@@ -878,7 +878,7 @@ machine_parts_factory = {
 		lumber = 7.0
 	}
 	output_goods = machine_parts 
-	value = 10		#73
+	value = 14		#73
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.65
@@ -1736,7 +1736,7 @@ precious_metal_mine = {
 precious_goods_market = {
 	template = RGO_template_labourers
 	output_goods = precious_goods
-	value = 10.0
+	value = 11.0
 	farm = yes
 	#mine = yes
 }
