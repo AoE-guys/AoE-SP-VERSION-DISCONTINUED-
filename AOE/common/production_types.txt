@@ -708,8 +708,8 @@ barrel_factory = {
 	output_goods = barrels 
 	value = 4		#98	total input+maint = 83
 	bonus = {
-		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
-		value = -9.50
+		trigger = { any_owned_province = { has_building = wood_export } } }
+		value = -0.50
 	}
 	bonus = {
 		trigger = { has_building = fruit_factory }
