@@ -18,7 +18,7 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
-		NOT = { military_spending = 0.4 }
+		NOT = { military_spending = 0.3 }
 		NOT = { has_country_modifier = janisseries_angry }
 		NOT = { has_country_modifier = janisseries_furious }
 		NOT = { has_country_flag = abolished_janisseries }
@@ -101,6 +101,7 @@ country_event = {
 	trigger = {
 		tag = TUR
 		war = yes
+		war_exhaustion = 4
 		NOT = { has_country_modifier = janisseries_angry }
 		NOT = { has_country_modifier = janisseries_furious }
 		NOT = { has_country_flag = abolished_janisseries }
@@ -154,6 +155,7 @@ country_event = {
 	title = "The Great Sack of Vienna"
 	desc = "EVTDESC173604"
 	picture = vienna_boom
+	major = yes
 	is_triggered_only = yes
 
 	
@@ -222,7 +224,7 @@ country_event = {
 	id = 173608
 	title = "Raids on Russia?"
 	desc = "EVTDESC173608"
-	picture = cossacs
+	picture = cossacks
 	fire_only_once = yes
 	trigger = {
 		tag = CRI
@@ -259,7 +261,7 @@ country_event = {
 	id = 173609
 	title = "Raids on our lands!"
 	desc = "EVTDESC173609"
-	picture = cossacs
+	picture = cossacks
 	is_triggered_only = yes
 
 	option = {
@@ -288,15 +290,15 @@ country_event = {
 	id = 173610
 	title = "A Russian envoy arrives"
 	desc = "EVTDESC173610"
-	picture = cossacs
+	picture = cossacks
 	is_triggered_only = yes
 
 	option = {
 		name = "This is outragous! We will not give up our lands!"
 		RUS = {
 			war = {
-				target = TUR
-				attacker_goal = { casus_belli = annex_core_country country = CRI }
+				target = CRI
+				attacker_goal = { casus_belli = annex_core_country }
 				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}

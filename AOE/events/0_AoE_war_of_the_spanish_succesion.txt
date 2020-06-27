@@ -699,17 +699,15 @@ country_event = {
 						region = NET_379
 						region = PRU_575
 						region = SAR_765
+						region = SIC_763
 					}
 				}
 				secede_province = AUS
 			}
 		}
-		ARN = {
-			any_owned = {
-				limit = {
-					region = SAR_765
-				}
-				secede_province = AUS
+		503 = {
+			owner = {
+				country_event = 130051
 			}
 		}
 		any_country = {
@@ -749,6 +747,27 @@ country_event = {
 				}
 			} 
 			country_event = 13007
+		}
+	}
+}
+country_event = {
+	id = 130051
+	title = "EVTNAME93006" 
+	desc = "..."
+	picture = "spanish_king"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Shame!"
+		503 = {
+			owner = {
+				any_owned = {
+					limit = {
+						region = SAR_765
+					}
+					secede_province = AUS
+				}
+			}
 		}
 	}
 }
@@ -826,12 +845,9 @@ country_event = {
 				secede_province = BOR
 			}
 		}
-		ARN = {
-			any_owned = {
-				limit = {
-					region = SAR_765
-				}
-				secede_province = BOR
+		503 = {
+			owner = {
+				country_event = 130061
 			}
 		}
 		BOR = {
@@ -862,7 +878,27 @@ country_event = {
 		}
 	}
 }
-
+country_event = {
+	id = 130061
+	title = "EVTNAME93006" 
+	desc = "..."
+	picture = "spanish_king"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Shame!"
+		503 = {
+			owner = {
+				any_owned = {
+					limit = {
+						region = SAR_765
+					}
+					secede_province = BOR
+				}
+			}
+		}
+	}
+}
 country_event= {
 	id = 13007
 	title = "The end of the succesion crisis"

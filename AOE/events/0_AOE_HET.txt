@@ -86,3 +86,33 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = 178300
+	title = "Hetmanate and The Russian Empire"
+	desc = "EVTDESC91241542"
+	picture = masepa
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT91241542OPT1"
+		release_vassal = HET
+		war = {
+			target = HET
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVT91241542OPT2"
+		release_vassal = HET
+		prestige = -20
+		ai_chance = {
+			factor = 0.1
+		}
+	}
+}

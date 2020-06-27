@@ -810,7 +810,7 @@ country_event = {
 	
 	option = {
         name = "Let them go."
-        set_country_flag = austria_let_BEL_go
+        set_country_flag = let_BEL_go
         any_owned = {
             limit = {
                 is_core = BEL

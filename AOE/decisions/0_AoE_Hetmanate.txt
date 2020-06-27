@@ -56,9 +56,12 @@ political_decisions = {
 		
 		allow = {
 			RUS = {
-				war_with = SWE
-				NOT = {
-					rank = 5
+				war = yes
+			}
+			OR = {
+				is_secondary_power = yes
+				RUS = {
+					war_with = SWE
 				}
 			}
 		}
@@ -99,15 +102,11 @@ political_decisions = {
 		
 		allow = {
 			PLC = {
-				OR = {
-					war_with = SWE
-					war_with = RUS
-				}
-				NOT = {
-					rank = 8
-				}
+				war = yes
+				is_greater_power = no
 				social_movement_strength = 0.1
 			}
+			anti__rationalism = 1
 			money = 10000
 		}
 			
