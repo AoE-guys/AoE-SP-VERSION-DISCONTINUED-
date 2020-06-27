@@ -708,7 +708,7 @@ barrel_factory = {
 	output_goods = barrels 
 	value = 4		#98	total input+maint = 83
 	bonus = {
-		trigger = { any_owned_province = { has_building = wood_export } } }
+		trigger = { any_owned_province = { has_building = wood_export } }
 		value = -0.50
 	}
 	bonus = {
