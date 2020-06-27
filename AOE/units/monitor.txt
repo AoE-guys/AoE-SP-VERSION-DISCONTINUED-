@@ -21,9 +21,10 @@ monitor = {
 	build_time = 360
 	build_cost = {
 		clipper_convoy = 20
-		artillery = 12
+		artillery = 15
 		canned_food = 12
 		luxury_clothes = 1.0
+		explosives = 5
 	}
 	min_port_level = 3
 	limit_per_port = -1
@@ -33,6 +34,7 @@ monitor = {
 	supply_cost = {
 		clipper_convoy = 0.95
 		artillery = 0.3
+		explosives = 0.1
 		canned_food = 0.8
 		ammunition = 0.3
 	}

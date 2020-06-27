@@ -54,8 +54,8 @@ everyday_needs = {
 	tobacco = 1.5			#3.3
 	tea = 2.5			#13
 	coffee = 1			#4.2
-	ammunition = 0.25 	#9
-	small_arms = 0.375 	#14.8
+	ammunition = 1
+	small_arms = 1
 	radio = 1
 	wine = 1
 	steamer_convoy = 1
@@ -74,10 +74,14 @@ luxury_needs = {
 	opium = 1
 	regular_clothes = 10
 	luxury_furniture = 1
+	ammunition = 3
+	small_arms = 2
+	explosives = 1
 	wine = 10
 	barrels = 1
 	automobiles = 5
 	luxury_clothes = 4
+	artillery = 1
 }
 
 country_migration_target = {

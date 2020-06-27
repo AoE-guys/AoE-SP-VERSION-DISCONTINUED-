@@ -24,9 +24,10 @@ ironclad = {
 	build_time = 360
 	build_cost = {	
 		clipper_convoy = 20
-		artillery = 10
+		artillery = 15
 		canned_food = 10
 		luxury_clothes = 1.0
+		explosives = 5
 	}
 	min_port_level = 3
 	limit_per_port = 3
@@ -38,6 +39,7 @@ ironclad = {
 		artillery = 0.2
 		canned_food = 0.4
 		ammunition = 0.2
+		explosives = 0.1
 	}
 	
 	#Naval Abilties

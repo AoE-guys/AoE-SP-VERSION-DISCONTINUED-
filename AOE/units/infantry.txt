@@ -23,13 +23,14 @@ infantry = {
 		small_arms = 15
 		canned_food = 10
 		regular_clothes = 2
+		ammunition = 20
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.012 #0.012
-		ammunition = 0.075 #0
+		small_arms = 0.10 #0.012
 		canned_food = 0.07 #0.08
+		ammunition = 0.25
 		regular_clothes = 0.02 #0
 	}
 	
