@@ -1,144 +1,179 @@
 ######################
-## Enable Socialists
+## Enable Constitutionalism
 ######################
-#country_event = {
-#	id = 1000
-#	title = "EVTNAME1000"
-#	desc = "EVTDESC1000"
-#	news = yes
-#	news_desc_long = "EVTDESC1000_NEWS_LONG"
-#	news_desc_medium = "EVTDESC1000_NEWS_MEDIUM"
-#	news_desc_short = "EVTDESC1000_NEWS_SHORT"
-#	picture = "Socialism"
-#	
-#	trigger = {
-#		NOT = { is_ideology_enabled = socialist  }
-#		year = 1860
-#		civilized = yes
-#		literacy = 0.4
-#		OR = {
-#			unemployment = 0.2
-#			NOT = { poor_strata_life_needs = 0.8 }
-#			NOT = { poor_strata_everyday_needs = 0.5 }
-#			NOT = {middle_strata_everyday_needs = 0.5 }
-#		}
-#	}
-#	major = yes
-#	fire_only_once = yes
-#
-#	mean_time_to_happen = {
-#		months = 250
-#		
-#		modifier = {
-#			factor = 0.5
-#			invention = pierre_joseph_proudhon
-#		}
-#		modifier = {
-#			factor = 0.5
-#			OR = {
-#				unemployment = 0.2
-#				NOT = { poor_strata_life_needs = 0.5 }
-#				NOT = { poor_strata_everyday_needs = 0.25 }
-#				NOT = { middle_strata_everyday_needs = 0.25 }
-#			}
-#		}
-#		modifier = {
-#			factor = 1.5
-#			poor_strata_life_needs = 0.95
-#		}
-#	}
-#
-#	option = {
-#		name = "EVTOPTA1000"
-#		enable_ideology = socialist
-#	}
-#}
+country_event = {
+	id = 1000
+	title = "EVTNAME1000"
+	desc = "EVTDESC1000"
+	news = yes
+	news_desc_long = "EVTDESC1000_NEWS_LONG"
+	news_desc_medium = "EVTDESC1000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1000_NEWS_SHORT"
+	picture = "Socialism"
+	
+	trigger = {
+		NOT = { is_ideology_enabled = socialist  }
+		year = 1750
+		civilized = yes
+		literacy = 0.7
+		OR = {
+			any_country = {	mass_politics = 1}
+			phenomenology_n_hermeneutic = 1
+			social_alienation = 1
+		}
+		OR = {
+			political_reform_want = 0.25
+			unemployment = 0.2
+			NOT = { poor_strata_life_needs = 0.8 }
+			NOT = { poor_strata_everyday_needs = 0.5 }
+			NOT = {middle_strata_everyday_needs = 0.5 }
+		}
+	}
+	major = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 250
+		
+		# modifier = {
+			# factor = 0.5
+			# invention = pierre_joseph_proudhon
+		# }
+		modifier = {
+			factor = 0.5
+			OR = {
+				political_reform_want = 0.1
+				unemployment = 0.2
+				NOT = { poor_strata_life_needs = 0.5 }
+				NOT = { poor_strata_everyday_needs = 0.25 }
+				NOT = { middle_strata_everyday_needs = 0.25 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.35
+		}
+	}
+
+	option = {
+		name = "EVTOPTA1000"
+		enable_ideology = socialist
+		capital_scope = {
+			limit = { is_colonial = no }
+			poor_strata = {
+				ideology = {
+					factor = 0.02
+					value = socialist
+				}
+			}
+		}
+		capital_scope = {
+			limit = { is_colonial = no }
+			middle_strata = {
+				ideology = {
+					factor = 0.04
+					value = socialist
+				}
+			}
+		}
+	}
+}
 
 ######################
-## Enable Communists
+## Enable Jacobins
 ######################
-#country_event = {
-#	id = 1001
-#	title = "EVTNAME1001"
-#	desc = "EVTDESC1001"
-#	news = yes
-#	news_desc_long = "EVTDESC1001_NEWS_LONG"
-#	news_desc_medium = "EVTDESC1001_NEWS_MEDIUM"
-#	news_desc_short = "EVTDESC1001_NEWS_SHORT"
-#	picture = "Socialism"
-#	
-#	trigger = {
-#		NOT = {
-#			is_ideology_enabled = communist 
-#		}
-#		year = 1870
-#		civilized = yes
-#		literacy = 0.5
-#		OR = {
-#			planned_economy = 5
-#			pro_atheism = 5
-#			pro_military = 10
-#			unemployment = 0.2
-#			AND = {
-#				NOT = {
-#					poor_strata_life_needs = 0.9
-#				}
-#				average_militancy = 3
-#			}
-#		}
-#	}
-#	
-#	major = yes
-#	fire_only_once = yes
-#
-#	mean_time_to_happen = {
-#		months = 300
-#		
-#		modifier = {
-#			factor = 0.5
-#			invention = karl_marx
-#		}
-#		modifier = {
-#			factor = 0.8
-#			invention = friedrich_engels
-#		}
-#		modifier = {
-#			factor = 1.5
-#			poor_strata_life_needs = 0.95
-#		}
-#	}
-#
-#	option = {
-#		name = "EVTOPTA1001"
-#		enable_ideology = communist
-#		random_list = {
-#			34 = {
-#			}
-#			33 = {
-#			capital_scope = {
-#				limit = { is_colonial = no }
-#				poor_strata = {
-#					ideology = {
-#						factor = 0.02
-#						value = communist
-#						}
-#					}
-#				}
-#			}
-#			33 = {
-#			capital_scope = {
-#				limit = { is_colonial = no }
-#				poor_strata = {
-#					ideology = {
-#						factor = 0.04
-#						value = communist
-#						}
-#					}
-#				}
-#			}
-#		}
-#	}
-#}
+country_event = {
+	id = 1001
+	title = "EVTNAME1001"
+	desc = "EVTDESC1001"
+	news = yes
+	news_desc_long = "EVTDESC1001_NEWS_LONG"
+	news_desc_medium = "EVTDESC1001_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1001_NEWS_SHORT"
+	picture = "Jacobins"
+	
+	trigger = {
+		NOT = {
+			is_ideology_enabled = communist 
+		}
+		year = 1780
+		civilized = yes
+		literacy = 0.7
+		any_country = {	political_thought_7 = 1}	#Republicanism is researched
+
+		OR = {
+			pro_atheism = 5
+			unemployment = 0.2
+			AND = {
+				NOT = {
+					poor_strata_life_needs = 0.9
+				}
+				average_militancy = 3
+			}
+			AND = {
+				NOT = {
+					middle_strata_everyday_needs = 0.9
+				}
+				average_militancy = 4
+			}
+		}
+	}
+	
+	major = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 300
+		
+		# modifier = {
+			# factor = 0.5
+			# invention = karl_marx
+		# }
+		# modifier = {
+			# factor = 0.8
+			# invention = friedrich_engels
+		# }
+		modifier = {
+			factor = 1.5
+			poor_strata_life_needs = 0.95
+		}
+		modifier = {
+			factor = 1.5
+			middle_strata_everyday_needs = 0.95
+		}
+	}
+
+	option = {
+		name = "EVTOPTA1001"
+		enable_ideology = communist
+		random_list = {
+			34 = {
+			}
+			33 = {
+			capital_scope = {
+				limit = { is_colonial = no }
+				poor_strata = {
+					ideology = {
+						factor = 0.02
+						value = communist
+						}
+					}
+				}
+			}
+			33 = {
+			capital_scope = {
+				limit = { is_colonial = no }
+				poor_strata = {
+					ideology = {
+						factor = 0.04
+						value = communist
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 ##########################
 # Enable Anarcho-Liberal

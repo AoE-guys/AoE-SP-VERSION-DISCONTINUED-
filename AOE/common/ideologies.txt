@@ -1,8 +1,7 @@
 # If you add types, and use those tags, do not change them without changing everywhere they are used.
 
 
-fascist_group = {
-
+fascist_group = { #fascist_group = absolutist faction
 	reactionary = { #absolutist
 		color = { 100 35 160 }
 		
@@ -133,13 +132,10 @@ fascist_group = {
 				NOT = { ruling_party_ideology = fascist }
 			}
 		}
-		
-		
-		
 	}
 }	
 
-conservative_group = {
+conservative_group = { #traditionalist faction
 
 	conservative = { #traditional
 		color = { 25 50 125 }
@@ -299,82 +295,20 @@ conservative_group = {
 			base = -0.5
 		}
 	}
-	
-	socialist = { #enlightened(?) - not used
+
+}
+
+socialist_group = {
+	socialist = { #Reformist
 		uncivilized = no
 		color = { 112 41 99 }
-		date = 1845.1.1
+		date = 1745.1.1
 		
 		add_political_reform = {
-			base = 0.25
-			group = {
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 1
-						political_movement_strength = 0.1
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 2
-						political_movement_strength = 0.2
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 3
-						political_movement_strength = 0.3
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 4
-						political_movement_strength = 0.4
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 5
-						political_movement_strength = 0.5
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 6
-						political_movement_strength = 0.6
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 7
-						political_movement_strength = 0.7
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 8
-						political_movement_strength = 0.8
-					}
-				}
-				modifier = {
-					factor = 0.1
-					OR = { 
-						militancy = 9
-						political_movement_strength = 0.9
-					}
-				}
-			}
+			base = 1
 		}
 		remove_political_reform = {
-			base = 0.5
+			base = 0
 		}
 		add_social_reform = {
 			base = 1
@@ -384,27 +318,16 @@ conservative_group = {
 		}
 	}
 	
-}
-socialist_group = {
-	
-	communist = { #radical
+	communist = { #Jacobin
 		uncivilized = no
 		color = { 150 5 25 }
-		#date = 1860.1.1
+		date = 1770.1.1
 		
 		add_political_reform = {
-			base = 0
-			modifier = {
-				factor = 1
-				NOT = { ruling_party_ideology = communist }
-			}
+			base = 1
 		}
 		remove_political_reform = {
 			base = 0
-			modifier = {
-				factor = 1
-				ruling_party_ideology = communist
-			}
 		}
 		add_social_reform = {
 			base = 1
@@ -417,7 +340,7 @@ socialist_group = {
 
 liberal_group = {
 	
-	liberal = { #moderate
+	liberal = { #Moderates burgher
 		color = { 240 150 10 }
 		#date = 1705.1.1
 		
@@ -427,7 +350,7 @@ liberal_group = {
 		remove_political_reform = {
 			base = 0
 		}
-		add_social_reform = {
+		add_social_reform = { #Rework this later btw
 			base = 0.5
 			group = {
 				modifier = {

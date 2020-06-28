@@ -7,6 +7,7 @@ proletarian_dictatorship = {
 	#which ideology of parties.
 	communist = yes
 	liberal = yes
+	socialist = yes
 	
 	election = no
 	appoint_ruling_party = no
@@ -15,7 +16,7 @@ proletarian_dictatorship = {
 
 presidential_dictatorship = {
 	#which ideology of parties.
-	#reactionary = yes
+	reactionary = yes
 	#fascist = yes
 	conservative = yes
 	liberal = yes
@@ -99,7 +100,7 @@ archduchy = {
  
 prussian_constitutionalism = {
 	liberal = yes
-	#socialist = yes
+	socialist = yes
 	conservative = yes
 	reactionary = yes
 	
@@ -126,7 +127,7 @@ elective_monarchy_oligarchy = {
 
 hms_government = {
 	liberal = yes
-	#socialist = yes
+	socialist = yes
 	conservative = yes
 	reactionary = yes
 	communist = yes
@@ -142,7 +143,7 @@ hms_government = {
 
 democracy = {
 	liberal = yes
-	#socialist = yes
+	socialist = yes
 	conservative = yes
 	#reactionary = yes
 	communist = yes
@@ -158,7 +159,7 @@ democracy = {
 
 federal_democracy = {
 	liberal = yes
-	#socialist = yes
+	socialist = yes
 	conservative = yes
 	#reactionary = yes
 	communist = yes
@@ -173,7 +174,7 @@ federal_democracy = {
 
 tribal_democracy = {
 	liberal = yes
-	#socialist = yes
+	socialist = yes
 	conservative = yes
 	reactionary = yes
 	communist = yes
