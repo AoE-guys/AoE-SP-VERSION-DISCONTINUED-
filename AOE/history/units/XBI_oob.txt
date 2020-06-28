@@ -1,0 +1,25 @@
+
+army = {
+	name = "Qinghai Horde"
+	location = 1557
+	regiment = {
+		name= "Qinghai Cavalry"
+		type = cavalry
+		home = 1557
+	}
+	regiment = {
+		name= "Qinghai Cavalry 2"
+		type = cavalry
+		home = 1558
+	}
+	regiment = {
+		name= "Qinghai Cavalry 3"
+		type = cavalry
+		home = 1556
+	}
+	regiment = {
+		name= "Qinghai Cavalry 4"
+		type = cavalry
+		home = 1556
+	}
+}
