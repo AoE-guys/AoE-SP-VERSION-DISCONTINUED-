@@ -2,6 +2,7 @@ owner = TAF
 controller = TAF
 add_core = TAF
 add_core = MOR
+add_core = ALD
 terrain = semidesert
 trade_goods = wool  state_building = {  level = 1  building = wool_factory  upgrade = yes  }
 life_rating = 31
