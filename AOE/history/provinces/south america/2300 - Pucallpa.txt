@@ -2,6 +2,6 @@ owner = VOP
 controller = VOP
 add_core = VOP
 add_core = PEU
-trade_goods = wool  state_building = {  level = 1  building = wool_factory  upgrade = yes  }
+trade_goods = wool  state_building = {  level = 2  building = wool_factory  upgrade = yes  }
 terrain = jungle
 life_rating = 31

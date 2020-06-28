@@ -295,7 +295,7 @@ silk_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = silk
-	value = 3
+	value = 3.5
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -982,12 +982,12 @@ luxury_clothes_factory = {
 	template = factory_template
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		dye = 0.5
-		silk = 4		#39	total input+maint = 54
-		automobiles = 3
+		dye = 1
+		silk = 10		#39	total input+maint = 54
+		automobiles = 5
 	}
 	output_goods = luxury_clothes
-	value = 3		#65
+	value = 5		#65
 	bonus = {
 		trigger = { has_building = regular_clothes_factory }
 		value = 0.35
@@ -1027,11 +1027,11 @@ luxury_furniture_factory = {
 	template = factory_template
 	input_goods = { 
 		furniture = 2	 	#45.08
-		tropical_wood = 7.5 #8.1	total input+maint = 53.18
-		automobiles = 3
+		tropical_wood = 10 #8.1	total input+maint = 53.18
+		automobiles = 5
 	}
 	output_goods = luxury_furniture 
-	value = 4.5			#64.9
+	value = 5			#64.9
 	bonus = {
 		trigger = { has_building = furniture_factory }
 		value = 0.3
