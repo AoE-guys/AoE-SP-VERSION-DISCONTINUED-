@@ -1,0 +1,20 @@
+
+army = {
+	name = "Army of Savoia"
+	location = 720
+	regiment = {
+		name= "Savoiard Infantry"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name= "Savoiard Artillery"
+		type = artillery
+		home = 720
+	}
+	regiment = {
+		name= "2nd Savoiard Infantry"
+		type = infantry
+		home = 720
+	}
+}

@@ -1,0 +1,35 @@
+
+army = {
+	name = "Army of Aragon"
+	location = 495
+	regiment = {
+		name= "Aragonese Infantry"
+		type = infantry
+		home = 498
+	}
+	regiment = {
+		name= "Aragonese Artillery"
+		type = artillery
+		home = 504
+	}
+	regiment = {
+		name= "2nd Aragonese Artillery"
+		type = artillery
+		home = 503
+	}
+	regiment = {
+		name= "2nd Aragonese Infantry"
+		type = infantry
+		home = 497
+	}
+	regiment = {
+		name= "3rd Aragonese Infantry"
+		type = infantry
+		home = 496
+	}
+	regiment = {
+		name= "Aragonese Cavalry"
+		type = hussar
+		home = 765
+	}
+}
