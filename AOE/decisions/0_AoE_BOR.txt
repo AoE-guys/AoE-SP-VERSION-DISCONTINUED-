@@ -102,12 +102,16 @@ political_decisions = {
 			owns = 394
 			owns = 397
 			OR = {
-				has_country_modifier = louis_grande
+				AND = {
+					has_country_modifier = louis_grande
+					ideological_thought = 1
+				}
 				AND = {
 					mass_politics = 1
 					war_policy = jingoism
 				}
 			}
+			NOT = { has_country_modifier = no_more_war }
 			NOT = { has_country_modifier = peasant_turmoil }
 			has_recently_lost_war = no
 		}
@@ -247,12 +251,18 @@ political_decisions = {
 		allow = {
 			SAR_466 = {
 				owner = {
-					NOT = { in_sphere = THIS }
-					NOT = {
-						relation = {
-							who = THIS
-							value = 0
+					OR = {
+						AND = {
+							NOT = { in_sphere = THIS }
+							NOT = {
+								relation = {
+									who = THIS
+									value = 0
+								}
+							}
 						}
+						tag = BOR
+						tag = FRA
 					}
 				}
 			}
