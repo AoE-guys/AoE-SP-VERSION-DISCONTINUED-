@@ -126,9 +126,9 @@ country_event = {
 		#government = absolute_monarchy
 		all_core = {
 			add_core = GBJ
-			change_tag = GBJ
 			remove_core = GBR
 		}
+		change_tag = GBJ
 		add_country_modifier = {
 			name = national_confusion
 			duration = 365
