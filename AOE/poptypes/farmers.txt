@@ -14,6 +14,7 @@ life_needs = {
 	fish = 2 	  #1.5
 	fruit = 2 	  #1.8
 	grain = 5  #5.5
+	machine_parts = 1
 }
 
 #Total cash needed: 50.75 - Vanilla value: 49.25
@@ -31,6 +32,7 @@ everyday_needs = {
 	cotton = 1
 	glass = 1
 	canned_food = 1
+	machine_parts = 2
 }
 
 #Total cash needed: 136.78 - Vanilla value: 125.995
@@ -45,6 +47,7 @@ luxury_needs = {
 	small_arms = 1
 	wine = 1
 	barrels = 1
+	machine_parts = 3
 }
 
 country_migration_target = {
