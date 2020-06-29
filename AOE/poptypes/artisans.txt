@@ -19,7 +19,7 @@ life_needs = {
 	wool = 0.5		#0.7
 	fish = 1		#1.5
 	fruit = 1		#1.8
-	grain = 5	#5.5
+	grain = 6	#5.5
 }
 
 #Total cash needed: 110.725 - Vanilla value: 116.9
@@ -38,7 +38,7 @@ everyday_needs = {
 	telephones = 1
 	cotton = 2
 	cattle = 5
-	grain = 7
+	grain = 10
 	canned_food = 1
 	machine_parts = 1
 }
@@ -964,128 +964,128 @@ promote_to = {
 	{
 		factor = 0.01
 		modifier = {
-			factor = 30
+			factor = 10
 			military_spending = 0.1
 			NOT = { military_spending = 0.2 }
+			NOT = { soldiers = 0.002 }
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.2
+			NOT = { military_spending = 0.3 }
+			NOT = { soldiers = 0.003 }
+		}
+		modifier = {
+			factor = 10
+			military_spending = 0.3
+			NOT = { military_spending = 0.4 }
 			NOT = { soldiers = 0.005 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.2
-			NOT = { military_spending = 0.3 }
+			factor = 10
+			military_spending = 0.4
+			NOT = { military_spending = 0.5 }
 			NOT = { soldiers = 0.010 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.3
-			NOT = { military_spending = 0.4 }
+			factor = 10
+			military_spending = 0.5
+			NOT = { military_spending = 0.6 }
 			NOT = { soldiers = 0.015 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.4
-			NOT = { military_spending = 0.5 }
+			factor = 10
+			military_spending = 0.6
+			NOT = { military_spending = 0.7 }
 			NOT = { soldiers = 0.020 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.5
-			NOT = { military_spending = 0.6 }
+			factor = 10
+			military_spending = 0.7
+			NOT = { military_spending = 0.8 }
 			NOT = { soldiers = 0.025 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.6
-			NOT = { military_spending = 0.7 }
+			factor = 10
+			military_spending = 0.8
+			NOT = { military_spending = 0.9 }
 			NOT = { soldiers = 0.030 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.7
-			NOT = { military_spending = 0.8 }
+			factor = 10
+			military_spending = 0.9
+			NOT = { military_spending = 0.99 }
 			NOT = { soldiers = 0.035 }
 		}
 		modifier = {
-			factor = 30
-			military_spending = 0.8
-			NOT = { military_spending = 0.9 }
-			NOT = { soldiers = 0.040 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.9
-			NOT = { military_spending = 0.99 }
-			NOT = { soldiers = 0.045 }
-		}
-		modifier = {
-			factor = 30
+			factor = 10
 			military_spending = 0.99
-			NOT = { soldiers = 0.050 }
+			NOT = { soldiers = 0.040 }
 		} 
 		modifier = {
 			factor = -50 #-500
-			soldiers = 0.050
-		} 
+			soldiers = 0.040
+		}
 	}
 
 	craftsmen = {
 		factor = 0.01
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
 			NOT = { craftsmen = 0.015 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
 			NOT = { craftsmen = 0.03 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
 			NOT = { craftsmen = 0.045 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
 			NOT = { craftsmen = 0.060 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.5
 			NOT = { literacy = 0.6 }
 			NOT = { craftsmen = 0.075 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
 			NOT = { craftsmen = 0.090 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.7
 			NOT = { literacy = 0.8 }
 			NOT = { craftsmen = 0.105 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
 			NOT = { craftsmen = 0.12 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
 			NOT = { craftsmen = 0.135 }
 		}
 		modifier = {
-			factor = 30
+			factor = 3
 			literacy = 0.99
 			NOT = { craftsmen = 0.15 }
 		}

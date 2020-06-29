@@ -2,7 +2,7 @@ owner = POR
 controller = POR
 add_core = TMR
 trade_goods = coffee  state_building = {  level = 1  building = coffee_factory  upgrade = yes  }
-state_building = {  level = 1  building = telephone_factory  upgrade = yes  }
+state_building = {  level = 2  building = telephone_factory  upgrade = yes  }
 life_rating = 32
 
 terrain = jungle_hills

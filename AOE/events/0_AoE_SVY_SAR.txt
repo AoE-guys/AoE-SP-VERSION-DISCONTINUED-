@@ -1,0 +1,84 @@
+country_event = {
+	id = 1749001
+	title = "Savoyard hegemony"
+	desc = "EVTDESC1749001"
+	picture = nobles
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		tag = SPA
+		SIC_763 = {
+			owned_by = SVY
+		}
+		SVY = {
+			war_exhaustion = 15
+			war_with = THIS
+		}
+	}
+	
+	option = {
+		name = "Send the Envoy"
+		AUS = {
+			country_event = 1749002
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = "Oh this punishment is not enough!"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1749002
+	title = "The Spanish Threat"
+	desc = "EVTDESC1749002"
+	picture = nobles
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Agree"
+		SVY = {
+			country_event = 1749003
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = "That's stupid!"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1749003
+	title = "The Spanish Threat"
+	desc = "EVTDESC1749003"
+	picture = nobles
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "Agree"
+		SIC_763 = {
+			secede_province = AUS
+		}
+		end_war = SPA
+		AUS = {
+			SAR_765 = {
+				secede_province = SVY
+			}
+			end_war = SPA
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = "That's stupid!"
+		ai_chance = { factor = 0 }
+	}
+}

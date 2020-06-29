@@ -89,18 +89,22 @@ country_event = {
 country_event = {
 	id = 178300
 	title = "Hetmanate and The Russian Empire"
-	desc = "EVTDESC91241542"
-	picture = masepa
+	desc = "EVTDESC178300"
+	picture = cossacks
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = HET
+		is_secondary_power = yes
+		vassal_of = RUS
+		year = 1730
+	}
 	
 	option = {
-		name = "EVT91241542OPT1"
-		release_vassal = HET
+		name = "To war!"
 		war = {
-			target = HET
-			attacker_goal = { casus_belli = make_puppet }
-			defender_goal = { casus_belli = status_quo }
+			target = RUS
+			attacker_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = annex_core_country }
 		}
 		ai_chance = {
 			factor = 10

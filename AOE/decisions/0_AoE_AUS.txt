@@ -5,7 +5,8 @@ political_decisions = {
 			tag = AUS
 			has_global_flag = hungarian_revolution_fail
 			SIE = {
-				exists = yes 
+				exists = yes
+				ai = yes
 			}
 		}
 		allow = {
@@ -72,6 +73,7 @@ political_decisions = {
 			SIE = {
 				exists = yes
 				is_vassal = no
+				ai = yes
 			}
 		}
 		allow = {
