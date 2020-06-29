@@ -15,9 +15,9 @@ country_event = {
 		NOT = { is_ideology_enabled = socialist  }
 		year = 1750
 		civilized = yes
-		literacy = 0.7
+		literacy = 0.6
 		OR = {
-			any_country = {	mass_politics = 1}
+			mass_politics = 1
 			phenomenology_n_hermeneutic = 1
 			social_alienation = 1
 		}
@@ -99,10 +99,9 @@ country_event = {
 		year = 1780
 		civilized = yes
 		literacy = 0.7
-		any_country = {	political_thought_7 = 1}	#Republicanism is researched
+		political_thought_7 = 1	#Republicanism is researched
 
 		OR = {
-			pro_atheism = 5
 			unemployment = 0.2
 			AND = {
 				NOT = {
