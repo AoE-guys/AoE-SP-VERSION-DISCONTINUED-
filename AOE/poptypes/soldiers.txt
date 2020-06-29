@@ -986,61 +986,61 @@ promote_to = {
 	craftsmen = {
 		factor = 0.01
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
 			NOT = { craftsmen = 0.015 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
 			NOT = { craftsmen = 0.03 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
 			NOT = { craftsmen = 0.045 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
 			NOT = { craftsmen = 0.060 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.5
 			NOT = { literacy = 0.6 }
 			NOT = { craftsmen = 0.075 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
 			NOT = { craftsmen = 0.090 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.7
 			NOT = { literacy = 0.8 }
 			NOT = { craftsmen = 0.105 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
 			NOT = { craftsmen = 0.12 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
 			NOT = { craftsmen = 0.135 }
 		}
 		modifier = {
-			factor = 10
+			factor = 3
 			literacy = 0.99
 			NOT = { craftsmen = 0.15 }
 		}
