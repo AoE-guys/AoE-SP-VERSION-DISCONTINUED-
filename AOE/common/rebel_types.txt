@@ -4874,13 +4874,13 @@ socialist_rebels = {
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
 		fascist_dictatorship = democracy
-		absolute_monarchy = democracy
+		absolute_monarchy = proletarian_dictatorship
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		french_bourbon = democracy
-		dominion = democracy
-		democracy = democracy
-		theocracy = democracy
+		dominion = proletarian_dictatorship
+		democracy = proletarian_dictatorship
+		theocracy = proletarian_dictatorship
 		colonial_company = democracy
 		
 		archduchy = democracy
@@ -4941,10 +4941,10 @@ socialist_rebels = {
 			factor = 0
 			country = { civilized = no }
 		}
-		modifier = {
-			factor = 0
-			political_movement = yes
-		}
+		# modifier = {
+			# factor = 0
+			# political_movement = yes
+		# }
 		modifier = {
 			factor = 0
 			NOT = { is_ideology_enabled = socialist }
@@ -4970,16 +4970,17 @@ socialist_rebels = {
 		}
 		modifier = {
 			factor = 1.02
-			social_reform_want = 0.05
+			political_reform_want = 0.05
 		}
 		modifier = {
 			factor = 1.02
-			social_reform_want = 0.1
+			political_reform_want = 0.1
 		}
 		modifier = {
 			factor = 1.02
-			social_reform_want = 0.15
+			political_reform_want = 0.15
 		}
+		
 		modifier = {
 			factor = 0
 			country = {

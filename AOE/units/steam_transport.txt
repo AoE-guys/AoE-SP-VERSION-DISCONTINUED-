@@ -21,7 +21,7 @@ steam_transport = {
 	#Building Costs
 	build_time = 90
 	build_cost = {
-		clipper_convoy = 5
+		clipper_convoy = 15
 		luxury_clothes = 0.4
 		canned_food = 2
 	}
@@ -31,7 +31,7 @@ steam_transport = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 0.55
+		clipper_convoy = 1
 	}
 	
 	#Naval Abilties

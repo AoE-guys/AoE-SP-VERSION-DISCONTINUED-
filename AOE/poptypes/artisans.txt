@@ -19,7 +19,7 @@ life_needs = {
 	wool = 0.5		#0.7
 	fish = 1		#1.5
 	fruit = 1		#1.8
-	grain = 5	#5.5
+	grain = 6	#5.5
 }
 
 #Total cash needed: 110.725 - Vanilla value: 116.9
@@ -38,8 +38,9 @@ everyday_needs = {
 	telephones = 1
 	cotton = 2
 	cattle = 5
-	grain = 7
+	grain = 10
 	canned_food = 1
+	machine_parts = 1
 }
 
 #Total cash needed: 429.2 - Vanilla value: 383.4
@@ -56,6 +57,7 @@ luxury_needs = {
 	barrels = 1
 	automobiles = 1
 	paper = 7.5
+	machine_parts = 5
 }
 
 country_migration_target = {
@@ -1631,181 +1633,181 @@ ideologies = {
 	}
 
 	socialist = {
-		factor = 0
+		factor = 4
 		
-		#modifier = {
-		#	factor = 0
-		#	NOT = { literacy = 0.05 }
-		#}
-		#
-		#modifier = {
-		#	factor = 1.1
-		#	nationalvalue = nv_equality
-		#	NOT = { ruling_party_ideology = communist }
-		#	OR = {
-		#		is_accepted_culture = yes
-		#		is_primary_culture = yes
-		#	}
-		#}
-        #
-		#modifier = {
-		#	factor = 0.75
-		#	location = { is_colonial = yes }
-		#	OR = {
-		#		is_accepted_culture = yes
-		#		is_primary_culture = yes
-		#	}
-		#}
-        #
-		#modifier = {
-		#	factor = 0.8
-		#	location = { is_overseas = yes is_colonial = no }
-		#	OR = {
-		#		is_accepted_culture = yes
-		#		is_primary_culture = yes
-		#		has_pop_culture = boer
-		#	}
-		#}
-        #
-		#modifier = {
-		#	factor = 0.8
-		#	location = { is_core = SAF }
-		#	OR = {
-		#		is_accepted_culture = yes
-		#		is_primary_culture = yes
-		#		has_pop_culture = boer
-		#	}
-		#	country = { 
-		#		OR = { 
-		#			primary_culture = british
-		#			primary_culture = boer
-		#		}
-		#	}
-		#}
-        #
-		#modifier = {
-		#	factor = 0.5
-		#	location = { 
-		#		OR = { 
-		#			continent = central_africa
-		#			continent = west_africa 
-		#			continent = east_africa
-		#			continent = asia
-		#			continent = africa
-		#		}
-		#		is_overseas = yes
-		#	}
-		#	OR = {
-		#		is_accepted_culture = yes
-		#		is_primary_culture = yes
-		#	}
-		#	country = {  capital_scope = { continent = europe } }
-		#}
-        #
-		#modifier = {
-		#	factor = 0.35
-		#	militancy = 6
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.02
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.04
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.06
-		#}
-		#modifier = {
-		#	factor = 1.1	
-		#	social_reform_want = 0.08
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.1
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.12
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.14
-		#}
-		#modifier = {
-		#	factor = 1.1	
-		#	social_reform_want = 0.16
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.18
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	social_reform_want = 0.2
-		#}
-		#modifier = {
-		#	factor = 1.5
-		#	state_scope = {
-		#		not = { middle_strata_everyday_needs = 0.25 }
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.25
-		#	state_scope = {
-		#		NOT = { middle_strata_everyday_needs = 0.25 }
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	OR = { 
-		#	middle_strata_militancy = 5
-		#	middle_strata_militancy = 5
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	OR = {
-		#	middle_strata_militancy = 6
-		#	middle_strata_militancy = 6
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	OR = {
-		#	middle_strata_militancy = 7
-		#	middle_strata_militancy = 7
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.1
-		#	OR = {
-		#	middle_strata_militancy = 8
-		#	middle_strata_militancy = 8
-		#	}
-		#}
-		#modifier = {
-		#	factor = 1.05
-		#	consciousness = 9 
-		#}
-		#modifier = {
-		#	factor = 1.05
-		#	consciousness = 8
-		#}
-		#modifier = {
-		#	factor = 1.05
-		#	consciousness = 7
-		#}
-		#modifier = {
-		#	factor = 0.8
-		#	nationalvalue = nv_order
-		#	OR = {
-		#		is_accepted_culture = yes
-		#		is_primary_culture = yes
-		#	}
-		#}
+		modifier = {
+			factor = 0
+			NOT = { literacy = 0.05 }
+		}
+		
+		modifier = {
+			factor = 1.1
+			nationalvalue = nv_equality
+			NOT = { ruling_party_ideology = communist }
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+		}
+        
+		modifier = {
+			factor = 0.75
+			location = { is_colonial = yes }
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+		}
+        
+		modifier = {
+			factor = 0.8
+			location = { is_overseas = yes is_colonial = no }
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+				has_pop_culture = boer
+			}
+		}
+        
+		modifier = {
+			factor = 0.8
+			location = { is_core = SAF }
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+				has_pop_culture = boer
+			}
+			country = { 
+				OR = { 
+					primary_culture = british
+					primary_culture = boer
+				}
+			}
+		}
+        
+		modifier = {
+			factor = 0.5
+			location = { 
+				OR = { 
+					continent = central_africa
+					continent = west_africa 
+					continent = east_africa
+					continent = asia
+					continent = africa
+				}
+				is_overseas = yes
+			}
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+			country = {  capital_scope = { continent = europe } }
+		}
+        
+		modifier = {
+			factor = 0.35
+			militancy = 6
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.02
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.04
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.06
+		}
+		modifier = {
+			factor = 1.1	
+			social_reform_want = 0.08
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.1
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.12
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.14
+		}
+		modifier = {
+			factor = 1.1	
+			social_reform_want = 0.16
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.18
+		}
+		modifier = {
+			factor = 1.1
+			social_reform_want = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			state_scope = {
+				not = { middle_strata_everyday_needs = 0.25 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			state_scope = {
+				NOT = { middle_strata_everyday_needs = 0.25 }
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = { 
+			middle_strata_militancy = 5
+			middle_strata_militancy = 5
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			middle_strata_militancy = 6
+			middle_strata_militancy = 6
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			middle_strata_militancy = 7
+			middle_strata_militancy = 7
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			middle_strata_militancy = 8
+			middle_strata_militancy = 8
+			}
+		}
+		modifier = {
+			factor = 1.05
+			consciousness = 9 
+		}
+		modifier = {
+			factor = 1.05
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.05
+			consciousness = 7
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_order
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+		}
 	}
 
 	communist = {

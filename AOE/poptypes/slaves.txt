@@ -43,10 +43,14 @@ luxury_needs = {
 	fish = 1
 	fruit = 1
 	cattle = 1
+	machine_parts = 1
 }
 
 ideologies = {
 	communist = {
+		factor = 3
+	}
+	socialist = {
 		factor = 3
 	}
 	conservative = {

@@ -2002,6 +2002,9 @@ province_event = {
 			NOT = { is_cultural_union = THIS }
 			war = no
 		}
+		NOT = {
+			government = tribal_democracy
+		}
 		OR = {
 			is_primary_culture = yes
 			is_accepted_culture = yes

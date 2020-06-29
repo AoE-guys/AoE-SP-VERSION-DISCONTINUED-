@@ -4,7 +4,10 @@ political_decisions = {
 		picture = flag_hre
 		potential = {
 			NOT = { is_greater_power = yes }
-			NOT = { is_vassal = yes }
+			OR = {
+				is_vassal = no
+				vassal_of = AUS
+			}
 			capital_scope = {
 				continent = europe
 			}
