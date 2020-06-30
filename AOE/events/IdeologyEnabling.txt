@@ -39,16 +39,16 @@ country_event = {
 			# factor = 0.5
 			# invention = pierre_joseph_proudhon
 		# }
-		modifier = {
-			factor = 0.5
-			OR = {
-				political_reform_want = 0.1
-				unemployment = 0.2
-				NOT = { poor_strata_life_needs = 0.5 }
-				NOT = { poor_strata_everyday_needs = 0.25 }
-				NOT = { middle_strata_everyday_needs = 0.25 }
-			}
-		}
+		# modifier = {
+			# factor = 0.5
+			# OR = {
+				# political_reform_want = 0.1
+				# unemployment = 0.2
+				# NOT = { poor_strata_life_needs = 0.5 }
+				# NOT = { poor_strata_everyday_needs = 0.25 }
+				# NOT = { middle_strata_everyday_needs = 0.25 }
+			# }
+		# }
 		modifier = {
 			factor = 1.5
 			political_reform_want = 0.35
