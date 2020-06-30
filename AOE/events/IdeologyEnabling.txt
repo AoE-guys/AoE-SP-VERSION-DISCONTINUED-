@@ -21,13 +21,13 @@ country_event = {
 			phenomenology_n_hermeneutic = 1
 			social_alienation = 1
 		}
-		OR = {
-			political_reform_want = 0.25
-			unemployment = 0.2
-			NOT = { poor_strata_life_needs = 0.8 }
-			NOT = { poor_strata_everyday_needs = 0.5 }
-			NOT = {middle_strata_everyday_needs = 0.5 }
-		}
+		# OR = {
+			# political_reform_want = 0.25
+			# unemployment = 0.2
+			# NOT = { poor_strata_life_needs = 0.8 }
+			# NOT = { poor_strata_everyday_needs = 0.5 }
+			# NOT = {middle_strata_everyday_needs = 0.5 }
+		# }
 	}
 	major = yes
 	fire_only_once = yes
@@ -101,21 +101,21 @@ country_event = {
 		literacy = 0.7
 		political_thought_7 = 1	#Republicanism is researched
 
-		OR = {
-			unemployment = 0.2
-			AND = {
-				NOT = {
-					poor_strata_life_needs = 0.9
-				}
-				average_militancy = 3
-			}
-			AND = {
-				NOT = {
-					middle_strata_everyday_needs = 0.9
-				}
-				average_militancy = 4
-			}
-		}
+		# OR = {
+			# unemployment = 0.2
+			# AND = {
+				# NOT = {
+					# poor_strata_life_needs = 0.9
+				# }
+				# average_militancy = 3
+			# }
+			# AND = {
+				# NOT = {
+					# middle_strata_everyday_needs = 0.9
+				# }
+				# average_militancy = 4
+			# }
+		# }
 	}
 	
 	major = yes
