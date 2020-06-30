@@ -13,13 +13,12 @@ country_event = {
 	OR = {
 		tag = FRA
 		tag = BOR
+	}
 		NOT = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
 		}
 	slavery = yes_slavery
 	2213 = { controled_by = THIS }
-	}
-	
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -43,10 +42,11 @@ country_event = {
 	desc = "EVTDESC17910"
 	picture = exemplar_colony
 	trigger = {
-	OR = {
 	year = 1750
+	OR = {
 		tag = FRA
 		tag = BOR
+	}
 		NOT = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
 			exists = HAI 
@@ -54,8 +54,6 @@ country_event = {
 	slavery = yes_slavery
 	2213 = { controled_by = THIS }
 	}
-	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
