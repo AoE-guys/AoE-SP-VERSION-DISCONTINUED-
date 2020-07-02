@@ -96,6 +96,7 @@ grenade = {
 		}
 	}
 	effect = {
+		activate_unit = plane
 		infantry = {
 			attack = 1
 			supply_consumption = 0.20
