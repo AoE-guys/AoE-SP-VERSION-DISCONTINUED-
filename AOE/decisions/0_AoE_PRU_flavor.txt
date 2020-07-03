@@ -506,7 +506,7 @@ political_decisions = {
 		picture = rhineland
 		potential = {
 			tag = PRU
-			NOT = { has_country_flag = prussian_saxony }
+			NOT = { has_country_flag = prussian_rhineland }
 		}
 		
 		allow = {
@@ -519,7 +519,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			set_country_flag = prussian_saxony
+			set_country_flag = prussian_rhineland
 			PRU_575 = {
 				add_core = THIS 
 			}

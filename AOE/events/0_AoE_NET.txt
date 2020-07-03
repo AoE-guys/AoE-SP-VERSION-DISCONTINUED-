@@ -1107,3 +1107,53 @@ country_event = {
         }
     }
 }
+#South Africa colonization#
+country_event = {
+	id = 158107
+	title = "Colonization of South America"
+	desc = "EVTDESC158107"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2090
+		year = 1732
+		money = 20000
+	}
+	
+	option = {
+		name = "Amazing!"
+		treasury = -20000
+		2091 = {
+			secede_province = NET
+		}
+	}
+}
+country_event = {
+	id = 158108
+	title = "Colonization of South America"
+	desc = "EVTDESC158107"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2090
+		year = 1772
+		money = 40000
+	}
+	
+	option = {
+		name = "Amazing!"
+		treasury = -40000
+		2089 = {
+			secede_province = NET
+		}
+		2092 = {
+			secede_province = NET
+		}
+		2097 = {
+			secede_province = NET
+		}
+		2096 = {
+			secede_province = NET
+		}
+	}
+}

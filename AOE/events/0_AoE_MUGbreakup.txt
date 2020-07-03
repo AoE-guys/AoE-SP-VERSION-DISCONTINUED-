@@ -650,9 +650,9 @@ country_event = {
 			who = BNG
 			value = 200
 		}
-		money = -20000
+		treasury = -20000
 		BNG = {
-			money = 20000
+			treasury = 20000
 		}
 		ai_chance = { factor = 1 }	
 	}

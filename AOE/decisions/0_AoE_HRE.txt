@@ -50,7 +50,7 @@ political_decisions = {
 			NOT = { has_global_flag = hre_dismantled }
 		}
 		allow = {
-			relation = { who = AUS value = -10 }
+			NOT = { relation = { who = AUS value = -10 } }
 		}
 		effect = {
 			all_core = {

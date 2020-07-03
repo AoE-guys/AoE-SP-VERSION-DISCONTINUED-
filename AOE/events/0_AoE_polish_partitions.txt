@@ -14,7 +14,6 @@ country_event = {
 		RUS = {country_event = 1773 }
 		549 = { owner = { country_event = 1774 } }
 		AUS = { country_event = 1775 }
-		
 		ai_chance = { factor = 100 }
 		set_global_flag = polish_partition
 	}
@@ -85,12 +84,27 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
+		any_owned = {
+			limit = {
+				is_core = RUS
+			}
+			secede_province = RUS
+		}
 		356	= { secede_province = RUS }
 		945	= { secede_province = RUS }
 		944	= { secede_province = RUS }
 		949 = { secede_province = RUS }
 		948 = { secede_province = RUS }
 		prestige = -10
+		any_country = {
+			limit = {
+				vassal_of = RUS
+				tag = HET
+			}
+			any_owned = {
+				secede_province = RUS
+			}
+		}
 		ai_chance = { factor = 95 }
 	}
 	option = {
@@ -108,6 +122,15 @@ country_event = {
 				call_ally = no
 			}
 		}
+		any_country = {
+			limit = {
+				vassal_of = RUS
+				tag = HET
+			}
+			any_owned = {
+				secede_province = RUS
+			}
+		}
 		ai_chance = { factor = 5 }
 	}
 }
@@ -121,6 +144,12 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
+		any_owned = {
+			limit = {
+				is_core = FROM
+			}
+			secede_province = FROM
+		}
 		691 = { secede_province = FROM }
 		692 = { secede_province = FROM }
 		700 = { secede_province = FROM }
@@ -161,6 +190,12 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
+		any_owned = {
+			limit = {
+				is_core = FROM
+			}
+			secede_province = FROM
+		}
 		3285 = { secede_province = AUS }
 		714 = { secede_province = AUS }
 		704 = { secede_province = AUS }
@@ -445,6 +480,7 @@ country_event = {
 		RUS_940 = { secede_province = RUS }
 		RUS_959 = { secede_province = RUS }
 		}
+
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}

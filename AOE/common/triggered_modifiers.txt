@@ -1005,6 +1005,7 @@ help_ai_sweden_and_austria = {
 			AND = {
 				owns = 1121 #Persia
 			}
+			owns = 549 #Prussia
 		}
 		ai = yes
 	}
@@ -1024,7 +1025,7 @@ prussia_ai_help = {
 		ai = yes
 	}
 	icon = 10
-	supply_consumption = -0.35
+	#supply_consumption = -0.35
 	min_military_spending = -0.75
 }
 german_minors_ai_help = {

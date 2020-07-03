@@ -684,7 +684,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "..."
+		name = "Vistory at Last!"
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -751,6 +751,22 @@ country_event = {
 			} 
 			country_event = 13007
 		}
+		random_country = {
+			limit = {
+				tag = LOM
+				vassal_of = SPA
+			}
+			country_event = 130052
+		}
+		random_country = {
+			limit = {
+				tag = MOD
+				has_country_flag = support_bourbon_heir
+			}
+			AUS = {
+				inherit = MOD
+			}
+		}
 	}
 }
 country_event = {
@@ -772,6 +788,35 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+country_event = {
+	id = 130052
+	title = "EVTNAME93006" 
+	desc = "..."
+	picture = "spanish_king"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept the deal"
+		any_owned = {
+			limit = {
+				region = SAR_720
+			}
+			add_core = SVY
+			secede_province = SVY
+		}
+		AUS = {
+			inherit = LOM
+		}
+	}
+	
+	option = {
+		name = "Become Autrian Vassal"
+		AUS = {
+			create_vassal = LOM
+		}
+		prestige = -3
 	}
 }
 country_event = {

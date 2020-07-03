@@ -55,12 +55,14 @@ change_heir_habsburg_cb
 colonial_competition
 acquire_all_cores
 acquire_core_state
+restore_spanish_empire
 restore_austrian_empire
+restore_holy_roman_empire
 colonial_reconquest_cb
 restore_america
 claim_holy_land
 #restore_british_raj
-unification_casus_belli
+#unification_casus_belli
 civil_war
 #unification_annex_casus_belli
 annex_core_country
@@ -170,7 +172,7 @@ dismantle_cb = {
 		THIS = {
 			is_greater_power = yes
 			is_disarmed = no
-			mass_politics = 1
+			political_thought_8 = 1
 		}
 		THIS = {
 			NOT = { has_country_flag = in_great_war }
@@ -246,7 +248,7 @@ dismantle_cb_add = {
 			is_greater_power = yes
 			is_disarmed = no
 			is_vassal = no
-			mass_politics = 1
+			political_thought_8 = 1
 		}		
 	}
 	
@@ -545,7 +547,86 @@ acquire_all_cores = {
 	}
 }
 
-restore_austrian_empire = {
+restore_spanish_empire = {
+	sprite_index = 21
+	is_triggered_only = yes
+	months = 12
+	
+	construction_speed = 0.8
+
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		THIS = {
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
+			tag = SPA
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			#has_country_flag = restore_empire
+		}
+		is_vassal = no
+		any_owned_province = {
+			OR = {
+				is_core = SPA
+				is_core = NAP
+				is_core = LUX
+				is_core = BEL
+				is_core = LOM
+			}
+			NOT = { is_core = LIG }
+		}
+		NOT = { has_country_modifier = neutrality }
+		NOT = { in_sphere = THIS }
+		THIS = { NOT = { has_country_modifier = neutrality } }
+		THIS = { NOT = { has_country_modifier = punitive_effects } }
+	}
+
+	allowed_states = {
+		any_owned_province = {
+			OR = {
+				is_core = SPA
+				is_core = NAP
+				is_core = LUX
+				is_core = BEL
+				is_core = LOM
+			}
+			NOT = { is_core = LIG }
+		}
+	}
+
+	po_demand_state = yes
+	
+	war_name = WAR_SPANISH_EMPIRE_NAME
+	
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+restore_holy_roman_empire = {
 	sprite_index = 21
 	is_triggered_only = yes
 	months = 12
@@ -614,6 +695,123 @@ restore_austrian_empire = {
 			value = 0.25
 		}
 	}
+}
+
+restore_austrian_empire = {
+    sprite_index = 21
+    is_triggered_only = yes
+    months = 12
+
+    construction_speed = 0.8
+
+    badboy_factor = 0
+    prestige_factor = 2
+    peace_cost_factor = 0.7
+    penalty_factor = 1
+    always = yes
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 48
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        NOT = { is_our_vassal = THIS }
+        THIS = {
+            OR = {
+                war_policy = jingoism
+                war_policy = pro_military
+                war_with = THIS
+            }
+            tag = AUS
+            OR = {
+                is_greater_power = yes
+                is_secondary_power = yes
+            }
+        }
+        is_vassal = no
+        neighbour = THIS
+        any_owned_province = {
+            OR = {
+                is_core = VEN
+                is_core = SLO
+                is_core = SLV
+                is_core = BOH
+                is_core = HUN
+                is_core = GLM
+                region = AUS_771
+                region = AUS_780
+                region = AUS_777
+                region = AUS_654
+                region = AUS_652
+                region = AUS_657
+            }
+			NOT = { is_core = PLC }
+        }
+        OR = {
+            NOT = { tag = ITA }
+            THIS = { NOT = { has_country_flag = accepts_italy } }
+        }
+        NOT = { has_country_modifier = neutrality_modifier }
+        #NOT = { in_sphere = THIS }
+        OR = {
+            THIS = {
+                NOT = { has_country_modifier = neutrality_modifier }
+                military_score = 1
+            }
+            war_with = THIS
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+    }
+
+    allowed_states = {
+        any_owned_province = {
+            OR = {
+                is_core = SLO
+                is_core = SLV
+                is_core = BOH
+                is_core = HUN
+                region = AUS_702
+                region = AUS_771
+                region = AUS_780
+                region = AUS_777
+                region = AUS_654
+                region = AUS_652
+                region = AUS_657
+            }
+			NOT = { is_core = PLC }
+        }
+    }
+
+    po_demand_state = yes
+
+    war_name = WAR_AUSTRIAN_EMPIRE_NAME
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    on_po_accepted = {
+        random_owned = {
+            limit = {
+                is_core = KRA
+                is_core = GLM
+            }
+            remove_core = KRA
+        }
+    }
+
 }
 
 colonial_reconquest_cb = {
@@ -906,107 +1104,107 @@ claim_holy_land = {
 }
 
 # Unification Demand State
-unification_casus_belli = {
-	sprite_index = 22
-	is_triggered_only = no
-	months = 12
-	construction_speed = 1
-	crisis = no
-	
-	badboy_factor = 0
-	prestige_factor = 1
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	always = yes
-	
-	can_use = {
-		is_vassal = no
-		NOT = { is_our_vassal = THIS }
-		NOT = { tag = PRU }
-		NOT = { tag = NGF }
-		THIS = { NOT = { tag = KUK } }
-		THIS = { NOT = { tag = DNB } }
-		THIS = { NOT = { tag = UBD } }
-		THIS = {
-			culture_has_union_tag = yes
-			nationalism_n_imperialism = 1
-			is_greater_power = yes
-			is_cultural_union = no
-			NOT = { has_country_modifier = neutrality }
-		}
-		OR = {
-			NOT = { is_culture_group = THIS }
-			AND = {
-				war_with = THIS
-				is_culture_group = THIS
-				part_of_sphere = no
-				THIS = { NOT = { tag = AUS } }
-				THIS = { NOT = { tag = KUK } }
-				THIS = { NOT = { tag = DNB } }
-				THIS = { NOT = { tag = UBD } }
-			}
-		}	
-		number_of_states = 2
-		any_state = {
-			any_owned_province = {
-				any_core = {
-					this_culture_union = this_union
-					is_cultural_union = yes
-				}
-			}
-			NOT = { any_owned_province = { is_capital = yes } }
-		}
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
-		}
-	}
-	allowed_states = {
-		any_owned_province = {
-			any_core = {
-				this_culture_union = this_union
-				is_cultural_union = yes
-				NOT = { tag = SIE }
-			}
-		}
-		NOT = { any_owned_province = { is_capital = yes } }
-		OR = {
-			THIS = { ai = no }
-			AND = { 
-				THIS = { num_of_ports = 1 } 
-				any_owned_province = { port = yes }
-			}
-			AND = {
-				THIS = { ai = yes }
-				RHI = { exists = yes }
-				RHI = { vassal_of = FRA }
-			}
-			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
-		}
-	}
-	
-	po_demand_state = yes
-	
-	war_name = WAR_UNIFICATION_NAME
-
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.1
-		}
-	}
-}
+#unification_casus_belli = {
+#	sprite_index = 22
+#	is_triggered_only = no
+#	months = 12
+#	construction_speed = 1
+#	crisis = no
+#	
+#	badboy_factor = 0
+#	prestige_factor = 1
+#	peace_cost_factor = 1
+#	penalty_factor = 1
+#
+#	break_truce_prestige_factor = 1
+#	break_truce_infamy_factor = 1
+#	break_truce_militancy_factor = 1
+#	truce_months = 48
+#	
+#	good_relation_prestige_factor = 1
+#	good_relation_infamy_factor = 1
+#	good_relation_militancy_factor = 1
+#	
+#	always = yes
+#	
+#	can_use = {
+#		is_vassal = no
+#		NOT = { is_our_vassal = THIS }
+#		NOT = { tag = PRU }
+#		NOT = { tag = NGF }
+#		THIS = { NOT = { tag = KUK } }
+#		THIS = { NOT = { tag = DNB } }
+#		THIS = { NOT = { tag = UBD } }
+#		THIS = {
+#			culture_has_union_tag = yes
+#			nationalism_n_imperialism = 1
+#			is_greater_power = yes
+#			is_cultural_union = no
+#			NOT = { has_country_modifier = neutrality }
+#		}
+#		OR = {
+#			NOT = { is_culture_group = THIS }
+#			AND = {
+#				war_with = THIS
+#				is_culture_group = THIS
+#				part_of_sphere = no
+#				THIS = { NOT = { tag = AUS } }
+#				THIS = { NOT = { tag = KUK } }
+#				THIS = { NOT = { tag = DNB } }
+#				THIS = { NOT = { tag = UBD } }
+#			}
+#		}	
+#		number_of_states = 2
+#		any_state = {
+#			any_owned_province = {
+#				any_core = {
+#					this_culture_union = this_union
+#					is_cultural_union = yes
+#				}
+#			}
+#			NOT = { any_owned_province = { is_capital = yes } }
+#		}
+#		OR = {
+#			war_with = THIS
+#			THIS = { NOT = { has_country_modifier = punitive_effects } }
+#		}
+#	}
+#	allowed_states = {
+#		any_owned_province = {
+#			any_core = {
+#				this_culture_union = this_union
+#				is_cultural_union = yes
+#				NOT = { tag = SIE }
+#			}
+#		}
+#		NOT = { any_owned_province = { is_capital = yes } }
+#		OR = {
+#			THIS = { ai = no }
+#			AND = { 
+#				THIS = { num_of_ports = 1 } 
+#				any_owned_province = { port = yes }
+#			}
+#			AND = {
+#				THIS = { ai = yes }
+#				RHI = { exists = yes }
+#				RHI = { vassal_of = FRA }
+#			}
+#			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+#		}
+#	}
+#	
+#	po_demand_state = yes
+#	
+#	war_name = WAR_UNIFICATION_NAME
+#
+#	on_add = {
+#		move_issue_percentage = { 
+#			from = jingoism 
+#			to = pro_military
+#			value = 0.1
+#		}
+#	}
+#}
 
 # Civil war
 civil_war = {
