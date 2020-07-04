@@ -3,7 +3,7 @@
 
 
 
-proletarian_dictatorship = {
+proletarian_dictatorship = {	#Revolutionary Republic
 	#which ideology of parties.
 	communist = yes
 	liberal = yes
@@ -14,7 +14,7 @@ proletarian_dictatorship = {
 	flagType = republic
 }
 
-presidential_dictatorship = {
+presidential_dictatorship = {	#Presidental Dictatorship
 	#which ideology of parties.
 	reactionary = yes
 	#fascist = yes
@@ -27,7 +27,7 @@ presidential_dictatorship = {
 	flagType = republic
 }
 
-colonial_company = {
+colonial_company = {	#Autonomous Dependency
 	#which ideology of parties.
 	liberal = yes
 	#socialist = yes
@@ -39,7 +39,7 @@ colonial_company = {
 	flagType = dominion
 }
 
-dominion = {
+dominion = {		
 	liberal = yes
 	#socialist = yes
 	conservative = yes
@@ -64,7 +64,7 @@ bourgeois_dictatorship = {
 	flagType = republic
 }
 
-fascist_dictatorship = {
+fascist_dictatorship = {		#Revolutionary Monarchy
 	#which ideology of parties.
 	#fascist = yes
     reactionary = yes
@@ -75,7 +75,7 @@ fascist_dictatorship = {
 	flagType = republic
 }
  
-absolute_monarchy = {
+absolute_monarchy = {		#Absolute Monarchy
 	#liberal = yes
 	conservative = yes
 	reactionary = yes
