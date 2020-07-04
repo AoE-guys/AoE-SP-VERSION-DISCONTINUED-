@@ -42,11 +42,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				ideology = conservative
-				factor = -4
+				factor = 3
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = 2
+				factor = 3
 			}
 			scaled_militancy = {
 				ideology = anarcho_liberal
@@ -61,38 +61,38 @@ country_event = {
 			remove_province_modifier = province_strike
 			remove_province_modifier = may_day
 		}
-		random_country = {
-			limit = { 
-				is_sphere_leader_of = THIS
-				NOT = { is_our_vassal = THIS }
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = -200
-			}
-			relation = {
-				who = THIS
-				value = -50
-			}
-			set_country_flag = former_sphere_leader
-			leave_alliance = THIS
-			country_event = 800056
-		}
-		random_country = {
-			limit = { is_our_vassal = THIS }
-			release_vassal = THIS
-			leave_alliance = THIS
-			diplomatic_influence = {
-				who = THIS
-				value = -200
-			}
-			relation = {
-				who = THIS
-				value = -50
-			}
-			set_country_flag = former_overlord
-			country_event = 800055
-		}
+		# random_country = {
+			# limit = { 
+				# is_sphere_leader_of = THIS
+				# NOT = { is_our_vassal = THIS }
+			# }
+			# diplomatic_influence = {
+				# who = THIS
+				# value = -200
+			# }
+			# relation = {
+				# who = THIS
+				# value = -50
+			# }
+			# set_country_flag = former_sphere_leader
+			# leave_alliance = THIS
+			# country_event = 800056
+		# }
+		# random_country = {
+			# limit = { is_our_vassal = THIS }
+			# release_vassal = THIS
+			# leave_alliance = THIS
+			# diplomatic_influence = {
+				# who = THIS
+				# value = -200
+			# }
+			# relation = {
+				# who = THIS
+				# value = -50
+			# }
+			# set_country_flag = former_overlord
+			# country_event = 800055
+		# }
 		any_country = {
 			limit = {
 				neighbour = THIS
@@ -108,36 +108,36 @@ country_event = {
 				}
 			}
 		}
-		any_country = {
-			limit = { 
-				is_greater_power = yes
-				NOT = {
-					has_country_flag = former_sphere_leader
-					has_country_flag = former_overlord
-				}
-			}			
-			diplomatic_influence = {
-				who = THIS
-				value = -25
-			}
-			relation = {
-				who = THIS
-				value = -25
-			}
-		}
-		any_country = {
-			limit = {
-				alliance_with = THIS
-				NOT = {
-					ruling_party_ideology = reactionary
-					vassal_of = THIS
-					substate_of = THIS
-					in_sphere = THIS
-				}
-			}
-			relation = { who = THIS value = -100 }
-			leave_alliance = THIS
-		}
+		# any_country = {			#Nearby country should not hate absolutist
+			# limit = { 
+				# is_greater_power = yes
+				# NOT = {
+					# has_country_flag = former_sphere_leader
+					# has_country_flag = former_overlord
+				# }
+			# }			
+			# diplomatic_influence = {
+				# who = THIS
+				# value = -25
+			# }
+			# relation = {
+				# who = THIS
+				# value = -25
+			# }
+		# }
+		# any_country = {
+			# limit = {
+				# alliance_with = THIS
+				# NOT = {
+					# ruling_party_ideology = reactionary
+					# vassal_of = THIS
+					# substate_of = THIS
+					# in_sphere = THIS
+				# }
+			# }
+			# relation = { who = THIS value = -100 }
+			# leave_alliance = THIS
+		# }
 	}
 }
 
@@ -463,16 +463,16 @@ country_event = {
 		}
 		any_pop = {
 			scaled_militancy = {
-				ideology = fascist
-				factor = 4
+				ideology = reactionary
+				factor = 5
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = 2
+				factor = -3
 			}
 			scaled_militancy = {
-				ideology = anarcho_liberal
-				factor = 4
+				ideology = conservative
+				factor = 5
 			}
 			scaled_militancy = {
 				ideology = socialist
@@ -1129,6 +1129,163 @@ country_event = {
 			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
 		}						
+	}
+}
+
+country_event = {
+
+	id = 800057
+
+	is_triggered_only = yes
+
+	title = "EVTNAME800057" #The New Regime - Traditionalist
+	desc = "EVTDESC800057"
+	picture = "Danishgovernment"
+
+	option = {
+		name = "EVT800057OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		clr_country_flag = wants_to_unify
+		clr_country_flag = does_not_want_to_unify
+		clr_country_flag = rebels_in_capital
+		capital_scope = {
+			any_pop = {
+				ideology = { factor = 0.1 value = conservative }
+			}
+		}
+		any_pop = {
+			limit = { pop_majority_ideology = conservative }
+			ideology = { factor = 0.1 value = conservative }
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -8
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = socialist
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = communist
+				factor = 5
+			}
+		}
+		any_owned = {
+			remove_province_modifier = labor_union
+			remove_province_modifier = militant_trade_union
+			remove_province_modifier = worker_union
+			remove_province_modifier = strike_solution
+			remove_province_modifier = province_strike
+			remove_province_modifier = may_day
+		}
+		random_country = {
+			limit = { 
+				is_sphere_leader_of = THIS
+				NOT = { is_our_vassal = THIS }
+				NOT = {
+					OR = {
+						ruling_party_ideology = conservative
+						ruling_party_ideology = reactionary
+					}
+				}
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+			set_country_flag = former_sphere_leader
+			leave_alliance = THIS
+			country_event = 800056
+		}
+		random_country = {
+			limit = { 
+				is_our_vassal = THIS 
+				NOT = {
+					OR = {
+						ruling_party_ideology = conservative
+						ruling_party_ideology = reactionary
+					}
+				}
+			}
+			release_vassal = THIS
+			leave_alliance = THIS
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+			set_country_flag = former_overlord
+			country_event = 800055
+		}
+		any_country = {
+			limit = {
+				neighbour = THIS
+				NOT = {
+					government = absolute_monarchy
+					government = presidential_dictatorship
+				}
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 4
+				}
+			}
+		}
+		# any_country = {			#Nearby country should not hate absolutist
+			# limit = { 
+				# is_greater_power = yes
+				# NOT = {
+					# has_country_flag = former_sphere_leader
+					# has_country_flag = former_overlord
+				# }
+			# }			
+			# diplomatic_influence = {
+				# who = THIS
+				# value = -25
+			# }
+			# relation = {
+				# who = THIS
+				# value = -25
+			# }
+		# }
+		any_country = {
+			limit = {
+				alliance_with = THIS
+				OR = {
+					ruling_party_ideology = communist
+					ruling_party_ideology = socialist
+				}
+				NOT = {
+					ruling_party_ideology = reactionary
+					vassal_of = THIS
+					substate_of = THIS
+					in_sphere = THIS
+				}
+			}
+			relation = { who = THIS value = -100 }
+			leave_alliance = THIS
+		}
 	}
 }
 
