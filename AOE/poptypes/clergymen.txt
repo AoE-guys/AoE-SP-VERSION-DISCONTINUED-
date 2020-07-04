@@ -1272,7 +1272,7 @@ ideologies = {
 	}
 	
 	reactionary = {
-		factor = 15
+		factor = 2
 		#modifier = {
 		#	factor = 0.5
 		#	not = { militancy = 6 }
@@ -1941,7 +1941,7 @@ ideologies = {
 		#}
 	}
 	liberal = {
-		factor = 10
+		factor = 6
 		modifier = {
 			factor = 0.9
 			OR = {
