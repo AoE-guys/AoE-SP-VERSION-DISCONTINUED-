@@ -143,6 +143,7 @@ country_event = {
 				NOT = { tag = BOR }
 				NOT = { tag = TUR }
 				NOT = { tag = RUS }
+				NOT = { tag = SWE }
 				OR = {
 					NOT = { is_vassal = yes } 
 					tag = NET
@@ -760,11 +761,11 @@ country_event = {
 		}
 		random_country = {
 			limit = {
-				tag = MOD
+				tag = MNT
 				has_country_flag = support_bourbon_heir
 			}
 			AUS = {
-				inherit = MOD
+				inherit = MNT
 			}
 		}
 	}
@@ -809,6 +810,7 @@ country_event = {
 		AUS = {
 			inherit = LOM
 		}
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
@@ -817,6 +819,7 @@ country_event = {
 			create_vassal = LOM
 		}
 		prestige = -3
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {

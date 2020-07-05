@@ -6,7 +6,7 @@ country_event = {
 	
 	trigger = {
 		owns = 139
-		year = 1733
+		year = 1718
 		NOT = { owns = 141 }
 	}
 	
@@ -21,5 +21,274 @@ country_event = {
 			add_core = THIS
 			secede_province = THIS
 		}		
+	}
+}
+country_event = {
+	id = 19180001
+	title = "Southern colonization push"
+	desc = "Recently our settlers maneged to colonize areas in the South"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 205
+		year = 1715
+		money = 5000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -5000
+		2555 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		210 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180002
+	title = "Southern colonization push"
+	desc = "Recently our settlers maneged to colonize areas in the South"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 205
+		year = 1722
+		money = 5000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -5000
+		206 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		209 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180003
+	title = "Louisianian colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 139
+		year = 1714
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		142 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180004
+	title = "Louisianian colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 142
+		year = 1724
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		143 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180005
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 184
+		year = 1748
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		169 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		182 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180006
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	
+	trigger = {
+		owns = 182
+		year = 1750
+		money = 6000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -6000
+		170 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		181 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		179 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		183 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180007
+	title = "$FROMCOUNTRY$ 's punitive expedition"
+	desc = "EVENTDESC19180007"
+	picture = "colonization"
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will regret coming here"
+		add_country_modifier = {
+			name = fanatic_army
+			duration = 1825
+		}
+		FROM = {
+			country_event = 19180008
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				military_score = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "We will give up our lands"
+		FROM = {
+			any_owned = {
+				random_neighbor_province = {
+					limit = {
+						owned_by = THIS
+						is_core = FROM
+					}
+					secede_province = FROM
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 15
+				military_score = 0
+			}
+		}
+	}
+}
+country_event = {
+	id = 19180008
+	title = "$FROMCOUNTRY$ attacks our settlers"
+	desc = "EVENTDESC19180007"
+	picture = "colonization"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Prepare the armies!"
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = humiliate }
+				defender_goal = { casus_belli = conquest_low }
+			}
+		}
+		modifier = {
+			factor = 15
+		}
+	}
+	
+	option = {
+		name = "They are not worth our time."
+		prestige = -5
+		modifier = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = 19180009
+	title = "test"
+	desc = "test"
+	picture = "colonization"
+	is_triggered_only = yes
+	
+	option = {
+		ABB = {
+			country_event = 2650
+		}
 	}
 }

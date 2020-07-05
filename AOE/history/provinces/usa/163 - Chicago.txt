@@ -1,6 +1,8 @@
-owner = ULA
-controller = ULA
+owner = FCA
+controller = FCA
+add_core = FCA
 add_core = ULA
+add_core = FOX
 trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
 life_rating = 35
 terrain = chicago

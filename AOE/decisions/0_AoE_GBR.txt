@@ -391,6 +391,9 @@ political_decisions = {
 				is_capital = yes
 			}
 			is_greater_power = yes
+			NOT = {
+				has_country_flag = british_south_africa
+			}
 		}
 		allow = {
 			ENG_2087 = {
@@ -413,6 +416,7 @@ political_decisions = {
 					duration = 7300
 				}
 			}
+			set_country_flag = british_south_africa
 		}
 	}
 	

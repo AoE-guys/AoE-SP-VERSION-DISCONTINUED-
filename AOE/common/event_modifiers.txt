@@ -737,6 +737,11 @@ small_immigration_boom = {
 	icon = 17
 }
 
+immigration_boom = {
+	global_immigrant_attract = 3
+	icon = 17
+}
+
 land_of_opportunity = {
 	global_immigrant_attract = 4.5
 	icon = 13
@@ -1886,6 +1891,17 @@ peasant_revolt = {
 }
 
 war_torn = {
+	local_ruling_party_support = -0.5
+	#pop_militancy_modifier = -0.1
+	local_factory_output = -0.25
+	local_rgo_output = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.25
+	#population_growth = -0.001
+	icon = 4
+}
+
+natural_disaster = {
 	local_ruling_party_support = -0.5
 	#pop_militancy_modifier = -0.1
 	local_factory_output = -0.25
@@ -6087,39 +6103,64 @@ erbkaisertum = {
 the_great_debt = {
 	loan_interest = 0.75
 	tax_efficiency = -0.1
+	icon = 10
 }
 the_great_debt_1 = {
 	loan_interest = 0.05
 	tax_efficiency = -0.02
+	icon = 10
 }
 the_south_sea_company = {
 	loan_interest = -0.35
 	tariff_efficiency_modifier = 0.15
+	icon = 9
 }
 the_south_sea_company_1 = {
 	loan_interest = -0.65
 	tariff_efficiency_modifier = 0.25
+	icon = 9
 }
 the_south_sea_company_2 = {
 	loan_interest = -0.15
 	tariff_efficiency_modifier = 0.05
+	icon = 9
 }
 ###Denmark-Norway#####
 johann_struensee = {
 	prestige = 0.004
 	admin_efficiency = 0.05
+	icon = 13
 }
 christian_vii = {
 	prestige = -0.004
 	tax_efficiency = -0.05
+	icon = 14
 }
 local_hegemon = {
 	prestige = 0.01
 	diplomatic_points_modifier = 0.3
 	war_exhaustion = -0.05
-	
+	icon = 15
 }
-
+###Portugal###
+methuen_treaty = {
+	tariff_efficiency_modifier = 0.05
+	factory_owner_cost = 0.25
+	factory_output = -0.05
+	icon = 11
+}
+john_v_por = {
+	suppression_points_modifier = 0.15
+	badboy = -0.03
+	education_efficiency_modifier = 0.05
+	icon = 13
+}
+marquis_pombal = {
+	suppression_points_modifier = 0.10
+	research_points_modifier = 0.05
+	leadership_modifier = 0.1
+	icon = 13
+}
 ####Saint-Domingue####
 pearl_of_the_antilles = {
 	local_factory_throughput = 1.00

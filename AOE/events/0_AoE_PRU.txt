@@ -32,15 +32,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		has_country_modifier = frederick_grosse
 		OR = {
-			AND = {
-				has_country_modifier = frederick_grosse
-				year = 1786
-			}
-			OR = {
-				government = democracy
-				government = presidential_dictatorship
-			}
+			year = 1786
+			government = democracy
+			government = presidential_dictatorship
 		}
 	}
 	
@@ -61,7 +57,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "A great monarch he was..."
+		name = "Great!"
 		AUS = {
 			any_owned = {
 				limit = {
@@ -98,6 +94,9 @@ country_event = {
 	trigger = {
 		tag = PRU
 		year = 1743
+		EFR = {
+			ai = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -129,7 +128,7 @@ country_event = {
 	option = {
 		name = "A much needed change"
 		add_country_modifier = {
-			name = reformed_industry
+			name = land_reform_pru
 			duration = 3700
 		}
 	}

@@ -1,0 +1,110 @@
+#political_decisions = {
+	
+	form_portugal_brazil = {
+		#picture = 
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = form_portugal_brazil }
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			set_country_flag = form_portugal_brazil
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	move_capital_to_brazil = {
+		#picture = 
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = moved_capital_to_brazil }
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			set_country_flag = moved_capital_to_brazil
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	construct_the_palace_convent = {
+		#picture = 
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = constructed_the_palace_convent }
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			set_country_flag = constructed_the_palace_convent
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	create_monopoly_companies_of_commerce = {
+		#picture = 
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = created_monopoly_companies_of_commerce }
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			set_country_flag = created_monopoly_companies_of_commerce
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	expulsion_of_the_jesuits = {
+		#picture = 
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = expulsion_of_the_jesuits }
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			set_country_flag = expulsion_of_the_jesuits
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	pombaline_economic_reforms = {
+		#picture = 
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = pombaline_economic_reforms }
+		}
+		
+		allow = {
+
+		}
+		
+		effect = {
+			set_country_flag = pombaline_economic_reforms
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

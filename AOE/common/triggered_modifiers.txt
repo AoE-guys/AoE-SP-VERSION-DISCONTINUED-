@@ -949,19 +949,11 @@ help_ai_russia = {
 			is_culture_group = pan_romanian
 			AND = { 
 				owns = 619 #Austria
-				NOT = { year = 1707 }
+				NOT = { year = 1709 }
 			}
 			AND = {
 				owns = 322 #Sweden
 				NOT = { year = 1710 }
-			}
-			AND = { 
-				owns = 1649
-				owns = 1657
-				OR = {
-					centralization = regionalism
-					primary_culture = japanese
-				}
 			}
 			AND = {
 				owns = 1600 #DZN
@@ -970,6 +962,10 @@ help_ai_russia = {
 			}
 			AND = {
 				owns = 1121 #Persia
+			}
+			AND = {
+				government = colonial_company
+				is_vassal = yes
 			}
 		}
 		ai = yes
@@ -991,7 +987,7 @@ help_ai_sweden_and_austria = {
 			}
 			AND = { 
 				owns = 619 #Austria
-				NOT = { year = 1705 }
+				NOT = { year = 1707 }
 			}
 			AND = {
 				owns = 232 #USA
@@ -1001,6 +997,10 @@ help_ai_sweden_and_austria = {
 			AND = {
 				owns = 1600 #DZN
 				NOT = { year = 1740 }
+			}
+			AND = {
+				owns = 1301 #MAH
+				NOT = { year = 1710 }
 			}
 			AND = {
 				owns = 1121 #Persia
@@ -1081,17 +1081,17 @@ yellow_river = {
 	supply_consumption = -0.01
 }
 
-poland_not_yet_lost = {
-	trigger = {
-		primary_culture = polish
-		is_vassal = no
-		is_substate = no
-	}
-	icon = 10
-	prestige = 0.01
-	global_immigrant_attract = 1
-	core_pop_militancy_modifier = -0.01
-}
+#poland_not_yet_lost = {
+#	trigger = {
+#		primary_culture = polish
+#		is_vassal = no
+#		is_substate = no
+#	}
+#	icon = 10
+#	prestige = 0.01
+#	global_immigrant_attract = 1
+#	core_pop_militancy_modifier = -0.01
+#}
 
 bread_basket = {
 	trigger = {

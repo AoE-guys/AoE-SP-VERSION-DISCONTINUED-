@@ -15,6 +15,11 @@ SVY = {
 	level = 3
 	influence_value = 0
 }
+MNT = {
+	value = 125
+	level = 3
+	influence_value = 0
+}
 
 #German Minors
 BAD = {	
@@ -232,7 +237,7 @@ DEN = {
 #Other GP's
 ENG = { value = -75 }
 FRA = { value = -50 }
-RUS = { value = 150 }
+RUS = { value = 25 }
 USA = { value = 25 }
 TUR = {
 	value = -125

@@ -286,4 +286,60 @@ political_decisions = {
 		}
 	}
 	
+	lunch_puniative_expedition = {
+		picture = new_world_militia
+		potential = {
+			OR = {
+				government = colonial_company
+				government = dominion
+			}
+			any_core = {
+				NOT = {
+					owned_by = THIS
+				}
+				owner = {
+					government = tribal_democracy
+					neighbour = THIS
+				}
+			}
+		}	
+		allow = {
+			has_country_flag = colonial_militia
+			OR = {
+				money = 250000
+				AND = {
+					money = 25000
+					ai = yes
+				}
+			}
+			state_n_government = 1
+			NOT = {
+				has_country_modifier = law_changed_by_force
+			}
+		}
+		effect = {
+			treasury = -250000
+			badboy = 6
+			random_country = {
+				limit = {
+					government = tribal_democracy
+					neighbour = THIS
+					any_core = {
+						is_core = THIS
+						NOT = {
+							owned_by = THIS
+						}
+					}
+				}
+				country_event = 19180007
+			}
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 2190
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

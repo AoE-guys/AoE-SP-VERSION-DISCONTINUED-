@@ -1,5 +1,8 @@
-owner = ULA
-controller = ULA
+owner = FCA
+controller = FCA
+add_core = FCA
+add_core = PTW
+add_core = OTT
 add_core = ULA
 trade_goods = fish  state_building = {  level = 2  building = timber_factory  upgrade = yes  }
 state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }

@@ -1,0 +1,304 @@
+country_event = {
+	id = 114300
+	title = "The Methuen Treaty"
+	desc = "EVTDESC114300"
+	#picture = 
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		year = 1703
+	}
+	
+	mean_time_to_happen = {
+		months = 11
+	}
+	
+	option = {
+		name = "Sign the Treaty"
+		add_country_modifier = {
+			name = methuen_treaty
+			duration = -1
+		}
+		300 = {
+			owner = {
+				relation = {
+					who = POR
+					value = 150
+				}
+				diplomatic_influence = {
+					who = POR
+					value = 150
+				}
+			}
+			create_alliance = POR
+		}
+		random_country = { 
+			limit = {
+				tag = AUS
+				war_with = BOR
+				war_with = SPA
+			}
+			create_alliance = POR
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "Refuse"
+		300 = {
+			owner = {
+				relation = {
+					who = POR
+					value = -150
+				}
+				diplomatic_influence = {
+					who = POR
+					value = -80
+				}
+			}
+			leave_alliance = POR
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = 114301
+	title = "People flee to the colonys!"
+	desc = "EVTDESC114301"
+	#picture = 
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		year = 1701
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Discourage the migration"
+		POR_518 = {
+			add_province_modifier = {
+				name = gateway_to_harbor
+				duration = 3650
+			}
+		}
+		PBZ = {
+			add_country_modifier = {
+				name = small_immigration_boom
+				duration = 7300
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {
+		name = "Encourage the migration"
+		POR_518 = {
+			add_province_modifier = {
+				name = gateway_to_harbor
+				duration = 1825
+			}
+		}
+		PBZ = {
+			add_country_modifier = {
+				name = immigration_boom
+				duration = 7300
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 114302
+	title = "Portugese Sun King"
+	desc = "EVTDESC114302"
+	#picture = 
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		year = 1706
+	}
+	
+	mean_time_to_happen = {
+		days = 350
+	}
+	
+	option = {
+		name = "Let this Sun never have it's dawn!"
+		add_country_modifier = {
+			name = john_v_por
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = 114303
+	title = "Death of John the V"
+	desc = "EVTDESC114303"
+	#picture = 
+	fire_only_once = yes	
+	
+	trigger = {
+		has_country_modifier = john_v_por
+		OR = {
+			year = 1750
+			AND = {
+				NOT = { government = trade_monarchy }
+				NOT = { government = hms_government }
+				NOT = { government =  prussian_constitutionalism }
+				NOT = { government = absolute_monarchy }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 150
+	}
+	
+	option = {
+		name = "The Sun has met it's dawn..."
+		remove_country_modifier = john_v_por
+	}
+}
+
+country_event = {
+	id = 114304
+	title = "The Marquis of Pombal"
+	desc = "EVTDESC114304"
+	#picture = 
+	fire_only_once = yes	
+	
+	trigger = {
+		tag = POR
+		year = 1750
+		NOT = {
+			has_country_modifier = john_v_por
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Employ him!"
+		prestige = 15
+		add_country_modifier = {
+			name = marquis_pombal
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "Disregard him."
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 114305
+	title = "Assasinated Marquis of Pombal!"
+	desc = "EVTDESC114305"
+	#picture = 
+	fire_only_once = yes	
+	
+	trigger = {
+		has_country_modifier = marquis_pombal
+		year = 1783
+		average_militancy = 4
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Tragic!"
+		remove_country_modifier = marquis_pombal
+	}
+}
+
+country_event = {
+	id = 114306
+	title = "Lisbon Earthquake of 1755"
+	desc = "EVTDESC114306"
+	#picture = 
+	major = yes
+	fire_only_once = yes	
+	
+	trigger = {
+		owns = 521
+		year = 1755
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_country_flag = earthquake_happened
+	}
+	
+	option = {
+		name = "Spare no efforts in rebuilding our capital!"
+		treasury = -250000
+		521 = {
+			add_province_modifier = {
+				name = natural_disaster
+				duration = 365
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot spare the resources required to rebuild Lisbon."
+		521 = {
+			add_province_modifier = {
+				name = natural_disaster
+				duration = 1825
+			}
+			life_rating = -10
+		}
+		prestige = -15
+	}
+}
+country_event = {
+	id = 114307
+	title = "Lisbon Reborn"
+	desc = "EVTDESC114307"
+	#picture = 
+	fire_only_once = yes	
+	
+	trigger = {
+		owns = 521
+		has_country_flag = earthquake_happened
+		521 = {
+			NOT = { has_province_modifier = natural_disaster }
+		}
+	}
+	
+	option = {
+		name = "An amazing feat of human architecture"
+		501 = {
+			add_province_modifier = {
+				name = rebuilding_city
+				duration = 1825
+			}
+		}
+	}
+}

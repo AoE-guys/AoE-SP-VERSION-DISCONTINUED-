@@ -121,7 +121,7 @@ DLM = {
 #Other GP's
 USA = { value = 0 }
 PRU = { value = 25 }
-SPA = { value = 25 }
+SPA = { value = -25 }
 AUS = {
 	value = -125
 	truce_until = 1705.1.1
@@ -131,12 +131,14 @@ VEN = {
 	truce_until = 1705.1.1
 }
 PLC = {
-	value = -125
+	value = -200
+	level = 0
 	truce_until = 1704.1.1
+	influence_value = 0
 }
-RUS = { value = 75 }
-ENG = { value = 125 }
-FRA = { value = -75 }
+RUS = { value = -100 }
+ENG = { value = -25 }
+FRA = { value = 35 }
 
 army = {
 	name = "Mansure Army"
