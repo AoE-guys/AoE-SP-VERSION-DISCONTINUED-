@@ -1017,7 +1017,7 @@ combat_medicine = {
 		soldier_to_pop_loss = 0.01
 	}
 }
-aerial_bacteria_and_antiseptic_principle = {
+herbal_medicine = {
 	limit = { medicine = 1 }
 	chance = {
 		base = 2
@@ -1031,12 +1031,12 @@ aerial_bacteria_and_antiseptic_principle = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0001
+		pop_growth = 0.0002
 		land_attrition = -0.05  
 		soldier_to_pop_loss = 0.01
 	}
 }
-vaccination = {
+early_vaccination = {
 	limit = { medicine = 1 }
 	chance = {
 		base = 2
@@ -1050,8 +1050,6 @@ vaccination = {
 		}
 	}
 	effect = {
-		land_attrition = -0.05 
-		soldier_to_pop_loss = 0.01
 		pop_growth = 0.0001
 	}
 }
@@ -1072,103 +1070,87 @@ chemotherapy = {
 		land_attrition = -0.05  
 	}
 }
-genetics_heredity = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			inorganic_chemistry = 1
-		}
-		modifier = {
-			factor = 2
-			colonial_nation = yes
-		}
-	}
-	effect = {
-		pop_growth = 0.0001
-	}
-}
-clinical_thermometers_and_binaural_stethoscopes = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			inorganic_chemistry = 1
-		}
-		modifier = {
-			factor = 2
-			organized_factories = 1
-		}
-	}
-	effect = {
-		pop_growth = 0.0001
-	}
-}
-prophylaxis_against_malaria = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			inorganic_chemistry = 1
-		}		
-		modifier = {
-			factor = 3
-			colonial_nation = yes
-		}
-	}
-	effect = {
-		land_attrition = -0.05 
-		soldier_to_pop_loss = 0.01
-	}
-}
-pressure_chambers_for_thorax_surgery = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			assembly_line = 1
-		}
-		modifier = {
-			factor = 2
-			puddling = 1
-		}
-	}
-	effect = {
-		shared_prestige = 5
-	}
-}
+# genetics_heredity = {
+	# limit = { medicine = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# inorganic_chemistry = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# colonial_nation = yes
+		# }
+	# }
+	# effect = {
+		# pop_growth = 0.0001
+	# }
+# }
+# clinical_thermometers_and_binaural_stethoscopes = {
+	# limit = { medicine = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# inorganic_chemistry = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# organized_factories = 1
+		# }
+	# }
+	# effect = {
+		# pop_growth = 0.0001
+	# }
+# }
+# prophylaxis_against_malaria = {
+	# limit = { medicine = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# inorganic_chemistry = 1
+		# }		
+		# modifier = {
+			# factor = 3
+			# colonial_nation = yes
+		# }
+	# }
+	# effect = {
+		# land_attrition = -0.05 
+		# soldier_to_pop_loss = 0.01
+	# }
+# }
+
 #inorganic_chemistry
-germ_theory = {
-	limit = { inorganic_chemistry = 1 }
-	chance = {
-		base = -2
-		modifier = {
-			factor = 2
-			literacy = 0.40
-			industrial_score = 20
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			invention = vaccination
-		}
+# germ_theory = {
+	# limit = { inorganic_chemistry = 1 }
+	# chance = {
+		# base = -2
+		# modifier = {
+			# factor = 2
+			# literacy = 0.40
+			# industrial_score = 20
+			# OR = {
+				# is_greater_power = yes
+				# is_secondary_power = yes
+			# }
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = vaccination
+		# }
 		
-		modifier = {
-			factor = 2
-			invention = aerial_bacteria_and_antiseptic_principle
-		}
-	}
-	effect = {
-		pop_growth = 0.0002
-	}
-}
+		# modifier = {
+			# factor = 2
+			# invention = aerial_bacteria_and_antiseptic_principle
+		# }
+	# }
+	# effect = {
+		# pop_growth = 0.0002
+	# }
+# }
 
 artificial_fertilizers = {
 	limit = { inorganic_chemistry = 1 }
@@ -1463,6 +1445,24 @@ bakelite = {
 		factory_goods_output = { glass  = 0.05 } 
 	}
 }
+scientific_surgery = {
+	limit = { chemistry_and_electricity_7 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			assembly_line = 1
+		}
+		modifier = {
+			factor = 2
+			puddling = 1
+		}
+	}
+	effect = {
+		shared_prestige = 5
+		pop_growth = 0.0001
+	}
+}
 
 vacuum_tube = {
 	limit = { 
@@ -1482,6 +1482,49 @@ vacuum_tube = {
 	}
 	effect = {
 		factory_goods_output = { electric_gear = 0.03 } 
+	}
+}
+#
+vaccination = {
+	limit = { chemistry_and_electricity_8 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			analytic_philosophy = 1
+		}
+		modifier = {
+			factor = 2
+			biologism = 1
+		}
+		modifier = {
+			factor = 1
+			naval_science_8 = 1
+		}
+	}
+	effect = {
+		land_attrition = -0.05 
+		soldier_to_pop_loss = 0.01
+		pop_growth = 0.0001
+	}
+}
+aerial_bacteria_and_antiseptic_principle = {
+	limit = { chemistry_and_electricity_8 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 2
+			empiricism = 1
+		}
+	}
+	effect = {
+		pop_growth = 0.0002
+		land_attrition = -0.05  
+		soldier_to_pop_loss = 0.01
 	}
 }
 
