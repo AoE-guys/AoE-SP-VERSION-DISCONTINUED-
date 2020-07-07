@@ -337,9 +337,9 @@ precision_work = {
 	}
 }
 
-#semi_automatization
+
 machine_tools = {
-	limit = { semi_automatization = 1 }
+	limit = { mechanical_production = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -358,6 +358,8 @@ machine_tools = {
 		factory_throughput = 0.05		
 	}
 }
+
+#semi_automatization
 whitney_n_colts_standardized_small_arms = {
 	limit = { semi_automatization = 1 }
 	chance = {
@@ -1053,6 +1055,7 @@ early_vaccination = {
 		pop_growth = 0.0001
 	}
 }
+
 chemotherapy = {
 	limit = { medicine = 1 }
 	chance = {
@@ -1329,24 +1332,24 @@ carbon_soil_enrichment = {
 #	}
 #}
 #electricity
-x_rays = {
-	limit = { electricity = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			average_consciousness = 2
-		}
-		modifier = {
-			factor = 2
-			advanced_metallurgy = 1
-		}
-	}
-	effect = {
-		pop_growth = 0.0002
-		land_attrition = -0.02
-	}
-}
+# x_rays = {
+	# limit = { electricity = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# average_consciousness = 2
+		# }
+		# modifier = {
+			# factor = 2
+			# advanced_metallurgy = 1
+		# }
+	# }
+	# effect = {
+		# pop_growth = 0.0002
+		# land_attrition = -0.02
+	# }
+# }
 edison_light_bulb = {
 	limit = { electricity = 1 }
 	chance = {

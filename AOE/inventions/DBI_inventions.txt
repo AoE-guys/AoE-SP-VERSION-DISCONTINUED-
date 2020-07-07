@@ -149,54 +149,54 @@ anaesthesia = {
 	}	
 }
 
-antitoxins = {
-	limit = {
-		medicine = 1
-		synthetic_polymers = 1
+# antitoxins = {
+	# limit = {
+		# medicine = 1
+		# synthetic_polymers = 1
 		 
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = -60
-			NOT = { year = 1890 }
-		}
-		modifier = {
-			factor = 6
-			synthetic_polymers = 1
-		}
-		modifier = {
-			factor = 4
-			organic_chemistry = 1
-		}
-	}
-	effect = {
-		pop_growth = 0.0001
-		shared_prestige = 5
-	}
-}
+	# }
+	# news = no
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = -60
+			# NOT = { year = 1890 }
+		# }
+		# modifier = {
+			# factor = 6
+			# synthetic_polymers = 1
+		# }
+		# modifier = {
+			# factor = 4
+			# organic_chemistry = 1
+		# }
+	# }
+	# effect = {
+		# pop_growth = 0.0001
+		# shared_prestige = 5
+	# }
+# }
 
-vitamins = {
-	limit = {
-		medicine = 1 
-		analytic_philosophy = 1
+# vitamins = {
+	# limit = {
+		# medicine = 1 
+		# analytic_philosophy = 1
 		 
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 4
-			synthetic_polymers = 1
-		}
-		modifier = {
-			factor = -60
-			NOT = { year = 1905 }
-		}
-	}
-	effect = {
-		pop_growth = 0.0001
-		shared_prestige = 5
-	}	
-}
+	# }
+	# news = no
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 4
+			# synthetic_polymers = 1
+		# }
+		# modifier = {
+			# factor = -60
+			# NOT = { year = 1905 }
+		# }
+	# }
+	# effect = {
+		# pop_growth = 0.0001
+		# shared_prestige = 5
+	# }	
+# }
