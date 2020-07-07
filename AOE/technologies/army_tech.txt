@@ -138,7 +138,7 @@ army_doctrine_8 = {
 #light_armament
 flintlock_rifles = {
 	area = light_armament
-	year = 1700
+	year = 1600
 	cost = 3600
 	unciv_military = yes
 	
@@ -151,7 +151,7 @@ flintlock_rifles = {
 }
 muzzle_loaded_rifles = {
 	area = light_armament
-	year = 1700
+	year = 1660
 	cost = 7200
 	unciv_military = yes
 	activate_unit = engineer
@@ -249,7 +249,7 @@ light_armament_8 = {
 #heavy_armament
 bronze_muzzle_loaded_artillery = {
 	area = heavy_armament
-	year = 1700
+	year = 1600
 	cost = 3600
 	unciv_military = yes
 	activate_unit = artillery
@@ -260,7 +260,7 @@ bronze_muzzle_loaded_artillery = {
 }
 iron_muzzle_loaded_artillery = {
 	area = heavy_armament
-	year = 1700
+	year = 1640
 	cost = 7200
 	unciv_military = yes
 	
@@ -408,7 +408,7 @@ heavy_armament_8 = {
 #military_science
 military_staff_system = {
 	area = military_science
-	year = 1700
+	year = 1650
 	cost = 3600
 	unciv_military = yes
 	
