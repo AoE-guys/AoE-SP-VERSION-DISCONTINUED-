@@ -1344,46 +1344,10 @@ spice_trading = {
 	}
 }
 
-#market_structure
-polypoly_structure = {
+#market_structure - Patent
+patent = {
+	limit = { market_structure = 1 }
 	news = no
-	limit = {
-		 
-		market_structure = 1 
-		NOT = {
-				OR = {
-					invention = oligopoly_structure
-					invention = monopoly_structure
-				}
-		}	
-	}
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			ruling_party_ideology = liberal
-		}
-		modifier = {
-			factor = 2
-			nationalvalue = nv_liberty
-		}
-	}
-	effect = {
-		factory_input = -0.02
-	}
-}
-oligopoly_structure = {
-	news = no
-	limit = {
-		 
-		market_structure = 1 
-		NOT = {
-			OR = {
-				invention = polypoly_structure
-				invention = monopoly_structure
-			}
-		}		
-	}
 	chance = {
 		base = 2
 		modifier = {
@@ -1392,40 +1356,42 @@ oligopoly_structure = {
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = conservative
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = liberal
 		}
 	}
 	effect = {
-		factory_output = 0.02
+		factory_cost = -0.03
+		factory_throughput = 0.05
 	}
 }
-monopoly_structure = {
+trademark = {
+	limit = { market_structure = 1 }
 	news = no
-	limit = {
-		 
-		market_structure = 1 
-		NOT = {
-			OR = {
-				invention = polypoly_structure
-				invention = oligopoly_structure
-			}
-		}	
-	}
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			nationalvalue = nv_equality
+			economic_policy = interventionism
 		}
 		modifier = {
 			factor = 2
-			economic_policy = state_capitalism
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			prestige = 10
 		}
 	}
 	effect = {
+		factory_cost = -0.02 
 		factory_throughput = 0.05
 	}
 }
+
 #business_regulations
 limited_partnership_company = {
 	limit = { business_regulations = 1 }
@@ -1463,50 +1429,7 @@ joint_stock_company = {
 		tax_eff = 0.5 
 	}
 }
-patent = {
-	limit = { business_regulations = 1 }
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			nationalvalue = nv_order
-		}
-		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			ruling_party_ideology = liberal
-		}
-	}
-	effect = {
-		factory_cost = -0.03
-	}
-}
-trademark = {
-	limit = { business_regulations = 1 }
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			economic_policy = interventionism
-		}
-		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			prestige = 10
-		}
-	}
-	effect = {
-		factory_cost = -0.02 
-	}
-}
+
 #market_regulations
 anti_trust_laws = {
 	limit = { market_regulations = 1 }
@@ -1621,7 +1544,88 @@ annual_report_proceedings = {
 		factory_cost = -0.01
 	}
 }
-#government_interventionism
+#government_interventionism - Market Structure
+polypoly_structure = {
+	news = no
+	limit = {
+		 
+		government_interventionism = 1 
+		NOT = {
+				OR = {
+					invention = oligopoly_structure
+					invention = monopoly_structure
+				}
+		}	
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			ruling_party_ideology = liberal
+		}
+		modifier = {
+			factor = 2
+			nationalvalue = nv_liberty
+		}
+	}
+	effect = {
+		factory_input = -0.02
+	}
+}
+oligopoly_structure = {
+	news = no
+	limit = {
+		 
+		government_interventionism = 1 
+		NOT = {
+			OR = {
+				invention = polypoly_structure
+				invention = monopoly_structure
+			}
+		}		
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			nationalvalue = nv_order
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = conservative
+		}
+	}
+	effect = {
+		factory_output = 0.02
+	}
+}
+monopoly_structure = {
+	news = no
+	limit = {
+		 
+		government_interventionism = 1 
+		NOT = {
+			OR = {
+				invention = polypoly_structure
+				invention = oligopoly_structure
+			}
+		}	
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 2
+			economic_policy = state_capitalism
+		}
+	}
+	effect = {
+		factory_throughput = 0.05
+	}
+}
 priming_the_pump_ = {
 	limit = { government_interventionism = 1 }
 	news = no
