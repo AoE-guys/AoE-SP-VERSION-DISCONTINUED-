@@ -122,6 +122,51 @@ polyphase_system = {
 		factory_throughput = 0.02
 	}
 }
+#Mechanical production - Iron tools
+iron_tools = {
+	limit = { mechanical_production = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = mechanical_precision_saw
+		}
+		modifier = {
+			factor = 2
+			early_railroad = 1
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			glass = 0.1
+		} 
+		factory_goods_output = {
+			ammunition = 0.1
+		} 
+		activate_building = machine_parts_factory 
+	}
+}
+embellished_toolwork = {
+	limit = { mechanical_production = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = precision_work
+		}
+		modifier = {
+			factor = 2
+			early_railroad = 1
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			machine_parts = 0.05 
+		}
+		factory_throughput = 0.05		
+	}
+}
+
 #interchangeable_parts
 sharp_n_roberts_power_loom = {
 	limit = { interchangeable_parts = 1 }
@@ -310,52 +355,6 @@ mechanized_slaughtering_block = {
 		factory_goods_output = {
 			wool = 0.2
 		}
-	}
-}
-
-precision_work = {
-	limit = { interchangeable_parts = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = mechanical_precision_saw
-		}
-		modifier = {
-			factor = 2
-			early_railroad = 1
-		}
-	}
-	effect = {
-		factory_goods_output = {
-			glass = 0.1
-		} 
-		factory_goods_output = {
-			ammunition = 0.1
-		} 
-		activate_building = machine_parts_factory 
-	}
-}
-
-
-machine_tools = {
-	limit = { mechanical_production = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = precision_work
-		}
-		modifier = {
-			factor = 2
-			early_railroad = 1
-		}
-	}
-	effect = {
-		factory_goods_output = {
-			machine_parts = 0.05 
-		}
-		factory_throughput = 0.05		
 	}
 }
 
