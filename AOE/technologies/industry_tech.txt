@@ -523,8 +523,10 @@ experimental_railroad = {
 	year = 1700
 	cost = 3600
 
-	activate_building = railroad
-	
+	army_base = {
+		maximum_speed = 1
+	}
+	factory_throughput = 0.16
 	ai_chance = {
 		factor = 5
 	}
@@ -534,8 +536,10 @@ early_railroad = {
 	year = 1700
 	cost = 7200
 
-	max_railroad = 1
-	
+	army_base = {
+		maximum_speed = 1
+	}
+	factory_throughput = 0.16
 	ai_chance = {
 		factor = 5
 	}
@@ -545,7 +549,7 @@ iron_railroad = {
 	year = 1715
 	cost = 10800
 
-	max_railroad = 1 
+	activate_building = railroad
 	ai_chance = {
 		factor = 5
 	}
@@ -555,10 +559,7 @@ steel_railroad = {
 	year = 1740
 	cost = 14400
 
-	army_base = {
-		maximum_speed = 1
-	}
-	factory_throughput = 0.16
+	max_railroad = 1
 	ai_chance = {
 		factor = 5
 	}
@@ -599,10 +600,8 @@ tech_infrastructure_8 = {
 	year = 1815
 	cost = 30200
 	
-	army_base = {
-		maximum_speed = 1
-	}
-	factory_throughput = 0.16
+	max_railroad = 1
+
 	ai_chance = {
 		factor = 2
 	}
