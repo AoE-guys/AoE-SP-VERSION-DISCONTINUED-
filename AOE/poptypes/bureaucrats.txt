@@ -727,6 +727,10 @@ migration_target = {
 		factor = 2
 		life_rating = 50
 	}
+	modifier = {
+		factor = 0.001
+		is_primary_culture = no
+	}
 }
 
 promote_to = {

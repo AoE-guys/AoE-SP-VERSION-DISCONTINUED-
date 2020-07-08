@@ -356,6 +356,10 @@ migration_target =
 		any_core = { is_primary_culture = yes }
 	}
 	modifier = {
+		factor = 0.001
+		is_primary_culture = no
+	}
+	modifier = {
 		factor = 0.75
 		OR = {
 			state_scope = { is_slave = yes }

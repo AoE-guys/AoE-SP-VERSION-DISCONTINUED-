@@ -320,7 +320,10 @@ migration_target = {
 		factor = 1.2
 		has_pop_culture = THIS
 	}
-	
+	modifier = {
+		factor = 0.001
+		is_primary_culture = no
+	}
 	#modifier = {
 	#	factor = 2
 	#	any_core = {
