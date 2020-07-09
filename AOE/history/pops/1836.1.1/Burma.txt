@@ -3,19 +3,19 @@
 #Rangoon (344000/86000 POPS)
 1330 = {
 	aristocrats = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 160
 	}
 
 	clergymen = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 200
 	}
 
 	artisans = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 960
 	}
@@ -27,59 +27,71 @@
 	}
 
 	serfs = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 9120
 	}
 
 	labourers = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 480
 	}
 
 	aristocrats = {
-		culture = asian_minor #Mon
+		culture = mon #Mon
 		religion = theravada
 		size = 80
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 120
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 880
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 120
 	}
 
 	aristocrats = {
+		culture = mon
+		religion = theravada
+		size = 300
+	}
+	aristocrats = {
 		culture = burmese
 		religion = theravada
-		size = 400
+		size = 100
 	}
-
+	clergymen = {
+		culture = mon
+		religion = theravada
+		size = 180
+	}
 	clergymen = {
 		culture = burmese
 		religion = theravada
-		size = 380
+		size = 180
 	}
-
 	artisans = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 1880
 	}
-
+	artisans = {
+		culture = burmese
+		religion = theravada
+		size = 580
+	}
 	soldiers = {
 		culture = burmese
 		religion = theravada
@@ -87,25 +99,33 @@
 	}
 
 	soldiers = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 800
 	}
 
 	serfs = {
-		culture = burmese
+		culture = mon
 		religion = theravada
-		size = 29412
+		size = 22412
 	}
-
+	serfs = {
+		culture = mon
+		religion = theravada
+		size = 7543
+	}
+	labourers = {
+		culture = mon
+		religion = theravada
+		size = 1161
+	}
 	labourers = {
 		culture = burmese
 		religion = theravada
-		size = 1548
+		size = 400
 	}
-
 	slaves = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 8000
 	}
@@ -121,23 +141,23 @@
 	clergymen = {
 		culture = burmese
 		religion = theravada
-		size = 220
+		size = 120
 	}
 
 	artisans = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 1080
 	}
 
 	soldiers = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 240
 	}
 
 	serfs = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 18829
 	}
@@ -149,25 +169,25 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor #Mon
+		culture = mon #Mon
 		religion = theravada
-		size = 20
+		size = 120
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 60
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
-		size = 160
+		size = 360
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 40
 	}
@@ -175,61 +195,61 @@
 #Pegu (560000/140000 POPS)
 1332 = {
 	aristocrats = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 320
 	}
 
 	clergymen = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 400
 	}
 
 	artisans = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 1920
 	}
 
 	soldiers = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 400
 	}
 
 	serfs = {
-		culture = karen
+		culture = mon
 		religion = theravada
-		size = 18392
+		size = 38392
 	}
 
 	labourers = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 968
 	}
 
 	aristocrats = {
-		culture = asian_minor #Mon
+		culture = mon #Mon
 		religion = theravada
 		size = 80
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 120
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 680
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 120
 	}
@@ -237,15 +257,23 @@
 	aristocrats = {
 		culture = burmese
 		religion = theravada
-		size = 680
+		size = 480
 	}
-
+	aristocrats = {
+		culture = mon
+		religion = theravada
+		size = 240
+	}
 	bureaucrats = {
 		culture = burmese
 		religion = theravada
-		size = 480
+		size = 180
 	}
-
+	bureaucrats = {
+		culture = mon
+		religion = theravada
+		size = 280
+	}
 	officers = {
 		culture = burmese
 		religion = theravada
@@ -255,9 +283,13 @@
 	clergymen = {
 		culture = burmese
 		religion = theravada
-		size = 640
+		size = 340
 	}
-
+	clergymen = {
+		culture = mon
+		religion = theravada
+		size = 300
+	}
 	artisans = {
 		culture = burmese
 		religion = theravada
@@ -267,23 +299,27 @@
 	soldiers = {
 		culture = burmese
 		religion = theravada
-		size = 2400
+		size = 1400
 	}
 
 	soldiers = {
-		culture = burmese
+		culture = mon
 		religion = theravada
-		size = 800
+		size = 1800
 	}
 
 	serfs = {
+		culture = mon
+		religion = theravada
+		size = 29148
+	}
+	serfs = {
 		culture = burmese
 		religion = theravada
-		size = 51148
+		size = 2148
 	}
-
 	labourers = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 2692
 	}
@@ -652,108 +688,108 @@
 }
 #Shan Region (680000)
 #Under Burma rule 1836
-#Taunggye (416000/104000 POPS)
+#Mongnai (416000/104000 POPS)
 1338 = {
 	aristocrats = {
 		culture = shan
 		religion = theravada
-		size = 720
+		size = 252
 	}
 
 	bureaucrats = {
 		culture = shan
 		religion = theravada
-		size = 180
+		size = 63
 	}
 
 	officers = {
 		culture = shan
 		religion = theravada
-		size = 140
+		size = 50
 	}
 
 	clergymen = {
 		culture = shan
 		religion = theravada
-		size = 680
+		size = 250
 	}
 
 	artisans = {
 		culture = shan
 		religion = theravada
-		size = 3400
+		size = 1190
 	}
 
 	soldiers = {
 		culture = shan
 		religion = theravada
-		size = 680
+		size = 240
 	}
 
 	serfs = {
 		culture = shan
 		religion = theravada
-		size = 46930
+		size = 16500
 	}
 
 	labourers = {
 		culture = shan
 		religion = theravada
-		size = 2470
+		size = 866
 	}
 
 	aristocrats = {
 		culture = burmese
 		religion = theravada
-		size = 120
+		size = 42
 	}
 
 	bureaucrats = {
 		culture = burmese
 		religion = theravada
-		size = 80
+		size = 28
 	}
 
 	officers = {
 		culture = burmese
 		religion = theravada
-		size = 20
+		size = 10
 	}
 
 	clergymen = {
 		culture = burmese
 		religion = theravada
-		size = 160
+		size = 60
 	}
 
 	artisans = {
 		culture = burmese
 		religion = theravada
-		size = 880
+		size = 400
 	}
 
 	soldiers = {
 		culture = burmese
 		religion = theravada
-		size = 180
+		size = 64
 	}
 
 	serfs = {
 		culture = burmese
 		religion = theravada
-		size = 13908
+		size = 5000
 	}
 
 	labourers = {
 		culture = burmese
 		religion = theravada
-		size = 732
+		size = 300
 	}
 
 	slaves = {
 		culture = thai
 		religion = theravada
-		size = 12000
+		size = 3000
 	}
 }
 #Lashio (264000/66000 POPS)
@@ -1139,13 +1175,13 @@
 #Moulmein (272000/68000 POPS)
 1343 = {
 	aristocrats = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 320
 	}
 
 	clergymen = {
-		culture = karen
+		culture = mon
 		religion = theravada
 		size = 280
 	}
@@ -1165,7 +1201,12 @@
 	serfs = {
 		culture = karen
 		religion = theravada
-		size = 23294
+		size = 7767
+	}
+	serfs = {
+		culture = mon
+		religion = theravada
+		size = 15530
 	}
 
 	labourers = {
@@ -1187,43 +1228,43 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor #Mon
+		culture = mon #Mon
 		religion = theravada
 		size = 160
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 300
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 1100
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = mon
 		religion = theravada
 		size = 200
 	}
 
 	aristocrats = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 80
 	}
 
 	clergymen = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 60
 	}
 
 	artisans = {
-		culture = burmese
+		culture = mon
 		religion = theravada
 		size = 1200
 	}
@@ -1519,3 +1560,206 @@
 
 }
 
+#Chaing tung
+3375 = {
+	aristocrats = {
+		culture = shan
+		religion = theravada
+		size = 370
+	}
+
+	bureaucrats = {
+		culture = shan
+		religion = theravada
+		size = 90
+	}
+
+	officers = {
+		culture = shan
+		religion = theravada
+		size = 70
+	}
+
+	clergymen = {
+		culture = shan
+		religion = theravada
+		size = 360
+	}
+
+	artisans = {
+		culture = shan
+		religion = theravada
+		size = 1600
+	}
+
+	soldiers = {
+		culture = shan
+		religion = theravada
+		size = 380
+	}
+
+	serfs = {
+		culture = shan
+		religion = theravada
+		size = 23465
+	}
+
+	labourers = {
+		culture = shan
+		religion = theravada
+		size = 1235
+	}
+
+	aristocrats = {
+		culture = burmese
+		religion = theravada
+		size = 60
+	}
+
+	bureaucrats = {
+		culture = burmese
+		religion = theravada
+		size = 40
+	}
+
+	officers = {
+		culture = burmese
+		religion = theravada
+		size = 10
+	}
+
+	clergymen = {
+		culture = burmese
+		religion = theravada
+		size = 80
+	}
+
+	artisans = {
+		culture = burmese
+		religion = theravada
+		size = 440
+	}
+
+	soldiers = {
+		culture = burmese
+		religion = theravada
+		size = 90
+	}
+
+	serfs = {
+		culture = burmese
+		religion = theravada
+		size = 6954
+	}
+
+	labourers = {
+		culture = burmese
+		religion = theravada
+		size = 366
+	}
+
+	slaves = {
+		culture = thai
+		religion = theravada
+		size = 9000
+	}
+}
+#Mong Pai
+3376 = {
+	aristocrats = {
+		culture = shan
+		religion = theravada
+		size = 180
+	}
+
+	bureaucrats = {
+		culture = shan
+		religion = theravada
+		size = 45
+	}
+
+	officers = {
+		culture = shan
+		religion = theravada
+		size = 35
+	}
+
+	clergymen = {
+		culture = shan
+		religion = theravada
+		size = 170
+	}
+
+	artisans = {
+		culture = shan
+		religion = theravada
+		size = 850
+	}
+
+	soldiers = {
+		culture = shan
+		religion = theravada
+		size = 170
+	}
+
+	serfs = {
+		culture = shan
+		religion = theravada
+		size = 11740
+	}
+
+	labourers = {
+		culture = shan
+		religion = theravada
+		size = 620
+	}
+
+	aristocrats = {
+		culture = burmese
+		religion = theravada
+		size = 30
+	}
+
+	bureaucrats = {
+		culture = burmese
+		religion = theravada
+		size = 20
+	}
+
+	officers = {
+		culture = burmese
+		religion = theravada
+		size = 5
+	}
+
+	clergymen = {
+		culture = burmese
+		religion = theravada
+		size = 40
+	}
+
+	artisans = {
+		culture = burmese
+		religion = theravada
+		size = 220
+	}
+
+	soldiers = {
+		culture = burmese
+		religion = theravada
+		size = 45
+	}
+
+	serfs = {
+		culture = burmese
+		religion = theravada
+		size = 5000
+	}
+
+	labourers = {
+		culture = burmese
+		religion = theravada
+		size = 1685
+	}
+
+}
