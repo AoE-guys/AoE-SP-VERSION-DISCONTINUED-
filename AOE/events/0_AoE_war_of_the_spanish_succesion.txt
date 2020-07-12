@@ -664,17 +664,19 @@ country_event = {
 					capital_scope = {
 						NOT = { controlled_by = BOR }
 					}
-					war_exhaustion = 15
+					war_exhaustion = 30
+					ai = yes
 				}
 			}
 			AND = {
 				BOR = {
-					war_exhaustion = 30
+					war_exhaustion = 45
 					AUS = {
 						any_owned_province = {
 							NOT = { controlled_by = BOR }
 						}
 					}
+					ai = yes
 				}
 			}
 		}
@@ -685,7 +687,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Vistory at Last!"
+		name = "At Last!"
 		money = 1000000
 		prestige = 80
 		SPA = {
@@ -714,7 +716,10 @@ country_event = {
 		any_country = {
 			limit = {
 				owns = 720 #savoy
+				OR = {
 				truce_with = BOR
+				has_country_flag = support_habsburg_heir
+				}
 			}
 			SIC_763 = {
 				secede_province = SVY
@@ -856,10 +861,10 @@ country_event = {
 					capital_scope = {
 						NOT = { controlled_by = AUS }
 					}
-					war_exhaustion = 15
+					war_exhaustion = 30
 				}
 				AND = {
-					war_exhaustion = 30
+					war_exhaustion = 40
 					BOR = {
 						any_owned_province = {
 							NOT = { controlled_by = AUS }
@@ -867,6 +872,7 @@ country_event = {
 					}
 				}
 			}
+			ai = yes
 		}
 	}
 	
@@ -957,7 +963,6 @@ country_event= {
 	id = 13007
 	title = "The end of the succesion crisis"
 	desc = "Finally..."
-	major = yes
 	is_triggered_only = yes
 	
 	option = {
