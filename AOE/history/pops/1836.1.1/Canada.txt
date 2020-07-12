@@ -1569,15 +1569,15 @@
 	}
 
 	artisans = {
-		culture = french_canadian
-		religion = catholic
+		culture = cree
+		religion = animist
 		size = 1
 	}
 
 	soldiers = {
-		culture = french_canadian
-		religion = catholic
-		size = 1
+		culture = cree
+		religion = animist
+		size = 1010
 	}
 	
 	serfs = {
@@ -1587,15 +1587,15 @@
 	}
 
 	labourers = {
-		culture = french_canadian
-		religion = catholic
+		culture = cree
+		religion = animist
 		size = 1
 	}
 
 	serfs = {
 		culture = cree
 		religion = animist
-		size = 150
+		size = 1150
 	}
 
 	labourers = {
@@ -2495,8 +2495,8 @@
 	}
 
 	serfs = {
-		culture = french_canadian
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 709
 	}
 
@@ -2506,10 +2506,10 @@
 		size = 37
 	}
 	
-	serfs = {
-		culture = yankee
-		religion = protestant
-		size = 180
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 1080
 	}
 
 	labourers = {
@@ -2713,8 +2713,8 @@
 	}
 
 	serfs = {
-		culture = anglo_canadian
-		religion = protestant
+		culture = french_canadian
+		religion = catholic
 		size = 503
 	}
 
@@ -2725,25 +2725,25 @@
 	}
 
 	clergymen = {
-		culture = irish
+		culture = french_canadian
 		religion = catholic
 		size = 16
 	}
 
 	artisans = {
-		culture = irish
+		culture = french_canadian
 		religion = catholic
 		size = 16
 	}
 
 	serfs = {
-		culture = irish
+		culture = french_canadian
 		religion = catholic
 		size = 122
 	}
 
 	labourers = {
-		culture = irish
+		culture = french_canadian
 		religion = catholic
 		size = 6
 	}
@@ -2846,9 +2846,9 @@
 	}
 	
 	serfs = {
-		culture = french_canadian
-		religion = catholic
-		size = 509
+		culture = native_american_minor
+		religion = animist
+		size = 1050
 	}
 
 	labourers = {
@@ -2857,10 +2857,10 @@
 		size = 27
 	}
 	
-	serfs = {
-		culture = yankee
-		religion = protestant
-		size = 157
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 1157
 	}
 
 	labourers = {

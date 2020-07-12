@@ -1735,6 +1735,50 @@ malayan = {
 	union = MJA
 }
 
+burmese_group = {
+	leader = asian
+	unit = AsianGC
+	burmese = {
+		color = {99 87 27}
+		first_names = { Thibaw Mindon Pagan Tharawadi Gabyidaw Bodawphaya Maung Singu Hsinbyushin Naungdawkyi Alaungphaya Maha Minkyaw Zeya
+			
+		}
+		
+		last_names = { Min Bagyidaw Bandula "Ne Myo" Myo Thura Dabayin
+               
+		}
+	}
+	kachin = {
+		color = {255 98 76}
+		first_names = { Sama Sinwa U Zan Hta Duwa Ding Ga Hkyeng
+			
+		}
+		
+		last_names = { Ratang Nawng Sin Lahpai Lahtaw Maran Marip Nhkum
+               
+		}
+	}
+	karen = {
+		color = {99 88 122}
+		first_names = { Po La Paban Hkun Maung Papw Sao Saw
+			
+		}
+		
+		last_names = { Che Baw U Lawi Lasa Pyatin "Law Paw" Kyi Pun Nge Bye Kye
+               
+		}
+	}
+	mon = {
+		color = {119 47 47}
+		first_names = {	"Razadarit" "Binnya Dhammaraza" "Binnya Ran" "Binnya Waru" "Binnya Kyan" "Leik Mawdaw" "Mawdaw" 
+			"Dhammazedi" "Takayutpi" "Smim Sawhtut" "Smim Htaw" "Binnya Dala"
+		}
+		last_names = { Min Myo Than Bourey Rangsey Nardu Cobar Leura Mani Than
+               
+		}
+	}
+}
+
 southeast_asian = {
 	leader = asian
 	unit = AsianGC
@@ -1781,18 +1825,29 @@ southeast_asian = {
 	}
 	thai = {
 		color = {76 99 150}
-		first_names = { Nangklao Mongkut Rama Chulalongkorn Chao Vajiravudh Prajadhipok Naritsaranuwatiwong Phya Plaek
-			
+		first_names = { Chao Naritsaranuwatiwong Phya
+		"Ramaracha" "Intha Racha" "Borommaracha" "Trailokanat" "Ramathibodi" "Ratsada" "Chairacha" "Keo Fa" 
+		"Bun Si" "Chakkraphat" "Mahin" "Thammaracha" "Naresuen" "Ekathotsarot" "Si Saowaphak" "Songtham" "Chettha" 
+		"Athittayawong" "Prasat Thong" "Chao Fa Jai" "Narai" "Si Suthammaracha" "Phetracha" "Phrachao Suea" "Thai Sa" "Boromakot" "Uthumphon" "Taksin" "Rama"
+		"Chao Phraya"
 		}
 		
-		last_names = { Suriyawongse Saovabha Chichalerm "Praya Siri" Nitithada Phonphayuhasena
-               
+		last_names = { Suriyawongse Saovabha Chichalerm "Praya Siri" Nitithada Phonphayuhasena "Na Phayap" "Na Maharat" 
+		"Na Isan" "Na Roi Et" "Na Ubon" "Na Udon" "Na Phuket" "Na Kedah" "Na Chumphon" "Na Prachinburi" "Na Burapa" "Na Chanthaburi"
+		Diskul Chakrabonse  "Kosathibodhi" Chakri Bovornrachanayok Phromsurinthra Phakdinuchit Apairacha Voravongsathiraj
+		Chularachamontri 
 		}
 	}
 	lao = {
 		color = {90 45 154}
 		first_names = { Manthaturath Anurutha Unkeo Sukha Chantha Unkham Sakkarin Sisavang Setthathirath Nanthasen Ong Phraya
-			
+		"Fa Ngum" Samsenethai "Lan Kham Deng" Phommathat Khamtum Meunsai "Konekham" "Kham Tam Sa" "Lue Sai"
+		"Khai Bua Ban" "Khong Kham" "Sai Tia Kaphut" "Theng Kham" Laasaenthai "Sompou" "Visunarat" "Photisarat"
+		"Setthathirat" "Saensurin" "Maha Oupahat" "Nakhon Noi" "Nokeo Koumanh" "Thammikarat" "Upanyuvarat"
+		"Mon Keo" "Tone Kham" "Vichai" "Souligna Vongsa" "Tian Thala" "Nan Tharat" "Ong Long" "Anouvong" "Sai"
+		"Khamteam" "Kongkeo" "Leu Xay" "Fa Kheun" "Yu Khong" "Nan Rat" "Saya Kumane" "Xiang Keo" "Fay Na" "No Muong"
+		"Cha Nou" "Ma Noi" "Rajabud Yo" "Kin Kitsarat" "Ong Kham" "Thao Ang" "Inthara Vongsa" "Inthaphom Yo"
+		"Sotika Koumane" "Anurutha" "Manthaturat"
 		}
 		
 		last_names = { Vong Kuman Söm Bun Supho Long Intharavong Anuvong
@@ -1809,16 +1864,6 @@ southeast_asian = {
                
 		}
 	}
-	burmese = {
-		color = {99 87 27}
-		first_names = { Thibaw Mindon Pagan Tharawadi Gabyidaw Bodawphaya Maung Singu Hsinbyushin Naungdawkyi Alaungphaya Maha Minkyaw Zeya
-			
-		}
-		
-		last_names = { Min Bagyidaw Bandula "Ne Myo" Myo Thura Dabayin
-               
-		}
-	}
 	asian_minor = {
 		color = {99 150 72}
 		first_names = { Abdul Vijaya Rajkumari Aurobindo Chandrashekhar Gopal Motilal Sardar Sarojini Subhas Srinivasa Mridula Gupinath Chittaranjan
@@ -1829,26 +1874,7 @@ southeast_asian = {
                
 		}
 	}
-	kachin = {
-		color = {255 98 76}
-		first_names = { Sama Sinwa U Zan Hta Duwa Ding Ga Hkyeng
-			
-		}
-		
-		last_names = { Ratang Nawng Sin Lahpai Lahtaw Maran Marip Nhkum
-               
-		}
-	}
-	karen = {
-		color = {99 88 122}
-		first_names = { Po La Paban Hkun Maung Papw Sao Saw
-			
-		}
-		
-		last_names = { Che Baw U Lawi Lasa Pyatin "Law Paw" Kyi Pun Nge Bye Kye
-               
-		}
-	}
+	
 }
 
 east_asian = {

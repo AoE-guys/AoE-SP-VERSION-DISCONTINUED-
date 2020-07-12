@@ -226,13 +226,14 @@ political_reforms = {
 		freedom_of_womb = {
 			rules = { slavery_allowed = yes }
 			allow = {
+				has_country_flag = abolitionism_activated
 				NOT = { has_country_flag = communist_gov }
 				NOT = { has_country_flag = fascist_gov }
 				NOT = { has_country_flag = slave_revolution }
 				NOT = { has_country_flag = indian_campaign_target_flag }
 				OR = {
-					NOT = { has_country_flag = the_slavery_debate }
-					year = 1875
+					NOT = { has_country_flag = abolitionism_activated }
+					year = 1780
 				}
 			}
 		}
@@ -244,7 +245,7 @@ political_reforms = {
 				OR = {
 					NOT = { has_country_flag = the_slavery_debate }
 					NOT = { has_country_flag = indian_campaign_target_flag }
-					year = 1875
+					year = 1800
 				}
 			}
 		}

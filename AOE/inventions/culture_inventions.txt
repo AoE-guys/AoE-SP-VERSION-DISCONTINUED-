@@ -1513,6 +1513,7 @@ meritocracy_vs._aristocracy = {
 	}
 }
 #nationalism_n_imperialism
+	
 national_fraternity = {
 	limit = {
 		nationalism_n_imperialism = 1
@@ -1980,8 +1981,8 @@ mass_advertising = {
 	effect = {
 		education_efficiency = 0.25
 		suppression_points_modifier = -0.05
-	}
 	core_pop_consciousness_modifier = 0.01
+	}
 }
 national_radio_networks = {
 	limit = { behaviorism = 1 }
@@ -2003,8 +2004,9 @@ national_radio_networks = {
 	}
 	effect = {
 		suppression_points_modifier = -0.05
+		core_pop_consciousness_modifier = 0.01
 	}
-	core_pop_consciousness_modifier = 0.01
+	
 }
 the_talkies = {
 	limit = { behaviorism = 1 }
@@ -2025,4 +2027,32 @@ the_talkies = {
 		suppression_points_modifier = -0.05
 	}
 	core_pop_consciousness_modifier = 0.01
+}
+#political_thought_7
+abolitionism = {
+	limit = { mass_politics = 1 }
+	news = no
+	chance = {
+		base = 1
+		modifier = {
+			factor = 3
+			social_alienation = 1
+		}
+		modifier = {
+			factor = 7
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 2
+			government = democracy
+		}
+		modifier = {
+			factor = 1
+			government = hms_government
+		}
+	}
+	effect = {
+		shared_prestige = 20
+		set_country_flag = abolitionism_activated
+	}
 }

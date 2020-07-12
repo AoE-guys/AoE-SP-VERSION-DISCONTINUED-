@@ -320,6 +320,10 @@ migration_target = {
 		has_pop_culture = THIS
 	}
 	modifier = {
+		factor = 0.001
+		is_primary_culture = no
+	}
+	modifier = {
 		factor = 2
 		any_core = {
 			OR = {
@@ -1764,28 +1768,28 @@ ideologies = {
 			factor = 1.1
 			OR = { 
 			middle_strata_militancy = 5
-			middle_strata_militancy = 5
+			poor_strata_militancy = 5
 			}
 		}
 		modifier = {
 			factor = 1.1
 			OR = {
 			middle_strata_militancy = 6
-			middle_strata_militancy = 6
+			poor_strata_militancy = 6
 			}
 		}
 		modifier = {
 			factor = 1.1
 			OR = {
 			middle_strata_militancy = 7
-			middle_strata_militancy = 7
+			poor_strata_militancy = 7
 			}
 		}
 		modifier = {
 			factor = 1.1
 			OR = {
 			middle_strata_militancy = 8
-			middle_strata_militancy = 8
+			poor_strata_militancy = 8
 			}
 		}
 		modifier = {

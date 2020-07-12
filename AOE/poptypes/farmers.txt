@@ -717,6 +717,10 @@ migration_target = {
 		state_scope = { unemployment_by_type = { type = farmers value = 0.4 } }
 		country = { primary_culture = russian }
 	}
+	modifier = {
+		factor = 0.001
+		is_primary_culture = no
+	}
 }
 
 promote_to = {

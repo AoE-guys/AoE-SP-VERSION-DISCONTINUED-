@@ -53,4 +53,99 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	# embrace_lao = {
+		# picture = thai_map
+		# potential = {
+			# OR = {
+				# primary_culture = thai
+				# primary_culture = shan
+				# tag = DAI
+			# }
+			# owns = 1357
+		# }
+		# allow = {
+			# war = no
+		# }
+		# effect = {
+			# prestige = 10
+			# add_accepted_culture = lao
+		# }
+	# }
+	
+	# embrace_thai = {
+		# picture = thai_map
+		# potential = {
+			# OR = {
+				# primary_culture = lao
+				# primary_culture = shan
+			# }
+			# owns = 1347
+		# }
+		# allow = {
+			# war = no
+		# }
+		# effect = {
+			# prestige = 10
+			# add_accepted_culture = thai
+		# }
+	# }
+	
+	# embrace_shan = {
+		# picture = thai_map
+		# potential = {
+			# OR = {
+				# primary_culture = lao
+				# primary_culture = thai
+			# }
+			# owns = 1347
+		# }
+		# allow = {
+			# war = no
+		# }
+		# effect = {
+			# prestige = 10
+			# add_accepted_culture = thai
+		# }
+	# }
+	# embrace_mon = {
+		# picture = thai_map
+		# potential = {
+			# OR = {
+				# primary_culture = lao
+				# primary_culture = shan
+				# primary_culture = khmer
+				# primary_culture = thai
+			# }
+			# owns = 1331
+		# }
+		# allow = {
+			# war = no
+		# }
+		# effect = {
+			# prestige = 10
+			# add_accepted_culture = mon
+		# }
+	# }
+	
+	# embrace_khmer = {
+		# picture = thai_map
+		# potential = {
+			# OR = {
+				# primary_culture = lao
+				# primary_culture = shan
+				# primary_culture = thai
+				# primary_culture = mon
+				# tag = DAI
+			# }
+			# owns = 1364
+		# }
+		# allow = {
+			# war = no
+		# }
+		# effect = {
+			# prestige = 10
+			# add_accepted_culture = thai
+		# }
+	# }
 }
