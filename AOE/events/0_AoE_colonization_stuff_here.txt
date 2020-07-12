@@ -3,6 +3,7 @@ country_event = {
 	title = " New Orlean colonization push"
 	desc = "Recently our settlers maneged to colonize an area between New orelan and New Spain"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 139
@@ -28,6 +29,7 @@ country_event = {
 	title = "Southern colonization push"
 	desc = "Recently our settlers maneged to colonize areas in the South"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 205
@@ -58,6 +60,7 @@ country_event = {
 	title = "Southern colonization push"
 	desc = "Recently our settlers maneged to colonize areas in the South"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 205
@@ -88,6 +91,7 @@ country_event = {
 	title = "Louisianian colonization push"
 	desc = "Recently our settlers maneged to colonize new areas"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 139
@@ -114,6 +118,7 @@ country_event = {
 	title = "Louisianian colonization push"
 	desc = "Recently our settlers maneged to colonize new areas"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 142
@@ -140,6 +145,7 @@ country_event = {
 	title = "Colonization push"
 	desc = "Recently our settlers maneged to colonize new areas"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 184
@@ -170,6 +176,7 @@ country_event = {
 	title = "Colonization push"
 	desc = "Recently our settlers maneged to colonize new areas"
 	picture = "colonization"
+	fire_only_once = yes
 	
 	trigger = {
 		owns = 182
@@ -289,6 +296,105 @@ country_event = {
 	option = {
 		ABB = {
 			country_event = 2650
+		}
+	}
+}
+
+####Brazil/South America####
+country_event = {
+	id = 19180010
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2445
+		owns = 2405
+		year = 1719
+		money = 10000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -10000
+		BRZ_2416 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180011
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2445
+		owns = 2405
+		year = 1725
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		BRZ_2421 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180012
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2445
+		owns = 2405
+		year = 1750
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		2413 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		2600 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		any_core = {
+			limit = {
+				empty = yes
+			}
+			secede_province = THIS
+		}
+		2532 = {
+			secede_province = THIS
 		}
 	}
 }

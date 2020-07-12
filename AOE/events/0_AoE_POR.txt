@@ -86,7 +86,7 @@ country_event = {
 		name = "Discourage the migration"
 		POR_518 = {
 			add_province_modifier = {
-				name = gateway_to_harbor
+				name = small_emigration_boom
 				duration = 3650
 			}
 		}
@@ -105,7 +105,7 @@ country_event = {
 		name = "Encourage the migration"
 		POR_518 = {
 			add_province_modifier = {
-				name = gateway_to_harbor
+				name = emigration_boom
 				duration = 1825
 			}
 		}
@@ -160,7 +160,7 @@ country_event = {
 			AND = {
 				NOT = { government = trade_monarchy }
 				NOT = { government = hms_government }
-				NOT = { government =  prussian_constitutionalism }
+				NOT = { government = prussian_constitutionalism }
 				NOT = { government = absolute_monarchy }
 			}
 		}
@@ -299,6 +299,74 @@ country_event = {
 				name = rebuilding_city
 				duration = 1825
 			}
+		}
+	}
+}
+country_event = {
+	id = 114308
+	title = "General Company of Commerce for Grao Para and Maranhao"
+	desc = "EVTDESC114308"
+	is_triggered_only = yes
+	
+	option = {
+		name = "The magic of free market."
+		2424 = {
+			add_province_modifier = {
+				name = colonial_exploitation
+				duration = 7300
+			}
+			add_province_modifier = {
+				name = trade_city
+				duration = 7300
+			}
+		}
+		2426 = {
+			add_province_modifier = {
+				name = colonial_exploitation
+				duration = 7300
+			}
+			add_province_modifier = {
+				name = trade_city
+				duration = 7300
+			}
+		}
+		2429 = {
+			add_province_modifier = {
+				name = colonial_exploitation
+				duration = 7300
+			}
+			add_province_modifier = {
+				name = trade_city
+				duration = 7300
+			}
+		}
+		2410 = {
+			add_province_modifier = {
+				name = colonial_exploitation
+				duration = 7300
+			}
+			add_province_modifier = {
+				name = trade_city
+				duration = 7300
+			}
+		}
+	}
+}
+country_event = {
+	id = 114309
+	title = "The Expulsion of Jesuits"
+	desc = "EVTDESC114309"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Nobody expected Jesuit inquisition!"
+		add_country_modifier = {
+			name = mercantilism
+			duration = 7300
+		}
+		add_country_modifier = {
+			name = jesuits_expelled
+			duration = 7300
 		}
 	}
 }
