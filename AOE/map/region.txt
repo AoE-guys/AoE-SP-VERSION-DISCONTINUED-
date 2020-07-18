@@ -185,18 +185,18 @@ NET_385 = { 385 383 384 386 } #Friesland
 
 BEL_387 = { 387 388 389 390 391 } #Flanders
 
-BEL_394 = { 394 392 393 395 398 3318 3320 } #Wallonia
+BEL_394 = { 394 392 393 395 398 405 3318 3320 } #Wallonia
 
 
 ### France
 
 FRA_399 = { 403 402 2570 3350 } #Picardie
 
-FRA_406 = { 406 405 408 407 } #Champagne
+FRA_406 = { 406 408 407 2622 } #Champagne
 
 FRA_404 = { 399 400 401 404 } #Nord-Pas-De-Calais/Artois
 
-FRA_411 = { 411 413 414 2622 3369 } #Lorraine
+FRA_411 = { 411 413 414 3369 } #Lorraine
 
 FRA_432 = { 432 433 3367 } #Franche-Comté
 
@@ -272,7 +272,7 @@ HAN_528 = { 528 531 532 } #Lower Elbe
 
 HAN_534 = { 534 535 536 537 3254 3301 } #Hannover
 
-HAN_540 = { 539 540 543 542 538 541 1743 3259 } #East Friesland
+HAN_540 = { 539 540 543 542 541 1743 3259 } #East Friesland
 
 PRU_544 = { 544 545 } #Mecklenburg
 
@@ -294,7 +294,7 @@ PRU_575 = { 575 574 576 577 572 397 396 3302 } #Rheinland
 
 PRU_578 = { 578 579 2561 } #Eastern Rheinland
 
-PRU_581 = { 581 580 582 583 584 585 3265 3267 } #Westfalen
+PRU_581 = { 581 580 582 583 538 584 585 3265 3267 } #Westfalen
 
 BAD_586 = { 586 587 588 569 } #Baden
 

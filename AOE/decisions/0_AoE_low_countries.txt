@@ -18,6 +18,7 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 5
+			prestige = 10
 			set_country_flag = claimed_friesland
 		}
 		ai_will_do = { factor = 1 }
@@ -42,6 +43,7 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 5
+			prestige = 15
 			set_country_flag = frisia_claimed_schleswig
 		}
 		ai_will_do = { factor = 1 }
@@ -75,7 +77,7 @@ political_decisions = {
 			}
 			badboy = 10
 			set_country_flag = formed_frisia
-			prestige = 15
+			prestige = 20
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -101,7 +103,28 @@ political_decisions = {
 			HOL_369 = {
 				add_core = THIS
 			}
+			541 = {
+				add_core = THIS
+			}
+			284 = {
+				add_core = THIS
+			}
+			533 = {
+				add_core = THIS
+			}
+			primary_culture = frisian
+			add_accepted_culture = dutch
+			add_accepted_culture = north_german
+			prestige = 30
 			government = absolute_monarchy
+			HAN_540 = {
+				remove_core = GER
+				remove_core = DNN
+				remove_core = MUN
+			}
+			NET_385 = {
+				remove_core = NET
+			}
 		}
 	}
 	
@@ -139,10 +162,45 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 5
+			add_accepted_culture = picard
 			set_country_flag = restored_duchy_of_flanders
 		}
 		ai_will_do = { factor = 1 }
 	}
 	
+	flemish_belgium = {
+		picture = become_belgium
+		potential = {
+			tag = FLA
+			NOT = { has_country_flag = flemish_kingdom_of_belgium }
+			has_country_flag = restored_duchy_of_flanders
+		}
+		
+		allow = {
+			OR = {
+				is_vassal = no
+				owns = 392
+			}
+		}
+		
+		effect = {
+			BEL_394 = {
+				add_core = THIS
+			}
+			396 = {
+				add_core = THIS
+			}
+			381 = {
+				add_core = THIS
+			}
+			3313 = {
+				add_core = THIS
+			}
+			add_accepted_culture = wallonian
+			badboy = 7
+			set_country_flag = flemish_kingdom_of_belgium
+		}
+		ai_will_do = { factor = 1 }
+	}
 	
 }
