@@ -10,10 +10,14 @@ political_decisions = {
 					has_province_modifier = piracy_harsh
 				}
 			}
-			NOT = { has_country_flag = combat_piracy_1 }
-			NOT = { has_country_flag = combat_piracy_2 }
+			NOT = {
+				OR = {
+					has_country_flag = combat_piracy2
+					has_country_flag = combat_piracy3
+				}				
+			}
 		}
-			
+		
 		allow = {
 			any_owned_province = {
 				OR = {
@@ -56,7 +60,8 @@ political_decisions = {
 				}
 			}
 			money = -25000			
-			set_country_flag = combat_piracy_1
+			set_country_flag = combat_piracy2
+			clr_country_flag = combat_piracy1
         }
 		
 		ai_chance = {
@@ -74,8 +79,11 @@ political_decisions = {
 					has_province_modifier = piracy_harsh
 				}
 			}
-			NOT = { has_country_flag = combat_piracy_2 }
-			has_country_flag = combat_piracy_1
+			NOT = {
+				NOT = {
+					has_country_flag = combat_piracy2
+				}
+			}
 		}
 			
 		allow = {
@@ -120,7 +128,8 @@ political_decisions = {
 				}
 					
             }
-			set_country_flag = combat_piracy_2
+			set_country_flag = combat_piracy3
+			clr_country_flag = combat_piracy2
 			money = -30000
         }
 		
@@ -139,7 +148,12 @@ political_decisions = {
 					has_province_modifier = piracy_harsh
 				}
 			}
-			has_country_flag = combat_piracy_2
+			NOT = {
+				OR = {
+					has_country_flag = combat_piracy1
+					has_country_flag = combat_piracy2
+				}				
+			}			
 			has_global_flag = golden_age_piracy_over
 		}
 			
@@ -182,8 +196,8 @@ political_decisions = {
 					duration = -1
 				}
             }
-			clr_country_flag = combat_piracy_1
-			clr_country_flag = combat_piracy_2
+			clr_country_flag = combat_piracy3
+			set_country_flag = combat_piracy1
 			money = -40000
         }
 		
@@ -191,6 +205,4 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
-	
 }
