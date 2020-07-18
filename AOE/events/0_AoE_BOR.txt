@@ -1157,6 +1157,30 @@ country_event = {
 	}
 	
 	option = {
+		name = "We can govern the area ourselves!"
+		any_owned = {
+			limit = {
+				is_core = ULA
+			}
+			remove_core = ULA
+		}
+		BOR = {
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 5
+			}
+		}
+		prestige = 5
+		badboy = 10
+		ai_chance = { factor = 1 }	
+	}
+	
+	option = {
 		name = "New lands await our conquest!"
 		any_owned = {
 			limit = {

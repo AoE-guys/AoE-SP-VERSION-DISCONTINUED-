@@ -394,6 +394,11 @@ emigration_boom = {
 	icon = 18
 }
 
+small_emigration_boom = {
+	immigrant_push = 0.25
+	icon = 18
+}
+
 totalitarian_system = {
 	suppression_points_modifier = 2
 	ruling_party_support = 2
@@ -997,8 +1002,9 @@ colonial_dry_spell = {
 }
 
 colonial_exploitation = {
-	farm_rgo_eff = 0.1
-	mine_rgo_eff = 0.1
+	local_factory_throughput = 0.1
+	local_factory_throughput = 0.1
+	pop_militancy_modifier = 0.05
 	icon = 18
 }
 
@@ -6160,6 +6166,24 @@ marquis_pombal = {
 	research_points_modifier = 0.05
 	leadership_modifier = 0.1
 	icon = 13
+}
+monopoly_companies_of_commerce = {
+	admin_efficiency = 0.1
+	tax_efficiency = 0.05
+	icon = 11
+}
+jesuits_expelled = {
+	education_efficiency_modifier = -0.1
+	icon = 14
+}
+pombaline_economic_reform = {
+	tariff_efficiency_modifier = 0.1
+	factory_output = 0.05
+	icon = 11
+}
+turnabout = {
+	global_pop_consciousness_modifier = 0.01
+	icon = 6
 }
 ####Saint-Domingue####
 pearl_of_the_antilles = {

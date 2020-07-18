@@ -1,525 +1,25 @@
 country_event = {
-	id = 158100
-	title = "Voor de Admiraliteiten"
-	desc = "EVTDESC158100"
-	picture = ships
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NET
-		year = 1700
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		add_country_modifier = {
-			name =  admiraliteiten
-			duration = -1
-		}
-	}	
-}
-country_event = {
-	id = 158101
-	title = "The Second Stadtholderless Period"
-	desc = "EVTDESC158101"
-	major = yes
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NET
-		year = 1702
-		OR = {
-			militancy = 3
-			war_exhoustion = 7
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "The Republic will be reorganized..."
-		add_country_modifier = {
-			name =  stadtholderless_period
-			duration = -1
-		}
-		random_owned = {
-			owner = {
-				political_reforms = landed_voting
-			}
-		}
-		random_owned = {
-			owner = {
-				political_reforms = appointed
-			}
-		}
-		random_owned = {
-			owner = {
-				political_reforms = state_press
-			}
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
-			}
-			militancy = 4
-			consciousness = 2
-		}
-		poor_strata = {
-			militancy = 4
-			consciousness = 2
-			ideology = {
-				value = liberal
-				factor = 0.05
-			}
-		}
-	}	
-}
-country_event = {
-	id = 158103
-	title = "The Orangist Revolution"
-	desc = "EVTDESC158103"
-	major = yes
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NET
-		year = 1747
-		government = mercantile_republic
-		has_country_modifier = stadtholderless_period
-		OR = {
-			militancy = 5
-			war_exhoustion = 15
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "The Republic will be reorganized into the first Dutch Emp-, kingdom"
-		remove_country_modifier = stadtholderless_period
-		add_country_modifier = {
-			name = orangist_domination
-			duration = -1
-		}
-		random_owned = {
-			owner = {
-				political_reforms = party_appointed
-			}
-		}
-		random_owned = {
-			owner = {
-				political_reforms = none_voting
-			}
-		}
-		random_owned = {
-			owner = {
-				political_reforms = state_press
-			}
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
-			}
-			militancy = 7
-			consciousness = 5
-		}
-		poor_strata = {
-			militancy = 5
-			consciousness = 5
-			ideology = {
-				value = liberal
-				factor = 0.05
-			}
-		}
-	}
-	
-	option = {
-		name = "The Revoultion will fail!"
-		any_pop = {
-			limit = {
-				ideology = reactionary
-			}
-			militancy = 7
-			consciousness = 5
-		}
-		poor_strata = {
-			militancy = 5
-			consciousness = 5
-			ideology = {
-				value = conservative
-				factor = 0.05
-			}
-		}
-	}
-}
-province_event = {
-	id = 158102
-	title = "Patriot Sympathies"
-	desc = "EVTDESC158102"
-	
-	trigger = {
-		owner = {
-			tag = NET
-			NOT = { government = proletarian_dictatorship }
-			NOT = { has_country_flag = patriots_disbanded }
-		}
-		NOT = { has_province_modifier = patriots_couse_trouble }
-		is_core = NET
-		is_colonial = no
-		controlled_by = NET
-		OR = {
-			communist = 30
-			AND = {
-				communist = 20
-				average_militancy = 4
-			}
-			AND = {
-				culture = dutch
-				average_militancy = 4
-			}
-		}
-		year = 1740
-	}	
-
-	mean_time_to_happen = {
-		months = 40
-		modifier = {
-			factor = 2
-			owner = { has_country_modifier = rebel_cell_discovered }
-		}
-		modifier = {
-			factor = 1.5
-			owner = {
-				check_variable = {
-					which = patriots_couse_trouble
-					value = 5
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			owner = {
-				check_variable = {
-					which = patriots_couse_trouble
-					value = 8
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			owner = {
-				NOT = {
-					check_variable = {
-						which = patriots_couse_trouble
-						value = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { average_militancy = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			communist = 30
-		}
-		modifier = {
-			factor = 0.8
-			communist = 40
-		}
-		modifier = {
-			factor = 0.8
-			communist = 50
-		}
-		modifier = {
-			factor = 1.2
-			liberal = 20
-		}
-		modifier = {
-			factor = 1.2
-			liberal = 30
-		}
-		modifier = {
-			factor = 1.2
-			liberal = 40
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 2
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 3
-		}
-		modifier = {
-			factor = 0.8
-			average_militancy = 4
-		}
-		modifier = {
-			factor = 0.7
-			average_militancy = 5
-		}
-		modifier = {
-			factor = 0.7
-			average_militancy = 6
-		}
-	}
-	
-	option = {
-		name = "This isn't good"
-		add_province_modifier = {
-			name = patriots_couse_trouble
-			duration =  1095
-		}
-	}
-}
-country_event = {
-	id = 158104
-	title = "End of the Stadtholderless period"
-	desc = "EVTDESC158104"
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NET
-		has_country_modifier = stadtholderless_period
-		NOT = {	militancy = 2 }
-		NOT = { war_exhoustion = 1 }
-		year = 1740
-	}
-	
-	mean_time_to_happen = {
-		months = 40
-	}
-	
-	option = {
-		name = "And so I revoke all my powers..."
-		remove_country_modifier = stadtholderless_period
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						vote_franschise = none_voting
-						vote_franschise = landed_voting
-						vote_franschise = wealth_weighted_voting
-					}
-				}
-			}
-			owner = {
-				political_reforms = wealth_voting
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						upper_house_composition = appointed
-						upper_house_composition = party_appointed
-					}
-				}
-			}
-			owner = {
-				political_reforms = state_equal_weight
-			}
-		}
-		random_owned = {
-			owner = {
-				political_reforms = state_press
-			}
-		}
-		any_pop = {
-			limit = {
-				ideology = conservative
-			}
-			militancy = -3
-			consciousness = 1
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
-			}
-			militancy = -3
-			consciousness = 1
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
-			}
-			militancy = 5
-			consciousness = 4
-		}
-	}
-	
-	option = {
-		name = "We need a strong stadtholderless if we want to survive in this landscape"
-		any_pop = {
-			limit = {
-				ideology = conservative
-			}
-			militancy = 7
-			consciousness = 5
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
-			}
-			militancy = 7
-			consciousness = 5
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
-			}
-			militancy = -2
-			consciousness = 4
-		}
-	}
-}
-country_event = {
-	id = 1581051
-	title = "Patriots seek Support"
-	desc = "EVTDESC158105"
+	id = 1821000
+	title = "The Seccession of Central America"
+	desc = "EVTDESC1821000"
 	fire_only_once = yes
 	allow_multiple_instances = yes
 	
 	trigger = {
-		NET = {
-			has_country_modifier = stadtholderless_period
-			OR = {
-				militancy = 4
-				war_exhoustion = 1
-			}
-			NOT = {
-				has_country_flag = patriots_disbanded
-			}
-			NOT = { government = proletarian_dictatorship }
-			NOT = { government = fascist_dictatorship }
-		}
-		NOT = { tag = NET }
-		year = 1780
-		government = proletarian_dictatorship
-		capital_scope = {
-			continent = europe
-		}
-	}
-	mean_time_to_happen = {
-		months = 40
-		modifier = {
-			factor = 0.8
-			has_country_modifier = stadtholderless_period
-		}
-		modifier = {
-			factor = 0.7
-			militancy = 5
-		}
-		modifier = {
-			factor = 0.6
-			militancy = 4
-		}
-		modifier = {
-			factor = 0.5
-			militancy = 4
-			war_exhoustion = 8
-		}
-		modifier = {
-			factor = 0.4
-			militancy = 5
-			war_exhoustion = 10
-		}
-		modifier = {
-			factor = 0.3
-			militancy = 6
-			war_exhoustion = 15
-		}
-	}
-	
-	option = {
-		name = "Let's support our fellow revolutionaries!"
-		war = {
-			target = NET
-			attacker_goal = { casus_belli = install_communism }
-			defender_goal = { casus_belli = humiliate }
-			call_ally = yes
-		}
-		prestige = 5
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 6
-				NET = {
-					brigades_compare = 1
-				}
-			}
-			modifier = {
-				factor = 6
-				NOT = {
-					relation = {
-						who = NET
-						value = 150
-					}
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = "We can't afford another war."
-		prestige = -25
-		any_pop = {
-			limit = {
-				ideology = communist
-			}
-			militancy = 2
-			consciousness = 5
-		}
-		ai_chance = {
-			modifier = {
-				factor = 7
-				NET = {
-					brigades_compare = 0.5
-				}
-			}
-			modifier = {
-				factor = 7
-				relation = {
-					who = NET
-					value = 150
-				}
-			}
-			modifier = {
-				factor = 6
-				NET = {
-					vassal_of = THIS
-				}
-			}
-		}
-	}
-}
-country_event = {
-	id = 158106
-	title = "Brabant Revolution"
-	desc = "EVTDESC158105"
-	fire_only_once = yes
-	allow_multiple_instances = yes
-	
-	trigger = {
-		owns = 387
-		owns = 394
-		owns = 397
-		NOT = { tag = BEL }
-		political_thought_7 = 1
-		poor_tax = 0.69
+		tag = MEX
+		owns = 2186
 	}
 	
 	mean_time_to_happen = {
 		months = 84
+		modifier = {
+			factor = 0.9
+			OR = {
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = conservative
+			}
+		}
+		
 		modifier = {
 			factor = 0.8
 			poor_tax = 0.9
@@ -550,17 +50,42 @@ country_event = {
 	}
 	
 	option = {
-		name = "Death to Brabant!"
-		relation = { who = BEL value = -100 }
+		name = "Death to United Central America!"
+		relation = { who = UCA value = -100 }
         any_owned = {
             limit = {
-                is_core = BEL
+                is_core = ELS
             }
-            secede_province = BEL
+			add_core = UCA
+            secede_province = UCA
         }
 		any_owned = {
-            limit = { is_core = THIS }
-            secede_province = BEL
+            limit = {
+                is_core = HON
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = UCA
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = NIC
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = COS
+            }
+			add_core = UCA
+            secede_province = UCA
         }
         any_pop = {
             limit = { is_primary_culture = yes }
@@ -578,7 +103,7 @@ country_event = {
             owner = {
                 prestige = -10
                 war = {
-                    target = BEL
+                    target = UCA
                     attacker_goal = {
                         casus_belli = annex_core_country
                     }
@@ -598,16 +123,16 @@ country_event = {
             owner = {
                 prestige = 20
                 war = {
-                    target = BEL
+                    target = UCA
                     attacker_goal = {
                         casus_belli = annex_core_country
                     }
                 }
             }
         }
-        BEL = {
-            capital = 387
-            government = proletarian_dictatorship
+        UCA = {
+            capital = 2628
+            government = democracy
             political_reform = mandatory_service
             political_reform = non_secret_ballots
             political_reform = universal_weighted_voting
@@ -617,192 +142,196 @@ country_event = {
             clr_country_flag = communist_gov
             clr_country_flag = absolute_monarchy_gov
             clr_country_flag = semi_constitutional_monarchy_gov
-            set_country_flag = constitutional_monarchy_gov
-            clr_country_flag = democracy_gov
+            clr_country_flag = constitutional_monarchy_gov
+            set_country_flag = democracy_gov
             clr_country_flag = presidential_dictatorship_gov
             clr_country_flag = fascist_gov
             clr_country_flag = anarcho_liberal_gov
+			any_owned = {
+				remove_core = THIS
+			}
         }
 
         ##Debt Law
         random_owned = {
             limit = { owner = { debt_law = peonage } }
-            BEL = { political_reform = peonage }
+            UCA = { political_reform = peonage }
         }
         random_owned = {
             limit = { owner = { debt_law = debtors_prisons } }
-            BEL = { political_reform = debtors_prisons }
+            UCA = { political_reform = debtors_prisons }
         }
         random_owned = {
             limit = { owner = { debt_law = bankruptcy } }
-            BEL = { political_reform = bankruptcy }
+            UCA = { political_reform = bankruptcy }
         }
         random_owned = {
             limit = { owner = { debt_law = bankruptcy } }
-            BEL = { political_reform = bankruptcy }
+            UCA = { political_reform = bankruptcy }
         }
 
         ##Trade Unions
         random_owned = {
             limit = { owner = { trade_unions = state_controlled } }
-            BEL = { political_reform = state_controlled }
+            UCA = { political_reform = state_controlled }
         }
         random_owned = {
             limit = { owner = { trade_unions = non_socialist } }
-            BEL = { political_reform = non_socialist }
+            UCA = { political_reform = non_socialist }
         }
         random_owned = {
             limit = { owner = { trade_unions = all_trade_unions } }
-            BEL = { political_reform = all_trade_unions }
+            UCA = { political_reform = all_trade_unions }
         }
 
 
         #Child labor
         random_owned = {
             limit = { owner = { child_labor = child_labor_restricted } }
-            BEL = { social_reform = child_labor_restricted }
+            UCA = { social_reform = child_labor_restricted }
         }
         random_owned = {
             limit = { owner = { child_labor = child_labor_illegal } }
-            BEL = { social_reform = child_labor_illegal }
+            UCA = { social_reform = child_labor_illegal }
         }
 
         ##Health Care
         random_owned = {
             limit = { owner = { health_care = trinket_health_care } }
-            BEL = { social_reform = trinket_health_care }
+            UCA = { social_reform = trinket_health_care }
         }
         random_owned = {
             limit = { owner = { health_care = low_health_care } }
-            BEL = { social_reform = low_health_care }
+            UCA = { social_reform = low_health_care }
         }
         random_owned = {
             limit = { owner = { health_care = acceptable_health_care } }
-            BEL = { social_reform = acceptable_health_care }
+            UCA = { social_reform = acceptable_health_care }
         }
         random_owned = {
             limit = { owner = { health_care = good_health_care } }
-            BEL = { social_reform = good_health_care }
+            UCA = { social_reform = good_health_care }
         }
 
         ##Schools
         random_owned = {
             limit = { owner = { school_reforms = low_schools } }
-            BEL = { social_reform = low_schools }
+            UCA = { social_reform = low_schools }
         }
         random_owned = {
             limit = { owner = { school_reforms = acceptable_schools } }
-            BEL = { social_reform = acceptable_schools }
+            UCA = { social_reform = acceptable_schools }
         }
         random_owned = {
             limit = { owner = { school_reforms = good_schools } }
-            BEL = { social_reform = good_schools }
+            UCA = { social_reform = good_schools }
         }
 
         ##Penal System
         random_owned = {
             limit = { owner = { penal_system = colonial_transportation } }
-            BEL = { social_reform = colonial_transportation }
+            UCA = { social_reform = colonial_transportation }
         }
         random_owned = {
             limit = { owner = { penal_system = incarceration } }
-            BEL = { social_reform = incarceration }
+            UCA = { social_reform = incarceration }
         }
         random_owned = {
             limit = { owner = { penal_system = rehabilitation } }
-            BEL = { social_reform = rehabilitation }
+            UCA = { social_reform = rehabilitation }
         }
 
 
         ##Min Wage
         random_owned = {
             limit = { owner = { wage_reform = trinket_wage } }
-            BEL = { social_reform = trinket_wage }
+            UCA = { social_reform = trinket_wage }
         }
         random_owned = {
             limit = { owner = { wage_reform = low_minimum_wage } }
-            BEL = { social_reform = low_minimum_wage }
+            UCA = { social_reform = low_minimum_wage }
         }
         random_owned = {
             limit = { owner = { wage_reform = acceptable_minimum_wage } }
-            BEL = { social_reform = acceptable_minimum_wage }
+            UCA = { social_reform = acceptable_minimum_wage }
         }
         random_owned = {
             limit = { owner = { wage_reform = good_minimum_wage } }
-            BEL = { social_reform = good_minimum_wage }
+            UCA = { social_reform = good_minimum_wage }
         }
 
         ##Work Hours
         random_owned = {
             limit = { owner = { work_hours = fourteen_hours } }
-            BEL = { social_reform = fourteen_hours }
+            UCA = { social_reform = fourteen_hours }
         }
         random_owned = {
             limit = { owner = { work_hours = twelve_hours } }
-            BEL = { social_reform = twelve_hours }
+            UCA = { social_reform = twelve_hours }
         }
         random_owned = {
             limit = { owner = { work_hours = ten_hours } }
-            BEL = { social_reform = ten_hours }
+            UCA = { social_reform = ten_hours }
         }
         random_owned = {
             limit = { owner = { work_hours = eight_hours } }
-            BEL = { social_reform = eight_hours }
+            UCA = { social_reform = eight_hours }
         }
 
         ##Safety Regulations
         random_owned = {
             limit = { owner = { safety_regulations = trinket_safety } }
-            BEL = { social_reform = trinket_safety }
+            UCA = { social_reform = trinket_safety }
         }
         random_owned = {
             limit = { owner = { safety_regulations = low_safety } }
-            BEL = { social_reform = low_safety }
+            UCA = { social_reform = low_safety }
         }
         random_owned = {
             limit = { owner = { safety_regulations = acceptable_safety } }
-            BEL = { social_reform = acceptable_safety }
+            UCA = { social_reform = acceptable_safety }
         }
         random_owned = {
             limit = { owner = { safety_regulations = good_safety } }
-            BEL = { social_reform = good_safety }
+            UCA = { social_reform = good_safety }
         }
 
         ##unemployment_subsidies
         random_owned = {
             limit = { owner = { unemployment_subsidies = trinket_subsidies } }
-            BEL = { social_reform = trinket_subsidies }
+            UCA = { social_reform = trinket_subsidies }
         }
         random_owned = {
             limit = { owner = { unemployment_subsidies = low_subsidies } }
-            BEL = { social_reform = low_subsidies }
+            UCA = { social_reform = low_subsidies }
         }
         random_owned = {
             limit = { owner = { unemployment_subsidies = acceptable_subsidies } }
-            BEL = { social_reform = acceptable_subsidies }
+            UCA = { social_reform = acceptable_subsidies }
         }
         random_owned = {
             limit = { owner = { unemployment_subsidies = good_subsidies } }
-            BEL = { social_reform = good_subsidies }
+            UCA = { social_reform = good_subsidies }
         }
 
         ##pensions
         random_owned = {
             limit = { owner = { pensions = trinket_pensions } }
-            BEL = { social_reform = trinket_pensions }
+            UCA = { social_reform = trinket_pensions }
         }
         random_owned = {
             limit = { owner = { pensions = low_pensions } }
-            BEL = { social_reform = low_pensions }
+            UCA = { social_reform = low_pensions }
         }
         random_owned = {
             limit = { owner = { pensions = acceptable_pensions } }
-            BEL = { social_reform = acceptable_pensions }
+            UCA = { social_reform = acceptable_pensions }
         }
         random_owned = {
             limit = { owner = { pensions = good_pensions } }
-            BEL = { social_reform = good_pensions }
+            UCA = { social_reform = good_pensions }
         }
+		set_country_flag = kill_UCA_go
         ai_chance = {
             factor = 95
         }
@@ -810,22 +339,56 @@ country_event = {
 	
 	option = {
         name = "Let them go."
-        set_country_flag = let_BEL_go
+        set_country_flag = let_UCA_go
         any_owned = {
             limit = {
-                is_core = BEL
+                is_core = ELS
             }
-            secede_province = BEL
+			add_core = UCA
+            secede_province = UCA
         }
-        relation = { who = BEL value = -100 }
+		any_owned = {
+            limit = {
+                is_core = HON
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = UCA
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = NIC
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = COS
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+        relation = { who = UCA value = -100 }
+		UCA = {
+			any_owned = {
+				remove_core = THIS
+			}
+		}
         prestige = -25
         casus_belli = {
-            target = BEL
+            target = UCA
             type = acquire_state
             months = 60
         }
         casus_belli = {
-            target = BEL
+            target = UCA
             type = cut_down_to_size
             months = 60
         }
@@ -848,14 +411,52 @@ country_event = {
 	}
 	
 	option = {
-		name = "Play Brabant"
+		name = "Play Central America"
 		any_owned = {
             limit = {
-                is_core = BEL
+                is_core = ELS
             }
-            secede_province = BEL
+			add_core = UCA
+            secede_province = UCA
         }
-		relation = { who = BEL value = -100 }
+		any_owned = {
+            limit = {
+                is_core = HON
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = UCA
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = NIC
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = {
+                is_core = COS
+            }
+			add_core = UCA
+            secede_province = UCA
+        }
+		any_owned = {
+            limit = { is_core = THIS }
+            secede_province = UCA
+        }
+		UCA = {
+			any_owned = {
+				remove_core = THIS
+			}
+		}
+		relation = { who = UCA value = -100 }
         any_owned = {
             limit = { is_core = THIS }
             remove_province_modifier = liberal_agitation
@@ -876,7 +477,7 @@ country_event = {
             owner = {
                 prestige = -10
                 war = {
-                    target = BEL
+                    target = UCA
                     attacker_goal = {
                         casus_belli = annex_core_country
                     }
@@ -896,16 +497,16 @@ country_event = {
             owner = {
                 prestige = 20
                 war = {
-                    target = BEL
+                    target = UCA
                     attacker_goal = {
                         casus_belli = annex_core_country
                     }
                 }
             }
         }
-        BEL = {
+        UCA = {
             capital = 387
-            government = proletarian_dictatorship
+            government = democracy
             political_reform = mandatory_service
             political_reform = non_secret_ballots
             political_reform = universal_weighted_voting
@@ -925,235 +526,345 @@ country_event = {
         ##Debt Law
 		random_owned = {
             limit = { owner = { debt_law = peonage } }
-            BEL = { political_reform = peonage }
+            UCA = { political_reform = peonage }
         }
         random_owned = {
             limit = { owner = { debt_law = debtors_prisons } }
-            BEL = { political_reform = debtors_prisons }
+            UCA = { political_reform = debtors_prisons }
         }
         random_owned = {
             limit = { owner = { debt_law = bankruptcy } }
-            BEL = { political_reform = bankruptcy }
+            UCA = { political_reform = bankruptcy }
         }
         random_owned = {
             limit = { owner = { debt_law = bankruptcy } }
-            BEL = { political_reform = bankruptcy }
+            UCA = { political_reform = bankruptcy }
         }
 
         ##Trade Unions
         random_owned = {
             limit = { owner = { trade_unions = state_controlled } }
-            BEL = { political_reform = state_controlled }
+            UCA = { political_reform = state_controlled }
         }
         random_owned = {
             limit = { owner = { trade_unions = non_socialist } }
-            BEL = { political_reform = non_socialist }
+            UCA = { political_reform = non_socialist }
         }
         random_owned = {
             limit = { owner = { trade_unions = all_trade_unions } }
-            BEL = { political_reform = all_trade_unions }
+            UCA = { political_reform = all_trade_unions }
         }
 
 
         #Child labor
         random_owned = {
             limit = { owner = { child_labor = child_labor_restricted } }
-            BEL = { social_reform = child_labor_restricted }
+            UCA = { social_reform = child_labor_restricted }
         }
         random_owned = {
             limit = { owner = { child_labor = child_labor_illegal } }
-            BEL = { social_reform = child_labor_illegal }
+            UCA = { social_reform = child_labor_illegal }
         }
 
         ##Health Care
         random_owned = {
             limit = { owner = { health_care = trinket_health_care } }
-            BEL = { social_reform = trinket_health_care }
+            UCA = { social_reform = trinket_health_care }
         }
         random_owned = {
             limit = { owner = { health_care = low_health_care } }
-            BEL = { social_reform = low_health_care }
+            UCA = { social_reform = low_health_care }
         }
         random_owned = {
             limit = { owner = { health_care = acceptable_health_care } }
-            BEL = { social_reform = acceptable_health_care }
+            UCA = { social_reform = acceptable_health_care }
         }
         random_owned = {
             limit = { owner = { health_care = good_health_care } }
-            BEL = { social_reform = good_health_care }
+            UCA = { social_reform = good_health_care }
         }
 
         ##Schools
         random_owned = {
             limit = { owner = { school_reforms = low_schools } }
-            BEL = { social_reform = low_schools }
+            UCA = { social_reform = low_schools }
         }
         random_owned = {
             limit = { owner = { school_reforms = acceptable_schools } }
-            BEL = { social_reform = acceptable_schools }
+            UCA = { social_reform = acceptable_schools }
         }
         random_owned = {
             limit = { owner = { school_reforms = good_schools } }
-            BEL = { social_reform = good_schools }
+            UCA = { social_reform = good_schools }
         }
 
         ##Penal System
         random_owned = {
             limit = { owner = { penal_system = colonial_transportation } }
-            BEL = { social_reform = colonial_transportation }
+            UCA = { social_reform = colonial_transportation }
         }
         random_owned = {
             limit = { owner = { penal_system = incarceration } }
-            BEL = { social_reform = incarceration }
+            UCA = { social_reform = incarceration }
         }
         random_owned = {
             limit = { owner = { penal_system = rehabilitation } }
-            BEL = { social_reform = rehabilitation }
+            UCA = { social_reform = rehabilitation }
         }
 
 
         ##Min Wage
         random_owned = {
             limit = { owner = { wage_reform = trinket_wage } }
-            BEL = { social_reform = trinket_wage }
+            UCA = { social_reform = trinket_wage }
         }
         random_owned = {
             limit = { owner = { wage_reform = low_minimum_wage } }
-            BEL = { social_reform = low_minimum_wage }
+            UCA = { social_reform = low_minimum_wage }
         }
         random_owned = {
             limit = { owner = { wage_reform = acceptable_minimum_wage } }
-            BEL = { social_reform = acceptable_minimum_wage }
+            UCA = { social_reform = acceptable_minimum_wage }
         }
         random_owned = {
             limit = { owner = { wage_reform = good_minimum_wage } }
-            BEL = { social_reform = good_minimum_wage }
+            UCA = { social_reform = good_minimum_wage }
         }
 
         ##Work Hours
         random_owned = {
             limit = { owner = { work_hours = fourteen_hours } }
-            BEL = { social_reform = fourteen_hours }
+            UCA = { social_reform = fourteen_hours }
         }
         random_owned = {
             limit = { owner = { work_hours = twelve_hours } }
-            BEL = { social_reform = twelve_hours }
+            UCA = { social_reform = twelve_hours }
         }
         random_owned = {
             limit = { owner = { work_hours = ten_hours } }
-            BEL = { social_reform = ten_hours }
+            UCA = { social_reform = ten_hours }
         }
         random_owned = {
             limit = { owner = { work_hours = eight_hours } }
-            BEL = { social_reform = eight_hours }
+            UCA = { social_reform = eight_hours }
         }
 
         ##Safety Regulations
         random_owned = {
             limit = { owner = { safety_regulations = trinket_safety } }
-            BEL = { social_reform = trinket_safety }
+            UCA = { social_reform = trinket_safety }
         }
         random_owned = {
             limit = { owner = { safety_regulations = low_safety } }
-            BEL = { social_reform = low_safety }
+            UCA = { social_reform = low_safety }
         }
         random_owned = {
             limit = { owner = { safety_regulations = acceptable_safety } }
-            BEL = { social_reform = acceptable_safety }
+            UCA = { social_reform = acceptable_safety }
         }
         random_owned = {
             limit = { owner = { safety_regulations = good_safety } }
-            BEL = { social_reform = good_safety }
+            UCA = { social_reform = good_safety }
         }
 
         ##unemployment_subsidies
         random_owned = {
             limit = { owner = { unemployment_subsidies = trinket_subsidies } }
-            BEL = { social_reform = trinket_subsidies }
+            UCA = { social_reform = trinket_subsidies }
         }
         random_owned = {
             limit = { owner = { unemployment_subsidies = low_subsidies } }
-            BEL = { social_reform = low_subsidies }
+            UCA = { social_reform = low_subsidies }
         }
         random_owned = {
             limit = { owner = { unemployment_subsidies = acceptable_subsidies } }
-            BEL = { social_reform = acceptable_subsidies }
+            UCA = { social_reform = acceptable_subsidies }
         }
         random_owned = {
             limit = { owner = { unemployment_subsidies = good_subsidies } }
-            BEL = { social_reform = good_subsidies }
+            UCA = { social_reform = good_subsidies }
         }
 
         ##pensions
         random_owned = {
             limit = { owner = { pensions = trinket_pensions } }
-            BEL = { social_reform = trinket_pensions }
+            UCA = { social_reform = trinket_pensions }
         }
         random_owned = {
             limit = { owner = { pensions = low_pensions } }
-            BEL = { social_reform = low_pensions }
+            UCA = { social_reform = low_pensions }
         }
         random_owned = {
             limit = { owner = { pensions = acceptable_pensions } }
-            BEL = { social_reform = acceptable_pensions }
+            UCA = { social_reform = acceptable_pensions }
         }
         random_owned = {
             limit = { owner = { pensions = good_pensions } }
-            BEL = { social_reform = good_pensions }
+            UCA = { social_reform = good_pensions }
         }
-		change_tag_no_core_switch = BEL
+		change_tag_no_core_switch = UCA
         ai_chance = {
             factor = 0
         }
     }
 }
-#South Africa colonization#
 country_event = {
-	id = 158107
-	title = "Colonization of South Africa"
-	desc = "EVTDESC158107"
+	id = 1821001
+	title = "Calls For Absolutism"
+	desc = "EVTDESC1821001"
 	fire_only_once = yes
 	
+	
 	trigger = {
-		owns = 2090
-		year = 1732
-		money = 20000
+		tag = MEX
+		OR = {
+			government = trade_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+		}
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 1
 	}
 	
 	option = {
-		name = "Amazing!"
-		treasury = -20000
-		2091 = {
-			secede_province = NET
+		name = "Seize to power for the king himself"
+		political_reform = none_voting
+		political_reform = appointed
+		any_pop = {
+			limit = {
+				ideology = liberal
+			}
+			militancy = 6
+		}
+		any_pop = {
+			limit = {
+				ideology = communist
+			}
+			militancy = 8
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "That would make us the same as Spanish!"
+		any_pop = {
+			limit = {
+				ideology = conservative
+			}
+			militancy = 6
+		}
+		any_pop = {
+			limit = {
+				ideology = reactionary
+			}
+			militancy = 8
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
 country_event = {
-	id = 158108
-	title = "Colonization of South Africa"
-	desc = "EVTDESC158107"
+	id = 1821002
+	title = "Imperial Conquests?"
+	desc = "EVTDESC1821002"
 	fire_only_once = yes
 	
+	
 	trigger = {
-		owns = 2090
-		year = 1772
-		money = 40000
+		tag = MEX
+		OR = {
+			government = trade_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+		war = no
+		NOT = {
+			truce_with = SPA
+		}
+		war_policy = jingoism
+	}
+	
+	mean_time_to_happen = {
+		months = 36
 	}
 	
 	option = {
-		name = "Amazing!"
-		treasury = -40000
-		2089 = {
-			secede_province = NET
+		name = "We must expand!"
+		war = {
+			target = SPA
+			attacker_goal = { casus_belli = acquire_state state_province_id = 2209  }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = no
 		}
-		2092 = {
-			secede_province = NET
+		ai_chance = {
+			factor = 95
 		}
-		2097 = {
-			secede_province = NET
+	}
+	
+	option = {
+		name = "We aren't ready."
+		prestige = -15
+		ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 2
+                any_greater_power = { war_with = THIS }
+            }
+            modifier = {
+                factor = 2
+                national_provinces_occupied = 0.25
+            }
+            modifier = {
+                factor = 0
+                war = no
+                NOT = { revolt_percentage = 0.25 }
+            }
+        }
+	}
+}
+country_event = {
+	id = 1821003
+	title = "Philippian conquests"
+	desc = "EVTDESC1821003"
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = MEX
+		war = no
+		war_policy = jingoism
+		SPA_1459 = {
+			owned_by = THIS
 		}
-		2096 = {
-			secede_province = NET
+		SPA_1463 = {
+			owned_by = THIS
+		}
+		SPA_1455 = {
+			owned_by = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "Glorious our Empire is!"
+		SPA_1459 = {
+			add_core = THIS
+		}
+		SPA_1463 = {
+			add_core = THIS
+		}
+		SPA_1455 = {
+			add_core = THIS
 		}
 	}
 }

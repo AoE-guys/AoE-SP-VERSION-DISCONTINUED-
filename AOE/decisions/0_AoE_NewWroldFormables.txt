@@ -70,12 +70,12 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+	#now changes to peru
 	become_pru_bol = {
-		picture = become_pru_bol
+		picture = become_peu
 		potential = {
 			tag = VOP
-			NOT = { exists = PBC }
+			NOT = { exists = PEU }
 		}
 
 		allow = {
@@ -85,9 +85,9 @@ political_decisions = {
 
 		effect = {
 			prestige = 20
-			all_core = { add_core = PBC }
+			all_core = { add_core = PEU }
 			all_core = { remove_core = THIS }
-			change_tag = PBC
+			change_tag = PEU
 		}
 
 		ai_will_do = {

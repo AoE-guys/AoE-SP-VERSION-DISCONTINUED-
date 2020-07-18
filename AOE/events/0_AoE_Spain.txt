@@ -1,0 +1,147 @@
+country_event = {
+	id = 19180013
+	title = "Treaty of Madrid"
+	desc = "EVENTDESC19180013"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1750
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	option = {
+		name = "Agree to portugese claims."
+		prestige = 5
+		VLP = {
+			treasury = -2000
+			country_event = 19180014
+		}
+		VOP = {
+			treasury = -2000
+			country_event = 19180014
+		}
+		VNG = {
+			treasury = -2000
+			country_event = 19180014
+		}
+	}
+	
+	option = {
+		name = "These land belong to us!"
+		badboy = 15
+		prestige = 25
+		VLP = {
+			treasury = -2000
+			country_event = 19180014
+			2416 = {
+				add_core = VLP
+			}
+			2419 = {
+				add_core = VLP
+			}
+			2417 = {
+				add_core = VLP
+			}
+			2550 = {
+				add_core = VLP
+			}
+		}
+		VOP = {
+			treasury = -2000
+			country_event = 19180014
+			2404 = {
+				add_core = VOP
+			}
+		}
+		VNG = {
+			treasury = -2000
+			country_event = 19180014
+			2403 = {
+				add_core = VNG
+			}
+			2402 = {
+				add_core = VNG
+			}
+			2532 = {
+				add_core = VNG
+			}
+		}
+	}
+}
+country_event = {
+	id = 19180014
+	title = "Treaty of Madrid"
+	desc = "EVENTDESC19180014"
+	picture = "colonization"
+	#is_triggered_only = yes
+	
+	trigger = {
+		year = 1750
+		capital_scope = {
+			continent = south_america
+		}
+		is_vassal = no
+		NOT = { tag = PBZ }
+	}
+	
+	option = {
+		name = "Great!"
+		all_core = {
+			limit = {
+				empty = yes
+				NOT = {
+					owned_by = THIS
+				}
+			}
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 1516000
+	title = "Restoration of Italy"
+	desc = "EVTDESC151600"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		AUS = {
+			war_with = PLC
+		}
+		754 = {
+			owned_by = AUS
+		}
+		has_global_flag = polish_succesion_crisis
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	option = {
+		name = "This is a golden opportunity!"
+		AUS = {
+			release = NAP
+		}
+		create_vassal = NAP
+		create_alliance = NAP
+		AUS = {
+			war = {
+				target = NAP
+				attacker_goal = { casus_belli = annex_core_country }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+	
+	option = {
+		name = "We aren't ready...yet"
+		prestige = -15
+	}
+}
