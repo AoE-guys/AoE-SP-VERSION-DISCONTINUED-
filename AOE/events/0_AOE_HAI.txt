@@ -42,17 +42,17 @@ country_event = {
 	desc = "EVTDESC17910"
 	picture = exemplar_colony
 	trigger = {
-	year = 1750
-	OR = {
-		tag = FRA
-		tag = BOR
-	}
+		year = 1750
+		OR = {
+			tag = FRA
+			tag = BOR
+		}
 		NOT = {
 			2213 = { has_province_modifier = pearl_of_the_antilles }
 			exists = HAI 
 		}
-	slavery = yes_slavery
-	2213 = { controled_by = THIS }
+		slavery = yes_slavery
+		2213 = { controled_by = THIS }
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -86,14 +86,13 @@ country_event = {
 		money = 250000
 		radio = 250
 		HAI_2213 = {
-		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.2 }
-		any_pop = { limit = { has_pop_culture = afro_antillean } reduce_pop = 1.2 }
+		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.05 }
+		any_pop = { limit = { has_pop_culture = afro_antillean } reduce_pop = 1.05 }
 		any_pop = { literacy = 0.1 }
 		# add_province_modifier = {
 					# name = colonial_recruitment
 					# duration = 1825
 			# }
-		# }
 		}
 	}
 }
@@ -240,13 +239,14 @@ country_event = {
 		prestige = 50
 		money = 250000
 		any_pop = { limit = { has_pop_culture = french } reduce_pop = 0 }
-		}
-		option = {
+	}
+	
+	option = {
 		name = "Let there be Peace"
 		capital = 2213
 		add_accepted_culture = french
 		any_pop = { limit = { has_pop_culture = french } reduce_pop = 2.5 }
 		any_pop = { limit = { has_pop_culture = mulatto } reduce_pop = 1.5 }
-		any_pop = { limit = { has_pop_culture = french } reduce_pop = 1.15 }
+		any_pop = { limit = { has_pop_culture = afro_antillean } reduce_pop = 1.15 }
 	}
 }
