@@ -388,4 +388,108 @@ political_decisions = {
 		}
 	}
 	
+	grand_duchy_of_lithuania = {
+		picture = greater_ukraine
+		potential = {
+			tag = LIT
+			NOT = {
+				has_country_flag = grand_lithuania
+			}
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			is_vassal = no
+		}
+		effect = {
+			RUS_959 = {
+				add_core = THIS
+			}
+			RUS_958 = {
+				add_core = THIS
+			}
+			set_country_flag = grand_lithuania
+			prestige = 15
+			add_accepted_culture = byelorussian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	kingdom_of_lithuania = {
+		picture = greater_ukraine
+		potential = {
+			tag = LIT
+			NOT = {
+				has_country_flag = kingdom_lithuania
+			}
+			has_country_flag = grand_lithuania
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		effect = {
+			RUS_968 = {
+				add_core = THIS
+			}
+			RUS_955 = {
+				add_core = THIS
+			}
+			1016 = {
+				add_core = THIS
+			}
+			961 = {
+				add_core = THIS
+			}
+			962 = {
+				add_core = THIS
+			}
+			963 = {
+				add_core = THIS
+			}
+			set_country_flag = kingdom_lithuania
+			add_accepted_culture = ukrainian
+			prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	empire_of_lithuania = {
+		picture = annex_united_baltic_duchy
+		potential = {
+			tag = LIT
+			NOT = {
+				has_country_flag = empire_lithuania
+			}
+			has_country_flag = kingdom_lithuania
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			is_greater_power = yes
+		}
+		effect = {
+			RUS_354 = {
+				add_core = THIS
+			}
+			set_country_flag = empire_lithuania
+			prestige = 35
+			add_accepted_culture = latvian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }
