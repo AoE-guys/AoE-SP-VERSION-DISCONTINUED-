@@ -170,7 +170,7 @@ political_decisions = {
 						primary_culture = north_german
 					}
 				}
-				annex_to = NGF
+				country_event = 69433
 			}
 			
 			all_core = {
@@ -260,9 +260,6 @@ political_decisions = {
 		effect = {
 			change_tag = NGF
 			set_country_flag = hanseatic_league_united
-			all_core = {
-				remove_core = LUB
-			}
 			
 			any_country = {
 				limit = {
@@ -271,7 +268,7 @@ political_decisions = {
 						primary_culture = north_german
 					}
 				}
-				annex_to = NGF
+				country_event = 69433
 			}
 			
 			
@@ -387,9 +384,6 @@ political_decisions = {
 		effect = {
 			change_tag = NGF
 			set_country_flag = hanseatic_league_united
-			all_core = {
-				remove_core = THIS
-			}
 			
 			any_country = {
 				limit = {
@@ -399,7 +393,7 @@ political_decisions = {
 						primary_culture = north_german
 					}
 				}
-				annex_to = NGF
+				country_event = 69433
 			}
 			
 			

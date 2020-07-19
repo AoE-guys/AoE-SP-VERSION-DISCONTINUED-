@@ -1556,6 +1556,24 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 69433
+	title = "Hanseatic Unity"
+	desc = "It is time for the Hansa to unite!"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join in!"
+		all_core = {
+			add_core = NGF
+			remove_core = THIS
+		}
+		annex_to = NGF
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
 		
 		
 		
