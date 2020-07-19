@@ -1568,7 +1568,9 @@ country_event = {
 			add_core = NGF
 			remove_core = THIS
 		}
-		annex_to = NGF
+		NGF = {
+			inherit = THIS
+		}
 		ai_chance = {
 			factor = 1
 		}
