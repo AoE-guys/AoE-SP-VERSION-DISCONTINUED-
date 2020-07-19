@@ -1,5 +1,6 @@
-owner = SWI
-controller = SWI
+owner = NCT
+controller = NCT
+add_core = NCT
 add_core = SWI
 trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
 state_building = {  level = 1  building = cement_factory  upgrade = yes  }

@@ -26113,12 +26113,22 @@
 
 603 = {
     text_position = {
-        x = 2945.100098
-        y = 1575.699951
+        x = 2940.850000
+        y = 1577.400000
     }
 
-    text_rotation = 0.000001
-    text_scale = 2.400000
+    text_rotation = 0.369334
+    text_scale = 3
+    unit = {
+        x = 2942.000000
+        y = 1577.400000
+    }
+
+    city = {
+        x = 2945.550000
+        y = 1580.200000
+    }
+
     factory = {
         x = 2948.650000
         y = 1574.000000
@@ -109024,11 +109034,12 @@
 
 2568 = {
     text_position = {
-        x = 2944.450000
-        y = 1554.550000
+        x = 2942.900000
+        y = 1555.200000
     }
 
-    text_scale = 2.000000
+    text_rotation = 6.040634
+    text_scale = 1.6
     unit = {
         x = 2940.450000
         y = 1557.550000
@@ -125958,6 +125969,150 @@
     city = {
         x = 4302.877500
         y = 1091.353333
+    }
+
+    factory = {
+        x = 4304.722500
+        y = 1084.246667
+    }
+
+    building_construction = {
+        x = 4303.219167
+        y = 1090.670000
+    }
+
+    military_construction = {
+        x = 4303.219167
+        y = 1090.670000
+    }
+
+}
+
+# Toggenburg
+3378 = {
+    text_position = {
+        x = 2948.950000
+        y = 1575.050000
+    }
+
+    text_rotation = 5.716071
+    text_scale = 1
+    unit = {
+        x = 2948.600000
+        y = 1574.950000
+    }
+
+    city = {
+        x = 2949.100000
+        y = 1575.100000
+    }
+
+    factory = {
+        x = 4304.722500
+        y = 1084.246667
+    }
+
+    building_construction = {
+        x = 2950.500000
+        y = 1573.750000
+    }
+
+    military_construction = {
+        x = 2948.500000
+        y = 1576.500000
+    }
+
+}
+
+# Wil
+3379 = {
+    text_position = {
+        x = 2951.900000
+        y = 1577.700000
+    }
+
+    text_rotation = 6.253044
+    text_scale = 1.5
+    unit = {
+        x = 2952.350000
+        y = 1577.600000
+    }
+
+    city = {
+        x = 2950.450000
+        y = 1578.100000
+    }
+
+    factory = {
+        x = 4304.722500
+        y = 1084.246667
+    }
+
+    building_construction = {
+        x = 2948.600000
+        y = 1577.700000
+    }
+
+    military_construction = {
+        x = 2950.150000
+        y = 1576.700000
+    }
+
+}
+
+# Gersau
+3380 = {
+    text_position = {
+        x = 2940.700000
+        y = 1570.200000
+    }
+
+    text_rotation = 5.993170
+    text_scale = 1.5
+    unit = {
+        x = 2941.250000
+        y = 1570.450000
+    }
+
+    city = {
+        x = 2940.450000
+        y = 1570.550000
+    }
+
+    factory = {
+        x = 2941.800000
+        y = 1570.250000
+    }
+
+    building_construction = {
+        x = 2940.250000
+        y = 1570.950000
+    }
+
+    military_construction = {
+        x = 2940.950000
+        y = 1570.450000
+    }
+
+}
+
+# Moesa
+3381 = {
+    text_position = {
+        x = 2957.200000
+        y = 1555.750000
+    }
+
+    text_rotation = 0
+    text_scale = 2
+    unit = {
+        x = 2956.850000
+        y = 1555.600000
+    }
+
+    city = {
+        x = 2948.050000
+        y = 1558.850000
     }
 
     factory = {

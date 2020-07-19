@@ -856,7 +856,7 @@
 		size = 645
 	}
 }
-#Mulhausen (424000/106000 POPS)
+#Colmar (424000/106000 POPS)
 410 = {
 	aristocrats = {
 		culture = south_german
@@ -1389,6 +1389,58 @@
 		culture = south_german
 		religion = catholic
 		size = 524
+	}
+
+}
+#Mulhouse
+3382 = {
+
+	aristocrats = {
+		culture = south_german
+		religion = protestant
+		size = 40
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = protestant
+		size = 40
+	}
+
+	artisans = {
+		culture = south_german
+		religion = protestant
+		size = 50
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = protestant
+		size = 40
+	}
+
+	serfs = {
+		culture = south_german
+		religion = protestant
+		size = 600
+	}
+
+	labourers = {
+		culture = south_german
+		religion = protestant
+		size = 50
+	}
+
+	serfs = {
+		culture = french
+		religion = protestant
+		size = 300
+	}
+
+	labourers = {
+		culture = french
+		religion = protestant
+		size = 50
 	}
 
 }

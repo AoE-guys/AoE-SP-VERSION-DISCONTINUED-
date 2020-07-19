@@ -378,12 +378,64 @@ vassal = {
 	end_date = 1850.1.1
 }
 
-#Switzerland - Neuchatel
+#Switzerland - NCT/VAL/THL/ASG/CSG/GSU/MLH/ROT
 vassal = {
 	first = SWI
 	second = NCT
-	start_date = 1815.1.1
-	end_date = 1857.1.1
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
+vassal = {
+	first = SWI
+	second = VAL
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
+vassal = {
+	first = SWI
+	second = THL
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+vassal = {
+	first = SWI
+	second = ASG
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
+vassal = {
+	first = SWI
+	second = CSG
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+vassal = {
+	first = SWI
+	second = GSU
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+
+vassal = {
+	first = SWI
+	second = MLH
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+vassal = {
+	first = SWI
+	second = ROT
+	start_date = 1700.1.1
+	end_date = 2000.1.1
+}
+vassal = {
+	first = SWI
+	second = BSL
+	start_date = 1700.1.1
+	end_date = 2000.1.1
 }
 
 #Monaco
