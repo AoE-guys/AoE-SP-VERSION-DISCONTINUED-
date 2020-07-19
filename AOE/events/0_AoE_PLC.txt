@@ -542,14 +542,9 @@ country_event = {
 		owns = 706
 		war_with = RUS
 		PLC = {
-			any_owned = {
-				limit = {
-					continent = europe
-				}
-				NOT = { controlled_by = PLC }
-			}
+			national_provinces_occupied = 90
 		}
-		war_exhaustion = 30
+		war_exhaustion = 45
 	}
 	
 	option = {
@@ -570,6 +565,7 @@ country_event = {
 		}
 		any_country = {
 			limit = {
+				exists = yes
 				war_with = PLC
 				capital_scope = {
 					continent = europe
@@ -579,6 +575,7 @@ country_event = {
 		}
 		any_country = {
 			limit = {
+				exists = yes
 				war_with = RUS
 				capital_scope = {
 					continent = europe
