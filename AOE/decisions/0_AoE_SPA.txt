@@ -73,16 +73,56 @@ political_decisions = {
 		}
 		allow = {
 			trade_policy = protectionism
-			analytic_philosophy = 1
+			NOT = {
+				OR = {
+					wage_reform = no_minimum_wage
+					wage_reform = trinket_wage
+				}
+			}
+			ruling_party_ideology = reactionary
+			PBZ = {
+				vassal_of = THIS
+				exists = yes
+			}
 		}
 		effect = {
 			set_country_flag = expeled_the_jesuits
-			money = 1000000
-			any_pop = { militancy = 2 }
-			badboy = 2
+			treasury = 100000
+			country_event = 114309
+			any_country = {
+				limit = {
+					exists = yes
+					vassal_of = THIS
+					government = colonial_company
+				}
+				country_event = 114309
+			}
+			treasury = 100000
+			any_owned = {
+				limit = {
+					owner = {
+						wage_reform = low_minimum_wage
+					}
+					social_reform = acceptable_minimum_wage
+				}
+			}
+			any_owned = {
+				limit = {
+					owner = {
+						wage_reform = acceptable_minimum_wage
+					}
+					social_reform = good_minimum_wage
+				}
+			}
+			PAP = {
+				relation = {
+					value = -150
+					who = THIS
+				}
+			}
 		}
 		ai_will_do = {					
-		factor = 1
+			factor = 1
 		}
 	}
 	royal_spanish_academy = {

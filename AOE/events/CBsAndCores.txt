@@ -1894,7 +1894,7 @@ province_event = {
 	desc = "EVTDESC2620"
 	
 	trigger = {
-		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
+		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } NOT = { government = tribal_democracy} }
 		is_core = THIS
 		any_core = {
 			exists = yes
@@ -1992,7 +1992,7 @@ province_event = {
 	desc = "EVTDESC2625"
 	
 	trigger = {
-		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
+		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } NOT = { government = tribal_democracy} }
 		is_core = THIS
 		any_core = {
 			exists = yes
@@ -2001,9 +2001,6 @@ province_event = {
 			NOT = { alliance_with = THIS }
 			NOT = { is_cultural_union = THIS }
 			war = no
-		}
-		NOT = {
-			government = tribal_democracy
 		}
 		OR = {
 			is_primary_culture = yes

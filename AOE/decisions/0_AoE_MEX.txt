@@ -1,0 +1,107 @@
+political_decisions = {
+	carabbean_conquest = {
+		potential = {
+			tag = MEX
+			NOT = { has_country_flag = carabbean_conquest }
+		}
+		
+		allow = {
+			war_policy = jingoism
+			SPA_2209 = {
+				owned_by = THIS
+			}
+			is_vassal = no
+			part_of_sphere = no
+		}
+		
+		effect = {
+			SPA_2209 = {
+				add_core = THIS
+			}
+			HAI_2213 = {
+				add_core = THIS
+			}
+			ENG_203 = {
+				add_core = THIS
+			}
+			ENG_2224 = {
+				add_core = THIS
+			}
+			ENG_2228 = {
+				add_core = THIS
+			}
+			FLO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = carabbean_conquest
+			badboy = 20
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	integrate_uca = {
+		potential = {
+			tag = MEX
+			NOT = { has_country_flag = integrated_uca }
+			has_country_flag = kill_UCA_go
+		}
+		
+		allow = {
+			UCA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			nationalism_n_imperialism = 1
+			is_vassal = no
+			part_of_sphere = no
+		}
+		
+		effect = {
+			UCA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = integrated_uca
+			badboy = 20
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	claim_panama = {
+		potential = {
+			tag = MEX
+			NOT = { has_country_flag = claimed_panama }
+		}
+		
+		allow = {
+			has_country_flag = integrated_uca
+			has_country_flag = carabbean_conquest
+			all_core = {
+				owned_by = THIS
+			}
+			war_policy = jingoism
+		}
+		
+		effect = {
+			CLM_1723 = {
+				add_core = THIS
+			}
+			set_country_flag = claimed_panama
+			badboy = 7
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

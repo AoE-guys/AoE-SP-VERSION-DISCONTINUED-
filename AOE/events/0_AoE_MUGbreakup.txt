@@ -57,21 +57,72 @@ country_event = {
 	
 	option = {
 		name = "It's time for WAR!"
-		RAJ = { ENG_1264 = { limit = { owned_by = THIS } add_core = RAJ } }
-		RAJ = {
+		JOD = {
 			all_core = {
 				limit = {
 					owned_by = THIS
 				}
-				secede_province = RAJ
+				secede_province = JOD
 			}
-			add_country_modifier = {
-				name = fanatic_army
-				duration = 1825
+		}
+		JAS = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = JAS
+			}
+		}
+		BIK = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = BIK
+			}
+		}
+		MEW = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = MEW
+			}
+		}
+		JAI = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = JAI
 			}
 		}
 		war = {
-			target = RAJ
+			target = JOD
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		war = {
+			target = JAS
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		war = {
+			target = BIK
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		war = {
+			target = MEW
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		war = {
+			target = JAI
 			attacker_goal = { casus_belli = make_puppet }
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
@@ -80,18 +131,65 @@ country_event = {
 	
 	option = {
 		name = "We have more pressing issues."
-		RAJ = { ENG_1264 = { limit = { owned_by = THIS } add_core = RAJ } }
-		RAJ = {
+		JOD = {
 			all_core = {
 				limit = {
 					owned_by = THIS
 				}
-				secede_province = RAJ
+				secede_province = JOD
+			}
+		}
+		JAS = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = JAS
+			}
+		}
+		BIK = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = BIK
+			}
+		}
+		MEW = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = MEW
+			}
+		}
+		JAI = {
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				secede_province = JAI
 			}
 		}
 		relation = {
-			who = RAJ
-			value = 100
+			who = JOD
+			value = -100
+		}
+		relation = {
+			who = JAS
+			value = -100
+		}
+		relation = {
+			who = BIK
+			value = -100
+		}
+		relation = {
+			who = MEW
+			value = -100
+		}
+		relation = {
+			who = JAI
+			value = -100
 		}
 		prestige = -15
 	}
@@ -413,7 +511,7 @@ country_event = {
 		war = {
 			target = MUG
 			attacker_goal = { casus_belli = acquire_all_cores country = MAH }
-			defender_goal = { casus_belli = status_quo }
+			defender_goal = { casus_belli = cut_down_to_size }
 			call_ally = no
 		}
 		ai_chance = { factor = 1 }

@@ -33,8 +33,13 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war_policy = jingoism
-			total_amount_of_ships = 50
+			OR = {
+				AND = {
+					war_policy = jingoism
+					revolution_n_counterrevolution = 1
+				}
+				military_score = 35
+			}
 		}
 		effect = {
 			set_country_flag = hundsun_bay_company_claimed
@@ -44,6 +49,81 @@ political_decisions = {
 				}
 			}
 			badboy = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	southern_expedition = {
+		picture = native_land
+		potential = {
+			NOT = { has_country_flag = hundsun_bay_company_claimed }
+			OR = {
+				tag = QUE
+				tag = FCA
+				tag = RPL
+				tag = CAN
+			}
+			OR = {
+				ULA = {
+					NOT = {
+						vassal_of = BOR
+					}
+					NOT = {
+						vassal_of = FRA
+					}
+				}
+				tag = RPL
+				tag = CAN
+			}
+			owns = 54
+		}
+		allow = {
+			OR = {
+				AND = {
+					war_policy = jingoism
+					revolution_n_counterrevolution = 1
+				}
+				military_score = 45
+			}
+		}
+		effect = {
+			set_country_flag = hundsun_bay_company_claimed
+			USA_176 = {
+				add_core = THIS
+			}
+			USA_168 = {
+				add_core = THIS
+			}
+			USA_170 = {
+				add_core = THIS
+			}
+			USA_162 = {
+				add_core = THIS
+			}
+			USA_178 = {
+				add_core = THIS
+			}
+			228 = {
+				add_core = THIS
+			}
+			236 = {
+				add_core = THIS
+			}
+			237 = {
+				add_core = THIS
+			}
+			238 = {
+				add_core = THIS
+			}
+			239 = {
+				add_core = THIS
+			}
+			148 = {
+				add_core = THIS
+			}
+			badboy = 20
 		}
 		ai_will_do = {
 			factor = 1
@@ -109,8 +189,13 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war_policy = jingoism
-			total_amount_of_ships = 15
+			OR = {
+				AND = {
+					war_policy = jingoism
+					revolution_n_counterrevolution = 1
+				}
+				military_score = 35
+			}
 		}
 		effect = {
 			set_country_flag = claimed_fench_canada

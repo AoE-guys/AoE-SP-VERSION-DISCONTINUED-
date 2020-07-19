@@ -964,6 +964,10 @@ help_ai_russia = {
 				owns = 1121 #Persia
 			}
 			AND = {
+				owns = 1301 #MAH
+				NOT = { year = 1710 }
+			}
+			AND = {
 				government = colonial_company
 				is_vassal = yes
 			}
@@ -1014,7 +1018,7 @@ help_ai_sweden_and_austria = {
 	administrative_efficiency_modifier = 0.05
 	supply_consumption = -0.1
 	education_efficiency_modifier = 0.2
-	mobilisation_size = 0.2
+	mobilisation_size = 0.25
 	war_exhaustion = -0.5
 }
 prussia_ai_help = {
@@ -1401,6 +1405,7 @@ south_american_ai_ii = {
 		}
 	}
 	supply_consumption = -0.2
+	administrative_efficiency_modifier = 0.3
 	mobilisation_size = 0.01
 	icon = 19
 }
@@ -1438,6 +1443,7 @@ janisseries_influence = {
 	army_tech_research_bonus = -0.1
 	global_assimilation_rate = -0.1
 	land_organisation = 0.05
+	influence_modifier = -0.4
 	icon = 16
 }
 

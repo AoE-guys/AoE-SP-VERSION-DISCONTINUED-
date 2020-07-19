@@ -134,7 +134,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 340
 	}
 	
 	option = {
@@ -212,15 +212,15 @@ country_event = {
 
 country_event = {
 	id = 114305
-	title = "Assasinated Marquis of Pombal!"
+	title = "Ascension of Queen Maria I"
 	desc = "EVTDESC114305"
 	#picture = 
 	fire_only_once = yes	
 	
 	trigger = {
+		tag = POR
 		has_country_modifier = marquis_pombal
-		year = 1783
-		average_militancy = 4
+		year = 1777
 	}
 	
 	mean_time_to_happen = {
@@ -228,8 +228,20 @@ country_event = {
 	}
 	
 	option = {
-		name = "Tragic!"
+		name = "Oh well"
 		remove_country_modifier = marquis_pombal
+		any_owned = {
+			owner = {
+				limit = {
+					has_country_modifier = pombaline_economic_reform
+				}
+				remove_country_modifier = pombaline_economic_reform
+			}
+		}
+		add_country_modifier = {
+			name = turnabout
+			duration = 3650
+		}
 	}
 }
 

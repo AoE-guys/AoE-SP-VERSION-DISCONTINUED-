@@ -481,9 +481,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 157301
+	id = 157302
 	title = "The Silent Sejm"
-	desc = "EVTDESC157301"
+	desc = "EVTDESC157302"
 	picture = glos
 	fire_only_once = yes
 	
@@ -533,5 +533,108 @@ country_event = {
 			}
 		}
 		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1573031
+	title = "Pact of the 3 Black Eagles"
+	desc = "EVTDESC157303"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		PLC = {
+			government = elective_monarchy_oligarchy
+		}
+		RUS = {
+			is_greater_power = yes
+		}
+		year = 1730
+	}
+	
+	option = {
+		name = "They must never rise to a great power status again"
+		AUS = {
+			country_event = 157303
+		}
+		549 = {
+			owner = {
+				country_event = 157303
+			}
+		}
+		set_country_flag = black_eagle_pact
+	}
+}
+country_event = {
+	id = 157303
+	title = "Pact of the 3 Black Eagles"
+	desc = "EVTDESC157303"
+	picture = glos
+	fire_only_once = yes
+	
+	option = {
+		name = "Agree"
+		set_country_flag = black_eagle_pact
+		FROM = {
+			country_event = 157304
+		}
+		prestige = 5
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				relation = {
+					who = RUS
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 15
+				NOT = {
+					relation = {
+						who = PLC
+						value = 0
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We would never do such a thing!"
+		relation = {
+			who = RUS
+			value = -50
+		}
+		prestige = -5
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 20
+				alliance_with = PLC
+			}
+			modifier = {
+				factor = 9
+				NOT = {
+					relation = {
+						who = RUS
+						value = 25
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = 157304
+	title = "$FROMCOUNTRY$ agrees!"
+	desc = "$FROMCOUNTRY$ Agreed to our proposal"
+	picture = glos
+	fire_only_once = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 5
 	}
 }
