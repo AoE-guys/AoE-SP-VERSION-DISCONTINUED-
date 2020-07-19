@@ -272,14 +272,12 @@ country_event = {
                 OR = {
                     culture = swedish
                     culture = norwegian
-                    culture = russian
                 }
                 }
                 reduce_pop = -0.4
             }
         remove_accepted_culture = swedish
-        remove_accepted_culture = norwegian
-        remove_accepted_culture = russian        
+        remove_accepted_culture = norwegian     
         relation = {
             who = SWE
             value = -100
