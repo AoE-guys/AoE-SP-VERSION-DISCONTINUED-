@@ -102,7 +102,7 @@ political_decisions = {
 					alliance_with = THIS
 					relation = {
 						who = THIS
-						value = 50
+						value = 100
 					}
 				}
 			}
@@ -133,7 +133,7 @@ political_decisions = {
 		}
 		allow = {
 			AND = {
-				HOL_369 = {
+				369 = {
 					OR = {
 						owned_by = THIS
 						owner = {
@@ -162,9 +162,6 @@ political_decisions = {
 		effect = {
 			change_tag = NGF
 			set_country_flag = hanseatic_league_united
-			all_core = {
-				remove_core = LUB
-			}
 			
 			any_country = {
 				limit = {
@@ -173,20 +170,38 @@ political_decisions = {
 						primary_culture = north_german
 					}
 				}
-				annex_to = THIS
+				annex_to = NGF
 			}
 			
 			all_core = {
+				remove_core = LUB
+			}
+			all_core = {
 				remove_core = HAM
+			}
+			all_core = {
 				remove_core = HOL
+			}
+			all_core = {
 				remove_core = LAU
+			}
+			all_core = {
 				remove_core = MEC
+			}
+			all_core = {
 				remove_core = MST
+			}
+			all_core = {
 				remove_core = LNE
+			}
+			all_core = {
 				remove_core = HAN
+			}
+			all_core = {
 				remove_core = BRE
+			}
+			all_core = {
 				remove_core = OLD
-				
 			}
 			
 			PRU_546 = {
@@ -216,7 +231,7 @@ political_decisions = {
 		}
 		allow = {
 			AND = {
-				HOL_369 = {
+				369 = {
 					OR = {
 						owned_by = THIS
 						owner = {
@@ -256,30 +271,49 @@ political_decisions = {
 						primary_culture = north_german
 					}
 				}
-				annex_to = THIS
+				annex_to = NGF
 			}
 			
+			
+			all_core = {
+				remove_core = LUB
+			}
 			all_core = {
 				remove_core = HAM
+			}
+			all_core = {
 				remove_core = HOL
+			}
+			all_core = {
 				remove_core = LAU
+			}
+			all_core = {
 				remove_core = MEC
+			}
+			all_core = {
 				remove_core = MST
+			}
+			all_core = {
 				remove_core = LNE
+			}
+			all_core = {
 				remove_core = HAN
+			}
+			all_core = {
 				remove_core = BRE
+			}
+			all_core = {
 				remove_core = OLD
-				
 			}
 			
 			PRU_546 = {
-				add_core = THIS
+				add_core = NGF
 			}
 			HAN_540 = {
-				add_core = THIS
+				add_core = NGF
 			}
 			HAN_534 = {
-				add_core = THIS
+				add_core = NGF
 			}
 			
 		}
@@ -312,7 +346,7 @@ political_decisions = {
 		}
 		allow = {
 			AND = {
-				HOL_369 = {
+				369 = {
 					NOT = {
 						OR = {
 							owned_by = DNN
@@ -365,31 +399,49 @@ political_decisions = {
 						primary_culture = north_german
 					}
 				}
-				annex_to = THIS
+				annex_to = NGF
 			}
+			
 			
 			all_core = {
 				remove_core = LUB
+			}
+			all_core = {
 				remove_core = HAM
+			}
+			all_core = {
 				remove_core = HOL
+			}
+			all_core = {
 				remove_core = LAU
+			}
+			all_core = {
 				remove_core = MEC
+			}
+			all_core = {
 				remove_core = MST
+			}
+			all_core = {
 				remove_core = LNE
+			}
+			all_core = {
 				remove_core = HAN
+			}
+			all_core = {
 				remove_core = BRE
+			}
+			all_core = {
 				remove_core = OLD
-				
 			}
 			
 			PRU_546 = {
-				add_core = THIS
+				add_core = NGF
 			}
 			HAN_540 = {
-				add_core = THIS
+				add_core = NGF
 			}
 			HAN_534 = {
-				add_core = THIS
+				add_core = NGF
 			}
 			
 		}
