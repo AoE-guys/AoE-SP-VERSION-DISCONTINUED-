@@ -642,9 +642,14 @@ political_decisions = {
 			HAN_540 = {
 				add_core = NGF
 				add_core = EFR
+				remove_core = MUN
 			}
 			SCH_370 = {
 				add_core = NGF
+			}
+			HOL_369 = {
+				remove_core = DNN
+				remove_core = DEN
 			}
 			badboy = 5
 			prestige = 15
@@ -690,6 +695,9 @@ political_decisions = {
 			}
 			556 = {
 				add_core = NGF
+			}
+			PRU_546 = {
+				remove_core = SWE
 			}
 			badboy = 20
 			prestige = 50
