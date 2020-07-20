@@ -18,3 +18,71 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 444667
+	title = "Freedom for Sorbs"
+	desc = EVTDESC444667
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NGF
+		owns = 552
+	}
+	
+	option = {
+		name = "We have no use for the region anyway"
+		552 = {
+			secede_province = LUS
+		}
+		NGF = {
+			create_vassal = LUS
+			create_alliance = LUS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 444668
+	title = "Sorbi Berlin?"
+	desc = "The Sorbi are proposing to buy Berlin from us."
+	is_triggered_only = yes
+	
+	option = {
+		name = "The city might not end up so bad if its Slav"
+		549 = {
+			secede_province = LUS
+		}
+		LUS = {
+			treasury = -90000
+		}
+		NGF = {
+			treasury = 90000
+		}
+		NGF = {
+			relation = {
+				who = LUS
+				value = 100
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "Might want to wall it off from them"
+		NGF = {
+			relation = {
+				who = LUS
+				value = -100
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

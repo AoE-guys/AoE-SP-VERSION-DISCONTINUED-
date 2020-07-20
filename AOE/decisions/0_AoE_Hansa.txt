@@ -790,4 +790,75 @@ political_decisions = {
 		}
 	}
 	
+	sorb_lusitania = {
+		picture = propose_danube_federation
+		potential = {
+			tag = LUS
+			NOT = {
+				has_country_flag = big_sorbia
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					owns = 552
+					owns = 687
+				}
+				is_vassal = no
+			}
+		}
+		effect = {
+			SAX_558 = {
+				add_core = LUS
+			}
+			556 = {
+				add_core = LUS
+			}
+			554 = {
+				add_core = THU
+			}
+			create_alliance = THU
+			badboy = 5
+			prestige = 25
+			set_country_flag = big_sorbia
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	purchase_berlin_lus = {
+		picture = propose_danube_federation
+		potential = {
+			tag = LUS
+			has_country_flag = big_sorbia
+			NOT = {
+				has_country_flag = sorbi_berlin
+			}
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			549 = {
+				owned_by = NGF
+			}
+			money = 100000
+		}
+		effect = {
+			NGF = {
+				country_event = {
+					id = 444668
+				}
+			}
+			create_alliance = THU
+			badboy = 5
+			prestige = 25
+			set_country_flag = big_sorbia
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
 }
