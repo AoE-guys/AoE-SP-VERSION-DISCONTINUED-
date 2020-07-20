@@ -8,8 +8,8 @@ engineer = {
 	#Core Abilities
 	priority = 15
 	max_strength = 3
-	default_organisation = 30
-	maximum_speed = 5.00
+	default_organisation = 40
+	maximum_speed = 4.00
 	weighted_value = 3.0
 	floating_flag = no
 
@@ -38,9 +38,9 @@ engineer = {
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 2
+	attack = 3
 	defence = 6
-	discipline = 1.0
+	discipline = 1.5
 	support = 0.5
 	maneuver = 2
 	siege = 1
