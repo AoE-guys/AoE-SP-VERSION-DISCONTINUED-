@@ -22,15 +22,14 @@ country_event = {
 		any_pop = { limit = { culture = north_german } literacy = 0.56 }
 		any_pop = { limit = { culture = south_german } literacy = 0.58 }
 		any_pop = { limit = { culture = volga_german } literacy = 0.56 }
-		any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
-		any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
+		any_pop = { limit = { culture = siebenburger } literacy = 0.60 }
 		
-		any_pop = { limit = { culture = ashkenazi } literacy = 1.00 }
-		any_pop = { limit = { culture = sephardic } literacy = 1.00 }
+		any_pop = { limit = { culture = ashkenazi } literacy = 0.95 }
+		any_pop = { limit = { culture = sephardic } literacy = 0.95 }
 		
-		any_pop = { limit = { culture = dutch } literacy = 0.95 }
-		any_pop = { limit = { culture = frisian } literacy = 0.86 }
-		any_pop = { limit = { culture = flemish } literacy = 0.86 }
+		any_pop = { limit = { culture = dutch } literacy = 0.90 }
+		any_pop = { limit = { culture = frisian } literacy = 0.85 }
+		any_pop = { limit = { culture = flemish } literacy = 0.85 }
 		any_pop = { limit = { culture = wallonian } literacy = 0.46 }
 		
 		any_pop = { limit = { culture = swiss_french } literacy = 0.44 }
@@ -45,12 +44,12 @@ country_event = {
 		any_pop = { limit = { culture = finnish } literacy = 0.34 }
 		any_pop = { limit = { culture = sami } literacy = 0.34 }
 		
-		any_pop = { limit = { culture = british } literacy = 0.70 }
+		any_pop = { limit = { culture = british } literacy = 0.65 }
 		any_pop = { limit = { culture = irish } literacy = 0.50 }
-		any_pop = { limit = { culture = scottish } literacy = 0.70 }
+		any_pop = { limit = { culture = scottish } literacy = 0.65 }
 		any_pop = { limit = { culture = welsh } literacy = 0.50 }
 		
-		any_pop = { limit = { culture = north_italian } literacy = 0.85 }
+		any_pop = { limit = { culture = north_italian } literacy = 0.80 }
 		any_pop = { limit = { culture = south_italian } literacy = 0.60 }
 		any_pop = { limit = { culture = maltese } literacy = 0.60 }
 		
@@ -61,7 +60,7 @@ country_event = {
 		any_pop = { limit = { culture = portuguese } literacy = 0.39 }
 		
 		any_pop = { limit = { culture = french } literacy = 0.65 }
-		any_pop = { limit = { culture = mulatto } literacy = 0.85 }
+		any_pop = { limit = { culture = mulatto } literacy = 0.25 }
 		any_pop = { limit = { culture = norman } literacy = 0.44 }
 		any_pop = { limit = { culture = breton } literacy = 0.44 }
 		any_pop = { limit = { culture = occitan } literacy = 0.44 }
@@ -130,7 +129,7 @@ country_event = {
         any_pop = { limit = { culture = hazara } literacy = 0.28 }
         any_pop = { limit = { culture = turkmen } literacy = 0.25 }
         any_pop = { limit = { culture = tatar } literacy = 0.25 }
-        any_pop = { limit = { culture = gypsy } literacy = 0.25 }
+        any_pop = { limit = { culture = gypsy } literacy = 0.15 }
 
 		any_pop = { limit = { culture = mongol } literacy = 0.28 }
         any_pop = { limit = { culture = siberian } literacy = 0.25 }
@@ -186,7 +185,7 @@ country_event = {
         any_pop = { limit = { culture = dixie } literacy = 0.50 }
 		any_pop = { limit = { culture = texan } literacy = 0.50 }					 
 		
-        any_pop = { limit = { culture = boer } literacy = 1.00 }
+        any_pop = { limit = { culture = boer } literacy = 0.95 }
 		any_pop = { limit = { culture = australian } literacy = 0.25 }
 		any_pop = { limit = { culture = anglo_canadian } literacy = 0.35 }
 		any_pop = { limit = { culture = french_canadian } literacy = 0.35 }
@@ -420,11 +419,11 @@ country_event = {
 		any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
 		any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
 		
-		any_pop = { limit = { culture = ashkenazi } literacy = 1.00 }
-		any_pop = { limit = { culture = sephardic } literacy = 1.00 }
+		any_pop = { limit = { culture = ashkenazi } literacy = 0.95 }
+		any_pop = { limit = { culture = sephardic } literacy = 0.95 }
 		
-		any_pop = { limit = { culture = dutch } literacy = 0.95 }
-		any_pop = { limit = { culture = flemish } literacy = 0.86 }
+		any_pop = { limit = { culture = dutch } literacy = 0.90 }
+		any_pop = { limit = { culture = flemish } literacy = 0.85 }
 		any_pop = { limit = { culture = wallonian } literacy = 0.46 }
 		
 		any_pop = { limit = { culture = swiss_french } literacy = 0.44 }
