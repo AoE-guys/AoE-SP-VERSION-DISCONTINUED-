@@ -729,6 +729,7 @@ heavy_artillery = {
 		}
 	}
 }
+
 #military_staff_system
 cuirassier_activation = {
 	limit = { military_staff_system = 1 }
@@ -754,9 +755,9 @@ moose_cavalry = {
 	}
 	effect = { 
 		hussar = {
-		defence = 1
-		maximum_speed = 1
-		attack = 1
+			defence = 1
+			maximum_speed = 1
+			attack = 1
 		}
 	}
 }

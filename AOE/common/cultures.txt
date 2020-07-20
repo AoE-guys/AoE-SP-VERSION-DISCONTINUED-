@@ -155,12 +155,12 @@ beneluxian = {
 	}
 	frisian = {
 	color = { 200 140 60}
-	first_names = {
+		first_names = {
 		Audulf Aldgisl Radboud Poppo Anne Rorik Godfried Gerolf Dirk Arnulf Floris Liudolf Bruno Egbert Hendrik Haringh Juw Albrecht Hendrik George Wilhelm
 		Georg Maximiliaan Jan Karel Gillis Caspar Francisco Willem "Ernst Casimir" Johan
-	}
+		}
 
-	last_names = {
+		last_names = {
 		"van der Aa" "van Assendelft"
 		Boetge Boumeester "van Bronkhorst" Batenburg Bentinck Boreel Brandt "van Brederode" Brouwer Buyskes "van Braam Houckgeest"
 		"van der Capellen" Chasse Cochius Coops "de Casembroot" Cleerens Coehoorn Coen "de Constant Rebecque" Crijnssen
@@ -845,7 +845,20 @@ czecho_slovak_culture_group = {
 		Tomásek Tyl Vitásek "von Mittrowitz-Nettolitzky" Vorisek Wankel Weber Zíbrt Zívr Zoubek }
 		radicalism = 5
 	}
-	
+	moravian = {
+		color = {0 51 102}
+		first_names = { Abraham Alexander Alfred Alois Antonú‹ August Bedrich Benedikt Borivoj
+		Cenek Dávid Drahoslav Edvard Emanuel Emil Evzen Frantisek "Frantisek Josef" "Frantisek Xaver"
+		Hermenegild Ján "Ján Krtitel" "Ján Nepomuk" Jaroslav Jindrich JirEJosef Kajetan Karel
+		Konstantin Ladislav Luvúˆ Matyas Maxmilián Mikulás Olbram Otakar Pavel Petr
+		Radola Rafael Tomás Václav Vincenc Vitezslav Vlastimil Vojtech Vratislav Zdenek }
+
+		last_names = { Albert Balaban Basch Breisky Celovskı Dvorák Fibich Gajda Gellner Hálek
+		Hrdlicka Jirecek Kadlec Kafka Koller Krú—kovskı Kucera Kuchar Lederer Makosky
+		Mik Morávec Nemecek Neruda Novácek Novotnı Popper Radeckı Rokytanskı Safárik
+		Safránek Schack Schubert Skoda Skuherskı Smetana Snejdárek Suk Svoboda Syrovı
+		Tomásek Tyl Vitásek "von Mittrowitz-Nettolitzky" Vorisek Wankel Weber Zú~rt Zú“r Zoubek }
+	}
 	slovak = {
 		color = {120 255 255}
 		first_names = { Albín Alexander András Andrej Augustín Basil Cyprián Dalibor Dezider Dominik

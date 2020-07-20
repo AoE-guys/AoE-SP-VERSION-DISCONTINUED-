@@ -32,12 +32,12 @@ country_event = {
 	
 	option = {
 		name = "We have no use for the region anyway"
+		release_vassal = LUS
 		552 = {
-			secede_province = LUS
-		}
-		NGF = {
-			create_vassal = LUS
-			create_alliance = LUS
+			add_province_modifier = {
+				name = cultural_resurgence
+				duration = 7300
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -54,6 +54,12 @@ country_event = {
 	option = {
 		name = "The city might not end up so bad if its Slav"
 		549 = {
+			remove_core = NGF
+		}
+		549 = {
+			add_core = LUS
+		}
+		549 = {
 			secede_province = LUS
 		}
 		LUS = {
@@ -66,6 +72,12 @@ country_event = {
 			relation = {
 				who = LUS
 				value = 100
+			}
+		}
+		549 = {
+			add_province_modifier = {
+				name = cultural_resurgence
+				duration = 7300
 			}
 		}
 		ai_chance = {

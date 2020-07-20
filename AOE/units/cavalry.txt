@@ -14,7 +14,7 @@ cavalry = {
 	#Core Abilities
 	priority = 25
 	max_strength = 3
-	default_organisation = 20
+	default_organisation = 35
 	maximum_speed = 5.00
 	weighted_value = 4.0
 
@@ -38,9 +38,9 @@ cavalry = {
 
 	#Land Abilties
 	reconnaissance = 1
-	attack = 4.5
-	defence = 1
-	discipline = 1.0
+	attack = 4.0
+	defence = 2
+	discipline = 2.0
 	support = 0.0
 	maneuver = 2
 	

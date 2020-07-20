@@ -53,35 +53,35 @@ rosendale_cement = {
 	}
 }
 
-poudre_b = {
-	limit = { 
-		breech_loaded_rifles = 1
-		organic_chemistry = 1 
-	}
-	news = no
-	chance = {
-		base = 3
-		modifier = {
-			factor = -10
-			NOT = { year = 1880 }
-		}
-	}
-	effect = {
-		factory_goods_output = { ammunition = 0.03 }
-		factory_goods_output = { sulphur = 0.03 }
-		infantry = {
-			attack = 0.15
-			defence = 0.15
-		}
-		guard = {
-			attack = 0.15
-			defence = 0.15
-		}
-		army_base = {
-			supply_consumption = 0.05
-		}
-	}
-}
+# poudre_b = {
+	# limit = { 
+		# breech_loaded_rifles = 1
+		# organic_chemistry = 1 
+	# }
+	# news = no
+	# chance = {
+		# base = 3
+		# modifier = {
+			# factor = -10
+			# NOT = { year = 1880 }
+		# }
+	# }
+	# effect = {
+		# factory_goods_output = { ammunition = 0.03 }
+		# factory_goods_output = { sulphur = 0.03 }
+		# infantry = {
+			# attack = 0.15
+			# defence = 0.15
+		# }
+		# guard = {
+			# attack = 0.15
+			# defence = 0.15
+		# }
+		# army_base = {
+			# supply_consumption = 0.05
+		# }
+	# }
+# }
 
 #Dmitri Mendeleev
 dmitri_mendeleev = {
