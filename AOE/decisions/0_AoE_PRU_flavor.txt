@@ -587,6 +587,24 @@ political_decisions = {
 				add_core = BRN
 				remove_core = PRU
 			}
+			580 = {
+				remove_core = BRN
+				add_core = LIP
+			}
+			3265 = {
+				remove_core = BRN
+				add_core = LIP
+			}
+			577 = {
+				remove_core = BRN
+				secede_province = PAL
+			}
+			PRU_695 = {
+				remove_core = BRN
+				add_core = PRU
+			}
+			release = LIP
+			create_alliance = LIP
 			change_tag = BRN
 			prestige = -15
 		}
