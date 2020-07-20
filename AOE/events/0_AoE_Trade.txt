@@ -1556,26 +1556,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = 69434
-	title = "Hansa Unity"
-	desc = "It is time for the Hansa to unite!"
-	is_triggered_only = yes
-	
-	option = {
-		name = "Join in!"
-		all_core = {
-			add_core = NGF
-			remove_core = THIS
-		}
-		NGF = {
-			inherit = THIS
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
 		
 		
 		

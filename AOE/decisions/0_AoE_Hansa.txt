@@ -141,19 +141,57 @@ political_decisions = {
 						}
 					}
 				}
-				PRU_544 = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							vassal_of = THIS
+				544 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
 						}
 					}
 				}
-				HAN_528 = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							vassal_of = THIS
+				528 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
+						}
+					}
+				}
+				539 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
 						}
 					}
 				}
@@ -162,17 +200,20 @@ political_decisions = {
 		effect = {
 			change_tag = NGF
 			set_global_flag = hanseatic_league_united
-			
+			prestige = 40
 			any_country = {
 				limit = {
-					AND = {
-						vassal_of = LUB
-						primary_culture = north_german
+					primary_culture = north_german
+					has_country_flag = member_of_hansa
+					NOT = {
+						tag = NGF
 					}
 				}
-				country_event = 69433
+				country_event = {
+					id = 444666
+				}
 			}
-			
+			any_owned = {
 			all_core = {
 				remove_core = LUB
 			}
@@ -203,6 +244,7 @@ political_decisions = {
 			all_core = {
 				remove_core = OLD
 			}
+			}
 			
 			PRU_546 = {
 				add_core = THIS
@@ -210,7 +252,25 @@ political_decisions = {
 			HAN_540 = {
 				add_core = THIS
 			}
-			HAN_534 = {
+			534 = {
+				add_core = THIS
+			}
+			HOL_369 = {
+				add_core = THIS
+			}
+			HAN_528 = {
+				add_core = THIS
+			}
+			PRU_544 = {
+				add_core = THIS
+			}
+			535 = {
+				add_core = THIS
+			}
+			3254 = {
+				add_core = THIS
+			}
+			3301 = {
 				add_core = THIS
 			}
 			
@@ -239,19 +299,57 @@ political_decisions = {
 						}
 					}
 				}
-				PRU_544 = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							vassal_of = LUB
+				544 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
 						}
 					}
 				}
-				HAN_528 = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							vassal_of = THIS
+				528 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
+						}
+					}
+				}
+				539 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
 						}
 					}
 				}
@@ -260,18 +358,21 @@ political_decisions = {
 		effect = {
 			change_tag = NGF
 			set_global_flag = hanseatic_league_united
-			
+			prestige = 40
 			any_country = {
 				limit = {
-					AND = {
-						vassal_of = LUB
-						primary_culture = north_german
+					primary_culture = north_german
+					has_country_flag = member_of_hansa
+					NOT = {
+						tag = NGF
 					}
 				}
-				country_event = 69433
+				country_event = {
+					id = 444666
+				}
 			}
 			
-			
+			any_owned = {
 			all_core = {
 				remove_core = LUB
 			}
@@ -302,15 +403,34 @@ political_decisions = {
 			all_core = {
 				remove_core = OLD
 			}
+			}
 			
 			PRU_546 = {
-				add_core = NGF
+				add_core = THIS
 			}
 			HAN_540 = {
-				add_core = NGF
+				add_core = THIS
 			}
-			HAN_534 = {
-				add_core = NGF
+			534 = {
+				add_core = THIS
+			}
+			HOL_369 = {
+				add_core = THIS
+			}
+			HAN_528 = {
+				add_core = THIS
+			}
+			PRU_544 = {
+				add_core = THIS
+			}
+			535 = {
+				add_core = THIS
+			}
+			3254 = {
+				add_core = THIS
+			}
+			3301 = {
+				add_core = THIS
 			}
 			
 		}
@@ -361,7 +481,43 @@ political_decisions = {
 						}
 					}
 				}
-				HAN_528 = {
+				544 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
+						}
+					}
+				}
+				528 = {
+					NOT = {
+						OR = {
+							owned_by = SWE
+							owned_by = PRU
+							owned_by = AUS
+							owner = {
+								OR = {
+									vassal_of = SWE
+									vassal_of = PRU
+									vassal_of = AUS
+									vassal_of = NET
+									vassal_of = ENG
+								}
+							}
+						}
+					}
+				}
+				539 = {
 					NOT = {
 						OR = {
 							owned_by = SWE
@@ -384,19 +540,25 @@ political_decisions = {
 		effect = {
 			change_tag = NGF
 			set_global_flag = hanseatic_league_united
-			
+			prestige = 40
 			any_country = {
 				limit = {
-					AND = {
-						tag = LUB
-						vassal_of = LUB
-						primary_culture = north_german
+					primary_culture = north_german
+					has_country_flag = member_of_hansa
+					NOT = {
+						tag = NGF
 					}
 				}
-				country_event = 69433
+				country_event = {
+					id = 444666
+				}
 			}
-			
-			
+			LUB = {
+				country_event = {
+					id = 444666
+				}
+			}
+			any_owned = {
 			all_core = {
 				remove_core = LUB
 			}
@@ -427,19 +589,194 @@ political_decisions = {
 			all_core = {
 				remove_core = OLD
 			}
+			}
 			
 			PRU_546 = {
-				add_core = NGF
+				add_core = THIS
 			}
 			HAN_540 = {
-				add_core = NGF
+				add_core = THIS
 			}
-			HAN_534 = {
-				add_core = NGF
+			534 = {
+				add_core = THIS
+			}
+			HOL_369 = {
+				add_core = THIS
+			}
+			HAN_528 = {
+				add_core = THIS
+			}
+			PRU_544 = {
+				add_core = THIS
+			}
+			535 = {
+				add_core = THIS
+			}
+			3254 = {
+				add_core = THIS
+			}
+			3301 = {
+				add_core = THIS
 			}
 			
 		}
 		ai_will_do = { factor = 1 }
+	}
+	
+	hanseatic_frisia = {
+		picture = german_confederation
+		potential = {
+			tag = NGF
+			NOT = {
+				has_country_flag = hansa_frisia
+			}
+			has_global_flag = hanseatic_league_united
+			NOT = { vassal_of = AUS }
+		}
+		allow = {
+			543 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			HAN_540 = {
+				add_core = NGF
+				add_core = EFR
+			}
+			SCH_370 = {
+				add_core = NGF
+			}
+			badboy = 5
+			prestige = 15
+			set_country_flag = hansa_frisia
+			add_accepted_culture = frisian
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	hanseatic_prussia = {
+		picture = german_confederation
+		potential = {
+			tag = NGF
+			NOT = {
+				has_country_flag = hansa_prussia
+			}
+			has_global_flag = hanseatic_league_united
+			NOT = { vassal_of = AUS }
+		}
+		allow = {
+			AND = {
+				548 = {
+					owned_by = THIS
+				}
+				680 = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			PRU = {
+				all_core = {
+					add_core = NGF
+				}
+			}
+			PRU_690 = {
+				add_core = NGF
+			}
+			555 = {
+				add_core = NGF
+			}
+			556 = {
+				add_core = NGF
+			}
+			badboy = 20
+			prestige = 50
+			set_country_flag = hansa_prussia
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	hanseatic_livonia = {
+		picture = annex_united_baltic_duchy
+		potential = {
+			tag = NGF
+			NOT = {
+				has_country_flag = hansa_livonia
+			}
+			has_global_flag = hanseatic_league_united
+			NOT = { vassal_of = AUS }
+		}
+		allow = {
+			AND = {
+				695 = {
+					owned_by = THIS
+				}
+				690 = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			331 = {
+				add_core = NGF
+			}
+			RUS_349 = {
+				add_core = NGF
+			}
+			RUS_354 = {
+				add_core = NGF
+			}
+			badboy = 5
+			prestige = 15
+			set_country_flag = hansa_livonia
+			add_accepted_culture = volga_german
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	hanseatic_hollandia = {
+		picture = german_confederation
+		potential = {
+			tag = NGF
+			NOT = {
+				has_country_flag = hansa_hollandia
+			}
+			has_country_flag = hansa_frisia
+			has_global_flag = hanseatic_league_united
+			NOT = { vassal_of = AUS }
+		}
+		allow = {
+			NET = {
+				AND = {
+					exists = yes
+					vassal_of = NGF
+				}
+			}
+		}
+		effect = {
+			NET = {
+				all_core = {
+					add_core = NGF
+				}
+				any_owned = {
+					secede_province = NGF
+				}
+			}
+			badboy = 10
+			prestige = 35
+			set_country_flag = hansa_hollandia
+			add_accepted_culture = dutch
+			add_accepted_culture = boer
+		}
+		ai_will_do = {					
+			factor = 1
+		}
 	}
 	
 }
