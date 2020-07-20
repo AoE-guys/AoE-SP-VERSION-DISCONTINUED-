@@ -74,7 +74,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = lingua_geral
-			add_country_modifier = [
+			add_country_modifier = {
 				name = native_assimilation_act_policy_ula
 				duration = 7300
 			}
