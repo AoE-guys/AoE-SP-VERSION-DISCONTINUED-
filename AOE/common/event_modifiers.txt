@@ -312,7 +312,6 @@ preparations_for_war = {
 cultural_resurgence = {
 	assimilation_rate = 0.4
 	immigrant_attract = 0.5
-	pop_militancy_modifier = 0.01
 	icon = 7
 }
 
@@ -1356,7 +1355,7 @@ anaconda_plan = {
 
 the_homestead_act = {
 	global_immigrant_attract = 0.5	#50%
-	global_assimilation_rate = 0.5
+	global_assimilation_rate = 1.0
 	core_pop_militancy_modifier = -0.05
 	icon = 9
 }

@@ -641,7 +641,11 @@ political_decisions = {
 		effect = {
 			HAN_540 = {
 				add_core = NGF
+			}
+			HAN_540 = {
 				add_core = EFR
+			}
+			HAN_540 = {
 				remove_core = MUN
 			}
 			SCH_370 = {
@@ -649,7 +653,12 @@ political_decisions = {
 			}
 			HOL_369 = {
 				remove_core = DNN
+			}
+			HOL_369 = {
 				remove_core = DEN
+			}
+			PRU_581 = {
+				add_core = NGF
 			}
 			badboy = 5
 			prestige = 15
@@ -698,6 +707,9 @@ political_decisions = {
 			}
 			PRU_546 = {
 				remove_core = SWE
+			}
+			556 = {
+				remove_core = NGF
 			}
 			badboy = 20
 			prestige = 50
@@ -851,6 +863,15 @@ political_decisions = {
 					id = 444668
 				}
 			}
+			LUS = {
+				all_core = {
+					add_province_modifier = {
+						name = cultural_resurgence
+						duration = 7300
+					}
+				}
+			}
+		}
 			create_alliance = THU
 			badboy = 5
 			prestige = 25
