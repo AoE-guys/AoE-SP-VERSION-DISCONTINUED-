@@ -1407,7 +1407,27 @@ central_asian = {
 		color = {230 230 44}
 		first_names = { 
                Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan 
-               Gonchigjalzangiin Badamdorj Chingis Otgonbayar Batbayar }
+               Gonchigjalzangiin Badamdorj Temujin Otgonbayar Batbayar }
+
+		last_names = { 
+               Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an Zhao Wu Sun Ma Hu Peng Dong Ye LÅETian Jiang Wei Ting Shen Fang Jin Qiu
+		}
+	}
+	khalkha = {
+		color = {230 230 10}
+		first_names = { 
+               Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan 
+               Gonchigjalzangiin Badamdorj Otgonbayar Batbayar Temujin }
+
+		last_names = { 
+               Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an
+		}
+	}
+	oirat = {
+		color = {200 255 44}
+		first_names = { 
+               Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan 
+               Gonchigjalzangiin Badamdorj Temujin Otgonbayar Batbayar }
 
 		last_names = { 
                Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav
@@ -1419,7 +1439,7 @@ central_asian = {
 			Afaq Ahmed Arshad Bahayeddin Burhan Daud Hakim Husayin Kemal Maqsud Muhammad Musa Rashidin Satuq Timur Yaqub
 			}
 		last_names = {
-			Beg Khan
+			Beg Khan Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav Dzasa Wangyal Shatra Lungshar Rinpoche Chˆphel Shakabpa Tashi 
 			}
 	}
 	kazak = {
@@ -1432,7 +1452,7 @@ central_asian = {
 			Tenek Tolshan Vali
 			}
 		last_names = {
-			Beg  Khan "Konanbai uli" "Kutebar uli" "Muhammad uli" "Qasim uli" 
+			Beg Khan "Konanbai uli" "Kutebar uli" "Muhammad uli" "Qasim uli" 
 			}
 	}
 	siberian = {
@@ -1976,6 +1996,15 @@ far_east_asian = {
 		} 
 		
 		last_names = { Aritomo Goro Gentaro Gonnohyoe Heihachiro Hiroshi Hikonojo Hyoe Hayao Iwao Jiro Jinzaburo Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo Nariaki Nobuyoshi Rokuro Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi Ieyasu
+		}
+	}
+	ryukyuan = {
+		color = {255 255 255}
+		first_names = { Arisugawa Arichi Akiyama Araki Dewa Enomoto Hasegawa Honjo Ito Inoue Ichinohe Itagaki Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu Makino Muto Minami Masaki Matsudaira Nakamuta Nogi Nire Nozu Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa Uehara Uryu Ugaki Ueda Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya Uesugi Takeda Abe Usami Watanabe Honda Hosokawa Asai	Askikaga Chosokabe Date Fukushima Genji Hachisuka Hattori Heike Hojo Ishida Kaga Kuki Maeda Miyamoto Mori Murakami Oda Okamoto Ooka Saito Shibata Shimazu Suwa Takigawa Tanuma Ukita Konoe Takashi Kujo Ichijo Gojo Aburakoji Anenokoji Asukai Daigo Hirohata Imaidegawa Inokuma Jimyoin Kajuji Kaoin Karasuma Kawashi Konjo Kuga Masachika	Matsuki	Minase	Nakayama Nanba Nomiya Oimikado Rakujochigusa Reizei Saioji Sanjo Shigenoi Shijo Shimizudani Tokudaiji Washio Yamashina	 
+		} 
+		
+		last_names = { Aritomo Goro Gentaro Gonnohyoe Heihachiro Hiroshi Hikonojo Hyoe Hayao Iwao Jiro Jinzaburo Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo Nariaki Nobuyoshi Rokuro Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi Ieyasu Zhao Wu Sun Ma Hu Peng Dong Ye LÅETian Jiang Wei Ting Shen Fang Jin Qiu
 		}
 	}
 	korean = {
