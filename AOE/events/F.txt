@@ -33,6 +33,7 @@ country_event = {
 						is_capital = no
 						has_province_modifier = hungarians_rise
 					}
+				}
 				secede_province = AUS
 			}
 		}
@@ -68,9 +69,11 @@ country_event = {
 		AUS = {
 			any_owned = {
 					limit = {
-						NOT = { controlled_by = AUS }
-						is_capital = no
-						has_province_modifier = hungarians_rise
+						AND = {
+							NOT = { controlled_by = AUS }
+							is_capital = no
+							has_province_modifier = hungarians_rise
+						}
 					}
 				secede_province = HUN
 			}
