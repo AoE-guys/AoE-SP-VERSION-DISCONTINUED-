@@ -68,10 +68,11 @@ country_event = {
 		name = "EVTOPTA998"
 		AUS = {
 			any_owned = {
-				limit = {
-					NOT = { controlled_by = AUS }
-					is_capital = no
-					has_province_modifier = hungarians_rise
+					limit = {
+						NOT = { controlled_by = AUS }
+						is_capital = no
+						has_province_modifier = hungarians_rise
+					}
 				}
 				secede_province = HUN
 			}
