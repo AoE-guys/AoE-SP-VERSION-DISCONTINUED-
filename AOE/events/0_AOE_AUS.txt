@@ -112,7 +112,7 @@ country_event = { #10226 Clean for Hungary
 		tag = AUS
 		has_global_flag = hungarian_revolution_occurred
 		HUN = { exists = yes }
-		HUN = { any_core = { owned_by = HUN } }
+		HUN = { NOT = { have_core_in = AUS } }
 		SIE = { NOT = { vassal_of = AUS } }
 		has_recently_lost_war = yes
 	}
@@ -161,7 +161,7 @@ country_event = { #10226 Clean for Hungary
 
 country_event = { # 10227 Clean for Transylvania
 	id = 10227
-	title = "EVTNAME10227.1" #Clean for Transylvania if it's vassal of Austria, but Austria loose
+	title = "EVTNAME10227.1" #Clean for Transylvania if it's vassal of Austria, but Austria lost
 	desc = "EVTDESC10227.1"
 	picture = "unite"
 
@@ -185,6 +185,77 @@ country_event = { # 10227 Clean for Transylvania
 			release_vassal = SIE
 		}
 		HUN = {
+			create_vassal = SIE
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { # 1021412 Clean for EVERYTHING
+	id = 1021412
+	title = "EVTNAME1021412" #Clean for Transylvania if Hungary just popped out of nowere
+	desc = "EVTDESC1021412"
+	picture = "unite"
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {	
+		tag = SIE
+		has_global_flag = hungarian_revolution_fail
+		HUN = { exists = yes }
+		SIE = { vassal_of = HUN }
+		HUN = { has_recently_lost_war = yes }
+	}
+	
+	option = {
+		name = "EVT10227OPT.1"
+		HUN = {
+			release_vassal = SIE
+		}
+		AUS = {
+			create_vassal = SIE
+		}
+		HUN = {
+			annex_to = SIE
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { # 1021413 Clean for EVERYTHING
+	id = 1021413
+	title = "EVTNAME1021413" #Clean for Austria if Transylvania just popped out of nowere
+	desc = "EVTDESC1021413"
+	picture = "unite"
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {	
+		tag = AUS
+		has_global_flag = hungarian_revolution_fail
+		SIE = {
+			exists = yes
+			NOT = {	vassal_of = AUS }
+			has_recently_lost_war = yes
+		}
+		HUN = { exists = no  }
+	}
+	
+	option = {
+		name = "EVT10227OPT.1"
+		AUS = {
 			create_vassal = SIE
 		}
 		ai_chance = {

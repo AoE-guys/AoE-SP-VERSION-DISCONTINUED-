@@ -8,30 +8,53 @@ political_decisions = {
 			NOT = {
 				has_country_flag = ukranian_reunification
 			}
+			NOT = {
+				has_country_flag = end_of_paliy
+			}
 		}
 		
 		allow = {
-			war = no
-			PLC = {
-				war_with = SWE
-				NOT = {
-					rank = 8
+			NOT = {
+				war_exhaustion = 20
+			}
+			OR = {
+				PLC = {
+					OR = {
+						war_exhaustion = 60
+						AND = {
+							war = yes
+							NOT = {
+								rank = 8
+							}
+						}
+						average_militancy = 4
+					}
 				}
-			}
-			961 = {
-				average_militancy = 6
-			}
-			960 = {
-				average_militancy = 6
+				AND = {
+					NOT = {
+						969 = {
+							controlled_by = PLC
+						}
+						960 = {
+							controlled_by = PLC
+						}
+						954 = {
+							controlled_by = PLC
+						}
+					}
+				}
 			}
 		}
 			
 		effect = {
 			PLC = {
-				961 = {
+				969 = {
 					secede_province = HET
 				}
 				960 = {
+					secede_province = HET
+				}
+				954 = {
 					secede_province = HET
 				}
 			}
@@ -47,8 +70,10 @@ political_decisions = {
 		
 		potential = {
 			tag = HET
-			vassal_of = RUS
-			has_country_flag = ukranian_reunification
+			HET = {
+				vassal_of = RUS
+			}
+			has_country_flag = ukrainian_reunification
 			NOT = {
 				has_country_flag = masepa_revolt
 			}
@@ -60,8 +85,8 @@ political_decisions = {
 			}
 			OR = {
 				is_secondary_power = yes
-				RUS = {
-					war_with = SWE
+				any_greater_power = {
+					war_with = RUS
 				}
 			}
 		}
@@ -82,11 +107,19 @@ political_decisions = {
 				}
 				reduce_pop = 2
 			}
-			treasury = 100000
+			treasury = 300000
 			ammunition = 300
+			small_arms = 100
 		}
 		
-		ai_will_do = { factor = 1 }
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 00
+				relation = { who = RUS value = 200 }
+
+			}
+		}
 	}
 	
 	subsidize_cossak_rebellions = {
@@ -98,15 +131,22 @@ political_decisions = {
 			NOT = {
 				has_country_flag = ukranian_reunification
 			}
+			NOT = {
+				has_country_flag = end_of_paliy
+			}
 		}
 		
 		allow = {
 			PLC = {
-				war = yes
-				is_greater_power = no
-				social_movement_strength = 0.1
+				OR = {
+					war = yes
+					AND = {
+						is_greater_power = no
+						social_movement_strength = 0.1
+					}
+				}
 			}
-			anti__rationalism = 1
+			idealism = 1
 			money = 10000
 		}
 			
@@ -117,7 +157,7 @@ political_decisions = {
 					limit = {
 						has_pop_culture = ukrainian
 					}
-					militancy = 4
+					militancy = 1
 				}
 			}
 		}
@@ -192,6 +232,72 @@ political_decisions = {
 			country_event = 91241544
 		}
 		
+		ai_will_do = { factor = 1 }
+	}
+	
+	rise_of_cossak_nation = {
+		picture = cossak_state
+		
+		potential = {
+			tag = HET
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			ZZH = {
+				exists = yes
+				vassal_of = RUS
+			}
+			state_n_government = 1
+		}
+		
+		effect = {
+			badboy = 5
+			ZZH = {
+				inherit = HET
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	mazepa_culture = {
+		picture = cossak_state
+		
+		potential = {
+			tag = HET
+			NOT = {
+				RUS = {
+					has_country_flag = destroy_the_sich
+				}
+				has_country_flag = mazepa_culture
+			}
+		}
+		
+		allow = {
+			romanticism = 1
+			money = 50000
+		}
+		
+		effect = {
+			prestige = 10
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+				consciousness = -2
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					clergymen = yes
+				}
+				money = 10
+			}
+			set_country_flag = mazepa_culture
+			money = -50000
+		}
 		ai_will_do = { factor = 1 }
 	}
 }

@@ -48,7 +48,7 @@ country_event = {
 		has_global_flag = hungarian_revolution_occurred
 		HUN = { exists = yes }
 		AUS = {
-			any_owned_province = {
+			any_owned = {
 						NOT = { controlled_by = AUS }
 						is_capital = no
 						has_province_modifier = hungarians_rise

@@ -93,18 +93,20 @@ country_event = {
 	picture = cossacks
 	
 	trigger = {
-		tag = HET
-		is_secondary_power = yes
-		vassal_of = RUS
+		tag = RUS
+		HET = {
+			is_secondary_power = yes
+			vassal_of = RUS
+		}
 		year = 1730
 	}
 	
 	option = {
 		name = "To war!"
 		war = {
-			target = RUS
-			attacker_goal = { casus_belli = status_quo }
-			defender_goal = { casus_belli = annex_core_country }
+			target = HET
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
 		}
 		ai_chance = {
 			factor = 10
@@ -117,6 +119,175 @@ country_event = {
 		prestige = -20
 		ai_chance = {
 			factor = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = 178301
+	title = "End of Paliy rebellion"
+	desc = "EVTDESC178301"
+	picture = cossacks
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.1
+			RUS = {
+				has_country_flag = destroy_paliy
+			}
+		}
+	}
+	
+	trigger = {
+		tag = HET
+		year = 1704
+		NOT = {
+			has_country_flag = end_of_paliy
+		}
+	}
+	
+	option = {
+		name = "We will always keep in mind their heroism"
+		prestige = -1
+		set_country_flag = end_of_paliy
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 178303
+	title = "Question of intervence"
+	desc = "EVTDESC178302"
+	picture = cossacks
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	trigger = {
+		tag = RUS
+		HET = {
+			has_country_flag = ukrainian_reunification
+		}
+		NOT = {
+			has_country_flag = destroy_paliy
+		}
+	}
+	
+	option = {
+		name = "We will not allow any brutal takeover"
+		prestige = 5
+		set_country_flag = end_of_paliy
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 178304
+	title = "Pruth peace"
+	desc = "EVTDESC178304"
+	picture = cossacks
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		tag = RUS
+		has_recently_lost_war = yes
+		NOT = {
+			1047 = {
+				owned_by = THIS
+			}
+		}
+		HET = {
+			exists = yes
+			vassal_of = RUS
+			has_country_flag = ukrainian_reunification
+		}
+	}
+	option = {
+		name = "We need to accept reality"
+		prestige = -10
+		HET = {
+			country_event = {
+				id = 178305
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 178305
+	title = "Pruth peace"
+	desc = "EVTDESC178304"
+	picture = cossacks
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = "We need to accept reality"
+		HET = {
+			969 = {
+				secede_province = PLC
+			}
+			960 = {
+				secede_province = PLC
+			}
+			954 = {
+				secede_province = PLC
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 178306
+	title = "Polish reaction on unification"
+	desc = "EVTDESC178304"
+	picture = cossacks
+	
+	trigger = {
+		tag = PLC
+			969 = {
+				owned_by = HET
+			}
+			960 = {
+				owned_by = HET
+			}
+			954 = {
+				owned_by = HET
+			}
+		NOT = {
+			has_country_flag = polish_paliy
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "We need to accept reality"
+		any_pop = {
+			limit = {
+				has_pop_culture = ukrainian
+			}
+			militancy = -7
+		}
+		ai_chance = {
+			factor = 10
 		}
 	}
 }
