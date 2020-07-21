@@ -558,7 +558,7 @@ country_event = {
 		}
 		MUG = {
 			all_core = {
-				add_core THIS
+				add_core = THIS
 			}
 		}
 	}
@@ -624,7 +624,6 @@ country_event = {
 			defender_goal = { casus_belli = status_quo }
 			call_ally = no
 		}
-		casus_belli = acquire_substate_region
 		ai_chance = { factor = 1 }	
 	}
 

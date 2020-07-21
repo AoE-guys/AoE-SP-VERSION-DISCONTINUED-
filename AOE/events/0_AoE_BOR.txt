@@ -1046,7 +1046,9 @@ country_event = {
 	option = {
 		name = "We can get money through other means"
 		prestige = -10
-		militancy = 4
+		any_pop = {
+			militancy = 4
+		}
 	}
 }
 country_event = {

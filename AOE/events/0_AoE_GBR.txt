@@ -71,6 +71,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 			modifier = {
+				factor = 1
 				average_militancy = 6
 			}
 		}
@@ -1580,6 +1581,7 @@ country_event = {
 		owns = 300
 	}
 	option = {
+		name = "Amazing, lady and gentelmens"
 		300 = {
 			add_province_modifier = {
 				name = antiquaries_of_london

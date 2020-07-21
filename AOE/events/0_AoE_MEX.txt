@@ -35,17 +35,17 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			militancy = 4
-			war_exhoustion = 8
+			war_exhaustion = 8
 		}
 		modifier = {
 			factor = 0.4
 			militancy = 5
-			war_exhoustion = 10
+			war_exhaustion = 10
 		}
 		modifier = {
 			factor = 0.3
 			militancy = 6
-			war_exhoustion = 15
+			war_exhaustion = 15
 		}
 	}
 	
@@ -735,13 +735,13 @@ country_event = {
 		political_reform = appointed
 		any_pop = {
 			limit = {
-				ideology = liberal
+				pop_majority_ideology = liberal
 			}
 			militancy = 6
 		}
 		any_pop = {
 			limit = {
-				ideology = communist
+				pop_majority_ideology = communist
 			}
 			militancy = 8
 		}
@@ -754,13 +754,13 @@ country_event = {
 		name = "That would make us the same as Spanish!"
 		any_pop = {
 			limit = {
-				ideology = conservative
+				pop_majority_ideology = conservative
 			}
 			militancy = 6
 		}
 		any_pop = {
 			limit = {
-				ideology = reactionary
+				pop_majority_ideology = reactionary
 			}
 			militancy = 8
 		}

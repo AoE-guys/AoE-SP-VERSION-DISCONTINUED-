@@ -273,16 +273,16 @@ country_event = {
 				defender_goal = { casus_belli = conquest_low }
 			}
 		}
-		modifier = {
-			factor = 15
+		ai_chance = {
+			factor = 1
 		}
 	}
 	
 	option = {
 		name = "They are not worth our time."
 		prestige = -5
-		modifier = {
-			factor = 0
+		ai_chance = {
+			factor = 00
 		}
 	}
 }
@@ -294,6 +294,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = "Colony"
 		ABB = {
 			country_event = 2650
 		}

@@ -18,7 +18,7 @@ country_event = {
 				2213 = { has_province_modifier = pearl_of_the_antilles }
 			}
 		slavery = yes_slavery
-		2213 = { controled_by = THIS }
+		2213 = { controlled_by = THIS }
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -52,7 +52,7 @@ country_event = {
 			exists = HAI 
 		}
 		slavery = yes_slavery
-		2213 = { controled_by = THIS }
+		2213 = { controlled_by = THIS }
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -83,6 +83,7 @@ country_event = {
 		days = 1
 	}
 	option = { 
+		name = "Flows of money"
 		money = 250000
 		radio = 250
 		HAI_2213 = {
@@ -192,7 +193,7 @@ country_event = {
 			tag = FRA
 			tag = BOR
 		AND = {
-		2213 = { controled_by = HAI } 
+		2213 = { controlled_by = HAI } 
 			}
 		}	
 	}

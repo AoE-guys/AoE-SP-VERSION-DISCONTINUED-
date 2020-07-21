@@ -993,7 +993,7 @@ country_event = {
 					has_province_modifier = negotiated
 				}
 				secede_province = THIS 
-				add_province_modifier = trade_centre
+				add_province_modifier = trade_center
 				remove_province_modifier = negotiated
 				remove_province_modifier = potential_trade_post
 			}
@@ -1012,9 +1012,9 @@ country_event = {
 	option = {
 		government = absolute_monarchy
 		set_country_flag = absolute_monarchy_gov
-	}
-	ai_chance = {
-		factor = 1
+		ai_chance = {
+			factor = 1
+		}
 	}
 }	
 			
@@ -1027,9 +1027,10 @@ country_event = {
 		government = democracy
 		set_country_flag = democracy_gov
 		election = yes
-	}
-	ai_chance = {
-		factor = 1
+	
+		ai_chance = {
+			factor = 1
+		}
 	}
 }	
 			

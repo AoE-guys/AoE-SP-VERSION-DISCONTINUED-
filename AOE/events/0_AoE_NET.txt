@@ -15,6 +15,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Admiral"
 		add_country_modifier = {
 			name =  admiraliteiten
 			duration = -1
@@ -33,7 +34,7 @@ country_event = {
 		year = 1702
 		OR = {
 			militancy = 3
-			war_exhoustion = 7
+			war_exhaustion = 7
 		}
 	}
 	
@@ -49,22 +50,22 @@ country_event = {
 		}
 		random_owned = {
 			owner = {
-				political_reforms = landed_voting
+				political_reform = landed_voting
 			}
 		}
 		random_owned = {
 			owner = {
-				political_reforms = appointed
+				political_reform = appointed
 			}
 		}
 		random_owned = {
 			owner = {
-				political_reforms = state_press
+				political_reform = state_press
 			}
 		}
 		any_pop = {
 			limit = {
-				ideology = liberal
+				pop_majority_ideology = liberal
 			}
 			militancy = 4
 			consciousness = 2
@@ -89,11 +90,11 @@ country_event = {
 	trigger = {
 		tag = NET
 		year = 1747
-		government = mercantile_republic
+		government = merchant_republic 
 		has_country_modifier = stadtholderless_period
 		OR = {
 			militancy = 5
-			war_exhoustion = 15
+			war_exhaustion = 15
 		}
 	}
 	
@@ -110,22 +111,22 @@ country_event = {
 		}
 		random_owned = {
 			owner = {
-				political_reforms = party_appointed
+				political_reform = party_appointed
 			}
 		}
 		random_owned = {
 			owner = {
-				political_reforms = none_voting
+				political_reform = none_voting
 			}
 		}
 		random_owned = {
 			owner = {
-				political_reforms = state_press
+				political_reform = state_press
 			}
 		}
 		any_pop = {
 			limit = {
-				ideology = liberal
+				pop_majority_ideology = liberal
 			}
 			militancy = 7
 			consciousness = 5
@@ -144,7 +145,7 @@ country_event = {
 		name = "The Revoultion will fail!"
 		any_pop = {
 			limit = {
-				ideology = reactionary
+				pop_majority_ideology = reactionary
 			}
 			militancy = 7
 			consciousness = 5
@@ -291,7 +292,7 @@ country_event = {
 		tag = NET
 		has_country_modifier = stadtholderless_period
 		NOT = {	militancy = 2 }
-		NOT = { war_exhoustion = 1 }
+		NOT = { war_exhaustion = 1 }
 		year = 1740
 	}
 	
@@ -313,7 +314,7 @@ country_event = {
 				}
 			}
 			owner = {
-				political_reforms = wealth_voting
+				political_reform = wealth_voting
 			}
 		}
 		random_owned = {
@@ -326,31 +327,31 @@ country_event = {
 				}
 			}
 			owner = {
-				political_reforms = state_equal_weight
+				political_reform = state_equal_weight
 			}
 		}
 		random_owned = {
 			owner = {
-				political_reforms = state_press
+				political_reform = state_press
 			}
 		}
 		any_pop = {
 			limit = {
-				ideology = conservative
-			}
-			militancy = -3
-			consciousness = 1
-		}
-		any_pop = {
-			limit = {
-				ideology = liberal
+				pop_majority_ideology = conservative
 			}
 			militancy = -3
 			consciousness = 1
 		}
 		any_pop = {
 			limit = {
-				ideology = liberal
+				pop_majority_ideology = liberal
+			}
+			militancy = -3
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				pop_majority_ideology = liberal
 			}
 			militancy = 5
 			consciousness = 4
@@ -361,21 +362,21 @@ country_event = {
 		name = "We need a strong stadtholderless if we want to survive in this landscape"
 		any_pop = {
 			limit = {
-				ideology = conservative
+				pop_majority_ideology = conservative
 			}
 			militancy = 7
 			consciousness = 5
 		}
 		any_pop = {
 			limit = {
-				ideology = liberal
+				pop_majority_ideology = liberal
 			}
 			militancy = 7
 			consciousness = 5
 		}
 		any_pop = {
 			limit = {
-				ideology = liberal
+				pop_majority_ideology = liberal
 			}
 			militancy = -2
 			consciousness = 4
@@ -394,7 +395,7 @@ country_event = {
 			has_country_modifier = stadtholderless_period
 			OR = {
 				militancy = 4
-				war_exhoustion = 1
+				war_exhaustion = 1
 			}
 			NOT = {
 				has_country_flag = patriots_disbanded
@@ -426,17 +427,17 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			militancy = 4
-			war_exhoustion = 8
+			war_exhaustion = 8
 		}
 		modifier = {
 			factor = 0.4
 			militancy = 5
-			war_exhoustion = 10
+			war_exhaustion = 10
 		}
 		modifier = {
 			factor = 0.3
 			militancy = 6
-			war_exhoustion = 15
+			war_exhaustion = 15
 		}
 	}
 	
@@ -474,12 +475,13 @@ country_event = {
 		prestige = -25
 		any_pop = {
 			limit = {
-				ideology = communist
+				pop_majority_ideology = communist
 			}
 			militancy = 2
 			consciousness = 5
 		}
 		ai_chance = {
+			factor = 1
 			modifier = {
 				factor = 7
 				NET = {
@@ -535,17 +537,17 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			militancy = 4
-			war_exhoustion = 8
+			war_exhaustion = 8
 		}
 		modifier = {
 			factor = 0.4
 			militancy = 5
-			war_exhoustion = 10
+			war_exhaustion = 10
 		}
 		modifier = {
 			factor = 0.3
 			militancy = 6
-			war_exhoustion = 15
+			war_exhaustion = 15
 		}
 	}
 	
