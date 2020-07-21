@@ -54,8 +54,8 @@ country_event = {
         furniture = 15
         luxury_furniture = 3
         radio = 10
-		any_pop = { limit = { literacy = 0.3 } pop_type = farmers }
-		any_country = { any_pop = { limit = { literacy = 0.3 } pop_type = farmers } }
+		any_pop = { limit = { AND = { type = serfs literacy = 0.3 } } pop_type = farmers }
+		any_country = { any_pop = { limit = { AND = { type = serfs literacy = 0.3 } } pop_type = farmers } }
 		any_country = { 
 		               money = 12500	   
 		}
