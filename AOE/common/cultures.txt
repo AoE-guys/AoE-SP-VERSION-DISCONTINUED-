@@ -334,7 +334,15 @@ scandinavian = {
 		Rye Sissener Skjalgsson Tambarskjelve "von Holstein-Glücksburg" "von Klenow" Wedel-Jarlsberg Wiborg With Zeiner-Gundersen }
 	}
 	icelandic = { 
-		color = { 80 20 150}
+		color = { 80 20 150 }
+		first_names = { Agnar Ásgeir Björn Eidur Einar Emil Geir Gudmund Gunnar Hannes
+		Hermann Jón Kristján Magnús Ólafur Pétur Sigurdur Stefán Sveinn Tryggvi }
+		
+		last_names = { Arnórsson Ásgeirsson Benediktsson Bjarnasen Björnsson Eggers Eldjárn Hafstein Hansen
+		Hermannsson Johánesson Jónsson Magnússon Stefánsson Steinthosson Thórdarson Thórhallson Thorláksson Thurs }
+	}
+	faroese = { 
+		color = { 255 54 202 }
 		first_names = { Agnar Ásgeir Björn Eidur Einar Emil Geir Gudmund Gunnar Hannes
 		Hermann Jón Kristján Magnús Ólafur Pétur Sigurdur Stefán Sveinn Tryggvi }
 		
@@ -364,22 +372,28 @@ british = {
 		color = { 35 140 50}
 		radicalism = 15
 		primary = IRE
-		first_names = { Alexander Arthur Brian Cathal Christopher Con Daniel Denis Desmond Éamon
+		first_names = { Alexander Arthur Brian Cathal Christopher Con Cu Daniel Denis Desmond Éamon
 		Edward Ernes Fionán Frank George Harry Jack James John Joseph
 		Kevin Liam Michael Patrick Peter Richard Robert Séan Thomas William }
 		
-		last_names = { Aiken Ashe Breen Brugha Collins Connolly Cosgrave Craig "de Valera" Donnelly
+		last_names = { Aiken Ashe Breen Brugha Collins Culainn Connolly Cosgrave Craig "de Valera" Donnelly
 		FitzGerald Griffith Kelly Larkin Lynch Mallin McCartan McCullough McGarry McGuinness
 		Mulcahy O'Brien O'Connor O'Doherty O'Higgins O'Leary O'Mara Pearse Plunket White }
 	}
 	scottish = { 
 		color = { 0 70 180 }
-		radicalism = 5
+		radicalism = 3
 		first_names = { Alan Alastair Alban Alpin Andrew Angus Aulay Blane Boyd Calum Clyde Coll Derek Donald Donnan Dougal Douglas Duff Duncan Ewan Farquar Fingal Finlay Gavin Gillian Gillis Gordon Greer Hamish Ian Ivar Kenneth Kentigern Kirk Kyle Lachlan Lorne Malcolm Mirren Mungo Neil Nevin Ranald Rory Ross Sholto Somerled Tavish Torquil Wallace}
 		
 		last_names = { Smith Brown Wilson Robertson Thomson Campbell Stewart Anderson Scott Murray MacDonald Reid Taylor Clark Ross Young Mitchell Watson Paterson Morrison Sanders	}
 	}
-	
+	highlander = {
+		color = { 0 20 200 }
+		radicalism = 5
+		first_names = { Adair Ahearn Alby Annan Aodh Arlan Ayden Baird Bendigeidfran Befan Bricriu Bryce Burgess Cadell Cadman Cassivellaunus Chad Conall Conan Conn Cuinn Cullen Dearg Dorran Doughlas Drem Driscol Duane Dughall Elgin Emrys Eoin Fergus Fiacre Finnobarr Gall Gorsedd Herne Hueil Keaghan Kearney Keir Leigh Luxovious Mac Neale Phelan Pryderi Quinn Taliesin Torsten Ulfred Winsor Wynter }
+		
+		last_names = { Aileanach Ailpeanach Allanach Anam Anndrasdan Arasgain Barrach Beitean Bhodhsa Blacach Bochanan Breac Breathnach Brothaigh Buideach Cailbhin Caileanach Caimbeulach Camshronach Cananach Caoidheach Catach Ceallach Ceannaideach Ceiteach Cuimeineach Druimeineach Dubhach Dunaidh Donnchadh Eabarcrombaigh Fionnlasdan Flimean Foirbeiseach Frisealach Gallach Geadais Geadasach Gearailteach Gilios Giobsan Glas Gobha Granndach Greumach Guaire Gutraidh Latharnach Leamhanach Lobhdain Loganach Munna Niocalsan Rathais Roid Ros Ruadh Seadh Seagha Singleir Sutharlan Todt Talmhach Tulach Ualas Umphraidh Urchadainn }
+	}
 	welsh = { 
 		color = { 0 170 60 }
 		first_names = { Alwyn Alastair Alban Alpin Caradog Angus Aulay Blane Boyd Calum Cynog Coll Derek Donald Derwyn Dougal Douglas Duff Duncan Ewan Farquar Fingal Finlay Gavin Gillian Gillis Gordon Greer Hamish Ian Ivar Kenneth Kentigern Kirk Kyle Lachlan Lorne Malcolm Mirren Mungo Neil Nevin Ranald Rory Ross Sholto Somerled Tavish Torquil Wallace}

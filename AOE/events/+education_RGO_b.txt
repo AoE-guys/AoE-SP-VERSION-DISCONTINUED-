@@ -40,7 +40,8 @@ country_event = {
 		any_pop = { limit = { culture = swedish } literacy = 0.44 }
 		any_pop = { limit = { culture = danish } literacy = 0.47 }
 		any_pop = { limit = { culture = norwegian } literacy = 0.36 }
-		any_pop = { limit = { culture = icelandic } literacy = 0.34 }
+		any_pop = { limit = { culture = icelandic } literacy = 0.32 }
+		any_pop = { limit = { culture = faroese } literacy = 0.35 }
 		any_pop = { limit = { culture = finnish } literacy = 0.34 }
 		any_pop = { limit = { culture = sami } literacy = 0.34 }
 		
@@ -48,6 +49,8 @@ country_event = {
 		any_pop = { limit = { culture = irish } literacy = 0.50 }
 		any_pop = { limit = { culture = scottish } literacy = 0.70 }
 		any_pop = { limit = { culture = welsh } literacy = 0.50 }
+		any_pop = { limit = { culture = highlander } literacy = 0.50 }
+		
 		
 		any_pop = { limit = { culture = north_italian } literacy = 0.85 }
 		any_pop = { limit = { culture = south_italian } literacy = 0.60 }
