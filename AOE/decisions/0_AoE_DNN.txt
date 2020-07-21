@@ -113,13 +113,13 @@ political_decisions = {
 					owner = { 
 						OR = {
 							conscription = mandatory_service
-							conscription = fourteen_hours
-							conscription = twelve_hours
+							conscription = four_year_draft 
+							conscription = two_year_draft 
 						}
 					}
 				}
 				owner = {
-					political_reforms = one_year_draft
+					political_reform = one_year_draft
 				}
 			}
 			random_owned = {
@@ -132,7 +132,7 @@ political_decisions = {
 					}
 				}
 				owner = {
-					political_reforms = debtors_prisons
+					political_reform = debtors_prisons
 				}
 			}
 			add_country_modifier = {
