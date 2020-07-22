@@ -354,7 +354,8 @@ political_decisions = {
 			has_country_flag = dynastic_crisis
 		}
 		allow = {
-			year = 1713
+			state_n_government = 1
+			prestige = 200
 			is_greater_power = yes
 		}
 		effect = {

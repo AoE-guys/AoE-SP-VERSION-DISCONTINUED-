@@ -111,11 +111,42 @@ political_decisions = {
 			339 = {
 				add_core = THIS
 			}
-			DNN = {
-				country_event = 170007
+			relation = {
+				who = PLC
+				value = 400
 			}
 			PLC = {
-				country_event = 170008
+				add_casus_belli = {
+					target = SWE
+					type = acquire_state
+					months = 12
+				}
+			}
+			relation = {
+				who = DNN
+				value = 400
+			}
+			war = {
+				target = SWE
+				attacker_goal = { casus_belli = acquire_all_cores country = RUS }
+				defender_goal = { casus_belli = humiliate }
+				call_ally = yes
+			}
+			DNN = {
+				war = {
+					target = SWE
+					attacker_goal = { casus_belli = acquire_all_cores country = DNN }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = yes
+				}
+			}
+			PLC = {
+				war = {
+					target = SWE
+					attacker_goal = { casus_belli = humiliate }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = yes
+				}
 			}
 			badboy = 15
 		}

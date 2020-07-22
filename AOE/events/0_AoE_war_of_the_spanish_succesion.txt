@@ -51,11 +51,7 @@ country_event = {
 			who = AUS
 			value = -200
 		}
-		define_general = {
-			name = "Philip V Bourbon"
-			personality = stalwart
-			background = brownnoser
-		}
+	
 		ai_chance = {
 			factor = 0.85
 		}
@@ -77,11 +73,7 @@ country_event = {
 			who = AUS
 			value = 300
 		}
-		define_general = {
-			name = "Leopold I Habsburg"
-			personality = confident
-			background = cursed_luck
-		}
+	
 	    ai_chance = {
 			factor = 0.15
 		}

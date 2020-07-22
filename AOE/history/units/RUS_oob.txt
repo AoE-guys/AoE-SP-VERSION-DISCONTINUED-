@@ -540,19 +540,19 @@ army = {
 }
 
 leader = {
-	name = "Peter I Romanov"
-	picture = peter_the_great
-	date = 1685.1.1
+	name = "Prince Vasilchikov"
+	picture = rus_gen_vasilchikov
+	date = 1801.1.1
 	type = land
-	personality = implacable
-	background = school_of_defense
+	personality = competent
+	background = powerful_friends
 	prestige = 0.4
 }
 
 leader = {
-	name = "Alexander Menshikov"
+	name = "Prince Mikhail Vorontsov"
 	picture = rus_gen_vorontsov
-	date = 1684.1.1
+	date = 1814.1.1
 	type = land
 	personality = daring
 	background = gifted_administrator
@@ -560,9 +560,9 @@ leader = {
 }
 
 leader = {
-	name = "Boris Shermetev"
+	name = "Pyotr Chicherin"
 	picture = rus_gen_chicherin
-	date = 1675.1.1
+	date = 1835.1.1
 	type = land
 	personality = earnest
 	background = cavalry_school
@@ -570,9 +570,9 @@ leader = {
 }
 
 leader = {
-	name = "Fyodor Apraksin"
+	name = "Alexander Chernyshev"
 	picture = rus_gen_chernyshev
-	date = 1671.1.1
+	date = 1821.1.1
 	type = land
 	personality = intelligent
 	background = diplomat
@@ -580,9 +580,9 @@ leader = {
 }
 
 leader = {
-	name = "Anikita Repnin"
+	name = "Prince Menshikov"
 	picture = rus_adm_menshikov
-	date = 1673.1.1
+	date = 1833.1.1
 	type = sea
 	personality = lackluster
 	background = clueless
@@ -590,9 +590,9 @@ leader = {
 }
 
 leader = {
-	name = "Carl Ewald von Ronne"
+	name = "Ivan Paskevich"
 	picture = rus_gen_paskevich
-	date = 1692.1.1
+	date = 1812.1.1
 	type = land
 	personality = merciless
 	background = school_of_offense
@@ -600,9 +600,9 @@ leader = {
 }
 
 leader = {
-	name = "Jacob Bruce"
+	name = "Matvey Khrapovitsky"
 	picture = rus_gen_khrapovitsky
-	date = 1675.1.1
+	date = 1835.1.1
 	type = land
 	personality = able
 	background = war_college
@@ -610,7 +610,7 @@ leader = {
 }
 
 leader = {
-	name = "Robert Bruce"
+	name = "Mikhail Lazarev"
 	picture = rus_adm_lazarev
 	date = 1827.1.1
 	type = sea
@@ -620,7 +620,7 @@ leader = {
 }
 
 leader = {
-	name = "Matvei Zmayevich"
+	name = "Nikolai Muraviev-Karsky"
 	picture = rus_gen_muravievkarsky
 	date = 1827.1.1
 	type = land
@@ -641,7 +641,7 @@ leader = {
 
 leader = {
 	name = "Pavel Grabbe"
-	date = 1676.1.1
+	date = 1836.1.1
 	type = land
 	personality = keen
 	background = school_of_firepower
