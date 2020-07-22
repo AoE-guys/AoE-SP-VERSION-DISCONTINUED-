@@ -516,4 +516,124 @@ political_decisions = {
 		}
 	}
 	
+	kyzyl_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				AND = {
+				owns = 1196
+				owns = 1206
+				}
+				AND = {
+				owns = 1206
+				owns = 686
+				}
+				AND = {
+				owns = 1196
+				owns = 686
+				}
+			}
+			NOT = {
+				owns = 1205
+			}
+		}
+		allow = {
+			AND = {
+				owns = 1196
+				owns = 1206
+				owns = 686
+			}
+		}
+		effect = {
+			THIS = {
+				1205 = {
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	baikit_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				AND = {
+				owns = 1196
+				owns = 2702
+				}
+				AND = {
+				owns = 1192
+				owns = 2702
+				}
+				AND = {
+				owns = 1192
+				owns = 1196
+				}
+			}
+			NOT = {
+				owns = 2656
+			}
+		}
+		allow = {
+			AND = {
+				owns = 1192
+				owns = 1196
+				owns = 2702
+			}
+		}
+		effect = {
+			THIS = {
+				2656 = {
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	novopetrovskoye_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				AND = {
+				owns = 2656
+				owns = 1205
+				}
+				AND = {
+				owns = 1183
+				owns = 1205
+				}
+				AND = {
+				owns = 1183
+				owns = 2656
+				}
+			}
+			NOT = {
+				owns = 1194
+			}
+		}
+		allow = {
+			AND = {
+				owns = 1183
+				owns = 2656
+				owns = 1205
+			}
+		}
+		effect = {
+			THIS = {
+				1194 = {
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
 }
