@@ -171,6 +171,9 @@ country_event = {
 		tag = RUS
 		HET = {
 			has_country_flag = ukrainian_reunification
+			NOT = {
+				has_country_flag = end_of_paliy
+			}
 		}
 		NOT = {
 			has_country_flag = destroy_paliy
@@ -180,7 +183,7 @@ country_event = {
 	option = {
 		name = "We will not allow any brutal takeover"
 		prestige = 5
-		set_country_flag = end_of_paliy
+		set_country_flag = destroy_paliy
 		ai_chance = {
 			factor = 10
 		}

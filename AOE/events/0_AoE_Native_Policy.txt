@@ -1,0 +1,1140 @@
+country_event = {
+	id = 694269
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694270
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694271
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694272
+		}
+	}
+}
+
+country_event = {
+	id = 694270
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		PBZ = {
+			add_accepted_culture = tupinamba
+			add_accepted_culture = amazonian
+			add_accepted_culture = guarani
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Tupi"
+		PBZ = {
+			add_accepted_culture = tupinamba
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Amazonians"
+		PBZ = {
+			add_accepted_culture = amazonian
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Guarani"
+		PBZ = {
+			add_accepted_culture = guarani
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694271
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		PBZ = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		PBZ = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694272
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Tupi"
+		PBZ = {
+			primary_culture = tupinamba
+			add_accepted_culture = brazilian
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the Amazonian"
+		PBZ = {
+			primary_culture = amazonian
+			add_accepted_culture = brazilian
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the Guarani"
+		PBZ = {
+			primary_culture = guarani
+			add_accepted_culture = brazilian
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694273
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694274
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694275
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694276
+		}
+	}
+}
+
+country_event = {
+	id = 694274
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		FCA = {
+			add_accepted_culture = cree
+			add_accepted_culture = native_american_minor
+			add_accepted_culture = dakota
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Cree"
+		FCA = {
+			add_accepted_culture = cree
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Sioux"
+		FCA = {
+			add_accepted_culture = dakota
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the minor tribes"
+		FCA = {
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694275
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		FCA = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		FCA = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694276
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Cree"
+		FCA = {
+			primary_culture = cree
+			add_accepted_culture = french_canadian
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the Sioux"
+		FCA = {
+			primary_culture = dakota
+			add_accepted_culture = french_canadian
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the minor tribes"
+		FCA = {
+			primary_culture = native_american_minor
+			add_accepted_culture = french_canadian
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694277
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694278
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694279
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694280
+		}
+	}
+}
+
+country_event = {
+	id = 694278
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		VNS = {
+			add_accepted_culture = mayan
+			add_accepted_culture = nahua
+			add_accepted_culture = navajo
+			add_accepted_culture = pueblo
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Maya"
+		VNS = {
+			add_accepted_culture = mayan
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Aztec"
+		VNS = {
+			add_accepted_culture = nahua
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Navajo"
+		VNS = {
+			add_accepted_culture = navajo
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Pueblo"
+		VNS = {
+			add_accepted_culture = pueblo
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the minor tribes"
+		VNS = {
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694279
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		VNS = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		VNS = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694280
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Maya"
+		VNS = {
+			primary_culture = mayan
+			add_accepted_culture = mexican
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the Aztec"
+		VNS = {
+			primary_culture = nahua
+			add_accepted_culture = mexican
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the navajo"
+		VNS = {
+			primary_culture = navajo
+			add_accepted_culture = mexican
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the Pueblo"
+		VNS = {
+			primary_culture = pueblo
+			add_accepted_culture = mexican
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the minor tribes"
+		VNS = {
+			primary_culture = native_american_minor
+			add_accepted_culture = mexican
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694281
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694282
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694283
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694284
+		}
+	}
+}
+
+country_event = {
+	id = 694282
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		THC = {
+			add_accepted_culture = cherokee
+			add_accepted_culture = cree
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Cherokee"
+		THC = {
+			add_accepted_culture = cherokee
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the Cree"
+		THC = {
+			add_accepted_culture = cree
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Accept only the minor tribes"
+		THC = {
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694283
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		THC = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		THC = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694284
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Cree"
+		THC = {
+			primary_culture = cree
+			add_accepted_culture = yankee
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the Cherokee"
+		THC = {
+			primary_culture = cherokee
+			add_accepted_culture = yankee
+		}
+		set_country_flag = native_policy_set
+	}
+	option = {
+		name = "Embrace the minor tribes"
+		THC = {
+			primary_culture = native_american_minor
+			add_accepted_culture = yankee
+		}
+		set_country_flag = native_policy_set
+	}
+}
+
+country_event = {
+	id = 694285
+	title = "Native Policy"
+	desc = "How should we treat the Canadian natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694286
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694287
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694288
+		}
+	}
+}
+
+country_event = {
+	id = 694286
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		RPL = {
+			add_accepted_culture = inuit
+			add_accepted_culture = cree
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Eskymo"
+		RPL = {
+			add_accepted_culture = inuit
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Cree"
+		RPL = {
+			add_accepted_culture = cree
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+	option = {
+		name = "Accept only the minor tribes"
+		RPL = {
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694287
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		RPL = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		RPL = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694288
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Cree"
+		RPL = {
+			primary_culture = cree
+			add_accepted_culture = anglo_canadian
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+	option = {
+		name = "Embrace the Eskymo"
+		RPL = {
+			primary_culture = inuit
+			add_accepted_culture = anglo_canadian
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+	option = {
+		name = "Embrace the minor tribes"
+		RPL = {
+			primary_culture = native_american_minor
+			add_accepted_culture = anglo_canadian
+		}
+		set_country_flag = canadian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694289
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694290
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694291
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694292
+		}
+	}
+}
+
+country_event = {
+	id = 694290
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		VNG = {
+			add_accepted_culture = quechua
+			add_accepted_culture = amazonian
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Quechua"
+		VNG = {
+			add_accepted_culture = quechua
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Amazonians"
+		VNG = {
+			add_accepted_culture = amazonian
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+	option = {
+		name = "Accept only the minor tribes"
+		VNG = {
+			add_accepted_culture = native_american_minor
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694291
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		VNG = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		VNG = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694292
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Quechua"
+		VNG = {
+			primary_culture = quechua
+			add_accepted_culture = north_andean
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+	option = {
+		name = "Embrace the Amazonian"
+		VNG = {
+			primary_culture = amazonian
+			add_accepted_culture = north_andean
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+	option = {
+		name = "Embrace the minor tribes"
+		VNG = {
+			primary_culture = native_american_minor
+			add_accepted_culture = north_andean
+		}
+		set_country_flag = colombian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694293
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694294
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694295
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694296
+		}
+	}
+}
+
+country_event = {
+	id = 694294
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		VOP = {
+			add_accepted_culture = quechua
+			add_accepted_culture = amazonian
+			add_accepted_culture = aimara
+			add_accepted_culture = patagonian
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Quechua"
+		VOP = {
+			add_accepted_culture = quechua
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Amazonians"
+		VOP = {
+			add_accepted_culture = amazonian
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Aimara"
+		VOP = {
+			add_accepted_culture = aimara
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Accept only the Patagonians"
+		VOP = {
+			add_accepted_culture = patagonian
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694295
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		VOP = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		VOP = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694296
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Quechua"
+		VOP = {
+			primary_culture = quechua
+			add_accepted_culture = south_andean
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Embrace the Amazonian"
+		VOP = {
+			primary_culture = amazonian
+			add_accepted_culture = south_andean
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Embrace the Aimara"
+		VOP = {
+			primary_culture = aimara
+			add_accepted_culture = south_andean
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+	option = {
+		name = "Embrace the Mapuche"
+		VOP = {
+			primary_culture = patagonian
+			add_accepted_culture = south_andean
+		}
+		set_country_flag = peruvian_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694297
+	title = "Native Policy"
+	desc = "How should we treat the natives?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them"
+		country_event = {
+			id = 694298
+		}
+	}
+	option = {
+		name = "Get rid of them or so"
+		country_event = {
+			id = 694299
+		}
+	}
+	option = {
+		name = "Embrace them entirely"
+		country_event = {
+			id = 694300
+		}
+	}
+}
+
+country_event = {
+	id = 694298
+	title = "Acceptance"
+	desc = "Which ones should we accept?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept them all"
+		VLP = {
+			add_accepted_culture = aimara
+			add_accepted_culture = quechua
+			add_accepted_culture = guarani
+			add_accepted_culture = patagonian
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Accept only the Aimara"
+		VLP = {
+			add_accepted_culture = aimara
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Accept only the Quechua"
+		VLP = {
+			add_accepted_culture = quechua
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Accept only the Guarani"
+		VLP = {
+			add_accepted_culture = guarani
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Accept only the Patagonian"
+		VLP = {
+			add_accepted_culture = patagonian
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694299
+	title = "Replacement"
+	desc = "What should we do with them?"
+	is_triggered_only = yes
+	option = {
+		name = "Ignore them"
+		VLP = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Get rid of them"
+		VLP = {
+			add_country_modifier = {
+				name = native_pursuit
+				duration = -1
+			}
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694300
+	title = "Embracement"
+	desc = "Which culture should we embrace?"
+	is_triggered_only = yes
+	option = {
+		name = "Embrace the Aimara"
+		VLP = {
+			primary_culture = aimara
+			add_accepted_culture = platinean
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Embrace the Quechua"
+		VLP = {
+			primary_culture = quechua
+			add_accepted_culture = platinean
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Embrace the Guarani"
+		VLP = {
+			primary_culture = guarani
+			add_accepted_culture = platinean
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+	option = {
+		name = "Embrace the Mapuche"
+		VLP = {
+			primary_culture = patagonian
+			add_accepted_culture = platinean
+		}
+		set_country_flag = platinean_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694301
+	title = "Native Policy"
+	desc = "What language should we mainly preach in within Paraguay?"
+	is_triggered_only = yes
+	option = {
+		name = "Spanish"
+		country_event = {
+			id = 694302
+		}
+	}
+	option = {
+		name = "Guarani"
+		country_event = {
+			id = 694303
+		}
+	}
+	option = {
+		name = "Italian and Latin, obviously!"
+		country_event = {
+			id = 694304
+		}
+	}
+}
+
+country_event = {
+	id = 694302
+	title = "Jesuit missions"
+	desc = "What do we do with the native's language?"
+	is_triggered_only = yes
+	option = {
+		name = "Accept the Guarani"
+		JER = {
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = jesuite_native_policy_set
+	}
+	option = {
+		name = "Ignore their language"
+		JER = {
+			remove_accepted_culture = guarani
+			add_country_modifier = {
+				name = native_ignoring
+				duration = -1
+			}
+		}
+		set_country_flag = jesuite_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694303
+	title = "Jesuit missions"
+	desc = "What do we do with the Spanish language?"
+	is_triggered_only = yes
+	option = {
+		name = "Reject Spanish language"
+		JER = {
+			primary_culture = guarani
+			remove_accepted_culture = platinean
+		}
+		set_country_flag = jesuite_native_policy_set
+	}
+	option = {
+		name = "Allow Spanish preaching"
+		PAP = {
+			relation = {
+				who = SPA
+				value = 50
+			}
+		}
+		set_country_flag = jesuite_native_policy_set
+	}
+}
+
+country_event = {
+	id = 694304
+	title = "Jesuit missions"
+	desc = "What do we do with the Spanish language?"
+	is_triggered_only = yes
+	option = {
+		name = "Reject Spanish language"
+		JER = {
+			primary_culture = south_italian
+			remove_accepted_culture = platinean
+		}
+		SPA = {
+			diplomatic_influence = {
+				who = JER
+				value = -200
+			}
+			relation = {
+				who = PAP
+				value = -100
+			}
+		}
+		set_country_flag = jesuite_native_policy_set
+	}
+	option = {
+		name = "Allow Spanish preaching"
+		PAP = {
+			relation = {
+				who = SPA
+				value = 50
+			}
+		}
+		JER = {
+			primary_culture = south_italian
+			add_accepted_culture = platinean
+		}
+		set_country_flag = jesuite_native_policy_set
+	}
+}

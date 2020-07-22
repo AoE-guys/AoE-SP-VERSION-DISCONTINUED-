@@ -3,7 +3,11 @@ political_decisions = {
 	bessarabia_rename_rom = {
 		picture = gtfo
 		potential = {
-			primary_culture = romanian
+			OR = {
+				primary_culture = transylvanian
+				primary_culture = vlach
+				primary_culture = moldavian
+			}
 			owns = 676
 			owns = 677
 			owns = 673
@@ -64,7 +68,11 @@ political_decisions = {
 	bukovina_rename_rom = {
 		picture = gtfo
 		potential = {
-			primary_culture = romanian
+			OR = {
+				primary_culture = transylvanian
+				primary_culture = vlach
+				primary_culture = moldavian
+			}
 			owns = 662
 			owns = 663
 			NOT = { has_global_flag = bukovina_rename_rom }
