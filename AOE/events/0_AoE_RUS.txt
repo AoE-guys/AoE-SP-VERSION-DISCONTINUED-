@@ -639,3 +639,201 @@ country_event = {
 		prestige = 5
 	}
 }
+country_event = {
+	id = 157305
+	title = "The Caspian expedition"
+	desc = "EVTDESC157305"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		year = 1716
+		NOT = {
+			has_country_flag = caspian_expedition
+		}
+		BUK = {
+			exists = yes
+		}
+		KHI = {
+			exists = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "We must hope for hospitality"
+		prestige = 5
+		set_country_flag = caspian_expedition
+		BUK = {
+			set_country_flag = caspian_expedition
+		}
+		KHI = {
+			set_country_flag = caspian_expedition
+		} 
+	}
+}
+country_event = {
+	id = 157306
+	title = "The Caspian expedition"
+	desc = "EVTDESC157306"
+	picture = glos
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	immediate = { 
+		clr_country_flag = caspian_expedition
+		set_country_flag = well_expedition
+	}
+	
+	trigger = {
+		tag = KHI
+		has_country_flag = caspian_expedition
+		NOT = {
+			has_country_flag = well_expedition
+		}
+	}
+	
+	option = {
+		name = "Beat them up!"
+		RUS = {
+			country_event = 157308
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				KHI = {
+					NOT = {
+						relation = {
+							who = RUS
+							value = 100 
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Accept Russian friendship"
+		RUS = {
+			country_event = 157309
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				KHI = {
+					has_recently_lost_war = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				KHI = {
+					relation = {
+						who = RUS
+						value = 100 
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				KHI = {
+					in_sphere = RUS
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = 157308
+	title = "The Caspian Expedition fail"
+	desc = "EVTDESC157308"
+	picture = glos
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That was a bad idea"
+		set_country_flag = caspian_expedition_fail
+		prestige = -5
+		relation = {
+			who = KHI
+			value = -100
+		}
+		relation = {
+			who = BUK
+			value = -100
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = 157309
+	title = "The Caspian Expedition succes"
+	desc = "EVTDESC157308"
+	picture = glos
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That was a good idea"
+		set_country_flag = caspian_expedition_success
+		create_vassal = KHI
+			diplomatic_influence = {
+				who = KHI
+				value = 200
+			}
+			create_alliance = BUK
+			diplomatic_influence = {
+				who = BUK
+				value = 200
+			}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 157310
+	title = "The Persian war"
+	desc = "EVTDESC157310"
+	picture = glos
+	major = yes
+	
+	trigger = {
+		year = 1722
+		tag = RUS
+		has_country_flag = manifesto_on_caucasus
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "We must to enforce peace in Caucasus!"
+		war = {
+			target = PER
+			attacker_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = make_puppet tag = KKH }
+			call_ally = yes
+		}
+		war = {
+			target = DAG
+			attacker_goal = { casus_belli = acquire_all_cores }
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
