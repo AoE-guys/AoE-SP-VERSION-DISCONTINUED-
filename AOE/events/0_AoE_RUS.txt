@@ -632,10 +632,69 @@ country_event = {
 	title = "$FROMCOUNTRY$ agrees!"
 	desc = "$FROMCOUNTRY$ Agreed to our proposal"
 	picture = glos
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = "Great!"
 		prestige = 5
+	}
+}
+country_event = {
+	id = 170007
+	title = "The Anti-Swedish Coalition"
+	desc = "EVTDESC170007"
+	picture = desant
+	is_triggered_only = yes
+	
+	option = {
+		name = "To War!"
+		prestige = 5
+		war = {
+			target = SWE
+			attacker_goal = { casus_belli = humiliate }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+		add_casus_belli = {
+			target = SWE
+			type = acquire_state
+			months = 12
+		}
+	}
+	
+	option = {
+		name = "Back-stab the coalition"
+		prestige = -25
+		relation = {
+			who = RUS
+			value = -100
+		}
+	}
+}
+country_event = {
+	id = 170008
+	title = "The Anti-Swedish Coalition"
+	desc = "EVTDESC170007"
+	picture = desant
+	is_triggered_only = yes
+	
+	option = {
+		name = "To War!"
+		prestige = 5
+		war = {
+			target = SWE
+			attacker_goal = { casus_belli = acquire_all_cores country = DNN }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+	}
+	
+	option = {
+		name = "Back-stab the coalition"
+		prestige = -25
+		relation = {
+			who = RUS
+			value = -100
+		}
 	}
 }

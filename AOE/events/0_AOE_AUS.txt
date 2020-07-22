@@ -1440,7 +1440,7 @@ country_event = {
 	id = 174504
 	title = "The Ostend Company"
 	desc = "EVTDESC174504"
-	picture = PDA_Blockade
+	picture = harbour
 	fire_only_once = yes
 	
 	trigger = {
@@ -1468,7 +1468,8 @@ country_event = {
 	id = 174502
 	title = "Dynastic Crisis"
 	desc = "EVTDESC174502"
-	major = yes
+	picture = throne
+	#major = yes
 	fire_only_once = yes
 	
 	trigger = {
@@ -1514,7 +1515,7 @@ country_event = {
 	id = 174505
 	title = "$FROMCOUNTRY$ accepts!"
 	desc = ""
-	major = yes
+	picture = treaty_signing
 	is_triggered_only = yes
 	
 	option = {
@@ -1525,8 +1526,9 @@ country_event = {
 country_event = {
 	id = 174506
 	title = "$FROMCOUNTRY$ refuses!"
+	picture = treaty_signing
 	desc = ""
-	major = yes
+	
 	is_triggered_only = yes
 	
 	option = {
@@ -1538,7 +1540,7 @@ country_event = {
 	id = 174507
 	title = "The Pragmatic Sanction of $YEAR$"
 	desc = "EVTDESC174507"
-	major = yes
+	picture = treaty_signing
 	is_triggered_only = yes
 	
 	option = {
@@ -1600,7 +1602,7 @@ country_event = {
 	id = 174508
 	title = "Recognition of Austrian Pragmatic Sanction"
 	desc = "EVTDESC174508"
-	picture = english_parliment
+	picture = treaty_signing
 	fire_only_once = yes
 	
 	trigger = {
@@ -1629,6 +1631,7 @@ country_event = {
 	id = 1745081
 	title = "$FROMCOUNTRY$ proposes to recognize the Pragmatic Sanction"
 	desc = "EVTDESC1745081"
+	picture = treaty_signing
 	is_triggered_only = yes
 	
 	option = {
@@ -1653,6 +1656,7 @@ country_event = {
 country_event = {
 	id = 1745082
 	title = "$FROMCOUNTRY$ Agrees!"
+	picture = treaty_signing
 	desc = ""
 	is_triggered_only = yes
 	
@@ -1664,6 +1668,7 @@ country_event = {
 country_event = {
 	id = 1745083
 	title = "$FROMCOUNTRY$ Refuses!"
+	picture = treaty_signing
 	desc = ""
 	is_triggered_only = yes
 	
@@ -1676,7 +1681,7 @@ country_event = {
 	id = 174509
 	title = "Recognition of Austrian Pragmatic Sanction"
 	desc = "EVTDESC174509"
-	picture = english_parliment
+	picture = treaty_signing
 	fire_only_once = yes
 	
 	trigger = {
@@ -1703,6 +1708,7 @@ country_event = {
 	id = 1745091
 	title = "$FROMCOUNTRY$ proposes to recognize the Pragmatic Sanction"
 	desc = "EVTDESC1745091"
+	picture = treaty_signing
 	is_triggered_only = yes
 	
 	option = {
@@ -1746,7 +1752,7 @@ country_event = {
 	option = {
 		name = "Send the envoy!"
 		AUS = {
-			country_event = 1745081
+			country_event = 1745101
 		}
 	}
 	option = {
@@ -1781,119 +1787,132 @@ country_event = {
 ################################
 ###Austrian Succesion Dispute###
 ################################
-country_event = {
-	id = 1745102
-	title = "Austria's new ruler"
-	desc = "EVTDESC1745102"
-	picture = maria_theresa
-	fire_only_once = yes
-	
-	trigger = {
-		AUS = {
-			has_country_modifier = maria_theresa
-		}
-		NOT = { tag = AUS }
-		NOT = { has_country_flag = accepted_sanction }
-		OR = {
-			is_greater_power = yes
-			AND = {
-				tag = PRU
-				has_country_modifier = frederick_grosse
-			}
-			tag = BAV
-		}
-		capital_scope = {
-			continent = europe
-		}
-		NOT = { tag = TUR }
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
-	option = {
-		name = "Vienna will soon fall!"
-		war = {
-			target = AUS
-			attacker_goal = { casus_belli = cut_down_to_size }
-			defender_goal = { casus_belli = humiliate }
-			call_ally = yes
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 6
-				NOT = {
-					AUS = {
-						brigades_compare = 1.5
-					}
-				}
-			}
-			modifier = {
-				factor = 5
-				NOT = { relation = { who = AUS value = 0 } }
-			}
-			modifier = {
-				factor = 5
-				OR = {
-					is_greater_power = yes
-					AND = {
-						tag = PRU
-						has_country_modifier = frederick_grosse
-					}
-				}
-				neighbour = AUS
-			}
-		}
-	}
-	option = {
-		name = "We have more pressing matters."
-		relation = {
-			who = AUS
-			value = 100
-		}
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 6
-				in_sphere = AUS
-				NOT = {
-					tag = BAV
-				}
-			}
-			modifier = {
-				factor = 8
-				alliance_with = AUS
-			}
-			modifier = {
-				factor = 8
-				relation = { who = AUS value = 20 }
-				NOT = {
-					tag = GBR
-				}
-			}
-			modifier = {
-				factor = 5
-				has_country_flag = hre_member
-				NOT = {
-					OR = {
-						tag = PRU
-						tag = BAV
-					}
-				}
-			}
-			modifier = {
-				factor = 7
-				NOT = { neighbour = AUS }
-			}
-			modifier = {
-				factor = 6
-				AUS = {
-					brigades_compare = 2
-				}
-			}
-		}
-	}
-}
+#country_event = {
+#	id = 1745102
+#	title = "Austria's new ruler"
+#	desc = "EVTDESC1745102"
+#	picture = maria_theresa
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = BOR 
+#	}
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	option = {
+#		name = "Vienna will soon fall!"
+#		any_country = {
+#			limit = {
+#				has_country_flag = refused_sanction
+#			}
+#			create_alliance = THIS
+#			relation = {
+#				who = THIS
+#				value = 400
+#			}
+#		}
+#		war = {
+#			
+#		}
+#	}
+#	option = {
+#		name = "Back off."
+#		relation = {
+#			who = AUS
+#			value = 100
+#		}
+#		ai_chance = {
+#			factor = 0
+#			modifier = {
+#				factor = 6
+#				in_sphere = AUS
+#			}
+#			modifier = {
+#				factor = 8
+#				alliance_with = AUS
+#			}
+#			modifier = {
+#				factor = 8
+#				relation = { who = AUS value = 200 }
+#			}
+#			modifier = {
+#				factor = 6
+#				AUS = {
+#					brigades_compare = 2
+#				}
+#			}
+#		}
+#	}
+#}
+
+#country_event = {
+#	id = 1745103
+#	title = "Treaty of Vienna"
+#	desc = "EVTDESC1745103"
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	option = {
+#		AUS = {
+#			prestige = 85
+#			any_owned = {
+#				owner = {
+#					limit = {
+#						NOT = { has_country_flag = enacted_reichsreform }
+#					}
+#					set_country_flag = enacted_reichsreform
+#					any_country = {
+#						limit = {
+#						has_country_flag = hre_member
+#						}
+#						add_country_modifier = {
+#							name = reichsreform
+#							duration = -1
+#						}
+#					}
+#					add_country_modifier = {
+#						name = reichsreform
+#						duration = -1
+#					}
+#				}
+#			}
+#			any_owned = {
+#				owner = {
+#					limit = {
+#						NOT = { has_country_flag = instituted_reichsregiment }
+#					}
+#					set_country_flag = instituted_reichsregiment
+#					any_country = {
+#						limit = {
+#							has_country_flag = hre_member
+#						}
+#						add_country_modifier = {
+#							name = reichsregiment
+#							duration = -1
+#						}
+#					}
+#					add_country_modifier = {
+#						name = reichsregiment
+#						duration = -1
+#					}
+#				}
+#			}
+#		}
+#	
+#	}
+#	
+#country_event = {
+#	id = 1745104
+#	title = "Treaty of Strasburg"
+#	desc = "EVTDESC1745104"
+#	major = yes
+#	is_triggered_only = yes
+#	
+#
+#	mean_time_to_happen = {
+#		months = 1
+#	}
 ###Hre###
 country_event = {
 	id = 800000
