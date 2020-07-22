@@ -514,6 +514,9 @@ political_decisions = {
 				value = -50
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	
 	become_true_pictland = {
@@ -535,6 +538,9 @@ political_decisions = {
 			}
 			primary_culture = highlander
 			add_accepted_culture = scottish
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
