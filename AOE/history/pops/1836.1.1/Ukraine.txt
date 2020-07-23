@@ -39,7 +39,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 100
 	}
@@ -265,7 +265,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 50
 	}
@@ -347,7 +347,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 450
 	}
@@ -700,7 +700,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 500
 	}
@@ -812,7 +812,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 250
 	}
@@ -904,7 +904,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 975
 	}
@@ -912,7 +912,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 84495
+		size = 74495
 	}
 
 	labourers = {
@@ -921,11 +921,16 @@
 		size = 4605
 	}
 	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
+	}
 	
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 38000
+		size = 30000
 	}
 	
 	serfs = {
@@ -1015,7 +1020,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 262
 	}
@@ -1115,7 +1120,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 525
 	}
@@ -1231,7 +1236,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 2200
 	}
@@ -1251,7 +1256,13 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 25000
+		size = 20000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
 	}
 
 	aristocrats = {
@@ -1365,7 +1376,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 500
 	}
@@ -1511,7 +1522,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 2200
 	}
@@ -1665,7 +1676,7 @@
 	}
 
 	officers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 300
 	}
@@ -1689,9 +1700,15 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 2700
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
 	}
 
 	serfs = {
@@ -1709,7 +1726,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 24000
+		size = 19000
 	}
 
 	aristocrats = {
@@ -1847,7 +1864,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 2200
 	}
@@ -1969,7 +1986,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 2200
 	}
@@ -1989,7 +2006,13 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 24000
+		size = 19000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
 	}
 	
 	aristocrats = {
@@ -2067,7 +2090,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 2800
 	}
@@ -2076,6 +2099,12 @@
 		culture = ukrainian
 		religion = orthodox
 		size = 15886
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
 	}
 
 	labourers = {
@@ -2087,7 +2116,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 24000
+		size = 19000
 	}
 	
 	aristocrats = {
@@ -2159,7 +2188,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 3050
 	}
@@ -2168,6 +2197,12 @@
 		culture = ukrainian
 		religion = orthodox
 		size = 26312
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
 	}
 
 	labourers = {
@@ -2179,7 +2214,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 34000
+		size = 24000
 	}
 
 	clergymen = {
@@ -2275,9 +2310,15 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 7550
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 14000
 	}
 
 	serfs = {
@@ -2295,7 +2336,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 94000
+		size = 80000
 	}
 
 	clergymen = {
@@ -2459,7 +2500,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 25
 	}
@@ -2577,7 +2618,13 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 3700
+		size = 2200
+	}
+	
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 1500
 	}
 
 	aristocrats = {
@@ -2985,7 +3032,7 @@
 	}
 
 	officers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 100
 	}
@@ -3003,15 +3050,21 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
-		size = 500
+		size = 2500
 	}
 
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 26101
+		size = 20101
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 4000
 	}
 
 	labourers = {
@@ -3209,7 +3262,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 3050
 	}
@@ -3217,7 +3270,13 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 24130
+		size = 19130
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
 	}
 
 	labourers = {
@@ -3331,9 +3390,9 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
-		size = 150
+		size = 2150
 	}
 
 	serfs = {
@@ -3351,7 +3410,7 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 2500
+		size = 500
 	}
 
 	aristocrats = {
@@ -3489,7 +3548,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 262
 	}
@@ -3586,7 +3645,7 @@
 	}
 	
 	officers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 50
 	}
@@ -3610,7 +3669,7 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 275
 	}
@@ -3973,9 +4032,9 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
-		size = 75
+		size = 1075
 	}
 
 	serfs = {
@@ -4035,13 +4094,13 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 125
+		size = 1125
 	}
 
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 781
+		size = 1781
 	}
 
 	labourers = {
@@ -4195,7 +4254,7 @@
 	}
 	
 	officers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
 		size = 50
 	}
@@ -4219,9 +4278,9 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
-		size = 3300
+		size = 5300
 	}
 
 	serfs = {
@@ -4239,7 +4298,13 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 38000
+		size = 26000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
 	}
 	
 	aristocrats = {
@@ -4349,9 +4414,9 @@
 	}
 
 	soldiers = {
-		culture = ukrainian
+		culture = cossack
 		religion = orthodox
-		size = 3212
+		size = 5212
 	}
 
 	serfs = {
@@ -4369,7 +4434,13 @@
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 33000
+		size = 21000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
 	}
 
 	aristocrats = {

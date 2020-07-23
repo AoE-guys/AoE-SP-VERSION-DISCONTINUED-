@@ -92,6 +92,7 @@ country_event = {
 		any_pop = { limit = { culture = russian } literacy = 0.28 }
 		any_pop = { limit = { culture = byelorussian } literacy = 0.28 }
 		any_pop = { limit = { culture = ukrainian } literacy = 0.28 }
+		any_pop = { limit = { culture = cossack } literacy = 0.20 }
 		any_pop = { limit = { culture = ugrian } literacy = 0.28 }
 		
 		any_pop = { limit = { culture = lithuanian } literacy = 0.30 }			   
@@ -104,7 +105,7 @@ country_event = {
 		any_pop = { limit = { culture = assyrian } literacy = 0.28 }
 
         any_pop = { limit = { culture = turkish } literacy = 0.28 }
-        any_pop = { limit = { culture = azerbaijani } literacy = 0.28 } 
+        any_pop = { limit = { culture = azerbaijani } literacy = 0.25 } 
         any_pop = { limit = { culture = kurdish } literacy = 0.25 }
 		
         any_pop = { limit = { culture = chechen } literacy = 0.20 }
@@ -176,7 +177,7 @@ country_event = {
 		
 		any_pop = { limit = { culture = japanese } literacy = 0.12 }
 		any_pop = { limit = { culture = ryukyuan } literacy = 0.20 }
-		any_pop = { limit = { culture = manchu } literacy = 0.05 }
+		any_pop = { limit = { culture = manchu } literacy = 0.11 }
 		any_pop = { limit = { culture = beifaren } literacy = 0.10 }
 		any_pop = { limit = { culture = nanfaren } literacy = 0.10 }
 		any_pop = { limit = { culture = hanhui } literacy = 0.10 }
@@ -186,8 +187,8 @@ country_event = {
 		any_pop = { limit = { culture = zhuang } literacy = 0.10 }
 		any_pop = { limit = { culture = yi } literacy = 0.10 }
 		any_pop = { limit = { culture = yue } literacy = 0.10 }
-		any_pop = { limit = { culture = korean } literacy = 0.07 }
-		any_pop = { limit = { culture = ainu } literacy = 0.03 }
+		any_pop = { limit = { culture = korean } literacy = 0.11 }
+		any_pop = { limit = { culture = ainu } literacy = 0.05 }
 		
 		any_pop = { limit = { is_culture_group = oceanic } literacy = 0.15 }
 		
