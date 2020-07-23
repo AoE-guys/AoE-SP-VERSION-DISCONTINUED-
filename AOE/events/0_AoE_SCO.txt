@@ -16,6 +16,15 @@ country_event = {
 			set_country_flag = new_world_nation
 			set_country_flag = dynamic_colony
 			set_country_flag = scottish_panama
+			all_core = {
+				remove_core = SCO
+			}
+			all_core = {
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 3650
+				}
+			}
 		}
 		release_vassal = PNM
 		create_alliance = PNM

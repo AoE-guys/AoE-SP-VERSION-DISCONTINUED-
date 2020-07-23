@@ -2,13 +2,13 @@
 #Aberdeen (172000/43000 POPS)
 266 = {
 	aristocrats = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 240
 	}
 
 	officers = {
-		culture = british
+		culture = highlander
 		religion = protestant
 		size = 100
 	}
@@ -16,7 +16,7 @@
 	soldiers = {
 		culture = scottish
 		religion = protestant
-		size = 1240
+		size = 1340
 	}
 
 	artisans = {
@@ -32,19 +32,19 @@
 	}
 
 	labourers = {
-		culture = scottish
-		religion = protestant
+		culture = highlander
+		religion = catholic
 		size = 400
 	}
 	
 	serfs = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 1960
 	}
 
 	labourers = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 2040
 	}
@@ -52,31 +52,31 @@
 #Inverness (328000/82000 POPS)
 267 = {
 	aristocrats = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 264
 	}
 
 	clergymen = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 50
 	}
 
 	soldiers = {
-		culture = british
-		religion = protestant
-		size = 1080
+		culture = scottish
+		religion = catholic
+		size = 1280
 	}
 
 	artisans = {
-		culture = british
+		culture = highlander
 		religion = protestant
 		size = 100
 	}
 
 	serfs = {
-		culture = scottish
+		culture = highlander
 		religion = protestant
 		size = 26874
 	}
@@ -92,38 +92,38 @@
 1724 = {
 
 	aristocrats = {
-		culture = scottish
-		religion = protestant
+		culture = highlander
+		religion = catholic
 		size = 116
 	}
 
 	clergymen = {
-		culture = scottish
-		religion = protestant
+		culture = highlander
+		religion = catholic
 		size = 99
 	}
 
-	soldiers = {
-		culture = scottish
+	serfs = {
+		culture = norwegian
 		religion = protestant
-		size = 1050
+		size = 1250
 	}
 
 	artisans = {
-		culture = scottish
-		religion = protestant
+		culture = highlander
+		religion = catholic
 		size = 800
 	}
 
 	serfs = {
-		culture = scottish
+		culture = highlander
 		religion = protestant
 		size = 2027
 	}
 
 	labourers = {
-		culture = scottish
-		religion = protestant
+		culture = highlander
+		religion = catholic
 		size = 517
 	}
 
@@ -132,7 +132,7 @@
 #Dundee (364000/91000 POPS)
 268 = {
 	aristocrats = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 220
 	}
@@ -144,7 +144,7 @@
 	}
 
 	artisans = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 200
 	}
@@ -152,18 +152,18 @@
 	soldiers = {
 		culture = scottish
 		religion = protestant
-		size = 1090
+		size = 1290
 	}
 
 	serfs = {
-		culture = scottish
+		culture = highlander
 		religion = protestant
 		size = 29716
 	}
 
 	labourers = {
 		culture = scottish
-		religion = protestant
+		religion = catholic
 		size = 1964
 	}
 
@@ -172,7 +172,7 @@
 #Edinburgh (480000/120000 POPS)
 269 = {
 	aristocrats = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 440
 	}
@@ -190,7 +190,7 @@
 	}
 
 	capitalists = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 20
 	}
@@ -222,7 +222,7 @@
 	soldiers = {
 		culture = scottish
 		religion = protestant
-		size = 2000
+		size = 2500
 	}
 
 	serfs = {
@@ -244,13 +244,13 @@
 	}
 
 	craftsmen = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 600
 	}
 
 	artisans = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 2500
 	}
@@ -276,7 +276,7 @@
 #Stirling (364000/91000 POPS)
 270 = {
 	aristocrats = {
-		culture = scottish
+		culture = highlander
 		religion = catholic
 		size = 280
 	}
@@ -296,11 +296,11 @@
 	soldiers = {
 		culture = scottish
 		religion = protestant
-		size = 1040
+		size = 1240
 	}
 
 	serfs = {
-		culture = scottish
+		culture = highlander
 		religion = protestant
 		size = 30058
 	}
@@ -318,7 +318,7 @@
 	}
 
 	labourers = {
-		culture = british
+		culture = highlander
 		religion = catholic
 		size = 40
 	}
@@ -370,11 +370,11 @@
 	soldiers = {
 		culture = scottish
 		religion = protestant
-		size = 2000
+		size = 2500
 	}
 
 	serfs = {
-		culture = scottish
+		culture = highlander
 		religion = protestant
 		size = 20197
 	}
@@ -414,29 +414,35 @@
 	aristocrats = {
 		culture = scottish
 		religion = catholic
-		size = 240
+		size = 340
 	}
 
 	clergymen = {
 		culture = scottish
 		religion = protestant
-		size = 240
+		size = 340
+	}
+	
+	soldiers = {
+		culture = scottish
+		religion = protestant
+		size = 2500
 	}
 
 	artisans = {
 		culture = british
 		religion = protestant
-		size = 80
+		size = 280
 	}
 
 	serfs = {
 		culture = scottish
 		religion = protestant
-		size = 12844
+		size = 16844
 	}
 
 	labourers = {
-		culture = scottish
+		culture = highlander
 		religion = protestant
 		size = 976
 	}
@@ -444,13 +450,13 @@
 	serfs = {
 		culture = british
 		religion = catholic
-		size = 900
+		size = 1200
 	}
 
 	labourers = {
 		culture = british
 		religion = catholic
-		size = 100
+		size = 200
 	}
 
 }
@@ -526,7 +532,7 @@
 	serfs = {
 		culture = welsh
 		religion = protestant
-		size = 11400
+		size = 15400
 	}
 
 	labourers = {
@@ -540,7 +546,7 @@
 	aristocrats = {
 		culture = welsh
 		religion = protestant
-		size = 100
+		size = 200
 	}
 
 	clergymen = {
@@ -552,7 +558,13 @@
 	soldiers = {
 		culture = british
 		religion = protestant
-		size = 1000
+		size = 1200
+	}
+	
+	soldiers = {
+		culture = welsh
+		religion = protestant
+		size = 1540
 	}
 
 	artisans = {

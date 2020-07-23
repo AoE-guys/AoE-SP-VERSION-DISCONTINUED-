@@ -572,6 +572,10 @@ slave_growth = {
 	icon = 17
 }
 
+slavepopupdated = {
+	icon = 17
+}
+
 catholic_growth = {
 	icon = 17
 }
@@ -2100,6 +2104,22 @@ chinese_floods = {
 	immigrant_attract = -0.25
 	immigrant_push = 0.75
 	life_rating = -5
+	icon = 14
+}
+
+christmas_flood = {
+	pop_militancy_modifier = 0.03
+	local_RGO_throughput = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.5
+	icon = 14
+}
+
+minor_flood = {
+	pop_militancy_modifier = 0.01
+	local_RGO_throughput = -0.25
+	immigrant_attract = -0.25
+	immigrant_push = 0.5
 	icon = 14
 }
 
@@ -6568,4 +6588,16 @@ piracy_spoils = {
     local_factory_input = -0.15
     import_cost = -0.15       
     icon = 17
+}
+
+#hooper moment above
+
+native_pursuit = {
+	global_immigrant_attract = 0.25
+	icon = 20
+}
+
+native_ignoring = {
+	non_accepted_pop_militancy_modifier = -0.01
+	icon = 18
 }

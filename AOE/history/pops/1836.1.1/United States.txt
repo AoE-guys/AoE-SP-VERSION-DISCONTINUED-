@@ -3754,39 +3754,33 @@
 }
 #Shreveport (44000/11000 POPS)
 142 = {
-	aristocrats = {
-		culture = louisianan
-		religion = catholic
-		size = 24
-	}
-
 	clergymen = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 12
 	}
 
 	artisans = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 32
 	}
 
 	soldiers = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 20
 	}
 
 	serfs = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 464
 	}
 
 	labourers = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 24
 	}
 	
@@ -3796,21 +3790,21 @@
 		size = 12
 	}
 	
-	serfs = {
+	artisans = {
 		culture = native_american_minor
 		religion = animist
 		size = 236
 	}
 
 	labourers = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 12
 	}
 
-	slaves = {
-		culture = afro_antillean
-		religion = catholic	
+	serfs = {
+		culture = native_american_minor
+		religion = animist
 		size = 940
 	}
 }
@@ -3818,28 +3812,10 @@
 #ruled by USA in 1836
 #Little Rock (56000/14000 POPS)
 143 = {
-	aristocrats = {
-		culture = louisianan
-		religion = catholic
-		size = 32
-	}
-
-	bureaucrats = {
-		culture = louisianan
-		religion = catholic
-		size = 8
-	}
-
-	officers = {
-		culture = louisianan
-		religion = catholic
-		size = 4
-	}
-
 	clergymen = {
 		culture = louisianan
 		religion = catholic
-		size = 8
+		size = 18
 	}
 
 	artisans = {
@@ -3855,8 +3831,8 @@
 	}
 
 	serfs = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 1464
 	}
 
@@ -3884,9 +3860,9 @@
 		size = 1
 	}
 
-	slaves = {
-		culture = afro_antillean
-		religion = catholic	
+	serfs = {
+		culture = native_american_minor
+		religion = animist
 		size = 608
 	}
 }
@@ -4001,8 +3977,8 @@
 	}
 
 	labourers = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 2
 	}
 
@@ -4030,12 +4006,6 @@
 		size = 32
 	}
 
-	serfs = {
-		culture = cherokee
-		religion = animist
-		size = 413
-	}
-
 	labourers = {
 		culture = native_american_minor
 		religion = animist
@@ -4055,8 +4025,8 @@
 	}
 
 	aristocrats = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 2
 	}
 
@@ -4067,14 +4037,14 @@
 	}
 
 	artisans = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 8
 	}
 
 	soldiers = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 2
 	}
 
@@ -4085,20 +4055,20 @@
 	}
 
 	labourers = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 7
 	}
 
 	clergymen = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 4
 	}
 
 	artisans = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 24
 	}
 
@@ -4117,7 +4087,7 @@
 	slaves = {
 		culture = afro_antillean
 		religion = catholic
-		size = 232
+		size = 132
 	}
 }
 #Joplin (25000/5000 POPS)
@@ -4309,7 +4279,7 @@
 	}
 
 	soldiers = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 10
 	}
@@ -4829,7 +4799,7 @@
 #Milwaukee (16000/4000 POPS)
 159 = {
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 8
 	}
@@ -4841,7 +4811,7 @@
 	}
 
 	soldiers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 8
 	}
@@ -4862,43 +4832,43 @@
 160 = {
 
 	aristocrats = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 1
 	}
 	
 	officers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 1
 	}
 	
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 1
 	}
 
 	artisans = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 1
 	}
 
 	soldiers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 3
 	}
 
 	serfs = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 5
 	}
 
 	labourers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 1
 	}
@@ -4930,8 +4900,8 @@
 	}
 
 	artisans = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 8
 	}
 
@@ -4942,8 +4912,8 @@
 	}
 
 	serfs = {
-		culture = louisianan
-		religion = catholic
+		culture = cree
+		religion = animist
 		size = 1039
 	}
 
@@ -5027,19 +4997,19 @@
 #Chicago (172000/43000 POPS)
 163 = {
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 44
 	}
 
 	artisans = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 344
 	}
 
 	soldiers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 72
 	}
@@ -5051,7 +5021,7 @@
 	}
 
 	labourers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 321
 	}
@@ -5276,8 +5246,8 @@
 	}
 
 	artisans = {
-		culture = louisianan
-		religion = catholic
+		culture = native_american_minor
+		religion = animist
 		size = 512
 	}
 
@@ -5302,7 +5272,7 @@
 	slaves = {
 		culture = afro_antillean
 		religion = catholic
-		size = 145
+		size = 45
 	}
 }
 #Evansville (196000/49000 POPS)
@@ -5442,31 +5412,31 @@
 #Detroit (POPS)
 173 = {
 	bureaucrats = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 24
 	}
 
 	officers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 4
 	}
 
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 24
 	}
 
 	artisans = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 144
 	}
 
 	soldiers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 16
 	}
@@ -5478,31 +5448,31 @@
 	}
 
 	labourers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 135
 	}
 
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 2
 	}
 
 	artisans = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 8
 	}
 
 	soldiers = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 2
 	}
 
 	serfs = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 149
 	}
@@ -5532,7 +5502,7 @@
 	}
 	
 	craftsmen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 192
 	}
@@ -5540,7 +5510,7 @@
 #Grand Rapids (POPS)
 174 = {
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 16
 	}
@@ -5572,7 +5542,7 @@
 #Saginaw (POPS)
 175 = {
 	clergymen = {
-		culture = louisianan
+		culture = french_canadian
 		religion = catholic
 		size = 24
 	}
@@ -6123,7 +6093,7 @@
 	slaves = {
 		culture = afro_antillean
 		religion = catholic
-		size = 520
+		size = 20
 	}
 }
 #Lexington (332000/83000 POPS)

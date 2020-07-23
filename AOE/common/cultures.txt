@@ -334,7 +334,15 @@ scandinavian = {
 		Rye Sissener Skjalgsson Tambarskjelve "von Holstein-Gl¸cksburg" "von Klenow" Wedel-Jarlsberg Wiborg With Zeiner-Gundersen }
 	}
 	icelandic = { 
-		color = { 80 20 150}
+		color = { 80 20 150 }
+		first_names = { Agnar ¡sgeir Bjˆrn Eidur Einar Emil Geir Gudmund Gunnar Hannes
+		Hermann JÛn Kristj·n Magn˙s ”lafur PÈtur Sigurdur Stef·n Sveinn Tryggvi }
+		
+		last_names = { ArnÛrsson ¡sgeirsson Benediktsson Bjarnasen Bjˆrnsson Eggers Eldj·rn Hafstein Hansen
+		Hermannsson Joh·nesson JÛnsson Magn˙sson Stef·nsson Steinthosson ThÛrdarson ThÛrhallson Thorl·ksson Thurs }
+	}
+	faroese = { 
+		color = { 255 54 202 }
 		first_names = { Agnar ¡sgeir Bjˆrn Eidur Einar Emil Geir Gudmund Gunnar Hannes
 		Hermann JÛn Kristj·n Magn˙s ”lafur PÈtur Sigurdur Stef·n Sveinn Tryggvi }
 		
@@ -364,22 +372,28 @@ british = {
 		color = { 35 140 50}
 		radicalism = 15
 		primary = IRE
-		first_names = { Alexander Arthur Brian Cathal Christopher Con Daniel Denis Desmond …amon
+		first_names = { Alexander Arthur Brian Cathal Christopher Con Cu Daniel Denis Desmond …amon
 		Edward Ernes Fion·n Frank George Harry Jack James John Joseph
 		Kevin Liam Michael Patrick Peter Richard Robert SÈan Thomas William }
 		
-		last_names = { Aiken Ashe Breen Brugha Collins Connolly Cosgrave Craig "de Valera" Donnelly
+		last_names = { Aiken Ashe Breen Brugha Collins Culainn Connolly Cosgrave Craig "de Valera" Donnelly
 		FitzGerald Griffith Kelly Larkin Lynch Mallin McCartan McCullough McGarry McGuinness
 		Mulcahy O'Brien O'Connor O'Doherty O'Higgins O'Leary O'Mara Pearse Plunket White }
 	}
 	scottish = { 
 		color = { 0 70 180 }
-		radicalism = 5
+		radicalism = 3
 		first_names = { Alan Alastair Alban Alpin Andrew Angus Aulay Blane Boyd Calum Clyde Coll Derek Donald Donnan Dougal Douglas Duff Duncan Ewan Farquar Fingal Finlay Gavin Gillian Gillis Gordon Greer Hamish Ian Ivar Kenneth Kentigern Kirk Kyle Lachlan Lorne Malcolm Mirren Mungo Neil Nevin Ranald Rory Ross Sholto Somerled Tavish Torquil Wallace}
 		
 		last_names = { Smith Brown Wilson Robertson Thomson Campbell Stewart Anderson Scott Murray MacDonald Reid Taylor Clark Ross Young Mitchell Watson Paterson Morrison Sanders	}
 	}
-	
+	highlander = {
+		color = { 0 10 180 }
+		radicalism = 5
+		first_names = { Adair Ahearn Alby Annan Aodh Arlan Ayden Baird Bendigeidfran Befan Bricriu Bryce Burgess Cadell Cadman Cassivellaunus Chad Conall Conan Conn Cuinn Cullen Dearg Dorran Doughlas Drem Driscol Duane Dughall Elgin Emrys Eoin Fergus Fiacre Finnobarr Gall Gorsedd Herne Hueil Keaghan Kearney Keir Leigh Luxovious Mac Neale Phelan Pryderi Quinn Taliesin Torsten Ulfred Winsor Wynter }
+		
+		last_names = { Aileanach Ailpeanach Allanach Anam Anndrasdan Arasgain Barrach Beitean Bhodhsa Blacach Bochanan Breac Breathnach Brothaigh Buideach Cailbhin Caileanach Caimbeulach Camshronach Cananach Caoidheach Catach Ceallach Ceannaideach Ceiteach Cuimeineach Druimeineach Dubhach Dunaidh Donnchadh Eabarcrombaigh Fionnlasdan Flimean Foirbeiseach Frisealach Gallach Geadais Geadasach Gearailteach Gilios Giobsan Glas Gobha Granndach Greumach Guaire Gutraidh Latharnach Leamhanach Lobhdain Loganach Munna Niocalsan Rathais Roid Ros Ruadh Seadh Seagha Singleir Sutharlan Todt Talmhach Tulach Ualas Umphraidh Urchadainn }
+	}
 	welsh = { 
 		color = { 0 170 60 }
 		first_names = { Alwyn Alastair Alban Alpin Caradog Angus Aulay Blane Boyd Calum Cynog Coll Derek Donald Derwyn Dougal Douglas Duff Duncan Ewan Farquar Fingal Finlay Gavin Gillian Gillis Gordon Greer Hamish Ian Ivar Kenneth Kentigern Kirk Kyle Lachlan Lorne Malcolm Mirren Mungo Neil Nevin Ranald Rory Ross Sholto Somerled Tavish Torquil Wallace}
@@ -729,8 +743,42 @@ pan_albanian = {
 pan_romanian = {
 	leader = european
 	unit = AustriaHungaryGC
-	romanian = {
-		color = { 255 195 35 }
+	moldavian = {
+		color = { 255 220 95 }
+		first_names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
+		Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
+		Grigore Henric Horatiu Iacob Ilie Ioan Ion "Ion Emanuel" Iosif Iulian
+		Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Petru
+		Radu Sergiu Silviu Simion Stefan Valeriu Vasile Victor Vintila Vlad
+		}
+
+		last_names = { Angelescu Antonescu Argetoianu Averescu Baldescu Barozzi Berindei Cernat Christecu Cihoski
+		Ciuperca Coanda Crainiceanu Critescu Culcer Cuza "de Hohenzollern" Dona Dragalina Dumitrescu
+		Falcoianu Florescu Gardescu Grigorescu Froza Harjeu Holban Iancovescu Iliasevici Iliescu
+		Ionascu Ionescu Ionitiu Koslinski Lahovary Lupescu Mardarescu Murgescu Poenaru Prezan
+		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Tatarascu Tenescu Vaitoianu Zottu
+		}
+		radicalism = 10
+	}
+	vlach = {
+		color = { 161 126 128 }
+		first_names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
+		Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
+		Grigore Henric Horatiu Iacob Ilie Ioan Ion "Ion Emanuel" Iosif Iulian
+		Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Petru
+		Radu Sergiu Silviu Simion Stefan Valeriu Vasile Victor Vintila Vlad
+		}
+
+		last_names = { Angelescu Antonescu Argetoianu Averescu Baldescu Barozzi Berindei Cernat Christecu Cihoski
+		Ciuperca Coanda Crainiceanu Critescu Culcer Cuza "de Hohenzollern" Dona Dragalina Dumitrescu
+		Falcoianu Florescu Gardescu Grigorescu Froza Harjeu Holban Iancovescu Iliasevici Iliescu
+		Ionascu Ionescu Ionitiu Koslinski Lahovary Lupescu Mardarescu Murgescu Poenaru Prezan
+		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Tatarascu Tenescu Vaitoianu Zottu
+		}
+		radicalism = 10
+	}
+	transylvanian = {
+		color = { 211 207 173 }
 		first_names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
 		Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
 		Grigore Henric Horatiu Iacob Ilie Ioan Ion "Ion Emanuel" Iosif Iulian
@@ -754,7 +802,7 @@ hungarian_culture_group = {
 		unit = AustriaHungaryGC
 		
 	hungarian = {
-		color = { 225 255 195 }
+		color = { 200 255 50 }
 		first_names = { Alajos Albert ¡lmos Anaszt·z Andr·s Arisztid AurÈl BÈla Benedek BÈni
 		Bertalan D·niel D·vid Edv·rd …li·s Erno Ferencz G·bor G·briel G·sp·r
 		Gyˆrgy Gyula Ign·c Imre Istv·n Izidor J·nos JÛzsef "JÛzsef Manes" K·lm·n
@@ -846,7 +894,7 @@ czecho_slovak_culture_group = {
 		radicalism = 5
 	}
 	moravian = {
-		color = {0 51 102}
+		color = {35 95 155}
 		first_names = { Abraham Alexander Alfred Alois Anton˙ã August Bedrich Benedikt Borivoj
 		Cenek D·vid Drahoslav Edvard Emanuel Emil Evzen Frantisek "Frantisek Josef" "Frantisek Xaver"
 		Hermenegild J·n "J·n Krtitel" "J·n Nepomuk" Jaroslav Jindrich JirÅEJosef Kajetan Karel
@@ -1414,7 +1462,7 @@ central_asian = {
 		}
 	}
 	khalkha = {
-		color = {230 230 10}
+		color = {255 210 10}
 		first_names = { 
                Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan 
                Gonchigjalzangiin Badamdorj Otgonbayar Batbayar Temujin }
@@ -1424,7 +1472,7 @@ central_asian = {
 		}
 	}
 	oirat = {
-		color = {200 255 44}
+		color = {200 255 0}
 		first_names = { 
                Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan 
                Gonchigjalzangiin Badamdorj Temujin Otgonbayar Batbayar }

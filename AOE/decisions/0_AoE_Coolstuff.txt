@@ -492,4 +492,176 @@ political_decisions = {
 		}
 	}
 	
+	third_darien_expedition = {
+		picture = Panama3
+		potential = {
+			tag  = SCO
+			is_vassal = no
+			NOT = { has_country_flag = third_expedition_to_panama }
+		}
+		allow = {
+			is_secondary_power = yes
+			money = 50000
+		}
+		effect = {
+			prestige = 10
+			CLM_1723 = {
+				add_core = SCO
+			}
+			set_country_flag = third_expedition_to_panama
+			relation = {
+				who = SPA
+				value = -50
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	become_true_pictland = {
+		picture = national_value
+		potential = {
+			tag  = SCO
+			is_vassal = no
+			NOT = { has_country_flag = pictish_scotland }
+		}
+		allow = {
+			government = absolute_monarchy
+		}
+		effect = {
+			prestige = 15
+			set_country_flag = pictish_scotland
+			relation = {
+				who = ENG
+				value = -50
+			}
+			primary_culture = highlander
+			add_accepted_culture = scottish
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	kyzyl_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				AND = {
+				owns = 1196
+				owns = 1206
+				}
+				AND = {
+				owns = 1206
+				owns = 686
+				}
+				AND = {
+				owns = 1196
+				owns = 686
+				}
+			}
+			NOT = {
+				owns = 1205
+			}
+		}
+		allow = {
+			AND = {
+				owns = 1196
+				owns = 1206
+				owns = 686
+			}
+		}
+		effect = {
+			THIS = {
+				1205 = {
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	baikit_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				AND = {
+				owns = 1196
+				owns = 2702
+				}
+				AND = {
+				owns = 1192
+				owns = 2702
+				}
+				AND = {
+				owns = 1192
+				owns = 1196
+				}
+			}
+			NOT = {
+				owns = 2656
+			}
+		}
+		allow = {
+			AND = {
+				owns = 1192
+				owns = 1196
+				owns = 2702
+			}
+		}
+		effect = {
+			THIS = {
+				2656 = {
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	novopetrovskoye_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				AND = {
+				owns = 2656
+				owns = 1205
+				}
+				AND = {
+				owns = 1183
+				owns = 1205
+				}
+				AND = {
+				owns = 1183
+				owns = 2656
+				}
+			}
+			NOT = {
+				owns = 1194
+			}
+		}
+		allow = {
+			AND = {
+				owns = 1183
+				owns = 2656
+				owns = 1205
+			}
+		}
+		effect = {
+			THIS = {
+				1194 = {
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
 }

@@ -1,0 +1,254 @@
+political_decisions = {
+	brazilian_natives = {
+		picture = native_protection_act
+		potential = {
+			OR = {
+				tag = PBZ
+				AND = {
+					tag = POR
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694269
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	french_natives = {
+		picture = vive_le_quebec
+		potential = {
+			OR = {
+				tag = FCA
+				AND = {
+					tag = BOR
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694273
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	mexican_natives = {
+		picture = maya_excavations
+		potential = {
+			OR = {
+				tag = VNS
+				AND = {
+					tag = SPA
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694277
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	american_natives = {
+		picture = native_lands
+		potential = {
+			OR = {
+				tag = THC
+				AND = {
+					tag = ENG
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694281
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	canadian_natives = {
+		picture = claim_hudson_bay
+		potential = {
+			OR = {
+				tag = RPL
+				AND = {
+					tag = ENG
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = canadian_native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694285
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	colombian_natives = {
+		picture = unite_gran_colombia
+		potential = {
+			OR = {
+				tag = VNG
+				AND = {
+					tag = SPA
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = colombian_native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694289
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	peruvian_natives = {
+		picture = peru_bolivia
+		potential = {
+			OR = {
+				tag = VOP
+				AND = {
+					tag = SPA
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = peruvian_native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694293
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	platinean_natives = {
+		picture = la_plata_foundation
+		potential = {
+			OR = {
+				tag = VLP
+				AND = {
+					tag = SPA
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = platinean_native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694297
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+	
+	jesuite_natives = {
+		picture = jesuits
+		potential = {
+			OR = {
+				tag = JER
+				AND = {
+					tag = PAP
+					ai = no
+				}
+			}
+			NOT = {
+				has_country_flag = jesuite_native_policy_set
+			}
+		}
+		allow = {
+		}
+		effect = {
+			THIS = {
+				country_event = {
+					id = 694301
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 0
+		}
+	}
+
+}

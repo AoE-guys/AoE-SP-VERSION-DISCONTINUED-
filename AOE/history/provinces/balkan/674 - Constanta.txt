@@ -3,7 +3,8 @@ controller = TUR
 add_core = TUR
 add_core = WAL
 add_core = ROM
-add_core = BUL 
+add_core = BUL
+add_core = URP
 trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 35
