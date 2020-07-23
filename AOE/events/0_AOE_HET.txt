@@ -23,6 +23,7 @@ country_event = {
 		name = "EVT91241542OPT2"
 		release_vassal = HET
 		prestige = -20
+		badboy = -5
 		ai_chance = {
 			factor = 0.1
 		}
@@ -70,6 +71,10 @@ country_event = {
 		prestige = 5
 		badboy = -5
 		set_country_flag = sich
+		HET = {
+			release = ZZH
+		}
+		create_vassal = ZZH
 		ai_chance = {
 			factor = 10
 		}
@@ -80,7 +85,6 @@ country_event = {
 		badboy = 10
 		set_country_flag = fate_of_the_sich
 		inherit = HET
-		inherit = ZZH
 		ai_chance = {
 			factor = 1
 		}

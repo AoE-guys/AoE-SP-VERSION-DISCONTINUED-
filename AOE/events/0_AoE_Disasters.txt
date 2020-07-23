@@ -1,0 +1,213 @@
+country_event = {
+	id = 420360
+	title = "Hoei Eruption"
+	picture = "pelee"
+	fire_only_once = yes
+	desc = "EVTDESC420360"
+	
+	trigger = {
+		year = 1707
+		owns = 1649
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		1649 = { any_pop = { reduce_pop = 0.97 } }
+		1651 = { any_pop = { reduce_pop = 0.99 } }
+	}
+}
+
+country_event = {
+	id = 420361
+	title = "Apennine earthquakes"
+	picture = "great_neapolitan_earthquake"
+	fire_only_once = yes
+	desc = "EVTDESC420361"
+	
+	trigger = {
+		year = 1703
+		owns = 751
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		751 = { any_pop = { reduce_pop = 0.95 } }
+		751 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
+	}
+}
+
+country_event = {
+	id = 420362
+	title = "Genroku earthquake"
+	picture = "great_neapolitan_earthquake"
+	fire_only_once = yes
+	desc = "EVTDESC420362"
+	
+	trigger = {
+		year = 1703
+		owns = 1650
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		1650 = { any_pop = { reduce_pop = 0.99 } }
+		1651 = { any_pop = { reduce_pop = 0.99 } }
+		1649 = { any_pop = { reduce_pop = 0.99 } }
+		1650 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
+	}
+}
+
+country_event = {
+	id = 420363
+	title = "Great Storm of 1703"
+	picture = "ENG_from_hell"
+	fire_only_once = yes
+	desc = "EVTDESC420363"
+	
+	trigger = {
+		year = 1703
+		owns = 299
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		277 = { infrastructure = -1 }
+		299 = { any_pop = { reduce_pop = 0.99 } }
+		274 = { any_pop = { reduce_pop = 0.99 } }
+		276 = { any_pop = { reduce_pop = 0.99 } }
+		3268 = { any_pop = { reduce_pop = 0.99 } }
+		304 = { any_pop = { reduce_pop = 0.99 } }
+		277 = { any_pop = { reduce_pop = 0.99 } }
+		278 = { infrastructure = -1 }
+		299 = { naval_base = -1 }
+	}
+}
+
+country_event = {
+	id = 420364
+	title = "Guatemala earthquake"
+	picture = "great_neapolitan_earthquake"
+	fire_only_once = yes
+	desc = "EVTDESC420364"
+	
+	trigger = {
+		year = 1717
+		owns = 2186
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		2186 = { any_pop = { reduce_pop = 0.99 } }
+		2186 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
+	}
+}
+
+country_event = {
+	id = 420365
+	title = "Christmas Flood"
+	picture = "blood_river"
+	fire_only_once = yes
+	desc = "EVTDESC420365"
+	major = yes
+	
+	trigger = {
+		year = 1717
+		owns = 375
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		375 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		385 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		383 = { any_pop = { reduce_pop = 0.98 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		543 = { any_pop = { reduce_pop = 0.98 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		370 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		369 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		371 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		3259 = { any_pop = { reduce_pop = 0.97 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		540 = { any_pop = { reduce_pop = 0.98 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+		531 = { any_pop = { reduce_pop = 0.97 } add_province_modifier = { name = christmas_flood duration = 1825 } }
+	}
+}
+
+country_event = {
+	id = 420366
+	title = "Oraefajokull"
+	picture = "pelee"
+	fire_only_once = yes
+	desc = "EVTDESC420365"
+	
+	trigger = {
+		year = 1728
+		owns = 252
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		252 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = minor_flood duration = 730 }
+	}
+}
+
+country_event = {
+	id = 420367
+	title = "Tabriz Earthquake"
+	picture = "great_neapolitan_earthquake"
+	fire_only_once = yes
+	desc = "EVTDESC420367"
+	
+	trigger = {
+		year = 1721
+		owns = 1108
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		1108 = { any_pop = { reduce_pop = 0.80 } add_province_modifier = { name = earthquake_devastation duration = 1825 }
+	}
+}
+
+country_event = {
+	id = 420368
+	title = "Valparaiso"
+	picture = "great_neapolitan_earthquake"
+	fire_only_once = yes
+	desc = "EVTDESC420368"
+	
+	trigger = {
+		year = 1730
+		owns = 2325
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		2325 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
+		2325 = { naval_base = -1 }
+	}
+}
