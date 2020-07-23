@@ -621,4 +621,20 @@ political_decisions = {
 			}
 		}
 	}
+	resolve_don_question = {
+		picture = cossacks
+		potential = {
+			tag = RUS
+			has_country_flag = don_resolved
+			DON = {
+				exists = yes
+			}
+		}
+		allow = {
+			ideological_thought = 1
+		}
+		effect = {
+			inherit = DON
+		}
+	}
 }

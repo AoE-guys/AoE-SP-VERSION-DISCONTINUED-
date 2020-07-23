@@ -151,7 +151,7 @@ political_decisions = {
 		}
 			
 		effect = {
-			money = -10000
+			treasury = -10000
 			PLC = {
 				any_pop = {
 					limit = {
@@ -296,7 +296,7 @@ political_decisions = {
 				money = 10
 			}
 			set_country_flag = mazepa_culture
-			money = -50000
+			treasury = -50000
 		}
 		ai_will_do = { factor = 1 }
 	}

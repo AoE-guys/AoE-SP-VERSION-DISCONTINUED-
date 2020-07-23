@@ -837,3 +837,126 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 157311
+	title = "The Bad times"
+	desc = "EVTDESC157311"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1707
+		tag = RUS
+		has_country_flag = claimed_baltics
+		war = yes
+		war_exhaustion = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Believe in God and in tsar"
+		set_country_flag = russian_bad_times
+		any_pop = {
+			limit = {
+				type = serfs
+			}
+			militancy = 2
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 157312
+	title = "Bulavin rebellion"
+	desc = "EVTDESC157312"
+	picture = glos
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		has_country_flag = russian_bad_times
+		DON = {
+			exists = yes
+			vassal_of = RUS
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Believe in God and in tsar"
+		set_country_flag = don_rebellion
+		release_vassal = DON
+		DON = {
+			country_event = 157313
+		}
+		war = {
+			target = DON
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 157313
+	title = "Bulavin rebellion"
+	desc = "EVTDESC157313"
+	picture = glos
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "It's time to protect our homes!"
+		set_country_flag = don_rebellion
+		prestige = 10
+		ammunition = 100
+		treasury = 100000
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 157314
+	title = "Bulavin rebellion fail"
+	desc = "EVTDESC157314"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS 
+		DON = {
+			exists = yes
+			vassal_of = RUS
+			has_country_flag = don_rebellion
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Another good news"
+		set_country_flag = don_resolved
+		prestige = 5
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
