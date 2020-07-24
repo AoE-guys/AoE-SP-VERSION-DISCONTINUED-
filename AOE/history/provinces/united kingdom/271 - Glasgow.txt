@@ -7,11 +7,6 @@ naval_base = 2
 life_rating = 35
 terrain = glasgow
 state_building = {
-	level = 3
-	building = steamer_shipyard
-	upgrade = yes
-}
-state_building = {
 	level = 2
 	building = steel_factory
 	upgrade = yes
@@ -19,5 +14,10 @@ state_building = {
 state_building = {
 	level = 3
 	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
 	upgrade = yes
 }

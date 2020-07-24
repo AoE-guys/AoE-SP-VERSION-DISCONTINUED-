@@ -151,7 +151,7 @@ political_decisions = {
 		}
 			
 		effect = {
-			money = -10000
+			treasury = -10000
 			PLC = {
 				any_pop = {
 					limit = {
@@ -247,7 +247,6 @@ political_decisions = {
 			is_vassal = no
 			ZZH = {
 				exists = yes
-				vassal_of = RUS
 			}
 			state_n_government = 1
 		}
@@ -256,6 +255,12 @@ political_decisions = {
 			badboy = 5
 			ZZH = {
 				inherit = HET
+				overlord = {
+					war = {
+						target = HET
+						attacker_goal = { casus_belli = liberate_country tag = ZZH }
+					}
+				}
 			}
 		}
 		ai_will_do = { factor = 1 }
@@ -296,8 +301,89 @@ political_decisions = {
 				money = 10
 			}
 			set_country_flag = mazepa_culture
-			money = -50000
+			treasury = -50000
 		}
 		ai_will_do = { factor = 1 }
+	}
+	mazepa_culture = {
+		picture = cossak_state
+		
+		potential = {
+			tag = HET
+			NOT = {
+				RUS = {
+					has_country_flag = destroy_the_sich
+				}
+				has_country_flag = mazepa_culture
+			}
+		}
+		
+		allow = {
+			romanticism = 1
+			money = 50000
+		}
+		
+		effect = {
+			prestige = 10
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+				consciousness = -2
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					clergymen = yes
+				}
+				money = 10
+			}
+			set_country_flag = mazepa_culture
+			treasury = -50000
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+	intervine_in_don_rebellion = {
+		picture = khmelnytsky_uprising
+		
+		potential = {
+			tag = HET
+			NOT = {
+				vassal_of = RUS
+			}
+			ZZH = {
+				exists = no
+			}
+			RUS = {
+				has_country_flag = don_rebellion
+				NOT = {
+					has_country_flag = don_resolved
+				}
+			}
+		}
+		
+		allow = {
+			DON = {
+				is_vassal = no
+				war_with = RUS
+			}
+			war = no
+		}
+		
+		effect = {
+			create_alliance = DON
+			create_vassal = DON
+			prestige = 10
+		}
+		ai_will_do = { 
+			factor = 1 
+			modifier = {
+				factor = -5
+				war_exhaustion = 40
+			}
+		}
 	}
 }
