@@ -1270,23 +1270,29 @@
 	soldiers = {
 		culture = greek
 		religion = orthodox
-		size = 2100
+		size = 1100
+	}
+	
+	soldiers = {
+		culture = arvanite
+		religion = orthodox
+		size = 1000
 	}
 
 	serfs = {
-		culture = greek
+		culture = arvanite
 		religion = orthodox
-		size = 40175
+		size = 10175
 	}
 	
 	artisans = {
-		culture = albanian
+		culture = arvanite
 		religion = orthodox
 		size = 250
 	}
 
 	serfs = {
-		culture = albanian
+		culture = greek
 		religion = orthodox
 		size = 1075
 	}
@@ -1309,6 +1315,18 @@
 		culture = greek
 		religion = orthodox
 		size = 400
+	}
+	
+	serfs = {
+		culture = arvanite
+		religion = orthodox
+		size = 2500
+	}
+	
+	soldiers = {
+		culture = arvanite
+		religion = orthodox
+		size = 1000
 	}
 
 	serfs = {
@@ -1454,6 +1472,18 @@
 		culture = greek
 		religion = orthodox
 		size = 9100
+	}
+	
+	serfs = {
+		culture = arvanite
+		religion = orthodox
+		size = 3000
+	}
+	
+	soldiers = {
+		culture = arvanite
+		religion = orthodox
+		size = 1000
 	}
 	
 	artisans = {
