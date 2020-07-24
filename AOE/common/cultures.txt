@@ -368,6 +368,21 @@ british = {
 		Moresby Mundy Napier Odoni "of Hannover" "of Saxe-Coburg-Gotha" Plummer Ragland Roberts Seaton Seymour
 		Smith Smith-Dorrien Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood }
 	}
+	cornish = {
+		color = (0 0 0)
+		radicalism = 5
+		first_names = { Arthek Arthyen Austol Benesek Branok Bryok Breok Brioc Cadan Cador Carantok Casek Casworon 
+		Clemo Clesek Corentyn Costentyn De Day Edern Enyon Gerens Gerren Goron Gryffyn Gwalather Hedrek Hedrok Jago 
+		Jory Jowan Kenal Keneder Kenver Kitto Locryn Lowen Madern Massen Meryasek Peran Perran Piran Pasco Pascow 
+		Santo Treeve Treave }
+		
+		last_names = {Angove Angwin Argus Bligh Bolitho Bosanko Cardy Carew Carlyon Carne Chenoweth Chenowith Chynoweth 
+		Couch Cuff Curnow Eudy Geen Grose Gummo Keast Kellow Kevern Kimbrel Kimbrell Kitto Lamphier Lanyon Lower Moon 
+		Moyle Nancarrow Nankervis Opie Oppy Pedrick Pengelly Penhollow Penna Penrose Pethick Polkinghorn Polkinghorne 
+		Prideaux Quick Retallick Rosevear Roskelley Sholl Skewes Skuse Spargo Teague Trebilcock Tredinnick Treen 
+		Tregoning Trelease Treleven Treloar Tremaine Tremayne Trembath Trenary Tretheway Trethewey Trevarthen 
+		Trevena Trevethan Trevithick Trevorrow Trezise Truscott Verran Vigus Woon }
+	}
 	irish = { 
 		color = { 35 140 50}
 		radicalism = 15
@@ -379,6 +394,30 @@ british = {
 		last_names = { Aiken Ashe Breen Brugha Collins Culainn Connolly Cosgrave Craig "de Valera" Donnelly
 		FitzGerald Griffith Kelly Larkin Lynch Mallin McCartan McCullough McGarry McGuinness
 		Mulcahy O'Brien O'Connor O'Doherty O'Higgins O'Leary O'Mara Pearse Plunket White }
+	}	
+	manx = {
+		color = (208 12 39)
+		radicalism = 5
+		first_names = { Abban Aedan Aleyn Aspallan Aulay Carbry Connaghyn Cristen Dolyn Donal Doolish Eamon 
+		Ean Fiac Fynlo Gibbon Gilcrist Gorry Hane Illiam Inry Jamys Jole Juan Kerran Lonan Mian Mannanan 
+		Nellyn Olyn Pheric Quisten Rory Robyn Sandulf Teige Thomase Urmen Yvar Yvor Yveno}
+		
+		last_names = { Allen Bell Boyd Brew Bridson Caine Calcott Caley Callin Callister Callow Cammaish 
+		Cannan Cannell Cannon Carine Carran Casement Cashen Cashin Castell Caveen Christian Christory 
+		Clague Clarke Cleator Clegg Clerk Clucas Cogeen Collister Colvin Comish Connelly Cooil Coole Corjeag 
+		Corkhill Corkish Corlett Cormode Corooin Corran Corrin Corris Corteen Cosnahan Costain Costean Cotteen 
+		Cotter Cottier Cowell Cowen Cowin Cowle Cowley Craig Craine Crebbin Creer Creetch Cregeen Crellin 
+		Crennell Cretney Criggal Cringle Croghan Crowe Crye Crystal Cubbon Curghey Curphey Daley Dougherty 
+		Duggan Duke Ellison Faragher Fargher Farrant Fayle Fell Freer Gale Garret Gawne Gell Gelling Gick 
+		Gill Gorree Gorry Graves Halsall Hampton Harrison Howland Hudgeon Hutchen Hutchin Joughin Kaighan 
+		Kaighin Kaneen Karran Kay Kee Kegeen Kegg Keig Keigeen Kelly Kennaugh Kennish Kermeen Kermode 
+		Kerruish Kew Kewin Kewish Kewley Key Kie Killey Killip Kinley Kinnish Kinred Kinry Kinvig Kissack 
+		Kneale Kneen Knickell Lace Leece Lewin Looney Lowey Lucas Maddrell Martin Moore Morrison Morton 
+		Moughtin Mughtin Murray Mylchraine Mylchreest Mylecharaine Mylechreest Mylrea Mylroie Mylvorrey 
+		Nelson Norris Oates Quaggin Qualtrough Quane Quark Quarry Quay Quayle Quiggin Quill Quilleash 
+		Quilliam Quillin Quine Quinney Quirk Radcliff Ratcliff Sansbury Sayle Scarff Shimmin Skelly 
+		Skillicorne Skinner Stean Stephen Stephenson Stevenson Stole Stowell Taggart Taubman Teare Thompson 
+		Vondy Ward Waterson Watterson Wattleworth Woods }
 	}
 	scottish = { 
 		color = { 0 70 180 }
