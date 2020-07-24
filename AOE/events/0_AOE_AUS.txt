@@ -1578,6 +1578,13 @@ country_event = {
 					tag = BAV
 				}
 			}
+			modifier = {
+				factor = 6
+				OR = {
+					tag = PLC
+					tag = RUS
+				}
+			}
 		}
 	}
 	option = {
@@ -1787,132 +1794,410 @@ country_event = {
 ################################
 ###Austrian Succesion Dispute###
 ################################
-#country_event = {
-#	id = 1745102
-#	title = "Austria's new ruler"
-#	desc = "EVTDESC1745102"
-#	picture = maria_theresa
-#	fire_only_once = yes
-#	
-#	trigger = {
-#		tag = BOR 
-#	}
-#	mean_time_to_happen = {
-#		months = 1
-#	}
-#	option = {
-#		name = "Vienna will soon fall!"
-#		any_country = {
-#			limit = {
-#				has_country_flag = refused_sanction
-#			}
-#			create_alliance = THIS
-#			relation = {
-#				who = THIS
-#				value = 400
-#			}
-#		}
-#		war = {
-#			
-#		}
-#	}
-#	option = {
-#		name = "Back off."
-#		relation = {
-#			who = AUS
-#			value = 100
-#		}
-#		ai_chance = {
-#			factor = 0
-#			modifier = {
-#				factor = 6
-#				in_sphere = AUS
-#			}
-#			modifier = {
-#				factor = 8
-#				alliance_with = AUS
-#			}
-#			modifier = {
-#				factor = 8
-#				relation = { who = AUS value = 200 }
-#			}
-#			modifier = {
-#				factor = 6
-#				AUS = {
-#					brigades_compare = 2
-#				}
-#			}
-#		}
-#	}
-#}
+country_event = {
+	id = 1745102
+	title = "Austria's new ruler"
+	desc = "EVTDESC1745102"
+	picture = maria_theresa
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOR 
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Vienna will soon fall!"
+		any_country = {
+			limit = {
+				has_country_flag = refused_sanction
+			}
+			create_alliance = THIS
+			relation = {
+				who = THIS
+				value = 400
+			}
+		}
+		any_country = {
+			limit = {
+				has_country_flag = accepted_sanction
+			}
+			create_alliance = AUS
+			relation = {
+				who = AUS
+				value = 400
+			}
+		}
+		create_alliance = PRU
+		PRU = {
+			relation = {
+				who = AUS
+				value = -400
+			}
+		}
+		AUS = {
+			diplomatic_influence = {
+				who = PRU
+				value = -400
+			}
+		}
+		set_global_flag = austrian_succesion_crisis
+		war = {
+			target = AUS
+			attacker_goal = { casus_belli = force_empress_abdication_cb }
+			defender_goal = { casus_belli = secure_hre_title_cb }
+			call_ally = yes
+		}
+	}
+	option = {
+		name = "Back off."
+		relation = {
+			who = AUS
+			value = 100
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 6
+				in_sphere = AUS
+			}
+			modifier = {
+				factor = 8
+				alliance_with = AUS
+			}
+			modifier = {
+				factor = 8
+				relation = { who = AUS value = 200 }
+			}
+			modifier = {
+				factor = 6
+				AUS = {
+					brigades_compare = 2
+				}
+			}
+		}
+	}
+}
 
-#country_event = {
-#	id = 1745103
-#	title = "Treaty of Vienna"
-#	desc = "EVTDESC1745103"
-#	major = yes
-#	is_triggered_only = yes
-#	
-#	option = {
-#		AUS = {
-#			prestige = 85
-#			any_owned = {
-#				owner = {
-#					limit = {
-#						NOT = { has_country_flag = enacted_reichsreform }
-#					}
-#					set_country_flag = enacted_reichsreform
-#					any_country = {
-#						limit = {
-#						has_country_flag = hre_member
-#						}
-#						add_country_modifier = {
-#							name = reichsreform
-#							duration = -1
-#						}
-#					}
-#					add_country_modifier = {
-#						name = reichsreform
-#						duration = -1
-#					}
-#				}
-#			}
-#			any_owned = {
-#				owner = {
-#					limit = {
-#						NOT = { has_country_flag = instituted_reichsregiment }
-#					}
-#					set_country_flag = instituted_reichsregiment
-#					any_country = {
-#						limit = {
-#							has_country_flag = hre_member
-#						}
-#						add_country_modifier = {
-#							name = reichsregiment
-#							duration = -1
-#						}
-#					}
-#					add_country_modifier = {
-#						name = reichsregiment
-#						duration = -1
-#					}
-#				}
-#			}
-#		}
-#	
-#	}
-#	
-#country_event = {
-#	id = 1745104
-#	title = "Treaty of Strasburg"
-#	desc = "EVTDESC1745104"
-#	major = yes
-#	is_triggered_only = yes
-#	
-#
-#	mean_time_to_happen = {
-#		months = 1
-#	}
+country_event = {
+	id = 1745103
+	title = "Treaty of Vienna"
+	desc = "EVTDESC1745103"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Glorious victory!"
+		AUS = {
+			prestige = 85
+			any_owned = {
+				prestige = 70
+				owner = {
+					limit = {
+						NOT = { has_country_flag = enacted_reichsreform }
+					}
+					set_country_flag = enacted_reichsreform
+					any_country = {
+						limit = {
+						has_country_flag = hre_member
+						}
+						add_country_modifier = {
+							name = reichsreform
+							duration = -1
+						}
+					}
+					add_country_modifier = {
+						name = reichsreform
+						duration = -1
+					}
+				}
+			}
+			any_owned = {
+				owner = {
+					limit = {
+						NOT = { has_country_flag = instituted_reichsregiment }
+					}
+					set_country_flag = instituted_reichsregiment
+					any_country = {
+						limit = {
+							has_country_flag = hre_member
+						}
+						add_country_modifier = {
+							name = reichsregiment
+							duration = -1
+						}
+					}
+					add_country_modifier = {
+						name = reichsregiment
+						duration = -1
+					}
+				}
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit = {
+					OR = {
+						region = BEL_394
+						region = BEL_387
+						region = FRA_404
+						region = FRA_432
+						province_id = 397
+						province_id = 410
+						region = NET_379
+					}
+				}
+				secede_province = AUS
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					is_core = NET
+				}
+				secede_province = NET
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					is_core = SVY
+				}
+			}
+			secede_province = SVY
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					is_core = GEN
+				}
+				secede_province = GEN
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					is_core = GEN
+				}
+				secede_province = GEN
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					is_core = ALS
+				}
+				secede_province = ALS
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					is_core = LOR
+				}
+				secede_province = LOR
+			}
+		}
+		BOR = {
+			any_owned = {
+				limit =  {
+					region = SAR_765
+					SVY = { exists = yes }
+				}
+				secede_province = SVY
+			}
+		}
+		SPA = {
+			any_owned = {
+				limit =  {
+					region = SAR_765
+					SVY = { exists = yes }
+				}
+				secede_province = SVY
+			}
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				vassal_of = BOR
+				tag = FRH
+			}
+			any_owned = {
+				limit = { is_core = LIG }
+				secede_province = LIG
+			}
+			any_owned = {
+				limit = { is_core = PAL }
+				secede_province = PAL
+			}
+			any_owned = {
+				limit = { is_core = TRR }
+				secede_province = TRR
+			}
+			any_owned = {
+				limit = { is_core = KOL }
+				secede_province = KOL
+			}
+			any_owned = {
+				limit = { is_core = ACH }
+				secede_province = ACH
+			}
+		}
+		any_country = {
+			limit = {
+				tag = NAP
+				vassal_of = BOR
+				exists = yes
+			}
+			AUS = {
+				create_vassal = NAP
+			}
+		}
+		clr_global_flag = austrian_succesion_crisis
+	}
+}
+	
+country_event = {
+	id = 1745104
+	title = "Treaty of Strasburg"
+	desc = "EVTDESC1745104"
+	major = yes
+	is_triggered_only = yes
+	
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "noice"
+		AUS = {
+			clr_country_flag = hre_emperor
+			any_owned = {
+				limit = {
+					OR = {
+						region = BEL_394
+						region = BEL_387
+						region = FRA_404
+						region = FRA_432
+						province_id = 397
+						province_id = 410
+						region = NET_379
+					}
+				}
+				secede_province = BOR
+			}
+		}
+		AUS = {
+			any_owned = {
+				limit =  {
+					region = SAR_765
+					SVY = { exists = yes }
+				}
+				secede_province = SVY
+			}
+		}
+		AUS = {
+			any_owned = {
+				limit = {
+					is_core = NAP
+				}
+				secede_province = NAP
+			}
+		}
+		AUS = {
+			any_owned = {
+				limit =  {
+					OR = {
+						province_id = 682
+						province_id = 683
+						province_id = 684
+						province_id = 685
+					}
+				}
+				secede_province = PRU
+			}
+		}
+		SPA = {
+			create_vassal = NAP
+		}
+		BAV = {
+			set_country_flag = hre_emperor
+		}
+		clr_global_flag = austrian_succesion_crisis
+	}
+}
+country_event = {
+	id = 1745105
+	title = "Treaty of Treaty of Aix-la-Chapelle"
+	desc = "EVTDESC1745104"
+	major = yes
+	
+	trigger = {
+		tag = AUS
+		war_exhaustion = 35
+		has_global_flag = austrian_succesion_crisis
+	}
+	
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Agree to the treaty."
+		AUS = {
+			any_owned = {
+				limit =  {
+					region = SAR_765
+					SVY = { exists = yes }
+				}
+				secede_province = SVY
+			}
+		}
+		AUS = {
+			any_owned = {
+				limit = {
+					is_core = NAP
+				}
+				secede_province = NAP
+			}
+		}
+		AUS = {
+			any_owned = {
+				limit =  {
+					OR = {
+						province_id = 682
+						province_id = 683
+						province_id = 684
+						province_id = 685
+					}
+				}
+				secede_province = PRU
+			}
+		}
+		SPA = {
+			create_vassal = NAP
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				has_country_flag = refused_sanction
+			}
+			end_war = AUS
+		}
+		prestige = -25
+		ai_chance = { factor = 1 }
+		clr_global_flag = austrian_succesion_crisis
+	}
+	
+	option = {
+		name = "Refuse to sign it."
+		war_exhaustion = 5
+		ai_chance = { factor = 0 }
+	}
+}
 ###Hre###
 country_event = {
 	id = 800000
