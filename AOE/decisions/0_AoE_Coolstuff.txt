@@ -664,4 +664,83 @@ political_decisions = {
 		}
 	}
 	
+	greater_armenia = {
+		picture = christian_question_armenia
+		potential = {
+			tag = ARM
+			NOT = {
+				has_country_flag = became_greater_armenia
+			}
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			NOT = {
+				vassal_of = TUR
+			}
+		}
+		effect = {
+			TUR_894 = {
+				add_core = ARM
+			}
+			1096 = {
+				add_core = ARM
+			}
+			1109 = {
+				add_core = ARM
+			}
+			1110 = {
+				add_core = ARM
+			}
+			TUR_893 = {
+				add_core = ARM
+			}
+			878 = {
+				add_core = ARM
+			}
+			879 = {
+				add_core = ARM
+			}
+			884 = {
+				add_core = ARM
+			}
+			set_country_flag = became_greater_armenia
+			badboy = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_armenia = {
+		picture = christian_question_armenia
+		potential = {
+			tag = CLC
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+			NOT = {
+				OR = {
+					is_vassal = yes
+					exists = ARM
+				}
+			}
+		}
+		effect = {
+			CLC = {
+				change_tag = ARM
+			}
+			TUR_894 = {
+				add_core = ARM
+			}
+			prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

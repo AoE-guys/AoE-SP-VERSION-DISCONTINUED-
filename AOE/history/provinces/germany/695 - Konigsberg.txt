@@ -8,3 +8,8 @@ life_rating = 40
 terrain = konigsberg
 fort = 1
 naval_base = 1
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}
