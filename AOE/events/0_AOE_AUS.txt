@@ -1803,8 +1803,9 @@ country_event = {
 	
 	trigger = {
 		tag = BOR 
-	AUS = {
-		has_country_modifier = maria_theresa
+		AUS = {
+			has_country_modifier = maria_theresa
+		}
 	}
 	mean_time_to_happen = {
 		months = 1
