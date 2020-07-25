@@ -610,15 +610,15 @@ political_decisions = {
 		picture = cossacks
 		potential = {
 			tag = RUS
-#			has_country_flag = claimed_crimea_south_ukrine
+			has_country_flag = claimed_crimea_south_ukrine
 		}
 		allow = {
-#			RUS_964 = { owned_by  = RUS }
-#			RUS_968 = { owned_by  = RUS }
-#			RUS_973 = { owned_by  = RUS }
-#			1048 =  { owned_by  = RUS }
-#			money = 5000000
-#			war = no
+			RUS_964 = { owned_by  = RUS }
+			RUS_968 = { owned_by  = RUS }
+			RUS_973 = { owned_by  = RUS }
+			1048 =  { owned_by  = RUS }
+			money = 5000000
+			war = no
 		}
 		effect = {
 			treasury = -500000
