@@ -1491,6 +1491,31 @@ lumber_mill = {
 	}
 }
 
+tropical_lumber_mill = {       
+	template = factory_template
+	input_goods = {
+		tropical_wood = 50		#90	total input+maint = 100
+	}
+	output_goods = lumber 
+	
+	value = 45			#110
+	bonus = {
+		trigger = { has_building = tropical_wood_factory }
+		value = 0.85
+	}
+	bonus = {
+		trigger = { 
+			OR = { has_building = steel_factory }
+			OR = { has_building = iron_factory }
+		}
+		value = 0.55
+	}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
+	}
+}
+
 fabric_factory = {       
 	template = factory_template
 	input_goods = {     
@@ -2067,7 +2092,7 @@ artisan_clipper = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 7.5		#420
+	value = 10.0		#420
 	
 	owner = {
 		poptype = artisans 

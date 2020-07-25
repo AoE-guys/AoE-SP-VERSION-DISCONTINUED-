@@ -3,7 +3,7 @@ controller = MUG
 add_core = MUG
 add_core = HND
 add_core = BNG
-trade_goods = dye  state_building = {  level = 1  building = dye2_factory  upgrade = yes  }
+trade_goods = timber  state_building = {  level = 1  building = timber_factory  upgrade = yes  }
 life_rating = 35
 fort = 1
 terrain = jungle_farmland

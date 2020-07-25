@@ -423,7 +423,6 @@ precious_goods = 1000
 	onmap = no
 
 	production_type = opium_factory
-	pop_build_factory = yes
 	strategic_factory = yes
 	default_enabled = yes #
 	
@@ -1001,6 +1000,26 @@ lumber_mill = {
 	pop_build_factory = yes
 }
 
+tropical_lumber_mill = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 500
+	goods_cost =
+	{
+		machine_parts = 2
+		iron = 20
+		cement = 20
+		precious_goods = 1000
+	}
+	time = 30
+	visibility = yes
+	onmap = no
+
+	production_type = tropical_lumber_mill
+	pop_build_factory = yes
+}
+
 fabric_factory = {
 	type = factory
 	on_completion = factory
@@ -1126,6 +1145,7 @@ fort = {
 	province = yes
 	one_per_state = no
 	fort_level = 1
+	pop_build_factory = yes
 }
 
 naval_base = {    
@@ -1152,6 +1172,7 @@ naval_base = {
 	one_per_state = yes
 	colonial_range = 25
 	local_ship_build = -0.10
+	pop_build_factory = yes
 }
 
 railroad = {   

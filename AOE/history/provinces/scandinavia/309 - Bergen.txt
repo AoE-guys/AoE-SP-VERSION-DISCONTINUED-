@@ -6,3 +6,9 @@ add_core = SCA
 trade_goods = iron  state_building = {  level = 1  building = iron_factory  upgrade = yes  }
 terrain = montane_tundra
 life_rating = 20
+
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}

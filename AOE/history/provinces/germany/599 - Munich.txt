@@ -12,3 +12,8 @@ state_building = {
 }
 life_rating = 45
 terrain = munich
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}

@@ -12,3 +12,8 @@ state_building = {
 life_rating = 40
 terrain = milan
 fort = 1
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}

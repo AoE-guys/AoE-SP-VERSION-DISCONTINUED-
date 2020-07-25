@@ -7,3 +7,9 @@ state_building = {  level = 1  building = clipper_shipyard  upgrade = yes  }
 life_rating = 32
 terrain = peking
 fort = 1
+
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}

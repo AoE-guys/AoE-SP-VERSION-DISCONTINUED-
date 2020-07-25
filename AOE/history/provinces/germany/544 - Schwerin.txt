@@ -3,7 +3,7 @@ controller = MEC
 add_core = MEC
 add_core = GER
 add_core = NNN
-trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+trade_goods = timber  state_building = {  level = 1  building = timber_factory  upgrade = yes  }
 life_rating = 40
 fort = 1
 state_building = {
@@ -11,3 +11,5 @@ state_building = {
 	building = machine_parts_factory
 	upgrade = yes
 }
+
+state_building = {  level = 1  building = lumber_mill  upgrade = yes  }
