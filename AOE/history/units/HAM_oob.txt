@@ -7,3 +7,44 @@ army = {
 		home = 528
 	}
 }
+
+navy = {
+	name = "Hamburgische Marine"
+	location = 528
+	
+	ship = {
+		name= "Kriegsschiff"
+		type = manowar
+
+	}
+
+	ship = {
+		name= "Fregatte"
+		type = frigate
+	}
+
+	ship = {
+		name= "Fregatte 2"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Fregatte 3"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Fregatte 4"
+		type = frigate
+	}
+
+	ship = {
+		name= "Transporter"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transporter 2"
+		type = clipper_transport
+	}
+}

@@ -8,3 +8,17 @@ army = {
 	}
 }
 
+navy = {
+	name = "Mecklenburgische Marine"
+	location = 544
+
+	ship = {
+		name= "Fregatte"
+		type = frigate
+	}
+
+	ship = {
+		name= "Transporter"
+		type = clipper_transport
+	}
+}
