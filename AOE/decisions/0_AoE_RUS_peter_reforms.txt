@@ -610,7 +610,10 @@ political_decisions = {
 		picture = cossacks
 		potential = {
 			tag = RUS
-			has_country_flag = claimed_crimea_south_ukrine
+			has_country_flag = claimed_crimea_south_ukraine
+			NOT = {
+				has_country_flag = settle_south_borders
+			}
 		}
 		allow = {
 			RUS_964 = { owned_by  = RUS }
@@ -622,7 +625,287 @@ political_decisions = {
 		}
 		effect = {
 			treasury = -500000
-			
+			set_country_flag = claimed_crimea_south_ukraine
+			973 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_978 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 975
+				}
+			}
+			975 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_977 = {
+				any_pop =  {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 976
+				}
+			}
+			976 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_977 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 965
+				}
+			}
+			965 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_977 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 979
+				}
+			}
+			979 = {
+				add_province_modifier = {
+						name = settle_the_south_border
+						duration = 3500
+				}
+			}
+			RUS_1037  = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 1047
+				}
+			}
+			1047 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_1008  = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 1048
+				}
+			}
+			1048 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_1037 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 974
+				}
+			}
+			974 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_1037 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 964
+				}
+			}
+			964 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_943 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 964
+				}
+			}
+			RUS_1008  = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 1046
+				}
+			}
+			1046 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_978 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 968
+				}
+			}
+			968 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_978 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 970
+				}
+			}
+			970 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+			RUS_998 = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ukrainian
+							has_pop_culture = cossack
+						}
+						militancy = 5
+						strata = poor
+						NOT = { type = serfs }
+					}
+					move_pop = 971
+				}
+			}
+			971 = {
+				add_province_modifier = {
+					name = settle_the_south_border
+					duration = 3500
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }
