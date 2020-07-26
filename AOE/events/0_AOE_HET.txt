@@ -194,44 +194,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = 178304
-	title = "Pruth peace"
-	desc = "EVTDESC178304"
-	picture = cossacks
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	trigger = {
-		tag = RUS
-		has_recently_lost_war = yes
-		NOT = {
-			1047 = {
-				owned_by = THIS
-			}
-		}
-		HET = {
-			exists = yes
-			vassal_of = RUS
-			has_country_flag = ukrainian_reunification
-		}
-	}
-	option = {
-		name = "We need to accept reality"
-		prestige = -10
-		HET = {
-			country_event = {
-				id = 178305
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-	}
-}
-
+#####Pruth
 country_event = {
 	id = 178305
 	title = "Pruth peace"

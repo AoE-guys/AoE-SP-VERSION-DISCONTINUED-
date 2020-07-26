@@ -4386,6 +4386,14 @@ russian_vaccination = {
 	global_population_growth = 0.002
 	icon = 17
 }
+kamchatka_wars = {
+	pop_militancy_modifier = 0.05
+	assimilation_rate = 0.3
+	local_factory_throughput = -0.8
+	immigrant_attract = 0.1
+	immigrant_push = 0.2
+	icon = 18
+}
 ####Austria stuff####
 maria_theresa = {
 	culture_tech_research_bonus = 0.1

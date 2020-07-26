@@ -1114,11 +1114,389 @@ country_event = {
 	}
 	
 	option = {
-		name = "Another good news"
-		set_country_flag = don_resolved
+		name = "What a monsters there live!"
+		set_country_flag = kamchatka_war
+		RUS_1074 = {
+			any_pop = {
+				limit = {
+					NOT = {
+						has_pop_religion = orthodox
+					}
+				}
+				militancy = 5
+				reduce_size = 0.9
+			}
+			any_pop = {
+				limit = {
+					has_pop_religion = orthodox
+				}
+				consciousness = 3
+				reduce_size = 0.5
+			}
+		}
+		1074 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		2633 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		2616 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		2663 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = 170024
+	title = "Kamchatka war"
+	desc = "EVTDESC157314"
+	
+	trigger = {
+		owner = {
+			tag = RUS
+			has_country_flag = kamchatka_war
+		}
+		state_id = 1074
+		has_province_modifier = kamchatka_wars
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Just destroy every one of them!"
+		
+			any_pop = {
+				limit = {
+					NOT = {
+						has_pop_religion = orthodox
+					}
+				}
+				militancy = 9
+				reduce_size = 0.5
+			}
+			any_pop = {
+				limit = {
+					has_pop_religion = orthodox
+				}
+				consciousness = 1
+				reduce_size = 0.9
+			}
+		
+		1074 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		2633 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		2616 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		2663 = {
+			add_province_modifier = {
+				name = kamchatka_wars 
+				duration = 365
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "We should enforce peace in any terms"
+		owner = {
+			prestige = -10
+			war_exhaustion = 10
+		}
+			any_pop = {
+				limit = {
+					NOT = {
+						has_pop_religion = orthodox
+					}
+				}
+				militancy = -5
+				reduce_size = 0.9
+			}
+			any_pop = {
+				limit = {
+					has_pop_religion = orthodox
+				}
+				consciousness = 1
+				reduce_size = 0.8
+			}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 170025
+	title = "Kamchatka war: End"
+	desc = "EVTDESC157314"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS 
+		NOT = {
+			has_country_flag = kamchatka_war
+		}
+		NOT = {
+			any_owned = {
+				has_province_modifier = kamchatka_wars
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Finally a peace"
+		clr_country_flag = kamchatka_war
+		prestige = 1
+		war_exhaustion = -5
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+###
+country_event = {
+	id = 170020
+	title = "The End of Charles the XII?"
+	desc = "EVTDESC170020"
+	picture = glos
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = RUS 
+		NOT = {
+			has_global_flag = escape_of_charles
+			has_global_flag = charles_xii_restoration
+		}
+		owns = 994
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Send letter to sultan"
+		set_global_flag = escape_of_charles
+		prestige = 10
+		TUR = {
+			country_event = 170021
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "Let him be"
+		set_global_flag = charles_xii_restoration
+		prestige = -20
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 170021
+	title = "The End of Charles the XII?"
+	desc = "EVTDESC170021"
+	picture = glos
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let him stay"
+		set_global_flag = pruth_war
+		
 		prestige = 5
 		ai_chance = {
 			factor = 1
+		}
+	}
+	option = {
+		name = "Throw him away!"
+		prestige = -10
+		relation = {
+			who = RUS
+			value = 100
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 170022
+	title = "The Pruth war"
+	desc = "EVTDESC170022"
+	picture = glos
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MOL
+		has_global_flag = pruth_war
+		war = no
+		vassal_of = TUR
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Make Lutsk agreement"
+		TUR = {
+			release_vassal = MOL
+		}
+		RUS = {
+			create_vassal = MOL
+			set_country_flag = lutsk_agreements
+		}
+		relation = {
+			who = TUR
+			value = -100
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "We don't want any war!"
+		relation = {
+			who = TUR
+			value = 100
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = 5
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 170023
+	title = "The Pruth war"
+	desc = "EVTDESC170023"
+	picture = glos
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		has_global_flag = pruth_war
+		MOL = {
+			vassal_of = THIS
+		}
+		has_country_flag = lutsk_agreements
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Make Lutsk agreement"
+		TUR = {
+			war = {
+				target = RUS
+				attacker_goal = { casus_belli = humiliate }
+				defender_goal = { casus_belli = acquire_core_region state_province_id = 1047 }
+				call_ally = yes
+			}
+		}
+		clr_country_flag = lutsk_agreements
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 178304
+	title = "Pruth peace"
+	desc = "EVTDESC178304"
+	picture = cossacks
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		tag = RUS
+		has_global_flag = pruth_war
+		NOT = {
+			1047 = {
+				owned_by = THIS
+			}
+		}
+	}
+	option = {
+		name = "We need to accept reality"
+		prestige = -10
+		HET = {
+			country_event = 178305
+		}
+			969 = {
+				secede_province = PLC
+			}
+			960 = {
+				secede_province = PLC
+			}
+			954 = {
+				secede_province = PLC
+			}
+		release_vassal = MOL
+		TUR = {
+			create_vassal = MOL
+		}
+		ai_chance = {
+			factor = 10
 		}
 	}
 }
