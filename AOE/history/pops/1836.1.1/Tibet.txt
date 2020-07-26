@@ -63,15 +63,15 @@
 	}
 
 	soldiers = {
-		culture = beifaren
+		culture = oirat
 		religion = gelugpa
-		size = 54
+		size = 1054
 	}
 
 	serfs = {
 		culture = beifaren
 		religion = gelugpa
-		size = 4771
+		size = 3771
 	}
 
 	labourers = {
@@ -111,7 +111,13 @@
 		religion = gelugpa
 		size = 4357
 	}
-
+	
+	soldiers = {
+		culture = oirat
+		religion = gelugpa
+		size = 1020
+	}
+	
 	labourers = {
 		culture = tibetan
 		religion = gelugpa
@@ -178,6 +184,12 @@
 		culture = tibetan
 		religion = gelugpa
 		size = 2642
+	}
+	
+	farmers = {
+		culture = oirat
+		religion = gelugpa
+		size = 592
 	}
 
 	labourers = {
@@ -277,7 +289,7 @@
 	artisans = {
 		culture = tibetan
 		religion = gelugpa
-		size = 342
+		size = 442
 	}
 
 	soldiers = {
@@ -287,9 +299,21 @@
 	}
 
 	serfs = {
+		culture = oirat
+		religion = gelugpa
+		size = 192
+	}
+	
+	soldiers = {
+		culture = oirat
+		religion = gelugpa
+		size = 1002
+	}
+	
+	serfs = {
 		culture = tibetan
 		religion = gelugpa
-		size = 592
+		size = 792
 	}
 
 	labourers = {
