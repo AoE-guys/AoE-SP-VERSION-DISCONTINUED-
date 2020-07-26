@@ -1099,7 +1099,7 @@ country_event = {
 	id = 170019
 	title = "Kamchatka war"
 	desc = "EVTDESC157314"
-	picture = glos
+	picture = siberian_attack
 	fire_only_once = yes
 	
 	trigger = {
@@ -1262,7 +1262,7 @@ country_event = {
 	id = 170025
 	title = "Kamchatka war: End"
 	desc = "EVTDESC157314"
-	picture = glos
+	picture = kamchatka_wars
 	fire_only_once = yes
 	
 	trigger = {
