@@ -1672,6 +1672,12 @@
 		size = 20000 
 	}
 	
+	serfs = {
+		culture = rusyn
+		religion = orthodox
+		size = 6325  
+	}
+	
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
@@ -1699,7 +1705,7 @@
 	serfs = {
 		culture = hungarian
 		religion = catholic
-		size = 3350   
+		size = 3050   
 	}
 
 	aristocrats = {
@@ -1729,7 +1735,7 @@
 	serfs = {
 		culture = hungarian
 		religion = protestant
-		size = 6850      
+		size = 5850      
 	}
 
 	aristocrats = {
@@ -1759,7 +1765,7 @@
 	serfs = {
 		culture = siebenburger
 		religion = protestant
-		size = 7025  
+		size = 6025  
 	}
 
 	clergymen = {
@@ -1783,7 +1789,7 @@
 	serfs = {
 		culture = ashkenazi
 		religion = jewish
-		size = 10521    
+		size = 3521    
 	}
 }
 #Targu Mures (344000/86000 POPS)  
