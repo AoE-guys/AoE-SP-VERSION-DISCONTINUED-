@@ -787,4 +787,143 @@ political_decisions = {
 		}
 	}
 	
+	unite_dalmatia_ragusa = {
+		picture = italian_dalmatia
+		potential = {
+			tag = DLM
+			NOT = { has_country_flag = united_dalmatia }
+		}
+
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = united_dalmatia
+			AUS_774 = {
+				add_core = THIS
+			}
+			badboy = 5
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	conquer_istria_ragusa = {
+		picture = italian_trentino
+		potential = {
+			tag = DLM
+			has_country_flag = took_bosnia
+			NOT = { has_country_flag = conquered_istria }
+		}
+
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = conquered_istria
+			AUS_736 = {
+				add_core = THIS
+			}
+			badboy = 10
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	accept_slovenes_ragusa = {
+		picture = pan_slavism
+		potential = {
+			tag = DLM
+			NOT = { has_country_flag = accepts_slovenes }
+		}
+
+		allow = {
+			owns = 736
+		}
+
+		effect = {
+			set_country_flag = accepts_slovenes
+			768 = {
+				add_core = THIS
+			}
+			add_accepted_culture = slovene
+			badboy = -3
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	ragusa_retake_mostar = {
+		picture = reclaim_croatia
+		potential = {
+			tag = DLM
+			has_country_flag = united_dalmatia
+			NOT = { has_country_flag = took_bosnia }
+		}
+
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = took_bosnia
+			784 = {
+				add_core = THIS
+			}
+			788 = {
+				add_core = THIS
+			}
+			789 = {
+				add_core = THIS
+			}
+			badboy = 3
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	ragusa_conquer_montenegro = {
+		picture = montenegro_map
+		potential = {
+			tag = DLM
+			NOT = { has_country_flag = conquered_montenegro }
+		}
+
+		allow = {
+			owns = 2582
+		}
+
+		effect = {
+			set_country_flag = conquered_montenegro
+			3335 = {
+				add_core = THIS
+			}
+			800 = {
+				add_core = THIS
+			}
+			2569 = {
+				add_core = THIS
+			}
+			2583 = {
+				add_core = THIS
+			}
+			badboy = 10
+			prestige = 10
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
 }
