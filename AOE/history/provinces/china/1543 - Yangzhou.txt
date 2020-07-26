@@ -4,3 +4,6 @@ add_core = CHI
 trade_goods = silk  state_building = {  level = 1  building = silk_factory  upgrade = yes  }
 life_rating = 32
 terrain = floodplain_farmland
+
+
+state_building = {  level = 1  building = luxury_clothes_factory  upgrade = yes  }

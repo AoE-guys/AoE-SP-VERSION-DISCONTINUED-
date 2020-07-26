@@ -6,3 +6,5 @@ trade_goods = grain  state_building = {  level = 1  building = grain_factory  up
 life_rating = 35
 terrain = mexicocity
 fort = 1
+
+state_building = {  level = 1  building = wool_fabric_factory  upgrade = yes  }
