@@ -696,115 +696,109 @@
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
-		size = 238
+		size = 2
 	}
 
 	clergymen = {
 		culture = ukrainian
-		religion = orthodox
-		size = 162
+		religion = sunni
+		size = 5
 	}
 
 	artisans = {
 		culture = ukrainian
 		religion = orthodox
-		size = 475
+		size = 12
 	}
 
 	soldiers = {
 		culture = cossack
 		religion = orthodox
-		size = 2500
+		size = 31
 	}
 
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 10419
+		size = 419
 	}
 	
 	farmers = {
 		culture = cossack
 		religion = orthodox
-		size = 2000
+		size = 200
 	}
 
 	labourers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 706
+		size = 1
 	}
 
 	aristocrats = {
 		culture = russian
-		religion = orthodox
-		size = 112
+		religion = sunni
+		size = 2
 	}
 
 	bureaucrats = {
 		culture = russian
-		religion = orthodox
-		size = 188
+		religion = sunni
+		size = 12
 	}
 
 	officers = {
 		culture = russian
-		religion = orthodox
-		size = 150
-	}
-
-	clergymen = {
-		culture = russian
-		religion = orthodox
-		size = 50
+		religion = sunni
+		size = 1
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 225
+		size = 37
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 50
+		size = 14
 	}
 
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 489
+		size = 989
 	}
 
 	labourers = {
 		culture = russian
 		religion = orthodox
-		size = 436
+		size = 3
 	}
 
 	aristocrats = {
 		culture = tatar
 		religion = sunni
-		size = 250
+		size = 550
 	}
 
 	clergymen = {
 		culture = tatar
 		religion = sunni
-		size = 250
+		size = 350
 	}
 
 	artisans = {
 		culture = tatar
 		religion = sunni
-		size = 500
+		size = 600
 	}
 
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 1200
+		size = 800
 	}
 
 	serfs = {
@@ -816,7 +810,7 @@
 	labourers = {
 		culture = tatar
 		religion = sunni
-		size = 440
+		size = 840
 	}
 }
 #Migolinskaya (84000/21000 POPS)
@@ -824,79 +818,102 @@
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
-		size = 50
+		size = 190
 	}
 
 	clergymen = {
 		culture = ukrainian
 		religion = orthodox
-		size = 62
+		size = 217
+	}
+
+	clergymen = {
+		culture = cossack
+		religion = orthodox
+		size = 320
 	}
 
 	artisans = {
 		culture = ukrainian
 		religion = orthodox
-		size = 225
+		size = 820
+	}
+
+	artisans = {
+		culture = cossack
+		religion = orthodox
+		size = 1425
 	}
 
 	soldiers = {
 		culture = cossack
 		religion = orthodox
-		size = 400
+		size = 2200
 	}
 
-	serfs = {
+	farmers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 3284
+		size = 8284
 	}
 	
 	farmers = {
 		culture = cossack
 		religion = orthodox
-		size = 1000
+		size = 6000
 	}
 
 	labourers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 278
+		size = 178
+	}
+
+	labourers = {
+		culture = cossack
+		religion = orthodox
+		size = 512
 	}
 
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 50
+		size = 180
 	}
 
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 38
+		size = 338
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 200
+		size = 720
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 50
+		size = 450
 	}
 
+	farmers = {
+		culture = russian
+		religion = orthodox
+		size = 3123
+	}
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 479
+		size = 1123
 	}
 
 	labourers = {
 		culture = russian
 		religion = orthodox
-		size = 183
+		size = 111
 	}
 	
 	serfs = {
@@ -910,61 +927,67 @@
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
-		size = 62
+		size = 92
 	}
 
 	clergymen = {
 		culture = ukrainian
 		religion = orthodox
-		size = 38
+		size = 138
 	}
 
 	artisans = {
 		culture = ukrainian
 		religion = orthodox
-		size = 250
+		size = 1750
 	}
 
 	soldiers = {
 		culture = cossack
 		religion = orthodox
-		size = 1150
+		size = 3150
 	}
 
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 1370
+		size = 4370
 	}
 	
 	farmers = {
 		culture = cossack
 		religion = orthodox
-		size = 1000
+		size = 6000
 	}
 
 	labourers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 230
+		size = 234
 	}
 
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 75
+		size = 320
 	}
 
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 38
+		size = 119
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
 		size = 200
+	}
+
+	artisans = {
+		culture = cossack
+		religion = orthodox
+		size = 1201
 	}
 
 	soldiers = {
@@ -976,13 +999,19 @@
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 200
+		size = 1000
 	}
 	
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 256
+		size = 560
+	}
+
+	farmers = {
+		culture = tatar
+		religion = sunni
+		size = 3560
 	}
 
 	labourers = {
@@ -1012,13 +1041,13 @@
 	soldiers = {
 		culture = oirat
 		religion = gelugpa
-		size = 725
+		size = 125
 	}
 
 	serfs = {
 		culture = oirat
 		religion = gelugpa
-		size = 1051
+		size = 251
 	}
 
 	labourers = {
@@ -1032,7 +1061,7 @@
 	serfs = {
 		culture = gypsy
 		religion = orthodox
-		size = 492
+		size = 192
 	}
 
 	labourers = {
@@ -1044,31 +1073,25 @@
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
-		size = 200
+		size = 1
 	}
 
 	clergymen = {
 		culture = ukrainian
 		religion = orthodox
-		size = 150
+		size = 1
 	}
 
 	artisans = {
-		culture = ukrainian
+		culture = tatar
 		religion = orthodox
-		size = 825
-	}
-
-	soldiers = {
-		culture = cossack
-		religion = orthodox
-		size = 2000
+		size = 25
 	}
 
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 9032
+		size = 1350
 	}
 
 	labourers = {
@@ -1086,31 +1109,31 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 50
+		size = 1
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 75
+		size = 2
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 50
+		size = 1
 	}
 
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 443
+		size = 743
 	}
 
 	labourers = {
 		culture = russian
 		religion = orthodox
-		size = 44
+		size = 1
 	}
 
 	aristocrats = {
@@ -1134,13 +1157,13 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 1012
+		size = 3012
 	}
 
-	serfs = {
+	farmers = {
 		culture = tatar
 		religion = sunni
-		size = 2511
+		size = 5511
 	}
 
 	labourers = {
@@ -1158,7 +1181,7 @@
 	artisans = {
 		culture = pontic
 		religion = orthodox
-		size = 375
+		size = 175
 	}
 
 	soldiers = {
@@ -5291,7 +5314,13 @@
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 1000
+		size = 400
+	}
+
+	aristocrats = {
+		culture = cossack
+		religion = orthodox
+		size = 600
 	}
 
 	clergymen = {
@@ -5303,13 +5332,19 @@
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 3000
+		size = 1000
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 600
 	}
 	
 	artisans = {
-		culture = russian
+		culture = cossack
 		religion = orthodox
-		size = 3000
+		size = 2000
 	}
 	
 	artisans = {
@@ -5327,13 +5362,25 @@
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 28354
+		size = 16000
+	}
+
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 9000
+	}
+
+	serfs = {
+		culture = ukrainian
+		religion = orthodox
+		size = 4354
 	}
 	
 	farmers = {
 		culture = cossack
 		religion = orthodox
-		size = 10000
+		size = 14000
 	}
 
 	labourers = {
@@ -5342,16 +5389,28 @@
 		size = 2071
 	}
 
+	labourers = {
+		culture = cossack
+		religion = orthodox
+		size = 1000
+	}
+
+	bureaucrats = {
+		culture = cossack
+		religion = orthodox
+		size = 478
+	}
+
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 28000
+		size = 20000
 	}
 	
 	clergymen = {
 		culture = ukrainian
 		religion = orthodox
-		size = 88
+		size = 188
 	}
 
 	artisans = {
@@ -5363,7 +5422,7 @@
 	soldiers = {
 		culture = cossack
 		religion = orthodox
-		size = 3000
+		size = 5000
 	}
 
 	serfs = {
@@ -5776,43 +5835,62 @@
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
-		size = 200
+		size = 2
 	}
 
 	clergymen = {
 		culture = ukrainian
 		religion = orthodox
-		size = 150
+		size = 3
 	}
 
 	artisans = {
 		culture = ukrainian
 		religion = orthodox
-		size = 700
+		size = 4
 	}
 
 	soldiers = {
 		culture = cossack
 		religion = orthodox
-		size = 3362
+		size = 70
 	}
 
 	serfs = {
 		culture = ukrainian
 		religion = orthodox
-		size = 11046
+		size = 2119
+	}
+
+	serfs = {
+		culture = ukrainian
+		religion = sunni
+		size = 326
 	}
 
 	labourers = {
 		culture = ukrainian
-		religion = orthodox
-		size = 766
+		religion = sunni
+		size = 1
+	}
+
+
+	soldiers = {		
+		culture = tatar
+		religion = sunni
+		size = 3070
 	}
 	
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 7500
+		size = 20500
+	}
+
+	farmers = {
+		culture = tatar
+		religion = sunni
+		size = 3210
 	}
 
 	labourers = {
@@ -5831,6 +5909,12 @@
 		culture = pontic
 		religion = orthodox
 		size = 175
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 2633
 	}
 
 	soldiers = {
@@ -9791,31 +9875,49 @@
 	clergymen = {
 		culture = siberian
 		religion = tengri
-		size = 2
+		size = 20
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 10
 	}
 
 	artisans = {
 		culture = siberian
 		religion = tengri
-		size = 2
+		size = 20
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 10
 	}
 
 	soldiers = {
 		culture = siberian
 		religion = tengri
-		size = 1
+		size = 100
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 201
 	}
 
 	serfs = {
 		culture = siberian
 		religion = tengri
-		size = 66
+		size = 340
 	}
 
 	labourers = {
 		culture = siberian
 		religion = tengri
-		size = 4
+		size = 17
 	}
 }
 #Kamenskoye (1000/250 POPS)
@@ -9899,37 +10001,55 @@
 	aristocrats = {
 		culture = siberian
 		religion = tengri
-		size = 1
+		size = 10
 	}
 
 	clergymen = {
 		culture = siberian
 		religion = tengri
-		size = 2
+		size = 20
 	}
 
 	artisans = {
 		culture = siberian
 		religion = tengri
-		size = 5
+		size = 50
 	}
 
 	soldiers = {
 		culture = siberian
 		religion = tengri
-		size = 2
+		size = 200
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 200
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 5
+	}
+
+	farmers = {
+		culture = siberian
+		religion = tengri
+		size = 100
 	}
 
 	serfs = {
 		culture = siberian
 		religion = tengri
-		size = 109
-	}
+		size = 300
+	}	
 
 	labourers = {
 		culture = siberian
 		religion = tengri
-		size = 6
+		size = 20
 	}
 }
 #Yevensk (2000/500 POPS) => Gizhiga
