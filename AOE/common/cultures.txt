@@ -369,7 +369,7 @@ british = {
 		Smith Smith-Dorrien Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood }
 	}
 	cornish = {
-		color = (0 0 0)
+		color = {0 0 0}
 		radicalism = 5
 		first_names = { Arthek Arthyen Austol Benesek Branok Bryok Breok Brioc Cadan Cador Carantok Casek Casworon 
 		Clemo Clesek Corentyn Costentyn De Day Edern Enyon Gerens Gerren Goron Gryffyn Gwalather Hedrek Hedrok Jago 
@@ -396,7 +396,7 @@ british = {
 		Mulcahy O'Brien O'Connor O'Doherty O'Higgins O'Leary O'Mara Pearse Plunket White }
 	}	
 	manx = {
-		color = (208 12 39)
+		color = {208 12 39}
 		radicalism = 5
 		first_names = { Abban Aedan Aleyn Aspallan Aulay Carbry Connaghyn Cristen Dolyn Donal Doolish Eamon 
 		Ean Fiac Fynlo Gibbon Gilcrist Gorry Hane Illiam Inry Jamys Jole Juan Kerran Lonan Mian Mannanan 
@@ -777,6 +777,24 @@ pan_albanian = {
 		}
 		radicalism = 15
 	}
+	
+	arvanite = {
+		color = { 144 23 99 }
+		first_names = { Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
+		Esad Fatmir Fejzi Fiqri Gjergj Gjon Hasan Hashim Ibrahim Idhomene
+		Iliaz Ishak Ismail Izet Kara Kastriot KoÁi Kˆpryly Kostaq LekÅE
+		Maliq Marin mehdi Musa Mustafa Pandeli Petro Qamil Qazim Ramush
+		Rexhep Shefqet SkÅEder Sulejman Tewfik Theofan Turhan Vasil Veton Xhafer
+		}
+
+		last_names = { Ahmeti al-Albani Bardha Bazna "Bej Alizoti" "Bej BiÁakÁiu" "Bej Delvina" "Bej FrashÅEi" "Bej Libohova" "Bej Ndroque"
+		"Bej Prishtina" "Bej Verlaci" "Bej Vrioni" "Bej Ypi" "Bej Zogu" Belishi Burbank Bushati Buza «abej
+		«eku Dine Dragoti Dukagiini Dushku Evangjeli Feza Hoxha Islami Kadare
+		Koculi Konica Konushevci Kosturi Kota Logoreci Merlika-Kruja Mitrovica Mula Noli
+		"PashÅEPÅEmeti" "PashÅETepelena" "PashÅEToptani" Poga "Qemal Bej" Shahini Skiroi ThaÁi Troja Xoxe
+		}
+		radicalism = 15
+	}
 }
 
 pan_romanian = {
@@ -986,6 +1004,17 @@ east_slavic = {
 	}
 	byelorussian = {
 		color = {100 140 110}
+			first_names = { Alaksandr Alexei Andrei Anton Boris Cyril Danya Dz'mitry Giorgi 
+							Ivan Janka Jury Lavr Leonid Leu Mikalai Paval Piotr Roman Ryhor 
+							Stanislaw Sergey Valery Vasily Viktar Uladzimir Vladislav }
+
+			last_names = { Alexseyev "Bulak-Balachowicz" Chibisov Denikin Dragomirov Golivin Gurko 
+						   Ivanov Kalinowski Kornilov Kolchak Kuropatkin Lukashenka Menshikov Nakhimov 
+						   Nebogatov Nikolaevich Pavlov Putyatin Rozhestvensky Skobelev Sukhoi 
+						   Tukhachevsky Yegorov Vorontsov Zhauryd }
+        }
+	rusyn = {
+		color = {170 100 100}
 			first_names = { Alaksandr Alexei Andrei Anton Boris Cyril Danya Dz'mitry Giorgi 
 							Ivan Janka Jury Lavr Leonid Leu Mikalai Paval Piotr Roman Ryhor 
 							Stanislaw Sergey Valery Vasily Viktar Uladzimir Vladislav }

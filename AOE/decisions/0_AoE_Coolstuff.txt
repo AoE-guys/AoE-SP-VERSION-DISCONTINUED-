@@ -743,4 +743,48 @@ political_decisions = {
 		}
 	}
 	
+	armenia_pontic = {
+		picture = unite_with_greece
+		potential = {
+			tag = ARM
+			NOT = {
+				has_country_flag = pontic_armenians
+			}
+		}
+		allow = {
+			owns = 882
+		}
+		effect = {
+			ARM = {
+				add_accepted_culture = pontic
+			}
+			set_country_flag = pontic_armenians
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	armenia_cappadocian = {
+		picture = unite_with_greece
+		potential = {
+			tag = ARM
+			NOT = {
+				has_country_flag = cappadocian_armenians
+			}
+		}
+		allow = {
+			owns = 879
+		}
+		effect = {
+			ARM = {
+				add_accepted_culture = cappadocian
+			}
+			set_country_flag = cappadocian_armenians
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

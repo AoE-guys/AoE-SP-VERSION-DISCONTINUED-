@@ -296,7 +296,7 @@ political_decisions = {
 			}
 			any_pop = {
 				limit = {
-					clergymen = yes
+					type = clergymen
 				}
 				money = 10
 			}
@@ -305,46 +305,6 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	mazepa_culture = {
-		picture = cossak_state
-		
-		potential = {
-			tag = HET
-			NOT = {
-				RUS = {
-					has_country_flag = destroy_the_sich
-				}
-				has_country_flag = mazepa_culture
-			}
-		}
-		
-		allow = {
-			romanticism = 1
-			money = 50000
-		}
-		
-		effect = {
-			prestige = 10
-			any_pop = {
-				limit = {
-					is_primary_culture = yes
-					is_accepted_culture = yes
-				}
-				consciousness = -2
-				literacy = 0.1
-			}
-			any_pop = {
-				limit = {
-					clergymen = yes
-				}
-				money = 10
-			}
-			set_country_flag = mazepa_culture
-			treasury = -50000
-		}
-		ai_will_do = { factor = 1 }
-	}
-}
 
 	intervine_in_don_rebellion = {
 		picture = khmelnytsky_uprising
@@ -381,7 +341,7 @@ political_decisions = {
 		ai_will_do = { 
 			factor = 1 
 			modifier = {
-				factor = -5
+				factor = 00
 				war_exhaustion = 40
 			}
 		}

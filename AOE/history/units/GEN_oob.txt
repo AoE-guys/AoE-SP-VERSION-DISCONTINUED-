@@ -1,6 +1,6 @@
 
 army = {
-	name = "Army of Genoa"
+	name = "Esercito Genovese"
 	location = 724
 	regiment = {
 		name= "Genoan Infantry"
@@ -21,10 +21,22 @@ army = {
 
 
 navy = {
-	name = "Genoese Navy"
+	name = "Marina Genovese"
 	location = 724
 	ship = {
 		name= "Diavolo"
+		type = manowar
+	}
+	ship = {
+		name= "Doppio"
+		type = manowar
+	}
+	ship = {
+		name= "Cioccolata"
+		type = manowar
+	}
+	ship = {
+		name= "Secco"
 		type = manowar
 	}
 	ship = {
@@ -41,6 +53,18 @@ navy = {
 	}
 	ship = {
 		name= "Fregata 4"
+		type = frigate
+	}
+	ship = {
+		name= "Fregata 5"
+		type = frigate
+	}
+	ship = {
+		name= "Fregata 6"
+		type = frigate
+	}
+	ship = {
+		name= "Fregata 7"
 		type = frigate
 	}
 	ship = {

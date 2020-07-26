@@ -534,7 +534,7 @@ diplomacy = {
 	WARGOAL_JINGOISM_REQUIREMENT = 0.01,
 
 	LIBERATE_STATE_RELATION_INCREASE = 50,
-	DISHONORED_CALLALLY_PRESTIGE_PENALTY = -3,
+	DISHONORED_CALLALLY_PRESTIGE_PENALTY = -10,
 	BASE_TRUCE_MONTHS = 12,
 	MAX_INFLUENCE = 100,
 	WARSUBSIDIES_PERCENT = 0.30, -- How many percent of imports you are going to pay each day(mil. constructions and mil. maintainence)
@@ -544,7 +544,7 @@ diplomacy = {
 	PUPPET_BONUS_INFLUENCE_PERCENT = 1.0, -- bonus if they are our puppet
 	
 	-- effects of manually releasing a nation
-	RELEASE_NATION_PRESTIGE = 0,
+	RELEASE_NATION_PRESTIGE = 5,
 	RELEASE_NATION_INFAMY = -2,
 	
 	INFAMY_CLEAR_UNION_SPHERE = 0, -- Infamy for asserting hegemony

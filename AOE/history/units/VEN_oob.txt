@@ -1,6 +1,6 @@
 
 army = {
-	name = "Army of Genoa"
+	name = "Esercito Veneziano"
 	location = 729
 	regiment = {
 		name= "Venetian Infantry"
@@ -25,10 +25,26 @@ army = {
 }
 
 navy = {
-	name = "Venetian Navy"
+	name = "Marina Veneziana"
 	location = 729
 	ship = {
 		name= "Giorno"
+		type = manowar
+	}
+	ship = {
+		name= "Abbachio"
+		type = manowar
+	}
+	ship = {
+		name= "Bucciarati"
+		type = manowar
+	}
+	ship = {
+		name= "Mista"
+		type = manowar
+	}
+	ship = {
+		name= "Narancia"
 		type = manowar
 	}
 	ship = {

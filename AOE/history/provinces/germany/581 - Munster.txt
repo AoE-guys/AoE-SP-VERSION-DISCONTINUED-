@@ -7,3 +7,8 @@ add_core = NNN
 trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
 state_building = {  level = 1  building = cement_factory  upgrade = yes  }
 life_rating = 40
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}

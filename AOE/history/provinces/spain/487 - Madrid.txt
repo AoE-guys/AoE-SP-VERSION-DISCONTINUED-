@@ -5,3 +5,8 @@ trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  
 life_rating = 40
 terrain = madrid
 fort = 1
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}
