@@ -11,36 +11,22 @@ political_decisions = {
 			NOT = {
 				has_country_flag = end_of_paliy
 			}
+			has_country_flag = paliy_rebellion
 		}
 		
 		allow = {
 			NOT = {
 				war_exhaustion = 20
 			}
-			OR = {
-				PLC = {
-					OR = {
-						war_exhaustion = 60
-						AND = {
-							war = yes
-							NOT = {
-								rank = 8
-							}
+			PLC = {
+				OR = {
+					war_exhaustion = 60
+					AND = {
+						war = yes
+						NOT = {
+							rank = 8
 						}
 						average_militancy = 4
-					}
-				}
-				AND = {
-					NOT = {
-						969 = {
-							controlled_by = PLC
-						}
-						960 = {
-							controlled_by = PLC
-						}
-						954 = {
-							controlled_by = PLC
-						}
 					}
 				}
 			}
@@ -48,15 +34,7 @@ political_decisions = {
 			
 		effect = {
 			PLC = {
-				969 = {
-					secede_province = HET
-				}
-				960 = {
-					secede_province = HET
-				}
-				954 = {
-					secede_province = HET
-				}
+				country_event = 178308
 			}
 			set_country_flag = ukrainian_reunification
 			badboy = 3
@@ -134,6 +112,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = end_of_paliy
 			}
+			has_country_flag = paliy_rebellion
 		}
 		
 		allow = {

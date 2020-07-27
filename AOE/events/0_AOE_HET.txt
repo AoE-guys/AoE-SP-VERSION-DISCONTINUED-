@@ -250,6 +250,7 @@ country_event = {
 
 	option = {
 		name = "We need to accept reality"
+		set_country_flag = polish_paliy
 		any_pop = {
 			limit = {
 				has_pop_culture = ukrainian
@@ -258,6 +259,138 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 178307
+	title = "Paliy rebellion"
+	desc = "EVTDESC178307"
+	picture = cossacks
+	
+	trigger = {
+		tag = PLC
+		year = 1702
+		NOT = {
+			has_country_flag = polish_paliy
+		}
+		HET = {
+			NOT = {
+				has_country_flag = ukrainian_reunification
+			}
+			NOT = {
+				has_country_flag = end_of_paliy
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "Crush them with force!"
+		HET = {
+			set_country_flag = paliy_rebellion
+		}
+		set_country_flag = paliy_rebellion
+		prestige = -5
+		any_pop = {
+			limit = {
+				has_pop_religion = orthodox
+			}
+			militancy = 1
+		}
+		969 = {
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = polish
+						has_pop_culture = ashkenazi
+					}
+				}
+				reduce_size = 0.8
+			}
+		}
+		960 = {
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = polish
+						has_pop_culture = ashkenazi
+					}
+				}
+				reduce_size = 0.8
+			}
+		}
+		954 = {
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = polish
+						has_pop_culture = ashkenazi
+					}
+				}
+				reduce_size = 0.8
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 178308
+	title = "Intervention of cossacks"
+	desc = "EVTDESC178307"
+	picture = cossacks
+	is_triggered_only = yes
+
+	option = {
+		name = "Wait for Russian reaction"
+		969 = {
+			secede_province = HET
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = ukrainian
+						has_pop_culture = cossack
+					}
+					militancy = 5
+				}
+				reduce_size = 0.9
+			}
+		}
+		960 = {
+			secede_province = HET
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = ukrainian
+						has_pop_culture = cossack
+					}
+					militancy = 5
+				}
+				reduce_size = 0.9
+			}
+		}
+		954 = {
+			secede_province = HET
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = ukrainian
+						has_pop_culture = cossack
+					}
+					militancy = 5
+				}
+				reduce_size = 0.9
+			}
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
