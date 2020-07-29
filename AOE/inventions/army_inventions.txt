@@ -1,32 +1,34 @@
 #post_napoleonic_thought
-post_napoleonic_army_doctrine = {
+gustavian_army_reform = {
 	limit = { post_napoleonic_thought = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
 		infantry = {
+			attack = 1
 			defence = 1
 		}
-		guard = {
-			defence = 1
-		}
-		plane = {
-			defence = 1
-		}
-		engineer = {
-			defence = 1
-		}
-		cuirassier = {
-			defence = 1
-		}
-		dragoon = {
-			defence = 1
-		}
-		hussar = {
-			defence = 1
-		}
+		# guard = {
+			# defence = 1
+		# }
+		# plane = {
+			# defence = 1
+		# }
+		# engineer = {
+			# defence = 1
+		# }
+		# cuirassier = {
+			# defence = 1
+		# }
+		# dragoon = {
+			# defence = 1
+		# }
+		# hussar = {
+			# defence = 1
+		# }
 		cavalry = {
+			attack = 0.5
 			defence = 1
 		}
 		irregular = {
@@ -34,9 +36,86 @@ post_napoleonic_army_doctrine = {
 		}
 	}
 }
+# post_napoleonic_army_doctrine = {
+	# limit = { post_napoleonic_thought = 1 }
+	# chance = {
+		# base = 2
+	# }
+	# effect = {
+		# infantry = {
+			# defence = 1
+		# }
+		# guard = {
+			# defence = 1
+		# }
+		# plane = {
+			# defence = 1
+		# }
+		# engineer = {
+			# defence = 1
+		# }
+		# cuirassier = {
+			# defence = 1
+		# }
+		# dragoon = {
+			# defence = 1
+		# }
+		# hussar = {
+			# defence = 1
+		# }
+		# cavalry = {
+			# defence = 1
+		# }
+		# irregular = {
+			# defence = 1
+		# }
+	# }
+# }
 #strategic_mobility
-field_fortifications = {
+gabionade = {
 	limit = { strategic_mobility = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 3
+			mechanical_production = 1
+		}
+		modifier = {
+			factor = 2
+			organized_factories = 1
+		}
+	}
+	effect = {
+		artillery = {
+			defence = 1
+		}
+		tank = {
+			defence = 1
+		}
+	}
+}
+regimental_system = {
+	limit = {
+		strategic_mobility = 1
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			experimental_railroad = 1
+		}
+		modifier = {
+			factor = 3
+			functionalism = 1
+		}
+	}
+	effect = {
+		mobilisation_size = 0.01
+	}
+}
+#point_defense_system
+field_fortifications = {
+	limit = { point_defense_system = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -61,43 +140,11 @@ field_fortifications = {
 		engineer = {
 			defence = 1
 		}
-		artillery = {
-			defence = 1
-		}
-		dragoon = {
-			defence = 1
-		}
-		hussar = {
-			defence = 1
-		}
-		cavalry = {
-			defence = 1
-		}
 		irregular = {
 			defence = 1
 		}
 	}
 }
-railroad_transport_groups = {
-	limit = {
-		strategic_mobility = 1
-	}
-	chance = {
-		base = 0
-		modifier = {
-			factor = 2
-			experimental_railroad = 1
-		}
-		modifier = {
-			factor = 3
-			early_railroad = 1
-		}
-	}
-	effect = {
-		mobilisation_size = 0.01
-	}
-}
-#point_defense_system
 signal_detachments = {
 	limit = { point_defense_system = 1 }
 	chance = {
@@ -596,6 +643,39 @@ human_wave_vs_spearhead = {
 		}
 	}
 }
+
+		
+#bronze_muzzle_loaded_artillery
+cast_bronze_cannons = {
+	limit = { bronze_muzzle_loaded_artillery = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			default_organisation = 5
+			attack = 0.5
+		}
+		tank = {
+			default_organisation = 5
+			attack = 0.5
+		}
+	}
+}
+#iron_muzzle_loaded_artillery
+artillery_attachment = {
+	limit = { iron_muzzle_loaded_artillery = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 0.5
+			default_organisation = 5
+		}
+	}
+}
+
 #iron_breech_loaded_artillery
 #indirect_artillery_fire
 #heavy_armament
@@ -789,7 +869,28 @@ hussar_activation = {
 }
 	
 #military_plans
-telegraph_coordination = {
+fine_breed = {
+	limit = { military_plans = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		cuirassier = {
+			default_organisation = 5
+			supply_consumption = 0.15
+		}
+		dragoon = {
+			default_organisation = 5
+			supply_consumption = 0.10
+		}
+		hussar = {
+			default_organisation = 5
+			maximum_speed = 2
+			supply_consumption = 0.20
+		}
+	}
+}
+horse_messenging_coordination = {
 	limit = { military_plans = 1 }
 	chance = {
 		base = 2
@@ -810,45 +911,7 @@ telegraph_coordination = {
 	}
 }
 
-mobilization_time_tables = {
-	limit = {
-		military_plans = 1
-	}
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			invention = telegraph_coordination
-		}
-		modifier = {
-			factor = 2
-			strategic_mobility = 1
-		}
-	}
-	effect = {
-		mobilisation_size = 0.01
-	}
-}
 
-personnel_category_tables = {
-	limit = {
-		military_plans = 1
-	}
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = mobilization_time_tables
-		}
-		modifier = {
-			factor = 2
-			scientific_management = 1
-		}
-	}
-	effect = {
-		mobilisation_size = 0.01
-	}
-}
 
 #military_statistics
 ammunition_area_effect_calculations = {
@@ -1040,7 +1103,69 @@ army_local_military_government = {
 }
 
 #aeronautics
+#
+optical_telegraph_coordination = {
+	limit = { military_science_7 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			army_professionalism = 1
+		}
+		modifier = {
+			factor = 2
+			early_railroad = 1
+		}
+	}
+	effect = {
+		army_base = {
+			default_organisation = 5
+			supply_consumption = 0.10
+		} 
+	}
+}
+
+mobilization_time_tables = {
+	limit = {
+		military_science_8 = 1
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			invention = optical_telegraph_coordination
+		}
+		modifier = {
+			factor = 2
+			strategic_mobility = 1
+		}
+	}
+	effect = {
+		mobilisation_size = 0.01
+	}
+}
+
+personnel_category_tables = {
+	limit = {
+		military_science_8 = 1
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = mobilization_time_tables
+		}
+		modifier = {
+			factor = 2
+			scientific_management = 1
+		}
+	}
+	effect = {
+		mobilisation_size = 0.01
+	}
+}
 #army_professionalism
+
 army_academic_training = {
 	limit = { army_professionalism = 1 }
 	chance = {
@@ -1146,7 +1271,7 @@ army_delegated_power = {
 		}
 		modifier = {
 			factor = 2
-			invention = telegraph_coordination
+			invention = horse_messenging_coordination
 		}
 
 	}

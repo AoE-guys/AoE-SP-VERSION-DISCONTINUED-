@@ -41,7 +41,7 @@ matchlock_rifle_armament = {
 flintlock_rifle_armament = {
 	limit = { 
 		muzzle_loaded_rifles = 1 
-		invention = flintlock_rifle_armament
+		invention = matchlock_rifle_armament
 	}
 	chance = {
 		base = 5
@@ -52,10 +52,10 @@ flintlock_rifle_armament = {
 		}
 	}
 	effect = {
-  
 		infantry = {
 			attack = 1
-			supply_consumption = 0.10
+			default_organisation = 5
+			supply_consumption = 0.15
 		}
 		guard = {
 			attack = 1
@@ -65,18 +65,18 @@ flintlock_rifle_armament = {
 			attack = 1
 			supply_consumption = 0.10
 		}
-		infantry = {
+		engineer = {
 			attack = 1
 			supply_consumption = 0.10
 		}
-		dragoon = {
-			attack = 1
-			supply_consumption = 0.10
-		}
-		hussar = {
-			attack = 1
-			supply_consumption = 0.10
-		}
+		# dragoon = {
+			# attack = 1
+			# supply_consumption = 0.10
+		# }
+		# hussar = {
+			# attack = 1
+			# supply_consumption = 0.10
+		# }
 		irregular = {
 			attack = 0.5
 			supply_consumption = 0.10
@@ -84,6 +84,26 @@ flintlock_rifle_armament = {
 	}
 }
 
+horseback_flintlock = {
+	limit = { 
+		muzzle_loaded_rifles = 1 
+		invention = flintlock_rifle_armament
+	}
+	effect = {
+		dragoon = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		hussar = {
+			attack = 0.5
+			supply_consumption = 0.10
+		}
+		cuirassier = {
+			attack = 0.5
+			supply_consumption = 0.10
+		}
+	}
+}
 #breech_loaded_rifles - granadiers
 grenade = {
 	limit = { breech_loaded_rifles = 1 invention = flintlock_rifle_armament }

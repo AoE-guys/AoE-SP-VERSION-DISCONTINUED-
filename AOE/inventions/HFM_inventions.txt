@@ -1,20 +1,20 @@
-gendarmerie = {
-	limit = {
-		military_staff_system = 1
+# gendarmerie = {		-- Reenable this later!
+	# limit = {
+		# military_staff_system = 1
 		 
-	}
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = -2
-			not = { civilized = yes }
-		}
-	}
-	effect = {
-		suppression_points_modifier = 0.05
-	}
-}
+	# }
+	# news = no
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = -2
+			# not = { civilized = yes }
+		# }
+	# }
+	# effect = {
+		# suppression_points_modifier = 0.05
+	# }
+# }
 
 mountain_warfare = {
 	limit = {

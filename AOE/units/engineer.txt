@@ -5,10 +5,11 @@ engineer = {
 	sprite = Engineer
 	active = no
 	unit_type = special
+	
 	#Core Abilities
 	priority = 15
 	max_strength = 3
-	default_organisation = 40
+	default_organisation = 50
 	maximum_speed = 4.00
 	weighted_value = 3.0
 	floating_flag = no
@@ -38,11 +39,10 @@ engineer = {
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 3
-	defence = 6
-	discipline = 1.5
+	attack = 2
+	defence = 5
+	discipline = 1.0
 	support = 0.5
 	maneuver = 2
 	siege = 1
-
 }
