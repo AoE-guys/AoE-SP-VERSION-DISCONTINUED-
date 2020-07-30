@@ -1,0 +1,48 @@
+country_event = {
+	id = 333333
+	title = "Parnassus Boicus"
+	desc = "The Parnassus Boicus was a Bavarian learned society founded in 1722. "
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAV
+		year = 1722
+	}
+	
+	option = {
+		name = "I shall subscribe to their journal"
+		599 = {
+			add_province_modifier = {
+				name = parnassus_boicus
+				duration = 6570
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 333334
+	title = "Akademie der Wissenschaften"
+	desc = "An independent public institution for scholars whose research has contributed greatly to society."
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAV
+		year = 1740
+	}
+	
+	mean_time_to_happen = {
+		months = 216
+	}
+	
+	option = {
+		name = "Thanks Maximilian III, very cool"
+		599 = {
+			add_province_modifier = {
+				name = bavarian_academy
+				duration = 6570
+			}
+		}
+		prestige = 15
+	}
+}

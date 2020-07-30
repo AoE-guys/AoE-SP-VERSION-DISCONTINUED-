@@ -6617,3 +6617,15 @@ native_ignoring = {
 	non_accepted_pop_militancy_modifier = -0.01
 	icon = 18
 }
+
+parnassus_boicus = {
+	prestige = 0.001
+	pop_consciousness_modifier = 0.2
+	political_reform_desire = 0.2
+}
+
+bavarian_academy = {
+	prestige = 0.015
+	research_points_modifier = 0.05
+	immigrant_attract = 0.025
+}
