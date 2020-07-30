@@ -926,4 +926,58 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
+	pomerania_reclaim = {
+		picture = pomerania_prussia
+		potential = {
+			tag = PML
+			NOT = { has_country_flag = reclaim_pommern }
+		}
+
+		allow = {
+			NOT = {
+				vassal_of = SWE
+			}
+		}
+
+		effect = {
+			set_country_flag = reclaim_pommern
+			679 = {
+				add_core = THIS
+			}
+			680 = {
+				add_core = THIS
+			}
+			prestige = 15
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	greater_pommern = {
+		picture = pomerania_prussia
+		potential = {
+			tag = PML
+			has_country_flag = reclaim_pommern
+			NOT = { has_country_flag = greater_pommern }
+		}
+
+		allow = {
+			is_vassal = no
+		}
+
+		effect = {
+			set_country_flag = greater_pommern
+			544 = {
+				add_core = THIS
+			}
+			545 = {
+				add_core = THIS
+			}
+			badboy = 10
+			prestige = 25
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
 }
