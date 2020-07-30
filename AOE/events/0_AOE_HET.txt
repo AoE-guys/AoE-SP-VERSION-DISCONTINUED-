@@ -31,7 +31,7 @@ country_event = {
 }
 country_event = {
 	id = 91241543
-	title = "EVTNAME91241542"
+	title = "EVTNAME91241543"
 	desc = "EVTDESC91241543"
 	picture = masepa
 	
@@ -62,6 +62,7 @@ country_event = {
 	id = 91241544
 	title = "EVTNAME91241544"
 	desc = "EVTDESC91241544"
+	picture = masepa
 	
 	is_triggered_only = yes
 	major = yes
@@ -84,7 +85,20 @@ country_event = {
 		name = "EVT91241544OPT2"
 		badboy = 10
 		set_country_flag = fate_of_the_sich
+		HET = {
+			release = ZZH
+		}
+		create_vassal = ZZH
 		inherit = HET
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = ukrainian
+					has_pop_culture = cossack
+				}
+			}
+			militancy = 5
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -92,24 +106,67 @@ country_event = {
 }
 country_event = {
 	id = 178300
-	title = "Hetmanate and The Russian Empire"
+	title = "EVTNAME178300"
 	desc = "EVTDESC178300"
 	picture = cossacks
 	
 	trigger = {
-		tag = RUS
-		HET = {
-			is_secondary_power = yes
-			vassal_of = RUS
+		tag = HET
+		is_secondary_power = yes
+		vassal_of = RUS
+		has_country_flag = sich
+		NOT = {
+			has_country_flag = the_last_hetmanate
 		}
-		year = 1730
+		analytic_philosophy = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
 	}
 	
 	option = {
-		name = "To war!"
+		name = "EVTC178300OPT1"
+		RUS = {
+			release_vassal = HET
+			leave_alliance = HET
+			country_event = 178309
+		}
+		
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 2
+				RUS = {
+					war = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTC178300OPT2"
+		prestige = -10
+		set_country_flag = the_last_hetmanate
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 178309
+	title = "EVTNAME178309"
+	desc = "EVTDESC178309"
+	picture = cossacks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTC178300OPT1"
 		war = {
 			target = HET
-			attacker_goal = { casus_belli = annex_core_country }
+			attacker_goal = { casus_belli = make_puppet }
 			defender_goal = { casus_belli = status_quo }
 		}
 		ai_chance = {
@@ -118,9 +175,9 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVT91241542OPT2"
-		release_vassal = HET
-		prestige = -20
+		name = "EVTC178300OPT2"
+		prestige = -10
+		badboy = -3
 		ai_chance = {
 			factor = 0.1
 		}
@@ -129,7 +186,7 @@ country_event = {
 
 country_event = {
 	id = 178301
-	title = "End of Paliy rebellion"
+	title = "EVTNAME178301"
 	desc = "EVTDESC178301"
 	picture = cossacks
 	
@@ -152,7 +209,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will always keep in mind their heroism"
+		name = "EVTOPT178301"
 		prestige = -1
 		set_country_flag = end_of_paliy
 		ai_chance = {
@@ -163,8 +220,8 @@ country_event = {
 
 country_event = {
 	id = 178303
-	title = "Question of intervence"
-	desc = "EVTDESC178302"
+	title = "EVTDESC178303"
+	desc = "EVTDESC178303"
 	picture = cossacks
 	
 	mean_time_to_happen = {
@@ -185,7 +242,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We will not allow any brutal takeover"
+		name = "EVT178303OPT"
 		prestige = 5
 		set_country_flag = destroy_paliy
 		ai_chance = {
@@ -197,14 +254,14 @@ country_event = {
 #####Pruth
 country_event = {
 	id = 178305
-	title = "Pruth peace"
-	desc = "EVTDESC178304"
+	title = "EVTDESC178305"
+	desc = "EVTDESC178305"
 	picture = cossacks
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = "We need to accept reality"
+		name = "EVT1783005OPT"
 		HET = {
 			969 = {
 				secede_province = PLC
@@ -224,8 +281,8 @@ country_event = {
 
 country_event = {
 	id = 178306
-	title = "Polish reaction on unification"
-	desc = "EVTDESC178304"
+	title = "EVTNAME178306"
+	desc = "EVTDESC178306"
 	picture = cossacks
 	
 	trigger = {
@@ -249,7 +306,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We need to accept reality"
+		name = "EVT178306OPT"
 		set_country_flag = polish_paliy
 		any_pop = {
 			limit = {
@@ -265,7 +322,7 @@ country_event = {
 
 country_event = {
 	id = 178307
-	title = "Paliy rebellion"
+	title = "EVTNAME178307"
 	desc = "EVTDESC178307"
 	picture = cossacks
 	
@@ -290,7 +347,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Crush them with force!"
+		name = "EVT178307OPT"
 		HET = {
 			set_country_flag = paliy_rebellion
 		}
@@ -343,13 +400,13 @@ country_event = {
 
 country_event = {
 	id = 178308
-	title = "Intervention of cossacks"
-	desc = "EVTDESC178307"
+	title = "EVTNAME178308"
+	desc = "EVTDESC178308"
 	picture = cossacks
 	is_triggered_only = yes
 
 	option = {
-		name = "Wait for Russian reaction"
+		name = "EVT178308OPT"
 		969 = {
 			secede_province = HET
 			any_pop = {
