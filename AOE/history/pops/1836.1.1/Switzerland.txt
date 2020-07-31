@@ -316,13 +316,13 @@
 	craftsmen = {
 		culture = swiss_german
 		religion = protestant
-		size = 960
+		size = 2960
 	}
 
 	artisans = {
 		culture = swiss_german
 		religion = protestant
-		size = 2480
+		size = 3480
 	}
 
 	soldiers = {
@@ -334,7 +334,7 @@
 	serfs = {
 		culture = swiss_german
 		religion = protestant
-		size = 50045
+		size = 47045
 	}
 
 	labourers = {
@@ -457,7 +457,7 @@
 		size = 224
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = swiss_french
 		religion = catholic
 		size = 1420
@@ -499,11 +499,29 @@
 		religion = protestant
 		size = 80
 	}
+	
+	bureaucrats = {
+		culture = swiss_german
+		religion = catholic
+		size = 51
+	}
+
+	officers = {
+		culture = swiss_german
+		religion = catholic
+		size = 32
+	}
 
 	artisans = {
 		culture = swiss_french
 		religion = protestant
 		size = 1020
+	}
+	
+	craftsmen = {
+		culture = swiss_french
+		religion = protestant
+		size = 196
 	}
 
 	soldiers = {
@@ -633,7 +651,7 @@
 		size = 176
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = romansh
 		religion = catholic
 		size = 416

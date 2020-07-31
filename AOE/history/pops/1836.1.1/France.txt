@@ -1015,7 +1015,7 @@
 	serfs = {
 		culture = french
 		religion = catholic
-		size = 50010
+		size = 49010
 	}
 
 	labourers = {
@@ -1046,6 +1046,12 @@
 		culture = south_german
 		religion = catholic
 		size = 417
+	}
+	
+	craftsmen = {
+		culture = south_german
+		religion = protestant
+		size = 1515 
 	}
 
 	serfs = {
@@ -2052,13 +2058,13 @@ aristocrats = {
 	craftsmen = {
 		culture = french
 		religion = catholic
-		size = 9315
+		size = 19315
 	}
 
 	artisans = {
 		culture = french
 		religion = catholic
-		size = 38226
+		size = 28226
 	}
 
 	soldiers = {
@@ -4925,12 +4931,12 @@ aristocrats = {
 		size = 172
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = french
 		religion = catholic
 		size = 2140
 	}
-        artisans = {
+    artisans = {
 		culture = occitan
 		religion = catholic
 		size = 4830
@@ -4960,7 +4966,7 @@ aristocrats = {
 		size = 13307
 	}
 
-	labourers = {
+	craftsmen = {
 		culture = occitan
 		religion = catholic
 		size = 700
@@ -5455,10 +5461,10 @@ aristocrats = {
 		size = 2070
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = basque
 		religion = catholic
-		size = 725
+		size = 1725
 	}
 
 	soldiers = {
@@ -5482,7 +5488,7 @@ aristocrats = {
 	serfs = {
 		culture = french
 		religion = catholic
-		size = 5555
+		size = 4555
 	}
 
 	labourers = {

@@ -31,6 +31,12 @@
 		religion = protestant
 		size = 3025
 	}
+	
+	craftsmen = {
+		culture = north_german
+		religion = protestant
+		size = 3025
+	}
 
 	soldiers = {
 		culture = north_german
@@ -41,7 +47,7 @@
 	serfs = {
 		culture = north_german
 		religion = protestant
-		size = 40034
+		size = 37034
 	}
 
 	labourers = {
@@ -1456,7 +1462,7 @@
 		size = 88   
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = north_german
 		religion = catholic
 		size = 625
@@ -2767,7 +2773,7 @@
 		size = 50
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = polish
 		religion = protestant
 		size = 700

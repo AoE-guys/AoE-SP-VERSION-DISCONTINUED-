@@ -1232,11 +1232,17 @@
 		religion = protestant
 		size = 250
 	}
-
-	serfs = {
+	
+	craftsmen = {
 		culture = siebenburger
 		religion = protestant
-		size = 21325
+		size = 1250  
+	}
+
+	farmers = {
+		culture = siebenburger
+		religion = protestant
+		size = 20325
 	}
 
 	clergymen = {

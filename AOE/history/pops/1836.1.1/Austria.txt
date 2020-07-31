@@ -69,6 +69,24 @@
 		religion = catholic
 		size = 442 
 	}
+	
+	bureaucrats = {
+		culture = south_german
+		religion = protestant
+		size = 36 
+	}
+
+	officers = {
+		culture = south_german
+		religion = protestant
+		size = 15 
+	}
+	
+	craftsmen = {
+		culture = south_german
+		religion = protestant
+		size = 1015 
+	}
 
 	artisans = {
 		culture = south_german
@@ -419,7 +437,7 @@
 		size = 1070
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = south_german
 		religion = catholic
 		size = 3800

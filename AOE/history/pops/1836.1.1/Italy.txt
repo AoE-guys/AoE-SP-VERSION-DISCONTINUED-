@@ -65,13 +65,19 @@
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 125337
+		size = 122337
 	}
 
 	labourers = {
 		culture = north_italian
 		religion = catholic
-		size = 6597
+		size = 3597
+	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 3320
 	}
 
 	clergymen = {
@@ -312,6 +318,12 @@
 		religion = catholic
 		size = 5940
 	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 4320
+	}
 
 	soldiers = {
 		culture = north_italian
@@ -322,7 +334,7 @@
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 87780
+		size = 83780
 	}
 
 	labourers = {
@@ -421,7 +433,7 @@
 		size = 6600
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = north_italian
 		religion = catholic
 		size = 6600
@@ -586,7 +598,7 @@
 		size = 6000
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = north_italian
 		religion = catholic
 		size = 7000
@@ -1152,13 +1164,19 @@
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 60522
+		size = 58522
 	}
 
 	labourers = {
 		culture = north_italian
 		religion = catholic
 		size = 3148
+	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 2148
 	}
 }
 #under the rule of Modena in 1836
@@ -1193,6 +1211,12 @@
 		religion = catholic
 		size = 3360
 	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 2300
+	}
 
 	soldiers = {
 		culture = north_italian
@@ -1203,7 +1227,7 @@
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 60186
+		size = 58186
 	}
 
 	labourers = {
@@ -1253,6 +1277,19 @@
 
 #Mantua (708000/177000 POPS)
 3372 = {
+
+	bureaucrats = {
+		culture = north_italian
+		religion = catholic
+		size = 256
+	}
+
+	officers = {
+		culture = north_italian
+		religion = catholic
+		size = 164
+	}
+	
 	aristocrats = {
 		culture = north_italian
 		religion = catholic
@@ -1270,6 +1307,12 @@
 		religion = catholic
 		size = 2520
 	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 1520
+	}
 
 	soldiers = {
 		culture = north_italian
@@ -1280,7 +1323,7 @@
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 45321
+		size = 44321
 	}
 
 	labourers = {
@@ -1379,6 +1422,12 @@
 		religion = catholic
 		size = 20933
 	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 1007
+	}
 
 	labourers = {
 		culture = north_italian
@@ -1469,11 +1518,17 @@
 		religion = catholic
 		size = 2320
 	}
+	
+	craftsmen = {
+		culture = north_italian
+		religion = catholic
+		size = 2320
+	}
 
 	serfs = {
 		culture = north_italian
 		religion = catholic
-		size = 85987
+		size = 83987
 	}
 
 	labourers = {
