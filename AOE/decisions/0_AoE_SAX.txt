@@ -1,0 +1,31 @@
+political_decisions = {
+	saxony_join_france = {
+		picture = saxony
+		potential = {
+			tag = SAX
+			OR = {
+				war_with = BOR
+				war_with = FRA
+			}
+		}
+		allow = {
+			any_owned_province = {
+				OR = {
+					controlled_by = BOR
+					controlled_by = FRA
+				}
+			}
+		}
+		effect = {
+			SAX = {
+				end_war = BOR
+				end_war = FRA
+				create_alliance = BOR
+				create_alliance = FRA
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+}
