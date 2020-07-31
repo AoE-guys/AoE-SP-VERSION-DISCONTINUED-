@@ -18,9 +18,8 @@ We recommend backing up your save files between each update.*
 
 ## Download
 ### Single Player
-[Latest Stable Version](https://github.com/AoE-guys/AoE-exp/releases/latest)
 
-For Dev version, try download directly from GitHub (Select clone or download -> Download Zip). Or use
+For Dev version, try download directly from GitHub (Select Code -> Download Zip). Or use
 
 ```shell 
 $ git clone https://github.com/AoE-guys/AOE-exp.git
