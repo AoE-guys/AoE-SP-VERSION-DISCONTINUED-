@@ -9,3 +9,9 @@ trade_goods = grain  state_building = {  level = 1  building = grain_factory  up
 life_rating = 40
 
 
+
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

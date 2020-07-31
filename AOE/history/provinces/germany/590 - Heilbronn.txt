@@ -8,3 +8,9 @@ state_building = {  level = 2  building = steamer_shipyard  upgrade = yes  }
 state_building = {  level = 1  building = cement_factory  upgrade = yes  }
 life_rating = 40
 
+
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

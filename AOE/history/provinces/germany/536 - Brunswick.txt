@@ -8,4 +8,8 @@ trade_goods = fruit  state_building = {  level = 1  building = fruit_factory  up
 state_building = {  level = 1  building = ammunition_factory  upgrade = yes  }
 state_building = {  level = 1  building = small_arms_factory  upgrade = yes  }
 life_rating = 40
-
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
