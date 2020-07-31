@@ -12,6 +12,7 @@ political_decisions = {
 				has_country_flag = end_of_paliy
 			}
 			has_country_flag = paliy_rebellion
+			
 		}
 		
 		allow = {
@@ -20,7 +21,10 @@ political_decisions = {
 			}
 			PLC = {
 				OR = {
-					war_exhaustion = 60
+					AND = {
+						average_militancy = 5
+						war_exhaustion = 10
+					}
 					AND = {
 						war = yes
 						NOT = {
@@ -113,6 +117,12 @@ political_decisions = {
 				has_country_flag = end_of_paliy
 			}
 			has_country_flag = paliy_rebellion
+			
+			PLC = {
+				NOT = {
+					has_country_flag = polish_paliy
+				}
+			}
 		}
 		
 		allow = {
