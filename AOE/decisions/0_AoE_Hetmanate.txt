@@ -134,6 +134,11 @@ political_decisions = {
 					has_country_flag = polish_paliy
 				}
 			}
+			NOT = {
+							969 = { average_militancy = 9 }
+							960 = { average_militancy = 9 }
+							954 = { average_militancy = 9 }
+			}
 		}
 		
 		allow = {
