@@ -361,6 +361,7 @@ country_event = {
 		name = "EVT178307OPT"
 		HET = {
 			set_country_flag = paliy_rebellion
+			country_event = 178310
 		}
 		set_country_flag = paliy_rebellion
 		prestige = -5
@@ -457,6 +458,22 @@ country_event = {
 				reduce_size = 0.9
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 178310
+	title = "EVTNAME178310"
+	desc = "EVTDESC178310"
+	picture = cossacks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTC178310PT1"
 		ai_chance = {
 			factor = 1
 		}
