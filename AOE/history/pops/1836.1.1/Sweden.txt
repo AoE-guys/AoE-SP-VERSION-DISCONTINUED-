@@ -131,109 +131,120 @@
 		size = 827
 	}
 }
-#Umea (56000/14000 POPS)
+#Västerbotten (56000/14000 POPS)
 320 = {
 	clergymen = {
 		culture = swedish
 		religion = protestant
-		size = 48
+		size = 61
+	}
+
+	bureaucrats = {
+		culture = swedish
+		religion = protestant
+		size = 40
 	}
 
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 800
+		size = 1004
 	}
 
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 1000
+		size = 1421
 	}
 
 	serfs = {
 		culture = swedish
-		religion = protestant
-		size = 3200
+		religion = animist 
+		size = 7051
 	}
 
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 300
+		size = 498
 	}
 
 	serfs = {
 		culture = sami
-		religion = protestant
-		size = 7000
+		religion = animist 
+		size = 5001
 	}
 
 	labourers = {
 		culture = sami
-		religion = protestant
-		size = 1300
+		religion = animist 
+		size = 487
 	}
 }
-#Lulea (44000/11000 POPS)
+#Jokkmokk (44000/11000 POPS)
 321 = {
 	clergymen = {
 		culture = swedish
 		religion = protestant
-		size = 6
+		size = 5
+	}
+
+	bureaucrats = {
+		culture = swedish
+		religion = protestant
+		size = 5
+	}
+	
+	soldiers = {
+		culture = swedish
+		religion = protestant
+		size = 20
+	}
+
+	labourers = {
+		culture = swedish
+		religion = protestant
+		size = 10
 	}
 
 	artisans = {
-		culture = swedish
-		religion = protestant
+		culture = sami
+		religion = animist 
 		size = 70
 	}
 
 	soldiers = {
-		culture = swedish
-		religion = protestant
+		culture = sami
+		religion = animist 
 		size = 200
-	}
+	}	
 
 	serfs = {
-		culture = swedish
-		religion = protestant
-		size = 500
+		culture = sami
+		religion = animist 
+		size = 6500
 	}
 
 	labourers = {
-		culture = swedish
-		religion = protestant
-		size = 140
+		culture = sami
+		religion = animist 
+		size = 1702
 	}
-
+	
 	artisans = {
 		culture = finnish
-		religion = protestant
+		religion = animist 
 		size = 500
 	}
-
-	serfs = {
-		culture = sami
-		religion = protestant
-		size = 6000
-	}
-
-	labourers = {
-		culture = sami
-		religion = protestant
-		size = 1502
-	}
-
 	serfs = {
 		culture = finnish
-		religion = protestant
+		religion = animist 
 		size = 2000
 	}
 
 	labourers = {
 		culture = finnish
-		religion = protestant
+		religion = animist 
 		size = 650
 	}
 }
@@ -277,7 +288,7 @@
 		size = 4900
 	}
 
-	craftsmen = {
+	artisans = {
 		culture = swedish
 		religion = protestant
 		size = 539

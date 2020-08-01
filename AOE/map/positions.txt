@@ -14170,45 +14170,46 @@
 
     }
 
-} # Umeå
+} # Vasterbotten
 
 320 = {
     unit = {
-        x = 3102.000000
+        x = 3122
         y = 1962.000000
     }
 
     text_position = {
-        x = 3102.699951
-        y = 1952.599976
+        x = 3109
+        y = 1945
     }
 
-    text_rotation = 0.000001
+    text_rotation = 0.65
     text_scale = 5.499997
+	
     building_construction = {
-        x = 3122.000000
-        y = 1964.000000
+        x = 3109
+        y = 1945
     }
 
     military_construction = {
-        x = 3111.000000
-        y = 1945.000000
+        x = 3109
+        y = 1945
     }
 
     factory = {
-        x = 3092.000000
-        y = 1972.000000
+        x = 3110
+        y = 1944
     }
 
     building_position = {
         fort = {
-            x = 3137.500000
-            y = 1955.000000
+			x = 389
+			y = 1942
         }
 
         naval_base = {
-            x = 3132.300049
-            y = 1941.800049
+            x = 3134
+            y = 1949
         }
 
     }
@@ -14240,39 +14241,40 @@
         naval_base = 3.752459
     }
 
-} # Luleå
+} # Jokkmokk
 
 321 = {
     text_position = {
-        x = 3125.000000
-        y = 2001.099976
+        x = 3099
+        y = 2007
     }
-
-    text_scale = 5.099997
+    text_rotation = 0.65
+    text_scale = 8
+	
     unit = {
         x = 3130.000000
-        y = 2009.000000
+        y = 2030.000000
     }
 
     factory = {
-        x = 3115.000000
-        y = 2036.000000
+        x = 3099
+        y = 2007
     }
 
     building_construction = {
-        x = 3149.000000
-        y = 2007.000000
+        x = 3099
+        y = 2050
     }
 
     military_construction = {
-        x = 3127.000000
-        y = 1987.000000
+        x = 3099
+        y = 2050
     }
 
     building_position = {
         fort = {
-            x = 3173.300049
-            y = 1995.000000
+            x = 3122
+            y = 2002
         }
 
         naval_base = {
