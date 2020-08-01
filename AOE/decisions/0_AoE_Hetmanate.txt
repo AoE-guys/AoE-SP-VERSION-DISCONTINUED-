@@ -19,19 +19,30 @@ political_decisions = {
 			NOT = {
 				war_exhaustion = 20
 			}
-			PLC = {
-				OR = {
-					AND = {
-						average_militancy = 5
-						war_exhaustion = 10
-					}
-					AND = {
-						war = yes
-						NOT = {
-							rank = 8
+			AND = {
+				PLC = {
+					OR = {
+						AND = {
+							average_militancy = 5
+							war_exhaustion = 10
 						}
-						average_militancy = 4
+						AND = {
+							war = yes
+							NOT = {
+								rank = 8
+							}
+							average_militancy = 4
+						}
+						AND = {
+							969 = { average_militancy = 9 }
+							960 = { average_militancy = 9 }
+							954 = { average_militancy = 9 }
+							703 = { average_militancy = 2 }
+						}
 					}
+				}
+				HET = {
+					money = 100000
 				}
 			}
 		}
