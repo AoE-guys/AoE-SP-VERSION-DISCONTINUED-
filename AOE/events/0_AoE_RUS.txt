@@ -883,8 +883,14 @@ country_event = {
 		war = {
 			target = PER
 			attacker_goal = { casus_belli = acquire_all_cores }
-			defender_goal = { casus_belli = make_puppet tag = KKH }
 			call_ally = yes
+		}
+		PER = {
+			casus_belli = {
+				target = KKH
+				type = make_puppet
+				months = 12
+			}
 		}
 		war = {
 			target = DAG
