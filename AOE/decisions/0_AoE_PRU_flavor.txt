@@ -2,7 +2,7 @@ political_decisions = {
 	claim_swedish_pomerania = {
 		picture = pomerania_prussia
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = claimed_pomerania }
 		}
 		
@@ -26,7 +26,7 @@ political_decisions = {
 	claim_silesia = {
 		picture = silesia_prussia
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = claimed_silesia }
 		}
 		
@@ -62,7 +62,7 @@ political_decisions = {
 	encourage_protestant_migration = {
 		picture = migration
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = encouraged_protestant_migration }
 		}
 	
@@ -182,7 +182,7 @@ political_decisions = {
 	hold_prussian_herbstubung = {
 		picture = army_training
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = held_herbstubung }
 		}
 		
@@ -205,7 +205,7 @@ political_decisions = {
 	introduce_the_goose_step = {
 		picture = goose_step
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = introduced_the_goose_step }
 		}
 		
@@ -227,7 +227,7 @@ political_decisions = {
 	regimental_cantons = {
 		picture = cantons
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = funded_regimental_cantons }
 		}
 		
@@ -249,7 +249,7 @@ political_decisions = {
 	prussian_academy_of_sciences = {
 		picture = academy
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = funded_prussian_academy }
 		}
 		
@@ -268,7 +268,7 @@ political_decisions = {
 	prussia_united = {
 		picture = west_prussia
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = prussia_is_united }
 		}
 		allow = {
@@ -310,7 +310,7 @@ political_decisions = {
 	prussian_saxony = {
 		picture = saxony
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = prussian_saxony }
 		}
 		
@@ -340,7 +340,7 @@ political_decisions = {
 	begin_retablissement = {
 		picture = prussia_king
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = retablissement }
 		}
 		
@@ -459,7 +459,7 @@ political_decisions = {
 	renovate_berlin = {
 		picture = berlin
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = renovated_berlin }
 		}
 
@@ -505,7 +505,7 @@ political_decisions = {
 	expand_rhineland = {
 		picture = rhineland
 		potential = {
-			tag = PRU
+			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = prussian_rhineland }
 		}
 		
@@ -544,7 +544,7 @@ political_decisions = {
 #	bohemian_crown = {
 #		picture = bohemian_crown
 #		potential = {
-#			tag = PRU
+#			OR = { tag = PRU tag = BRN }
 #			NOT = { has_country_flag = bohemian_crown }
 #		}
 #		
@@ -615,6 +615,7 @@ political_decisions = {
 		picture = prussia_king
 		potential = {
 			tag = BRN
+			has_country_flag = pru_exists
 			OR = {
 				owns = 691
 				owns = 695
@@ -628,7 +629,7 @@ political_decisions = {
 				add_core = PRU
 				remove_core = BRN
 			}
-			change_tag = PRU
+			change_OR = { tag = PRU tag = BRN }
 			prestige = 15
 		}
 		ai_will_do = { factor = 1 }
