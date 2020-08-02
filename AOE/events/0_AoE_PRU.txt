@@ -6,7 +6,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
+		OR = { tag = PRU tag = BRN }
 		year = 1740
 		NOT = { government = democracy }
 		NOT = { government = presidential_dictatorship }
@@ -92,7 +92,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
+		OR = { tag = PRU tag = BRN }
 		year = 1743
 		EFR = {
 			ai = yes
@@ -117,7 +117,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
+		OR = { tag = PRU tag = BRN }
 		has_country_modifier = frederick_grosse
 	}
 	
@@ -141,7 +141,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
+		OR = { tag = PRU tag = BRN }
 		has_country_flag = encouraged_protestant_migration
 	}
 	
@@ -248,7 +248,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
+		OR = { tag = PRU tag = BRN }
 		has_country_flag = encouraged_protestant_migration
 	}
 	
@@ -355,7 +355,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PRU
+		OR = { tag = PRU tag = BRN }
 		has_country_flag = encouraged_protestant_migration
 	}
 	
@@ -452,5 +452,45 @@ country_event = {
 				move_pop = 681 
 			}
 		}
+	}
+}
+country_event = {
+	id = 1740009
+	title = "The Prussian Union"
+	desc = "EVTDESC1740009"
+	picture = prussian_glory
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRN
+		year = 1701
+		NOT = { government = democracy }
+		NOT = { government = presidential_dictatorship }
+		DPR = {
+			vassal_of = THIS
+			ai = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 24
+	}
+	
+	option = {
+		name = "Long live the king in Prussia"
+		set_country_flag = pru_exists
+		DPR = {
+			all_core = {
+				add_core = PRU
+			}
+		}
+		BRN = {
+			all_core = {
+				add_core = PRU
+			}
+		}
+		change_tag  = PRU
+		inherit = DPR
+		
 	}
 }
