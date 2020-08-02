@@ -9,6 +9,13 @@ country_event = {
 	
 	trigger = {
 		owns = 473
+		473 = {
+			owner = {
+				capital_scope = {
+					continent = europe
+				}
+			}
+		}
 		year = 1790
 	}
 	
