@@ -249,6 +249,7 @@ country_event = {
 	
 	trigger = {
 		tag = PLC
+		NOT = { has_country_flag = lesczynski_rule }
 		government = elective_monarchy_oligarchy
 		year = 1733
 	}
@@ -283,10 +284,10 @@ country_event = {
 			value = 200
 		}
 		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
-		create_vassal = LOR
-		LOR = {
-			government = absolute_monarchy
-		}
+		#create_vassal = LOR
+		#LOR = {
+		#	government = absolute_monarchy
+		#}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -583,6 +584,8 @@ country_event = {
 			}
 			end_war = RUS
 		}
+		clr_country_flag = lesczynski_rule
+		set_country_flag = saxon_rule
 		clr_global_flag = polish_succesion_crisis
 	}
 }
@@ -601,8 +604,22 @@ country_event = {
 				value = -400
 			}
 		}
-		PLC = {
-			inherit = HET
+		HET = {
+			any_owned = {
+				owner = {
+					vassal_of = RUS
+				}
+			}
+			PLC = {
+				inherit = HET
+			}
+		}
+		ZZH = {
+			any_owned = {
+				owner = {
+					vassal_of = RUS
+				}
+			}
 			inherit = ZZH
 		}
 		prestige = 25
@@ -612,7 +629,7 @@ country_event = {
 ####Royal Election of 1764####
 country_event = {
 	id = 15730040
-	title = "Royal Election of 1764"
+	title = "Royal Election of $YEAR#"
 	desc = "EVTDESC1573004"	
 	major = yes
 	fire_only_once = yes
@@ -620,7 +637,13 @@ country_event = {
 	trigger = {
 		tag = PLC
 		government = elective_monarchy_oligarchy
-		year = 1764
+		OR = {
+			AND = {
+				year = 1764
+				has_country_flag = saxon_rule
+			}
+			year = 1766
+		}
 	}
 	
 	mean_time_to_happen = {
