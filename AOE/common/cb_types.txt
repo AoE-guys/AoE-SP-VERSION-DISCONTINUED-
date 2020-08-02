@@ -6708,6 +6708,14 @@ make_puppet = {
 	
 	on_po_accepted = {
 		country_event = 19370
+		any_owned = {
+			owner = {
+				limit = {
+					has_country_flag = dynamic_colony
+				}
+				government
+			}
+		}
 	}
 }
 
@@ -6771,6 +6779,7 @@ become_independent = {
 		}
 		leave_alliance = FROM
 		release_vassal = THIS
+		
 	}
 }
 
