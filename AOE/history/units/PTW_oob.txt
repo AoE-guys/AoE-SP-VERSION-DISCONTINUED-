@@ -1,0 +1,15 @@
+army = {
+	name = "Potawatomi Army"
+	location = 174
+	regiment = {
+		name= "1th Regiment of Irregulars"
+		type = irregular
+		home = 174
+	}
+
+	regiment = {
+		name= "2th Regiment of Irregulars"
+		type = irregular
+		home = 176
+	}
+}

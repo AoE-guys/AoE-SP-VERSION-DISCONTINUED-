@@ -2,7 +2,7 @@ color = { 147 191  208 }
 graphical_culture = Generic
 
 party = {
-	name = "Gentry Faction"
+	name = "Tributary States Faction"
 	start_date = 1600.1.1
 	end_date = 2000.1.1
 
@@ -17,33 +17,18 @@ party = {
 }
 
 party = {
-	name = "Nobility Faction"
+	name = "Tribal Council"
 	start_date = 1600.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
 	social_policy = no_position_set
-	economic_policy = laissez_faire
+	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = pluralism
 	citizenship_policy = residency
-	war_policy = anti_military
-}
-
-party = {
-	name = "CHE_conservative_2"
-	start_date = 1900.1.1
-	end_date = 2000.1.1
-
-	ideology = conservative
-
-	social_policy = no_position_set
-	economic_policy = laissez_faire
-	trade_policy = free_trade
-	religious_policy = secularized
-	citizenship_policy = residency
-	war_policy = jingoism
+	war_policy = pro_military
 }
 
 party = {
@@ -62,7 +47,7 @@ party = {
 }
 
 party = {
-	name = "Absolutist Faction"
+	name = "Chieftan Faction"
 	start_date = 1600.1.1
 	end_date = 2000.1.1
 

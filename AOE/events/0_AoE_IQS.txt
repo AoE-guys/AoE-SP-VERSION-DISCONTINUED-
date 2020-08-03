@@ -1,0 +1,91 @@
+country_event = {
+	title = "The Great Peace of Montreal"
+	desc = "EVTDESC160900"
+	id = 160900
+	picture = treaty_signing
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IQS
+		war_with = BOR
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We must accept the trety"
+		BOR = {
+			diplomatic_influence = {
+				who = IQS
+				value = 400
+			}
+		}
+		end_war = BOR
+		end_war = FCA
+		end_war = MIA
+		end_war = ILL
+		end_war = PTW
+		end_war = ABB
+		end_war = OTT
+		end_war = SHE
+	}
+	
+	option = {
+		name = "Continue the War!"
+		war_exhastion = 10
+	}
+}
+
+country_event = {
+	title = "Iroquis and The French"
+	desc = "EVTDESC160901"
+	id = 160901
+	picture = treaty_signing
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IQS
+		war_with = BOR
+		war_with = FCA
+		58 = {
+			controlled_by = THIS
+		}
+		65 = {
+			controlled_by = THIS
+		}
+		173 = {
+			controlled_by = THIS
+		}
+	}
+	
+	option = {
+		name = "Send the peace offer"
+		FCA = {
+			country_event = 160902
+		}
+	}
+}
+country_event = {
+	title = "Iroquis Peace Offer"
+	desc = "EVTDESC160902"
+	id = 160902
+	picture = treaty_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept"
+		BOR = {
+			prestige = -15
+		}
+		CAN_58 = {
+			secede_province = IQS
+		}
+	}
+	
+	option = {
+		name = "Refuse"
+		war_exhastion = 15
+	}
+}

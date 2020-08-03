@@ -6713,7 +6713,7 @@ make_puppet = {
 				limit = {
 					has_country_flag = dynamic_colony
 				}
-				government
+				government = colonial_company
 			}
 		}
 	}

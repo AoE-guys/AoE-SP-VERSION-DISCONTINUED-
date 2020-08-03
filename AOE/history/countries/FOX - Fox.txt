@@ -8,7 +8,7 @@ literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.50
 civilized = yes
 prestige = 7
 
-ruling_party = "Nobility Faction"
+ruling_party = "Tribal Council"
 upper_house = {
 	fascist = 0
 	liberal = 26
@@ -52,3 +52,5 @@ set_country_flag = new_world_nation
 
 flintlock_rifles = 1
 enlightenment_thought = 1
+
+oob = "FOX_oob.txt"
