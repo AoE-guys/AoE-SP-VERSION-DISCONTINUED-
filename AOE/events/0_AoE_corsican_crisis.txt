@@ -52,7 +52,7 @@ country_event = {
 			value = -400
 		}		
 		CRS = {
-		government = democracy
+			government = democracy
 		}
 		change_tag_no_core_switch = CRS
 		
@@ -63,6 +63,7 @@ country_event = {
 				defender_goal = { casus_belli = status_quo }
 			}
 		}
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
@@ -84,6 +85,7 @@ country_event = {
 	option = {
 		name = "They are not worth our time"
 		prestige = -5
+		ai_chance
 	}
 	
 	option = {
@@ -94,8 +96,21 @@ country_event = {
 			defender_goal = { casus_belli = status_quo }
 		}
 		set_global_flag = french_intervention
-		ai_chance = {					
-		factor = 1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 6
+				brigades_compare = 1.3
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					relation = {
+						who = CRS
+						value = 120
+					}
+				}
+			}
 		}
 	}
 }
@@ -110,12 +125,12 @@ country_event = {
 		tag = GBR
 		has_global_flag = french_intervention 
 		BOR = {
-		owns = 473
+			owns = 473
 		}
 	}
 	
 	mean_time_to_happen = {
-		days = 30
+		days = 15
 	}
 	
 	option = {
@@ -126,10 +141,49 @@ country_event = {
 	option = {
 		name = "Intervene immediatly"
 		war = {
-			target = FRA
+			target = BOR
 			attacker_goal = { casus_belli = liberate_country  country = CRS}
 			defender_goal = { casus_belli = status_quo }
 		}
-				set_global_flag = french_intervention
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 6
+				brigades_compare = 1.3
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					relation = {
+						who = BOR
+						value = 120
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We have more pressing matters."
+		pressing = -25
+		ai_chance = {
+			modifier = {
+				factor = 100
+				war = yes
+			}
+			modifier = {
+				factor = 18
+				part_of_sphere = yes
+				NOT = { in_sphere = SPA }
+				NOT = { in_sphere = AUS }
+				NOT = { in_sphere = BOR }
+			}
+			modifier = {
+				factor = 10
+				any_owned = {
+					controlled_by_rebels = yes
+				}
+			}
+		}
 	}
 }
