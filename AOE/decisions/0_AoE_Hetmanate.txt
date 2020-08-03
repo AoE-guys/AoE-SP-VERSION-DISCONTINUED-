@@ -23,8 +23,11 @@ political_decisions = {
 				PLC = {
 					OR = {
 						AND = {
-							average_militancy = 5
-							war_exhaustion = 10
+							any_pop = {
+								has_pop_culture = ukrainian
+								average_militancy = 6
+							}
+							war_exhaustion = 30
 						}
 						AND = {
 							war = yes
@@ -32,12 +35,6 @@ political_decisions = {
 								rank = 8
 							}
 							average_militancy = 4
-						}
-						AND = {
-							969 = { average_militancy = 6 }
-							960 = { average_militancy = 6 }
-							954 = { average_militancy = 6 }
-							703 = { average_militancy = 2 }
 						}
 					}
 				}
@@ -133,6 +130,7 @@ political_decisions = {
 				NOT = {
 					has_country_flag = polish_paliy
 				}
+				has_country_flag = plc_civil_war
 			}
 			NOT = {
 							969 = { average_militancy = 6 }

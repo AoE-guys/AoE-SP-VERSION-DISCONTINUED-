@@ -204,7 +204,7 @@ country_event = {
 	
 	trigger = {
 		tag = HET
-		year = 1704
+		has_global_flag = plc_civil_war_end
 		NOT = {
 			has_country_flag = end_of_paliy
 		}
@@ -229,7 +229,7 @@ country_event = {
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 	
 	trigger = {
@@ -293,20 +293,12 @@ country_event = {
 	
 	trigger = {
 		tag = PLC
-			969 = {
-				owned_by = HET
-			}
-			960 = {
-				owned_by = HET
-			}
-			954 = {
-				owned_by = HET
-			}
-		NOT = {
-			has_country_flag = polish_paliy
+		has_country_flag = plc_civil_war_end
+		HET = {
+			has_country_flag = ukrainian_reunification
 		}
 		NOT = {
-			year = 1708
+			has_country_flag = polish_paliy
 		}
 	}
 	

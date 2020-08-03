@@ -247,6 +247,7 @@ country_event = {
 	option = {
 		name = "To war!"
 		prestige = 25
+		set_global_flag = great_northern_war
 		add_country_modifier = {
 			name = fanatic_army
 			duration = 3650
@@ -265,11 +266,25 @@ country_event = {
 	trigger = {
 		tag = SWE
 		war_with = PLC
-		706 = {
-			controlled_by = SWE
+		has_global_flag = great_northern_war
+		NOT = {
+			has_global_flag = plc_civil_war
 		}
-		360 = {
-			controlled_by = SWE
+		OR = {
+			AND = {
+				706 = {
+					controlled_by = SWE
+				}
+				360 = {
+					controlled_by = SWE
+				}
+			}
+			
+			703 = {
+				controlled_by = SWE
+			}
+			
+			national_provinces_occupied = 40
 		}
 	}
 	
@@ -356,6 +371,9 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = plc_civil_war
+		NOT = {
+			has_global_flag = plc_civil_war_end
+		}
 		tag = PZN
 		PLC = {
 			exists = no
@@ -384,6 +402,9 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = plc_civil_war
+		NOT = {
+			has_global_flag = plc_civil_war_end
+		}
 		tag = PLC
 		PZN = {
 			exists = no
@@ -393,6 +414,7 @@ country_event = {
 	option = {
 		name = "Finally."
 		prestige = 15
+		set_global_flag = plc_civil_war_end
 		PZN = {
 			all_core = {
 				remove_core PZN
