@@ -120,6 +120,10 @@ political_decisions = {
 				year = 1701
 				has_global_flag = plc_civil_war
 			}
+			modifier = {
+				factor = 1
+				year = 1705
+			}
 		}
 	}
 	claim_crimea_south_ukrine = {
