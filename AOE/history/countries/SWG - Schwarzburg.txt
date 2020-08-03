@@ -1,6 +1,5 @@
 capital = 3256
 civilized = yes   primary_culture = north_german
-culture = south_german
 religion = protestant
 government = absolute_monarchy
 plurality = 0.0
@@ -29,6 +28,7 @@ pensions = no_pensions
 school_reforms = no_schools
 
 set_country_flag = protestant_country
+set_country_flag = hre_member
 
 #New Reforms
 conscription = no_draft
@@ -52,7 +52,6 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = existing_country
 
 # Technologies
 post_napoleonic_thought = 1

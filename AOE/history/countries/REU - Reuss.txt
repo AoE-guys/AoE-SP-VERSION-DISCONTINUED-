@@ -1,6 +1,5 @@
 capital = 561
 civilized = yes   primary_culture = north_german
-culture = south_german
 religion = protestant
 government = absolute_monarchy
 plurality = 0.25
@@ -40,8 +39,8 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies 
 
-
 set_country_flag = protestant_country
+set_country_flag = hre_member
 
 ruling_party = "Nobility Faction"
 upper_house = {
