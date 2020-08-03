@@ -114,7 +114,7 @@ regimental_system = {
 	}
 }
 #point_defense_system
-field_fortifications = {
+earthworks = {
 	limit = { point_defense_system = 1 }
 	chance = {
 		base = 2
@@ -145,150 +145,206 @@ field_fortifications = {
 		}
 	}
 }
-signal_detachments = {
+line_formation = {
 	limit = { point_defense_system = 1 }
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			military_staff_system = 1
+			military_plans = 1
 		}
 		modifier = {
 			factor = 2
-			army_professionalism = 1
-		}	
-	}
-	effect = {
-		engineer = {
-			siege = 1			
-		}
-		dragoon = {
-			reconnaissance = 1
-		}
-		hussar = {
-			reconnaissance = 1
-		}
-	}
-}
-flexible_firepower = {
-	limit = { point_defense_system = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = field_fortifications
-		}
-		modifier = {
-			factor = 2
-			army_professionalism = 1
+			army_decision_making = 1
 		}
 	}
 	effect = {
 		infantry = {
-			defence = 1
+			default_organisation = 5
 		}
 		guard = {
-			defence = 1
+			default_organisation = 5
 		}
 		plane = {
-			defence = 1
-		}
-		tank = {
-			defence = 1
-		}
-		engineer = {
-			defence = 1
-		}
-		artillery = {
-			defence = 1
-		}
-		dragoon = {
-			defence = 1
-		}
-		hussar = {
-			defence = 1
-		}
-		cavalry = {
-			defence = 0.5
-		}
-		irregular = {
-			defence = 0.5
-		}
-		army_base = {
-			supply_consumption = 0.05
+			default_organisation = 5
 		}
 	}
 }
-synchronized_heavy_support = {
-	limit = { point_defense_system = 1 }
-	chance = {
-		base = 4
-		modifier = {
-			factor = 2
-			iron_breech_loaded_artillery = 1
-		}
-		modifier = {
-			factor = 2
-			invention = flexible_firepower
-		}
-	}
-	effect = {
-		infantry = {
-			defence = 1
-		}
-		guard = {
-			defence = 1
-		}
-		plane = {
-			defence = 1
-		}
-		tank = {
-			defence = 1
-		}
-		engineer = {
-			defence = 1
-		}
-		artillery = {
-			defence = 1
-		}
-		dragoon = {
-			defence = 1
-		}
-		hussar = {
-			defence = 1
-		}
-		cavalry = {
-			defence = 0.5
-		}
-		irregular = {
-			defence = 0.5
-		}
-		army_base = {
-			supply_consumption = 0.05
-		}  
-	}
-}
-staff_command_support = {
-	limit = { point_defense_system = 1 }
-	chance = {
-		base = 3
-		modifier = {
-			factor = 2
-			military_staff_system = 1
-		}
-		modifier = {
-			factor = 2
-			army_professionalism = 1
-		}
-	}
-	effect = {
-		mobilisation_size = 0.01
-	}
-}
+# field_fortifications = {
+	# limit = { point_defense_system = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 3
+			# mechanical_production = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# organized_factories = 1
+		# }
+	# }
+	# effect = {
+		# infantry = {
+			# defence = 1
+		# }
+		# guard = {
+			# defence = 1
+		# }
+		# plane = {
+			# defence = 1
+		# }
+		# engineer = {
+			# defence = 1
+		# }
+		# irregular = {
+			# defence = 1
+		# }
+	# }
+# }
+# signal_detachments = {
+	# limit = { point_defense_system = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# military_staff_system = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# army_professionalism = 1
+		# }	
+	# }
+	# effect = {
+		# engineer = {
+			# siege = 1			
+		# }
+		# dragoon = {
+			# reconnaissance = 1
+		# }
+		# hussar = {
+			# reconnaissance = 1
+		# }
+	# }
+# }
+# flexible_firepower = {
+	# limit = { point_defense_system = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# invention = field_fortifications
+		# }
+		# modifier = {
+			# factor = 2
+			# army_professionalism = 1
+		# }
+	# }
+	# effect = {
+		# infantry = {
+			# defence = 1
+		# }
+		# guard = {
+			# defence = 1
+		# }
+		# plane = {
+			# defence = 1
+		# }
+		# tank = {
+			# defence = 1
+		# }
+		# engineer = {
+			# defence = 1
+		# }
+		# artillery = {
+			# defence = 1
+		# }
+		# dragoon = {
+			# defence = 1
+		# }
+		# hussar = {
+			# defence = 1
+		# }
+		# cavalry = {
+			# defence = 0.5
+		# }
+		# irregular = {
+			# defence = 0.5
+		# }
+		# army_base = {
+			# supply_consumption = 0.05
+		# }
+	# }
+# }
+# synchronized_heavy_support = {
+	# limit = { point_defense_system = 1 }
+	# chance = {
+		# base = 4
+		# modifier = {
+			# factor = 2
+			# iron_breech_loaded_artillery = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = flexible_firepower
+		# }
+	# }
+	# effect = {
+		# infantry = {
+			# defence = 1
+		# }
+		# guard = {
+			# defence = 1
+		# }
+		# plane = {
+			# defence = 1
+		# }
+		# tank = {
+			# defence = 1
+		# }
+		# engineer = {
+			# defence = 1
+		# }
+		# artillery = {
+			# defence = 1
+		# }
+		# dragoon = {
+			# defence = 1
+		# }
+		# hussar = {
+			# defence = 1
+		# }
+		# cavalry = {
+			# defence = 0.5
+		# }
+		# irregular = {
+			# defence = 0.5
+		# }
+		# army_base = {
+			# supply_consumption = 0.05
+		# }  
+	# }
+# }
+# staff_command_support = {
+	# limit = { point_defense_system = 1 }
+	# chance = {
+		# base = 3
+		# modifier = {
+			# factor = 2
+			# military_staff_system = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# army_professionalism = 1
+		# }
+	# }
+	# effect = {
+		# mobilisation_size = 0.01
+	# }
+# }
 #deep_defense_system
 trench_systems = {
 	limit = { deep_defense_system = 1 }
-	chance = {
+	chance = { 
 		base = 4
 		modifier = {
 			factor = 2

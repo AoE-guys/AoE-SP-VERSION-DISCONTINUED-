@@ -46,6 +46,7 @@ point_defense_system = {
 		supply_consumption = 0.20
 	} 
 	max_fort = 1
+	default_organisation = 5
 	#dig_in_cap = 1
 	
 	ai_chance = {
@@ -172,6 +173,7 @@ breech_loaded_rifles = {
 	unciv_military = yes
 
 	#combat_width = -2
+	default_organisation = 5
 	
 	ai_chance = {
 		factor = 4
