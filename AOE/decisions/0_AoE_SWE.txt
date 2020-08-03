@@ -60,7 +60,17 @@ political_decisions = {
 		}
 		
 		allow = {
-			state_n_government = 1
+			OR = {
+				state_n_government = 1
+				AND = {
+					truce_with = RUS
+					year = 1710
+				}
+				AND = {
+					is_greater_power = yes
+					year = 1706
+				}
+			}
 			owns = 349
 			owns = 350
 			owns = 351
@@ -405,6 +415,9 @@ political_decisions = {
 			badboy = 10
 			set_country_flag = conquer_danzig
 			PRU_690 = {
+				add_core = THIS
+			}
+			PRU_695 = {
 				add_core = THIS
 			}
 			696 = {

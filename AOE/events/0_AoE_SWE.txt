@@ -229,10 +229,18 @@ country_event = {
 	trigger = {
 		tag = SWE
 		government = absolute_monarchy
-		war_with = RUS
 		OR = {
-			war_with = DNN
-			war_with = PLC
+			AND = {
+				war_with = RUS
+				OR = {
+					war_with = DNN
+					war_with = PLC
+				}
+			}
+			AND = {
+				war_with = DNN
+				war_with = PLC
+			}
 		}
 	}
 	
@@ -245,7 +253,153 @@ country_event = {
 		}
 	}
 }
+###Polish lithuanian puppet GNW###
 
+country_event = {
+	id = 1721006
+	title = "A puppet king?"
+	desc = "EVTDESC1721005"
+	picture = throne
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		war_with = PLC
+		706 = {
+			controlled_by = SWE
+		}
+		360 = {
+			controlled_by = SWE
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Place Stanislaw on the throne."
+		war_exhaustion = -10
+		PLC = {
+			country_event = 1721007
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "We'll just occupy them."
+		war_exhaustion = 5
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1721007
+	title = "Commonwealth's Civil War"
+	desc = "EVTDESC1721007"
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		any_owned = {
+			limit = {
+				controlled_by = SWE
+			}
+			add_core = PZN
+			secede_province = PZN
+		}
+		SWE = {
+			diplomatic_influence = {
+				who = PZN
+				value = 400
+			}
+			relation = {
+				who = PZN
+				value = 400
+			}
+		}
+		PZN = {
+			government = elective_monarchy_oligarchy
+			create_allience = SWE
+			war = {
+				target = PLC
+				attacker_goal = { casus_belli = civil_war }
+				defender_goal = { casus_belli = civil_war }
+				call_ally = yes
+			}
+			set_country_flag = leszczynski_rule
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 3650
+			}
+		}
+		set_global_flag = plc_civil_war
+	}
+	
+	option = {
+		name = "Support Augustus the Strong."
+		war_exhaustion = 5
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Support Stanislaw Leszczynski."
+		change_tag_no_core_switch = PZN
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 1721008
+	title = "End of the Civil War"
+	desc = "EVTDESC1721008"
+	major = yes
+	
+	trigger = {
+		has_global_flag = plc_civil_war
+		tag = PZN
+		PLC = {
+			exists = no
+		}	
+	}
+	
+	option = {
+		name = "Finally."
+		prestige = 15
+		change_tag = PLC
+		PZN = {
+			all_core = {
+				remove_core PZN
+			}
+		}
+		PLC = {
+			end_war = SWE
+		}
+	}
+}
+country_event = {
+	id = 1721009
+	title = "End of the Civil War"
+	desc = "EVTDESC1721009"
+	major = yes
+	
+	trigger = {
+		has_global_flag = plc_civil_war
+		tag = PLC
+		PZN = {
+			exists = no
+		}
+	}
+	
+	option = {
+		name = "Finally."
+		prestige = 15
+		PZN = {
+			all_core = {
+				remove_core PZN
+			}
+		}
+	}
+}
 ###Sapmi###
 
 country_event = {

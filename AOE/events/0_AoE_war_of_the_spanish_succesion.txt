@@ -205,6 +205,14 @@ country_event = {
 			who = AUS
 			value = 300
 		}
+		diplomatic_influence = {
+			who = BOR
+			value = -400
+		}
+		diplomatic_influence = {
+			who = SPA
+			value = -400
+		}
 		set_country_flag = support_habsburg_heir_heir
 		set_global_flag = spanish_war_begun
 		ai_chance = {
@@ -270,6 +278,10 @@ country_event = {
 		relation = {
 			who = AUS
 			value = -100
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = -400
 		}
 	    set_country_flag = support_bourbon_heir
 		set_global_flag = spanish_war_begun

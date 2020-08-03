@@ -643,8 +643,16 @@ country_event = {
 	id = 170007
 	title = "The Anti-Swedish Coalition"
 	desc = "EVTDESC170007"
-	picture = desant
-	is_triggered_only = yes
+	picture = gnw_swe
+	fire_only_once = yes
+	#is_triggered_only = yes
+	
+	trigger = {
+		tag = PLC
+		year = 1700
+	}
+	
+	mean_time_to_happen = { months = 2 }
 	
 	option = {
 		name = "To War!"
@@ -653,30 +661,44 @@ country_event = {
 			target = SWE
 			attacker_goal = { casus_belli = humiliate }
 			defender_goal = { casus_belli = humiliate }
-			call_ally = yes
+			call_ally = no
 		}
 		add_casus_belli = {
 			target = SWE
 			type = acquire_state
 			months = 12
 		}
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
 		name = "Back-stab the coalition"
-		prestige = -25
+		prestige = -65
 		relation = {
 			who = RUS
 			value = -100
 		}
+		relation = {
+			who = DNN
+			value = -100
+		}
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
 	id = 170008
 	title = "The Anti-Swedish Coalition"
 	desc = "EVTDESC170007"
-	picture = desant
-	is_triggered_only = yes
+	picture = gnw_swe
+	fire_only_once = yes
+	#is_triggered_only = yes
+	
+	trigger = {
+		tag = DNN
+		year = 1700
+	}
+	
+	mean_time_to_happen = { months = 2 }
 	
 	option = {
 		name = "To War!"
@@ -685,17 +707,23 @@ country_event = {
 			target = SWE
 			attacker_goal = { casus_belli = acquire_all_cores country = DNN }
 			defender_goal = { casus_belli = humiliate }
-			call_ally = yes
+			call_ally = no
 		}
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
 		name = "Back-stab the coalition"
-		prestige = -25
+		prestige = -65
 		relation = {
 			who = RUS
 			value = -100
 		}
+		relation = {
+			who = PLC
+			value = -100
+		}
+		ai_chance = { factor = 0 }
 	}
 }
 country_event = {
