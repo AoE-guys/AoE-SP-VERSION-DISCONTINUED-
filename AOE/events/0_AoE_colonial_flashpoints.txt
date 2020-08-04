@@ -1,0 +1,47 @@
+#province_event = {
+#	id = 162000
+#	title = "Colonization race"
+#	desc = "EVNDESC162000"
+#	
+#	trigger = {
+#		owner = { is_greater_power = no government = colonial_company }
+#		state_scope = {
+#			has_flashpoint = yes
+#			flashpoint_tension = 1
+#			NOT = { flashpoint_tension = 90 }
+#		}
+#	}
+#	
+#	mean_time_to_happen =  {
+#		months = 250
+#
+#		modifier = {
+#			factor = 0.5
+#			war_policy = jingoism
+#		}
+#		modifier = {
+#			factor = 0.75
+#			war_policy = pro_military
+#		}
+#		modifier = {
+#			factor = 1.25
+#			war_policy = anti_military
+#		}
+#		modifier = {
+#			factor = 1.5
+#			war_policy = pacifism
+#		}
+#	}
+#	
+#	option = {
+#		name = "Continue to build outposts there!"
+#		state_scope = {
+#			flashpoint_tension = 20
+#		}
+#	}
+#	
+#	option = {
+#		name = "Abandon the Area"
+#		prestige = -5
+#	}
+#}

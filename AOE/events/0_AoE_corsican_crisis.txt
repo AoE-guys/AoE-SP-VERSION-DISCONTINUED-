@@ -85,7 +85,7 @@ country_event = {
 	option = {
 		name = "They are not worth our time"
 		prestige = -5
-		ai_chance
+		ai_chance = { factor = 0 }
 	}
 	
 	option = {

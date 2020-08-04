@@ -8,9 +8,9 @@ political_decisions = {
 		
 		allow = {
 			OR = {
-			is_greater_power = yes
-			government = proletarian_dictatorship
-			AND = {
+				is_greater_power = yes
+				government = proletarian_dictatorship
+				AND = {
 				year = 1780
 				political_thought_7 = 1
 				}
@@ -18,41 +18,42 @@ political_decisions = {
 		}
 		
 		effect = {
-		random_country = {
-			limit = { exists = yes tag = CSG vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = ASG vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = VAL vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = THL vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = GSU vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = BSL vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = NCT vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = MLH vassal_of = THIS civilized = yes }
-			annex_to = THIS
-		}
-		random_country = {
-			limit = { exists = yes tag = ROT vassal_of = THIS civilized = yes }
-			annex_to = THIS
+			random_country = {
+				limit = { exists = yes tag = CSG vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = ASG vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = VAL vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = THL vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = GSU vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = BSL vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = NCT vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = MLH vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = ROT vassal_of = THIS civilized = yes }
+				annex_to = THIS
+			}
 		}
 	}
 }

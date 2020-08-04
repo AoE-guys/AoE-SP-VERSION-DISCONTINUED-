@@ -146,17 +146,39 @@ political_decisions = {
 			NOT = { has_country_flag = war_on_natives }
 		}
 		allow = {
-			is_independant = yes
 			machine_guns = 1
 			nationalism_n_imperialism = 1
 		}
 		effect = {
-			IQS = { all_core = { add_core = THIS } }
-			LNP = { all_core = { add_core = THIS } }
-			CRK = { all_core = { add_core = THIS } }
-			CHS = { all_core = { add_core = THIS } }
-			CHT = { all_core = { add_core = THIS } }
-			CHE = { all_core = { add_core = THIS } }
+			2556 = { add_core = THIS }
+			216 = { add_core = THIS }
+			221 = { add_core = THIS }
+			225 = { add_core = THIS }
+			2627 = { add_core = THIS }
+			227 = { add_core = THIS }
+			228 = { add_core = THIS }
+			235 = { add_core = THIS }
+			240 = { add_core = THIS }
+			236 = { add_core = THIS }
+			237 = { add_core = THIS }
+			238 = { add_core = THIS }
+			239 = { add_core = THIS }
+			140 = { add_core = THIS }
+			USA_218 = { add_core = THIS }
+			USA_178 = { add_core = THIS }
+			USA_162 = { add_core = THIS }
+			USA_176 = { add_core = THIS }
+			USA_247 = { add_core = THIS }
+			USA_201 = { add_core = THIS }
+			USA_1961 = { add_core = THIS }
+			USA_1941 = { add_core = THIS }
+			USA_1881 = { add_core = THIS }
+			USA_168 = { add_core = THIS }
+			USA_196 = { add_core = THIS }
+			USA_194 = { add_core = THIS }
+			USA_188 = { add_core = THIS }
+			USA_185 = { add_core = THIS }
+			USA_170 = { add_core = THIS }
 			set_country_flag = war_on_natives
 			badboy = 20
 		}

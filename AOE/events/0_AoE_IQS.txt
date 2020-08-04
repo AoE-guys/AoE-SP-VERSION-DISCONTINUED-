@@ -22,6 +22,15 @@ country_event = {
 				value = 400
 			}
 		}
+		all_core = {
+			limit = {
+				OR = {
+					owned_by = MIA
+					owned_by = PTW
+				}
+			}
+			remove_core = IQS
+		}
 		end_war = BOR
 		end_war = FCA
 		end_war = MIA
@@ -30,11 +39,13 @@ country_event = {
 		end_war = ABB
 		end_war = OTT
 		end_war = SHE
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
 		name = "Continue the War!"
 		war_exhastion = 10
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -65,6 +76,7 @@ country_event = {
 		FCA = {
 			country_event = 160902
 		}
+		ai_chance = { factor = 1 }
 	}
 }
 country_event = {
@@ -79,13 +91,22 @@ country_event = {
 		BOR = {
 			prestige = -15
 		}
-		CAN_58 = {
+		CAN_46 = {
 			secede_province = IQS
 		}
+		153 - {
+			secede_province = IQS
+		}
+		IQS = {
+			end_war = BOR
+			end_war = FCA
+		}
+		ai_chance = { factor = 0 }
 	}
 	
 	option = {
 		name = "Refuse"
 		war_exhastion = 15
+		ai_chance = { factor = 0 }
 	}
 }
