@@ -248,7 +248,7 @@ migration_target =
 	modifier = {
 		factor = 1.2
 		NOT = { total_pops = 5000 }
-		year = 1850
+		year = 1750
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -263,7 +263,7 @@ migration_target =
 	
 	modifier = {
 		factor = 1.5
-		year = 1880
+		year = 1780
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -606,7 +606,7 @@ migration_target =
 		OR = { 
 			is_core = SAF
 		}
-		NOT = { year = 1855 }
+		NOT = { year = 1755 }
 		country = { primary_culture = british }
 	}
 	
@@ -859,31 +859,31 @@ promote_to = {
 			factor = 25
 			administration_spending = 0.1
 			NOT = { administration_spending = 0.2 }
-			NOT = { bureaucrats = 0.003 }
+			NOT = { bureaucrats = 0.005 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.2
 			NOT = { administration_spending = 0.3 }
-			NOT = { bureaucrats = 0.006 }
+			NOT = { bureaucrats = 0.007 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.3
 			NOT = { administration_spending = 0.4 }
-			NOT = { bureaucrats = 0.009 }
+			NOT = { bureaucrats = 0.01 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.4
 			NOT = { administration_spending = 0.5 }
-			NOT = { bureaucrats = 0.012 }
+			NOT = { bureaucrats = 0.013 }
 		}
 		modifier = {
 			factor = 25
 			administration_spending = 0.5
 			NOT = { administration_spending = 0.6 }
-			NOT = { bureaucrats = 0.015 }
+			NOT = { bureaucrats = 0.016 }
 		}
 		modifier = {
 			factor = 25
@@ -1130,55 +1130,55 @@ promote_to = {
 	{
 		factor = 0.01
  		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
 			NOT = { capitalists = 0.004 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
 			NOT = { capitalists = 0.008 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
 			NOT = { capitalists = 0.012 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
 			NOT = { capitalists = 0.016 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.5
 			NOT = { literacy = 0.6 }
 			NOT = { capitalists = 0.020 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
 			NOT = { capitalists = 0.024 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
 			NOT = { capitalists = 0.032 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
 			NOT = { capitalists = 0.036 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.99
 			NOT = { capitalists = 0.040 }
 		}  

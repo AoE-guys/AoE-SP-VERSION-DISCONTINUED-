@@ -259,7 +259,7 @@ migration_target = {
 	modifier = {
 		factor = 1.2
 		NOT = { total_pops = 5000 }
-		year = 1850
+		year = 1750
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -274,7 +274,7 @@ migration_target = {
 	
 	modifier = {
 		factor = 1.5
-		year = 1880
+		year = 1780
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -617,7 +617,7 @@ modifier = {
 		OR = { 
 			is_core = SAF
 		}
-		NOT = { year = 1855 }
+		NOT = { year = 1755 }
 		country = { primary_culture = british }
 	}
 	

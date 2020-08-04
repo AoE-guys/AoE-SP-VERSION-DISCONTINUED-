@@ -274,7 +274,7 @@ migration_target = {
 	modifier = {
 		factor = 1.2
 		NOT = { total_pops = 5000 }
-		year = 1850
+		year = 1750
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -289,7 +289,7 @@ migration_target = {
 	
 	modifier = {
 		factor = 1.5
-		year = 1880
+		year = 1780
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -504,7 +504,7 @@ migration_target = {
 	}
 	
 	modifier = {
-		factor = 2.5
+		factor = 0.5
 		continent = europe
 		country = { primary_culture = russian }
 	}
@@ -625,7 +625,7 @@ migration_target = {
 		OR = { 
 			is_core = SAF
 		}
-		NOT = { year = 1855 }
+		NOT = { year = 1755 }
 		country = { primary_culture = british }
 	}
 	
@@ -727,7 +727,7 @@ migration_target = {
 		life_rating = 50
 	}
 	modifier = {
-		factor = 0.001
+		factor = -0.1
 		is_primary_culture = no
 	}
 }
@@ -737,61 +737,61 @@ promote_to = {
 	officers = {
 		factor = 0.01		
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.1
 			NOT = { military_spending = 0.2 }
 			NOT = { officers = 0.001 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.2
 			NOT = { military_spending = 0.3 }
 			NOT = { officers = 0.001 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.3
 			NOT = { military_spending = 0.4 }
 			NOT = { officers = 0.002 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.4
 			NOT = { military_spending = 0.5 }
 			NOT = { officers = 0.002 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.5
 			NOT = { military_spending = 0.6 }
 			NOT = { officers = 0.003 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.6
 			NOT = { military_spending = 0.7 }
 			NOT = { officers = 0.003 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.7
 			NOT = { military_spending = 0.8 }
 			NOT = { officers = 0.004 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.8
 			NOT = { military_spending = 0.9 }
 			NOT = { officers = 0.004 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.9
 			NOT = { military_spending = 0.99 }
 			NOT = { officers = 0.004 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			military_spending = 0.99
 			NOT = { officers = 0.005 }
 		}
@@ -803,61 +803,61 @@ promote_to = {
 	artisans = {
 		factor = 0.01
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.1
 			NOT = { literacy = 0.2 }
 			NOT = { artisans = 0.01 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.2
 			NOT = { literacy = 0.3 }
 			NOT = { artisans = 0.02 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.3
 			NOT = { literacy = 0.4 }
 			NOT = { artisans = 0.03 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.4
 			NOT = { literacy = 0.5 }
 			NOT = { artisans = 0.04 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.5
 			NOT = { literacy = 0.6 }
 			NOT = { artisans = 0.05 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.6
 			NOT = { literacy = 0.7 }
 			NOT = { artisans = 0.06 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.7
 			NOT = { literacy = 0.8 }
 			NOT = { artisans = 0.07 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.8
 			NOT = { literacy = 0.9 }
 			NOT = { artisans = 0.08 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.9
 			NOT = { literacy = 0.99 }
 			NOT = { artisans = 0.09 }
 		}
 		modifier = {
-			factor = 20
+			factor = 25
 			literacy = 0.99
 			NOT = { artisans = 0.10 }
 		}
