@@ -62,4 +62,33 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
+	form_swabia = {
+		picture = swabia
+		potential = {
+			has_country_flag = swabia_area
+			NOT = {
+				has_country_flag = formed_swabia
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					is_secondary_power = yes
+					NOT = {
+						tag = BAV
+					}
+				}
+				AND = {
+					tag = BAV
+					prestige = 60
+				}
+			}
+		}
+		effect = {
+			set_country_flag = formed_swabia
+			change_tag_no_core_switch = SGF
+			prestige = 15
+		}
+		ai_will_do = { factor = 1 }
+	}
 }
