@@ -1,14 +1,10 @@
-owner = HAN
-controller = HAN
-add_core = SWH
-add_core = HAN
+owner = LAU
+controller = LAU
 add_core = LAU
 add_core = GER
 add_core = NNN
 trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 40
-
-
 
 state_building = {
 	level = 1
