@@ -871,7 +871,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPT1700012That was a good idea"
+		name = "EVTOPT1700012"
 		set_country_flag = caspian_expedition_success
 		create_vassal = KHI
 			diplomatic_influence = {
@@ -950,7 +950,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPT1700014"
+		name = "EVTOPT170014"
 		set_country_flag = russian_bad_times
 		any_pop = {
 			limit = {
@@ -979,6 +979,9 @@ country_event = {
 			exists = yes
 			vassal_of = RUS
 		}
+	}
+	immediate = {
+		clr_country_flag = russian_bad_times
 	}
 	
 	mean_time_to_happen = {
@@ -1226,14 +1229,14 @@ province_event = {
 					}
 				}
 				militancy = 9
-				reduce_size = 0.5
+				reduce_pop = 0.5
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_size = 0.9
+				reduce_pop = 0.9
 			}
 		add_province_modifier = {
 				name = kamchatka_wars 
@@ -1299,6 +1302,7 @@ country_event = {
 		clr_country_flag = kamchatka_war
 		prestige = 1
 		war_exhaustion = -5
+		
 		ai_chance = {
 			factor = 1
 		}
