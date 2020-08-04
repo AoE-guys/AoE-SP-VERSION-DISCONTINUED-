@@ -146,19 +146,23 @@ ENG_300 = { 300 294 301 302 303 3269 } #South East England
 
 DEN_251 = { 251 252 253 2636 } #Iceland & Greenland
 
-SWE_308 = { 308 305 306 307 } #Nordnoge
+SWE_308 = { 306 307 } #Nordnorge
+
+SWE_310 = { 305 308 319 } #Trondheim
 
 SWE_309 = { 309 311 310 312 } #Vestlandet
 
 SWE_313 = { 313 316 314 315 } #Ostlandet
 
-SWE_318 = { 318 317 319 320 321 } #Norrland
+SWE_318 = { 318 320 321 } #Norrland
 
-SWE_322 = { 322 324 326 325 } #Stockholm
+SWE_322 = { 322 324 326 317 323 } #Stockholm
 
-SWE_329 = { 329 328 327 323 330 } #Goteburg
+SWE_329 = { 329 328 327 330 } #Goteburg
 
-SWE_334 = { 334 332 331 333 335 } #Malmo
+SWE_334 = { 334 335 } #Malmo
+
+SWE_335 = { 331 332 333 325 } #Smaland
 
 RUS_336 = { 336 337 338 } #Northern Finland
 
