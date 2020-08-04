@@ -6,7 +6,7 @@ plurality = 0.25
 nationalvalue = nv_order
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.8
 civilized = yes
-prestige = 1
+prestige = 5
 
 
 # Political reforms
@@ -41,6 +41,7 @@ colonial_policy = no_colonies
 
 set_country_flag = protestant_country
 set_country_flag = hre_member
+set_country_flag = thuringen_area
 
 ruling_party = "Nobility Faction"
 upper_house = {

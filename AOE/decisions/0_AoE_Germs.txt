@@ -1,0 +1,65 @@
+political_decisions = {
+	form_thuringia = {
+		picture = thuringia
+		potential = {
+			has_country_flag = thuringen_area
+			NOT = {
+				has_country_flag = formed_thuringia
+			}
+		}
+		allow = {
+			is_secondary_power = yes
+		}
+		effect = {
+			set_country_flag = formed_thuringia
+			change_tag_no_core_switch = THU
+			prestige = 25
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	form_westphalia = {
+		picture = westphalia
+		potential = {
+			has_country_flag = westfalen_area
+			NOT = {
+				has_country_flag = formed_westphalia
+			}
+		}
+		allow = {
+			AND = {
+				is_secondary_power = yes
+				prestige = 25
+			}
+		}
+		effect = {
+			set_country_flag = formed_westphalia
+			change_tag_no_core_switch = WES
+			prestige = 25
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	form_rheinland = {
+		picture = rhineland
+		potential = {
+			has_country_flag = rheinland_area
+			NOT = {
+				has_country_flag = formed_rheinland
+			}
+		}
+		allow = {
+			AND = {
+				is_secondary_power = yes
+				prestige = 25
+			}
+		}
+		effect = {
+			set_country_flag = formed_rheinland
+			change_tag_no_core_switch = RHI
+			prestige = 25
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+}
