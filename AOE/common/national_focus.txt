@@ -178,7 +178,7 @@ diplomatic_focus = {
 
 promotion_focus = {
 	promote_aristocrats = {
-		aristocrats = 0.15 #20% more likely to become artisans
+		aristocrats = 0.20 #20% more likely to become artisans
 		icon = 11
 		outliner_show_as_percent = yes
 		
@@ -191,7 +191,7 @@ promotion_focus = {
 	}
     
 	promote_artisans = {
-		artisans = 0.20 #20% more likely to become this type
+		artisans = 0.25 #20% more likely to become this type
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = { 
@@ -201,7 +201,7 @@ promotion_focus = {
 	}
     
 	promote_bureaucrats = {
-		bureaucrats = 0.10 #20% more likely to become this type
+		bureaucrats = 0.20 #20% more likely to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -220,7 +220,7 @@ promotion_focus = {
 	}
     
 	promote_capitalists = {
-		capitalists = 0.15 #20% more likely to become this type
+		capitalists = 0.20 #20% more likely to become this type
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = { 
@@ -234,7 +234,7 @@ promotion_focus = {
 	}
 	
 	promote_clergymen = {
-		clergymen = 0.25 #20% more likely to become this type
+		clergymen = 0.35 #20% more likely to become this type
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
@@ -309,7 +309,7 @@ promotion_focus = {
 	}
     
 	promote_officers = {
-		officers = 0.20 #20% more likely to become this type
+		officers = 0.25 #20% more likely to become this type
 		icon = 20
 		outliner_show_as_percent = yes
 		limit = {

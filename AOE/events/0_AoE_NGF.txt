@@ -98,3 +98,135 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 444669
+	title = "Join the union!"
+	desc = "Shall we join our local union?"
+	
+	trigger = {
+		AND = {
+			exists = SGF
+			OR = {
+				tag = ANS
+				tag = AUG
+				tag = BAD
+				tag = BAV
+				tag = RAV
+				tag = SGM
+				tag = ULM
+				tag = WUL
+				tag = WUR
+				tag = SAL
+			}
+			alliance_with = SGF
+		}
+	}
+	
+	option = {
+		name = "Absolutely!"
+		SGF = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 444670
+	title = "Join the union!"
+	desc = "Shall we join our local union?"
+	
+	trigger = {
+		AND = {
+			exists = THU
+			OR = {
+				tag = ATB
+				tag = COB
+				tag = MEI
+				tag = REU
+				tag = SWG
+				tag = WEI
+			}
+			alliance_with = THU
+		}
+	}
+	
+	option = {
+		name = "Absolutely!"
+		THU = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 444671
+	title = "Join the union!"
+	desc = "Shall we join our local union?"
+	
+	trigger = {
+		AND = {
+			exists = WES
+			OR = {
+				tag = LIP
+				tag = MUN
+				tag = SCL
+				tag = KOL
+				tag = ACH
+				tag = OLD
+			}
+			alliance_with = WES	
+		}
+	}
+	
+	option = {
+		name = "Absolutely!"
+		WES = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 444672
+	title = "Join the union!"
+	desc = "Shall we join our local union?"
+	
+	trigger = {
+		AND = {
+			exists = RHI
+			OR = {
+				tag = ALS
+				tag = FRM
+				tag = HEK
+				tag = HES
+				tag = TRR
+				tag = LOR
+				tag = HEH
+				tag = NAS
+				tag = SAA
+				tag = WLD
+			}
+			alliance_with = RHI
+		}
+	}
+	
+	option = {
+		name = "Absolutely!"
+		RHI = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
