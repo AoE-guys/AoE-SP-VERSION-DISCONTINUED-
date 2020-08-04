@@ -468,6 +468,7 @@ province_event = {
 				government = democracy
 			}
 		}
+		NOT = { year = 1745 }
 		NOT = { has_global_flag = jacobites_pacified }
 		any_neighbor_province = { has_province_modifier = jacobite_sympathies }
 		NOT = { has_province_modifier = jacobite_sympathies }
@@ -646,6 +647,7 @@ province_event = {
 				}
 			}
 		}
+		NOT = { year = 1745 }
 		any_neighbor_province = { has_province_modifier = jacobite_sympathies }
 		NOT = { has_province_modifier = jacobite_sympathies }
 		is_core = GBR
