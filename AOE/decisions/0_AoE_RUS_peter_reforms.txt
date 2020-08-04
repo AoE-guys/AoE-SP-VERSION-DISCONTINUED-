@@ -909,14 +909,17 @@ political_decisions = {
 	}
 ######## COLONISATION STUFF ##########
 	colonisation_of_altay = {
-		picture = army_training
+		picture = cross_siberia
 		potential = {
 			tag = RUS
 			NOT = {
 				has_country_flag = colonisation_of_altay
 			}
 			1067 = {
-				empty = yes
+				OR = {
+					owned_by = DZN
+					owned_by = QNG
+				}
 			}
 		}
 		allow = {
@@ -940,20 +943,17 @@ political_decisions = {
 		}
 	}
 	colonisation_of_abakan = {
-		picture = army_training
+		picture = cross_siberia
 		potential = {
 			tag = RUS
-			DZN = {
-				OR = {
-					is_independant = no
-					exists = no
-				}
-			}
 			NOT = {
 				has_country_flag = colonisation_of_abakan
 			}
 			2674 = {
-				empty = yes
+				OR = {
+					owned_by = DZN
+					owned_by = QNG
+				}
 			}
 			has_country_flag = treaty_of_kyakhta
 		}
