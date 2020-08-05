@@ -3422,14 +3422,14 @@ release_puppet = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
-	    FROM = { 
-	    	    NOT = {
-	               OR = {
-	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
-	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
-	    	       }
-	    	}
-	    }
+	    #FROM = { 
+	    #	    NOT = {
+	    #           OR = {
+	    #                AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    #	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    #	       }
+	    #	}
+	    #}
 		is_our_vassal = FROM
 		FROM = { is_substate = no }
 		FROM = { NOT = { has_country_flag = unreleasable_country } }
@@ -3503,14 +3503,14 @@ release_puppet_AI = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
-	    FROM = { 
-	    	    NOT = {
-	               OR = {
-	                     AND = { has_country_flag = dynamic_colony is_vassal = yes }
-	    	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
-	    	       }
-	    	}
-	    }
+		#FROM = { 
+	    #	    NOT = {
+	    #          OR = {
+	    #                AND = { has_country_flag = dynamic_colony is_vassal = yes }
+	    #	       	     AND = { has_country_flag = dynamic_tag is_vassal = yes }
+	    #	       }
+	    #	}
+	    #}
 		is_our_vassal = FROM
 		FROM = {
 			is_substate = no
