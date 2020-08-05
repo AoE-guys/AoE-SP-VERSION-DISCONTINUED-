@@ -263,81 +263,92 @@ political_decisions = {
 			any_country = {
 				limit = {
 					has_country_flag = hre_member
-					capital_scope = {
-						OR = {
-							region = BAV_599
-							region = BAV_595
-						}
-					}
 				}
-				annex_to = BAV
+				annex_to = THIS
 			}
-			any_country = {
-				limit = {
-					has_country_flag = hre_member
-					capital_scope = {
-						OR = {
-							region = WUR_589
-							region = BAD_586
-						}
-					}
-				}
-				annex_to = WUR
+			592 = {
+				add_core = BAV
 			}
-			any_country = {
-				limit = {
-					has_country_flag = hre_member
-					capital_scope = {
-						OR = {
-							region = PRU_570
-							region = PRU_575
-							region = PRU_578
-						}
-					}
-				}
-				annex_to = RHI
+			613 = {
+				add_core = BAV
 			}
-			any_country = {
-				limit = {
-					has_country_flag = hre_member
-					capital_scope = {
-						OR = {
-							region = HAN_540
-							region = PRU_581
-							region = HES_2560
-						}
-					}
-				}
-				annex_to = MUN
+			596 = {
+				remove_core = BAV
 			}
-			any_country = {
-				limit = {
-					has_country_flag = hre_member
-					capital_scope = {
-						OR = {
-							region = HOL_369
-							region = HAN_528
-							region = HAN_534
-						}
-					}
-				}
-				annex_to = HAN
+			596 = {
+				add_core = THU
 			}
-			any_country = {
-				limit = {
-					has_country_flag = hre_member
-					capital_scope = {
-						OR = {
-							region = PRU_544
-							region = PRU_546
-							region = PRU_549
-							region = PRU_553
-							region = SAX_558
-							region = PRU_554
-						}
-					}
+			release = BAV
+			597 = {
+				add_core = THU
+			}
+			598 = {
+				add_core = THU
+			}
+			release_vassal = THU
+			THU = {
+				set_country_flag = formed_thuringia
+			}
+			release = SGF
+			SGF = {
+				set_country_flag = formed_swabia
+			}
+			PRU_544 = {
+				add_core = NGF
+			}
+			HOL_369 = {
+				add_core = NGF
+			}
+			HAN_528 = {
+				add_core = NGF
+			}
+			HAN_534 = {
+				add_core = NGF
+			}
+			557 = {
+				add_core = NGF
+			}
+			553 = {
+				add_core = NGF
+			}
+			555 = {
+				add_core = NGF
+			}
+			539 = {
+				add_core = NGF
+			}
+			SCH_370 = {
+				add_core = NGF
+			}
+			3254 = {
+				remove_core = NGF
+			}
+			3301 = {
+				remove_core = NGF
+			}
+			release = NGF
+			NGF = {
+				set_country_flag = hanseatic_league_united
+			}
+			PRU_549 = {
+				add_core = SAX
+			}
+			PRU_546 = {
+				add_core = SAX
+			}
+			release = SAX
+			LIG = {
+				all_core = {
+					add_core = WES
 				}
-				annex_to = PRU
+			}
+			release = WES
+			WES = {
+				set_country_flag = formed_westphalia
+			}
+			release = RHI
+			RHI = {
+				set_country_flag = formed_rheinland
 			}
 			prestige = 50
 			badboy = 15
