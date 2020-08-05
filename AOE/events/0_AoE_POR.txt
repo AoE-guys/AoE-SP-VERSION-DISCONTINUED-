@@ -274,6 +274,7 @@ country_event = {
 				name = natural_disaster
 				duration = 365
 			}
+			any_pop = { reduce_pop = 0.97 }
 		}
 	}
 	
@@ -284,6 +285,7 @@ country_event = {
 				name = natural_disaster
 				duration = 1825
 			}
+			any_pop = { reduce_pop = 0.67 }
 			life_rating = -10
 		}
 		prestige = -15
@@ -296,6 +298,10 @@ country_event = {
 	#picture = 
 	fire_only_once = yes	
 	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
 	trigger = {
 		owns = 521
 		has_country_flag = earthquake_happened
@@ -305,7 +311,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "An amazing feat of human architecture"
+		name = "An amazing feat of human architecture."
 		501 = {
 			add_province_modifier = {
 				name = rebuilding_city
