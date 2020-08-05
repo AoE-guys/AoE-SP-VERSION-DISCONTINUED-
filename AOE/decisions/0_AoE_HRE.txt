@@ -279,6 +279,9 @@ political_decisions = {
 				add_core = THU
 			}
 			release = BAV
+			BAV = {
+				set_country_flag = hre_member
+			}
 			597 = {
 				add_core = THU
 			}
@@ -288,10 +291,12 @@ political_decisions = {
 			release_vassal = THU
 			THU = {
 				set_country_flag = formed_thuringia
+				set_country_flag = hre_member
 			}
 			release = SGF
 			SGF = {
 				set_country_flag = formed_swabia
+				set_country_flag = hre_member
 			}
 			PRU_544 = {
 				add_core = NGF
@@ -329,6 +334,7 @@ political_decisions = {
 			release = NGF
 			NGF = {
 				set_country_flag = hanseatic_league_united
+				set_country_flag = hre_member
 			}
 			PRU_549 = {
 				add_core = SAX
@@ -345,10 +351,12 @@ political_decisions = {
 			release = WES
 			WES = {
 				set_country_flag = formed_westphalia
+				set_country_flag = hre_member
 			}
 			release = RHI
 			RHI = {
 				set_country_flag = formed_rheinland
+				set_country_flag = hre_member
 			}
 			prestige = 50
 			badboy = 15
