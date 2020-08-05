@@ -1648,6 +1648,18 @@ nationalist_rebels = {
 			has_country_flag = hre_member
 		}
 		modifier = {
+			factor = 0
+			is_cultural_union = NNN
+			NOT = {
+				any_owned_province = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+			}
+		}
+		modifier = {
 			war = yes
 			factor = 0.8
 		}
@@ -1785,6 +1797,22 @@ nationalist_rebels = {
 					is_core = ANT
 					is_core = TST
 				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				location = {
+					is_core = NNN
+				}
+				location = {
+					owner = {
+						is_cultural_union = NNN
+					}
+				}
+			}
+			NOT = {
+				 NNN = { has_country_flag = hre_formed } 
 			}
 		}
 		modifier = {
