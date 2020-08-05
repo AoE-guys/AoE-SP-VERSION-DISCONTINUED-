@@ -268,7 +268,7 @@ iron_muzzle_loaded_artillery = {
 	
 	artillery = {
 		attack = 0.25
-		support = 0.5
+		# support = 0.3
 		supply_consumption = 0.15
 	}
 	# tank = {
@@ -286,9 +286,9 @@ iron_breech_loaded_artillery = {
 	year = 1720
 	cost = 10800
 	unciv_military = yes
-	artillery = {
+	tank = {
 		attack = 0.25
-		support = 0.5
+		support = 0.3
 		supply_consumption = 0.3
 	}
 	activate_unit = tank
