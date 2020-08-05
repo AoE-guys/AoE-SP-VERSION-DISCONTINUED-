@@ -476,7 +476,7 @@ country_event = {
 		}
 		PLC = {
 		3337 = { secede_province = RUS }
-		RUS_360	= { limit = { NOT = { province_id = 362 } } secede_province = RUS }
+		RUS_360	= { limit = { NOT = { state_id = 362 } } secede_province = RUS }
 		RUS_707	= { secede_province = RUS }
 		RUS_940 = { secede_province = RUS }
 		RUS_959 = { secede_province = RUS }
@@ -488,7 +488,7 @@ country_event = {
 	option = {
 		name = "We will not give up!"
 		3337 = { add_core = RUS }
-		RUS_360	= { limit = { NOT = { province_id = 362 } } add_core = RUS }
+		RUS_360	= { limit = { NOT = { state_id = 362 } } add_core = RUS }
 		RUS_707	= { add_core = RUS }
 		RUS_940 = { add_core = RUS }
 		RUS_959 = { add_core = RUS }
