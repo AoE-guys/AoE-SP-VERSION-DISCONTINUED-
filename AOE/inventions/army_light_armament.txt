@@ -57,14 +57,14 @@ flintlock_rifle_armament = {
 			default_organisation = 5
 			supply_consumption = 0.15
 		}
-		guard = {
-			attack = 1
-			supply_consumption = 0.10
-		}
-		plane = {
-			attack = 1
-			supply_consumption = 0.10
-		}
+		# guard = {
+			# attack = 1
+			# supply_consumption = 0.10
+		# }
+		# plane = {
+			# attack = 1
+			# supply_consumption = 0.10
+		# }
 		engineer = {
 			attack = 1
 			supply_consumption = 0.10
