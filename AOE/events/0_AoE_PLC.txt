@@ -178,6 +178,7 @@ country_event = {
 		war = yes
 		war_exhaustion = 15
 		has_country_modifier = szlachta_war_taxes
+		national_provinces_occupied = 50
 		part_of_sphere = yes
 		NOT = { has_country_modifier = noble_democracy }
 	}

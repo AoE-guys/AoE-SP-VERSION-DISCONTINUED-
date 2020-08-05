@@ -21,16 +21,17 @@ political_decisions = {
 			set_country_flag = form_portugal_brazil
 			POR = {
 				all_core = {
-					add_core = UPD
+					add_core = UPB
 					remove_core = POR
 				}
 			}
 			PBZ = {
 				all_core = {
-					add_core = UPD
+					add_core = UPB
 				}
 			}
 			change_tag = UPB
+			prestige = 5
 		}
 		
 		ai_will_do = { factor = 1 }
