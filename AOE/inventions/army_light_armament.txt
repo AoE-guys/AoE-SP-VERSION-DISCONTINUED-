@@ -147,22 +147,30 @@ elite_troops = {
 		}
 	}
 	effect = {
-		infantry = {
+		# infantry = {
+			# attack = 1
+			# defence = 1
+			# supply_consumption = 0.20
+		# }
+		guard = {
+			
 			attack = 1
 			defence = 1
+			default_organisation = 0.5
 			supply_consumption = 0.20
 		}
 		plane = {
 			attack = 1
 			defence = 1
+			default_organisation = 0.5
 			supply_consumption = 0.20
 		}
-		engineer = {
-			attack = 1
-			defence = 1
-			siege = 1
-			supply_consumption = 0.20
-		}
+		# engineer = {
+			# attack = 1
+			# defence = 1
+			# siege = 1
+			# supply_consumption = 0.20
+		# }
 		dragoon = {
 			attack = 2
 			defence = 1
