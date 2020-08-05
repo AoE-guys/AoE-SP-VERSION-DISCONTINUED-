@@ -1160,14 +1160,14 @@ country_event = {
 					}
 				}
 				militancy = 5
-				reduce_size = 0.9
+				reduce_pop = 0.9
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 3
-				reduce_size = 0.5
+				reduce_pop = 0.5
 			}
 		}
 		1074 = {
@@ -1287,7 +1287,7 @@ country_event = {
 			has_country_flag = kamchatka_war
 		}
 		NOT = {
-			any_owned = {
+			any_owned_province = {
 				has_province_modifier = kamchatka_wars
 			}
 		}
@@ -1464,7 +1464,7 @@ country_event = {
 			war = {
 				target = RUS
 				attacker_goal = { casus_belli = humiliate }
-				defender_goal = { casus_belli = acquire_core_region state_province_id = 1047 }
+				defender_goal = { casus_belli = acquire_core_state state_province_id = 1047 }
 				call_ally = yes
 			}
 		}

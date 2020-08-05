@@ -288,7 +288,7 @@ country_event = { # 10231 Pest Congress-1
 			limit = {
 				OR = {
 					has_pop_culture = hungarian
-					has_pop_culture = romanian
+					has_pop_culture = transylvanian
 				}
 			}
 			militancy = -3
@@ -298,7 +298,7 @@ country_event = { # 10231 Pest Congress-1
 				NOT = {
 					OR = {
 						has_pop_culture = hungarian
-						has_pop_culture = romanian
+						has_pop_culture = transylvanian
 					}
 				}
 			}
@@ -314,7 +314,7 @@ country_event = { # 10231 Pest Congress-1
 		country_event = 10233
 		any_pop = {
 			limit = {
-				has_pop_culture = romanian
+				has_pop_culture = transylvanian
 			}
 			militancy = 3
 		}
@@ -355,7 +355,7 @@ country_event = { # 10232 Pest Congress-2
 				annex_to = HUN
 			}
 			HUN = {
-				add_accepted_culture = romanian
+				add_accepted_culture = transylvanian
 			}
 			prestige = -30
 			set_country_flag = hungary_romania
@@ -1335,12 +1335,12 @@ country_event = { #55555 Rakoczi decides
 						AND = {
 							consciousness = 0.5
 							militancy = 2
-							has_pop_culture = romanian
+							has_pop_culture = transylvanian
 							strata = poor
 						}
 						AND = {
 							militancy = 2
-							NOT = { has_pop_culture = romanian	}
+							NOT = { has_pop_culture = transylvanian	}
 							NOT = { has_pop_culture = south_german }
 							strata = poor
 						}
@@ -1367,7 +1367,7 @@ country_event = { #55555 Rakoczi decides
 		}
 		any_pop = {
 			limit = {
-				has_pop_culture = romanian 
+				has_pop_culture = transylvanian 
 			}
 			militancy = 4
 		}
@@ -1895,7 +1895,6 @@ country_event = {
 		AUS = {
 			prestige = 85
 			any_owned = {
-				prestige = 70
 				owner = {
 					limit = {
 						NOT = { has_country_flag = enacted_reichsreform }
@@ -1967,8 +1966,9 @@ country_event = {
 				limit =  {
 					is_core = SVY
 				}
+				secede_province = SVY
 			}
-			secede_province = SVY
+			
 		}
 		BOR = {
 			any_owned = {

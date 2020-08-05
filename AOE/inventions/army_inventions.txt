@@ -36,41 +36,7 @@ gustavian_army_reform = {
 		}
 	}
 }
-# post_napoleonic_army_doctrine = {
-	# limit = { post_napoleonic_thought = 1 }
-	# chance = {
-		# base = 2
-	# }
-	# effect = {
-		# infantry = {
-			# defence = 1
-		# }
-		# guard = {
-			# defence = 1
-		# }
-		# plane = {
-			# defence = 1
-		# }
-		# engineer = {
-			# defence = 1
-		# }
-		# cuirassier = {
-			# defence = 1
-		# }
-		# dragoon = {
-			# defence = 1
-		# }
-		# hussar = {
-			# defence = 1
-		# }
-		# cavalry = {
-			# defence = 1
-		# }
-		# irregular = {
-			# defence = 1
-		# }
-	# }
-# }
+
 #strategic_mobility
 gabionade = {
 	limit = { strategic_mobility = 1 }
@@ -700,7 +666,41 @@ human_wave_vs_spearhead = {
 	}
 }
 
-		
+post_napoleonic_army_doctrine = {
+	limit = { army_doctrine_8 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		infantry = {
+			defence = 1
+		}
+		guard = {
+			defence = 1
+		}
+		plane = {
+			defence = 1
+		}
+		engineer = {
+			defence = 1
+		}
+		cuirassier = {
+			defence = 1
+		}
+		dragoon = {
+			defence = 1
+		}
+		hussar = {
+			defence = 1
+		}
+		cavalry = {
+			defence = 1
+		}
+		irregular = {
+			defence = 1
+		}
+	}
+}
 #bronze_muzzle_loaded_artillery
 cast_bronze_cannons = {
 	limit = { bronze_muzzle_loaded_artillery = 1 }
@@ -710,29 +710,54 @@ cast_bronze_cannons = {
 	effect = {
 		artillery = {
 			default_organisation = 5
-			attack = 0.5
+			attack = 0.25
 		}
 		tank = {
 			default_organisation = 5
-			attack = 0.5
+			attack = 0.25
 		}
 	}
 }
 #iron_muzzle_loaded_artillery
-artillery_attachment = {
+trunnions = {
 	limit = { iron_muzzle_loaded_artillery = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
 		artillery = {
-			attack = 0.5
+			attack = 0.25
+			support = 0.3
 			default_organisation = 5
 		}
+		# tank = {
+			# attack = 0.5
+			# support = 0.3
+			# default_organisation = 5
+		# }
 	}
 }
 
 #iron_breech_loaded_artillery
+arching_fire_calculation = {
+	limit = { iron_breech_loaded_artillery = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 0.25
+			support = 0.3
+			# default_organisation = 5
+		}
+		tank = {
+			attack = 0.25
+			support = 0.3
+			# default_organisation = 5
+		}
+	}
+}
+
 #indirect_artillery_fire
 #heavy_armament
 anti_aircraft_artillery = {

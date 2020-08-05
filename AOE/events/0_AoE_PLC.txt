@@ -178,7 +178,6 @@ country_event = {
 		war = yes
 		war_exhaustion = 15
 		has_country_modifier = szlachta_war_taxes
-		national_provinces_occupied = 50
 		part_of_sphere = yes
 		NOT = { has_country_modifier = noble_democracy }
 	}
@@ -606,22 +605,20 @@ country_event = {
 			}
 		}
 		HET = {
-			any_owned = {
-				owner = {
-					vassal_of = RUS
-				}
+			limit = {
+				vassal_of = RUS
 			}
 			PLC = {
 				inherit = HET
 			}
 		}
 		ZZH = {
-			any_owned = {
-				owner = {
-					vassal_of = RUS
-				}
+			limit = {
+				vassal_of = RUS
 			}
-			inherit = ZZH
+			PLC = {
+				inherit = ZZH
+			}
 		}
 		prestige = 25
 		clr_global_flag = polish_succesion_crisis

@@ -354,7 +354,7 @@ country_event = {
 		}
 		PZN = {
 			government = elective_monarchy_oligarchy
-			create_allience = SWE
+			create_alliance = SWE
 			war = {
 				target = PLC
 				attacker_goal = { casus_belli = civil_war }
@@ -406,7 +406,7 @@ country_event = {
 		change_tag = PLC
 		PZN = {
 			all_core = {
-				remove_core PZN
+				remove_core = PZN
 			}
 		}
 		PLC = {
@@ -437,7 +437,7 @@ country_event = {
 		set_global_flag = plc_civil_war_end
 		PZN = {
 			all_core = {
-				remove_core PZN
+				remove_core = PZN
 			}
 		}
 	}
@@ -470,7 +470,7 @@ country_event = {
                     culture = norwegian
                 }
                 }
-                reduce_pop = -0.4
+                reduce_pop = 0.6
             }
         remove_accepted_culture = swedish
         remove_accepted_culture = norwegian     
@@ -500,7 +500,7 @@ country_event = {
                 }
                 type = bureaucrats
                 }
-                reduce_pop = -o.5
+                reduce_pop = 0.5
             }
             remove_accepted_culture = swedish
             remove_accepted_culture = norwegian
