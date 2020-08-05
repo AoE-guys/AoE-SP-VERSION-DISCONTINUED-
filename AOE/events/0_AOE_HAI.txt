@@ -21,7 +21,7 @@ country_event = {
 		2213 = { controlled_by = THIS }
 	}
 	mean_time_to_happen = {
-		days = 1
+		days = 8
 	}
 	option = {
 		name = "We are blessed with wealth"
@@ -59,17 +59,17 @@ country_event = {
 	}
 	option = {
 		name = "We are blessed with wealth"
-			any_owned = {
-				limit = { is_core = HAI }
-				add_province_modifier = {
-					name = pearl_of_the_antilles
-					duration = 3650
-				}
+		any_owned = {
+			limit = { is_core = HAI }
+			add_province_modifier = {
+				name = pearl_of_the_antilles
+				duration = 3650
 			}
-			random_list = {
-				75 = {country_event = 17911}
-				25 = {country_event = 17912}
-		    }
+		}
+		random_list = {
+			75 = {country_event = 17911}
+			25 = {country_event = 17912}
+	    }
 	}
 }
 #Saint-Domingue prospers
@@ -104,9 +104,7 @@ country_event = {
 	desc = "EVTDESC17912"
 	picture = "haiti_debts"
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 1
-	}
+	
 	option = {
 		name = "We can always get new Slaves!"
 		any_pop = {
@@ -189,13 +187,7 @@ country_event = {
 	picture = haiti_debts
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = FRA
-			tag = BOR
-		AND = {
 		2213 = { controlled_by = HAI } 
-			}
-		}	
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -213,11 +205,11 @@ country_event = {
 		name = "We Surrender!"
 		end_war = HAI
 		any_owned = {
-				limit = {
-					is_core = HAI
-				}
-				secede_province = HAI
+			limit = {
+				is_core = HAI
 			}
+			secede_province = HAI
+		}
 	}
 }
 #The Haitian Revolution
@@ -229,6 +221,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = HAI
+		exists = yes
 		war = no
 	}
 	mean_time_to_happen = {
