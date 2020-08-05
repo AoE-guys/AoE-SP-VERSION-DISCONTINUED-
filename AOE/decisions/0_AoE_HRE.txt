@@ -440,15 +440,15 @@ political_decisions = {
 			is_greater_power = yes
 			war = no
 			NNN = {
-			all_core = {
-				OR = {
-					owned_by = THIS
-					owner = {
-						in_sphere = THIS
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
 					}
 				}
 			}
-		}
 			NOT = { has_country_modifier = hre_mendling }
 		}
 		effect = {
@@ -463,6 +463,7 @@ political_decisions = {
 					annex_to = NNN
 				}
 			}
+			set_country_flag = hre_formed
 			badboy = 30
 		}
 		ai_will_do = {
