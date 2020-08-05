@@ -163,12 +163,14 @@ country_event = {
 				any_pop = {
 					limit = { type = slaves }
 					reduce_pop = 1.075
-					}				    
+					}				  
+			}
 			any_owned = {
 				any_pop = {
 					limit = { type = labourers }
 					money = -10
 					}
+			}
 			any_owned = {
 				any_pop = {
 					limit = { type = aristocrats }
