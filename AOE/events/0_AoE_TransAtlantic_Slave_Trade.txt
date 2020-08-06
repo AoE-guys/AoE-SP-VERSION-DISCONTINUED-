@@ -1,48 +1,81 @@
-				country_event = {
-					id = 690000
-					title = EVTNAME690000
-					desc = EVTDESC690000
-					picture = "auction"
+	country_event = {
+		id = 690000
+		title = EVTNAME690000
+		desc = EVTDESC690000
+		picture = "auction"
 
-					trigger = {
-						 slavery = yes_slavery
-					 NOT = { has_country_modifier = slavepopupdated }
-					 }
+		trigger = {
+			 slavery = yes_slavery
+			 NOT = { has_country_modifier = slavepopupdated }
+		}
+		mean_time_to_happen = {
+			months = 1
+		}
+		immediate = {
+			add_country_modifier = {
+				name = slavepopupdated
+				duration = 365
+			}
+		}
 
-					mean_time_to_happen = {
-						months = 1
-					}
-
-					immediate = {
-						add_country_modifier = {
-						name = slavepopupdated
-						duration = 365
+		option = {
+			name = "I swear I didn't cut their hands off again, officer."
+			
+			any_pop = {
+				limit = {
+					type = slaves 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
 						}
-					}
-
-					option = {
-						name = "I swear I didn't cut their hands off again, officer."
-						any_owned = {
-								any_pop = {
-									limit = { type = slaves }
-									militancy = 2
-									counciousness = 2
-								}
-						}
-						any_owned = {
-							any_pop = {
-								limit = { type = labourers }
-								money = -75
-							}
-						}
-						any_owned = {
-							any_pop = {
-								limit = { type = aristocrats }
-								money = -100
-							}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
 						}
 					}
 				}
+				militancy = 2
+				counciousness = 2
+			}
+			
+			any_pop = {
+				limit = { 
+					type = labourers 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
+				}
+				money = -75
+			}
+			any_pop = {
+				limit = { 
+					type = aristocrats 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
+				}
+				money = -100
+			}
+		}
+	}
 				
 
 country_event = {
@@ -69,25 +102,59 @@ country_event = {
 
 	option = {
 		name = "Not great, but not bad either."
-			any_owned = {
-				any_pop = {
-					limit = { type = slaves }
-					reduce_pop = 1.025
-					militancy = 1
-					counsciousness = 1
+			any_pop = {
+				limit = {
+					type = slaves 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
-			}				    
-			any_owned = {
-				any_pop = {
-					limit = { type = labourers }
-					money = -50
-				}
+				militancy = 1
+				counciousness = 1
+				reduce_pop = 1.025
 			}
-			any_owned = {
-				any_pop = {
-					limit = { type = aristocrats }
-					money = -75
+			
+			any_pop = {
+				limit = { 
+					type = labourers 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
+				money = -50
+			}
+			any_pop = {
+				limit = { 
+					type = aristocrats 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
+				}
+				money = -75
 			}
 	}
 }
@@ -115,23 +182,57 @@ country_event = {
 
 	option = {
 		name = "See we aren't treating them that badly."
-			any_owned = {
-				any_pop = {
-					limit = { type = slaves }
-					reduce_pop = 1.05
+			any_pop = {
+				limit = {
+					type = slaves 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
-			}				    
-			any_owned = {
-				any_pop = {
-					limit = { type = labourers }
-					money = -25
-				}
+				reduce_pop = 1.05
 			}
-			any_owned = {
-				any_pop = {
-					limit = { type = aristocrats }
-					money = -50
+			
+			any_pop = {
+				limit = { 
+					type = labourers 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
+				money = -50
+			}
+			any_pop = {
+				limit = { 
+					type = aristocrats 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
+				}
+				money = -75
 			}
 	}
 }
@@ -159,23 +260,57 @@ country_event = {
 
 	option = {
 		name = "Repub if ur a Trans-Atlantic slave trade supporter."
-			any_owned = {
-				any_pop = {
-					limit = { type = slaves }
-					reduce_pop = 1.075
-					}				  
-			}
-			any_owned = {
-				any_pop = {
-					limit = { type = labourers }
-					money = -10
+			any_pop = {
+				limit = {
+					type = slaves 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
 					}
+				}
+				reduce_pop = 1.075
 			}
-			any_owned = {
-				any_pop = {
-					limit = { type = aristocrats }
-					money = -30
+			
+			any_pop = {
+				limit = { 
+					type = labourers 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
 					}
+				}
+				money = -50
+			}
+			any_pop = {
+				limit = { 
+					type = aristocrats 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
+				}
+				money = -75
 			}
 	}	
 }
@@ -204,25 +339,57 @@ country_event = {
 
 	option = {
 		name = "Repub if ur a Trans-Atlantic slave trade supporter."
-			any_owned = {
-				any_pop = {
-					limit = { type = slaves }
-					reduce_pop = 1.10
-					consciousness = -0.75
-					militancy = -0.75
+			any_pop = {
+				limit = {
+					type = slaves 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
+				reduce_pop = 1.1
 			}
-			any_owned = {
-				any_pop = {
-					limit = { type = labourers }
-					money = -5
+			
+			any_pop = {
+				limit = { 
+					type = labourers 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
+				money = -50
 			}
-			any_owned = {
-				any_pop = {
-					limit = { type = aristocrats }
-					money = -15
+			any_pop = {
+				limit = { 
+					type = aristocrats 
+					location = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = australia_new_zealand
+						}
+						OR = {
+							is_overseas = yes
+							is_core = THIS
+						}
+					}
 				}
+				money = -75
 			}
 	}
 }

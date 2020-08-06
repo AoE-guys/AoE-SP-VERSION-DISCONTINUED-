@@ -213,7 +213,22 @@ modern_divisional_structure = {
 
 	unit = 2
 	# combat_width = -5
-	
+		infantry = {
+			attack = 1
+			supply_consumption = 0.25
+		}
+		guard = {
+			attack = 1
+			supply_consumption = 0.25
+		}
+		plane = {
+			attack = 1
+			supply_consumption = 0.25
+		}
+		engineer = {
+			attack = 1
+			supply_consumption = 0.25
+		}
 	ai_chance = {
 		factor = 1.5
 	}
@@ -227,7 +242,23 @@ light_armament_7 = {
 	unit = 1
 	
 	# combat_width = -5
-	
+		infantry = {
+			attack = 2
+			supply_consumption = 0.20
+		}
+		guard = {
+			
+			attack = 2
+			supply_consumption = 0.20
+		}
+		plane = {
+			attack = 2
+			supply_consumption = 0.20
+		}
+		engineer = {
+			attack = 2
+			supply_consumption = 0.20
+		}
 	ai_chance = {
 		factor = 3
 	}
@@ -241,7 +272,22 @@ light_armament_8 = {
 
 	unit = 2
 	combat_width = -2
-	
+		infantry = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		guard = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		plane = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		engineer = {
+			attack = 1
+			supply_consumption = 0.20
+		}
 	ai_chance = {
 		factor = 1.5
 	}

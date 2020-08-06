@@ -1060,12 +1060,11 @@ german_minors_ai_help = {
 
 help_ai_usa = {
 	trigger = {
-		owns = 2146
-		centralization = regionalism
+		tag = ULA
 		ai = yes
 	}
 	icon = 10
-	tax_efficiency = 0.05
+	tax_efficiency = 0.15
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	mobilisation_size = 0.02
