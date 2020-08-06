@@ -1592,14 +1592,14 @@ glass_factory = {
 fertilizer_factory = {       
 	template = factory_template
 	input_goods = {   
-		sulphur = 12		#36		total input+maint = 46
-		tobacco = 8
+		sulphur = 14		#36		total input+maint = 46
+		tobacco = 10
 	}
 	output_goods = fertilizer 
-	value = 20			#50
+	value = 24			#50
 	bonus = {
 		trigger = { has_building = sulphur_factory }
-		value = 0.55
+		value = 0.65
 	}
 	bonus = {
 		trigger = { has_building = tobacco_factory }
