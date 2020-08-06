@@ -516,8 +516,14 @@ country_event = {
 		owns = 394
 		owns = 397
 		NOT = { tag = BEL }
-		political_thought_7 = 1
-		poor_tax = 0.69
+		OR = {
+			political_thought_7 = 1
+			year = 1789
+		}
+		OR = {
+			poor_tax = 0.69
+			ruling_party_ideology = liberal
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -558,10 +564,6 @@ country_event = {
             limit = {
                 is_core = BEL
             }
-            secede_province = BEL
-        }
-		any_owned = {
-            limit = { is_core = THIS }
             secede_province = BEL
         }
         any_pop = {
