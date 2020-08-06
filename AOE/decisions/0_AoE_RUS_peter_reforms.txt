@@ -191,9 +191,14 @@ political_decisions = {
 			KMK = {
 				vassal_of = THIS
 			}
-			mass_politics = 1
+			OR = {
+				AND = { 
+					mass_politics = 1
+					war_policy  = jingoism
+				}
+				year = 1771
+			}
 			is_greater_power = yes
-			war_policy  = jingoism
 		}
 		effect = {
 			set_country_flag = integrated_kalmyk
