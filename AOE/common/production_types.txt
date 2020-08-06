@@ -1599,11 +1599,11 @@ fertilizer_factory = {
 	value = 24			#50
 	bonus = {
 		trigger = { has_building = sulphur_factory }
-		value = 0.65
+		value = 0.95
 	}
 	bonus = {
 		trigger = { has_building = tobacco_factory }
-		value = 0.60
+		value = 0.90
 	}
 }
 
@@ -1754,14 +1754,14 @@ orchard = {
 precious_metal_mine = {
 	template = RGO_template_labourers
 	output_goods = precious_metal 
-	value = 30.0
+	value = 1.0
 	farm = yes
 }
 
 precious_goods_market = {
 	template = RGO_template_labourers
 	output_goods = precious_goods
-	value = 15.0
+	value = 5.0
 	farm = yes
 	#mine = yes
 }
