@@ -411,7 +411,7 @@ timber_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = timber
-	value = 35
+	value = 45
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
 		value = -9.50
@@ -502,7 +502,7 @@ cattle_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = cattle
-	value = 18
+	value = 10
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -539,7 +539,7 @@ fish_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = fish
-	value = 10
+	value = 7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
 		value = -9.50
@@ -1118,7 +1118,7 @@ clipper_shipyard = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 7.5		#403.2, down from 10 with a profit of 420
+	value = 10		#403.2, down from 10 with a profit of 420
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.40
@@ -1443,7 +1443,7 @@ wool_fabric_factory = {
 		dye = 2			# 24 total input+maint = 70
 	}
 	output_goods = fabric
-	value = 30			#81
+	value = 35			#81
 	bonus = {
 		trigger = { has_building = wool_factory }
 		value = 0.85
@@ -1522,7 +1522,7 @@ fabric_factory = {
 		dye = 2			# 24 total input+maint = 70
 	}
 	output_goods = fabric
-	value = 30			#81
+	value = 35			#81
 	bonus = {
 		trigger = { has_building = cotton_factory }
 		value = 0.85
@@ -2127,10 +2127,10 @@ artisan_small_arms = {
        
 artisan_furniture = {       
 	input_goods = { 
-		lumber = 40		#20
+		lumber = 30		#20
 	}
 	output_goods = furniture 
-	value = 20			#58.8
+	value = 15			#58.8
 	
 	owner = {
 		poptype = artisans 
