@@ -1,6 +1,6 @@
 POR = {
 	value = 125
-	level = 3
+	level = 1
 }
 
 LAN = {
@@ -34,7 +34,9 @@ MGL = {
 	value = 25
 	level = 2
 }
-
+SWE = {
+	value = -100
+}
 army = {
 	name = "Army of Forbidden Banners"
 	location = 1612
