@@ -2,7 +2,7 @@ country_event = {
 	id = 158100
 	title = "Voor de Admiraliteiten"
 	desc = "EVTDESC158100"
-	picture = ships
+	picture = ships_cross_the_sound_dues
 	fire_only_once = yes
 	
 	trigger = {
@@ -26,7 +26,7 @@ country_event = {
 	id = 158101
 	title = "The Second Stadtholderless Period"
 	desc = "EVTDESC158101"
-	picture = ships
+	#picture = ships
 	major = yes
 	fire_only_once = yes
 	
