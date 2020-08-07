@@ -5,6 +5,9 @@ political_decisions = {
 		potential = {
 			tag = ENG
 			NOT = { exists = GBR }
+			SCO = {
+				ai = yes
+			}
 		}
 		
 		allow = {
