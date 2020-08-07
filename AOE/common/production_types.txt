@@ -382,7 +382,7 @@ iron_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = iron
-	value = 6
+	value = 7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -1055,7 +1055,7 @@ luxury_furniture_factory = {
 steel_factory = {       
 	template = factory_template
 	input_goods = { 
-		iron = 18		#70
+		iron = 15		#70
 		coal = 5		#11.5	total input+maint = 81.5
 	}
 
@@ -1118,7 +1118,7 @@ clipper_shipyard = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 10		#403.2, down from 10 with a profit of 420
+	value = 15		#403.2, down from 10 with a profit of 420
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.40
@@ -1262,7 +1262,7 @@ regular_clothes_factory = {
 ammunition_factory = {       
 	template = factory_template
 	input_goods = {   
-		iron = 5		#30
+		iron = 4		#30
 		explosives = 10	#14	total input+maint = 54
 		paper = 2
 	}
@@ -1468,11 +1468,11 @@ wool_fabric_factory = {
 lumber_mill = {       
 	template = factory_template
 	input_goods = {       
-		timber = 50		#90	total input+maint = 100
+		timber = 30		#90	total input+maint = 100
 	}
 	output_goods = lumber 
 	
-	value = 45			#110
+	value = 40			#110
 	bonus = {
 		trigger = { has_building = timber_factory }
 		value = 0.85
@@ -1482,7 +1482,7 @@ lumber_mill = {
 			OR = { has_building = steel_factory }
 			OR = { has_building = iron_factory }
 		}
-		value = 0.55
+		value = 0.75
 	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
@@ -1946,7 +1946,7 @@ artisan_electric_gear = {
 artisan_machine_parts = {       
 	input_goods = {    
 		steel = 7		#42.3
-		timber = 7
+		lumber = 7
 		iron = 3
 	}
 	output_goods = machine_parts 
@@ -2047,7 +2047,7 @@ artisan_luxury_furniture = {
 
 artisan_steel = {       
 	input_goods = { 
-		iron = 20		#70
+		iron = 15	#70
 		coal = 5		#11.5	total input+maint = 81.5
 	}
 	
@@ -2091,7 +2091,7 @@ artisan_clipper = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 10.0		#420
+	value = 15.0		#420
 	
 	owner = {
 		poptype = artisans 
@@ -2352,8 +2352,6 @@ artisan_fertilizer = {
 	input_goods = {   
 		sulphur = 7
 		coal = 2
-		glass = 1
-		timber = 1
 	}
 	output_goods = fertilizer 
 	value = 5			#50
