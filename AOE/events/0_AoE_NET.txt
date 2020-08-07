@@ -26,6 +26,7 @@ country_event = {
 	id = 158101
 	title = "The Second Stadtholderless Period"
 	desc = "EVTDESC158101"
+	picture = ships
 	major = yes
 	fire_only_once = yes
 	
@@ -287,6 +288,7 @@ country_event = {
 	title = "End of the Stadtholderless period"
 	desc = "EVTDESC158104"
 	fire_only_once = yes
+	picture = monarch_death
 	
 	trigger = {
 		tag = NET
@@ -388,6 +390,7 @@ country_event = {
 	title = "Patriots seek Support"
 	desc = "EVTDESC158105"
 	fire_only_once = yes
+	picture = revolution
 	allow_multiple_instances = yes
 	
 	trigger = {
@@ -510,6 +513,7 @@ country_event = {
 	desc = "EVTDESC158105"
 	fire_only_once = yes
 	allow_multiple_instances = yes
+	picture = brabant_rev
 	
 	trigger = {
 		owns = 387
@@ -1117,6 +1121,7 @@ country_event = {
 	title = "Colonization of South Africa"
 	desc = "EVTDESC158107"
 	fire_only_once = yes
+	picture = colonization
 	
 	trigger = {
 		owns = 2090
@@ -1137,6 +1142,7 @@ country_event = {
 	title = "Colonization of South Africa"
 	desc = "EVTDESC158107"
 	fire_only_once = yes
+	picture = colonization
 	
 	trigger = {
 		owns = 2090

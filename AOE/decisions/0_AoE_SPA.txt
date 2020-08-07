@@ -240,6 +240,7 @@ political_decisions = {
 	}
 	
 	nueva_planta_decrees = {
+		picture = noueva_planta
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = nueva_planta_decrees }
