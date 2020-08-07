@@ -29,6 +29,7 @@ political_decisions = {
 		picture = yemeni_claims
 		potential = {
 			primary_culture = amhara
+			NOT = { has_country_flag = ETH_claim_yemen }
 		}
 		
 		allow = {
@@ -60,6 +61,7 @@ political_decisions = {
 			}
 			1412 = {
 				add_core = THIS
+			set_country_flag = ETH_claim_yemen
 			}
 		}
 			
