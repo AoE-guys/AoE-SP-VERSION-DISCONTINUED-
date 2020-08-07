@@ -1112,7 +1112,7 @@ artillery_factory = {
 clipper_shipyard = {       
 	template = factory_template
 	input_goods = {         
-		fabric = 100		#162
+		fabric = 50		#162
 		lumber = 100		#90
 		steel = 30		#141		total input+maint = 393
 	}
@@ -1224,10 +1224,10 @@ paper_mill = {
 regular_clothes_factory = {       
 	template = factory_template
 	input_goods = {  
-		fabric = 35		#72	total input+maint = 82
+		fabric = 25		#72	total input+maint = 82
 	}
 	output_goods = regular_clothes 
-	value = 20		#87
+	value = 30		#87
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.85
@@ -2085,7 +2085,7 @@ artisan_artillery = {
 
 artisan_clipper = {       
 	input_goods = {         
-		fabric = 100		#162
+		fabric = 50		#162
 		lumber = 100	#90
 		steel = 30		#141		total input+maint = 393
 	}
@@ -2161,11 +2161,11 @@ artisan_paper = {
 
 artisan_regular_clothes = {       
 	input_goods = {  
-		fabric = 45		#was 81
+		fabric = 25		#was 81
 		silk = 1
 	}
 	output_goods = regular_clothes
-	value = 45			#87
+	value = 30			#87
 	
 	owner = {
 		poptype = artisans 
