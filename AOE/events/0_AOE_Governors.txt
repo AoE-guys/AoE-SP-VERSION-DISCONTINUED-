@@ -1,0 +1,30 @@
+country_event = {
+	id = 743
+	title = "Zahir al-Umar takes over management of Palestine." 
+	desc = "EVTDESC743"
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		tag = TUR
+		year = 1720
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Ok, we will see how he manages."
+		916 = {
+			secede_province = PLS
+		}
+		915 = {
+			secede_province = PLS
+		}
+		919 = {
+			secede_province = PLS
+		}
+		prestige = 10
+	}
+}
