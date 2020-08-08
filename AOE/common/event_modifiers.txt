@@ -6503,6 +6503,33 @@ revolutionary_spirit = {
 	icon = 18
 }
 
+levee_en_masse_modifier = {
+	mobilisation_size = 0.03
+	war_exhaustion = -0.10
+    org_regain = 0.05
+	land_organisation = -0.10
+	supply_consumption = -0.20
+	land_unit_start_experience = -5
+	icon = 18
+}
+
+radical_land_reform = {
+	mobilisation_size = 0.01
+	global_population_growth = 0.001
+	education_efficiency_modifier = 0.1
+	global_pop_militancy_modifier = -0.01
+	icon = 18
+}
+
+rev_terror = {
+	global_pop_militancy_modifier = -0.01
+	global_pop_consciousness_modifier = -0.02
+	prestige = 0.01
+	#war_exhaustion = 0.10
+	education_efficiency_modifier = -0.05
+	icon = 18
+}
+
 #gold mines
 
 vila_rica = {
