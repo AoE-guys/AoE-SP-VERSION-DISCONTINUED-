@@ -622,7 +622,7 @@ country_event = {
 	}
 
 	option = {
-		name = "The show must go on!"
+		name = "But it is only the beginning!"
 		add_country_modifier = { name = revolutionary_spirit  duration = -1 }
 		prestige = 3		
 		any_pop = {
@@ -670,7 +670,7 @@ country_event = {
 	
 	trigger = { 
 	           is_vassal = no
-		       ruling_party_ideology = reactionary
+		       ruling_party_ideology = liberal
 			   government = proletarian_dictatorship
 			   has_country_flag = rev_oldest_child_eaten
 			   NOT = { has_country_flag = rev_coup }
