@@ -1282,10 +1282,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = RUS 
-		NOT = {
-			has_country_flag = kamchatka_war
-		}
+		has_country_flag = kamchatka_war
 		NOT = {
 			any_owned_province = {
 				has_province_modifier = kamchatka_wars
