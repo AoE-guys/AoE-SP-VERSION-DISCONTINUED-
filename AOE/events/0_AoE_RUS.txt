@@ -1229,14 +1229,14 @@ province_event = {
 					}
 				}
 				militancy = 9
-				reduce_pop = 0.5
+				reduce_pop = 0.8
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_pop = 0.9
+				reduce_pop = 0.95
 			}
 		add_province_modifier = {
 				name = kamchatka_wars 
@@ -1266,7 +1266,7 @@ province_event = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_size = 0.8
+				reduce_size = 0.9
 			}
 		ai_chance = {
 			factor = 1
