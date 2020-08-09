@@ -171,3 +171,28 @@ country_event = {
 		}
 	}
 }
+
+
+#agadez economy trans_saharan_trade
+country_event = { 
+	id = 9582
+	title = "We are on the Trans-Saharan trade route"
+	desc = "trade is profitable"
+	
+	trigger = {
+		tag = AGZ
+		year = 1700
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Ok"
+		1812 = {
+			add_province_modifier = {
+			name = trans_saharan_trade
+			duration = 43800
+			}
+		}
+	}
+}

@@ -233,7 +233,7 @@ dye2_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = dye
-	value = 5.00
+	value = 6.00
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -349,7 +349,7 @@ sulphur_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = sulphur
-	value = 4.0
+	value = 5.0
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -382,7 +382,7 @@ iron_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = iron
-	value = 5
+	value = 7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
 		value = -9.50
@@ -411,7 +411,7 @@ timber_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = timber
-	value = 35
+	value = 45
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
 		value = -9.50
@@ -502,7 +502,7 @@ cattle_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = cattle
-	value = 18
+	value = 10
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -539,7 +539,7 @@ fish_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = fish
-	value = 10
+	value = 7
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
 		value = -9.50
@@ -806,7 +806,7 @@ radio_factory = {    #Sugar
 	precious_goods = 0.1
 	}
 	output_goods = radio 
-	value = 7		#104
+	value = 8		#104
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -874,11 +874,11 @@ electric_gear_factory = {
 machine_parts_factory = {       
 	template = factory_template
 	input_goods = {    
-		steel = 7.5		#42.3
-		lumber = 7.0
+		steel = 7		#42.3
+		lumber = 6
 	}
 	output_goods = machine_parts 
-	value = 14		#73
+	value = 15		#73
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.65
@@ -1055,7 +1055,7 @@ luxury_furniture_factory = {
 steel_factory = {       
 	template = factory_template
 	input_goods = { 
-		iron = 18		#70
+		iron = 15		#70
 		coal = 5		#11.5	total input+maint = 81.5
 	}
 
@@ -1112,13 +1112,13 @@ artillery_factory = {
 clipper_shipyard = {       
 	template = factory_template
 	input_goods = {         
-		fabric = 100		#162
+		fabric = 50		#162
 		lumber = 100		#90
 		steel = 30		#141		total input+maint = 393
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 7.5		#403.2, down from 10 with a profit of 420
+	value = 15		#403.2, down from 10 with a profit of 420
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.40
@@ -1198,11 +1198,11 @@ furniture_factory = {
 paper_mill = {       
 	template = factory_template
 	input_goods = { 
-		lumber = 15		#45	total input+maint = 55
+		lumber = 10		#45	total input+maint = 55
 		steel = 3
 	}
 	output_goods = paper 
-	value = 20			#68
+	value = 15			#68
 	bonus = {
 		trigger = { has_building = lumber_mill }
 		value = 0.85
@@ -1224,11 +1224,10 @@ paper_mill = {
 regular_clothes_factory = {       
 	template = factory_template
 	input_goods = {  
-		fabric = 35		#72	total input+maint = 82
-		dye = 1
+		fabric = 25		#72	total input+maint = 82
 	}
 	output_goods = regular_clothes 
-	value = 20		#87
+	value = 30		#87
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.85
@@ -1263,7 +1262,7 @@ regular_clothes_factory = {
 ammunition_factory = {       
 	template = factory_template
 	input_goods = {   
-		iron = 5		#30
+		iron = 4		#30
 		explosives = 10	#14	total input+maint = 54
 		paper = 2
 	}
@@ -1444,7 +1443,7 @@ wool_fabric_factory = {
 		dye = 2			# 24 total input+maint = 70
 	}
 	output_goods = fabric
-	value = 30			#81
+	value = 35			#81
 	bonus = {
 		trigger = { has_building = wool_factory }
 		value = 0.85
@@ -1469,11 +1468,11 @@ wool_fabric_factory = {
 lumber_mill = {       
 	template = factory_template
 	input_goods = {       
-		timber = 50		#90	total input+maint = 100
+		timber = 30		#90	total input+maint = 100
 	}
 	output_goods = lumber 
 	
-	value = 45			#110
+	value = 40			#110
 	bonus = {
 		trigger = { has_building = timber_factory }
 		value = 0.85
@@ -1483,7 +1482,7 @@ lumber_mill = {
 			OR = { has_building = steel_factory }
 			OR = { has_building = iron_factory }
 		}
-		value = 0.55
+		value = 0.75
 	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
@@ -1523,7 +1522,7 @@ fabric_factory = {
 		dye = 2			# 24 total input+maint = 70
 	}
 	output_goods = fabric
-	value = 30			#81
+	value = 35			#81
 	bonus = {
 		trigger = { has_building = cotton_factory }
 		value = 0.85
@@ -1592,11 +1591,11 @@ glass_factory = {
 fertilizer_factory = {       
 	template = factory_template
 	input_goods = {   
-		sulphur = 14		#36		total input+maint = 46
+		sulphur = 10		#36		total input+maint = 46
 		tobacco = 10
 	}
 	output_goods = fertilizer 
-	value = 24			#50
+	value = 25			#50
 	bonus = {
 		trigger = { has_building = sulphur_factory }
 		value = 0.95
@@ -1947,7 +1946,7 @@ artisan_electric_gear = {
 artisan_machine_parts = {       
 	input_goods = {    
 		steel = 7		#42.3
-		timber = 7
+		lumber = 7
 		iron = 3
 	}
 	output_goods = machine_parts 
@@ -2048,7 +2047,7 @@ artisan_luxury_furniture = {
 
 artisan_steel = {       
 	input_goods = { 
-		iron = 20		#70
+		iron = 15	#70
 		coal = 5		#11.5	total input+maint = 81.5
 	}
 	
@@ -2086,13 +2085,13 @@ artisan_artillery = {
 
 artisan_clipper = {       
 	input_goods = {         
-		fabric = 100		#162
+		fabric = 50		#162
 		lumber = 100	#90
 		steel = 30		#141		total input+maint = 393
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 10.0		#420
+	value = 15.0		#420
 	
 	owner = {
 		poptype = artisans 
@@ -2128,10 +2127,10 @@ artisan_small_arms = {
        
 artisan_furniture = {       
 	input_goods = { 
-		lumber = 40		#20
+		lumber = 30		#20
 	}
 	output_goods = furniture 
-	value = 20			#58.8
+	value = 15			#58.8
 	
 	owner = {
 		poptype = artisans 
@@ -2162,11 +2161,11 @@ artisan_paper = {
 
 artisan_regular_clothes = {       
 	input_goods = {  
-		fabric = 45		#was 81
+		fabric = 25		#was 81
 		silk = 1
 	}
 	output_goods = regular_clothes
-	value = 25			#87
+	value = 30			#87
 	
 	owner = {
 		poptype = artisans 
@@ -2353,8 +2352,6 @@ artisan_fertilizer = {
 	input_goods = {   
 		sulphur = 7
 		coal = 2
-		glass = 1
-		timber = 1
 	}
 	output_goods = fertilizer 
 	value = 5			#50
@@ -2372,7 +2369,7 @@ artisan_fertilizer = {
 artisan_fabric_wool = {
 	input_goods = {     
 		wool = 25 #46
-		dye = 3	#24
+		dye = 2.5	#24
 	}
 	output_goods = fabric
 	value = 30			#81
