@@ -605,20 +605,22 @@ country_event = {
 			}
 		}
 		HET = {
-			limit = {
-				vassal_of = RUS
+			any_owned = {
+				owner = {
+					vassal_of = RUS
+				}
 			}
 			PLC = {
 				inherit = HET
 			}
 		}
 		ZZH = {
-			limit = {
-				vassal_of = RUS
+			any_owned = {
+				owner = {
+					vassal_of = RUS
+				}
 			}
-			PLC = {
-				inherit = ZZH
-			}
+			inherit = ZZH
 		}
 		prestige = 25
 		clr_global_flag = polish_succesion_crisis

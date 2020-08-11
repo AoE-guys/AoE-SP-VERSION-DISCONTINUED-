@@ -10,7 +10,7 @@ guard = {
 	#Core Abilities
 	priority = 18
 	max_strength = 3
-	default_organisation = 50
+	default_organisation = 40
 	maximum_speed = 4.00
 	weighted_value = 9.0
 
@@ -37,8 +37,8 @@ guard = {
 	#Land Abilties
 	reconnaissance = 0
 	attack = 5
-	defence = 7
-	discipline = 1.2
+	defence = 5
+	discipline = 1.0
 	support = 0.0
 	maneuver = 2
 }

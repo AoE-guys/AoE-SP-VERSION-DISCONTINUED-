@@ -5,7 +5,6 @@ country_event = {
 	picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 7
 			   OR = {
 			         has_country_flag = nobility_influence_5
@@ -41,7 +40,6 @@ country_event = {
 	picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
@@ -83,7 +81,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
@@ -127,7 +124,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
@@ -173,7 +169,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 7
 			   NOT = {
 			   OR = {
@@ -222,7 +217,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 7
 			   has_country_flag = gentry_influence_5
 			   NOT = { has_country_modifier = middle_class_unrest_5 }
@@ -255,7 +249,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 7
 			   has_country_flag = gentry_influence_4
 			   NOT = { has_country_modifier = middle_class_unrest_5 }
@@ -288,7 +281,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 7
 			   has_country_flag = gentry_influence_3
 			   NOT = { has_country_modifier = middle_class_unrest_5 }
@@ -321,7 +313,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 7
 			   has_country_flag = gentry_influence_2
 			   NOT = { has_country_modifier = middle_class_unrest_5 }
@@ -354,7 +345,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 7
 			   has_country_flag = gentry_influence_1
 			   NOT = { has_country_modifier = middle_class_unrest_5 }
@@ -387,7 +377,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           poor_strata_militancy = 7
 			   has_country_flag = burghers_influence_5
 			   NOT = { has_country_modifier = lower_class_unrest_5 }
@@ -420,7 +409,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           poor_strata_militancy = 7
 			   has_country_flag = burghers_influence_4
 			   NOT = { has_country_modifier = lower_class_unrest_5 }
@@ -453,7 +441,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           poor_strata_militancy = 7
 			   has_country_flag = burghers_influence_3
 			   NOT = { has_country_modifier = lower_class_unrest_5 }
@@ -486,7 +473,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           poor_strata_militancy = 7
 			   has_country_flag = burghers_influence_2
 			   NOT = { has_country_modifier = lower_class_unrest_5 }
@@ -519,7 +505,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           poor_strata_militancy = 7
 			   has_country_flag = burghers_influence_1
 			   NOT = { has_country_modifier = lower_class_unrest_5 }
@@ -552,7 +537,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_5
 			   capital_scope = { any_pop = { type = officers militancy = 7 } }
@@ -586,7 +570,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_4
 			   capital_scope = { any_pop = { type = officers militancy = 7 } }
@@ -620,7 +603,6 @@ country_event = {
 	picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_3
 			   capital_scope = { any_pop = { type = officers militancy = 7 } }
@@ -654,7 +636,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_2
 			   capital_scope = { any_pop = { type = officers militancy = 7 } }
@@ -688,7 +669,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           rich_strata_militancy = 5
 			   has_country_flag = army_influence_1
 			   capital_scope = { any_pop = { type = officers militancy = 7 } }
@@ -722,7 +702,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_5
 			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
@@ -756,7 +735,6 @@ country_event = {
     picture = "riots_1700s"
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_4
 			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
@@ -790,7 +768,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_3
 			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
@@ -824,7 +801,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_2
 			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }
@@ -858,7 +834,6 @@ country_event = {
     picture = "riots_1700s"	
 	
     trigger = {
-		NOT = { ai = yes }
 	           middle_strata_militancy = 5
 			   has_country_flag = bureaucracy_influence_1
 			   capital_scope = { any_pop = { type = bureaucrats militancy = 7 } }

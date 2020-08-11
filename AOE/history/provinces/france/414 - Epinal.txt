@@ -4,8 +4,3 @@ add_core = BOR
 add_core = RHI
 trade_goods = sulphur  state_building = {  level = 1  building = sulphur_factory  upgrade = yes  }
 life_rating = 30
-state_building = {
-	level = 1
-	building = explosives_factory
-	upgrade = yes
-}

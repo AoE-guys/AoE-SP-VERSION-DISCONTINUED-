@@ -11,7 +11,7 @@ plane = {	#Grenadiers
 	#Core Abilities
 	priority = 45
 	max_strength = 3
-	default_organisation = 50
+	default_organisation = 40
 	maximum_speed = 3.00
 	weighted_value = 10.0
 
@@ -36,9 +36,9 @@ plane = {	#Grenadiers
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 7
+	attack = 8
 	defence = 5
-	discipline = 1.2
+	discipline = 1
 	support = 0
 	maneuver = 2
 }

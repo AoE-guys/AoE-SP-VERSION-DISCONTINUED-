@@ -730,7 +730,7 @@ country_event = {
 	id = 170009
 	title = "EVTNAME170009"
 	desc = "EVTDESC170009"
-	picture = storm_of_samarkand
+	picture = conscription_marching
 	fire_only_once = yes
 	
 	trigger = {
@@ -767,7 +767,7 @@ country_event = {
 	id = 170010
 	title = "EVTNAME170010"
 	desc = "EVTDESC170010"
-	picture = storm_of_samarkand
+	picture = conscription_marching
 	
 	mean_time_to_happen = {
 		months = 2
@@ -841,7 +841,7 @@ country_event = {
 	id = 170011
 	title = "EVTNAME170011"
 	desc = "EVTDESC170011"
-	picture = storm_of_samarkand
+	picture = Demonstration
 	
 	is_triggered_only = yes
 	
@@ -866,12 +866,12 @@ country_event = {
 	id = 170012
 	title = "EVTNAME170012"
 	desc = "EVTDESC170012"
-	picture = storm_of_samarkand
+	picture = war_ended
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPT1700012"
+		name = "EVTOPT1700012That was a good idea"
 		set_country_flag = caspian_expedition_success
 		create_vassal = KHI
 			diplomatic_influence = {
@@ -893,7 +893,7 @@ country_event = {
 	id = 170013
 	title = "EVTNAME170013"
 	desc = "EVTDESC170013"
-	picture = caucasian_war
+	picture = conscription_marching
 	major = yes
 	
 	trigger = {
@@ -935,7 +935,7 @@ country_event = {
 	id = 170014
 	title = "EVTNAME170014"
 	desc = "EVTDESC170014"
-	picture = underground_railroad
+	picture = glos
 	fire_only_once = yes
 	
 	trigger = {
@@ -950,7 +950,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPT170014"
+		name = "EVTOPT1700014"
 		set_country_flag = russian_bad_times
 		any_pop = {
 			limit = {
@@ -968,7 +968,7 @@ country_event = {
 	id = 170015
 	title = "EVTNAME170015"
 	desc = "EVTDESC170015"
-	picture = cossacks
+	picture = glos
 	major = yes
 	fire_only_once = yes
 	
@@ -979,9 +979,6 @@ country_event = {
 			exists = yes
 			vassal_of = RUS
 		}
-	}
-	immediate = {
-		clr_country_flag = russian_bad_times
 	}
 	
 	mean_time_to_happen = {
@@ -1010,7 +1007,7 @@ country_event = {
 	id = 170016
 	title = "EVTNAME170016"
 	desc = "EVTDESC170016"
-	picture = cossacks
+	picture = glos
 	is_triggered_only = yes
 	major = yes
 	
@@ -1030,7 +1027,7 @@ country_event = {
 	id = 170017
 	title = "EVTNAME170017"
 	desc = "EVTDESC170017"
-	picture = ambush_army
+	picture = glos
 	fire_only_once = yes
 	
 	trigger = {
@@ -1060,7 +1057,7 @@ country_event = {
 	id = 170018
 	title = "EVTNAME170018"
 	desc = "EVTDESC170018"
-	picture = lutsk_agreements
+	picture = glos
 	fire_only_once = yes
 	
 	trigger = {
@@ -1160,14 +1157,14 @@ country_event = {
 					}
 				}
 				militancy = 5
-				reduce_pop = 0.9
+				reduce_size = 0.9
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 3
-				reduce_pop = 0.5
+				reduce_size = 0.5
 			}
 		}
 		1074 = {
@@ -1229,14 +1226,14 @@ province_event = {
 					}
 				}
 				militancy = 9
-				reduce_pop = 0.8
+				reduce_size = 0.5
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_pop = 0.95
+				reduce_size = 0.9
 			}
 		add_province_modifier = {
 				name = kamchatka_wars 
@@ -1266,7 +1263,7 @@ province_event = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_size = 0.9
+				reduce_size = 0.8
 			}
 		ai_chance = {
 			factor = 1
@@ -1282,9 +1279,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_flag = kamchatka_war
+		tag = RUS 
 		NOT = {
-			any_owned_province = {
+			has_country_flag = kamchatka_war
+		}
+		NOT = {
+			any_owned = {
 				has_province_modifier = kamchatka_wars
 			}
 		}
@@ -1295,21 +1295,20 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPT170025"
+		name = "EVTOPT170025Finally a peace"
 		clr_country_flag = kamchatka_war
 		prestige = 1
 		war_exhaustion = -5
-		
 		ai_chance = {
 			factor = 1
 		}
 	}
 }
 
-###After Poltava
+###
 country_event = {
 	id = 170020
-	title = "EVTNAME170020"
+	title = "The End of Charles the XII?"
 	desc = "EVTDESC170020"
 	picture = poltavas_battle
 	fire_only_once = yes
@@ -1330,7 +1329,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVT170020OPT1"
+		name = "Send letter to sultan"
 		set_global_flag = escape_of_charles
 		prestige = 10
 		TUR = {
@@ -1341,7 +1340,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVT170020OPT2"
+		name = "Let him be"
 		set_global_flag = charles_xii_restoration
 		prestige = -20
 		ai_chance = {
@@ -1352,13 +1351,13 @@ country_event = {
 
 country_event = {
 	id = 170021
-	title = "EVTNAME170020"
+	title = "The End of Charles the XII?"
 	desc = "EVTDESC170021"
 	picture = poltavas_battle
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVT170021OPT1"
+		name = "Let him stay"
 		set_global_flag = pruth_war
 		
 		prestige = 5
@@ -1367,7 +1366,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVT170021OPT2Throw him away!"
+		name = "Throw him away!"
 		prestige = -10
 		relation = {
 			who = RUS
@@ -1381,7 +1380,7 @@ country_event = {
 
 country_event = {
 	id = 170022
-	title = "EVTNAME170022"
+	title = "The Pruth war"
 	desc = "EVTDESC170022"
 	picture = lutsk_agreements
 	
@@ -1399,7 +1398,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVT170022OPT1"
+		name = "Make Lutsk agreement"
 		TUR = {
 			release_vassal = MOL
 		}
@@ -1416,7 +1415,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVT170022OPT2"
+		name = "We don't want any war!"
 		relation = {
 			who = TUR
 			value = 100
@@ -1436,7 +1435,7 @@ country_event = {
 
 country_event = {
 	id = 170023
-	title = "EVTNAME170023"
+	title = "The Pruth war"
 	desc = "EVTDESC170023"
 	picture = lutsk_agreements
 	
@@ -1456,12 +1455,12 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPT170023"
+		name = "Make Lutsk agreement"
 		TUR = {
 			war = {
 				target = RUS
 				attacker_goal = { casus_belli = humiliate }
-				defender_goal = { casus_belli = acquire_core_state state_province_id = 1047 }
+				defender_goal = { casus_belli = acquire_core_region state_province_id = 1047 }
 				call_ally = yes
 			}
 		}
@@ -1474,11 +1473,9 @@ country_event = {
 
 country_event = {
 	id = 178304
-	title = "EVTNAME178304"
+	title = "Pruth peace"
 	desc = "EVTDESC178304"
-	picture = treaty_signing
-	major = yes
-	fire_only_once = yes
+	picture = cossacks
 	
 	mean_time_to_happen = {
 		months = 1
@@ -1493,13 +1490,8 @@ country_event = {
 			}
 		}
 	}
-	
-	immediate = {
-		clr_global_flag = pruth_war
-	}
-	
 	option = {
-		name = "EVTOPT178304"
+		name = "We need to accept reality"
 		prestige = -10
 		HET = {
 			country_event = 178305

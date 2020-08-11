@@ -471,7 +471,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Heads shall roll again!"
+		name = "Heads shall roll!"
 		prestige = 5
 		any_owned = {
 		             any_pop = {
@@ -622,7 +622,7 @@ country_event = {
 	}
 
 	option = {
-		name = "But it is only the beginning!"
+		name = "The show must go on!"
 		add_country_modifier = { name = revolutionary_spirit  duration = -1 }
 		prestige = 3		
 		any_pop = {
@@ -670,7 +670,7 @@ country_event = {
 	
 	trigger = { 
 	           is_vassal = no
-		       ruling_party_ideology = liberal
+		       ruling_party_ideology = reactionary
 			   government = proletarian_dictatorship
 			   has_country_flag = rev_oldest_child_eaten
 			   NOT = { has_country_flag = rev_coup }

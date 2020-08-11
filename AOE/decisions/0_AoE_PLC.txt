@@ -130,7 +130,6 @@ political_decisions = {
 		potential = {
 			tag = PLC
 			NOT = { capital = 706 }
-			owns = 706
 		}
 		allow = {
 			706 = {
@@ -140,7 +139,7 @@ political_decisions = {
 			expressionism = 1
 		}
 		effect = {
-			#set_country_flag = vassalize_ducal_prussia
+			set_country_flag = vassalize_ducal_prussia
 			capital = 706
 			prestige = 15
 			706 = {

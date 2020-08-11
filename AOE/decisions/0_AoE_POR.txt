@@ -1,7 +1,7 @@
 political_decisions = {
 	
 	form_portugal_brazil = {
-		picture = flag_por_bra
+		picture = become_upb
 		potential = {
 			tag = POR
 			NOT = { has_country_flag = form_portugal_brazil }
@@ -21,24 +21,23 @@ political_decisions = {
 			set_country_flag = form_portugal_brazil
 			POR = {
 				all_core = {
-					add_core = UPB
+					add_core = UPD
 					remove_core = POR
 				}
 			}
 			PBZ = {
 				all_core = {
-					add_core = UPB
+					add_core = UPD
 				}
 			}
 			change_tag = UPB
-			prestige = 5
 		}
 		
 		ai_will_do = { factor = 1 }
 	}
 	
 	move_capital_to_brazil = {
-		picture = brasil
+		#picture = 
 		potential = {
 			tag = POR
 			NOT = { has_country_flag = moved_capital_to_brazil }
@@ -81,7 +80,7 @@ political_decisions = {
 	}
 	
 	construct_the_palace_convent = {
-		picture = palace_convent
+		#picture = 
 		potential = {
 			tag = POR
 			NOT = { has_country_flag = constructed_the_palace_convent }
@@ -102,7 +101,7 @@ political_decisions = {
 	}
 	
 	create_monopoly_companies_of_commerce = {
-		picture = trade_center
+		#picture = 
 		potential = {
 			tag = POR
 			NOT = { has_country_flag = created_monopoly_companies_of_commerce }
@@ -132,7 +131,7 @@ political_decisions = {
 	}
 	
 	expulsion_of_the_jesuits = {
-		picture = jesuits
+		#picture = 
 		potential = {
 			tag = POR
 			NOT = { has_country_flag = expulsion_of_the_jesuits }
@@ -189,7 +188,7 @@ political_decisions = {
 	}
 	
 	pombaline_economic_reforms = {
-		picture = pombal
+		#picture = 
 		potential = {
 			tag = POR
 			NOT = { has_country_flag = pombaline_economic_reforms }

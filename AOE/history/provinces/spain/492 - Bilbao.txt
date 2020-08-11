@@ -6,18 +6,9 @@ trade_goods = iron  state_building = {  level = 2  building = iron_factory  upgr
 life_rating = 35
 terrain = bilbao
 naval_base = 2
+
 state_building = {
-	level = 1
-	building = explosives_factory
-	upgrade = yes
-}
-state_building = {
-	level = 1
-	building = artillery_factory
-	upgrade = yes
-}
-state_building = {
-	level = 1
+	level = 2
 	building = steel_factory
 	upgrade = yes
 }

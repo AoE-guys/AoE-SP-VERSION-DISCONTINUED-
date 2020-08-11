@@ -263,100 +263,81 @@ political_decisions = {
 			any_country = {
 				limit = {
 					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = BAV_599
+							region = BAV_595
+						}
+					}
 				}
-				annex_to = THIS
+				annex_to = BAV
 			}
-			592 = {
-				add_core = BAV
-			}
-			613 = {
-				add_core = BAV
-			}
-			596 = {
-				remove_core = BAV
-			}
-			596 = {
-				add_core = THU
-			}
-			release = BAV
-			BAV = {
-				set_country_flag = hre_member
-			}
-			597 = {
-				add_core = THU
-			}
-			598 = {
-				add_core = THU
-			}
-			release_vassal = THU
-			THU = {
-				set_country_flag = formed_thuringia
-				set_country_flag = hre_member
-			}
-			release = SGF
-			SGF = {
-				set_country_flag = formed_swabia
-				set_country_flag = hre_member
-			}
-			PRU_544 = {
-				add_core = NGF
-			}
-			HOL_369 = {
-				add_core = NGF
-			}
-			HAN_528 = {
-				add_core = NGF
-			}
-			HAN_534 = {
-				add_core = NGF
-			}
-			557 = {
-				add_core = NGF
-			}
-			553 = {
-				add_core = NGF
-			}
-			555 = {
-				add_core = NGF
-			}
-			539 = {
-				add_core = NGF
-			}
-			SCH_370 = {
-				add_core = NGF
-			}
-			3254 = {
-				remove_core = NGF
-			}
-			3301 = {
-				remove_core = NGF
-			}
-			release = NGF
-			NGF = {
-				set_country_flag = hanseatic_league_united
-				set_country_flag = hre_member
-			}
-			PRU_549 = {
-				add_core = SAX
-			}
-			PRU_546 = {
-				add_core = SAX
-			}
-			release = SAX
-			LIG = {
-				all_core = {
-					add_core = WES
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = WUR_589
+							region = BAD_586
+						}
+					}
 				}
+				annex_to = WUR
 			}
-			release = WES
-			WES = {
-				set_country_flag = formed_westphalia
-				set_country_flag = hre_member
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = PRU_570
+							region = PRU_575
+							region = PRU_578
+						}
+					}
+				}
+				annex_to = RHI
 			}
-			release = RHI
-			RHI = {
-				set_country_flag = formed_rheinland
-				set_country_flag = hre_member
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = HAN_540
+							region = PRU_581
+							region = HES_2560
+						}
+					}
+				}
+				annex_to = MUN
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = HOL_369
+							region = HAN_528
+							region = HAN_534
+						}
+					}
+				}
+				annex_to = HAN
+			}
+			any_country = {
+				limit = {
+					has_country_flag = hre_member
+					capital_scope = {
+						OR = {
+							region = PRU_544
+							region = PRU_546
+							region = PRU_549
+							region = PRU_553
+							region = SAX_558
+							region = PRU_554
+						}
+					}
+				}
+				annex_to = PRU
 			}
 			prestige = 50
 			badboy = 15
@@ -440,15 +421,15 @@ political_decisions = {
 			is_greater_power = yes
 			war = no
 			NNN = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
 					}
 				}
 			}
+		}
 			NOT = { has_country_modifier = hre_mendling }
 		}
 		effect = {
@@ -463,7 +444,6 @@ political_decisions = {
 					annex_to = NNN
 				}
 			}
-			set_country_flag = hre_formed
 			badboy = 30
 		}
 		ai_will_do = {

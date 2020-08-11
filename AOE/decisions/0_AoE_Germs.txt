@@ -12,7 +12,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = formed_thuringia
-			change_tag = THU
+			change_tag_no_core_switch = THU
 			prestige = 25
 		}
 		ai_will_do = { factor = 1 }
@@ -34,7 +34,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = formed_westphalia
-			change_tag = WES
+			change_tag_no_core_switch = WES
 			prestige = 25
 		}
 		ai_will_do = { factor = 1 }
@@ -56,7 +56,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = formed_rheinland
-			change_tag = RHI
+			change_tag_no_core_switch = RHI
 			prestige = 25
 		}
 		ai_will_do = { factor = 1 }
@@ -86,137 +86,8 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = formed_swabia
-			change_tag = SGF
+			change_tag_no_core_switch = SGF
 			prestige = 15
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	invite_liege = {
-		picture = westphalia
-		potential = {
-			has_country_flag = formed_westphalia
-			NOT = {
-				has_country_flag = invited_liege
-			}
-		}
-		allow = {
-			all_core = {
-				owned_by = WES
-			}
-		}
-		effect = {
-			set_country_flag = invited_liege
-			LIG = {
-				set_country_flag = westfalen_area
-			}
-			LIG = {
-				all_core = {
-					add_core = WES
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	invite_anhalt = {
-		picture = thuringia
-		potential = {
-			has_country_flag = formed_thuringia
-			NOT = {
-				has_country_flag = invited_anhalt
-			}
-		}
-		allow = {
-			all_core = {
-				owned_by = THU
-			}
-		}
-		effect = {
-			set_country_flag = invited_anhalt
-			ANH = {
-				set_country_flag = thuringen_area
-			}
-			ANH = {
-				all_core = {
-					add_core = THU
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	bring_in_luxembourg = {
-		picture = luxembourg_crisis
-		potential = {
-			has_country_flag = formed_rheinland
-			NOT = {
-				has_country_flag = invited_lux
-			}
-		}
-		allow = {
-			exists = LUX
-		}
-		effect = {
-			set_country_flag = invited_lux
-			LUX = {
-				set_country_flag = rheinland_area
-			}
-			LUX = {
-				all_core = {
-					add_core = RHI
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	invite_limburg = {
-		picture = westphalia
-		potential = {
-			has_country_flag = formed_westphalia
-			NOT = {
-				has_country_flag = invited_limburg
-			}
-		}
-		allow = {
-			exists = LBG
-		}
-		effect = {
-			set_country_flag = invited_limburg
-			LBG = {
-				set_country_flag = westfalen_area
-			}
-			LBG = {
-				all_core = {
-					add_core = WES
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	destroy_saxony = {
-		picture = thuringia
-		potential = {
-			has_country_flag = invited_anhalt
-			NOT = {
-				has_country_flag = ended_saxony
-			}
-		}
-		allow = {
-			owns = 554
-		}
-		effect = {
-			set_country_flag = ended_saxony
-			SAX = {
-				set_country_flag = thuringen_area
-			}
-			SAX = {
-				all_core = {
-					add_core = THU
-				}
-			}
 		}
 		ai_will_do = { factor = 1 }
 	}

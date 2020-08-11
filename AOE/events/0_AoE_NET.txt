@@ -2,7 +2,7 @@ country_event = {
 	id = 158100
 	title = "Voor de Admiraliteiten"
 	desc = "EVTDESC158100"
-	picture = ships_cross_the_sound_dues
+	picture = ships
 	fire_only_once = yes
 	
 	trigger = {
@@ -26,7 +26,6 @@ country_event = {
 	id = 158101
 	title = "The Second Stadtholderless Period"
 	desc = "EVTDESC158101"
-	#picture = ships
 	major = yes
 	fire_only_once = yes
 	
@@ -288,7 +287,6 @@ country_event = {
 	title = "End of the Stadtholderless period"
 	desc = "EVTDESC158104"
 	fire_only_once = yes
-	picture = monarch_death
 	
 	trigger = {
 		tag = NET
@@ -390,7 +388,6 @@ country_event = {
 	title = "Patriots seek Support"
 	desc = "EVTDESC158105"
 	fire_only_once = yes
-	picture = revolution
 	allow_multiple_instances = yes
 	
 	trigger = {
@@ -513,21 +510,14 @@ country_event = {
 	desc = "EVTDESC158105"
 	fire_only_once = yes
 	allow_multiple_instances = yes
-	picture = brabant_rev
 	
 	trigger = {
 		owns = 387
 		owns = 394
 		owns = 397
 		NOT = { tag = BEL }
-		OR = {
-			political_thought_7 = 1
-			year = 1789
-		}
-		OR = {
-			poor_tax = 0.69
-			ruling_party_ideology = liberal
-		}
+		political_thought_7 = 1
+		poor_tax = 0.69
 	}
 	
 	mean_time_to_happen = {
@@ -568,6 +558,10 @@ country_event = {
             limit = {
                 is_core = BEL
             }
+            secede_province = BEL
+        }
+		any_owned = {
+            limit = { is_core = THIS }
             secede_province = BEL
         }
         any_pop = {
@@ -1121,7 +1115,6 @@ country_event = {
 	title = "Colonization of South Africa"
 	desc = "EVTDESC158107"
 	fire_only_once = yes
-	picture = colonization
 	
 	trigger = {
 		owns = 2090
@@ -1142,7 +1135,6 @@ country_event = {
 	title = "Colonization of South Africa"
 	desc = "EVTDESC158107"
 	fire_only_once = yes
-	picture = colonization
 	
 	trigger = {
 		owns = 2090

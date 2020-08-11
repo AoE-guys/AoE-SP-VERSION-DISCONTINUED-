@@ -199,7 +199,6 @@ political_decisions = {
 				government = dominion
 			}
 			NOT = { has_country_flag = increase_colonization_efforts_nw }
-			NOT = {	total_pops = 1000000 }
 		}
 		
 		allow = {

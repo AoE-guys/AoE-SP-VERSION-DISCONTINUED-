@@ -1,8 +1,16 @@
 rail_focus = { #Now called Colonial Policy
+	colonial_immigration = {
+		immigrant_attract = 2.0
+		pop_militancy_modifier = 0.02
+		icon = 2
+		limit = {
+			is_colonial = yes
+		}
+	}
 	
 	promote_population_growth = {
 		icon = 2
-        life_rating = 5
+        life_rating = 0.10
         #population_growth = 0.0001
         immigrant_attract = 0.25
         immigrant_push = 0.10		
@@ -11,25 +19,6 @@ rail_focus = { #Now called Colonial Policy
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }     
 		}
 	}
-	
-#	assimilation_focus = {
-#		icon = 2
-#        assimilation_rate = 1
-#		limit = {
-#			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } }
-#			}     
-#		}
-#	}
-	
-	development_focus = {
-		icon = 2
-        education_efficiency_modifier = 0.05
-		limit = {
-			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } }
-			}
-		}
-	}
-	
 	encourage_subsistence = {
         local_RGO_output = 0.30		
 		icon = 3

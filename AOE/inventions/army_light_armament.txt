@@ -57,14 +57,14 @@ flintlock_rifle_armament = {
 			default_organisation = 5
 			supply_consumption = 0.15
 		}
-		# guard = {
-			# attack = 1
-			# supply_consumption = 0.10
-		# }
-		# plane = {
-			# attack = 1
-			# supply_consumption = 0.10
-		# }
+		guard = {
+			attack = 1
+			supply_consumption = 0.10
+		}
+		plane = {
+			attack = 1
+			supply_consumption = 0.10
+		}
 		engineer = {
 			attack = 1
 			supply_consumption = 0.10
@@ -123,16 +123,16 @@ grenade = {
 		}
 		guard = {
 			attack = 1
-			supply_consumption = 0.25
+			supply_consumption = 0.20
 		}
 		plane = {
 			attack = 1
-			supply_consumption = 0.25
+			supply_consumption = 0.20
 		}
 		engineer = {
 			attack = 1
 			siege = 1
-			supply_consumption = 0.25
+			supply_consumption = 0.20
 		}
 	}
 }
@@ -147,30 +147,22 @@ elite_troops = {
 		}
 	}
 	effect = {
-		# infantry = {
-			# attack = 1
-			# defence = 1
-			# supply_consumption = 0.20
-		# }
-		guard = {
-			
+		infantry = {
 			attack = 1
 			defence = 1
-			default_organisation = 0.5
 			supply_consumption = 0.20
 		}
 		plane = {
 			attack = 1
 			defence = 1
-			default_organisation = 0.5
 			supply_consumption = 0.20
 		}
-		# engineer = {
-			# attack = 1
-			# defence = 1
-			# siege = 1
-			# supply_consumption = 0.20
-		# }
+		engineer = {
+			attack = 1
+			defence = 1
+			siege = 1
+			supply_consumption = 0.20
+		}
 		dragoon = {
 			attack = 2
 			defence = 1

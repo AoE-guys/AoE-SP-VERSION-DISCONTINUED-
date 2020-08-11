@@ -22,11 +22,6 @@ country_event = {
 			name = frederick_grosse
 			duration = -1
 		}
-		define_general = {
-			name = "Frederick II Hohenzollern"
-			personality = implacable
-			background = genius
-		}
 	}
 }
 country_event = {
@@ -487,13 +482,11 @@ country_event = {
 		DPR = {
 			all_core = {
 				add_core = PRU
-				remove_core = DPR
 			}
 		}
 		BRN = {
 			all_core = {
 				add_core = PRU
-				remove_core = BRN
 			}
 		}
 		change_tag  = PRU

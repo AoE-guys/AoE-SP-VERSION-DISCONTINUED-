@@ -1230,7 +1230,6 @@ country_event = {
 #set_global_flag = education_setup
 #country_event = 999904
 #any_country { limit = { NOT = THIS } country_event = 9999855 }
-any_pop = { limit = { AND = { type = serfs literacy = 0.40 } } pop_type = farmers }
 country_event = 999958
 }
 }

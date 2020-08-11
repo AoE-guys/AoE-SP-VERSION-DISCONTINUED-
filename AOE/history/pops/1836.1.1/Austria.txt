@@ -85,13 +85,13 @@
 	craftsmen = {
 		culture = south_german
 		religion = protestant
-		size = 2015 
+		size = 1015 
 	}
 
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 1210
+		size = 2210
 	}
 
 	soldiers = {
@@ -443,13 +443,7 @@
 		size = 3800
 	}
 
-	craftsmen = {
-		culture = south_german
-		religion = catholic
-		size = 3800
-	}
-
-	craftsmen = {
+	artisans = {
 		culture = south_german
 		religion = catholic
 		size = 3800
@@ -461,13 +455,19 @@
 		size = 3800
 	}
 
-	craftsmen = {
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 3800
+	}
+
+	artisans = {
 		culture = south_german
 		religion = catholic
 		size = 4800
 	}
 
-	craftsmen = {
+	artisans = {
 		culture = south_german
 		religion = catholic
 		size = 3100

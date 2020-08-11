@@ -15,7 +15,7 @@ political_decisions = {
 				limit ={
 					type = soldiers
 				}
-				reduce_pop = 0.9
+				reduce_pop = 5
 			}
 			set_country_flag = female_guard
 		}
@@ -29,7 +29,6 @@ political_decisions = {
 		picture = yemeni_claims
 		potential = {
 			primary_culture = amhara
-			NOT = { has_country_flag = ETH_claim_yemen }
 		}
 		
 		allow = {
@@ -61,7 +60,6 @@ political_decisions = {
 			}
 			1412 = {
 				add_core = THIS
-			set_country_flag = ETH_claim_yemen
 			}
 		}
 			

@@ -21,6 +21,7 @@ tank = {	# Heavy Artillery
 	build_cost = {
 		artillery = 20
 		canned_food = 15
+		luxury_clothes = 1
 	}
 	
 	supply_consumption = 2.0
@@ -34,10 +35,10 @@ tank = {	# Heavy Artillery
 	#Land Abilties
 	reconnaissance = 0
 	attack = 1.5
-	defence = 3
+	defence = 4
 	discipline = 1
 	support = 1.5
-	maneuver = 2
+	maneuver = 1
 	siege = 0.2
 	
 }

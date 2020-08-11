@@ -1,6 +1,5 @@
 political_decisions = {
 	carabbean_conquest = {
-		picture = map_caribbean
 		potential = {
 			tag = MEX
 			NOT = { has_country_flag = carabbean_conquest }
@@ -46,7 +45,6 @@ political_decisions = {
 	}
 	
 	integrate_uca = {
-		picture = map_central_america
 		potential = {
 			tag = MEX
 			NOT = { has_country_flag = integrated_uca }
@@ -80,7 +78,6 @@ political_decisions = {
 	}
 	
 	claim_panama = {
-		picture = map_central_america
 		potential = {
 			tag = MEX
 			NOT = { has_country_flag = claimed_panama }

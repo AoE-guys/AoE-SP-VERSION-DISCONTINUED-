@@ -61,7 +61,7 @@ country_event = {
 			}
 			change_controller = THIS
 		}
-		government = proletarian_dictatorship
+		government = democracy
 		ruling_party_ideology = communist
 		political_reform = universal_voting
 		political_reform = population_equal_weight
@@ -114,15 +114,15 @@ country_event = {
 			}
 			scaled_militancy = {
 				ideology = conservative
-				factor = 3
+				factor = 4
 			}
 			scaled_militancy = {
 				ideology = communist
-				factor = -8
+				factor = -6
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = -4
+				factor = -2
 			}
 		}
 		any_country = {

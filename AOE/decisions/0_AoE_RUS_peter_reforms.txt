@@ -114,15 +114,15 @@ political_decisions = {
 			badboy = 15
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
-				factor = 0
-				NOT = { year = 1701 }
-				NOT = { has_global_flag = plc_civil_war }
+				factor = 1
+				year = 1701
+				has_global_flag = plc_civil_war
 			}
 			modifier = {
 				factor = 1
-				NOT = { year = 1705 }
+				year = 1705
 			}
 		}
 	}
@@ -191,14 +191,9 @@ political_decisions = {
 			KMK = {
 				vassal_of = THIS
 			}
-			OR = {
-				AND = { 
-					mass_politics = 1
-					war_policy  = jingoism
-				}
-				year = 1771
-			}
+			mass_politics = 1
 			is_greater_power = yes
+			war_policy  = jingoism
 		}
 		effect = {
 			set_country_flag = integrated_kalmyk
@@ -629,7 +624,7 @@ political_decisions = {
 		}
 		effect = {
 			treasury = -500000
-			set_country_flag = settle_south_borders
+			set_country_flag = claimed_crimea_south_ukraine
 			973 = {
 				add_province_modifier = {
 					name = settle_the_south_border
@@ -914,17 +909,14 @@ political_decisions = {
 	}
 ######## COLONISATION STUFF ##########
 	colonisation_of_altay = {
-		picture = cross_siberia
+		picture = army_training
 		potential = {
 			tag = RUS
 			NOT = {
 				has_country_flag = colonisation_of_altay
 			}
 			1067 = {
-				OR = {
-					owned_by = DZN
-					owned_by = QNG
-				}
+				empty = yes
 			}
 		}
 		allow = {
@@ -948,17 +940,20 @@ political_decisions = {
 		}
 	}
 	colonisation_of_abakan = {
-		picture = cross_siberia
+		picture = army_training
 		potential = {
 			tag = RUS
+			DZN = {
+				OR = {
+					is_independant = no
+					exists = no
+				}
+			}
 			NOT = {
 				has_country_flag = colonisation_of_abakan
 			}
 			2674 = {
-				OR = {
-					owned_by = DZN
-					owned_by = QNG
-				}
+				empty = yes
 			}
 			has_country_flag = treaty_of_kyakhta
 		}
