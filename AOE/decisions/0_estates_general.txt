@@ -11,7 +11,11 @@ political_decisions = {
 			has_country_modifier = peasant_turmoil
 		}
 		allow = {
-			political_thought_7 = 1
+			OR = {
+				political_thought_7 = 1
+				year = 1789
+			}
+			militancy = 6
 			war = no
 		}
 		effect = {

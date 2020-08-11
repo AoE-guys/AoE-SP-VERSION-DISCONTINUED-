@@ -2,7 +2,7 @@ country_event = {
 	id = 114300
 	title = "The Methuen Treaty"
 	desc = "EVTDESC114300"
-	#picture = 
+	picture = treaty_signing
 	fire_only_once = yes
 	
 	trigger = {
@@ -30,8 +30,9 @@ country_event = {
 					who = POR
 					value = 150
 				}
+				create_alliance = POR
 			}
-			create_alliance = POR
+			
 		}
 		random_country = { 
 			limit = {
@@ -58,8 +59,9 @@ country_event = {
 					who = POR
 					value = -80
 				}
+				leave_alliance = POR
 			}
-			leave_alliance = POR
+			
 		}
 		ai_chance = {
 			factor = 0
@@ -70,7 +72,7 @@ country_event = {
 	id = 114301
 	title = "People flee to the colonys!"
 	desc = "EVTDESC114301"
-	#picture = 
+	picture = colonization
 	fire_only_once = yes
 	
 	trigger = {
@@ -125,7 +127,7 @@ country_event = {
 	id = 114302
 	title = "Portugese Sun King"
 	desc = "EVTDESC114302"
-	#picture = 
+	picture = john_v
 	fire_only_once = yes
 	
 	trigger = {
@@ -150,7 +152,7 @@ country_event = {
 	id = 114303
 	title = "Death of John the V"
 	desc = "EVTDESC114303"
-	#picture = 
+	picture = john_v
 	fire_only_once = yes	
 	
 	trigger = {
@@ -180,7 +182,7 @@ country_event = {
 	id = 114304
 	title = "The Marquis of Pombal"
 	desc = "EVTDESC114304"
-	#picture = 
+	picture = pombal
 	fire_only_once = yes	
 	
 	trigger = {
@@ -214,7 +216,7 @@ country_event = {
 	id = 114305
 	title = "Ascension of Queen Maria I"
 	desc = "EVTDESC114305"
-	#picture = 
+	picture = pombal
 	fire_only_once = yes	
 	
 	trigger = {
@@ -249,7 +251,7 @@ country_event = {
 	id = 114306
 	title = "Lisbon Earthquake of 1755"
 	desc = "EVTDESC114306"
-	#picture = 
+	picture = por_1755
 	major = yes
 	fire_only_once = yes	
 	
@@ -274,6 +276,7 @@ country_event = {
 				name = natural_disaster
 				duration = 365
 			}
+			any_pop = { reduce_pop = 0.97 }
 		}
 	}
 	
@@ -284,6 +287,7 @@ country_event = {
 				name = natural_disaster
 				duration = 1825
 			}
+			any_pop = { reduce_pop = 0.67 }
 			life_rating = -10
 		}
 		prestige = -15
@@ -293,8 +297,11 @@ country_event = {
 	id = 114307
 	title = "Lisbon Reborn"
 	desc = "EVTDESC114307"
-	#picture = 
+	picture = lisbon_2
 	fire_only_once = yes	
+	mean_time_to_happen = {
+		months = 1
+	}
 	
 	trigger = {
 		owns = 521
@@ -305,7 +312,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "An amazing feat of human architecture"
+		name = "An amazing feat of human architecture."
 		501 = {
 			add_province_modifier = {
 				name = rebuilding_city
@@ -318,6 +325,7 @@ country_event = {
 	id = 114308
 	title = "General Company of Commerce for Grao Para and Maranhao"
 	desc = "EVTDESC114308"
+	picture = merchants
 	is_triggered_only = yes
 	
 	option = {
@@ -368,6 +376,7 @@ country_event = {
 	id = 114309
 	title = "The Expulsion of Jesuits"
 	desc = "EVTDESC114309"
+	picture = jesuits_expulsion
 	is_triggered_only = yes
 	
 	option = {

@@ -240,11 +240,13 @@ political_decisions = {
 	}
 	
 	nueva_planta_decrees = {
+		picture = noueva_planta
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = nueva_planta_decrees }
 			ARN = {
 				exists = yes
+				ai = yes
 			}
 		}
 		allow = {
@@ -435,56 +437,60 @@ political_decisions = {
 			POR = {
 				all_core = { add_core = IBR }
 			}
-			THIS = {
+			random_country = {
 				limit = {
-					tag = THIS
-					PBZ = {
-						exists = yes
-						ai = yes
-						is_vassal = yes
-					}
+					tag = PBZ
+					exists = yes
+					ai = yes
+					is_vassal = yes
 				}
-				create_vassal = PBZ
+				THIS = {
+					create_vassal = PBZ
+				}
 			}
-			THIS = {
+			random_country = {
 				limit = {
-					VNS = {
-						exists = yes
-						ai = yes
-						is_vassal = yes
-					}
+					tag = VNS
+					exists = yes
+					ai = yes
+					is_vassal = yes
 				}
-				create_vassal = VNS
+				THIS = {
+					create_vassal = VNS
+				}
 			}
-			THIS = {
+			random_country = {
 				limit = {
-					VNG = {
-						exists = yes
-						ai = yes
-						is_vassal = yes
-					}
+					tag = VNG
+					exists = yes
+					ai = yes
+					is_vassal = yes
 				}
-				create_vassal = VNG
+				THIS = {
+					create_vassal = VNG
+				}
 			}
-			THIS = {
+			random_country = {
 				limit = {
-					VOP = {
-						exists = yes
-						ai = yes
-						is_vassal = yes
-					}
+					tag = VOP
+					exists = yes
+					ai = yes
+					is_vassal = yes
 				}
-				create_vassal = VOP
+				THIS = {
+					create_vassal = VOP
+				}
 			}
-			THIS = {
+			random_country = {
 				limit = {
-					VLP = {
-						exists = yes
-						ai = yes
-						is_vassal = yes
-					}
+					tag = VLP
+					exists = yes
+					ai = yes
+					is_vassal = yes
 				}
-				create_vassal = VLP
+				THIS = {
+					create_vassal = VLP
+				}
 			}
 			517 = { add_core = IBR }
 			add_accepted_culture = portuguese

@@ -1,0 +1,179 @@
+country_event = {
+	id = 743
+	title = "Zahir al-Umar takes over management of Palestine." 
+	desc = "EVTDESC743"
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		tag = TUR
+		year = 1720
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "Ok, we will see how he manages."
+		916 = {
+			secede_province = PLS
+		}
+		prestige = 10
+		TUR = {
+			relation = {
+				who = PLS
+				value = 200
+			}
+		}
+	}
+
+	option = {
+		name = "Switch to Zahir al-Umar."
+		916 = {
+			secede_province = PLS
+		}
+		prestige = 10
+		TUR = {
+			relation = {
+				who = PLS
+				value = 200
+			}
+		}
+		change_tag_no_core_switch = PLS
+	}
+}
+
+country_event = {
+	id = 744
+	title = "Zahir al-Umar moves into Jabal Amel." 
+	desc = "EVTDESC744"
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		tag = TUR
+		year = 1730
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "This is starting to get worrying."
+		915 = {
+			secede_province = PLS
+		}
+		prestige = 10
+		TUR = {
+			relation = {
+				who = PLS
+				value = -50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 745
+	title = "Zahir al-Umar moves onto the coast." 
+	desc = "EVTDESC745"
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		tag = TUR
+		year = 1743
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "This is starting to get worrying."
+		919 = {
+			secede_province = PLS
+		}
+		920 = {
+			secede_province = PLS
+		}
+		prestige = 10
+		TUR = {
+			relation = {
+				who = PLS
+				value = -50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 746
+	title = "Zahir al-Umar moves into Quneitra." 
+	desc = "EVTDESC746"
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		tag = TUR
+		year = 1743
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "This is starting to get worrying."
+		902 = {
+			secede_province = PLS
+		}
+		3388 = {
+			secede_province = PLS
+		}
+		prestige = 10
+		TUR = {
+			relation = {
+				who = PLS
+				value = -50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 747
+	title = "End Zahir al-Umar." 
+	desc = "EVTDESC747"
+	
+	fire_only_once = yes
+	
+	trigger = {	
+		tag = TUR
+		year = 1775
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "This is time to finish it."
+		prestige = 20
+		TUR = {
+			relation = {
+				who = PLS
+				value = -100
+			}
+		}
+		release_vassal = PLS
+		war = {
+			target = PLS
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+	}
+}

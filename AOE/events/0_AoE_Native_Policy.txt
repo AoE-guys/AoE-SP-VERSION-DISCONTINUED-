@@ -3,23 +3,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694270
-		}
+		country_event = 694270
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694271
-		}
+		country_event = 694271
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694272
-		}
+		country_event = 694272
 	}
 }
 
@@ -28,6 +24,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		PBZ = {
@@ -64,7 +62,9 @@ country_event = {
 	id = 694271
 	title = "Replacement"
 	desc = "What should we do with them?"
+	picture = colonization
 	is_triggered_only = yes
+	
 	option = {
 		name = "Ignore them"
 		PBZ = {
@@ -92,6 +92,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Tupi"
 		PBZ = {
@@ -123,23 +125,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694274
-		}
+		country_event = 694274
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694275
-		}
+		country_event = 694275
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694276
-		}
+		country_event = 694276
 	}
 }
 
@@ -148,6 +146,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		FCA = {
@@ -185,6 +185,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		FCA = {
@@ -212,6 +214,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Cree"
 		FCA = {
@@ -243,23 +247,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694278
-		}
+		country_event = 694278
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694279
-		}
+		country_event = 694279
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694280
-		}
+		country_event = 694280
 	}
 }
 
@@ -268,6 +268,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		VNS = {
@@ -321,6 +323,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		VNS = {
@@ -348,6 +352,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Maya"
 		VNS = {
@@ -395,23 +401,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694282
-		}
+		country_event = 694282
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694283
-		}
+		country_event = 694283
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694284
-		}
+		country_event = 694284
 	}
 }
 
@@ -420,6 +422,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		THC = {
@@ -457,6 +461,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		THC = {
@@ -484,6 +490,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Cree"
 		THC = {
@@ -515,23 +523,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the Canadian natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694286
-		}
+		country_event = 694286
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694287
-		}
+		country_event = 694287
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694288
-		}
+		country_event = 694288
 	}
 }
 
@@ -540,6 +544,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		RPL = {
@@ -577,6 +583,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		RPL = {
@@ -604,6 +612,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Cree"
 		RPL = {
@@ -635,23 +645,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694290
-		}
+		country_event =  694290
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694291
-		}
+		country_event = 694291
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694292
-		}
+		country_event = 694292
 	}
 }
 
@@ -660,6 +666,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		VNG = {
@@ -697,6 +705,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		VNG = {
@@ -724,6 +734,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Quechua"
 		VNG = {
@@ -755,23 +767,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694294
-		}
+		country_event = 694294
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694295
-		}
+		country_event = 694295
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694296
-		}
+		country_event = 694296
 	}
 }
 
@@ -780,6 +788,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		VOP = {
@@ -825,6 +835,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		VOP = {
@@ -852,6 +864,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Quechua"
 		VOP = {
@@ -891,23 +905,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "How should we treat the natives?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them"
-		country_event = {
-			id = 694298
-		}
+		country_event = 694298
 	}
 	option = {
 		name = "Get rid of them or so"
-		country_event = {
-			id = 694299
-		}
+		country_event = 694299
 	}
 	option = {
 		name = "Embrace them entirely"
-		country_event = {
-			id = 694300
-		}
+		country_event = 694300
 	}
 }
 
@@ -916,6 +926,8 @@ country_event = {
 	title = "Acceptance"
 	desc = "Which ones should we accept?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept them all"
 		VLP = {
@@ -961,6 +973,8 @@ country_event = {
 	title = "Replacement"
 	desc = "What should we do with them?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Ignore them"
 		VLP = {
@@ -988,6 +1002,8 @@ country_event = {
 	title = "Embracement"
 	desc = "Which culture should we embrace?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Embrace the Aimara"
 		VLP = {
@@ -1027,23 +1043,19 @@ country_event = {
 	title = "Native Policy"
 	desc = "What language should we mainly preach in within Paraguay?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Spanish"
-		country_event = {
-			id = 694302
-		}
+		country_event = 694302
 	}
 	option = {
 		name = "Guarani"
-		country_event = {
-			id = 694303
-		}
+		country_event = 694303
 	}
 	option = {
 		name = "Italian and Latin, obviously!"
-		country_event = {
-			id = 694304
-		}
+		country_event = 694304
 	}
 }
 
@@ -1052,6 +1064,8 @@ country_event = {
 	title = "Jesuit missions"
 	desc = "What do we do with the native's language?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Accept the Guarani"
 		JER = {
@@ -1080,6 +1094,8 @@ country_event = {
 	title = "Jesuit missions"
 	desc = "What do we do with the Spanish language?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Reject Spanish language"
 		JER = {
@@ -1105,6 +1121,8 @@ country_event = {
 	title = "Jesuit missions"
 	desc = "What do we do with the Spanish language?"
 	is_triggered_only = yes
+	picture = colonization
+	
 	option = {
 		name = "Reject Spanish language"
 		JER = {
