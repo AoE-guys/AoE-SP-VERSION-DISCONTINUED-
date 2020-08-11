@@ -36,41 +36,7 @@ gustavian_army_reform = {
 		}
 	}
 }
-# post_napoleonic_army_doctrine = {
-	# limit = { post_napoleonic_thought = 1 }
-	# chance = {
-		# base = 2
-	# }
-	# effect = {
-		# infantry = {
-			# defence = 1
-		# }
-		# guard = {
-			# defence = 1
-		# }
-		# plane = {
-			# defence = 1
-		# }
-		# engineer = {
-			# defence = 1
-		# }
-		# cuirassier = {
-			# defence = 1
-		# }
-		# dragoon = {
-			# defence = 1
-		# }
-		# hussar = {
-			# defence = 1
-		# }
-		# cavalry = {
-			# defence = 1
-		# }
-		# irregular = {
-			# defence = 1
-		# }
-	# }
-# }
+
 #strategic_mobility
 gabionade = {
 	limit = { strategic_mobility = 1 }
@@ -700,7 +666,41 @@ human_wave_vs_spearhead = {
 	}
 }
 
-		
+post_napoleonic_army_doctrine = {
+	limit = { army_doctrine_8 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		infantry = {
+			defence = 1
+		}
+		guard = {
+			defence = 1
+		}
+		plane = {
+			defence = 1
+		}
+		engineer = {
+			defence = 1
+		}
+		cuirassier = {
+			defence = 1
+		}
+		dragoon = {
+			defence = 1
+		}
+		hussar = {
+			defence = 1
+		}
+		cavalry = {
+			defence = 1
+		}
+		irregular = {
+			defence = 1
+		}
+	}
+}
 #bronze_muzzle_loaded_artillery
 cast_bronze_cannons = {
 	limit = { bronze_muzzle_loaded_artillery = 1 }
@@ -710,29 +710,54 @@ cast_bronze_cannons = {
 	effect = {
 		artillery = {
 			default_organisation = 5
-			attack = 0.5
+			attack = 0.25
 		}
 		tank = {
 			default_organisation = 5
-			attack = 0.5
+			attack = 0.25
 		}
 	}
 }
 #iron_muzzle_loaded_artillery
-artillery_attachment = {
+trunnions = {
 	limit = { iron_muzzle_loaded_artillery = 1 }
 	chance = {
 		base = 2
 	}
 	effect = {
 		artillery = {
-			attack = 0.5
+			attack = 0.25
+			support = 0.3
 			default_organisation = 5
 		}
+		# tank = {
+			# attack = 0.5
+			# support = 0.3
+			# default_organisation = 5
+		# }
 	}
 }
 
 #iron_breech_loaded_artillery
+arching_fire_calculation = {
+	limit = { iron_breech_loaded_artillery = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		artillery = {
+			attack = 0.25
+			support = 0.3
+			# default_organisation = 5
+		}
+		tank = {
+			attack = 0.25
+			support = 0.3
+			# default_organisation = 5
+		}
+	}
+}
+
 #indirect_artillery_fire
 #heavy_armament
 anti_aircraft_artillery = {
@@ -969,8 +994,8 @@ horse_messenging_coordination = {
 
 
 
-#military_statistics
-ammunition_area_effect_calculations = {
+#military_statistics - Military Intelligence
+information_gathering = {
 	limit = { military_statistics = 1 }
 	chance = {
 		base = 2
@@ -991,47 +1016,68 @@ ammunition_area_effect_calculations = {
 	}
 }
 
-empirical_combat_efficiency_matrix = {
-	limit = { military_statistics = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			empiricism = 1
-		}
-		modifier = {
-			factor = 1
-			breech_loaded_rifles = 1
-		}
-	}
-	effect = {
-		army_base = {
-			default_organisation = 2.5
-			supply_consumption = 0.05
-		} 
-	}
-}
+# ammunition_area_effect_calculations = {
+	# limit = { military_statistics = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 1
+			# empiricism = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# scientific_management = 1
+		# }
+	# }
+	# effect = {
+		# army_base = {
+			# default_organisation = 2.5
+			# supply_consumption = 0.05
+		# } 
+	# }
+# }
 
-combat_loss_evaluation_schemata = {
-	limit = { military_statistics = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			point_defense_system = 1
-		}
-		modifier = {
-			factor = 2
-			mechanical_production = 1
-		}
-	}
-	effect = {
-		army_base = {
-			default_organisation = 2.5
-			supply_consumption = 0.05
-		} 
-	}
-}
+# empirical_combat_efficiency_matrix = {
+	# limit = { military_statistics = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 1
+			# empiricism = 1
+		# }
+		# modifier = {
+			# factor = 1
+			# breech_loaded_rifles = 1
+		# }
+	# }
+	# effect = {
+		# army_base = {
+			# default_organisation = 2.5
+			# supply_consumption = 0.05
+		# } 
+	# }
+# }
+
+# combat_loss_evaluation_schemata = {
+	# limit = { military_statistics = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 1
+			# point_defense_system = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# mechanical_production = 1
+		# }
+	# }
+	# effect = {
+		# army_base = {
+			# default_organisation = 2.5
+			# supply_consumption = 0.05
+		# } 
+	# }
+# }
 
 #military_logistics
 pre_planned_depot_systems = {

@@ -39,6 +39,10 @@ country_event = {
 				duration = 7300
 			}
 		}
+		552 = { 
+			remove_core = BRN
+			remove_core = PRU
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -149,6 +153,7 @@ country_event = {
 				tag = REU
 				tag = SWG
 				tag = WEI
+				tag = SXZ
 			}
 			alliance_with = THU
 		}
@@ -180,6 +185,7 @@ country_event = {
 				tag = KOL
 				tag = ACH
 				tag = OLD
+				tag = DOR
 			}
 			alliance_with = WES	
 		}
@@ -215,6 +221,8 @@ country_event = {
 				tag = NAS
 				tag = SAA
 				tag = WLD
+				tag = MNZ
+				tag = FUL
 			}
 			alliance_with = RHI
 		}
@@ -224,6 +232,38 @@ country_event = {
 		name = "Absolutely!"
 		RHI = {
 			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 444673
+	title = "Freedom for Sorbs"
+	desc = EVTDESC444667
+	fire_only_once = yes
+	
+	trigger = {
+		tag = THU
+		owns = 687
+		NOT = {
+			LUS = { exists = yes }
+		}
+	}
+	
+	option = {
+		name = "We have no use for the region anyway"
+		release_vassal = LUS
+		687 = {
+			add_province_modifier = {
+				name = cultural_resurgence
+				duration = 7300
+			}
+		}
+		687 = {
+			remove_core = SAX
 		}
 		ai_chance = {
 			factor = 1

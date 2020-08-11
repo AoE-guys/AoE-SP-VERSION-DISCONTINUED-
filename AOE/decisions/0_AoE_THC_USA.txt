@@ -146,7 +146,14 @@ political_decisions = {
 			NOT = { has_country_flag = war_on_natives }
 		}
 		allow = {
-			machine_guns = 1
+			OR = {
+				machine_guns = 1
+				AND = {
+					war_policy = jingoism
+					is_vassal = yes
+					year = 1732
+				}
+			}
 			nationalism_n_imperialism = 1
 		}
 		effect = {

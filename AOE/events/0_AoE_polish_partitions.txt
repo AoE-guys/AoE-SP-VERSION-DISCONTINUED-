@@ -256,7 +256,7 @@ country_event = {
 		name = "Send a delegation to Prussia and Austria"
 		RUS = { country_event = 1780 }
 		549 = { owner = { country_event = 1781 } }
-		
+		set_global_flag = second_partition
 		ai_chance = { factor = 100 }
 	}
 }
@@ -388,6 +388,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = polish_partition
+		has_global_flag = second_partition
 		has_country_flag = main_partitioner
 	}
 	

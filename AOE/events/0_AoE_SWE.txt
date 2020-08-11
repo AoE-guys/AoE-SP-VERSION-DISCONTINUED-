@@ -354,7 +354,7 @@ country_event = {
 		}
 		PZN = {
 			government = elective_monarchy_oligarchy
-			create_allience = SWE
+			create_alliance = SWE
 			war = {
 				target = PLC
 				attacker_goal = { casus_belli = civil_war }
@@ -406,7 +406,7 @@ country_event = {
 		change_tag = PLC
 		PZN = {
 			all_core = {
-				remove_core PZN
+				remove_core = PZN
 			}
 		}
 		PLC = {
@@ -437,8 +437,85 @@ country_event = {
 		set_global_flag = plc_civil_war_end
 		PZN = {
 			all_core = {
-				remove_core PZN
+				remove_core = PZN
 			}
 		}
 	}
 }
+###Sapmi###
+
+country_event = {
+    id = 135792
+    title = "The Aryan Question"
+    desc = "EVTDESC135792"
+    major = yes
+    fire_only_once = yes
+    
+    mean_time_to_happen = {
+        months = 1
+    }
+    
+    trigger = {
+        tag = SAP
+        war = no
+    }
+    
+    option = {
+        name = "Samieatnan Samiide!"
+        badboy = 5
+            any_pop = {
+               limit = {
+                OR = {
+                    culture = swedish
+                    culture = norwegian
+                }
+                }
+                reduce_pop = 0.6
+            }
+        remove_accepted_culture = swedish
+        remove_accepted_culture = norwegian     
+        relation = {
+            who = SWE
+            value = -100
+        }
+        relation = {
+            who = DNN
+            value = -100
+        }
+        relation = {
+            who = RUS
+            value = -50        
+        }
+    }
+    
+    option = {
+        name = "We shall persecute the oppressors, but only the oppressors"
+            badboy = 1
+            any_pop = {
+                limit = {
+                OR = {
+                    culture = swedish
+                    culture = norwegian
+                    culture = russian
+                }
+                type = bureaucrats
+                }
+                reduce_pop = 0.5
+            }
+            remove_accepted_culture = swedish
+            remove_accepted_culture = norwegian
+            remove_accepted_culture = russian
+    }
+    
+    option = {
+        name = "Let us turn the other cheek"
+            any_pop = {
+                limit = {
+                    culture = sami
+                }
+                consciousness = 3
+                militancy = 2
+            }
+            prestige = -7
+    }
+}        

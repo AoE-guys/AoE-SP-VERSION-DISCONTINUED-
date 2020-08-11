@@ -384,6 +384,7 @@ country_event = {
 			value = 200
 		}
 		1469 = { secede_province = DZN }
+		3385 = { secede_province = DZN }
 	}
 }
 country_event = {
@@ -398,5 +399,18 @@ country_event = {
 		1535 = { secede_province = DZN }
 		1532 = { secede_province = DZN }
 		1534 = { secede_province = DZN }
+	}
+}
+country_event = {
+	id = 6066
+	title = "End of Khovd, Dzungar victory"
+	desc = "EVTDESC6066"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We are no longer able to resist."
+		2608 = { secede_province = DZN }
+		2679 = { secede_province = DZN }
 	}
 }

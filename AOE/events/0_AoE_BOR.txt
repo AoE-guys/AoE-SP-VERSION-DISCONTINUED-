@@ -1143,6 +1143,10 @@ country_event = {
 			remove_core = FCA
 			secede_province = ULA
 		}
+		add_country_modifier = {
+			name = mercantilism
+			duration = 1825
+		}
 		BOR = {
 			create_vassal = ULA
 		}
@@ -1150,6 +1154,14 @@ country_event = {
 			government = colonial_company
 			add_country_modifier = {
 				name = small_immigration_boom
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = mercantilism
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = total_reform
 				duration = 1825
 			}
 			treasury = 25000
@@ -1179,7 +1191,7 @@ country_event = {
 		}
 		prestige = 5
 		badboy = 10
-		ai_chance = { factor = 1 }	
+		ai_chance = { factor = 0 }	
 	}
 	
 	option = {
@@ -1204,7 +1216,7 @@ country_event = {
 		}
 		change_tag_no_core_switch = ULA
 		prestige = 20
-		ai_chance = { factor = 1 }	
+		ai_chance = { factor = 0 }	
 	}
 }
 

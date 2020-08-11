@@ -44,7 +44,7 @@ country_event = {
 	
 	option = {
 		name = "Continue the War!"
-		war_exhastion = 10
+		war_exhaustion = 10
 		ai_chance = { factor = 0 }
 	}
 }
@@ -94,7 +94,7 @@ country_event = {
 		CAN_46 = {
 			secede_province = IQS
 		}
-		153 - {
+		173 = {
 			secede_province = IQS
 		}
 		IQS = {
@@ -106,7 +106,7 @@ country_event = {
 	
 	option = {
 		name = "Refuse"
-		war_exhastion = 15
+		war_exhaustion = 15
 		ai_chance = { factor = 0 }
 	}
 }

@@ -136,6 +136,9 @@ country_event = {
 	option = {
 		name = "They are not worth our time"
 		prestige = -15
+		ai_chance = {
+			factor = 0
+		}	
 	}
 	
 	option = {
@@ -165,7 +168,7 @@ country_event = {
 	
 	option = {
 		name = "We have more pressing matters."
-		pressing = -25
+		prestige = -25
 		ai_chance = {
 			modifier = {
 				factor = 100
@@ -180,7 +183,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 10
-				any_owned = {
+				any_owned_province = {
 					controlled_by_rebels = yes
 				}
 			}

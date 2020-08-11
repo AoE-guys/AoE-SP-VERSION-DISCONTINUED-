@@ -2,5 +2,14 @@ owner = BOR
 controller = BOR
 add_core = BOR
 trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
-state_building = {  level = 1  building = explosives_factory  upgrade = yes  }
 life_rating = 30
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}

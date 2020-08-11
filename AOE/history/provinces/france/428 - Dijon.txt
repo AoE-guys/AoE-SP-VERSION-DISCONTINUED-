@@ -3,3 +3,18 @@ controller = BOR
 add_core = BOR
 trade_goods = fruit  state_building = {  level = 2  building = fruit_factory  upgrade = yes  }
 life_rating = 30
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
