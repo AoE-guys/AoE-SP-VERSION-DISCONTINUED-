@@ -177,7 +177,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			OR = {
+			AND = {
 				is_vassal = no
 				owns = 392
 			}
