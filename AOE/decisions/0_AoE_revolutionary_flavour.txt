@@ -1,0 +1,158 @@
+political_decisions = {
+	levee_en_masse = {
+		picture = levee_en_masse_pic
+		potential = {
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+			}
+			NOT = { has_country_modifier = levee_en_masse_modifier }
+		}
+		allow = {
+			war = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = levee_en_masse_modifier
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	land_redistribution = {
+		picture = land_redistribution_pic
+		potential = {
+			government = proletarian_dictatorship
+			has_country_flag = rev_secured
+			NOT = { has_country_modifier = radical_land_reform }
+		}
+		allow = {
+			has_country_modifier = revolutionary_spirit
+		}
+		effect = {
+			add_country_modifier = {
+				name = radical_land_reform
+				duration = -1
+			}
+			add_tax_relative_income	= 5
+			any_owned = {
+						any_pop = {
+									limit = { type = aristocrats }
+									reduce_pop = 0.90
+									money = -100
+						}
+			}
+			any_owned = {
+						any_pop = {
+									limit = { type = labourers }
+									reduce_pop = 0.95
+									money = -50
+						}
+			}
+			any_owned = {
+						any_pop = {
+									limit = { strata = poor }
+									reduce_pop = 1.01
+									money = 150
+						}
+			}
+			any_pop = {
+				limit = { strata = poor }
+				militancy = -5
+				consciousness = -5
+				ideology = {
+					value = communist
+					factor = 0.5
+				}
+			}	
+			any_pop = {
+				limit = { strata = middle }
+				militancy = 3
+				consciousness = -3
+				ideology = {
+					value = conservative
+					factor = 0.3
+				}
+			}		
+			any_pop = {
+				limit = { strata = rich }
+				militancy = 5
+				consciousness = -5
+				ideology = {
+					value = conservative
+					factor = 0.5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	deal_with_revolutionary_enemies = {
+		picture = revolutionary_enemies_pic
+		potential = {
+			government = proletarian_dictatorship
+			has_country_flag = rev_secured
+		}
+		allow = {
+			has_country_modifier = revolutionary_spirit
+			NOT = { has_country_modifier = rev_terror }
+			#militancy = 6
+		}
+		effect = {
+			add_country_modifier = {
+				name = rev_terror
+				duration = 1825
+			}
+			add_tax_relative_income	= 1
+			any_owned = {
+						any_pop = {
+									limit = { type = bureaucrats }
+									reduce_pop = 0.99
+									money = -5
+						}
+			}
+			any_owned = {
+						any_pop = {
+									limit = { type = clergymen }
+									reduce_pop = 0.98
+									money = -10
+						}
+			}
+			any_owned = {
+						any_pop = {
+									limit = { type = aristocrats }
+									reduce_pop = 0.90
+									money = -50
+						}
+			}
+			any_owned = {
+						any_pop = {
+									limit = { type = labourers }
+									reduce_pop = 0.95
+									money = -25
+						}
+			}
+			any_pop = {
+				militancy = -5
+				consciousness = -5
+				ideology = {
+					value = communist
+					factor = 0.5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { militancy = 6 }
+			}
+		}
+	}
+}
+	
+	
