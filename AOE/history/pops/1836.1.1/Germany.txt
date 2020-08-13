@@ -139,7 +139,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 600
+		size = 1000
 	}
 
 	serfs = {
@@ -1202,12 +1202,6 @@
 		size = 240
 	}
 
-	soldiers = {
-		culture = north_german
-		religion = protestant
-		size = 30 
-	}
-
 	serfs = {
 		culture = north_german
 		religion = protestant
@@ -1241,7 +1235,7 @@
 	soldiers = {
 		culture = frisian
 		religion = protestant
-		size = 1090   
+		size = 2000   
 	}
 
 	serfs = {
@@ -2566,7 +2560,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 1800
+		size = 1500
 	}
 
 	serfs = {
@@ -2590,7 +2584,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size = 600
+		size = 1000
 	}
 
 	serfs = {
@@ -2727,7 +2721,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 330
+		size = 1030
 	}
 
 	serfs = {
@@ -2750,7 +2744,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size = 60         
+		size = 160         
 	}
 
 	serfs = {
@@ -3413,7 +3407,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size = 1800
+		size = 2000
 	}
 
 	serfs = {
@@ -3493,7 +3487,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size = 1200
+		size = 2000
 	}
 
 	serfs = {
@@ -3768,7 +3762,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 300  
+		size = 1000  
 	}
 
 	serfs = {
@@ -3889,7 +3883,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 600
+		size = 1000
 	}
 
 	serfs = {
@@ -3931,7 +3925,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size = 1200  
+		size = 1020 
 	}
 
 	serfs = {
@@ -4147,7 +4141,7 @@
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size = 60  
+		size = 1000  
 	}
 
 	serfs = {
@@ -4254,7 +4248,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size = 600
+		size = 1280
 	}
 
 	serfs = {
@@ -5836,7 +5830,7 @@
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 900
+		size = 1000
 	}
 
 	serfs = {
@@ -6250,11 +6244,12 @@
 		size = 390
 	}
 
-	serfs = {
+	soldiers = {
 		culture = north_german
 		religion = protestant
 		size = 2400         
 	}
+	
 }
 
 #Rinteln

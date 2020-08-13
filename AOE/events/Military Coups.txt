@@ -128,6 +128,7 @@ country_event = {
 			average_militancy = 6
 			revolt_percentage = .10
 			has_country_modifier = coup_risk
+			pensions = good_pensions
 		}
 		NOT = {
 			has_country_modifier = national_confusion

@@ -1,0 +1,32 @@
+army = {
+
+	name = "Kolner Armee"
+	location = 575
+
+	regiment = {
+
+		name= "1. Kolner Landwehrbrigade"
+		type = infantry
+
+		home = 575
+
+	}
+}
+
+army = {
+
+	name = "2. Kolner Armee"
+	location = 583
+	
+	regiment = {
+
+		name= "2. Kolner Landwehrbrigade"
+
+		type = infantry
+
+		home = 583
+
+	}
+
+}
+
