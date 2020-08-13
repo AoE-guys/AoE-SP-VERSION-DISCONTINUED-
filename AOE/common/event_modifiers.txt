@@ -6634,3 +6634,17 @@ bavarian_academy = {
 	research_points_modifier = 0.05
 	immigrant_attract = 0.025
 }
+
+noble_army = {
+	prestige = 0.015
+	mobilisation_size = 0.01
+	land_unit_start_experience = -10
+	icon = 17
+}
+
+noble_beaurocracy = {
+	prestige = 0.015
+	admin_efficiency = 2.5
+	max_social_spending = 0.1
+	icon = 1
+}
