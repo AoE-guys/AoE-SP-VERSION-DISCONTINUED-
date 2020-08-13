@@ -6859,3 +6859,660 @@ jacobite_rebels = {
 		country_event = 171402
 	}
 }
+
+
+peasant_rebels = {
+	icon = 7
+		
+	area = nation 					# Stays within the nation
+	break_alliance_on_win = no
+	
+	# <this is the government in the country> = <this is what the rebels want>
+	government = {
+		proletarian_dictatorship = proletarian_dictatorship
+		presidential_dictatorship = presidential_dictatorship
+		bourgeois_dictatorship = bourgeois_dictatorship
+		fascist_dictatorship = fascist_dictatorship
+		absolute_monarchy = absolute_monarchy
+		prussian_constitutionalism = prussian_constitutionalism
+		hms_government = hms_government
+		french_bourbon = french_bourbon
+		dominion = dominion
+		democracy = democracy
+		theocracy = theocracy
+		colonial_company = colonial_company
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
+	}
+	
+	
+	defection = none				
+	independence = none				# Does not strive for independence
+	defect_delay = 18
+	
+	ideology = communist
+	
+	allow_all_cultures = yes
+	allow_all_religions = yes
+	allow_all_ideologies = yes
+	
+	resilient = no	
+	reinforcing = yes				
+	general = yes					
+	smart = no
+	unit_transfer = no				# Units do not remain after enforcing demands.
+	
+	occupation_mult = 1.4			# The amount of strength this rebel gains from taking provinces	
+
+	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
+	will_rise = {
+		factor = 1.5
+		modifier = {
+			war = yes
+			factor = 0.8
+		}
+		modifier = {
+			war_exhaustion = 4
+			factor = 0.95
+		}
+		modifier = {
+			war_exhaustion = 6
+			factor = 0.95
+		}
+		modifier = {
+			war_exhaustion = 8
+			factor = 0.95
+		}
+		modifier = {
+			average_militancy = 3
+			factor = 0.8
+		}
+		modifier = {
+			average_militancy = 6
+			factor = 0.8
+		}
+		modifier = {
+			average_militancy = 9
+			factor = 0.8
+		}
+		modifier = {
+			factor = 2
+			has_country_modifier = peasant_turmoil
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_country_modifier = lower_class_unrest_5
+				has_country_modifier = lower_class_unrest_4
+				has_country_modifier = lower_class_unrest_3
+				has_country_modifier = lower_class_unrest_2
+				has_country_modifier = lower_class_unrest_1
+			}
+		}
+	}
+	
+	# The rebel type with the highest modifier for this pop gets picked
+	spawn_chance = {
+ 
+		factor = 0.8
+		
+		modifier = {
+			factor = 1
+			pop_majority_ideology = liberal
+		}
+		modifier = {
+			factor = 2.5
+			pop_majority_ideology = communist
+		}
+		modifier = {
+			factor = -1
+			pop_majority_ideology = conservative
+		}
+		modifier = {
+			factor = -2
+			pop_majority_ideology = reactionary
+		}
+		
+		modifier = {
+			factor = 0.5
+			is_primary_culture = no
+			is_accepted_culture = no
+		}
+		modifier = {
+			factor = 1.5
+			country = { plurality = 70 }
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 5.0
+			is_capital = yes
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+		NOT = { has_province_modifier = war_torn }
+ 	}
+	
+	siege_won_effect = {
+		add_province_modifier = {
+			name = war_torn
+			duration = 365
+		}
+		any_pop = {
+			ideology = {
+				value = conservative
+				factor = 0.05
+			}
+		}
+		owner = { war_exhaustion = 2.5 }
+	}
+
+	# Country scope
+	demands_enforced_trigger = {
+		OR = {
+			capital_scope = {
+				controlled_by = REB
+				province_control_days = 90
+			}
+			NOT = {
+				any_owned_province = {
+					is_colonial = no
+					controlled_by = THIS
+				}
+			}
+		}
+	}
+	
+	demands_enforced_effect = {
+		random_owned = {
+            limit = {
+                owner = {
+                    unemployment_subsidies = no_subsidies
+                }
+            }
+            owner = {
+                social_reform = low_subsidies
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    unemployment_subsidies = trinket_subsidies
+                }
+            }
+            owner = {
+                social_reform = acceptable_subsidies
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    unemployment_subsidies = low_subsidies
+                }
+            }
+            owner = {
+                social_reform = good_subsidies
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    unemployment_subsidies = acceptable_subsidies
+                }
+            }
+            owner = {
+                social_reform = good_subsidies
+            }
+        }
+		
+		
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = fourteen_hours
+                }
+            }
+            owner = {
+                social_reform = no_work_hour_limit
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = twelve_hours
+                }
+            }
+            owner = {
+                social_reform = no_work_hour_limit
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = ten_hours
+                }
+            }
+            owner = {
+                social_reform = fourteen_hours
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = eight_hours
+                }
+            }
+            owner = {
+                social_reform = twelve_hours
+            }
+        }
+		
+		
+		random_owned = {
+            limit = {
+                owner = {
+                    health_care = trinket_health_care
+                }
+            }
+            owner = {
+                social_reform = no_health_care
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    health_care = low_health_care
+                }
+            }
+            owner = {
+                social_reform = no_health_care
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    health_care = acceptable_health_care
+                }
+            }
+            owner = {
+                social_reform = trinket_health_care
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    health_care = good_health_care
+                }
+            }
+            owner = {
+                social_reform = twelve_hours
+            }
+        }
+		prestige = -30
+		plurality = -30
+	}
+}
+
+noble_rebels = {
+	icon = 1
+		
+	area = nation 					# Stays within the nation
+	break_alliance_on_win = no
+	
+	# <this is the government in the country> = <this is what the rebels want>
+	government = {
+		proletarian_dictatorship = proletarian_dictatorship
+		presidential_dictatorship = presidential_dictatorship
+		bourgeois_dictatorship = bourgeois_dictatorship
+		fascist_dictatorship = fascist_dictatorship
+		absolute_monarchy = absolute_monarchy
+		prussian_constitutionalism = prussian_constitutionalism
+		hms_government = hms_government
+		french_bourbon = french_bourbon
+		dominion = dominion
+		democracy = democracy
+		theocracy = theocracy
+		colonial_company = colonial_company
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
+	}
+	
+	
+	defection = none				
+	independence = none				# Does not strive for independence
+	defect_delay = 18
+	
+	ideology = conservative
+	
+	allow_all_cultures = yes
+	allow_all_religions = yes
+	allow_all_ideologies = yes
+	
+	resilient = yes
+	reinforcing = yes				
+	general = yes					
+	smart = yes
+	unit_transfer = no				# Units do not remain after enforcing demands.
+	
+	occupation_mult = 1.1			# The amount of strength this rebel gains from taking provinces	
+
+	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
+	will_rise = {
+		factor = 0.5
+		modifier = {
+			war = yes
+			factor = 0.5
+		}
+		modifier = {
+			war_exhaustion = 4
+			factor = 0.2
+		}
+		modifier = {
+			war_exhaustion = 6
+			factor = 0.2
+		}
+		modifier = {
+			war_exhaustion = 8
+			factor = 0.2
+		}
+		modifier = {
+			any_pop = { strata = rich }
+			average_militancy = 3
+			factor = 0.6
+		}
+		modifier = {
+			any_pop = { strata = rich }
+			average_militancy = 6
+			factor = 0.6
+		}
+		modifier = {
+			any_pop = { strata = rich }
+			average_militancy = 9
+			factor = 8
+		}
+		modifier = {
+			safety_regulations = low_safety
+			factor = 0.6
+		}
+		modifier = {
+			safety_regulations = acceptable_safety
+			factor = 0.8
+		}
+		modifier = {
+			safety_regulations = good_safety
+			factor = -2.75
+		}
+		modifier = {
+			OR = {
+				government = elective_monarchy_oligarchy
+				government = archduchy
+			}
+			factor = 1
+		}
+			
+	
+	# The rebel type with the highest modifier for this pop gets picked
+	spawn_chance = {
+ 
+		factor = 1
+		
+		modifier = {
+			factor = -2
+			pop_majority_ideology = communist
+		}
+		modifier = {
+			factor = 1
+			pop_majority_ideology = conservative
+		}
+		modifier = {
+			factor = 2
+			pop_majority_ideology = reactionary
+		}
+		modifier = {
+			factor = 2
+			any_pop = {
+				strata = rich
+				militancy = 3
+			}
+		}
+		modifier = {
+			factor = 4
+			any_pop = {
+				strata = rich
+				militancy = 6
+			}
+		}		
+		modifier = {
+			factor = 6
+			any_pop = {
+				strata = rich
+				militancy = 9
+			}
+		}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 5.0
+			is_capital = yes
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+		NOT = { has_province_modifier = war_torn }
+ 	}
+	
+	siege_won_effect = {
+		add_province_modifier = {
+			name = war_torn
+			duration = 365
+		}
+		any_pop = {
+			ideology = {
+				value = conservative
+				factor = 0.05
+			}
+		}
+		owner = { war_exhaustion = 2.5 }
+	}
+
+	# Country scope
+	demands_enforced_trigger = {
+		OR = {
+			capital_scope = {
+				controlled_by = REB
+				province_control_days = 90
+			}
+			NOT = {
+				any_owned_province = {
+					is_colonial = no
+					controlled_by = THIS
+				}
+			}
+		}
+	}
+	
+	demands_enforced_effect = {
+		random_owned = { #Burghers#
+            limit = {
+                owner = {
+                    unemployment_subsidies = trinket_subsidies
+                }
+            }
+            owner = {
+                social_reform = no_subsidies
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    unemployment_subsidies = low_subsidies
+                }
+            }
+            owner = {
+                social_reform = no_subsidies
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    unemployment_subsidies = acceptable_subsidies
+                }
+            }
+            owner = {
+                social_reform = trinket_subsidies
+            }
+        }
+		
+		
+		random_owned = { #Gentry#
+            limit = {
+                owner = {
+                    work_hours = no_work_hour_limit
+                }
+            }
+            owner = {
+                social_reform = fourteen_hours
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = fourteen_hours
+                }
+            }
+            owner = {
+                social_reform = twelve_hours
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = twelve_hours
+                }
+            }
+            owner = {
+                social_reform = ten_hours
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    work_hours = ten_hours
+                }
+            }
+            owner = {
+                social_reform = eight_hours
+            }
+        }
+
+		random_owned = { #Nobility#
+            limit = {
+                owner = {
+                    safety_regulations = trinket_safety
+                }
+            }
+            owner = {
+                social_reform = no_safety
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    safety_regulations = low_safety
+                }
+            }
+            owner = {
+                social_reform = no_safety
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    safety_regulations = acceptable_safety
+                }
+            }
+            owner = {
+                social_reform = no_safety
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    safety_regulations = good_safety
+                }
+            }
+            owner = {
+                social_reform = trinket_safety
+            }
+        }		
+		
+		prestige = -15
+		plurality = -30
+	}
+}
