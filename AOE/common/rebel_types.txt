@@ -7290,6 +7290,7 @@ noble_rebels = {
 			}
 			factor = 1
 		}
+	}
 			
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -7330,6 +7331,7 @@ noble_rebels = {
 				militancy = 9
 			}
 		}
+	}
  
  	#This is checked for EACH province in the Area of Operations
 	movement_evaluation = {
@@ -7510,7 +7512,7 @@ noble_rebels = {
             owner = {
                 social_reform = trinket_safety
             }
-        }		
+        }	
 		
 		prestige = -15
 		plurality = -30
