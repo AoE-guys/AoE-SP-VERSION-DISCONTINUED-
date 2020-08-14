@@ -30,6 +30,7 @@ country_event = {
 		any_pop = { limit = { culture = dutch } literacy = 0.90 }
 		any_pop = { limit = { culture = flemish } literacy = 0.85 }
 		any_pop = { limit = { culture = wallonian } literacy = 0.46 }
+		any_pop = { limit = { culture = frisian } literacy = 0.75 }
 		
 		any_pop = { limit = { culture = swiss_french } literacy = 0.44 }
 		any_pop = { limit = { culture = swiss_german } literacy = 0.56 }
@@ -440,6 +441,7 @@ country_event = {
 		any_pop = { limit = { culture = dutch } literacy = 0.90 }
 		any_pop = { limit = { culture = flemish } literacy = 0.85 }
 		any_pop = { limit = { culture = wallonian } literacy = 0.46 }
+		any_pop = { limit = { culture = frisian } literacy = 0.75 }
 		
 		any_pop = { limit = { culture = swiss_french } literacy = 0.44 }
 		any_pop = { limit = { culture = swiss_german } literacy = 0.56 }
@@ -1231,5 +1233,6 @@ country_event = {
 #country_event = 999904
 #any_country { limit = { NOT = THIS } country_event = 9999855 }
 country_event = 999958
+any_pop = { limit = { AND = { type = serfs literacy = 0.21 } } pop_type = farmers }
 }
 }
