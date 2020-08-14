@@ -52,3 +52,35 @@ country_event = {
 		nationalvalue = nv_autocracy
 	}
 }
+
+country_event = {
+	id = 6691339
+	title = "Horde asks for aid"
+	desc = "Shall we cede all their legitimate land?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sure, they will aid against Russia"
+		prestige = 25
+		relation = {
+			who = GHR
+			value = 100
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Bruh"
+		badboy = 5
+		relation = {
+			who = GHR
+			value = -100
+		}
+		remove_accepted_culture = tatar
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

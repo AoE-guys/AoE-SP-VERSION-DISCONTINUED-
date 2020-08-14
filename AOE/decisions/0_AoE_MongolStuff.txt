@@ -34,6 +34,189 @@ political_decisions = {
 		}
 	}
 	
+	unite_golden_horde = {
+		picture = golden_horde
+		potential = {
+			OR = {
+				tag = AKH
+				tag = KMK
+				tag = CRI
+				tag = DON
+			}
+			NOT = {
+				has_country_flag = unified_horde
+			}
+		}
+		allow = {
+			AND = {
+				KMK = {
+					NOT = { 
+						OR = {
+						vassal_of = RUS
+						}
+					}
+				}
+				relation = {
+					who = DON
+					value = 100
+				}
+			}
+		}
+		effect = {
+			DON = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			AKH = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			CRI = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			KMK = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			change_tag = GHR
+			THIS = {
+				inherit = CRI
+				inherit = KMK
+				inherit = DON
+				inherit = AKH
+			}
+			RUS = {
+			1050 = {
+				add_core = GHR
+				secede_province = GHR
+			}
+			1039 = {
+				add_core = GHR
+				secede_province = GHR
+			}
+			1057 = {
+				add_core = GHR
+				secede_province = GHR
+			}
+			1036 = {
+				add_core = GHR
+				secede_province = GHR
+			}
+			}
+			add_accepted_culture = oirat
+			add_accepted_culture = tatar
+			add_accepted_culture = cossack
+			set_country_flag = unified_horde
+			prestige = 50
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	horde_nogai_conquest = {
+		picture = golden_horde
+		potential = {
+			tag = GHR
+			NOT = { has_country_flag = blue_horde_taken }
+		}
+		allow = {
+			GHR = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			KAZ = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			badboy = 10
+			add_accepted_culture = kazakh
+			set_country_flag = blue_horde_taken
+		}
+	}
+	
+	
+	horde_hetmanate_conquest = {
+		picture = golden_horde
+		potential = {
+			tag = GHR
+			NOT = { has_country_flag = hetmanate_taken }
+		}
+		allow = {
+			GHR = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			HET = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			badboy = 10
+			set_country_flag = hetmanate_taken
+		}
+	}
+	
+	horde_south_conquest = {
+		picture = golden_horde
+		potential = {
+			tag = GHR
+			NOT = { has_country_flag = caucasia_taken }
+		}
+		allow = {
+			GHR = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			CIR = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			DAG = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			badboy = 10
+			set_country_flag = caucasia_taken
+		}
+	}
+	
+	horde_request_turk_help = {
+		picture = crimea
+		potential = {
+			tag = GHR
+			NOT = { has_country_flag = asked_turkey }
+		}
+		allow = {
+			GHR = {
+				exists = yes
+			}
+		}
+		effect = {
+			TUR = {
+				country_event = 6691339
+			}
+		}
+	}
+	
+	
 	mongol_manchukuo = {
 		picture = outer_manchuria_map
 		potential = {
