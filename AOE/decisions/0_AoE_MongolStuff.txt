@@ -159,10 +159,16 @@ political_decisions = {
 			}
 		}
 		effect = {
+			1016 = {
+				remove_core = HET
+			}
 			HET = {
 				all_core = {
 					add_core = GHR
 				}
+			}
+			RUS_959 = {
+				add_core = THIS
 			}
 			badboy = 10
 			set_country_flag = hetmanate_taken
@@ -195,6 +201,68 @@ political_decisions = {
 			}
 			badboy = 10
 			set_country_flag = caucasia_taken
+		}
+	}
+	
+	horde_free_kazan = {
+		picture = golden_horde
+		potential = {
+			tag = GHR
+			NOT = { has_country_flag = kazan_taken }
+			AND = {
+				has_country_flag = caucasia_taken
+				has_country_flag = hetmanate_taken
+				has_country_flag = blue_horde_taken
+			}
+		}
+		allow = {
+			GHR = {
+				is_greater_power = yes
+			}
+		}
+		effect = {
+			RUS_1037 = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			RUS_1060 = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			RUS_1020 = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			RUS_1064 = {
+				all_core = {
+					add_core = GHR
+				}
+			}
+			badboy = 20
+			set_country_flag = kazan_taken
+		}
+	}
+	
+	horde_recruit_germs = {
+		picture = germanize_crimea
+		potential = {
+			tag = GHR
+			NOT = { has_country_flag = germs_recruited }
+			has_country_flag = kazan_taken
+		}
+		allow = {
+			GHR = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			add_accepted_culture = volga_german
+			set_country_flag = germs_recruited
 		}
 	}
 	
