@@ -619,9 +619,12 @@ political_decisions = {
 						is_greater_power = yes
 					}
 					is_culture_group = scandinavian
-					in_sphere = THIS
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 				}
-				country_event = 11101
+				annex_to = THIS
 			}
 		}
 		ai_will_do = {
