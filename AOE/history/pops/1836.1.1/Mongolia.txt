@@ -291,37 +291,43 @@
 #Khatgal (152000/38000 POPS)   
 2608 = {
 	aristocrats = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 600
 	}
 
 	clergymen = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 300
 	}
 
 	artisans = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 1200
 	}
 
 	soldiers = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 300
 	}
 
 	serfs = {
+		culture = oirat
+		religion = tengri
+		size = 24000
+	}
+	
+	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 26600
+		size = 2600
 	}
 
 	labourers = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 1400
 	}
@@ -381,7 +387,13 @@
 	clergymen = {
 		culture = khalkha
 		religion = gelugpa
-		size = 140
+		size = 70
+	}
+	
+	clergymen = {
+		culture = oirat
+		religion = gelugpa
+		size = 70
 	}
 
 	artisans = {
@@ -399,19 +411,25 @@
 	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 9464
+		size = 3464
 	}
 	
 	serfs = {
 		culture = oirat
 		religion = gelugpa
-		size = 3000
+		size = 9000
 	}
 
 	labourers = {
 		culture = khalkha
 		religion = gelugpa
-		size = 656
+		size = 356
+	}
+	
+	labourers = {
+		culture = oirat
+		religion = gelugpa
+		size = 300
 	}
 
 	aristocrats = {
