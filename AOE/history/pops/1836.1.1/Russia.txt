@@ -4363,7 +4363,7 @@
 	serfs = {
 		culture = russian
 		religion = orthodox
-		size = 14426
+		size = 10426
 	}
 
 	labourers = {
@@ -4405,13 +4405,13 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 975
+		size = 2975
 	}
 
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 7015
+		size = 9015
 	}
 
 	labourers = {
@@ -8153,9 +8153,9 @@
 	}
 	
 	soldiers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
-		size = 12
+		size = 120
 	}
 
 	soldiers = {
@@ -9322,19 +9322,19 @@
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = burat
 		religion = gelugpa
 		size = 188
 	}
 
 	artisans = {
-		culture = mongol
+		culture = burat
 		religion = gelugpa
 		size = 425
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = burat
 		religion = gelugpa
 		size = 488
 	}
@@ -9342,11 +9342,17 @@
 	serfs = {
 		culture = khalkha
 		religion = gelugpa
-		size = 12350
+		size = 4350
+	}
+	
+	serfs = {
+		culture = buryat
+		religion = gelugpa
+		size = 8000
 	}
 
 	labourers = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 1650
 	}
@@ -9354,37 +9360,37 @@
 #Zhilinda (1000/250 POPS) => Barguzin
 2671 = {
 	aristocrats = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 18
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 80
 	}
 
 	artisans = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 42
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 80
 	}
 
 	serfs = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 1188
 	}
 
 	labourers = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 620
 	}	
@@ -10889,13 +10895,13 @@
 	}
 	
 	aristocrats = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 162
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 188
 	}
@@ -10907,13 +10913,13 @@
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 580
 	}
 
 	serfs = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 4038
 	}
@@ -10952,25 +10958,25 @@
 	}
 
 	artisans = {
-		culture = mongol
+		culture = buryat
 		religion = tengri
 		size = 1025
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = buryat
 		religion = tengri
 		size = 750
 	}
 
 	serfs = {
-		culture = mongol
+		culture = buryat
 		religion = tengri
 		size = 1380
 	}
 
 	labourers = {
-		culture = mongol
+		culture = buryat
 		religion = tengri
 		size = 1220
 	}
