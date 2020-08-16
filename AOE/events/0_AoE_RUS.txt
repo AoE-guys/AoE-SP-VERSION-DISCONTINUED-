@@ -1229,7 +1229,7 @@ province_event = {
 					}
 				}
 				militancy = 9
-				reduce_pop = 0.5
+				reduce_pop = 0.8
 			}
 			any_pop = {
 				limit = {
@@ -1243,7 +1243,7 @@ province_event = {
 				duration = 365
 		}
 		ai_chance = {
-			factor = 1
+			factor = 5
 		}
 	}
 	option = {
