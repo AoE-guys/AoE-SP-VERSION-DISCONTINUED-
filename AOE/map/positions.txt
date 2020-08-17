@@ -6142,17 +6142,22 @@
 } # Shreveport
 
 142 = {
-    unit = {
-        x = 1367.000000
-        y = 1486.000000
-    }
-
     text_position = {
         x = 1367.000000
         y = 1484.599976
     }
 
     text_scale = 3.599999
+    unit = {
+        x = 1367.000000
+        y = 1486.000000
+    }
+
+    factory = {
+        x = 1370.000000
+        y = 1495.000000
+    }
+
     building_construction = {
         x = 1359.400024
         y = 1495.000000
@@ -6163,17 +6168,21 @@
         y = 1481.000000
     }
 
-    factory = {
-        x = 1370.000000
-        y = 1495.000000
-    }
-
     building_position = {
         fort = {
             x = 1368.000000
             y = 1474.000000
         }
 
+        naval_base = {
+            x = 1377.527273
+            y = 1478.581818
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.469186
     }
 
 } # Little Rock
@@ -6212,6 +6221,15 @@
             y = 1550.860000
         }
 
+        naval_base = {
+            x = 1383.733333
+            y = 1522.769697
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.229222
     }
 
 } # Hot Springs
@@ -6333,6 +6351,15 @@
             y = 1608.000000
         }
 
+        naval_base = {
+            x = 1397.768182
+            y = 1609.577273
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.025957
     }
 
 } # Joplin
@@ -6412,6 +6439,15 @@
             y = 1577.000000
         }
 
+        naval_base = {
+            x = 1410.627273
+            y = 1568.627273
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.949447
     }
 
 } # Jefferson City
@@ -7209,6 +7245,15 @@
             y = 1605.000000
         }
 
+        naval_base = {
+            x = 1406.528030
+            y = 1591.296212
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.455729
     }
 
 } # Carbondale
@@ -7252,6 +7297,15 @@
             y = 1592.000000
         }
 
+        naval_base = {
+            x = 1413.779545
+            y = 1578.734091
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.767732
     }
 
 } # Indianapolis
@@ -7988,6 +8042,15 @@
             y = 1575.220000
         }
 
+        naval_base = {
+            x = 1414.700000
+            y = 1569.715909
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.697968
     }
 
 } # Nashville
@@ -8067,6 +8130,15 @@
             y = 1542.000000
         }
 
+        naval_base = {
+            x = 1407.738636
+            y = 1556.613636
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.704918
     }
 
 } # Knoxville
@@ -8231,6 +8303,15 @@
             y = 1514.170000
         }
 
+        naval_base = {
+            x = 1383.707576
+            y = 1503.387121
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.423311
     }
 
 } # Biloxi
@@ -126059,20 +126140,20 @@
     }
 
     military_construction = {
-        x = 1383.523333
-        y = 1482.153333
+        x = 1384.425758
+        y = 1478.575758
     }
 
     building_position = {
         naval_base = {
-            x = 2776.716667
-            y = 1623.427083
+            x = 1379.493939
+            y = 1474.677273
         }
 
     }
 
     building_rotation = {
-        naval_base = 2.462179
+        naval_base = 5.547392
     }
 
 } # Méridja
@@ -126575,40 +126656,36 @@
 
 }
 
-###Navigable River Provinces###
+# Navigable River Provinces###
 
-#Lower Mississippi
+# Lower Mississippi
 3391 = {
+    text_position = {
+        x = 1378
+        y = 1476
+    }
 
-	text_position = {
-		x = 1378
-		y = 1476
-	}
-	
-	text_scale = 3.3
-	text_rotation = 0.90
-	
-	unit = {
-		x = 1378
-		y = 1476
-	}
+    text_scale = 3.3
+    text_rotation = 0.90
+    unit = {
+        x = 1378
+        y = 1476
+    }
+
 }
 
-#Upper Mississippi
+# Upper Mississippi
 3392 = {
-	
-	text_position = {
-		x = 1406
-		y = 1558
-	}
-	
-	text_scale = 3.3
-	text_rotation = 0.93
-	
-	unit = {
-		x = 1410
-		y = 1581
-	}
-}
+    text_position = {
+        x = 1406
+        y = 1558
+    }
 
-###
+    text_scale = 3.3
+    text_rotation = 0.93
+    unit = {
+        x = 1410
+        y = 1581
+    }
+
+}
