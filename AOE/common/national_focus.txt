@@ -39,7 +39,7 @@ rail_focus = { #Now called Colonial Policy
         local_factory_output = 0.10			
 		icon = 31
 		limit = { 
-			owner = { ai = no }  
+			  
 			NOT = { owner = { economic_policy = planned_economy } }
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { has_province_modifier = irish_oppression }
@@ -139,7 +139,7 @@ immigration_focus = {
 		immigrant_push = 0.15
 		icon = 9
 		limit = {
-			owner = { ai = no }
+			
 			owner = { NOT = { OR = { government = democracy government = hms_government } } }
 			owner = {
 				OR = {
@@ -183,7 +183,7 @@ promotion_focus = {
 		outliner_show_as_percent = yes
 		
 		limit = {
-		owner = { ai = no } 
+		 
 			owner = { NOT = { government = proletarian_dictatorship } ai = no } 
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { state_scope = { aristocrats = 0.015 } }
@@ -195,7 +195,7 @@ promotion_focus = {
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = { 
-		    owner = { ai = no } NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } 
+		     NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } 
 		    NOT = { state_scope = { artisans = 0.10 } }
 		}
 	}
@@ -205,13 +205,13 @@ promotion_focus = {
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no } 
+		 
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { has_province_modifier = irish_oppression }
 			NOT = { state_scope = { bureaucrats = 0.030 } }
 			state_scope = { any_owned_province = { any_pop = { OR = { is_accepted_culture = yes is_primary_culture = yes } } } }
 			OR = {
-				owner = { ai = no }
+				
 				owner = { literacy = 0.25 }
 				is_colonial = no
 				is_overseas = no
@@ -224,7 +224,7 @@ promotion_focus = {
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = { 
-		owner = { ai = no } 
+		 
 			owner = { NOT = { government = proletarian_dictatorship } civilized = yes } 
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { has_province_modifier = irish_oppression }
@@ -238,13 +238,13 @@ promotion_focus = {
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no } 
+		 
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } 
 			NOT = { has_province_modifier = irish_oppression }
 			NOT = { state_scope = { clergymen = 0.040 } }
 			OR = {
 				is_colonial = no
-				owner = { ai = no }
+				
 			}
 		}
 	}
@@ -254,7 +254,7 @@ promotion_focus = {
 		icon = 16
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no } 
+		 
 			civilized = yes
 			NOT = { state_scope = { clerks = 0.030 } }
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
@@ -263,7 +263,7 @@ promotion_focus = {
 			NOT = { state_scope = { is_colonial = yes } }
 			OR = {
 				NOT = { unemployment_by_type = { type = clerks value = 0.5 } }
-				owner = { ai = no }
+				
 			}
 		}
 	}
@@ -273,7 +273,7 @@ promotion_focus = {
 		icon = 17
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no } 
+		 
 			civilized = yes
 			NOT = { state_scope = { craftsmen = 0.15 } }
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
@@ -288,8 +288,8 @@ promotion_focus = {
 		icon = 18
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no } 
-			#owner = { ai = no }
+		 
+			#
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			work_available = { worker = farmers }
 		}
@@ -301,8 +301,8 @@ promotion_focus = {
 		outliner_show_as_percent = yes
 		limit = {
 		NOT = { state_scope = { labourers = 0.05 } }
-		owner = { ai = no } 
-			#owner = { ai = no }
+		 
+			#
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } 
 			work_available = { worker = labourers }
 		}
@@ -313,9 +313,9 @@ promotion_focus = {
 		icon = 20
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no }
+		
         NOT = { state_scope = { officers = 0.005 } }		
-			#owner = { ai = no } 
+			# 
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { has_province_modifier = irish_oppression }
 			NOT = { state_scope = { officers = 0.002 } }
@@ -331,7 +331,7 @@ promotion_focus = {
 		icon = 21
 		outliner_show_as_percent = yes
 		limit = {
-		owner = { ai = no } 
+		 
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			NOT = { state_scope = { soldiers = 0.05 } }
 			OR = {
@@ -340,7 +340,7 @@ promotion_focus = {
 			}
 			#OR = {
 			#	NOT = { state_scope = { soldiers = 0.048 } }
-			#	owner = { ai = no }
+			#	
 			#}
 		}
 	}

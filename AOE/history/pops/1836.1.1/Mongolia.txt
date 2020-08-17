@@ -139,25 +139,25 @@
 #Bayan Tumen (176000/44000 POPS)   
 1467 = {
 	aristocrats = {
-		culture = khalkha
+		culture = buryat
 		religion = gelugpa
 		size = 660
 	}
 
 	clergymen = {
-		culture = khalkha
+		culture = buryat
 		religion = gelugpa
 		size = 340
 	}
 
 	artisans = {
-		culture = khalkha
+		culture = buryat
 		religion = gelugpa
 		size = 1640
 	}
 
 	soldiers = {
-		culture = khalkha
+		culture = buryat
 		religion = gelugpa
 		size = 340
 	}
@@ -165,11 +165,17 @@
 	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 28329
+		size = 8329
+	}
+	
+	serfs = {
+		culture = buryat
+		religion = tengri
+		size = 20000
 	}
 
 	labourers = {
-		culture = khalkha
+		culture = buryat
 		religion = gelugpa
 		size = 1491
 	}
@@ -291,37 +297,43 @@
 #Khatgal (152000/38000 POPS)   
 2608 = {
 	aristocrats = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 600
 	}
 
 	clergymen = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 300
 	}
 
 	artisans = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 1200
 	}
 
 	soldiers = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 300
 	}
 
 	serfs = {
+		culture = oirat
+		religion = tengri
+		size = 24000
+	}
+	
+	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 26600
+		size = 2600
 	}
 
 	labourers = {
-		culture = khalkha
+		culture = oirat
 		religion = gelugpa
 		size = 1400
 	}
@@ -355,13 +367,13 @@
 	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 10000
+		size = 7500
 	}
 	
 	serfs = {
 		culture = oirat
 		religion = tengri
-		size = 3015
+		size = 5515
 	}
 
 	labourers = {
@@ -381,7 +393,13 @@
 	clergymen = {
 		culture = khalkha
 		religion = gelugpa
-		size = 140
+		size = 70
+	}
+	
+	clergymen = {
+		culture = oirat
+		religion = gelugpa
+		size = 70
 	}
 
 	artisans = {
@@ -399,19 +417,25 @@
 	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 9464
+		size = 3464
 	}
 	
 	serfs = {
 		culture = oirat
 		religion = gelugpa
-		size = 3000
+		size = 9000
 	}
 
 	labourers = {
 		culture = khalkha
 		religion = gelugpa
-		size = 656
+		size = 356
+	}
+	
+	labourers = {
+		culture = oirat
+		religion = gelugpa
+		size = 300
 	}
 
 	aristocrats = {
@@ -556,6 +580,12 @@
 		religion = tengri
 		size = 4548
 	}
+	
+	serfs = {
+		culture = buryat
+		religion = tengri
+		size = 1000
+	}
 
 	labourers = {
 		culture = tatar
@@ -569,4 +599,60 @@
 		size = 800
 	}
 
+}
+
+3390 = {
+	aristocrats = {
+		culture = khalkha
+		religion = gelugpa
+		size = 520
+	}
+
+	clergymen = {
+		culture = khalkha
+		religion = gelugpa
+		size = 200
+	}
+	
+	clergymen = {
+		culture = mongol
+		religion = gelugpa
+		size = 80
+	}
+
+	artisans = {
+		culture = khalkha
+		religion = gelugpa
+		size = 1400
+	}
+
+	soldiers = {
+		culture = khalkha
+		religion = gelugpa
+		size = 280
+	}
+
+	serfs = {
+		culture = khalkha
+		religion = gelugpa
+		size = 11244
+	}
+	
+	serfs = {
+		culture = mongol
+		religion = gelugpa
+		size = 8000
+	}
+
+	labourers = {
+		culture = khalkha
+		religion = gelugpa
+		size = 1000
+	}
+	
+	labourers = {
+		culture = mongol
+		religion = gelugpa
+		size = 276
+	}
 }

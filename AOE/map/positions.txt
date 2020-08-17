@@ -1323,6 +1323,15 @@
             y = 1481.880000
         }
 
+        naval_base = {
+            x = 3758.883333
+            y = 1510.331818
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.533233
     }
 
 } # Regina
@@ -6133,17 +6142,22 @@
 } # Shreveport
 
 142 = {
-    unit = {
-        x = 1367.000000
-        y = 1486.000000
-    }
-
     text_position = {
         x = 1367.000000
         y = 1484.599976
     }
 
     text_scale = 3.599999
+    unit = {
+        x = 1367.000000
+        y = 1486.000000
+    }
+
+    factory = {
+        x = 1370.000000
+        y = 1495.000000
+    }
+
     building_construction = {
         x = 1359.400024
         y = 1495.000000
@@ -6154,17 +6168,21 @@
         y = 1481.000000
     }
 
-    factory = {
-        x = 1370.000000
-        y = 1495.000000
-    }
-
     building_position = {
         fort = {
             x = 1368.000000
             y = 1474.000000
         }
 
+        naval_base = {
+            x = 1377.527273
+            y = 1478.581818
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.469186
     }
 
 } # Little Rock
@@ -6203,6 +6221,15 @@
             y = 1550.860000
         }
 
+        naval_base = {
+            x = 1383.733333
+            y = 1522.769697
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.229222
     }
 
 } # Hot Springs
@@ -6324,6 +6351,15 @@
             y = 1608.000000
         }
 
+        naval_base = {
+            x = 1397.768182
+            y = 1609.577273
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.025957
     }
 
 } # Joplin
@@ -6403,6 +6439,15 @@
             y = 1577.000000
         }
 
+        naval_base = {
+            x = 1410.627273
+            y = 1568.627273
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.949447
     }
 
 } # Jefferson City
@@ -7200,6 +7245,15 @@
             y = 1605.000000
         }
 
+        naval_base = {
+            x = 1406.528030
+            y = 1591.296212
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.455729
     }
 
 } # Carbondale
@@ -7243,6 +7297,15 @@
             y = 1592.000000
         }
 
+        naval_base = {
+            x = 1413.779545
+            y = 1578.734091
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.767732
     }
 
 } # Indianapolis
@@ -7979,6 +8042,15 @@
             y = 1575.220000
         }
 
+        naval_base = {
+            x = 1414.700000
+            y = 1569.715909
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.697968
     }
 
 } # Nashville
@@ -8058,6 +8130,15 @@
             y = 1542.000000
         }
 
+        naval_base = {
+            x = 1407.738636
+            y = 1556.613636
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.704918
     }
 
 } # Knoxville
@@ -8222,6 +8303,15 @@
             y = 1514.170000
         }
 
+        naval_base = {
+            x = 1383.707576
+            y = 1503.387121
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.423311
     }
 
 } # Biloxi
@@ -14861,7 +14951,7 @@
         naval_base = 2.792527
     }
 
-} # Växjö
+} # Växj?
 
 333 = {
     unit = {
@@ -14898,7 +14988,7 @@
 
     }
 
-} # Malmö
+} # Malm?
 
 334 = {
     unit = {
@@ -17870,14 +17960,14 @@
         }
 
         naval_base = {
-            x = 2837.450000
-            y = 1653.150000
+            x = 2837.522727
+            y = 1651.304545
         }
 
     }
 
     building_rotation = {
-        naval_base = 1.812152
+        naval_base = 5.054739
     }
 
 } # Amiens
@@ -23082,14 +23172,14 @@
         }
 
         naval_base = {
-            x = 2957.650000
-            y = 1702.650000
+            x = 2941.245455
+            y = 1710.590909
         }
 
     }
 
     building_rotation = {
-        naval_base = 0.675522
+        naval_base = 5.092895
     }
 
 } # Lauenburg
@@ -23214,14 +23304,14 @@
         }
 
         naval_base = {
-            x = 2942.018333
-            y = 1710.475
+            x = 2946.296667
+            y = 1708.471667
         }
 
     }
 
     building_rotation = {
-        naval_base = 1.853197
+        naval_base = 4.792618
     }
 
 } # Luneburg
@@ -23264,6 +23354,15 @@
             y = 1687.658333
         }
 
+        naval_base = {
+            x = 2957.875758
+            y = 1702.431818
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.202936
     }
 
 } # Heligoland
@@ -43543,6 +43642,11 @@
     }
 
     text_scale = 3.299999
+    factory = {
+        x = 3558.000000
+        y = 1569.000000
+    }
+
     building_construction = {
         x = 3544.000000
         y = 1575.000000
@@ -43553,17 +43657,21 @@
         y = 1550.000000
     }
 
-    factory = {
-        x = 3558.000000
-        y = 1569.000000
-    }
-
     building_position = {
         fort = {
             x = 3568.000000
             y = 1553.000000
         }
 
+        naval_base = {
+            x = 3563.813636
+            y = 1545.531818
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.942977
     }
 
 } # Saratov
@@ -44121,17 +44229,22 @@
 } # Derbent
 
 1052 = {
-    unit = {
-        x = 3550.000000
-        y = 1478.000000
-    }
-
     text_position = {
         x = 3549.899902
         y = 1468.000000
     }
 
     text_scale = 3.999998
+    unit = {
+        x = 3550.000000
+        y = 1478.000000
+    }
+
+    factory = {
+        x = 3543.000000
+        y = 1479.000000
+    }
+
     building_construction = {
         x = 3558.000000
         y = 1478.000000
@@ -44142,17 +44255,21 @@
         y = 1465.000000
     }
 
-    factory = {
-        x = 3543.000000
-        y = 1479.000000
-    }
-
     building_position = {
         fort = {
             x = 3562.000000
             y = 1472.000000
         }
 
+        naval_base = {
+            x = 3562.140909
+            y = 1479.594697
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.898630
     }
 
 } # Gunib
@@ -44165,6 +44282,11 @@
 
     text_rotation = 0.610865
     text_scale = 3.699999
+    factory = {
+        x = 3526.000000
+        y = 1483.000000
+    }
+
     building_construction = {
         x = 3531.000000
         y = 1479.000000
@@ -44175,17 +44297,21 @@
         y = 1499.000000
     }
 
-    factory = {
-        x = 3526.000000
-        y = 1483.000000
-    }
-
     building_position = {
         fort = {
             x = 3551.000000
             y = 1489.000000
         }
 
+        naval_base = {
+            x = 3552.295455
+            y = 1492.993182
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.271510
     }
 
 } # Vladikavkaz
@@ -44307,17 +44433,22 @@
 } # Kizylyar
 
 1057 = {
-    unit = {
-        x = 3533.000000
-        y = 1519.000000
-    }
-
     text_position = {
         x = 3540.000000
         y = 1510.000000
     }
 
     text_scale = 2.700000
+    unit = {
+        x = 3533.000000
+        y = 1519.000000
+    }
+
+    factory = {
+        x = 3523.000000
+        y = 1523.000000
+    }
+
     building_construction = {
         x = 3530.000000
         y = 1522.000000
@@ -44328,17 +44459,21 @@
         y = 1507.000000
     }
 
-    factory = {
-        x = 3523.000000
-        y = 1523.000000
-    }
-
     building_position = {
         fort = {
             x = 3547.000000
             y = 1509.000000
         }
 
+        naval_base = {
+            x = 3540.590909
+            y = 1520.818182
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.246731
     }
 
 } # Ekaterinburg
@@ -46109,22 +46244,36 @@
             y = 1443.300049
         }
 
+        naval_base = {
+            x = 3591.063636
+            y = 1441.372727
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.109386
     }
 
 } # Siyazen
 
 1103 = {
-    unit = {
-        x = 3566.000000
-        y = 1458.000000
-    }
-
     text_position = {
         x = 3564.699951
         y = 1457.099976
     }
 
     text_scale = 2.799999
+    unit = {
+        x = 3566.000000
+        y = 1458.000000
+    }
+
+    factory = {
+        x = 3564.000000
+        y = 1465.000000
+    }
+
     building_construction = {
         x = 3560.000000
         y = 1461.000000
@@ -46135,17 +46284,21 @@
         y = 1455.699951
     }
 
-    factory = {
-        x = 3564.000000
-        y = 1465.000000
-    }
-
     building_position = {
         fort = {
             x = 3573.000000
             y = 1452.099976
         }
 
+        naval_base = {
+            x = 3575.398485
+            y = 1454.860606
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.760099
     }
 
 } # Sheki
@@ -46305,6 +46458,15 @@
             y = 1409.000000
         }
 
+        naval_base = {
+            x = 3570.559091
+            y = 1419.631061
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.103530
     }
 
 } # Tabriz
@@ -46507,20 +46669,15 @@
 } # Rasht
 
 1113 = {
-    unit = {
-        x = 3581.000000
-        y = 1383.000000
-    }
-
     text_position = {
         x = 3582.500000
         y = 1377.400024
     }
 
     text_scale = 3.199999
-    building_construction = {
-        x = 3590.000000
-        y = 1380.000000
+    unit = {
+        x = 3581.000000
+        y = 1383.000000
     }
 
     factory = {
@@ -46528,38 +46685,62 @@
         y = 1386.000000
     }
 
+    building_construction = {
+        x = 3590.000000
+        y = 1380.000000
+    }
+
+    building_position = {
+        naval_base = {
+            x = 3572.234848
+            y = 1392.360606
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.025957
+    }
+
 } # Noshehr
 
 1114 = {
     text_rotation = 5.934119
     text_scale = 2.899999
-    building_construction = {
-        x = 3619.000000
-        y = 1366.000000
-    }
-
     factory = {
         x = 3598.800049
         y = 1372.900024
     }
 
+    building_construction = {
+        x = 3619.000000
+        y = 1366.000000
+    }
+
+    building_position = {
+        naval_base = {
+            x = 3616.165909
+            y = 1372.438636
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.601732
+    }
+
 } # Sari
 
 1115 = {
-    unit = {
-        x = 3636.000000
-        y = 1367.000000
-    }
-
     text_position = {
         x = 3636.000000
         y = 1361.800049
     }
 
     text_scale = 3.799999
-    building_construction = {
-        x = 3628.399902
-        y = 1369.099976
+    unit = {
+        x = 3636.000000
+        y = 1367.000000
     }
 
     factory = {
@@ -46567,20 +46748,42 @@
         y = 1371.000000
     }
 
+    building_construction = {
+        x = 3628.399902
+        y = 1369.099976
+    }
+
+    building_position = {
+        naval_base = {
+            x = 3633.993182
+            y = 1376.436364
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.029370
+    }
+
 } # Gorgan
 
 1116 = {
-    unit = {
-        x = 3667.000000
-        y = 1387.000000
-    }
-
     text_position = {
         x = 3663.000000
         y = 1379.199951
     }
 
     text_scale = 3.399999
+    unit = {
+        x = 3667.000000
+        y = 1387.000000
+    }
+
+    factory = {
+        x = 3675.000000
+        y = 1395.000000
+    }
+
     building_construction = {
         x = 3674.000000
         y = 1389.000000
@@ -46591,17 +46794,21 @@
         y = 1376.000000
     }
 
-    factory = {
-        x = 3675.000000
-        y = 1395.000000
-    }
-
     building_position = {
         fort = {
             x = 3651.000000
             y = 1382.000000
         }
 
+        naval_base = {
+            x = 3648.575758
+            y = 1380.375758
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.396334
     }
 
 } # Kermanshah
@@ -49288,22 +49495,36 @@
             y = 1572.000000
         }
 
+        naval_base = {
+            x = 3584.331061
+            y = 1559.429545
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.843613
     }
 
 } # Aqtobe
 
 1183 = {
-    unit = {
-        x = 3706.000000
-        y = 1627.000000
-    }
-
     text_position = {
         x = 3705.000000
         y = 1615.000000
     }
 
     text_scale = 6.799996
+    unit = {
+        x = 3706.000000
+        y = 1627.000000
+    }
+
+    factory = {
+        x = 3735.000000
+        y = 1632.000000
+    }
+
     building_construction = {
         x = 3674.000000
         y = 1620.000000
@@ -49314,30 +49535,21 @@
         y = 1605.000000
     }
 
-    factory = {
-        x = 3735.000000
-        y = 1632.000000
-    }
-
     building_position = {
         fort = {
             x = 3756.000000
             y = 1610.000000
         }
 
+        naval_base = {
+            x = 3638.727273
+            y = 1566.060606
+        }
+
     }
 
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 3728.000000
-            y = 1634.000000
-        }
-
+    building_rotation = {
+        naval_base = 0.963352
     }
 
 } # Kokshetau
@@ -49721,6 +49933,15 @@
             y = 1499.693333
         }
 
+        naval_base = {
+            x = 3739.600000
+            y = 1508.181818
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 2.966632
     }
 
 } # Kyzylorda
@@ -49805,6 +50026,15 @@
             y = 1495.000000
         }
 
+        naval_base = {
+            x = 3628.095455
+            y = 1523.486364
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 4.343055
     }
 
 } # Tashkent
@@ -50226,6 +50456,15 @@
             y = 1409.030000
         }
 
+        naval_base = {
+            x = 3644.812121
+            y = 1399.387879
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.095189
     }
 
 } # Kyzyl Arvat
@@ -50273,6 +50512,15 @@
             y = 1437.415000
         }
 
+        naval_base = {
+            x = 3659.153788
+            y = 1452.928788
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 5.697968
     }
 
 } # Merv
@@ -74335,14 +74583,14 @@
         }
 
         naval_base = {
-            x = 2919.386667
-            y = 1697.120000
+            x = 2918.640909
+            y = 1697.409091
         }
 
     }
 
     building_rotation = {
-        naval_base = 0.582455
+        naval_base = 2.724890
     }
 
 } # Ghadamis
@@ -95531,7 +95779,7 @@
 
     }
 
-} # Ibagué
+} # Ibagu?
 
 2248 = {
     text_position = {
@@ -112947,6 +113195,15 @@
             y = 1512.633333
         }
 
+        naval_base = {
+            x = 3715.381818
+            y = 1522.700000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.196537
     }
 
 } # Svetlogorsk
@@ -114694,6 +114951,15 @@
             y = 1589.466667
         }
 
+        naval_base = {
+            x = 3770.371212
+            y = 1563.172727
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 1.142928
     }
 
 } # Vänern
@@ -123471,7 +123737,7 @@
 
     }
 
-} # Corumbá
+} # Corumb?
 
 3298 = {
     text_position = {
@@ -125334,14 +125600,14 @@
         }
 
         naval_base = {
-            x = 3246.300000
-            y = 1476.050000
+            x = 3243.636364
+            y = 1474.590909
         }
 
     }
 
     building_rotation = {
-        naval_base = 0.369334
+        naval_base = 3.760099
     }
 
 } # Diego-Suarez
@@ -125874,20 +126140,20 @@
     }
 
     military_construction = {
-        x = 1383.523333
-        y = 1482.153333
+        x = 1384.425758
+        y = 1478.575758
     }
 
     building_position = {
         naval_base = {
-            x = 2776.716667
-            y = 1623.427083
+            x = 1379.493939
+            y = 1474.677273
         }
 
     }
 
     building_rotation = {
-        naval_base = 2.462179
+        naval_base = 5.547392
     }
 
 } # MÃ©ridja
@@ -126386,6 +126652,40 @@
 
     building_rotation = {
         naval_base = 4.500245
+    }
+
+}
+
+# Navigable River Provinces###
+
+# Lower Mississippi
+3391 = {
+    text_position = {
+        x = 1378
+        y = 1476
+    }
+
+    text_scale = 3.3
+    text_rotation = 0.90
+    unit = {
+        x = 1378
+        y = 1476
+    }
+
+}
+
+# Upper Mississippi
+3392 = {
+    text_position = {
+        x = 1406
+        y = 1558
+    }
+
+    text_scale = 3.3
+    text_rotation = 0.93
+    unit = {
+        x = 1410
+        y = 1581
     }
 
 }

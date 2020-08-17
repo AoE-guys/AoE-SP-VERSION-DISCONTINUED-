@@ -7277,13 +7277,13 @@
 	soldiers = {
 		culture = mongol
 		religion = gelugpa
-		size = 2378
+		size = 3378
 	}
 
 	serfs = {
 		culture = mongol
 		religion = gelugpa
-		size = 31156
+		size = 30156
 	}
 
 	labourers = {
@@ -7291,11 +7291,11 @@
 		religion = gelugpa
 		size = 1534
 	}	
-
+	
 	serfs = {
-		culture = mongol
+		culture = khalka
 		religion = gelugpa
-		size = 3600
+		size = 9900
 	}
 
 	clergymen = {
@@ -7313,7 +7313,7 @@
 	serfs = {
 		culture = beifaren
 		religion = taoist
-		size = 28600
+		size = 19600
 	}
 
 	labourers = {
@@ -7344,31 +7344,31 @@
 1533 = {
 
 	clergymen = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 117
 	}
 
 	artisans = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 2495
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
-		size = 2080
+		size = 3080
 	}
 
 	serfs = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
-		size = 33002
+		size = 37002
 	}
 
 	labourers = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 3632
 	}
@@ -7394,7 +7394,7 @@
 	serfs = {
 		culture = beifaren
 		religion = taoist
-		size = 24162
+		size = 19162
 	}
 
 	labourers = {
@@ -7469,7 +7469,13 @@
 	serfs = {
 		culture = mongol
 		religion = gelugpa
-		size = 33566
+		size = 29000
+	}
+	
+	serfs = {
+		culture = khorchin
+		religion = gelugpa
+		size = 11566
 	}
 
 	labourers = {
@@ -7481,7 +7487,7 @@
 	serfs = {
 		culture = beifaren
 		religion = taoist
-		size = 23940
+		size = 16940
 	}
 
 	labourers = {
@@ -7511,37 +7517,37 @@
 #Yeke Juu Chuulghan (456000/114000 POPS)
 1535 = {
 	aristocrats = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 1001
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 705
 	}
 
 	artisans = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 4016
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 2405
 	}
 
 	serfs = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 34858
 	}
 
 	labourers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 3835
 	}
@@ -9698,7 +9704,7 @@
 	}
 	
 	aristocrats = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 234
 	}
@@ -9746,25 +9752,25 @@
 	}
 	
 	soldiers = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 1080
 	}
 	
 	serfs = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 23940
 	}
 
 	labourers = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 1260
 	}
 	
 	slaves = {
-		culture = mongol
+		culture = khorchin
 		religion = gelugpa
 		size = 3600
 	}
@@ -9842,7 +9848,7 @@
 	serfs = {
 		culture = manchu
 		religion = taoist
-		size = 32131
+		size = 52131
 	}
 
 	labourers = {
@@ -9884,7 +9890,7 @@
 	serfs = {
 		culture = beifaren
 		religion = taoist
-		size = 26334
+		size = 6334
 	}
 
 	labourers = {
@@ -10016,7 +10022,7 @@
 	serfs = {
 		culture = manchu
 		religion = taoist
-		size = 29942
+		size = 39942
 	}
 
 	labourers = {
@@ -10052,7 +10058,7 @@
 	serfs = {
 		culture = beifaren
 		religion = taoist
-		size = 20520
+		size = 10520
 	}
 
 	labourers = {
@@ -10097,7 +10103,7 @@
 	serfs = {
 		culture = manchu
 		religion = taoist
-		size = 12244
+		size = 11244
 	}
 
 	labourers = {
@@ -10109,17 +10115,23 @@
 	serfs = {
 		culture = khalkha
 		religion = tengri
-		size = 10650
+		size = 1650
 	}
 	
 	serfs = {
-		culture = mongol
+		culture = buryat
 		religion = tengri
-		size = 15650
+		size = 21650
+	}
+	
+	serfs = {
+		culture = khorchin
+		religion = tengri
+		size = 4000
 	}
 
 	labourers = {
-		culture = mongol
+		culture = buryat
 		religion = gelugpa
 		size = 1350
 	}
@@ -10280,31 +10292,31 @@
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 63
 	}
 
 	artisans = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 324
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 63
 	}
 
 	serfs = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 5609
 	}
 
 	labourers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 295
 	}
@@ -10644,13 +10656,13 @@
 	}
 
 	aristocrats = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 333
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 171
 	}
@@ -10670,7 +10682,7 @@
 	serfs = {
 		culture = oirat
 		religion = gelugpa
-		size = 10235
+		size = 17235
 	}
 
 	labourers = {
@@ -10682,7 +10694,7 @@
 	serfs = {
 		culture = mongol
 		religion = gelugpa
-		size = 8880
+		size = 1880
 	}
 
 	serfs = {
@@ -15047,7 +15059,13 @@
 	serfs = {
 		culture = beifaren
 		religion = taoist
-		size = 479074
+		size = 471074
+	}
+	
+	serfs = {
+		culture = khorchin
+		religion = taoist
+		size = 8000
 	}
 
 	labourers = {
