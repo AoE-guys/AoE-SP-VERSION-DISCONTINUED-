@@ -448,13 +448,15 @@ political_decisions = {
 			capital = 749
 			add_accepted_culture = north_italian
 			add_accepted_culture = south_italian
-			any_country = {
-				limit = {
+			limit = {
 					is_culture_group = italian
 					in_sphere = THIS
-				}
-				country_event = 11101
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 			}
+			annex_to = THIS
 		}
 		ai_will_do = {
 			factor = 1

@@ -676,8 +676,12 @@ political_decisions = {
 				limit = {
 					is_culture_group = germanic
 					in_sphere = THIS
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 				}
-				country_event = { id=11101 days=0 }
+				annex_to = THIS
 			}
 		}
 		ai_will_do = {
