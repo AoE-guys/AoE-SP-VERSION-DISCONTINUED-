@@ -635,24 +635,24 @@
 	serfs = {
 		culture = khalkha
 		religion = gelugpa
-		size = 15244
+		size = 11244
 	}
 	
 	serfs = {
 		culture = mongol
 		religion = gelugpa
-		size = 4000
+		size = 8000
 	}
 
 	labourers = {
 		culture = khalkha
 		religion = gelugpa
-		size = 1276
+		size = 1000
 	}
 	
-	slaves = {
-		culture = uighur
-		religion = sunni
-		size = 600
+	labourers = {
+		culture = mongol
+		religion = gelugpa
+		size = 276
 	}
 }
