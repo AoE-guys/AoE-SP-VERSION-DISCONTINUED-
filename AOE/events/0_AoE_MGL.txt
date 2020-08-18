@@ -66,6 +66,14 @@ country_event = {
 			who = GHR
 			value = 100
 		}
+		TUR = {
+			any_core = {
+				limit = {
+					is_core = GHR
+				}
+				secede_province = GHR
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
