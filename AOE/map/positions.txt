@@ -116022,20 +116022,6 @@
 
 2779 = {
     text_scale = 5.499997
-} # Aral Sea
-
-2780 = {
-    unit = {
-        x = 3742.000000
-        y = 1525.000000
-    }
-
-    text_position = {
-        x = 3742.000000
-        y = 1525.000000
-    }
-
-    text_scale = 3.999998
 } # Gulf of Suez
 
 2781 = {
@@ -120088,79 +120074,8 @@
     }
 
     text_scale = 10.000002
-} # Lake Ontario
 
-3112 = {
-    unit = {
-        x = 1593.000000
-        y = 1695.000000
-    }
-
-    text_position = {
-        x = 1593.099976
-        y = 1695.500000
-    }
-
-    text_scale = 2.700000
-} # Lake Erie
-
-3113 = {
-    unit = {
-        x = 1535.000000
-        y = 1667.000000
-    }
-
-    text_position = {
-        x = 1535.900024
-        y = 1667.800049
-    }
-
-    text_rotation = 0.436332
-    text_scale = 2.899999
-} # Lake Huron
-
-3114 = {
-    unit = {
-        x = 1521.000000
-        y = 1716.000000
-    }
-
-    text_position = {
-        x = 1521.099976
-        y = 1716.599976
-    }
-
-    text_scale = 3.099999
-} # Lake Michigan
-
-3115 = {
-    unit = {
-        x = 1449.000000
-        y = 1702.000000
-    }
-
-    text_position = {
-        x = 1449.800049
-        y = 1702.599976
-    }
-
-    text_rotation = 1.308995
-    text_scale = 3.099999
-} # Lake Superior
-
-3116 = {
-    unit = {
-        x = 1442.000000
-        y = 1780.000000
-    }
-
-    text_position = {
-        x = 1442.800049
-        y = 1780.000000
-    }
-
-    text_scale = 3.099999
-} # Lake Nipigon
+# Lake Nipigon
 
 3117 = {
     text_position = {
@@ -126656,7 +126571,7 @@
 
 }
 
-# Navigable River Provinces###
+## Navigable River/Lake Provinces ##
 
 # Lower Mississippi
 3391 = {
@@ -126689,3 +126604,113 @@
     }
 
 }
+
+# St. Lawrence River
+3393 = {
+    text_position = {
+        x = 1669
+        y = 1743
+    }
+    text_scale = 15
+    text_rotation = 0.785398
+    unit = {
+        x = 1657
+        y = 1739
+    }
+
+}	
+
+# Lake Ontario
+
+3112 = {
+    unit = {
+        x = 1593.000000
+        y = 1695.000000
+    }
+
+    text_position = {
+        x = 1593.099976
+        y = 1695.500000
+    }
+
+    text_scale = 2.700000
+}
+
+# Aral Sea
+
+2780 = {
+    unit = {
+        x = 3742.000000
+        y = 1525.000000
+    }
+
+    text_position = {
+        x = 3742.000000
+        y = 1525.000000
+    }
+
+    text_scale = 3.999998
+} 
+
+} # Lake Erie
+
+3113 = {
+    unit = {
+        x = 1535.000000
+        y = 1667.000000
+    }
+
+    text_position = {
+        x = 1535.900024
+        y = 1667.800049
+    }
+
+    text_rotation = 0.436332
+    text_scale = 2.899999
+	
+} # Lake Huron
+
+3114 = {
+    unit = {
+        x = 1521.000000
+        y = 1716.000000
+    }
+
+    text_position = {
+        x = 1521.099976
+        y = 1716.599976
+    }
+
+    text_scale = 3.099999
+	
+} # Lake Michigan
+
+3115 = {
+    unit = {
+        x = 1449.000000
+        y = 1702.000000
+    }
+
+    text_position = {
+        x = 1449.800049
+        y = 1702.599976
+    }
+
+    text_rotation = 1.308995
+    text_scale = 3.099999
+	
+} # Lake Superior
+
+3116 = {
+    unit = {
+        x = 1442.000000
+        y = 1780.000000
+    }
+
+    text_position = {
+        x = 1442.800049
+        y = 1780.000000
+    }
+
+    text_scale = 3.099999
+} 
