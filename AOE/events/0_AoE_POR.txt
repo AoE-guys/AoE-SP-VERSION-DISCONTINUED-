@@ -391,3 +391,174 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 114310
+	title = "The Question of Zanzibar"
+	desc = "What should be our ultimatum?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "The entire coast shall be back ours!"
+		OMA = {
+			country_event = 114311
+		}
+		ai_chance = {
+			factor = 0.2
+		}
+	}
+	
+	option = {
+		name = "The south and the isle will do"
+		OMA = {
+			country_event = 114312
+		}
+		ai_chance = {
+			factor = 0.2
+		}
+	}
+	
+	option = {
+		name = "We only want Zanzibar itself"
+		OMA = {
+			country_event = 114313
+		}
+		ai_chance = {
+			factor = 0.6
+		}
+	}
+}
+
+country_event = {
+	id = 114311
+	title = "Portugal demands African coast"
+	desc = "Shall we cede any land?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well then"
+		prestige = 25
+		relation = {
+			who = POR
+			value = 100
+		}
+		OMA = {
+			any_core = {
+				limit = {
+					is_core = ZAN
+				}
+				secede_province = POR
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+	
+	option = {
+		name = "Ridiculous"
+		badboy = 5
+		relation = {
+			who = POR
+			value = -100
+		}
+		POR = {
+			add_core = 2048
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+}
+
+country_event = {
+	id = 114312
+	title = "Portugal demands Zanzibar coast"
+	desc = "Shall we cede any land?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well then"
+		prestige = 20
+		relation = {
+			who = POR
+			value = 75
+		}
+		OMA = {
+			any_core = {
+				limit = {
+					AND = {
+						is_core = ZAN
+						NOT = { 
+							OR = { 
+								province_id = 2030
+								province_id = 2029
+							}
+						}
+					}
+				}
+				secede_province = POR
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+	
+	option = {
+		name = "Or what?"
+		badboy = 5
+		relation = {
+			who = POR
+			value = -75
+		}
+		POR = {
+			add_core = 2048
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+}
+
+country_event = {
+	id = 114311
+	title = "Portugal demands Zanzibar isle"
+	desc = "Shall we cede it?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Fine"
+		prestige = 25
+		relation = {
+			who = POR
+			value = 50
+		}
+		OMA = {
+			any_core = {
+				limit = {
+					province_id = 2048
+				}
+				secede_province = POR
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+	
+	option = {
+		name = "Cede your mom"
+		badboy = 5
+		relation = {
+			who = POR
+			value = -50
+		}
+		POR = {
+			add_core = 2048
+		}
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+}
