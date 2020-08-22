@@ -2,6 +2,7 @@ owner = TIM
 controller = TIM
 add_core = TIM
 add_core = SEG
+add_core = MOR
 trade_goods = cattle  state_building = {  level = 1  building = cattle_factory  upgrade = yes  }
 life_rating = 35
 terrain = timbuktu
