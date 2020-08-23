@@ -6803,7 +6803,13 @@
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 8454
+		size = 4454
+	}
+	
+	serfs = {
+		culture = kazak
+		religion = sunni
+		size = 4000
 	}
 
 	labourers = {
@@ -11659,5 +11665,49 @@
 		culture = turkish
 		religion = sunni
 		size = 60
+	}
+}
+
+3395 = {
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 111
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 112
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 15
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 115
+	}
+
+	serfs = {
+		culture = tatar
+		religion = sunni
+		size = 20226
+	}
+	
+	serfs = {
+		culture = russian
+		religion = orthodox
+		size = 8226
+	}
+
+	labourers = {
+		culture = tatar
+		religion = asunni
+		size = 112
 	}
 }
