@@ -1,0 +1,58 @@
+country_event = {
+	title = "The polish substate"
+	id = 180900
+	desc = "EVTDESC180900"
+	picture = glos
+	is_triggered_only = yes
+	
+	option = {
+		name = "Damn Poles!"
+		CPL = {
+			all_core = {
+				limit = {
+					is_core = CPL
+				}
+				secede_province = CPL
+			}
+		}
+	}
+}
+country_event = {
+	title = "The Bialystok Area"
+	id = 180901
+	desc = "EVTDESC180901"
+	picture = treaty_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give it to our substate"
+		706 = {
+			owner = {
+				country_event = 180902
+			}
+		}
+	}
+	
+	option = {
+		name = "give it to a neighbouring power"
+		937 = {
+			owner = {
+				country_event = 180902
+			}
+		}
+	}
+}
+country_event = {
+	title = "The Bialystok Area"
+	id = 180902
+	desc = "EVTDESC180902"
+	picture = treaty_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = "How nice of them."
+		719 = {
+			secede_province = THIS
+		}
+	}
+}

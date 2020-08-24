@@ -62,17 +62,11 @@ political_decisions = {
 		}
 	
 		effect = {
-			capital = 994
 			994 = {
-					life_rating = 5
+				life_rating = 5
 				change_province_name = "St.Petersburg"
-				naval_base = 3
-				fort = 2
-				add_province_modifier = {
-					name = baby_boom
-					duration = 5475
-				}
 			}
+			country_event = 170024
 			prestige = 5
 		}
 		ai_will_do = {

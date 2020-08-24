@@ -220,6 +220,13 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
 				strata = middle
 				pop_majority_ideology = conservative
 			}
@@ -389,6 +396,13 @@ country_event = {
 			}
 			militancy = 5
 			consciousness = 6
+		}
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
 		}
 		any_pop = {
 			limit = {
@@ -573,6 +587,13 @@ country_event = {
 				type = aristocrats
 			}
 			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
 		}
 		any_pop = {
 			limit = {
@@ -843,10 +864,90 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
 				strata = middle
 			}
 			militancy = -1
 			consciousness = -2
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_4
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_4
+				add_country_modifier = {
+					name = rich_unrest_5
+					duration = 1875
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_3
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_3
+				add_country_modifier = {
+					name = rich_unrest_4
+					duration = 1875
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_2
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_2
+				add_country_modifier = {
+					name = rich_unrest_3
+					duration = 1875
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_1
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_1
+				add_country_modifier = {
+					name = rich_unrest_2
+					duration = 1875
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = rich_unrest_1 }
+					NOT = { has_country_modifier = rich_unrest_2 }
+					NOT = { has_country_modifier = rich_unrest_3 }
+					NOT = { has_country_modifier = rich_unrest_4 }
+					NOT = { has_country_modifier = rich_unrest_5 }
+				}
+			}
+			owner = {
+				add_country_modifier = {
+					name = rich_unrest_1
+					duration = 1875
+				}
+			}
 		}
 	}
 }
@@ -1139,6 +1240,13 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
 				strata = middle
 			}
 			militancy = -1
@@ -1167,7 +1275,7 @@ country_event = {
 		NOT = { safety_regulations = no_safety } # Very
 		NOT = { pensions = no_pensions } # Irrelevent
 		NOT = { has_country_modifier = noble_army }
-		NOT = { deep_defense_system = 1 }
+		NOT = { has_country_modifier = proffesional_general_staff }
 		#NOT = { upper_house_composition = party_appointed }
 	}
 	
@@ -1293,6 +1401,13 @@ country_event = {
 			}
 			militancy = 7
 			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
 		}
 		any_pop = {
 			limit = {
@@ -1453,11 +1568,330 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
 				strata = middle
 				pop_majority_ideology = conservative
 			}
 			militancy = 2
 			consciousness = 2
 		}
+	}
+}
+###########################################################################################
+###########################################################################################
+##																						 ##
+##																						 ##
+##									Other Privlages		       							 ##
+##																						 ##
+##																						 ##
+###########################################################################################
+###########################################################################################
+country_event = {
+	id = 170207
+	title = "Gentry Demand Rights"
+	desc = "EVTDESC170207"
+	picture = merchants
+
+	#fire_only_once = yes
+	#major = yes
+	
+	trigger = {
+		OR = {
+			government = trade_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+			government = democracy
+			government = elective_monarchy_oligarchy
+			government = merchant_republic
+		}
+		NOT = { work_hours = eight_hours } #Very
+		NOT = { upper_house_composition = party_appointed }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.25 }
+		}
+		modifier = {
+			factor = 0.5
+			has_country_modifier = middle_class_unrest_5
+		}
+		modifier = {
+			factor = 0.6
+			has_country_modifier = middle_class_unrest_4
+		}
+		modifier = {
+			factor = 0.7
+			has_country_modifier = middle_class_unrest_3
+		}
+		modifier = {
+			factor = 0.8
+			has_country_modifier = middle_class_unrest_2
+		}
+		modifier = {
+			factor = 0.9
+			has_country_modifier = middle_class_unrest_1
+		}
+		modifier = {
+			factor = 2
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { average_militancy = 6 }
+			NOT = { revolt_percentage = .10 }
+		}
+		modifier = {
+			factor = 0.7
+			work_hours = no_work_hour_limit
+			safety_regulations = no_safety
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 9
+		}
+		modifier = {
+			factor = 0.8
+			revolt_percentage = .20
+		}
+		modifier = {
+			factor = 0.7
+			revolt_percentage = .30
+		}
+		modifier = {
+			factor = 0.6
+			revolt_percentage = .40
+		}
+		modifier = {
+			factor = 0.9
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 0.8
+			literacy = 0.7
+		}
+		modifier = {
+			factor = 0.95
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { literacy = 0.5 }
+		}
+	}
+	
+	option = {
+		name = "Grant them what they wish for."
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = middle_class_unrest_5
+				}
+			}
+			owner = {
+				remove_country_modifier = middle_class_unrest_5
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = middle_class_unrest_4
+				}
+			}
+			owner = {
+				remove_country_modifier = middle_class_unrest_4
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = middle_class_unrest_3
+				}
+			}
+			owner = {
+				remove_country_modifier = middle_class_unrest_3
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = middle_class_unrest_2
+				}
+			}
+			owner = {
+				remove_country_modifier = middle_class_unrest_2
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = middle_class_unrest_1
+				}
+			}
+			owner = {
+				remove_country_modifier = middle_class_unrest_1
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					work_hours = ten_hours
+				}
+			}
+			owner = {
+				social_reform = eight_hours
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					work_hours = twelve_hours
+				}
+			}
+			owner = {
+				social_reform = ten_hours
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					work_hours = fourteen_hours
+				}
+			}
+			owner = {
+				social_reform = twelve_hours
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					work_hours = no_work_hour_limit
+				}
+			}
+			owner = {
+				social_reform = fourteen_hours
+			}
+		}
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				strata = middle
+				#pop_majority_ideology = conservative
+			}
+			militancy = -1
+			consciousness = -3
+		}
+	}
+	
+	option = {
+		name = "Over my dead body!"
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = -2
+			consciousness = -4
+		}
+		any_pop = {
+			limit = {
+				strata = middle
+				#pop_majority_ideology = conservative
+			}
+			militancy = 1
+			consciousness = 3
+		}
+	}
+}
+country_event = {
+	id = 170208
+	title = "Church Goods Protection"
+	desc = "EVTDESC170208"
+	picture = church_goods
+	
+	mean_time_to_happen = {
+		months = 25
+	}
+	
+	trigger = {
+		NOT = { wage_reform = good_minimum_wage }
+		has_country_modifier = church_goods_seized
+	}
+	
+	option = {
+		name = "We'll get our money elsewhere..."
+		remove_country_modifier = good_minimum_wage
+		prestige = -5
+	}
+}
+country_event = {
+	id = 170209
+	title = "Ruler's Trade Monopoly"
+	desc = "EVTDESC170209"
+	picture = merchants
+	
+	mean_time_to_happen = {
+		months = 25
+	}
+	
+	trigger = {
+		NOT = { wage_reform = good_minimum_wage }
+		has_country_modifier = trade_sectors_monopoly
+		OR = {
+			unemployment_subsidies = good_subsidies
+			unemployment_subsidies = acceptable_subsidies
+			unemployment_subsidies = low_subsidies
+		}
+	}
+	
+	option = {
+		name = "We'll get our money elsewhere..."
+		remove_country_modifier = trade_sectors_monopoly
+		prestige = -5
+	}
+}
+country_event = {
+	id = 170210
+	title = "Return to Monarchy?"
+	desc = "EVTDESC170210"
+	picture = throne	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = restablished_aristocratic_titles
+		government = democracy
+		OR = {
+			safety_regulations = no_safety
+			safety_regulations = low_safety
+		}
+	}
+	
+	option = {
+		name = "It's better if it everything stays as it is"
+	}
+	option = {
+		name = "Long live the King!"
+		government = absolute_monarchy
 	}
 }

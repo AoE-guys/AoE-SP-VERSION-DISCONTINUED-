@@ -96,6 +96,7 @@ make_puppet
 install_fascism_make_puppet
 install_communism_make_puppet
 install_democracy_make_puppet
+install_monarchy_make_puppet
 gunboat
 cut_down_to_size
 cut_down_to_size_boxer
@@ -1532,19 +1533,20 @@ unification_humiliate_cb = {
 }
 dismantle_hre = {
 	sprite_index = 26
-	constructing_cb = no
+	constructing_cb = yes
 	months = 12
+	construction_speed = 1.5
 	crisis = no
 
-	badboy_factor = 0
-	prestige_factor = 2
-	peace_cost_factor = 85
+	badboy_factor = 2
+	prestige_factor = 1
+	peace_cost_factor = 50
 	penalty_factor = 1
-	
+
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
-	truce_months = 60
+	truce_months = 48
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -1560,11 +1562,9 @@ dismantle_hre = {
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 			NOT = { tag = AUS }
-			political_thought_7 = 1
-			
 		}
 		year = 1790
-		tag = AUS
+		has_country_flag = hre_emperor
 		NOT = { has_global_flag = hre_dismantled }
 		NOT = { NNN = { exists = yes } }
 	}
@@ -7169,10 +7169,10 @@ install_communism = {
 	sprite_index = 17
 	is_triggered_only = no
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
-	badboy_factor = 2
+	badboy_factor = 1
 	prestige_factor = 1
 	peace_cost_factor = 50
 	penalty_factor = 1
@@ -7195,7 +7195,10 @@ install_communism = {
 		is_vassal = no
 		civilized = yes
 		NOT = { is_our_vassal = THIS }
-		NOT = { government = proletarian_dictatorship }
+		OR = {
+			NOT = { government = proletarian_dictatorship }
+			NOT = { government = fascist_dictatorship }
+		}
 		NOT = { has_country_modifier = neutrality }
 		THIS = {
 			NOT = { has_country_modifier = neutrality }
@@ -7227,20 +7230,110 @@ install_communism = {
 	on_po_accepted = {
 		THIS = {
 			set_country_flag = friendly_communist
-			#any_country = {
-			#	limit = {
-			#		OR = {
-			#			government = hms_government
-			#			government = democracy
-			#		}
-			#	}
-			#	relation = { who = THIS value = -50 }
-			#}
+			any_country = {
+				limit = {
+					OR = {
+						government = trade_monarchy
+						government = hms_government
+						government = prussian_constitutionalism
+						government = absolute_monarchy
+						government = tsardom
+						government = archduchy
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
 		}
 		country_event = 96087
 	}
 }
+install_monarchy_make_puppet = {
+	sprite_index = 17
+	is_triggered_only = no
+	months = 12
+	construction_speed = 1.5
+	crisis = no
 
+	badboy_factor = 2
+	prestige_factor = 1
+	peace_cost_factor = 50
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes
+
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = in_great_war }
+			OR = {
+				government = trade_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+				government = tsardom
+				government = archduchy
+			}
+		}
+		#is_ideology_enabled = communist
+		is_vassal = no
+		civilized = yes
+		NOT = { is_our_vassal = THIS }
+		OR = {
+			government = proletarian_dictatorship
+			government = fascist_dictatorship
+		}
+		NOT = { has_country_modifier = neutrality }
+		THIS = {
+			NOT = { has_country_modifier = neutrality }
+		}
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = {
+					has_country_flag = in_great_war
+					has_country_modifier = no_more_war
+				}
+			}
+		}
+	}
+	
+	po_remove_prestige = yes
+	po_install_communist_gov_type = yes
+	
+	war_name = WAR_COALITION
+	
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism 
+			to = pro_military
+			value = 0.05
+		}
+	}
+	
+	on_po_accepted = {
+		THIS = {
+			set_country_flag = friendly_monarchist
+			any_country = {
+				limit = {
+					OR = {
+						government = proletarian_dictatorship
+						government = fascist_dictatorship
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
+		}
+		country_event = 100040
+	}
+}
 # Gain control of Substate region
 acquire_substate_region = {
 	sprite_index = 6

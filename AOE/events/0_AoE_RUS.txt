@@ -1,6 +1,6 @@
 country_event = {
 	id = 170000
-	title = "Peter the first's voyage around the Europe"
+	title = "The Grand Embassy"
 	desc = "EVTDESC170000"
 	picture = peter_the_great
 	fire_only_once = yes
@@ -1522,6 +1522,189 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 10
+		}
+	}
+}
+######Construction of St. Petersburg ######
+country_event = {
+	id = 170024
+	title = "A new capital!"
+	desc = "EVTDESC170024"
+	picture = "Suez3"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT170023OPTA"
+		treasury = -50000
+		set_global_flag = 170023
+		random_list = {
+			35 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2190 } } }
+			30 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2555 } } }
+			25 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2920 } } }
+			5 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3285 } } }
+			5 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3650 } } }
+		}
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0 NOT = { money = 50100 } }
+			modifier = { factor = 100 money = 50100 }
+		}
+	}
+	
+	option = {
+		name = "EVT170023OPTB"
+		treasury = -40000
+		set_global_flag = st_petersburg_construction
+		random_list = {
+			30 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2555 } } }
+			25 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2190 } } }
+			25 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2920 } } }
+			10 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3285 } } }
+			10 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3650 } } }
+		}
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0 NOT = { money = 40100 } }
+			modifier = { factor = 100 NOT = { money = 50100 } money = 40100 }
+		}
+	}
+	
+	option = {
+		name = "EVT170023OPTC"
+		treasury = -30000
+		set_global_flag = st_petersburg_construction
+		random_list = {
+			40 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3285 } } }
+			15 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3650 } } }
+			15 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2555 } } }
+			15 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2920 } } }
+			15 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2190 } } }
+		}
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0 NOT = { money = 30100 } }
+			modifier = { factor = 100 NOT = { money = 40100 } money = 30100 }
+		}
+	}
+	
+	option = {
+		name = "EVT170023OPTD"
+		treasury = -27500
+		set_global_flag = st_petersburg_construction
+		random_list = {
+			30 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2920 } } }
+			20 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3285 } } }
+			20 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2555 } } }
+			20 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3650 } } }
+			10 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2190 } } }
+		}
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0 NOT = { money = 27500 } }
+			modifier = { factor = 100 NOT = { money = 30100 } money = 27500 }
+		}
+	}
+	
+	option = {
+		name = "EVT170023OPTE"
+		treasury = -25000
+		set_global_flag = st_petersburg_construction
+		random_list = {
+			40 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3285 } } }
+			35 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2920 } } }
+			15 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 3650 } } }
+			5 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2190 } } }
+			5 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2555 } } }
+		}
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0 money = 25100 }
+		}
+	}
+}
+
+country_event = {
+	id = 170025
+	title = "St.Petersburg finished!"
+	desc = "EVTDESC170025"
+	picture = "suez_canal_built"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = st_petersburg_construction
+		owns = 994
+		NOT = {
+			994 = { has_province_modifier = st_petersburg_construction }
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Glorious!"
+		clr_global_flag = st_petersburg_construction
+		prestige = 25
+		994 = {
+			#trade_goods = precious_goods
+			any_pop = {
+			limit = { OR = { pop_type = farmers pop_type = artisans } }
+			random_list = {
+					34 = {
+						reduce_pop = 0.99
+						dominant_issue = { value = trinket_safety factor = 0.2 }
+						militancy = 0.5
+					}
+					33 = {
+						reduce_pop = 0.98
+						dominant_issue = { value = trinket_safety factor = 0.3 }
+						militancy = 1
+					}
+					33 = {
+						reduce_pop = 0.97
+						dominant_issue = { value = trinket_safety factor = 0.3 }
+						militancy = 1.5
+					}
+				}
+			}
+			naval_base = 3
+			fort = 2
+			add_province_modifier = {
+				name = baby_boom
+				duration = 5475
+			}
+			capital = 994
+		}
+	}
+}
+country_event = {
+	id = 170026
+	title = "The Beard Tax"
+	desc = "EVTDESC170025"
+	picture = "orthodox_priests"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1702
+		tag = RUS
+	}
+	
+	option = {
+		name = "We need the money!"
+		any_pop = {
+			limit = {
+				has_pop_religion = orthodox
+				pop_majority_ideology = conservative
+			}
+			militancy = 2
+			consciousness = 4
+			move_issue_percentage = { 
+				from = pluralism 
+				to = moralism
+				value = 0.1
+			}
 		}
 	}
 }
