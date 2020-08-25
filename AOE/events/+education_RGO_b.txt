@@ -1229,6 +1229,52 @@ country_event = {
 #country_event = 999904
 #any_country { limit = { NOT = THIS } country_event = 9999855 }
 country_event = 999958
-any_pop = { limit = { AND = { type = serfs literacy = 0.21 } } pop_type = farmers }
+##any_pop = { limit = { AND = { type = serfs literacy = 0.21 } } pop_type = farmers }
+# any_pop = { 
+# 	limit = { 
+# 		AND = { 
+# 			type = serfs 
+# 			NOT = { is_culture_group = caucasian }
+# 			NOT = { culture = bedouin }
+# 			NOT = { AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } } }
+# 			NOT = { is_culture_group = central_asian }
+# 			NOT = { culture = manchu }
+# 			NOT = { culture = ainu }
+# 			NOT = { is_culture_group = oceanic }
+# 			NOT = { is_culture_group = native_american }
+# 			NOT = { is_culture_group = central_african }
+# 			NOT = { is_culture_group = west_african }
+# 			NOT = { is_culture_group = southern_african }
+#			NOT = { culture = kurdish }
+#			NOT = { is_culture_group = east_african }
+# 			#literacy = 0.21 
+# 		} 
+# 	} 
+# 	pop_type = farmers 
+# }
+# any_pop = { 
+# 	limit = { 
+# 		AND = { 
+# 			type = soldiers 
+#			OR = {
+# 			    is_culture_group = caucasian
+#				culture = bedouin
+#				AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } }
+#				is_culture_group = central_asian
+#				culture = manchu
+#				culture = ainu
+#				is_culture_group = oceanic
+#				is_culture_group = native_american
+#				is_culture_group = central_african
+#				is_culture_group = west_african
+#				is_culture_group = southern_african
+#				culture = kurdish
+#				is_culture_group = east_african
+#			}
+# 			#literacy = 0.21 
+# 		} 
+# 	} 
+# 	pop_type = serfs 
+# }
 }
 }

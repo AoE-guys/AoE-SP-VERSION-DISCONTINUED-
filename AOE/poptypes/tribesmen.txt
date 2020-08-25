@@ -1,7 +1,8 @@
-sprite = 14
-color = { 63 80 62 }
+sprite = 13
+color = { 90 125 10 }
 strata = poor
 unemployment = yes
+can_be_recruited = yes
 
 allowed_to_vote = yes
 
@@ -65,273 +66,283 @@ promote_to = {
 		factor = 0.01
 		modifier = {
 			factor = 100
+			NOT = { literacy = 0.05 }
+			tribesmen = 0.95
+		}
+		modifier = {
+			factor = 100
+			literacy = 0.05
 			NOT = { literacy = 0.1 }
-			serfs = 0.95
-		}
-		modifier = {
-			factor = 100
-			literacy = 0.1
-			NOT = { literacy = 0.2 }
 			#NOT = { farmers = 0.10 }
-			serfs = 0.90
+			tribesmen = 0.90
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.2
-			NOT = { literacy = 0.3 }
+			literacy = 0.10
+			NOT = { literacy = 0.15 }
 			#NOT = { farmers = 0.20 }
-			serfs = 0.80
+			tribesmen = 0.80
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.3
-			NOT = { literacy = 0.4 }
+			literacy = 0.15
+			NOT = { literacy = 0.20 }
 			#NOT = { farmers = 0.30 }
-			serfs = 0.70
+			tribesmen = 0.70
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.4
-			NOT = { literacy = 0.5 }
+			literacy = 0.20
+			NOT = { literacy = 0.25 }
 			#NOT = { farmers = 0.40 }
-			serfs = 0.60
+			tribesmen = 0.60
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.5
-			NOT = { literacy = 0.6 }
+			literacy = 0.25
+			NOT = { literacy = 0.30 }
 			#NOT = { farmers = 0.50 }
-			serfs = 0.50
+			tribesmen = 0.50
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.6
-			NOT = { literacy = 0.7 }
+			literacy = 0.30
+			NOT = { literacy = 0.35 }
 			#NOT = { farmers = 0.60 }
-			serfs = 0.40
+			tribesmen = 0.40
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.7
-			NOT = { literacy = 0.8 }
+			literacy = 0.35
+			NOT = { literacy = 0.40 }
 			#NOT = { farmers = 0.60 }
-			serfs = 0.30
+			tribesmen = 0.30
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.8
-			NOT = { literacy = 0.9 }
+			literacy = 0.40
+			NOT = { literacy = 0.45 }
 			#NOT = { farmers = 0.80 }
-			serfs = 0.20
+			tribesmen = 0.20
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.9
-			NOT = { literacy = 0.99 }
+			literacy = 0.45
+			NOT = { literacy = 0.50 }
 			#NOT = { farmers = 0.90 }
-			serfs = 0.10
+			tribesmen = 0.10
 		}
 		modifier = {
 			factor = 100
-			literacy = 0.99
+			literacy = 0.50
 			#NOT = { farmers = 0.95 }
-			serfs = 0.05
+			#tribesmen = 0.05
 		}
 	}
-	soldiers =
-	{
-		factor = 0.01
-		modifier = {
-			factor = 30
-			military_spending = 0.1
-			NOT = { military_spending = 0.2 }
-			NOT = { soldiers = 0.005 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.2
-			NOT = { military_spending = 0.3 }
-			NOT = { soldiers = 0.010 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.3
-			NOT = { military_spending = 0.4 }
-			NOT = { soldiers = 0.015 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.4
-			NOT = { military_spending = 0.5 }
-			NOT = { soldiers = 0.020 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.5
-			NOT = { military_spending = 0.6 }
-			NOT = { soldiers = 0.025 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.6
-			NOT = { military_spending = 0.7 }
-			NOT = { soldiers = 0.030 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.7
-			NOT = { military_spending = 0.8 }
-			NOT = { soldiers = 0.035 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.8
-			NOT = { military_spending = 0.9 }
-			NOT = { soldiers = 0.040 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.9
-			NOT = { military_spending = 0.99 }
-			NOT = { soldiers = 0.045 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.99
-			NOT = { soldiers = 0.050 }
-		} 
-		modifier = {
-			factor = -50 #-500
-			soldiers = 0.050
-		}
-	}
-	craftsmen = {
-		factor = 0.01
-		modifier = {
-			factor = 50
-			literacy = 0.1
-			NOT = { literacy = 0.2 }
-			NOT = { craftsmen = 0.015 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.2
-			NOT = { literacy = 0.3 }
-			NOT = { craftsmen = 0.030 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.3
-			NOT = { literacy = 0.4 }
-			NOT = { craftsmen = 0.045 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.4
-			NOT = { literacy = 0.5 }
-			NOT = { craftsmen = 0.060 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.5
-			NOT = { literacy = 0.6 }
-			NOT = { craftsmen = 0.075 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.6
-			NOT = { literacy = 0.7 }
-			NOT = { craftsmen = 0.09 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.7
-			NOT = { literacy = 0.8 }
-			NOT = { craftsmen = 0.105 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.8
-			NOT = { literacy = 0.9 }
-			NOT = { craftsmen = 0.120 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.9
-			NOT = { literacy = 0.99 }
-			NOT = { craftsmen = 0.135 }
-		}
-		modifier = {
-			factor = 50
-			literacy = 0.99
-			NOT = { craftsmen = 0.150 }
-		}
-		modifier = {
-			factor = -100
-			location = { is_colonial = yes }
-		}
-		modifier = {
-			factor = -50 #-500
-			craftsmen = 0.150
-		}
-	}
-	#clergymen =
+	#soldiers =
 	#{
 	#	factor = 0.01
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.1
-	#		NOT = { education_spending = 0.2 }
-	#		NOT = { clergymen = 0.004 }
+	#		factor = 30
+	#		military_spending = 0.1
+	#		NOT = { military_spending = 0.2 }
+	#		NOT = { soldiers = 0.005 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.2
-	#		NOT = { education_spending = 0.3 }
-	#		NOT = { clergymen = 0.008 }
+	#		factor = 30
+	#		military_spending = 0.2
+	#		NOT = { military_spending = 0.3 }
+	#		NOT = { soldiers = 0.010 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.3
-	#		NOT = { education_spending = 0.4 }
-	#		NOT = { clergymen = 0.012 }
+	#		factor = 30
+	#		military_spending = 0.3
+	#		NOT = { military_spending = 0.4 }
+	#		NOT = { soldiers = 0.015 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.4
-	#		NOT = { education_spending = 0.5 }
-	#		NOT = { clergymen = 0.016 }
+	#		factor = 30
+	#		military_spending = 0.4
+	#		NOT = { military_spending = 0.5 }
+	#		NOT = { soldiers = 0.020 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.5
-	#		NOT = { education_spending = 0.6 }
-	#		NOT = { clergymen = 0.020 }
+	#		factor = 30
+	#		military_spending = 0.5
+	#		NOT = { military_spending = 0.6 }
+	#		NOT = { soldiers = 0.025 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.7
-	#		NOT = { education_spending = 0.8 }
-	#		NOT = { clergymen = 0.024 }
+	#		factor = 30
+	#		military_spending = 0.6
+	#		NOT = { military_spending = 0.7 }
+	#		NOT = { soldiers = 0.030 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.8
-	#		NOT = { education_spending = 0.9 }
-	#		NOT = { clergymen = 0.028 }
+	#		factor = 30
+	#		military_spending = 0.7
+	#		NOT = { military_spending = 0.8 }
+	#		NOT = { soldiers = 0.035 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.9
-	#		NOT = { education_spending = 0.99 }
-	#		NOT = { clergymen = 0.032 }
+	#		factor = 30
+	#		military_spending = 0.8
+	#		NOT = { military_spending = 0.9 }
+	#		NOT = { soldiers = 0.040 }
 	#	}
 	#	modifier = {
-	#		factor = 5
-	#		education_spending = 0.99
-	#		NOT = { clergymen = 0.036 }
+	#		factor = 30
+	#		military_spending = 0.9
+	#		NOT = { military_spending = 0.99 }
+	#		NOT = { soldiers = 0.045 }
+	#	}
+	#	modifier = {
+	#		factor = 30
+	#		military_spending = 0.99
+	#		NOT = { soldiers = 0.050 }
+	#	} 
+	#	modifier = {
+	#		factor = -50 #-500
+	#		soldiers = 0.050
 	#	}
 	#}
+	#craftsmen = {
+	#	factor = 0.01
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.1
+	#		NOT = { literacy = 0.2 }
+	#		NOT = { craftsmen = 0.015 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.2
+	#		NOT = { literacy = 0.3 }
+	#		NOT = { craftsmen = 0.030 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.3
+	#		NOT = { literacy = 0.4 }
+	#		NOT = { craftsmen = 0.045 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.4
+	#		NOT = { literacy = 0.5 }
+	#		NOT = { craftsmen = 0.060 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.5
+	#		NOT = { literacy = 0.6 }
+	#		NOT = { craftsmen = 0.075 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.6
+	#		NOT = { literacy = 0.7 }
+	#		NOT = { craftsmen = 0.09 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.7
+	#		NOT = { literacy = 0.8 }
+	#		NOT = { craftsmen = 0.105 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.8
+	#		NOT = { literacy = 0.9 }
+	#		NOT = { craftsmen = 0.120 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.9
+	#		NOT = { literacy = 0.99 }
+	#		NOT = { craftsmen = 0.135 }
+	#	}
+	#	modifier = {
+	#		factor = 50
+	#		literacy = 0.99
+	#		NOT = { craftsmen = 0.150 }
+	#	}
+	#	modifier = {
+	#		factor = -100
+	#		location = { is_colonial = yes }
+	#	}
+	#	modifier = {
+	#		factor = -50 #-500
+	#		craftsmen = 0.150
+	#	}
+	#}
+	clergymen =
+	{
+		factor = 0.01
+		modifier = {
+			factor = 10
+			education_spending = 0.1
+			NOT = { education_spending = 0.2 }
+			NOT = { clergymen = 0.004 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.2
+			NOT = { education_spending = 0.3 }
+			NOT = { clergymen = 0.008 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.3
+			NOT = { education_spending = 0.4 }
+			NOT = { clergymen = 0.012 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.4
+			NOT = { education_spending = 0.5 }
+			NOT = { clergymen = 0.016 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.5
+			NOT = { education_spending = 0.6 }
+			NOT = { clergymen = 0.020 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.6
+			NOT = { education_spending = 0.7 }
+			NOT = { clergymen = 0.024 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.7
+			NOT = { education_spending = 0.8 }
+			NOT = { clergymen = 0.028 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.8
+			NOT = { education_spending = 0.9 }
+			NOT = { clergymen = 0.032 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.9
+			NOT = { education_spending = 0.99 }
+			NOT = { clergymen = 0.036 }
+		}
+		modifier = {
+			factor = 10
+			education_spending = 0.99
+			NOT = { clergymen = 0.040 }
+		}
+		modifier = {
+			factor = -50 #-500
+			clergymen = 0.040
+		}
+	}
 }
 
 
