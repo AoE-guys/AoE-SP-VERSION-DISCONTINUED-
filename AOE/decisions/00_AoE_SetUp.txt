@@ -12,7 +12,7 @@ political_decisions = {
 			any_pop = { 
 				limit = { 
 					AND = { 
-						type = tribesmen 
+						type = zzz_dummy 
 						NOT = { is_culture_group = caucasian }
 						NOT = { culture = bedouin }
 						NOT = { AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } } }
@@ -30,6 +30,30 @@ political_decisions = {
 					} 
 				} 
 				pop_type = farmers 
+			}
+			any_pop = { 
+				limit = { 
+					AND = { 
+						type = zzz_dummy 
+						OR = {
+							is_culture_group = caucasian
+							culture = bedouin
+							AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } }
+							is_culture_group = central_asian
+							culture = manchu
+							culture = ainu
+							is_culture_group = oceanic
+							is_culture_group = native_american
+							is_culture_group = central_african
+							is_culture_group = west_african
+							is_culture_group = southern_african
+							culture = kurdish
+							is_culture_group = east_african
+						}
+						#literacy = 0.21 
+					} 
+				} 
+				pop_type = tribesmen 
 			}
 			any_pop = { 
 				limit = { 
@@ -59,7 +83,7 @@ political_decisions = {
 				any_pop = { 
 					limit = { 
 						AND = { 
-							type = tribesmen 
+							type = zzz_dummy 
 							NOT = { is_culture_group = caucasian }
 							NOT = { culture = bedouin }
 							NOT = { AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } } }
@@ -77,6 +101,30 @@ political_decisions = {
 						} 
 					} 
 					pop_type = farmers 
+				}
+				any_pop = { 
+					limit = { 
+						AND = { 
+							type = zzz_dummy 
+							OR = {
+								is_culture_group = caucasian
+								culture = bedouin
+								AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } }
+								is_culture_group = central_asian
+								culture = manchu
+								culture = ainu
+								is_culture_group = oceanic
+								is_culture_group = native_american
+								is_culture_group = central_african
+								is_culture_group = west_african
+								is_culture_group = southern_african
+								culture = kurdish
+								is_culture_group = east_african
+							}
+							#literacy = 0.21 
+						} 
+					} 
+					pop_type = tribesmen 
 				}
 				any_pop = { 
 					limit = { 

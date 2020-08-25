@@ -1642,6 +1642,13 @@ RGO_template_farmers = {
 			amount = 1
 			effect_multiplier = 0.9
 		}
+		
+		{
+			poptype = zzz_dummy 
+			effect = throughput
+			amount = 1
+			effect_multiplier = 1.0
+		}
 	}
 	
 	type = rgo
@@ -1655,7 +1662,7 @@ RGO_template_labourers = {
 	}
 		
 	employees = {
-		{
+		{ 
 			poptype = farmers 
 			effect = throughput
 			amount = 1
@@ -1679,6 +1686,13 @@ RGO_template_labourers = {
 			effect = throughput
 			amount = 1
 			effect_multiplier = 0.9
+		}
+		
+		{
+			poptype = zzz_dummy 
+			effect = throughput
+			amount = 1
+			effect_multiplier = 1.0
 		}
 	}
 	
