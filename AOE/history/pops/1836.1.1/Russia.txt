@@ -5684,29 +5684,59 @@
 		religion = sunni
 		size = 675
 	}
+	
+	clergymen = {
+		culture = bashkir
+		religion = sunni
+		size = 675
+	}
 
 	artisans = {
 		culture = tatar
 		religion = sunni
-		size = 4000
+		size = `000
+	}
+	
+	artisans = {
+		culture = bashkir
+		religion = sunni
+		size = 3000
 	}
 
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 1000
+		size = 500
 	}
 
+	soldiers = {
+		culture = bashkir
+		religion = sunni
+		size = 2000
+	}
+	
 	serfs = {
 		culture = tatar
 		religion = sunni
-		size = 12035
+		size = 2000
+	}
+	
+	serfs = {
+		culture = bashkir
+		religion = sunni
+		size = 9035
 	}
 
 	labourers = {
 		culture = tatar
 		religion = sunni
-		size = 1865
+		size = 865
+	}
+	
+	labourers = {
+		culture = bashkir
+		religion = sunni
+		size = 1000
 	}
 
 	aristocrats = {
@@ -5720,6 +5750,12 @@
 		religion = orthodox
 		size = 120
 	}
+	
+	officers = {
+		culture = bashkir
+		religion = sunni
+		size = 120
+	}
 
 	clergymen = {
 		culture = tatar
@@ -5730,7 +5766,13 @@
 	artisans = {
 		culture = tatar
 		religion = orthodox
-		size = 3075
+		size = 2075
+	}
+	
+	artisans = {
+		culture = bashkir
+		religion = sunni
+		size = 1075
 	}
 
 	soldiers = {
