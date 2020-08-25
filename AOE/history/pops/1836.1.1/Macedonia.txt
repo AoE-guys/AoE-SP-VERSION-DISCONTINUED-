@@ -19,6 +19,7 @@
 	labourers 	= {culture = sephardic 		religion = jewish 		size = 8 		}
 	artisans 	= {culture = sephardic 		religion = jewish 		size = 350 		}}
 
+
 807 = { ### Skopje - Preliminary Pop arrangement 1700 - Requires research in future ###
 
 	serfs 		= {culture = bulgarian		religion = orthodox		size = 13345	}
@@ -41,6 +42,25 @@
 	aristocrats = {culture = turkish 		religion = sunni 		size = 75		}
 
 	artisans 	= {culture = sephardic 		religion = jewish 		size = 500 		}}
+	
+	
+808 = { ### Debar - Preliminary Pop arrangement 1700 - Requires research in future ###
+
+	serfs 		= {culture = bulgarian		religion = orthodox		size = 32675	}
+	soldiers 	= {culture = bulgarian 		religion = orthodox 	size = 600		}
+	clergymen 	= {culture = bulgarian 		religion = orthodox		size = 925 		}
+	artisans 	= {culture = bulgarian		religion = orthodox		size = 1200		}
+	
+	soldiers 	= {culture = bulgarian 		religion = sunni 		size = 300		}
+	clergymen 	= {culture = bulgarian 		religion = sunni 		size = 300		}
+	artisans 	= {culture = bulgarian		religion = sunni		size = 300		}
+	
+	serfs 		= {culture = turkish		religion = sunni		size = 15600	}
+	soldiers	= {culture = turkish 		religion = sunni 		size = 200		}
+	clergymen	= {culture = turkish 		religion = sunni 		size = 100		}
+	artisans	= {culture = turkish 		religion = sunni 		size = 1500		}
+	aristocrats = {culture = turkish 		religion = sunni 		size = 1100		}}
+
 
 1780 = {### Debar - Preliminary Pop arrangement 1700 - Requires research in future ###
 
