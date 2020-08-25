@@ -55,10 +55,13 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { capital = 994 }
+			994 = {
+				NOT = { has_province_modifier = st_petersburg_construction }
+			}
 		}
 
 		allow = {
-		owns = 994 # St.Petersburg	
+			owns = 994 # St.Petersburg	
 		}
 	
 		effect = {
