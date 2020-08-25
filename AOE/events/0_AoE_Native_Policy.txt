@@ -33,28 +33,28 @@ country_event = {
 			add_accepted_culture = amazonian
 			add_accepted_culture = guarani
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Tupi"
 		PBZ = {
 			add_accepted_culture = tupinamba
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Amazonians"
 		PBZ = {
 			add_accepted_culture = amazonian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Guarani"
 		PBZ = {
 			add_accepted_culture = guarani
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -73,7 +73,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Get rid of them"
@@ -83,7 +83,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -100,7 +100,7 @@ country_event = {
 			primary_culture = tupinamba
 			add_accepted_culture = brazilian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the Amazonian"
@@ -108,7 +108,7 @@ country_event = {
 			primary_culture = amazonian
 			add_accepted_culture = brazilian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the Guarani"
@@ -116,7 +116,7 @@ country_event = {
 			primary_culture = guarani
 			add_accepted_culture = brazilian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -155,28 +155,28 @@ country_event = {
 			add_accepted_culture = native_american_minor
 			add_accepted_culture = dakota
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Cree"
 		FCA = {
 			add_accepted_culture = cree
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Sioux"
 		FCA = {
 			add_accepted_culture = dakota
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the minor tribes"
 		FCA = {
 			add_accepted_culture = native_american_minor
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -195,7 +195,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Get rid of them"
@@ -205,7 +205,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -222,7 +222,7 @@ country_event = {
 			primary_culture = cree
 			add_accepted_culture = french_canadian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the Sioux"
@@ -230,7 +230,7 @@ country_event = {
 			primary_culture = dakota
 			add_accepted_culture = french_canadian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the minor tribes"
@@ -238,7 +238,7 @@ country_event = {
 			primary_culture = native_american_minor
 			add_accepted_culture = french_canadian
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -279,42 +279,42 @@ country_event = {
 			add_accepted_culture = pueblo
 			add_accepted_culture = native_american_minor
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Maya"
 		VNS = {
 			add_accepted_culture = mayan
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Aztec"
 		VNS = {
 			add_accepted_culture = nahua
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Navajo"
 		VNS = {
 			add_accepted_culture = navajo
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Pueblo"
 		VNS = {
 			add_accepted_culture = pueblo
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the minor tribes"
 		VNS = {
 			add_accepted_culture = native_american_minor
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -333,7 +333,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Get rid of them"
@@ -343,7 +343,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -360,7 +360,7 @@ country_event = {
 			primary_culture = mayan
 			add_accepted_culture = mexican
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the Aztec"
@@ -368,7 +368,7 @@ country_event = {
 			primary_culture = nahua
 			add_accepted_culture = mexican
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the navajo"
@@ -376,7 +376,7 @@ country_event = {
 			primary_culture = navajo
 			add_accepted_culture = mexican
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the Pueblo"
@@ -384,7 +384,7 @@ country_event = {
 			primary_culture = pueblo
 			add_accepted_culture = mexican
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the minor tribes"
@@ -392,7 +392,7 @@ country_event = {
 			primary_culture = native_american_minor
 			add_accepted_culture = mexican
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -431,28 +431,28 @@ country_event = {
 			add_accepted_culture = cree
 			add_accepted_culture = native_american_minor
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Cherokee"
 		THC = {
 			add_accepted_culture = cherokee
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the Cree"
 		THC = {
 			add_accepted_culture = cree
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Accept only the minor tribes"
 		THC = {
 			add_accepted_culture = native_american_minor
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -471,7 +471,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Get rid of them"
@@ -481,7 +481,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
@@ -498,7 +498,7 @@ country_event = {
 			primary_culture = cree
 			add_accepted_culture = yankee
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the Cherokee"
@@ -506,7 +506,7 @@ country_event = {
 			primary_culture = cherokee
 			add_accepted_culture = yankee
 		}
-		set_country_flag = native_policy_set
+		
 	}
 	option = {
 		name = "Embrace the minor tribes"
@@ -514,7 +514,7 @@ country_event = {
 			primary_culture = native_american_minor
 			add_accepted_culture = yankee
 		}
-		set_country_flag = native_policy_set
+		
 	}
 }
 
