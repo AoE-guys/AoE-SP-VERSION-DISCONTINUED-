@@ -3,7 +3,7 @@ controller = AUS
 add_core = AUS
 add_core = BOH
 add_core = NNN
-trade_goods = coal  state_building = {  level = 2  building = coal_factory  upgrade = yes  }
+trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
 state_building = {
 	level = 1
 	building = machine_parts_factory
