@@ -1,392 +1,58 @@
-#Macedonia Region (424000) #see Greece.txt and Bulgaria.txt for balance of region 
-#under the rule of Ottoman Empire in 1836  
-#Skopje (424000/106000 POPS) 
-806 = {
-	aristocrats = {
-		culture = turkish
-		religion = sunni
-		size = 225
-	}
+806 = { ### Bitola - Preliminary Pop arrangement 1700 - Requires research in future ###
 
-	clergymen = {
-		culture = turkish
-		religion = sunni
-		size = 102
-	}
+	serfs 		= {culture = bulgarian		religion = orthodox		size = 32086	}
+	labourers 	= {culture = bulgarian		religion = orthodox		size = 1689		}
+	soldiers 	= {culture = bulgarian 		religion = orthodox 	size = 200		}
+	clergymen 	= {culture = bulgarian 		religion = orthodox		size = 117 		}
+	artisans 	= {culture = bulgarian		religion = orthodox		size = 1650		}
+	officers	= {culture = bulgarian 		religion = orthodox 	size = 110		}
+	aristocrats = {culture = bulgarian 		religion = orthodox 	size = 117		}
 
-	artisans = {
-		culture = turkish
-		religion = sunni
-		size = 100
-	}
+	serfs 		= {culture = turkish		religion = sunni		size = 8001		}
+	labourers 	= {culture = turkish		religion = sunni		size = 61		}
+	soldiers	= {culture = turkish 		religion = sunni 		size = 1500		}
+	clergymen	= {culture = turkish 		religion = sunni 		size = 102		}
+	artisans	= {culture = turkish 		religion = sunni 		size = 100		}
+	aristocrats = {culture = turkish 		religion = sunni 		size = 225		}
 
-	soldiers = {
-		culture = turkish
-		religion = sunni
-		size = 1500
-	}
+	serfs 		= {culture = sephardic 		religion = jewish 		size = 142 		}
+	labourers 	= {culture = sephardic 		religion = jewish 		size = 8 		}
+	artisans 	= {culture = sephardic 		religion = jewish 		size = 350 		}}
 
-	serfs = {
-		culture = turkish
-		religion = sunni
-		size = 8001
-	}
+807 = { ### Skopje - Preliminary Pop arrangement 1700 - Requires research in future ###
 
-	labourers = {
-		culture = turkish
-		religion = sunni
-		size = 61
-	}
+	serfs 		= {culture = bulgarian		religion = orthodox		size = 13345	}
+	labourers 	= {culture = bulgarian		religion = orthodox		size = 903		}
+	soldiers 	= {culture = bulgarian 		religion = orthodox 	size = 788		}
+	clergymen 	= {culture = bulgarian 		religion = orthodox		size = 165 		}
+	artisans 	= {culture = bulgarian		religion = orthodox		size = 449		}
+	serfs 		= {culture = bulgarian		religion = sunni		size = 3088		}
+	labourers 	= {culture = bulgarian		religion = sunni		size = 162		}
 
-	aristocrats = {
-		culture = bulgarian
-		religion = orthodox
-		size = 62
-	}
+	serfs 		= {culture = vlach 			religion = orthodox 	size = 4436		}
 	
-	officers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 55
-	}
+	serfs 		= {culture = turkish		religion = sunni		size = 339		}
+	labourers 	= {culture = turkish		religion = sunni		size = 9		}
+	soldiers	= {culture = turkish 		religion = sunni 		size = 1550		}
+	clergymen	= {culture = turkish 		religion = sunni 		size = 25		}
+	artisans	= {culture = turkish 		religion = sunni 		size = 65		}
+	officers	= {culture = turkish 		religion = sunni 		size = 88		}
+	bureaucrats = {culture = turkish 		religion = sunni 		size = 12		}
+	aristocrats = {culture = turkish 		religion = sunni 		size = 75		}
+
+	artisans 	= {culture = sephardic 		religion = jewish 		size = 500 		}}
+
+1780 = {### Debar - Preliminary Pop arrangement 1700 - Requires research in future ###
+
+	serfs 		= {culture = albanian		religion = sunni		size = 1047		}
+	labourers 	= {culture = albanian		religion = sunni		size = 552		}
+	soldiers 	= {culture = albanian 		religion = sunni 		size = 1050		}
+	clergymen 	= {culture = albanian 		religion = sunni		size = 62 		}
+	artisans 	= {culture = albanian		religion = sunni		size = 200		}
 	
-	soldiers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 100
-	}
-	
-	clergymen = {
-		culture = bulgarian
-		religion = orthodox
-		size = 62
-	}
-
-	artisans = {
-		culture = bulgarian
-		religion = orthodox
-		size = 1050
-	}
-
-	serfs = {
-		culture = bulgarian
-		religion = orthodox
-		size = 26766
-	}
-
-	labourers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 1409
-	}
-	
-	aristocrats = {
-		culture = greek
-		religion = orthodox
-		size = 55
-	}
-	
-	officers = {
-		culture = greek
-		religion = orthodox
-		size = 55
-	}
-	
-	soldiers = {
-		culture = greek
-		religion = orthodox
-		size = 100
-	}
-
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 55
-	}
-
-	artisans = {
-		culture = greek
-		religion = orthodox
-		size = 600
-	}
-
-	serfs = {
-		culture = greek
-		religion = orthodox
-		size = 5320
-	}
-
-	labourers = {
-		culture = greek
-		religion = orthodox
-		size = 280
-	}
-
-	artisans = {
-		culture = sephardic
-		religion = jewish
-		size = 350
-	}
-
-	serfs = {
-		culture = sephardic
-		religion = jewish
-		size = 142
-	}
-
-	labourers = {
-		culture = sephardic
-		religion = jewish
-		size = 8
-	}
-}
-#Monastir Region (268000) #see Greece.txt for balance of region 
-#under the rule of Ottoman Empire in 1836  
-#Bitola (268000/67000 POPS) 
-807 = {
-	soldiers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 600
-	}
-	
-	clergymen = {
-		culture = bulgarian
-		religion = orthodox
-		size = 55
-	}
-
-	artisans = {
-		culture = bulgarian
-		religion = orthodox
-		size = 212
-	}
-
-	serfs = {
-		culture = bulgarian
-		religion = orthodox
-		size = 7436
-	}
-	
-	serfs = {
-		culture = vlach
-		religion = orthodox
-		size = 4436
-	}
-
-	labourers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 602
-	}
-	
-	soldiers = {
-		culture = serb
-		religion = orthodox
-		size = 100
-	}
-	
-	clergymen = {
-		culture = serb
-		religion = orthodox
-		size = 55
-	}
-
-	artisans = {
-		culture = serb
-		religion = orthodox
-		size = 112
-	}
-	
-	serfs = {
-		culture = serb
-		religion = orthodox
-		size = 1408
-	}
-
-	labourers = {
-		culture = serb
-		religion = orthodox
-		size = 74
-	}
-	
-	serfs = {
-		culture = serb
-		religion = sunni
-		size = 238
-	}
-
-	labourers = {
-		culture = serb
-		religion = sunni
-		size = 12
-	}
-	
-	serfs = {
-		culture = bulgarian
-		religion = sunni
-		size = 2850
-	}
-
-	labourers = {
-		culture = bulgarian
-		religion = sunni
-		size = 150
-	}
-
-	aristocrats = {
-		culture = turkish
-		religion = sunni
-		size = 75
-	}
-
-	bureaucrats = {
-		culture = turkish
-		religion = sunni
-		size = 12
-	}
-
-	officers = {
-		culture = turkish
-		religion = sunni
-		size = 88
-	}
-
-	clergymen = {
-		culture = turkish
-		religion = sunni
-		size = 25
-	}
-
-	artisans = {
-		culture = turkish
-		religion = sunni
-		size = 65
-	}
-
-	soldiers = {
-		culture = turkish
-		religion = sunni
-		size = 1550
-	}
-
-	serfs = {
-		culture = turkish
-		religion = sunni
-		size = 339
-	}
-
-	labourers = {
-		culture = turkish
-		religion = sunni
-		size = 9
-	}
-	
-	soldiers = {
-		culture = greek
-		religion = orthodox
-		size = 88
-	}
-
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 55
-	}
-
-	artisans = {
-		culture = greek
-		religion = orthodox
-		size = 125
-	}
-
-	serfs = {
-		culture = greek
-		religion = orthodox
-		size = 4501
-	}
-
-	labourers = {
-		culture = greek
-		religion = orthodox
-		size = 237
-	}
-
-	artisans = {
-		culture = sephardic
-		religion = jewish
-		size = 500
-	}
-
-}
-
-#Debar - Former Tichit
-1780 = {
-	clergymen = {
-		culture = albanian
-		religion = sunni
-		size = 62
-	}
-
-	artisans = {
-		culture = albanian
-		religion = sunni
-		size = 200
-	}
-
-	soldiers = {
-		culture = albanian
-		religion = sunni
-		size = 1050
-	}
-
-	serfs = {
-		culture = albanian
-		religion = sunni
-		size = 1047
-	}
-
-	labourers = {
-		culture = albanian
-		religion = sunni
-		size = 552
-	}
-	
-	soldiers = {
-		culture = serb
-		religion = orthodox
-		size = 88
-	}
-	
-	labourers = {
-		culture = bulgarian
-		religion = sunni
-		size = 4150
-	}
-
-	clergymen = {
-		culture = serb
-		religion = orthodox
-		size = 55
-	}
-
-	artisans = {
-		culture = serb
-		religion = orthodox
-		size = 125
-	}
-	
-	serfs = {
-		culture = serb
-		religion = orthodox
-		size = 1220
-	}
-
-	labourers = {
-		culture = serb
-		religion = orthodox
-		size = 28
-	}
-
-}
+	serfs 		= {culture = bulgarian		religion = orthodox		size = 1220		}
+	labourers 	= {culture = bulgarian		religion = orthodox		size = 4178		}
+	soldiers 	= {culture = bulgarian 		religion = orthodox 	size = 88		}
+	clergymen 	= {culture = bulgarian 		religion = orthodox		size = 55 		}
+	artisans 	= {culture = bulgarian		religion = orthodox		size = 125		}}
 
