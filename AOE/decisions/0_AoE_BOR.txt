@@ -317,7 +317,7 @@ political_decisions = {
 		picture = rhine
 		potential = {
 			tag = FRH
-			FRH = { exists = yes }
+			NOT = { RHI = { exists = yes } }
 		}
 		allow = {
 			NOT = { is_vassal = yes }

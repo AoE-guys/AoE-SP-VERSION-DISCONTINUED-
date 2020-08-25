@@ -1,110 +1,3 @@
-#Macedonia Region (192000) #see Greece.txt and Macedonia.txt for balance of region 
-#under the rule of Ottoman Empire in 1836  
-#Petrich (192000/48000 POPS) #now part of Bulgaria 
-808 = {
-	aristocrats = {
-		culture = turkish
-		religion = sunni
-		size = 1100
-	}
-	
-	soldiers = {
-		culture = turkish
-		religion = sunni
-		size = 200
-	}
-
-	clergymen = {
-		culture = turkish
-		religion = sunni
-		size = 100
-	}
-
-	artisans = {
-		culture = turkish
-		religion = sunni
-		size = 1500
-	}
-
-	serfs = {
-		culture = turkish
-		religion = sunni
-		size = 15600
-	}
-	
-	soldiers = {
-		culture = bulgarian
-		religion = orthodox
-		size = 300
-	}
-
-	clergymen = {
-		culture = bulgarian
-		religion = orthodox
-		size = 625
-	}
-
-	artisans = {
-		culture = bulgarian
-		religion = orthodox
-		size = 900
-	}
-
-	serfs = {
-		culture = bulgarian
-		religion = orthodox
-		size = 28075
-	}
-	
-	soldiers = {
-		culture = bulgarian
-		religion = sunni
-		size = 300
-	}
-
-	clergymen = {
-		culture = bulgarian
-		religion = sunni
-		size = 300
-	}
-
-	artisans = {
-		culture = bulgarian
-		religion = sunni
-		size = 300
-	}
-
-	serfs = {
-		culture = bulgarian
-		religion = orthodox
-		size = 4100
-	}
-	
-	soldiers = {
-		culture = greek
-		religion = orthodox
-		size = 300
-	}
-
-	clergymen = {
-		culture = greek
-		religion = orthodox
-		size = 300
-	}
-
-	artisans = {
-		culture = greek
-		religion = orthodox
-		size = 300
-	}
-
-	serfs = {
-		culture = greek
-		religion = orthodox
-		size = 500
-	}
-
-}
 #Bulgaria Region (1132000)
 #under the rule of Ottoman Empire in 1836
 #Sofia (260000/65000 POPS)
@@ -145,7 +38,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 7383
@@ -181,7 +74,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 5442
@@ -217,7 +110,7 @@
 		size = 2000
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 48425
@@ -253,7 +146,7 @@
 		size = 200
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = greek
 		religion = orthodox
 		size = 500
@@ -291,7 +184,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 1125
@@ -315,7 +208,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 10125
@@ -339,7 +232,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 36150
@@ -363,7 +256,7 @@
 		size = 500
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = vlach
 		religion = orthodox
 		size = 1280
@@ -401,7 +294,7 @@
 		size = 1000
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 19250
@@ -425,7 +318,7 @@
 		size = 250
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 1500
@@ -449,7 +342,7 @@
 		size = 500
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 30050
@@ -487,7 +380,7 @@
 		size = 1000
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 3939
@@ -511,7 +404,7 @@
 		size = 300
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 1736
@@ -535,7 +428,7 @@
 		size = 1100
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 47650
@@ -567,7 +460,7 @@
 		size = 1100
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 20275
@@ -591,7 +484,7 @@
 		size = 250
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 3000
@@ -615,7 +508,7 @@
 		size = 750
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 27700
@@ -647,7 +540,7 @@
 		size = 2000
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 31425
@@ -677,7 +570,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 4000
@@ -701,7 +594,7 @@
 		size = 500
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 30875
@@ -747,7 +640,7 @@
 		size = 275
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 6425
@@ -777,7 +670,7 @@
 		size = 600
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 33475
@@ -813,7 +706,7 @@
 		size = 300
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 9700
@@ -837,7 +730,7 @@
 		size = 600
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = greek
 		religion = orthodox
 		size = 2200
@@ -875,7 +768,7 @@
 		size = 175
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 4900
@@ -905,7 +798,7 @@
 		size = 225
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 31475
@@ -929,7 +822,7 @@
 		size = 500
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 4850
@@ -961,7 +854,7 @@
 		size = 450
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 8425
@@ -997,7 +890,7 @@
 		size = 550
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 25275
@@ -1021,13 +914,13 @@
 		size = 300
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 5675
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = circassian
 		religion = sunni
 		size = 150
@@ -1051,7 +944,7 @@
 		size = 900
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = greek
 		religion = orthodox
 		size = 4950
@@ -1086,7 +979,7 @@
 		size = 500
 	}
 	
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 16250
@@ -1110,7 +1003,7 @@
 		size = 200
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = vlach
 		religion = orthodox
 		size = 9625 
@@ -1140,7 +1033,7 @@
 		size = 1100
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 22100  
@@ -1170,7 +1063,7 @@
 		size = 1100
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = sunni
 		size = 4100  
@@ -1201,7 +1094,7 @@
 		size = 100
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 393
@@ -1225,7 +1118,7 @@
 		size = 30
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 173
@@ -1249,7 +1142,7 @@
 		size = 110
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 4765
@@ -1280,7 +1173,7 @@
 		size = 100
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 393
@@ -1304,7 +1197,7 @@
 		size = 30
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = turkish
 		religion = sunni
 		size = 173
@@ -1328,7 +1221,7 @@
 		size = 110
 	}
 
-	serfs = {
+	zzz_dummy = {
 		culture = bulgarian
 		religion = orthodox
 		size = 4765

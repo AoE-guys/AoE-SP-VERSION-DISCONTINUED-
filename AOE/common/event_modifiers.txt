@@ -729,6 +729,10 @@ suez_canal_construction = {
 	icon = 11
 }
 
+st_petersburg_construction = {
+	icon = 11
+}
+
 kiel_canal_construction = {
 	icon = 11
 }
@@ -6674,4 +6678,21 @@ noble_beaurocracy = {
 	admin_efficiency = 2.5
 	max_social_spending = 0.1
 	icon = 1
+}
+
+proffesional_general_staff = {
+	leadership_modifier = 0.1
+	icon = 17
+}
+trade_sectors_monopoly = {
+	tariff_efficiency_modifier = 0.05
+	icon = 19
+}
+church_goods_seized = {
+	tax_efficiency = 0.05
+	icon = 19
+}
+deified_ruler = {
+	prestige = 0.025
+	icon = 13
 }

@@ -445,7 +445,7 @@ italian = {
 	leader = european
 	unit = ItalianGC
 	north_italian = { 
-		color = { 90 210 130}
+		color = {49 170 74}
 		first_names = { Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
 		Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
 		Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
@@ -459,7 +459,7 @@ italian = {
 		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari "Thaon di Revel" Vaccari Zupelli }
 	}
 	south_italian = {
-		color = { 90 210 130 }
+		color = {41 155 61}
 		first_names = { Alessandro Armando Augusto Carlo Cesare Corrado Domenico Enrico Fabio Fabrizio
 		Ferdinando Francesco Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo Leopoldo Lorenzo
 		Ludovico Marcantonio Marino Mario Matteo Nicola Orazio Sigismondo Tommasso Vincenzo }
@@ -680,7 +680,7 @@ south_slavic = {
 	leader = european
 	unit = AustriaHungaryGC
 	croat = {
-		color = {140 140 190}
+		color = {112 175 141}
 		first_names = { Andrija Antun Bazilije Breno Dragutin Dzivo Filip Franjo Gaspar Ivan
 		Janko Jero Jerolim Josip Juraj Karlo Kresimir Krsto Ljudevit Lucijan
 		Luka Marijan Marin Matej Matko Maximiliam Medo Mihajlo Mirko Miroslav
@@ -696,7 +696,7 @@ south_slavic = {
 		}
 	}
 	serb = {
-		color = { 140 0 0 }
+		color = {79 130 102}
 		first_names = { Alaksandar Blagoje Bozidar Branko Danilo Dejan Djordje Dragan Dragisa Dragoljub
 		Dragutin Draza Dusan Gavrilo Goran Janko Jovan Koca Kosta Krsto
 		Ljubisa Mihailo Milan Miliutin Milivoje Milojko Milos Miodrag Mirko Miroslav
@@ -713,7 +713,7 @@ south_slavic = {
 		radicalism = 15
 	}
 	bulgarian = {
-		color = {60 125 100}
+		color = {30 76 53}
 		first_names = { Aleksandar Andrey Asen Atanas Atila Bogdan Boncho Boris Damyan Dimitar
 		Dobri Ferdinand Georgi Hristo Ilya Ivan Kalin Kardam Kimon Kiril
 		Kliment Konstantin Krastyu Leonid Mihail Nikifor Niloa Pencho Petar Petko
@@ -730,7 +730,7 @@ south_slavic = {
 		radicalism = 10
 	}
 	slovene = {
-		color = {0 90 125}
+		color = {59 112 102}
 		first_names = { Alenka Alfonz Alfred Andrej Anton Avgust Bartolomej Blaz Bojan Boris
 		Bostjian Bozidar Ciril Danilo Demeter Drago Dusan Franc Gregorij Ivan
 		Ivo Janez Jernej Joze Jurij Karpo Lado Leon Lojze Miha
@@ -746,7 +746,7 @@ south_slavic = {
 		}
 	}
 	bosniak = {
-		color = {30 200 200}
+		color = {165 226 193}
 		first_names = { Abdulvehhab Adnan Ahmed Ali Alija Asim Atif Beriz Dzemal Dzemaludin
 		Elvir Enver Fikret Fuad Gazi Hakija Hamdija Hamid Haris Hasan
 		Husein Irfan Isa Ivan Izet Jusuf Mehmed Meho Mirsad Muhamed
@@ -767,7 +767,7 @@ pan_albanian = {
 	leader = european
 	unit = AustriaHungaryGC
 	albanian = {
-		color = { 180  70  105 }
+		color = {196 143 174}
 		first_names = { Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
 		Esad Fatmir Fejzi Fiqri Gjergj Gjon Hasan Hashim Ibrahim Idhomene
 		Iliaz Ishak Ismail Izet Kara Kastriot KoÁi Kˆpryly Kostaq LekÎ
@@ -785,7 +785,7 @@ pan_albanian = {
 	}
 	
 	arvanite = {
-		color = { 144 23 99 }
+		color = {137 92 118}
 		first_names = { Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
 		Esad Fatmir Fejzi Fiqri Gjergj Gjon Hasan Hashim Ibrahim Idhomene
 		Iliaz Ishak Ismail Izet Kara Kastriot KoÁi Kˆpryly Kostaq LekÅE
@@ -806,25 +806,8 @@ pan_albanian = {
 pan_romanian = {
 	leader = european
 	unit = AustriaHungaryGC
-	moldavian = {
-		color = { 255 220 95 }
-		first_names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
-		Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
-		Grigore Henric Horatiu Iacob Ilie Ioan Ion "Ion Emanuel" Iosif Iulian
-		Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Petru
-		Radu Sergiu Silviu Simion Stefan Valeriu Vasile Victor Vintila Vlad
-		}
-
-		last_names = { Angelescu Antonescu Argetoianu Averescu Baldescu Barozzi Berindei Cernat Christecu Cihoski
-		Ciuperca Coanda Crainiceanu Critescu Culcer Cuza "de Hohenzollern" Dona Dragalina Dumitrescu
-		Falcoianu Florescu Gardescu Grigorescu Froza Harjeu Holban Iancovescu Iliasevici Iliescu
-		Ionascu Ionescu Ionitiu Koslinski Lahovary Lupescu Mardarescu Murgescu Poenaru Prezan
-		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Tatarascu Tenescu Vaitoianu Zottu
-		}
-		radicalism = 10
-	}
 	vlach = {
-		color = { 161 126 128 }
+		color = {45 128 188}
 		first_names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
 		Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
 		Grigore Henric Horatiu Iacob Ilie Ioan Ion "Ion Emanuel" Iosif Iulian
@@ -840,24 +823,6 @@ pan_romanian = {
 		}
 		radicalism = 10
 	}
-	transylvanian = {
-		color = { 211 207 173 }
-		first_names = { Adrian Alexandru Andrei Anton Artur Bogdan Carol Cezar Constantin Constin
-		Cosmin Daniel Dumitru Emanuel Eremia Eugen Ferdinand Flaviu Florea Gheorghe
-		Grigore Henric Horatiu Iacob Ilie Ioan Ion "Ion Emanuel" Iosif Iulian
-		Iuliu Laurentiu Leontin Luca Lucian Mihai Mircea Nicolae Ovidiu Petru
-		Radu Sergiu Silviu Simion Stefan Valeriu Vasile Victor Vintila Vlad
-		}
-
-		last_names = { Angelescu Antonescu Argetoianu Averescu Baldescu Barozzi Berindei Cernat Christecu Cihoski
-		Ciuperca Coanda Crainiceanu Critescu Culcer Cuza "de Hohenzollern" Dona Dragalina Dumitrescu
-		Falcoianu Florescu Gardescu Grigorescu Froza Harjeu Holban Iancovescu Iliasevici Iliescu
-		Ionascu Ionescu Ionitiu Koslinski Lahovary Lupescu Mardarescu Murgescu Poenaru Prezan
-		Salajan Samsonovici Schitiu Scodrea Slaniceanu Steflea Tatarascu Tenescu Vaitoianu Zottu
-		}
-		radicalism = 10
-	}
-	union = ROM 
 }
 
 hungarian_culture_group = {
@@ -865,7 +830,7 @@ hungarian_culture_group = {
 		unit = AustriaHungaryGC
 		
 	hungarian = {
-		color = { 200 255 50 }
+		color = { 211 211 194 }
 		first_names = { Alajos Albert ¡lmos Anaszt·z Andr·s Arisztid AurÈl BÈla Benedek BÈni
 		Bertalan D·niel D·vid Edv·rd …li·s Erno Ferencz G·bor G·briel G·sp·r
 		Gyˆrgy Gyula Ign·c Imre Istv·n Izidor J·nos JÛzsef "JÛzsef Manes" K·lm·n
@@ -1111,7 +1076,7 @@ baltic = {
 levantine = {
 	leader = european
 	greek = {
-		color = { 122  180  210 }
+		color = {102 32 73}
 		first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
 		Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
 		Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
@@ -1217,7 +1182,7 @@ turko_semitic = {
 	leader = arab
 	unit = OttomanGC
 	turkish = {
-		color = {250 55 55}
+		color = {188 172 143}
 		first_names = { 
 			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
 			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
@@ -1691,6 +1656,16 @@ central_asian = {
 		}
 		last_names = {
 			Amirkhanov Faysi Gizzat Ibragimov Kamal Khusainov Tinchurin Tukay Yanbayev
+		}
+		radicalism = 10
+	}
+	bashkir = {
+		color = {255 134 168}
+		first_names = {
+			Asaf Baqi Galiaskar Ismail Makhmut  Musa Rustam Yusuf
+		}
+		last_names = {
+			Amirkhanov Faysi Gizzat Ibragimov Kamal Khusainov Tinchurin Tukay Yanbayev Bashkir
 		}
 		radicalism = 10
 	}

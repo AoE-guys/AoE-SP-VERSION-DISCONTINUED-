@@ -242,11 +242,7 @@ political_decisions = {
 	banat_rename_rom = {
 		picture = gtfo
 		potential = {
-			OR = {
-				primary_culture = transylvanian
-				primary_culture = vlach
-				primary_culture = moldavian
-			}
+			primary_culture = vlach
 			owns = 652
 			owns = 653
 			NOT = { has_global_flag = banat_rename_rom }
@@ -621,11 +617,7 @@ political_decisions = {
 	northern_transylvania_rename_rom = {
 		picture = gtfo
 		potential = {
-			OR = {
-				primary_culture = transylvanian
-				primary_culture = vlach
-				primary_culture = moldavian
-			}
+			primary_culture = vlach
 			owns = 651
 			owns = 654
 			owns = 661
@@ -736,11 +728,7 @@ political_decisions = {
 	southern_transylvania_rename_rom = {
 		picture = gtfo
 		potential = {
-			OR = {
-				primary_culture = transylvanian
-				primary_culture = vlach
-				primary_culture = moldavian
-			}
+			primary_culture = vlach
 			owns = 647
 			owns = 655
 			owns = 656

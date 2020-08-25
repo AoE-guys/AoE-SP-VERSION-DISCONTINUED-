@@ -752,7 +752,7 @@ promote_to = {
 			factor = 0.5
 			NOT = { life_needs = 0.5 }
 		}
-		
+	
 		modifier = {
 			factor = -100
 			OR = {
@@ -760,6 +760,39 @@ promote_to = {
 				serfs = 0.4
 			}
 		}
+	}
+	tribesmen = {
+		factor = 0.1
+		
+		modifier = {
+			factor = 10
+			NOT = { life_needs = 0.1 }
+		}
+		
+		modifier = {
+			factor = 5
+			NOT = { life_needs = 0.2 }
+		}
+		
+		modifier = {
+			factor = 2.5
+			NOT = { life_needs = 0.3 }
+		}
+		
+		modifier = {
+			factor = 2
+			NOT = { life_needs = 0.4 }
+		}
+		
+		modifier = {
+			factor = 0.5
+			NOT = { life_needs = 0.5 }
+		}
+
+		modifier = {
+			factor = -100
+			NOT = { country = { OR = { government = tribal_democracy  government = khanate } } }
+		}		
 	}		
 	#serfs = {
 	#	factor = 0.01
