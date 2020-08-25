@@ -1655,7 +1655,7 @@ RGO_template_labourers = {
 	}
 		
 	employees = {
-		{ 
+		{
 			poptype = farmers 
 			effect = throughput
 			amount = 1
@@ -1664,14 +1664,21 @@ RGO_template_labourers = {
 		{
 			poptype = serfs 
 			effect = throughput
-			amount = 1
+			amount = 1.1
 		}
 		
 		{
 			poptype = slaves 
 			effect = throughput
 			amount = 1
-			effect_multiplier = 1.3
+			effect_multiplier = 1.2
+		}
+		
+		{
+			poptype = tribesmen 
+			effect = throughput
+			amount = 1
+			effect_multiplier = 0.9
 		}
 	}
 	
