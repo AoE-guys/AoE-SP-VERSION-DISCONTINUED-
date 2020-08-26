@@ -5694,7 +5694,7 @@
 	artisans = {
 		culture = tatar
 		religion = sunni
-		size = 4000
+		size = 1000
 	}
 	
 	artisans = {
@@ -5822,7 +5822,13 @@
 	zzz_dummy = {
 		culture = tatar
 		religion = sunni
-		size = 9046
+		size = 7046
+	}
+	
+	zzz_dummy = {
+		culture = bashkir
+		religion = sunni
+		size = 2000
 	}
 
 	labourers = {
@@ -5860,7 +5866,13 @@
 	zzz_dummy = {
 		culture = tatar
 		religion = sunni
-		size = 7955
+		size = 4000
+	}
+	
+	zzz_dummy = {
+		culture = bashkir
+		religion = sunni
+		size = 3955
 	}
 
 	labourers = {
@@ -6751,7 +6763,13 @@
 	clergymen = {
 		culture = tatar
 		religion = sunni
-		size = 250
+		size = 150
+	}
+	
+	clergymen = {
+		culture = bashkir
+		religion = sunni
+		size = 100
 	}
 
 	artisans = {
@@ -6769,7 +6787,13 @@
 	zzz_dummy = {
 		culture = tatar
 		religion = sunni
-		size = 9306
+		size = 3000
+	}
+	
+	zzz_dummy = {
+		culture =  bashkir
+		religion = sunni
+		size = 6306
 	}
 
 	labourers = {
@@ -6795,9 +6819,15 @@
 	artisans = {
 		culture = tatar
 		religion = sunni
-		size = 2125
+		size = 2025
 	}
-
+	
+	artisans = {
+		culture = bashkir
+		religion = sunni
+		size = 625
+	}
+	
 	soldiers = {
 		culture = tatar
 		religion = sunni
@@ -6809,54 +6839,72 @@
 		religion = orthodox
 		size = 266
 	}
+	
+	zzz_dummy = {
+		culture = bashkir
+		religion = sunni
+		size = 266
+	}
 
 	labourers = {
 		culture = tatar
 		religion = sunni
-		size = 3035
+		size = 535
+	}
+	
+	labourers = {
+		culture = bashkir
+		religion = sunni
+		size = 2500
 	}
 }
 #Orsk (180000/45000 POPS)
 1060 = {
 	aristocrats = {
-		culture = russian
-		religion = orthodox
+		culture = kazak
+		religion = sunni
 		size = 225
 	}
 
 	clergymen = {
-		culture = russian
-		religion = orthodox
+		culture = kazak
+		religion = sunni
 		size = 225
 	}
 
 	artisans = {
-		culture = russian
-		religion = orthodox
+		culture = kazak
+		religion = sunni
 		size = 125
 	}
 
 	soldiers = {
-		culture = russian
-		religion = orthodox
+		culture = kazak
+		religion = sunni
 		size = 500
 	}
 
 	zzz_dummy = {
 		culture = tatar
 		religion = sunni
-		size = 4454
+		size = 3454
+	}
+	
+	zzz_dummy = {
+		culture = bashkir
+		religion = sunni
+		size = 2000
 	}
 	
 	zzz_dummy = {
 		culture = kazak
 		religion = sunni
-		size = 4000
+		size = 3000
 	}
 
 	labourers = {
-		culture = russian
-		religion = orthodox
+		culture = kazak
+		religion = sunni
 		size = 971
 	}
 }
@@ -11696,7 +11744,13 @@
 	zzz_dummy = {
 		culture = russian
 		religion = orthodox
-		size = 8226
+		size = 6226
+	}
+	
+	zzz_dummy = {
+		culture = bashkir
+		religion = sunni
+		size = 2226
 	}
 
 	labourers = {
