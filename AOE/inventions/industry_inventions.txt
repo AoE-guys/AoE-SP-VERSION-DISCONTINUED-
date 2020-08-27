@@ -24,26 +24,27 @@ daimlers_automobile = {
 		}
 	}
 }
-wright_n_langleys_aeroplanes = {
-	limit = { combustion_engine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			electricity = 1
-		}
-		modifier = {
-			factor = 2
-			average_consciousness = 4
-		}
-		modifier = {
-			factor = -6
-			NOT = {
-				invention = edison_light_bulb
-			}
-		}
-	}
-}
+
+# wright_n_langleys_aeroplanes = {
+	# limit = { combustion_engine = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# electricity = 1
+		# }
+		# modifier = {
+			# factor = 2
+			# average_consciousness = 4
+		# }
+		# modifier = {
+			# factor = -6
+			# NOT = {
+				# invention = edison_light_bulb
+			# }
+		# }
+	# }
+# }
 
 tractors = {
 	limit = { combustion_engine = 1 }
@@ -67,6 +68,7 @@ tractors = {
 		factory_goods_output = { cattle = 0.03 }
 	}
 }
+
 #electrical_power_generation
 direct_current = {
 	limit = { electrical_power_generation = 1 }
@@ -191,59 +193,61 @@ sharp_n_roberts_power_loom = {
 		}
 	}
 }
-jacquard_power_loom = {
+bouchon_paper_tape = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
 		base = 2
-		modifier = {
-			factor = 2
-			invention = sharp_n_roberts_power_loom
-		}
-		modifier = {
-			factor = 2
-			invention = insurance_companies
-		}
+		# modifier = {
+			# factor = 2
+			# invention = sharp_n_roberts_power_loom
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = insurance_companies
+		# }
 	}
 	effect = {
+		# factory_goods_output = {
+			# wool = 0.2
+		# }
+		# factory_goods_output = {
+			# silk = 0.2
+		# }
 		factory_goods_output = {
-			wool = 0.2
-		}
-		factory_goods_output = {
-			silk = 0.2
-		}
-		#factory_goods_output = {
-		#	fabric = 0.05 
-		#}
-	}
-}
-northrop_power_loom = {
-	limit = { assembly_line = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = dobby_loom
-		}
-		modifier = {
-			factor = 2
-			invention = lighting
-		}
-	}
-	effect = {
-		factory_goods_output = {
-			cotton = 0.2
-		}
-		factory_goods_output = {
-			wool = 0.2
-		}
-		factory_goods_output = {
-			silk = 0.2
-		}
-		factory_goods_throughput = {
 			fabric = 0.05 
 		}
+		shared_prestige = 10
 	}
 }
+
+# northrop_power_loom = {
+	# limit = { assembly_line = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# invention = dobby_loom
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = lighting
+		# }
+	# }
+	# effect = {
+		# factory_goods_output = {
+			# cotton = 0.2
+		# }
+		# factory_goods_output = {
+			# wool = 0.2
+		# }
+		# factory_goods_output = {
+			# silk = 0.2
+		# }
+		# factory_goods_throughput = {
+			# fabric = 0.05 
+		# }
+	# }
+# }
 mechanical_saw = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
@@ -359,6 +363,35 @@ mechanized_slaughtering_block = {
 }
 
 #semi_automatization
+vaucanson_loom = {
+	limit = { semi_automatization = 1 }
+		chance = {
+			base = 2
+			# modifier = {
+				# factor = 2
+				# breech_loaded_rifles = 1
+			# }
+			modifier = {
+				factor = 2
+				invention = bouchon_paper_tape
+			}
+		}
+	effect = {
+		# factory_goods_output = {
+			# cotton = 0.2
+		# }
+		factory_goods_output = {
+			wool = 0.2
+		}
+		factory_goods_output = {
+			silk = 0.05
+		}
+		factory_goods_throughput = {
+			fabric = 0.05 
+		}
+		shared_prestige = 10
+	}
+}
 whitney_n_colts_standardized_small_arms = {
 	limit = { semi_automatization = 1 }
 	chance = {
@@ -438,24 +471,24 @@ jiggs = {
 		}
 	}
 }
-dobby_loom = {
-	limit = { semi_automatization = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = sharp_n_roberts_power_loom
-		}
-		modifier = {
-			factor = 2
-			invention = insurance_companies
-		}
-	}
-	effect = {
-		factory_goods_throughput = { fabric = 0.1 }
-		#factory_goods_output = { silk = 0.2 }
-	}
-}
+# dobby_loom = {
+	# limit = { semi_automatization = 1 }
+	# chance = {
+		# base = 2
+		# modifier = {
+			# factor = 2
+			# invention = sharp_n_roberts_power_loom
+		# }
+		# modifier = {
+			# factor = 2
+			# invention = insurance_companies
+		# }
+	# }
+	# effect = {
+		# factory_goods_throughput = { fabric = 0.1 }
+		# factory_goods_output = { silk = 0.2 }
+	# }
+# }
 
 steam_powered_silk_reels = {
 	limit = { semi_automatization = 1 }
@@ -581,6 +614,34 @@ stiff_plastic_brickmaking_machine = {
 }
 
 #assembly_line
+cartwright_loom = {
+	limit = { assembly_line = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = vaucanson_loom
+		}
+		# modifier = {
+			# factor = 2
+			# invention = distribution_channels
+		# }
+	}
+	effect = {
+		factory_goods_output = {
+			cotton = 0.2
+		}
+		factory_goods_output = {
+			wool = 0.2
+		}
+		factory_goods_output = {
+			silk = 0.2
+		}
+		factory_goods_throughput = {
+			fabric = 0.05 
+		}
+	}
+}
 fordism = {
 	limit = { assembly_line = 1 }
 	chance = {
@@ -679,7 +740,33 @@ refrigerator_technology = {
 		}
 	}
 }
-#Metulurgy
+#mechanization_8
+jacquard_power_loom = {
+	limit = { mechanization_8 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = bouchon_paper_tape
+		}
+		# modifier = {
+			# factor = 2
+			# invention = insurance_companies
+		# }
+	}
+	effect = {
+		factory_goods_output = {
+			wool = 0.2
+		}
+		factory_goods_output = {
+			silk = 0.2
+		}
+		factory_goods_output = {
+			fabric = 0.05 
+		}
+	}
+}
+#Metalurgy
 ammunition_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
