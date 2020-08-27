@@ -3,7 +3,7 @@ controller = ARN
 add_core = ARN
 add_core = SRD
 add_core = ITA
-trade_goods = coal  state_building = {  level = 1  building = coal_factory  upgrade = yes  }
+trade_goods = coal  state_building = {  level = 1  building = steamer_shipyard  upgrade = yes  }
 state_building = {  level = 1  building = cement_factory  upgrade = yes  }
 naval_base = 1
 life_rating = 35

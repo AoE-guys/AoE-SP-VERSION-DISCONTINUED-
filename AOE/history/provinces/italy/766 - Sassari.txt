@@ -3,5 +3,5 @@ controller = ARN
 add_core = ARN
 add_core = SRD
 add_core = ITA
-trade_goods = grain  state_building = {  level = 2  building = grain_factory  upgrade = yes  }
+trade_goods = cotton  state_building = {  level = 1  building = electric_gear_factory  upgrade = yes  }
 life_rating = 35
