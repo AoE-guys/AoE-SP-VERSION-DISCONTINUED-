@@ -64,75 +64,75 @@ promote_to = {
 	farmers = {
 		factor = 0.01
 		modifier = {
-			factor = 100
+			factor = 50
 			NOT = { literacy = 0.05 }
 			tribesmen = 0.95
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.05
 			NOT = { literacy = 0.1 }
 			#NOT = { farmers = 0.10 }
 			tribesmen = 0.90
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.10
 			NOT = { literacy = 0.15 }
 			#NOT = { farmers = 0.20 }
 			tribesmen = 0.80
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.15
 			NOT = { literacy = 0.20 }
 			#NOT = { farmers = 0.30 }
 			tribesmen = 0.70
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.20
 			NOT = { literacy = 0.25 }
 			#NOT = { farmers = 0.40 }
 			tribesmen = 0.60
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.25
 			NOT = { literacy = 0.30 }
 			#NOT = { farmers = 0.50 }
 			tribesmen = 0.50
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.30
 			NOT = { literacy = 0.35 }
 			#NOT = { farmers = 0.60 }
 			tribesmen = 0.40
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.35
 			NOT = { literacy = 0.40 }
 			#NOT = { farmers = 0.60 }
 			tribesmen = 0.30
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.40
 			NOT = { literacy = 0.45 }
 			#NOT = { farmers = 0.80 }
 			tribesmen = 0.20
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.45
 			NOT = { literacy = 0.50 }
 			#NOT = { farmers = 0.90 }
 			tribesmen = 0.10
 		}
 		modifier = {
-			factor = 100
+			factor = 50
 			literacy = 0.50
 			#NOT = { farmers = 0.95 }
 			#tribesmen = 0.05
@@ -142,67 +142,67 @@ promote_to = {
 	{
 		factor = 0.01
 		modifier = {
-			factor = 30
+			factor = 100
 			military_spending = 0.1
 			NOT = { military_spending = 0.2 }
-			NOT = { soldiers = 0.005 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.2
-			NOT = { military_spending = 0.3 }
-			NOT = { soldiers = 0.010 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.3
-			NOT = { military_spending = 0.4 }
-			NOT = { soldiers = 0.015 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.4
-			NOT = { military_spending = 0.5 }
-			NOT = { soldiers = 0.020 }
-		}
-		modifier = {
-			factor = 30
-			military_spending = 0.5
-			NOT = { military_spending = 0.6 }
 			NOT = { soldiers = 0.025 }
 		}
 		modifier = {
-			factor = 30
+			factor = 100
+			military_spending = 0.2
+			NOT = { military_spending = 0.3 }
+			NOT = { soldiers = 0.05 }
+		}
+		modifier = {
+			factor = 100
+			military_spending = 0.3
+			NOT = { military_spending = 0.4 }
+			NOT = { soldiers = 0.075 }
+		}
+		modifier = {
+			factor = 100
+			military_spending = 0.4
+			NOT = { military_spending = 0.5 }
+			NOT = { soldiers = 0.10 }
+		}
+		modifier = {
+			factor = 100
+			military_spending = 0.5
+			NOT = { military_spending = 0.6 }
+			NOT = { soldiers = 0.125 }
+		}
+		modifier = {
+			factor = 100
 			military_spending = 0.6
 			NOT = { military_spending = 0.7 }
-			NOT = { soldiers = 0.030 }
+			NOT = { soldiers = 0.15 }
 		}
 		modifier = {
-			factor = 30
+			factor = 100
 			military_spending = 0.7
 			NOT = { military_spending = 0.8 }
-			NOT = { soldiers = 0.035 }
+			NOT = { soldiers = 0.175 }
 		}
 		modifier = {
-			factor = 30
+			factor = 100
 			military_spending = 0.8
 			NOT = { military_spending = 0.9 }
-			NOT = { soldiers = 0.040 }
+			NOT = { soldiers = 0.200 }
 		}
 		modifier = {
-			factor = 30
+			factor = 100
 			military_spending = 0.9
 			NOT = { military_spending = 0.99 }
-			NOT = { soldiers = 0.045 }
+			NOT = { soldiers = 0.225 }
 		}
 		modifier = {
-			factor = 30
+			factor = 100
 			military_spending = 0.99
-			NOT = { soldiers = 0.050 }
+			NOT = { soldiers = 0.250 }
 		} 
 		modifier = {
-			factor = -50 #-500
-			soldiers = 0.050
+			factor = -250 #-500
+			soldiers = 0.250
 		}
 	}
 	#craftsmen = {
