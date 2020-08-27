@@ -684,7 +684,6 @@ aeroplane_factory = {
 	template = machine_part_user_template
 	input_goods = {
 		machine_parts = 1.11	#38.69
-		electric_gear = 2	#32
 		rubber = 1  		#7
 		lumber = 3.3 		#3.3	total input+maint = 90
 	}
@@ -692,10 +691,6 @@ aeroplane_factory = {
 	value = 0.91			#100
 	bonus = {
 		trigger = { has_building = machine_parts_factory }
-		value = 0.25
-	}
-	bonus = {
-		trigger = { has_building = electric_gear_factory }
 		value = 0.25
 	}
 }
@@ -843,31 +838,25 @@ telephone_factory = {	#Spices
 }
 
 ############# STRATEGIC FACTORIES
-
+#olives
 electric_gear_factory = {       
-	template = factory_template
-	input_goods = { 
-		rubber = 4		#28
-		coal = 5		#11.5
-		steel = 5		#23.5	total input+maint = 73
+	template = farming_factory_template
+	input_goods = {
+	precious_goods = 0.1
 	}
 	output_goods = electric_gear 
-	value = 5.5			#88
+	value = 5.5
 	bonus = {
-		trigger = { has_building = rubber_factory }
-		value = 0.05
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
 	}
 	bonus = {
-		trigger = { has_building = coal_factory }
-		value = 0.05
-	}
-	bonus = {
-		trigger = { has_building = steel_factory }
-		value = 0.15
-	}
-	bonus = {
-		trigger = { has_building = machine_parts_factory }
+		trigger = { has_building = fertilizer_factory }
 		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { NOT = { num_of_cities = 2 } } }
+		value = 0.9
 	}
 }
 
@@ -1854,7 +1843,6 @@ tropical_wood_lodge = {
 artisan_aeroplane = {       
 	input_goods = {
 		machine_parts = 1.11	#38.69
-		electric_gear = 2	#32
 		rubber = 1  		#7
 		lumber = 3.3 		#3.3	total input+maint = 90
 	}
@@ -1875,7 +1863,7 @@ artisan_barrel = {
 	input_goods = {   
 		fruit = 3
 		lumber = 8
-		#timber = 3
+		timber = 3
 		grain = 8
 	}
 	output_goods = barrels 
@@ -1916,7 +1904,6 @@ artisan_radio = {
 	input_goods = {      
 		glass = 3
 		fruit = 11
-		coal = 1
 	}
 	output_goods = radio 
 	value = 4			#104
@@ -1935,7 +1922,6 @@ artisan_telephone = {
 	input_goods = {       
 		glass = 3
 		grain = 12
-		coal = 1
 	}
 	output_goods = telephones 
 	value = 4		#104
@@ -1952,14 +1938,13 @@ artisan_telephone = {
 
 ############# STRATEGIC FACTORIES
 
-artisan_electric_gear = {       
-	input_goods = { 
-		rubber = 4		#28
-		coal = 5		#11.5
-		steel = 5		#23.5	total input+maint = 73
+artisan_electric_gear = {      
+	input_goods = {       
+		glass = 3
+		steamer_convoy = 5
 	}
 	output_goods = electric_gear 
-	value = 5.5			#88
+	value = 4		#88
 	
 	owner = {
 		poptype = artisans 
