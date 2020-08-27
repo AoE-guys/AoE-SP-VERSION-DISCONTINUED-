@@ -1284,8 +1284,8 @@ ammunition_factory = {
 explosives_factory = {       
 	template = cheap_factory_template
 	input_goods = {      
-		coal = 10		#12
-		sulphur = 15	total input+maint = 30.1
+		coal = 10
+		sulphur = 15
 	}
 	output_goods = explosives 
 	value = 25		#35
