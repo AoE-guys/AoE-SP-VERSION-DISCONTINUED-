@@ -437,9 +437,11 @@ TUR 819 = { 819 805 823 } #Central Macedonia
 
 TUR_820 = { 820 821 822 } #Southern Macedonia
 
-GRE_826 = { 842 839 826 827 840 841 } #Peloponnese
+GRE_826 = { 842 839 827 840 841 } #Peloponnese
 
-TUR_832 = { 832 831 833 825 824 853 } #Thessalia
+TUR_832 = { 832 831 833 } #Thessalia
+
+TUR_833 = { 825 824 853 826 } #Epirus
 
 GRE_837 = { 834 837 836 835 838 } #Attica - Central Greece
 
