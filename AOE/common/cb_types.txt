@@ -8282,6 +8282,7 @@ conquer_trade_post = { #obtain_potential_trade_post
 			OR = {
 				government = merchant_republic
 				government = trade_monarchy
+				government = pirate_republic
 			}
 		}
 		any_owned_province = {

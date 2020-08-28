@@ -6609,7 +6609,7 @@ dhimmi_late = {
 	non_accepted_pop_militancy_modifier = 0.02
 }
 
-##Piracy System##
+##Hyper's Piracy System##
 
 piracy_mild = {
     local_factory_output = -0.075
@@ -6638,11 +6638,25 @@ piracy_harsh = {
 piracy_spoils = {
     local_factory_output = 0.15
     local_factory_input = -0.15
-    import_cost = -0.15       
+    import_cost = -0.15  
+    immigrant_attract = 0.020
     icon = 17
 }
 
-#hooper moment above
+piracy_tolerant = { 
+	icon = 5
+}
+
+pirate_republic = {
+	global_immigrant_attract = 0.040
+	land_organisation = 0.2
+	naval_organisation = 0.4
+	max_military_spending = -0.5
+	tax_efficiency = -0.4
+	diplomatic_points_modifier = -0.3
+	icon = 7
+}
+##
 
 native_pursuit = {
 	global_immigrant_attract = 0.25

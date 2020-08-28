@@ -287,3 +287,14 @@ hms_government_empire = {
 	appoint_ruling_party = no
 	flagType = communist
 }
+
+pirate_republic = {
+	liberal = yes
+	conservative = yes
+	reactionary = no
+	#anarcho_liberal = yes
+	#socialist = yes
+	election = yes
+	appoint_ruling_party = no
+	flagType = republic
+}

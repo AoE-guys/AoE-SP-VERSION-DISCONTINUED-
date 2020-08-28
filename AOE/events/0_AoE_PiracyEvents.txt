@@ -1368,8 +1368,60 @@ country_event = {
 				duration = -1
 			}
 		}
-
-		
+		543 = {
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}		
+		ALD = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		MOR = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		EFR = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		SUS = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		FEZ = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		BNA = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		TUN = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
+		MAD = {
+			add_country_modifier = {
+				name = piracy_tolerant
+				duration = -1
+			}	
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -1411,6 +1463,88 @@ country_event = {
 	}
 }
 		
-		
+country_event = {
+	id = 69692
+	title = "Piracy Victorious!"
+	desc = "We have liberated former naval bases, piratical hotspots or centres of trade that we must integrate into our free Pirate Republic!"
+	picture = piracy_conquest
+	trigger = {
+		government = pirate_republic
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_building = naval_base
+					NOT = { has_province_modifier = piracy_spoils }
+				}
+				has_province_modifier = piracy_harsh
+			}
+		}
+	}
+	mean_time_to_happen = { months = 0 }
+	
+	option = {
+		name = "Hail Liberty!"
+	    any_owned = {
+            limit = {
+				OR = {
+					AND = {
+						has_building = naval_base
+						NOT = { has_province_modifier = piracy_spoils }
+					}
+					AND = {
+						has_province_modifier = potential_trade_post
+						NOT = { has_province_modifier = piracy_spoils }
+					}
+					AND = {
+						has_province_modifier = trade_centre
+						NOT = { has_province_modifier = piracy_spoils }
+					}
+					has_province_modifier = piracy_harsh
+				}
+			}
+			add_province_modifier = {
+				name = piracy_spoils
+				duration = -1
+			}
+		}
+		any_owned = {
+			remove_province_modifier = piracy_harsh
+			remove_province_modifier = piracy_moderate
+			remove_province_modifier = piracy_mild
+		}
+	}
+}
+###WIP
+#country_event = {
+#	id = 69693
+#	title = "Pirate Haven Siezed!"
+#	desc = EVTDESC69693
+#	picture = pirate_haven
+#	trigger = {
+#		NOT = { government = pirate_republic }
+#		NOT = { has_country_modifier = piracy_tolerant }
+#		any_owned_province = {
+#			has_province_modifier = piracy_spoils
+#		}
+#	}
+#	mean_time_to_happen = { months = 1 }
+#	
+#	option = {
+#		name = "Tear it down, tear it all down!"
+#	    any_owned = {
+#			remove_province_modifier = piracy_spoils
+#		}
+#		prestige = 2
+#	}
+#	option = {
+#		name = "Let us use them to our advantage..."
+#		add_country_modifier = piracy_tolerant
+#		prestige = -5
+#	}
+#}
+			
+			
+			
+				
 		
 		
