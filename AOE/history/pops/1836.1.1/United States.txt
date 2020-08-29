@@ -2981,6 +2981,12 @@
 		religion = catholic
 		size = 3
 	}
+	
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 30
+	}
 
 	artisans = {
 		culture = texan
@@ -3011,6 +3017,12 @@
 		religion = catholic
 		size = 22
 	}
+	
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 10022
+	}
 
 	soldiers = {
 		culture = louisianan
@@ -3027,7 +3039,7 @@
 	labourers = {
 		culture = louisianan
 		religion = catholic
-		size = 2
+		size = 12
 	}
 
 	slaves = {
@@ -3039,7 +3051,7 @@
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 16
+		size = 1016
 	}
 
 	zzz_dummy = {
