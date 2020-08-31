@@ -1,7 +1,7 @@
 country_event = {
 	id = 17077
 	title = "Death of Aurangzeb"
-	desc = "mug_desc"
+	desc = "EVTDESC17077"
 	
 	major = yes
 	fire_only_once = yes
@@ -20,12 +20,24 @@ country_event = {
 		TRA = { all_core = { limit = { owned_by = THIS } secede_province = TRA } }
 		MAH = { all_core = { limit = { owned_by = THIS } secede_province = MAH } }
 		NAG = { all_core = { limit = { owned_by = THIS } secede_province = NAG } }
+		any_country = {
+			limit = {
+				exists = yes
+				vassal_of = THIS
+			}
+			relation = {
+				who = MUG
+				value = -400
+			}
+			leave_alliance = MUG
+		}
 		release_vassal = NAG
 		release_vassal = SHI
 		release_vassal = KRN
 		release_vassal = MAH
 		release_vassal = LAD
 		release_vassal = ORI
+		release_vassal = MEW
 		all_core = { limit = { NOT = { owned_by = THIS } } remove_core = THIS }
 		any_pop = { militancy = 15 }
 		add_country_modifier = {

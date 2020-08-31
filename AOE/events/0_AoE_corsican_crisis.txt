@@ -7,7 +7,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = GEN
+		owns = 473
 		year = 1755
 		NOT = { has_global_flag = corsica_revolt }
 	}
@@ -50,19 +50,20 @@ country_event = {
 		diplomatic_influence = {
 			who = CRS
 			value = -400
-		}		
+		}	
+		war = {
+			target = CRS
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
 		CRS = {
 			government = democracy
-		}
-		change_tag_no_core_switch = CRS
-		
-		GEN = {
-			war = {
-				target = CRS
-				attacker_goal = { casus_belli = annex_core_country }
-				defender_goal = { casus_belli = status_quo }
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 1825
 			}
 		}
+		change_tag_no_core_switch = CRS
 		ai_chance = { factor = 0 }
 	}
 }
@@ -170,6 +171,7 @@ country_event = {
 		name = "We have more pressing matters."
 		prestige = -25
 		ai_chance = {
+			factor = 1
 			modifier = {
 				factor = 100
 				war = yes

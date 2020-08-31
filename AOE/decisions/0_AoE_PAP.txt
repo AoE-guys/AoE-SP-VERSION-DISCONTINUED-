@@ -45,6 +45,7 @@ political_decisions = {
 					is_culture_group = italian
 					in_sphere = THIS
 				}
+				annex_to = THIS
 			}
 		}
 		ai_will_do = {
@@ -69,6 +70,13 @@ political_decisions = {
 				all_core = {
 				add_core = GOD
 				}
+			}
+			any_country = {
+				limit = {
+					tag = VEN
+					vassal_of = THIS
+				}
+				annex_to = THIS
 			}
 		}
 	}

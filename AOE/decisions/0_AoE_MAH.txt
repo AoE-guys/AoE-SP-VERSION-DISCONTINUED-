@@ -46,36 +46,36 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	abolish_mughal_supremacy = {
-		picture = mughal_empire
-		potential = {
-			tag = MAH
-			NOT = { has_country_flag = abolished_mughal_supremacy }
-		}
-		allow = {
-			is_greater_power = yes
-			OR = {
-				pensions = acceptable_pensions
-				pensions = good_pensions
-			}
-			MUG = {
-				exists = no
-			}
-		}
-		effect = {
-			prestige = 30
-			badboy = 15
-			set_country_flag = abolished_mughal_supremacy
-			any_owned = {
-				limit = {
-					is_core = MUG
-				}
-				add_core = THIS
-				remove_core = MUG
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
+#	abolish_mughal_supremacy = {
+#		picture = mughal_empire
+#		potential = {
+#			tag = MAH
+#			NOT = { has_country_flag = abolished_mughal_supremacy }
+#		}
+#		allow = {
+#			is_greater_power = yes
+#			OR = {
+#				pensions = acceptable_pensions
+#				pensions = good_pensions
+#			}
+#			MUG = {
+#				exists = no
+#			}
+#		}
+#		effect = {
+#			prestige = 30
+#			badboy = 15
+#			set_country_flag = abolished_mughal_supremacy
+#			any_owned = {
+#				limit = {
+#					is_core = MUG
+#				}
+#				add_core = THIS
+#				remove_core = MUG
+#			}
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
 	
 	maratha_empire = {
 		picture = maratha_empire

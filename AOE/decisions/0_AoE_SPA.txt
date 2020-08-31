@@ -97,18 +97,17 @@ political_decisions = {
 				}
 				country_event = 114309
 			}
-			treasury = 100000
 			any_owned = {
-				limit = {
-					owner = {
+				owner = {
+					limit = {
 						wage_reform = low_minimum_wage
 					}
 					social_reform = acceptable_minimum_wage
 				}
 			}
 			any_owned = {
-				limit = {
-					owner = {
+				owner = {
+					limit = {
 						wage_reform = acceptable_minimum_wage
 					}
 					social_reform = good_minimum_wage

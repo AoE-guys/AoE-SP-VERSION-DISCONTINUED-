@@ -1125,36 +1125,6 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { 
-					unemployment_subsidies = trinket_subsidies
-				}
-			}
-			owner = {
-				social_reform = no_subsidies
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { 
-					unemployment_subsidies = trinket_subsidies
-				}
-			}
-			owner = {
-				social_reform = no_subsidies
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { 
-					unemployment_subsidies = trinket_subsidies
-				}
-			}
-			owner = {
-				social_reform = no_subsidies
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { 
 					unemployment_subsidies = low_subsidies
 				}
 			}
@@ -1841,7 +1811,7 @@ country_event = {
 	
 	option = {
 		name = "We'll get our money elsewhere..."
-		remove_country_modifier = good_minimum_wage
+		remove_country_modifier = church_goods_seized
 		prestige = -5
 	}
 }

@@ -475,8 +475,8 @@ political_decisions = {
 					}
 					NOT = {
 						OR = {
-							trinket_subsidies = no_subsidies
-							trinket_subsidies = trinket_subsidies
+							unemployment_subsidies = no_subsidies
+							unemployment_subsidies = trinket_subsidies
 						}
 					}
 				}
@@ -629,7 +629,7 @@ political_decisions = {
 				add_core = PRU
 				remove_core = BRN
 			}
-			change_OR = { tag = PRU tag = BRN }
+			change_tag = PRU
 			prestige = 15
 		}
 		ai_will_do = { factor = 1 }

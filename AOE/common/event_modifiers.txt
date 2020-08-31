@@ -4460,7 +4460,7 @@ louis_grande = {
 }
 peasant_turmoil = {
 	ruling_party_support = -0.15
-	global_pop_militancy_modifier = 0.003
+	core_pop_militancy_modifier = 0.001
 	tax_efficiency = -0.05
 	import_cost = -0.25
 	loan_interest = 0.35
@@ -4479,7 +4479,6 @@ poor_conscript_laws = {
 peasant_in_government = {
 	influence_modifier = -0.2
 	ruling_party_support = 0.35
-	global_pop_militancy_modifier = 0.003
 	icon = 18
 }
 clergy_and_nobility_domination = {
@@ -6708,5 +6707,26 @@ church_goods_seized = {
 }
 deified_ruler = {
 	prestige = 0.025
+	icon = 13
+}
+###Persia###
+nader_shah = {
+	mobilisation_size = 0.02
+	mobilisation_economy_impact = -0.05
+	army_organisation = 0.1
+	org_regain = 0.3
+	supply_consumption = 0.1
+	core_pop_militancy_modifier = -0.01
+	icon = 13
+}
+naderi_coinage_system = {
+	tax_efficiency = 0.025
+	icon = 17
+}
+quajar_army_reforms = {
+	army_organisation = 0.05
+	org_regain = 0.15
+	supply_consumption = 0.05
+	mobilisation_economy_impact = -0.025
 	icon = 13
 }
