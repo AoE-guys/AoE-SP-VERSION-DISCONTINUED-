@@ -913,6 +913,21 @@ new_world_war = {
 	icon = 16
 }
 
+new_world_tribe = {
+	trigger = {
+		government = tribal_democracy
+		exists = yes
+		OR = {
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+		}
+	}
+
+	global_immigrant_attract = -1
+	icon = 16
+}
+
 #help_ai_spain = { #Uncivs
 #	trigger = {
 #		civilized = no
@@ -1057,16 +1072,50 @@ german_minors_ai_help = {
 
 }
 
-
 help_ai_usa = {
 	trigger = {
-		tag = ULA
-		ai = yes
+		OR = {
+			AND = {
+				owns = 58
+				ai = yes
+			}
+			AND = {
+				owns = 2436
+				ai = yes
+			}
+			AND = {
+				owns = 2348
+				ai = yes
+			}
+			AND = {
+				owns = 2295
+				ai = yes
+			}
+			AND = {
+				owns = 2247
+				ai = yes
+			}
+			AND = {
+				owns = 2172
+				ai = yes
+			}
+			AND = {
+				owns = 139
+				ai = yes
+			}
+			AND = {
+				owns = 47
+				ai = yes
+			}
+		}
 	}
 	icon = 10
-	tax_efficiency = 0.15
+	tax_efficiency = 0.6
+	import_cost = -0.3
+	administrative_efficiency_modifier = 0.8
 	supply_consumption = -0.15
 	influence_modifier = -0.05
+	global_immigrant_attract = 15
 	mobilisation_size = 0.02
 }
 
