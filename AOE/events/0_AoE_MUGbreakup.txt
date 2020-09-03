@@ -37,7 +37,7 @@ country_event = {
 		release_vassal = MAH
 		release_vassal = LAD
 		release_vassal = ORI
-		release_vassal = MEW
+		release_vassal = JOD
 		all_core = { limit = { NOT = { owned_by = THIS } } remove_core = THIS }
 		any_pop = { militancy = 15 }
 		add_country_modifier = {
