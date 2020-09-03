@@ -718,7 +718,7 @@ country_event = { #10233 Rakoczi imprisoned
 			war = {
 				target = SIE
 				attacker_goal = { casus_belli = conquest }
-				defender_goal = { casus_belli = unification_casus_belli }
+				defender_goal = { casus_belli = acquire_all_cores country = HUN }
 			}
 			set_country_flag = rakoczi__imprisoned
 			any_owned = {
@@ -1501,14 +1501,20 @@ country_event = {
 	
 	option = {
 		name = "Our possesions must be secure!"
-		BOR = { country_event = 174507 }
-		GBR = { country_event = 174507 }
-		NET = { country_event = 174507 }
-		PLC = { country_event = 174507 }
-		PRU = { country_event = 174507 }
-		BAV = { country_event = 174507 }
-		SPA = { country_event = 174507 }
-		RUS = { country_event = 174507 }
+		any_country = {
+			limit = {
+				capital_scope = {
+					continent = europe
+				}
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+					tag = PRU
+					tag = BAV
+				}
+			}
+			country_event = 174507
+		}
 	}
 }
 country_event = {
@@ -1704,7 +1710,7 @@ country_event = {
 	option = {
 		name = "Send the envoy!"
 		AUS = {
-			country_event = 1745081
+			country_event = 1745091
 		}
 	}
 	option = {

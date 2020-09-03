@@ -443,7 +443,7 @@ country_event = {
 			value = 100
 		}
 		OMA = {
-			any_core = {
+			all_core = {
 				limit = {
 					is_core = ZAN
 				}
@@ -485,15 +485,13 @@ country_event = {
 			value = 75
 		}
 		OMA = {
-			any_core = {
+			all_core = {
 				limit = {
-					AND = {
-						is_core = ZAN
-						NOT = { 
-							OR = { 
-								province_id = 2030
-								province_id = 2029
-							}
+					is_core = ZAN
+					NOT = { 
+						OR = { 
+							province_id = 2030
+							province_id = 2029
 						}
 					}
 				}
@@ -535,7 +533,7 @@ country_event = {
 			value = 50
 		}
 		OMA = {
-			any_core = {
+			all_core = {
 				limit = {
 					province_id = 2048
 				}

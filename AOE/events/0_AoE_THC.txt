@@ -161,9 +161,12 @@ country_event = {
 		name = "Those saveges..."
 		capital_scope = {
 			life_rating = -3
-			RGO_size = -1
+			#RGO_size = 0.1
 			fort = -1
 			infrastructure = -2
+			any_pop = {
+				reduce_pop = 0.95
+			}
 		}
 		treasury = -5000
 		prestige = -30
@@ -262,14 +265,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		AND = {
-			OR = {
-				war_with = ENG
-				war_with = GBR
-				war_with = GBJ
-			}
-			tag = THC
+		OR = {
+			war_with = ENG
+			war_with = GBR
+			war_with = GBJ
 		}
+		tag = THC
 	}
 	
 	mean_time_to_happen = {
@@ -283,10 +284,12 @@ country_event = {
 				country_event = 160020
 			}
 		}
+		ai_chance = { factor = 1 }
 	}
 	
 	option = {
 		name = "We fight alone"
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -311,6 +314,9 @@ country_event = {
 		THC = {
 			country_event = 160030
 		}
+		ai_chance = {
+            factor = 95
+        }
 	}
 	
 	option = {
@@ -321,6 +327,22 @@ country_event = {
 		}
 		THC = {
 			country_event = 160040
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_greater_power = { war_with = THIS }
+			}
+			modifier = {
+				factor = 2
+				national_provinces_occupied = 0.25
+			}
+			modifier = {
+				factor = 0
+				war = no
+				NOT = { revolt_percentage = 0.25 }
+			}
 		}
 	}
 }
@@ -336,16 +358,21 @@ country_event = {
 		ammunition = 200
 		small_arms = 100
 		artillery = 50
+		425 = {
+			owner = {
+				create_alliance = THC
+			}
+		}
 	}
 }
 country_event = {
-	id = 16004
+	id = 160040
 	title = "France refuses!"
 	desc = "The French refused our offer and won't help us in our struggle"
 	is_triggered_only = yes
 	
 	option = {
-		name = "Great!"
+		name = "We're Doomed!"
 		prestige = -10
 	}
 }	

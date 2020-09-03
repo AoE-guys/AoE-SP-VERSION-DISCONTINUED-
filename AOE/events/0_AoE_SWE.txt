@@ -15,17 +15,15 @@ country_event = {
 		war = no
 		OR = {
 			AND = {
-				NOT = {
-					owns = 349
-					owns = 350
-					owns = 351
-					owns = 352
-					owns = 353
-					owns = 994
-					owns = 354
-					owns = 996
-					owns = 355
-				}
+				NOT = {	owns = 349 }
+				NOT = {	owns = 350 }
+				NOT = {	owns = 351 }
+				NOT = {	owns = 352 }
+				NOT = {	owns = 353 }
+				NOT = {	owns = 994 }
+				NOT = {	owns = 354 }
+				NOT = {	owns = 996 }
+				NOT = {	owns = 355 }
 			}
 			government = hms_government	
 		}

@@ -736,7 +736,9 @@ country_event = {
 	option = {
 		name = "They're not worth our time"
 		prestige = -10
-		militancy = 4
+		any_pop = {
+			militancy = 4
+		}
 		ai_chance = { factor = 0 }
 	}
 }

@@ -286,20 +286,20 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = 19180009
-	title = "test"
-	desc = "test"
-	picture = "colonization"
-	is_triggered_only = yes
-	
-	option = {
-		name = "Colony"
-		ABB = {
-			country_event = 2650
-		}
-	}
-}
+#country_event = {
+#	id = 19180009
+#	title = "test"
+#	desc = "test"
+#	picture = "colonization"
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "Colony"
+#		ABB = {
+#			country_event = 2650
+#		}
+#	}
+#}
 
 ####Brazil/South America####
 country_event = {
@@ -388,7 +388,7 @@ country_event = {
 			add_core = THIS
 			secede_province = THIS
 		}
-		any_core = {
+		all_core = {
 			limit = {
 				empty = yes
 			}

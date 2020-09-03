@@ -15,6 +15,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		1649 = { any_pop = { reduce_pop = 0.97 } }
 		1651 = { any_pop = { reduce_pop = 0.99 } }
 	}
@@ -37,6 +38,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		751 = { any_pop = { reduce_pop = 0.95 } }
 		751 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
 	}
@@ -59,6 +61,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		1650 = { any_pop = { reduce_pop = 0.99 } }
 		1651 = { any_pop = { reduce_pop = 0.99 } }
 		1649 = { any_pop = { reduce_pop = 0.99 } }
@@ -83,6 +86,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		277 = { infrastructure = -1 }
 		299 = { any_pop = { reduce_pop = 0.99 } }
 		274 = { any_pop = { reduce_pop = 0.99 } }
@@ -112,6 +116,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		2186 = { any_pop = { reduce_pop = 0.99 } }
 		2186 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
 	}
@@ -135,6 +140,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		375 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
 		385 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = christmas_flood duration = 1825 } }
 		383 = { any_pop = { reduce_pop = 0.98 } add_province_modifier = { name = christmas_flood duration = 1825 } }
@@ -165,6 +171,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		252 = { any_pop = { reduce_pop = 0.99 } add_province_modifier = { name = minor_flood duration = 730 } }
 	}
 }
@@ -186,6 +193,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		1108 = { any_pop = { reduce_pop = 0.80 } add_province_modifier = { name = earthquake_devastation duration = 1825 } }
 	}
 }
@@ -207,6 +215,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "Horrible!"
 		2325 = { add_province_modifier = { name = earthquake_devastation duration = 1825 } }
 		2325 = { naval_base = -1 }
 	}
