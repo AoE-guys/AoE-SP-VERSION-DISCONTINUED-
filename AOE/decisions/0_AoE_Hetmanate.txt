@@ -243,13 +243,17 @@ political_decisions = {
 		
 		potential = {
 			tag = HET
+			ZZH = {
+				exists = yes
+				ai = yes
+			}
 		}
 		
 		allow = {
 			war = no
 			is_vassal = no
 			ZZH = {
-				exists = yes
+				is_vassal = no
 			}
 			state_n_government = 1
 		}

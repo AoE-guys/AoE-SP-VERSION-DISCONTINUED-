@@ -903,6 +903,12 @@ new_world_war = {
 		war = yes
 		exists = yes
 		OR = {
+			is_vassal = no
+			overlord = {
+				ai = no
+			}
+		}
+		OR = {
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 			capital_scope = { continent = australia_new_zealand }
