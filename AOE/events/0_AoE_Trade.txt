@@ -8,6 +8,7 @@ country_event = {
 	}
 	
 	option = {
+		name = "tading time"
 		530 = {
 			add_province_modifier = {
 				name = trade_centre
@@ -983,6 +984,7 @@ country_event = {
 	desc = "Stonks"
 	is_triggered_only = yes
 	option = {
+		name = "Great!"
 	    clr_country_flag = getting_trade_port
 		any_country = { 
 			limit = { 
@@ -1010,6 +1012,7 @@ country_event = {
 	desc = "At last our country has decided to embrace western feudalism."
 	is_triggered_only = yes
 	option = {
+		name = "Tramble in fear peasants!"
 		government = absolute_monarchy
 		set_country_flag = absolute_monarchy_gov
 		ai_chance = {
@@ -1017,14 +1020,16 @@ country_event = {
 		}
 	}
 }	
-			
+
 country_event = {
 	id = 69425
 	title = "Freedom time"
 	desc = "Bring down the merchant elites, we want true democracy!"
 	is_triggered_only = yes
 	option = {
+		name = "Down with the rich!"
 		government = democracy
+		political_reform = wealth_weighted_voting
 		set_country_flag = democracy_gov
 		election = yes
 	
@@ -1040,6 +1045,7 @@ country_event = {
 	desc = "At last our country has decided to embrace western feudalism."
 	is_triggered_only = yes
 	option = {
+		name = "Tramble in fear peasants!"
 		government = absolute_monarchy
 		set_country_flag = absolute_monarchy_gov
 		ai_chance = {

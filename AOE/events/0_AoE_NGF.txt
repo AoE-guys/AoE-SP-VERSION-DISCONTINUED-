@@ -109,22 +109,24 @@ country_event = {
 	desc = "Shall we join our local union?"
 	
 	trigger = {
-		AND = {
-			exists = SGF
-			OR = {
-				tag = ANS
-				tag = AUG
-				tag = BAD
-				tag = BAV
-				tag = RAV
-				tag = SGM
-				tag = ULM
-				tag = WUL
-				tag = WUR
-				tag = SAL
-			}
-			alliance_with = SGF
+		exists = SGF
+		OR = {
+			tag = ANS
+			tag = AUG
+			tag = BAD
+			tag = BAV
+			tag = RAV
+			tag = SGM
+			tag = ULM
+			tag = WUL
+			tag = WUR
+			tag = SAL
 		}
+		alliance_with = SGF
+		OR = {
+				is_vassal = no
+				vassal_of = THIS
+			}
 	}
 	
 	option = {
@@ -144,7 +146,6 @@ country_event = {
 	desc = "Shall we join our local union?"
 	
 	trigger = {
-		AND = {
 			exists = THU
 			OR = {
 				tag = ATB
@@ -156,7 +157,10 @@ country_event = {
 				tag = SXZ
 			}
 			alliance_with = THU
-		}
+			OR = {
+				is_vassal = no
+				vassal_of = THIS
+			}
 	}
 	
 	option = {
@@ -176,7 +180,6 @@ country_event = {
 	desc = "Shall we join our local union?"
 	
 	trigger = {
-		AND = {
 			exists = WES
 			OR = {
 				tag = LIP
@@ -187,8 +190,11 @@ country_event = {
 				tag = OLD
 				tag = DOR
 			}
-			alliance_with = WES	
-		}
+			alliance_with = WES
+			OR = {
+				is_vassal = no
+				vassal_of = THIS
+			}
 	}
 	
 	option = {
@@ -208,7 +214,6 @@ country_event = {
 	desc = "Shall we join our local union?"
 	
 	trigger = {
-		AND = {
 			exists = RHI
 			OR = {
 				tag = ALS
@@ -225,7 +230,10 @@ country_event = {
 				tag = FUL
 			}
 			alliance_with = RHI
-		}
+			OR = {
+				is_vassal = no
+				vassal_of = THIS
+			}
 	}
 	
 	option = {

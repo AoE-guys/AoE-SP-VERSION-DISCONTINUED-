@@ -6,10 +6,8 @@ country_event = {
 	
 	trigger = {
 		tag = MGL
-		AND = {
-			MGL = { is_vassal = no }
-			IMG = { is_vassal = no }
-		}
+		MGL = { is_vassal = no }
+		IMG = { is_vassal = no }
 	}
 	
 	option = {
@@ -67,7 +65,7 @@ country_event = {
 			value = 100
 		}
 		TUR = {
-			any_core = {
+			all_core = {
 				limit = {
 					is_core = GHR
 				}

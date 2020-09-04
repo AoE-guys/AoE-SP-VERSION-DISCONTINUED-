@@ -71,7 +71,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 2
 				average_militancy = 6
 			}
 		}
@@ -264,6 +264,7 @@ country_event = {
 				limit = {
 					OR = {
 						has_pop_culture = scottish
+						has_pop_culture = highlander
 					}
 				}
 				militancy = 5
@@ -495,6 +496,7 @@ province_event = {
 			factor = 0.8
 			OR = {
 				culture = scottish
+				culture = highlander
 			}
 		}
 		modifier = {
@@ -709,6 +711,7 @@ province_event = {
 			factor = 0.8
 			OR = {
 				culture = scottish
+				culture = highlander
 			}
 		}
 		modifier = {

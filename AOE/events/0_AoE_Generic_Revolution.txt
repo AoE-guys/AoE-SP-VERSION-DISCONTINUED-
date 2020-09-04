@@ -107,9 +107,25 @@ country_event = {
 	option = {
 		name = "They will get what we promised"
         prestige = -1
-		OR = { 
-			government = hms_government
-			government = prussian_constitutionalism
+		any_owned = {
+			limit = {
+				owner = {
+					government = prussian_constitutionalism
+				}
+			}
+			owner = {
+				government = hms_government
+			}
+		}
+		any_owned = {
+			limit = {
+				owner = {
+					government = absolute_monarchy
+				}
+			}
+			owner = {
+				government = prussian_constitutionalism
+			}
 		}
 		ruling_party_ideology = liberal
 		political_reform = landed_voting

@@ -54,41 +54,41 @@ country_event = {
 		remove_country_modifier = frederick_grosse
 	}
 }
-country_event = {
-	id = 1740003
-	title = "Crown of Bohemia"
-	desc = "EVTDESC1740003"
-	picture = fredrick_grosse
-	is_triggered_only = yes
-	
-	option = {
-		name = "Great!"
-		AUS = {
-			any_owned = {
-				limit = {
-					OR = {
-						region = AUS_625
-						region = AUS_626
-					}
-				}
-				secede_province = BOH
-			}
-			war = {
-				target = BOH
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = acquire_all_cores }
-				call_ally = no
-			}
-		}
-		BOH = {
-			government = absolute_monarchy
-			political_reform = none_voting
-		}
-		PRU = {
-			create_vassal = BOH
-		}
-	}
-}
+#country_event = {
+#	id = 1740003
+#	title = "Crown of Bohemia"
+#	desc = "EVTDESC1740003"
+#	picture = fredrick_grosse
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "Great!"
+#		AUS = {
+#			any_owned = {
+#				limit = {
+#					OR = {
+#						region = AUS_625
+#						region = AUS_626
+#					}
+#				}
+#				secede_province = BOH
+#			}
+#			war = {
+#				target = BOH
+#				attacker_goal = { casus_belli = acquire_all_cores }
+#				defender_goal = { casus_belli = acquire_all_cores }
+#				call_ally = no
+#			}
+#		}
+#		BOH = {
+#			government = absolute_monarchy
+#			political_reform = none_voting
+#		}
+#		PRU = {
+#			create_vassal = BOH
+#		}
+#	}
+#}
 country_event = {
 	id = 1740004
 	title = "East Frisian ruler passes away"

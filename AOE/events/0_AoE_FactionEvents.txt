@@ -34,7 +34,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 30
 		modifier = {
 			factor = 0.75
 			NOT = { literacy = 0.25 }
@@ -262,7 +262,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 60
 		modifier = {
 			factor = 0.75
 			NOT = { literacy = 0.25 }
@@ -443,7 +443,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 30
 		modifier = {
 			factor = 0.75
 			NOT = { literacy = 0.25 }
@@ -638,7 +638,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 75
 		modifier = {
 			factor = 0.75
 			NOT = { literacy = 0.25 }
@@ -984,7 +984,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 75
 		modifier = {
 			factor = 0.75
 			NOT = { literacy = 0.25 }
@@ -1250,7 +1250,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400 #COMMON
+		months = 200 #COMMON
 		modifier = {
 			factor = 0.8
 			ruling_party_ideology = conservative
@@ -1414,7 +1414,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400 #COMMON
+		months = 200 #COMMON
 		modifier = {
 			factor = 1.1
 			ruling_party_ideology = conservative
@@ -1585,7 +1585,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 30
 		modifier = {
 			factor = 0.75
 			NOT = { literacy = 0.25 }
@@ -1855,6 +1855,10 @@ country_event = {
 			safety_regulations = no_safety
 			safety_regulations = low_safety
 		}
+	}
+	
+	mean_time_to_happen = {
+		months = 25
 	}
 	
 	option = {
