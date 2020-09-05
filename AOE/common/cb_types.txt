@@ -763,11 +763,11 @@ restore_austrian_empire = {
             NOT = { tag = ITA }
             THIS = { NOT = { has_country_flag = accepts_italy } }
         }
-        NOT = { has_country_modifier = neutrality_modifier }
+        #NOT = { has_country_modifier = neutrality_modifier }
         #NOT = { in_sphere = THIS }
         OR = {
             THIS = {
-                NOT = { has_country_modifier = neutrality_modifier }
+                #NOT = { has_country_modifier = neutrality_modifier }
                 military_score = 1
             }
             war_with = THIS
@@ -2536,7 +2536,7 @@ free_peoples = {
 				FROM = { tag = BOH }
 			}
 			AND = {
-				any_owned_province = { region = TUR_853 }
+				any_owned_province = { region = TUR_833 }
 				FROM = { tag = ALB }
 			}
 			AND = {

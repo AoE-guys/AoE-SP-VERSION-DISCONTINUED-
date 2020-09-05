@@ -84,16 +84,16 @@ political_decisions = {
 					NOT = { has_country_flag = biologism_invented }
 					biologism = 1
 				}
-				any_greater_power = { 
-					ai = no
-					NOT = { has_country_flag = germs_invented }
-					invention = germ_theory
-				}
-				any_neighbor_country = {
-					ai = no
-					NOT = { has_country_flag = germs_invented }
-					invention = germ_theory
-				}
+			#	any_greater_power = { 
+			#		ai = no
+			#		NOT = { has_country_flag = germs_invented }
+			#		invention = germ_theory
+			#	}
+			#	any_neighbor_country = {
+			#		ai = no
+			#		NOT = { has_country_flag = germs_invented }
+			#		invention = germ_theory
+			#	}
 				any_greater_power = { 
 					ai = no
 					NOT = { has_country_flag = gaslights_invented }
@@ -122,10 +122,10 @@ political_decisions = {
 					NOT = { has_country_flag = biologism_invented }
 					biologism = 1
 				}
-				AND = {
-					NOT = { has_country_flag = germs_invented }
-					invention = germ_theory
-				}
+			#	AND = {
+			#		NOT = { has_country_flag = germs_invented }
+			#		invention = germ_theory
+			#	}
 				AND = {
 					NOT = { has_country_flag = gaslights_invented }
 					invention = gaslights
@@ -150,10 +150,10 @@ political_decisions = {
 				limit = { owner = { NOT = { has_country_flag = biologism_invented } biologism = 1 } }
 				owner = { set_country_flag = biologism_invented }
 			}
-			random_owned = {
-				limit = { owner = { NOT = { has_country_flag = germs_invented } invention = germ_theory } }
-				owner = { set_country_flag = germs_invented }
-			}
+		#	random_owned = {
+		#		limit = { owner = { NOT = { has_country_flag = germs_invented } invention = germ_theory } }
+		#		owner = { set_country_flag = germs_invented }
+		#	}
 			random_owned = {
 				limit = { owner = { NOT = { has_country_flag = gaslights_invented } invention = gaslights } }
 				owner = { set_country_flag = gaslights_invented }
@@ -170,10 +170,10 @@ political_decisions = {
 				limit = { NOT = { has_country_flag = biologism_invented } biologism = 1 }
 				set_country_flag = biologism_invented
 			}
-			any_country = {
-				limit = { NOT = { has_country_flag = germs_invented } invention = germ_theory }
-				set_country_flag = germs_invented
-			}
+		#	any_country = {
+		#		limit = { NOT = { has_country_flag = germs_invented } invention = germ_theory }
+		#		set_country_flag = germs_invented
+		#	}
 			any_country = {
 				limit = { NOT = { has_country_flag = gaslights_invented } invention = gaslights }
 				set_country_flag = gaslights_invented

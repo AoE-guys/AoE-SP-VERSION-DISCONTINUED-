@@ -2,9 +2,10 @@ political_decisions = {
 	scottish_gaelic_province_names = {
 		picture = gtfo
 		potential = {
-				tag = SCO
-				NOT = { has_country_flag = scottish_gaelic_names }
-			}
+			tag = SCO
+			NOT = { has_country_flag = scottish_gaelic_names }
+			exists = yes
+		}
 		
 		allow = {
 			is_vassal = no
@@ -25,15 +26,13 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-}
-
-political_decisions = {
 	irish_province_names = {
 		picture = gtfo
 		potential = {
 				tag = IRE
 				NOT = { has_country_flag = irish_names }
 			}
+			exists = yes
 		
 		allow = {
 			is_vassal = no
@@ -57,14 +56,12 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-}
-
-political_decisions = {
 	welsh_province_names = {
 		picture = gtfo
 		potential = {
 				tag = WHA
 				NOT = { has_country_flag = welsh_names }
+				exists = yes
 			}
 		
 		allow = {

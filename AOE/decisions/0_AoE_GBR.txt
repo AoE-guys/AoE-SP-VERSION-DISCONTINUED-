@@ -243,13 +243,13 @@ political_decisions = {
 			controls = 425
 			OR = {
 				AND = {
-					military_score = BOR
+					military_score = 250
 					BOR = {
 						exists = yes
 					}
 				}
 				AND = {
-					military_score = FRA
+					military_score = 250
 					FRA = {
 						exists = yes
 					}

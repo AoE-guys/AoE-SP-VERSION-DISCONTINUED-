@@ -210,41 +210,19 @@ political_decisions = {
 						tag = NGF
 					}
 				}
-				country_event = {
-					id = 444666
-				}
+				country_event = 444666
 			}
 			any_owned = {
-			all_core = {
 				remove_core = LUB
-			}
-			all_core = {
 				remove_core = HAM
-			}
-			all_core = {
 				remove_core = HOL
-			}
-			all_core = {
 				remove_core = LAU
-			}
-			all_core = {
 				remove_core = MEC
-			}
-			all_core = {
 				remove_core = MST
-			}
-			all_core = {
 				remove_core = LNE
-			}
-			all_core = {
 				remove_core = HAN
-			}
-			all_core = {
 				remove_core = BRE
-			}
-			all_core = {
 				remove_core = OLD
-			}
 			}
 			
 			PRU_546 = {
@@ -374,36 +352,16 @@ political_decisions = {
 			}
 			
 			any_owned = {
-			all_core = {
 				remove_core = LUB
-			}
-			all_core = {
 				remove_core = HAM
-			}
-			all_core = {
 				remove_core = HOL
-			}
-			all_core = {
 				remove_core = LAU
-			}
-			all_core = {
 				remove_core = MEC
-			}
-			all_core = {
 				remove_core = MST
-			}
-			all_core = {
 				remove_core = LNE
-			}
-			all_core = {
 				remove_core = HAN
-			}
-			all_core = {
 				remove_core = BRE
-			}
-			all_core = {
 				remove_core = OLD
-			}
 			}
 			
 			PRU_546 = {
@@ -550,46 +508,22 @@ political_decisions = {
 						tag = NGF
 					}
 				}
-				country_event = {
-					id = 444666
-				}
+				country_event = 444666
 			}
 			LUB = {
-				country_event = {
-					id = 444666
-				}
+				country_event = 444666
 			}
 			any_owned = {
-			all_core = {
 				remove_core = LUB
-			}
-			all_core = {
 				remove_core = HAM
-			}
-			all_core = {
 				remove_core = HOL
-			}
-			all_core = {
 				remove_core = LAU
-			}
-			all_core = {
 				remove_core = MEC
-			}
-			all_core = {
 				remove_core = MST
-			}
-			all_core = {
 				remove_core = LNE
-			}
-			all_core = {
 				remove_core = HAN
-			}
-			all_core = {
 				remove_core = BRE
-			}
-			all_core = {
 				remove_core = OLD
-			}
 			}
 			
 			PRU_546 = {
@@ -856,9 +790,7 @@ political_decisions = {
 		}
 		effect = {
 			NGF = {
-				country_event = {
-					id = 444668
-				}
+				country_event = 444668
 			}
 			LUS = {
 				all_core = {

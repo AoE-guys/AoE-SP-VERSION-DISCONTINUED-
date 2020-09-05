@@ -596,7 +596,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				is_culture_group = scandinavian
-				is_culture_group = bears
+			#	is_culture_group = bears
 			}
 			NOT = {
 				exists = SCA

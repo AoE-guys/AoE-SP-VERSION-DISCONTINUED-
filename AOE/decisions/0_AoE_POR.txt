@@ -125,7 +125,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = created_monopoly_companies_of_commerce
 			PBZ = {
-				event = 114308
+				country_event = 114308
 			}
 			add_country_modifier = {
 				name = monopoly_companies_of_commerce
@@ -172,6 +172,8 @@ political_decisions = {
 					owner = {
 						wage_reform = low_minimum_wage
 					}
+				}
+				owner = {
 					social_reform = acceptable_minimum_wage
 				}
 			}
@@ -180,6 +182,8 @@ political_decisions = {
 					owner = {
 						wage_reform = acceptable_minimum_wage
 					}
+				}
+				owner = {
 					social_reform = good_minimum_wage
 				}
 			}
