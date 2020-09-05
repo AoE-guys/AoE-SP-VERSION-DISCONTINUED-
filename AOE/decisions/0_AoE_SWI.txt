@@ -5,6 +5,7 @@ political_decisions = {
 		potential = {
 			tag = SWI
 		NOT = { has_country_flag = united_swiss }
+		exists = yes
 		}
 		
 		allow = {

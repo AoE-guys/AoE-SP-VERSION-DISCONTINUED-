@@ -3,6 +3,8 @@ political_decisions = {
 		picture = become_isr
 		potential = {
 			tag = MLT
+			exists = yes
+			NOT = { ISR = { exists = yes } }
 		}
 		allow = {
 			owns = 917
@@ -25,6 +27,7 @@ political_decisions = {
 		potential = {
 			tag = ISR
 			NOT = { has_country_flag = levant_conquests }
+			exists = yes
 		}
 		allow = {
 			owns = 917
@@ -49,6 +52,7 @@ political_decisions = {
 		potential = {
 			tag = ISR
 			NOT = { has_country_flag = attract_french }
+			exists = yes
 		}
 		allow = {
 			owns = 917

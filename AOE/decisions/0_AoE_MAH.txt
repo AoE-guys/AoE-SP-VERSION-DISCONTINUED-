@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = absolute_mughal_conquest }
+			exists = yes
 		}
 		allow = {
 			military_score = 50
@@ -82,6 +83,7 @@ political_decisions = {
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = claimed_maratha_empire }
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -133,6 +135,7 @@ political_decisions = {
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = modernize_our_weaponary }
+			exists = yes
 		}
 		allow = {
 			infiltration = 1
@@ -166,6 +169,7 @@ political_decisions = {
 		potential = {
 			tag = MAH
 			NOT = { has_country_flag = modernize_our_weaponary }
+			exists = yes
 		}
 		allow = {
 			OR = {

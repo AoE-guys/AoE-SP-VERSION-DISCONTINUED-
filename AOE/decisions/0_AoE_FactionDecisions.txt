@@ -8,6 +8,7 @@ political_decisions = {
 				wage_reform = good_minimum_wage
 			}
 			NOT = { has_country_modifier = law_changed_by_force }
+			exists = yes
 		}
 		allow = {
 			wage_reform = good_minimum_wage
@@ -41,6 +42,7 @@ political_decisions = {
 				government = elective_monarchy_oligarchy
 			}
 			NOT = { has_recently_lost_war = yes }
+			exists = yes
 		}
 		allow = {
 			wage_reform = no_minimum_wage
@@ -92,6 +94,7 @@ political_decisions = {
 					NOT = {	government = archduchy }
 				}
 			}
+			exists = yes
 		}
 		allow = {
 			deep_defense_system = 1
@@ -118,6 +121,7 @@ political_decisions = {
 				health_care = good_health_care
 			}
 			centralization = regionalism
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -140,6 +144,7 @@ political_decisions = {
 				government = democracy
 			}
 			NOT = { safety_regulations = good_safety }
+			exists = yes
 		}
 		allow = {
 			NOT = { safety_regulations = good_safety }
@@ -199,6 +204,7 @@ political_decisions = {
 				unemployment_subsidies = low_subsidies
 				unemployment_subsidies = trinket_subsidies
 			}
+			exists = yes
 		}
 		allow = {
 			trade_policy = protectionism

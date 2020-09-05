@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = claimed_pomerania }
+			exists = yes
 		}
 		
 		allow = {
@@ -28,6 +29,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = claimed_silesia }
+			exists = yes
 		}
 		
 		allow = {
@@ -64,6 +66,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = encouraged_protestant_migration }
+			exists = yes
 		}
 	
 		allow = {
@@ -184,6 +187,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = held_herbstubung }
+			exists = yes
 		}
 		
 		allow = {
@@ -207,6 +211,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = introduced_the_goose_step }
+			exists = yes
 		}
 		
 		allow = {
@@ -229,6 +234,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = funded_regimental_cantons }
+			exists = yes
 		}
 		
 		allow = {
@@ -251,6 +257,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = funded_prussian_academy }
+			exists = yes
 		}
 		
 		allow = {
@@ -270,6 +277,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = prussia_is_united }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -312,6 +320,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = prussian_saxony }
+			exists = yes
 		}
 		
 		allow = {
@@ -342,6 +351,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = retablissement }
+			exists = yes
 		}
 		
 		allow = {
@@ -369,6 +379,7 @@ political_decisions = {
 				owned_by = THIS
 			}
 			NOT = { has_global_flag = ruhr_boom_has_happened }
+			exists = yes
 		}
 		
 		allow = {
@@ -461,6 +472,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = renovated_berlin }
+			exists = yes
 		}
 
 		allow = {
@@ -507,6 +519,7 @@ political_decisions = {
 		potential = {
 			OR = { tag = PRU tag = BRN }
 			NOT = { has_country_flag = prussian_rhineland }
+			exists = yes
 		}
 		
 		allow = {
@@ -578,6 +591,7 @@ political_decisions = {
 				owns = 691
 				owns = 695
 			}
+			exists = yes
 		}
 		allow = {
 			exists = yes
@@ -620,6 +634,7 @@ political_decisions = {
 				owns = 691
 				owns = 695
 			}
+			exists = yes
 		}
 		allow = {
 			exists = yes
@@ -649,6 +664,7 @@ political_decisions = {
 				has_country_flag = hre_member
 				has_country_flag = hre_emperor
 			}
+			exists = yes
 		}
 		
 		allow = {

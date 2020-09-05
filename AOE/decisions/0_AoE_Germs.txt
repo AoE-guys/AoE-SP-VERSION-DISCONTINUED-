@@ -6,6 +6,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = formed_thuringia
 			}
+			exists = yes
 		}
 		allow = {
 			is_secondary_power = yes
@@ -25,6 +26,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = formed_westphalia
 			}
+			exists = yes
 		}
 		allow = {
 			AND = {
@@ -47,6 +49,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = formed_rheinland
 			}
+			exists = yes
 		}
 		allow = {
 			AND = {
@@ -69,6 +72,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = formed_swabia
 			}
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -99,6 +103,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = invited_liege
 			}
+			exists = yes
 		}
 		allow = {
 			all_core = {
@@ -126,6 +131,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = invited_anhalt
 			}
+			exists = yes
 		}
 		allow = {
 			all_core = {
@@ -153,6 +159,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = invited_lux
 			}
+			exists = yes
 		}
 		allow = {
 			exists = LUX
@@ -178,6 +185,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = invited_limburg
 			}
+			exists = yes
 		}
 		allow = {
 			exists = LBG
@@ -203,6 +211,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = ended_saxony
 			}
+			exists = yes
 		}
 		allow = {
 			owns = 554

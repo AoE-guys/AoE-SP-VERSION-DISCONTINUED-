@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tech_school = unciv_tech_school
 			NOT = { has_country_modifier = reformed_beurocracy }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -38,6 +39,7 @@ political_decisions = {
 		potential = {
 			tech_school = unciv_tech_school
 			NOT = { has_country_modifier = reformed_army }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -72,6 +74,7 @@ political_decisions = {
 		potential = {
 			tech_school = unciv_tech_school
 			NOT = { has_country_modifier = reformed_industry }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -128,6 +131,7 @@ political_decisions = {
 		potential = {
 			tech_school = unciv_tech_school
 			NOT = { has_country_modifier = western_values }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -193,6 +197,7 @@ political_decisions = {
 			NOT = {
 				has_country_modifier = academic_confusion
 			}
+			exists = yes
 		}
 		allow = {
 			prestige = 45
@@ -211,6 +216,11 @@ political_decisions = {
 			}
 			tech_school = traditional_academic
 			clr_country_flag = unciv
+			remove_country_modifier = reformed_beurocracy
+			remove_country_modifier = reformed_army
+			remove_country_modifier = reformed_industry
+			remove_country_modifier = western_values
+			
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -219,6 +229,7 @@ political_decisions = {
 		potential = {
 			NOT = { tech_school = unciv_tech_school }
 			government = tribal_democracy
+			exists = yes
 		}
 		allow = {
 			war = no	
@@ -234,6 +245,7 @@ political_decisions = {
 		potential = {
 			tag = IQS
 			NOT = { has_country_flag = iqs_ireddentalism }
+			exists = yes
 		}
 		allow = {
 			war = no

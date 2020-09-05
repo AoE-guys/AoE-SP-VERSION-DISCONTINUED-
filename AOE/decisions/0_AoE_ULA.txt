@@ -6,6 +6,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = increased_colonization_efforts
 			}
+			exists = yes
 		}
 		allow = {
 			money = 50000
@@ -38,6 +39,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = native_assmiliation
 			}
+			exists = yes
 			is_vassal = no
 		}
 		allow = {
@@ -66,6 +68,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = french_officers
 			}
+			exists = yes
 		}
 		allow = {
 			money = 5000
@@ -95,6 +98,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = army_reform
 			}
+			exists = yes
 			is_vassal = no
 		}
 		allow = {
@@ -125,6 +129,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = canada_claimed
 			}
+			exists = yes
 			is_vassal = no
 			FCA = {
 				exists = yes
@@ -160,6 +165,7 @@ political_decisions = {
 		picture = new_orlean
 		potential = {
 			tag = ULA
+			exists = yes
 			NOT = {
 				has_country_flag = new_orlean
 			}
@@ -194,6 +200,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = native_assmiliation
 			}
+			exists = yes
 			NOT = {
 				has_country_flag = native_equal_rights
 			}
@@ -229,6 +236,7 @@ political_decisions = {
 		picture = louisana_flag
 		potential = {
 			tag = ULA
+			exists = yes
 			NOT = {
 				has_country_flag = for_god_and_people
 			}
@@ -267,6 +275,7 @@ political_decisions = {
 	french_scholarship = {
 		picture = alexander_emancipating
 		potential = {
+			exists = yes
 			tag = ULA
 			NOT = {
 				has_country_flag = french_schoolarship

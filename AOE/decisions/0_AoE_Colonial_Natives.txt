@@ -12,6 +12,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -41,6 +43,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -70,6 +74,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -99,6 +105,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -128,6 +136,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = canadian_native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -157,6 +167,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = colombian_native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -186,6 +198,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = peruvian_native_policy_set
 			}
+			exists = yes
+			ai = no
 		}
 		allow = {
 		}
@@ -212,9 +226,11 @@ political_decisions = {
 					ai = no
 				}
 			}
+			ai = no
 			NOT = {
 				has_country_flag = platinean_native_policy_set
 			}
+			exists = yes
 		}
 		allow = {
 		}
@@ -244,6 +260,8 @@ political_decisions = {
 			NOT = {
 				has_country_flag = jesuite_native_policy_set
 			}
+			ai = no
+			exists = yes
 		}
 		allow = {
 		}

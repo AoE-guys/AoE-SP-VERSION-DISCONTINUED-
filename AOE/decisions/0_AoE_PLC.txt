@@ -6,6 +6,7 @@ political_decisions = {
 			civilized = yes
 			government = elective_monarchy_oligarchy
 			NOT = { has_country_flag = enacted_3rd_may_constitution }
+			exists = yes
 		}
 		
 		allow = {
@@ -75,6 +76,7 @@ political_decisions = {
 		potential = {
 			tag = PLC
 			NOT = { has_country_flag = revise_the_treaty_of_andrusovo }
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -108,6 +110,7 @@ political_decisions = {
 		potential = {
 			tag = PLC
 			NOT = { has_country_flag = vassalize_ducal_prussia }
+			exists = yes
 		}
 		allow = {
 			owns = 695
@@ -131,6 +134,7 @@ political_decisions = {
 			tag = PLC
 			NOT = { capital = 706 }
 			owns = 706
+			exists = yes
 		}
 		allow = {
 			706 = {
@@ -156,6 +160,7 @@ political_decisions = {
 		potential = {
 			tag = PLC
 			NOT = { has_country_flag = second_union_of_hadiach }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -191,6 +196,7 @@ political_decisions = {
 			tag = PLC
 			NOT = { has_country_flag = second_union_of_hadiach }
 			has_country_modifier = folwark_serf_economy
+			exists = yes
 		}
 		allow = {
 			compound_steam_engines = 1
@@ -227,6 +233,7 @@ political_decisions = {
 		potential = {
 			tag = PLC
 			NOT = { has_country_flag = recover_inflanty }
+			exists = yes
 		}
 		allow = {
 			strategic_mobility = 1
@@ -254,6 +261,7 @@ political_decisions = {
 			}
 			NOT = { exists = PLC }
 			NOT = { has_country_flag = post_colonial_country }
+			exists = yes
 		}
 
 		allow = {
@@ -376,6 +384,7 @@ political_decisions = {
 		potential = {
 			tag = PLC
 			NOT = { exists = POL }
+			exists = yes
 		}
 
 		allow = {
@@ -447,6 +456,7 @@ political_decisions = {
 		potential = {
 			has_country_modifier = piracy_tolerant
 			is_greater_power = no
+			exists = yes
 		}
 		allow = {
 			any_owned_province = {

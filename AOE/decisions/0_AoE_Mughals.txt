@@ -3,6 +3,7 @@ political_decisions = {
 		potential = {
 			tag = MUG
 			NOT = { has_country_flag = asserted_mughal_supremacy }
+			exists = yes
 		}
 		allow = {
 			year = 1710
@@ -86,6 +87,7 @@ political_decisions = {
 		potential = {
 			tag = MUG
 			NOT = { has_country_flag = indochina_conquest }
+			exists = yes
 		}
 		allow = {
 			HND = {

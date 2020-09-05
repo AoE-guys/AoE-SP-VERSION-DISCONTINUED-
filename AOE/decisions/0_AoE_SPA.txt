@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = renovated_the_armada }
+			exists = yes
 		}
 		allow = {
 			money = 20000000
@@ -26,6 +27,7 @@ political_decisions = {
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = introduced_the_cadastre_tax }
+			exists = yes
 		}
 		allow = {
 			central_bank_money_bill_printing = 1
@@ -49,6 +51,7 @@ political_decisions = {
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = made_royal_academy }
+			exists = yes
 		}
 		allow = {
 			expressionism = 1
@@ -70,6 +73,7 @@ political_decisions = {
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = expeled_the_jesuits }
+			exists = yes
 		}
 		allow = {
 			trade_policy = protectionism
@@ -129,6 +133,7 @@ political_decisions = {
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = made_royal_spanish_academy }
+			exists = yes
 		}
 		allow = {
 			army_nco_training = 1
@@ -151,6 +156,7 @@ political_decisions = {
 		potential = {
 			tag = GLC
 			NOT = { has_country_flag = claimed_leon }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -182,6 +188,7 @@ political_decisions = {
 		potential = {
 			tag = GLC
 			NOT = { has_country_flag = claimed_douro }
+			exists = yes
 		}
 		allow = {
 			owns = 475
@@ -215,6 +222,7 @@ political_decisions = {
 		potential = {
 			tag = BSQ
 			NOT = { has_country_flag = claimed_logrono }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -243,6 +251,7 @@ political_decisions = {
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = nueva_planta_decrees }
+			exists = yes
 			ARN = {
 				exists = yes
 				ai = yes
@@ -271,6 +280,7 @@ political_decisions = {
 			tag  = ARN
 			is_vassal = no
 			NOT = { has_country_flag = aragon_sicily }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -301,6 +311,7 @@ political_decisions = {
 			tag  = ARN
 			has_country_flag = aragon_sicily
 			NOT = { has_country_flag = aragon_provence }
+			exists = yes
 		}
 		allow = {
 			all_core = {
@@ -327,6 +338,7 @@ political_decisions = {
 			has_country_flag = aragon_sicily
 			has_country_flag = aragon_provence
 			NOT = { has_country_flag = aragon_greece }
+			exists = yes
 		}
 		allow = {
 			all_core = {
@@ -355,6 +367,7 @@ political_decisions = {
 			tag  = ARN
 			has_country_flag = aragon_sicily
 			NOT = { has_country_flag = aragon_andorra }
+			exists = yes
 		}
 		allow = {
 			owns = 762
@@ -380,6 +393,7 @@ political_decisions = {
 				exists = IBR
 				has_global_flag = created_iberia
 			}
+			exists = yes
 		}
 		
 		allow = {

@@ -4,6 +4,7 @@ the_latin_question = {
 		potential = {
 			tag = GOD
 			NOT = { has_country_flag = latin_empire_claimed }
+			exists = yes
 		}
 		allow = {
 			war = no

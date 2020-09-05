@@ -7,6 +7,7 @@ political_decisions = {
 			NOT = { tag = MUG }
 			NOT = { has_country_flag = founded_new_empire}
 			has_country_flag = sunni_country
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -54,6 +55,7 @@ political_decisions = {
 			#is_culture_group = south_asian
 			tag = DLH
 			NOT = { has_country_flag = delhi_expansion }
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -80,6 +82,7 @@ political_decisions = {
 			#is_culture_group = south_asian
 			NOT = { has_country_flag = delhi_india }
 			tag = DLH
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -104,6 +107,7 @@ political_decisions = {
 			NOT = { has_country_flag = founded_new_empire }
 			NOT = { tag = DLH }
 			NOT = { tag = MUG }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -184,6 +188,7 @@ political_decisions = {
 			primary_culture = rajput
 			NOT = { RAJ = { exists = yes } }
 			NOT = { tag = MUG }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -238,6 +243,7 @@ political_decisions = {
 			}
 			NOT = { DEC = { exists = yes } }
 			NOT = { tag = MUG }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -305,6 +311,7 @@ political_decisions = {
 		potential = {
 			tag = BNG
 			NOT = { has_country_flag = claimed_greater_bengal }
+			exists = yes
 		}
 		allow = {
 			is_vassal = no
@@ -333,6 +340,7 @@ political_decisions = {
 		potential = {
 			tag = ORI
 			NOT = { has_country_flag = formed_orissa }
+			exists = yes
 		}
 		allow = {
 			ENG_1261 = {

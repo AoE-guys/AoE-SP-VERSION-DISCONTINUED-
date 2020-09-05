@@ -7,6 +7,7 @@ political_decisions = {
 		potential = {
 			tag = VEN
 			NOT = { has_country_flag = venice_expansion }
+			exists = yes
 		}
 			
 		allow = {
@@ -31,6 +32,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = into_italy
 			NOT = { has_country_flag = emilia_romagna_done }
+			exists = yes
 		}
 		
 		allow = {			
@@ -81,6 +83,7 @@ political_decisions = {
 			has_country_flag = into_italy
 			has_country_flag = emilia_romagna_done
 			NOT = { has_country_flag = demand_milan_done }
+			exists = yes
 		}
 		
 		allow = {
@@ -128,6 +131,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = ended_genoa
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -174,6 +178,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = reclaimed_adriatic
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -218,6 +223,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = tightened_adriatic	
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -271,6 +277,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = expanded_west
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -324,6 +331,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = demanded_greek
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -424,6 +432,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = our_sea
 			}
+			exists = yes
 		}
 		
 		allow = {

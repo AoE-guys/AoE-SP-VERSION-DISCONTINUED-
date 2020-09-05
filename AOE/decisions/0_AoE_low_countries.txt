@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = EFR
 			NOT = { has_country_flag = claimed_friesland }
+			exists = yes
 		}
 		
 		allow = {
@@ -29,6 +30,7 @@ political_decisions = {
 		potential = {
 			tag = EFR
 			NOT = { has_country_flag = frisia_claimed_schleswig }
+			exists = yes
 		}
 		
 		allow = {
@@ -54,6 +56,7 @@ political_decisions = {
 		potential = {
 			tag = EFR
 			NOT = { has_country_flag = formed_frisia }
+			exists = yes
 		}
 		
 		allow = {
@@ -87,6 +90,7 @@ political_decisions = {
 		potential = {
 			tag = EFR
 			has_country_flag = formed_frisia
+			exists = yes
 		}
 		allow = {
 			all_core = {
@@ -133,6 +137,7 @@ political_decisions = {
 		potential = {
 			tag = FLA
 			NOT = { has_country_flag = restored_duchy_of_flanders }
+			exists = yes
 		}
 		
 		allow = {
@@ -174,6 +179,7 @@ political_decisions = {
 			tag = FLA
 			NOT = { has_country_flag = flemish_kingdom_of_belgium }
 			has_country_flag = restored_duchy_of_flanders
+			exists = yes
 		}
 		
 		allow = {

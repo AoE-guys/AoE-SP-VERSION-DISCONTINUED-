@@ -992,6 +992,10 @@ help_ai_russia = {
 				government = colonial_company
 				is_vassal = yes
 			}
+			AND = {
+				tag = HTK
+				exists = yes
+			}
 		}
 		ai = yes
 	}
@@ -1031,6 +1035,10 @@ help_ai_sweden_and_austria = {
 				owns = 1121 #Persia
 			}
 			owns = 549 #Prussia
+			AND = {
+				tag = HTK
+				exists = yes
+			}
 		}
 		ai = yes
 	}
@@ -1074,7 +1082,7 @@ german_minors_ai_help = {
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	war_exhaustion = -0.5
-	mobilisation_size = 0.3
+	mobilisation_size = 0.25
 
 }
 
@@ -1112,6 +1120,10 @@ help_ai_usa = {
 			AND = {
 				owns = 47
 				ai = yes
+			}
+			AND = {
+				tag = HTK
+				exists = yes
 			}
 		}
 	}

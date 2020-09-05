@@ -7,7 +7,9 @@ political_decisions = {
 			SIE = {
 				exists = yes
 				ai = yes
+				vassal_of = THIS
 			}
+			exists = yes
 		}
 		allow = {
 			is_our_vassal = SIE
@@ -36,6 +38,7 @@ political_decisions = {
 			HUN = {
 				vassal_of = AUS
 			}
+			exists = yes
 		}
 		allow = {
 			HUN = {
@@ -75,6 +78,7 @@ political_decisions = {
 				is_vassal = no
 				ai = yes
 			}
+			exists = yes
 		}
 		allow = {
 			#rank = 8
@@ -101,6 +105,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = enacted_codex_theresianus
 			}
+			exists = yes
 		}
 		allow = {
 			has_country_modifier = maria_theresa
@@ -131,6 +136,7 @@ political_decisions = {
 				has_country_flag = constitutio_criminalis_theresiana
 			}
 			has_country_flag = enacted_codex_theresianus
+			exists = yes
 		}
 		allow = {
 			has_country_modifier = maria_theresa
@@ -155,6 +161,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = vaccination_mar
 			}
+			exists = yes
 		}
 		allow = {
 			electricity = 1
@@ -178,6 +185,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = military_academy
 			}
+			exists = yes
 		}
 		allow = {
 			army_nco_training = 1
@@ -203,6 +211,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = joseph_ii_reforms
 			}
+			exists = yes
 		}
 		allow = {
 			political_thought_7 = 1
@@ -227,6 +236,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = joseph_i_bureacracy
 			}
+			exists = yes
 		}
 		allow = {
 			private_bank_money_bill_printing = 1
@@ -263,6 +273,7 @@ political_decisions = {
 				has_country_flag = financial_reform
 			}
 			has_country_flag = joseph_i_bureacracy
+			exists = yes
 		}
 		allow = {
 			stock_exchange  = 1
@@ -290,6 +301,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = austrian_court
 			}
+			exists = yes
 		}
 		allow = {
 			impressionism = 1
@@ -321,6 +333,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = ambitions_in_bavaria
 			}
+			exists = yes
 		}
 		allow = {
 			mass_politics = 1
@@ -352,6 +365,7 @@ political_decisions = {
 			NOT = { has_country_flag = issued_pragmatic_sanction }
 			NOT = { has_country_flag = maria_ded }
 			has_country_flag = dynastic_crisis
+			exists = yes
 		}
 		allow = {
 			year = 1713
@@ -372,6 +386,7 @@ political_decisions = {
 			SIE = {
 				vassal_of = HUN
 			}
+			exists = yes
 		}
 		allow = {
 			idealism = 1
@@ -393,6 +408,7 @@ political_decisions = {
 			tag = HUN
 			has_global_flag = hungarian_revolution_succes
 			AUS = { has_country_flag = confederation }
+			exists = yes
 		}
 		allow = {
 			revolution_n_counterrevolution = 1

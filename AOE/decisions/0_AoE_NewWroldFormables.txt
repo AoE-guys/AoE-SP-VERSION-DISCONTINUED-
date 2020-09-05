@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = VNS
 			NOT = { exists = MEX }
+			exists = yes
 		}
 
 		allow = {
@@ -28,6 +29,7 @@ political_decisions = {
 		potential = {
 			tag = VNG
 			NOT = { exists = GCO }
+			exists = yes
 		}
 
 		allow = {
@@ -52,6 +54,7 @@ political_decisions = {
 		potential = {
 			tag = VLP
 			NOT = { exists = LPL }
+			exists = yes
 		}
 
 		allow = {
@@ -76,6 +79,7 @@ political_decisions = {
 		potential = {
 			tag = VOP
 			NOT = { exists = PEU }
+			exists = yes
 		}
 
 		allow = {
@@ -100,6 +104,7 @@ political_decisions = {
 		potential = {
 			tag = PBZ
 			NOT = { exists = BRZ }
+			exists = yes
 		}
 
 		allow = {
@@ -124,6 +129,7 @@ political_decisions = {
 		potential = {
 			tag = FCA
 			NOT = { exists = QUE }
+			exists = yes
 		}
 
 		allow = {
@@ -148,6 +154,7 @@ political_decisions = {
 		potential = {
 			tag = RPL
 			NOT = { exists = CAN }
+			exists = yes
 		}
 
 		allow = {
@@ -176,6 +183,7 @@ political_decisions = {
 				government = dominion
 			}
 			NOT = { has_country_flag = constitution_made }
+			exists = yes
 		}
 		
 		allow = {

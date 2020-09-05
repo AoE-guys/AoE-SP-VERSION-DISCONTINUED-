@@ -148,6 +148,7 @@ political_decisions = {
 		picture = reichstag
 		potential = {
                      always = yes
+					 exists = yes
 		}
 		allow = {
 				OR = {

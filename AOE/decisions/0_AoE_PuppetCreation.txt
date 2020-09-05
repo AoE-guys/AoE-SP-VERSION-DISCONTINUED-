@@ -6,6 +6,7 @@ political_decisions = {
 			NOT = { has_country_flag = post_colonial_country }
 			NOT = { ITA = { exists = yes } }
 			political_thought_7 = 1
+			exists = yes
 		}
 
 		allow = {
@@ -110,6 +111,7 @@ political_decisions = {
 			NOT = { NNN = { exists = yes } }
 			has_global_flag = hre_dismantled
 			political_thought_7 = 1
+			exists = yes
 		}
 
 		allow = {
@@ -190,6 +192,7 @@ political_decisions = {
 			NOT = { CPL = { exists = yes } }
 			NOT = { PZN = { exists = yes } }
 			NOT = { tag = RUS }
+			exists = yes
 		}
 
 		allow = {
@@ -326,6 +329,7 @@ political_decisions = {
 			NOT = { exists = PLC }
 			NOT = { exists = PLR }
 			NOT = { exists = CPL }
+			exists = yes
 			tag = RUS
 		}
 

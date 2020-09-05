@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 		    capital_scope = { continent = europe }
 			NOT = { has_country_flag = east_india_company_funded }
+			exists = yes
 		}
 		allow = {
 			any_owned_province = {
@@ -58,6 +59,7 @@ political_decisions = {
 	give_land_to_eic = {
 		picture = map_india
 		potential = {
+			exists = yes
 		         OR = {
                        D01 = { vassal_of = THIS  exists = yes } 
                        D02 = { vassal_of = THIS  exists = yes } 
@@ -132,6 +134,7 @@ political_decisions = {
 	curtail_eic_power = {
 		picture = map_india
 		potential = {
+			exists = yes
 		         NOT = { has_country_modifier = eic_monopoly_broken }
 		         OR = {
                        D01 = { vassal_of = THIS  exists = yes rank = 8 } 
@@ -206,6 +209,7 @@ political_decisions = {
 	open_kolar_gold_fields = {
 		picture = map_india
 		potential = {
+			exists = yes
 			OR = { 
 				owns = 1313
 				capital = 1313
@@ -232,6 +236,7 @@ political_decisions = {
 	close_kolar_gold_fields = {
 		picture = map_india
 		potential = {
+			exists = yes
 		    OR = { 
 				owns = 1313
 				capital = 1313

@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = AFG
 			NOT = { HTK = { exists = yes } }
+			exists = yes
 		}
 		allow = {
 			war_policy = jingoism
@@ -38,6 +39,7 @@ political_decisions = {
 		potential = {
 			tag = AFG
 			HTK = { exists = yes war = no }
+			exists = yes
 		}
 		allow = {
 			war = no

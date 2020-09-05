@@ -16,6 +16,7 @@ political_decisions = {
 					has_country_flag = combat_piracy3
 				}				
 			}
+			exists = yes
 			NOT = { has_country_flag = piracy_tolerant }	
 		}
 		
@@ -81,6 +82,7 @@ political_decisions = {
 				}
 			}
 			has_country_flag = combat_piracy2
+			exists = yes
 			NOT = { has_country_flag = piracy_tolerant }
 		}
 			
@@ -139,6 +141,7 @@ political_decisions = {
 	combat_piracy_3 = {
 		picture = combat_piracy_III
 		potential = {
+			exists = yes
 			any_owned_province = {
 				OR = {
 					has_province_modifier = piracy_mild
@@ -208,6 +211,7 @@ political_decisions = {
 	become_pirate_republic = {
 		picture = become_pirate_republic
 		potential = {
+			exists = yes
 			has_country_modifier = piracy_tolerant
 			is_greater_power = no
 			any_owned_province = {

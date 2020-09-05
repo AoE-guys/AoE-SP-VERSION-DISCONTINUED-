@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = KMK
 			exists = AKH
+			exists = yes
 		}
 		allow = {
 			NOT = { vassal_of = RUS }
@@ -21,6 +22,7 @@ political_decisions = {
 		potential = {
 			tag = AKH
 			exists = KMK
+			exists = yes
 		}
 		allow = {
 			NOT = { vassal_of = RUS }
@@ -43,6 +45,7 @@ political_decisions = {
 				tag = CRI
 				tag = DON
 			}
+			exists = yes
 			NOT = {
 				has_country_flag = unified_horde
 			}
@@ -124,6 +127,7 @@ political_decisions = {
 		potential = {
 			tag = GHR
 			NOT = { has_country_flag = blue_horde_taken }
+			exists = yes
 		}
 		allow = {
 			GHR = {
@@ -150,6 +154,7 @@ political_decisions = {
 		potential = {
 			tag = GHR
 			NOT = { has_country_flag = hetmanate_taken }
+			exists = yes
 		}
 		allow = {
 			GHR = {
@@ -180,6 +185,7 @@ political_decisions = {
 		potential = {
 			tag = GHR
 			NOT = { has_country_flag = caucasia_taken }
+			exists = yes
 		}
 		allow = {
 			GHR = {
@@ -214,6 +220,7 @@ political_decisions = {
 				has_country_flag = hetmanate_taken
 				has_country_flag = blue_horde_taken
 			}
+			exists = yes
 		}
 		allow = {
 			GHR = {
@@ -252,6 +259,7 @@ political_decisions = {
 			tag = GHR
 			NOT = { has_country_flag = germs_recruited }
 			has_country_flag = kazan_taken
+			exists = yes
 		}
 		allow = {
 			GHR = {
@@ -271,6 +279,7 @@ political_decisions = {
 		potential = {
 			tag = GHR
 			NOT = { has_country_flag = asked_turkey }
+			exists = yes
 		}
 		allow = {
 			GHR = {
@@ -290,6 +299,7 @@ political_decisions = {
 		picture = outer_manchuria_map
 		potential = {
 			tag = MGL
+			exists = yes
 			NOT = {
 				OR = {
 					exists = MCK

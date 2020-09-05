@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = WAL
 			NOT = { has_country_flag = mirceas_conquests }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -36,6 +37,7 @@ political_decisions = {
 			tag = WAL
 			NOT = { has_country_flag = dragon_order }
 			military_score = 10
+			exists = yes
 		}
 		allow = {
 			war_with = TUR

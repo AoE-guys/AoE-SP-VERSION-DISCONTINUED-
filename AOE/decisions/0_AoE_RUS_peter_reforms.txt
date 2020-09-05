@@ -6,6 +6,7 @@ political_decisions = {
 			NOT = {
 			has_country_flag = new_administration_rus
 			}
+			exists = yes
 		}
 		allow = {
 			NOT = {
@@ -33,6 +34,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			government = tsardom
+			exists = yes
 		}
 		allow = {
 			idealism = 1
@@ -81,6 +83,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = claimed_baltics }
+			exists = yes
 		}
 	
 		allow = {
@@ -128,6 +131,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = claimed_crimea_south_ukrine }
+			exists = yes
 		}
 		allow = {
 			military_score = 150
@@ -152,6 +156,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = enacted_the_table_of_ranks
 			}
+			exists = yes
 		}
 		allow = {
 			NOT = {
@@ -183,6 +188,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = integrated_kalmyk }
+			exists = yes
 		}
 		allow = {
 			KMK = {
@@ -216,6 +222,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = enacted_nakaz
 			}
+			exists = yes
 		}
 		allow = {
 			has_country_modifier = catharine_the_great
@@ -257,6 +264,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = claimed_ruthenia }
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -306,6 +314,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = conquer_east_prussia }
+			exists = yes
 		}
 		allow = {
 			owns = 994
@@ -342,6 +351,7 @@ political_decisions = {
 			tag = RUS
 			NOT = { has_country_flag = settled_alaska }
 			has_global_flag = alaska_discovered
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -382,6 +392,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = volga_germs }
+			exists = yes
 		}
 		allow = {
 			money = 30000
@@ -504,6 +515,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = introduced_proper_consciption
 			}
+			exists = yes
 		}
 		allow = {
 			army_professionalism = 1
@@ -527,6 +539,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = vaccination_cat
 			}
+			exists = yes
 		}
 		allow = {
 			chemistry_and_electricity_7 = 1
@@ -551,6 +564,7 @@ political_decisions = {
 				has_country_flag = manifesto_on_caucasus
 			}
 			has_country_flag = caspian_expedition_fail
+			exists = yes
 		}
 		allow = {
 			state_n_government = 1
@@ -599,6 +613,7 @@ political_decisions = {
 			DON = {
 				exists = yes
 			}
+			exists = yes
 		}
 		allow = {
 			ideological_thought = 1
@@ -615,6 +630,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = settle_south_borders
 			}
+			exists = yes
 		}
 		allow = {
 			RUS_964 = { owned_by  = RUS }
@@ -923,6 +939,7 @@ political_decisions = {
 					owned_by = QNG
 				}
 			}
+			exists = yes
 		}
 		allow = {
 			iron_railroad = 1
@@ -957,6 +974,7 @@ political_decisions = {
 					owned_by = QNG
 				}
 			}
+			exists = yes
 			has_country_flag = treaty_of_kyakhta
 		}
 		allow = {

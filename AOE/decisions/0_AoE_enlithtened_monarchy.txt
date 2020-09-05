@@ -5,6 +5,7 @@ political_decisions = {
 			government = absolute_monarchy
 			NOT = { has_country_modifier = establishing_an_advisory_body }
 			NOT = { has_country_modifier = totalitarian_system }
+			exists = yes
 		}
 		
 		allow = {
@@ -118,6 +119,7 @@ political_decisions = {
 			}
 			NOT = { has_country_modifier = cult_of_personality }
 			NOT = { has_country_modifier = totalitarian_system }
+			exists = yes
 		}
 		
 		allow = {
@@ -149,6 +151,7 @@ political_decisions = {
 			government = proletarian_dictatorship
 			NOT = { has_country_modifier = political_education }
 			NOT = { has_country_modifier = totalitarian_system }
+			exists = yes
 		}
 		
 		allow = {
@@ -181,6 +184,7 @@ political_decisions = {
 			government = absolute_monarchy
 			NOT = { has_country_modifier = political_education }
 			NOT = { has_country_modifier = totalitarian_system }
+			exists = yes
 		}
 		
 		allow = {
@@ -212,6 +216,7 @@ political_decisions = {
 		potential = {
 			government = absolute_monarchy
 			NOT = { has_country_modifier = totalitarian_system }
+			exists = yes
 		}
 		
 		allow = {

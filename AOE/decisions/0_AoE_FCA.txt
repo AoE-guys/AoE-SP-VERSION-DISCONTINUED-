@@ -7,6 +7,7 @@ political_decisions = {
 				tag = QUE
 				tag = CAN
 			}
+			exists = yes
 		}
 		allow = {
 			war_policy = jingoism
@@ -31,6 +32,7 @@ political_decisions = {
 				tag = QUE
 				tag = FCA
 			}
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -39,6 +41,7 @@ political_decisions = {
 					revolution_n_counterrevolution = 1
 				}
 				military_score = 35
+				is_vassal = no
 			}
 		}
 		effect = {
@@ -58,25 +61,22 @@ political_decisions = {
 	southern_expedition = {
 		picture = native_land
 		potential = {
-			NOT = { has_country_flag = hundsun_bay_company_claimed }
+			NOT = { has_country_flag = southern_expedition }
 			OR = {
 				tag = QUE
 				tag = FCA
 				tag = RPL
 				tag = CAN
 			}
-			OR = {
+			NOT = {
+				tag = FCA
+				is_vassal = yes
 				ULA = {
-					NOT = {
-						vassal_of = BOR
-					}
-					NOT = {
-						vassal_of = FRA
-					}
+					exists = yes
+					is_vassal = yes
 				}
-				tag = RPL
-				tag = CAN
 			}
+			exists = yes
 			owns = 54
 		}
 		allow = {
@@ -85,11 +85,11 @@ political_decisions = {
 					war_policy = jingoism
 					revolution_n_counterrevolution = 1
 				}
-				military_score = 45
+				military_score = 25
 			}
 		}
 		effect = {
-			set_country_flag = hundsun_bay_company_claimed
+			set_country_flag = southern_expedition
 			USA_176 = {
 				add_core = THIS
 			}
@@ -161,6 +161,7 @@ political_decisions = {
 				tag = FCA
 			}
 			NOT = { has_country_flag = fund_merchant_navy }
+			exists = yes
 		}
 		allow = {
 			blue_and_brown_water_schools = 1
@@ -187,6 +188,7 @@ political_decisions = {
 				tag = RPL
 				tag = CAN
 			}
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -195,13 +197,14 @@ political_decisions = {
 					revolution_n_counterrevolution = 1
 				}
 				military_score = 35
+				is_vassal = no
 			}
 		}
 		effect = {
 			set_country_flag = claimed_fench_canada
 			
 			FCA = {
-				any_owned = {
+				all_core = {
 					add_core = THIS
 				}
 			}

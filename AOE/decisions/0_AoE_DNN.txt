@@ -7,6 +7,7 @@ political_decisions = {
 				is_capital = yes
 			}
 			owns = 372
+			exists = yes
 			NOT = { has_country_flag = education_reform }
 		}
 		allow = {
@@ -36,6 +37,7 @@ political_decisions = {
 			372 = {
 				is_capital = yes
 			}
+			exists = yes
 			owns = 372
 			NOT = { has_country_flag = struensee_reforms }
 		}
@@ -151,6 +153,7 @@ political_decisions = {
 			owns = 372
 			NOT = { has_country_flag = danish_gp }
 			NOT = { tag = SCA }
+			exists = yes
 		}
 		allow = {
 			all_core = {
@@ -186,6 +189,7 @@ political_decisions = {
 			owns = 372
 			NOT = { has_country_flag = claimed_estonia_and_livonia }
 			NOT = { tag = SCA }
+			exists = yes
 		}
 		allow = {
 			has_country_flag = danish_gp
@@ -214,6 +218,7 @@ political_decisions = {
 			}
 			owns = 372
 			NOT = { has_country_flag = claimed_pomerania_den }
+			exists = yes
 		}
 		allow = {
 			has_country_flag = danish_gp
@@ -245,6 +250,7 @@ political_decisions = {
 			}
 			tag = DNN
 			NOT = { has_country_flag = education_reform }
+			exists = yes
 		}
 		allow = {
 			OR = {
@@ -272,6 +278,7 @@ political_decisions = {
 			}
 			tag = DEN
 			NOT = { has_country_flag = education_reform }
+			exists = yes
 		}
 		allow = {
 			owns = 308
@@ -299,6 +306,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = danish_tunisia
 			}
+			exists = yes
 		}
 		allow = {
 			war = no

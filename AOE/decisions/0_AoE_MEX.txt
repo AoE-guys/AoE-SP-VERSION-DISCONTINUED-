@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = MEX
 			NOT = { has_country_flag = carabbean_conquest }
+			exists = yes
 		}
 		
 		allow = {
@@ -51,6 +52,7 @@ political_decisions = {
 			tag = MEX
 			NOT = { has_country_flag = integrated_uca }
 			has_country_flag = kill_UCA_go
+			exists = yes
 		}
 		
 		allow = {
@@ -84,6 +86,7 @@ political_decisions = {
 		potential = {
 			tag = MEX
 			NOT = { has_country_flag = claimed_panama }
+			exists = yes
 		}
 		
 		allow = {

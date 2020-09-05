@@ -8,6 +8,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = reintegrated_moghulistan
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -44,6 +45,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = attacked_bukhara
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -68,6 +70,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = reclaimed_agayuz
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -89,6 +92,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = claimed_eastern_tribal_areas
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -127,6 +131,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = influenced_qinghai
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -159,6 +164,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = vassalized_qinghai
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -182,6 +188,7 @@ political_decisions = {
 				has_country_flag = exiled_amursana
 			}
 			year = 1952
+			exists = yes
 		}
 		
 		allow = {
@@ -207,6 +214,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = dzungaria_reorg
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -247,6 +255,7 @@ political_decisions = {
 			1488 = {
 					owned_by = DZN
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -282,6 +291,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = sold_gwadar
 			}
+			exists = yes
 		}
 		
 		allow = {

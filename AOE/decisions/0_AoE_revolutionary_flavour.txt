@@ -7,6 +7,7 @@ political_decisions = {
 				government = fascist_dictatorship
 			}
 			NOT = { has_country_modifier = levee_en_masse_modifier }
+			exists = yes
 		}
 		allow = {
 			war = yes
@@ -28,6 +29,7 @@ political_decisions = {
 			government = proletarian_dictatorship
 			has_country_flag = rev_secured
 			NOT = { has_country_modifier = radical_land_reform }
+			exists = yes
 		}
 		allow = {
 			has_country_modifier = revolutionary_spirit
@@ -96,6 +98,7 @@ political_decisions = {
 		potential = {
 			government = proletarian_dictatorship
 			has_country_flag = rev_secured
+			exists = yes
 		}
 		allow = {
 			has_country_modifier = revolutionary_spirit

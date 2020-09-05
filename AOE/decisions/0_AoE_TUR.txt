@@ -7,6 +7,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = ceded_taman
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -34,6 +35,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = recruited_prussian_military_advisors }
+			exists = yes
 		}
 		allow = {
 			relation = { who = PRU value = 100 }
@@ -55,6 +57,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = recovered_hungary }
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -68,6 +71,13 @@ political_decisions = {
 		effect = {
 			set_country_flag = recovered_hungary
 			prestige = 40
+			AUS_623 = { add_core = THIS }
+			AUS_641 = { add_core = THIS }
+			AUS_654 = { add_core = THIS }
+			AUS_657 = { add_core = THIS }
+			AUS_771 = { add_core = THIS }
+			AUS_777 = { add_core = THIS }
+			badboy = 20
 			add_country_modifier = {
 				name = fanatic_army
 				duration = 1825
@@ -84,6 +94,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = imperial_navy_engieering_school }
+			exists = yes
 		}
 		allow = {
 			high_sea_battle_fleet = 1
@@ -105,6 +116,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = abolished_janisseries }
+			exists = yes
 			has_country_modifier = janisseries_influence
 		}
 		allow = {
@@ -128,6 +140,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = nizam-i_djedid_reforms }
+			exists = yes
 		}
 		allow = {
 			modern_army_doctrine = 1
@@ -150,6 +163,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = avenged_1683 }
+			exists = yes
 		}
 		allow = {
 			controls = 619

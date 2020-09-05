@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = DAH
 			NOT = { has_country_flag = female_guard }
+			exists = yes
 		}
 		allow = {
 			muzzle_loaded_rifles = 1
@@ -30,6 +31,7 @@ political_decisions = {
 		potential = {
 			primary_culture = amhara
 			NOT = { has_country_flag = ETH_claim_yemen }
+			exists = yes
 		}
 		
 		allow = {
@@ -78,6 +80,7 @@ political_decisions = {
 			1864 = { empty = yes }
 			1866 = { empty = yes }
 			1867 = { empty = yes }
+			exists = yes
 		}
 		
 		allow = {

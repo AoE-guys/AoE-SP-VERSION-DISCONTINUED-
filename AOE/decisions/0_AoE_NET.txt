@@ -5,6 +5,7 @@ political_decisions = {
 			potential = {
 				tag = NET
 				has_country_modifier = admiraliteiten
+				exists = yes
 			}
 			allow = {
 				NOT = {
@@ -28,6 +29,7 @@ political_decisions = {
 			potential = {
 				tag = NET
 				NOT = { has_country_flag = united_the_netherlands }
+				exists = yes
 			}
 			allow = {
 				OR = {
@@ -81,6 +83,7 @@ political_decisions = {
 			potential = {
 				tag = NET
 				NOT = { has_country_flag = claimed_artois }
+				exists = yes
 			}
 			allow = {
 				is_greater_power = yes
@@ -120,6 +123,7 @@ political_decisions = {
 			potential = {
 				tag = NET
 				NOT = { has_country_flag = dutch_banks }
+				exists = yes
 			}
 			allow = {
 				bank_inspection_board = 1
@@ -145,6 +149,7 @@ political_decisions = {
 					government = merchant_republic
 					government = democracy
 				}
+				exists = yes
 			}
 			allow = {
 				has_country_modifier = orangist_domination
@@ -181,6 +186,7 @@ political_decisions = {
 			potential = {
 				tag = NET
 				NOT = { has_country_flag = reformed_outdoor_relief }
+				exists = yes
 			}
 			allow = {
 				OR = {
@@ -230,6 +236,7 @@ political_decisions = {
 				NOT = { government = proletarian_dictatorship }
 				NOT = { government = fascist_dictatorship }
 				year = 1740
+				exists = yes
 			}
 			allow = {
 				NOT = { militancy = 3 }

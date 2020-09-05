@@ -12,7 +12,7 @@ political_decisions = {
 				has_country_flag = end_of_paliy
 			}
 			has_country_flag = paliy_rebellion
-			
+			exists = yes
 		}
 		
 		allow = {
@@ -67,6 +67,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = masepa_revolt
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -137,6 +138,7 @@ political_decisions = {
 							960 = { average_militancy = 6 }
 							954 = { average_militancy = 6 }
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -183,6 +185,7 @@ political_decisions = {
 				has_country_flag = fate_of_the_sich
 			}
 			year = 1770
+			exists = yes
 		}
 		
 		allow = {
@@ -217,6 +220,7 @@ political_decisions = {
 				has_country_flag = fate_of_the_sich
 				has_country_flag = sich
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -247,6 +251,7 @@ political_decisions = {
 				exists = yes
 				ai = yes
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -284,6 +289,7 @@ political_decisions = {
 				}
 				has_country_flag = mazepa_culture
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -330,6 +336,7 @@ political_decisions = {
 					has_country_flag = don_resolved
 				}
 			}
+			exists = yes
 		}
 		
 		allow = {

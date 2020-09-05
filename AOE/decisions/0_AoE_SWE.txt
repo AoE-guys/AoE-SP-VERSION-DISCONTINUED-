@@ -12,6 +12,7 @@ political_decisions = {
 					owned_by = THIS
 				}
 			}
+			exists = yes
 			RUS_345 = {
 				NOT = {
 					owned_by = THIS
@@ -57,6 +58,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = removed_russian_claims }
+			exists = yes
 		}
 		
 		allow = {
@@ -102,6 +104,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = mobilzied_the_caroleans } 
+			exists = yes
 		}
 		
 		allow = {
@@ -127,6 +130,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = riksdaler_reform } 
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -158,6 +162,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = gustav_iii_reforms } 
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -196,6 +201,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = agricilture_reforms } 
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -227,6 +233,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = commodity_act } 
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -257,6 +264,7 @@ political_decisions = {
 			owns = 322
 			322 = { is_capital = yes }
 			NOT = { has_country_flag = great_partition } 
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -296,6 +304,7 @@ political_decisions = {
 			owns = 354
 			owns = 996
 			owns = 355
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -364,6 +373,7 @@ political_decisions = {
 			owns = 354
 			owns = 996
 			owns = 355
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -404,6 +414,7 @@ political_decisions = {
 			owns = 354
 			owns = 996
 			owns = 355
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -429,37 +440,39 @@ political_decisions = {
 		}
 	}
 	
-	claim_trongheim = {
-		picture = army_training
-		potential = {
-			owns = 322
-			322 = { is_capital = yes }
-			NOT = { has_country_flag = claimed_trongheim }
-		}
-		allow = {
-			war = no
-			government = absolute_monarchy
-			military_score = 50
-			war_policy = jingoism
-			nationalism_n_imperialism = 1
-		}
-		effect = {
-			badboy = 5
-			set_country_flag = claimed_trongheim
-			305 = {
-				add_core = THIS
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	claim_trongheim = {
+#		picture = army_training
+#		potential = {
+#			owns = 322
+#			322 = { is_capital = yes }
+#			NOT = { has_country_flag = claimed_trongheim }
+#			exists = yes
+#		}
+#		allow = {
+#			war = no
+#			government = absolute_monarchy
+#			military_score = 50
+#			war_policy = jingoism
+#			nationalism_n_imperialism = 1
+#		}
+#		effect = {
+#			badboy = 5
+#			set_country_flag = claimed_trongheim
+#			305 = {
+#				add_core = THIS
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 	
 	dominus_mari_baltici = {
 		picture = baltic_sea
 		potential = {
 			is_culture_group = scandinavian
-			NOT = { has_country_flag = dominus_mare_baltici } 
+			NOT = { has_country_flag = dominus_mare_baltici }
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -588,6 +601,7 @@ political_decisions = {
 			NOT = {
 				exists = SCA
 			}
+			exists = yes
 		}
 		allow = {
 			is_greater_power = yes
@@ -648,6 +662,7 @@ political_decisions = {
 			2499 = {
 				empty = yes
 			}
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -695,6 +710,7 @@ political_decisions = {
 				terrain = forest
 			}
 			NOT = { has_country_flag = moose_cav }
+			exists = yes
 		}
 		allow = {
 			army_professionalism = 1
