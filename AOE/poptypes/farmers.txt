@@ -53,7 +53,7 @@ luxury_needs = {
 }
 
 country_migration_target = {
-	factor = 1
+	factor = 1.5
 
 	modifier = {
 		factor = 0
@@ -178,7 +178,7 @@ country_migration_target = {
 	}
 
 	modifier = {
-		factor = 4.0
+		factor = 4.25
 		number_of_states = 2
 		has_country_flag = new_world_nation
 		OR = {
@@ -198,7 +198,7 @@ country_migration_target = {
 	}
 	
 	modifier = {
-		factor = 3.1
+		factor = 3.5
 		NOT = { total_pops = 500000 }
 		NOT = { number_of_states = 2 }
 		has_country_flag = new_world_nation
@@ -243,7 +243,7 @@ country_migration_target = {
 }
 
 migration_target = {
-    factor = 1
+    factor = 1.5
 	
 	modifier = {
 		factor = 0.1
