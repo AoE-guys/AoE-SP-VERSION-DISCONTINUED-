@@ -89,17 +89,18 @@ political_decisions = {
 				is_greater_power = yes
 				military_score = 100
 				war_policy = jingoism
+				has_country_flag = united_netherlands
 				BEL_387 = {
 					owned_by = THIS
-					is_core = THIS
+					#is_core = THIS
 				}
 				NET_379 = {
 					owned_by = THIS
-					is_core = THIS
+					#is_core = THIS
 				}
 				BEL_394 = {
 					owned_by = THIS
-					is_core = THIS
+					#is_core = THIS
 				}
 			}
 			effect = {
@@ -164,7 +165,7 @@ political_decisions = {
 				government = absolute_monarchy
 				any_pop = {
 					limit = {
-						ideology = liberal
+						pop_majority_ideology = liberal
 					}
 					militancy = 8
 					consciousness = 6
@@ -239,14 +240,14 @@ political_decisions = {
 				exists = yes
 			}
 			allow = {
-				NOT = { militancy = 3 }
+				NOT = { average_militancy = 3 }
 				mass_politics = 1
 			}
 			effect = {
 				set_country_flag = patriots_disbanded
 				any_pop = {
 					limit = {
-						ideology = communist
+						pop_majority_ideology = communist
 					}
 					militancy = 4
 					consciousness = 4

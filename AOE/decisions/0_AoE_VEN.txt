@@ -72,9 +72,8 @@ political_decisions = {
 				militancy = 2
 			}
 			rich_strata = { militancy = -1.5 }
-			
-			ai_will_do = { factor = 1 }
 		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	demand_milan = {
@@ -117,10 +116,8 @@ political_decisions = {
 			 726 = {
 				add_core = THIS 
 			}
-					
-		ai_will_do = { factor = 1 }
-		
 		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	crush_the_pest = {
@@ -337,8 +334,8 @@ political_decisions = {
 		allow = {
 			naval_directionism = 1
 			OR = {
-				steam_turbine_ships
-				advanced_naval_design
+				steam_turbine_ships = 1
+				advanced_naval_design = 1
 			}
 			expressionism = 1
 			OR = {

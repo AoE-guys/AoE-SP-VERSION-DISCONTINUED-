@@ -156,7 +156,7 @@ political_decisions = {
 	become_columbia = {
 		picture = unite_gran_colombia
         potential = {
-			tag = GCU
+			tag = GCO
             NOT = {
                 exists = CLM
             }
@@ -180,7 +180,7 @@ political_decisions = {
 			change_tag = CLM
 			GCO = {
 				all_core = {
-					remove_core = GCU
+					remove_core = GCO
 				}
 			}
 			prestige = 5
@@ -194,7 +194,7 @@ political_decisions = {
 	gcu_integrate_peru = {
 		picture = unite_gran_colombia
         potential = {
-			tag = GCU
+			tag = GCO
 			NOT = { has_country_flag = integrated_peru }
         }
 

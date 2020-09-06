@@ -25,7 +25,7 @@ political_decisions = {
 						AND = {
 							any_pop = {
 								has_pop_culture = ukrainian
-								average_militancy = 6
+								militancy = 6
 							}
 							war_exhaustion = 30
 						}
@@ -147,7 +147,7 @@ political_decisions = {
 					war = yes
 					AND = {
 						is_greater_power = no
-						social_movement_strength = 0.1
+						social_movement_strength= 0.1
 					}
 				}
 			}

@@ -196,7 +196,7 @@ country_event = {
 			war = {
 				target = THIS
 				attacker_goal = {
-					casus_belli = dismantle_cb
+					casus_belli = cut_down_to_size
 				}
 				call_ally = yes
 			}
@@ -397,7 +397,7 @@ country_event = {
 			war = {
 				target = THIS
 				attacker_goal = {
-					casus_belli = dismantle_cb
+					casus_belli = cut_down_to_size
 				}
 				call_ally = yes
 			}

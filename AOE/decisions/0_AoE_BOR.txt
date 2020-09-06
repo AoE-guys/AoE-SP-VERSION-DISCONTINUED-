@@ -389,7 +389,7 @@ political_decisions = {
 			PAP_741 = {
 				limit = {
 					NOT = {
-						is_core = PAP
+						owned_by = PAP
 					}
 				}
 				add_core = THIS

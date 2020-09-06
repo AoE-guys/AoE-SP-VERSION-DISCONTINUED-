@@ -66,7 +66,7 @@ political_decisions = {
 			clr_country_flag = combat_piracy1
         }
 		
-		ai_chance = {
+		ai_will_do = {
 			factor = 1
 		}
 	}
@@ -133,7 +133,7 @@ political_decisions = {
 			money = -30000
         }
 		
-		ai_chance = {
+		ai_will_do = {
 			factor = 1
 		}
 	}
@@ -203,58 +203,8 @@ political_decisions = {
 			money = -40000
         }
 		
-		ai_chance = {
+		ai_will_do = {
 			factor = 1
 		}
 	}
-
-	become_pirate_republic = {
-		picture = become_pirate_republic
-		potential = {
-			exists = yes
-			has_country_modifier = piracy_tolerant
-			is_greater_power = no
-			any_owned_province = {
-				has_province_modifier = piracy_spoils
-			}
-		}
-		allow = {
-			any_owned_province = {
-				has_province_modifier = piracy_spoils 
-			}
-			OR = {
-				government = merchant_republic
-				government = democracy
-				government = tribal_democracy
-				government = hms_government
-			}
-			is_greater_power = no
-			trade_policy = free_trade
-			is_independant = yes
-			has_country_modifier = piracy_tolerant
-			
-		}
-		effect = {
-			government = pirate_republic
-			add_country_modifier = {
-				name = pirate_republic
-				duration = -1
-			}
-			political_reform = yes_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = confederalism
-			political_reform = all_voting_pops
-			political_reform = free_press
-			political_reform = yes_meeting
-			social_reform = acceptable_safety
-			social_reform = acceptable_pensions
-			social_reform = no_health_care
-			political_reform = open_borders				
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-	
 }

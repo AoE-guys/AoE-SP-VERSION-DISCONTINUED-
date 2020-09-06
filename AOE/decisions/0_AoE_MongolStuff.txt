@@ -143,7 +143,7 @@ political_decisions = {
 				}
 			}
 			badboy = 10
-			add_accepted_culture = kazakh
+			add_accepted_culture = kazak
 			set_country_flag = blue_horde_taken
 		}
 	}
@@ -229,24 +229,16 @@ political_decisions = {
 		}
 		effect = {
 			RUS_1037 = {
-				all_core = {
-					add_core = GHR
-				}
+				add_core = GHR
 			}
 			RUS_1060 = {
-				all_core = {
-					add_core = GHR
-				}
+				add_core = GHR
 			}
 			RUS_1020 = {
-				all_core = {
-					add_core = GHR
-				}
+				add_core = GHR
 			}
 			RUS_1064 = {
-				all_core = {
-					add_core = GHR
-				}
+				add_core = GHR
 			}
 			badboy = 20
 			set_country_flag = kazan_taken

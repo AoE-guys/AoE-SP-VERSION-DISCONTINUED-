@@ -717,197 +717,197 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	end_of_natural_dyes = {
-		picture = tea_production
-		potential = {
-			OR = {
-				any_greater_power = { invention = synthetic_dye }
-				any_neighbor_country = { invention = synthetic_dye }
-				sphere_owner = { invention = synthetic_dye }
-				overlord = { invention = synthetic_dye }
-				invention = synthetic_dye
-			}
-			any_owned_province = {
-				trade_goods = dye
-				controlled_by = THIS
-				province_control_days = 200
-				unemployment_by_type = { type = farmers value = 0.2 }
-			}
-			year = 1900
-		}
-		
-		allow = {
-			war = no
-		}
-		
-		effect = {
-			random_owned = {
-				limit = {
-					province_id = 1310
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			}
-			random_owned = {
-				limit = {
-					province_id = 1309 
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = coffee
-			}
-			random_owned = {
-				limit = {
-					province_id = 1254 
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = tropical_wood
-			}
-			random_owned = {
-				limit = {
-					province_id = 1257 
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = tropical_wood
-			}
-			random_owned = {
-				limit = {
-					province_id = 1251  
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			}
-			random_owned = {
-				limit = {
-					province_id = 1241   
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			}
-			random_owned = {
-				limit = {
-					province_id = 1272   
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			}
-			random_owned = {
-				limit = {
-					province_id = 1280   
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			}
-			random_owned = {
-				limit = {
-					province_id = 1277    
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = fruit
-			}
-			random_owned = {
-				limit = {
-					province_id = 1276     
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = fruit
-			}
-			random_owned = {
-				limit = {
-					province_id = 1275   
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = coal
-			}
-			random_owned = {
-				limit = {
-					province_id = 1270     
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = iron
-			}
-			random_owned = {
-				limit = {
-					province_id = 2152     
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = coal
-			}
-			random_owned = { #https://www.mapsofindia.com/maps/india/india-map-silk.gif
-				limit = {
-					province_id = 1273
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			}
-			random_owned = { #https://www.mapsofindia.com/maps/india/india-map-silk.gif
-				limit = {
-					province_id = 1240
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				trade_goods = silk
-			} 
-			random_owned = { #Scope the potential production better for Sulawesi/France?
-				limit = {
-					trade_goods = dye
-					controlled_by = THIS
-					province_control_days = 182
-					unemployment_by_type = { type = farmers value = 0.2 }
-				}
-				random_list = {
-					25 = { trade_goods = coffee }
-					25 = { trade_goods = cotton }
-					25 = { trade_goods = grain }
-					25 = { trade_goods = tobacco }
-				}
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
+#	end_of_natural_dyes = {
+#		picture = tea_production
+#		potential = {
+#			OR = {
+#			#	any_greater_power = { invention = synthetic_dye }
+#			#	any_neighbor_country = { invention = synthetic_dye }
+#			#	sphere_owner = { invention = synthetic_dye }
+#			#	overlord = { invention = synthetic_dye }
+#			#	invention = synthetic_dye
+#			}
+#			any_owned_province = {
+#				trade_goods = dye
+#				controlled_by = THIS
+#				province_control_days = 200
+#				unemployment_by_type = { type = farmers value = 0.2 }
+#			}
+#			year = 1900
+#		}
+#		
+#		allow = {
+#			war = no
+#		}
+#		
+#		effect = {
+#			random_owned = {
+#				limit = {
+#					province_id = 1310
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1309 
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = coffee
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1254 
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = tropical_wood
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1257 
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = tropical_wood
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1251  
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1241   
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1272   
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1280   
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1277    
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = fruit
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1276     
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = fruit
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1275   
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = coal
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 1270     
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = iron
+#			}
+#			random_owned = {
+#				limit = {
+#					province_id = 2152     
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = coal
+#			}
+#			random_owned = { #https://www.mapsofindia.com/maps/india/india-map-silk.gif
+#				limit = {
+#					province_id = 1273
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			}
+#			random_owned = { #https://www.mapsofindia.com/maps/india/india-map-silk.gif
+#				limit = {
+#					province_id = 1240
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				trade_goods = silk
+#			} 
+#			random_owned = { #Scope the potential production better for Sulawesi/France?
+#				limit = {
+#					trade_goods = dye
+#					controlled_by = THIS
+#					province_control_days = 182
+#					unemployment_by_type = { type = farmers value = 0.2 }
+#				}
+#				random_list = {
+#					25 = { trade_goods = coffee }
+#					25 = { trade_goods = cotton }
+#					25 = { trade_goods = grain }
+#					25 = { trade_goods = tobacco }
+#				}
+#			}
+#		}
+#		
+#		ai_will_do = { factor = 1 }
+#	}
 }
 
