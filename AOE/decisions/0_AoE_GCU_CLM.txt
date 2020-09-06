@@ -12,6 +12,7 @@ political_decisions = {
                 exists = GCO
                 has_country_flag = we_shall_unite_by_sword
             }
+			exists = yes
         }
 
         allow = {
@@ -42,6 +43,7 @@ political_decisions = {
                 tag = VNZ
             }
             NOT = { exists = GCO }
+			exists = yes
         }
 
         allow = {
@@ -156,11 +158,12 @@ political_decisions = {
 	become_columbia = {
 		picture = unite_gran_colombia
         potential = {
-			tag = GCO
+			tag = GCU
             NOT = {
                 exists = CLM
             }
 			NOT = { tag = CLM }
+			exists = yes
         }
 
         allow = {
@@ -180,7 +183,7 @@ political_decisions = {
 			change_tag = CLM
 			GCO = {
 				all_core = {
-					remove_core = GCO
+					remove_core = GCU
 				}
 			}
 			prestige = 5
@@ -194,8 +197,9 @@ political_decisions = {
 	gcu_integrate_peru = {
 		picture = unite_gran_colombia
         potential = {
-			tag = GCO
+			tag = GCU
 			NOT = { has_country_flag = integrated_peru }
+			exists = yes
         }
 
         allow = {

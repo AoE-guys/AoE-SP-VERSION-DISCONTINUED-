@@ -60,6 +60,7 @@ political_decisions = {
 			994 = {
 				NOT = { has_province_modifier = st_petersburg_construction }
 			}
+			NOT = { has_country_flag = begun_construction_sp }
 		}
 
 		allow = {
@@ -73,6 +74,7 @@ political_decisions = {
 			}
 			country_event = 170024
 			prestige = 5
+			set_country_flag = begun_construction_sp
 		}
 		ai_will_do = {
 			factor = 1

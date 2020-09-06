@@ -12,6 +12,7 @@ political_decisions = {
 			NOT = {
 				exists = ITA
 			}
+			exists = yes
 		}
 		
 		allow = {
@@ -59,6 +60,7 @@ political_decisions = {
 		tag = GOD
 			NOT = { has_country_flag = god_wants_venice
 			}
+			exists = yes
 		}
 		allow = {
 			war = no
@@ -87,6 +89,7 @@ political_decisions = {
 		tag = GOD
 		has_country_flag = latin_empire_claimed
 		NOT = { has_country_flag = treaty_of_ouchy }
+		exists = yes
 	}
 		
 		allow = {
