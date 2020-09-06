@@ -245,7 +245,7 @@ subjugation
 #			colonial_nation = yes
 #			any_owned_province = { is_overseas = yes }
 #		}
-#		civilized = yes
+#		NOT = { schools = unciv_tech_school }
 #		is_disarmed = no
 #		is_vassal = no
 #		war_with = THIS
@@ -492,7 +492,7 @@ acquire_all_cores = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		number_of_states = 2 # annex if you want their last state		
 		is_vassal = no
@@ -2180,7 +2180,7 @@ take_from_sphere = {
 			capital_scope = { continent = east_africa }
 			capital_scope = { continent = south_west_africa }
 		}
-				civilized = no
+				schools = unciv_tech_school
 			}
 			FROM = { is_secondary_power = yes }
 			FROM = { neighbour = THIS }
@@ -2257,7 +2257,7 @@ free_peoples = {
 		OR = {
 			THIS = { government = fascist_dictatorship }
 			THIS = { government = proletarian_dictatorship }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			FROM = { involved_in_crisis = yes }
@@ -2318,8 +2318,8 @@ free_peoples = {
 			}
 		}
 		OR = {
-			FROM = { civilized = yes }
-			THIS = { civilized = no }
+			FROM = { NOT = { schools = unciv_tech_school } }
+			THIS = { schools = unciv_tech_school }
 			FROM = { involved_in_crisis = yes }
 			THIS = { ai = no }
 		}
@@ -2406,7 +2406,7 @@ free_peoples = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = no }
+				THIS = { schools = unciv_tech_school }
 				any_owned_province = {
 					is_core = FROM
 					OR = {
@@ -2417,7 +2417,7 @@ free_peoples = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				FROM = { NOT = { is_culture_group = THIS } }
 				any_owned_province = {
 					is_core = FROM
@@ -2437,7 +2437,7 @@ free_peoples = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = europe } }
 				any_owned_province = {
 					continent = europe
@@ -2446,7 +2446,7 @@ free_peoples = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = north_america } }
 				any_owned_province = {
 					OR = {
@@ -2458,7 +2458,7 @@ free_peoples = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = south_america } }
 				any_owned_province = {
 					OR = {
@@ -2470,7 +2470,7 @@ free_peoples = {
 			}	
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = asia } }
 				any_owned_province = {
 					continent = asia
@@ -2479,7 +2479,7 @@ free_peoples = {
 			}			
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				FROM = { is_culture_group = THIS }
 				any_owned_province = { is_core = FROM }
 			}
@@ -2618,7 +2618,7 @@ liberate_country = {
 		OR = {
 			THIS = { government = fascist_dictatorship }
 			THIS = { government = proletarian_dictatorship }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			FROM = { involved_in_crisis = yes }
@@ -2701,7 +2701,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = no }
+				THIS = { schools = unciv_tech_school }
 				any_owned_province = {
 					is_core = FROM
 					OR = {
@@ -2712,7 +2712,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				FROM = { NOT = { is_culture_group = THIS } }
 				any_owned_province = {
 					is_core = FROM
@@ -2732,7 +2732,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = europe } }
 				any_owned_province = {
 					continent = europe
@@ -2741,7 +2741,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = north_america } }
 				any_owned_province = {
 					OR = {
@@ -2753,7 +2753,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = south_america } }
 				any_owned_province = {
 					OR = {
@@ -2765,7 +2765,7 @@ liberate_country = {
 			}			
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = asia } }
 				any_owned_province = {
 					continent = asia
@@ -2774,7 +2774,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = indochina } }
 				any_owned_province = {
 					continent = indochina
@@ -2783,7 +2783,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = africa } }
 				any_owned_province = {
 					continent = africa
@@ -2792,7 +2792,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = oceania } }
 				any_owned_province = {
 					continent = oceania
@@ -2801,7 +2801,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = australia_new_zealand } }
 				any_owned_province = {
 					continent = australia_new_zealand
@@ -2810,7 +2810,7 @@ liberate_country = {
 			}
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				THIS = { capital_scope = { continent = polynesia } }
 				any_owned_province = {
 					continent = polynesia
@@ -2819,7 +2819,7 @@ liberate_country = {
 			}			
 			AND = {
 				FROM = { exists = no }
-				THIS = { civilized = yes }
+				THIS = { NOT = { schools = unciv_tech_school } }
 				FROM = { is_culture_group = THIS }
 				any_owned_province = { is_core = FROM }
 			}
@@ -2834,8 +2834,8 @@ liberate_country = {
 		}
 		OR = {
 			FROM = { involved_in_crisis = yes }
-			FROM = { civilized = yes }
-			THIS = { civilized = no }
+			FROM = { NOT = { schools = unciv_tech_school } }
+			THIS = { schools = unciv_tech_school }
 			THIS = { ai = no }
 			THIS = { has_global_flag = wakhan_treaty }
 			has_global_flag = wakhan_treaty
@@ -3323,7 +3323,7 @@ oriental_crisis = {
 		is_vassal = no
 		number_of_states = 2
 		tag = EGY
-		civilized = no
+		schools = unciv_tech_school
 		has_global_flag = oriental_crisis
 		any_owned_province = { is_core = TUR }
 		NOT = { has_country_modifier = neutrality }
@@ -3881,7 +3881,7 @@ cut_down_to_size = {
 		is_disarmed = no
 		NOT = { has_country_modifier = neutrality }
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		OR = {
@@ -3891,7 +3891,7 @@ cut_down_to_size = {
 		OR = {
 			THIS = { government = fascist_dictatorship }
 			THIS = { government = proletarian_dictatorship }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
@@ -3916,7 +3916,7 @@ cut_down_to_size = {
 		random_owned = {
 			limit = {
 				owner = {
-					civilized = no
+					schools = unciv_tech_school
 					OR = {
 						owns = 1498 #Macao
 						owns = 1538 #Shanghai
@@ -3935,7 +3935,7 @@ cut_down_to_size = {
 					}
 				}
 				THIS = {
-					civilized = yes
+					NOT = { schools = unciv_tech_school }
 					NOT = { is_culture_group = east_asian }
 					num_of_ports = 1
 				}
@@ -3943,13 +3943,13 @@ cut_down_to_size = {
 			owner = { add_country_modifier = { name = negotiating_unequal_treaty duration = 30 } }
 			THIS = { add_country_modifier = { name = negotiating_treaty duration = 30 } }
 		}
-		random_owned = { limit = { owner = { civilized = no has_country_modifier = uncivilized_isolationism } }
+		random_owned = { limit = { owner = { schools = unciv_tech_school has_country_modifier = uncivilized_isolationism } }
 			owner = { remove_country_modifier = uncivilized_isolationism }
 		}
-		random_owned = { limit = { owner = { civilized = no NOT = { has_country_modifier = western_influences } } }
+		random_owned = { limit = { owner = { schools = unciv_tech_school NOT = { has_country_modifier = western_influences } } }
 			owner = { add_country_modifier = { name = western_influences duration = -1 } }
 		}
-		random_owned = { limit = { owner = { civilized = no NOT = { capital_scope = { has_country_modifier = legation_quarter } } } }
+		random_owned = { limit = { owner = { schools = unciv_tech_school NOT = { capital_scope = { has_country_modifier = legation_quarter } } } }
 			owner = { capital_scope = { add_province_modifier = { name = legation_quarter duration = -1 } } }
 		}
 		random_owned = { limit = { owner = { has_country_flag = holding_tangiers owns = 1686 } }
@@ -3995,7 +3995,7 @@ great_game_cb = {
 	
 	can_use = {
 		is_vassal = no
-		civilized = no
+		schools = unciv_tech_school
 		war = no
 		NOT = {
 			has_global_flag = british_dismantled
@@ -4127,7 +4127,7 @@ great_game_cb = {
 #	can_use = {
 #		is_vassal = no
 #		is_disarmed = no
-#		civilized = no
+#		schools = unciv_tech_school
 #		NOT = {
 #			is_our_vassal = THIS
 #			truce_with = THIS
@@ -4324,7 +4324,7 @@ place_in_the_sun = {
 		OR = {
 			THIS = { government = fascist_dictatorship }
 			THIS = { government = proletarian_dictatorship }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
@@ -4343,7 +4343,7 @@ place_in_the_sun = {
 				}
 			}
 			any_owned_province = {
-				any_core = { civilized = no }
+				any_core = { schools = unciv_tech_school }
 			}
 			any_owned_province = { continent = africa }
 			THIS = { ai = no }
@@ -4405,6 +4405,20 @@ acquire_state = {
 	can_use = {
 		is_vassal = no
 		OR = {
+			AND = {
+				THIS = {
+					NOT = { schools = unciv_tech_school }
+				}
+				schools = unciv_tech_school
+			}
+			AND = {
+				THIS = {
+					schools = unciv_tech_school
+				}
+				schools = unciv_tech_school
+			}
+		}
+		OR = {
 			AND = { 
 				THIS = { num_of_ports = 1 } 
 				num_of_ports = 1
@@ -4421,8 +4435,8 @@ acquire_state = {
 			NOT = { any_owned_province = { is_capital = yes } }
 		}
 		OR = {
-			THIS = { civilized = no }
-			civilized = yes
+			THIS = { schools = unciv_tech_school }
+			NOT = { schools = unciv_tech_school }
 		}
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		OR = {
@@ -4432,7 +4446,7 @@ acquire_state = {
 		OR = {
 			THIS = { government = fascist_dictatorship }
 			THIS = { government = proletarian_dictatorship }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
@@ -4464,8 +4478,8 @@ acquire_state = {
 			AND = {
 				is_colonial = yes
 				THIS = { ai = yes }
-				any_owned_province = { any_core = { civilized = yes } }
-				NOT = { any_owned_province = { any_core = { civilized = no } } }
+				any_owned_province = { any_core = { NOT = { schools = unciv_tech_school } } }
+				NOT = { any_owned_province = { any_core = { schools = unciv_tech_school } } }
 			}
 		}
 		
@@ -4703,7 +4717,7 @@ china_acquire_state = {
 				any_owned_province = {
 					NOT = {	is_core = THIS }
 					is_core = CHI
-					owner = { civilized = yes }
+					owner = { NOT = { schools = unciv_tech_school } }
 				}
 				year = 1900
 			}
@@ -4718,7 +4732,7 @@ china_acquire_state = {
 				any_owned_province = {
 					NOT = {	is_core = THIS }
 					is_core = CHI
-					owner = { civilized = no }
+					owner = { schools = unciv_tech_school }
 				}
 			}
 			any_owned_province = {
@@ -4773,7 +4787,7 @@ sahel_jihad_cb = {
 			neighbour = THIS
 		}
 		is_vassal = no
-		civilized = no
+		schools = unciv_tech_school
 		NOT = { is_our_vassal = THIS }
 		any_owned_province = {
 			OR = {
@@ -4789,7 +4803,7 @@ sahel_jihad_cb = {
 		}
 		NOT = { has_country_flag = sunni_country }
 		THIS = {
-			civilized = no
+			schools = unciv_tech_school
 			OR = {
 				government = theocracy
 				government = absolute_monarchy
@@ -4859,7 +4873,7 @@ demand_concession_casus_belli = {
 			AND = { any_neighbor_country = { vassal_of = THIS } THIS = { tag = ENG } }
 		}
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		OR = {
@@ -4892,7 +4906,7 @@ demand_concession_casus_belli = {
 			}
 		}
 		NOT = { has_country_modifier = neutrality }
-		civilized = no
+		schools = unciv_tech_school
 		number_of_states = 2
 		is_vassal = no
 		OR = {
@@ -4916,7 +4930,7 @@ demand_concession_casus_belli = {
 		
 		OR = {
 			THIS = { war_policy = jingoism }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
@@ -5036,7 +5050,7 @@ demand_concession_NI_casus_belli = {
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			nationalism_n_imperialism = 1
 			NOT = {
 				has_country_modifier = neutrality
@@ -5059,7 +5073,7 @@ demand_concession_NI_casus_belli = {
 			capital_scope = { continent = south_west_africa }
 		}
 		}
-		civilized = no
+		schools = unciv_tech_school
 		number_of_states = 2
 		is_vassal = no
 		
@@ -5196,7 +5210,7 @@ demand_concession_BC_casus_belli = {
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			nationalism_n_imperialism = 1
 			has_global_flag = berlin_conference
 			NOT = { has_country_modifier = neutrality }
@@ -5210,7 +5224,7 @@ demand_concession_BC_casus_belli = {
 			civilization_progress = 0.7
 			has_country_flag = post_colonial_country
 		}
-		civilized = no
+		schools = unciv_tech_school
 		number_of_states = 2
 		is_vassal = no
 		OR = {
@@ -5390,6 +5404,21 @@ conquest = {
 		
 	can_use = {
 		NOT = { is_our_vassal = THIS }
+		total_pops = 400000
+		OR = {
+			AND = {
+				THIS = {
+					NOT = { schools = unciv_tech_school }
+				}
+				schools = unciv_tech_school
+			}
+			AND = {
+				THIS = {
+					schools = unciv_tech_school
+				}
+				schools = unciv_tech_school
+			}
+		}
 		OR = {
 			AND = { 
 				THIS = { num_of_ports = 1 } 
@@ -5399,8 +5428,8 @@ conquest = {
 			AND = { war_with = THIS ai = no }
 		}
 		OR = {
-			THIS = { civilized = no }
-			civilized = yes
+			THIS = { schools = unciv_tech_school }
+			NOT = { schools = unciv_tech_school }
 		}
 		OR = {
 			NOT = {
@@ -5633,7 +5662,7 @@ annex_india = {
 				is_secondary_power = yes
 			}
 		  	NOT = { has_country_modifier = neutrality }
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			has_global_flag = india_for_grabs
 		}
 		NOT = {
@@ -5766,7 +5795,7 @@ annex_india_full = {
 				is_secondary_power = yes
 			}
 		  	NOT = { has_country_modifier = neutrality }
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			has_global_flag = india_for_grabs
 		}
 		is_vassal = no
@@ -5881,13 +5910,13 @@ annex_africa = {
 				is_secondary_power = yes
 			}
 		  	NOT = { has_country_modifier = neutrality }
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			has_global_flag = berlin_conference
 		}
 		NOT = {
 			has_country_flag = post_colonial_country
 		}
-		civilized = no
+		schools = unciv_tech_school
 		is_vassal = no
 		OR = {
 			capital_scope = { continent = africa }
@@ -5983,10 +6012,10 @@ annex_africa_full = {
 				is_secondary_power = yes
 			}
 		  	NOT = { has_country_modifier = neutrality }
-			civilized = yes
+			schools = unciv_tech_school
 			has_global_flag = berlin_conference
 		}
-		civilized = no
+		NOT = { schools = unciv_tech_school }
 		is_vassal = no
 		NOT = {
 			tag = MOR
@@ -6058,7 +6087,7 @@ establish_protectorate_casus_belli = {
 	always = no
 	
 	can_use = {
-		civilized = no
+		schools = unciv_tech_school
 		is_vassal = no
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
@@ -6078,7 +6107,7 @@ establish_protectorate_casus_belli = {
 		}
 		OR = {
 			THIS = { war_policy = jingoism }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
@@ -6130,7 +6159,7 @@ establish_protectorate_casus_belli = {
 		}
 		
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		OR = {
@@ -6212,7 +6241,7 @@ establish_protectorate_NI_casus_belli = {
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			nationalism_n_imperialism = 1
 			NOT = {
 				has_country_modifier = neutrality
@@ -6236,7 +6265,7 @@ establish_protectorate_NI_casus_belli = {
 		}
 			number_of_states = 7
 		}
-		civilized = no
+		schools = unciv_tech_school
 		is_vassal = no
 		OR = {
 			war_with = THIS
@@ -6337,7 +6366,7 @@ establish_protectorate_BC_casus_belli = {
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			nationalism_n_imperialism = 1
 			has_global_flag = berlin_conference
 			NOT = { has_country_modifier = neutrality }
@@ -6361,7 +6390,7 @@ establish_protectorate_BC_casus_belli = {
 			capital_scope = { continent = south_west_africa }
 		}
 		}
-		civilized = no
+		schools = unciv_tech_school
 		is_vassal = no
 		OR = {
 			war_with = THIS
@@ -6473,7 +6502,7 @@ cut_down_to_size_boxer = {
 	
 	can_use = {
 		tag = QNG
-		civilized = no
+		schools = unciv_tech_school
 		has_country_flag = boxers_appeared
 		NOT = { has_country_flag = boxers_disbanded }
 	}
@@ -6520,7 +6549,7 @@ cut_down_to_size_taiping = {
 	
 	can_use = {
 		tag = QNG
-		civilized = no
+		schools = unciv_tech_school
 		has_country_flag = boxers_appeared
 		NOT = { has_country_flag = boxers_disbanded }
 	}
@@ -6566,7 +6595,7 @@ cb_sykes_picot = {
 	
 	can_use = {
 		is_greater_power = yes
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 	}
 	
 	badboy_factor = 0
@@ -6875,7 +6904,7 @@ great_war_install_democracy = {
 		}
 		has_country_flag = in_great_war
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		war_with = THIS
 		OR = {
@@ -6932,7 +6961,7 @@ great_war_install_fascism = {
 		}
 		has_country_flag = in_great_war
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		war_with = THIS
 		NOT = { government = fascist_dictatorship }
@@ -6987,7 +7016,7 @@ great_war_install_communism = {
 		}
 		has_country_flag = in_great_war
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		war_with = THIS
 		NOT = { government = proletarian_dictatorship }
@@ -7042,7 +7071,7 @@ install_democracy = {
 		}
 		has_global_flag = great_wars_enabled
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		OR = {
 			government = proletarian_dictatorship
@@ -7118,7 +7147,7 @@ install_fascism = {
 		}
 		#is_ideology_enabled = fascist
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		NOT = { government = fascist_dictatorship }
 		NOT = { government = proletarian_dictatorship }
@@ -7193,7 +7222,7 @@ install_communism = {
 		}
 		#is_ideology_enabled = communist
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		OR = {
 			NOT = { government = proletarian_dictatorship }
@@ -7284,7 +7313,7 @@ install_monarchy_make_puppet = {
 		}
 		#is_ideology_enabled = communist
 		is_vassal = no
-		civilized = yes
+		NOT = { schools = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		OR = {
 			government = proletarian_dictatorship
@@ -7358,6 +7387,20 @@ acquire_substate_region = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+		OR = {
+			AND = {
+				THIS = {
+					NOT = { schools = unciv_tech_school }
+				}
+				schools = unciv_tech_school
+			}
+			AND = {
+				THIS = {
+					schools = unciv_tech_school
+				}
+				schools = unciv_tech_school
+			}
+		}
 		NOT = { is_our_vassal = THIS }
 		num_of_substates = 1 # if has any substate
 		THIS = { ai = no }
@@ -7532,7 +7575,7 @@ dismantle_forts = {
 		}
 		is_vassal = no
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		OR = {
@@ -7542,7 +7585,7 @@ dismantle_forts = {
 		OR = {
 			THIS = { government = fascist_dictatorship }
 			THIS = { government = proletarian_dictatorship }
-			THIS = { civilized = no }
+			THIS = { schools = unciv_tech_school }
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
@@ -7663,7 +7706,7 @@ acquire_any_state = {
 		random_owned = {
 			limit = {
 				owner = {
-					civilized = no
+					schools = unciv_tech_school
 					is_culture_group = east_asian
 					OR = {
 						owns = 1481
@@ -7677,7 +7720,7 @@ acquire_any_state = {
 					}
 				}
 				THIS = {
-					civilized = yes
+					NOT = { schools = unciv_tech_school }
 					NOT = { is_culture_group = east_asian }
 					num_of_ports = 1
 				}
@@ -7726,20 +7769,20 @@ conquest_any = {
 			random_owned = {
 				limit = { is_core = TRN TRN = { exists = no has_country_flag = uncivilize_on_conquest } }
 				THIS = { release_vassal = TRN }
-				TRN = { clr_country_flag = uncivilize_on_conquest civilized = no annex_to = THIS }
-				TRN = { civilized = yes }
+				TRN = { clr_country_flag = uncivilize_on_conquest schools = unciv_tech_school annex_to = THIS }
+				TRN = { NOT = { schools = unciv_tech_school } }
 			}
 			random_owned = {
 				limit = { is_core = ORA ORA = { exists = no has_country_flag = uncivilize_on_conquest } }
 				THIS = { release_vassal = ORA }
-				ORA = { clr_country_flag = uncivilize_on_conquest civilized = no annex_to = THIS }
-				ORA = { civilized = yes }
+				ORA = { clr_country_flag = uncivilize_on_conquest schools = unciv_tech_school annex_to = THIS }
+				ORA = { NOT = { schools = unciv_tech_school } }
 			}
 			random_owned = {
 				limit = { is_core = NAL NAL = { exists = no has_country_flag = uncivilize_on_conquest } }
 				THIS = { release_vassal = NAL }
-				NAL = { clr_country_flag = uncivilize_on_conquest civilized = no annex_to = THIS }
-				NAL = { civilized = yes }
+				NAL = { clr_country_flag = uncivilize_on_conquest schools = unciv_tech_school annex_to = THIS }
+				NAL = { NOT = { schools = unciv_tech_school } }
 			}
 		}
 	}
@@ -7772,11 +7815,11 @@ treaty_port_casus_belli = {
 		NOT = { is_our_vassal = THIS }
 		THIS = {
 			num_of_ports = 1
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		NOT = { has_country_modifier = neutrality }
-		civilized = no
+		schools = unciv_tech_school
 		is_vassal = no
 		num_of_cities = 2
 		OR = {
@@ -7829,7 +7872,7 @@ treaty_port_casus_belli = {
 		random_owned = {
 			limit = {
 				owner = {
-					civilized = no
+					schools = unciv_tech_school
 					OR = {
 						owns = 1498 #Macao
 						owns = 1538 #Shanghai
@@ -7854,7 +7897,7 @@ treaty_port_casus_belli = {
 					}
 				}
 				THIS = {
-					civilized = yes
+					NOT = { schools = unciv_tech_school }
 					NOT = { is_culture_group = east_asian }
 					num_of_ports = 1
 				}
@@ -7862,13 +7905,13 @@ treaty_port_casus_belli = {
 		owner = { add_country_modifier = { name = negotiating_unequal_treaty duration = -1 } }
 			THIS = { add_country_modifier = { name = negotiating_treaty duration = -1 } }
 		}
-		#random_owned = { limit = { owner = { civilized = no has_country_modifier = uncivilized_isolationism } }
+		#random_owned = { limit = { owner = { schools = unciv_tech_school has_country_modifier = uncivilized_isolationism } }
 		#	owner = { remove_country_modifier = uncivilized_isolationism }
 		#}
-		#random_owned = { limit = { owner = { civilized = no NOT = { has_country_modifier = western_influences } } }
+		#random_owned = { limit = { owner = { schools = unciv_tech_school NOT = { has_country_modifier = western_influences } } }
 		#	owner = { add_country_modifier = { name = western_influences duration = -1 } }
 		#}
-		#random_owned = { limit = { owner = { civilized = no NOT = { capital_scope = { has_country_modifier = legation_quarter } } } }
+		#random_owned = { limit = { owner = { schools = unciv_tech_school NOT = { capital_scope = { has_country_modifier = legation_quarter } } } }
 		#	owner = { capital_scope = { add_province_modifier = { name = legation_quarter duration = -1 } } }
 		#}
 	}
@@ -8182,7 +8225,7 @@ war_reparations = {
 			has_country_flag = in_great_war
 		}
 		THIS = {
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 	}
@@ -8223,7 +8266,7 @@ war_reparations = {
 #	
 #	can_use = {
 #		THIS ={
-#			civilized = yes
+#			NOT = { schools = unciv_tech_school }
 #			OR = {
 #				government = merchant_republic
 #				government = trade_monarchy
@@ -8278,7 +8321,7 @@ conquer_trade_post = { #obtain_potential_trade_post
 	
 	can_use = {
 		THIS ={
-			civilized = yes
+			NOT = { schools = unciv_tech_school }
 			OR = {
 				government = merchant_republic
 				government = trade_monarchy
@@ -8346,15 +8389,15 @@ take_capital = {
 		}
 		OR = {
 			AND = {
-				civilized = yes
+				NOT = { schools = unciv_tech_school }
 				THIS = {
-					civilized = yes
+					NOT = { schools = unciv_tech_school }
 				}
 			}
 			AND = {
-				civilized = no
+				schools = unciv_tech_school
 				THIS = {
-					civilized = no
+					schools = unciv_tech_school
 				}
 			}
 		}
@@ -8498,21 +8541,22 @@ conquest_low = {
 	
 	can_use = {
 		NOT = {	total_pops = 400000 }
+		total_pops = 100000
 		NOT = { is_our_vassal = THIS }
 		# only one state or unciv
 		NOT = { number_of_states = 5 }
 		OR = {
 			AND = {
-				civilized = yes
+				NOT = { schools = unciv_tech_school }
 				NOT = { number_of_states = 3 }
 			}
 			AND = {
-				civilized = no
-				THIS = { civilized = no }
+				schools = unciv_tech_school
+				THIS = { schools = unciv_tech_school }
 				NOT = { number_of_states = 3 }
 			}
 			AND = {
-				civilized = no
+				schools = unciv_tech_school
 				number_of_states = 2
 				THIS = {
 					OR = {
@@ -8613,16 +8657,16 @@ conquest_tiny = {
 		NOT = { number_of_states = 5 }
 		OR = {
 			AND = {
-				civilized = yes
+				NOT = { schools = unciv_tech_school }
 				NOT = { number_of_states = 3 }
 			}
 			AND = {
-				civilized = no
-				THIS = { civilized = no }
+				schools = unciv_tech_school
+				THIS = { schools = unciv_tech_school }
 				NOT = { number_of_states = 3 }
 			}
 			AND = {
-				civilized = no
+				schools = unciv_tech_school
 				number_of_states = 2
 				THIS = {
 					OR = {
