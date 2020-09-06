@@ -679,7 +679,7 @@ ai_help = {
 		ai = yes
 		capital_scope = {
 			OR = {
-				continent = europe
+				#continent = europe
 				continent = north_america
 				continent = south_america
 			}
@@ -1876,7 +1876,7 @@ ai_militancy_fix = {
 	trigger = {
 		ai = yes
 		exists = yes
-		average_militancy = 4
+		average_militancy = 6
 	}
 	core_pop_militancy_modifier = -0.06
 }
