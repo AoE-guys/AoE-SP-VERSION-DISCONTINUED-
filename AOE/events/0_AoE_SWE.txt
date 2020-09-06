@@ -284,6 +284,7 @@ country_event = {
 			
 			national_provinces_occupied = 0.4
 		}
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	
 	mean_time_to_happen = {

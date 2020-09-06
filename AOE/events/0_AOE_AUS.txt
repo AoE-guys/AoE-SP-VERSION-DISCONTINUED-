@@ -1481,6 +1481,7 @@ country_event = {
 			}
 		}
 		year = 1711
+		NOT = { has_global_flag = disabled_succession_wars }
 	}
 	
 	mean_time_to_happen = {

@@ -625,6 +625,7 @@ country_event = {
 			owns = 1261
 			owns = 1305
 		}
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -658,6 +659,7 @@ country_event = {
 		is_greater_power = yes
 		year = 1730
 		exists = BNG
+		NOT = { has_global_flag = disabled_railroad_wars }
 		BNG = {
 			NOT = {
 				is_greater_power = yes
@@ -689,7 +691,7 @@ country_event = {
 country_event = {
 	id = 175002
 	title = "The Indian Realms"
-	desc = "EVTDESC175002"
+	desc = "The time has come to seize their land!"
 	major = yes
 	fire_only_once = yes
 	
@@ -716,10 +718,12 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = BNG
+		war = no
 		OR = {
-			war = yes
 			year = 1722
+			war_exhoustion = 40
 		}
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -784,6 +788,7 @@ country_event = {
 	trigger = {
 		tag = BNG
 		ai = yes
+		NOT = { has_global_flag = disabled_railroad_wars }
 		BNG = {
 			NOT = {
 				is_greater_power = yes

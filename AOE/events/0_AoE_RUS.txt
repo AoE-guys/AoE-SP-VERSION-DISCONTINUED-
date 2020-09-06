@@ -651,6 +651,7 @@ country_event = {
 	trigger = {
 		tag = PLC
 		year = 1700
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	
 	mean_time_to_happen = { months = 2 }
@@ -697,6 +698,7 @@ country_event = {
 	trigger = {
 		tag = DNN
 		year = 1700
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	
 	mean_time_to_happen = { months = 2 }
@@ -1013,7 +1015,7 @@ country_event = {
 	desc = "EVTDESC170016"
 	picture = cossacks
 	is_triggered_only = yes
-	major = yes
+	#major = yes
 	
 	option = {
 		name = "EVTOPT170016"
@@ -1208,12 +1210,16 @@ province_event = {
 	picture = siberian_attack
 	
 	trigger = {
-		owner = {
-			tag = RUS
-			has_country_flag = kamchatka_war
+		1074 = {
+			owner = {
+				tag = RUS
+				has_country_flag = kamchatka_war
+			}
 		}
-		state_id = 1074
-		has_province_modifier = kamchatka_wars
+		owns = 1074
+		any_owned_province = {
+			has_province_modifier = kamchatka_wars
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1239,9 +1245,16 @@ province_event = {
 				consciousness = 1
 				reduce_pop = 0.9
 			}
-		add_province_modifier = {
+		random_owned = {
+			limit = {
+				any_neighbor_province = {
+					has_country_modifier = kamchatka_wars
+				}
+			}
+			add_province_modifier = {
 				name = kamchatka_wars 
 				duration = 365
+			}
 		}
 		ai_chance = {
 			factor = 5
@@ -1288,7 +1301,7 @@ country_event = {
 			has_country_flag = kamchatka_war
 		}
 		NOT = {
-			any_owned_province = {
+			any_owned = {
 				has_province_modifier = kamchatka_wars
 			}
 		}
@@ -1327,6 +1340,7 @@ country_event = {
 		}
 		has_global_flag = great_northern_war
 		owns = 994
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	
 	mean_time_to_happen = {
@@ -1528,10 +1542,10 @@ country_event = {
 }
 ######Construction of St. Petersburg ######
 country_event = {
-	id = 170024
+	id = 170025
 	title = "A new capital!"
-	desc = "EVTDESC170024"
-	picture = "Suez3"
+	desc = "EVTDESC170025"
+	picture = "petersburg_plan"
 	
 	is_triggered_only = yes
 	
@@ -1626,10 +1640,10 @@ country_event = {
 }
 
 country_event = {
-	id = 170025
+	id = 170026
 	title = "St.Petersburg finished!"
-	desc = "EVTDESC170025"
-	picture = "suez_canal_built"
+	desc = "EVTDESC170026"
+	picture = "petersburg_fin"
 	
 	fire_only_once = yes
 	
@@ -1680,9 +1694,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = 170026
+	id = 170027
 	title = "The Beard Tax"
-	desc = "EVTDESC170025"
+	desc = "EVTDESC170027"
 	picture = "orthodox_priests"
 	
 	fire_only_once = yes

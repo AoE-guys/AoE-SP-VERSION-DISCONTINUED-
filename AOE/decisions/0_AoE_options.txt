@@ -1,0 +1,170 @@
+political_decisions = {
+	
+	open_aoe_options = {
+		potential = {
+			exists = yes
+			ai = no
+			NOT = { year = 1701 }
+			NOT = { has_country_flag = decisions_open }
+		}
+		allow = {
+
+		}
+		effect = {
+			set_country_flag = decisions_open
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	close_aoe_options = {
+		potential = {
+			exists = yes
+			ai = no
+			NOT = { year = 1701 }
+			has_country_flag = decisions_open
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_country_flag = decisions_open
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	opt_disable_succession_wars = {
+		potential = {
+			exists = yes
+			ai = no
+			NOT = { has_global_flag = disabled_succession_wars }
+			has_country_flag = decisions_open
+		}
+		allow = {
+
+		}
+		effect = {
+			set_global_flag = disabled_succession_wars
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	opt_enable_succession_wars = {
+		potential = {
+			exists = yes
+			ai = no
+			has_global_flag = disabled_succession_wars
+			has_country_flag = decisions_open
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_global_flag = disabled_succession_wars
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	opt_disable_railroad_wars_and_landgrabs = {
+		potential = {
+			exists = yes
+			ai = no
+			NOT = { has_global_flag = disabled_railroad_wars }
+			has_country_flag = decisions_open
+		}
+		allow = {
+
+		}
+		effect = {
+			set_global_flag = disabled_railroad_wars
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	opt_enable_railroad_wars = {
+		potential = {
+			exists = yes
+			ai = no
+			has_global_flag = disabled_railroad_wars
+			has_country_flag = decisions_open
+		}
+		allow = {
+
+		}
+		effect = {
+			clr_global_flag = disabled_railroad_wars
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	opt_disable_micronations = {
+		potential = {
+			exists = yes
+			ai = no
+			NOT = { has_global_flag = disabled_micronations }
+			has_country_flag = decisions_open
+		}
+		allow = {
+
+		}
+		effect = {
+			set_global_flag = disabled_micronations
+			SMR = {
+				all_core = {
+					add_core = PAP
+					remove_core = SMR
+				}
+				annex_to = PAP
+			}
+			ADO = {
+				all_core = {
+					add_core = SPA
+					remove_core = ADO
+				}
+				annex_to = SPA
+			}
+			MLH = {
+				all_core = {
+					add_core = BOR
+					remove_core = MLH
+				}
+				annex_to = BOR
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	option_disable_workplace_events = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = decisions_open
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = workplace_events_disabled }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = workplace_events_disabled
+		}
+	}
+	
+	option_disable_bankruptcy_events = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = decisions_open
+			NOT = { year = 1837 }
+			NOT = { has_country_flag = bankruptcy_events_disabled }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = bankruptcy_events_disabled
+			any_country = { limit = { ai = no } set_country_flag = bankruptcy_events_disabled }
+		}
+	}
+}

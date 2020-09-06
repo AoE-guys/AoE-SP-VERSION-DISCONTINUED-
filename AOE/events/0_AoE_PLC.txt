@@ -275,7 +275,13 @@ country_event = {
 				value = -400
 			}
 		}
-		SAX = { country_event = 15730010 }
+		any_country = {
+			limit = {
+				tag = SAX
+				NOT = { has_global_flag = disabled_succession_wars }
+			}
+			country_event = 15730010
+		}
 		relation = {
 			who = LOR
 			value = 100
@@ -382,7 +388,13 @@ country_event = {
 				value = -400
 			}
 		}
-		SAX = { country_event = 15730010 }
+		any_country = {
+			limit = {
+				tag = SAX
+				NOT = { has_global_flag = disabled_succession_wars }
+			}
+			country_event = 15730010
+		}
 		relation = {
 			who = POR
 			value = 100

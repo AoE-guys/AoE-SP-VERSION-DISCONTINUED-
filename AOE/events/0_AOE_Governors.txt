@@ -8,6 +8,7 @@ country_event = {
 	trigger = {	
 		tag = TUR
 		year = 1720
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	
 	mean_time_to_happen = {

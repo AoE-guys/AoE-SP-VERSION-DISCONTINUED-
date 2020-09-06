@@ -1028,6 +1028,7 @@ country_event = {
 		NOT = {
 			war_with = FRA
 		}
+		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	
 	mean_time_to_happen = {
@@ -1153,7 +1154,7 @@ country_event = {
 		ULA = {
 			government = colonial_company
 			add_country_modifier = {
-				name = small_immigration_boom
+				name = immigration_boom
 				duration = 1825
 			}
 			add_country_modifier = {
