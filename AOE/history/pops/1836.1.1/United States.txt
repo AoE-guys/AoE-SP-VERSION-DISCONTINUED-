@@ -582,54 +582,54 @@
 	clergymen = {
 		culture = native_american_minor
 		religion = catholic
-		size = 4
+		size = 14
 	}
 	soldiers = {
 		culture = native_american_minor
 		religion = catholic
-		size = 2
+		size = 12
 	}
 
 	zzz_dummy = {
 		culture = native_american_minor
 		religion = catholic
-		size = 7
+		size = 17
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = catholic
-		size = 1
+		size = 11
 	}
 
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 7
+		size = 17
 	}
 
 	clergymen = {
 		culture = native_american_minor
 		religion = animist
-		size = 80
+		size = 180
 	}
 
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 80
+		size = 180
 	}
 
 	zzz_dummy = {
 		culture = native_american_minor
 		religion = animist
-		size = 147
+		size = 1147
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 70
+		size = 170
 	}
 }
 #San Diego (12000/3000 POPS)
@@ -11154,5 +11154,37 @@
 		culture = native_american_minor
 		religion = animist
 		size = 100
+	}
+}
+
+3402 = {
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 12
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 32
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 8
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 59
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 29
 	}
 }
