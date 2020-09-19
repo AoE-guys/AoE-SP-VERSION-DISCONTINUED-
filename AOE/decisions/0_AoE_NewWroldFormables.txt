@@ -178,6 +178,7 @@ political_decisions = {
 		picture = constitution
 		potential = {
 			is_vassal = no
+			NOT = { tag = ORI }
 			OR = {
 				government = colonial_company
 				government = dominion
@@ -282,12 +283,22 @@ political_decisions = {
 		}
 		
 		allow = {
-			money = 10000
+			OR = {
+				money = 10000
+				ai = yes
+			}
 			military_plans = 1
 			strategic_mobility = 1
 		}
 		effect = {
+		any_owned = {
+			limit = {
+				owner = {
+					ai = no
+				}
+			}
 			money = -10000
+		}
 			set_country_flag = colonial_militia
 		}
 		ai_will_do = {
@@ -316,10 +327,10 @@ political_decisions = {
 			has_country_flag = colonial_militia
 			OR = {
 				money = 250000
-				AND = {
-					money = 25000
+				#AND = {
+					#money = 25000
 					ai = yes
-				}
+				#}
 			}
 			state_n_government = 1
 			NOT = {
@@ -327,7 +338,14 @@ political_decisions = {
 			}
 		}
 		effect = {
-			treasury = -250000
+			any_owned = {
+				limit = {
+					owner = {
+						ai = no
+					}
+				}
+				treasury = -250000
+			}
 			badboy = 6
 			random_country = {
 				limit = {

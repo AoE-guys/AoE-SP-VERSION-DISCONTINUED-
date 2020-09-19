@@ -1,29 +1,29 @@
-country_event = {
-	id = 19180000
-	title = " New Orlean colonization push"
-	desc = "Recently our settlers maneged to colonize an area between New orelan and New Spain"
-	picture = "colonization"
-	fire_only_once = yes
-	
-	trigger = {
-		owns = 139
-		year = 1718
-		NOT = { owns = 141 }
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = "Great!"
-		prestige = 5
-		141 = {
-			add_core = THIS
-			secede_province = THIS
-		}		
-	}
-}
+#country_event = {
+#	id = 19180000
+#	title = " New Orlean colonization push"
+#	desc = "Recently our settlers maneged to colonize an area between New orelan and New Spain"
+#	picture = "colonization"
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		owns = 139
+#		year = 1718
+#		NOT = { owns = 141 }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#	
+#	option = {
+#		name = "Great!"
+#		prestige = 5
+#		141 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}		
+#	}
+#}
 country_event = {
 	id = 19180001
 	title = "Southern colonization push"
@@ -84,19 +84,147 @@ country_event = {
 			add_core = THIS
 			secede_province = THIS
 		}
+		216 = {
+			add_core = THIS
+			secede_province = THIS
+		}
 	}
 }
+#country_event = {
+#	id = 19180003
+#	title = "Louisianian colonization push"
+#	desc = "Recently our settlers maneged to colonize new areas"
+#	picture = "colonization"
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		owns = 139
+#		year = 1714
+#		money = 2000
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#	
+#	option = {
+#		name = "Great!"
+#		prestige = 5
+#		treasury = -2000
+#		142 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#	}
+#}
+#country_event = {
+#	id = 19180004
+#	title = "Louisianian colonization push" ###useless
+#	desc = "Recently our settlers maneged to colonize new areas"
+#	picture = "colonization"
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		owns = 142
+#		year = 1724
+#		money = 2000
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#	
+#	option = {
+#		name = "Great!"
+#		prestige = 5
+#		treasury = -2000
+#		3389 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#	}
+#}
+#country_event = {
+#	id = 19180005
+#	title = "Colonization push" ###useless
+#	desc = "Recently our settlers maneged to colonize new areas"
+#	picture = "colonization"
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		owns = 184
+#		year = 1748
+#		money = 2000
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#	
+#	option = {
+#		name = "Great!"
+#		prestige = 5
+#		treasury = -2000
+#		169 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#		182 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#	}
+#}
+#country_event = { 
+#	id = 19180006
+#	title = "Colonization push" ###useless
+#	desc = "Recently our settlers maneged to colonize new areas"
+#	picture = "colonization"
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		owns = 182
+#		year = 1750
+#		money = 6000
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#	
+#	option = {
+#		name = "Great!"
+#		prestige = 5
+#		treasury = -6000
+#		170 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#		181 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#		179 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#		183 = {
+#			add_core = THIS
+#			secede_province = THIS
+#		}
+#	}
+#}
 country_event = {
-	id = 19180003
-	title = "Louisianian colonization push"
-	desc = "Recently our settlers maneged to colonize new areas"
+	id = 19180013
+	title = "Southern colonization push"
+	desc = "Recently our settlers maneged to colonize areas in the South"
 	picture = "colonization"
 	fire_only_once = yes
 	
 	trigger = {
-		owns = 139
-		year = 1714
-		money = 2000
+		owns = 47
+		year = 1726
+		money = 5000
 	}
 	
 	mean_time_to_happen = {
@@ -106,24 +234,40 @@ country_event = {
 	option = {
 		name = "Great!"
 		prestige = 5
-		treasury = -2000
-		142 = {
+		treasury = -5000
+		2594 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		2592 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		2595 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		38 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		39 = {
 			add_core = THIS
 			secede_province = THIS
 		}
 	}
 }
 country_event = {
-	id = 19180004
-	title = "Louisianian colonization push"
-	desc = "Recently our settlers maneged to colonize new areas"
+	id = 19180014
+	title = "Southern colonization push"
+	desc = "Recently our settlers maneged to colonize areas in the South"
 	picture = "colonization"
 	fire_only_once = yes
 	
 	trigger = {
-		owns = 142
-		year = 1724
-		money = 2000
+		owns = 2594
+		year = 1726
+		money = 5000
 	}
 	
 	mean_time_to_happen = {
@@ -133,78 +277,20 @@ country_event = {
 	option = {
 		name = "Great!"
 		prestige = 5
-		treasury = -2000
-		3389 = {
+		treasury = -5000
+		49 = {
 			add_core = THIS
 			secede_province = THIS
 		}
-	}
-}
-country_event = {
-	id = 19180005
-	title = "Colonization push"
-	desc = "Recently our settlers maneged to colonize new areas"
-	picture = "colonization"
-	fire_only_once = yes
-	
-	trigger = {
-		owns = 184
-		year = 1748
-		money = 2000
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = "Great!"
-		prestige = 5
-		treasury = -2000
-		169 = {
+		36 = {
 			add_core = THIS
 			secede_province = THIS
 		}
-		182 = {
+		40 = {
 			add_core = THIS
 			secede_province = THIS
 		}
-	}
-}
-country_event = {
-	id = 19180006
-	title = "Colonization push"
-	desc = "Recently our settlers maneged to colonize new areas"
-	picture = "colonization"
-	fire_only_once = yes
-	
-	trigger = {
-		owns = 182
-		year = 1750
-		money = 6000
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = "Great!"
-		prestige = 5
-		treasury = -6000
-		170 = {
-			add_core = THIS
-			secede_province = THIS
-		}
-		181 = {
-			add_core = THIS
-			secede_province = THIS
-		}
-		179 = {
-			add_core = THIS
-			secede_province = THIS
-		}
-		183 = {
+		33 = {
 			add_core = THIS
 			secede_province = THIS
 		}

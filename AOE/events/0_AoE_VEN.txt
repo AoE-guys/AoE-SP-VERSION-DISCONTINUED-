@@ -10,9 +10,10 @@ country_event = {
 		tag = AUS
 		NOT = { has_global_flag = austria_int_venice }
 		VEN = {
-		war = yes
+			war = yes
 		}
 		840 = { controlled_by = TUR }
+		#NOT = { has_global_flag = disabled_railroad_wars }
 	}
 
 	mean_time_to_happen = {
