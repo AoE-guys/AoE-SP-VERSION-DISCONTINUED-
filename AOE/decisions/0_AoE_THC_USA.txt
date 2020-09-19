@@ -190,6 +190,16 @@ political_decisions = {
 			USA_188 = { add_core = THIS }
 			USA_185 = { add_core = THIS }
 			USA_170 = { add_core = THIS }
+			any_country = {
+				limit = {
+					government = tribal_democracy
+				}
+				alliance_with = THIS
+				relation = {
+					who = THIS
+					value = -200
+				}
+			}
 			set_country_flag = war_on_natives
 			badboy = 20
 		}

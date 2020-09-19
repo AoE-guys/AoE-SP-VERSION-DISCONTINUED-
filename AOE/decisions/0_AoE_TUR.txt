@@ -177,4 +177,195 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	conquest_of_rome = {
+		picture = rome
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = conquest_of_rome }
+			exists = yes
+		}
+		allow = {
+			619 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			749 = {
+				owned_by = THIS
+			}
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = conquest_of_rome
+			ITA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			badboy = 30
+			prestige = 25
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	eastern_tributaries = {
+		picture = nizam-i_djedid
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = eastern_tributaries }
+			exists = yes
+		}
+		allow = {
+			modern_army_doctrine = 1
+			#NOT = { has_country_flag = janisseries }
+			is_greater_power = yes
+			has_country_flag = recovered_hungary
+		}
+		effect = {
+			set_country_flag = eastern_tributaries
+			RUS_1102 = { add_core = THIS }
+			RUS_1098 = { add_core = THIS }
+			RUS_1090 = { add_core = THIS }
+			PER_1122 = { add_core = THIS }
+			1108 = { add_core = THIS }
+			1109 = { add_core = THIS }
+			1112 = { add_core = THIS }
+			1133 = { add_core = THIS }
+			badboy = 15
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	end_romanian_principalities = {
+		picture = nizam-i_djedid
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = end_romanian_principalities }
+			exists = yes
+			WAL = {
+				exists = yes
+				ai = yes
+				vassal_of = THIS
+			}
+			SIE = {
+				#exists = yes
+				ai = yes
+			}
+			MOL = {
+				exists = yes
+				ai = yes
+				vassal_of = THIS
+			}
+		}
+		allow = {
+			NOT = { has_country_modifier = janisseries_influence }
+			centralization = totalitarianism
+			WAL = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			SIE = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			MOL = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+		}
+		effect = {
+			set_country_flag = end_romanian_principalities
+			NOT = { has_country_flag = janisseries }
+			random_country = {
+				limit = {
+					tag = MOL
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = SIE
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = WAL
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	end_maghreb_vassals = {
+		picture = nizam-i_djedid
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = end_maghreb_vassals }
+			exists = yes
+			TUN = {
+				exists = yes
+				ai = yes
+				vassal_of = THIS
+			}
+			ALD = {
+				exists = yes
+				ai = yes
+				vassal_of = THIS
+			}
+		}
+		allow = {
+			modern_army_doctrine = 1
+			centralization = totalitarianism
+			NOT = { has_country_modifier = janisseries_influence }
+			TUN = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			ALD = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+		}
+		effect = {
+			set_country_flag = end_maghreb_vassals
+			random_country = {
+				limit = {
+					tag = ALD
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = TUN
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
 }

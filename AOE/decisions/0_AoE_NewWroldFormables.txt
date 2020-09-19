@@ -324,7 +324,13 @@ political_decisions = {
 			}
 		}	
 		allow = {
-			has_country_flag = colonial_militia
+			OR = {
+				has_country_flag = colonial_militia
+				AND = {
+					ai = yes
+					year = 1705
+				}
+			}
 			OR = {
 				money = 250000
 				#AND = {
@@ -351,7 +357,7 @@ political_decisions = {
 				limit = {
 					government = tribal_democracy
 					neighbour = THIS
-					any_core = {
+					any_owned = {
 						is_core = THIS
 						NOT = {
 							owned_by = THIS

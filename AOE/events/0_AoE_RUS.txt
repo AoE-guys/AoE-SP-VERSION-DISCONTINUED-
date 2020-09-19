@@ -1552,7 +1552,7 @@ country_event = {
 	option = {
 		name = "EVT170023OPTA"
 		treasury = -50000
-		set_global_flag = 170023
+		set_global_flag = st_petersburg_construction
 		random_list = {
 			35 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2190 } } }
 			30 = { 994 = { add_province_modifier = { name = st_petersburg_construction duration = 2555 } } }
@@ -1661,6 +1661,7 @@ country_event = {
 		name = "Glorious!"
 		clr_global_flag = st_petersburg_construction
 		prestige = 25
+		capital = 994
 		994 = {
 			#trade_goods = precious_goods
 			any_pop = {
