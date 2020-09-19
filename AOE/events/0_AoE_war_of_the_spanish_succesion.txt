@@ -771,7 +771,7 @@ country_event = {
 			}
 			country_event = 17071707
 		}
-		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA  end_war = BOR }
+		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPC  end_war = BOR  }
 		end_war = SPC  end_war = BOR
 		clr_global_flag =  spanish_succesion_crisis
 		set_global_flag = spanish_succesion_resolved
@@ -779,10 +779,10 @@ country_event = {
 			limit = {
 				exists = yes
 				OR = {
-					truce_with = SPA
+					truce_with = SPC
 					truce_with = BOR
 					truce_with = AUS
-					war_with = SPA
+					war_with = SPC
 					war_with = BOR
 					war_with = AUS
 				}
@@ -799,7 +799,7 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = LOM
-				vassal_of = SPA
+				vassal_of = SPC
 			}
 			country_event = 130052
 		}
