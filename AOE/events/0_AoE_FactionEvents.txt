@@ -1850,7 +1850,10 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = restablished_aristocratic_titles
-		government = democracy
+		OR = {
+			government = democracy
+			government = presidential_dictatorship
+		}
 		OR = {
 			safety_regulations = no_safety
 			safety_regulations = low_safety
@@ -1862,7 +1865,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "It's better if it everything stays as it is"
+		name = "It's better if everything stays as it is"
 	}
 	option = {
 		name = "Long live the King!"
