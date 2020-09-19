@@ -760,9 +760,7 @@ country_event = {
 				has_country_flag = support_habsburg_heir
 				}
 			}
-			SIC_763 = {
-				secede_province = SVY
-			}
+			country_event = 17071708
 		}
 		any_country = {
 			limit = {
@@ -877,6 +875,22 @@ country_event = {
 		name = "Victory!"
 		517 = {
 			secede_province = THIS
+			add_core = THIS
+		}
+		prestige = 15
+	}
+}
+country_event = {
+	id = 17071708
+	title = "Spoils from the succesion crisis" 
+	desc = "We have been given new posessions"
+	picture = "spanish_king"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Victory!"
+		SIC_763 = {
+			secede_province = SVY
 			add_core = THIS
 		}
 		prestige = 15

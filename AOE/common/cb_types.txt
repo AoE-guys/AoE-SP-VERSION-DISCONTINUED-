@@ -605,6 +605,12 @@ restore_spanish_empire = {
 		NOT = { in_sphere = THIS }
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		THIS = { NOT = { has_country_modifier = punitive_effects } }
+		THIS = {
+			NOT = {
+				has_country_flag = in_great_war
+				has_country_modifier = no_more_war
+			}
+		}
 	}
 
 	allowed_states = {
@@ -683,6 +689,12 @@ restore_holy_roman_empire = {
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		NOT = { has_country_flag = hre_member }
 		THIS = { NOT = { has_country_modifier = punitive_effects } }
+		THIS = {
+			NOT = {
+				has_country_flag = in_great_war
+				has_country_modifier = no_more_war
+			}
+		}
 	}
 
 	allowed_states = {
@@ -775,7 +787,14 @@ restore_austrian_empire = {
         OR = {
             war_with = THIS
             THIS = { NOT = { has_country_modifier = punitive_effects } }
+			
         }
+		THIS = {
+			NOT = {
+				has_country_flag = in_great_war
+				has_country_modifier = no_more_war
+			}
+		}
     }
 
     allowed_states = {
