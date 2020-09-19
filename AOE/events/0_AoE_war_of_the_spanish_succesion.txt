@@ -44,6 +44,11 @@ country_event = {
 		AUS = { country_event = 93007 }
 		BOR = { country_event = 93002 }
 		BOR = { set_country_flag = support_bourbon_heir }
+		all_core = {
+			add_core = SPC
+			remove_core = SPA
+		}
+		change_tag = SPC
 		relation = {
 			who = BOR
 			value = 300
@@ -153,6 +158,7 @@ country_event = {
 				NOT = { tag = TUR }
 				NOT = { tag = RUS }
 				NOT = { tag = SWE }
+				NOT = { tag = SPC }
 				OR = {
 					NOT = { is_vassal = yes } 
 					tag = NET
@@ -333,6 +339,10 @@ country_event = {
 				NOT = { in_sphere = AUS }
 				NOT = { in_sphere = BOR }
 			}
+			modifier = {
+				factor = 20
+				government = theocracy
+			}
 		}
 	}
 }
@@ -370,9 +380,9 @@ country_event = {
 		#   }
 		#}
 		war = {
-			target = SPA
+			target = SPC
 			attacker_goal = { casus_belli = change_heir_habsburg_cb }
-			defender_goal = { casus_belli = change_heir_bourbon_cb }
+			defender_goal = { casus_belli = status_quo }
 			call_ally = yes
 		}
 		set_global_flag = spanish_war_realy_begun
@@ -409,6 +419,7 @@ country_event = {
 				NOT = { tag = BOR }
 				NOT = { tag = TUR }
 				NOT = { tag = RUS }
+				NOT = { tag = SPC }
 				OR = {
 					NOT = { is_vassal = yes } 
 					tag = NET
@@ -577,6 +588,10 @@ country_event = {
 				NOT = { in_sphere = AUS }
 				NOT = { in_sphere = BOR }
 			}
+			modifier = {
+				factor = 20
+				government = theocracy
+			}
 		}
 	}
 }
@@ -608,7 +623,7 @@ country_event = {
 		war = {
 			target = SPA
 			attacker_goal = { casus_belli = change_heir_bourbon_cb }
-			defender_goal = { casus_belli = change_heir_habsburg_cb }
+			defender_goal = { casus_belli = status_quo }
 			call_ally = yes
 		}
 		#AUS = {
@@ -679,7 +694,9 @@ country_event = {
 	trigger = {
 		NOT = { has_global_flag = spanish_succesion_resolved }
 		has_global_flag = spanish_succesion_crisis
-		tag = SPA
+		has_global_flag = support_bourbon_heir_spa
+		tag = SPC
+		ai = yes
 		OR = {
 			AND = {
 				BOR = {
@@ -712,7 +729,7 @@ country_event = {
 		name = "At Last!"
 		money = 1000000
 		prestige = 80
-		SPA = {
+		SPC = {
 			any_owned = {
 				limit = {
 					OR = {
@@ -755,7 +772,7 @@ country_event = {
 			country_event = 17071707
 		}
 		any_country = { limit = { has_country_flag = support_bourbon_heir } end_war = SPA  end_war = BOR }
-		end_war = SPA  end_war = BOR
+		end_war = SPC  end_war = BOR
 		clr_global_flag =  spanish_succesion_crisis
 		set_global_flag = spanish_succesion_resolved
 		any_country = {
@@ -876,7 +893,9 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = spanish_succesion_resolved }
+		has_global_flag = support_habsburg_heir_spa
 		tag = SPA
+		ai = yes
 		AUS = {
 			OR = {
 				AND = {
@@ -993,6 +1012,7 @@ country_event= {
 			name = no_more_war
 			duration = 1825
 		}
+		end_war = SPC
 		end_war = SPA
 		end_war = BOR
 		end_war = AUS

@@ -21,6 +21,36 @@ party = {
 }
 
 party = {
+	name = "Nobleza togada"
+	start_date = 1600.1.1
+	end_date = 2000.1.1
+
+	ideology = conservative
+
+	social_policy = no_position_set
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = residency
+	war_policy = anti_military
+}
+
+party = {
+	name = "Faccion austriaca"
+	start_date = 1600.1.1
+	end_date = 2000.1.1
+
+	ideology = conservative
+
+	social_policy = no_position_set
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = moralism
+	citizenship_policy = residency
+	war_policy = jingoism
+}
+
+party = {
 	name = "Gentry Faction"
 	start_date = 1600.1.1
 	end_date = 2000.1.1

@@ -2,7 +2,10 @@ political_decisions = {
 	renovate_the_armada = {
 		picture = armada
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			NOT = { has_country_flag = renovated_the_armada }
 			exists = yes
 		}
@@ -25,7 +28,10 @@ political_decisions = {
 	introduce_the_cadastre_tax_and_banks = {
 		picture = cadastre
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			NOT = { has_country_flag = introduced_the_cadastre_tax }
 			exists = yes
 		}
@@ -49,7 +55,10 @@ political_decisions = {
 	royal_academy_of_the_fine_arts = {
 		picture = royal_academy
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			NOT = { has_country_flag = made_royal_academy }
 			exists = yes
 		}
@@ -71,7 +80,10 @@ political_decisions = {
 	expel_the_jesuits = {
 		picture = jesuits
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			NOT = { has_country_flag = expeled_the_jesuits }
 			exists = yes
 		}
@@ -131,7 +143,10 @@ political_decisions = {
 	royal_spanish_academy = {
 		picture = spanish_academy
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			NOT = { has_country_flag = made_royal_spanish_academy }
 			exists = yes
 		}
@@ -247,9 +262,12 @@ political_decisions = {
 	}
 	
 	nueva_planta_decrees = {
-		picture = noueva_planta
+		picture = nueva_planta
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			NOT = { has_country_flag = nueva_planta_decrees }
 			exists = yes
 			ARN = {
@@ -265,6 +283,12 @@ political_decisions = {
 			NOT = { safety_regulations = no_safety }
 		}
 		effect = {
+			ARN = {
+				all_core = {
+					add_core = THIS
+					remove_core = ARN
+				}
+			}
 			inherit = ARN
 			set_country_flag = nueva_planta_decrees
 			prestige = 25
@@ -388,6 +412,7 @@ political_decisions = {
 	create_iberia = {
 		potential = {
 			is_culture_group = iberian
+			NOT = [ tag = CSP }
 			487 = { is_core = SPA }
 			NOT = {
 				exists = IBR
@@ -454,7 +479,7 @@ political_decisions = {
 				limit = {
 					tag = PBZ
 					exists = yes
-					ai = yes
+					#ai = yes
 					is_vassal = yes
 				}
 				THIS = {
@@ -465,7 +490,7 @@ political_decisions = {
 				limit = {
 					tag = VNS
 					exists = yes
-					ai = yes
+					#ai = yes
 					is_vassal = yes
 				}
 				THIS = {
@@ -476,7 +501,7 @@ political_decisions = {
 				limit = {
 					tag = VNG
 					exists = yes
-					ai = yes
+					#ai = yes
 					is_vassal = yes
 				}
 				THIS = {
@@ -487,7 +512,7 @@ political_decisions = {
 				limit = {
 					tag = VOP
 					exists = yes
-					ai = yes
+					#ai = yes
 					is_vassal = yes
 				}
 				THIS = {
@@ -496,9 +521,20 @@ political_decisions = {
 			}
 			random_country = {
 				limit = {
+					tag = FLO
+					exists = yes
+					#ai = yes
+					is_vassal = yes
+				}
+				THIS = {
+					create_vassal = FLO
+				}
+			}
+			random_country = {
+				limit = {
 					tag = VLP
 					exists = yes
-					ai = yes
+					#ai = yes
 					is_vassal = yes
 				}
 				THIS = {
@@ -547,6 +583,12 @@ political_decisions = {
 				limit = {
 					tag = CAT
 					exists = yes
+					CAT = {
+						OR = {
+							vassal_of = THIS
+							is_vassal = no
+						}
+					}
 					ai = yes
 				}
 				THIS = { inherit = CAT }
@@ -555,6 +597,12 @@ political_decisions = {
 				limit = {
 					tag = CAT
 					exists = yes
+					CAT = {
+						OR = {
+							vassal_of = THIS
+							is_vassal = no
+						}
+					}
 					ai = no
 				}
 				country_event = 98650
@@ -563,6 +611,12 @@ political_decisions = {
 				limit = {
 					tag = BSQ
 					exists = yes
+					BSQ = {
+						OR = {
+							vassal_of = THIS
+							is_vassal = no
+						}
+					}
 					ai = yes
 				}
 				THIS = { inherit = BSQ }
@@ -571,6 +625,12 @@ political_decisions = {
 				limit = {
 					tag = BSQ
 					exists = yes
+					BSQ = {
+						OR = {
+							vassal_of = THIS
+							is_vassal = no
+						}
+					}
 					ai = no
 				}
 				country_event = 98650
@@ -593,6 +653,175 @@ political_decisions = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	enact_new_constitution_spc = {
+		potential = {
+			tag = SPC
+			NOT = { has_country_flag = enacted_new_constitution_spc }
+			exists = yes
+		}
+		
+		allow = {
+			war = no
+			prestige = 50
+			is_greater_power = yes
+			plurality = 20
+			OR = {
+				ruling_party_ideology  = liberal
+				ruling_party_ideology = socialist
+				ruling_party_ideology  = communist
+			}
+			political_thought_8 = 1
+			VNS = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			VNG = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			FLO = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			VOP = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			VLP = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+		}
+		
+		effect = {
+			set_country_flag = enacted_new_constitution_spc
+			random_owned = {
+				limit = {
+					OR = {
+						owner = { political_parties = underground_parties }
+						owner = { political_parties = harassment }
+					}
+				}
+				owner = {
+					political_reform = gerrymandering
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { NOT = { press_rights = free_press } }
+				}
+				owner = {
+					political_reform = free_press
+				}
+			}
+			random_owned = {
+				limit = {
+					OR = {
+						owner = { vote_franschise = none_voting }
+						owner = { vote_franschise = landed_voting }
+						owner = { vote_franschise = wealth_weighted_voting }
+					}
+				}
+				owner = {
+					political_reform = wealth_voting
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { NOT = { upper_house_composition = population_equal_weight } }
+				}
+				owner = {
+					political_reform = population_equal_weight
+				}
+			}
+			VNS = {
+				all_core = {
+					add_core = THIS
+					remove_core = VNS
+				}
+			}
+			VNG = {
+				all_core = {
+					add_core = THIS
+					remove_core = VNS
+				}
+			}
+			FLO = {
+				all_core = {
+					add_core = THIS
+					remove_core = VNS
+				}
+			}
+			VOP = {
+				all_core = {
+					add_core = THIS
+					remove_core = VNS
+				}
+			}
+			VLP = {
+				all_core = {
+					add_core = THIS
+					remove_core = VNS
+				}
+			}
+			random_country = {
+				limit = {
+					tag = VNS
+					exists = yes
+					#ai = yes
+					is_vassal = yes
+				}
+				THIS = {
+					inherit = VNS
+				}
+			}
+			random_country = {
+				limit = {
+					tag = VNG
+					exists = yes
+					#ai = yes
+					is_vassal = yes
+				}
+				THIS = {
+					inherit = VNG
+				}
+			}
+			random_country = {
+				limit = {
+					tag = FLO
+					exists = yes
+					#ai = yes
+					is_vassal = yes
+				}
+				THIS = {
+					inherit = FLO
+				}
+			}
+			random_country = {
+				limit = {
+					tag = VOP
+					exists = yes
+					#ai = yes
+					is_vassal = yes
+				}
+				THIS = {
+					inherit = VOP
+				}
+			}
+			random_country = {
+				limit = {
+					tag = VLP
+					exists = yes
+					#ai = yes
+					is_vassal = yes
+				}
+				THIS = {
+					inherit = VLP
+				}
+			}
 		}
 	}
 }

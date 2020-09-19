@@ -15,6 +15,7 @@ political_decisions = {
 			plurality = 20
 			OR = {
 				ruling_party_ideology  = liberal
+				ruling_party_ideology = socialist
 				ruling_party_ideology  = communist
 			}
 			NOT = { has_country_modifier = noble_democracy }
