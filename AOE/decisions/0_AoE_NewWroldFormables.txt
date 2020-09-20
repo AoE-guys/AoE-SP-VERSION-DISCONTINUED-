@@ -353,18 +353,32 @@ political_decisions = {
 				treasury = -250000
 			}
 			badboy = 6
-			random_country = {
+			random_owned = {
 				limit = {
-					government = tribal_democracy
-					neighbour = THIS
-					any_owned = {
+					any_neighbor_province = {
+						owner = {
+							government = tribal_democracy
+						}
 						is_core = THIS
 						NOT = {
 							owned_by = THIS
 						}
 					}
 				}
-				country_event = 19180007
+				random_neighbor_province = {
+					limit = {
+						owner = {
+							government = tribal_democracy
+						}
+						is_core = THIS
+						NOT = {
+							owned_by = THIS
+						}
+					}
+					owner = {
+						country_event = 19180007
+					}
+				}
 			}
 			add_country_modifier = {
 				name = law_changed_by_force
