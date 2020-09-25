@@ -320,3 +320,100 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+
+country_event = {
+	id = 173611
+	title = "Polish portectorate"
+	desc = "EVTDESC173611"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		is_greater_power = yes
+		tag = TUR
+		PLC = {
+			in_sphere = THIS
+			exists = yes
+		}
+		exists = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Demand their subjigation!"
+		955 = { add_core = THIS }
+		954 = { add_core = THIS }
+		960 = { add_core = THIS }
+		PLC = { country_event = 173612 }
+		badboy = 8
+	}
+	
+	option = {
+		name = "It's better to have them stay as our strong ally"
+		relation = {
+			who = PLC
+			value = 25
+		}
+		prestige = 5
+	}
+}
+country_event = {
+	id = 173612
+	title = "Second treaty of Buchach"
+	desc = "EVTDESC173612"
+	picture = glos
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have no other choice but give in..."
+		955 = { secede_province = TUR }
+		954 = { secede_province = TUR }
+		960 = { secede_province = TUR }
+		TUR = {
+			diplomantic_influence = {
+				who = PLC
+				value = 100
+			}
+		}
+		prestige = = -25
+	}
+	
+	option = {
+		name = "Over my dead body."
+		TUR = {
+			war = {
+				target = PLC
+				attacker_goal = { casus_belli = acquire_all_cores country = TUR }
+				call_ally = no
+			}
+		}
+		set_country_flag = declined_turkey
+	}
+}
+
+country_event = {
+	id = 173613
+	title = "Victory over ottomans!"
+	desc = "EVTDESC173613"
+	picture = glos
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = declined_turkey
+		NOT = { war_with = TUR }
+		owns = 954
+		owns = 955
+		owns = 960
+	}
+	
+	option = {
+		name = "Sobieski would be proud!"
+		all_core = {
+			remove_core = TUR
+		}
+		prestige = 50
+	}
+}

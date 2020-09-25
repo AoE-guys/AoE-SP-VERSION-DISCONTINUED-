@@ -4424,20 +4424,6 @@ acquire_state = {
 	can_use = {
 		is_vassal = no
 		OR = {
-			AND = {
-				THIS = {
-					NOT = { tech_school = unciv_tech_school }
-				}
-				tech_school = unciv_tech_school
-			}
-			AND = {
-				THIS = {
-					tech_school = unciv_tech_school
-				}
-				tech_school = unciv_tech_school
-			}
-		}
-		OR = {
 			AND = { 
 				THIS = { num_of_ports = 1 } 
 				num_of_ports = 1
@@ -7406,20 +7392,6 @@ acquire_substate_region = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		OR = {
-			AND = {
-				THIS = {
-					NOT = { tech_school = unciv_tech_school }
-				}
-				tech_school = unciv_tech_school
-			}
-			AND = {
-				THIS = {
-					tech_school = unciv_tech_school
-				}
-				tech_school = unciv_tech_school
-			}
-		}
 		NOT = { is_our_vassal = THIS }
 		num_of_substates = 1 # if has any substate
 		THIS = { ai = no }
@@ -8579,8 +8551,8 @@ conquest_low = {
 				number_of_states = 2
 				THIS = {
 					OR = {
-						NOT = { is_greater_power = yes }
-						NOT = { nationalism_n_imperialism = 1 }
+						is_greater_power = yes
+						nationalism_n_imperialism = 1
 					}
 				}
 			}

@@ -78,6 +78,7 @@ country_event = {
 	title = "Treaty of Madrid"
 	desc = "EVENTDESC19180014"
 	picture = "colonization"
+	fire_only_once = yes
 	#is_triggered_only = yes
 	
 	trigger = {
@@ -87,6 +88,7 @@ country_event = {
 		}
 		is_vassal = no
 		NOT = { tag = PBZ }
+		NOT = { tech_school = unciv_school }
 	}
 	
 	option = {

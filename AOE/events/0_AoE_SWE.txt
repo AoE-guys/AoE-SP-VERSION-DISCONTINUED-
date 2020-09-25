@@ -270,7 +270,7 @@ country_event = {
 		}
 		OR = {
 			AND = {
-				706 = {
+				711 = {
 					controlled_by = SWE
 				}
 				360 = {
@@ -366,6 +366,10 @@ country_event = {
 				duration = 3650
 			}
 		}
+		add_country_modifier = {
+				name = fanatic_army
+				duration = 3650
+		}
 		set_global_flag = plc_civil_war
 	}
 	
@@ -402,6 +406,9 @@ country_event = {
 	option = {
 		name = "Finally."
 		prestige = 15
+		SWE = {
+			prestige = 50
+		}
 		change_tag = PLC
 		PZN = {
 			all_core = {

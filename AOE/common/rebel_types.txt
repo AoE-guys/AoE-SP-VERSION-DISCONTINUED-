@@ -7533,3 +7533,266 @@ noble_rebels = {
 		plurality = -30
 	}
 }
+janissery_rebels = {
+	icon = 18
+	
+	area = nation 					# Stays within the nation
+	break_alliance_on_win = no
+	
+	# <this is the government in the country> = <this is what the rebels want>
+	government = {
+		proletarian_dictatorship = proletarian_dictatorship
+		presidential_dictatorship = presidential_dictatorship
+		bourgeois_dictatorship = bourgeois_dictatorship
+		fascist_dictatorship = fascist_dictatorship
+		absolute_monarchy = absolute_monarchy
+		prussian_constitutionalism = prussian_constitutionalism
+		hms_government = hms_government
+		french_bourbon = french_bourbon
+		dominion = dominion
+		democracy = democracy
+		theocracy = theocracy
+		colonial_company = colonial_company
+		
+		archduchy = archduchy
+		elective_monarchy_oligarchy = elective_monarchy_oligarchy
+		federal_democracy = federal_democracy
+		tribal_democracy = tribal_democracy 
+		tsardom = tsardom
+		merchant_republic = merchant_republic
+		trade_monarchy = trade_monarchy
+		khanate = khanate
+	}
+	
+	
+	defection = none				
+	independence = none				# Does not strive for independence
+	defect_delay = 18
+	
+	ideology = conservative
+	
+	allow_all_cultures = yes
+	allow_all_religions = yes
+	allow_all_ideologies = yes
+	
+	resilient = yes
+	reinforcing = yes				
+	general = yes					
+	smart = yes
+	unit_transfer = yes				# Units do not remain after enforcing demands.
+	
+	occupation_mult = 1.1			# The amount of strength this rebel gains from taking provinces	
+
+	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
+	will_rise = {
+		factor = 0.5
+		modifier = {
+			war = yes
+			factor = 0.5
+		}
+		modifier = {
+			war_exhaustion = 4
+			factor = 0.2
+		}
+		modifier = {
+			war_exhaustion = 6
+			factor = 0.2
+		}
+		modifier = {
+			war_exhaustion = 8
+			factor = 0.2
+		}
+		modifier = {
+			#any_pop = { strata = middle }
+			average_militancy = 3
+			factor = 0.6
+		}
+		modifier = {
+			#any_pop = { strata = middle }
+			average_militancy = 6
+			factor = 0.6
+		}
+		modifier = {
+			#any_pop = { type = soldier }
+			average_militancy = 9
+			factor = 8
+		}
+		modifier = {
+			pensions = low_pensions
+			factor = 0.6
+		}
+		modifier = {
+			pensions = trinket_pensions
+			factor = 0.8
+		}
+		modifier = {
+			pensions = no_pensions
+			factor = -2.75
+		}
+		modifier = {
+			has_country_modifier = janisseries_angry
+			factor = 2.5
+		}
+		modifier = {
+			has_country_modifier = janisseries_furious
+			factor = 5
+		}
+		modifier = {
+			NOT = { has_country_modifier = janisseries_influence }
+			factor = -5.00
+		}
+		modifier = {
+			OR = {
+				government = elective_monarchy_oligarchy
+				government = archduchy
+			}
+			factor = 1
+		}
+	}
+			
+	
+	# The rebel type with the highest modifier for this pop gets picked
+	spawn_chance = {
+ 
+		factor = 1
+		
+		modifier = {
+			factor = -2
+			pop_majority_ideology = communist
+		}
+		modifier = {
+			factor = 1
+			pop_majority_ideology = conservative
+		}
+		modifier = {
+			factor = 2
+			pop_majority_ideology = reactionary
+		}
+		modifier = {
+			factor = 4
+			any_pop = {
+				strata = middle
+				militancy = 3
+			}
+		}
+		modifier = {
+			factor = 6
+			any_pop = {
+				strata = middle
+				militancy = 6
+			}
+		}		
+		modifier = {
+			factor = 8
+			any_pop = {
+				strata = middle
+				militancy = 9
+			}
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 5.0
+			is_capital = yes
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+		NOT = { has_province_modifier = war_torn }
+ 	}
+	
+	siege_won_effect = {
+		add_province_modifier = {
+			name = war_torn
+			duration = 365
+		}
+		any_pop = {
+			ideology = {
+				value = conservative
+				factor = 0.05
+			}
+		}
+		owner = { war_exhaustion = 2.5 }
+	}
+
+	# Country scope
+	demands_enforced_trigger = {
+		OR = {
+			capital_scope = {
+				controlled_by = REB
+				province_control_days = 90
+			}
+			NOT = {
+				any_owned_province = {
+					is_colonial = no
+					controlled_by = THIS
+				}
+			}
+		}
+	}
+	
+	demands_enforced_effect = {
+		random_owned = { #Army#
+            limit = {
+                owner = {
+                    pensions = low_pensions
+                }
+            }
+            owner = {
+                social_reform = acceptable_pensions
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    pensions = trinket_pensions
+                }
+            }
+            owner = {
+                social_reform = low_pensions
+            }
+        }
+		random_owned = {
+            limit = {
+                owner = {
+                    pensions = no_pensions
+                }
+            }
+            owner = {
+                social_reform = trinket_pensions
+            }
+        }
+		add_country_modifier = {
+			name = corrupt_army
+			duration = 365
+		}
+		prestige = -15
+		plurality = -30
+	}
+}

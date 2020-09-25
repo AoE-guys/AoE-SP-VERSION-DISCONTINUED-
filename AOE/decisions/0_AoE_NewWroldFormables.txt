@@ -325,7 +325,10 @@ political_decisions = {
 		}	
 		allow = {
 			OR = {
-				has_country_flag = colonial_militia
+				AND = {
+					has_country_flag = colonial_militia
+					state_n_government = 1
+				}
 				AND = {
 					ai = yes
 					year = 1705
@@ -338,7 +341,7 @@ political_decisions = {
 					ai = yes
 				#}
 			}
-			state_n_government = 1
+			#state_n_government = 1
 			NOT = {
 				has_country_modifier = law_changed_by_force
 			}
