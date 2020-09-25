@@ -922,6 +922,10 @@ transcendental_idealism = {
 	news = no
 	chance = {
 		base = 2
+		modifier = {
+			factor = 5
+			invention = immanuel_kant
+		}
 	}
 	effect = {
 		shared_prestige = 15
