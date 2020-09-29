@@ -347,7 +347,7 @@ political_decisions = {
 			}
 		}
 		effect = {
-			any_owned = {
+			random_owned = {
 				limit = {
 					owner = {
 						ai = no

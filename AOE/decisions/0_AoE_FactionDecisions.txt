@@ -214,7 +214,7 @@ political_decisions = {
 			trade_policy = protectionism
 			OR = {
 				unemployment_subsidies = no_subsidies
-				unemployment_subsidies = low_subsidies
+				unemployment_subsidies = trinket_subsidies
 			}
 		}
 		effect = {

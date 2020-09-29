@@ -88,7 +88,7 @@ country_event = {
 		}
 		is_vassal = no
 		NOT = { tag = PBZ }
-		NOT = { tech_school = unciv_school }
+		NOT = { tech_school = unciv_tech_school }
 	}
 	
 	option = {
