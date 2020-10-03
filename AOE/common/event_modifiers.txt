@@ -6230,9 +6230,9 @@ turnabout = {
 }
 ####Saint-Domingue####
 pearl_of_the_antilles = {
-	local_factory_throughput = 1.00
-	#goods_demand = 0.10
-	population_growth = 0.001
+	local_factory_throughput = 0.25
+	goods_demand = 0.10
+	immigrant_attract = 0.1
 }
 mass_slave_revolt = {
 	mobilisation_size = 0.25
