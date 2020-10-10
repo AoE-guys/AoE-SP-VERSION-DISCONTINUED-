@@ -220,8 +220,8 @@ country_migration_target = {
 	
 	modifier = {
 		factor = 3.1
-		NOT = { total_pops = 500000 }
-		NOT = { number_of_states = 2 }
+		NOT = { total_pops = 100000 }
+		NOT = { number_of_states = 6 }
 		has_country_flag = new_world_nation
 		OR = {
 			continent = north_america
@@ -234,6 +234,90 @@ country_migration_target = {
 			government = democracy
 			government = presidential_dictatorship
 			government = hms_government
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 17
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = british
+		}
+		OR = {
+			primary_culture = yankee
+			primary_culture = anglo_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 17
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = iberian
+			NOT = { primary_culture = portugese }
+		}
+		OR = {
+			is_culture_group = latin_american_cultures
+			tag = FLO
+		}
+		NOT = { primary_culture = brazilian }
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 17
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = french
+		}
+		OR = {
+			primary_culture = louisianan
+			primary_culture = cajun
+			primary_culture = french_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 17
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = portugese
+		}
+		primary_culture = brazilian
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 17
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = russian
+		}
+		primary_culture = alaskan
+		OR = {
+			government = dominion
+			government = colonial_company
 		}
 	}
 	

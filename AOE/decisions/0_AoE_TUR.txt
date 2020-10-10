@@ -1,8 +1,8 @@
 political_decisions = {
 
 	cede_taman = {
-			picture = commodities_in_central_asia
-			potential = {
+		picture = commodities_in_central_asia
+		potential = {
 			tag = CRI
 			NOT = {
 				has_country_flag = ceded_taman
@@ -178,12 +178,29 @@ political_decisions = {
 		}
 	}
 	
+	decide_foreign_policy = {
+		potential = {
+			tag = TUR
+			NOT = { has_country_flag = conquest_of_rome }
+			exists = yes
+		}
+		allow = {
+			is_greater_power = yes
+			has_country_flag = recovered_hungary
+		}
+		
+		effect = {
+			country_event = 173618
+		}
+	}
+	
 	conquest_of_rome = {
 		picture = rome
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = conquest_of_rome }
 			exists = yes
+			has_country_flag = tur_west_focus
 		}
 		allow = {
 			619 = {
@@ -198,15 +215,17 @@ political_decisions = {
 			749 = {
 				owned_by = THIS
 			}
+			owns = 754
+			owns = 757
+			owns = 763
 			is_greater_power = yes
 		}
 		effect = {
 			set_country_flag = conquest_of_rome
-			ITA = {
-				all_core = {
-					add_core = THIS
-				}
-			}
+			SIC_754 = { add_core = THIS }
+			SIC_753 = { add_core = THIS }
+			SIC_763 = { add_core = THIS }
+			PAP_752 = { add_core = THIS }
 			badboy = 30
 			prestige = 25
 		}
@@ -221,6 +240,7 @@ political_decisions = {
 			tag = TUR
 			NOT = { has_country_flag = eastern_tributaries }
 			exists = yes
+			has_country_flag = tur_east_focus
 		}
 		allow = {
 			modern_army_doctrine = 1
@@ -265,6 +285,7 @@ political_decisions = {
 				ai = yes
 				vassal_of = THIS
 			}
+			has_country_flag = tur_west_focus
 		}
 		allow = {
 			NOT = { has_country_modifier = janisseries_influence }
@@ -320,6 +341,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = end_maghreb_vassals }
+			has_country_flag = tur_west_focus
 			exists = yes
 			TUN = {
 				exists = yes
@@ -366,6 +388,62 @@ political_decisions = {
 		}
 		ai_will_do = {					
 			factor = 1
+		}
+	}
+	
+	restablish_acech_dominion = {
+		potential = {
+			tag = TUR
+			exists = yes
+			ATJ = {
+				exists = yes
+				NOT = { vassal_of = THIS }
+			}
+			has_country_flag = tur_east_focus
+		}
+		allow = {
+			is_greater_power = yes
+			relation = {
+				who = ATJ
+				value = 100
+			}
+			ATJ = {
+				in_sphere = THIS
+			}
+		}
+		effect = {
+			ATJ = {
+				country_event = 173619
+			}
+		}
+	}
+	
+	integrate_acech = {
+		potential = {
+			tag = TUR
+			exists = yes
+			ATJ = {
+				exists = yes
+				vassal_of = THIS
+			}
+			has_country_flag = tur_east_focus
+		}
+		allow = {
+			is_greater_power = yes
+			relation = {
+				who = ATJ
+				value = 200
+			}
+			ATJ = {
+				in_sphere = THIS
+			}
+			NOT = { has_country_flag = janisseries_influence }
+		}
+		effect = {
+			ATJ = {
+				annex_to = THIS
+			}
+			badboy = 8
 		}
 	}
 }

@@ -419,7 +419,6 @@ acquire_core_state = {
 		}
 		NOT = { is_our_vassal = THIS }
 		number_of_states = 2 # annex if you want their last state
-		is_vassal = no
 		any_owned_province = { is_core = THIS }
 		NOT = { has_country_modifier = neutrality }
 		THIS = { NOT = { has_country_modifier = neutrality } }
@@ -583,12 +582,16 @@ restore_spanish_empire = {
 				war_policy = jingoism
 				war_policy = pro_military
 			}
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 			OR = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
 			#has_country_flag = restore_empire
+			
 		}
 		is_vassal = no
 		any_owned_province = {
@@ -597,6 +600,7 @@ restore_spanish_empire = {
 				is_core = NAP
 				is_core = LUX
 				is_core = BEL
+				is_core = FLA
 				is_core = LOM
 			}
 			NOT = { is_core = LIG }
@@ -620,6 +624,7 @@ restore_spanish_empire = {
 				is_core = NAP
 				is_core = LUX
 				is_core = BEL
+				$is_core = FLA
 				is_core = LOM
 			}
 			NOT = { is_core = LIG }
@@ -1458,6 +1463,12 @@ add_to_sphere = {
 				NOT = { is_cultural_union = THIS }
 			}
 		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
 	}
 	
 	po_add_to_sphere = yes
@@ -1638,6 +1649,8 @@ change_heir_habsburg_cb = {
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 		}
+		always = no
+		NOT = { year = 1702 }
 		is_greater_power = yes
 		has_global_flag = spanish_succesion_crisis
 		has_country_flag = support_habsburg_heir
@@ -1648,6 +1661,7 @@ change_heir_habsburg_cb = {
 	war_name = SUCCESSION_WAR_NAME
 	
 	po_remove_prestige = yes
+	po_status_quo = yes
 	
 	on_add = {
 		move_issue_percentage = { 
@@ -1698,6 +1712,8 @@ change_heir_bourbon_cb = {
 			NOT = { tag = UBD }
 			NOT = { tag = DNB }
 		}
+		always = no
+		NOT = { year = 1700 }
 		is_greater_power = yes
 		has_global_flag = spanish_succesion_crisis
 		has_country_flag = support_habsburg_heir
@@ -1707,6 +1723,7 @@ change_heir_bourbon_cb = {
 	war_name = SUCCESSION_WAR_NAME
 	
 	po_remove_prestige = yes
+	po_status_quo = yes
 	
 	on_add = {
 		move_issue_percentage = { 
@@ -1759,7 +1776,7 @@ return_plc_saxons_cb = {
 		}
 		is_greater_power = yes
 		has_global_flag = polish_succesion_crisis
-		
+		always = no
 	}
 	
 	tws_battle_factor = 1.2 # battle score twice that of oppenent
@@ -1814,6 +1831,7 @@ protecc_plc_king_cb = {
 		}
 		is_greater_power = yes
 		has_global_flag = polish_succesion_crisis
+		always = no
 	}
 	
 	tws_battle_factor = 1.2 # battle score twice that of oppenent
@@ -1868,6 +1886,7 @@ force_empress_abdication_cb = {
 		is_greater_power = yes
 		has_global_flag = austrian_succesion_crisis
 		has_country_flag = refused_sanction
+		always = no
 	}
 	
 	tws_battle_factor = 1.2 # battle score twice that of oppenent
@@ -1919,6 +1938,7 @@ secure_hre_title_cb = {
 		}
 		is_greater_power = yes
 		has_global_flag = austrian_succesion_crisis
+		always = no
 	}
 	
 	tws_battle_factor = 1.2 # battle score twice that of oppenent
@@ -2656,6 +2676,12 @@ liberate_country = {
 			has_global_flag = italy_fights_turk
 			has_global_flag = wakhan_treaty
 			has_global_flag = persia_treaty
+		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
 		}
 	}
 
@@ -3921,6 +3947,12 @@ cut_down_to_size = {
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
 		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
 	}
 	
 	on_add = {
@@ -4422,7 +4454,7 @@ acquire_state = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		is_vassal = no
+		#is_vassal = no
 		OR = {
 			AND = { 
 				THIS = { num_of_ports = 1 } 
@@ -4472,6 +4504,12 @@ acquire_state = {
 					is_greater_power = yes
 					THIS = { is_greater_power = yes }
 				}
+			}
+		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
 			}
 		}
 	}
@@ -4650,7 +4688,7 @@ china_acquire_state = {
 				#war_policy = pacifism
 			}
 		}
-		is_vassal = no
+		#is_vassal = no
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
@@ -4879,6 +4917,7 @@ demand_concession_casus_belli = {
 		}
 		THIS = {
 			NOT = { tech_school = unciv_tech_school }
+			NOT = { tech_school = chinese_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		OR = {
@@ -4913,7 +4952,7 @@ demand_concession_casus_belli = {
 		NOT = { has_country_modifier = neutrality }
 		tech_school = unciv_tech_school
 		number_of_states = 2
-		is_vassal = no
+		#is_vassal = no
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = punitive_effects } }
@@ -5231,7 +5270,7 @@ demand_concession_BC_casus_belli = {
 		}
 		tech_school = unciv_tech_school
 		number_of_states = 2
-		is_vassal = no
+		#is_vassal = no
 		OR = {
 			THIS = { ai = no }
 			THIS = { war_policy = jingoism NOT = { government = democracy } }
@@ -5452,7 +5491,7 @@ conquest = {
 				NOT = { number_of_states = 4 }
 			}
 		}
-		is_vassal = no
+		#is_vassal = no
 		NOT = { has_country_modifier = neutrality }
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		OR = {
@@ -5549,7 +5588,12 @@ conquest = {
 				}
 			}
 		}
-		
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
 		#pro-military AI will not grab cores of non-existing, non-union countries
 		#unless they own some cores or it's part of their culture group
 		#jingoistic will also grab existing cores that they already own some of
@@ -6165,6 +6209,7 @@ establish_protectorate_casus_belli = {
 		
 		THIS = {
 			NOT = { tech_school = unciv_tech_school }
+			NOT = { tech_school = chinese_tech_school }
 			NOT = { has_country_modifier = neutrality }
 		}
 		OR = {
@@ -6723,6 +6768,12 @@ make_puppet = {
 			war_with = THIS
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
+		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
 		}
 	}
 	
@@ -7405,6 +7456,12 @@ acquire_substate_region = {
 			}
 			number_of_states = 1
 		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
 	}
 	
 	allowed_substate_regions = {
@@ -7473,6 +7530,12 @@ acquire_substate_core_region = {
 			}
 			NOT = { in_sphere = THIS }
 			number_of_states = 1
+		}
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
 		}
 	}
 	
@@ -8099,7 +8162,7 @@ colonial_conquest = {
 				}
 			}
 		}
-		is_vassal = no
+		#is_vassal = no
 		neighbour = THIS
 		NOT = { has_country_modifier = neutrality }
 		NOT = { in_sphere = THIS }
@@ -8392,7 +8455,13 @@ take_capital = {
 				}
 			}
 		}
-		is_independant = yes
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
+		#is_independant = yes
 	}
 	
 	allowed_states = {
@@ -8557,7 +8626,13 @@ conquest_low = {
 				}
 			}
 		}
-		is_independant = yes
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
+		#is_independant = yes
 	}
 
 	badboy_factor = 1.0
@@ -8667,7 +8742,13 @@ conquest_tiny = {
 				}
 			}
 		}
-		is_independant = yes
+		THIS = {
+			OR = {
+			NOT = { government = elective_monarchy_oligarchy }
+			AND = { government = elective_monarchy_oligarchy has_country_modifier = policy_approved } 
+			}
+		}
+		#is_independant = yes
 	}
 
 	badboy_factor = 0.5
@@ -8708,6 +8789,7 @@ subjugation = {
 			government = khanate
 		}
 		neighbour = THIS
+		government = khanate
 		always = yes
 		OR = {
 			capital_scope = { continent = asia }

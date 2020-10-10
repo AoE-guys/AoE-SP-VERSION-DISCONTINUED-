@@ -36,7 +36,46 @@ political_decisions = {
 					political_reform = harassment
 				}
 			}
-			
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = ten_hours
+					}
+				}
+				owner = {
+					social_reform = eight_hours
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = twelve_hours
+					}
+				}
+				owner = {
+					social_reform = ten_hours
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = fourteen_hours
+					}
+				}
+				owner = {
+					social_reform = twelve_hours
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = no_work_hour_limit
+					}
+				}
+				owner = {
+					social_reform = fourteen_hours
+				}
+			}
 			random_owned = {
 				limit = { owner = { primary_culture = polish } }
 				owner = {
@@ -379,6 +418,85 @@ political_decisions = {
 		}
 	}
 	
+	call_in_sejm = {
+		picture = sejm
+		potential = {
+			tag = PLC
+			government = elective_monarchy_oligarchy
+			exists = yes
+		}
+		allow = {
+			#NOT = { has_country_modifier = szlachta_pissed }
+			#NOT = { has_country_modifier = szlachta_opposition }
+			NOT = { has_country_modifier = law_changed_by_force }
+			war = no
+		}
+		effect = {
+			prestige = 5
+			clr_country_flag = decision_made
+			country_event = 15730048
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 1825
+			}
+			upper_house = {
+				ideology = conservative
+				value = 0.25
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enact_vivente_rege = {
+		picture = crown
+		potential = {
+			tag = PLC
+			government = elective_monarchy_oligarchy
+			exists = yes
+			NOT = { has_country_modifier = vivente_rege }
+		}
+		allow = {
+			NOT = { average_militancy = 3 }
+			ruling_party_ideology = reactionary
+			upper_house_composition = party_appointed
+			NOT = {
+				safety_regulations = no_safety
+				safety_regulations = trinket_safety
+			}
+			war = no
+		}
+		effect = {
+			prestige = 5
+			add_country_modifier = {
+				name = vivente_rege
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	plc_civil_war_tie = {
+		potential = {
+			tag = PZN
+			exists = yes
+			war = no
+			PLC = {
+				exists = yes
+			}
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			PLC = {
+				inherit = THIS
+			}
+		}
+	}
 	stop_poland_lithuania = {
 		picture = become_poland_lithuania
 		alert = no
@@ -386,6 +504,7 @@ political_decisions = {
 			tag = PLC
 			NOT = { exists = POL }
 			exists = yes
+			NOT = { exists = PZN }
 		}
 
 		allow = {

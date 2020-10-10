@@ -2208,14 +2208,35 @@ country_event = {
 						province_id = 685
 					}
 					owned_by = AUS
+					PRU = {
+						exists = yes
+					}
 				}
 				secede_province = PRU
+			}
+		}
+		AUS = {
+			any_owned = {
+				limit =  {
+					OR = {
+						province_id = 682
+						province_id = 683
+						province_id = 684
+						province_id = 685
+					}
+					owned_by = AUS
+					BRN = {
+						exists = yes
+					}
+				}
+				secede_province = BRN
 			}
 		}
 		487 = {
 			owner = {
 				limit = {
 					NAP = {
+						exists = yes
 						ai = yes
 						is_vassal = no
 					}

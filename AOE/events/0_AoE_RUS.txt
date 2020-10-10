@@ -1214,11 +1214,14 @@ province_event = {
 			owner = {
 				tag = RUS
 				has_country_flag = kamchatka_war
+				any_owned_province = {
+					has_province_modifier = kamchatka_wars
+				}
 			}
 		}
-		owns = 1074
-		any_owned_province = {
-			has_province_modifier = kamchatka_wars
+		owner = {
+			tag = RUS
+			has_country_flag = kamchatka_war
 		}
 	}
 	
@@ -1297,13 +1300,9 @@ country_event = {
 	
 	trigger = {
 		tag = RUS 
-		NOT = {
-			has_country_flag = kamchatka_war
-		}
-		NOT = {
-			any_owned = {
-				has_province_modifier = kamchatka_wars
-			}
+		has_country_flag = kamchatka_war
+		all_core = {
+			NOT = {	has_province_modifier = kamchatka_wars }
 		}
 	}
 	
@@ -1312,14 +1311,10 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPT170025"
+		name = "nice"
 		clr_country_flag = kamchatka_war
 		prestige = 1
 		war_exhaustion = -5
-		
-		ai_chance = {
-			factor = 1
-		}
 	}
 }
 
@@ -1544,7 +1539,7 @@ country_event = {
 country_event = {
 	id = 1700251
 	title = "A new capital!"
-	desc = "EVTDESC170025"
+	desc = "EVTDESC1700251"
 	picture = "petersburg_plan"
 	
 	is_triggered_only = yes
@@ -1661,7 +1656,6 @@ country_event = {
 		name = "Glorious!"
 		clr_global_flag = st_petersburg_construction
 		prestige = 25
-		capital = 994
 		994 = {
 			#trade_goods = precious_goods
 			any_pop = {

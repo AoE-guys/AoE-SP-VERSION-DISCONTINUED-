@@ -1,0 +1,71 @@
+country_event = {
+	id = 152000
+	title = "Restoration of Al-Andalus"
+	desc = "EVTDESC152000"
+	picture = nobles
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ALA
+		exists = yes
+	}
+	
+	option = {
+		name = "Glory!"
+		510 = { change_province_name = "Quortuba" }
+		509 = { change_province_name = "Isbiliya" }
+		512 = { change_province_name = "Qadis" }
+		#511 = { change_province_name = "Quortuba" }
+		513 = { change_province_name = "Garantah" }
+		514 = { change_province_name = "Malaqah" }
+		515 = { change_province_name = "Marryia" }
+		516 = { change_province_name = "Jayyan" }
+		prestige = 50
+		add_country_modifier = {
+			name = local_hegemon
+			duration = 3650
+		}
+	}
+}
+country_event = {
+	id = 152001
+	title = "Andalusian conquests"
+	desc = "EVTDESC152001"
+	picture = nobles
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ALA
+		exists = yes
+		is_greater_power = yes
+		owns = 487
+	}
+	
+	option = {
+		name = "Glory!"
+		487 = { change_province_name = "Majrit" }
+		491 = { change_province_name = "Al-Mancha" }
+		489 = { change_province_name = "Tulaytullah" }
+		490 = { change_province_name = "Qunka" }
+		SPA_474 = { add_core = THIS }
+		SPA_477 = { add_core = THIS }
+		SPA_484 = { add_core = THIS }
+		SPA_487 = { add_core = THIS }
+		SPA_492 = { add_core = THIS }
+		SPA_493 = { add_core = THIS }
+		SPA_498 = { add_core = THIS }
+		SPA_503 = { add_core = THIS }
+		SPA_508 = { add_core = THIS }
+		SPA_512 = { add_core = THIS }
+		SPA_513 = { add_core = THIS }
+		POR_518 = { add_core = THIS }
+		POR_521 = { add_core = THIS }
+		POR_525 = { add_core = THIS }
+		POR_2134 = { add_core = THIS }
+		prestige = 50
+		add_country_modifier = {
+			name = local_hegemon
+			duration = 3650
+		}
+	}
+}

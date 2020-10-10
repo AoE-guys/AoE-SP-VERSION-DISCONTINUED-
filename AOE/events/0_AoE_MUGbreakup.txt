@@ -721,7 +721,7 @@ country_event = {
 		war = no
 		OR = {
 			year = 1722
-			war_exhoustion = 40
+			war_exhaustion = 40
 		}
 		NOT = { has_global_flag = disabled_railroad_wars }
 	}

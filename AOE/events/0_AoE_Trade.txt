@@ -995,7 +995,7 @@ country_event = {
 					has_province_modifier = negotiated
 				}
 				secede_province = THIS 
-				add_province_modifier = trade_center
+				add_province_modifier = { name = trade_centre duration = -1 }
 				remove_province_modifier = negotiated
 				remove_province_modifier = potential_trade_post
 			}

@@ -482,22 +482,22 @@ country_event = {
 	}
 	
 	option = {
-		name = "Long live the king in Prussia"
+		name = "Long live the king in Prussia!"
 		set_country_flag = pru_exists
 		DPR = {
 			all_core = {
-				add_core = PRU
+				add_core = THIS
 				remove_core = DPR
 			}
 		}
+		inherit = DPR
 		BRN = {
 			all_core = {
 				add_core = PRU
-				remove_core = BRN
+				remove_core = THIS
 			}
 		}
-		change_tag  = PRU
-		inherit = DPR
+		change_tag = PRU
 		government = absolute_monarchy
 		prestige = 20
 	}

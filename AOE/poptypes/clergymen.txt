@@ -40,10 +40,10 @@ life_needs = {
 #Total cash needed: 126.9 - Vanilla value: 119.1
 everyday_needs = {
 	coal = 3			#4.6
-	liquor = 4			#17.6
+	liquor = 4			#24.6
 	regular_clothes = 5 #29
 	furniture = 4		#19.6
-	paper = 5			#17
+	paper = 5			#24
 	glass = 1			#2.9
 	tobacco = 3			#3.3
 	tea = 5				#13
@@ -225,7 +225,7 @@ country_migration_target = {
 	modifier = {
 		factor = 3.5
 		NOT = { total_pops = 500000 }
-		NOT = { number_of_states = 2 }
+		NOT = { number_of_states = 6 }
 		has_country_flag = new_world_nation
 		OR = {
 			continent = north_america
@@ -243,6 +243,87 @@ country_migration_target = {
 		}
 	}
 	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = british
+		}
+		OR = {
+			primary_culture = yankee
+			primary_culture = anglo_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = iberian
+			NOT = { primary_culture = portugese }
+		}
+		OR = {
+			is_culture_group = latin_american_cultures
+			tag = FLO
+		}
+		NOT = { primary_culture = brazilian }
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = french
+		}
+		OR = {
+			primary_culture = louisianan
+			primary_culture = cajun
+			primary_culture = french_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = portugese
+		}
+		primary_culture = brazilian
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = russian
+		}
+		primary_culture = alaskan
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
 	modifier = {
 		factor = 0.1
 		NOT = {
@@ -278,9 +359,18 @@ migration_target =
 	}
 	
 	modifier = {
+		factor = 1.05
+		year = 2405
+		OR = { 
+			continent = north_america
+			continent = south_america
+		}
+	}
+	
+	modifier = {
 		factor = 1.2
-		NOT = { total_pops = 5000 }
-		year = 1750
+		NOT = { total_pops = 50000 }
+		year = 2450
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -289,13 +379,30 @@ migration_target =
 	
 	modifier = {
 		factor = 5.0
-		NOT = { total_pops = 500 }
+		NOT = { total_pops = 10000 }
 	}
 	
+	modifier = {
+		factor = 1.2
+		year = 2420
+		OR = { 
+			continent = north_america
+			continent = south_america
+		}
+	}
 	
 	modifier = {
 		factor = 1.5
-		year = 1780
+		year = 2460
+		OR = { 
+			continent = north_america
+			continent = south_america
+		}
+	}
+	
+	modifier = {
+		factor = 1.5
+		year = 1800
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -304,8 +411,12 @@ migration_target =
 	
 	modifier = {
 		factor = 1.2
-		total_pops = 150000
+		total_pops = 100000
 	}
+	modifier = {
+		factor = 1.2
+		total_pops = 150000
+	}	
 	modifier = {
 		factor = 1.2
 		total_pops = 250000
@@ -317,7 +428,7 @@ migration_target =
 	modifier = {
 		factor = 1.2
 		total_pops = 750000
-	}	
+	}
 	
 	modifier = {
 		factor = 0
@@ -573,9 +684,11 @@ migration_target =
 		factor = 2.5
 		OR = { 
 			is_core = MEX
-			is_core = CAN
+			is_core = FCA
 			is_core = COL
 			is_core = RPL
+			is_core = THC
+			is_core = FLO
 		}
 		country = { is_culture_group = american_cultures }
 	}
@@ -592,7 +705,7 @@ migration_target =
 			is_core = MLT
 			AND = {
 				continent = oceania #Near East
-				NOT = { state_id = 1755 }
+				NOT = { state_id = 2455 }
 			}
 			continent = west_africa
 			continent = central_africa
@@ -638,7 +751,7 @@ migration_target =
 		OR = { 
 			is_core = SAF
 		}
-		NOT = { year = 1755 }
+		NOT = { year = 2455 }
 		country = { primary_culture = british }
 	}
 	

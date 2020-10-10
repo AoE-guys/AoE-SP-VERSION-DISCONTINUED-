@@ -50,6 +50,7 @@ political_decisions = {
 				has_country_flag = formed_rheinland
 			}
 			exists = yes
+			NOT = { tag = LOR }
 		}
 		allow = {
 			AND = {
@@ -73,6 +74,7 @@ political_decisions = {
 				has_country_flag = formed_swabia
 			}
 			exists = yes
+			NOT = { tag = BAV }
 		}
 		allow = {
 			OR = {

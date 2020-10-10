@@ -40,6 +40,7 @@ country_event = {
 	trigger = {
 		government = elective_monarchy_oligarchy
 		rich_tax = 0.9
+		NOT = { has_country_modifier = mercantilism }
 	}
 	
 	mean_time_to_happen = {
@@ -65,6 +66,7 @@ country_event = {
 	trigger = {
 		government = elective_monarchy_oligarchy
 		rich_tax = 0.7
+		NOT = { has_country_modifier = mercantilism }
 		year = 1740
 	}
 	
@@ -92,6 +94,7 @@ country_event = {
 		government = elective_monarchy_oligarchy
 		rich_tax = 0.6
 		has_country_modifier = noble_democracy
+		NOT = { has_country_modifier = mercantilism }
 		year = 1760
 	}
 	
@@ -119,6 +122,7 @@ country_event = {
 		government = elective_monarchy_oligarchy
 		OR = { safety_regulations = low_safety safety_regulations = acceptable_safety }
 		NOT = { has_country_modifier = szlachta_pissed }
+		NOT = { has_country_modifier = policy_approved }
 		average_militancy = 3
 	}
 	
@@ -139,7 +143,7 @@ country_event = {
 }
 country_event = {
 	id = 156903
-	title = "Polish-Lithuanian policies vetoed"
+	title = "Tax Law Passed"
 	desc = "EVTDESC156903"
 	picture = sejm
 
@@ -149,6 +153,7 @@ country_event = {
 		war = yes
 		NOT = { has_country_modifier = szlachta_war_taxes }
 		NOT = { has_country_modifier = noble_democracy }
+		NOT = { has_country_modifier = policy_approved }
 	}
 	
 	mean_time_to_happen = {
@@ -156,7 +161,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "They're taking cash out of MY treasury?!"	
+		name = "They're taking Coins out of MY treasury?!"	
 		election = yes
 		money = -7500
 		add_country_modifier = {
@@ -180,6 +185,7 @@ country_event = {
 		has_country_modifier = szlachta_war_taxes
 		part_of_sphere = yes
 		NOT = { has_country_modifier = noble_democracy }
+		NOT = { has_global_flag = plc_civil_war }
 	}
 	
 	mean_time_to_happen = {
@@ -209,8 +215,8 @@ country_event = {
 			militancy = 3
 		}
 		government = absolute_monarchy
-		vote_franschise = none_voting
-		upper_house_composition = appointed
+		political_reform = none_voting
+		political_reform = appointed
 		prestige = -50
 		sphere_owner = {
 			diplomatic_influence = {
@@ -548,7 +554,7 @@ country_event = {
 country_event = {
 	id = 15730030
 	title = "August III returns to Poland Lithuania"
-	desc = "EVTDESC1573003"	
+	desc = "..."	
 	major = yes
 	fire_only_once = yes
 	
@@ -559,6 +565,7 @@ country_event = {
 			national_provinces_occupied = 0.9
 		}
 		war_exhaustion = 45
+		has_global_flag = polish_succesion_crisis
 	}
 	
 	option = {
@@ -605,7 +612,7 @@ country_event = {
 country_event = {
 	id = 15730031
 	title = "Treaty of Warsaw"
-	desc = "EVTDESC15730031"	
+	desc = "..."	
 	major = yes
 	is_triggered_only = yes
 	
@@ -621,20 +628,27 @@ country_event = {
 			limit = {
 				vassal_of = RUS
 			}
-			PLC = {
-				inherit = HET
-			}
+			country_event = 15730131
 		}
 		ZZH = {
 			limit = {
 				vassal_of = RUS
 			}
-			PLC = {
-				inherit = ZZH
-			}
+			country_event = 15730131
 		}
 		prestige = 25
 		clr_global_flag = polish_succesion_crisis
+	}
+}
+country_event = {
+	id = 15730131
+	title = "Treaty of Warsaw"
+	desc = "..."	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A Historical Victory for our nation!"
+		annex_to = PLC
 	}
 }
 ####Royal Election of 1764####
@@ -1002,5 +1016,833 @@ country_event = {
 			}
 		}
 		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 15730047
+	title = "Polish Civil War"
+	desc = "..."
+	picture = nobles
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAX
+		PLC = {
+			war_with = PZN
+		}
+		has_global_flag = plc_civil_war
+	}
+	
+	option = {
+		name = "Let's offer them our support"
+		military_access = AUS
+	}
+}
+
+country_event = {
+	id = 15730048
+	title = "Sejm Summoned"
+	desc = "EVTDESC15730047"
+	picture = sejm
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask to approve a war plan"
+		set_country_flag = asking_for_war
+	}
+	
+	option = {
+		name = "Ask for additional taxes"
+		set_country_flag = asking_for_funds
+	}
+	
+	option = {
+		name = "Devote the session to solving internal conflicts"
+		any_pop = {
+			militancy = -1.5
+			consciousness = -0.5
+		}
+		random_owned = {
+			owner = {
+				limit = {
+				has_country_modifier = szlachta_pissed
+				}
+				remove_country_modifier = szlachta_pissed
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					part_of_sphere = yes
+				}
+			}
+			owner = {
+				sphere_owner = {
+					diplomatic_influence = {
+						who = THIS
+						value = 80
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					part_of_sphere = no
+					NOT = { is_greater_power = yes }
+				}
+			}
+			owner = {
+				random_country = {
+					limit = {
+						exists = yes
+						is_greater_power = yes
+						neighbour = THIS
+						NOT = { tag = TUR }
+					}
+					diplomatic_influence = {
+						who = THIS
+						value = 80
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant new privlages to nobility"
+		random_owned = {
+			limit = {
+				owner = {
+					part_of_sphere = yes
+				}
+			}
+			owner = {
+				sphere_owner = {
+					diplomatic_influence = {
+						who = THIS
+						value = 80
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					part_of_sphere = no
+					NOT = { is_greater_power = yes }
+				}
+			}
+			owner = {
+				random_country = {
+					limit = {
+						exists = yes
+						is_greater_power = yes
+						neighbour = THIS
+						NOT = { tag = TUR }
+					}
+					diplomatic_influence = {
+						who = THIS
+						value = 80
+					}
+				}
+			}
+		}
+		any_owned = {
+			owner = {
+				limit = {
+				has_country_modifier = szlachta_opposition
+				}
+				remove_country_modifier = szlachta_opposition
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					safety_regulations = trinket_safety
+				}
+			}
+			owner = {
+				social_reform = no_safety
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					safety_regulations = low_safety
+				}
+			}
+			owner = {
+				social_reform = trinket_safety
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					safety_regulations = acceptable_safety
+				}
+			}
+			owner = {
+				social_reform = low_safety
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					safety_regulations = good_safety
+				}
+			}
+			owner = {
+				social_reform = acceptable_safety
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_5
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_5
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_4
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_4
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_3
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_3
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_2
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_2
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { 
+					has_country_modifier = rich_unrest_1
+				}
+			}
+			owner = {
+				remove_country_modifier = rich_unrest_1
+			}
+		}
+		any_pop = {
+			consciousness = -0.5
+		}
+	}
+}
+country_event = {
+	id = 15730049
+	title = "Sejm approves our policy"
+	desc = "EVTDESC15730049"
+	picture = sejm
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	trigger = {
+		tag = PLC
+		has_country_flag = asking_for_war
+		OR = {
+			war_policy = jingoism
+			AND = {
+				war_policy = pro_military
+				NOT = { average_consciousness = 3 }
+			}
+			ruling_party_ideology = reactionary
+			AND = {
+				war = yes
+				war_exhaustion = 20
+			}
+		}
+		NOT = { average_consciousness = 4 }
+		NOT = { average_militancy = 3 }
+		NOT = { has_country_modifier = szlachta_opposition }
+		NOT = { has_country_modifier = szlachta_pissed }
+	}
+	
+	option = {
+		name = "Great!"
+		clr_country_flag = asking_for_war
+		add_country_modifier = {
+			name = policy_approved
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 15730050
+	title = "Sejm rejects our policy"
+	desc = "EVTDESC15730050"
+	picture = sejm
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	trigger = {
+		tag = PLC
+		OR = {
+			has_country_flag = asking_for_war
+			has_country_flag = asking_for_funds
+		}
+		NOT = { has_country_modifier = policy_approved }
+		NOT = { has_country_modifier = mercantilism }
+	}
+	
+	option = {
+		name = "Oh for god's sake!"
+		clr_country_flag = asking_for_war
+		clr_country_flag = asking_for_funds
+		prestige = -15
+	}
+}
+
+country_event = {
+	id = 15730051
+	title = "Sejm approves our policy"
+	desc = "EVTDESC15730051"
+	picture = sejm
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	trigger = {
+		tag = PLC
+		has_country_flag = asking_for_funds
+		OR = {
+			economic_policy = state_capitalism
+			economic_policy = planned_economy
+			AND = {
+				trade_policy = protectionism
+				NOT = { average_consciousness = 4 }
+			}
+			ruling_party_ideology = reactionary
+			war_exhaustion = 40
+		}
+		NOT = { average_consciousness = 4 }
+		NOT = { average_militancy = 2.5 }
+		NOT = { has_country_modifier = szlachta_opposition }
+		NOT = { has_country_modifier = szlachta_pissed }
+	}
+	
+	option = {
+		name = "Great!"
+		clr_country_flag = asking_for_funds
+		add_country_modifier = {
+			name = mercantilism
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 15730052
+	title = "Potocki's Rokosz"
+	desc = "EVTDESC15730052"
+	picture = cavallery
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	trigger = {
+		has_country_modifier = vivente_rege
+		tag = PLC
+		exists = yes
+	}
+	
+	immediate = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			country_event = 13201
+			leave_alliance = PLC
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 701
+					province_id = 717 province_id = 710 province_id = 712
+					province_id = 691 province_id = 693 province_id = 697
+					province_id = 719 province_id = 937 province_id = 940
+					province_id = 936 province_id = 938 province_id = 947
+					province_id = 360 province_id = 361 province_id = 718
+					province_id = 941 province_id = 948 province_id = 946
+					province_id = 956 province_id = 959 province_id = 969
+					province_id = 702 province_id = 951	province_id = 3331
+				}
+			}
+			add_core = PZN
+			secede_province = PZN
+		}
+		PZN = {
+			government = elective_monarchy_oligarchy
+			war = {
+				target = PLC
+				attacker_goal = { casus_belli = civil_war }
+				defender_goal = { casus_belli = civil_war }
+				call_ally = yes
+			}
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 3650
+			}
+		}
+		add_country_modifier = {
+				name = fanatic_army
+				duration = 3650
+		}
+		set_global_flag = plc_civil_war_vr
+	}
+	
+	option = {
+		name = "Fools! I will save this country!"
+		#country_event = 156905
+	}
+}
+
+country_event = {
+	id = 15730053
+	title = "End of the Civil War"
+	desc = "EVTDESC15730053"
+	major = yes
+	
+	trigger = {
+		has_global_flag = plc_civil_war_vr
+		tag = PZN
+		PLC = {
+			exists = no
+		}	
+	}
+	
+	option = {
+		name = "Finally."
+		prestige = 15
+		clr_global_flag = plc_civil_war_vr
+		change_tag = PLC
+		PZN = {
+			all_core = {
+				remove_core = PZN
+			}
+		}
+		capital = 703
+	}
+}
+country_event = {
+	id = 15730054
+	title = "End of the Civil War"
+	desc = "EVTDESC15730054"
+	major = yes
+	
+	trigger = {
+		has_global_flag = plc_civil_war_vr
+		tag = PLC
+		PZN = {
+			exists = no
+		}
+	}
+	
+	option = {
+		name = "Finally."
+		prestige = 15
+		clr_global_flag = plc_civil_war_vr
+		PZN = {
+			all_core = {
+				remove_core = PZN
+			}
+		}
+	}
+}  
+
+country_event = {
+	id = 15730055
+	title = "Absolutism in the Commonwealth"
+	desc = "EVTDESC15730055"
+	picture = throne
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	trigger = {
+		has_country_modifier = vivente_rege
+		government = absolute_monarchy
+		war = no
+		is_greater_power = yes
+		NOT = { average_consciousness = 4 }
+	}
+	
+	option = {
+		name = "In the end they all bow down to me."
+		remove_country_modifier = vivente_rege
+		add_country_modifier = {
+			name = polish_absolutism
+			duration = -1
+		}
+		prestige = 40
+	}
+}
+
+country_event = {
+	id = 15730056
+	title = "Biased office assignment"
+	desc = "EVTDESC15730056"
+	fire_only_once = yes
+	picture = veto
+	
+	trigger = {
+		exists = yes
+		government = elective_monarchy_oligarchy
+		war = no
+		upper_house_composition = party_appointed
+		tag = PLC
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "That's nonsense!"
+		any_pop = {
+			militancy = 6
+			consciousness = 3
+		}
+	}
+	
+	option = {
+		name = "Maybe we should back down a little"
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+		upper_house = {
+			ideology = conservative
+			value = 1
+		}
+		political_reform = appointed
+	}
+	
+	option = {
+		name = "Don't worry! Look, here have your offices!"
+		any_pop = {
+			militancy = -1
+			consciousness = -2
+		}
+		upper_house = {
+			ideology = conservative
+			value = 1
+		}
+		upper_house = {
+			ideology = liberal
+			value = 0.5
+		}
+		political_reform = state_equal_weight
+	}
+}
+country_event = {
+	id = 15730057
+	title = "Sejm wants War"
+	desc = "EVTDESC15730057"
+	picture = sejm
+	
+	trigger = {
+		NOT = { has_country_flag = asking_for_war }
+		NOT = { has_country_modifier = policy_approved }
+		NOT = { has_country_modifier = law_changed_by_force }
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		NOT = { average_militancy = 2 }
+		NOT = { has_country_modifier = szlachta_opposition }
+		OR = {
+			has_unclaimed_cores = yes
+			war_policy = jingoism
+			war_policy = pro_military
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			war_policy = jingoism
+			factor = 0.8
+		}
+		modifier = {
+			war_policy = pro_military
+			factor = 0.9
+		}
+		modifier = {
+			has_unclaimed_cores = yes
+			factor = 0.6
+		}
+		modifier = {
+			war_policy = anti_military
+			factor = 1.2
+		}
+		modifier = {
+			war_policy = pacifism
+			factor = 1.4
+		}
+		modifier = {
+			has_country_modifier = szlachta_pissed
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = "A surprise to be sure, but a welcome one."
+		add_country_modifier = {
+			name = policy_approved
+			duration = 912
+		}
+		prestige = 5
+	}
+}
+country_event = {
+	id = 15730058
+	title = "Sejm votes in new taxes"
+	desc = "EVTDESC15730058"
+	picture = sejm
+	
+	trigger = {
+		NOT = { has_country_flag = asking_for_funds }
+		NOT = { has_country_modifier = mercantilism }
+		NOT = { has_country_modifier = law_changed_by_force }
+		tag = PLC
+		government = elective_monarchy_oligarchy
+		NOT = { average_militancy = 2 }
+		NOT = { has_country_modifier = szlachta_opposition }
+		has_country_modifier = in_bankrupcy
+		OR = {
+			has_unclaimed_cores = yes
+			trade_policy = protectionism
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			trade_policy = protectionism
+			factor = 0.8
+		}
+		modifier = {
+			has_unclaimed_cores = yes
+			factor = 0.6
+		}
+		modifier = {
+			trade_policy = free_trade
+			factor = 1.2
+		}
+		modifier = {
+			has_country_modifier = szlachta_pissed
+			factor = 2
+		}
+	}
+	
+	option = {
+		name = "They've done something usefull for once."
+		add_country_modifier = {
+			name = mercantilism
+			duration = 912
+		}
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 15730059
+	title = "A Mad Noblemen"
+	desc = "EVTDESC15730059"
+	picture = mad_noble
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.1
+			average_consciousness = 4.5
+		}
+		modifier = {
+			factor = 0.1
+			average_militancy = 3.5
+		}
+	}
+	
+	trigger = {
+		tag = PLC
+		OR = {
+			has_country_flag = asking_for_war
+			has_country_flag = asking_for_funds
+		}
+		NOT = { has_country_modifier = policy_approved }
+		NOT = { has_country_modifier = mercantilism }
+	}
+	
+	option = {
+		name = "Arrest that men!"
+		any_pop = {
+			consciousness = 0.5
+		}
+		prestige = -15
+	}
+	
+	option = {
+		name = "He is right!"
+		clr_country_flag = asking_for_funds
+		clr_country_flag = asking_for_war
+		prestige = -15
+	}
+}
+
+country_event = {
+	id = 15730060
+	title = "Veto issued"
+	desc = "EVTDESC15730060"
+	picture = veto
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.1
+			average_consciousness = 2.5
+		}
+		modifier = {
+			factor = 0.1
+			average_militancy = 3.5
+		}
+	}
+	
+	trigger = {
+		tag = PLC
+		OR = {
+			has_country_flag = asking_for_war
+			has_country_flag = asking_for_funds
+		}
+		NOT = { has_country_modifier = policy_approved }
+		NOT = { has_country_modifier = mercantilism }
+	}
+	
+	option = {
+		name = "We have to respect his veto right"
+		any_pop = {
+			consciousness = 0.5
+		}
+		prestige = -15
+	}
+	
+	option = {
+		name = "Pull him aside and promise great riches"
+		random_list = {
+			50 = {
+				clr_country_flag = asking_for_funds
+				clr_country_flag = asking_for_war
+				prestige = -15
+				add_country_modifier = {
+					name = szlachta_pissed
+					duration = 912
+				}
+			}
+			50 = {
+				treasury = -50000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 15730061
+	title = "Comission of National Education"
+	desc = "EVTDESC15730061"
+	picture = sejm
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 2.5
+			average_consciousness = 2.5
+		}
+		modifier = {
+			factor = 4.5
+			average_militancy = 4.5
+		}
+	}
+	
+	trigger = {
+		OR = {
+			tag = PLC
+			tag = PLR
+			tag = POL
+		}
+		ruling_party_ideology = socialist
+		year = 1773
+	}
+	
+	option = {
+		name = "Enlightenment for all!"
+		add_country_modifier = {
+			name = commision_of_national_education
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = 15730062
+	title = "Corps of Cadets"
+	desc = "EVTDESC15730062"
+	picture = conscription_marching
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 2.5
+			average_consciousness = 2.5
+		}
+		modifier = {
+			factor = 4.5
+			average_militancy = 4.5
+		}
+	}
+	
+	trigger = {
+		OR = {
+			tag = PLC
+			tag = PLR
+			tag = POL
+		}
+		exists = yes
+		year = 1765
+	}
+	
+	option = {
+		name = "Enlightenment for all!"
+		add_country_modifier = {
+			name = corps_of_cadets
+			duration = -1
+		}
 	}
 }

@@ -154,7 +154,7 @@ education_fully_funded = {
 #neglected_education = {
 #	trigger = {
 #		exists = yes
-#		civilized = yes
+#		NOT = { tech_school = unciv_tech_school }
 #		ai = no
 #		number_of_states = 2
 #		total_pops = 1000000
@@ -180,7 +180,7 @@ education_fully_funded = {
 neglected_education_1 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -204,7 +204,7 @@ neglected_education_1 = { #Changed to bonus
 neglected_education_2 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -228,7 +228,7 @@ neglected_education_2 = { #Changed to bonus
 neglected_education_3 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -252,7 +252,7 @@ neglected_education_3 = { #Changed to bonus
 neglected_education_4 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -276,7 +276,7 @@ neglected_education_4 = { #Changed to bonus
 neglected_education_5 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -300,7 +300,7 @@ neglected_education_5 = { #Changed to bonus
 neglected_education_6 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -324,7 +324,7 @@ neglected_education_6 = { #Changed to bonus
 neglected_education_7 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -348,7 +348,7 @@ neglected_education_7 = { #Changed to bonus
 neglected_education_8 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -372,7 +372,7 @@ neglected_education_8 = { #Changed to bonus
 neglected_education_9 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -396,7 +396,7 @@ neglected_education_9 = { #Changed to bonus
 neglected_education_10 = { #Changed to bonus
 	trigger = {
 		#exists = yes
-		#civilized = yes
+		#NOT = { tech_school = unciv_tech_school }
 		#ai = no
 		#number_of_states = 2
 		#total_pops = 1000000
@@ -420,7 +420,7 @@ neglected_education_10 = { #Changed to bonus
 islamic_law_triggered = {
 	trigger = {
 		exists = yes
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		OR = {
 			has_country_flag = sunni_country
 			has_country_flag = shiite_country
@@ -548,7 +548,7 @@ islamic_law_triggered = {
 #colonial_nation = {
 #	trigger = {
 #		exists = yes
-#		civilized = yes
+#		NOT = { tech_school = unciv_tech_school }
 #		any_owned_province = {
 #			is_colonial = yes
 #			OR = {
@@ -607,7 +607,7 @@ substate_nation = {
 	trigger = {
 		exists = yes
 		is_substate = yes
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	
 	prestige = -2
@@ -693,7 +693,7 @@ own_kiel_canal = {
 	trigger = {
 		exists = yes
 		owns = 369
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		is_canal_enabled = 1
 	}
 	icon = 9
@@ -704,7 +704,7 @@ own_suez_canal = {
 	trigger = {
 		exists = yes
 		owns = 1755
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		is_canal_enabled = 2
 	}
 	icon = 9
@@ -717,7 +717,7 @@ own_panama_canal = {
 	trigger = {
 		exists = yes
 		owns = 1723
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		is_canal_enabled = 3
 	}
 	icon = 9
@@ -730,7 +730,7 @@ small_but_efficient = {
 	trigger = {
 		exists = yes
 		capital_scope = { continent = europe }
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		NOT = { number_of_states = 4 }
 		NOT = { num_of_cities = 8 }
 		NOT = { total_pops = 500000 }
@@ -758,7 +758,7 @@ microstate = {
 	trigger = {
 		exists = yes
 		capital_scope = { continent = europe }
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		NOT = { number_of_states = 2 }
 		NOT = { num_of_cities = 2 }
 		NOT = { total_pops = 50000 }
@@ -774,7 +774,7 @@ sound_dues = {
 	trigger = {
 		capital_scope = { continent = europe }
 		exists = yes
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		total_num_of_ports = 1
 		NOT = { has_global_flag = sound_dues_abolished }
 		NOT = { owns = 372 }
@@ -955,7 +955,7 @@ new_world_tribe = {
 help_ai_russia = {
 	trigger = {
 		OR = {
-			owns = 1008 #Russia
+			#owns = 1008 #Russia
 			owns = 876 #Turkey
 			capital = 487 #Spain
 			capital = 521 #Portugal
@@ -964,6 +964,7 @@ help_ai_russia = {
 			owns = 2172 #Mexico
 			owns = 549 #Prussia
 			owns = 300 #Britain/England
+			owns = 860 #Ottos
 			primary_culture = central_american
 			is_culture_group = south_slavic
 			primary_culture = greek
@@ -971,10 +972,6 @@ help_ai_russia = {
 			AND = { 
 				owns = 619 #Austria
 				NOT = { year = 1709 }
-			}
-			AND = {
-				owns = 322 #Sweden
-				NOT = { year = 1710 }
 			}
 			AND = {
 				owns = 1600 #DZN
@@ -1011,6 +1008,10 @@ help_ai_sweden_and_austria = {
 	trigger = {
 		OR = {
 			AND = {
+				owns = 1008 #Russia
+				NOT = { year = 1738 }
+			}
+			AND = {
 				owns = 322 #Sweden
 				NOT = { year = 1710 }
 			}
@@ -1039,6 +1040,12 @@ help_ai_sweden_and_austria = {
 				tag = HTK
 				exists = yes
 			}
+			AND = {
+				tag = PLC
+				PZN = {
+					exists = yes
+				}
+			}
 		}
 		ai = yes
 	}
@@ -1047,7 +1054,7 @@ help_ai_sweden_and_austria = {
 	administrative_efficiency_modifier = 0.05
 	supply_consumption = -0.1
 	education_efficiency_modifier = 0.2
-	mobilisation_size = 0.25
+	mobilisation_size = 0.15
 	war_exhaustion = -0.5
 }
 prussia_ai_help = {
@@ -1069,6 +1076,10 @@ german_minors_ai_help = {
 			primary_culture = south_german
 			primary_culture = north_italian
 			primary_culture = south_italian
+			AND = {
+				tag = HTK
+				exists = yes
+			}
 		}
 		NOT = { owns = 619 }
 		NOT = { year = 1740 }
@@ -1082,7 +1093,7 @@ german_minors_ai_help = {
 	supply_consumption = -0.15
 	influence_modifier = -0.05
 	war_exhaustion = -0.5
-	mobilisation_size = 0.25
+	mobilisation_size = 0.20
 
 }
 
@@ -1125,6 +1136,12 @@ help_ai_usa = {
 				tag = HTK
 				exists = yes
 			}
+			AND = {
+				tag = PLC
+				PZN = {
+					exists = yes
+				}
+			}
 		}
 	}
 	icon = 10
@@ -1133,7 +1150,7 @@ help_ai_usa = {
 	administrative_efficiency_modifier = 0.8
 	supply_consumption = -0.15
 	influence_modifier = -0.05
-	global_immigrant_attract = 15
+	#global_immigrant_attract = 15
 	mobilisation_size = 0.02
 }
 
@@ -1317,7 +1334,7 @@ free_state = {
 colonial_administration = {
 	trigger = {
 		ai = no
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = asia }
@@ -1481,7 +1498,7 @@ east_india_company = {
 			continent = asia	
 		}
 		exists = yes
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		has_country_flag = east_india_company_funded
 	}
 	icon = 9
@@ -1905,7 +1922,7 @@ small_but_efficient_VEN = {
 	trigger = {
 		exists = yes
 		capital_scope = { continent = europe }
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 		NOT = { total_pops = 500000 }
 		NOT = { money = 1000000 }	
 		NOT = { year = 1789 }
@@ -1925,19 +1942,17 @@ own_australia = {
 		owns = { 
 			AND = { 2468 2469 2470 2471 2472 2473 2474 2475 2508 2476 2477 2478 2479 2480 2481 2482 }
 		}
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
 }
 
-own_canada = {
+own_moteral = {
 	trigger = {
 		exists = yes
-		owns = { 
-			AND = { 46 50 51 57 55 56 52 53 54 58 65 62 61 63 64 66 67 }
-		}
-		civilized = yes
+		owns = 58
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
@@ -1947,55 +1962,49 @@ own_new_york = {
 	trigger = {
 		exists = yes
 		owns = 232
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
 }
 
-own_illinois = {
+own_boston = {
 	trigger = {
 		exists = yes
-		owns = { 
-			AND = { 163 168 167 166 165 164 }
-		}
-		civilized = yes
+		owns = 243
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
 }
 
-own_indiana = {
+own_charlston = {
 	trigger = {
 		exists = yes
-		owns = { 
-			AND = { 169 170 172 171 }
-		}
-		civilized = yes
+		owns = 205
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
 }
 
-own_michigan = {
+own_norfolk = {
 	trigger = {
 		exists = yes
-		owns = { 
-			AND = { 173 174 175 176 177 }
-		}
-		civilized = yes
+		owns = 214
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
 }
 
-own_ohio = {
+own_new_orlean = {
 	trigger = {
 		exists = yes
 		owns = { 
 			AND = { 179 178 180 183 182 181 }
 		}
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
@@ -2004,10 +2013,8 @@ own_ohio = {
 own_kentucky = {
 	trigger = {
 		exists = yes
-		owns = { 
-			AND = { 184 185 186 187 }
-		}
-		civilized = yes
+		owns = 139
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
@@ -2017,7 +2024,7 @@ own_montevideo = {
 	trigger = {
 		exists = yes
 		owns = 2344
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
@@ -2027,7 +2034,7 @@ own_buenos_aires = {
 	trigger = {
 		exists = yes
 		owns = 2348
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
@@ -2037,7 +2044,7 @@ own_rio_de_janeiro = {
 	trigger = {
 		exists = yes
 		owns = 2447
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 0.1
@@ -2047,7 +2054,7 @@ new_colossus = {
 	trigger = {
 		exists = yes
 		poor_strata_life_needs = 1.0
-		civilized = yes
+		NOT = { tech_school = unciv_tech_school }
 	}
 	icon = 9
 	global_immigrant_attract = 1.0

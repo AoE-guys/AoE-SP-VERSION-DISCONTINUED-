@@ -136,17 +136,33 @@ political_decisions = {
 			exists = yes
 		}
 		allow = {
-			military_score = 150
 			is_greater_power = yes
 			war_policy  = jingoism
-			government = absolute_monarchy
+			OR = {
+				AND = {
+					military_score = 150
+					government = absolute_monarchy
+				}
+				AND = {
+					owns = 964
+					OR = {
+						ai = yes
+						military_score = 150
+					}
+				}
+			}
 		}
 		effect = {
 			set_country_flag = claimed_crimea_south_ukrine
 			RUS_964 = { add_core = RUS }
-			RUS_968 = { add_core = RUS }
 			RUS_973 = { add_core = RUS }
-			1048 =  { add_core = RUS }
+			RUS_1048 = { add_core = RUS }
+			RUS_1052 = { add_core = RUS }
+			RUS_1090 = { add_core = RUS }
+			1048 = { add_core = RUS }
+			970 = { add_core = RUS }
+			677 = { add_core = RUS }
+			968 = { add_core = RUS }
 			badboy = 15
 		}
 		ai_will_do = { factor = 1 }	
@@ -271,9 +287,17 @@ political_decisions = {
 		allow = {
 			is_greater_power = yes
 			war_policy  = jingoism
-			owns = 718
-			owns = 958
-			owns = 360
+			OR = {
+				AND = {
+					owns = 718
+					owns = 958
+					owns = 360
+				}
+				AND = {
+					year = 1790
+					ai = yes
+				}
+			}
 			OR = {
 				POL = {
 					NOT = { is_greater_power = yes }
@@ -286,6 +310,10 @@ political_decisions = {
 				AND = {
 					POL = { NOT = { exists = yes } }
 					PLC = { NOT = { exists = yes } }
+				}
+				AND = {
+					year = 1790
+					ai = yes
 				}
 			}
 		}

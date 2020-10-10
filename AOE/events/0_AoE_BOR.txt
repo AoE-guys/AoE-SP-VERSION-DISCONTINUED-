@@ -63,6 +63,7 @@ country_event = {
 			consciousness = 4
 		}
 		country_event = 19001
+		ai_chance = { factor = 0 }
 	}
 	
 	option = {
@@ -94,6 +95,7 @@ country_event = {
 			consciousness = -4
 		}
 		country_event = 19001
+		ai_chance = { factor = 0 }
 		political_reform = bankruptcy
 	}
 }
@@ -130,6 +132,7 @@ country_event = {
 		}
 		country_event = 19002
 		set_country_flag = neglecting_the_third_estate
+		ai_chance = { factor = 0 }
 	}
 	option = {
 		name = EVTOPTB19000
@@ -193,6 +196,7 @@ country_event = {
 			consciousness = -4
 		}
 		prestige = -40
+		ai_chance = { factor = 0 }
 		country_event = 19002
 	}
 }
@@ -298,7 +302,7 @@ country_event = {
 			duration = 3650
 		}
 		ai_chance = {
-			factor = 5
+			factor = 0
 		}
 	}
 }

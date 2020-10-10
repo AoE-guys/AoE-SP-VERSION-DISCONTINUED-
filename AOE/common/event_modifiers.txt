@@ -4355,8 +4355,8 @@ peter_the_great = {
 	influence_modifier = 0.2
 	ruling_party_support = 0.35
 	bad_badboy = -0.05
-	education_efficiency_modifier = 0.15
-	prestige = 0.05
+	education_efficiency_modifier = 0.35
+	prestige = 0.08
 	icon = 13
 }
 peter_iii= {
@@ -5248,6 +5248,27 @@ szlachta_war_taxes = {
 	loan_interest = 0.15
 	land_organisation = 0.2
 	icon = 18
+}
+policy_approved = {
+	war_exhaustion = -0.001
+	pop_consciousness_modifier = -0.01
+	icon = 17
+}
+vivente_rege = {
+	prestige = 0.001
+	icon = 17
+}
+commision_of_national_education = {
+	education_efficiency_modifier = 0.15
+	icon = 16
+}
+corps_of_cadets = {
+	land_unit_start_experience = 5
+	icon = 15
+}
+polish_absolutism = {
+	ruling_party_support = 0.004
+	icon = 17
 }
 szlachta_pissed = {
 	factory_throughput = -0.05

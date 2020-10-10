@@ -19,7 +19,7 @@ everyday_needs = {
 	tea = 2				#10.4
 	coal = 0.5			#2.3
 	liquor = 2		#11
-	regular_clothes = 1.5 #17.4
+	regular_clothes = 1.5 #24.4
 	furniture = 1.5		#14.7
 	coffee = 0.5			#2.1
 	tobacco = 0.5			#1.1
@@ -197,7 +197,7 @@ country_migration_target = {
 	modifier = {
 		factor = 3.5
 		NOT = { total_pops = 500000 }
-		NOT = { number_of_states = 2 }
+		NOT = { number_of_states = 6 }
 		has_country_flag = new_world_nation
 		OR = {
 			continent = north_america
@@ -210,6 +210,88 @@ country_migration_target = {
 			government = democracy
 			government = presidential_dictatorship
 			government = hms_government
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = british
+		}
+		OR = {
+			primary_culture = yankee
+			primary_culture = anglo_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = iberian
+			NOT = { primary_culture = portugese }
+		}
+		OR = {
+			is_culture_group = latin_american_cultures
+			tag = FLO
+		}
+		NOT = { primary_culture = brazilian }
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			is_culture_group = french
+		}
+		OR = {
+			primary_culture = louisianan
+			primary_culture = cajun
+			primary_culture = french_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = portugese
+		}
+		primary_culture = brazilian
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+			primary_culture = russian
+		}
+		primary_culture = alaskan
+		OR = {
 			government = dominion
 			government = colonial_company
 		}
@@ -249,9 +331,18 @@ migration_target =
 		state_scope = { has_factories = no }
 	}
 	modifier = {
+		factor = 1.05
+		year = 2405
+		OR = { 
+			continent = north_america
+			continent = south_america
+		}
+	}
+	
+	modifier = {
 		factor = 1.2
-		NOT = { total_pops = 5000 }
-		year = 1750
+		NOT = { total_pops = 50000 }
+		year = 2450
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -260,19 +351,40 @@ migration_target =
 	
 	modifier = {
 		factor = 5.0
-		NOT = { total_pops = 500 }
+		NOT = { total_pops = 10000 }
 	}
 	
-	
 	modifier = {
-		factor = 1.5
-		year = 1780
+		factor = 1.2
+		year = 2420
 		OR = { 
 			continent = north_america
 			continent = south_america
 		}
 	}
 	
+	modifier = {
+		factor = 1.5
+		year = 2460
+		OR = { 
+			continent = north_america
+			continent = south_america
+		}
+	}
+	
+	modifier = {
+		factor = 1.5
+		year = 1800
+		OR = { 
+			continent = north_america
+			continent = south_america
+		}
+	}
+	
+	modifier = {
+		factor = 1.2
+		total_pops = 100000
+	}
 	modifier = {
 		factor = 1.2
 		total_pops = 150000
@@ -544,9 +656,11 @@ migration_target =
 		factor = 2.5
 		OR = { 
 			is_core = MEX
-			is_core = CAN
+			is_core = FCA
 			is_core = COL
 			is_core = RPL
+			is_core = THC
+			is_core = FLO
 		}
 		country = { is_culture_group = american_cultures }
 	}
@@ -563,7 +677,7 @@ migration_target =
 			is_core = MLT
 			AND = {
 				continent = oceania #Near East
-				NOT = { state_id = 1755 }
+				NOT = { state_id = 2455 }
 			}
 			continent = west_africa
 			continent = central_africa
@@ -609,7 +723,7 @@ migration_target =
 		OR = { 
 			is_core = SAF
 		}
-		NOT = { year = 1755 }
+		NOT = { year = 2455 }
 		country = { primary_culture = british }
 	}
 	

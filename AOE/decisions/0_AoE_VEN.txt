@@ -411,7 +411,7 @@ political_decisions = {
 			set_country_flag = demanded_greek
 		}
 	}
-		
+
 ###
 	form_italy = {
 		news = yes
@@ -456,7 +456,6 @@ political_decisions = {
 			add_accepted_culture = south_italian
 			limit = {
 					is_culture_group = italian
-					in_sphere = THIS
 					OR = {
 						in_sphere = THIS
 						vassal_of = THIS

@@ -475,13 +475,13 @@ country_event = {
 			add_core = THIS
 			secede_province = THIS
 		}
+		2532 = {
+			add_core = THIS
+		}
 		all_core = {
 			limit = {
 				empty = yes
 			}
-			secede_province = THIS
-		}
-		2532 = {
 			secede_province = THIS
 		}
 	}

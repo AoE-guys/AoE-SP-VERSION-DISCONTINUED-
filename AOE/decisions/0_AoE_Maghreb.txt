@@ -1,0 +1,121 @@
+political_decisions = {
+
+	centralize_morocco = {
+		potential = {
+			tag = MOR
+			FEZ = { vassal_of = THIS }
+			TAF = { vassal_of = THIS }
+			SUS = { vassal_of = THIS }
+		}
+		allow = {
+			FEZ = { vassal_of = THIS }
+			TAF = { vassal_of = THIS }
+			SUS = { vassal_of = THIS }
+			NOT = { tech_school = unciv_tech_school }
+		}
+		effect = {
+			inherit = TAF
+			inherit = SUS
+			inherit = FEZ
+			prestige = 30
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	conquer_morocco = {
+		potential = {
+			OR = {
+				tag = FEZ
+				tag = TAF
+				tag = SUS
+			}
+			NOT = { has_country_flag = conquest_morocco }
+		}
+		allow = {
+			is_vassal = no
+		}
+		effect = {
+			set_country_flag = conquest_morocco
+			MOR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			badboy = 10
+			any_country = {
+				limit = {
+					primary_culture = maghrebi
+					exists = yes
+				}
+				relation = {
+					who = THIS
+					value = -200
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	form_morocco = {
+		potential = {
+			OR = {
+				tag = FEZ
+				tag = TAF
+				tag = SUS
+			}
+		}
+		allow = {
+			NOT = { MOR = { exists = yes } }
+			MOR = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 30
+			change_tag = MOR
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	form_andalusia = {
+		potential = {
+			primary_culture = maghrebi
+			NOT = {
+				ALA = {
+					exists = yes
+				}
+			}
+		}
+		allow = {
+			owns = 513
+			owns = 509
+			owns = 507
+			OR = {
+				owns = 526
+				owns =  503
+			}
+			is_greater_power = yes
+		}
+		effect = {
+			prestige = 40
+			all_core = {
+				add_core = ALA
+				remove_core = THIS
+			}
+			capital = 510
+			SPA_512 = { add_core = ALA }
+			SPA_513 = { add_core = ALA }
+			POR_525 = { add_core = ALA }
+			SPA_503 = { add_core = ALA }
+			SPA_508 = { add_core = ALA }
+			change_tag = ALA
+			add_accepted_culture = spanish
+			add_accepted_culture = catalan
+			add_accepted_culture = portugese
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+}

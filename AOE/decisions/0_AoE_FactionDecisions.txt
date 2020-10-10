@@ -41,6 +41,7 @@ political_decisions = {
 				government = archduchy
 				government = elective_monarchy_oligarchy
 			}
+			tech_school = unciv_tech_school
 			NOT = { has_recently_lost_war = yes }
 			exists = yes
 		}
@@ -94,6 +95,7 @@ political_decisions = {
 					NOT = {	government = archduchy }
 				}
 			}
+			NOT = { tech_school = unciv_tech_school }
 			exists = yes
 		}
 		allow = {
@@ -124,6 +126,7 @@ political_decisions = {
 			NOT = { tag = RUS }
 			NOT = { tag = AUS }
 			NOT = { tag = TUR }
+			NOT = { tech_school = unciv_tech_school }
 			exists = yes
 		}
 		allow = {
