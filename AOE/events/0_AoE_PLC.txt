@@ -1339,6 +1339,10 @@ country_event = {
 				trade_policy = protectionism
 				NOT = { average_consciousness = 4 }
 			}
+			AND = {
+				trade_policy = mercantilism
+				NOT = { average_consciousness = 4 }
+			}
 			ruling_party_ideology = reactionary
 			war_exhaustion = 40
 		}
