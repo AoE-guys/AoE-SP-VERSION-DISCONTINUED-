@@ -3,6 +3,10 @@
 ##########################################
 party_issues = {
 	trade_policy = {
+		mercantilism = {
+			max_tariff = 1
+			min_tariff = 0.25
+		}
 		protectionism = {
 			max_tariff = 1
 			min_tariff = -0.25
