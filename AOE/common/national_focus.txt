@@ -288,7 +288,7 @@ promotion_focus = {
 		icon = 18
 		outliner_show_as_percent = yes
 		limit = {
-		 
+			NOT = { ai = yes }
 			#
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 			work_available = { worker = farmers }
