@@ -447,4 +447,59 @@ country_event = {
 			}
 		}
 	}
+}
+country_event = {
+	id = 1721010
+	title = "Treaty of Nystad"
+	desc = "EVTDESC1721010"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		war_with = RUS
+		RUS = {
+			ai = yes
+		}
+		SWE = {
+			ai = yes
+		}
+		war_exhaustion = 35
+		322 = { NOT = { controlled_by = SWE } }
+		994 = { NOT = { controlled_by = SWE } is_core = RUS }
+		OR = {
+			any_neighbor_country = {
+				war_with = THIS
+				ai = yes
+			}
+			PLC = {
+				war_with = THIS
+			}
+		}
+	}
+	
+	option = {
+		name = "Runia Imperii"
+		random_owned = {
+			owner = {
+				limit = {
+					owns = 354
+					war_with = PLC
+				}
+				release = LAT
+			}
+		}
+		PLC = { create_vassal = LAT }
+		LAT = {
+			government = absolute_monarchy
+		}
+		all_core = {
+			limit = {
+				is_core = RUS
+			}
+			secede_province = RUS
+		}
+		end_war = RUS
+		end_war = PLC
+	}
 }  

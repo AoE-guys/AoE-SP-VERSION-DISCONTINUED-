@@ -282,6 +282,12 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = recover_inflanty
+			any_owned = {
+				owner = {
+					limit = { LAT = { vassal_of = THIS } }
+					inherit = LAT
+				}
+			}
 			354 = { add_core = PLC }
 			355 = { add_core = PLC }
 			352 = { add_core = PLC }

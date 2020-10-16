@@ -1142,6 +1142,10 @@ help_ai_usa = {
 					exists = yes
 				}
 			}
+			AND = {
+				owns = 1008 #Russia
+				NOT = { year = 1738 }
+			}
 		}
 	}
 	icon = 10
@@ -1301,6 +1305,17 @@ free_city = {
 	}
 	icon = 10
 	global_immigrant_attract = 0.8
+	supply_consumption = -0.05
+}
+
+trade_city = {
+	trigger = {
+		NOT = { num_of_cities = 2 }
+		NOT = { total_pops = 40000 }
+		NOT = { tech_school = unciv_tech_school }
+	}
+	icon = 10
+	global_population_growth = 0.1
 	supply_consumption = -0.05
 }
 
