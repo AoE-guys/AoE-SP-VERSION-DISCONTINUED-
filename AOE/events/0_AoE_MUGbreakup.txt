@@ -814,3 +814,103 @@ country_event = {
 		ai_chance = { factor = 1 }	
 	}
 }
+country_event = {
+	id = 175006
+	title = "Central India Secedes!"
+	desc = "EVTDESC175006"
+	fire_only_once = yes
+	picture = mughal_breakup
+	
+	trigger = {
+		tag = MUG
+		has_global_flag = mughal_breakdown
+		year = 1767
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "It's time for WAR!"
+		GWA = { all_core = { limit = { owned_by = THIS } secede_province = GWA } }
+		war = {
+			target = GWA
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		BHO = { all_core = { limit = { owned_by = THIS } secede_province = BHO } }
+		war = {
+			target = BHO
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		IND = { all_core = { limit = { owned_by = THIS } secede_province = IND } }
+		war = {
+			target = IND
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+	}
+	
+	option = {
+		name = "We have more pressing issues."
+		GWA = { all_core = { limit = { owned_by = THIS } secede_province = GWA } }
+		relation = {
+			who = GWA
+			value = 100
+		}
+		BHO = { all_core = { limit = { owned_by = THIS } secede_province = BHO } }
+		relation = {
+			who = BHO
+			value = 100
+		}
+		IND = { all_core = { limit = { owned_by = THIS } secede_province = IND } }
+		relation = {
+			who = IND
+			value = 100
+		}
+		prestige = -15
+	}
+}
+country_event = {
+	id = 175007
+	title = "Awadh Secedes!"
+	desc = "EVTDESC175007"
+	fire_only_once = yes
+	picture = mughal_breakup
+	
+	trigger = {
+		tag = MUG
+		has_global_flag = mughal_breakdown
+		year = 1762
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "It's time for WAR!"
+		AWA = { all_core = { limit = { owned_by = THIS } secede_province = AWA } }
+		war = {
+			target = AWA
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+	}
+	
+	option = {
+		name = "We have more pressing issues."
+		AWA = { all_core = { limit = { owned_by = THIS } secede_province = AWA } }
+		relation = {
+			who = AWA
+			value = 100
+		}
+		prestige = -15
+	}
+}

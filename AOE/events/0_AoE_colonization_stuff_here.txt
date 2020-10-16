@@ -486,3 +486,89 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = 19180017
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2443
+		owns = 2239
+		year = 1752
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		2242 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		1979 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180016
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2440
+		year = 1752
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		2245 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
+country_event = {
+	id = 19180015
+	title = "Colonization push"
+	desc = "Recently our settlers maneged to colonize new areas"
+	picture = "colonization"
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 2441
+		year = 1752
+		money = 2000
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		treasury = -2000
+		2246 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}
