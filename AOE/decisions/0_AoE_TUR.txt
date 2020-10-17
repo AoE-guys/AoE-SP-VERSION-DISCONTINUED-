@@ -305,7 +305,6 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = end_romanian_principalities
-			NOT = { has_country_flag = janisseries }
 			random_country = {
 				limit = {
 					tag = MOL

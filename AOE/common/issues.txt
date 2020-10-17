@@ -890,6 +890,7 @@ social_reforms = {
 			
 			allow = { 
 			         has_global_flag = factions_setup_done 
+					 NOT = { has_country_flag = theocratic_government }
 			         NOT = { has_country_flag = indian_campaign_target_flag }
 			}
 		}
@@ -906,9 +907,10 @@ social_reforms = {
 			poor_vote = 0.0
 			
 			allow = { 
-			         has_global_flag = factions_setup_done 
-			         NOT = { has_country_flag = indian_campaign_target_flag }
-					 NOT = { has_country_flag = clergy_and_nobility_domination }
+				has_global_flag = factions_setup_done 
+				NOT = { has_country_flag = theocratic_government }
+				NOT = { has_country_flag = indian_campaign_target_flag }
+				NOT = { has_country_flag = clergy_and_nobility_domination }
 			}
 		}
 		acceptable_minimum_wage = { #marginally relevant

@@ -412,7 +412,7 @@ political_decisions = {
 	create_iberia = {
 		potential = {
 			is_culture_group = iberian
-			NOT = { tag = CSP }
+			NOT = { tag = SPC }
 			487 = { is_core = SPA }
 			NOT = {
 				exists = IBR

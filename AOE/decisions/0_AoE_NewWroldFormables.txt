@@ -297,7 +297,7 @@ political_decisions = {
 					ai = no
 				}
 			}
-			money = -10000
+			treasury = -10000
 		}
 			set_country_flag = colonial_militia
 		}
@@ -318,7 +318,7 @@ political_decisions = {
 					owned_by = THIS
 				}
 				owner = {
-					government = tribal_democracy
+					tech_school = unciv_tech_school
 					neighbour = THIS
 				}
 			}
@@ -360,7 +360,7 @@ political_decisions = {
 				limit = {
 					any_neighbor_province = {
 						owner = {
-							government = tribal_democracy
+							tech_school = unciv_tech_school
 						}
 						is_core = THIS
 						NOT = {
@@ -371,7 +371,7 @@ political_decisions = {
 				random_neighbor_province = {
 					limit = {
 						owner = {
-							government = tribal_democracy
+							tech_school = unciv_tech_school
 						}
 						is_core = THIS
 						NOT = {

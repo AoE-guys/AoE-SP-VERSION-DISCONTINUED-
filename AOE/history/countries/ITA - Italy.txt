@@ -29,7 +29,10 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-
+govt_flag = {
+	government = merchant_republic
+	flag = dominion
+}
 
 # New Reforms
 conscription = two_year_draft
