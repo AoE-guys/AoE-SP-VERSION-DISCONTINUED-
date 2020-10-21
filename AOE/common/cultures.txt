@@ -1890,7 +1890,7 @@ malayan = {
 	leader = asian
 	unit = AsianGC
 	malay = {
-		color = {85 78 89}
+		color = {20 130 130}
 		first_names = { Shahabuddin Riayat Abdullah Jaafar Safiuddin Muhammad Ali Al-Mukammal Ismail Muabidin Tuanku Yusuf Idris Jalil Isandar Aziz
 			
 		}
@@ -1925,6 +1925,39 @@ malayan = {
 		}
 		
 		last_names = { "Demang Behe" Bawin Rentap Ningkan Jugah "Jugah anak Barieng" Kanang "Kanang anak Langkau" Porikng Sembore Tiung Geremeng  
+		}
+	}
+	banjarnese = {
+		color = {0 170 170}
+		first_names = { Pangeran Idham Saadillah Syamsul Taufiq "Abdul Hafiz" Abdul Gusti Muhammad Adam "Prabu Anom" Tamjidillah Hidayatullah	
+		}
+		
+		last_names = { Antasari Noor Chalid Mursjid "Mu'arif" Effendi Anshari Hatta Ariffin Alham Ramlan
+		}
+	}	
+	sundanese = {
+		color = {186 205 234}
+		first_names = { Oto Iskandar Umar Djuanda Ali Ajip Marty Taufik Eka Jajang Zaenal Asep Achdiat Hassan Mochtar Ginandjar
+		}
+		
+		last_names = { Hidayat Darwis Natalegawa Kartawidjaja Sadikin Rosidi Wirahadikusumah "di Nata" Sartika Mulyana Subagja Suranya Gutawa 
+		Mihardja Alisjahbana Kusumaatmadja Kartasasmita      
+		}
+	}
+	balinese = {
+		color = {219 139 34}
+		first_names = { "I Gusti" "Anak Agung" "Tjokorda" "Ida I Dewa" "Dewa Agung" "I Dewa"	
+		}
+		
+		last_names = { Wayan Made Nyoman Ketut Putu Kadek Komang NgNga      
+		}
+	}
+	sasak = {
+		color = {157 210 156}
+		first_names = { Submit
+		}
+		
+		last_names = { "one please"
 		}
 	}
 	union = MJA
