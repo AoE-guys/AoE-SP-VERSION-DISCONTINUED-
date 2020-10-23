@@ -3633,7 +3633,7 @@
 	officers = {
 		culture = native_american_minor
 		religion = animist
-		size = 5
+		size = 15
 	}
 
 	clergymen = {
@@ -3657,7 +3657,7 @@
 	zzz_dummy = {
 		culture = native_american_minor
 		religion = animist
-		size = 375
+		size = 975
 	}
 
 	labourers = {
@@ -6615,7 +6615,13 @@
 	zzz_dummy = {
 		culture = native_american_minor
 		religion = animist
-		size = 1167
+		size = 167
+	}
+	
+	zzz_dummy = {
+		culture = louisianan
+		religion = animist
+		size = 1000
 	}
 
 	labourers = {
@@ -8147,37 +8153,37 @@
 #Roanoke (120000/30000 POPS)
 216 = {
 	aristocrats = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 36
 	}
 
 	clergymen = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 24
 	}
 
 	artisans = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 304
 	}
 
 	soldiers = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 1908
 	}
 
 	zzz_dummy = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 1231
 	}
 
 	labourers = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 217
 	}
@@ -11186,5 +11192,809 @@
 		culture = native_american_minor
 		religion = animist
 		size = 29
+	}
+}
+
+3403 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 196
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 252
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 156
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 308
+	}
+
+	aristocrats = {
+		culture = spanish
+		religion = catholic
+		size = 2
+	}
+
+	clergymen = {
+		culture = spanish
+		religion = catholic
+		size = 6
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 16
+	}
+
+	soldiers = {
+		culture = spanish
+		religion = catholic
+		size = 4
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 1177
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 15
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 64
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 148
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 4
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 161
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 204
+	}
+}
+
+3404 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 96
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 52
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 156
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	aristocrats = {
+		culture = spanish
+		religion = catholic
+		size = 2
+	}
+
+	clergymen = {
+		culture = spanish
+		religion = catholic
+		size = 6
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 16
+	}
+
+	soldiers = {
+		culture = spanish
+		religion = catholic
+		size = 4
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 177
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 15
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 4
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 48
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 4
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 1
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 204
+	}
+}
+
+3405 = {
+	aristocrats = {
+		culture = cherokee
+		religion = animist
+		size = 36
+	}
+
+	clergymen = {
+		culture = cherokee
+		religion = animist
+		size = 24
+	}
+
+	artisans = {
+		culture = cherokee
+		religion = animist
+		size = 304
+	}
+
+	soldiers = {
+		culture = cherokee
+		religion = animist
+		size = 1908
+	}
+
+	zzz_dummy = {
+		culture = cherokee
+		religion = animist
+		size = 1231
+	}
+
+	labourers = {
+		culture = cherokee
+		religion = animist
+		size = 217
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 4
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 104
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 80
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 10
+	}
+}
+
+3406 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 96
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 52
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 156
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	aristocrats = {
+		culture = spanish
+		religion = catholic
+		size = 2
+	}
+
+	clergymen = {
+		culture = spanish
+		religion = catholic
+		size = 6
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 16
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = catholic
+		size = 94
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 77
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 15
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 14
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 48
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 14
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 11
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 104
+	}
+}
+
+3407 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 196
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 152
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 1156
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = catholic
+		size = 194
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 77
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 15
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 14
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 48
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 114
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 11
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 104
+	}
+}
+
+3408 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 196
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 152
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 556
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = catholic
+		size = 194
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 77
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 15
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 14
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 48
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 114
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 11
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 104
+	}
+}
+
+3409 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 2
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 2
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 196
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 152
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 556
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = catholic
+		size = 94
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 7
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 5
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 4
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 8
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 14
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 11
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 4
+	}
+}
+
+3410 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 2
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 2
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 96
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 52
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 6
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = catholic
+		size = 94
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 7
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 1
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 4
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 8
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 14
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 11
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 4
+	}
+}
+
+3411 = {
+	aristocrats = {
+		culture = louisianan
+		religion = protestant
+		size = 2
+	}
+
+	clergymen = {
+		culture = louisianan
+		religion = protestant
+		size = 2
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 196
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 512
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 16
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 108
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = catholic
+		size = 94
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 117
+	}
+
+	labourers = {
+		culture = louisianan
+		religion = catholic
+		size = 1
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist	
+		size = 14
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 18
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 114
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 111
+	}
+
+	slaves = {
+		culture = afro_antillean
+		religion = catholic
+		size = 4
 	}
 }
