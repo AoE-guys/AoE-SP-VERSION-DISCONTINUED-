@@ -771,7 +771,7 @@
 	artisans = {
 		culture = malay
 		religion = sunni
-		size = 400
+		size = 200
 	}
 
 	soldiers = {
@@ -783,7 +783,7 @@
 	zzz_dummy = {
 		culture = malay
 		religion = sunni
-		size = 9348
+		size = 4548
 	}
 
 	labourers = {
@@ -791,69 +791,88 @@
 		religion = sunni
 		size = 492
 	}
-
+	zzz_dummy = {
+		culture = bidayuh
+		religion = animist
+		size = 2000
+	}
+	artisans = {
+		culture = bidayuh
+		religion = animist
+		size = 200
+	}
+	zzz_dummy = {
+		culture = orang_ulu
+		religion = animist
+		size = 1500
+	}
+	zzz_dummy = {
+		culture = melanau
+		religion = animist
+		size = 1400
+	}
 	aristocrats = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 80
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 400
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 100
 	}
 
 	zzz_dummy = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
-		size = 2280
+		size = 2180
 	}
 
 	labourers = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 120
 	}
 	
 	zzz_dummy = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 95
 	}
 
 	labourers = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 5
 	}
 	
 	artisans = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 20
 	}
 	
 	clergymen = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 8
 	}
 
 	slaves = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 2400
 	}
@@ -921,67 +940,67 @@
 	}
 
 	aristocrats = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 80
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 60
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 240
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 80
 	}
 
 	zzz_dummy = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 2280
 	}
 
 	labourers = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 120
 	}
 	
 	slaves = {
-		culture = asian_minor
+		culture = iban
 		religion = animist
 		size = 1600
 	}
 	
 	zzz_dummy = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 285
 	}
 
 	labourers = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 15
 	}
 	
 	artisans = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 40
 	}
 	
 	clergymen = {
-		culture = asian_minor
+		culture = iban
 		religion = protestant
 		size = 8
 	}
@@ -989,35 +1008,50 @@
 #Api (56000/14000 POPS)
 1396 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = kadazandusun
 		religion = animist
 		size = 40
 	}
-
+	zzz_dummy = {
+		culture = kadazandusun
+		religion = animist
+		size = 8200
+	}
 	clergymen = {
-		culture = asian_minor
+		culture = kadazandusun
 		religion = animist
 		size = 40
 	}
-
 	artisans = {
-		culture = asian_minor
+		culture = kadazandusun
 		religion = animist
-		size = 200
+		size = 100
 	}
-
 	soldiers = {
-		culture = asian_minor
+		culture = kadazandusun
 		religion = animist
 		size = 60
-	}
-	
+	}	
 	slaves = {
-		culture = asian_minor
+		culture = kadazandusun
 		religion = animist
-		size = 4000
+		size = 3200
 	}
-	
+	slaves = {
+		culture = murut
+		religion = animist
+		size = 800
+	}	
+	zzz_dummy = {
+		culture = murut
+		religion = animist
+		size = 1800
+	}
+	artisans = {
+		culture = murut
+		religion = animist
+		size = 100
+	}
 	zzz_dummy = {
 		culture = hakka
 		religion = mahayana
@@ -1075,7 +1109,7 @@
 	zzz_dummy = {
 		culture = malay
 		religion = sunni
-		size = 12483
+		size = 2483
 	}
 
 	labourers = {
@@ -1112,47 +1146,57 @@
 #Sandakan (40000/10000 POPS)
 1397 = {
 	aristocrats = {
-		culture = asian_minor
+		culture = samah
 		religion = animist
 		size = 60
 	}
 
 	clergymen = {
-		culture = asian_minor
+		culture = samah
 		religion = animist
 		size = 60
 	}
 
 	artisans = {
-		culture = asian_minor
+		culture = kadazandusun
 		religion = animist
 		size = 240
 	}
 
 	soldiers = {
-		culture = asian_minor
+		culture = samah
 		religion = animist
 		size = 60
 	}
 
 	zzz_dummy = {
-		culture = asian_minor
+		culture = samah
 		religion = animist
-		size = 2641
+		size = 2341
 	}
 
 	labourers = {
-		culture = asian_minor
+		culture = samah
 		religion = animist
 		size = 139
 	}
 	
 	slaves = {
-		culture = asian_minor
+		culture = samah
 		religion = animist
-		size = 2400
+		size = 1200
 	}
-
+	slaves = {
+		culture = kadazandusun
+		religion = animist
+		size = 1200
+	}	
+	zzz_dummy = {
+		culture = kadazandusun
+		religion = animist
+		size = 2150
+	}
+	
 	aristocrats = {
 		culture = malay
 		religion = sunni
@@ -1180,7 +1224,7 @@
 	zzz_dummy = {
 		culture = malay
 		religion = sunni
-		size = 2850
+		size = 1000
 	}
 
 	labourers = {
