@@ -1,4 +1,6 @@
 color = { 216 30 5 }
+fascist_dictatorship = { 48  138  228 }
+proletarian_dictatorship = { 48  138  228 }
 graphical_culture = ItalianGC
 
 party = {
@@ -58,6 +60,21 @@ party = {
 	trade_policy = mercantilism
 	religious_policy = moralism
 	citizenship_policy = residency
+	war_policy = pro_military
+}
+
+party = {
+	name = "De'Medici Family"
+	start_date = 1600.1.1
+	end_date = 2000.1.1
+
+	ideology = reactionary
+
+	social_policy = no_position_set
+	economic_policy = state_capitalism
+	trade_policy = mercantilism
+	religious_policy = pluralism
+	citizenship_policy = full_citizenship
 	war_policy = jingoism
 }
 

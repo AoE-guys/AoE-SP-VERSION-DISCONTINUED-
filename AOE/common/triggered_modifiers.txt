@@ -1216,6 +1216,76 @@ bread_basket = {
 	supply_consumption = -0.1
 }
 
+vistula_grain_trade = {
+	trigger = {
+		690 = { #Danzig
+			OR = {
+				owned_by = THIS
+				owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+				is_blockaded = no
+			}
+		}
+		693 = { #Elbing
+			OR = {
+				owned_by = THIS
+				owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+				is_blockaded = no
+			}
+		}
+		694 = { #Thorn
+			OR = {
+				owned_by = THIS
+				owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+			}
+		}
+		706 = { #Warsaw
+			OR = {
+				owned_by = THIS
+				owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+			}
+		}
+	}
+	icon = 10
+	war_exhaustion = -0.5
+	tariff_efficiency_modifier = 0.15
+	supply_consumption = -0.1
+}
+
+baltic_trade_domination = {
+	trigger = {
+		354 = { #Kyiv
+			OR = {
+				owned_by = THIS
+				owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+			}
+		}
+		351 = { #Cherkassy
+			OR = {
+				owned_by = THIS
+				owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+			}
+		}
+		OR = {
+			994 = { #Odessa
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+				}
+			}
+			690 = { #Odessa
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS vassal_of = THIS is_greater_power = no }
+				}
+			}
+		}
+	}
+	icon = 10
+	war_exhaustion = -0.5
+	tariff_efficiency_modifier = 0.15
+	supply_consumption = -0.1
+}
+
 stop_it_mec = {
 	trigger = {
 		OR = {
@@ -1317,6 +1387,48 @@ trade_city = {
 	icon = 10
 	global_population_growth = 0.1
 	supply_consumption = -0.05
+}
+
+army_looting = {
+	trigger = {
+		all_core = {
+			limit = {
+				owned_by = THIS
+			}
+			controlled_by = THIS
+		}
+		war = yes
+		any_country = {
+			limit = {
+				war_with = THIS
+			}
+			any_owned = {
+				controlled_by = THIS
+			}
+		}
+	}
+	tariff_efficiency_modifier = 0.25
+}
+
+army_looting = {
+	trigger = {
+		all_core = {
+			limit = {
+				owned_by = THIS
+			}
+			controlled_by = THIS
+		}
+		war = yes
+		any_country = {
+			limit = {
+				war_with = THIS
+			}
+			any_owned = {
+				controlled_by = THIS
+			}
+		}
+	}
+	tariff_efficiency_modifier = 0.25
 }
 
 free_state = {

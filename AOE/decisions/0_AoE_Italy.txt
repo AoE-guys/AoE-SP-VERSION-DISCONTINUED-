@@ -1,0 +1,247 @@
+political_decisions = {
+	
+	####################
+	###   Tuscany   ####
+	####################
+	
+	enact_agrarian_reform = {
+		potential = {
+			OR = {
+				tag = TUS
+				AND = {
+					tag = ITA
+					has_country_flag = ita_tus
+				}
+			}
+		}
+		allow = {
+			NOT = {
+				OR = {
+					wage_reform = no_minimum_wage
+					wage_reform = trinket_wage
+				}
+			}
+			OR = {
+				ruling_party_ideology = socialist
+				AND = {
+					ruling_party_ideology = reactionary
+				
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = economic_boom
+				duration = 10950
+			}
+			random_owned = {
+				owner = {
+					limit = {
+						wage_reform = low_minimum_wage
+					}
+					social_reform = acceptable_minimum_wage
+				}
+			}
+			random_owned = {
+				owner = {
+					limit = {
+						wage_reform = acceptable_minimum_wage
+					}
+					social_reform = good_minimum_wage
+				}
+			}
+			PAP = {
+				relation = {
+					value = -150
+					who = THIS
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = good_safety
+					}
+				}
+				owner = {
+					social_reform = acceptable_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = acceptable_safety
+					}
+				}
+				owner = {
+					social_reform = low_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = low_safety
+					}
+				}
+				owner = {
+					social_reform = trinket_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = trinket_safety
+					}
+				}
+				owner = {
+					social_reform = no_safety
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	tuscan_constitutionalism = {
+		potential = {
+			OR = {
+				tag = TUS
+				AND = {
+					tag = ITA
+					has_country_flag = ita_tus
+				}
+			}
+			NOT = { has_country_flag = tuscan_constitution }
+		}
+		allow = {
+			government = trade_monarchy
+			OR = {
+				ruling_party_ideology = socialist
+				AND = {
+					has_country_modifier = leopold_ii
+					ruling_party_ideology = liberal
+				}
+			}
+		}
+		effect = {
+			set_country_flag = tuscan_constitution
+			add_country_modifier = {
+				name = new_constitution
+				duration = 10950
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							vote_franschise = none_voting
+							vote_franschise = landed_voting
+						}
+					}
+				}
+				owner = {
+					political_reform = wealth_weighted_voting
+				}
+			}
+			government = hms_government
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = good_safety
+					}
+				}
+				owner = {
+					social_reform = acceptable_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = acceptable_safety
+					}
+				}
+				owner = {
+					social_reform = low_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = low_safety
+					}
+				}
+				owner = {
+					social_reform = trinket_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						safety_regulations = trinket_safety
+					}
+				}
+				owner = {
+					social_reform = no_safety
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = ten_hours
+					}
+				}
+				owner = {
+					social_reform = eight_hours
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = twelve_hours
+					}
+				}
+				owner = {
+					social_reform = ten_hours
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = fourteen_hours
+					}
+				}
+				owner = {
+					social_reform = twelve_hours
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						work_hours = no_work_hour_limit
+					}
+				}
+				owner = {
+					social_reform = fourteen_hours
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	etruscan_legacy = {
+		potential = {
+			tag = TUS
+			OR = {
+				government = fascist_dictatorship
+				government = proletarian_dictatorship
+			}
+			NOT = { has_country_flag = etruscan_legacy }
+		}
+		allow = {
+			is_vassal = no
+			part_of_sphere = no
+		}
+		effect = {
+			set_country_flag = etruscan_legacy
+			country_event = 175506
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

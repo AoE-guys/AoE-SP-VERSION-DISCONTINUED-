@@ -1,4 +1,6 @@
-###Corsican Crisis###
+######################
+#######Corsica########
+######################
 country_event = {
 	id = 175500
 	title = "Corsica rebels!"
@@ -190,5 +192,141 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+############################
+#######   Tuscany   ########
+############################
+
+country_event = {
+	id = 175503
+	title = "End of the Medici Dynasty"
+	desc = "EVNDESC175503"
+	picture = medici
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUS
+		year = 1737
+		OR = {
+			government = trade_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "Let's hope those inbred bastards won't prove too bad either"
+		AUS = {
+			diplomatic_influence = {
+				who = TUS
+				value = 50
+			}
+		}
+		prestige = 15
+	}
+}
+
+country_event = {
+	id = 175504
+	title = "Leopold II Habsburg"
+	desc = "EVNDESC175504"
+	picture = leopold_ii
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUS
+		year = 1765
+		OR = {
+			government = trade_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "An reformer to the end"
+		AUS = {
+			diplomatic_influence = {
+				who = TUS
+				value = 50
+			}
+		}
+		add_country_modifier = {
+			name = leopold_ii
+			duration = -1
+		}
+		prestige = 15
+	}
+}
+country_event = {
+	id = 175505
+	title = "Death of Leopold II Habsburg"
+	desc = "EVNDESC175504"
+	picture = leopold_ii
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUS
+		year = 1790
+		AND = {
+			NOT = { government = trade_monarchy }
+			NOT = { government = hms_government }
+			NOT = { government = prussian_constitutionalism }
+			NOT = { government = absolute_monarchy }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "A reformer to the end"
+		remove_country_modifier = leopold_ii
+		prestige = 15
+	}
+}
+
+country_event = {
+	id = 175506
+	title = "Etruscan legacy"
+	desc = "EVNDESC175506"
+	picture = leopold_ii
+	is_triggered_only = yes
+	
+	option = {
+		name = "Etruria is as far as we will lay our claims"
+		badboy = 10
+		740 = { add_core = THIS }
+		741 = { add_core = THIS }
+		739 = { add_core = THIS }
+	}
+	
+	option = {
+		name = "Reclaim our true Etruscan legacy"
+		badboy = 15
+		740 = { add_core = THIS }
+		741 = { add_core = THIS }
+		739 = { add_core = THIS }
+		742 = { add_core = THIS }
+		730 = { add_core = THIS }
+		731 = { add_core = THIS }
+		3372 = { add_core = THIS }
+		750 = { add_core = THIS }
+		749 = { add_core = THIS }
+		2567 = { add_core = THIS }
+		754 = { add_core = THIS }
+		473 = { add_core = THIS }
 	}
 }

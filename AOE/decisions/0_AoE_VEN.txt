@@ -429,6 +429,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = our_sea
 			}
+			NOT = { has_country_flag = no_ita }
 			exists = yes
 		}
 		
@@ -454,14 +455,23 @@ political_decisions = {
 			capital = 749
 			add_accepted_culture = north_italian
 			add_accepted_culture = south_italian
-			limit = {
-					is_culture_group = italian
-					OR = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
+			random_owned = { owner = { limit = { tag = TUS } set_country_flag = ita_tus } }
+			random_owned = { owner = { limit = { tag = COR } set_country_flag = ita_cor } }
+			random_owned = { owner = { limit = { tag = NAP } set_country_flag = ita_nap } }
+			random_owned = { owner = { limit = { tag = SVY } set_country_flag = ita_svy } }
+			random_owned = { owner = { limit = { tag = GEN } set_country_flag = ita_gen } }
+			random_owned = { owner = { limit = { tag = LOM } set_country_flag = ita_lom } }
+			random_owned = { owner = { limit = { tag = VEN } set_country_flag = ita_ven } }
+			any_country = {
+				limit = {
+						is_culture_group = italian
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+				}
+				annex_to = THIS
 			}
-			annex_to = THIS
 		}
 		ai_will_do = {
 			factor = 1

@@ -44,8 +44,12 @@ colonial_policy = no_colonies
 set_country_flag = catholic_country
 
 govt_flag = {
-	government = absolute_monarchy
+	government = fascist_dictatorship
 	flag = theocracy
+}
+govt_flag = {
+	government = hms_government
+	flag = dominion
 }
 
 ruling_party = "Fazione Delle Gilde"

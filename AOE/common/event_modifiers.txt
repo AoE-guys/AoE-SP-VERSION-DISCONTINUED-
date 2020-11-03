@@ -5408,7 +5408,7 @@ reformed_beurocracy = {
 	tax_efficiency = 0.1
 }
 reformed_industry = {
-	factory_input = 0.1
+	factory_input = -0.1
 }
 ####French canada####
 french_naval_school = {
@@ -6757,5 +6757,12 @@ muhammad_ali = {
 	prestige = 0.025
 	admin_efficiency = 0.05
 	factory_cost = -0.15
+	icon = 13
+}
+###Tuscany###
+leopold_ii = {
+	administrative_efficiency_modifier = 0.15
+	tax_efficiency = 0.075
+	global_pop_militancy_modifier = -0.06
 	icon = 13
 }
