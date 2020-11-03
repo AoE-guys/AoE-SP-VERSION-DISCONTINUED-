@@ -281,17 +281,12 @@ pan_swiss = {
 	}
 	romansh = { 
 		color = { 120 140 110 }
-		first_names = { Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
-		Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
-		Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
-		Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
-		Raffaele Roberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio }
+		first_names = { Adam Alesch Alexi Ambrosi Anastasi  Andre AurÈl G¸st Hasper Jachen Jaronas Jerun Joel Juli Justus J¸st Liun Ludivic
+		Luis Lurintg Luzi Matteias Maurin Mauro Maurus Men Michael Moreno Mose Murezi Murezzan Nicl‡ Nicol‡ Niculin Noe Papper Paschal 
+		Pasqual Paulin Peader Peder Peider Pol Polet Polin Pius Pulegn Ramun Romeo Rico Serafin Severin Schimun Silvan Steivan Stiafan 
+		Teias Tia Tias Tumasch Tsasper Urosin Ursin }
 		
-		last_names = { Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
-		Caviglia Ceccherini Cialdini Cusani d'Absburgo-Toscana d'Austria-Este Dezza "di Borbone di Parma" "di Robilant" "di Savoia"
-		"di Savoia-Aosta" Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La M‡rmora" Mambretti 
-		Menabrea Orengo "Pacoret de Saint Bon" Pallavicino Pecori-Giraldi "Pellion di Persano" Pelloux Perruchetti Pianelli Porro
-		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari "Thaon di Revel" Vaccari Zupelli }
+		last_names = { Accola Bazzell Cadruvi Caduff Camenisch Capeder Corsin Decurtins Derungs Peder Planta Menduri Salis }
 	}
 	union = SWI
 }
@@ -478,7 +473,18 @@ italian = {
 		Howard Mifsud Mintoff Mizzi Muscat Olivier Puli Pullicino Strickland Vella }
 		primary = MLT
 	}
-	
+	friulian  = { 
+		color = { 120 170 130 }
+		first_names = { Clario Franceschi Jacum Lissandri MichÍlagnul Pieri Tuone Zirolamo Zuan }
+		
+		last_names = { Beltrame Degano Degrassi Fabbro Fabris Ferluga Fonda Furlan Moro Picco Rossi Vascotto Venturini Zuliani }
+	}	
+	ladin  = { 
+		color = { 100 130 120 }
+		first_names = { Giorgio Giovanni Kristian Micur‡ Tobia }
+		
+		last_names = {  "de Badia" "de Corvara" "de R¸" Ghedina Moroder Runggaldier }
+	}	
 	union = ITA
 }
 
@@ -553,6 +559,12 @@ iberian = {
 		Nunes Ortig„o Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
 		Ribeiro Rodrigues Salazar Sampaio SÈrgio Silveira Tavares Teixeira Vidigal Vieira }
 	}
+	aragonese  = {
+		color = { 240 145 79 }
+		first_names = { AgostÌn Alixandre Andreu AntÛn Augusto Bernal Chabier Chaime Chudes Francho GalÈn GuillÈn Loren Lorient Miguel Moisen Pero Remund SimÛn Tito Tom·s }
+		
+		last_names = { Aflor Alcubierre Borcha Corbal·n Escoriuela Galindo Lanuza Luna Peralta Quinto Urreya Vale Zaragoza }
+	}
 }
 
 basque = {
@@ -572,7 +584,7 @@ basque = {
 		radicalism = 15
 	}
 	gascon = { 
-		color = {80 110 50}
+		color = { 150 120 40 }
 		first_names = { Alban Andieu AlÚi BerÚt Carles EstËve FidËl Frederic Girard Jan Jacin LaurenÅEMartin Nicolau Privat Roman VincenÅE}
 		
 		last_names = { Amiel Benet Dardier Delpuech LadivËze Gilbert Mistral Lacroux Laffont Maury Miquel Montagut Poujade Pujol Vidal Ros Tisseyre }
@@ -1890,7 +1902,7 @@ malayan = {
 	leader = asian
 	unit = AsianGC
 	malay = {
-		color = {85 78 89}
+		color = {20 130 130}
 		first_names = { Shahabuddin Riayat Abdullah Jaafar Safiuddin Muhammad Ali Al-Mukammal Ismail Muabidin Tuanku Yusuf Idris Jalil Isandar Aziz
 			
 		}
@@ -1927,6 +1939,111 @@ malayan = {
 		last_names = { "Demang Behe" Bawin Rentap Ningkan Jugah "Jugah anak Barieng" Kanang "Kanang anak Langkau" Porikng Sembore Tiung Geremeng  
 		}
 	}
+	banjarnese = {
+		color = {0 170 170}
+		first_names = { Pangeran Idham Saadillah Syamsul Taufiq "Abdul Hafiz" Abdul Gusti Muhammad Adam "Prabu Anom" Tamjidillah Hidayatullah	
+		}
+		
+		last_names = { Antasari Noor Chalid Mursjid "Mu'arif" Effendi Anshari Hatta Ariffin Alham Ramlan
+		}
+	}	
+	sundanese = {
+		color = {186 205 234}
+		first_names = { Oto Iskandar Umar Djuanda Ali Ajip Marty Taufik Eka Jajang Zaenal Asep Achdiat Hassan Mochtar Ginandjar
+		}
+		
+		last_names = { Hidayat Darwis Natalegawa Kartawidjaja Sadikin Rosidi Wirahadikusumah "di Nata" Sartika Mulyana Subagja Suranya Gutawa 
+		Mihardja Alisjahbana Kusumaatmadja Kartasasmita      
+		}
+	}
+	madurese = {
+		color = {250 12 198}
+		first_names = { Wardiman Raden Jenderal Artidjo Awang Mien Ahmad Said Mohammad 
+	}
+		
+		last_names = { Mahfud Djojonegoro Trunojoyo Hartono Noersaid Kelana Rifai Noer Roesmanhadi Abdullah Soewitomo Supadri
+		}
+	}
+	balinese = {
+		color = {249 179 34}
+		first_names = { "I Gusti" "Anak Agung" "Tjokorda" "Ida I Dewa" "Dewa Agung" "I Dewa"	
+		}
+		
+		last_names = { Wayan Made Nyoman Ketut Putu Kadek Komang NgNga      
+		}
+	}
+	sasak = {
+		color = {219 119 34}
+		first_names = { Submit
+		}
+		
+		last_names = { "one please"
+		}
+	}
+	iban = {
+		color = {106 159 139}
+		first_names = { Jugah Libau Temenggung 
+		}
+		
+		last_names = { Barieng Bawen Jubang Ningkan
+		}
+	}
+	kadazandusun = {
+		color = {179 189 43}
+		first_names = { Submit
+		}
+		
+		last_names = { "one please"
+		}
+	}	
+	samah = {
+		color = {160 14 176}
+		first_names = { Submit
+		}
+		
+		last_names = { "one please"
+		}
+	}		
+	murut = {
+		color = {3 252 152}
+		first_names = { Submit
+		}
+		
+		last_names = { "one please"
+		}
+	}	
+	bidayuh = {
+		color = {168 35 75}
+		first_names = { Submit
+		}
+		
+		last_names = { Zaini
+		}
+	}	
+	orang_ulu = {
+		color = {255 184 51}
+		first_names = { Submit
+		}
+		
+		last_names = { "one please"
+		}
+	}	
+	melanau = {
+		color = {99 96 90}
+		first_names = { Submit
+		}
+		
+		last_names = { Zaini
+		}
+	}	
+	sumbawarese = {
+		color = {255 89 34}
+		first_names = { "I Gusti" "Anak Agung" "Tjokorda" "Ida I Dewa" "Dewa Agung" "I Dewa"	
+		}
+		
+		last_names = { Wayan Made Nyoman Ketut Putu Kadek Komang NgNga      
+		}
+	} 	 
 	union = MJA
 }
 

@@ -72,6 +72,15 @@ country_event = {
 		#}
 		
 		#country_event = 9999800
+		
+		any_country = {
+			any_pop = { 
+				limit = {
+						type = zzz_dummy  
+				} 
+				pop_type = tribesmen 
+			}
+		}
 	}
 }
 
