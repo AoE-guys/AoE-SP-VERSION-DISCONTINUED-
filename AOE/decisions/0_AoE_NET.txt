@@ -65,7 +65,7 @@ political_decisions = {
 				BEL_394 = {
 					add_core = THIS
 				}
-				397 = {
+				NET_397 = {
 					add_core = THIS
 				}
 			}
@@ -101,6 +101,9 @@ political_decisions = {
 				BEL_394 = {
 					owned_by = THIS
 					#is_core = THIS
+				}
+				NET_397 = {
+					owned_by = THIS
 				}
 			}
 			effect = {

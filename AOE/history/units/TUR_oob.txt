@@ -206,71 +206,6 @@ army = {
 }
 
 army = {
-	name = "1st Army"
-	location = 884
-	
-	regiment = {
-		name= "7. Tümeni Firkasi"
-		type = infantry
-		home = 807
-	}
-
-	regiment = {
-		name= "8. Tümeni Firkasi"
-		type = infantry
-		home = 807
-	}
-	
-	regiment = {
-		name= "9. Tümeni Firkasi"
-		type = infantry
-		home = 849
-	}
-
-	regiment = {
-		name= "10. Tümeni Firkasi"
-		type = infantry
-		home = 850
-	}
-
-	regiment = {
-		name= "11. Tümeni Firkasi"
-		type = infantry
-		home = 851
-	}
-	
-	regiment = {
-		name= "12. Tümeni Firkasi"
-		type = infantry
-		home = 882
-	}
-	
-	regiment = {
-		name= "4. Süvari Firkasi"
-		type = cuirassier
-		home = 783
-	}
-	
-	regiment = {
-		name= "5. Süvari Firkasi"
-		type = cuirassier
-		home = 806
-	}
-	
-	regiment = {
-		name= "6. Süvari Firkasi"
-		type = cuirassier
-		home = 884
-	}
-	
-	regiment = {
-		name = "2. Topçu Firkas"
-		type = artillery
-		home = 804
-	}
-}
-
-army = {
 	name = "2nd Army"
 	location = 964
 	
@@ -365,42 +300,6 @@ army = {
 		home = 876
 	}
 
-}	
-
-army = {
-	name = "4th Army"
-	location = 923
-	
-	regiment = {
-		name= "17. Tümeni Firkasi"
-		type = infantry
-		home = 860
-	}
-	
-	regiment = {
-		name= "6. Timariot"
-		type = artillery
-		home = 863
-	}
-	
-	regiment = {
-		name= "7. Timariot"
-		type = artillery
-		home = 923
-	}
-	
-	regiment = {
-		name= "2. Sipahis"
-		type = cavalry
-		home = 883
-	}
-	
-	regiment = {
-		name= "3. Sipahis"
-		type = cavalry
-		home = 873
-	}
-
 }
 
 army = {
@@ -429,21 +328,6 @@ army = {
 		name= "5. Sipahis"
 		type = cavalry
 		home = 926
-	}
-}
-
-army = {
-	name = "Pashalik of Tripoli Army"
-	location = 1736
-	regiment = {
-		name= "1. Askäris"
-		type = artillery
-		home = 1735
-	}
-	regiment = {
-		name= "6. Sipahis"
-		type = cavalry
-		home = 805
 	}
 }
 

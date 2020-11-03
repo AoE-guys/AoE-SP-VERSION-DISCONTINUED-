@@ -323,4 +323,152 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	form_yuan = {
+		picture = chinese_capital_pic
+		potential = {
+			exists = yes
+			government = khanate
+			NOT = {
+				exists = CHI
+			}
+			OR = {
+				neighbour = QNG
+				owns = 1616
+			}
+		}
+		allow = {
+			government = khanate
+			is_vassal = no
+			is_greater_power = yes
+			owns = 1616
+			owns = 1468
+			owns = 2207
+			owns = 1532
+		}
+		effect = {
+			government = absolute_monarchy
+			QNG = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			all_core = {
+				add_core = CHI
+				remove_core = THIS
+			}
+			change_tag = CHI
+			capital = 1616
+			prestige = 80
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	form_mongol_empire = {
+		picture = genghis_khan
+		potential = {
+			exists = yes
+			OR = {
+				government = khanate
+				tag = CHI
+			}
+			NOT = {
+				exists = MGE
+			}
+			is_greater_power = yes
+		}
+		allow = {
+			OR = {
+			government = khanate
+			tag = CHI
+			}
+			is_vassal = no
+			is_greater_power = yes
+			owns = 1616
+			owns = 1468
+			owns = 2207
+			owns = 1532
+			owns = 1486
+			owns = 1236
+			owns = 1232
+			owns = 1181
+			owns = 1183
+			owns = 1041
+			owns = 978
+			owns = 958
+			PER = {
+				all_core = {
+					OR = {
+					owned_by = THIS
+					in_sphere = THIS
+					}
+				}
+			}
+			1008 = {
+				OR = {
+				owned_by = THIS
+				in_sphere = THIS
+				}
+			}
+		}
+		effect = {
+			government = absolute_monarchy
+			1008 = {
+				owner = {
+					limit = {
+						NOT = { tag = THIS }
+						capital_scope = { continent = europe }
+					}
+					annex_to = THIS
+				}
+			}
+			QNG = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			RUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KAZ = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			DZN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			RUS_1196 = { add_core = THIS }
+			AFG_1214 = { add_core = THIS }
+			TAJ_1208 = { add_core = THIS }
+			KHI_1191 = { add_core = THIS }
+			RUS_1182 = { add_core = THIS }
+			PAN_1227 = { add_core = THIS }
+			PAN_1224 = { add_core = THIS }
+			TIB_1591 = { add_core = THIS }
+			CHI_1557 = { add_core = THIS }
+			CHI_1594 = { add_core = THIS }
+			CHI_1600 = { add_core = THIS }
+			all_core = {
+				add_core = MGE
+				remove_core = THIS
+			}
+			change_tag = MGE
+			prestige = 80
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
 }
