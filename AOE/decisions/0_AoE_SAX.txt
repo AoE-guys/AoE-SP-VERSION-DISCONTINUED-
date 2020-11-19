@@ -7,7 +7,10 @@ political_decisions = {
 				war_with = BOR
 				war_with = FRA
 			}
+			is_vassal = no
 			exists = yes
+			NOT = { is_greater_power = yes }
+			NOT = { has_country_flag = wtf_sax }
 		}
 		allow = {
 			any_owned_province = {
@@ -18,15 +21,66 @@ political_decisions = {
 			}
 		}
 		effect = {
-			SAX = {
-				end_war = BOR
-				end_war = FRA
-				create_alliance = BOR
-				create_alliance = FRA
+			set_country_flag = wtf_sax
+			end_war = BOR
+			end_war = FRA
+			create_alliance = BOR
+			create_alliance = FRA
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	claim_thuringia = {
+		picture = thuringia
+		potential = {
+			tag = SAX
+			OR = {
+			is_vassal = no
+			ai = no
+			}
+			exists = yes
+			NOT = { has_country_flag = claimed_thuringia }
+		}
+		allow = {
+			war_policy = jingoism
+			military_score = 25
+		}
+		effect = {
+			set_country_flag = claimed_thuringia
+			PRU_554 = {
+				add_core = THIS
 			}
 		}
 		ai_will_do = {					
 			factor = 1
 		}
 	}
+	
+	augusts_rule_from_sax = {
+		picture = sax_aug
+		potential = {
+			tag = SAX
+			ai = no
+			is_vassal = yes
+			vassal_of = PLC
+			exists = yes
+		}
+		allow = {
+			vassal_of = PLC
+		}
+		effect = {
+			PLC = {
+				release_vassal = SAX
+			}
+			create_vassal = PLC
+			PLC = {
+			government = elective_monarchy_oligarchy
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	]
 }

@@ -1008,10 +1008,6 @@ help_ai_sweden_and_austria = {
 	trigger = {
 		OR = {
 			AND = {
-				owns = 1008 #Russia
-				NOT = { year = 1738 }
-			}
-			AND = {
 				owns = 322 #Sweden
 				NOT = { year = 1710 }
 			}
@@ -1034,6 +1030,7 @@ help_ai_sweden_and_austria = {
 			}
 			AND = {
 				owns = 1121 #Persia
+				has_country_modifier = nader_shah
 			}
 			owns = 549 #Prussia
 			AND = {

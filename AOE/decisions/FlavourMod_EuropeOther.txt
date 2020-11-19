@@ -125,6 +125,7 @@ political_decisions = {
 			owns = 791
 			owns = 792
 			NOT = { has_global_flag = vojvodina_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -220,6 +221,7 @@ political_decisions = {
 			owns = 652
 			owns = 653
 			NOT = { has_global_flag = banat_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -592,6 +594,7 @@ political_decisions = {
 			owns = 2533
 			owns = 660
 			NOT = { has_global_flag = northern_transylvania_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -701,6 +704,7 @@ political_decisions = {
 			owns = 657
 			owns = 659
 			NOT = { has_global_flag = southern_transylvania_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -852,6 +856,7 @@ political_decisions = {
 			owns = 637
 			owns = 950
 			NOT = { has_global_flag = slovakia_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -1836,6 +1841,7 @@ political_decisions = {
 			}
 			owns = 642
 			NOT = { has_global_flag = transdanubia_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -1892,6 +1898,7 @@ political_decisions = {
 			}
 			owns = 641
 			NOT = { has_global_flag = central_hungary_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -2067,6 +2074,7 @@ political_decisions = {
 			owns = 771
 			owns = 772
 			NOT = { has_global_flag = croatia_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {
@@ -2205,6 +2213,7 @@ political_decisions = {
 			owns = 777
 			owns = 779
 			NOT = { has_global_flag = slavonia_rename_hun }
+			is_vassal = no
 		}
 		
 		allow = {

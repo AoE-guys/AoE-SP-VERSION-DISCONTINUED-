@@ -181,7 +181,7 @@ political_decisions = {
 	decide_foreign_policy = {
 		potential = {
 			tag = TUR
-			NOT = { has_country_flag = conquest_of_rome }
+			NOT = { has_country_flag = decided_foreign_policy }
 			exists = yes
 		}
 		allow = {
@@ -190,6 +190,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			set_country_flag = decided_foreign_policy
 			country_event = 173618
 		}
 	}

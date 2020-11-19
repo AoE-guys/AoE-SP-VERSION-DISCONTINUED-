@@ -14,6 +14,8 @@ political_decisions = {
 					year = 1789
 					pop_militancy = 4
 				}
+				government = proletarian_dictatorship
+				
 				political_thought_8 = 1
 			}
 			has_country_flag = edict_of_tolerance
@@ -23,7 +25,7 @@ political_decisions = {
 			random_pop = {
 				militancy = -2
 			}
-			
+			set_country_flag = rights_of_man
 			add_country_modifier = {
 				name = rights_of_man
 				duration = -1
@@ -43,6 +45,7 @@ political_decisions = {
 			political_thought_7 = 1
 		}
 		effect = {
+			set_country_flag = edict_of_tolerance
 			add_country_modifier = {
 				name = freedom_of_religion
 				duration = -1
@@ -100,6 +103,8 @@ political_decisions = {
 			tag = BOR
 			NOT = { has_country_flag = louis_dream }
 			exists = yes
+			NOT = { government = proletarian_dictatorship }
+			NOT = { government = fascist_dictatorship }
 		}
 		allow = {
 			owns = 387
@@ -135,6 +140,61 @@ political_decisions = {
 				add_core = THIS
 			}
 			THIS = { country_event = 171100 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 5
+			}
+		}
+	}
+	
+	natural_borders_of_fr = {
+		picture = louis_dream
+		potential = {
+			tag = BOR
+			NOT = { has_country_flag = natural_borders_of_fr }
+			exists = yes
+			OR = {
+			government = proletarian_dictatorship
+			government = fascist_dictatorship
+			}
+		}
+		allow = {	
+			mass_politics = 1
+			war_policy = jingoism
+			NOT = { has_country_modifier = no_more_war }
+			has_recently_lost_war = no
+		}
+		effect = {
+			badboy = 25
+			set_country_flag = natural_borders_of_fr
+			BEL_387 = {
+				add_core = THIS
+			}
+			BEL_394 = {
+				add_core = THIS
+			}
+			NET_379 = {
+				add_core = THIS
+			}
+			NET_397 = {
+				add_core = THIS
+			}
+			PRU_575 = {
+				add_core = THIS
+			}
+			PRU_570 = {
+				add_core = THIS
+			}
+			LOR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			468 = { add_core = THIS }
+			433 = { add_core = THIS }
 		}
 		ai_will_do = {
 			factor = 1

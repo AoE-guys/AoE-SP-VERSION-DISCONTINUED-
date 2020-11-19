@@ -598,9 +598,13 @@ political_decisions = {
 		}
 		allow = {
 			state_n_government = 1
-			military_score = 150
-			is_sphere_leader_of = KAK
-			is_sphere_leader_of = KKH
+			OR = {
+				military_score = 150
+				AND = {
+					is_sphere_leader_of = KAK
+					is_sphere_leader_of = KKH
+				}
+			}
 		}
 		effect = {
 			PER = {
@@ -609,6 +613,7 @@ political_decisions = {
 			}
 			prestige = 10
 			set_country_flag = manifesto_on_caucasus
+			country_event = 170013
 			1053 = {
 				add_core = RUS
 			}

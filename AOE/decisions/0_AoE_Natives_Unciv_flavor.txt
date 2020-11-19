@@ -112,17 +112,16 @@ political_decisions = {
 			}
 		}
 		ai_will_do = { 
-			factor = 0
+			factor = 1
 			modifier = {
-				factor = 100
-				NOT = {
-					OR = {
-						tag = QNG
-						tag = KOR
-						tag = MUG
-						tag = BNG
-					}
+				factor = 0
+				OR = {
+					tag = QNG
+					tag = KOR
+					tag = MUG
+					tag = BNG
 				}
+
 			}
 		}
 	}
@@ -137,10 +136,10 @@ political_decisions = {
 			war = no
 			NOT = { militancy = 3 }
 			OR = {
-				is_secondary_power = yes
 				AND = {
 					literacy = 0.6
 					part_of_sphere = yes
+					analytic_philosophy = 1
 				}
 				AND = {
 					is_greater_power = yes
@@ -168,23 +167,21 @@ political_decisions = {
 				}
 			}
 			ai_will_do = { 
-				factor = 0
+				factor = 1
 				modifier = {
-					factor = 100
+					factor = 0
 					OR = {
-						is_secondary_power = yes
+						NOT = { is_secondary_power = yes }
 						AND = {
-							is_greater_power = yes
-							has_recently_lost_war = yes
+							NOT = { is_greater_power = yes }
+							NOT = { has_recently_lost_war = yes }
 						}
 					}
-					NOT = {
-						OR = {
-							tag = QNG
-							tag = KOR
-							tag = MUG
-							tag = BNG
-						}
+					OR = {
+						tag = QNG
+						tag = KOR
+						tag = MUG
+						tag = BNG
 					}
 				}
 			}
@@ -266,6 +263,71 @@ political_decisions = {
 			168 = { add_core = THIS }
 			167 = { add_core = THIS }
 		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	tribal_war = {
+		picture = form_kellys_irish_brigade
+		potential = {
+			government = tribal_democracy
+			NOT = {
+				has_country_flag = tribal_war
+			}
+		}
+		
+		allow = {
+			war_exhaustion = 4
+			is_vassal = no
+		}
+		
+		effect = {
+			small_arms = 300
+			regular_clothes = 300
+			canned_food = 300
+			any_pop = {
+				limit = {
+					pop_type = tribesmen
+					OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+					}
+				}
+				pop_type = soldiers
+			}
+			war_exhaustion = -1
+			set_country_flag = tribal_war
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	tribal_peace = {
+		picture = form_kellys_irish_brigade
+		potential = {
+			government = tribal_democracy
+			has_country_flag = tribal_war
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					pop_type = soldiers
+					OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+					}
+					NOT = { conciousness = 2 }
+				}
+				pop_type = tribesmen
+			}
+			war_exhaustion = -1
+			clr_country_flag = tribal_war
+		}
+		
 		ai_will_do = { factor = 1 }
 	}
 }

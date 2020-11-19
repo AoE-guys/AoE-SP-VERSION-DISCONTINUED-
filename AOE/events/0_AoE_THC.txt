@@ -153,7 +153,7 @@ country_event = {
 	id = 17860002
 	title = "The burning of the white house"
 	desc = "EVTDESC173604"
-	picture = vienna_boom
+	picture = white_house_boom
 	is_triggered_only = yes
 
 	
@@ -363,6 +363,14 @@ country_event = {
 				create_alliance = THC
 			}
 		}
+		relation = {
+			who = THC
+			value = 200
+		}
+		diplomatic_influence = {
+			who = THC
+			value = 200
+		}
 	}
 }
 country_event = {
@@ -375,4 +383,60 @@ country_event = {
 		name = "We're Doomed!"
 		prestige = -10
 	}
-}	
+}
+country_event = {
+	id = 1754002
+	title = "Foudation of the Philadelphia Academy"
+	desc = "EVTDESC1754002"
+	picture = wealth_n_poetry
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = THC
+			tag = USA
+		}
+		year = 1751
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "Incredible."
+		prestige = 25
+		USA_223 = {
+			any_pop = {
+				counciousness = -2
+			}
+		}
+		add_country_modifier = {
+			name = philadelpha_academy
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = 177510
+	title = "The Continental Congress"
+	desc = "EVTDESC177510"
+	picture = continental_congress
+	
+	trigger = {
+		tag = THC
+		has_country_modifier = sugar_act_on_colonies
+		has_country_modifier = stamp_act_on_colonies
+		has_country_modifier = tea_act_on_colonies
+		has_country_modifier = intoreable_act_on_colonies
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "We cannot allow such treatment any longer"
+		overlord = { country_event = 98610 }
+	}
+}

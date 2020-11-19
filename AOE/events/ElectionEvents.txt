@@ -635,6 +635,10 @@ country_event = {
 		name = "EVTOPTA14050"
 		any_pop = {
 			dominant_issue = {
+				factor = 0.35
+				value = mercantilism
+			}
+			dominant_issue = {
 				factor = 0.3
 				value = protectionism
 			}

@@ -7,7 +7,7 @@ country_event = {
 	news_desc_long = "EVTDESC60000_NEWS_LONG"
 	news_desc_medium = "EVTDESC60000_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60000_NEWS_SHORT"
-	picture = "communist_crowd"
+	picture = "revolution"
 	
 	trigger = {
 		is_vassal = no
@@ -235,7 +235,7 @@ country_event = {
 	news_desc_long = "EVTDESC60030_NEWS_LONG"
 	news_desc_medium = "EVTDESC60030_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60030_NEWS_SHORT"
-	picture = "Fascist"
+	picture = "emperor"
 	
 	trigger = {
 		is_vassal = no
@@ -300,14 +300,24 @@ country_event = {
 	news_desc_long = "EVTDESC60050_NEWS_LONG"
 	news_desc_medium = "EVTDESC60050_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60050_NEWS_SHORT"
-	picture = "senate_debate"
+	picture = "english_parliment"
 	
 	trigger = {
 		OR = {
-			government = proletarian_dictatorship
+			AND = {
+				government = proletarian_dictatorship
+				war_policy = pacifism
+				war = no
+				NOT = { ruling_party_ideology = communist }
+			}
 			government = presidential_dictatorship
 			government = bourgeois_dictatorship
-			government = fascist_dictatorship
+			AND = {
+				government = fascist_dictatorship
+				war_policy = pacifism
+				war = no
+				NOT = { ruling_party_ideology = communist }
+			}
 			government = theocracy
 		}
 		civilized = yes
@@ -315,6 +325,7 @@ country_event = {
 		NOT = { political_parties = underground_parties }
 		NOT = { upper_house_composition = party_appointed }
 		NOT = { has_country_modifier = not_dictatorship }
+		NOT = { has_country_modifier = revolutionary_spirit }
 	}
 	
 	mean_time_to_happen = {
@@ -337,7 +348,8 @@ country_event = {
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
 		remove_country_modifier = fight_the_power
-		government = democracy
+		random_owned = { limit = { owner = { government = fascist_dictatorship } } owner = { government = hms_government } }
+		random_owned = { limit = { owner = { NOT = { government = fascist_dictatorship } } } owner = { government = democracy } }
 		election = yes
 		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 		random_owned = { limit = { owner = { centralization = totalitarianism } } owner = { political_reform = unitary } }
@@ -350,7 +362,7 @@ country_event = {
 	id = 60040
 	title = "EVTNAME60040"
 	desc = "EVTDESC60040"
-	picture = "Monarchy"
+	picture = "throne"
 	
 	trigger = {
 		OR = {
@@ -394,7 +406,7 @@ country_event = {
 	news_desc_long = "EVTDESC60060_NEWS_LONG"
 	news_desc_medium = "EVTDESC60060_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60060_NEWS_SHORT"
-	picture = "Monarchy"
+	picture = "english_parliment"
 	
 	trigger = {
 	    OR = {
@@ -439,7 +451,7 @@ country_event = {
 	news_desc_long = "EVTDESC60070_NEWS_LONG"
 	news_desc_medium = "EVTDESC60070_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60070_NEWS_SHORT"
-	picture = "Monarchy"
+	picture = "english_parliment"
 	
 	trigger = {
 		government = prussian_constitutionalism
@@ -487,7 +499,7 @@ country_event = {
 	news_desc_long = "EVTDESC60080_NEWS_LONG"
 	news_desc_medium = "EVTDESC60080_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60080_NEWS_SHORT"
-	picture = "communist_crowd"
+	picture = "revolution"
 	
 	trigger = {
 		OR = {
@@ -620,7 +632,7 @@ country_event = {
 	news_desc_long = "EVTDESC60080_NEWS_LONG"
 	news_desc_medium = "EVTDESC60080_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC60080_NEWS_SHORT"
-	picture = "communist_crowd"
+	picture = "emperor"
 	
 	trigger = {
 		OR = {

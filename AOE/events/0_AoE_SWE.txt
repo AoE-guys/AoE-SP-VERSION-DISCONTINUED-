@@ -480,12 +480,33 @@ country_event = {
 	
 	option = {
 		name = "Runia Imperii"
+		all_core = {
+			limit = {
+				is_core = RUS
+			}
+			secede_province = RUS
+		}
+		any_country = {
+			limit = {
+				war_with = SWE
+				NOT = { has_country_flag = leszczynski_rule } 
+				tag = PLC
+			}
+			RUS = { country_event = 1721011 }
+		}
+		end_war = RUS
+		end_war = PLC
+	}
+}
+country_event = {
+	id = 1721011
+	title = "Treaty of Nystad"
+	desc = "EVTDESC1721010"
+	is_triggered_only = yes
+	option = {
+		name = "Great!"
 		random_owned = {
 			owner = {
-				limit = {
-					owns = 354
-					war_with = PLC
-				}
 				release = LAT
 			}
 		}
@@ -493,13 +514,5 @@ country_event = {
 		LAT = {
 			government = absolute_monarchy
 		}
-		all_core = {
-			limit = {
-				is_core = RUS
-			}
-			secede_province = RUS
-		}
-		end_war = RUS
-		end_war = PLC
 	}
-}  
+}

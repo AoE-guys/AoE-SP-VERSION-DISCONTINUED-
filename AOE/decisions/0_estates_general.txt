@@ -10,13 +10,17 @@ political_decisions = {
 			}
 			has_country_modifier = peasant_turmoil
 			exists = yes
+			NOT = { has_country_flag = estates_general_summoned }
 		}
 		allow = {
 			OR = {
 				political_thought_7 = 1
 				year = 1789
 			}
+			OR = {
 			militancy = 6
+			ai = yes
+			}
 			war = no
 		}
 		effect = {

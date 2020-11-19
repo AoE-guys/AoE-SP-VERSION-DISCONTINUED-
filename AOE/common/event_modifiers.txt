@@ -5357,6 +5357,11 @@ white_house = {
 	immigrant_attract = 0.25
 	icon = 5
 }
+philadelpha_academy = {
+	research_points_modifier = 0.15
+	culture_tech_research_bonus = 0.1
+	icon = 1
+}
 ###louisiana###
 army_reform_ula = {
 	and_organisation = 0.05
@@ -6720,11 +6725,11 @@ proffesional_general_staff = {
 }
 trade_sectors_monopoly = {
 	tariff_efficiency_modifier = 0.05
-	icon = 19
+	icon = 9
 }
 church_goods_seized = {
 	tax_efficiency = 0.05
-	icon = 19
+	icon = 9
 }
 deified_ruler = {
 	prestige = 0.025
@@ -6742,14 +6747,14 @@ nader_shah = {
 }
 naderi_coinage_system = {
 	tax_efficiency = 0.025
-	icon = 17
+	icon = 9
 }
 quajar_army_reforms = {
 	army_organisation = 0.05
 	org_regain = 0.15
 	supply_consumption = 0.05
 	mobilisation_economy_impact = -0.025
-	icon = 13
+	icon = 15
 }
 ###Egypt###
 muhammad_ali = {
@@ -6765,4 +6770,33 @@ leopold_ii = {
 	tax_efficiency = 0.075
 	global_pop_militancy_modifier = -0.06
 	icon = 13
+}
+napoleon_bonaparte = {
+	army_organisation = 0.15
+	org_regain = 0.5
+	supply_consumption = 0.35
+	core_pop_consciousness_modifier = -0.04
+	prestige = 0.05
+	ruling_party_support = 0.15
+	cb_generation_speed_modifier = -0.15
+	icon = 13
+}
+###Savoy###
+charles_emmanuel = {
+	army_organisation = 0.05
+	org_regain = 0.15
+	cb_generation_speed_modifier = -0.1
+	badboy = -0.03
+	diplomatic_points_modifier = 0.15
+	icon = 13
+}
+savoyard_law_code = {
+	admin_efficiency = 0.1
+	icon = 5
+}
+fredrican_army_model = {
+	army_organisation = 0.25
+	org_regain = 0.1
+	supply_consumption = -0.15
+	icon = 15
 }

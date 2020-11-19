@@ -3,7 +3,7 @@ civilized = yes   primary_culture = finnish
 culture = swedish
 culture = sami
 religion = protestant
-government = colonial_company
+government = absolute_monarchy
 plurality = 0.5
 nationalvalue = nv_productivity
 literacy = 0.01  non_state_culture_literacy = 0.01  #literacy = 0.5
@@ -40,6 +40,10 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies 
 
+govt_flag = {
+	government = absolute_monarchy
+	flag = theocracy
+}
 
 set_country_flag = protestant_country
 

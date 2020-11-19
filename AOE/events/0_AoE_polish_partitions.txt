@@ -94,7 +94,7 @@ country_event = {
 		945	= { secede_province = RUS }
 		944	= { secede_province = RUS }
 		949 = { secede_province = RUS }
-		948 = { secede_province = RUS }
+		946 = { secede_province = RUS }
 		prestige = -10
 		any_country = {
 			limit = {
@@ -114,6 +114,7 @@ country_event = {
 		944	= { add_core = RUS }
 		949 = { add_core = RUS }
 		948 = { add_core = RUS }
+		946 = { add_core = RUS }
 		RUS = {
 			war = {
 				target = PLC
@@ -312,6 +313,7 @@ country_event = {
 		954 = { secede_province = RUS }
 		947 = { secede_province = RUS }
 		939 = { secede_province = RUS }
+		948 = { secede_province = RUS }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -324,6 +326,7 @@ country_event = {
 		954 = { add_core = RUS }
 		947 = { add_core = RUS }
 		939 = { add_core = RUS }
+		948 = { add_core = RUS }
 		RUS = {
 			war = {
 				target = PLC
@@ -471,9 +474,8 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		RUS = {
-			inherit = KUR
-		}
+		any_owned = { owner = { limit = { KUR = { exists = yes vassal_of = PLC } } inherit = KUR } }
+		any_owned = { owner = { limit = { LAT = { exists = yes vassal_of = PLC } } inherit = LAT } }
 		PLC = {
 		3337 = { secede_province = RUS }
 		RUS_360	= { limit = { NOT = { province_id = 362 } } secede_province = RUS }

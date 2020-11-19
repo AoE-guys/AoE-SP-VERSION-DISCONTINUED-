@@ -898,16 +898,7 @@ country_event = {
 	desc = "EVTDESC170013"
 	picture = caucasian_war
 	major = yes
-	
-	trigger = {
-		year = 1722
-		tag = RUS
-		has_country_flag = manifesto_on_caucasus
-	}
-	
-	mean_time_to_happen = {
-		months = 4
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "EVTOPT170013"
