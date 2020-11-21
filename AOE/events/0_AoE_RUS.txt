@@ -1239,15 +1239,17 @@ province_event = {
 				consciousness = 1
 				reduce_pop = 0.9
 			}
-		random_owned = {
-			limit = {
-				any_neighbor_province = {
-					has_country_modifier = kamchatka_wars
+		THIS = {
+			random_owned = {
+				limit = {
+					any_neighbor_province = {
+						has_country_modifier = kamchatka_wars
+					}
 				}
-			}
-			add_province_modifier = {
-				name = kamchatka_wars 
-				duration = 365
+				add_province_modifier = {
+					name = kamchatka_wars 
+					duration = 365
+				}
 			}
 		}
 		ai_chance = {

@@ -955,7 +955,7 @@ new_world_tribe = {
 help_ai_russia = {
 	trigger = {
 		OR = {
-			#owns = 1008 #Russia
+			owns = 1008 #Russia
 			owns = 876 #Turkey
 			capital = 487 #Spain
 			capital = 521 #Portugal
@@ -986,6 +986,10 @@ help_ai_russia = {
 				NOT = { year = 1710 }
 			}
 			AND = {
+				owns = 322 #Sweden
+				NOT = { year = 1710 }
+			}
+			AND = {
 				government = colonial_company
 				is_vassal = yes
 			}
@@ -1007,10 +1011,6 @@ help_ai_russia = {
 help_ai_sweden_and_austria = {
 	trigger = {
 		OR = {
-			AND = {
-				owns = 322 #Sweden
-				NOT = { year = 1710 }
-			}
 			AND = { 
 				owns = 619 #Austria
 				NOT = { year = 1707 }

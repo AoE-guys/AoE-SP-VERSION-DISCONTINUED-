@@ -502,3 +502,80 @@ country_event = {
 		prestige = 20
 	}
 }
+province_event = {
+	id = 1740010
+	title = "A fine Soldier"
+	desc = "EVTDESC1740010"
+	
+	trigger = {
+		owner = {
+			tag = PRU
+			NOT = { military_score = 100 }
+		}
+		OR = {
+			country_units_in_province = THIS
+			any_pop = {
+				unemployment = 0.08
+			}
+		}
+		controlled_by_rebels = no
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.2
+			owner = {
+				NOT = { military_score = 10 }
+			}
+		}
+		modifier = {
+			factor = 0.4
+			owner = {
+				NOT = { military_score = 20 }
+			}
+		}
+		modifier = {
+			factor = 0.6
+			owner = {
+				NOT = { military_score = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				NOT = { military_score = 40 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				NOT = { military_score = 50 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Abduct and force him into army service!"
+		random_pop = {
+			limit = {
+				OR = {
+					pop_type = labourers
+					pop_type = tribesmen
+					pop_type = zzz_dummy
+					pop_type = farmers
+					pop_type = artisans
+				}
+			}
+			pop_type = soldiers
+		}
+		random_pop = {
+			consciousness = 2
+			militancy = 1
+		}
+	}
+	
+	option = {
+		name = "Leave him alone"
+	}
+}

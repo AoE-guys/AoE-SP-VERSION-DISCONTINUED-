@@ -401,15 +401,19 @@ political_decisions = {
 			PER = {
 				all_core = {
 					OR = {
-					owned_by = THIS
-					in_sphere = THIS
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
 					}
 				}
 			}
 			1008 = {
 				OR = {
-				owned_by = THIS
-				in_sphere = THIS
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
 				}
 			}
 		}

@@ -1,5 +1,39 @@
 political_decisions = {
 
+	open_hre_reforms = {
+		picture = flag_hre
+		potential = {
+			NOT = { has_country_flag = hre_reforms_open }
+			exists = yes
+			has_country_flag = hre_emperor
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			set_country_flag = hre_reforms_open
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	close_hre_reforms = {
+		picture = flag_hre
+		potential = {
+			has_country_flag = hre_reforms_open
+			exists = yes
+			has_country_flag = hre_emperor
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			clr_country_flag = hre_reforms_open
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	join_hre = {
 		picture = flag_hre
 		potential = {
@@ -71,6 +105,7 @@ political_decisions = {
 	enact_reichsreform = {
 		picture = hre_reform_1
 		potential = {
+			has_country_flag = hre_reforms_open
 			has_country_flag = hre_emperor
 			NOT = {
 				exists = NNN
@@ -127,6 +162,7 @@ political_decisions = {
 	institute_reichsregiment = {
 		picture = hre_reform_3
 		potential = {
+			has_country_flag = hre_reforms_open
 			has_country_flag = hre_emperor
 			NOT = {
 				exists = NNN
@@ -182,6 +218,7 @@ political_decisions = {
 	reform_the_hofgericht = {
 		picture = hre_reform_2
 		potential = {
+			has_country_flag = hre_reforms_open
 			has_country_flag = hre_emperor
 			NOT = {
 				exists = NNN
@@ -236,6 +273,7 @@ political_decisions = {
 	reform_imperial_circles = {
 		picture = imperial_circles
 		potential = {
+			has_country_flag = hre_reforms_open
 			has_country_flag = hre_emperor
 			NOT = {
 				exists = NNN
@@ -379,6 +417,7 @@ political_decisions = {
 	proclaim_erbkaisertum = {
 		picture = flag_hre
 		potential = {
+			has_country_flag = hre_reforms_open
 			has_country_flag = hre_emperor
 			NOT = {
 				exists = NNN
@@ -443,6 +482,7 @@ political_decisions = {
 		}
 		
 		allow = {
+			has_country_flag = hre_reforms_open
 			has_recently_lost_war = no
 			has_country_flag = proclaimed_erbkaisertum
 			is_greater_power = yes
@@ -482,7 +522,8 @@ political_decisions = {
 	add_belgium_hre = {
 		picture = austria_coa
 		potential = {
-			tag = AUS
+			has_country_flag = hre_reforms_open
+			has_country_flag = hre_emperor
 			NOT = { has_country_flag = added_belgium_hre }
 			NOT = { has_global_flag = hre_dismantled }
 			owns = 387
@@ -521,6 +562,103 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				badboy = 20
+			}
+		}
+	}
+	
+	reign_in_italy = {
+		picture = austria_coa
+		potential = {
+			has_country_flag = hre_reforms_open
+			has_country_flag = hre_emperor
+			NOT = { has_country_flag = added_italy_hre }
+			NOT = { has_global_flag = hre_dismantled }
+			OR = {
+			any_neighbor_country = { is_culture_group = italian in_sphere = THIS }
+			any_owned_province = { is_core = ITA }
+			}
+			exists = yes
+		}
+		allow = {
+			ITA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			has_recently_lost_war = no
+		}
+		effect = {
+			set_country_flag = added_italy_hre
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					is_culture_group = italian
+					NOT = { tag = NAP }
+				}
+				set_country_flag = hre_member
+			}
+			ITA = {
+				all_core = {
+					limit = {
+						NOT = { is_core = NAP }
+					}
+					add_core = NNN
+				}
+			}
+			prestige = 20
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 20
+			}
+		}
+	}
+	
+	dismantle_hre = {
+		picture = flag_hre
+		potential = {
+			NOT = { has_country_flag = hre_emperor }
+			NOT = { has_country_flag = hre_member }
+			NOT = { has_global_flag = hre_dismantled }
+			is_greater_power = yes
+			exists = yes
+			is_ideology_enabled = communist
+			OR = {
+				BAV = {
+					has_country_flag = hre_emperor
+					capital_scope = { controlled_by = THIS }
+				}
+				AUS = {
+					has_country_flag = hre_emperor
+					capital_scope = { controlled_by = THIS }
+				}
+			}
+		}
+		allow = {
+			is_greater_power = yes
+		}
+		effect = {
+			any_country = {
+				limit = {
+					has_country_flag = hre_emperor
+				}
+				country_event = 800002
+			}
+			badboy = 20
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 10
 			}
 		}
 	}

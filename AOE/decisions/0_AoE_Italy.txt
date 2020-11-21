@@ -326,7 +326,7 @@ political_decisions = {
 			OR = {
 				government = fascist_dictatorship
 				government = proletarian_dictatorship
-				government = republic
+				government = democracy
 			}
 			NOT = { CIS = { exists = yes } }
 		}

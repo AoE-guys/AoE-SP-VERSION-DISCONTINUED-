@@ -616,12 +616,9 @@ country_event = {
 		prestige_factor = -0.2
 		ai_chance = {
 			factor = 1
-			ai_chance = {
-				factor = 0
-				modifier = {
-					factor = 5
-					badboy = 25
-				}
+			modifier = {
+				factor = 5
+				badboy = 25
 			}
 		}
 	}
@@ -637,7 +634,7 @@ country_event = {
 		create_vassal = PAP
 		prestige_factor = -0.1
 		ai_chance = {
-			factor = 0
+			factor = 1
 			modifier = {
 				factor = 6
 				NOT = { badboy = 25 }
@@ -665,9 +662,9 @@ country_event = {
 		}
 		badboy = 10
 		ai_chance = {
-			factor = 0
+			factor = 1
 			modifier = {
-				factor = 5
+				factor = 8
 				NOT = { badboy = 20 }
 			}
 		}

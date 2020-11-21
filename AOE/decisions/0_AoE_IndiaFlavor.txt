@@ -317,7 +317,7 @@ political_decisions = {
 			is_vassal = no
 			OR = {
 				is_greater_power = yes
-				military_score = 50
+				military_score = 80
 			}
 		}
 		effect = {

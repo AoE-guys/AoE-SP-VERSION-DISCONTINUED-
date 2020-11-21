@@ -185,6 +185,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = constitution_made }
 			exists = yes
+			NOT = { has_country_flag = NOT_colony }
 		}
 		
 		allow = {
@@ -209,6 +210,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = increase_colonization_efforts_nw }
 			NOT = {	total_pops = 1000000 }
+			NOT = { has_country_flag = NOT_colony }
 		}
 		
 		allow = {
@@ -237,6 +239,7 @@ political_decisions = {
 				government = colonial_company
 				government = dominion
 			}
+			NOT = { has_country_flag = NOT_colony }
 		}
 		
 		allow = {
@@ -280,6 +283,7 @@ political_decisions = {
 				government = dominion
 			}
 			NOT = { has_country_flag = colonial_militia }
+			NOT = { has_country_flag = NOT_colony }
 		}
 		
 		allow = {
@@ -322,6 +326,7 @@ political_decisions = {
 					neighbour = THIS
 				}
 			}
+			NOT = { has_country_flag = NOT_colony }
 		}	
 		allow = {
 			OR = {

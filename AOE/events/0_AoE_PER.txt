@@ -4,7 +4,7 @@ country_event = {
 	desc = "EVTDESC173200"
 	fire_only_once = yes
 	allow_multiple_instances = yes
-	picture = brabant_rev
+	picture = india_conq
 	
 	trigger = {
 		tag = PER
@@ -603,6 +603,7 @@ country_event = {
 	title = "Hotaki Rebellion Defeated!"
 	desc = "EVTDESC173201"
 	fire_only_once = yes
+	picture = india_conq
 	
 	trigger = {
 		has_global_flag = hotak_rebellion_happened
@@ -627,10 +628,18 @@ country_event = {
 	title = "Rise of Nader Shah"
 	desc = "EVTDESC173202"
 	fire_only_once = yes
+	picture = nader_shah
 	
 	trigger = {
-		year = 1736
+		year = 1730
 		tag = PER
+		OR = {
+		war_exhaustion = 25
+		year = 1736
+		}
+		NOT = { government = democracy }
+		NOT = { government = presidential_dictatorship }
+		NOT = { government = proletarian_dictatorship }
 	}
 	
 	option = {
@@ -644,17 +653,82 @@ country_event = {
 			personality = merciless
 			background = genius
 		}
+		all_core = {
+			add_core = PRA
+			remove_core = THIS
+		}
+		change_tag = PRA
+	}
+	
+	option = {
+		name = "He's a simple rebel! We will defeat him at once!"
+		war_exhaustion = 5
+		all_core = {
+			add_core = PRA
+		}
+		PER_1121 = { secede_province = PRA }
+		1119 = { secede_province = PRA }
+		PRA = {
+			add_country_modifier = {
+				name = nader_shah
+				duration = -1
+			}
+			define_general = {
+				name = "Nader Shah"
+				personality = merciless
+				background = genius
+			}
+		}
+	}
+}
+country_event = {
+	id = 173206
+	title = "Afghan Rebels"
+	desc = "EVTDESC173206"
+	fire_only_once = yes
+	picture = india_conq
+	
+	trigger = {
+		has_global_flag = hotak_rebellion_happened
+		HTK = {
+			exists = yes
+		}
+		OR = {
+		tag = PER
+		tag = PRA
+		}
+		HTK = {
+			1220 = {
+				controlled_by = HTK
+			}
+		}
+	}
+	
+	option = {
+		name = "They're growing in number!"
+		1220 = {
+			secede_province = HTK
+		}
+		1204 = {
+			secede_province = HTK
+		}
+		686 = {
+			secede_province = HTK
+		}
+		PER_1148 = {
+			secede_province = HTK
+		}
 	}
 }
 country_event = {
 	id = 173203
-	title = "Rise of Nader Shah"
+	title = "Assasination of Nader Shah"
 	desc = "EVTDESC173203"
 	fire_only_once = yes
+	picture = nader_shah
 	
 	trigger = {
 		year = 1747
-		tag = PER
 		has_country_modifier = nader_shah
 		war = yes
 	}
@@ -670,6 +744,7 @@ country_event = {
 	title = "The Sack of Delhi"
 	desc = "EVTDESC173204"
 	fire_only_once = yes
+	picture = delhi_sack
 	
 	trigger = {
 		has_country_modifier = nader_shah
@@ -689,5 +764,317 @@ country_event = {
 		}
 		treasury = 50000
 		prestige = 50
+	}
+}
+country_event = {
+	id = 173205
+	title = "Unrest in Isfhan"
+	desc = "EVTDESC173202"
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		OR = {
+			tag = PER
+			tag = PRA
+		}
+		NOT = { tech_school = unciv_tech_school }
+	}
+	
+	option = {
+		name = "May Allah guide us through harsh times"
+		set_global_flag = persia_dynasty_war
+		all_core = {
+			add_core = PRQ
+			add_core = PRZ
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		2548 = { secede_province = AZB }
+		PER_1112 = { secede_province = PRQ }
+		PER_1116 = { secede_province = PRQ }
+		PER_1121 = { secede_province = PRQ }
+		1122 = { secede_province = PRQ }
+		1129 = { secede_province = PRQ }
+		1118 = { secede_province = PRZ }
+		PER_1128 = { secede_province = PRZ }
+		PER_1127 = { secede_province = PRZ }
+		PER_1132 = { secede_province = PRZ }
+		PER_1136 = { secede_province = PRZ }
+		PER_1140 = { secede_province = PRZ }
+		PER_1142 = { secede_province = PRZ }
+		1119 = { secede_province = PRZ }
+		war = {
+			target = PRQ
+			attacker_goal = {
+				casus_belli = civil_war
+			}			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = yes
+		}
+		war = {
+			target = PRZ
+			attacker_goal = {
+				casus_belli = civil_war
+			}			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = yes
+		}
+		PRZ = { capital = 1127 }
+		PRQ = {
+			war = {
+				target = PRZ
+				attacker_goal = {
+					casus_belli = civil_war
+				}			
+				defender_goal = {
+					casus_belli = civil_war
+				}
+				call_ally = yes
+			}
+		}
+		random_owned = {
+			owner = {
+				limit = {
+					tag = PRA
+					NOT = { KHR = { exists = yes } }
+				}
+				all_core = {
+					remove_core = PRA
+				}
+				change_tag = KHR
+				set_country_flag = asfharid_ruler
+			}
+		}
+	}
+	
+	option = {
+		name = "May Allah guide Qajar to victory!"
+		set_global_flag = persia_dynasty_war
+		all_core = {
+			add_core = PRQ
+			add_core = PRZ
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		2548 = { secede_province = AZB }
+		PER_1112 = { secede_province = PRQ }
+		PER_1116 = { secede_province = PRQ }
+		PER_1121 = { secede_province = PRQ }
+		1122 = { secede_province = PRQ }
+		1129 = { secede_province = PRQ }
+		1118 = { secede_province = PRZ }
+		PER_1128 = { secede_province = PRZ }
+		PER_1127 = { secede_province = PRZ }
+		PER_1132 = { secede_province = PRZ }
+		PER_1136 = { secede_province = PRZ }
+		PER_1140 = { secede_province = PRZ }
+		PER_1142 = { secede_province = PRZ }
+		1119 = { secede_province = PRZ }
+		war = {
+			target = PRQ
+			attacker_goal = {
+				casus_belli = civil_war
+			}			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = yes
+		}
+		war = {
+			target = PRZ
+			attacker_goal = {
+				casus_belli = civil_war
+			}			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = yes
+		}
+		PRZ = { capital = 1127 }
+		PRQ = {
+			war = {
+				target = PRZ
+				attacker_goal = {
+					casus_belli = civil_war
+				}			
+				defender_goal = {
+					casus_belli = civil_war
+				}
+				call_ally = yes
+			}
+		}
+		random_owned = {
+			owner = {
+				limit = {
+					tag = PRA
+					NOT = { KHR = { exists = yes } }
+				}
+				all_core = {
+					remove_core = PRA
+				}
+				set_country_flag = asfharid_ruler
+			}
+		}
+		change_tag_no_core_switch = PRQ
+	}
+	
+	option = {
+		name = "May Allah guide Zand to victory!"
+		set_global_flag = persia_dynasty_war
+		all_core = {
+			add_core = PRQ
+			add_core = PRZ
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		2548 = { secede_province = AZB }
+		PER_1112 = { secede_province = PRQ }
+		PER_1116 = { secede_province = PRQ }
+		PER_1121 = { secede_province = PRQ }
+		1122 = { secede_province = PRQ }
+		1129 = { secede_province = PRQ }
+		1118 = { secede_province = PRZ }
+		PER_1128 = { secede_province = PRZ }
+		PER_1127 = { secede_province = PRZ }
+		PER_1132 = { secede_province = PRZ }
+		PER_1136 = { secede_province = PRZ }
+		PER_1140 = { secede_province = PRZ }
+		PER_1142 = { secede_province = PRZ }
+		1119 = { secede_province = PRZ }
+		war = {
+			target = PRQ
+			attacker_goal = {
+				casus_belli = civil_war
+			}			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = yes
+		}
+		war = {
+			target = PRZ
+			attacker_goal = {
+				casus_belli = civil_war
+			}			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = yes
+		}
+		PRZ = { capital = 1127 }
+		PRQ = {
+			war = {
+				target = PRZ
+				attacker_goal = {
+					casus_belli = civil_war
+				}			
+				defender_goal = {
+					casus_belli = civil_war
+				}
+				call_ally = yes
+			}
+		}
+		random_owned = {
+			owner = {
+				limit = {
+					tag = PRA
+					NOT = { KHR = { exists = yes } }
+				}
+				all_core = {
+					remove_core = PRA
+				}
+				set_country_flag = asfharid_ruler
+			}
+		}
+		change_tag_no_core_switch = PRZ
+	}
+}
+country_event = {
+	id = 173207
+	title = "Persia secured"
+	desc = "EVTDESC173207"
+	fire_only_once = yes
+	picture = shah
+	
+	trigger = {
+		has_global_flag = persia_dynasty_war
+		OR = {
+			AND = {
+				tag = PRA
+				PRZ = { exists = no }
+				PRQ = { exists = no }
+			}
+			AND = {
+				tag = PRZ
+				PRQ = { exists = no }
+				PRA = { exists = no }
+			}
+			AND = {
+				tag = PRQ
+				PRZ = { exists = no }
+				PRA = { exists = no }
+			}
+		}
+		#NOT = { tech_school = unciv_tech_school }
+	}
+	
+	option = {
+		name = "Great!"
+		random_owned = {
+			owner = {
+				limit = {
+					tag = PRA
+					PRZ = { exists = no }
+					PRQ = { exists = no }
+				}
+				all_core = {
+					remove_core = PRQ
+					remove_core = PRZ
+				}
+			}
+		}
+		random_owned = {
+			owner = {
+				limit = {
+					tag = PRZ
+					PRQ = { exists = no }
+					PRA = { exists = no }
+				}
+				all_core = {
+					remove_core = PRQ
+					remove_core = PRA
+				}
+			}
+		}
+		random_owned = {
+			owner = {
+				limit = {
+					tag = PRQ
+					PRZ = { exists = no }
+					PRA = { exists = no }
+				}
+				all_core = {
+					remove_core = PRA
+					remove_core = PRZ
+				}
+			}
+		}
+		prestige = 40
 	}
 }

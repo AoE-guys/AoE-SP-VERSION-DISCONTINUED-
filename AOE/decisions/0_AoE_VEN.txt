@@ -458,7 +458,7 @@ political_decisions = {
 			add_accepted_culture = friulian
 			add_accepted_culture = ladin
 			random_owned = { owner = { limit = { tag = TUS } set_country_flag = ita_tus } }
-			random_owned = { owner = { limit = { tag = COR } set_country_flag = ita_cor } }
+			random_owned = { owner = { limit = { tag = CRS } set_country_flag = ita_cor } }
 			random_owned = { owner = { limit = { tag = NAP } set_country_flag = ita_nap } }
 			random_owned = { owner = { limit = { tag = SVY } set_country_flag = ita_svy } }
 			random_owned = { owner = { limit = { tag = SAR } set_country_flag = ita_sar } }

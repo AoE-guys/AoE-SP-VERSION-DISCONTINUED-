@@ -1060,10 +1060,10 @@ country_event = {
 		}
 		any_owned = {
         limit = {
-		      state_scope = {
-	          literacy = 0.9
-              NOT = { literacy = 1 }
-	          }
+		    state_scope = {
+	        literacy = 0.9
+            NOT = { literacy = 1 }
+	        }
 		}
 		#change_variable = {
         #which = dt_rating

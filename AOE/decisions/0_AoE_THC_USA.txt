@@ -28,10 +28,7 @@ political_decisions = {
 
 		picture = florida_map
 		potential = {
-			OR = {
-				tag = USA
-				tag = THC
-			}
+			tag = USA
 			NOT = {
 				has_country_flag = claim_florida_usa
 			}
@@ -193,8 +190,8 @@ political_decisions = {
 			any_country = {
 				limit = {
 					government = tribal_democracy
+					alliance_with = THIS
 				}
-				alliance_with = THIS
 				relation = {
 					who = THIS
 					value = -200

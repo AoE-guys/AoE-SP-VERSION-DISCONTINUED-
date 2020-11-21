@@ -4,6 +4,7 @@ country_event = {
 	title = "Brazilian Goldrush"
 	desc = "It was a good idea to come to Brazil"
 	fire_only_once = yes
+	picture = mine
 	
 	trigger = {
 		tag = PBZ
@@ -28,6 +29,7 @@ country_event = {
 	title = "Silver Road"
 	desc = "Berggeschrei!"
 	fire_only_once = yes
+	picture = mine
 	
 	trigger = {
 		tag = SAX
@@ -58,6 +60,7 @@ country_event = {
 	title = "Planchas de Plata"
 	desc = "JJba steel ball run cancelled, time for silver ball"
 	fire_only_once = yes
+	picture = mine
 	
 	trigger = {
 		year = 1736
@@ -82,6 +85,7 @@ country_event = {
 	id = 4201340
 	title = "Miners struck a massive vein"
 	desc = "Outstanding!"
+	picture = mine
 	
 	mean_time_to_happen = {
 		months = 60
@@ -109,6 +113,7 @@ country_event = {
 	id = 4201341
 	title = "Miners struck a large vein"
 	desc = "Wonderful!"
+	picture = mine
 	
 	mean_time_to_happen = {
 		months = 48
@@ -136,6 +141,7 @@ country_event = {
 	id = 4201342
 	title = "Miners struck a notable vein"
 	desc = "Very good!"
+	picture = mine
 	
 	mean_time_to_happen = {
 		months = 36
@@ -163,6 +169,7 @@ country_event = {
 	id = 4201343
 	title = "Miners struck a new vein"
 	desc = "Good enough!"
+	picture = mine
 	
 	mean_time_to_happen = {
 		months = 24
@@ -191,6 +198,7 @@ country_event = {
 	title = "El Eden"
 	desc = "Don't build a city over it tho."
 	fire_only_once = yes
+	picture = mine
 	
 	trigger = {
 		OR = {

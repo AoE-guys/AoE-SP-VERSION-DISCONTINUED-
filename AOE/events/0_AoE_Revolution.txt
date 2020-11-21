@@ -1,0 +1,82 @@
+country_event = {
+	id = 181200
+	title = "Neighbour's people cry for liberty"
+	desc = "EVTDESC18998"
+	picture = "revolution"
+	
+	trigger = {
+		OR = {
+			government = proletarian_dictatorship
+			government = fascist_dictatorship
+		}
+		OR = {
+			war_policy = jingoism
+			war_policy = pro_military
+		}
+		war = no
+		any_neighbor_country = {
+			NOT = {
+					government = proletarian_dictatorship
+			}
+			NOT = {
+				government = fascist_dictatorship
+			}
+			NOT = {
+				government = democracy
+			}
+			is_vassal = no
+			NOT = { tech_school = unciv_tech_school }
+			NOT = { is_our_vassal = THIS }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.9
+			ruling_party_ideology = communist
+		}
+		modifier = {
+			factor = 1.4
+			ruling_party_ideology = liberal
+		}
+		modifier = {
+			factor = 1.2
+			ruling_party_ideology = socialist
+		}
+		modifier = {
+			factor = 0.6
+			war_policy = jingoism
+		}
+		modifier = {
+			factor = 0.7
+			is_greater_power = yes
+		}
+	}
+	
+	option = {
+		name = "Let us spread liberty across the land!"
+		random_country = {
+			limit = {
+				neighbour = THIS
+				NOT = {
+					government = proletarian_dictatorship
+				}
+				NOT = {
+					government = fascist_dictatorship
+				}
+				NOT = {
+					government = democracy
+				}
+				is_vassal = no
+				NOT = { tech_school = unciv_tech_school }
+				NOT = { is_our_vassal = THIS }
+			}
+			add_casus_belli = {
+				target = THIS
+				type = install_communism
+				months = 12
+			}
+		}
+	}
+}

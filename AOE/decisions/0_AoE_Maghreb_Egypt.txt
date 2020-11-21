@@ -1,6 +1,7 @@
 political_decisions = {
 
 	centralize_morocco = {
+		picture = crown
 		potential = {
 			tag = MOR
 			FEZ = { vassal_of = THIS }
@@ -23,6 +24,7 @@ political_decisions = {
 	}
 	
 	conquer_morocco = {
+		picture = form_morocco
 		potential = {
 			OR = {
 				tag = FEZ
@@ -57,6 +59,7 @@ political_decisions = {
 	}
 	
 	form_morocco = {
+		picture = form_morocco
 		potential = {
 			OR = {
 				tag = FEZ
@@ -80,6 +83,7 @@ political_decisions = {
 	}
 	
 	form_andalusia = {
+		picture = form_andalusia
 		potential = {
 			primary_culture = maghrebi
 			NOT = {
@@ -143,7 +147,7 @@ political_decisions = {
 		picture = map_iraq
 		potential = {
 			tag = EGY
-			NOT = { has_country_flag = conquest_of_levant }
+			NOT = { has_country_flag = conquest_of_syria }
 		}
 		allow = {
 			OR = {
@@ -153,7 +157,7 @@ political_decisions = {
 			owns = 897
 		}
 		effect = {
-			set_country_flag = conquest_of_levant
+			set_country_flag = conquest_of_syria
 			TUR_935 = {
 				add_core = THIS
 			}

@@ -58,4 +58,149 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
+	
+	become_savoy = {
+		potential = {
+			tag = SAR
+			NOT = {
+				exists = SVY
+				owns = 765
+			}
+		}
+
+		allow = {
+			war = no
+			owns = 720
+			NOT = { owns = 765 }
+		}
+
+		effect = {
+			SAR = {
+				all_core = {
+					add_core = SVY
+					remove_core = SAR
+				}
+			}
+			change_tag = SVY
+			any_pop = {
+				limit = { has_pop_culture = north_italian }
+				militancy = -3
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	kingdom_title = {
+		potential = {
+			OR = {
+			tag = SVY
+			tag = SAR
+			}
+			NOT = { has_country_flag = kingdom_title }
+		}
+
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			war = no
+			OR = {
+				owns = 765
+				owns = 762
+			}
+		}
+
+		effect = {
+			set_country_flag = kingdom_title
+			prestige = 25
+			any_pop = {
+				limit = { has_pop_culture = north_italian }
+				militancy = -3
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	emmanuel_admin_reform = {
+		potential = {
+			OR = {
+				tag = SVY
+				tag = SAR
+				AND = {
+					tag = ITA
+					has_country_flag = ita_svy
+					has_country_flag = ita_sar
+				}
+			}
+			NOT = { has_country_modifier = savoyard_law_code }
+		}
+
+		allow = {
+			mass_politics = 1
+			war = no
+			has_country_modifier = charles_emmanuel
+		}
+
+		effect = {
+			prestige = 5
+			any_pop = {
+				limit = { has_pop_culture = north_italian }
+				militancy = -3
+			}
+			add_country_modifier = {
+				name = savoyard_law_code
+				duration = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	emmanuel_mil_reform = {
+		potential = {
+			OR = {
+				tag = SVY
+				tag = SAR
+				AND = {
+					tag = ITA
+					has_country_flag = ita_svy
+					has_country_flag = ita_sar
+				}
+			}
+			PRU = {
+				has_country_modifier = frederick_grosse
+			}
+			NOT = { has_country_modifier = fredrican_army_model }
+		}
+
+		allow = {
+			relation = {
+				who = PRU
+				value = 100
+			}
+			war = no
+			has_country_modifier = charles_emmanuel
+		}
+
+		effect = {
+			prestige = 5
+			add_country_modifier = {
+				name = fredrican_army_model
+				duration = 18250
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

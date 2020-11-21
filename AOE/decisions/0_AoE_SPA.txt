@@ -655,6 +655,7 @@ political_decisions = {
 	}
 	
 	enact_new_constitution_spc = {
+		picture = 1812_constitution
 		potential = {
 			tag = SPC
 			NOT = { has_country_flag = enacted_new_constitution_spc }
@@ -667,31 +668,11 @@ political_decisions = {
 			is_greater_power = yes
 			plurality = 20
 			OR = {
-				ruling_party_ideology  = liberal
+				ruling_party_ideology = liberal
 				ruling_party_ideology = socialist
-				ruling_party_ideology  = communist
+				ruling_party_ideology = communist
 			}
 			political_thought_8 = 1
-			VNS = {
-				vassal_of = THIS
-				in_sphere = THIS
-			}
-			VNG = {
-				vassal_of = THIS
-				in_sphere = THIS
-			}
-			FLO = {
-				vassal_of = THIS
-				in_sphere = THIS
-			}
-			VOP = {
-				vassal_of = THIS
-				in_sphere = THIS
-			}
-			VLP = {
-				vassal_of = THIS
-				in_sphere = THIS
-			}
 		}
 		
 		effect = {

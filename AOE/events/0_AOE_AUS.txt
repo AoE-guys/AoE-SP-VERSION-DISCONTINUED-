@@ -268,7 +268,7 @@ country_event = { # 10231 Pest Congress-1
 	id = 10231
 	title = "EVTNAME10231" #Pest Congress: Starts
 	desc = "EVTDESC10231"
-	picture = "unite"
+	picture = "rakoczi"
 
 	fire_only_once = yes
 	
@@ -335,7 +335,7 @@ country_event = { # 10232 Pest Congress-2
 	id = 10232
 	title = "EVTNAME10232" #Pest Congress: Goes
 	desc = "EVTDESC10232"
-	picture = "unite"
+	picture = "rakoczi"
 
 	is_triggered_only = yes
 	
@@ -386,7 +386,7 @@ country_event = { #10239 Pest Congress-3
 	id = 10239
 	title = "EVTNAME10234" #Pest Congress: End
 	desc = "EVTDESC10234"
-	picture = "unite"
+	picture = "rakoczi"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -460,7 +460,7 @@ country_event = { #10235 Transylvania-Hungary
 	id = 10235
 	title = "EVTNAME10235" #Transylvania-Hungary
 	desc = "EVTDESC10235"
-	picture = "unite"
+	picture = "kuruc"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -528,7 +528,7 @@ country_event = { #10236 Romania-Hungary
 	id = 10236
 	title = "EVTNAME10236" #Romania-Hungary
 	desc = "EVTDESC10236"
-	picture = "unite"
+	picture = "kuruc"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -573,7 +573,7 @@ country_event = { #10237 Pan-Hungaria
 	id = 10237
 	title = "EVTNAME10237" #Pan-Hungarian empire (Pannonian)
 	desc = "EVTDESC10237"
-	picture = "unite"
+	picture = "kuruc"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -644,7 +644,7 @@ country_event = { #10238 Austrian event for confederation
 	id = 10238
 	title = "EVTNAME10238" 
 	desc = "EVTDESC10238"
-	picture = "unite"
+	picture = "austrian_empire"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -698,7 +698,7 @@ country_event = { #10233 Rakoczi imprisoned
 	id = 10233
 	title = "EVTNAME10233" #Pest Congress: Rakoczi imprisoned
 	desc = "EVTDESC10233"
-	picture = "unite"
+	picture = "rakoczi"
 
 	is_triggered_only = yes
 	
@@ -749,7 +749,7 @@ country_event = { #10224 Hungary explodes
 	id = 10224
 	title = "EVTNAME10224" #Hungary explodes
 	desc = "EVTDESC10224"
-	picture = "unite"
+	picture = "kuruc"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -843,7 +843,7 @@ country_event = { #10234 National revolts
 	id = 10234
 	title = "EVTNAME10234" #Hungarian national revolts
 	desc = "EVTDESC10234"
-	picture = "unite"
+	picture = "kuruc"
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -936,7 +936,7 @@ country_event = { #99990 Austrian crown takes back
 	id = 99990
 	title = "EVTNAME99990" #System of satellites
 	desc = "EVTDESC99990"
-	picture = "unite"
+	picture = "kuruc"
 
 	is_triggered_only = no
 	fire_only_once = no
@@ -999,45 +999,6 @@ country_event = { #99990 Austrian crown takes back
 	}
 }
 
-
-country_event = { #5555 Hungarian rebellion (War)
-	id = 5555
-	title = "EVTNAME5555" #War
-	desc = "EVTDESC5555"
-	picture = "unite"
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-#	trigger = {
-#		tag = HUN
-#		has_country_flag = hungary_prepares_to_war
-#	}
-	
-#	mean_time_to_happen = {
-#		months = 1
-#	}
-	
-	option = {
-		name = "EVT5555OPT"
-		AUS = {
-			casus_belli = {
-				target = HUN
-				type = make_puppet
-				months = 120
-			}
-			war = {
-				target = HUN
-				attacker_goal = { casus_belli = make_puppet }
-				defender_goal = { casus_belli = cut_down_to_size }
-				call_ally = no
-			}
-		}
-		prestige = 20
-		clr_country_flag = hungary_prepares_to_war
-	}
-}
-
 country_event = { #10225 Hungarian rebellion
 	id = 10225
 	title = "EVTNAME10225" #Hungarian Revolution of $YEAR$
@@ -1046,18 +1007,17 @@ country_event = { #10225 Hungarian rebellion
 	news_desc_long = "EVTDESC10225_NEWS_LONG"
 	news_desc_medium = "EVTDESC10225_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC10225_NEWS_SHORT"
-	picture = "hungarian_revolution_1848"
+	picture = "rakoczi"
 	
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
-		tag = AUS
+		tag = HUN
 		owns = 641
 		war = yes
 		has_global_flag = spanish_succesion_crisis
 		NOT = {
-			HUN = { involved_in_crisis = yes }
-			exists = HUN
 			has_global_flag = hungarian_revolution_occurred
 		}
 	}
@@ -1071,214 +1031,81 @@ country_event = { #10225 Hungarian rebellion
 	}
 
 	option = {
-
 		name = "EVT10225OPTA"
-		778 = { remove_core = HUN }
-		
-		AUS_641 = {
-			secede_province = HUN
-		}
-		AUS_950 = {
-			secede_province = HUN
-		}
-		AUS_654 = {
-			secede_province = HUN
-		}
-		AUS_657 = {
-			secede_province = HUN
-		}
-		AUS_652 = {
-			secede_province = HUN
-		}
-		AUS_2538 = {
-			secede_province = HUN
-		}
-		
 		AUS = {
-			any_owned = {
-				limit = {
-						is_core = HUN
-					}
-				add_province_modifier = { name = hungarians_rise 
-				duration = -1 }
-			}
 			relation = { who = HUN value = -100 }
-		any_owned = {
-			limit = { is_core = AUS }
-			remove_province_modifier = liberal_agitation
-		}
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = -6
-		}
-		add_country_modifier = {
-			name = no_more_war
-			duration = 7
-		}
-		641 = {
-			remove_province_modifier = hungarians_rise
-		}
-
-		}
-		HUN = {
-			capital = 641
-			political_reform = mandatory_service 
-			government = hms_government
-			political_reform = non_secret_ballots
-			political_reform = universal_weighted_voting
-			political_reform = population_equal_weight
-			political_reform = free_press
-			political_reform = yes_meeting
-			clr_country_flag = communist_gov
-			clr_country_flag = absolute_monarchy_gov
-			clr_country_flag = semi_constitutional_monarchy_gov
-			set_country_flag = constitutional_monarchy_gov
-			clr_country_flag = democracy_gov
-			clr_country_flag = presidential_dictatorship_gov
-			clr_country_flag = fascist_gov
-			clr_country_flag = anarcho_liberal_gov
-			add_country_modifier = {
-				name = no_more_war
-				duration = 7
-			}
-			country_event = 999
-		}
-		SIE = {
-			country_event = 55555
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
-	
-	option = {
-		name = "EVT10225OPTA.2"
-		778 = { remove_core = HUN }
-		
-		AUS = {
 			any_owned = {
-				limit = {
-						is_core = HUN
-					}
-				add_province_modifier = { name = hungarians_rise 
-				duration = -1 }
-				secede_province = HUN
+				limit = { is_core = AUS }
+				remove_province_modifier = liberal_agitation
 			}
-			relation = { who = HUN value = -100 }
-		any_owned = {
-			limit = { is_core = AUS }
-			remove_province_modifier = liberal_agitation
-		}
-		HUN = {
-			country_event = 999
-		}
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = -6
-		}
-		add_country_modifier = {
-			name = no_more_war
-			duration = 7
-		}
-		641 = {
-			remove_province_modifier = hungarians_rise
-		}
-
-		}
-		HUN = {
-			capital = 641
-			political_reform = mandatory_service 
-			government = hms_government
-			political_reform = non_secret_ballots
-			political_reform = universal_weighted_voting
-			political_reform = population_equal_weight
-			political_reform = free_press
-			political_reform = yes_meeting
-			clr_country_flag = communist_gov
-			clr_country_flag = absolute_monarchy_gov
-			clr_country_flag = semi_constitutional_monarchy_gov
-			set_country_flag = constitutional_monarchy_gov
-			clr_country_flag = democracy_gov
-			clr_country_flag = presidential_dictatorship_gov
-			clr_country_flag = fascist_gov
-			clr_country_flag = anarcho_liberal_gov
-			add_country_modifier = {
-				name = no_more_war
-				duration = 7
-			}
-		}
-		change_tag_no_core_switch = HUN
-		SIE = {
-			country_event = 55555
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
-
-country_event = { #999 Preparations to war event
-	id = 999
-	title = "EVTNAME999" #hungarian prepararions
-	desc = "EVTDESC999"
-	picture = "unite"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVT999OPT"
-		HUN = {
-			ammunition = 100
-			small_arms = 100
-			canned_food = 500
-			wool = 200
-			steel = 50
-			fabric = 50
-			luxury_clothes = 30
-			grain = 100
-			set_country_flag = hungary_prepares_to_war
 			any_pop = {
-				limit = {
-					OR = {
-						AND = {
-							consciousness = 0.1
-							militancy = 0.5
-							has_pop_culture = hungarian
-						}
-						AND = {
-							militancy = 1
-							NOT = { has_pop_culture = hungarian	}
-							NOT = { has_pop_culture = south_german }
-						}
-					}		
-				}
-				pop_type = soldiers
+				limit = { is_primary_culture = yes }
+				militancy = -6
 			}
-
-			all_core = {
+			add_country_modifier = {
+				name = no_more_war
+				duration = 7
+			}
+			release_vassal = HUN
+		}
+		HUN = {
+			capital = 641
+			political_reform = mandatory_service 
+			government = hms_government
+			political_reform = non_secret_ballots
+			political_reform = universal_weighted_voting
+			political_reform = population_equal_weight
+			political_reform = free_press
+			political_reform = yes_meeting
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			set_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+			add_country_modifier = {
+				name = no_more_war
+				duration = 7
+			}
+			any_country = {
 				limit = {
+					war_with = HUN
 					OR = {
-						owned_by = AUS
-						owned_by = HUN
+						has_country_flag = support_habsburg_heir
+						has_country_flag = support_bourbon_heir
 					}
 				}
-				add_province_modifier = { name = hungarians_rise 
-					duration = 7200 }
+				end_war = HUN
 			}
-			country_event = 5555
-		
+		}
+		SIE = {
+			country_event = 55555
+		}
+		AUS = {
+			casus_belli = {
+				target = HUN
+				type = make_puppet
+				months = 120
+			}
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = make_puppet }
+				defender_goal = { casus_belli = cut_down_to_size }
+				call_ally = no
+			}
 		}
 		ai_chance = {
 			factor = 100
 		}
 	}
 }
-
 country_event = { #55555 Rakoczi decides
 	id = 55555
 	title = "EVTNAME55555" #Rakoczi decides 
 	desc = "EVTDESC55555"
-	picture = "unite"
+	picture = "rakoczi"
 
 	is_triggered_only = yes
 
