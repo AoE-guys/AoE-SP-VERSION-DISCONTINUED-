@@ -2160,67 +2160,152 @@
 	aristocrats = {
 		culture = javan
 		religion = animist
-		size = 80
+		size = 40
 	}
 
 	clergymen = {
 		culture = javan
 		religion = animist
-		size = 60
+		size = 30
 	}
 
 	artisans = {
 		culture = javan
 		religion = animist
-		size = 600
+		size = 300
 	}
 
 	soldiers = {
 		culture = javan
 		religion = animist
-		size = 80
+		size = 40
 	}
 
 	slaves = {
 		culture = javan
 		religion = animist
-		size = 7980
+		size = 4980
 	}
 
 	aristocrats = {
 		culture = javan
 		religion = sunni
-		size = 1400
+		size = 700
 	}
 
 	clergymen = {
 		culture = javan
 		religion = sunni
-		size = 1300
+		size = 700
 	}
 
 	artisans = {
-		culture = javan
-		religion = sunni
-		size = 6400
+		culture = balinese
+		religion = hindu
+		size = 3400
 	}
 
 	soldiers = {
 		culture = javan
 		religion = sunni
-		size = 1200
+		size = 800
 	}
 
 	zzz_dummy = {
 		culture = javan
 		religion = sunni
-		size = 116375
+		size = 25375
+	}
+	
+	zzz_dummy = {
+		culture = balinese
+		religion = hindu
+		size = 24000
+	}
+
+	zzz_dummy = {
+		culture = madurese
+		religion = sunni
+		size = 23375
 	}
 
 	labourers = {
+		culture = madurese
+		religion = sunni
+		size = 3125
+	}
+}
+3412 = {
+	aristocrats = {
+		culture = javan
+		religion = animist
+		size = 40
+	}
+
+	clergymen = {
+		culture = javan
+		religion = animist
+		size = 30
+	}
+
+	artisans = {
+		culture = javan
+		religion = animist
+		size = 300
+	}
+
+	soldiers = {
+		culture = javan
+		religion = animist
+		size = 40
+	}
+
+	slaves = {
+		culture = javan
+		religion = animist
+		size = 3980
+	}
+
+	aristocrats = {
 		culture = javan
 		religion = sunni
-		size = 6125
+		size = 700
+	}
+
+	clergymen = {
+		culture = javan
+		religion = sunni
+		size = 600
+	}
+
+	artisans = {
+		culture = madurese
+		religion = sunni
+		size = 3000
+	}
+
+	soldiers = {
+		culture = javan
+		religion = sunni
+		size = 400
+	}
+
+	zzz_dummy = {
+		culture = javan
+		religion = sunni
+		size = 34375
+	}
+	
+	zzz_dummy = {
+		culture = madurese
+		religion = sunni
+		size = 28375
+	}
+
+	labourers = {
+		culture = madurese
+		religion = sunni
+		size = 3125
 	}
 }
 #Madura (496000/124000 POPS)
