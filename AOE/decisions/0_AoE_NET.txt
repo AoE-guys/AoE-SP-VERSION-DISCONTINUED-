@@ -258,4 +258,23 @@ political_decisions = {
 			}
 			ai_will_do = { factor = 1 }
 		}
+		nationalise_voc = {
+			picture = majapahit
+			potential = {
+				tag = NET
+				VOC = { vassal_of = THIS }	
+			}
+			allow = {
+				year = 1795
+			}
+			effect = {
+				inherit = VOC
+				VOC = {
+					all_core = {
+					remove_core = VOC
+					}
+				}
+			}
+			ai_will_do = { factor = 1 }
+		}
 }
