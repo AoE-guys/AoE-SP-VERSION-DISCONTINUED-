@@ -846,9 +846,6 @@ country_event = {
 					tag = PRA
 					NOT = { KHR = { exists = yes } }
 				}
-				all_core = {
-					remove_core = PRA
-				}
 				change_tag = KHR
 				set_country_flag = asfharid_ruler
 			}
