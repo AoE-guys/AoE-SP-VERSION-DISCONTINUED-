@@ -214,132 +214,132 @@ political_decisions = {
 		}
 	}
 	
-	press_the_claim_on_french_throne = {
-		picture = anglo_french_union
-		potential = {
-			owns = 300
-			300 = {
-				is_capital = yes
-			}
-			NOT = { has_country_flag = french_throne }
-			425 = {
-				owner = {
-					OR = {
-						government = absolute_monarchy
-						government = prussian_constitutionalism
-						government = hms_government
-					}
-				}
-			}
-			exists = yes
-		}
-		allow = {
-			is_greater_power = yes
-			425 = {
-				owner = {
-					is_greater_power = no
-				}
-			}
-			controls = 425
-			OR = {
-				AND = {
-					military_score = 250
-					BOR = {
-						exists = yes
-					}
-				}
-				AND = {
-					military_score = 250
-					FRA = {
-						exists = yes
-					}
-				}
-			}
-		}
-		effect = {
-			badboy = 30
-			set_country_flag = french_throne
-			any_country = {
-				limit = {
-					owns = 300
-					BOR = {
-						exists = yes
-					}
-				}
-				create_vassal = BOR
-			}
-			any_country = {
-				limit = {
-					owns = 300
-					FRA = {
-						exists = yes
-					}
-				}
-				create_vassal = FRA
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#press_the_claim_on_french_throne = {
+	#	picture = anglo_french_union
+	#	potential = {
+	#		owns = 300
+	#		300 = {
+	#			is_capital = yes
+	#		}
+	#		NOT = { has_country_flag = french_throne }
+	#		425 = {
+	#			owner = {
+	#				OR = {
+	#					government = absolute_monarchy
+	#					government = prussian_constitutionalism
+	#					government = hms_government
+	#				}
+	#			}
+	#		}
+	#		exists = yes
+	#	}
+	#	allow = {
+	#		is_greater_power = yes
+	#		425 = {
+	#			owner = {
+	#				is_greater_power = no
+	#			}
+	#		}
+	#		controls = 425
+	#		OR = {
+	#			AND = {
+	#				military_score = 250
+	#				BOR = {
+	#					exists = yes
+	#				}
+	#			}
+	#			AND = {
+	#				military_score = 250
+	#				FRA = {
+	#					exists = yes
+	#				}
+	#			}
+	#		}
+	#	}
+	#	effect = {
+	#		badboy = 30
+	#		set_country_flag = french_throne
+	#		any_country = {
+	#			limit = {
+	#				owns = 300
+	#				BOR = {
+	#					exists = yes
+	#				}
+	#			}
+	#			create_vassal = BOR
+	#		}
+	#		any_country = {
+	#			limit = {
+	#				owns = 300
+	#				FRA = {
+	#					exists = yes
+	#				}
+	#			}
+	#			create_vassal = FRA
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 	
-	unite_french_and_english_crowns = {
-		picture = union_act
-		potential = {
-			owns = 300
-			300 = { is_capital = yes }
-			NOT = { exists = EFM }
-			exists = yes
-		}
-		
-		allow = {
-			war = no
-			owns = 300
-			ideological_thought = 1
-			425 = {
-				owner = {
-					in_sphere = THIS
-					vassal_of = THIS
-					ai = yes
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 20
-			badboy = 29
-			all_core = {
-				add_core = EFM
-				remove_core = THIS
-			}
-			any_country = {
-				limit = {
-					owns = 425
-					exists = yes
-					vassal_of = THIS
-					ai = yes
-				}
-				
-				all_core = { 
-					add_core = THIS
-					secede_province = THIS
-				}
-			}
-			change_tag = EFM
-			add_accepted_culture = french
-			any_country = {
-				limit = {
-					NOT = { tag = SCO }
-					exists = yes
-					owns = 300
-					owns = 269
-				}
-				release_vassal = SCO
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
+	#unite_french_and_english_crowns = {
+	#	picture = union_act
+	#	potential = {
+	#		owns = 300
+	#		300 = { is_capital = yes }
+	#		NOT = { exists = EFM }
+	#		exists = yes
+	#	}
+	#	
+	#	allow = {
+	#		war = no
+	#		owns = 300
+	#		ideological_thought = 1
+	#		425 = {
+	#			owner = {
+	#				in_sphere = THIS
+	#				vassal_of = THIS
+	#				ai = yes
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 20
+	#		badboy = 29
+	#		all_core = {
+	#			add_core = EFM
+	#			remove_core = THIS
+	#		}
+	#		any_country = {
+	#			limit = {
+	#				owns = 425
+	#				exists = yes
+	#				vassal_of = THIS
+	#				ai = yes
+	#			}
+	#			
+	#			all_core = { 
+	#				add_core = THIS
+	#				secede_province = THIS
+	#			}
+	#		}
+	#		change_tag = EFM
+	#		add_accepted_culture = french
+	#		any_country = {
+	#			limit = {
+	#				NOT = { tag = SCO }
+	#				exists = yes
+	#				owns = 300
+	#				owns = 269
+	#			}
+	#			release_vassal = SCO
+	#		}
+	#	}
+	#	
+	#	ai_will_do = { factor = 1 }
+	#}
 	claim_the_raj_title = {
 		picture = raj
 		potential = {

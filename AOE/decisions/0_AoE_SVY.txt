@@ -60,6 +60,7 @@ political_decisions = {
     }
 	
 	become_savoy = {
+		picture = become_savoy
 		potential = {
 			tag = SAR
 			NOT = {
@@ -94,6 +95,7 @@ political_decisions = {
 	}
 	
 	kingdom_title = {
+		picture = crown
 		potential = {
 			OR = {
 			tag = SVY
@@ -129,6 +131,7 @@ political_decisions = {
 	}
 	
 	emmanuel_admin_reform = {
+		picture = administration
 		potential = {
 			OR = {
 				tag = SVY
@@ -166,6 +169,7 @@ political_decisions = {
 	}
 	
 	emmanuel_mil_reform = {
+		picture = army_training
 		potential = {
 			OR = {
 				tag = SVY

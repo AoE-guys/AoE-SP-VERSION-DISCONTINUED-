@@ -8,7 +8,7 @@ country_event = {
 	id = 100028
 	title = "Call for Extraordinary Estates Gathering" #start of bankruptcy event chain for monarchy
 	desc = "EVTDESC100028"
-	picture = "french_revolution_1848"
+	picture = "riots_1700s"
 
 	#fire_only_once = yes
 	#major = yes
@@ -31,6 +31,7 @@ country_event = {
 					 government = tsardom
 					 #government = trade_monarchy
 			   }
+			   
 	}
 	
 	mean_time_to_happen =  {

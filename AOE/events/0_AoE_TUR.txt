@@ -816,12 +816,42 @@ country_event = {
 country_event = {
 	id = 173622
 	title = "$FROMCOUNTRY$ accepts!"
-	desc = "EVTDESC173619"
-	picture = glos
+	desc = "EVTDESC173622"
+	picture = treaty_signing
 	is_triggered_only = yes
 	
 	option = {
 		name = "Great!"
 		prestige = 5
+	}
+}
+country_event = {
+	id = 173621
+	title = "Treaty of Constatinople"
+	desc = "EVTDESC173619"
+	picture = treaty_signing
+	
+	trigger = {
+		year = 1700
+		war_with = RUS
+		tag = TUR
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	option = {
+		name = "Go through with the peace as planned"
+		1047 = { secede_province = RUS }
+		end_war = RUS
+		prestige = -5
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "Never!"
+		prestige = 5
+		war_exhaustion = 5
+		ai_chance = { factor = 1 }
 	}
 }

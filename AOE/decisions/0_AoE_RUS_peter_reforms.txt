@@ -114,17 +114,31 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 15
+			random_owned = {
+				limit = {
+					SWE = {
+						war = yes
+					}
+				}
+				war = {
+					target = SWE
+					attacker_goal = { casus_belli = acquire_all_cores country = RUS }
+					defender_goal = { casus_belli = cut_down_to_size }
+					call_ally = no
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { year = 1701 }
-				NOT = { has_global_flag = plc_civil_war }
-			}
-			modifier = {
-				factor = 1
-				NOT = { year = 1705 }
+				OR = {
+					AND = {
+						NOT = { year = 1701 }
+						NOT = { has_global_flag = plc_civil_war }
+					}
+					NOT = { year = 1705 }
+				}
 			}
 		}
 	}
@@ -425,9 +439,9 @@ political_decisions = {
 			exists = yes
 		}
 		allow = {
-			money = 30000
+			#money = 30000
 			synthetic_polymers = 1
-			mass_politics = 1
+			#mass_politics = 1
 			NOT = { CRI = { exists = yes } }
 			owns = 968
 			owns = 970
@@ -435,104 +449,19 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = volga_germs
-			money = -30000
-			PRU_578 = { 
-				any_pop = { 
-					limit = { 
-						OR = {
-							has_pop_culture = north_german
-							has_pop_culture = south_german
-						}
-						militancy = 5
-					NOT = { has_pop_culture = south_italian }
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = HET
+						region = RUS_977
+						region = RUS_979
+						region = RUS_1041
+						region = RUS_1037
 					}
-					
-					move_pop = 1037
 				}
-			}
-			PRU_575 = { 
-				any_pop = { 
-					limit = { 
-						OR = {
-							has_pop_culture = north_german
-							has_pop_culture = south_german
-						}
-						NOT = { has_pop_culture = south_italian }
-						militancy = 5
-					} 
-					move_pop = 1035
-				}
-			}
-			PRU_570 = { 
-				any_pop = { 
-					limit = { 
-						OR = {
-							has_pop_culture = north_german
-							has_pop_culture = south_german
-						}
-						NOT = { has_pop_culture = south_italian }
-						NOT = { has_pop_culture = north_italian }
-						militancy = 5
-					} 
-					move_pop = 973 
-				}
-			}
-			BAV_599 = { 
-				any_pop = { 
-					limit = { 
-						OR = {
-							has_pop_culture = north_german
-							has_pop_culture = south_german
-						}
-						NOT = { has_pop_culture = south_italian }
-						NOT = { has_pop_culture = north_italian }
-						militancy = 5
-					} 
-					move_pop = 970
-				}
-			}
-			BAV_595 = { 
-				any_pop = { 
-					limit = { 
-						OR = {
-							has_pop_culture = north_german
-							has_pop_culture = south_german
-						}
-						NOT = { has_pop_culture = south_italian }
-						NOT = { has_pop_culture = north_italian }
-						militancy = 5
-					} 
-					move_pop = 968 
-				}
-			}
-			1037 = {
 				add_province_modifier = {
 					name = recently_built_city
-					duration = 1325
-				}
-			}
-			1035 = {
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 1325
-				}
-			}
-			973 = {
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 1325
-				}
-			}
-			970 = {
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 1325
-				}
-			}
-			968 = {
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 1325
+					duration = 7300
 				}
 			}
 		}

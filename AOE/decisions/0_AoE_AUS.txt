@@ -38,8 +38,16 @@ political_decisions = {
 			HUN = {
 				vassal_of = AUS
 			}
-			has_global_flag = hungarian_revolution_occured
-			has_country_modifier = josephism
+			OR = {
+				has_country_modifier = josephism
+				AND = {
+					HUN = {
+						rank = 8
+					}
+					has_country_modifier = maria_theresa
+					ai = yes
+				}
+			}
 			exists = yes
 		}
 		allow = {

@@ -476,14 +476,14 @@ country_event = {
 		name = "We can't do anything, give them what they want."
 		any_owned = { owner = { limit = { KUR = { exists = yes vassal_of = PLC } } inherit = KUR } }
 		any_owned = { owner = { limit = { LAT = { exists = yes vassal_of = PLC } } inherit = LAT } }
+		any_owned = { owner = { limit = { POL = { exists = yes } } inherit = POL } }
 		PLC = {
-		3337 = { secede_province = RUS }
-		RUS_360	= { limit = { NOT = { province_id = 362 } } secede_province = RUS }
-		RUS_707	= { secede_province = RUS }
-		RUS_940 = { secede_province = RUS }
-		RUS_959 = { secede_province = RUS }
+			3337 = { secede_province = RUS }
+			RUS_360	= { limit = { NOT = { province_id = 362 } } secede_province = RUS }
+			RUS_707	= { secede_province = RUS }
+			RUS_940 = { secede_province = RUS }
+			RUS_959 = { secede_province = RUS }
 		}
-
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}

@@ -52,7 +52,6 @@ political_decisions = {
 		picture = passarowitz
 		potential = {
 			tag = HUN
-			vassal_of = AUS
 			NOT = { has_country_flag = down_the_danube }
 		}
 		allow = {
@@ -107,6 +106,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = down_the_danube_aus
 			HUN = {
+				set_country_flag = down_the_danube
 				794 = { add_core = HUN }
 				796 = { add_core = HUN }
 				795 = { add_core = HUN }
@@ -117,6 +117,23 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1 
+		}
+	}
+	
+	proclaim_ind_hun = {
+		picture = become_hungary
+		potential = {
+			tag = HUN
+			government = colonial_company
+			is_vassal = no
+		}
+		allow = {
+			exists = yes
+			is_vassal = no
+			war = no
+		}
+		effect = {
+			government = absolute_monarchy
 		}
 	}
 	

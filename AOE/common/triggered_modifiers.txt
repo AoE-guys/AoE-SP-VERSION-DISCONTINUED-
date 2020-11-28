@@ -1054,6 +1054,33 @@ help_ai_sweden_and_austria = {
 	mobilisation_size = 0.15
 	war_exhaustion = -0.5
 }
+hre_member = {
+	trigger = {
+		has_country_flag = hre_member
+	}
+	diplomatic_points_modifier = 0.1
+	prestige = -0.01
+	icon = 10
+}
+imperial_kingdom = {
+	trigger = {
+		has_country_flag = hre_member
+		OR = {
+			tag = PRU
+			tag = BOH
+			AND = {
+				tag = SVY
+				has_country_flag = kingdom_title
+			}
+			tag = BAV
+			tag = SRD
+			tag = NAP
+			tag = SIC
+		}
+	}
+	prestige = 0.01
+	icon = 10
+}
 prussia_ai_help = {
 
 	trigger = {

@@ -790,6 +790,7 @@ country_event = {
 		war = no
 		NOT = {
 			truce_with = SPA
+			truce_with = SPC
 		}
 		war_policy = jingoism
 	}
@@ -800,11 +801,35 @@ country_event = {
 	
 	option = {
 		name = "We must expand!"
-		war = {
-			target = SPA
-			attacker_goal = { casus_belli = acquire_state state_province_id = 2209  }
-			defender_goal = { casus_belli = humiliate }
-			call_ally = no
+		any_owned = {
+			owner = {
+				limit = {
+					SPA = {
+						exists = yes
+					}
+				}
+				war = {
+					target = SPA
+					attacker_goal = { casus_belli = acquire_state state_province_id = 2209  }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = no
+				}
+			}
+		}
+		any_owned = {
+			owner = {
+				limit = {
+					SPC = {
+						exists = yes
+					}
+				}
+				war = {
+					target = SPC
+					attacker_goal = { casus_belli = acquire_state state_province_id = 2209  }
+					defender_goal = { casus_belli = humiliate }
+					call_ally = no
+				}
+			}
 		}
 		ai_chance = {
 			factor = 95

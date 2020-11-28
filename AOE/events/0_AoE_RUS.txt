@@ -771,6 +771,7 @@ country_event = {
 	title = "EVTNAME170010"
 	desc = "EVTDESC170010"
 	picture = storm_of_samarkand
+	fire_only_once = yes
 	
 	mean_time_to_happen = {
 		months = 2
@@ -879,12 +880,12 @@ country_event = {
 		create_vassal = KHI
 			diplomatic_influence = {
 				who = KHI
-				value = 200
+				value = 400
 			}
 			create_alliance = BUK
 			diplomatic_influence = {
 				who = BUK
-				value = 200
+				value = 400
 			}
 		ai_chance = {
 			factor = 1

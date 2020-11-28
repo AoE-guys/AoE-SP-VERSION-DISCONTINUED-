@@ -93,18 +93,18 @@ country_event = {
 		}
 	}
 
-	option = { #Bastard Child
-		name = "Surely there must be a bastard child of some sort! Even illegitimacy is better than subservience."
-		set_global_flag = spanish_succesion_resolved
-		set_global_flag = bastard_child
-		add_country_modifier = {
-			name = illegitimate_heir
-			duration = 10950
-		}
-		 ai_chance = {
-			factor = 0
-		}
-	}
+	#option = { #Bastard Child
+	#	name = "Surely there must be a bastard child of some sort! Even illegitimacy is better than subservience."
+	#	set_global_flag = spanish_succesion_resolved
+	#	set_global_flag = bastard_child
+	#	add_country_modifier = {
+	#		name = illegitimate_heir
+	#		duration = 10950
+	#	}
+	#	 ai_chance = {
+	#		factor = 0
+	#	}
+	#}
 }
 
 country_event = {
@@ -728,7 +728,7 @@ country_event = {
 	option = {
 		name = "At Last!"
 		money = 1000000
-		prestige = 80
+		AUS = { prestige = 80 }
 		SPC = {
 			any_owned = {
 				limit = {
@@ -875,8 +875,12 @@ country_event = {
 	option = {
 		name = "Victory!"
 		517 = {
+			owner = {
+				set_country_flag = lost_gib
+			}
 			secede_province = THIS
 			add_core = THIS
+			remove_core = SPC
 		}
 		prestige = 15
 	}

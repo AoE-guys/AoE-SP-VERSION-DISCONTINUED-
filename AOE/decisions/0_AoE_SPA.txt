@@ -109,7 +109,7 @@ political_decisions = {
 				}
 				country_event = 114309
 			}
-			any_owned = {
+			random_owned = {
 				owner = {
 					limit = {
 						wage_reform = low_minimum_wage
@@ -117,7 +117,7 @@ political_decisions = {
 					social_reform = acceptable_minimum_wage
 				}
 			}
-			any_owned = {
+			random_owned = {
 				owner = {
 					limit = {
 						wage_reform = acceptable_minimum_wage
