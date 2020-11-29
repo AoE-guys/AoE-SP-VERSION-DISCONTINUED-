@@ -8845,7 +8845,7 @@ subjugation = {
 
 #Steal Puppet CB
 steal_puppet = {
-    sprite_index = 33
+    sprite_index = 30
     is_triggered_only = yes
     months = 12
 
@@ -8865,7 +8865,6 @@ steal_puppet = {
 
     can_use = {
         OR = {
-            NOT = { has_country_modifier = war_focus }
             THIS = {
                 NOT = {
                     has_country_flag = exclusive_acquire_all_cores_CB
@@ -8877,10 +8876,10 @@ steal_puppet = {
         }
         NOT = { is_our_vassal = THIS }
         num_of_vassals_no_substates = 1
-        NOT = { has_country_modifier = neutrality_modifier }
+        NOT = { has_country_modifier = neutrality }
         OR = {
             war_with = THIS
-            THIS = { NOT = { has_country_modifier = neutrality_modifier } }
+            THIS = { NOT = { has_country_modifier = neutrality } }
         }
         OR = {
             war_with = THIS

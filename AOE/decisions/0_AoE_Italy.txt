@@ -5,6 +5,7 @@ political_decisions = {
 	####################
 	
 	enact_agrarian_reform = {
+		picture = encolsure
 		potential = {
 			OR = {
 				tag = TUS
@@ -101,6 +102,7 @@ political_decisions = {
 	}
 	
 	tuscan_constitutionalism = {
+		picture = leopold_ii
 		potential = {
 			OR = {
 				tag = TUS
@@ -226,6 +228,7 @@ political_decisions = {
 	}
 	
 	etruscan_legacy = {
+		picture = etruria
 		potential = {
 			tag = TUS
 			OR = {
@@ -250,6 +253,7 @@ political_decisions = {
 	####################
 	
 	unite_two_sicilies = {
+		picture = become_two_sicilies
 		potential = {
 			OR = {
 				tag = NAP
@@ -282,6 +286,7 @@ political_decisions = {
 	####################
 	
 	decide_on_our_gov = {
+		picture = palace_commune
 		potential = {
 			tag = LOM
 			exists = yes
@@ -299,6 +304,7 @@ political_decisions = {
 	}
 	
 	claim_lombardy = {
+		picture = lombardy
 		potential = {
 			tag = LOM
 			exists = yes
@@ -316,6 +322,7 @@ political_decisions = {
 	}
 	
 	form_cisalpine_republic = {
+		picture = become_cisalpine
 		potential = {
 			OR = {
 				tag = LOM
