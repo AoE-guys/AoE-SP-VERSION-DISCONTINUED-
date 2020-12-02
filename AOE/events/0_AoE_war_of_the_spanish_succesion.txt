@@ -743,6 +743,8 @@ country_event = {
 						region = SAR_765
 						region = SIC_763
 						region = NET_397
+						is_core = NAP
+						is_core = BEL
 					}
 				}
 				secede_province = AUS
@@ -874,13 +876,27 @@ country_event = {
 	
 	option = {
 		name = "Victory!"
+		SPC = {	set_country_flag = lost_gib	}
 		517 = {
-			owner = {
-				set_country_flag = lost_gib
-			}
 			secede_province = THIS
 			add_core = THIS
 			remove_core = SPC
+		}
+		random_owned = {
+			limit = {
+				BOR = {
+					has_country_flag = support_bourbon_heir
+				}
+			}
+			75 = {
+				secede_province = THIS
+			}
+			72 = {
+				secede_province = THIS
+			}
+			71 = {
+				secede_province = THIS
+			}
 		}
 		prestige = 15
 	}

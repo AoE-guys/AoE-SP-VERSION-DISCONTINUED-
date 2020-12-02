@@ -2,7 +2,7 @@ political_decisions = {
 
 ###Kingdom of God###
 	form_god = {
-		picture = crown_of_italy
+		picture = pope
 		news = yes
 		news_desc_long = "form_italy_NEWS_LONG"
 		news_desc_medium = "form_italy_NEWS_MEDIUM"
@@ -55,6 +55,7 @@ political_decisions = {
 	}
 	
 	disband_the_jesuits = {
+		picture = jesuits
 		potential = {
 			tag = PAP
 			NOT = { has_country_flag = disbanded_the_jesuits }

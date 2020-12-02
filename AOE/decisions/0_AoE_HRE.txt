@@ -478,6 +478,7 @@ political_decisions = {
 				exists = NNN
 			}
 			NOT = { has_global_flag = hre_dismantled }
+			NOT = { has_country_flag = hre_member }
 			exists = yes
 		}
 		
