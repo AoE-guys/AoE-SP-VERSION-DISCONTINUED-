@@ -1,0 +1,28 @@
+army = {
+	name = "Army of the Sultan of Banten"
+	location = 3415
+		regiment = {
+		name= "Sultan Guards"		
+			type = irregular	
+			home = 1410	
+			}
+		regiment = {
+		name= "Sultan Guards"		
+			type = irregular	
+			home = 3415	
+			}
+		regiment = {
+		name= "Sultan Guards"		
+			type = irregular	
+			home = 3415	
+			}
+	}
+
+leader = {
+	name = "Sultan Abu al-Mahasin Muhammad Zainul Abidin"
+	date = 1700.1.1
+	type = land
+	personality = coward
+	background = aristocrat
+}
+
