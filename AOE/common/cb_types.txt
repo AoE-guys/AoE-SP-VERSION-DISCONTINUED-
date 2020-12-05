@@ -4484,10 +4484,6 @@ acquire_state = {
 			is_colonial = no
 			NOT = { any_owned_province = { is_capital = yes } }
 		}
-		OR = {
-			THIS = { tech_school = unciv_tech_school }
-			NOT = { tech_school = unciv_tech_school }
-		}
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		OR = {
 			war_with = THIS

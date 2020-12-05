@@ -183,7 +183,7 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	form_rajputana_confederacy = {
+	form_rajputana = {
 		potential = {
 			primary_culture = rajput
 			NOT = { RAJ = { exists = yes } }
@@ -236,6 +236,7 @@ political_decisions = {
 	}
 	
 	form_deccan = {
+		picture = deccan
 		potential = {
 			OR = {
 				tag = KRN
@@ -308,6 +309,7 @@ political_decisions = {
 	}
 	
 	claim_greater_bengal = {
+		picture = claim_greater_bengal
 		potential = {
 			tag = BNG
 			NOT = { has_country_flag = claimed_greater_bengal }

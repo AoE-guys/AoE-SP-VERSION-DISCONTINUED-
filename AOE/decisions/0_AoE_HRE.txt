@@ -479,11 +479,11 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = hre_dismantled }
 			NOT = { has_country_flag = hre_member }
+			has_country_flag = hre_reforms_open
 			exists = yes
 		}
 		
 		allow = {
-			has_country_flag = hre_reforms_open
 			has_recently_lost_war = no
 			has_country_flag = proclaimed_erbkaisertum
 			is_greater_power = yes

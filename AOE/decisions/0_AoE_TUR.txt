@@ -61,12 +61,8 @@ political_decisions = {
 		}
 		allow = {
 			is_greater_power = yes
-			AUS_623 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
-			AUS_641 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
-			AUS_654 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
-			AUS_657 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
-			AUS_771 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
-			AUS_777 = { OR = { owner = { is_our_vassal = TUR } owned_by = TUR }}
+			HUN = { all_core = { OR = { controlled_by = THIS owner = { vassal_of = THIS } owned_by = THIS } } }
+			
 		}
 		effect = {
 			set_country_flag = recovered_hungary
@@ -179,6 +175,7 @@ political_decisions = {
 	}
 	
 	decide_foreign_policy = {
+		picture = rome
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = decided_foreign_policy }
@@ -186,6 +183,7 @@ political_decisions = {
 		}
 		allow = {
 			is_greater_power = yes
+			owns = 641
 			has_country_flag = recovered_hungary
 		}
 		
@@ -236,7 +234,7 @@ political_decisions = {
 	}
 	
 	eastern_tributaries = {
-		picture = nizam-i_djedid
+		picture = map_iraq
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = eastern_tributaries }
@@ -267,7 +265,7 @@ political_decisions = {
 	}
 	
 	end_romanian_principalities = {
-		picture = nizam-i_djedid
+		picture = map_moldavia
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = end_romanian_principalities }
@@ -337,7 +335,7 @@ political_decisions = {
 	}
 	
 	end_maghreb_vassals = {
-		picture = nizam-i_djedid
+		picture = map_maghreb
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = end_maghreb_vassals }
@@ -392,6 +390,7 @@ political_decisions = {
 	}
 	
 	restablish_acech_dominion = {
+		picture = majapachit
 		potential = {
 			tag = TUR
 			exists = yes
@@ -419,6 +418,7 @@ political_decisions = {
 	}
 	
 	integrate_acech = {
+		picture = majapachit
 		potential = {
 			tag = TUR
 			exists = yes
