@@ -115,16 +115,18 @@ political_decisions = {
 			}
 			badboy = 15
 			random_owned = {
-				limit = {
-					SWE = {
-						war = yes
+				owner = {
+					limit = {
+						SWE = {
+							war = yes
+						}
 					}
-				}
-				war = {
-					target = SWE
-					attacker_goal = { casus_belli = acquire_all_cores country = RUS }
-					defender_goal = { casus_belli = cut_down_to_size }
-					call_ally = no
+					war = {
+						target = SWE
+						attacker_goal = { casus_belli = acquire_all_cores country = RUS }
+						defender_goal = { casus_belli = cut_down_to_size }
+						call_ally = no
+					}
 				}
 			}
 		}

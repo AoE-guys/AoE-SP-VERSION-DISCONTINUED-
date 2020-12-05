@@ -6802,5 +6802,14 @@ fredrican_army_model = {
 }
 encouraging_migration = {
 	population_growth = 0.004
+	assimilation_rate = 0.5
 	icon = 19
+}
+western_medicine = {
+	population_growth = 0.004
+	assimilation_rate = 0.5
+	icon = 19
+}
+colony_to_be_annexed = {
+	icon = 1
 }

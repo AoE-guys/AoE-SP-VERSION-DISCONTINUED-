@@ -282,7 +282,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = recover_inflanty
-			any_owned = {
+			random_owned = {
 				owner = {
 					limit = { LAT = { vassal_of = THIS } }
 					inherit = LAT

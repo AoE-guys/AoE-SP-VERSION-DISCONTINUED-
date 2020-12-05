@@ -207,6 +207,14 @@ political_decisions = {
 		}
 		effect = {
 			prestige = -15
+			random_owned = {
+				owner = {
+					limit = {
+						government = tribal_democracy
+					}
+					set_country_flag = native_civ
+				}
+			}
 			add_country_modifier = {
 				name = academic_confusion
 				duration = 3650
@@ -216,8 +224,7 @@ political_decisions = {
 			remove_country_modifier = reformed_beurocracy
 			remove_country_modifier = reformed_army
 			remove_country_modifier = reformed_industry
-			remove_country_modifier = western_values
-			
+			remove_country_modifier = western_values	
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -267,7 +274,7 @@ political_decisions = {
 	}
 	
 	tribal_war = {
-		picture = form_kellys_irish_brigade
+		picture = native_persecution
 		potential = {
 			government = tribal_democracy
 			NOT = {
@@ -284,9 +291,9 @@ political_decisions = {
 			small_arms = 300
 			regular_clothes = 300
 			canned_food = 300
-			random = {
+			random_pop = {
 				limit = {
-					pop_type = farmer
+					pop_type = farmers
 					OR = {
 						is_primary_culture = yes
 						is_accepted_culture = yes
@@ -294,9 +301,137 @@ political_decisions = {
 				}
 				pop_type = soldiers
 			}
+			set_country_flag = tribal_war
 			war_exhaustion = -1
 		}
 		
 		ai_will_do = { factor = 1 }
+	}
+	
+	increase_colonization_efforts_nat = {
+		picture = new_world_colonization
+		potential = {
+			has_country_flag = native_civ
+			NOT = { has_country_flag = increase_colonization_efforts_nat }
+			NOT = {	total_pops = 1000000 }
+			NOT = { has_country_flag = NOT_colony }
+			any_owned_province = {
+				NOT = { total_pops = 65000 }
+			}
+		}
+		
+		allow = {
+			war = no
+			money = 30000
+			medicine = 1
+		}
+		effect = {
+			add_country_modifier = { name = law_changed_by_force  duration = 1216 }
+			money = -30000
+			any_owned = {
+				limit = {
+					NOT = { total_pops = 65000 }
+				}
+				add_province_modifier = {
+					name = western_medicine
+					duration = 3650
+				}
+			}
+			set_country_flag = increase_colonization_efforts_nat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_western_confederacy = {
+		picture = become_indian_confederacy
+		potential = {
+			OR = {
+				tag = IQS
+				tag = MIA
+				tag = SHE
+				tag = OTT
+				tag = ILL
+				tag = FOX
+				tag = SUX
+				tag = MIS
+				tag = ASB
+				tag = LNP
+				tag = ABB
+			}
+			NOT = { MTC = { exists = yes } }
+		}
+		allow = {
+			owns = 178
+			owns = 171
+			owns = 184
+			owns = 146
+			owns = 162
+			owns = 150
+			owns = 154
+		}
+		effect = {
+			all_core = {
+				add_core = MTC
+				remove_core = THIS
+			}
+			change_tag = MTC
+			add_accepted_culture = dakota
+			add_accepted_culture = native_american_minor
+			add_accepted_culture = cree
+			IQS = { all_core = { add_core = THIS } }
+			MIA = { all_core = { add_core = THIS } }
+			SHE = { all_core = { add_core = THIS } }
+			OTT = { all_core = { add_core = THIS } }
+			ILL = { all_core = { add_core = THIS } }
+			FOX = { all_core = { add_core = THIS } }
+			SUX = { all_core = { add_core = THIS } }
+			MIS = { all_core = { add_core = THIS } }
+			ASB = { all_core = { add_core = THIS } }
+			LNP = { all_core = { add_core = THIS } }
+			ABB = { all_core = { add_core = THIS } }
+			prestige = 25
+			any_country = {
+				limit = {
+					government = tribal_democracy
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+					capital_scope = {
+						continent = north_america
+					}
+				}
+				all_core = {
+					add_core = THIS
+				}
+				annex_to = THIS
+			}
+		}
+	}
+	
+	construct_prophetstown = {
+		picture = kaitakushi
+		potential = {
+			tag = MTC
+			NOT = { has_country_flag = prophetstown }
+		}
+		allow = {
+			exists = yes
+			owns = 171
+		}
+		effect = {
+			prestige = 45
+			171 = {
+				change_province_name = "Prophetstown"
+				add_province_modifier = {
+					name = encouraging_migration
+					duration = 3650
+				}
+			}
+			capital = 171
+			set_country_flag = prophetstown
+		}
 	}
 }

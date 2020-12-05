@@ -3,6 +3,7 @@ country_event = {
 	title = "Hansa Unity"
 	desc = "It is time for the Hansa to unite!"
 	is_triggered_only = yes
+	picture = harbour
 	
 	option = {
 		name = "Join in!"
@@ -24,10 +25,13 @@ country_event = {
 	title = "Freedom for Sorbs"
 	desc = EVTDESC444667
 	fire_only_once = yes
+	picture = migrants
 	
 	trigger = {
 		tag = NGF
 		owns = 552
+		ai = no
+		NOT = { AUS = { has_country_flag = reformed_imperial_circles } }
 	}
 	
 	option = {
@@ -54,6 +58,7 @@ country_event = {
 	title = "Sorbi Berlin?"
 	desc = "The Sorbi are proposing to buy Berlin from us."
 	is_triggered_only = yes
+	picture = berlin
 	
 	option = {
 		name = "The city might not end up so bad if its Slav"
@@ -107,6 +112,7 @@ country_event = {
 	id = 444669
 	title = "Join the union!"
 	desc = "Shall we join our local union?"
+	picture = me_and_the_boys
 	
 	trigger = {
 		exists = SGF
@@ -144,6 +150,7 @@ country_event = {
 	id = 444670
 	title = "Join the union!"
 	desc = "Shall we join our local union?"
+	picture = me_and_the_boys
 	
 	trigger = {
 			exists = THU
@@ -178,6 +185,7 @@ country_event = {
 	id = 444671
 	title = "Join the union!"
 	desc = "Shall we join our local union?"
+	picture = me_and_the_boys
 	
 	trigger = {
 			exists = WES
@@ -212,6 +220,7 @@ country_event = {
 	id = 444672
 	title = "Join the union!"
 	desc = "Shall we join our local union?"
+	picture = me_and_the_boys
 	
 	trigger = {
 			exists = RHI
@@ -252,6 +261,7 @@ country_event = {
 	title = "Freedom for Sorbs"
 	desc = EVTDESC444667
 	fire_only_once = yes
+	picture = migrants
 	
 	trigger = {
 		tag = THU

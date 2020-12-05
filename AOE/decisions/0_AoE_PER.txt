@@ -96,7 +96,7 @@ political_decisions = {
 	}
 	
 	quajar_army_reforms = {
-		picture = persia_lion
+		picture = qajar
 		potential = {
 			tag = PRQ
 			NOT = { has_country_modifier = quajar_army_reforms }
