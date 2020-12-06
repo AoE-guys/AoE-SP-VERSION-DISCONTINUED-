@@ -59187,8 +59187,8 @@
 
 1403 = {
     text_position = {
-        x = 4446.408333
-        y = 691.646667
+        x = 4447.270000
+        y = 685.458333
     }
 
     text_rotation = 0.443561
@@ -59622,47 +59622,15 @@
 
 1411 = {
     text_position = {
-        x = 4351.200195
-        y = 746.799988
+        x = 4361.445000
+        y = 726.891667
     }
 
-    text_scale = 1.300000
+    text_rotation = 5.412282
+    text_scale = 3
     unit = {
         x = 4350.000000
         y = 740.000000
-    }
-
-    city = {
-        x = 4350.650000
-        y = 740.875000
-    }
-
-    factory = {
-        x = 4331.200195
-        y = 772.000000
-    }
-
-    building_construction = {
-        x = 4327.299805
-        y = 778.000000
-    }
-
-    military_construction = {
-        x = 4352.000000
-        y = 738.000000
-    }
-
-    building_position = {
-        fort = {
-            x = 4368.000000
-            y = 719.200012
-        }
-
-        naval_base = {
-            x = 4339.700195
-            y = 749.500000
-        }
-
     }
 
 } # Aden
@@ -59720,14 +59688,24 @@
         y = 664.000000
     }
 
+    city = {
+        x = 4469.850000
+        y = 665.650000
+    }
+
     factory = {
-        x = 4464.700195
-        y = 661.900024
+        x = 4475.850000
+        y = 664.700000
     }
 
     building_construction = {
         x = 4485.100098
         y = 659.599976
+    }
+
+    military_construction = {
+        x = 4482.350000
+        y = 662.100000
     }
 
     building_position = {
@@ -59737,14 +59715,14 @@
         }
 
         naval_base = {
-            x = 4464.600000
-            y = 668.800000
+            x = 4475.300000
+            y = 668.350000
         }
 
     }
 
     building_rotation = {
-        naval_base = 2.181662
+        naval_base = 0.582455
     }
 
 } # Bogor
@@ -59767,8 +59745,8 @@
     }
 
     building_construction = {
-        x = 4460.580000
-        y = 656.220000
+        x = 4467.000000
+        y = 652.050000
     }
 
     military_construction = {
@@ -127649,6 +127627,58 @@
 
     building_rotation = {
         naval_base = 4.717414
+    }
+
+} # Banten
+
+3415 = {
+    text_position = {
+        x = 4462.250000
+        y = 659.450000
+    }
+
+    text_rotation = 1.203264
+    text_scale = 2.5
+    unit = {
+        x = 4459.600000
+        y = 660.150000
+    }
+
+    city = {
+        x = 4459.550000
+        y = 664.600000
+    }
+
+    factory = {
+        x = 4459.300000
+        y = 662.300000
+    }
+
+    building_construction = {
+        x = 4456.100000
+        y = 653.650000
+    }
+
+    military_construction = {
+        x = 4464.500000
+        y = 656.750000
+    }
+
+    building_position = {
+        fort = {
+            x = 4464.950000
+            y = 665.600000
+        }
+
+        naval_base = {
+            x = 4458.300000
+            y = 667.050000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.774798
     }
 
 }
