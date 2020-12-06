@@ -90,7 +90,7 @@ country_event = {
 country_event = {
 	id = 175511
 	title = "Corsica lost!"
-	desc = "EVNDESC175500"
+	desc = "EVNDESC175511"
 	major = yes
 	fire_only_once = yes
 	
@@ -124,7 +124,7 @@ country_event = {
 country_event = {
 	id = 175501
 	title = "The Genoese offer to sell claims"
-	desc = "EVNDESC175501"
+	desc = "EVNDESC175513"
 	is_triggered_only = yes
 	picture = harbour
 	
@@ -288,7 +288,7 @@ country_event = {
 	id = 175503
 	title = "End of the Medici Dynasty"
 	desc = "EVNDESC175503"
-	picture = medici
+	picture = monarch_death
 	fire_only_once = yes
 	
 	trigger = {
@@ -358,7 +358,7 @@ country_event = {
 country_event = {
 	id = 175505
 	title = "Death of Leopold II Habsburg"
-	desc = "EVNDESC175504"
+	desc = "EVNDESC175505"
 	picture = leopold_ii
 	fire_only_once = yes
 	
@@ -461,7 +461,7 @@ country_event = {
 	id = 175508
 	title = "Death of Charles Emmanuel III"
 	desc = "EVNDESC175508"
-	picture = charles_emmanuel
+	picture = monarch_death
 	fire_only_once = yes
 	
 	trigger = {
@@ -537,7 +537,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The ancient regime must survive"
+		name = "The ancient regime must survive!"
 		any_pop = {
 			militancy = 6
 			consciousness = 4

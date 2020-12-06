@@ -325,7 +325,7 @@ country_event = {
 	id = 173611
 	title = "Polish portectorate"
 	desc = "EVTDESC173611"
-	picture = glos
+	picture = veto
 	fire_only_once = yes
 	
 	trigger = {
@@ -343,7 +343,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Demand their subjigation!"
+		name = "Demand their subjugation!"
 		955 = { add_core = THIS }
 		954 = { add_core = THIS }
 		960 = { add_core = THIS }
@@ -366,7 +366,7 @@ country_event = {
 	id = 173612
 	title = "Second treaty of Buchach"
 	desc = "EVTDESC173612"
-	picture = glos
+	picture = veto
 	is_triggered_only = yes
 	
 	option = {
@@ -399,7 +399,7 @@ country_event = {
 	id = 173613
 	title = "Victory over Ottomans!"
 	desc = "EVTDESC173613"
-	picture = glos
+	picture = cavallery
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
@@ -456,7 +456,7 @@ country_event = {
 	id = 173615
 	title = "Unrest in Cairo"
 	desc = "EVTDESC173615"
-	picture = glos
+	picture = reinventing_egypt
 	fire_only_once = yes
 	
 	trigger = {
@@ -632,8 +632,8 @@ country_event = {
 country_event = {
 	id = 173617
 	title = "Conquest of Rome"
-	desc = "EVTDESC173618"
-	picture = glos
+	desc = "EVTDESC173617"
+	picture = rome
 	fire_only_once = yes
 	
 	trigger = {
@@ -828,7 +828,7 @@ country_event = {
 country_event = {
 	id = 173623
 	title = "Treaty of Constatinople"
-	desc = "EVTDESC173619"
+	desc = "EVTDESC173623"
 	picture = treaty_signing
 	
 	trigger = {

@@ -1,5 +1,6 @@
 political_decisions = {
 	assert_mughal_supremacy = {
+		picture = peacock_throne
 		potential = {
 			tag = MUG
 			NOT = { has_country_flag = asserted_mughal_supremacy }

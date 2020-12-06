@@ -102,6 +102,7 @@ political_decisions = {
 	}
 	
 	form_our_empire = {
+		picture = peacock_throne
 		potential = {
 			is_culture_group = south_asian
 			NOT = { has_country_flag = founded_new_empire }
@@ -155,24 +156,60 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			1251 = {
-				owner = {
-					annex_to = THIS
+			random_owned = {
+				1251 = {
+					limit = {
+						NOT = { owned_by = THIS }
+						owner = { in_sphere = THIS }
+						capital_scope = {
+							is_core = HND
+						}
+					}
+					owner = {
+						annex_to = THIS
+					}
 				}
 			}
-			1236 = {
-				owner = {
-					annex_to = THIS
+			random_owned = {
+				1236 = {
+					limit = {
+						NOT = { owned_by = THIS }
+						owner = { in_sphere = THIS }
+						capital_scope = {
+							is_core = HND
+						}
+					}
+					owner = {
+						annex_to = THIS
+					}
 				}
 			}
-			1297 = {
-				owner = {
-					annex_to = THIS
+			random_owned = {
+				1297 = {
+					limit = {
+						NOT = { owned_by = THIS }
+						owner = { in_sphere = THIS }
+						capital_scope = {
+							is_core = HND
+						}
+					}
+					owner = {
+						annex_to = THIS
+					}
 				}
 			}
-			1283 = {
-				owner = {
-					annex_to = THIS
+			random_owned = {
+				1283 = {
+					limit = {
+						NOT = { owned_by = THIS }
+						owner = { in_sphere = THIS }
+						capital_scope = {
+							is_core = HND
+						}
+					}
+					owner = {
+						annex_to = THIS
+					}
 				}
 			}
 			1236 = {
@@ -184,6 +221,7 @@ political_decisions = {
 	}
 	
 	form_rajputana = {
+		picture = become_rajputana
 		potential = {
 			primary_culture = rajput
 			NOT = { RAJ = { exists = yes } }

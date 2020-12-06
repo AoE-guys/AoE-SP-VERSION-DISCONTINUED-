@@ -603,7 +603,7 @@ country_event = {
 	title = "Hotaki Rebellion Defeated!"
 	desc = "EVTDESC173201"
 	fire_only_once = yes
-	picture = india_conq
+	picture = persia_map
 	
 	trigger = {
 		has_global_flag = hotak_rebellion_happened
@@ -736,6 +736,7 @@ country_event = {
 	option = {
 		name = "We're doomed!"
 		remove_country_modifier = nader_shah
+		set_country_flag = nader_ded
 		prestige = -5
 	}
 }
@@ -744,7 +745,7 @@ country_event = {
 	title = "The Sack of Delhi"
 	desc = "EVTDESC173204"
 	fire_only_once = yes
-	picture = delhi_sack
+	picture = sack_of_delhi
 	
 	trigger = {
 		has_country_modifier = nader_shah
@@ -769,7 +770,7 @@ country_event = {
 country_event = {
 	id = 173205
 	title = "Unrest in Isfhan"
-	desc = "EVTDESC173202"
+	desc = "EVTDESC173205"
 	fire_only_once = yes
 	major = yes
 	trigger = {
@@ -777,7 +778,10 @@ country_event = {
 			tag = PER
 			tag = PRA
 		}
-		NOT = { tech_school = unciv_tech_school }
+		OR = {
+			NOT = { tech_school = unciv_tech_school }
+			has_country_flag = nader_ded 
+		}
 	}
 	
 	option = {
@@ -799,6 +803,7 @@ country_event = {
 		PER_1121 = { secede_province = PRQ }
 		1122 = { secede_province = PRQ }
 		1129 = { secede_province = PRQ }
+		any_owned = { limit = { is_core = RUS } secede_province = PRQ }
 		1118 = { secede_province = PRZ }
 		PER_1128 = { secede_province = PRZ }
 		PER_1127 = { secede_province = PRZ }
@@ -807,6 +812,7 @@ country_event = {
 		PER_1140 = { secede_province = PRZ }
 		PER_1142 = { secede_province = PRZ }
 		1119 = { secede_province = PRZ }
+		any_owned = { limit = { is_core = IRQ } secede_province = PRZ }
 		war = {
 			target = PRQ
 			attacker_goal = {
@@ -1007,7 +1013,7 @@ country_event = {
 	title = "Persia secured"
 	desc = "EVTDESC173207"
 	fire_only_once = yes
-	picture = shah
+	picture = persia_map
 	
 	trigger = {
 		has_global_flag = persia_dynasty_war
@@ -1073,5 +1079,65 @@ country_event = {
 			}
 		}
 		prestige = 40
+	}
+}
+country_event = {
+	id = 173208
+	title = "Rise of Durrani Empire"
+	desc = "EVTDESC173208"
+	fire_only_once = yes
+	picture = persia_map
+	
+	trigger = {
+		has_global_flag = persia_dynasty_war
+		any_owned_province = { OR = { is_core = AFG is_core = HND } }
+		#NOT = { tech_school = unciv_tech_school }
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = "The situation gets worse and worse"
+		any_owned = {
+			limit = {
+				is_core = AFG
+				is_core = HND
+			}
+			add_core = DUR
+			secede_province = DUR
+		}
+		DUR = {
+			government = absolute_monarchy
+			capital = 1215
+			prestige = 20
+			add_country_modifier = {
+				name = fanatic_army
+				duration = 7300
+			}
+		}
+		random_owned = {
+            limit = {
+                owner = {
+                    NOT = {
+                        national_provinces_occupied = .25
+                        any_greater_power = { war_with = THIS }
+                    }
+                }
+            }
+            owner = {
+                prestige = 20
+                war = {
+                    target = DUR
+                    attacker_goal = {
+                        casus_belli = annex_core_country
+                    }
+					defender_goal = {
+                        casus_belli = status_quo
+                    }
+                }
+            }
+        }
 	}
 }
