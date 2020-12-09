@@ -81,15 +81,17 @@ country_event = {
 		
 		any_pop = { limit = { culture = vlach } literacy = 0.29 }
 		
-		any_pop = { limit = { culture = hungarian } literacy = 0.28 }
+		any_pop = { limit = { culture = hungarian } literacy = 0.23 }
 		
 		any_pop = { limit = { culture = polish } literacy = 0.28 }
 		any_pop = { limit = { culture = western_slavic } literacy = 0.43 }
 		
-		any_pop = { limit = { culture = czech } literacy = 0.44 }
+		any_pop = { limit = { culture = czech } literacy = 0.61 }
+		any_pop = { limit = { culture = moravian } literacy = 0.61 }
 		any_pop = { limit = { culture = slovak } literacy = 0.35 }
+		SLS = { all_core = { any_pop = { limit = { culture = north_german } literacy = 0.61 } } }
 		
-		any_pop = { limit = { culture = russian } literacy = 0.28 }
+		any_pop = { limit = { culture = russian } literacy = 0.34 }
 		any_pop = { limit = { culture = byelorussian } literacy = 0.28 }
 		any_pop = { limit = { culture = ukrainian } literacy = 0.28 }
 		any_pop = { limit = { culture = cossack } literacy = 0.20 }
@@ -478,7 +480,7 @@ country_event = {
 		any_pop = { limit = { culture = rhinelander } literacy = 0.44 }
 		any_pop = { limit = { culture = arpitan } literacy = 0.45 }
 		
-		any_pop = { limit = { culture = croat } literacy = 0.27 }
+		any_pop = { limit = { culture = croat } literacy = 0.25 }
 		any_pop = { limit = { culture = serb } literacy = 0.25 }
 		any_pop = { limit = { culture = bulgarian } literacy = 0.25 }
 		any_pop = { limit = { culture = montenegrin } literacy = 0.27 }
@@ -495,7 +497,7 @@ country_event = {
 		any_pop = { limit = { culture = western_slavic } literacy = 0.43 }
 		
 		any_pop = { limit = { culture = czech } literacy = 0.44 }
-		any_pop = { limit = { culture = slovak } literacy = 0.35 }
+		any_pop = { limit = { culture = slovak } literacy = 0.22 }
 		
 		any_pop = { limit = { culture = russian } literacy = 0.28 }
 		any_pop = { limit = { culture = byelorussian } literacy = 0.28 }
@@ -582,7 +584,7 @@ country_event = {
         any_pop = { limit = { culture = kachin } literacy = 0.15 }
 		any_pop = { limit = { culture = karen } literacy = 0.15 }
 		
-		any_pop = { limit = { culture = japanese } literacy = 0.12 }
+		any_pop = { limit = { culture = japanese } literacy = 0.1 }
 		any_pop = { limit = { culture = ryukyuan } literacy = 0.20 }
 		any_pop = { limit = { culture = manchu } literacy = 0.05 }
 		any_pop = { limit = { culture = beifaren } literacy = 0.10 }

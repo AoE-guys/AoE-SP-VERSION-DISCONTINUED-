@@ -38,11 +38,8 @@ political_decisions = {
 			factor = 1 
 			modifier = {
 				factor = 0
-				OR = {
 				AUS = {
 					NOT = { war_exhaustion = 5 }
-				}
-				NOT = { year = 1703 }
 				}
 			}
 		}

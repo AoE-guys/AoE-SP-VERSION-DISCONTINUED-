@@ -759,8 +759,8 @@ country_event = {
 			limit = {
 				owns = 720 #savoy
 				OR = {
-				truce_with = BOR
-				has_country_flag = support_habsburg_heir
+					has_country_flag = support_habsburg_heir
+					alliance_with = AUS
 				}
 			}
 			country_event = 17071708

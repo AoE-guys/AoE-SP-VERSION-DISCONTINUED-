@@ -1,0 +1,4564 @@
+#Bukovina Region (164000) #See Romania.txt for balance of region 
+#under the rule of Austria in 1836  
+#Cernauti (164000/41000 POPS)  
+662 = {
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 38 
+	}
+
+	artisans = {
+		culture = vlach
+		religion = orthodox
+		size = 200
+	}
+
+	soldiers = {
+		culture = vlach
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 4712 
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 100   
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 550 
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 100
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 9800   
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 350    
+	}
+
+	bureaucrats = {
+		culture = polish
+		religion = catholic
+		size = 15 
+	}
+
+	officers = {
+		culture = polish
+		religion = catholic
+		size = 30  
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 25 
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 150 
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 1810
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 95
+	}
+
+	bureaucrats = {
+		culture = siebenburger
+		religion = catholic
+		size = 18
+	}
+
+	officers = {
+		culture = siebenburger
+		religion = catholic
+		size = 20  
+	}
+
+	clergymen = {
+		culture = siebenburger
+		religion = catholic
+		size = 25 
+	}
+
+	artisans = {
+		culture = siebenburger
+		religion = catholic
+		size = 100  
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = siebenburger
+		religion = catholic
+		size = 725   
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25    
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 300   
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1162      
+	}
+}
+#Bessarabia Region (332000) #see Moldova.txt for balance of Region  
+#under the rule of Russia in 1836 
+#Ismail (332000/83000 POPS)  
+678 = {
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 50
+	}
+	
+	aristocrats = {
+		culture = vlach
+		religion = orthodox
+		size = 1050 
+	}
+
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 300 
+	}
+
+	artisans = {
+		culture = vlach
+		religion = orthodox
+		size = 1500
+	}
+
+	soldiers = {
+		culture = vlach
+		religion = orthodox
+		size = 300
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 6900 
+	}
+	
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 4000 
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38   
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 700  
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 525    
+	}
+
+	clergymen = {
+		culture = bulgarian
+		religion = orthodox
+		size = 25 
+	}
+
+	artisans = {
+		culture = bulgarian
+		religion = orthodox
+		size = 38
+	}
+
+	soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 24
+	}
+
+	zzz_dummy = {
+		culture = bulgarian
+		religion = orthodox
+		size = 5425
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 50 
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 250
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 5650 
+	}
+
+	clergymen = {
+		culture = turkish #gagauz
+		religion = orthodox
+		size = 25   
+	}
+
+	artisans = {
+		culture = turkish
+		religion = orthodox
+		size = 75  
+	}
+
+	soldiers = {
+		culture = turkish
+		religion = orthodox
+		size = 13
+	}
+
+	zzz_dummy = {
+		culture = turkish
+		religion = orthodox
+		size = 888
+	}
+	bureaucrats = {
+		culture = siebenburger
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = siebenburger
+		religion = catholic
+		size = 1063
+	}
+
+	zzz_dummy = {
+		culture = siebenburger
+		religion = catholic
+		size = 135
+	}
+	
+	soldiers = {
+		culture = siebenburger
+		religion = catholic
+		size = 125
+	}
+
+	aristocrats = {
+		culture = siebenburger
+		religion = catholic
+		size = 238
+	}
+
+}
+#Felvidek Region (856000) #see Hungary.txt and Slovakia.txt for balance of Region
+#under the rule of Austria in 1836  
+#Chust
+950 = {
+	clergymen = {
+		culture = tatar
+		religion = orthodox
+		size = 425  
+	}
+
+	artisans = {
+		culture = tatar
+		religion = orthodox
+		size = 2300 
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 450
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 10325  
+	
+	}
+	
+	
+	zzz_dummy = {
+		
+		culture = rusyn
+		
+		religion = orthodox
+		
+		size = 30325  
+	}
+
+	clergymen = {
+		culture = slovak
+		religion = catholic
+		size = 75 
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 425
+	}
+
+	soldiers = {
+		culture = slovak
+		religion = catholic
+		size = 88
+	}
+
+	zzz_dummy = {
+		culture = slovak
+		religion = catholic
+		size = 4750
+	}
+
+	labourers = {
+		culture = slovak
+		religion = catholic
+		size = 250
+	}
+
+	aristocrats = {
+		culture = hungarian
+		religion = catholic
+		size = 375  
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 100  
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 375 
+	}
+
+	soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = hungarian
+		religion = catholic
+		size = 2862  
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38  
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 400 
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1038    
+	}
+
+	clergymen = {
+		culture = siebenburger
+		religion = protestant
+		size = 12  
+	}
+
+	artisans = {
+		culture = siebenburger
+		religion = protestant
+		size = 38 
+	}
+
+	soldiers = {
+		culture = siebenburger
+		religion = protestant
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = siebenburger
+		religion = protestant
+		size = 438  
+	}
+
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 62  
+	}
+
+	artisans = {
+		culture = tatar
+		religion = orthodox
+		size = 250 
+	}
+
+	soldiers = {
+		culture = vlach
+		religion = orthodox
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 2839
+	}
+
+	labourers = {
+		culture = vlach
+		religion = orthodox
+		size = 149
+	}
+}
+#Uzgorod
+3308 = {
+	aristocrats = {
+		culture = hungarian
+		religion = catholic
+		size = 2125  
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 212  
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = catholic
+		size = 1075 
+	}
+
+	soldiers = {
+		culture = hungarian
+		religion = catholic
+		size = 225
+	}
+
+	zzz_dummy = {
+		culture = hungarian
+		religion = catholic
+		size = 13862  
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = protestant
+		size = 200  
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = protestant
+		size = 1125 
+	}
+	
+
+	zzz_dummy = {
+		
+		culture = rusyn
+		
+		religion = orthodox
+		
+		size = 4325  
+	
+	}
+
+	soldiers = {
+		culture = hungarian
+		religion = protestant
+		size = 200
+	}
+
+	zzz_dummy = {
+		culture = hungarian
+		religion = protestant
+		size = 4475   
+	}
+
+	clergymen = {
+		culture = slovak
+		religion = catholic
+		size = 25 
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 175
+	}
+
+	soldiers = {
+		culture = slovak
+		religion = catholic
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = slovak
+		religion = catholic
+		size = 475
+	}
+
+	labourers = {
+		culture = slovak
+		religion = catholic
+		size = 25
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = orthodox
+		size = 50  
+	}
+
+	artisans = {
+		culture = tatar
+		religion = orthodox
+		size = 250
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = rusyn
+		religion = orthodox
+		size = 750
+	}
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 12  
+	}
+
+	artisans = {
+		culture = vlach
+		religion = orthodox
+		size = 125
+	}
+
+	soldiers = {
+		culture = vlach
+		religion = orthodox
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 238
+	}
+
+	labourers = {
+		culture = vlach
+		religion = orthodox
+		size = 12
+	}
+
+	clergymen = {
+		culture = siebenburger
+		religion = protestant
+		size = 25  
+	}
+
+	artisans = {
+		culture = siebenburger
+		religion = protestant
+		size = 75
+	}
+
+	soldiers = {
+		culture = siebenburger
+		religion = protestant
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = siebenburger
+		religion = protestant
+		size = 438  
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38  
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 400 
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1538    
+	}
+}
+#Galicia Region (2576000) #see Poland.txt for balance of region 
+#under the rule of Austria in 1836
+#Lvov (660000/165000 POPS) #now part of Ukraine 
+702 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 375
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 2100
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 500
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 34599
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1926
+	}
+	
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 500
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 1875
+	}
+
+	bureaucrats = {
+		culture = polish
+		religion = catholic
+		size = 650
+	}
+
+	officers = {
+		culture = polish
+		religion = catholic
+		size = 375
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 388
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 1625
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 325
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 25362
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1400
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5201
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 274
+	}
+
+	
+}
+#Stryi (404000/101000 POPS) #now part of Ukraine  
+951 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 238
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1275
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 250
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 20551
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1187
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 2500
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 212
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 1050
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 225
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 16012
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 700
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 2601
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 137
+	}
+}
+#Ternopil (1136000/284000 POPS) #now part of Ukraine  
+952 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 975
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 4950
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 975
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 74495
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 4605
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 30000
+	}
+	
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 2100
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 3250
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 350
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 1700
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 350
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 24932
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 1418
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 88
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1700
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 6306
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 332
+	}
+}
+#Stanislavov (376000/94000 POPS) #now part of Ukraine  
+953 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 250
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1325
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 262
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 21954
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1208
+	}
+	
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 500
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 1075
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 162
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 825
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 162
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 13275
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 700
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 2601
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 137
+	}
+}
+#Volhynia-Podolia Region (1892000)
+#under the rule of Russia in 1836
+#Vinnitsa (492000/123000 POPS)
+954 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 550
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 2925
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 525
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 21898
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1152
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 25000
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 1000
+	}
+
+	bureaucrats = {
+		culture = polish
+		religion = catholic
+		size = 62
+	}
+
+	officers = {
+		culture = polish
+		religion = catholic
+		size = 200
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 38
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 150
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 154
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 8
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1500
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5569
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 293
+	}
+}
+#Proskorov (496000/124000 POPS)
+955 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 475
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1225
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 2200
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19095
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1005
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 20000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 1375
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 325
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 3040
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 160
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1500
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5569
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 293
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 950
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 125
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 2304
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 121
+	}
+}
+#Rovne (460000/115000 POPS)
+956 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 412
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1200
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 500
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 20094
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1094
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 20000
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 1000
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 62
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 375
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 4729
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 259
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1300
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 4869
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 256
+	}
+	
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 75
+	}
+	
+	bureaucrats = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 2125
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 5006
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 264
+	}
+	
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 250
+	}
+
+	aristocrats = {
+		culture = volga_german
+		religion = catholic
+		size = 475
+	}	
+}
+#Kovel (444000/111000 POPS)
+957 = {
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 412
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1175
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 2200
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 16789
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 936
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19000
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 1150
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 300
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 62
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 4004
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 221
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1300
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 4869
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 256
+	}
+	
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 75
+	}
+	
+	bureaucrats = {
+		culture = volga_german
+		religion = catholic
+		size = 38
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 2125
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 9282
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 488
+	}
+	
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 250
+	}
+	
+	officers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	aristocrats = {
+		culture = volga_german
+		religion = catholic
+		size = 525
+	}	
+}
+#Ukraine Region (4028000)
+#under the rule of Russia in 1836
+#Kiev (492000/123000 POPS)
+958 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 650
+	}
+
+	bureaucrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 125
+	}
+
+	officers = {
+		culture = cossack
+		religion = orthodox
+		size = 300
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 450
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 5000
+	}
+	
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 250
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 2700
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 15578
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 872
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19000
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 750
+	}
+
+	officers = {
+		culture = polish
+		religion = catholic
+		size = 150
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+	
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 71
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 4
+	}
+	
+	aristocrats = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	officers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1650
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 88
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5879
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 309
+	}
+
+	aristocrats = {
+		culture = russian
+		religion = orthodox
+		size = 25
+	}
+
+	officers = {
+		culture = russian
+		religion = orthodox
+		size = 75
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	soldiers = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+	
+	zzz_dummy = {
+		culture = russian
+		religion = orthodox
+		size = 19
+	}
+
+	labourers = {
+		culture = russian
+		religion = orthodox
+		size = 6
+	}
+}
+#Korosten (448000/112000 POPS)
+959 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 850
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 438
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1050
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 2200
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 13214
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 748
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 24000
+	}
+	
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 450
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 375
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = catholic
+		size = 3871
+	}
+
+	labourers = {
+		culture = polish
+		religion = catholic
+		size = 204
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1375
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 4739
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 249
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 238
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+}
+#Zhitomir (460000/115000 POPS)
+960 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 800
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 550
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1300
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 2200
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 18179
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1009
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
+	}
+	
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 400
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 75
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1500
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5082
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 268
+	}
+}
+#Cherkassy (460000/115000 POPS)
+961 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 800
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 400
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 975
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 2800
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 15886
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 889
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19000
+	}
+	
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 350
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1700
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5082
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 268
+	}
+}
+#Chernigov (616000/154000 POPS)
+962 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1500
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 700
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 3000
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 3050
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 26312
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1438
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 24000
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 750
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 3004
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 158
+	}
+
+	aristocrats = {
+		culture = russian
+		religion = orthodox
+		size = 25
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = russian
+		religion = orthodox
+		size = 7
+	}
+
+	soldiers = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = russian
+		religion = orthodox
+		size = 94
+	}
+
+	labourers = {
+		culture = russian
+		religion = orthodox
+		size = 13
+	}
+}
+#Poltava (1552000/388000 POPS)
+963 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 3000
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1750
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 5000
+	}
+	
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 3000
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 7550
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 14000
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 60000
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 3200
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 80000
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1625
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5676
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 299
+	}
+
+	aristocrats = {
+		culture = russian
+		religion = orthodox
+		size = 25
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	soldiers = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = russian
+		religion = orthodox
+		size = 13
+	}
+
+	labourers = {
+		culture = russian
+		religion = orthodox
+		size = 7
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 238
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+}
+#Taurida Region (360000)
+#under the rule of Russia in 1836
+#Simferopol (126000/29000 POPS)
+964 = {
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 71
+	}
+
+	labourers = {
+		culture = gypsy
+		religion = orthodox
+		size = 4
+	}
+	
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 275
+	}
+
+	bureaucrats = {
+		culture = tatar
+		religion = sunni
+		size = 138
+	}
+
+	officers = {
+		culture = tatar
+		religion = sunni
+		size = 120
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 475
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 15500
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 40887
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 205
+	}
+	
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 5000
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 25
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 75
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1106
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 69
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 100
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 356
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 19
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 8
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 38
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 420
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 22
+	}
+}
+#Cherson (126000/29000 POPS)
+965 = {
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 325
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 262
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 638
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 3075
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 950
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 350
+	}
+	
+	zzz_dummy = {
+		culture = cossack
+		religion = orthodox
+		size = 17
+	}
+	
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 115
+	}
+
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 50
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 385
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 208
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 2943
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 32574
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 414
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 200
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 736
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 39
+	}
+
+	clergymen = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	artisans = {
+		culture = pontic
+		religion = orthodox
+		size = 100
+	}
+
+	soldiers = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = pontic
+		religion = orthodox
+		size = 356
+	}
+
+	labourers = {
+		culture = pontic
+		religion = orthodox
+		size = 19
+	}
+
+	clergymen = {
+		culture = bulgarian
+		religion = orthodox
+		size = 25
+	}
+
+	artisans = {
+		culture = bulgarian
+		religion = orthodox
+		size = 50
+	}
+
+	soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = bulgarian
+		religion = orthodox
+		size = 341
+	}
+
+	labourers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 71
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 62
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 855
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 45
+	}
+}
+#Kerch (48000/12000 POPS)
+966 = {
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 100
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 38
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 88
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 3776
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 199
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 2
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 188
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 10
+	}
+
+	clergymen = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	artisans = {
+		culture = pontic
+		religion = orthodox
+		size = 100
+	}
+
+	soldiers = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = pontic
+		religion = orthodox
+		size = 356
+	}
+
+	labourers = {
+		culture = pontic
+		religion = orthodox
+		size = 19
+	}
+}
+#Sevastopol (60000/15000 POPS)
+967 = {
+	zzz_dummy = {
+		culture = armenian
+		religion = orthodox
+		size = 5428
+	}
+
+	labourers = {
+		culture = armenian
+		religion = orthodox
+		size = 22
+	}
+	
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 125
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 88
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 5050
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 35454
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 234
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5280
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 15
+	}
+
+	clergymen = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	artisans = {
+		culture = pontic
+		religion = orthodox
+		size = 125
+	}
+
+	soldiers = {
+		culture = pontic
+		religion = orthodox
+		size = 8
+	}
+
+	zzz_dummy = {
+		culture = pontic
+		religion = orthodox
+		size = 456
+	}
+
+	labourers = {
+		culture = pontic
+		religion = orthodox
+		size = 24
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 38
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 416
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 22
+	}
+	
+	bureaucrats = {
+		culture = turkish
+		religion = sunni
+		size = 138
+	}
+}
+#Odessa Region (1488000)
+#under the rule of Russia in 1836
+#Odessa (248000/62000 POPS)
+968 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1
+	}
+
+	bureaucrats = {
+		culture = vlach
+		religion = sunni
+		size = 38
+	}
+
+	bureaucrats = {
+		culture = tatar
+		religion = sunni
+		size = 200
+	}
+
+	officers = {
+		culture = tatar
+		religion = sunni
+		size = 100
+	}
+
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 12
+	}
+
+	artisans = {
+		culture = vlach
+		religion = orthodox
+		size = 12
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 130
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 250
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 2670
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 13044
+	}
+
+	farmers = {
+		culture = tatar
+		religion = sunni
+		size = 1672
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 130
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 1374
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = sunni
+		size = 14
+	}
+
+	officers = {
+		culture = polish
+		religion = sunni
+		size = 25
+	}
+
+	clergymen = {
+		culture = polish
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 14
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 12
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 750
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 979
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 146
+	}
+
+	clergymen = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	artisans = {
+		culture = pontic
+		religion = orthodox
+		size = 375
+	}
+
+	soldiers = {
+		culture = pontic
+		religion = orthodox
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = pontic
+		religion = orthodox
+		size = 95
+	}
+
+	labourers = {
+		culture = pontic
+		religion = orthodox
+		size = 5
+	}
+
+	clergymen = {
+		culture = south_italian
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = south_italian
+		religion = catholic
+		size = 10
+	}
+
+	soldiers = {
+		culture = south_italian
+		religion = catholic
+		size = 5
+	}
+
+	zzz_dummy = {
+		culture = south_italian
+		religion = catholic
+		size = 228
+	}
+
+	labourers = {
+		culture = south_italian
+		religion = catholic
+		size = 22
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 6
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 111
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = sunni
+		size = 5
+	}
+}
+#Pervomaisk (496000/124000 POPS)
+969 = {
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 84
+	}
+
+	labourers = {
+		culture = gypsy
+		religion = orthodox
+		size = 4
+	}
+	
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1000
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 550
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1325
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 3050
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19130
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 5000
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1270
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 19000
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 375
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 50
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 62
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1500
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5569
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 293
+	}
+
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = vlach
+		religion = orthodox
+		size = 100
+	}
+
+	soldiers = {
+		culture = vlach
+		religion = orthodox
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 6946
+	}
+
+	labourers = {
+		culture = vlach
+		religion = orthodox
+		size = 366
+	}
+}
+#Nikolaev (248000/62000 POPS)
+970 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 12
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 12
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 12
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 114
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1009
+	}
+	
+	zzz_dummy = {
+		culture = cossack
+		religion = orthodox
+		size = 39
+	}
+
+	zzz_dummy = {
+		culture = polish
+		religion = sunni
+		size = 119
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 11119
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 151
+	}
+
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 300
+	}
+
+	clergymen = {
+		culture = polish
+		religion = sunni
+		size = 3
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 699
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 780
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 250
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 654
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 134
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = sunni
+		size = 75
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 68
+	}
+
+	clergymen = {
+		culture = vlach
+		religion = orthodox
+		size = 62
+	}
+
+	artisans = {
+		culture = vlach
+		religion = orthodox
+		size = 175
+	}
+
+	soldiers = {
+		culture = vlach
+		religion = orthodox
+		size = 75
+	}
+
+	zzz_dummy = {
+		culture = vlach
+		religion = orthodox
+		size = 929
+	}
+
+	labourers = {
+		culture = vlach
+		religion = orthodox
+		size = 67
+	}
+}
+#Krivoy Rog (244000/61000 POPS)
+971 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 550
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 250
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 650
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 262
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 26172
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1378
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 2500
+	}
+
+	aristocrats = {
+		culture = polish
+		religion = catholic
+		size = 125
+	}
+
+	clergymen = {
+		culture = polish
+		religion = catholic
+		size = 25
+	}
+
+	artisans = {
+		culture = polish
+		religion = catholic
+		size = 125
+	}
+
+	soldiers = {
+		culture = polish
+		religion = catholic
+		size = 12
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 750
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 38
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 2554
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 134
+	}
+}
+#Ekaterinoslav (252000/63000 POPS)
+972 = {
+	zzz_dummy = {
+		culture = gypsy
+		religion = orthodox
+		size = 65
+	}
+
+	labourers = {
+		culture = gypsy
+		religion = orthodox
+		size = 3
+	}
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 325
+	}
+	
+	officers = {
+		culture = cossack
+		religion = orthodox
+		size = 50
+	}
+	
+	bureaucrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 50
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 262
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 950
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 275
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 23359
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1229
+	}
+
+	aristocrats = {
+		culture = russian
+		religion = orthodox
+		size = 25
+	}
+
+	officers = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = russian
+		religion = orthodox
+		size = 10
+	}
+
+	soldiers = {
+		culture = russian
+		religion = orthodox
+		size = 500
+	}
+
+	zzz_dummy = {
+		culture = russian
+		religion = orthodox
+		size = 109
+	}
+
+	labourers = {
+		culture = russian
+		religion = orthodox
+		size = 53
+	}
+	
+	aristocrats = {
+		culture = volga_german
+		religion = catholic
+		size = 50
+	}
+
+	officers = {
+		culture = volga_german
+		religion = catholic
+		size = 50
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 150
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 1699
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 89
+	}
+	
+	aristocrats = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	officers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 375
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1021
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 54
+	}
+}
+#Zaporozhia Region (648000)
+#under the rule of Russia in 1836
+#Melitopol (84000/21000 POPS)
+973 = {
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 125
+	}
+
+	bureaucrats = {
+		culture = tatar
+		religion = sunni
+		size = 125
+	}
+
+	officers = {
+		culture = tatar
+		religion = sunni
+		size = 112
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 225
+	}
+
+	clergymen = {
+		culture = cossack
+		religion = orthodox
+		size = 18
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 2325
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 3388
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 112
+	}
+
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 512
+	}
+
+	farmers = {
+		culture = tatar
+		religion = sunni
+		size = 5222
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size =12561
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 934
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 191
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 100
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 256
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 14
+	}
+	
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 5
+	}
+	
+	bureaucrats = {
+		culture = volga_german
+		religion = sunni
+		size = 1
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 3
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = orthodox
+		size = 2
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 1
+	}
+
+	aristocrats = {
+		culture = volga_german
+		religion = sunni
+		size = 1
+	}	
+}
+#Kramatorsk (240000/60000 POPS)
+974 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 625
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 275
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 1125
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 1288
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 25541
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1397
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 2500
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 375
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 796
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 42
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 475
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 25
+	}
+
+}
+#Yuzovka (76000/19000 POPS)
+975 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 2
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = sunni
+		size = 5
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 14
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 19
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 325
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = sunni
+		size = 5
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 100
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 256
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 14
+	}
+
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 175
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = sunni
+		size = 425
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 525
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 1125
+	}
+
+	farmers = {
+		culture = tatar
+		religion = sunni
+		size = 1181
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = sunni
+		size = 4781
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 312
+	}
+}
+#Mariopol (248000/62000 POPS)
+976 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = sunni
+		size = 7
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 638
+	}
+
+	soldiers = {
+		culture = tatar
+		religion = sunni
+		size = 575
+	}
+
+	zzz_dummy = {
+		culture = tatar
+		religion = orthodox
+		size = 5821
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 2254
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 720
+	}
+	
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 25
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 175
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 42
+	}
+
+	clergymen = {
+		culture = pontic
+		religion = orthodox
+		size = 25
+	}
+
+	artisans = {
+		culture = pontic
+		religion = orthodox
+		size = 350
+	}
+
+	soldiers = {
+		culture = pontic
+		religion = orthodox
+		size = 25
+	}
+
+	zzz_dummy = {
+		culture = pontic
+		religion = orthodox
+		size = 1852
+	}
+
+	labourers = {
+		culture = pontic
+		religion = orthodox
+		size = 98
+	}
+
+	clergymen = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	artisans = {
+		culture = volga_german
+		religion = catholic
+		size = 38
+	}
+
+	soldiers = {
+		culture = volga_german
+		religion = catholic
+		size = 12
+	}
+
+	zzz_dummy = {
+		culture = volga_german
+		religion = catholic
+		size = 416
+	}
+
+	labourers = {
+		culture = volga_german
+		religion = catholic
+		size = 22
+	}
+}
+#Kursk Region (596000) #see Russia.txt for balance of region
+#under the rule of Russia in 1836
+#Kharkov (596000/149000 POPS) #now part of Ukraine  
+978 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 2125
+	}
+	
+	officers = {
+		culture = cossack
+		religion = orthodox
+		size = 50
+	}
+	
+	bureaucrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 50
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 538
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 3100
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 5300
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 20021
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1091
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 26000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
+	}
+	
+	aristocrats = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+	
+	officers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 370
+	}
+	
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 50
+	}
+	
+	zzz_dummy = {
+		culture = ashkenazi
+		religion = jewish
+		size = 238
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 12
+	}
+
+	aristocrats = {
+		culture = tatar
+		religion = sunni
+		size = 45
+	}
+	
+	officers = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 50
+	}
+
+	artisans = {
+		culture = tatar
+		religion = sunni
+		size = 125
+	}
+
+	soldiers = {
+		culture = russian
+		religion = orthodox
+		size = 1050
+	}
+
+	zzz_dummy = {
+		culture = russian
+		religion = orthodox
+		size = 3061
+	}
+
+	labourers = {
+		culture = tatar
+		religion = sunni
+		size = 177
+	}
+}
+#Donbass Region (652000) #see Russia.txt for balance of region 
+#under the rule of Russia in 1836
+#Luhansk (652000/163000 POPS) #now part of Ukraine 
+980 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1450
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 662
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 3500
+	}
+
+	soldiers = {
+		culture = cossack
+		religion = orthodox
+		size = 5212
+	}
+
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 24341
+	}
+
+	labourers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1334
+	}
+	
+	zzz_dummy = {
+		culture = ukrainian
+		religion = orthodox
+		size = 21000
+	}
+	
+	farmers = {
+		culture = cossack
+		religion = orthodox
+		size = 10000
+	}
+
+	aristocrats = {
+		culture = russian
+		religion = orthodox
+		size = 25
+	}
+
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 112
+	}
+
+	artisans = {
+		culture = russian
+		religion = orthodox
+		size = 55
+	}
+
+	soldiers = {
+		culture = russian
+		religion = orthodox
+		size = 1120
+	}
+
+	zzz_dummy = {
+		culture = russian
+		religion = orthodox
+		size = 3500
+	}
+
+	labourers = {
+		culture = russian
+		religion = orthodox
+		size = 500
+	}
+
+}
