@@ -19,11 +19,11 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-		add_country_modifier = {
-			name = improved_administration
-			duration = -1
-		}
-		set_country_flag = new_administration_rus
+			add_country_modifier = {
+				name = improved_administration
+				duration = -1
+			}
+			set_country_flag = new_administration_rus
 		}
 		ai_will_do = {					
 		factor = 1
@@ -115,30 +115,27 @@ political_decisions = {
 				add_core = THIS
 			}
 			badboy = 15
-			random_country = {
+			random_owned = {
 				limit = {
-					SWE = { war = yes }
-					tag = RUS
+					owner = {
+						SWE = { exists = yes war = yes }
+					}
 				}
-				war = {
-					target = SWE
-					attacker_goal = { casus_belli = acquire_all_cores country = RUS }
-					defender_goal = { casus_belli = cut_down_to_size }
-					call_ally = no
+				owner = {
+					war = {
+						target = SWE
+						attacker_goal = { casus_belli = acquire_all_cores country = RUS }
+						defender_goal = { casus_belli = cut_down_to_size }
+						call_ally = no
+					}
 				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						NOT = { year = 1701 }
-						NOT = { has_global_flag = plc_civil_war }
-					}
-					NOT = { year = 1705 }
-				}
+				factor = 0		
+				NOT = { year = 1701 }
 			}
 		}
 	}
@@ -574,7 +571,10 @@ political_decisions = {
 		picture = cossacks
 		potential = {
 			tag = RUS
-			has_country_flag = don_resolved
+			OR = {
+				has_country_flag = don_resolved
+				year = 1720
+			}
 			DON = {
 				exists = yes
 			}

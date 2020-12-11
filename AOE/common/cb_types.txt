@@ -495,7 +495,7 @@ acquire_all_cores = {
 		NOT = { tech_school = unciv_tech_school }
 		NOT = { is_our_vassal = THIS }
 		number_of_states = 2 # annex if you want their last state		
-		is_vassal = no
+		#is_vassal = no
 		any_owned_province = { is_core = THIS }
 		any_owned_province = { NOT = { is_core = THIS } }
 		NOT = { has_country_modifier = neutrality }

@@ -427,7 +427,7 @@ country_event = {
 	id = 157301
 	title = "The Silent Sejm"
 	desc = "EVTDESC157301"
-	picture = glos
+	picture = veto
 	fire_only_once = yes
 	
 	trigger = {
@@ -484,7 +484,7 @@ country_event = {
 	id = 157302
 	title = "The Silent Sejm"
 	desc = "EVTDESC157302"
-	picture = glos
+	picture = veto
 	fire_only_once = yes
 	
 	trigger = {
@@ -936,8 +936,8 @@ country_event = {
 	trigger = {
 		tag = RUS
 		has_global_flag = great_northern_war
-		war = yes
 		war_exhaustion = 10
+		war_with = SWE
 	}
 	
 	mean_time_to_happen = {
@@ -1202,6 +1202,7 @@ province_event = {
 	picture = siberian_attack
 	
 	trigger = {
+		
 		1074 = {
 			owner = {
 				tag = RUS
@@ -1215,15 +1216,41 @@ province_event = {
 			tag = RUS
 			has_country_flag = kamchatka_war
 		}
+		any_neighbor_province = {
+			has_province_modifier = kamchatka_wars
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 12
+		modifier = {
+			factor = 0.9
+			average_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 9
+		}
+		modifier = {
+			factor = 0.8
+			revolt_percentage = .20
+		}
+		modifier = {
+			factor = 0.7
+			revolt_percentage = .30
+		}
+		modifier = {
+			factor = 0.6
+			revolt_percentage = .40
+		}
 	}
 	
 	option = {
 		name = "EVT170024OPT1"
-		
 			any_pop = {
 				limit = {
 					NOT = {
@@ -1231,18 +1258,18 @@ province_event = {
 					}
 				}
 				militancy = 9
-				reduce_pop = 0.8
+				reduce_pop = 0.85
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_pop = 0.9
+				reduce_pop = 0.95
 			}
-		THIS = {
-			random_owned = {
+			random_neighbor_province = {
 				limit = {
+					owned_by = THIS
 					any_neighbor_province = {
 						has_country_modifier = kamchatka_wars
 					}
@@ -1252,7 +1279,6 @@ province_event = {
 					duration = 365
 				}
 			}
-		}
 		ai_chance = {
 			factor = 5
 		}
@@ -1270,14 +1296,14 @@ province_event = {
 					}
 				}
 				militancy = -5
-				reduce_pop = 0.9
+				reduce_pop = 0.95
 			}
 			any_pop = {
 				limit = {
 					has_pop_religion = orthodox
 				}
 				consciousness = 1
-				reduce_pop = 0.8
+				reduce_pop = 0.85
 			}
 		ai_chance = {
 			factor = 1
@@ -1295,8 +1321,11 @@ country_event = {
 	trigger = {
 		tag = RUS 
 		has_country_flag = kamchatka_war
-		all_core = {
-			NOT = {	has_province_modifier = kamchatka_wars }
+		OR = {
+			all_core = {
+				NOT = {	has_province_modifier = kamchatka_wars }
+			}
+			year = 1732
 		}
 	}
 	
@@ -1307,6 +1336,9 @@ country_event = {
 	option = {
 		name = "nice"
 		clr_country_flag = kamchatka_war
+		any_owned = {
+			remove_province_modifier = kamchatka_wars
+		}
 		prestige = 1
 		war_exhaustion = -5
 	}
@@ -1467,8 +1499,8 @@ country_event = {
 		TUR = {
 			war = {
 				target = RUS
-				attacker_goal = { casus_belli = humiliate }
-				defender_goal = { casus_belli = acquire_core_state state_province_id = 1047 }
+				attacker_goal = { acquire_all_cores country = TUR }
+				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}
 		}
@@ -1484,7 +1516,6 @@ country_event = {
 	title = "EVTNAME178304"
 	desc = "EVTDESC178304"
 	picture = treaty_signing
-	major = yes
 	fire_only_once = yes
 	
 	mean_time_to_happen = {

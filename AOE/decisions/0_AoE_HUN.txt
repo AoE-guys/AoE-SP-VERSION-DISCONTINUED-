@@ -27,7 +27,13 @@ political_decisions = {
 		}
 		allow = {
 			exists = yes
-			has_global_flag = spanish_succesion_crisis
+			OR = {
+				has_global_flag = spanish_succesion_crisis
+				AND = {
+					year = 1704
+					is_secondary_power = yes
+				}
+			}
 			NOT = { year = 1711 } 
 		}
 		effect = {
@@ -35,7 +41,11 @@ political_decisions = {
 			AUS = { country_event = 10225 }
 		}
 		ai_will_do = {
-			factor = 1 
+			factor = 1
+			modifier = {
+				factor = 3
+				year = 1704
+			}
 			modifier = {
 				factor = 0
 				AUS = {

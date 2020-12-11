@@ -480,6 +480,7 @@ political_decisions = {
 		}
 		effect = {
 			inherit = LOR
+			LOR = { all_core = { add_core = THIS } }
 			badboy = 5
 			set_country_flag = annex_lor
 		}

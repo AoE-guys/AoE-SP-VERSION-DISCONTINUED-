@@ -42,10 +42,6 @@ political_decisions = {
 					}
 				}
 			}
-			MUG = {
-				is_greater_power = no
-				NOT = { number_of_states = 2 }
-			}
 			is_greater_power = yes
 		}
 		effect = {
