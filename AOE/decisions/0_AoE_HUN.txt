@@ -17,7 +17,7 @@ political_decisions = {
 	rakoczi_war_of_independence = {
 		picture = rakoczi
 		potential = {
-			tag = SIE
+			tag = HUN
 			vassal_of = AUS
 			NOT = { has_country_flag = rakoczi_tried }
 			OR = {
@@ -39,7 +39,7 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				AUS = {
-					NOT = { war_exhaustion = 10 }
+					NOT = { war_exhaustion = 5 }
 				}
 			}
 		}
@@ -137,11 +137,11 @@ political_decisions = {
 	start_pest_congress = {
 		picture = hungary_flag
 		potential = {
-			tag = SIE
+			tag = HUN
 			has_global_flag = hungarian_revolution_succes
 			NOT = { has_global_flag = pest_congress }
-			HUN = {
-				vassal_of = SIE
+			SIE = {
+				vassal_of = HUN
 			}
 			exists = yes
 		}
