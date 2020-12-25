@@ -348,6 +348,79 @@ political_decisions = {
 		}
 	}
 	
+	acquire_liv = {
+		picture = baltic
+		potential = {
+			tag = DPR
+			government = theocracy
+			NOT = {
+				has_country_flag = liv_order_teu
+			}
+			exists = yes
+		}
+		allow = {
+			is_vassal = no
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		effect = {
+			set_country_flag = liv_order_teu
+			RUS_354 = {
+				add_core = THIS
+			}
+			RUS_349 = {
+				add_core = THIS
+			}
+			add_accepted_culture = east_german
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	push_forward = {
+		picture = west_prussia
+		potential = {
+			tag = DPR
+			government = theocracy
+			NOT = {
+				has_country_flag = push_forward
+			}
+			exists = yes
+		}
+		allow = {
+			is_vassal = no
+			owns = 354
+			owns = 349
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		effect = {
+			set_country_flag = push_forward
+			3323 = {
+				add_core = THIS
+			}
+			708 = {
+				add_core = THIS
+			}
+			365 = {
+				add_core = THIS
+			}
+			364 = {
+				add_core = THIS
+			}
+			997 = {
+				add_core = THIS
+			}
+			1006 = {
+				add_core = THIS
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 	form_livonia = {
 		picture = baltic
 		potential = {

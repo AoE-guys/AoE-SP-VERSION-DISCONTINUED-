@@ -474,9 +474,9 @@ country_event = {
 	
 	option = {
 		name = "We can't do anything, give them what they want."
-		any_owned = { owner = { limit = { KUR = { exists = yes vassal_of = PLC } } inherit = KUR } }
-		any_owned = { owner = { limit = { LAT = { exists = yes vassal_of = PLC } } inherit = LAT } }
-		any_owned = { owner = { limit = { POL = { exists = yes } } inherit = POL } }
+		random_country = { limit = { KUR = { exists = yes vassal_of = PLC } } inherit = KUR }
+		random_country = { limit = { LAT = { exists = yes vassal_of = PLC } } inherit = LAT }
+		random_country = { limit = { tag = RUS POL = { exists = yes } } inherit = POL }
 		PLC = {
 			3337 = { secede_province = RUS }
 			RUS_360	= { limit = { NOT = { province_id = 362 } } secede_province = RUS }
@@ -484,6 +484,7 @@ country_event = {
 			RUS_940 = { secede_province = RUS }
 			RUS_959 = { secede_province = RUS }
 		}
+		FROM = { all_core = { limit = { owned_by = THIS } secede_province = FROM } }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -498,7 +499,7 @@ country_event = {
 			war = {
 				target = PLC
 				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = take_from_sphere }
+				defender_goal = { casus_belli = humiliate }
 				call_ally = no
 			}
 		}
@@ -519,6 +520,7 @@ country_event = {
 		706 = { secede_province = FROM }
 		362 = { secede_province = FROM }
 		712 = { secede_province = FROM }
+		FROM = { all_core = { limit = { owned_by = THIS } secede_province = FROM } }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
@@ -555,6 +557,7 @@ country_event = {
 		name = "We can't do anything, give them what they want."
 		703 = { secede_province = AUS }
 		RUS_715 = { secede_province = AUS }
+		FROM = { all_core = { limit = { owned_by = THIS } secede_province = FROM } }
 		prestige = -10
 		ai_chance = { factor = 95 }
 	}
