@@ -4486,6 +4486,16 @@ acquire_state = {
 		}
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		OR = {
+			AND = {
+				THIS = { NOT = { tech_school = unciv_tech_school } }
+				NOT = { tech_school = unciv_tech_school }
+			}
+			AND = {
+				THIS = { tech_school = unciv_tech_school }
+				tech_school = unciv_tech_school
+			}
+		}
+		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
 		}
@@ -7455,6 +7465,16 @@ acquire_substate_region = {
 		NOT = { is_our_vassal = THIS }
 		num_of_substates = 1 # if has any substate
 		THIS = { ai = no }
+		OR = {
+			AND = {
+				THIS = { NOT = { tech_school = unciv_tech_school } }
+				NOT = { tech_school = unciv_tech_school }
+			}
+			AND = {
+				THIS = { tech_school = unciv_tech_school }
+				tech_school = unciv_tech_school
+			}
+		}
 		any_substate = {
 			OR = {
 				neighbour = THIS
