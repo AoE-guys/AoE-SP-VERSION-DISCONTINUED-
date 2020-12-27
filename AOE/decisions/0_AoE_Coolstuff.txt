@@ -821,6 +821,10 @@ political_decisions = {
 					exists = ARM
 				}
 			}
+			OR = {
+				is_secondary_power = yes
+				is_greater_power  = yes
+			}
 		}
 		effect = {
 			CLC = {

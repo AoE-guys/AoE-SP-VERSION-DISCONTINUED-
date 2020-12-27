@@ -62,14 +62,12 @@ political_decisions = {
 	}
 	
 
-unite_moldavia_wallachia = {
+	unite_moldavia_wallachia = {
 		potential = {
 			OR = {
 				tag = WAL
 				tag = MOL
 			}
-			exists = WAL
-			exists = MOL
 			NOT = { exists = ROM }
 		}
 
@@ -79,12 +77,22 @@ unite_moldavia_wallachia = {
 				is_vassal = no
 			}
 			WAL = {
-				war = no
-				is_vassal = no
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						owned_by = THIS
+					}
+				}
 			}
 			MOL = {
-				war = no
-				is_vassal = no
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						owned_by = THIS
+					}
+				}
 			}
 		}
 
@@ -96,16 +104,15 @@ unite_moldavia_wallachia = {
 					tag = WAL
 					exists = yes
 				}
-				country_event = 11101
+				annex_to = THIS
 			}
 			random_country = {
 				limit = {
 					tag = MOL
 					exists = yes
 				}
-				country_event = 11101
+				annex_to = THIS
 			}
-			add_accepted_culture = vlach
 			capital = 664
 		}
 

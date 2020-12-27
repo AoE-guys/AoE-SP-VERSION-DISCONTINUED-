@@ -1,0 +1,268 @@
+political_decisions = {
+	
+	reform_byzantium = {
+		picture = become_byznatium
+		potential = {
+			tag = GRE
+			BYZ = { NOT = { exists = yes } }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			owns = 860
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		
+		effect = {
+			all_core = {
+				add_core = BYZ
+				remove_core = THIS
+			}
+			change_tag = BYZ
+			TUR_860 = { add_core = THIS }
+			EGY_843 = { add_core = THIS }
+			TUR_869 = { add_core = THIS }
+			TUR_863 = { add_core = THIS }
+			TUR_880 = { add_core = THIS }
+			BUL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			capital = 860
+			860 = {
+				change_province_name = "Konstantinoupolis"
+			}
+		}
+	}
+	
+	reestablish_thema_system = {
+		picture = switch_to_army_tech
+		potential = {
+			OR = {
+				tag = GRE
+				tag = BYZ
+			}
+			NOT = { has_country_flag = reestablished_thema_system }
+		}
+		allow = {
+			TUR_860 = { owned_by = THIS }
+			EGY_843 = { owned_by = THIS }
+			TUR_869 = { owned_by = THIS }
+			TUR_863 = { owned_by = THIS }
+			TUR_880 = { owned_by = THIS }
+			TUR_876 = { owned_by = THIS }
+			TUR_873 = { owned_by = THIS }
+		}
+		effect = {
+			tech_school = army_tech_school
+			add_country_modifier = {
+				name = thema_system
+				duration = -1
+			}
+			add_accepted_culture = turkish
+			TUR_860 = { add_core = THIS }
+			EGY_843 = { add_core = THIS }
+			TUR_869 = { add_core = THIS }
+			TUR_863 = { add_core = THIS }
+			TUR_880 = { add_core = THIS }
+			TUR_876 = { add_core = THIS }
+			TUR_873 = { add_core = THIS }
+			TUR_882 = { add_core = THIS }
+			TUR_885 = { add_core = THIS }
+			TUR_887 = { add_core = THIS }
+			set_country_flag = reestablished_thema_system
+		}
+	}
+	
+	rome_restored = {
+		picture = become_byznatium
+		potential = {
+			tag = BYZ
+			NOT = { has_country_flag = rome_restored }
+		}
+		allow = {
+			owns = 754
+			owns = 753
+			owns = 749
+			owns = 762
+			is_greater_power = yes
+		}
+		effect = {
+			ITA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			749 = {
+				change_province_name = "Rhomi"
+			}
+			set_country_flag = rome_restored
+			prestige = 40
+		}
+	}
+	
+	province_of_illyria = {
+		picture = army_training
+		potential = {
+			tag = BYZ
+			NOT = { has_country_flag = dalmatia_restored }
+		}
+		allow = {
+			owns = 794
+			owns = 849
+			owns = 783
+			owns = 774
+			owns = 768
+			owns = 2583
+			owns = 798
+			military_score = 50
+			is_greater_power = yes
+		}
+		effect = {
+			SER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ALB = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SLO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MON = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = dalmatia_restored
+			prestige = 40
+		}
+	}
+	
+	recover_levant = {
+		picture = map_levant
+		potential = {
+			tag = BYZ
+			NOT = { has_country_flag = recovered_levant }
+		}
+		allow = {
+			owns = 900
+			is_greater_power = yes
+			military_score = 80
+		}
+		effect = {
+			EGY_915 = {
+				add_core = THIS
+			}
+			EGY_910 = {
+				add_core = THIS
+			}
+			EGY_903 = {
+				add_core = THIS
+			}
+			EGY_921 = {
+				add_core = THIS
+			}
+			EGY_897 = {
+				add_core = THIS
+			}
+			CLC = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = recovered_levant
+			badboy = 10
+		}
+	}
+	
+	the_bread_basket = {
+		picture = map_egypt
+		potential = {
+			tag = BYZ
+			NOT = { has_country_flag = bread_basket }
+		}
+		allow = {
+			EGY_915 = {
+				owned_by = THIS
+			}
+			EGY_910 = {
+				owned_by = THIS
+			}
+			EGY_903 = {
+				owned_by = THIS
+			}
+			EGY_921 = {
+				owned_by = THIS
+			}
+			EGY_897 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			EGY = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			badboy = 15
+			set_country_flag = bread_basket
+		}
+	}
+	
+	maghreb_conquest = {
+		picture = map_maghreb
+		potential = {
+			tag = BYZ
+			NOT = { has_country_flag = maghreb_conquest }
+			has_country_flag = bread_basket
+		}
+		allow = {
+			EGY = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			military_score = 150
+		}
+		effect = {
+			TRI = {
+				all_core = {
+					limit = {
+						NOT = { is_core = FZN }
+					}
+					add_core = THIS
+				}
+			}
+			CYR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ALD = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MOR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			TUN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = maghreb_conquest
+		}
+	}
+}

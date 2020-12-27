@@ -446,4 +446,23 @@ political_decisions = {
 			badboy = 8
 		}
 	}
+	
+	move_capital_to_ankara = {
+		potential = {
+			tag = TUR
+			NOT = {
+				owns = 830
+				owns = 817
+			}
+			NOT = { capital = 876 }
+			owns = 876
+		}
+		allow = {
+			exists = yes
+			owns = 876
+		}
+		effect = {
+			capital = 876
+		}
+	}
 }

@@ -844,6 +844,13 @@ country_event = {
 		name = "Go through with the peace as planned"
 		1047 = { secede_province = RUS }
 		end_war = RUS
+		any_country = {
+			limit = {
+				vassal_of = RUS
+				war_with = THIS
+			}
+			end_war = THIS
+		}
 		prestige = -5
 		ai_chance = { factor = 1 }
 	}

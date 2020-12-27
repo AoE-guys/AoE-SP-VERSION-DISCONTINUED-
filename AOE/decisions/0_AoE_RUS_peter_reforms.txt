@@ -46,6 +46,11 @@ political_decisions = {
 		}
 		effect = {
 		government = absolute_monarchy
+		inherit = HET
+		inherit = ZZH
+		inherit = DON
+		inherit = KMK
+		inherit = BSK
 		prestige = 60
 		}
 		ai_will_do = {					

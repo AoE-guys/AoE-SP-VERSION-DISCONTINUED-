@@ -1499,7 +1499,7 @@ country_event = {
 		TUR = {
 			war = {
 				target = RUS
-				attacker_goal = { acquire_all_cores country = TUR }
+				attacker_goal = { casus_belli = acquire_all_cores country = TUR }
 				defender_goal = { casus_belli = humiliate }
 				call_ally = yes
 			}

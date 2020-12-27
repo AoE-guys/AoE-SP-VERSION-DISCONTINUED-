@@ -300,10 +300,12 @@ political_decisions = {
 			tag  = ARN
 			is_vassal = no
 			NOT = { has_country_flag = aragon_sicily }
+			owns = 503
 			exists = yes
 		}
 		allow = {
 			war = no
+			is_vassal = no
 		}
 		effect = {
 			SIC_754 = {

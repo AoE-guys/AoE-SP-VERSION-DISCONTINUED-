@@ -1,0 +1,126 @@
+country_event = {
+	id = 145300
+	title = "Byzantine Enlightenment"
+	desc = "EVTDESC145300"
+	picture = philospohy
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		phenomenology_n_hermeneutic = 1
+		exists = yes
+	}
+	
+	option = {
+		name = "Quod mens Regnat!"
+		research_points = 3000
+	}
+}
+country_event = {
+	id = 145301
+	title = "Greek Enlightenment"
+	desc = "EVTDESC145301"
+	picture = philospohy
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		phenomenology_n_hermeneutic = 1
+		exists = yes
+	}
+	
+	option = {
+		name = "Quod mens Regnat!"
+		research_points = 1500
+	}
+}
+country_event = {
+	id = 145302
+	title = "Chaos in the Balkans"
+	desc = "EVTDESC145302"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { owns = 1708 }
+		BYZ = { exists = yes }
+		tag = TUR
+		any_owned_province = {
+			OR = {
+				is_core = BAN
+				is_core = SER
+				is_core = WAL
+				is_core = MOL
+				is_core = CRI
+				is_core = BUL
+				is_core = BOS
+				is_core = ALB
+			}
+		}
+		ai = yes
+	}
+	
+	option = {
+		name = "a true tragedy"
+		any_owned = { limit = { is_core = BAN } secede_province = BAN }
+		any_owned = { limit = { is_core = WAL } secede_province = WAL }
+		any_owned = { limit = { is_core = MOL } secede_province = MOL }
+		any_owned = { limit = { is_core = CRI } secede_province = CRI }
+		any_owned = { limit = { is_core = BOS } secede_province = BOS }
+		any_owned = { limit = { is_core = ALB } secede_province = ALB }
+		any_owned = { limit = { is_core = BUL } secede_province = BUL }
+		any_owned = { limit = { is_core = SER } secede_province = SER }
+		any_owned = { limit = { is_core = CIR } secede_province = CIR }
+		any_owned = { limit = { is_core = MON } secede_province = MON }
+		BUL = { capital = 809 }
+		ALB = { capital = 849 }
+		release_vassal = CRI
+		release_vassal = WAL
+		release_vassal = MOL
+		set_global_flag = rip_tur
+		prestige = -10
+	}
+}
+country_event = {
+	id = 145303
+	title = "Fall of the Empire"
+	desc = "EVTDESC145303"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = rip_tur
+		NOT = {
+			owns = 1708
+			owns = 876
+		}
+		is_greater_power = no
+		BYZ = { exists = yes }
+		tag = TUR
+		ai = yes
+	}
+	
+	option = {
+		name = "oh oh"
+		any_owned = { limit = { is_core = EGY } secede_province = EGY }
+		any_owned = { limit = { is_core = CIL } secede_province = CIL }
+		any_owned = { limit = { is_core = IRQ } secede_province = IRQ }
+		any_owned = { limit = { is_core = ARM } secede_province = ARM }
+		any_owned = { limit = { is_core = LBN } secede_province = SYR }
+		any_owned = { limit = { is_core = SYR } secede_province = SYR }
+		any_owned = { limit = { is_core = TRI } secede_province = TRI }
+		any_owned = { limit = { is_core = RUS } secede_province = RUS }
+		any_owned = { limit = { is_core = PLC } secede_province = PLC }
+		any_owned = { limit = { is_core = MON } secede_province = MON }
+		any_owned = { limit = { is_core = CYP } secede_province = CYP }
+		any_owned = { limit = { is_core = CYR } secede_province = CYR }
+		any_owned = { limit = { is_core = AWS } secede_province = AWS }
+		any_owned = { limit = { is_core = ETH } secede_province = ETH }
+		SYR = { capital = 897 }
+		IRQ = { capital = 926 }
+		EGY = { capital = 1745 government = absolute_monarchy }
+		1096 = { secede_province = ARM }
+		all_core = { remove_core = THIS }
+		BYZ = { inherit = TUR }
+	}
+}
