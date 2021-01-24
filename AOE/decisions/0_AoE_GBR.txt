@@ -349,6 +349,7 @@ political_decisions = {
 			}
 			is_greater_power = yes
 			exists = yes
+			NOT = { has_country_modifier = indian_raj }
 		}
 		allow = {
 			ENG_1305 = {

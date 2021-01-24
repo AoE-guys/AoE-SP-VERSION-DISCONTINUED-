@@ -382,7 +382,7 @@ country_event = {
 		war = {
 			target = SPC
 			attacker_goal = { casus_belli = change_heir_habsburg_cb }
-			defender_goal = { casus_belli = cut_down_to_size }
+			defender_goal = { casus_belli = status_quo_succ }
 			call_ally = yes
 		}
 		set_global_flag = spanish_war_realy_begun
@@ -623,7 +623,7 @@ country_event = {
 		war = {
 			target = SPA
 			attacker_goal = { casus_belli = change_heir_bourbon_cb }
-			defender_goal = { casus_belli = cut_down_to_size }
+			defender_goal = { casus_belli = status_quo_succ }
 			call_ally = yes
 		}
 		#AUS = {

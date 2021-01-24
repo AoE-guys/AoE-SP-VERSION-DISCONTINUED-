@@ -1107,6 +1107,7 @@ country_event = {
 	picture = persia_map
 	
 	trigger = {
+		primary_culture = persian
 		has_global_flag = persia_dynasty_war
 		any_owned_province = { OR = { is_core = AFG is_core = HND } }
 		#NOT = { tech_school = unciv_tech_school }
