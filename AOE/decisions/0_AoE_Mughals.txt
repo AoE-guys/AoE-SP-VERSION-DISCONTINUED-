@@ -53,28 +53,36 @@ political_decisions = {
 			}
 			1251 = {
 				owner = {
+					limit = {
+						NOT = { tag = THIS }
+					}
 					annex_to = THIS
 				}
 			}
 			1236 = {
 				owner = {
+					limit = {
+						NOT = { tag = THIS }
+					}
 					annex_to = THIS
 				}
 			}
 			1297 = {
 				owner = {
+					limit = {
+						NOT = { tag = THIS }
+					}
 					annex_to = THIS
 				}
 			}
 			1283 = {
 				owner = {
+					limit = {
+						NOT = { tag = THIS }
+					}
 					annex_to = THIS
 				}
 			}
-			1236 = {
-				secede_province = MUG
-			}
-			create_vassal = MUG
 			prestige = 50
 		}
 		ai_will_do = { factor = 1 }
