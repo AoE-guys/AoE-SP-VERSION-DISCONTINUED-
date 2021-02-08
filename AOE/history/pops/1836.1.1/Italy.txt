@@ -855,71 +855,71 @@
 	aristocrats = {
 		culture = south_german
 		religion = catholic
-		size = 40 
+		size = 20 
 	}
 
 	clergymen = {
 		culture = south_german
 		religion = catholic
-		size = 53 
+		size = 27 
 	}
 
 	bureaucrats = {
 		culture = south_german
 		religion = catholic
-		size = 528 
+		size = 264 
 	}
 	
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 132
+		size = 66
 	}
 
 	soldiers = {
 		culture = south_german
 		religion = catholic
-		size = 33 
+		size = 16 
 	}
 
 	zzz_dummy = {
 		culture = south_german
 		religion = catholic
-		size = 3040
+		size = 1520
 	}
 
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 380
+		size = 190
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 1648
+		size = 824
 	}
 
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size = 363 
+		size = 181 
 	}
 
 	zzz_dummy = {
 		culture = north_italian
 		religion = catholic
-		size = 31668
+		size = 15834
 	}
 	zzz_dummy = {
 		culture = ladin
 		religion = catholic
-		size = 21810
+		size = 10905
 	}
 	labourers = {
 		culture = north_italian
 		religion = catholic
-		size = 1982
+		size = 991
 	}
 }
 #Bozen (92000/23000 POPS) #now part of Italy
@@ -927,37 +927,37 @@
 	aristocrats = {
 		culture = south_german
 		religion = catholic
-		size = 165 
+		size = 115 
 	}
 
 	clergymen = {
 		culture = south_german
 		religion = catholic
-		size = 99
+		size = 50
 	}
 
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 890
+		size = 590
 	}
 
 	soldiers = {
 		culture = south_german
 		religion = catholic
-		size = 99 
+		size = 66 
 	}
 
 	zzz_dummy = {
 		culture = south_german
 		religion = catholic
-		size = 9074
+		size = 7574
 	}
 
 	labourers = {
 		culture = south_german
 		religion = catholic
-		size = 493
+		size = 393
 	}
 
 	clergymen = {
@@ -988,6 +988,109 @@
 		culture = north_italian
 		religion = catholic
 		size = 178
+	}
+	aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 20 
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 27 
+	}
+
+	bureaucrats = {
+		culture = south_german
+		religion = catholic
+		size = 264 
+	}
+	
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 66
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 16 
+	}
+
+	zzz_dummy = {
+		culture = south_german
+		religion = catholic
+		size = 1520
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 190
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 824
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 181 
+	}
+
+	zzz_dummy = {
+		culture = north_italian
+		religion = catholic
+		size = 15834
+	}
+	zzz_dummy = {
+		culture = ladin
+		religion = catholic
+		size = 10905
+	}
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 991
+	}
+}
+#Brixen
+3420 = {
+	zzz_dummy = {
+		culture = south_german
+		religion = catholic
+		size = 1500
+	}
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 49
+	}
+	aristocrats = {
+		culture = south_german
+		religion = catholic
+		size = 50 
+	}
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 300
+	}
+
+	soldiers = {
+		culture = south_german
+		religion = catholic
+		size = 33 
+	}
+	labourers = {
+		culture = south_german
+		religion = catholic
+		size = 100
 	}
 }
 #Friuli-Istria Region (292000) #see Croatia.txt for balance of region 
