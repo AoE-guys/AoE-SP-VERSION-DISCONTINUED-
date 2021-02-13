@@ -84,7 +84,7 @@ raw_material_goods = {
 		color = { 253 199 110 }
 	}
 	precious_goods = { 
-		cost = 0.05
+		cost = 0.1
 		money = yes	
 		color = { 247 241 61 }
 	}
@@ -124,7 +124,7 @@ industrial_goods = {
 		available_from_start = no
 	}
 	clipper_convoy = { 
-		cost = 48.00 
+		cost = 24.00 
 		overseas_penalty = yes
 		color = { 21 65 30 }
 	}

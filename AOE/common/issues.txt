@@ -4,16 +4,18 @@
 party_issues = {
 	trade_policy = {
 		mercantilism = {
-			max_tariff = 1
+			max_tariff = 0.5
 			min_tariff = 0.25
 		}
 		protectionism = {
-			max_tariff = 1
-			min_tariff = -0.25
+			max_tariff = 0.25
+			min_tariff = 0.10
+			education_efficiency_modifier = 0.05
 		}
 		free_trade = {
-			max_tariff = 0.25
-			min_tariff = -1
+			max_tariff = 0.10
+			min_tariff = 0.05
+			education_efficiency_modifier = 0.10
 		}
 	}
 	economic_policy = {
@@ -22,6 +24,7 @@ party_issues = {
 			factory_owner_cost = 0.25
 			factory_output = 0.1
 			import_cost = -0.25
+			min_social_spending = 0.20
 			
 			rules = {
 				build_factory = no
@@ -48,6 +51,7 @@ party_issues = {
 			import_cost = 0.25
 			factory_throughput = -0.05
 			RGO_output = 0.05
+			min_social_spending = 0.30
 			
 			rules = {
 				build_factory = no
@@ -77,6 +81,7 @@ party_issues = {
 			factory_owner_cost = 0.8
 			factory_output = 0.05
 			rgo_output = -0.05
+			min_social_spending = 0.40
 			
 			rules = {
 				build_factory = yes
@@ -105,7 +110,9 @@ party_issues = {
 			factory_output = 0.10
 			rgo_output = -0.15
 			education_efficiency_modifier = 0.10
-			factory_owner_cost = -1	#negative costs, can't build.
+			min_social_spending = 0.50
+			factory_owner_cost = 1.2
+			#factory_owner_cost = -1	#negative costs, can't build.
 			
 			rules = {
 				build_factory = yes

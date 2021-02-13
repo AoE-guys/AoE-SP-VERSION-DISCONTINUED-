@@ -155,6 +155,7 @@ infrastructure = {
 base_values = {
 	global_pop_militancy_modifier = -0.05
 	global_pop_consciousness_modifier = -0.05
+	pension_level = 0.50
 	supply_limit = 5
 }
 
@@ -258,7 +259,9 @@ average_literacy = {
 	self_unciv_military_modifier = -0.5
 	education_efficiency_modifier = -1.0
 	goods_demand = 1.0
+	pension_level = 1.0
 	prestige = 0.5
+	tax_efficiency = -0.20
 }
 
 plurality = { 
