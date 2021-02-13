@@ -616,7 +616,7 @@ country_event = {
 			}
 		}
         set_country_flag = rev_other_children_eaten
-		country_event = 100037
+		country_event = 100038
 		ai_chance = {
 			factor = 1
 		}
@@ -687,7 +687,7 @@ country_event = {
 	
 	trigger = { 
 	           is_vassal = no
-		       ruling_party_ideology = reactionary
+		       ruling_party_ideology = liberal
 			   government = proletarian_dictatorship
 			   has_country_flag = rev_oldest_child_eaten
 			   NOT = { has_country_flag = rev_coup }
