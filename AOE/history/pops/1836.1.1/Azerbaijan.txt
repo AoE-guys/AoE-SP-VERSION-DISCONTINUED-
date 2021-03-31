@@ -273,7 +273,7 @@
 	zzz_dummy = {
 		culture = azerbaijani
 		religion = sunni
-		size = 1520
+		size = 2520
 	}
 
 	labourers = {
@@ -294,6 +294,12 @@
 		size = 16
 	}
 
+	clergymen = {
+		culture = armenian
+		religion = orthodox
+		size = 160
+	}
+	
 	artisans = {
 		culture = georgian
 		religion = orthodox
@@ -345,7 +351,7 @@
 	zzz_dummy = {
 		culture = dagestani
 		religion = sunni
-		size = 1900
+		size = 900
 	}
 
 	labourers = {
@@ -604,7 +610,7 @@
 	zzz_dummy = {
 		culture = azerbaijani
 		religion = shiite
-		size = 8916
+		size = 5916
 	}
 
 	labourers = {
@@ -614,24 +620,6 @@
 	}
 
 	aristocrats = {
-		culture = armenian
-		religion = orthodox
-		size = 60
-	}
-
-	clergymen = {
-		culture = armenian
-		religion = orthodox
-		size = 60
-	}
-
-	artisans = {
-		culture = armenian
-		religion = orthodox
-		size = 280
-	}
-
-	soldiers = {
 		culture = armenian
 		religion = orthodox
 		size = 60
@@ -647,5 +635,41 @@
 		culture = armenian
 		religion = orthodox
 		size = 257
+	}
+	
+	aristocrats = {
+		culture = dagestani
+		religion = sunni
+		size = 140
+	}
+
+	clergymen = {
+		culture = dagestani
+		religion = sunni
+		size = 180
+	}
+
+	artisans = {
+		culture = dagestani
+		religion = sunni
+		size = 420
+	}
+
+	soldiers = {
+		culture = dagestani
+		religion = sunni
+		size = 280
+	}
+
+	zzz_dummy = {
+		culture = dagestani
+		religion = sunni
+		size = 4900
+	}
+
+	labourers = {
+		culture = dagestani
+		religion = sunni
+		size = 100
 	}
 }

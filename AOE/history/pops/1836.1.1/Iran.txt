@@ -1100,7 +1100,7 @@
 	zzz_dummy = {
 		culture = kurdish
 		religion = sunni
-		size = 4180
+		size = 5180
 	}
 
 	labourers = {
@@ -1862,9 +1862,15 @@
 	}
 
 	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 70
+	}
+	
+	clergymen = {
 		culture = mashriqi
 		religion = shiite
-		size = 80
+		size = 10
 	}
 
 	artisans = {
@@ -1882,7 +1888,13 @@
 	zzz_dummy = {
 		culture = mashriqi
 		religion = shiite
-		size = 7638
+		size = 5638
+	}
+
+	zzz_dummy = {
+		culture = persian
+		religion = shiite
+		size = 2000
 	}
 
 	labourers = {
