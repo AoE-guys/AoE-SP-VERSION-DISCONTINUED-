@@ -6483,7 +6483,7 @@
     aristocrats = {
         culture = chechen
         religion = sunni
-        size = 500
+        size = 200
     }
 
     clergymen = {
@@ -6495,43 +6495,49 @@
     artisans = {
         culture = chechen
         religion = sunni
-        size = 1000
+        size = 200
     }
 
     soldiers = {
         culture = persian
         religion = orthodox
-        size = 1000
+        size = 500
     }
 
     soldiers = {
         culture = persian
         religion = sunni
-        size = 1000
+        size = 2000
     }
 
     zzz_dummy = {
         culture = persian
-        religion = shiite
-        size = 14769
+        religion = sunni
+        size = 7769
     }
 
     labourers = {
         culture = chechen
         religion = sunni
-        size = 1356
+        size = 356
     }
 
     zzz_dummy = {
         culture = circassian
         religion = orthodox
-        size = 750
+        size = 650
     }
 
     labourers = {
         culture = circassian
         religion = orthodox
-        size = 250
+        size = 150
+    }
+
+    bureaucrats = {
+        culture = georgian
+        religion = orthodox
+        size = 380
     }
 }
 #Grozny (68000/17000 POPS)
