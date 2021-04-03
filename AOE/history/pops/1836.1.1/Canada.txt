@@ -2477,9 +2477,15 @@
 	zzz_dummy = {
 		culture = french_canadian
 		religion = catholic
-		size = 1619
+		size = 1219
 	}
-
+	
+	zzz_dummy = {
+		culture = mikmaq
+		religion = catholic
+		size = 400
+	}
+	
 	labourers = {
 		culture = french_canadian
 		religion = catholic
@@ -2495,7 +2501,7 @@
 	}
 
 	zzz_dummy = {
-		culture = native_american_minor
+		culture = maliseet_passamaquoddy
 		religion = animist
 		size = 709
 	}
@@ -2507,7 +2513,7 @@
 	}
 	
 	soldiers = {
-		culture = native_american_minor
+		culture = maliseet_passamaquoddy
 		religion = animist
 		size = 1080
 	}
@@ -2580,6 +2586,12 @@
 		religion = catholic
 		size = 26
 	}
+
+	zzz_dummy = {
+		culture = mikmaq
+		religion = catholic
+		size = 50
+	}
 }
 #Truro (44000/11000 POPS)
 72 = {
@@ -2593,6 +2605,12 @@
 		culture = french_canadian
 		religion = catholic
 		size = 99
+	}
+	
+	zzz_dummy = {
+		culture = mikmaq
+		religion = catholic
+		size = 50
 	}
 }
 #Cape Breton Island (20000/5000 POPS)
@@ -2846,7 +2864,7 @@
 	}
 	
 	zzz_dummy = {
-		culture = native_american_minor
+		culture = maliseet_passamaquoddy
 		religion = animist
 		size = 1050
 	}
@@ -2858,7 +2876,7 @@
 	}
 	
 	soldiers = {
-		culture = native_american_minor
+		culture = maliseet_passamaquoddy
 		religion = animist
 		size = 1157
 	}
