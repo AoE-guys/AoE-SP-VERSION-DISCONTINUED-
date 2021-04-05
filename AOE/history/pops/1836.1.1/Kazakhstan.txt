@@ -141,19 +141,19 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size = 420
+		size = 220
 	}
 
 	zzz_dummy = {
 		culture = tatar
 		religion = sunni
-		size = 546
+		size = 346
 	}
 	
 	soldiers = {
-		culture = oirat
-		religion = gelugpa
-		size = 1000
+		culture = cossack
+		religion = orthodox
+		size = 1150
 	}
 	
 	zzz_dummy = {
@@ -165,13 +165,19 @@
 	labourers = {
 		culture = tatar
 		religion = sunni
-		size = 229
+		size = 19
 	}
+	
+	labourers = {
+		culture = cossack
+		religion = orthodox
+		size = 200
+	}	
 
 	aristocrats = {
 		culture = kazak
 		religion = sunni
-		size = 112
+		size = 282
 	}
 
 	clergymen = {
@@ -183,7 +189,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 150
+		size = 250
 	}
 
 	soldiers = {
@@ -195,7 +201,13 @@
 	zzz_dummy = {
 		culture = kazak
 		religion = sunni
-		size = 866
+		size = 466
+	}
+
+	zzz_dummy = {
+		culture = cossack
+		religion = orthodox
+		size = 400
 	}
 
 	labourers = {
