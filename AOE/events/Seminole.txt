@@ -1,0 +1,26 @@
+country_event = {
+	id = 88901
+	title = "Seminole migration"
+	desc = "EVTDESC88901"
+	fire_only_once = yes
+
+	trigger = {
+		year = 1717
+		tag = FLO
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Ok. They will be our neighbour"
+		3343 = { 
+			any_pop = { reduce_pop = 13.95 }
+		}
+		release = SMN
+		200 = {
+			add_core = SMN
+		}
+	}
+}
