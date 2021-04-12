@@ -81740,8 +81740,8 @@
 
 1923 = {
     text_position = {
-        x = 2863.250000
-        y = 873.750000
+        x = 2863.750000
+        y = 873.400000
     }
 
     text_scale = 3.5
@@ -127758,3 +127758,46 @@
     text_rotation = 1.308995
     text_scale = 3.099999
 } # Lake Superior
+
+# Nkuna
+3342 = {
+    text_position = {
+        x = 3059.225000
+        y = 701.833333
+    }
+
+    text_scale = 2.999999
+    unit = {
+        x = 3064.266667
+        y = 713.475000
+    }
+
+    city = {
+        x = 3057.116667
+        y = 694.958333
+    }
+
+    factory = {
+        x = 3047.400000
+        y = 695.325000
+    }
+
+    building_construction = {
+        x = 3052.716667
+        y = 691.200000
+    }
+
+    military_construction = {
+        x = 3066.925000
+        y = 709.900000
+    }
+
+    building_position = {
+        fort = {
+            x = 3067.016667
+            y = 718.608333
+        }
+
+    }
+
+}
