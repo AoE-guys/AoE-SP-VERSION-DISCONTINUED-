@@ -6499,21 +6499,27 @@
     }
 
     soldiers = {
-        culture = persian
+        culture = ossetian
         religion = orthodox
         size = 500
     }
 
     soldiers = {
-        culture = persian
+        culture = ossetian
         religion = sunni
         size = 2000
     }
 
     zzz_dummy = {
-        culture = persian
+        culture = ossetian
         religion = sunni
-        size = 7769
+        size = 6769
+    }
+	
+    zzz_dummy = {
+        culture = ossetian
+        religion = orthodox
+        size = 1000
     }
 
     labourers = {
@@ -6613,7 +6619,13 @@
     zzz_dummy = {
         culture = circassian
         religion = sunni
-        size = 53541
+        size = 50541
+    }
+	
+    zzz_dummy = {
+        culture = ossetian
+        religion = sunni
+        size = 3000
     }
 
     labourers = {
