@@ -2935,42 +2935,6 @@
 		religion = protestant
 		size = 160
 	}
-
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 2
-	}
-
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 3
-	}
-
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 48
-	}
-
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
-
-	zzz_dummy = {
-		culture = native_american_minor
-		religion = animist
-		size = 76
-	}
-
-	labourers = {
-		culture = native_american_minor
-		religion = animist
-		size = 4
-	}
 }
 
 #Arviat/Clarksville/Dallas (3200/800 POPS)
@@ -3480,6 +3444,45 @@
 		size = 96
 	}
 }
+
+#Beaumont
+3422 = {
+	aristocrats = {
+		culture = native_american_minor
+		religion = animist
+		size = 2
+	}
+
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 3
+	}
+
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 48
+	}
+
+	soldiers = {
+		culture = native_american_minor
+		religion = animist
+		size = 5
+	}
+
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 76
+	}
+
+	labourers = {
+		culture = native_american_minor
+		religion = animist
+		size = 4
+	}
+}
 #Louisiana Region (280000)
 #ruled by USA in 1836
 #New Orleans (128000/32000 POPS)
@@ -3758,6 +3761,12 @@
 		size = 18
 	}
 
+	zzz_dummy = {
+		culture = native_american_minor
+		religion = animist
+		size = 464
+	}
+
 	labourers = {
 		culture = native_american_minor
 		religion = animist
@@ -3782,12 +3791,6 @@
 		culture = native_american_minor
 		religion = animist
 		size = 20
-	}
-
-	zzz_dummy = {
-		culture = native_american_minor
-		religion = animist
-		size = 464
 	}
 
 	labourers = {
