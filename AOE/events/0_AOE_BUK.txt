@@ -134,23 +134,30 @@ country_event = {
 
 	option = {
 		name = "Tibet is Ours!"
-		relation = {
-			who = QNG
-			value = -200
+		DZN = {
+			relation = {
+				who = QNG
+				value = -200
+			}
 		}
 			1588 = { secede_province = TIB }
 			1587 = { secede_province = TIB }
 			1590 = { secede_province = TIB }
 			1593 = { secede_province = TIB }
-		relation = {
-			who = TIB
-			value = -200
+		DZN = {
+			relation = {
+				who = TIB
+				value = -200
+			}
 		}
 		QNG = {
-			create_vassal = TIB
+			relation = {
+				create_alliance = TIB
+			}
 		}
 		war = {
 			target = TIB
+			target = QNG
 			attacker_goal = { casus_belli = status_quo }
 			defender_goal = { casus_belli = acquire_all_cores }
 			call_ally = yes
