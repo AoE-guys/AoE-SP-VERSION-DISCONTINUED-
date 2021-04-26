@@ -34,16 +34,6 @@ political_decisions = {
                     NOT = { has_country_flag = medicine_invented }
                     medicine = 1
                 }
-                #any_greater_power = {
-                #    ai = no
-                #    NOT = { has_country_flag = germs_invented }
-                #invention = germ_theory
-                #}
-               # any_neighbor_country = {
-                #    ai = no
-                #    NOT = { has_country_flag = germs_invented }
-                #invention = germ_theory
-               # }
                 any_greater_power = {
                     ai = no
                     NOT = { has_country_flag = gaslights_invented }
@@ -91,10 +81,6 @@ political_decisions = {
                 limit = { owner = { NOT = { has_country_flag = medicine_invented } medicine = 1 } }
                 owner = { set_country_flag = medicine_invented }
             }
-            #random_owned = {
-             #   limit = { owner = { NOT = { has_country_flag = germs_invented } #invention = germ_theory } }
-             #   owner = { set_country_flag = germs_invented }
-            #}
             random_owned = {
                 limit = { owner = { NOT = { has_country_flag = gaslights_invented } invention = gaslights } }
                 owner = { set_country_flag = gaslights_invented }
@@ -129,7 +115,6 @@ political_decisions = {
             ai = yes
             exists = yes
             year = 1837
-            #NOT = { tag = TMT }
             NOT = { has_country_flag = ghost_country }
             OR = {
                 AND = { government = theocracy NOT = { has_country_flag = theocratic_government } }

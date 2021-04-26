@@ -151,15 +151,12 @@ country_event = {
 			}
 		}
 		QNG = {
-			relation = {
-				create_alliance = TIB
-			}
+			create_alliance = TIB
 		}
 		war = {
-			target = TIB
 			target = QNG
 			attacker_goal = { casus_belli = status_quo }
-			defender_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = acquire_all_cores country = DZN }
 			call_ally = yes
 		}
 		prestige = 15

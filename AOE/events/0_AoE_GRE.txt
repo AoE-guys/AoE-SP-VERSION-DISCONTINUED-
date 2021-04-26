@@ -103,7 +103,7 @@ country_event = {
 	option = {
 		name = "oh oh"
 		any_owned = { limit = { is_core = EGY } secede_province = EGY }
-		any_owned = { limit = { is_core = CIL } secede_province = CIL }
+		any_owned = { limit = { is_core = CLC } secede_province = CLC }
 		any_owned = { limit = { is_core = IRQ } secede_province = IRQ }
 		any_owned = { limit = { is_core = ARM } secede_province = ARM }
 		any_owned = { limit = { is_core = LBN } secede_province = SYR }
