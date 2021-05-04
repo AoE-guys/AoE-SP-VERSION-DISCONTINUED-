@@ -1,8 +1,8 @@
 political_decisions = {
 
 	jabal_amel_expansion = {
-			picture = claim_greater_mongolia
-			potential = {
+		picture = claim_greater_mongolia
+		potential = {
 			tag = PLS
 			NOT = {
 				has_country_flag = jabal_amel
@@ -19,6 +19,35 @@ political_decisions = {
 			set_country_flag = jabal_amel
 			prestige = 20
 			TUR = { country_event = 744 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}
+
+political_decisions = {
+
+	reestablish_haifa = {
+		picture = banatia_map
+		potential = {
+			tag = PLS
+			NOT = {
+				has_country_flag = haifa_built
+			}
+			exists = yes
+		}
+		
+		allow = {
+			war = no
+			tag = PLS
+			year = 1769
+		}
+		
+		effect = {
+			set_country_flag = haifa_built
+			prestige = 25
+			916 = { fort = 2 }
+			916 = { naval_base = 1 }
 		}
 		
 		ai_will_do = { factor = 1 }
