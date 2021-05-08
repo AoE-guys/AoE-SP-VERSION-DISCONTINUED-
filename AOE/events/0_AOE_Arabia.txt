@@ -1,31 +1,25 @@
-#country_event = {
-#	id = 60661
-#	title = "Arabian Tribes"
-#	desc = "EVTDESC6066"
-#	fire_only_once = yes
-#
-#	trigger = {
-#		year = 1731
-#		tag = TUR
-#	}
-#	
-#	mean_time_to_happen = {
-#		months = 2
-#	}
-#	
-#	option = {
-#		name = "What will we do?"
-#		1815 = { secede_province = THIS }
-#		random_owned = {
-#			limit = {
-#				owner = {
-#					owns = 1816 #Kufe
-#					1952 = { empty = yes }
-#				}
-#			}
-#			1952 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-#		}
-#		release = DAM
-#
-#	}
-#}
+country_event = {
+	id = 60662
+	title = "Arabian Tribes"
+	desc = "EVTDESC60662"
+	fire_only_once = yes
+
+	trigger = {
+		year = 1744
+		tag = TUR
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "What will we do?"
+		1157 = { secede_province = THIS }
+		1159 = { secede_province = THIS }
+		1160 = { secede_province = THIS }
+		1156 = { secede_province = THIS }
+		911 = { secede_province = THIS }
+		release = NEJ
+	}
+}
