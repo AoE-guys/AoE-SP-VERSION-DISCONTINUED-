@@ -190,20 +190,28 @@ party_issues = {
 			reinforce_speed = -0.5
 		}
 	}
-	social_policy = {
-		no_state_interference = {
+	social_policy = { #Estate policy
+		no_state_interference = { #Despotic Dominance
 			max_social_spending = 0.5
+			core_pop_consciousness_modifier = -0.1
+			core_pop_militancy_modifier = -0.16
 		}
-		colonial_spending_policy = {
+		colonial_spending_policy = { #Colonial Subjects
 			max_social_spending = 0.01
+			cb_generation_speed_modifier = 0.1
+			mobilisation_size = 0.1
+			non_accepted_pop_consciousness_modifier = -0.05
 		}
 		no_position_set = {
 		}
-		populist_welfare = {
+		populist_welfare = { #Philosopher court
 			min_social_spending = 0.15
+			research_points_modifier = 0.15
 		}
-		welfare_state = {
+		welfare_state = { #Revolutionary Thought
 			min_social_spending = 0.33
+			cb_generation_speed_modifier = 0.33
+			core_pop_militancy_modifier = 0.01
 		}
 	}
 }
@@ -446,31 +454,36 @@ political_reforms = {
 			}
 		}
 	}
-	trade_unions = {
+	trade_unions = { #Executive power
 		next_step_only = yes
-		no_trade_unions = {
+		no_trade_unions = { #One man to rule
 			suppression_points_modifier = 0.1
+			ruling_party_support = 0.05
 			allow = {
 			    NOT = { has_country_flag = indian_campaign_target_flag }
 			}
 		}
-		state_controlled = {
+		state_controlled = { #Advisor Council
 			social_reform_desire = 0.1
 			global_immigrant_attract = 0.01
+			diplomatic_points_modifier = 0.1
 			allow = {
 			    NOT = { has_country_flag = indian_campaign_target_flag }
 			}
 		}
-		non_socialist = {
+		non_socialist = { #Delegated Ministers
 			social_reform_desire = 0.2
 			global_immigrant_attract = 0.02
+			issue_change_speed = -0.05
+			influence_modifier = 0.1
 			allow = {
 			    NOT = { has_country_flag = indian_campaign_target_flag }
 			}
 		}
-		all_trade_unions = {
+		all_trade_unions = { #Gabinet
 			social_reform_desire = 0.3
 			global_immigrant_attract = 0.03
+			mobilization_economy_impact = -0.05
 			allow = {
 			    NOT = { has_country_flag = indian_campaign_target_flag }
 			}

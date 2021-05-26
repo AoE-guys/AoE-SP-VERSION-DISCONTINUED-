@@ -129,6 +129,27 @@ political_decisions = {
 				}
 				annex_to = BOR
 			}
+			BRX = {
+				all_core = {
+					add_core = AUS
+					remove_core = BRX
+				}
+				annex_to = AUS
+			}
+			TST = {
+				all_core = {
+					add_core = AUS
+					remove_core = TST
+				}
+				annex_to = AUS
+			}
+			SOR = {
+				all_core = {
+					add_core = NAP
+					remove_core = SPR
+				}
+				annex_to = SPA
+			}
 		}
 		ai_will_do = { factor = 0 }
 	}

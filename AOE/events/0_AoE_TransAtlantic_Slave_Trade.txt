@@ -3,11 +3,11 @@
 		title = "Slave Auction"
 		desc = EVTDESC690000
 		picture = "auction"
-
-		trigger = {
-			 slavery = yes_slavery
-			 NOT = { has_country_modifier = slavepopupdated }
-		}
+		is_triggered_only = yes
+		#trigger = {
+		#	 slavery = yes_slavery
+		#	 NOT = { has_country_modifier = slavepopupdated }
+		#}
 		mean_time_to_happen = {
 			months = 1
 		}

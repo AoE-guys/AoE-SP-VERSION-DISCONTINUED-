@@ -155,4 +155,46 @@ political_decisions = {
 		
 		ai_will_do = { factor = 0 }
 	}
+	pop_increase_setup = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			any_country = {
+				limit = {
+					NOT = {
+						OR = {
+						tag = QNG
+						tag = MUG
+						tag = MAH
+						tag = KOR
+						}
+					}
+				}
+				any_pop = {
+				reduce_pop = 2.0
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						government = tribal_democracy
+						government = colonial_company
+					}
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				any_pop = {
+				reduce_pop = 2.0
+				}
+			}
+		}
+	}
 }

@@ -191,7 +191,7 @@ grain_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = grain
-	value = 25
+	value = 12.5
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -502,7 +502,7 @@ cattle_factory = {
 	precious_goods = 0.1
 	}
 	output_goods = cattle
-	value = 10
+	value = 3
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -1191,7 +1191,7 @@ paper_mill = {
 		steel = 3
 	}
 	output_goods = paper 
-	value = 15			#68
+	value = 7			#68
 	bonus = {
 		trigger = { has_building = lumber_mill }
 		value = 0.6
@@ -1728,7 +1728,7 @@ dye_plantation = {
 fishing_wharf = {
 	template = RGO_template_farmers
 	output_goods = fish 
-	value = 2.1
+	value = 1.1
 	farm = yes
 }
 

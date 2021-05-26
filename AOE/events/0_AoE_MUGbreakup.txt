@@ -723,6 +723,7 @@ country_event = {
 			year = 1722
 			war_exhaustion = 40
 		}
+		owns = 1253
 		NOT = { has_global_flag = disabled_railroad_wars }
 	}
 	mean_time_to_happen = {
@@ -887,6 +888,9 @@ country_event = {
 		tag = MUG
 		has_global_flag = mughal_breakdown
 		year = 1762
+		any_owned_province = {
+			is_core = AWA
+		}
 	}
 	
 	mean_time_to_happen = {

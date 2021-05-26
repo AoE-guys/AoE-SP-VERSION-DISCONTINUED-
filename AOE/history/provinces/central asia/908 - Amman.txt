@@ -4,5 +4,10 @@ add_core = EGY
 add_core = TUR
 add_core = JOR
 trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
+<<<<<<< Updated upstream
 life_rating = 25
+=======
+life_rating = 35
+
+>>>>>>> Stashed changes
 terrain = semidesert

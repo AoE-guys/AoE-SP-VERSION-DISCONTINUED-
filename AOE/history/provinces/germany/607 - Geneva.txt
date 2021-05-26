@@ -4,6 +4,7 @@ add_core = SVY
 add_core = SWI
 trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 33
+
 state_building = {
 	level = 1
 	building = machine_parts_factory
