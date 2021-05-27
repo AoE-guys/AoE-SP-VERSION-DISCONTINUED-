@@ -561,8 +561,6 @@ province_event = {
 			limit = {
 				OR = {
 					pop_type = labourers
-					pop_type = tribesmen
-					pop_type = zzz_dummy
 					pop_type = farmers
 					pop_type = artisans
 				}
