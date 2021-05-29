@@ -20,7 +20,7 @@ grain_factory = {
 	max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		temperate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -42,7 +42,7 @@ cotton_factory = {
 	max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -64,7 +64,7 @@ dye2_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		temperate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -86,7 +86,7 @@ wool_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		temperate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -108,7 +108,7 @@ silk_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -130,7 +130,7 @@ coal_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		mining = 1000
 	}
 	time = 30
 	visibility = yes
@@ -152,7 +152,7 @@ sulphur_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		mining = 1000
 	}
 	time = 30
 	visibility = yes
@@ -174,7 +174,7 @@ iron_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		mining = 1000
 	}
 	time = 30
 	visibility = yes
@@ -196,7 +196,7 @@ timber_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		forestry = 1000
 	}
 	time = 30
 	visibility = yes
@@ -218,7 +218,7 @@ tropical_wood_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		forestry = 1000
 	}
 	time = 30
 	visibility = yes
@@ -240,7 +240,7 @@ rubber_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -262,7 +262,7 @@ oil_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		mining = 1000
 	}
 	time = 30
 	visibility = yes
@@ -284,7 +284,7 @@ cattle_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		temperate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -306,7 +306,7 @@ fish_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		fishing = 1000
 	}
 	time = 30
 	visibility = yes
@@ -328,7 +328,7 @@ fruit_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		temperate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -350,7 +350,7 @@ tobacco_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -372,7 +372,7 @@ tea_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -394,7 +394,7 @@ coffee_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -416,7 +416,7 @@ opium_factory = {
 max_level = 25
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -453,7 +453,7 @@ aeroplane_factory = {
 	advanced_factory = yes
 }
 
-barrel_factory = {
+barrel_factory = { #horses
 	type = factory
 	on_completion = factory
 	completion_size = 0.2
@@ -461,7 +461,7 @@ barrel_factory = {
 	cost = 100
 	goods_cost =
 	{
-precious_goods = 1000
+		forestry = 1000
 	}
 
 	time = 30
@@ -473,7 +473,7 @@ precious_goods = 1000
 	advanced_factory = yes
 }
 
-automobile_factory = {
+automobile_factory = { #fur
 	type = factory
 	on_completion = factory
 	completion_size = 0.2
@@ -481,7 +481,7 @@ automobile_factory = {
 	cost = 100
 	goods_cost =
 	{
-precious_goods = 1000
+		forestry = 1000
 	}
 	time = 30
 	visibility = yes
@@ -492,7 +492,7 @@ precious_goods = 1000
 	advanced_factory = yes
 }
 
-radio_factory = {
+radio_factory = { #sugar
 	type = factory
 
 	on_completion = factory
@@ -501,7 +501,7 @@ radio_factory = {
 	cost = 100
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -512,7 +512,7 @@ precious_goods = 1000
 	advanced_factory = yes
 }
 
-telephone_factory = {
+telephone_factory = { #spice
 	type = factory
 	cost = 100
 	on_completion = factory
@@ -520,7 +520,7 @@ telephone_factory = {
 	max_level = 500
 	goods_cost =
 	{
-precious_goods = 1000
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -533,7 +533,7 @@ precious_goods = 1000
 
 ############# STRATEGIC FACTORIES
 
-electric_gear_factory = {
+electric_gear_factory = { #olives
 	type = factory
 
 	on_completion = factory
@@ -542,9 +542,7 @@ electric_gear_factory = {
 	cost = 1750
 	goods_cost =
 	{
-		machine_parts = 30
-		steel = 20
-		cement = 20
+		hot_climate = 1000
 	}
 	time = 30
 	visibility = yes
@@ -566,7 +564,7 @@ machine_parts_factory = {
 	{
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -653,7 +651,7 @@ steamer_shipyard = {
 	max_level = 500
 	goods_cost =
 	{
-precious_goods = 1000
+		fishing = 1000
 	}
 	time = 30
 	visibility = yes
@@ -677,7 +675,7 @@ clipper_shipyard = {
 		iron = 20
 		cement = 20
 		wood = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -700,7 +698,7 @@ luxury_clothes_factory = {
 		machine_parts = 20
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -721,7 +719,7 @@ luxury_furniture_factory = {
 		machine_parts = 20
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -744,7 +742,7 @@ steel_factory = {
 		machine_parts = 20
 		iron = 20
 		coal = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -765,7 +763,7 @@ artillery_factory = {
 		machine_parts = 20
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -786,7 +784,7 @@ small_arms_factory = {
 		machine_parts = 14
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -809,7 +807,7 @@ furniture_factory = {
 		machine_parts = 14
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -830,7 +828,7 @@ paper_mill = {
 		machine_parts = 14
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -851,7 +849,7 @@ regular_clothes_factory = {
 		machine_parts = 14
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -872,7 +870,7 @@ explosives_factory = {
 		machine_parts = 14
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -895,7 +893,7 @@ ammunition_factory = {
 		machine_parts = 10
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -916,7 +914,7 @@ canned_food_factory = {
 		machine_parts = 8
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -937,7 +935,7 @@ dye_factory = {
 		machine_parts = 8
 		steel = 20 #was iron
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -959,7 +957,7 @@ liquor_distillery = {
 		machine_parts = 8
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -981,7 +979,7 @@ winery = {
 		machine_parts = 8
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1004,7 +1002,7 @@ lumber_mill = {
 		machine_parts = 2
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1025,7 +1023,7 @@ tropical_lumber_mill = {
 		machine_parts = 2
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1046,7 +1044,7 @@ fabric_factory = {
 		machine_parts = 2
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1067,7 +1065,7 @@ wool_fabric_factory = {
 		machine_parts = 2
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1088,7 +1086,7 @@ cement_factory = {
 		machine_parts = 2
 		iron = 20
 		lumber = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1109,7 +1107,7 @@ glass_factory = {
 		machine_parts = 4
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1131,7 +1129,7 @@ fertilizer_factory = {
 		machine_parts = 20
 		iron = 20
 		cement = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 30
 	visibility = yes
@@ -1156,7 +1154,7 @@ fort = {
 		artillery = 40
 		ammunition = 10
 		machine_parts = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 180 
 	visibility = yes
@@ -1177,7 +1175,7 @@ naval_base = {
 		cement = 100
 		steel = 50
 		machine_parts = 20
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 365
 	naval_capacity = 1
@@ -1203,7 +1201,7 @@ railroad = {
 		cement = 100
 		steel = 10
 		machine_parts = 25
-		precious_goods = 1000
+		# precious_goods = 1000
 	}
 	time = 75
 	visibility = yes
@@ -1219,339 +1217,3 @@ railroad = {
 }
 
 #### Dummy resources buildings
-
-temperate_climate_agriculture = {      
-	type = fort #
-	cost = 999999999
-	goods_cost =
-	{
-
-	}
-	time = 180 
-	visibility = no
-	onmap = no
-	max_level = 1
-	province = yes
-}
-
-hot_climate_agriculture = {      
-	type = fort #
-	cost = 999999999
-	goods_cost =
-	{
-
-	}
-	time = 180 
-	visibility = no
-	onmap = no
-	max_level = 1
-	province = yes
-}
-
-mines_export = {      
-	type = fort #
-	cost = 999999999
-	goods_cost =
-	{
-
-	}
-	time = 30080 
-	visibility = no
-	onmap = no
-	max_level = 1
-	province = yes
-}
-
-fishing_export = {      
-	type = fort #
-	cost = 999999999
-	goods_cost =
-	{
-
-	}
-	time = 180 
-	visibility = no
-	onmap = no
-	max_level = 1
-	province = yes
-}
-
-wood_export = {      
-	type = fort #
-	cost = 999999999
-	goods_cost =
-	{
-
-	}
-	time = 180 
-	visibility = no
-	onmap = no
-	max_level = 1
-	province = yes
-}
-
-#grain_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#cotton_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#dye2_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#wool_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#silk_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#coal_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#sulphur_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#iron_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#timber_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#tropical_wood_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#rubber_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#oil_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#cattle_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#fish_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#fruit_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#tobacco_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#tea_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#coffee_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}
-#
-#opium_factory_dummy = {      
-#	type = fort #
-#	cost = 999999999
-#	goods_cost =
-#	{
-#
-#	}
-#	time = 30080 
-#	visibility = no
-#	onmap = no
-#	max_level = 1
-#	province = yes
-#}

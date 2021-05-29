@@ -1,30 +1,30 @@
 # goods types, organized by category
 
 military_goods = {
-	ammunition = { 
+	ammunition = {
 		cost = 21.00
 		color = { 208 202 127 } 
 		available_from_start = no
 	}
-	small_arms = { 
+	small_arms = {
 		cost = 39.00 
 		color = { 189 118 22 }
 		available_from_start = no
 	}
-	artillery = { 
+	artillery = {
 		cost = 62.00 
 		color = { 145 130 86 }
 		available_from_start = no
 	}
-	canned_food = { 
+	canned_food = {
 		cost = 17.00 
 		color = { 255 39 12 }
 	}
-	barrels = {	
+	barrels = {
 		cost = 29.00 
 		color = { 55 41 9 }
 	}
-	aeroplanes = { 
+	aeroplanes = {
 		cost = 110.00 
 		color = { 221 213 182 }
 		available_from_start = no
@@ -32,131 +32,131 @@ military_goods = {
 }
 
 raw_material_goods = {
-	cotton = { 
+	cotton = {
 		cost = 2.5
 		color = { 255 255 255 }
 	}
-	dye = {	
+	dye = {
 		cost = 3.00
 		color = { 69 0 182 }
 	}
-	wool = { 
+	wool = {
 		cost = 1.0
 		color = { 234 195 158 }
 	}
-	silk = { 
+	silk = {
 		cost = 10.0
 		color = { 125 158 43 }
 	}
-	coal = { 
+	coal = {
 		cost = 2.5
 		color = { 11 29 77 }
 	}
-	sulphur = { 
+	sulphur = {
 		cost = 6.0
 		color = { 181 228 102 }
 	}
-	iron = { 
+	iron = {
 		cost = 3.5
 		color = { 111 111 111 }
 	}
-	timber = { 
+	timber = {
 		cost = 1.5
 		color = { 146 72 17 }
 	}
-	tropical_wood = { 
+	tropical_wood = {
 		cost = 5.4
 		color = { 213 177 118 }
 	}
-	rubber = { 
+	rubber = {
 		cost = 7.0
 		available_from_start = no
 		color = { 123 110 86 }
 	}
-	oil = { 
+	oil = {
 		cost = 12.0
 		color = { 0 0 0 }
 	}
-	precious_metal = { 
+	precious_metal = {
 		cost = 8
 		tradeable = no
-		money = yes	
+		money = yes
 		color = { 253 199 110 }
 	}
-	precious_goods = { 
+	precious_goods = {
 		cost = 0.05
-		money = yes	
+		money = yes
 		color = { 247 241 61 }
 	}
 }
 
 industrial_goods = {
-	steel = { 
+	steel = {
 		cost = 5.0
 		color = { 95 128 147 }
 		available_from_start = no
 	}
-	cement = { 
+	cement = {
 		cost = 6.0
 		color = { 185 187 164 }
 	}
-	machine_parts = { 
+	machine_parts = {
 		cost = 30.0
 		color = { 177 198 196 }
 		available_from_start = no
 	}
-	glass = { 
+	glass = {
 		cost = 2.9
 		color = { 201 200 199 }
 	}
-	fuel = { 
+	fuel = {
 		cost = 25.00 
 		available_from_start = no
 		color = { 145 110 89 }
 	}
-	fertilizer = { 
+	fertilizer = {
 		cost = 7.0
 		color = { 133 101 35 }
 	}
-	explosives = { 
+	explosives = {
 		cost = 15.00
 		color = { 192 68 20 }
 		available_from_start = no
 	}
-	clipper_convoy = { 
+	clipper_convoy = {
 		cost = 48.00 
 		overseas_penalty = yes
 		color = { 21 65 30 }
 	}
-	steamer_convoy = { 
+	steamer_convoy = {
 		cost = 6.00
 		overseas_penalty = yes
 		color = { 76 18 0 }
 	}
-	electric_gear = { 
+	electric_gear = {
 		cost = 16.00
 		color = { 255 255 0 }
 	}
-	fabric = { 
+	fabric = {
 		cost = 4.0
 		color = { 186 50 40 }
 	}
-	lumber = { 
+	lumber = {
 		cost = 2.4
 		color = { 180 94 26 }
 	}
 }
 
 consumer_goods = {
-	paper = { 
+	paper = {
 		cost = 5.4
 		color = { 216 185 77 }
 	}
-	cattle = { 
+	cattle = {
 		cost = 2.3
 		color = { 84 227 40 }
 	}
-	fish = { 
+	fish = {
 		cost = 1.9
 		color = { 128 98 73 }
 	}
@@ -164,31 +164,31 @@ consumer_goods = {
 		cost = 2.5
 		color = { 255 0 0 }
 	}	
-	grain = { 
+	grain = {
 		cost = 2.2
 		color = { 219 157 36 }
 	}	
-	tobacco = {	
+	tobacco = {
 		cost = 4.1
 		color = { 100 69 30 }
 	}
-	tea = {	
+	tea = {
 		cost = 5.6
 		color = { 201 135 15 }
 	}
-	coffee = { 
+	coffee = {
 		cost = 4.5
 		color = { 27 19 7 }
 	}
-	opium = { 
+	opium = {
 		cost = 4.3
 		color = { 114 162 47 }
 	}
-	automobiles = {	
+	automobiles = {
 		cost = 19.00
 		color = { 61 67 64 }
 	}
-	telephones = { 
+	telephones = {
 		cost = 6.2
 		color = { 123 112 54 }
 	}
@@ -197,15 +197,15 @@ consumer_goods = {
 		available_from_start = no
 		color = { 123 0 54 }
 	}
-	liquor = { 
+	liquor = {
 		cost = 6.4 #Vanilla is 6.4
 		color = { 76 5 0 }
 	}
-	regular_clothes = { 
+	regular_clothes = {
 		cost = 5.9
 		color = { 217 17 19 }
 	}
-	luxury_clothes = { 
+	luxury_clothes = {
 		cost = 37.00
 		color = { 234 227 40 }
 	}
@@ -213,12 +213,37 @@ consumer_goods = {
 		cost = 6.9
 		color = { 173 129 40 }
 	}
-	luxury_furniture = { 
+	luxury_furniture = {
 		cost = 39.00
 		color = { 255 140 184 }
 	}
-	radio = { 
+	radio = {
 		cost = 6.30
 		color = { 129 63 6 }
+	}
+	temperate = {
+		cost = 0.05
+		money = yes
+		color = { 247 241 62 }
+	}
+	hot_climate = {
+		cost = 0.05
+		money = yes
+		color = { 247 241 63 }
+	}
+	forestry = {
+		cost = 0.05
+		money = yes
+		color = { 247 241 64 }
+	}
+	fishing = {
+		cost = 0.05
+		money = yes
+		color = { 247 241 65 }
+	}
+	mining = {
+		cost = 0.05
+		money = yes
+		color = { 247 241 66 }
 	}
 }
