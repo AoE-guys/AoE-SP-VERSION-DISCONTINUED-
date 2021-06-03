@@ -2304,95 +2304,90 @@
 #ruled by the USA/de facto under Native Control
 #Omaha (8000/2000 POPS)
 123 = {
-
-	aristocrats = {
-		culture = dakota
-		religion = animist
-		size = 1
-	}
-	
 	officers = {
-		culture = dakota
+		culture = native_american_minor
 		religion = animist
-		size = 1
+		size = 20
 	}
 	
 	clergymen = {
-		culture = dakota
+		culture = native_american_minor
 		religion = animist
-		size = 1
+		size = 20
 	}
 
 	artisans = {
-		culture = dakota
+		culture = native_american_minor
 		religion = animist
-		size = 1
-	}
-
-	soldiers = {
-		culture = dakota
-		religion = animist
-		size = 3
-	}
-
-	farmers = {
-		culture = dakota
-		religion = animist
-		size = 5
-	}
-
-	labourers = {
-		culture = dakota
-		religion = animist
-		size = 1
-	}
-
-	aristocrats = {
-		culture = dakota
-		religion = animist
-		size = 16
-	}
-
-	soldiers = {
-		culture = dakota
-		religion = animist
-		size = 24
-	}
-
-	farmers = {
-		culture = dakota
-		religion = animist
-		size = 137
-	}
-
-	labourers = {
-		culture = dakota
-		religion = animist
-		size = 7
+		size = 30
 	}
 
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 16
+		size = 20
 	}
 
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 24
+		size = 311
 	}
 
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 137
+		size = 600
 	}
 
 	labourers = {
 		culture = native_american_minor
 		religion = animist
-		size = 7
+		size = 50
+	}
+}
+#Auburn 
+3425 = {
+	officers = {
+		culture = chiwere
+		religion = animist
+		size = 10
+	}
+	
+	clergymen = {
+		culture = chiwere
+		religion = animist
+		size = 10
+	}
+
+	artisans = {
+		culture = chiwere
+		religion = animist
+		size = 15
+	}
+
+	aristocrats = {
+		culture = chiwere
+		religion = animist
+		size = 10
+	}
+
+	soldiers = {
+		culture = chiwere
+		religion = animist
+		size = 160
+	}
+
+	farmers = {
+		culture = chiwere
+		religion = animist
+		size = 360
+	}
+
+	labourers = {
+		culture = chiwere
+		religion = animist
+		size = 30
 	}
 }
 #Alliance (4000/1000 POPS)
@@ -4282,31 +4277,31 @@
 #Kansas City (56000/14000 POPS)
 150 = {
 	clergymen = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 6
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 56
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 10
 	}
 
 	farmers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 923
 	}
 
 	labourers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 49
 	}
@@ -4316,91 +4311,91 @@
 #Des Moines (12000/3000 POPS)
 151 = {
 	aristocrats = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 4
 	}
 	
 	officers = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 1
 	}
 
 	bureaucrats = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 2
 	}
 
 	clergymen = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 2
 	}
 
 	artisans = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 8
 	}
 
 	soldiers = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 4
 	}
 
 	farmers = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 137
 	}
 
 	labourers = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 7
 	}
 
 	aristocrats = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 16
 	}
 	
 	aristocrats = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 16
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 16
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 16
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 16
 	}
 
 	farmers = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 274
 	}
 
 	labourers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 14
 	}
@@ -4408,31 +4403,31 @@
 #Oskaloosa (8000/2000 POPS)
 152 = {
 	clergymen = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 40
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 160
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 400
 	}
 
 	farmers = {
-		culture = dakota
+		culture = chiwere
 		religion = animist
 		size = 1081
 	}
 
 	labourers = {
-		culture = native_american_minor
+		culture = chiwere
 		religion = animist
 		size = 150
 	}
