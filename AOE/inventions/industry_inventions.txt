@@ -2,10 +2,6 @@
 daimlers_automobile = {
 	limit = { combustion_engine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -32,10 +28,6 @@ daimlers_automobile = {
 # wright_n_langleys_aeroplanes = {
 	# limit = { combustion_engine = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -57,10 +49,6 @@ daimlers_automobile = {
 tractors = {
 	limit = { combustion_engine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 3
 		modifier = {
 			factor = 2
@@ -85,10 +73,6 @@ tractors = {
 direct_current = {
 	limit = { electrical_power_generation = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -107,10 +91,6 @@ direct_current = {
 alternating_current = {
 	limit = { electrical_power_generation = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 3
 		modifier = {
 			factor = 2
@@ -129,10 +109,6 @@ alternating_current = {
 polyphase_system = {
 	limit = { electrical_power_generation = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -152,10 +128,6 @@ polyphase_system = {
 iron_tools = {
 	limit = { mechanical_production = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -179,10 +151,6 @@ iron_tools = {
 embellished_toolwork = {
 	limit = { mechanical_production = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -205,10 +173,6 @@ embellished_toolwork = {
 sharp_n_roberts_power_loom = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -232,10 +196,6 @@ sharp_n_roberts_power_loom = {
 bouchon_paper_tape = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		# modifier = {
 			# factor = 2
@@ -263,10 +223,6 @@ bouchon_paper_tape = {
 # northrop_power_loom = {
 	# limit = { assembly_line = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -295,10 +251,6 @@ bouchon_paper_tape = {
 mechanical_saw = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -321,10 +273,6 @@ mechanical_saw = {
 mechanical_precision_saw = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -344,10 +292,6 @@ mechanical_precision_saw = {
 hussey_n_mccormicks_reaping_machine = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -373,10 +317,6 @@ hussey_n_mccormicks_reaping_machine = {
 pitts_threshing_machine = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -402,10 +342,6 @@ pitts_threshing_machine = {
 mechanized_slaughtering_block = {
 	limit = { interchangeable_parts = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -430,10 +366,6 @@ mechanized_slaughtering_block = {
 vaucanson_loom = {
 	limit = { semi_automatization = 1 }
 		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 			base = 2
 			# modifier = {
 				# factor = 2
@@ -463,10 +395,6 @@ vaucanson_loom = {
 whitney_n_colts_standardized_small_arms = {
 	limit = { semi_automatization = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -486,10 +414,6 @@ whitney_n_colts_standardized_small_arms = {
 food_packing_system = {
 	limit = { semi_automatization = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -509,10 +433,6 @@ food_packing_system = {
 integral_distillery_process = {
 	limit = { semi_automatization = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -532,10 +452,6 @@ integral_distillery_process = {
 jiggs = {
 	limit = { semi_automatization = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 1
@@ -558,10 +474,6 @@ jiggs = {
 # dobby_loom = {
 	# limit = { semi_automatization = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -581,10 +493,6 @@ jiggs = {
 steam_powered_silk_reels = {
 	limit = { semi_automatization = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -603,10 +511,6 @@ steam_powered_silk_reels = {
 lancashire_loom = {
 	limit = { semi_automatization = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -625,10 +529,6 @@ lancashire_loom = {
 electric_machinery = {
 	limit = { pneumatic_and_hydraulics = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -652,10 +552,6 @@ electric_machinery = {
 oil_pumping_machinery = {
 	limit = { pneumatic_and_hydraulics = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -675,10 +571,6 @@ oil_pumping_machinery = {
 drying_techniques = {
 	limit = { pneumatic_and_hydraulics = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -704,10 +596,6 @@ drying_techniques = {
 stiff_plastic_brickmaking_machine = {
 	limit = { pneumatic_and_hydraulics = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -729,10 +617,6 @@ stiff_plastic_brickmaking_machine = {
 cartwright_loom = {
 	limit = { assembly_line = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -761,10 +645,6 @@ cartwright_loom = {
 fordism = {
 	limit = { assembly_line = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -784,10 +664,6 @@ fordism = {
 #massproduced_rail = {
 #	limit = { assembly_line = 1 }
 #	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 #		base = 3
 #		modifier = {
 #			factor = 2
@@ -808,10 +684,6 @@ fordism = {
 industrialized_armament_industry = {
 	limit = { assembly_line = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -840,10 +712,6 @@ industrialized_armament_industry = {
 refrigerator_technology = {
 	limit = { assembly_line = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -876,10 +744,6 @@ refrigerator_technology = {
 jacquard_power_loom = {
 	limit = { mechanization_8 = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -906,10 +770,6 @@ jacquard_power_loom = {
 ammunition_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -927,10 +787,6 @@ ammunition_production = {
 small_arms_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -948,10 +804,6 @@ small_arms_production = {
 explosives_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -969,10 +821,6 @@ explosives_production = {
 artillery_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -991,10 +839,6 @@ artillery_production = {
 pit_coal = {
 	limit = { puddling = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1014,10 +858,6 @@ pit_coal = {
 coke = {
 	limit = { puddling = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1038,10 +878,6 @@ coke = {
 advanced_ore_roasting_processes = {
 	limit = { hot_blast = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {	
 			factor = 2
@@ -1061,10 +897,6 @@ advanced_ore_roasting_processes = {
 advanced_ore_grinding_processes = {
 	limit = { hot_blast = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1084,10 +916,6 @@ advanced_ore_grinding_processes = {
 advanced_ore_smelting_processes = {
 	limit = { hot_blast = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1109,10 +937,6 @@ advanced_ore_smelting_processes = {
 bessemer_steel = {
 	limit = { bessemer_process = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1136,10 +960,6 @@ bessemer_steel = {
 martin_steel = {
 	limit = { bessemer_process = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1159,10 +979,6 @@ martin_steel = {
 thomas_steel = {
 	limit = { bessemer_process = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1183,10 +999,6 @@ thomas_steel = {
 electric_rolling_techniques = {
 	limit = { advanced_metallurgy = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1206,10 +1018,6 @@ electric_rolling_techniques = {
 steel_alloys = {
 	limit = { advanced_metallurgy = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1228,10 +1036,6 @@ steel_alloys = {
 rotary_kiln = {
 	limit = { advanced_metallurgy = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1252,10 +1056,6 @@ rotary_kiln = {
 stainless_steel = {
 	limit = { electric_furnace = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1280,10 +1080,6 @@ stainless_steel = {
 pesticide = {
 	limit = { basic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 4
 	}
 	effect = {
@@ -1294,10 +1090,6 @@ pesticide = {
 combat_medicine = {
 	limit = { medicine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1316,10 +1108,6 @@ combat_medicine = {
 herbal_medicine = {
 	limit = { medicine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1339,10 +1127,6 @@ herbal_medicine = {
 early_vaccination = {
 	limit = { medicine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1361,10 +1145,6 @@ early_vaccination = {
 chemotherapy = {
 	limit = { medicine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1382,10 +1162,6 @@ chemotherapy = {
 # genetics_heredity = {
 	# limit = { medicine = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -1403,10 +1179,6 @@ chemotherapy = {
 # clinical_thermometers_and_binaural_stethoscopes = {
 	# limit = { medicine = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -1424,10 +1196,6 @@ chemotherapy = {
 # prophylaxis_against_malaria = {
 	# limit = { medicine = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -1448,10 +1216,6 @@ chemotherapy = {
 # germ_theory = {
 	# limit = { inorganic_chemistry = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = -2
 		# modifier = {
 			# factor = 2
@@ -1480,10 +1244,6 @@ chemotherapy = {
 artificial_fertilizers = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1509,10 +1269,6 @@ artificial_fertilizers = {
 nitroglycerin = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1532,10 +1288,6 @@ nitroglycerin = {
 chemical_wood_pulp_process = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1555,10 +1307,6 @@ chemical_wood_pulp_process = {
 rubber_vulcanization = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1578,10 +1326,6 @@ rubber_vulcanization = {
 catalytic_fermentative_process = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1602,10 +1346,6 @@ catalytic_fermentative_process = {
 # synthetic_dye = {
 	# limit = { organic_chemistry = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -1623,10 +1363,6 @@ catalytic_fermentative_process = {
 gaslights = {
 	limit = { inorganic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1644,10 +1380,6 @@ gaslights = {
 carbon_soil_enrichment = {
 	limit = { organic_chemistry = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1671,10 +1403,6 @@ carbon_soil_enrichment = {
 #cracking = {
 #	limit = { organic_chemistry = 1 }
 #	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 #		base = 2
 #		modifier = {
 #			factor = 2
@@ -1693,10 +1421,6 @@ carbon_soil_enrichment = {
 # x_rays = {
 	# limit = { electricity = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -1715,10 +1439,6 @@ carbon_soil_enrichment = {
 edison_light_bulb = {
 	limit = { electricity = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1736,10 +1456,6 @@ edison_light_bulb = {
 bell_n_greys_telephones = {
 	limit = { electricity = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1763,10 +1479,6 @@ bell_n_greys_telephones = {
 electrical_lighting = {
 	limit = { electricity = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1790,10 +1502,6 @@ electrical_lighting = {
 rayon = {
 	limit = { synthetic_polymers = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1812,10 +1520,6 @@ rayon = {
 bakelite = {
 	limit = { synthetic_polymers = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1833,10 +1537,6 @@ bakelite = {
 scientific_surgery = {
 	limit = { chemistry_and_electricity_7 = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1859,10 +1559,6 @@ vacuum_tube = {
 		electrical_power_generation = 1
 	}
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 1
 		modifier = {
 			factor = 5
@@ -1881,10 +1577,6 @@ vacuum_tube = {
 vaccination = {
 	limit = { chemistry_and_electricity_8 = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1908,10 +1600,6 @@ vaccination = {
 aerial_bacteria_and_antiseptic_principle = {
 	limit = { chemistry_and_electricity_8 = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -1932,10 +1620,6 @@ aerial_bacteria_and_antiseptic_principle = {
 tulls_seed_drill = {
 	limit = { piston_steam_engine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 6
 	}
 	effect = {
@@ -1955,10 +1639,6 @@ tulls_seed_drill = {
 rotherham_plough = {
 	limit = { high_pressure_steam_engine = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 6
 	}
 	effect = {
@@ -1973,10 +1653,6 @@ telephone_switchboard = {
 		electricity = 1
 	}
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 0
 		modifier = {
 			factor = 5
@@ -2002,10 +1678,6 @@ cotton_gin = {
 		}
 	}
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 6
 	}
 	effect = {
@@ -2016,10 +1688,6 @@ cotton_gin = {
 # haber_process = {
 	# limit = { electricity = 1 }
 	# chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		# base = 2
 		# modifier = {
 			# factor = 2
@@ -2051,10 +1719,6 @@ cotton_gin = {
 carl_bosch = {
 	limit = { electricity = 1 }
 	chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
 		base = 2
 		modifier = {
 			factor = 2
@@ -2077,11 +1741,7 @@ carl_bosch = {
 
 #early_electrical_telegraph = {
 #	limit = { high_pressure_steam_engine = 1 }
-#		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		} base = 1 }
+#		chance = { base = 1 }
 #		
 #	effect = {  }
 #}

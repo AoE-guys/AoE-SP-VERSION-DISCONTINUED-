@@ -151,6 +151,12 @@ political_decisions = {
 				}
 				annex_to = SPA
 			}
+			BSQ = {
+				all_core = {
+					add_core = BOR
+				}
+				annex_to = BSQ
+			}
 		}
 		ai_will_do = { factor = 0 }
 	}

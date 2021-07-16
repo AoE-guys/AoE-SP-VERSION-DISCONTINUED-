@@ -12,7 +12,7 @@ plane = {	#Grenadiers
 	priority = 45
 	max_strength = 3
 	default_organisation = 50
-	maximum_speed = 3.00
+	maximum_speed = 4.00
 	weighted_value = 10.0
 
 
@@ -22,23 +22,22 @@ plane = {	#Grenadiers
 		small_arms = 10
 		canned_food = 10
 		liquor = 10
-		luxury_clothes = 3
+		luxury_clothes = 5
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.03 #0.015
+		small_arms = 0.02 #0.015
 		canned_food = 0.07 # 0.08
 		ammunition = 0.1 #0
-		luxury_clothes = 0.03
 	}
 	
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 7
-	defence = 5
-	discipline = 1.2
+	attack = 5.4
+	defence = 3
+	discipline = 1.25
 	support = 0
 	maneuver = 2
 }

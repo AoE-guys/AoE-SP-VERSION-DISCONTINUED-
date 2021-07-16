@@ -189,7 +189,7 @@ grain_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = grain
-	value = 12.5
+	value = 6.5
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -207,7 +207,7 @@ cotton_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = cotton
-	value = 28
+	value = 16
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -247,7 +247,7 @@ wool_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = wool
-	value = 12
+	value = 8.6
 	bonus = {
 		trigger = { has_building = fruit_factory }
 		value = 0.25
@@ -385,7 +385,7 @@ timber_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = timber
-	value = 22
+	value = 17.1
 	bonus = {
 		trigger = { 
 			OR = { has_building = steel_factory }
@@ -421,7 +421,7 @@ tropical_wood_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = tropical_wood
-	value = 15
+	value = 11.8
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.2
@@ -535,7 +535,7 @@ fruit_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = fruit
-	value = 10.0
+	value = 6.0
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -607,7 +607,7 @@ opium_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = opium
-	value = 7
+	value = 18
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -691,7 +691,7 @@ automobile_factory = {
 	}
 	limit_by_local_supply = yes
 	output_goods = automobiles 
-	value = 5.0			#100
+	value = 2.8			#100
 	bonus = {
 		trigger = { has_building = timber_factory }
 		value = 0.25
@@ -754,7 +754,7 @@ telephone_factory = {	#Spices
 	}
 	limit_by_local_supply = yes
 	output_goods = telephones
-	value = 3.5
+	value = 2.5
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -792,7 +792,7 @@ machine_parts_factory = {
 		lumber = 6
 	}
 	output_goods = machine_parts 
-	value = 8		#73
+	value = 5.6		#73
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.4
@@ -990,7 +990,7 @@ artillery_factory = {
 		steel = 8		#37.6   total input+maint = 67.6
 	}
 	output_goods = artillery 
-	value = 1.1			#78
+	value = 0.6			#78
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.5
@@ -1022,7 +1022,7 @@ clipper_shipyard = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 15		#403.2, down from 10 with a profit of 420
+	value = 7.5		#403.2, down from 10 with a profit of 420
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.40
@@ -1052,7 +1052,7 @@ small_arms_factory = {
 		steel = 5.0		#14.1		total input+maint = 60
 	}
 	output_goods = small_arms 
-	value = 5.0			#74
+	value = 9.3			#74
 
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -1131,7 +1131,7 @@ regular_clothes_factory = {
 		fabric = 25		#72	total input+maint = 82
 	}
 	output_goods = regular_clothes 
-	value = 5.5		#87
+	value = 2.5		#87
 	bonus = {
 		trigger = { has_building = fabric_factory }
 		value = 0.6
@@ -1203,7 +1203,7 @@ explosives_factory = {
 		sulphur = 15
 	}
 	output_goods = explosives 
-	value = 25		#35
+	value = 15		#35
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.25
@@ -1227,7 +1227,7 @@ canned_food_factory = {
 		fish = 4 		#6	total input+maint = 29.15
 	}
 	output_goods = canned_food 
-	value = 7			#33.6
+	value = 5,25			#33.6
 	bonus = {
 		trigger = { has_building = grain_factory }
 		value = 0.33
@@ -1426,7 +1426,7 @@ fabric_factory = {
 		dye = 2			# 24 total input+maint = 70
 	}
 	output_goods = fabric
-	value = 45			#81
+	value = 66			#81
 	bonus = {
 		trigger = { has_building = cotton_factory }
 		value = 0.6
@@ -1452,7 +1452,7 @@ cement_factory = {
 		coal = 15		#27.6		total input+maint = 37
 	} 
 	output_goods = cement 
-	value = 10.0			#48
+	value = 8.1			#48
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.15
@@ -1499,7 +1499,7 @@ fertilizer_factory = {
 		tobacco = 5
 	}
 	output_goods = fertilizer 
-	value = 35			#50
+	value = 15			#50
 	bonus = {
 		trigger = { has_building = sulphur_factory }
 		value = 0.7
@@ -1851,7 +1851,7 @@ artisan_machine_parts = {
 		iron = 3
 	}
 	output_goods = machine_parts 
-	value = 5			#73
+	value = 4.5			#73
 	
 	owner = {
 		poptype = artisans 
@@ -1972,7 +1972,7 @@ artisan_artillery = {
 		steel = 8		#37.6   total input+maint = 67.6
 	}
 	output_goods = artillery 
-	value = 5			#78
+	value = 2.6			#78
 
 	owner = {
 		poptype = artisans 
@@ -1992,7 +1992,7 @@ artisan_clipper = {
 	}
 	output_goods = clipper_convoy 
 	is_coastal = yes
-	value = 15.0		#420
+	value = 20.0		#420
 	
 	owner = {
 		poptype = artisans 
@@ -2166,7 +2166,7 @@ artisan_winery = {
 		coal = 1
 	}
 	output_goods = wine 
-	value = 10			#67.9
+	value = 7.5			#67.9
 	
 	owner = {
 		poptype = artisans 
