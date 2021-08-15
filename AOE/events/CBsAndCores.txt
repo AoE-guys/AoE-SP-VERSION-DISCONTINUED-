@@ -2452,17 +2452,20 @@ country_event = {
 				}
 			}
 		}
-		random_country = {
-			limit  = {
-				tag = AUS
-				is_our_vassal = HUN
-				HUN = { government = colonial_company }
-			}
-			any_owned = {
+		random_owned = {
+			owner = {
 				limit = {
-					is_core = HUN
+					HUN = {
+						vassal_of = THIS
+						government = colonial_company
+					}
 				}
-				secede_province = HUN
+				any_owned = {
+					limit = {
+						is_core = HUN
+					}
+					secede_province = HUN
+				}
 			}
 		}
 		ai_chance = { factor = 100 }
