@@ -3636,7 +3636,7 @@
 	officers = {
 		culture = native_american_minor
 		religion = animist
-		size = 15
+		size = 5
 	}
 
 	clergymen = {
@@ -3660,7 +3660,7 @@
 	zzz_dummy = {
 		culture = native_american_minor
 		religion = animist
-		size = 975
+		size = 375
 	}
 
 	labourers = {
@@ -6618,13 +6618,7 @@
 	zzz_dummy = {
 		culture = native_american_minor
 		religion = animist
-		size = 167
-	}
-	
-	zzz_dummy = {
-		culture = louisianan
-		religion = animist
-		size = 1000
+		size = 1167
 	}
 
 	labourers = {
@@ -8156,37 +8150,37 @@
 #Roanoke (120000/30000 POPS)
 216 = {
 	aristocrats = {
-		culture = native_american_minor
+		culture = cherokee
 		religion = animist
 		size = 36
 	}
 
 	clergymen = {
-		culture = native_american_minor
+		culture = cherokee
 		religion = animist
 		size = 24
 	}
 
 	artisans = {
-		culture = native_american_minor
+		culture = cherokee
 		religion = animist
 		size = 304
 	}
 
 	soldiers = {
-		culture = native_american_minor
+		culture = cherokee
 		religion = animist
 		size = 1908
 	}
 
 	zzz_dummy = {
-		culture = native_american_minor
+		culture = cherokee
 		religion = animist
 		size = 1231
 	}
 
 	labourers = {
-		culture = native_american_minor
+		culture = cherokee
 		religion = animist
 		size = 217
 	}
@@ -11240,6 +11234,7 @@
 		religion = animist
 		size = 29
 	}
+<<<<<<< HEAD
 }
 
 3403 = {
@@ -12071,4 +12066,6 @@
 		religion = animist
 		size = 7
 	}
+=======
+>>>>>>> parent of d579b5c8 (pops fix)
 }
