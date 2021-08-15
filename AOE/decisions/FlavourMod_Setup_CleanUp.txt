@@ -46,6 +46,35 @@ political_decisions = {
 		}
 		
 		effect = { USA = { diplomatic_influence = { who = THIS value = -400 } } }
+	}
+
+	japan_ai_dye = {
+		picture = "reichstag"
+		potential = { 
+			ai = yes
+			OR = {
+				tag = TKG
+				tag = JAP
+			}
+			civilized = no
+			NOT = { has_global_flag = japan_ai_dye }
+		}
+		
+		allow = {
+			JAP = { ai = yes }
+			TKG = { ai = yes }
+			CHO = { ai = yes }
+			SAT = { ai = yes }
+			SEN = { ai = yes }
+			YZW = { ai = yes }
+			KAG = { ai = yes }
+			TOS = { ai = yes }
+		}
+		
+		effect = {
+			1652 = { trade_goods = dye }
+			set_global_flag = japan_ai_dye
+		}
 	}	
 	
 	enable_debug_decision = {
@@ -59,6 +88,111 @@ political_decisions = {
 		allow = { }
 		
 		effect = { set_country_flag = enable_debug_decision }
+	}
+	
+	disable_microstates = {
+		potential = {
+			ai = no
+			has_global_flag = looking_through_options
+			NOT = { has_global_flag = disable_microstates }
+			NOT = { year = 1837 }
+		}
+		allow = { }
+		effect = {
+			set_global_flag = disable_microstates
+			3251 = { remove_core = MNC add_core = SVY add_core = ITA }
+			SVY = { inherit = MNC }
+			3252 = { remove_core = ADO remove_core = CAT add_core = BOR }
+			BOR = { inherit = ADO }
+			3266 = { remove_core = SMR add_core = PAP add_core = ITA }
+			PAP = { inherit = SMR }
+		}
+	}
+	
+	cleanup_ant = {
+		potential = {
+			tag = ANT
+			exists = yes
+			GRE = { exists = yes }
+		}
+		allow = { }
+		effect = {
+			ANT = { all_core = { remove_core = ANT } }
+			annex_to = GRE
+		}
+	}
+	
+	cleanup_eic = {
+		potential = {
+			tag = ENG
+			ai = yes
+			war = yes
+			OR = { 
+				EIC = {
+					OR = {
+						vassal_of = ENG
+						substate_of = ENG
+					}
+					exists = yes
+					war = no
+				}
+				RAJ = {
+					OR = {
+						vassal_of = ENG
+						substate_of = ENG
+					}
+					alliance_with = ENG
+					exists = yes
+					war = no
+				}
+			}
+		}
+		
+		allow = { 
+			OR = {
+				AND = { 
+					any_greater_power = { war_with = ENG NOT = { war_with = EIC } }
+					EIC = {
+						OR = {
+							vassal_of = ENG
+							substate_of = ENG
+						}
+						exists = yes
+						war = no
+					}
+				}
+				AND = {
+					any_greater_power = { war_with = ENG NOT = { war_with = RAJ } }
+					RAJ = {
+						OR = {
+							vassal_of = ENG
+							substate_of = ENG
+						}
+						exists = yes
+						war = no
+						alliance_with = ENG
+					}
+				}
+				AND = {
+					war = yes
+					EIC = { exists = yes war = no }
+				}
+				AND = {
+					war_with = MUG
+					EIC = {
+						exists = yes
+						NOT = { war_with = MUG }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
+				   attacker_goal = {  casus_belli = call_allies_cb  }
+				   call_ally = yes
+			   }
+		}
 	}
 	
 	cleanup_war_with_non_existing_country = {
@@ -224,4 +358,226 @@ political_decisions = {
 			}
 		}
 	}
+	
+	american_catholic_pop_growth = {
+		potential = {
+			ai = yes
+			exists = yes
+			NOT = { year = 1850 }
+			OR = {
+				AND = { 
+					is_culture_group = american_cultures
+					government = democracy
+					NOT = { has_country_modifier = catholic_growth }
+				}
+				any_neighbor_country = {
+					ai = no
+					government = democracy
+					is_culture_group = american_cultures
+					NOT = { has_country_modifier = catholic_growth }
+				}
+			}
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			random_owned = {
+				limit = { 
+					owner = {
+						NOT = { has_country_modifier = catholic_growth }
+						is_culture_group = american_cultures 
+					} 
+				}
+				
+				owner = {
+					any_pop = {
+						limit = {
+							has_pop_religion = catholic 
+							is_culture_group = american_cultures
+							location = { is_overseas = no }
+							NOT = { 
+								culture = texan
+								type = craftsmen 
+								type = bureaucrats
+								strata = rich
+								strata = middle
+							}
+							
+						}
+						random_list = {
+							15 = { reduce_pop = 1.02 }
+							35 = { reduce_pop = 1.03 }
+							45 = { reduce_pop = 1.04 }
+						}
+					}
+					any_pop = {
+						limit = {
+							has_pop_religion = catholic 
+							is_culture_group = american_cultures
+							location = { is_overseas = no }
+							OR = { 
+								strata = rich
+								strata = middle
+							}
+							
+						}
+						random_list = {
+							20 = { reduce_pop = 1.02 }
+							35 = { reduce_pop = 1.01 }
+							40 = { reduce_pop = 1.03 }
+						}
+					}
+					any_pop = {
+						limit = {
+							has_pop_religion = catholic 
+							has_pop_culture = cajun
+							NOT = { type = craftsmen }
+							location = { is_overseas = no }
+						}
+						random_list = {
+							40 = { reduce_pop = 1.02 }
+							30 = { reduce_pop = 1.03 }
+							25 = { reduce_pop = 1.04 }
+						}
+					}
+					random_list = {
+						30 = { add_country_modifier = { name = catholic_growth duration = 1825 } }
+						50 = { add_country_modifier = { name = catholic_growth duration = 2190 } }
+						25 = { add_country_modifier = { name = catholic_growth duration = 2555 } }
+					}
+				}
+			}
+			
+			any_country = {
+				limit = {
+					NOT = { has_country_modifier = catholic_growth }
+					is_culture_group = american_cultures 
+				}
+				any_pop = {
+					limit = {
+						has_pop_religion = catholic 
+						is_culture_group = american_cultures
+						location = { is_overseas = no }
+						NOT = { 
+							has_pop_culture = texan
+							type = craftsmen 
+							type = bureaucrats
+							strata = rich
+							strata = middle
+						}
+						
+					}
+					random_list = {
+						15 = { reduce_pop = 1.02 }
+						35 = { reduce_pop = 1.03 }
+						45 = { reduce_pop = 1.04 }
+					}
+				}
+				any_pop = {
+					limit = {
+						has_pop_religion = catholic 
+						is_culture_group = american_cultures
+						location = { is_overseas = no }
+						OR = { 
+							strata = rich
+							strata = middle
+						}
+						
+					}
+					random_list = {
+						20 = { reduce_pop = 1.02 }
+						35 = { reduce_pop = 1.01 }
+						40 = { reduce_pop = 1.03 }
+					}
+				}
+				any_pop = {
+					limit = {
+						has_pop_religion = catholic 
+						OR = { 
+							has_pop_culture = cajun
+							has_pop_culture = texan
+						}
+						NOT = { type = craftsmen }
+						location = { is_overseas = no }
+					}
+					random_list = {
+						40 = { reduce_pop = 1.02 }
+						30 = { reduce_pop = 1.03 }
+						25 = { reduce_pop = 1.04 }
+					}
+				}
+				random_list = {
+					33 = { add_country_modifier = { name = catholic_growth duration = 1825 } }
+					33 = { add_country_modifier = { name = catholic_growth duration = 2190 } }
+					33 = { add_country_modifier = { name = catholic_growth duration = 2555 } }
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	russia_ai_return_land = {
+		potential = { 
+			ai = yes
+			OR = { 
+				tag = RUS
+				tag = ENG
+			}
+			truce_with = EGY
+			exists = EGY
+			any_owned_province = {
+				OR = {
+					is_core = EGY 
+					is_core = SUD
+				}
+			}
+			NOT = { 
+				has_country_flag = egy_clean_up 
+				has_global_flag = suez_canal_built
+			}
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			badboy = -10
+			any_owned = {
+				limit = { 
+					OR = {
+						is_core = EGY 
+						is_core = SUD
+					}
+				}
+				secede_province = EGY
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	#test_end_really_long_wars = {
+		#picture = "reichstag"
+		#potential = { 
+			#tag = FRA
+			#war_with = RUS
+		#}
+		
+		#allow = {
+			#NOT = { casus_belli = RUS }
+		#}
+		
+		#effect = {
+			#end_war = RUS
+			#any_country = {
+				#limit = {
+					#alliance_with = RUS
+					#war_with = THIS
+				#}
+				#end_war = THIS
+			#}
+		#}
+	#}	
 }

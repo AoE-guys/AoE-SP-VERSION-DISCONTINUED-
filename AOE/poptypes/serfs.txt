@@ -536,7 +536,7 @@ issues = {
 		factor = 0
 		OR = {
 		NOT = { is_next_reform = peonage }
-		country = {	tech_school = unciv_tech_school }
+		country = {	civilized = no }
 		}
 	}
 	

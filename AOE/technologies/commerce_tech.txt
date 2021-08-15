@@ -196,11 +196,8 @@ late_classical_theory = {
 	cost = 7200
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.01
 	}
@@ -211,11 +208,8 @@ collectivist_theory = {
 	cost = 10800
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.01		
 	}
@@ -226,11 +220,8 @@ the_historical_theory = {
 	cost = 14400
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.01	
 	}
@@ -241,11 +232,8 @@ neoclassical_theory = {
 	cost = 18000
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1
 	}
@@ -256,11 +244,8 @@ keynesian_economics = {
 	cost = 21600
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.01
 	}
@@ -271,11 +256,8 @@ economic_thought_and_critique_7 = {
 	cost = 25200
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1
 	}
@@ -286,11 +268,8 @@ economic_thought_and_critique_8 = {
 	cost = 30200
 
 	factory_input = -0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.01
 	}
@@ -323,13 +302,10 @@ freedom_of_trade = {
 	factory_goods_output = { opium = 0.1 }
 	
 	factory_goods_output = { coal = 0.1 }
+	factory_goods_output = { coal = 0.1 }
 	factory_goods_output = { iron = 0.1 }
 	factory_goods_output = { oil = 0.1 }
-	rgo_goods_output = { temperate = 0.1 }
-	rgo_goods_output = { hot_climate = 0.1 }
-	rgo_goods_output = { forestry = 0.1 }
-	rgo_goods_output = { fishing = 0.1 }
-	rgo_goods_output = { mining = 0.1 }
+	rgo_goods_output = { precious_metal = 0.1 }
 	factory_goods_output = { sulphur = 0.1 }
 	
 	ai_chance = {
@@ -360,11 +336,7 @@ market_structure = {
 	factory_goods_output = { coal = 0.1 }
 	factory_goods_output = { iron = 0.1 }
 	factory_goods_output = { oil = 0.1 }
-	rgo_goods_output = { temperate = 0.1 }
-	rgo_goods_output = { hot_climate = 0.1 }
-	rgo_goods_output = { forestry = 0.1 }
-	rgo_goods_output = { fishing = 0.1 }
-	rgo_goods_output = { mining = 0.1 }
+	rgo_goods_output = { precious_metal = 0.1 }
 	factory_goods_output = { sulphur = 0.1 }
 	
 	ai_chance = {
@@ -396,11 +368,7 @@ business_regulations = {
 	factory_goods_output = { coal = 0.1 }
 	factory_goods_output = { iron = 0.1 }
 	factory_goods_output = { oil = 0.1 }
-	rgo_goods_output = { temperate = 0.1 }
-	rgo_goods_output = { hot_climate = 0.1 }
-	rgo_goods_output = { forestry = 0.1 }
-	rgo_goods_output = { fishing = 0.1 }
-	rgo_goods_output = { mining = 0.1 }
+	rgo_goods_output = { precious_metal = 0.1 }
 	factory_goods_output = { sulphur = 0.1 }
 	
 	ai_chance = {
@@ -414,11 +382,7 @@ market_regulations = {
 	cost = 14400
 
 	influence = 0.2
-	factory_goods_output = { temperate = 0.1 }
-	factory_goods_output = { hot_climate = 0.1 }
-	factory_goods_output = { forestry = 0.1 }
-	factory_goods_output = { fishing = 0.1 }
-	factory_goods_output = { mining = 0.1 }
+	factory_goods_output = { precious_goods = 0.1 }
 	ai_chance = {
 		factor = 1.05
 	}	
@@ -430,11 +394,7 @@ economic_responsibility = {
 	cost = 18000
 
 	influence = 0.2
-		factory_goods_output = { temperate = 0.1 }
-	factory_goods_output = { hot_climate = 0.1 }
-	factory_goods_output = { forestry = 0.1 }
-	factory_goods_output = { fishing = 0.1 }
-	factory_goods_output = { mining = 0.1 }
+	factory_goods_output = { precious_goods = 0.20 }
 	ai_chance = {
 		factor = 1.05
 	}
@@ -446,11 +406,7 @@ government_interventionism = {
 	cost = 21600
 
 	influence = 0.2
-		factory_goods_output = { temperate = 0.1 }
-	factory_goods_output = { hot_climate = 0.1 }
-	factory_goods_output = { forestry = 0.1 }
-	factory_goods_output = { fishing = 0.1 }
-	factory_goods_output = { mining = 0.1 }
+	factory_goods_output = { precious_goods = 0.20 }
 	ai_chance = {
 		factor = 1.01
 	}
@@ -462,11 +418,7 @@ market_functionality_7 = {
 	cost = 25200
 
 	influence = 0.2
-		factory_goods_output = { temperate = 0.1 }
-	factory_goods_output = { hot_climate = 0.1 }
-	factory_goods_output = { forestry = 0.1 }
-	factory_goods_output = { fishing = 0.1 }
-	factory_goods_output = { mining = 0.1 }
+	factory_goods_output = { precious_goods = 0.20 }
 	ai_chance = {
 		factor = 1.05
 	}
@@ -478,11 +430,7 @@ market_functionality_8 = {
 	cost = 30200
 
 	influence = 0.2
-		factory_goods_output = { temperate = 0.1 }
-	factory_goods_output = { hot_climate = 0.1 }
-	factory_goods_output = { forestry = 0.1 }
-	factory_goods_output = { fishing = 0.1 }
-	factory_goods_output = { mining = 0.1 }
+	factory_goods_output = { precious_goods = 0.20 }
 	ai_chance = {
 		factor = 1.01
 	}
@@ -504,14 +452,10 @@ organized_factories = {
 	area = tech_organization
 	year = 1700
 	cost = 7200
-	
-	activate_building = radio_factory
+
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 		ai_chance = {
 		factor = 1.03
 	}
@@ -522,11 +466,8 @@ scientific_management = {
 	cost = 10800
 
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.03
 	}
@@ -537,11 +478,8 @@ time_saving_measures = {
 	cost = 14400
 
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.03
 	}	
@@ -552,11 +490,8 @@ management_strategy = {
 	cost = 18000
 
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.03
 	}
@@ -567,11 +502,8 @@ organizational_development = {
 	cost = 21600
 
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.03
 	}
@@ -582,11 +514,8 @@ tech_organization_7 = {
 	cost = 25200
 
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.03
 	}
@@ -597,12 +526,11 @@ tech_organization_8 = {
 	cost = 30200
 
 	factory_output = 0.01
-	rgo_size = { temperate = 0.05 }
-	rgo_size = { hot_climate = 0.05 }
-	rgo_size = { forestry = 0.05 }
-	rgo_size = { fishing = 0.05 }
-	rgo_size = { mining = 0.05 }
+	factory_goods_output = { precious_goods = 0.1 }
+	rgo_size = { precious_goods = 0.05 }
 	ai_chance = {
 		factor = 1.03
 	}
 }
+
+

@@ -2,7 +2,7 @@ country_event = {
 	id = 9999886
 	title = "Resources SetUp"
 	desc = "Resources SetUp"		
-	is_triggered_only = yes	
+    is_triggered_only = yes	
 	
 	mean_time_to_happen = {
 		days = 1
@@ -10,98 +10,380 @@ country_event = {
 	
 	option = {
 		name = "Resources SetUp"
-		money = 12500
-		ammunition = 10
-		small_arms = 10
-		artillery = 5
-		canned_food = 10
-		barrels = 5
-		cotton = 2
-		dye = 1
-		wool = 10
-		silk = 10
-		coal = 10
-		sulphur = 5
-		iron = 10
-		timber = 10
-		tropical_wood = 4
-		steel = 3
-		cement = 7
-		machine_parts = 5
-		glass = 5
-		fertilizer = 5
-		explosives = 5
-		clipper_convoy = 2
-		steamer_convoy = 1
-		electric_gear = 1
-		fabric = 5
-		lumber = 5
-		paper = 3
-		cattle = 3
-		fish = 10
-		fruit = 10
-		grain = 10
-		tobacco = 10
-		tea = 10
-		coffee = 10
-		opium = 10
-		automobiles = 10
-		telephones = 10
-		wine = 10
-		liquor = 10
-		regular_clothes = 10
-		luxury_clothes = 4
-		furniture = 15
-		luxury_furniture = 3
-		radio = 10
+        money = 12500
+        ammunition = 10
+        small_arms = 10
+        artillery = 5
+        canned_food = 10
+        barrels = 5
+        cotton = 2
+        dye = 1
+        wool = 10
+        silk = 10
+        coal = 10
+        sulphur = 5
+        iron = 10
+        timber = 10
+        tropical_wood = 4
+        steel = 3
+        cement = 7
+        machine_parts = 5
+        glass = 5
+        fertilizer = 5
+        explosives = 5
+        clipper_convoy = 2
+        steamer_convoy = 1
+        electric_gear = 1
+        fabric = 5
+        lumber = 5
+        paper = 3
+        cattle = 3
+        fish = 10
+        fruit = 10
+        grain = 10
+        tobacco = 10
+        tea = 10
+        coffee = 10
+        opium = 10
+        automobiles = 10
+        telephones = 10
+        wine = 10
+        liquor = 10
+        regular_clothes = 10
+        luxury_clothes = 4
+        furniture = 15
+        luxury_furniture = 3
+        radio = 10
 		#any_pop = { limit = { AND = { type = serfs literacy = 0.40 } } pop_type = farmers }
 		#any_country = { any_pop = { limit = { AND = { type = serfs literacy = 0.40 } } pop_type = farmers } }
-		any_country = { money = 12500 }
+		any_country = { 
+		               money = 12500	   
+		}
 		
 		
-		any_owned = { limit = { trade_goods = grain } trade_goods = temperate }
-		any_owned = { limit = { trade_goods = cotton } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = dye } trade_goods = temperate }
-		any_owned = { limit = { trade_goods = wool } trade_goods = temperate }
-		any_owned = { limit = { trade_goods = silk } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = coal } trade_goods = mining }
-		any_owned = { limit = { trade_goods = sulphur } trade_goods = mining }
-		any_owned = { limit = { trade_goods = iron } trade_goods = mining }
-		any_owned = { limit = { trade_goods = timber } trade_goods = forestry }
-		any_owned = { limit = { trade_goods = tropical_wood } trade_goods = forestry }
-		any_owned = { limit = { trade_goods = rubber } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = oil } trade_goods = mining }
-		any_owned = { limit = { trade_goods = cattle } trade_goods = temperate }
-		any_owned = { limit = { trade_goods = fish } trade_goods = fishing }
-		any_owned = { limit = { trade_goods = fruit } trade_goods = temperate }		
-		any_owned = { limit = { trade_goods = tobacco } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = tea } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = coffee } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = tobacco } trade_goods = hot_climate }
-		any_owned = { limit = { trade_goods = opium } trade_goods = hot_climate }
+		any_owned = { 
+		             limit = {
+					          trade_goods = grain
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = grain_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = cotton
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = cotton_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = dye
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = dye_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = wool
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = wool_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = silk
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = silk_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = coal
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = coal_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = sulphur
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = sulphur_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = iron
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = iron_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = timber
+					 }
+					 wood_export = 1
+                     #add_province_modifier = { name = timber_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tropical_wood
+					 }
+					 wood_export = 1
+                     #add_province_modifier = { name = tropical_wood_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = rubber
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = rubber_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = oil
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = oil_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = cattle
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = cattle_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = fish
+					 }
+					 fishing_export = 1
+                     #add_province_modifier = { name = fish_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = fruit
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = fruit_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}		
+		any_owned = { 
+		             limit = {
+					          trade_goods = tobacco
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tobacco_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tea
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tea_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = coffee
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = coffee_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tobacco
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = opium_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = opium
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = opium_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
 		
 
 		any_country = {
-			any_owned = { limit = { trade_goods = grain } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = cotton } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = dye } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = wool } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = silk } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = coal } trade_goods = mining }
-			any_owned = { limit = { trade_goods = sulphur } trade_goods = mining }
-			any_owned = { limit = { trade_goods = iron } trade_goods = mining }
-			any_owned = { limit = { trade_goods = timber } trade_goods = forestry }
-			any_owned = { limit = { trade_goods = tropical_wood } trade_goods = forestry }
-			any_owned = { limit = { trade_goods = rubber } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = oil } trade_goods = mining }
-			any_owned = { limit = { trade_goods = cattle } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = fish } trade_goods = fishing }
-			any_owned = { limit = { trade_goods = fruit } trade_goods = temperate }		
-			any_owned = { limit = { trade_goods = tobacco } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = tea } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = coffee } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = tobacco } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = opium } trade_goods = hot_climate }
+		any_owned = { 
+		             limit = {
+					          trade_goods = grain
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = grain_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = cotton
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = cotton_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = dye
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = dye_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = wool
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = wool_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = silk
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = silk_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = coal
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = coal_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = sulphur
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = sulphur_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = iron
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = iron_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = timber
+					 }
+					 wood_export = 1
+                     #add_province_modifier = { name = timber_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tropical_wood
+					 }
+					 wood_export = 1
+                     #add_province_modifier = { name = tropical_wood_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = rubber
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = rubber_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = oil
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = oil_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = cattle
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = cattle_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = fish
+					 }
+					 fishing_export = 1
+                     #add_province_modifier = { name = fish_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = fruit
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = fruit_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}		
+		any_owned = { 
+		             limit = {
+					          trade_goods = tobacco
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tobacco_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tea
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tea_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = coffee
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = coffee_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tobacco
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = opium_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = opium
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = opium_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
 		}
 		set_global_flag = resources_setup_done
 		country_event = 9999885
@@ -114,14 +396,9 @@ province_event = {
 	desc = "Local Resources Maintenance"
 
 	trigger = {
-		has_global_flag = resources_setup_done
-		NOT = { trade_goods = precious_goods }
-		NOT = { trade_goods = precious_metal }
-		NOT = { trade_goods = temperate }
-		NOT = { trade_goods = hot_climate }
-		NOT = { trade_goods = mining }
-		NOT = { trade_goods = fishing }
-		NOT = { trade_goods = forestry }
+	           has_global_flag = resources_setup_done
+               NOT = { trade_goods = precious_goods }
+               NOT = { trade_goods = precious_metal }
 	}
 
 	allow_multiple_instances = yes
@@ -133,26 +410,322 @@ province_event = {
 	option = {
 		name = "Local Resources Maintenance"
 		state_scope = {
-			any_owned = { limit = { trade_goods = grain } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = cotton } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = dye } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = wool } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = silk } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = coal } trade_goods = mining }
-			any_owned = { limit = { trade_goods = sulphur } trade_goods = mining }
-			any_owned = { limit = { trade_goods = iron } trade_goods = mining }
-			any_owned = { limit = { trade_goods = timber } trade_goods = forestry }
-			any_owned = { limit = { trade_goods = tropical_wood } trade_goods = forestry }
-			any_owned = { limit = { trade_goods = rubber } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = oil } trade_goods = mining }
-			any_owned = { limit = { trade_goods = cattle } trade_goods = temperate }
-			any_owned = { limit = { trade_goods = fish } trade_goods = fishing }
-			any_owned = { limit = { trade_goods = fruit } trade_goods = temperate }		
-			any_owned = { limit = { trade_goods = tobacco } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = tea } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = coffee } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = tobacco } trade_goods = hot_climate }
-			any_owned = { limit = { trade_goods = opium } trade_goods = hot_climate }
+		any_owned = { 
+		             limit = {
+					          trade_goods = grain
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = grain_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = cotton
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = cotton_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = dye
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = dye_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = wool
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = wool_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = silk
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = silk_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = coal
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = coal_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = sulphur
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = sulphur_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = iron
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = iron_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = timber
+					 }
+					 wood_export = 1
+                     #add_province_modifier = { name = timber_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tropical_wood
+					 }
+					 wood_export = 1
+                     #add_province_modifier = { name = tropical_wood_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = rubber
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = rubber_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = oil
+					 }
+					 mines_export = 1
+                     #add_province_modifier = { name = oil_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = cattle
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = cattle_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = fish
+					 }
+					 fishing_export = 1
+                     #add_province_modifier = { name = fish_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = fruit
+					 }
+					 temperate_climate_agriculture = 1
+                     #add_province_modifier = { name = fruit_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}		
+		any_owned = { 
+		             limit = {
+					          trade_goods = tobacco
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tobacco_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tea
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tea_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = coffee
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = coffee_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = tobacco
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = tobacco_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		any_owned = { 
+		             limit = {
+					          trade_goods = opium
+					 }
+					 hot_climate_agriculture = 1
+                     #add_province_modifier = { name = opium_state_modifier duration = -1 }
+					 trade_goods = precious_goods
+		}
+		
+
+		#any_country = {
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = grain
+		#			 }
+		#			 temperate_climate_agriculture = 1
+        #             #add_province_modifier = { name = grain_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = cotton
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = cotton_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = dye
+		#			 }
+		#			 temperate_climate_agriculture = 1
+        #             #add_province_modifier = { name = dye_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = wool
+		#			 }
+		#			 temperate_climate_agriculture = 1
+        #             #add_province_modifier = { name = wool_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = silk
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = silk_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = coal
+		#			 }
+		#			 mines_export = 1
+        #             #add_province_modifier = { name = coal_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = sulphur
+		#			 }
+		#			 mines_export = 1
+        #             #add_province_modifier = { name = sulphur_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = iron
+		#			 }
+		#			 mines_export = 1
+        #             #add_province_modifier = { name = iron_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = timber
+		#			 }
+		#			 wood_export = 1
+        #             #add_province_modifier = { name = timber_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = tropical_wood
+		#			 }
+		#			 wood_export = 1
+        #             #add_province_modifier = { name = tropical_wood_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = rubber
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = rubber_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = oil
+		#			 }
+		#			 mines_export = 1
+        #             #add_province_modifier = { name = oil_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = cattle
+		#			 }
+		#			 temperate_climate_agriculture = 1
+        #             #add_province_modifier = { name = cattle_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = fish
+		#			 }
+		#			 fishing_export = 1
+        #             #add_province_modifier = { name = fish_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = fruit
+		#			 }
+		#			 temperate_climate_agriculture = 1
+        #             #add_province_modifier = { name = fruit_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}		
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = tobacco
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = tobacco_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = tea
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = tea_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = coffee
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = coffee_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}
+		#any_owned = { 
+		#             limit = {
+		#			          trade_goods = tobacco
+		#			 }
+		#			 hot_climate_agriculture = 1
+        #             #add_province_modifier = { name = opium_state_modifier duration = -1 }
+		#			 trade_goods = precious_goods
+		#}      
+		#}
 		}
 	}
 }

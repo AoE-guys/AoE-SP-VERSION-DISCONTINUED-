@@ -123,6 +123,9 @@ cement_template = {
 
 farming_factory_template = {
 	efficiency = {
+	    precious_goods = 0.1
+		#machine_parts = 1
+		#fertilizer = 0.15
 	}
 	
 	owner = {
@@ -185,11 +188,14 @@ farming_factory_template = {
 grain_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		temperate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = grain
 	value = 12.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -203,11 +209,14 @@ grain_factory = {
 cotton_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = cotton
 	value = 28
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -221,11 +230,14 @@ cotton_factory = {
 dye2_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		temperate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = dye
 	value = 7.00
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
 		value = 0.9
@@ -243,11 +255,14 @@ dye2_factory = {
 wool_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		temperate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = wool
 	value = 12
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fruit_factory }
 		value = 0.25
@@ -277,11 +292,14 @@ wool_factory = {
 silk_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = silk
 	value = 3
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -295,11 +313,14 @@ silk_factory = {
 coal_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		mining = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = coal
 	value = 5.50
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = iron_factory }
 		value = 0.2
@@ -325,11 +346,14 @@ coal_factory = {
 sulphur_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		mining = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = sulphur
 	value = 5.0
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.2
@@ -355,11 +379,14 @@ sulphur_factory = {
 iron_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		mining = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = iron
 	value = 8
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.2
@@ -381,11 +408,14 @@ iron_factory = {
 timber_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		forestry = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = timber
 	value = 22
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { 
 			OR = { has_building = steel_factory }
@@ -417,11 +447,14 @@ timber_factory = {
 tropical_wood_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		forestry = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = tropical_wood
 	value = 15
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = steel_factory }
 		value = 0.2
@@ -440,31 +473,40 @@ tropical_wood_factory = {
 rubber_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = rubber
 	value = 0.9
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
 	}
+}
 
 oil_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		mining = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = oil
 	value = 1.2
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
+		value = -9.50
 	}
+}
 
 cattle_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		temperate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = cattle
 	value = 6
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fruit_factory }
 		value = 0.25
@@ -494,11 +536,14 @@ cattle_factory = {
 fish_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		fishing = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = fish
 	value = 3.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = timber_factory }
 		value = 0.2
@@ -531,11 +576,14 @@ fish_factory = {
 fruit_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		temperate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = fruit
 	value = 10.0
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -549,11 +597,14 @@ fruit_factory = {
 tobacco_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = tobacco
 	value = 7
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -567,11 +618,14 @@ tobacco_factory = {
 tea_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = tea
 	value = 5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -585,11 +639,14 @@ tea_factory = {
 coffee_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = coffee
 	value = 7.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -603,11 +660,14 @@ coffee_factory = {
 opium_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = opium
 	value = 7
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -638,11 +698,14 @@ aeroplane_factory = {
 barrel_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		forestry = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = barrels 
 	value = 1		#98	total input+maint = 83
+	bonus = {
+		trigger = { any_owned_province = { has_building = wood_export } }
+		value = -0.50
+	}
 	bonus = {
 		trigger = { has_building = fruit_factory }
 		value = 0.25
@@ -687,11 +750,14 @@ barrel_factory = {
 automobile_factory = {
 	template = farming_factory_template
 	input_goods = {
-		forestry = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = automobiles 
 	value = 5.0			#100
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = timber_factory }
 		value = 0.25
@@ -732,11 +798,14 @@ automobile_factory = {
 radio_factory = {    #Sugar   
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = radio 
 	value = 8		#104
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -750,11 +819,14 @@ radio_factory = {    #Sugar
 telephone_factory = {	#Spices
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = telephones
 	value = 3.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -770,11 +842,14 @@ telephone_factory = {	#Spices
 electric_gear_factory = {       
 	template = farming_factory_template
 	input_goods = {
-		hot_climate = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = electric_gear 
 	value = 5.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
@@ -869,11 +944,21 @@ fuel_refinery = {
 steamer_shipyard = {	#Saltworks
 	template = farming_factory_template
 	input_goods = {
-		fishing = 0.1
+	precious_goods = 0.1
 	}
-	limit_by_local_supply = yes
 	output_goods = steamer_convoy
 	value = 4.5
+	bonus = {
+		trigger = { 
+			NOT = { 
+				OR = { 
+					any_owned_province = { has_building = fishing_export }
+					any_owned_province = { has_building = mines_export }				
+				} 
+			}
+		}
+		value = -9.50
+	}
 	bonus = {
 		trigger = { owner = { NOT = { num_of_cities = 2 } } }
 		value = 0.9
@@ -2283,44 +2368,3 @@ artisan_fabric_wool = {
 	
 	workforce = 5000
 }
-
-temperate_market = {
-	template = RGO_template_labourers
-	output_goods = temperate
-	value = 5.0
-	farm = yes
-	#mine = yes
-}
-
-hot_climate_market = {
-	template = RGO_template_labourers
-	output_goods = hot_climate
-	value = 5.0
-	farm = yes
-	#mine = yes
-}
-
-forestry_market = {
-	template = RGO_template_labourers
-	output_goods = forestry
-	value = 5.0
-	farm = yes
-	#mine = yes
-}
-
-fishing_market = {
-	template = RGO_template_labourers
-	output_goods = fishing
-	value = 5.0
-	farm = yes
-	#mine = yes
-}
-
-mining_market = {
-	template = RGO_template_labourers
-	output_goods = mining
-	value = 5.0
-	farm = yes
-	#mine = yes
-}
-
