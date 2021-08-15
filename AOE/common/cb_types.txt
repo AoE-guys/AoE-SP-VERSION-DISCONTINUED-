@@ -4337,12 +4337,6 @@ conquest = {
 				}
 				tech_school = unciv_tech_school
 			}
-			AND = {
-				THIS = {
-					NOT = { tech_school = unciv_tech_school }
-				}
-				NOT = { tech_school = unciv_tech_school }
-			}
 		}
 		OR = {
 			AND = { 
