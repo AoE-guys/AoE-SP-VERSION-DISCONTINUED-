@@ -124,8 +124,13 @@ cement_template = {
 farming_factory_template = {
 	efficiency = {
 	    precious_goods = 0.1
+<<<<<<< HEAD
 		machine_parts = 1
 		fertilizer = 0.15
+=======
+		#machine_parts = 1
+		#fertilizer = 0.15
+>>>>>>> parent of 4733014b (29.05.2021~Economy Rework part 2 + Migration Rework)
 	}
 	
 	owner = {
@@ -218,6 +223,10 @@ cotton_factory = {
 		value = -9.50
 	}
 	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
+	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
 	}
@@ -234,6 +243,10 @@ dye2_factory = {
 	}
 	output_goods = dye
 	value = 6.00
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -259,6 +272,10 @@ wool_factory = {
 	}
 	output_goods = wool
 	value = 20
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
 		value = -9.50
@@ -296,6 +313,10 @@ silk_factory = {
 	}
 	output_goods = silk
 	value = 3.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -388,6 +409,10 @@ iron_factory = {
 		value = -9.50
 	}
 	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = mines_export } } }
+		value = -9.50
+	}
+	bonus = {
 		trigger = { has_building = coal_factory }
 		value = 0.2
 	}
@@ -412,6 +437,10 @@ timber_factory = {
 	}
 	output_goods = timber
 	value = 45
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = wood_export } } }
 		value = -9.50
@@ -508,6 +537,10 @@ cattle_factory = {
 		value = -9.50
 	}
 	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = temperate_climate_agriculture } } }
+		value = -9.50
+	}
+	bonus = {
 		trigger = { has_building = fruit_factory }
 		value = 0.25
 	}
@@ -540,6 +573,10 @@ fish_factory = {
 	}
 	output_goods = fish
 	value = 7
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = fishing_export } } }
 		value = -9.50
@@ -627,6 +664,10 @@ tea_factory = {
 		value = -9.50
 	}
 	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
+	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
 	}
@@ -648,6 +689,10 @@ coffee_factory = {
 		value = -9.50
 	}
 	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
+	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
 	}
@@ -664,6 +709,10 @@ opium_factory = {
 	}
 	output_goods = opium
 	value = 3.5
+	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
 	bonus = {
 		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
 		value = -9.50
@@ -702,6 +751,10 @@ barrel_factory = {
 	}
 	output_goods = barrels 
 	value = 4		#98	total input+maint = 83
+	bonus = {
+		trigger = { any_owned_province = { has_building = wood_export } }
+		value = -0.50
+	}
 	bonus = {
 		trigger = { any_owned_province = { has_building = wood_export } }
 		value = -0.50
@@ -828,6 +881,10 @@ telephone_factory = {	#Spices
 		value = -9.50
 	}
 	bonus = {
+		trigger = { NOT = { any_owned_province = { has_building = hot_climate_agriculture } } }
+		value = -9.50
+	}
+	bonus = {
 		trigger = { has_building = fertilizer_factory }
 		value = 0.15
 	}
@@ -948,6 +1005,17 @@ steamer_shipyard = {	#Saltworks
 	}
 	output_goods = steamer_convoy
 	value = 7.5	
+	bonus = {
+		trigger = { 
+			NOT = { 
+				OR = { 
+					any_owned_province = { has_building = fishing_export }
+					any_owned_province = { has_building = mines_export }				
+				} 
+			}
+		}
+		value = -9.50
+	}
 	bonus = {
 		trigger = { 
 			NOT = { 

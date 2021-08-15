@@ -215,6 +215,7 @@ country_migration_target = {
 			government = hms_government
 			government = dominion
 			government = colonial_company
+<<<<<<< HEAD
 		}
 	}
 	
@@ -232,6 +233,8 @@ country_migration_target = {
 		OR = {
 			government = dominion
 			government = colonial_company
+=======
+>>>>>>> parent of 4733014b (29.05.2021~Economy Rework part 2 + Migration Rework)
 		}
 	}
 	
@@ -240,6 +243,26 @@ country_migration_target = {
 		NOT = { total_pops = 1000000 }
 		has_country_flag = new_world_nation
 		THIS = {
+<<<<<<< HEAD
+=======
+			is_culture_group = british
+		}
+		OR = {
+			primary_culture = yankee
+			primary_culture = anglo_canadian
+		}
+		OR = {
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+	modifier = {
+		factor = 24
+		NOT = { total_pops = 1000000 }
+		has_country_flag = new_world_nation
+		THIS = {
+>>>>>>> parent of 4733014b (29.05.2021~Economy Rework part 2 + Migration Rework)
 			is_culture_group = iberian
 			NOT = { primary_culture = portugese }
 		}
@@ -829,12 +852,21 @@ migration_target = {
 		life_rating = 50
 	}
 	
+<<<<<<< HEAD
 	modifier = {
 		factor = -100
 		state_scope = { unemployment_by_type = { type = farmers value = 0.4 } }
 		country = { primary_culture = russian }
 	}
 	modifier = {
+=======
+	modifier = {
+		factor = -100
+		state_scope = { unemployment_by_type = { type = farmers value = 0.4 } }
+		country = { primary_culture = russian }
+	}
+	modifier = {
+>>>>>>> parent of 4733014b (29.05.2021~Economy Rework part 2 + Migration Rework)
 		factor = 0.001
 		is_primary_culture = no
 	}

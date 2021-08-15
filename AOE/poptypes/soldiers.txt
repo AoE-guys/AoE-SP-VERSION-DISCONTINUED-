@@ -97,7 +97,23 @@ country_migration_target = {
 	modifier = {
 		factor = 1.1
 		military_spending = 0.9
+<<<<<<< HEAD
+=======
 	}
+	modifier = {
+		factor = 1.2
+		military_spending = 0.99
+>>>>>>> parent of 4733014b (29.05.2021~Economy Rework part 2 + Migration Rework)
+	}
+
+	modifier = {
+		factor = 2.0
+		OR = {
+			is_primary_culture = THIS
+			is_accepted_culture = THIS
+		}
+	}
+	
 	modifier = {
 		factor = 1.2
 		military_spending = 0.99
@@ -204,6 +220,7 @@ country_migration_target = {
 			government = hms_government
 			government = dominion
 			government = colonial_company
+<<<<<<< HEAD
 		}
 	}
 	
@@ -228,6 +245,32 @@ country_migration_target = {
 		}
 	}
 	
+=======
+		}
+	}
+	
+	modifier = {
+		factor = 3.1
+		NOT = { total_pops = 500000 }
+		NOT = { number_of_states = 2 }
+		has_country_flag = new_world_nation
+		OR = {
+			continent = north_america
+			continent = south_america
+			primary_culture = australian
+			primary_culture = neo_zelandais
+			primary_culture = french_australian
+		}
+		OR = {
+			government = democracy
+			government = presidential_dictatorship
+			government = hms_government
+			government = dominion
+			government = colonial_company
+		}
+	}
+	
+>>>>>>> parent of 4733014b (29.05.2021~Economy Rework part 2 + Migration Rework)
 	modifier = {
 		factor = 0.1
 		NOT = {
