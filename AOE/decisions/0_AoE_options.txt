@@ -117,10 +117,11 @@ political_decisions = {
 			}
 			ADO = {
 				all_core = {
+					add_core = ARN
 					add_core = SPA
 					remove_core = ADO
 				}
-				annex_to = SPA
+				annex_to = ARN
 			}
 			MLH = {
 				all_core = {
@@ -149,6 +150,12 @@ political_decisions = {
 					remove_core = SPR
 				}
 				annex_to = SPA
+			}
+			BSQ = {
+				all_core = {
+					add_core = BOR
+				}
+				annex_to = BSQ
 			}
 		}
 		ai_will_do = { factor = 0 }

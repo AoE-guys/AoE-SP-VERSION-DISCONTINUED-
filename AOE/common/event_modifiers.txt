@@ -439,7 +439,7 @@ establishing_an_advisory_body = {
 population_resettlement = {
 	immigrant_attract = 5
 	assimilation_rate = 2.5
-	population_growth = 0.02
+	population_growth = 0.001
 	icon = 19
 }
 
@@ -6754,7 +6754,6 @@ quajar_army_reforms = {
 	org_regain = 0.15
 	supply_consumption = 0.05
 	mobilisation_economy_impact = -0.025
-<<<<<<< HEAD
 	icon = 15
 }
 ###Egypt###
@@ -6818,7 +6817,7 @@ colony_to_be_annexed = {
 thema_system = {
 	mobilisation_size = 0.03
 	icon = 15
-=======
-	icon = 13
->>>>>>> parent of 8c499c71 (Merge branch 'master' of https://github.com/AoE-guys/AOE-exp)
+}
+succession_crisis = {
+	icon = 15
 }

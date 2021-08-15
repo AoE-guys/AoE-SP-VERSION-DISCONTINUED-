@@ -905,7 +905,7 @@ country_event = {
 		name = "EVTOPT170013"
 		war = {
 			target = PER
-			attacker_goal = { casus_belli = acquire_all_cores }
+			attacker_goal = { casus_belli = acquire_all_cores country = RUS }
 			call_ally = yes
 		}
 		PER = {
@@ -917,7 +917,7 @@ country_event = {
 		}
 		war = {
 			target = DAG
-			attacker_goal = { casus_belli = acquire_all_cores }
+			attacker_goal = { casus_belli = acquire_all_cores country = RUS }
 			call_ally = yes
 		}
 		ai_chance = {

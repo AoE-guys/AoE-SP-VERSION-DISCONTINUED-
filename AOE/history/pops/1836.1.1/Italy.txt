@@ -62,7 +62,7 @@
 		size = 3300
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 102337
@@ -92,7 +92,7 @@
 		size = 1313
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = arpitan
 		religion = catholic
 		size = 7273
@@ -130,7 +130,7 @@
 		size = 99
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 6427
@@ -166,7 +166,7 @@
 		size = 148
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = arpitan
 		religion = catholic
 		size = 16051
@@ -178,7 +178,7 @@
 		size = 845
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = swiss_french
 		religion = catholic
 		size = 3511
@@ -190,7 +190,7 @@
 		size = 185
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = swiss_german
 		religion = catholic
 		size = 627
@@ -229,7 +229,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 29171
@@ -267,7 +267,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 40880
@@ -331,7 +331,7 @@
 		size = 1980
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 73780
@@ -360,37 +360,75 @@
 	aristocrats = {
 		culture = north_italian
 		religion = catholic
-		size = 990
+		size = 900
 	}
 
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 528
+		size = 478
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 2640
+		size = 2400
 	}
 
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size = 1320
+		size = 1188
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 44329
+		size = 40329
 	}
 
 	labourers = {
 		culture = north_italian
 		religion = catholic
-		size = 2333
+		size = 2100
+	}
+}
+#Oneglia
+3419 = {
+	aristocrats = {
+		culture = north_italian
+		religion = catholic
+		size = 90
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 58
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 240
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 132
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 4000
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 233
 	}
 }
 #Lombardy Region (2512000)
@@ -451,7 +489,7 @@
 		size = 2211
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 153004
@@ -501,7 +539,7 @@
 		size = 759
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 48264
@@ -539,7 +577,7 @@
 		size = 601
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 52103
@@ -616,7 +654,7 @@
 		size = 959
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 32200
@@ -672,7 +710,7 @@
 		size = 858
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 60628
@@ -710,7 +748,7 @@
 		size = 924
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 70115
@@ -748,7 +786,7 @@
 		size = 363
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 30538
@@ -786,7 +824,7 @@
 		size = 495
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = friulian
 		religion = catholic
 		size = 30000
@@ -798,7 +836,7 @@
 		size = 1523
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = slovene
 		religion = catholic
 		size = 2881
@@ -844,7 +882,7 @@
 		size = 16 
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_german
 		religion = catholic
 		size = 1520
@@ -868,12 +906,12 @@
 		size = 181 
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 15834
 	}
-	zzz_dummy = {
+	farmers = {
 		culture = ladin
 		religion = catholic
 		size = 10905
@@ -910,7 +948,7 @@
 		size = 66 
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_german
 		religion = catholic
 		size = 7574
@@ -940,7 +978,7 @@
 		size = 33 
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 3086
@@ -981,7 +1019,7 @@
 		size = 16 
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_german
 		religion = catholic
 		size = 1520
@@ -1005,12 +1043,12 @@
 		size = 181 
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 15834
 	}
-	zzz_dummy = {
+	farmers = {
 		culture = ladin
 		religion = catholic
 		size = 10905
@@ -1023,7 +1061,7 @@
 }
 #Brixen
 3420 = {
-	zzz_dummy = {
+	farmers = {
 		culture = south_german
 		religion = catholic
 		size = 1500
@@ -1101,7 +1139,7 @@
 		size = 116
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 4038
@@ -1131,7 +1169,7 @@
 		size = 66
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = slovene
 		religion = catholic
 		size = 3950
@@ -1169,7 +1207,7 @@
 		size = 82
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 9788
@@ -1199,7 +1237,7 @@
 		size = 214
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = slovene
 		religion = catholic
 		size = 13794
@@ -1211,7 +1249,7 @@
 		size = 726
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = gypsy
 		religion = catholic
 		size = 136
@@ -1264,7 +1302,7 @@
 		size = 1920
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 52522
@@ -1327,7 +1365,7 @@
 		size = 2320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 52186
@@ -1365,7 +1403,7 @@
 		size = 1726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 20011
@@ -1423,7 +1461,7 @@
 		size = 601
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 40321
@@ -1482,7 +1520,7 @@
 		size = 2320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 45568
@@ -1520,7 +1558,7 @@
 		size = 1297
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 20933
@@ -1564,7 +1602,7 @@
 		size = 1429
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 30124
@@ -1628,7 +1666,7 @@
 		size = 2320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 83987
@@ -1684,7 +1722,7 @@
 		size = 900
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 25000
@@ -1741,7 +1779,7 @@
 		size = 900
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 25000
@@ -1792,7 +1830,7 @@
 		size = 1726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 50248
@@ -1809,37 +1847,75 @@
 	aristocrats = {
 		culture = north_italian
 		religion = catholic
-		size = 526
+		size = 499
 	}
 
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 280
+		size = 266
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 1285
+		size = 1221
 	}
 
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size = 1726
+		size = 1640
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 20848
+		size = 19464
 	}
 
 	labourers = {
 		culture = north_italian
 		religion = catholic
-		size = 1160
+		size = 1102
+	}
+}
+#Porto Ercole (184000/46000 POPS)
+3418 = {
+	aristocrats = {
+		culture = north_italian
+		religion = catholic
+		size = 27
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 14
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 64
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 86
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 1384
+	}
+
+	labourers = {
+		culture = north_italian
+		religion = catholic
+		size = 58
 	}
 }
 #under the rule of Lucca in 1836
@@ -1887,7 +1963,7 @@
 		size = 1726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 10086
@@ -1957,7 +2033,7 @@
 		size = 2980
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 130680
@@ -2007,7 +2083,7 @@
 		size = 726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 21174
@@ -2059,7 +2135,7 @@
 		size = 726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 53408
@@ -2097,7 +2173,7 @@
 		size = 297
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 20060
@@ -2148,7 +2224,7 @@
 		size = 660
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 30000
@@ -2261,7 +2337,7 @@
 		size = 2320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 120234
@@ -2299,7 +2375,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 80382
@@ -2316,37 +2392,75 @@
 	aristocrats = {
 		culture = south_italian
 		religion = catholic
-		size = 1615
+		size = 938
 	}
 
 	clergymen = {
 		culture = south_italian
 		religion = catholic
-		size = 726
+		size = 421
 	}
 
 	artisans = {
 		culture = south_italian
 		religion = catholic
-		size = 3065
+		size = 1780
 	}
 
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size = 990
+		size = 475
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 60000
+		size = 34835
 	}
 
 	labourers = {
 		culture = south_italian
 		religion = catholic
-		size = 3046
+		size = 1768
+	}
+}
+#Sora (436000/109000 POPS)
+3417 = {
+	aristocrats = {
+		culture = south_italian
+		religion = catholic
+		size = 677
+	}
+
+	clergymen = {
+		culture = south_italian
+		religion = catholic
+		size = 305
+	}
+
+	artisans = {
+		culture = south_italian
+		religion = catholic
+		size = 1285
+	}
+
+	soldiers = {
+		culture = south_italian
+		religion = catholic
+		size = 415
+	}
+
+	farmers = {
+		culture = south_italian
+		religion = catholic
+		size = 25165
+	}
+
+	labourers = {
+		culture = south_italian
+		religion = catholic
+		size = 1278
 	}
 }
 #Apulia Region (1424000)
@@ -2389,7 +2503,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 70623
@@ -2401,7 +2515,7 @@
 		size = 4085
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = albanian
 		religion = catholic
 		size = 2508
@@ -2439,7 +2553,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 70758
@@ -2477,7 +2591,7 @@
 		size = 726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 30000
@@ -2489,7 +2603,7 @@
 		size = 1500
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = albanian
 		religion = catholic
 		size = 2998
@@ -2501,7 +2615,7 @@
 		size = 132
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = greek
 		religion = orthodox
 		size = 2992
@@ -2553,7 +2667,7 @@
 		size = 2320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 70052
@@ -2565,7 +2679,7 @@
 		size = 3250
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = albanian
 		religion = orthodox
 		size = 3962
@@ -2577,7 +2691,7 @@
 		size = 298
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = greek
 		religion = orthodox
 		size = 1754
@@ -2615,7 +2729,7 @@
 		size = 726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 40730
@@ -2627,7 +2741,7 @@
 		size = 2012
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = albanian
 		religion = orthodox
 		size = 2426
@@ -2665,7 +2779,7 @@
 		size = 1120
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 75086
@@ -2735,7 +2849,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 80739
@@ -2747,7 +2861,7 @@
 		size = 4023
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = albanian
 		religion = orthodox
 		size = 2990
@@ -2797,7 +2911,7 @@
 		size = 726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 40065
@@ -2809,7 +2923,7 @@
 		size = 2014
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = albanian
 		religion = orthodox
 		size = 1454
@@ -2866,7 +2980,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 80407
@@ -2878,7 +2992,7 @@
 		size = 4053
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = greek
 		religion = orthodox
 		size = 1627
@@ -2942,7 +3056,7 @@
 		size = 1320
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 40451
@@ -2980,7 +3094,7 @@
 		size = 726
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 22093
@@ -2992,7 +3106,7 @@
 		size = 1426
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = catalan
 		religion = catholic
 		size = 3018
@@ -3026,7 +3140,7 @@
 		size = 990
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_italian
 		religion = catholic
 		size = 30620
@@ -3038,7 +3152,7 @@
 		size = 1780
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = croat
 		religion = catholic
 		size = 1881
@@ -3071,7 +3185,7 @@
 		size = 198
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 10035
@@ -3083,7 +3197,7 @@
 		size = 501
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = south_german
 		religion = catholic
 		size = 677
@@ -3117,13 +3231,13 @@
 		size = 198
 	}
 
-	zzz_dummy = {
+	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 10810
 	}
 	
-	zzz_dummy = {
+	farmers = {
 		culture = romansh
 		religion = catholic
 		size = 2810

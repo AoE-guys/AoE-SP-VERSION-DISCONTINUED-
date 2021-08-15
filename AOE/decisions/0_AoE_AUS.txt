@@ -37,6 +37,7 @@ political_decisions = {
 			tag = AUS
 			HUN = {
 				vassal_of = AUS
+				ai = yes
 			}
 			OR = {
 				has_country_modifier = josephism
@@ -44,7 +45,6 @@ political_decisions = {
 					HUN = {
 						rank = 8
 					}
-					has_country_modifier = maria_theresa
 					ai = yes
 				}
 			}
@@ -347,7 +347,7 @@ political_decisions = {
 			exists = yes
 		}
 		allow = {
-			mass_politics = 1
+			nationalism_n_imperialism = 1
 			has_country_modifier = maria_theresa
 			rank = 4
 		}

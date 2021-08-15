@@ -1,4 +1,4 @@
-sprite = 14
+sprite = 13
 color = { 63 80 62 }
 strata = poor
 unemployment = yes
@@ -536,7 +536,7 @@ issues = {
 		factor = 0
 		OR = {
 		NOT = { is_next_reform = peonage }
-		country = {	civilized = no }
+		country = {	tech_school = unciv_tech_school }
 		}
 	}
 	

@@ -282,15 +282,12 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = recover_inflanty
-<<<<<<< HEAD
 			random_owned = {
 				owner = {
 					limit = { LAT = { vassal_of = THIS } }
 					inherit = LAT
 				}
 			}
-=======
->>>>>>> parent of 8c499c71 (Merge branch 'master' of https://github.com/AoE-guys/AOE-exp)
 			354 = { add_core = PLC }
 			355 = { add_core = PLC }
 			352 = { add_core = PLC }

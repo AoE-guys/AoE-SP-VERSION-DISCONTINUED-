@@ -50,15 +50,10 @@ luxury_needs = {
 }
 
 
-country_migration_target = {
+country_migration_target =
+{
 	factor = 1
-	
-	modifier = {
-		factor = 0
-		border_policy = quota_immigration
-		THIS = { NOT = { literacy = 0.6 } }
-	}
-	
+
 	modifier = {
 		factor = 0.9
 		unemployment = 0.05
@@ -93,297 +88,90 @@ country_migration_target = {
 	}
 	modifier = {
 		factor = 2.0
-		OR = {
-			is_primary_culture = THIS
-			is_accepted_culture = THIS
-		}
+		has_pop_culture = THIS
 	}
-	
+	modifier = {
+		factor = 1.2
+		is_greater_power = yes
+	}
+	modifier = {
+		factor = 1.05
+		vote_franschise = wealth_voting
+	}
+	modifier = {
+		factor = 1.25
+		vote_franschise = universal_weighted_voting
+	}
 	modifier = {
 		factor = 1.5
-		OR = {
-			AND = {
-				THIS = { is_culture_group = germanic }
-				OR = { 
-					is_culture_group = american_cultures
-					AND = {
-						primary_culture = dutch
-						is_vassal = yes
-					}
-				}
-			}
-			
-			AND = {
-				THIS = { is_culture_group = polish_culture_group }
-				is_culture_group = french
-			}
-		}
+		vote_franschise = universal_voting
 	}
-	
 	modifier = {
-		factor = 2.81
-		OR = {
-			##is_culture_group = THIS
-			AND = {
-				THIS = { is_culture_group = iberian }
-				is_culture_group = latin_american_cultures
-			}
-			AND = {
-				THIS = { has_pop_culture = dutch }
-				primary_culture = boer
-			}
-			AND = {
-				OR = {
-					THIS = { is_culture_group = french }
-					THIS = { has_pop_culture = wallonian }
-				}
-				OR = { 
-					primary_culture = french_canadian
-					primary_culture = neo_zelandais
-					primary_culture = french_australian
-					primary_culture = cajun
-					primary_culture = louisianan
-					primary_culture = french
-					primary_culture = wallonian
-					is_culture_group = pan_swiss
-				}
-			}
-			AND = {
-				THIS = { is_culture_group = british }
-				OR = {
-					is_culture_group = american_cultures
-					primary_culture = australian
-					primary_culture = anglo_canadian
-				}
-			}
-			AND = {
-				THIS = { is_culture_group = polish_culture_group }
-				OR = { 
-					is_culture_group = polish_culture_group
-					primary_culture = french
-				}	
-			}
-			AND = {
-				THIS = { is_culture_group = germanic }
-				OR = {
-					is_culture_group = germanic
-					is_culture_group = pan_swiss
-				}
-				NOT = { continent = asia }
-			}
-		}
-	}
-	
-	modifier = {
-		factor = 4.5
-		number_of_states = 2
-		has_country_flag = new_world_nation
-		OR = {
+		factor = 4.0
+		OR = { 
 			continent = north_america
 			continent = south_america
-			primary_culture = australian
-			primary_culture = neo_zelandais
-			primary_culture = french_australian
-		}
-		OR = {
-			government = democracy
-			government = presidential_dictatorship
-			government = hms_government
-			government = dominion
-			government = colonial_company
+			continent = oceania
 		}
 	}
-	
-	modifier = {
-		factor = 3.5
-		NOT = { total_pops = 500000 }
-		NOT = { number_of_states = 6 }
-		has_country_flag = new_world_nation
-		OR = {
-			continent = north_america
-			continent = south_america
-			primary_culture = australian
-			primary_culture = neo_zelandais
-			primary_culture = french_australian
-		}
-		OR = {
-			government = democracy
-			government = presidential_dictatorship
-			government = hms_government
-			government = dominion
-			government = colonial_company
-		}
-	}
-	
-	modifier = {
-		factor = 24
-		NOT = { total_pops = 1000000 }
-		has_country_flag = new_world_nation
-		THIS = {
-			is_culture_group = british
-		}
-		OR = {
-			primary_culture = yankee
-			primary_culture = anglo_canadian
-		}
-		OR = {
-			government = dominion
-			government = colonial_company
-		}
-	}
-	
-	modifier = {
-		factor = 24
-		NOT = { total_pops = 1000000 }
-		has_country_flag = new_world_nation
-		THIS = {
-			is_culture_group = iberian
-			NOT = { primary_culture = portugese }
-		}
-		OR = {
-			is_culture_group = latin_american_cultures
-			tag = FLO
-		}
-		NOT = { primary_culture = brazilian }
-		OR = {
-			government = dominion
-			government = colonial_company
-		}
-	}
-	
-	modifier = {
-		factor = 24
-		NOT = { total_pops = 1000000 }
-		has_country_flag = new_world_nation
-		THIS = {
-			is_culture_group = french
-		}
-		OR = {
-			primary_culture = louisianan
-			primary_culture = cajun
-			primary_culture = french_canadian
-		}
-		OR = {
-			government = dominion
-			government = colonial_company
-		}
-	}
-	
-	modifier = {
-		factor = 24
-		NOT = { total_pops = 1000000 }
-		has_country_flag = new_world_nation
-		THIS = {
-			primary_culture = portugese
-		}
-		primary_culture = brazilian
-		OR = {
-			government = dominion
-			government = colonial_company
-		}
-	}
-	
-	modifier = {
-		factor = 24
-		NOT = { total_pops = 1000000 }
-		has_country_flag = new_world_nation
-		THIS = {
-			primary_culture = russian
-		}
-		primary_culture = alaskan
-		OR = {
-			government = dominion
-			government = colonial_company
-		}
-	}
-	
 	modifier = {
 		factor = 0.1
 		NOT = {
 			any_owned_province = {
 				life_rating = 30
 				OR = {
-					#AND = {
-					#	has_pop_type = labourers
-					#	NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
-					#}
+					AND = {
+						has_pop_type = labourers
+						NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
+					}
 					AND = {
 						has_pop_type = farmers
 						NOT = { unemployment_by_type = { value = 0.1 type = farmers } }
 					}
 					AND = {
 						state_scope = { has_factories = yes }
-						NOT = { unemployment_by_type = { value = 0.1 type = craftsmen } }
+						NOT = { unemployment_by_type = { value = 0.1 type = farmers } }
 					}
 				}
 			}
 		}
-	}	
+	}
+	modifier = {
+		factor = 0
+		tech_school = unciv_tech_school
+	}
+	modifier = {
+		factor = 4
+		OR = {
+			AND = {
+				government = colonial_company
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+			}
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+		}
+	}
 }
 
 migration_target =
 {
-	factor = 1
+	factor = 0.01
 	
 	modifier = {
 		factor = 0.1
 		unemployment = 0.1
-		state_scope = { has_factories = no }
-	}
-	modifier = {
-		factor = 1.05
-		year = 2405
-		OR = { 
-			continent = north_america
-			continent = south_america
-		}
-	}
-	
-	modifier = {
-		factor = 1.2
-		NOT = { total_pops = 50000 }
-		year = 2450
-		OR = { 
-			continent = north_america
-			continent = south_america
-		}
-	}
-	
-	modifier = {
-		factor = 5.0
-		NOT = { total_pops = 10000 }
-	}
-	
-	modifier = {
-		factor = 1.2
-		year = 2420
-		OR = { 
-			continent = north_america
-			continent = south_america
-		}
-	}
-	
-	modifier = {
-		factor = 1.5
-		year = 2460
-		OR = { 
-			continent = north_america
-			continent = south_america
-		}
-	}
-	
-	modifier = {
-		factor = 1.5
-		year = 1800
-		OR = { 
-			continent = north_america
-			continent = south_america
-		}
-	}
-	
-	modifier = {
-		factor = 1.2
-		total_pops = 100000
+		state_scope = {
+			has_factories = no
+			}
 	}
 	modifier = {
 		factor = 1.2
@@ -400,21 +188,18 @@ migration_target =
 	modifier = {
 		factor = 1.2
 		total_pops = 750000
-	}
-	
+	}	
 	modifier = {
 		factor = 0
-		is_overseas = yes
-		country = { border_policy = closed_borders }
-	}
-	
-	modifier = {
-		factor = 0
-		NOT = { state_scope = {	work_available = { worker = craftsmen } } }
-		country = { economic_policy = planned_economy }
+					AND = {
+				state_scope = {
+					has_factories = no
+				}
+				can_build_factory = no
+			}
 		OR = { 
 			unemployment_by_type = { type = farmers value = 0.1  }
-			#unemployment_by_type = { type = labourers value = 0.1  }
+			unemployment_by_type = { type = labourers value = 0.1  }
 		}
 	}
 	modifier = {
@@ -427,13 +212,9 @@ migration_target =
 	}
 	modifier = {
 		factor = 6
-		any_core = {
-			OR = {
-				is_primary_culture = yes
-				is_accepted_culture = yes
-			}
-		}
-		state_scope = {	work_available = { worker = craftsmen } }
+		state_scope = {
+					has_factories = yes
+				}
 	}
 	modifier = {
 		factor = 1.2
@@ -441,13 +222,12 @@ migration_target =
 	}
 	modifier = {
 		factor = 1.5
-		any_core = { is_primary_culture = yes }
+		any_core = { is_primary_culture = THIS }
 	}
 	modifier = {
 		factor = 0.75
-		OR = {
-			state_scope = { is_slave = yes }
-			is_overseas = yes
+		state_scope = {
+			is_slave = yes
 		}
 	}
 	modifier = {
@@ -464,359 +244,21 @@ migration_target =
 	}
 	
 	modifier = {
-		factor = 0.8
-		terrain = steppe
-	}
-
-	modifier = {
-		factor = 0.7
-		terrain = savanna
-	}
-	
-	modifier = {
-		factor = 0.8
-		OR = {
-			terrain = dryhills
-			terrain = dry_mountains
-		}
-	}
-	
-	modifier = {
-		factor = 0.5
-		OR = {
-			terrain = jungle
-			terrain = new_world_jungle
-			terrain = jungle_farmland
-			terrain = jungle_hills
-			terrain = jungle_mountains
-		}
-	}
-	
-	modifier = {
 		factor = 0.6
 		terrain = mountain
 	}
-	
 	modifier = {
-		factor = 0.6
-		terrain = montane_forest
+		factor = 0.1
+		terrain = desert
 	}
-	
 	modifier = {
 		factor = 0.6
 		terrain = marsh
 	}
-	
-	modifier = {
-		factor = 0.5
-		OR = { 
-			terrain = semidesert
-			terrain = semi_desert_mountains
-			terrain = new_world_semidesert
-			terrain = coastal_desert
-		}
-	}
-	
-	modifier = {
-		factor = 0.5
-		terrain = boreal
-	}
-
 	modifier = {
 		factor = 0.1
-		terrain = small_island
-	}
-	
-	modifier = {
-		factor = 0.01
-		terrain = coral_island
-	}
-	
-	modifier = {
-		factor = 0.05
-		terrain = desert
-	}
-	
-	modifier = {
-		factor = 0
-		terrain = desert
-		OR = { 
-			continent = west_africa 
-			continent = east_africa
-			continent = central_africa
-			continent = asia
-			continent = africa
-			continent = oceania
-		}
-	}
-	
-	modifier = {
-		factor = 0.05
 		terrain = arctic
 	}
-	
-	modifier = {
-		factor = 0.05
-		OR = {
-			terrain = montane_tundra
-			terrain = himalayan_mountains
-		}
-	}
-	
-	modifier = {
-		factor = 0.5
-		OR = {
-			continent = west_africa
-			continent = east_africa
-			continent = central_africa
-			continent = south_west_africa
-		}
-	}
-	
-	modifier = {
-		factor = 0.01
-		OR = { 
-			continent = west_africa 
-			continent = east_africa
-			continent = central_africa
-			continent = africa
-			continent = south_west_africa
-		}
-		country = { primary_culture = russian }
-	}
-	
-	modifier = {
-		factor = 0
-		is_overseas = yes
-		OR = { 
-			continent = west_africa 
-			continent = east_africa
-			continent = central_africa
-			continent = oceania #Near East
-			continent = africa
-			continent = south_west_africa
-		}
-		country = { colonial_policy = settlement primary_culture = russian }
-	}
-	
-	modifier = {
-		factor = 2.5
-		continent = europe
-		country = { primary_culture = russian }
-	}
-	
-	modifier = {
-		factor = 2.5
-		OR = { 
-			state_id = 409
-			state_id = 411
-			state_id = 354
-			state_id = 350
-			state_id = 690
-			state_id = 699
-			state_id = 657
-			state_id = 2533
-		}
-		country = { has_country_flag = prussian_settlement_commission }
-	}
-	
-	modifier = {
-		factor = 1.1
-		OR = { 
-			state_id = 354
-			state_id = 350
-			state_id = 690
-			state_id = 699
-			continent = south_west_africa
-			state_id = 409
-			state_id = 411
-		}
-		country = { is_culture_group = germanic }
-	}
-	
-	modifier = {
-		factor = -0.5
-		OR = { 
-			continent = indochina
-			continent = east_indies
-		}
-		country = { primary_culture = japanese }
-	}
-	
-	modifier = {
-		factor = 2.0
-		OR = { 
-			is_core = KOR
-			is_core = KAM
-		}
-		country = { primary_culture = japanese }
-	}
-	
-	modifier = {
-		factor = 2.5
-		OR = { 
-			is_core = MEX
-			is_core = FCA
-			is_core = COL
-			is_core = RPL
-			is_core = THC
-			is_core = FLO
-		}
-		country = { is_culture_group = american_cultures }
-	}
-	
-	modifier = {
-		factor = -2.81
-		OR = { 
-			is_core = HND
-			continent = indochina
-			is_core = SRI
-			is_core = PRK
-			is_core = PHG
-			is_core = LHJ
-			is_core = MLT
-			AND = {
-				continent = oceania #Near East
-				NOT = { state_id = 2455 }
-			}
-			continent = west_africa
-			continent = central_africa
-			is_core = MLW
-			state_id = 1842
-			state_id = 1836
-			state_id = 1830
-			state_id = 1840
-			state_id = 1844
-			state_id = 2019
-		}
-		country = { primary_culture = british }
-	}
-	
-	modifier = {
-		factor = 5.01
-		OR = {
-			continent = australia_new_zealand
-			continent = north_america
-			state_id = 254
-			state_id = 263
-			state_id = 273
-			is_core = EGY
-		}
-		country = { primary_culture = british }
-	}
-	
-	modifier = {
-		factor = 3.5
-		OR = { 
-			continent = africa
-			state_id = 2033
-			state_id = 2028
-			is_core = SAF
-			is_core = RHO
-			is_core = CHI
-		}
-		country = { primary_culture = british }
-	}
-	
-	modifier = {
-		factor = -2.0
-		OR = { 
-			is_core = SAF
-		}
-		NOT = { year = 2455 }
-		country = { primary_culture = british }
-	}
-	
-	modifier = {
-		factor = 3.0
-		OR = { 
-			is_core = RHI
-			is_core = WAL
-			is_core = LUX
-			is_core = CAT
-			is_core = SWI
-			continent = australia_new_zealand
-			continent = north_america
-			continent = africa
-			continent = indochina
-		}
-		country = { primary_culture = french }
-	}
-	
-	modifier = {
-		factor = 3.0
-		OR = { 
-			continent = africa
-			continent = east_africa
-			is_core = SWI
-			is_core = FRA
-			is_core = BOR
-			is_core = DLM
-			is_core = CRO
-			is_core = ALB
-			is_core = TRE
-			is_core = AUS
-			is_core = FIU
-			is_core = SLO
-		}
-		country = { is_culture_group = italian }
-	}
-	
-	modifier = {
-		factor = 2.5
-		OR = {
-			is_core = YNN
-			is_core = IMG
-			is_core = MCK
-			is_core = MGL
-			is_core = XBI
-			is_core = XIN
-			is_core = UYG
-			is_core = TIB
-			is_core = TNT
-			is_core = KML
-			is_core = KOR
-		}
-		country = { is_culture_group = east_asian }
-	}
-	
-	modifier = {
-		factor = 2.0
-		continent = east_indies
-		country = { is_culture_group = east_asian }
-	}
-	
-	modifier = {
-		factor = 1.05
-		country = { colonial_nation = no }
-		OR = {
-			country = { penal_system = colonial_transportation }
-			country = { colonial_policy = settlement }
-		}
-		OR = {
-			trade_goods = coal
-			trade_goods = sulphur
-			trade_goods = iron
-			trade_goods = precious_metal
-			trade_goods = tobacco
-			trade_goods = coffee
-			trade_goods = tea
-		}
-		OR = {
-			terrain = desert
-			terrain = arctic
-			terrain = semidesert
-			terrain = semi_desert_mountains
-			terrain = new_world_semidesert
-			terrain = coastal_desert
-			terrain = boreal
-			terrain = small_island
-			terrain = montane_tundra
-			terrain = himalayan_mountains
-			terrain = coral_island
-		}
-	}
-	
 	modifier = {
 		factor = 2
 		life_rating = 40
@@ -826,8 +268,8 @@ migration_target =
 		life_rating = 50
 	}
 	modifier = {
-		factor = 0.001
-		is_primary_culture = no
+		factor = 0
+		tech_school = unciv_tech_school
 	}
 }
 
@@ -2796,7 +2238,7 @@ issues =
 		factor = 1
 		modifier = {
 			factor = 0.8
-			country = { civilized = no }
+			country = { tech_school = unciv_tech_school }
 		}
 		modifier = {
 			factor = 1.1
@@ -3170,7 +2612,7 @@ issues =
 			factor = 0 
 			OR = {
 				country = { slavery = no_slavery }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 				NOT = { state_scope = { is_slave = yes } }
 			}
 		}
@@ -3223,7 +2665,7 @@ issues =
 			factor = 0 
 			OR = {
 				NOT = { is_next_reform = freedom_of_womb }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -3273,7 +2715,7 @@ issues =
 			factor = 0
 			OR = {
 				NOT = { is_next_reform = no_slavery }
-				country = {	civilized = no }
+				country = {	tech_school = unciv_tech_school }
 			}
 		}
 		
@@ -3356,7 +2798,7 @@ issues =
 				NOT = { consciousness = 6 }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -3422,7 +2864,7 @@ issues =
 				NOT = { consciousness = 6 }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -3488,7 +2930,7 @@ issues =
 				NOT = { consciousness = 6 }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -3554,7 +2996,7 @@ issues =
 				NOT = { consciousness = 6 }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -3620,7 +3062,7 @@ issues =
 				NOT = { consciousness = 6 }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -3683,7 +3125,7 @@ issues =
 		modifier = {
 			factor = 0
 			OR = {
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 				NOT = { is_next_reform = jefferson_method }
 				NOT = { consciousness = 7 }
 				NOT = { life_needs = 1 }
@@ -3738,7 +3180,7 @@ issues =
 				voting_system = proportional_representation
 				NOT = { consciousness = 6 }
 				NOT = { life_needs = 1 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -3781,7 +3223,7 @@ issues =
 				NOT = { is_next_reform = harassment }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -3845,7 +3287,7 @@ issues =
 				NOT = { is_next_reform = gerrymandering }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -3909,7 +3351,7 @@ issues =
 				NOT = { is_next_reform = non_secret_ballots }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -3973,7 +3415,7 @@ issues =
 				NOT = { is_next_reform = secret_ballots }
 				luxury_needs =  1.0
 				NOT = { life_needs = 0.7 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -4034,7 +3476,7 @@ issues =
 			OR = {
 				public_meetings = yes_meeting
 				NOT = { consciousness = 4 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -4104,7 +3546,7 @@ issues =
 				NOT = { consciousness = 5 }
 				NOT = { literacy = 0.40 }
 				NOT = { life_needs = 1 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 		modifier = {
@@ -4170,7 +3612,7 @@ issues =
 				NOT = { consciousness = 5 }
 				NOT = { literacy = 0.40 }
 				NOT = { life_needs = 1 }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -4633,7 +4075,7 @@ issues =
 				NOT = { consciousness = 5 }
 				NOT = { is_next_reform = low_schools }
 				NOT = { is_ideology_enabled = socialist }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 
@@ -4682,7 +4124,7 @@ issues =
 				NOT = { consciousness = 3 }
 				NOT = { is_next_reform = acceptable_schools }
 				NOT = { is_ideology_enabled = socialist }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}	
 		}
 
@@ -4731,7 +4173,7 @@ issues =
 				NOT = { consciousness = 3 }
 				NOT = { is_next_reform = good_schools }
 				NOT = { is_ideology_enabled = socialist }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}	
 		}
 
@@ -4780,7 +4222,7 @@ issues =
 			factor = 0 
 			OR = {
 				NOT = { is_next_reform = child_labor_restricted }
-				country = {	civilized = no }
+				country = {	tech_school = unciv_tech_school }
 				NOT = { is_ideology_enabled = socialist }
 				luxury_needs = 1.0
 				NOT = { life_needs = 0.5 }
@@ -4829,7 +4271,7 @@ issues =
 				NOT = { is_next_reform = child_labor_illegal }
 				NOT = { is_ideology_enabled = socialist }
 				luxury_needs =  1.0
-				country = {	civilized = no }
+				country = {	tech_school = unciv_tech_school }
 				NOT = { life_needs = 0.7 }
 				NOT = { consciousness = 5 }
 				AND = {
@@ -4897,7 +4339,7 @@ peonage = {
 		factor = 0
 		OR = {
 			NOT = { is_next_reform = peonage }
-			country = {	civilized = no }
+			country = {	tech_school = unciv_tech_school }
 			luxury_needs =  1.0
 			NOT = { consciousness = 7 }
 		}
@@ -4959,7 +4401,7 @@ debtors_prisons = {
 		factor = 0
 		OR = {
 			NOT = { is_next_reform = debtors_prisons }
-			country = {	civilized = no }
+			country = {	tech_school = unciv_tech_school }
 			luxury_needs =  1.0
 			NOT = { life_needs = 0.4 }
 			NOT = { consciousness = 6 }
@@ -5014,7 +4456,7 @@ bankruptcy = {
 		factor = 0
 		OR = {
 			NOT = { is_next_reform = bankruptcy }
-			country = {	civilized = no }
+			country = {	tech_school = unciv_tech_school }
 			luxury_needs =  1.0
 			NOT = { consciousness = 8 }
 			NOT = { everyday_needs = 0.4 }
@@ -5078,7 +4520,7 @@ colonial_transportation = {
 		factor = 0 
 			OR = {
 				NOT = { is_next_reform = colonial_transportation }
-				country = {	civilized = no }
+				country = {	tech_school = unciv_tech_school }
 				luxury_needs =  1.0
 				NOT = { consciousness = 8 }
 				NOT = { life_needs = 0.7 }
@@ -5146,7 +4588,7 @@ incarceration = {
 		factor = 0 
 			OR = {
 				NOT = { is_next_reform = incarceration }
-				country = {	civilized = no }
+				country = {	tech_school = unciv_tech_school }
 				NOT = { is_ideology_enabled = socialist }
 				luxury_needs =  1.0
 				NOT = { consciousness = 8 }
@@ -5239,7 +4681,7 @@ rehabilitation = {
 		factor = 0 
 			OR = {
 				NOT = { is_next_reform = rehabilitation }
-				country = {	civilized = no }
+				country = {	tech_school = unciv_tech_school }
 				NOT = { is_ideology_enabled = socialist }
 				NOT = { consciousness = 8 }
 				NOT = { literacy = 0.8 }
@@ -5307,7 +4749,7 @@ rehabilitation = {
 			factor = 0
 			OR = {
 				NOT = { is_next_reform = appointed }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 				luxury_needs =  1.0
 				NOT = { consciousness = 7 }
 				country = { government = democracy }
@@ -5377,7 +4819,7 @@ rehabilitation = {
 			factor = 0
 			OR = {
 				NOT = { is_next_reform = state_equal_weight }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 				luxury_needs =  1.0
 				NOT = { consciousness = 7 }
 				NOT = { life_needs = 0.7 }
@@ -5447,7 +4889,7 @@ rehabilitation = {
 			factor = 0
 			OR = {
 				NOT = { is_next_reform = population_equal_weight }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 				luxury_needs =  1.0
 				NOT = { consciousness = 7 }
 				NOT = { life_needs = 0.9 }
@@ -5526,7 +4968,7 @@ rehabilitation = {
 		modifier = {
 			factor = 0
 			OR = {
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 				NOT = { is_next_reform = state_controlled }
 				NOT = { is_ideology_enabled = socialist }
 				NOT = { consciousness = 5 }
@@ -5606,7 +5048,7 @@ rehabilitation = {
 			modifier = {
 				factor = 0
 				OR = {
-					country = { civilized = no }
+					country = { tech_school = unciv_tech_school }
 					NOT = { is_next_reform = non_socialist }
 					NOT = { is_ideology_enabled = socialist }
 					NOT = { consciousness = 5 }
@@ -5686,7 +5128,7 @@ rehabilitation = {
 			modifier = {
 				factor = 0
 				OR = {
-					country = { civilized = no }
+					country = { tech_school = unciv_tech_school }
 					NOT = { is_next_reform = all_trade_unions }
 					NOT = { is_ideology_enabled = socialist }
 					NOT = { consciousness = 5 }

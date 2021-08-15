@@ -2,12 +2,9 @@ owner = TUR
 controller = TUR
 add_core = TUR
 add_core = SYR
-<<<<<<< HEAD
 add_core = EGY
-=======
-add_core = PLS
->>>>>>> parent of 8c499c71 (Merge branch 'master' of https://github.com/AoE-guys/AOE-exp)
 trade_goods = grain  state_building = {  level = 1  building = grain_factory  upgrade = yes  }
 life_rating = 35
+
 
 terrain = damascus

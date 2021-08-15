@@ -1,4 +1,4 @@
-manowar = {
+manowar = { #Two-Decker
 	icon = 4
 	naval_icon = 1
 	
@@ -34,10 +34,8 @@ manowar = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 1.5
+		clipper_convoy = 0.2 #0.24
 		artillery = 0.08 #0.16
-		explosives = 0.1
-		ammunition = 0.2
 	}
 	
 	#Naval Abilties

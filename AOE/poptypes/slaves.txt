@@ -65,7 +65,7 @@ issues = {
 			factor = 0
 			OR = {
 			NOT = { is_next_reform = no_slavery }
-			country = { civilized = no }
+			country = { tech_school = unciv_tech_school }
 			}
 		}
 	}
@@ -76,7 +76,7 @@ issues = {
 			factor = 0
 			OR = {
 				NOT = { is_next_reform = freedom_of_womb }
-				country = { civilized = no }
+				country = { tech_school = unciv_tech_school }
 			}
 		}
 	}
@@ -87,7 +87,7 @@ issues = {
 		factor = 0
 		OR = {
 			slavery = no_slavery
-			country = { civilized = no }
+			country = { tech_school = unciv_tech_school }
 			}
 		}
 	}

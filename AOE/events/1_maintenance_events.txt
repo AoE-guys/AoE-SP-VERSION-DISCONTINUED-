@@ -44,43 +44,6 @@ country_event = {
 			limit = { NOT = { has_global_flag = ghost_units_cleanup } exists = no OR = { is_mobilised = yes total_amount_of_ships = 1 } }
 			country_event = 6016821
 		}
-		
-		##Colonial Nations Variables
-		#any_country = {
-        #               set_variable = { 
-        #               	               which = colonial_contribution_overlord
-        #               	               value = 0
-        #               }
-		#}
-		#any_country = {
-        #               set_variable = { 
-        #               	               which = colonial_contribution_vassal
-        #               	               value = 0
-        #               }
-		#}
-		#any_country = {
-		#	limit = { exists = no has_country_flag = dynamic_tag }
-		#	country_event = 9999817
-		#}
-		#any_country = {
-		#	limit = { exists = no NOT = { is_cultural_union = yes } any_core = { owner = { has_country_flag = dynamic_tag } } }
-		#	country_event = 9999810
-		#}
-		#any_country = {
-		#	limit = { exists = yes has_country_flag = dynamic_tag }
-		#	country_event = 9999807
-		#}
-		
-		#country_event = 9999800
-		
-		any_country = {
-			any_pop = { 
-				limit = {
-					type = zzz_dummy  
-				} 
-				pop_type = tribesmen 
-			}
-		}
 	}
 }
 
