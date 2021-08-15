@@ -625,6 +625,193 @@ country_event = {
 		any_pop = { limit = { is_culture_group = central_african } literacy = 0.10 }
 		any_pop = { limit = { is_culture_group = east_african } literacy = 0.10 }
 		any_pop = { limit = { is_culture_group = southern_african } literacy = 0.10 }
+					   
+		#any_country = {  
+		#               any_pop = { limit = { culture = north_german } literacy = 0.56 }
+		#			   any_pop = { limit = { culture = south_german } literacy = 0.58 }
+		#			   any_pop = { limit = { culture = volga_german } literacy = 0.56 }
+		#			   any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
+		#			   any_pop = { limit = { culture = siebenburger } literacy = 0.56 }
+		#			   
+		#			   any_pop = { limit = { culture = ashkenazi } literacy = 1.00 }
+		#			   any_pop = { limit = { culture = sephardic } literacy = 1.00 }
+		#			   
+		#			   any_pop = { limit = { culture = dutch } literacy = 0.95 }
+		#			   any_pop = { limit = { culture = flemish } literacy = 0.86 }
+		#			   any_pop = { limit = { culture = wallonian } literacy = 0.46 }
+		#			   
+		#			   any_pop = { limit = { culture = swiss_french } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = swiss_german } literacy = 0.56 }
+		#			   any_pop = { limit = { culture = swiss_italian } literacy = 0.75 }
+		#			   any_pop = { limit = { culture = romansh } literacy = 0.75 }
+		#			   
+		#			   any_pop = { limit = { culture = swedish } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = danish } literacy = 0.47 }
+		#			   any_pop = { limit = { culture = norwegian } literacy = 0.36 }
+		#			   any_pop = { limit = { culture = icelandic } literacy = 0.34 }
+		#			   any_pop = { limit = { culture = finnish } literacy = 0.34 }
+		#			   any_pop = { limit = { culture = sami } literacy = 0.34 }
+		#			   
+		#			   any_pop = { limit = { culture = british } literacy = 0.70 }
+		#			   any_pop = { limit = { culture = irish } literacy = 0.50 }
+		#			   any_pop = { limit = { culture = scottish } literacy = 0.70 }
+		#			   any_pop = { limit = { culture = welsh } literacy = 0.50 }
+		#			   
+		#			   any_pop = { limit = { culture = north_italian } literacy = 0.85 }
+		#			   any_pop = { limit = { culture = south_italian } literacy = 0.60 }
+		#			   any_pop = { limit = { culture = maltese } literacy = 0.60 }
+		#			   
+		#			   any_pop = { limit = { culture = basque } literacy = 0.36 }
+		#			   any_pop = { limit = { culture = spanish } literacy = 0.36 }
+		#			   any_pop = { limit = { culture = galician } literacy = 0.36 }
+		#			   any_pop = { limit = { culture = catalan } literacy = 0.36 }
+		#			   any_pop = { limit = { culture = portuguese } literacy = 0.39 }
+		#			   
+		#			   any_pop = { limit = { culture = french } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = breton } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = occitan } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = picard } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = rhinelander } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = arpitan } literacy = 0.44 }
+		#			   
+		#			   any_pop = { limit = { culture = croat } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = serb } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = bulgarian } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = montenegrin } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = slovene } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = bosniak } literacy = 0.25 }
+		#			   
+		#			   any_pop = { limit = { culture = albanian } literacy = 0.25 }
+		#			   
+		#			   any_pop = { limit = { culture = romanian } literacy = 0.25 }
+		#			   
+		#			   any_pop = { limit = { culture = hungarian } literacy = 0.28 }
+		#			   
+		#			   any_pop = { limit = { culture = polish } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = western_slavic } literacy = 0.28 }
+		#			   
+		#			   any_pop = { limit = { culture = czech } literacy = 0.44 }
+		#			   any_pop = { limit = { culture = slovak } literacy = 0.35 }
+		#			   
+		#			   any_pop = { limit = { culture = russian } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = byelorussian } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = ukrainian } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = ugrian } literacy = 0.28 }
+		#			   
+		#			   any_pop = { limit = { culture = lithuanian } literacy = 0.30 }			   
+		#			   any_pop = { limit = { culture = latvian } literacy = 0.30 }				   
+		#			   any_pop = { limit = { culture = estonian } literacy = 0.30 }
+		#			   
+		#			   any_pop = { limit = { culture = greek } literacy = 0.28 }
+        #               any_pop = { limit = { culture = georgian } literacy = 0.28 }
+        #               any_pop = { limit = { culture = armenian } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = assyrian } literacy = 0.28 }
+        #
+        #               any_pop = { limit = { culture = turkish } literacy = 0.28 }
+        #               any_pop = { limit = { culture = azerbaijani } literacy = 0.28 } 
+        #               any_pop = { limit = { culture = kurdish } literacy = 0.28 }
+		#			   
+        #               any_pop = { limit = { culture = chechen } literacy = 0.28 }
+        #               any_pop = { limit = { culture = circassian } literacy = 0.28 } 
+        #
+		#			   any_pop = { limit = { culture = maghrebi } literacy = 0.28 }
+        #               any_pop = { limit = { culture = misri } literacy = 0.28 }
+        #               any_pop = { limit = { culture = mashriqi } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = bedouin } literacy = 0.28 }		
+		#			   any_pop = { limit = { culture = berber } literacy = 0.28 }	
+        #               any_pop = { limit = { culture = mashriqi } literacy = 0.28 }
+		#			   any_pop = { limit = { culture = maures } literacy = 0.28 }		
+		#			   any_pop = { limit = { culture = sudanese } literacy = 0.28 }	
+        #
+		#			   any_pop = { limit = { culture = persian } literacy = 0.28 }
+        #               any_pop = { limit = { culture = uzbek } literacy = 0.25 }
+        #               any_pop = { limit = { culture = kazak } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = kirgiz } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = tajik } literacy = 0.25 }	
+        #               any_pop = { limit = { culture = uighur } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = pashtun } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = baluchi } literacy = 0.25 }	
+        #               any_pop = { limit = { culture = hazara } literacy = 0.28 }
+        #               any_pop = { limit = { culture = turkmen } literacy = 0.25 }
+        #               any_pop = { limit = { culture = tatar } literacy = 0.25 }
+        #               any_pop = { limit = { culture = gypsy } literacy = 0.25 }
+        #
+		#			   any_pop = { limit = { culture = mongol } literacy = 0.28 }
+        #               any_pop = { limit = { culture = siberian } literacy = 0.25 }
+        #               any_pop = { limit = { culture = yakut } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = tibetan } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = nepali } literacy = 0.25 }
+        #
+		#			   any_pop = { limit = { culture = assamese } literacy = 0.28 }
+        #               any_pop = { limit = { culture = bihari } literacy = 0.25 }
+        #               any_pop = { limit = { culture = manipuri } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = oriya } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = sinhala } literacy = 0.25 }	
+        #               any_pop = { limit = { culture = avadhi } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = kanauji } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = kashmiri } literacy = 0.25 }	
+        #               any_pop = { limit = { culture = gujarati } literacy = 0.28 }
+        #               any_pop = { limit = { culture = marathi } literacy = 0.25 }
+        #               any_pop = { limit = { culture = rajput } literacy = 0.25 }
+        #               any_pop = { limit = { culture = kannada } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = malayalam } literacy = 0.28 }
+        #               any_pop = { limit = { culture = tamil } literacy = 0.25 }
+        #               any_pop = { limit = { culture = telegu } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = anglo_indian } literacy = 0.25 }	
+        #
+		#			   any_pop = { limit = { culture = bengali } literacy = 0.28 }
+        #               any_pop = { limit = { culture = panjabi } literacy = 0.25 }
+        #               any_pop = { limit = { culture = sindi } literacy = 0.25 }
+		#			   
+		#			   any_pop = { limit = { culture = vietnamese } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = khmer } literacy = 0.25 }	
+        #               any_pop = { limit = { culture = malay } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = filipino } literacy = 0.25 }		
+		#			   any_pop = { limit = { culture = javan } literacy = 0.25 }	
+        #               any_pop = { limit = { culture = moluccan } literacy = 0.28 }
+        #               any_pop = { limit = { culture = thai } literacy = 0.25 }
+        #               any_pop = { limit = { culture = lao } literacy = 0.25 }
+        #               any_pop = { limit = { culture = shan } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = burmese } literacy = 0.28 }
+        #               any_pop = { limit = { culture = asian_minor } literacy = 0.25 }
+        #               any_pop = { limit = { culture = kachin } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = karen } literacy = 0.25 }
+        #
+		#			   any_pop = { limit = { is_culture_group = east_asian } literacy = 0.25 }
+		#			   
+		#			   any_pop = { limit = { is_culture_group = far_east_asian } literacy = 0.28 }
+		#			   
+		#			   any_pop = { limit = { is_culture_group = oceanic } literacy = 0.15 }
+		#			   
+		#			   any_pop = { limit = { is_culture_group = native_american } literacy = 0.15 }					
+		#			   
+        #               any_pop = { limit = { culture = yankee } literacy = 0.50 }
+        #               any_pop = { limit = { culture = dixie } literacy = 0.50 }
+		#			   any_pop = { limit = { culture = texan } literacy = 0.50 }					 
+		#			   
+        #               any_pop = { limit = { culture = boer } literacy = 1.00 }
+		#			   any_pop = { limit = { culture = australian } literacy = 0.25 }
+		#			   any_pop = { limit = { culture = anglo_canadian } literacy = 0.35 }
+		#			   any_pop = { limit = { culture = french_canadian } literacy = 0.35 }
+		#			   any_pop = { limit = { culture = alaskan } literacy = 0.25 }			   
+        #               any_pop = { limit = { culture = louisianan } literacy = 0.35 }
+		#			   any_pop = { limit = { culture = cajun } literacy = 0.35 }
+		#			   any_pop = { limit = { culture = french_australian } literacy = 0.35 }
+		#			   
+        #               any_pop = { limit = { is_culture_group = latin_american_cultures } literacy = 0.45 }
+		#			   
+		#			   any_pop = { limit = { is_culture_group = latin_american_cultures } literacy = 0.20 }
+		#			   
+		#			   any_pop = { limit = { is_culture_group = west_african } literacy = 0.10 }
+		#			   any_pop = { limit = { is_culture_group = western_nigritic } literacy = 0.10 }
+		#			   any_pop = { limit = { is_culture_group = central_african } literacy = 0.10 }
+		#			   any_pop = { limit = { is_culture_group = east_african } literacy = 0.10 }
+		#			   any_pop = { limit = { is_culture_group = southern_african } literacy = 0.10 }
+		#			   
+		#}
+		#
+		#set_global_flag = education_setup_b
+		#country_event = 999958
 		country_event = 9999854
 	}
 }
@@ -648,6 +835,267 @@ country_event = {
 	}
 	option = {
 		name = "OK"
+		
+		#BHU = { set_country_flag = game_master }
+		
+        #any_owned = { limit = { life_rating = 1 NOT = { life_rating = 2 } } life_rating = 29 }
+        #any_owned = { limit = { life_rating = 2 NOT = { life_rating = 3 } } life_rating = 28 }
+        #any_owned = { limit = { life_rating = 3 NOT = { life_rating = 4 } } life_rating = 27 }
+        #any_owned = { limit = { life_rating = 4 NOT = { life_rating = 5 } } life_rating = 26 }
+        #any_owned = { limit = { life_rating = 5 NOT = { life_rating = 6 } } life_rating = 25 }
+        #any_owned = { limit = { life_rating = 6 NOT = { life_rating = 7 } } life_rating = 24 }
+        #any_owned = { limit = { life_rating = 7 NOT = { life_rating = 8 } } life_rating = 23 }
+        #any_owned = { limit = { life_rating = 8 NOT = { life_rating = 9 } } life_rating = 22 }
+        #any_owned = { limit = { life_rating = 9 NOT = { life_rating = 10 } } life_rating = 21 }
+        #any_owned = { limit = { life_rating = 10 NOT = { life_rating = 11 } } life_rating = 20 }
+        #any_owned = { limit = { life_rating = 11 NOT = { life_rating = 12 } } life_rating = 19 }
+        #any_owned = { limit = { life_rating = 12 NOT = { life_rating = 13 } } life_rating = 18 }
+        #any_owned = { limit = { life_rating = 13 NOT = { life_rating = 14 } } life_rating = 17 }
+        #any_owned = { limit = { life_rating = 14 NOT = { life_rating = 15 } } life_rating = 16 }
+        #any_owned = { limit = { life_rating = 15 NOT = { life_rating = 16 } } life_rating = 15 }
+        #any_owned = { limit = { life_rating = 16 NOT = { life_rating = 17 } } life_rating = 14 }
+        #any_owned = { limit = { life_rating = 17 NOT = { life_rating = 18 } } life_rating = 13 }	
+        #any_owned = { limit = { life_rating = 18 NOT = { life_rating = 19 } } life_rating = 12 }
+        #any_owned = { limit = { life_rating = 19 NOT = { life_rating = 20 } } life_rating = 11 }
+        #any_owned = { limit = { life_rating = 20 NOT = { life_rating = 21 } } life_rating = 10 }
+        #any_owned = { limit = { life_rating = 21 NOT = { life_rating = 22 } } life_rating = 9 }
+        #any_owned = { limit = { life_rating = 22 NOT = { life_rating = 23 } } life_rating = 8 }
+        #any_owned = { limit = { life_rating = 23 NOT = { life_rating = 24 } } life_rating = 7 }
+        #any_owned = { limit = { life_rating = 24 NOT = { life_rating = 25 } } life_rating = 6 }
+        #any_owned = { limit = { life_rating = 25 NOT = { life_rating = 26 } } life_rating = 5 }
+        #any_owned = { limit = { life_rating = 26 NOT = { life_rating = 27 } } life_rating = 4 }
+        #any_owned = { limit = { life_rating = 27 NOT = { life_rating = 28 } } life_rating = 3 }
+        #any_owned = { limit = { life_rating = 28 NOT = { life_rating = 29 } } life_rating = 2 }
+        #any_owned = { limit = { life_rating = 29 NOT = { life_rating = 30 } } life_rating = 1 }
+		#
+		#any_owned = { limit = { life_rating = 31 NOT = { life_rating = 32 } } life_rating = -1 }
+        #any_owned = { limit = { life_rating = 32 NOT = { life_rating = 33 } } life_rating = -2 }
+        #any_owned = { limit = { life_rating = 33 NOT = { life_rating = 34 } } life_rating = -3 }
+        #any_owned = { limit = { life_rating = 34 NOT = { life_rating = 35 } } life_rating = -4 }
+        #any_owned = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = -5 }
+        #any_owned = { limit = { life_rating = 36 NOT = { life_rating = 37 } } life_rating = -6 }
+        #any_owned = { limit = { life_rating = 37 NOT = { life_rating = 38 } } life_rating = -7 }
+        #any_owned = { limit = { life_rating = 38 NOT = { life_rating = 39 } } life_rating = -8 }
+        #any_owned = { limit = { life_rating = 39 NOT = { life_rating = 40 } } life_rating = -9 }
+        #any_owned = { limit = { life_rating = 40 NOT = { life_rating = 41 } } life_rating = -10 }
+        #any_owned = { limit = { life_rating = 41 NOT = { life_rating = 42 } } life_rating = -11 }
+        #any_owned = { limit = { life_rating = 42 NOT = { life_rating = 43 } } life_rating = -12 }
+        #any_owned = { limit = { life_rating = 43 NOT = { life_rating = 44 } } life_rating = -13 }
+        #any_owned = { limit = { life_rating = 44 NOT = { life_rating = 45 } } life_rating = -14 }
+        #any_owned = { limit = { life_rating = 45 NOT = { life_rating = 46 } } life_rating = -15 }
+        #any_owned = { limit = { life_rating = 46 NOT = { life_rating = 47 } } life_rating = -16 }
+        #any_owned = { limit = { life_rating = 47 NOT = { life_rating = 48 } } life_rating = -17 }	
+        #any_owned = { limit = { life_rating = 48 NOT = { life_rating = 49 } } life_rating = -18 }
+        #any_owned = { limit = { life_rating = 49 NOT = { life_rating = 50 } } life_rating = -19 }
+        #any_owned = { limit = { life_rating = 50 NOT = { life_rating = 51 } } life_rating = -20 }
+        #any_owned = { limit = { life_rating = 51 NOT = { life_rating = 52 } } life_rating = -21 }
+        #any_owned = { limit = { life_rating = 52 NOT = { life_rating = 53 } } life_rating = -22 }
+        #any_owned = { limit = { life_rating = 53 NOT = { life_rating = 54 } } life_rating = -23 }
+        #any_owned = { limit = { life_rating = 54 NOT = { life_rating = 55 } } life_rating = -24 }
+        #any_owned = { limit = { life_rating = 55 NOT = { life_rating = 56 } } life_rating = -25 }
+        #any_owned = { limit = { life_rating = 56 NOT = { life_rating = 57 } } life_rating = -26 }
+        #any_owned = { limit = { life_rating = 57 NOT = { life_rating = 58 } } life_rating = -27 }
+        #any_owned = { limit = { life_rating = 58 NOT = { life_rating = 59 } } life_rating = -28 }
+        #any_owned = { limit = { life_rating = 59 NOT = { life_rating = 60 } } life_rating = -29 }
+		#any_owned = { limit = { life_rating = 60 NOT = { life_rating = 61 } } life_rating = -30 }
+		#
+        #any_country = {
+		#
+        #any_owned = { limit = { life_rating = 1 NOT = { life_rating = 2 } } life_rating = 29 }
+        #any_owned = { limit = { life_rating = 2 NOT = { life_rating = 3 } } life_rating = 28 }
+        #any_owned = { limit = { life_rating = 3 NOT = { life_rating = 4 } } life_rating = 27 }
+        #any_owned = { limit = { life_rating = 4 NOT = { life_rating = 5 } } life_rating = 26 }
+        #any_owned = { limit = { life_rating = 5 NOT = { life_rating = 6 } } life_rating = 25 }
+        #any_owned = { limit = { life_rating = 6 NOT = { life_rating = 7 } } life_rating = 24 }
+        #any_owned = { limit = { life_rating = 7 NOT = { life_rating = 8 } } life_rating = 23 }
+        #any_owned = { limit = { life_rating = 8 NOT = { life_rating = 9 } } life_rating = 22 }
+        #any_owned = { limit = { life_rating = 9 NOT = { life_rating = 10 } } life_rating = 21 }
+        #any_owned = { limit = { life_rating = 10 NOT = { life_rating = 11 } } life_rating = 20 }
+        #any_owned = { limit = { life_rating = 11 NOT = { life_rating = 12 } } life_rating = 19 }
+        #any_owned = { limit = { life_rating = 12 NOT = { life_rating = 13 } } life_rating = 18 }
+        #any_owned = { limit = { life_rating = 13 NOT = { life_rating = 14 } } life_rating = 17 }
+        #any_owned = { limit = { life_rating = 14 NOT = { life_rating = 15 } } life_rating = 16 }
+        #any_owned = { limit = { life_rating = 15 NOT = { life_rating = 16 } } life_rating = 15 }
+        #any_owned = { limit = { life_rating = 16 NOT = { life_rating = 17 } } life_rating = 14 }
+        #any_owned = { limit = { life_rating = 17 NOT = { life_rating = 18 } } life_rating = 13 }	
+        #any_owned = { limit = { life_rating = 18 NOT = { life_rating = 19 } } life_rating = 12 }
+        #any_owned = { limit = { life_rating = 19 NOT = { life_rating = 20 } } life_rating = 11 }
+        #any_owned = { limit = { life_rating = 20 NOT = { life_rating = 21 } } life_rating = 10 }
+        #any_owned = { limit = { life_rating = 21 NOT = { life_rating = 22 } } life_rating = 9 }
+        #any_owned = { limit = { life_rating = 22 NOT = { life_rating = 23 } } life_rating = 8 }
+        #any_owned = { limit = { life_rating = 23 NOT = { life_rating = 24 } } life_rating = 7 }
+        #any_owned = { limit = { life_rating = 24 NOT = { life_rating = 25 } } life_rating = 6 }
+        #any_owned = { limit = { life_rating = 25 NOT = { life_rating = 26 } } life_rating = 5 }
+        #any_owned = { limit = { life_rating = 26 NOT = { life_rating = 27 } } life_rating = 4 }
+        #any_owned = { limit = { life_rating = 27 NOT = { life_rating = 28 } } life_rating = 3 }
+        #any_owned = { limit = { life_rating = 28 NOT = { life_rating = 29 } } life_rating = 2 }
+        #any_owned = { limit = { life_rating = 29 NOT = { life_rating = 30 } } life_rating = 1 }
+		#
+		#any_owned = { limit = { life_rating = 31 NOT = { life_rating = 32 } } life_rating = -1 }
+        #any_owned = { limit = { life_rating = 32 NOT = { life_rating = 33 } } life_rating = -2 }
+        #any_owned = { limit = { life_rating = 33 NOT = { life_rating = 34 } } life_rating = -3 }
+        #any_owned = { limit = { life_rating = 34 NOT = { life_rating = 35 } } life_rating = -4 }
+        #any_owned = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = -5 }
+        #any_owned = { limit = { life_rating = 36 NOT = { life_rating = 37 } } life_rating = -6 }
+        #any_owned = { limit = { life_rating = 37 NOT = { life_rating = 38 } } life_rating = -7 }
+        #any_owned = { limit = { life_rating = 38 NOT = { life_rating = 39 } } life_rating = -8 }
+        #any_owned = { limit = { life_rating = 39 NOT = { life_rating = 40 } } life_rating = -9 }
+        #any_owned = { limit = { life_rating = 40 NOT = { life_rating = 41 } } life_rating = -10 }
+        #any_owned = { limit = { life_rating = 41 NOT = { life_rating = 42 } } life_rating = -11 }
+        #any_owned = { limit = { life_rating = 42 NOT = { life_rating = 43 } } life_rating = -12 }
+        #any_owned = { limit = { life_rating = 43 NOT = { life_rating = 44 } } life_rating = -13 }
+        #any_owned = { limit = { life_rating = 44 NOT = { life_rating = 45 } } life_rating = -14 }
+        #any_owned = { limit = { life_rating = 45 NOT = { life_rating = 46 } } life_rating = -15 }
+        #any_owned = { limit = { life_rating = 46 NOT = { life_rating = 47 } } life_rating = -16 }
+        #any_owned = { limit = { life_rating = 47 NOT = { life_rating = 48 } } life_rating = -17 }	
+        #any_owned = { limit = { life_rating = 48 NOT = { life_rating = 49 } } life_rating = -18 }
+        #any_owned = { limit = { life_rating = 49 NOT = { life_rating = 50 } } life_rating = -19 }
+        #any_owned = { limit = { life_rating = 50 NOT = { life_rating = 51 } } life_rating = -20 }
+        #any_owned = { limit = { life_rating = 51 NOT = { life_rating = 52 } } life_rating = -21 }
+        #any_owned = { limit = { life_rating = 52 NOT = { life_rating = 53 } } life_rating = -22 }
+        #any_owned = { limit = { life_rating = 53 NOT = { life_rating = 54 } } life_rating = -23 }
+        #any_owned = { limit = { life_rating = 54 NOT = { life_rating = 55 } } life_rating = -24 }
+        #any_owned = { limit = { life_rating = 55 NOT = { life_rating = 56 } } life_rating = -25 }
+        #any_owned = { limit = { life_rating = 56 NOT = { life_rating = 57 } } life_rating = -26 }
+        #any_owned = { limit = { life_rating = 57 NOT = { life_rating = 58 } } life_rating = -27 }
+        #any_owned = { limit = { life_rating = 58 NOT = { life_rating = 59 } } life_rating = -28 }
+        #any_owned = { limit = { life_rating = 59 NOT = { life_rating = 60 } } life_rating = -29 }
+		#any_owned = { limit = { life_rating = 60 NOT = { life_rating = 61 } } life_rating = -30 }
+		#
+        #}		
+    #    any_country = {
+    #    any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0
+    #          NOT = { literacy = 0.1 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_0
+	#	duration = -1
+	#	}
+	#	}
+    #    any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.1
+    #          NOT = { literacy = 0.2 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_1
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.2
+    #          NOT = { literacy = 0.3 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_2
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.3
+    #          NOT = { literacy = 0.4 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_3
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.4
+    #          NOT = { literacy = 0.5 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_4
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.5
+    #          NOT = { literacy = 0.6 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_5
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.6
+    #          NOT = { literacy = 0.7 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_6
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.7
+    #          NOT = { literacy = 0.8 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_7
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.8
+    #          NOT = { literacy = 0.9 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_8
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.9
+    #          NOT = { literacy = 0.99 }
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_9
+	#	duration = -1
+	#	}
+	#	}
+	#	any_owned = {
+    #    limit = {
+	#	      state_scope = {
+	#          literacy = 0.99
+	#          }
+	#	}
+	#	add_province_modifier = {
+	#	name = RGO_education_10
+	#	duration = -1
+	#	}
+	#	}
+	#}
         any_owned = {
         limit = {
 		      state_scope = {
@@ -779,6 +1227,56 @@ country_event = {
 		duration = -1
 		}
 		}
+#set_global_flag = education_setup
+#country_event = 999904
+#any_country { limit = { NOT = THIS } country_event = 9999855 }
 country_event = 999958
+##any_pop = { limit = { AND = { type = serfs literacy = 0.21 } } pop_type = farmers }
+# any_pop = { 
+# 	limit = { 
+# 		AND = { 
+# 			type = serfs 
+# 			NOT = { is_culture_group = caucasian }
+# 			NOT = { culture = bedouin }
+# 			NOT = { AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } } }
+# 			NOT = { is_culture_group = central_asian }
+# 			NOT = { culture = manchu }
+# 			NOT = { culture = ainu }
+# 			NOT = { is_culture_group = oceanic }
+# 			NOT = { is_culture_group = native_american }
+# 			NOT = { is_culture_group = central_african }
+# 			NOT = { is_culture_group = west_african }
+# 			NOT = { is_culture_group = southern_african }
+#			NOT = { culture = kurdish }
+#			NOT = { is_culture_group = east_african }
+# 			#literacy = 0.21 
+# 		} 
+# 	} 
+# 	pop_type = farmers 
+# }
+# any_pop = { 
+# 	limit = { 
+# 		AND = { 
+# 			type = soldiers 
+#			OR = {
+# 			    is_culture_group = caucasian
+#				culture = bedouin
+#				AND = { is_culture_group = iranian_turanian  NOT = { culture = persian } }
+#				is_culture_group = central_asian
+#				culture = manchu
+#				culture = ainu
+#				is_culture_group = oceanic
+#				is_culture_group = native_american
+#				is_culture_group = central_african
+#				is_culture_group = west_african
+#				is_culture_group = southern_african
+#				culture = kurdish
+#				is_culture_group = east_african
+#			}
+# 			#literacy = 0.21 
+# 		} 
+# 	} 
+# 	pop_type = serfs 
+# }
 }
 }

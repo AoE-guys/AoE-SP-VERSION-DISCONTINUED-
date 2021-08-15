@@ -5,11 +5,7 @@ multitude_of_financial_instruments = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -30,11 +26,7 @@ insurance_companies = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -55,11 +47,7 @@ regulated_buying_and_selling_of_stocks = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -78,11 +66,7 @@ regulated_buying_and_selling_of_stocks = {
 liquidation_of_assets = {
 	limit = { business_banks = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -100,11 +84,7 @@ liquidation_of_assets = {
 capital_for_investors = {
 	limit = { business_banks = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base= 2
 		modifier = {
 			factor = 3
@@ -122,11 +102,7 @@ capital_for_investors = {
 distribution_channels = {
 	limit = { business_banks = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -145,11 +121,7 @@ distribution_channels = {
 industrial_rnd_investments = {
 	limit = { investment_banks = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -167,11 +139,7 @@ industrial_rnd_investments = {
 industrial_production_investments = {
 	limit = { investment_banks = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -189,11 +157,7 @@ industrial_production_investments = {
 industrial_distribution_investments = {
 	limit = { investment_banks = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -212,11 +176,7 @@ industrial_distribution_investments = {
 private_bank_monitoring = {
 	limit = { bank_inspection_board = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -241,11 +201,7 @@ market_behaviour_monitoring = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -264,11 +220,7 @@ market_behaviour_monitoring = {
 buying_on_margin = {
 	limit = { mutual_funds = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -287,11 +239,7 @@ buying_on_margin = {
 silver_standard = {
 	limit = { ad_hoc_money_bill_printing = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -309,11 +257,7 @@ silver_standard = {
 decimal_monetary_system = {
 	limit = { ad_hoc_money_bill_printing = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -332,11 +276,7 @@ decimal_monetary_system = {
 double_standard = {
 	limit = { private_bank_money_bill_printing = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -354,11 +294,7 @@ double_standard = {
 fixed_intramonetary_exchange_rates = {
 	limit = { private_bank_money_bill_printing = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -377,11 +313,7 @@ fixed_intramonetary_exchange_rates = {
 gold_standard = {
 	limit = { central_bank_money_bill_printing = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -403,11 +335,7 @@ gold_standard = {
 international_monetary_exchange_rates = {
 	limit = { central_bank_money_bill_printing = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -430,11 +358,7 @@ international_monetary_exchange_rates = {
 state_bond_monetary_mechanism = {
 	limit = { modern_central_bank_system = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -452,11 +376,7 @@ state_bond_monetary_mechanism = {
 interest_inflation_weapon = {
 	limit = { modern_central_bank_system = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -479,11 +399,7 @@ interest_inflation_weapon = {
 hyperinflation = {
 	limit = { market_determined_exchange_rates = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -503,11 +419,7 @@ hyperinflation = {
 john_ramsay_mcculloch = {
 	limit = { early_classical_theory_and_critique = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -525,11 +437,7 @@ john_ramsay_mcculloch = {
 nassau_william_sr = {
 	limit = { early_classical_theory_and_critique = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -547,11 +455,7 @@ nassau_william_sr = {
 james_mill = {
 	limit = { early_classical_theory_and_critique = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -573,11 +477,7 @@ john_elliot_cairnes = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -598,11 +498,7 @@ robert_torrens = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -623,11 +519,7 @@ john_stuart_mill = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -649,11 +541,7 @@ pierre_joseph_proudhon = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 5
 		modifier = {
 			factor = 5
@@ -699,11 +587,7 @@ karl_marx = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -768,11 +652,7 @@ friedrich_engels = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 4
@@ -832,11 +712,7 @@ eduard_bernstein = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -865,11 +741,7 @@ sidney_webb = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -896,11 +768,7 @@ karl_kautsky = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -925,11 +793,7 @@ jean_jaures = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 1
@@ -951,11 +815,7 @@ friedrich_list = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -976,11 +836,7 @@ wilhelm_roscher = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1001,11 +857,7 @@ bruno_hildebrand = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1026,11 +878,7 @@ karl_knies = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1051,11 +899,7 @@ gustav_von_schmoller = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1076,11 +920,7 @@ adolph_wagner = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1101,11 +941,7 @@ william_cunningham = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1127,11 +963,7 @@ johann_heinrich_von_thunen = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1152,11 +984,7 @@ leon_walras = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1177,11 +1005,7 @@ stanley_jevons = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1202,11 +1026,7 @@ carl_menger = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -1227,11 +1047,7 @@ thorstein_veblen = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -1252,11 +1068,7 @@ alfred_marshall = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -1277,11 +1089,7 @@ augustin_cournot = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -1302,11 +1110,7 @@ jules_dupuit = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1327,11 +1131,7 @@ vilfredo_pareto = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1352,11 +1152,7 @@ knut_wicksell = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1377,11 +1173,7 @@ irving_fischer = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -1402,11 +1194,7 @@ joseph_schumpeter = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1427,11 +1215,7 @@ eugen_von_bohm_bawerk = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -1453,11 +1237,7 @@ john_maynard_keynes = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1480,11 +1260,7 @@ richard_kahn = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 3
 		modifier = {
 			factor = 3
@@ -1505,11 +1281,7 @@ ludwig_von_mises = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 0
 		modifier = {
 			factor = 10
@@ -1534,11 +1306,7 @@ friedrich_hayek = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1560,11 +1328,7 @@ spice_trading = {
 		freedom_of_trade = 1 
 
 	}
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 4
 		modifier = {
 			factor = 2
@@ -1584,11 +1348,7 @@ spice_trading = {
 patent = {
 	limit = { market_structure = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1611,11 +1371,7 @@ patent = {
 trademark = {
 	limit = { market_structure = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1640,11 +1396,7 @@ trademark = {
 limited_partnership_company = {
 	limit = { business_regulations = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1662,11 +1414,7 @@ limited_partnership_company = {
 joint_stock_company = {
 	limit = { business_regulations = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1686,11 +1434,7 @@ joint_stock_company = {
 anti_trust_laws = {
 	limit = { market_regulations = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1712,11 +1456,7 @@ anti_trust_laws = {
 financial_regulations = {
 	limit = { market_regulations = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1734,11 +1474,7 @@ financial_regulations = {
 banking_regulations = {
 	limit = { market_regulations = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1757,11 +1493,7 @@ banking_regulations = {
 working_board_of_directors = {
 	limit = { economic_responsibility = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1779,11 +1511,7 @@ working_board_of_directors = {
 bankruptcy_proceedings = {
 	limit = { economic_responsibility = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1801,11 +1529,7 @@ bankruptcy_proceedings = {
 annual_report_proceedings = {
 	limit = { economic_responsibility = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1833,11 +1557,7 @@ polypoly_structure = {
 				}
 		}	
 	}
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1864,11 +1584,7 @@ oligopoly_structure = {
 			}
 		}		
 	}
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1895,11 +1611,7 @@ monopoly_structure = {
 			}
 		}	
 	}
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1917,11 +1629,7 @@ monopoly_structure = {
 priming_the_pump_ = {
 	limit = { government_interventionism = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1939,11 +1647,7 @@ priming_the_pump_ = {
 mixed_economy = {
 	limit = { government_interventionism = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1961,11 +1665,7 @@ mixed_economy = {
 centralized_economic_planning = {
 	limit = { government_interventionism = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 2
@@ -1983,11 +1683,7 @@ centralized_economic_planning = {
 autarky = {
 	limit = { government_interventionism = 1 }
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 2
 		modifier = {
 			factor = 3
@@ -2012,11 +1708,7 @@ import_substitution_industrialization = {
 		 
 	}
 	news = no
-		chance = {
-		modifier = {
-			factor = -50
-			tech_school = unciv_tech_school
-		}
+	chance = {
 		base = 0
 		modifier = {
 			factor = 4
