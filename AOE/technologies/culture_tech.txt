@@ -91,7 +91,7 @@ late_enlightenment_philosophy = {
 	cost = 3600
 
 
-	increase_research = 0.25
+	increase_research = 0.50
 	
 	ai_chance = {
 		factor = 90
@@ -102,7 +102,7 @@ idealism = {
 	year = 1705
 	cost = 7200
 
-	increase_research = 0.25
+	increase_research = 0.50
 	ai_chance = {
 		factor = 90
 	}
@@ -123,7 +123,7 @@ analytic_philosophy = {
 	year = 1740
 	cost = 14400
 
-	increase_research = 0.50
+	increase_research = 1.0
 	ai_chance = {
 		factor = 90
 	}
@@ -176,8 +176,8 @@ malthusian_thought = {
 	year = 1700
 	cost = 3600
 
-	colonial_migration = 0.1
-	education_efficiency = 0.05
+	colonial_migration = 0.05
+	education_efficiency = 0.1
 	
 	ai_chance = {
 		factor = 1.5
@@ -187,8 +187,8 @@ positivism = {
 	area = social_thought
 	year = 1700
 	cost = 7200
-	colonial_migration = 0.1
-	education_efficiency = 0.05
+	colonial_migration = 0.05
+	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.8
 	}
@@ -199,8 +199,8 @@ functionalism = {
 	year = 1700
 	cost = 10800
 
-	colonial_migration = 0.1
-	education_efficiency = 0.05
+	colonial_migration = 0.05
+	education_efficiency = 0.1
 	ai_chance = {
 		factor = 1.5
 	}
@@ -211,8 +211,8 @@ biologism = {
 	year = 1720
 	cost = 14400
 
-	colonial_migration = 0.15
-	education_efficiency = 0.05
+	colonial_migration = 0.05
+	education_efficiency = 0.1
 	ai_chance = {
 		factor = 2
 	}

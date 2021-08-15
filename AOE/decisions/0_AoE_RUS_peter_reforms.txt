@@ -45,23 +45,13 @@ political_decisions = {
 			owns = 350
 		}
 		effect = {
-			government = absolute_monarchy
-			any_country = {
-				limit = {
-					vassal_of = THIS
-					exists = yes
-					ai = yes
-					OR = {
-						tag = HET
-						tag = ZZH
-						tag = DON
-						tag = KMK
-						tag = BSK
-					}
-				}
-				annex_to = THIS
-			}
-			prestige = 60
+		government = absolute_monarchy
+		inherit = HET
+		inherit = ZZH
+		inherit = DON
+		inherit = KMK
+		inherit = BSK
+		prestige = 60
 		}
 		ai_will_do = {					
 		factor = 1
@@ -228,39 +218,38 @@ political_decisions = {
 		factor = 1
 		}
 	}
-	#integrate_kalmyk = {
-	#	picture = kalmyk
-	#	potential = {
-	#		tag = RUS
-	#		NOT = { has_country_flag = integrated_kalmyk }
-	#		exists = yes
-	#		KMK = { e
-	#	}
-	#	allow = {
-	#		KMK = {
-	#			vassal_of = THIS
-	#		}
-	#		OR = {
-	#			AND = { 
-	#				mass_politics = 1
-	#				war_policy  = jingoism
-	#			}
-	#			year = 1771
-	#		}
-	#		is_greater_power = yes
-	#	}
-	#	effect = {
-	#		set_country_flag = integrated_kalmyk
-	#		KMK = {
-	#			all_core = {
-	#				add_core = THIS
-	#			}
-	#		}
-	#		inherit = KMK
-	#		badboy = 5
-	#	}
-	#	ai_will_do = { factor = 1 }	
-	#}
+	integrate_kalmyk = {
+		picture = kalmyk
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = integrated_kalmyk }
+			exists = yes
+		}
+		allow = {
+			KMK = {
+				vassal_of = THIS
+			}
+			OR = {
+				AND = { 
+					mass_politics = 1
+					war_policy  = jingoism
+				}
+				year = 1771
+			}
+			is_greater_power = yes
+		}
+		effect = {
+			set_country_flag = integrated_kalmyk
+			KMK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			inherit = KMK
+			badboy = 5
+		}
+		ai_will_do = { factor = 1 }	
+	}
 	enact_nakaz = {
 		picture = nakaz
 		potential = {
@@ -491,13 +480,7 @@ political_decisions = {
 			exists = yes
 		}
 		allow = {
-			OR = {
 			army_professionalism = 1
-			AND = {
-				ai = yes
-				year = 1701	
-			}
-			}
 			has_country_modifier = peter_the_great
 		}
 		effect = {
@@ -521,13 +504,7 @@ political_decisions = {
 			exists = yes
 		}
 		allow = {
-			OR = {
-				chemistry_and_electricity_7 = 1
-				AND = {
-					ai = yes
-					year = 1775	
-				}
-			}
+			chemistry_and_electricity_7 = 1
 			has_country_modifier = catharine_the_great
 		}
 		effect = {
@@ -559,7 +536,6 @@ political_decisions = {
 					is_sphere_leader_of = KAK
 					is_sphere_leader_of = KKH
 				}
-				
 			}
 		}
 		effect = {

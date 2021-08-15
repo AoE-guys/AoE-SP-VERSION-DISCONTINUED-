@@ -654,10 +654,14 @@ pops = {
 	LUXURY_THRESHOLD = 500,
 	BASE_GOODS_DEMAND = 1.0,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	BASE_POPGROWTH = 0.0006,
 =======
 	BASE_POPGROWTH = 0.0003,
 >>>>>>> parent of 8c499c71 (Merge branch 'master' of https://github.com/AoE-guys/AOE-exp)
+=======
+	BASE_POPGROWTH = 0.0005,
+>>>>>>> parent of 9bf2ff43 (Succ war cb fix, increased pop growth and starting immigration, event fixes)
 	MIN_LIFE_RATING_FOR_GROWTH = 29,
 	LIFE_RATING_GROWTH_BONUS = 0.00005,
 	LIFE_NEED_STARVATION_LIMIT = 0.01,
