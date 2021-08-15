@@ -1,4 +1,4 @@
-cruiser = { #Heavy Frigate
+cruiser = {
 	icon = 11
 	naval_icon = 8
 	
@@ -42,8 +42,8 @@ cruiser = { #Heavy Frigate
 	}
 	
 	#Naval Abilties
-	hull = 22
-	gun_power = 14
+	hull = 10
+	gun_power = 12
 	fire_range = 0.55
 	evasion = 0.30
 	torpedo_attack = 0

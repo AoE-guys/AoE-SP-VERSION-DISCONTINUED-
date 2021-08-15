@@ -1,4 +1,4 @@
-battleship = { #Seventy-Four
+battleship = {
 	icon = 21
 	naval_icon = 10
 	
@@ -43,8 +43,8 @@ battleship = { #Seventy-Four
 	}
 	
 	#Naval Abilties
-	hull = 30
-	gun_power = 25
+	hull = 20
+	gun_power = 15
 	fire_range = 0.58
 	evasion = 0
 }
