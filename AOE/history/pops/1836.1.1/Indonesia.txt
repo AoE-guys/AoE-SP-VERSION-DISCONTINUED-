@@ -842,43 +842,43 @@
 	}
 
 	aristocrats = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 120
 	}
 
 	clergymen = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 140
 	}
 
 	artisans = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 360
 	}
 
 	soldiers = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 160
 	}
 
 	zzz_dummy = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 6441
 	}
 
 	labourers = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 339
 	}
 	
 	slaves = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 1600
 	}
@@ -928,37 +928,37 @@
 	}
 
 	aristocrats = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 120
 	}
 
 	clergymen = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 100
 	}
 
 	artisans = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 120
 	}
 
 	zzz_dummy = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 10127
 	}
 
 	labourers = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 533
 	}
@@ -1008,37 +1008,37 @@
 	}
 
 	aristocrats = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 120
 	}
 
 	clergymen = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 100
 	}
 
 	artisans = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 160
 	}
 
 	soldiers = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 80
 	}
 
 	zzz_dummy = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 10963
 	}
 
 	labourers = {
-		culture = acehnese
+		culture = asian_minor
 		religion = animist
 		size = 577
 	}
@@ -1049,87 +1049,54 @@
 		size = 400
 	}
 }
-#Barus
-3413 = {
-	aristocrats = {
-		culture = batak
-		religion = sunni
-		size = 360
-	}
-
-	clergymen = {
-		culture = batak
-		religion = sunni
-		size = 300
-	}
-
-	artisans = {
-		culture = batak
-		religion = sunni
-		size = 1680
-	}
-
-	soldiers = {
-		culture = batak
-		religion = sunni
-		size = 320
-	}
-
-	zzz_dummy = {
-		culture = batak
-		religion = sunni
-		size = 8000
-	}
-
-	labourers = {
-		culture = batak
-		religion = sunni
-		size = 1479
-	}
-}
-3414 = {
-	zzz_dummy = {
-		culture = batak
-		religion = sunni
-		size = 9100
-	}
-}
 #Minangkabau Region (956000)
 #ruled by The Netherlands 1836
 #Padang (240000/60000 POPS)
 1408 = {
 	aristocrats = {
-		culture = minangkabau
+		culture = dutch
+		religion = protestant
+		size = 80
+	}
+	
+	bureaucrats = {
+		culture = dutch
+		religion = protestant
+		size = 80
+	}
+	
+	aristocrats = {
+		culture = malay
 		religion = sunni
 		size = 360
 	}
 
 	clergymen = {
-		culture = minangkabau
+		culture = malay
 		religion = sunni
 		size = 300
 	}
 
 	artisans = {
-		culture = minangkabau
+		culture = malay
 		religion = sunni
 		size = 1680
 	}
 
 	soldiers = {
-		culture = minangkabau
+		culture = malay
 		religion = sunni
 		size = 320
 	}
 
 	zzz_dummy = {
-		culture = minangkabau
+		culture = malay
 		religion = sunni
-		size = 20101
+		size = 28101
 	}
 
 	labourers = {
-		culture = minangkabau
+		culture = malay
 		religion = sunni
 		size = 1479
 	}
@@ -1153,43 +1120,43 @@
 	}
 
 	aristocrats = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 160
 	}
 
 	clergymen = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 100
 	}
 
 	artisans = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 80
 	}
 
 	soldiers = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 120
 	}
 
 	zzz_dummy = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 7923
 	}
 
 	labourers = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 417
 	}
 
 	slaves = {
-		culture = minangkabau
+		culture = asian_minor
 		religion = animist
 		size = 6400
 	}
@@ -1197,37 +1164,37 @@
 #Sibolga (528000/132000 POPS)
 1409 = {
 	aristocrats = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 320
 	}
 
 	clergymen = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 200
 	}
 
 	artisans = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 1000
 	}
 
 	soldiers = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 280
 	}
 
 	zzz_dummy = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 25650
 	}
 
 	labourers = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 1350
 	}
@@ -1299,7 +1266,7 @@
 	}
 	
 	slaves = {
-		culture = batak
+		culture = asian_minor
 		religion = animist
 		size = 8000
 	}
