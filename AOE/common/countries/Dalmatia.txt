@@ -2,7 +2,7 @@ color = { 123 141 186 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "Aristocrazia"
+	name = "Nobility Faction"
 	start_date = 1600.1.1
 	end_date = 2000.1.1
 
@@ -17,7 +17,7 @@ party = {
 }
 
 party = {
-	name = "Fazione Mercantile"
+	name = "Gentry Faction"
 	start_date = 1600.1.1
 	end_date = 1936.1.1
 
@@ -25,29 +25,14 @@ party = {
 
 	social_policy = no_position_set
 	economic_policy = laissez_faire
-	trade_policy = free_trade
+	trade_policy = protectionism
 	religious_policy = pluralism
 	citizenship_policy = full_citizenship
 	war_policy = pacifism
 }
 
 party = {
-	name = "Fazione Delle Gilde"
-	start_date = 1600.1.1
-	end_date = 1936.1.1
-
-	ideology = liberal
-
-	social_policy = no_position_set
-	economic_policy = interventionism
-	trade_policy = mercantilism
-	religious_policy = secularized
-	citizenship_policy = full_citizenship
-	war_policy = anti_military
-}
-
-party = {
-	name = "Rector Fazione"
+	name = "Absolutist Faction"
 	start_date = 1600.1.1
 	end_date = 2000.1.1
 

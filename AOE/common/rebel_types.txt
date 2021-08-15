@@ -7236,7 +7236,7 @@ noble_rebels = {
 	reinforcing = yes				
 	general = yes					
 	smart = yes
-	unit_transfer = yes				# Units do not remain after enforcing demands.
+	unit_transfer = no				# Units do not remain after enforcing demands.
 	
 	occupation_mult = 1.1			# The amount of strength this rebel gains from taking provinces	
 

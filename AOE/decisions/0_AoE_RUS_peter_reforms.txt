@@ -40,7 +40,7 @@ political_decisions = {
 			idealism = 1
 			war = no
 			owns = 994
-			#owns = 354
+			owns = 354
 			owns = 1047
 			owns = 350
 		}
@@ -106,7 +106,7 @@ political_decisions = {
 	
 		allow = {
 			war = no
-			#NOT = {owns = 994}
+			NOT = {owns = 994}
 		}
 	
 		effect = {

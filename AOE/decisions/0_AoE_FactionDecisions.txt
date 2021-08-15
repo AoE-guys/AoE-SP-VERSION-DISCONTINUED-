@@ -32,7 +32,6 @@ political_decisions = {
 			NOT = { has_country_flag = deified_ruler }
 			#NOT = { government = theocracy }
 			wage_reform = no_minimum_wage
-			capital_scope = { NOT = { continent = europe } }
 			OR = {
 				government = trade_monarchy
 				government = hms_government
@@ -215,10 +214,7 @@ political_decisions = {
 			exists = yes
 		}
 		allow = {
-			OR = {
-				trade_policy = protectionism
-				trade_policy = mercantilism
-			}
+			trade_policy = protectionism
 			OR = {
 				unemployment_subsidies = no_subsidies
 				unemployment_subsidies = trinket_subsidies

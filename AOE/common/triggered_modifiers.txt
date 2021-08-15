@@ -1166,10 +1166,6 @@ help_ai_usa = {
 					exists = yes
 				}
 			}
-			AND = {
-				owns = 1008 #Russia
-				NOT = { year = 1738 }
-			}
 		}
 	}
 	icon = 10
@@ -1402,6 +1398,7 @@ free_city = {
 	supply_consumption = -0.05
 }
 
+<<<<<<< HEAD
 trade_city = {
 	trigger = {
 		NOT = { num_of_cities = 2 }
@@ -1455,6 +1452,8 @@ army_looting = {
 	tariff_efficiency_modifier = 0.25
 }
 
+=======
+>>>>>>> parent of 8c499c71 (Merge branch 'master' of https://github.com/AoE-guys/AOE-exp)
 free_state = {
 	trigger = {
 		OR = { 
