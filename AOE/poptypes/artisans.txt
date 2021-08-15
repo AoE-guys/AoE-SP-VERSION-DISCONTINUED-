@@ -67,20 +67,21 @@ country_migration_target =
 
 	modifier = {
 		factor = 4
-		OR = {
+			OR = {
 			AND = {
 				government = colonial_company
 				capital_scope = {
 					OR = {
-						continent = north_america
-						continent = south_america
+					continent = north_america
+					continent = south_america
 					}
 				}
 			}
-			capital_scope = {
-				OR = {
+				capital_scope = {
+					OR = {
 					continent = north_america
 					continent = south_america
+					}
 				}
 			}
 		}
