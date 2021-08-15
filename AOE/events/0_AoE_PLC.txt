@@ -299,6 +299,10 @@ country_event = {
 		}
 		random_owned = { limit = { owner = { vassal_of = SAX } } owner = { overlord = { leave_alliance = PLC release_vassal = PLC relation = { who = PLC value = -200 } } } }
 		random_owned = { limit = { owner = { is_our_vassal = SAX } } owner = { leave_alliance = SAX release_vassal = SAX relation = { who = SAX value = -200 } } }
+		#create_vassal = LOR
+		#LOR = {
+		#	government = absolute_monarchy
+		#}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -399,14 +403,6 @@ country_event = {
 			}
 			country_event = 15730010
 		}
-		any_country = {
-			limit = {
-				tag = AUS
-				NOT = { has_global_flag = disabled_succession_wars }
-				NOT = { AUS = { has_country_flag = t
-			}
-			country_event = 15730010
-		}
 		relation = {
 			who = POR
 			value = 100
@@ -471,23 +467,10 @@ country_event = {
 	}
 
 	option = {
-		name = "Denouce the election!"
-		set_global_flag = polish_succesion_crisis
-		any_country = {
-			limit = {
-				capital_scope = { continent = europe }
-			}
-			add_country_modifier = {
-				name = succession_crisis
-				duration = 60
-			}
-		}
-		any_country = {
-			limit = {
-				capital_scope = { continent = europe }
-				ai = no
-			}
-			country_event = 140002
+		name = "Approach Russia"
+		RUS = {
+			country_event = 15730020
+			set_global_flag = polish_succesion_crisis
 		}
 		ai_chance = {
 			factor = 1
@@ -569,6 +552,106 @@ country_event = {
 				NOT = { is_greater_power = yes }
 			}
 		}
+	}
+}
+country_event = {
+	id = 15730030
+	title = "August III returns to Poland Lithuania"
+	desc = "..."	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 706
+		war_with = RUS
+		PLC = {
+			national_provinces_occupied = 0.9
+		}
+		war_exhaustion = 45
+		has_global_flag = polish_succesion_crisis
+	}
+	
+	option = {
+		name = "And he shall be known as the one who ruled with an iron fist"
+		create_vassal = SAX
+		SAX = {
+			government = absolute_monarchy
+		}
+		prestige = -50
+		relation = { who = SAX value = 200 }
+		ruling_party_ideology = conservative
+		random_owned = { limit = { owner = { is_our_vassal = LOR } } owner = { leave_alliance = LOR release_vassal = LOR relation = { who = LOR value = -200 } } }
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = 400
+			}
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				war_with = PLC
+				capital_scope = {
+					continent = europe
+				}
+			}
+			end_war = PLC
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				war_with = RUS
+				capital_scope = {
+					continent = europe
+				}
+			}
+			end_war = RUS
+		}
+		clr_country_flag = lesczynski_rule
+		set_country_flag = saxon_rule
+		clr_global_flag = polish_succesion_crisis
+	}
+}
+country_event = {
+	id = 15730031
+	title = "Treaty of Warsaw"
+	desc = "..."	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "A Historical Victory for our nation!"
+		RUS = {
+			diplomatic_influence = {
+				who = PLC
+				value = -400
+			}
+		}
+		HET = {
+			limit = {
+				vassal_of = RUS
+			}
+			country_event = 15730131
+		}
+		ZZH = {
+			limit = {
+				vassal_of = RUS
+			}
+			country_event = 15730131
+		}
+		prestige = 25
+		clr_global_flag = polish_succesion_crisis
+	}
+}
+country_event = {
+	id = 15730131
+	title = "Treaty of Warsaw"
+	desc = "..."	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A Historical Victory for our nation!"
+		annex_to = PLC
 	}
 }
 ####Royal Election of 1764####

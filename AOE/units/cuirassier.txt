@@ -26,7 +26,9 @@ cuirassier = {
 	build_cost = {
 		small_arms = 10
 		canned_food = 10
-		steel = 20
+		steel = 5
+		barrels = 3
+		grain = 5
 	}
 	
 	supply_consumption = 1.0
@@ -34,16 +36,18 @@ cuirassier = {
 		small_arms = 0.015 # 0.008
 		ammunition = 0.05 # 0
 		canned_food = 0.07 #0.08
-		#steel = 0.1 # 0.008
+		steel = 0.01 # 0.008
+		barrels = 0.20
+		grain = 0.5
 	}
 	
 
 	#Land Abilties
-	reconnaissance = 2
+	reconnaissance = 0
 	attack = 6
-	defence = 3.75
-	discipline = 1.05
+	defence = 2.5
+	discipline = 1.0
 	support = 0.0
-	maneuver = 3
+	maneuver = 2
 	
 }

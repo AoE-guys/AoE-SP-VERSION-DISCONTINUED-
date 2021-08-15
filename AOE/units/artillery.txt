@@ -20,14 +20,15 @@ artillery = {
 	build_cost = {
 		artillery = 10
 		canned_food = 10
-		liquor = 10
-		wine = 10
+		explosives = 10
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		artillery = 0.1 #0.008
 		canned_food = 0.06 #0.004
+		luxury_clothes = 0.01
+		explosives = 0.15
 	}
 	
 
@@ -35,8 +36,8 @@ artillery = {
 	reconnaissance = 0
 	attack = 1
 	defence = 3
-	discipline = 0.75
+	discipline = 1.0
 	support = 1.2
 	maneuver = 1
-	siege = 0
+	siege = 0.25
 }
