@@ -1452,7 +1452,7 @@ country_event = {
 		any_greater_power = { war = yes alliance_with = THIS }
 		great_wars_enabled = no
 		NOT = { has_global_flag = great_wars_enabled }
-		year = 1745
+		year = 1900
 	}
 	
 	mean_time_to_happen = {
@@ -2323,7 +2323,7 @@ country_event = {
 		world_wars_enabled = no
 		great_wars_enabled = yes
 		NOT = { has_global_flag = world_wars_enabled }
-		year = 1780
+		year = 1905
 		mass_politics = 1		
 	}
 
